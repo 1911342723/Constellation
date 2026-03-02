@@ -1,0 +1,8 @@
+Analyze the following document virtual skeleton and identify all section headings with their hierarchy levels:
+
+{skeleton_text}
+
+Return results strictly in the specified JSON format. Requirements:
+1. Only mark boundaries — do NOT output any body text.
+2. Each chapter MUST include a `snippet` field (first 30 characters copied verbatim from the skeleton).
+3. Carefully inspect folded region summaries for hidden headings.

@@ -1,0 +1,462 @@
+2026-02-25 04:47:21,893 [INFO] infrastructure.providers.docx_provider - 开始解析 Docx 字节流
+2026-02-25 04:48:12,663 [INFO] infrastructure.providers.docx_provider - 解析完成，共提取 2043 个 Block
+2026-02-25 04:48:12,976 [INFO] modules.parser.parser - [游标卡尺] ===== 开始解析 (共 2043 个 Block) =====
+2026-02-25 04:48:12,977 [INFO] modules.parser.parser - [游标卡尺] 阶段 2/4：虚拟骨架压缩...
+2026-02-25 04:48:12,977 [INFO] modules.parser.compressor - [滑动窗口] 超长文档 (2043 Blocks)，分为 8 个窗口 (size=300, overlap=50)
+2026-02-25 04:48:12,980 [INFO] modules.parser.compressor - [滑动窗口] 窗口 1/8: Block 0~299, 骨架 14445 字符
+2026-02-25 04:48:12,983 [INFO] modules.parser.compressor - [滑动窗口] 窗口 2/8: Block 250~549, 骨架 14320 字符
+2026-02-25 04:48:12,984 [INFO] modules.parser.compressor - [滑动窗口] 窗口 3/8: Block 500~799, 骨架 14389 字符
+2026-02-25 04:48:12,985 [INFO] modules.parser.compressor - [滑动窗口] 窗口 4/8: Block 750~1049, 骨架 14653 字符
+2026-02-25 04:48:12,985 [INFO] modules.parser.compressor - [滑动窗口] 窗口 5/8: Block 1000~1299, 骨架 15110 字符
+2026-02-25 04:48:12,985 [INFO] modules.parser.compressor - [滑动窗口] 窗口 6/8: Block 1250~1549, 骨架 14619 字符
+2026-02-25 04:48:12,987 [INFO] modules.parser.compressor - [滑动窗口] 窗口 7/8: Block 1500~1799, 骨架 14514 字符
+2026-02-25 04:48:12,988 [INFO] modules.parser.compressor - [滑动窗口] 窗口 8/8: Block 1750~2042, 骨架 14497 字符
+2026-02-25 04:48:12,988 [INFO] modules.parser.compressor - [滑动窗口压缩] 原文: 1335672 字符 → 骨架总计: 116547 字符 (8 个分片, 压缩率: 91.3%)
+2026-02-25 04:48:12,988 [INFO] modules.parser.parser - [游标卡尺] 骨架生成完成 (116547 字符, 8 个分片)
+2026-02-25 04:48:12,989 [INFO] modules.parser.parser - [游标卡尺] 阶段 3/4：AI 游标漫游...
+2026-02-25 04:48:12,989 [INFO] modules.parser.parser - [Map-Reduce] 多分片并发模式: 8 个窗口, max_workers=4
+2026-02-25 04:48:12,989 [INFO] modules.parser.router - [LLMRouter] Sending chunk 1/8 (14445 chars) to LLM …
+2026-02-25 04:48:12,990 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:48:12,990 [INFO] modules.parser.router - [LLMRouter] Sending chunk 2/8 (14320 chars) to LLM …
+2026-02-25 04:48:12,992 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:48:12,992 [INFO] modules.parser.router - [LLMRouter] Sending chunk 3/8 (14389 chars) to LLM …
+2026-02-25 04:48:12,993 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:48:12,993 [INFO] modules.parser.router - [LLMRouter] Sending chunk 4/8 (14653 chars) to LLM …
+2026-02-25 04:48:12,995 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:48:13,505 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:48:13,521 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:48:13,593 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:48:13,611 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:48:45,785 [INFO] modules.parser.router - [LLMRouter] Done — title='', authors='', chapters=38
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [251] L2: 3.6 并发机制与系统容灾策略 [snippet: 3.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [263] L2: 3.7 并发机制与系统容灾策略 [snippet: 3.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [276] L3: 3.7.1 细粒度资源调度 [snippet: 3.7.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [278] L2: 3.8 并发机制与系统容灾策略 [snippet: 3.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [285] L3: 3.8.1 细粒度资源调度 [snippet: 3.8.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -   [287] L1: 第4章 理论基础与核心算法架构 [snippet: 第4章 理论基础与核心算法架构…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [290] L2: 4.1 并发机制与系统容灾策略 [snippet: 4.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [301] L2: 4.2 并发机制与系统容灾策略 [snippet: 4.2 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [314] L3: 4.2.1 细粒度资源调度 [snippet: 4.2.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [316] L2: 4.3 并发机制与系统容灾策略 [snippet: 4.3 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [322] L2: 4.4 并发机制与系统容灾策略 [snippet: 4.4 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [334] L3: 4.4.1 细粒度资源调度 [snippet: 4.4.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [336] L2: 4.5 并发机制与系统容灾策略 [snippet: 4.5 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [351] L3: 4.5.1 细粒度资源调度 [snippet: 4.5.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [353] L2: 4.6 并发机制与系统容灾策略 [snippet: 4.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [366] L2: 4.7 并发机制与系统容灾策略 [snippet: 4.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [376] L2: 4.8 并发机制与系统容灾策略 [snippet: 4.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [381] L3: 4.8.1 细粒度资源调度 [snippet: 4.8.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -   [383] L1: 第5章 理论基础与核心算法架构 [snippet: 第5章 理论基础与核心算法架构…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [389] L2: 5.1 并发机制与系统容灾策略 [snippet: 5.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [405] L2: 5.2 并发机制与系统容灾策略 [snippet: 5.2 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [414] L3: 5.2.1 细粒度资源调度 [snippet: 5.2.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [416] L2: 5.3 并发机制与系统容灾策略 [snippet: 5.3 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [431] L3: 5.3.1 细粒度资源调度 [snippet: 5.3.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [433] L2: 5.4 并发机制与系统容灾策略 [snippet: 5.4 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [443] L3: 5.4.1 细粒度资源调度 [snippet: 5.4.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [445] L2: 5.5 并发机制与系统容灾策略 [snippet: 5.5 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [460] L2: 5.6 并发机制与系统容灾策略 [snippet: 5.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [476] L3: 5.6.1 细粒度资源调度 [snippet: 5.6.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [478] L2: 5.7 并发机制与系统容灾策略 [snippet: 5.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [494] L3: 5.7.1 细粒度资源调度 [snippet: 5.7.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [496] L2: 5.8 并发机制与系统容灾策略 [snippet: 5.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [513] L3: 5.8.1 细粒度资源调度 [snippet: 5.8.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -   [515] L1: 第6章 理论基础与核心算法架构 [snippet: 第6章 理论基础与核心算法架构…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [520] L2: 6.1 并发机制与系统容灾策略 [snippet: 6.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [536] L3: 6.1.1 细粒度资源调度 [snippet: 6.1.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -     [538] L2: 6.2 并发机制与系统容灾策略 [snippet: 6.2 并发机制与系统容灾策略…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router -       [548] L3: 6.2.1 细粒度资源调度 [snippet: 6.2.1 细粒度资源调度…]
+2026-02-25 04:48:45,785 [INFO] modules.parser.router - [LLMRouter] Sending chunk 5/8 (15110 chars) to LLM …
+2026-02-25 04:48:45,787 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:48:45,787 [INFO] modules.parser.parser - [Map-Reduce] 窗口 2/8 完成: 38 个锚点
+2026-02-25 04:48:45,907 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:48:49,527 [INFO] modules.parser.router - [LLMRouter] Done — title='', authors='', chapters=37
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [750] L2: 8.3 并发机制与系统容灾策略 [snippet: 8.3 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [759] L3: 8.3.1 细粒度资源调度 [snippet: 8.3.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [761] L2: 8.4 并发机制与系统容灾策略 [snippet: 8.4 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [775] L3: 8.4.1 细粒度资源调度 [snippet: 8.4.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [777] L2: 8.5 并发机制与系统容灾策略 [snippet: 8.5 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [793] L3: 8.5.1 细粒度资源调度 [snippet: 8.5.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [795] L2: 8.6 并发机制与系统容灾策略 [snippet: 8.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [800] L2: 8.7 并发机制与系统容灾策略 [snippet: 8.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [812] L2: 8.8 并发机制与系统容灾策略 [snippet: 8.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [829] L3: 8.8.1 细粒度资源调度 [snippet: 8.8.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -   [831] L1: 第9章 理论基础与核心算法架构 [snippet: 第9章 理论基础与核心算法架构…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [834] L2: 9.1 并发机制与系统容灾策略 [snippet: 9.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [846] L2: 9.2 并发机制与系统容灾策略 [snippet: 9.2 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [859] L3: 9.2.1 细粒度资源调度 [snippet: 9.2.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [861] L2: 9.3 并发机制与系统容灾策略 [snippet: 9.3 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [873] L2: 9.4 并发机制与系统容灾策略 [snippet: 9.4 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [884] L2: 9.5 并发机制与系统容灾策略 [snippet: 9.5 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [891] L2: 9.6 并发机制与系统容灾策略 [snippet: 9.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [904] L3: 9.6.1 细粒度资源调度 [snippet: 9.6.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [906] L2: 9.7 并发机制与系统容灾策略 [snippet: 9.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [921] L2: 9.8 并发机制与系统容灾策略 [snippet: 9.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [936] L3: 9.8.1 细粒度资源调度 [snippet: 9.8.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -   [938] L1: 第10章 理论基础与核心算法架构 [snippet: 第10章 理论基础与核心算法架构…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [941] L2: 10.1 并发机制与系统容灾策略 [snippet: 10.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [949] L2: 10.2 并发机制与系统容灾策略 [snippet: 10.2 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [957] L3: 10.2.1 细粒度资源调度 [snippet: 10.2.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [959] L2: 10.3 并发机制与系统容灾策略 [snippet: 10.3 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [972] L2: 10.4 并发机制与系统容灾策略 [snippet: 10.4 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [987] L2: 10.5 并发机制与系统容灾策略 [snippet: 10.5 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [1000] L2: 10.6 并发机制与系统容灾策略 [snippet: 10.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [1006] L3: 10.6.1 细粒度资源调度 [snippet: 10.6.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [1008] L2: 10.7 并发机制与系统容灾策略 [snippet: 10.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [1018] L3: 10.7.1 细粒度资源调度 [snippet: 10.7.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [1020] L2: 10.8 并发机制与系统容灾策略 [snippet: 10.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -       [1028] L3: 10.8.1 细粒度资源调度 [snippet: 10.8.1 细粒度资源调度…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -   [1030] L1: 第11章 理论基础与核心算法架构 [snippet: 第11章 理论基础与核心算法架构…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router -     [1035] L2: 11.1 并发机制与系统容灾策略 [snippet: 11.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:49,528 [INFO] modules.parser.router - [LLMRouter] Sending chunk 6/8 (14619 chars) to LLM …
+2026-02-25 04:48:49,528 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:48:49,528 [INFO] modules.parser.parser - [Map-Reduce] 窗口 4/8 完成: 37 个锚点
+2026-02-25 04:48:49,683 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:48:50,583 [INFO] modules.parser.router - [LLMRouter] Done — title='深入探讨人工智能时代的文件解析与渲染架构', authors='', chapters=44
+2026-02-25 04:48:50,583 [INFO] modules.parser.router -   [0] L1: 深入探讨人工智能时代的文件解析与渲染架构 [snippet: 深入探讨人工智能时代的文件解析与渲染架构…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -   [1] L1: 摘要 [snippet: 摘  要…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -   [6] L1: 第1章 理论基础与核心算法架构 [snippet: 第1章 理论基础与核心算法架构…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [9] L2: 1.1 并发机制与系统容灾策略 [snippet: 1.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [14] L2: 1.2 并发机制与系统容灾策略 [snippet: 1.2 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [26] L3: 1.2.1 细粒度资源调度 [snippet: 1.2.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [28] L2: 1.3 并发机制与系统容灾策略 [snippet: 1.3 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [40] L3: 1.3.1 细粒度资源调度 [snippet: 1.3.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [42] L2: 1.4 并发机制与系统容灾策略 [snippet: 1.4 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [52] L2: 1.5 并发机制与系统容灾策略 [snippet: 1.5 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [62] L2: 1.6 并发机制与系统容灾策略 [snippet: 1.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [76] L2: 1.7 并发机制与系统容灾策略 [snippet: 1.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [82] L2: 1.8 并发机制与系统容灾策略 [snippet: 1.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -   [90] L1: 第2章 理论基础与核心算法架构 [snippet: 第2章 理论基础与核心算法架构…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [93] L2: 2.1 并发机制与系统容灾策略 [snippet: 2.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [98] L2: 2.2 并发机制与系统容灾策略 [snippet: 2.2 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [107] L3: 2.2.1 细粒度资源调度 [snippet: 2.2.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [109] L2: 2.3 并发机制与系统容灾策略 [snippet: 2.3 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [122] L3: 2.3.1 细粒度资源调度 [snippet: 2.3.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [124] L2: 2.4 并发机制与系统容灾策略 [snippet: 2.4 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [131] L3: 2.4.1 细粒度资源调度 [snippet: 2.4.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [133] L2: 2.5 并发机制与系统容灾策略 [snippet: 2.5 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [147] L2: 2.6 并发机制与系统容灾策略 [snippet: 2.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [163] L3: 2.6.1 细粒度资源调度 [snippet: 2.6.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [165] L2: 2.7 并发机制与系统容灾策略 [snippet: 2.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [173] L3: 2.7.1 细粒度资源调度 [snippet: 2.7.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [175] L2: 2.8 并发机制与系统容灾策略 [snippet: 2.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [185] L3: 2.8.1 细粒度资源调度 [snippet: 2.8.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -   [187] L1: 第3章 理论基础与核心算法架构 [snippet: 第3章 理论基础与核心算法架构…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [193] L2: 3.1 并发机制与系统容灾策略 [snippet: 3.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [198] L2: 3.2 并发机制与系统容灾策略 [snippet: 3.2 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [211] L3: 3.2.1 细粒度资源调度 [snippet: 3.2.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [213] L2: 3.3 并发机制与系统容灾策略 [snippet: 3.3 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [221] L3: 3.3.1 细粒度资源调度 [snippet: 3.3.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [223] L2: 3.4 并发机制与系统容灾策略 [snippet: 3.4 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [236] L3: 3.4.1 细粒度资源调度 [snippet: 3.4.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [238] L2: 3.5 并发机制与系统容灾策略 [snippet: 3.5 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [251] L2: 3.6 并发机制与系统容灾策略 [snippet: 3.6 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [263] L2: 3.7 并发机制与系统容灾策略 [snippet: 3.7 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [276] L3: 3.7.1 细粒度资源调度 [snippet: 3.7.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [278] L2: 3.8 并发机制与系统容灾策略 [snippet: 3.8 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -       [285] L3: 3.8.1 细粒度资源调度 [snippet: 3.8.1 细粒度资源调度…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -   [287] L1: 第4章 理论基础与核心算法架构 [snippet: 第4章 理论基础与核心算法架构…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router -     [290] L2: 4.1 并发机制与系统容灾策略 [snippet: 4.1 并发机制与系统容灾策略…]
+2026-02-25 04:48:50,584 [INFO] modules.parser.router - [LLMRouter] Sending chunk 7/8 (14514 chars) to LLM …
+2026-02-25 04:48:50,584 [INFO] modules.parser.parser - [Map-Reduce] 窗口 1/8 完成: 44 个锚点
+2026-02-25 04:48:50,585 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:48:50,729 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:48:58,101 [INFO] modules.parser.router - [LLMRouter] Done — title='', authors='', chapters=40
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -       [513] L3: 5.8.1 细粒度资源调度 [snippet: <Heading 3, Bold> 5.…]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -   [515] L1: 第6章 理论基础与核心算法架构 [snippet: <Heading 1, Bold, Si…]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -     [520] L2: 6.1 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 6.1 …]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -       [536] L3: 6.1.1 细粒度资源调度 [snippet: <Heading 3, Bold> 6.…]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -     [538] L2: 6.2 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -       [548] L3: 6.2.1 细粒度资源调度 [snippet: <Heading 3, Bold> 6.…]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -     [550] L2: 6.3 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -       [556] L3: 6.3.1 细粒度资源调度 [snippet: <Heading 3, Bold> 6.…]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -     [558] L2: 6.4 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 6.4 …]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -       [573] L3: 6.4.1 细粒度资源调度 [snippet: <Heading 3, Bold> 6.…]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -     [575] L2: 6.5 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 6.5 …]
+2026-02-25 04:48:58,101 [INFO] modules.parser.router -       [581] L3: 6.5.1 细粒度资源调度 [snippet: <Heading 3, Bold> 6.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [583] L2: 6.6 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 6.6 …]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [592] L3: 6.6.1 细粒度资源调度 [snippet: <Heading 3, Bold> 6.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [594] L2: 6.7 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [606] L2: 6.8 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 6.8 …]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -   [611] L1: 第7章 理论基础与核心算法架构 [snippet: <Heading 1, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [615] L2: 7.1 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 7.1 …]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [621] L2: 7.2 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 7.2 …]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [630] L3: 7.2.1 细粒度资源调度 [snippet: <Heading 3, Bold> 7.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [632] L2: 7.3 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [650] L3: 7.3.1 细粒度资源调度 [snippet: <Heading 3, Bold> 7.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [652] L2: 7.4 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [667] L3: 7.4.1 细粒度资源调度 [snippet: <Heading 3, Bold> 7.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [669] L2: 7.5 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [681] L3: 7.5.1 细粒度资源调度 [snippet: <Heading 3, Bold> 7.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [683] L2: 7.6 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [692] L2: 7.7 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [708] L3: 7.7.1 细粒度资源调度 [snippet: <Heading 3, Bold> 7.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [710] L2: 7.8 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 7.8 …]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -   [723] L1: 第8章 理论基础与核心算法架构 [snippet: <Heading 1, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [726] L2: 8.1 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [735] L2: 8.2 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [750] L2: 8.3 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 8.3 …]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [759] L3: 8.3.1 细粒度资源调度 [snippet: <Heading 3, Bold> 8.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [761] L2: 8.4 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [775] L3: 8.4.1 细粒度资源调度 [snippet: <Heading 3, Bold> 8.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [777] L2: 8.5 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -       [793] L3: 8.5.1 细粒度资源调度 [snippet: <Heading 3, Bold> 8.…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router -     [795] L2: 8.6 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:48:58,102 [INFO] modules.parser.router - [LLMRouter] Sending chunk 8/8 (14497 chars) to LLM …
+2026-02-25 04:48:58,102 [INFO] modules.parser.parser - [Map-Reduce] 窗口 3/8 完成: 40 个锚点
+2026-02-25 04:48:58,103 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:48:58,248 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:49:19,097 [INFO] modules.parser.router - [LLMRouter] Done — title='', authors='', chapters=38
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1000] L2: 10.6 并发机制与系统容灾策略 [snippet: 10.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1006] L3: 10.6.1 细粒度资源调度 [snippet: 10.6.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1008] L2: 10.7 并发机制与系统容灾策略 [snippet: 10.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1018] L3: 10.7.1 细粒度资源调度 [snippet: 10.7.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1020] L2: 10.8 并发机制与系统容灾策略 [snippet: 10.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1028] L3: 10.8.1 细粒度资源调度 [snippet: 10.8.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -   [1030] L1: 第11章 理论基础与核心算法架构 [snippet: 第11章 理论基础与核心算法架构…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1035] L2: 11.1 并发机制与系统容灾策略 [snippet: 11.1 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1051] L3: 11.1.1 细粒度资源调度 [snippet: 11.1.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1053] L2: 11.2 并发机制与系统容灾策略 [snippet: 11.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1062] L3: 11.2.1 细粒度资源调度 [snippet: 11.2.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1064] L2: 11.3 并发机制与系统容灾策略 [snippet: 11.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1079] L3: 11.3.1 细粒度资源调度 [snippet: 11.3.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1081] L2: 11.4 并发机制与系统容灾策略 [snippet: 11.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1092] L3: 11.4.1 细粒度资源调度 [snippet: 11.4.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1094] L2: 11.5 并发机制与系统容灾策略 [snippet: 11.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1100] L2: 11.6 并发机制与系统容灾策略 [snippet: 11.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1109] L2: 11.7 并发机制与系统容灾策略 [snippet: 11.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1121] L3: 11.7.1 细粒度资源调度 [snippet: 11.7.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1123] L2: 11.8 并发机制与系统容灾策略 [snippet: 11.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -   [1136] L1: 第12章 理论基础与核心算法架构 [snippet: 第12章 理论基础与核心算法架构…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1139] L2: 12.1 并发机制与系统容灾策略 [snippet: 12.1 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1154] L2: 12.2 并发机制与系统容灾策略 [snippet: 12.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1168] L3: 12.2.1 细粒度资源调度 [snippet: 12.2.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1170] L2: 12.3 并发机制与系统容灾策略 [snippet: 12.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1186] L2: 12.4 并发机制与系统容灾策略 [snippet: 12.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1201] L2: 12.5 并发机制与系统容灾策略 [snippet: 12.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1212] L3: 12.5.1 细粒度资源调度 [snippet: 12.5.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1214] L2: 12.6 并发机制与系统容灾策略 [snippet: 12.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1226] L2: 12.7 并发机制与系统容灾策略 [snippet: 12.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1232] L2: 12.8 并发机制与系统容灾策略 [snippet: 12.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -   [1237] L1: 第13章 理论基础与核心算法架构 [snippet: 第13章 理论基础与核心算法架构…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1240] L2: 13.1 并发机制与系统容灾策略 [snippet: 13.1 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1253] L2: 13.2 并发机制与系统容灾策略 [snippet: 13.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1266] L2: 13.3 并发机制与系统容灾策略 [snippet: 13.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -       [1278] L3: 13.3.1 细粒度资源调度 [snippet: 13.3.1 细粒度资源调度…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1280] L2: 13.4 并发机制与系统容灾策略 [snippet: 13.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,097 [INFO] modules.parser.router -     [1298] L2: 13.5 并发机制与系统容灾策略 [snippet: 13.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:19,098 [INFO] modules.parser.parser - [Map-Reduce] 窗口 5/8 完成: 38 个锚点
+2026-02-25 04:49:21,309 [INFO] modules.parser.router - [LLMRouter] Done — title='', authors='', chapters=36
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1253] L2: 13.2 并发机制与系统容灾策略 [snippet: 13.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1266] L2: 13.3 并发机制与系统容灾策略 [snippet: 13.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1278] L3: 13.3.1 细粒度资源调度 [snippet: 13.3.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1280] L2: 13.4 并发机制与系统容灾策略 [snippet: 13.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1298] L2: 13.5 并发机制与系统容灾策略 [snippet: 13.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1303] L3: 13.5.1 细粒度资源调度 [snippet: 13.5.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1305] L2: 13.6 并发机制与系统容灾策略 [snippet: 13.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1321] L2: 13.7 并发机制与系统容灾策略 [snippet: 13.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1337] L3: 13.7.1 细粒度资源调度 [snippet: 13.7.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1339] L2: 13.8 并发机制与系统容灾策略 [snippet: 13.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1348] L3: 13.8.1 细粒度资源调度 [snippet: 13.8.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -   [1350] L1: 第14章 理论基础与核心算法架构 [snippet: 第14章 理论基础与核心算法架构…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1356] L2: 14.1 并发机制与系统容灾策略 [snippet: 14.1 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1371] L2: 14.2 并发机制与系统容灾策略 [snippet: 14.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1380] L2: 14.3 并发机制与系统容灾策略 [snippet: 14.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1386] L2: 14.4 并发机制与系统容灾策略 [snippet: 14.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1399] L2: 14.5 并发机制与系统容灾策略 [snippet: 14.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1409] L3: 14.5.1 细粒度资源调度 [snippet: 14.5.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1411] L2: 14.6 并发机制与系统容灾策略 [snippet: 14.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1423] L3: 14.6.1 细粒度资源调度 [snippet: 14.6.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1425] L2: 14.7 并发机制与系统容灾策略 [snippet: 14.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1441] L3: 14.7.1 细粒度资源调度 [snippet: 14.7.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1443] L2: 14.8 并发机制与系统容灾策略 [snippet: 14.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -   [1453] L1: 第15章 理论基础与核心算法架构 [snippet: 第15章 理论基础与核心算法架构…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1457] L2: 15.1 并发机制与系统容灾策略 [snippet: 15.1 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1465] L2: 15.2 并发机制与系统容灾策略 [snippet: 15.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1477] L3: 15.2.1 细粒度资源调度 [snippet: 15.2.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1479] L2: 15.3 并发机制与系统容灾策略 [snippet: 15.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1491] L3: 15.3.1 细粒度资源调度 [snippet: 15.3.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1493] L2: 15.4 并发机制与系统容灾策略 [snippet: 15.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1498] L3: 15.4.1 细粒度资源调度 [snippet: 15.4.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1500] L2: 15.5 并发机制与系统容灾策略 [snippet: 15.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1515] L2: 15.6 并发机制与系统容灾策略 [snippet: 15.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -       [1527] L3: 15.6.1 细粒度资源调度 [snippet: 15.6.1 细粒度资源调度…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1529] L2: 15.7 并发机制与系统容灾策略 [snippet: 15.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.router -     [1543] L2: 15.8 并发机制与系统容灾策略 [snippet: 15.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:21,310 [INFO] modules.parser.parser - [Map-Reduce] 窗口 6/8 完成: 36 个锚点
+2026-02-25 04:49:25,133 [INFO] modules.parser.router - [LLMRouter] Done — title='', authors='', chapters=39
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1500] L2: 15.5 并发机制与系统容灾策略 [snippet: 15.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1515] L2: 15.6 并发机制与系统容灾策略 [snippet: 15.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1527] L3: 15.6.1 细粒度资源调度 [snippet: 15.6.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1529] L2: 15.7 并发机制与系统容灾策略 [snippet: 15.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1543] L2: 15.8 并发机制与系统容灾策略 [snippet: 15.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1554] L3: 15.8.1 细粒度资源调度 [snippet: 15.8.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -   [1556] L1: 第16章 理论基础与核心算法架构 [snippet: 第16章 理论基础与核心算法架构…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1561] L2: 16.1 并发机制与系统容灾策略 [snippet: 16.1 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1577] L3: 16.1.1 细粒度资源调度 [snippet: 16.1.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1579] L2: 16.2 并发机制与系统容灾策略 [snippet: 16.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1588] L3: 16.2.1 细粒度资源调度 [snippet: 16.2.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1590] L2: 16.3 并发机制与系统容灾策略 [snippet: 16.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1598] L2: 16.4 并发机制与系统容灾策略 [snippet: 16.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1613] L3: 16.4.1 细粒度资源调度 [snippet: 16.4.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1615] L2: 16.5 并发机制与系统容灾策略 [snippet: 16.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1626] L2: 16.6 并发机制与系统容灾策略 [snippet: 16.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1636] L2: 16.7 并发机制与系统容灾策略 [snippet: 16.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1652] L3: 16.7.1 细粒度资源调度 [snippet: 16.7.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1654] L2: 16.8 并发机制与系统容灾策略 [snippet: 16.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -   [1662] L1: 第17章 理论基础与核心算法架构 [snippet: 第17章 理论基础与核心算法架构…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1666] L2: 17.1 并发机制与系统容灾策略 [snippet: 17.1 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1676] L3: 17.1.1 细粒度资源调度 [snippet: 17.1.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1678] L2: 17.2 并发机制与系统容灾策略 [snippet: 17.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1689] L2: 17.3 并发机制与系统容灾策略 [snippet: 17.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1700] L2: 17.4 并发机制与系统容灾策略 [snippet: 17.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1714] L3: 17.4.1 细粒度资源调度 [snippet: 17.4.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1716] L2: 17.5 并发机制与系统容灾策略 [snippet: 17.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1725] L2: 17.6 并发机制与系统容灾策略 [snippet: 17.6 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1730] L2: 17.7 并发机制与系统容灾策略 [snippet: 17.7 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1744] L3: 17.7.1 细粒度资源调度 [snippet: 17.7.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1746] L2: 17.8 并发机制与系统容灾策略 [snippet: 17.8 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -   [1754] L1: 第18章 理论基础与核心算法架构 [snippet: 第18章 理论基础与核心算法架构…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1758] L2: 18.1 并发机制与系统容灾策略 [snippet: 18.1 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1768] L2: 18.2 并发机制与系统容灾策略 [snippet: 18.2 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1773] L3: 18.2.1 细粒度资源调度 [snippet: 18.2.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1775] L2: 18.3 并发机制与系统容灾策略 [snippet: 18.3 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1782] L2: 18.4 并发机制与系统容灾策略 [snippet: 18.4 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -       [1789] L3: 18.4.1 细粒度资源调度 [snippet: 18.4.1 细粒度资源调度…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.router -     [1791] L2: 18.5 并发机制与系统容灾策略 [snippet: 18.5 并发机制与系统容灾策略…]
+2026-02-25 04:49:25,133 [INFO] modules.parser.parser - [Map-Reduce] 窗口 7/8 完成: 39 个锚点
+2026-02-25 04:49:38,799 [INFO] modules.parser.router - [LLMRouter] Done — title='', authors='', chapters=40
+2026-02-25 04:49:38,799 [INFO] modules.parser.router -   [1754] L1: 第18章 理论基础与核心算法架构 [snippet: <Bold, Size:18> 第18章…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1758] L2: 18.1 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1768] L2: 18.2 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 18.2…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1773] L3: 18.2.1 细粒度资源调度 [snippet: <Heading 3, Bold> 18…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1775] L2: 18.3 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 18.3…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1782] L2: 18.4 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1789] L3: 18.4.1 细粒度资源调度 [snippet: <Heading 3, Bold> 18…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1791] L2: 18.5 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 18.5…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1805] L3: 18.5.1 细粒度资源调度 [snippet: <Heading 3, Bold> 18…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1807] L2: 18.6 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 18.6…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1814] L2: 18.7 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1823] L3: 18.7.1 细粒度资源调度 [snippet: <Heading 3, Bold> 18…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1825] L2: 18.8 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 18.8…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1831] L3: 18.8.1 细粒度资源调度 [snippet: <Heading 3, Bold> 18…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -   [1833] L1: 第19章 理论基础与核心算法架构 [snippet: <Bold, Size:18> 第19章…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1836] L2: 19.1 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 19.1…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1846] L3: 19.1.1 细粒度资源调度 [snippet: <Heading 3, Bold> 19…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1848] L2: 19.2 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 19.2…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1863] L2: 19.3 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 19.3…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1875] L2: 19.4 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1885] L3: 19.4.1 细粒度资源调度 [snippet: <Heading 3, Bold> 19…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1887] L2: 19.5 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1895] L3: 19.5.1 细粒度资源调度 [snippet: <Heading 3, Bold> 19…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1897] L2: 19.6 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1904] L2: 19.7 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 19.7…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1910] L2: 19.8 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1925] L3: 19.8.1 细粒度资源调度 [snippet: <Heading 3, Bold> 19…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -   [1927] L1: 第20章 理论基础与核心算法架构 [snippet: <Bold, Size:18> 第20章…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1933] L2: 20.1 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -       [1945] L3: 20.1.1 细粒度资源调度 [snippet: <Heading 3, Bold> 20…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1947] L2: 20.2 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 20.2…]
+2026-02-25 04:49:38,800 [INFO] modules.parser.router -     [1963] L2: 20.3 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 20.3…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.router -     [1979] L2: 20.4 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.router -     [1992] L2: 20.5 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.router -     [2002] L2: 20.6 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.router -       [2017] L3: 20.6.1 细粒度资源调度 [snippet: <Heading 3, Bold> 20…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.router -     [2019] L2: 20.7 并发机制与系统容灾策略 [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.router -       [2030] L3: 20.7.1 细粒度资源调度 [snippet: <Heading 3, Bold> 20…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.router -     [2032] L2: 20.8 并发机制与系统容灾策略 [snippet: <Bold, Size:14> 20.8…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.router -       [2040] L3: 20.8.1 细粒度资源调度 [snippet: <Heading 3, Bold> 20…]
+2026-02-25 04:49:38,801 [INFO] modules.parser.parser - [Map-Reduce] 窗口 8/8 完成: 40 个锚点
+2026-02-25 04:49:38,801 [INFO] modules.parser.parser - [Map-Reduce] Map 阶段完成: 合计 312 个原始锚点
+2026-02-25 04:49:38,852 [INFO] modules.parser.parser - [Map-Reduce] Reduce 去重完成: 312 → 266 个锚点
+2026-02-25 04:49:38,852 [INFO] modules.parser.parser - [游标卡尺] LLM 识别完成: 标题='深入探讨人工智能时代的文件解析与渲染架构', 章节数=266
+2026-02-25 04:49:38,852 [INFO] modules.parser.parser - [游标卡尺] 阶段 4/4：游标闭合与组装...
+2026-02-25 04:49:38,860 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=550, snippet='<Heading 2, Bold, Size:13> 6.3...', 保持原值
+2026-02-25 04:49:38,905 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=594, snippet='<Heading 2, Bold, Size:13> 6.7...', 保持原值
+2026-02-25 04:49:38,917 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=611, snippet='<Heading 1, Bold, Size:14> 第7章...', 保持原值
+2026-02-25 04:49:38,941 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=632, snippet='<Heading 2, Bold, Size:13> 7.3...', 保持原值
+2026-02-25 04:49:38,954 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=652, snippet='<Heading 2, Bold, Size:13> 7.4...', 保持原值
+2026-02-25 04:49:38,967 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=669, snippet='<Heading 2, Bold, Size:13> 7.5...', 保持原值
+2026-02-25 04:49:38,980 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=683, snippet='<Heading 2, Bold, Size:13> 7.6...', 保持原值
+2026-02-25 04:49:38,987 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=692, snippet='<Heading 2, Bold, Size:13> 7.7...', 保持原值
+2026-02-25 04:49:39,006 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=723, snippet='<Heading 1, Bold, Size:14> 第8章...', 保持原值
+2026-02-25 04:49:39,013 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=726, snippet='<Heading 2, Bold, Size:13> 8.1...', 保持原值
+2026-02-25 04:49:39,020 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=735, snippet='<Heading 2, Bold, Size:13> 8.2...', 保持原值
+2026-02-25 04:49:39,039 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=761, snippet='<Heading 2, Bold, Size:13> 8.4...', 保持原值
+2026-02-25 04:49:39,052 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=777, snippet='<Heading 2, Bold, Size:13> 8.5...', 保持原值
+2026-02-25 04:49:39,064 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=795, snippet='<Heading 2, Bold, Size:13> 8.6...', 保持原值
+2026-02-25 04:49:39,084 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=1814, snippet='<Heading 2, Bold, Size:13> 18....', 保持原值
+2026-02-25 04:49:39,135 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=1875, snippet='<Heading 2, Bold, Size:13> 19....', 保持原值
+2026-02-25 04:49:39,150 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=1887, snippet='<Heading 2, Bold, Size:13> 19....', 保持原值
+2026-02-25 04:49:39,162 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=1897, snippet='<Heading 2, Bold, Size:13> 19....', 保持原值
+2026-02-25 04:49:39,179 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=1910, snippet='<Heading 2, Bold, Size:13> 19....', 保持原值
+2026-02-25 04:49:39,205 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=1933, snippet='<Heading 2, Bold, Size:13> 20....', 保持原值
+2026-02-25 04:49:39,231 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=1979, snippet='<Heading 2, Bold, Size:13> 20....', 保持原值
+2026-02-25 04:49:39,238 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=1992, snippet='<Heading 2, Bold, Size:13> 20....', 保持原值
+2026-02-25 04:49:39,247 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=2002, snippet='<Heading 2, Bold, Size:13> 20....', 保持原值
+2026-02-25 04:49:39,259 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=2019, snippet='<Heading 2, Bold, Size:13> 20....', 保持原值
+2026-02-25 04:49:39,275 [INFO] modules.parser.resolver - [模糊锚定] 所有锚点验证通过，无需纠偏
+2026-02-25 04:49:39,276 [INFO] modules.parser.resolver - [层级修复] 层级结构合规，无需修复
+2026-02-25 04:49:39,281 [INFO] modules.parser.resolver - [区间解析] 完成：266 个章节 → 22 个顶级节点
+2026-02-25 04:49:39,281 [INFO] modules.parser.parser - [游标卡尺] ===== 解析完成 =====
+  文档标题: 深入探讨人工智能时代的文件解析与渲染架构
+  文档作者: 
+  顶级章节: 22 个
+  总章节数: 266 个
+  内容总量: 1334738 字符
+  最大深度: 3 层
+2026-02-25 04:49:39,287 [INFO] infrastructure.providers.docx_provider - 开始解析 Docx 字节流
+2026-02-25 04:49:39,454 [INFO] infrastructure.providers.docx_provider - 解析完成，共提取 95 个 Block
+2026-02-25 04:49:39,457 [INFO] modules.parser.parser - [游标卡尺] ===== 开始解析 (共 95 个 Block) =====
+2026-02-25 04:49:39,457 [INFO] modules.parser.parser - [游标卡尺] 阶段 2/4：虚拟骨架压缩...
+2026-02-25 04:49:39,457 [INFO] modules.parser.compressor - [虚拟空间压缩] 原文: 9780 字符 → 骨架: 4903 字符 (压缩率: 49.9%, Blocks: 95)
+2026-02-25 04:49:39,457 [INFO] modules.parser.parser - [游标卡尺] 骨架生成完成 (4903 字符, 1 个分片)
+2026-02-25 04:49:39,457 [INFO] modules.parser.parser - [游标卡尺] 阶段 3/4：AI 游标漫游...
+2026-02-25 04:49:39,457 [INFO] modules.parser.parser - [Map-Reduce] 单分片模式，直接路由
+2026-02-25 04:49:39,457 [INFO] modules.parser.router - [LLMRouter] Sending skeleton (4903 chars) to LLM …
+2026-02-25 04:49:39,459 [INFO] infrastructure.ai.llm_client - [LLM Client] 调用模型: deepseek-chat
+2026-02-25 04:49:39,577 [INFO] httpx - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 04:49:53,917 [INFO] modules.parser.router - [LLMRouter] Done — title='Demonstration of DOCX support in calibre', authors='', chapters=16
+2026-02-25 04:49:53,917 [INFO] modules.parser.router -   [6] L1: Text Formatting [snippet: <Heading 1, Bold, Si…]
+2026-02-25 04:49:53,917 [INFO] modules.parser.router -     [7] L2: Inline formatting [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,917 [INFO] modules.parser.router -     [11] L2: Fun with fonts [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [13] L2: Paragraph level formatting [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -   [16] L1: Tables [snippet: <Heading 1, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -   [28] L1: Structural Elements [snippet: <Heading 1, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [30] L2: Footnotes & Endnotes [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [32] L2: Dropcaps [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [35] L2: Links [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [37] L2: Table of Contents [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -   [58] L1: Images [snippet: <Heading 1, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -   [67] L1: Lists [snippet: <Heading 1, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [69] L2: Bulleted List [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [72] L2: Numbered List [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [75] L2: Multi-level Lists [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.router -     [88] L2: Continued Lists [snippet: <Heading 2, Bold, Si…]
+2026-02-25 04:49:53,918 [INFO] modules.parser.parser - [游标卡尺] LLM 识别完成: 标题='Demonstration of DOCX support in calibre', 章节数=16
+2026-02-25 04:49:53,918 [INFO] modules.parser.parser - [游标卡尺] 阶段 4/4：游标闭合与组装...
+2026-02-25 04:49:53,918 [INFO] modules.parser.parser - [游标卡尺] 前置冗余段: 6 个 Block
+2026-02-25 04:49:53,924 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=6, snippet='<Heading 1, Bold, Size:14> Tex...', 保持原值
+2026-02-25 04:49:53,933 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=7, snippet='<Heading 2, Bold, Size:13> Inl...', 保持原值
+2026-02-25 04:49:53,940 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=11, snippet='<Heading 2, Bold, Size:13> Fun...', 保持原值
+2026-02-25 04:49:53,955 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=16, snippet='<Heading 1, Bold, Size:14> Tab...', 保持原值
+2026-02-25 04:49:53,977 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=32, snippet='<Heading 2, Bold, Size:13> Dro...', 保持原值
+2026-02-25 04:49:53,985 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=35, snippet='<Heading 2, Bold, Size:13> Lin...', 保持原值
+2026-02-25 04:49:53,998 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=37, snippet='<Heading 2, Bold, Size:13> Tab...', 保持原值
+2026-02-25 04:49:54,003 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=58, snippet='<Heading 1, Bold, Size:14> Ima...', 保持原值
+2026-02-25 04:49:54,008 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=67, snippet='<Heading 1, Bold, Size:14> Lis...', 保持原值
+2026-02-25 04:49:54,013 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=69, snippet='<Heading 2, Bold, Size:13> Bul...', 保持原值
+2026-02-25 04:49:54,017 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=72, snippet='<Heading 2, Bold, Size:13> Num...', 保持原值
+2026-02-25 04:49:54,024 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=75, snippet='<Heading 2, Bold, Size:13> Mul...', 保持原值
+2026-02-25 04:49:54,028 [WARNING] modules.parser.resolver - [模糊锚定] 无法纠偏 block_id=88, snippet='<Heading 2, Bold, Size:13> Con...', 保持原值
+2026-02-25 04:49:54,028 [INFO] modules.parser.resolver - [模糊锚定] 所有锚点验证通过，无需纠偏
+2026-02-25 04:49:54,028 [INFO] modules.parser.resolver - [层级修复] 层级结构合规，无需修复
+2026-02-25 04:49:54,029 [INFO] modules.parser.resolver - [区间解析] 完成：16 个章节 → 5 个顶级节点
+2026-02-25 04:49:54,029 [INFO] modules.parser.parser - [游标卡尺] ===== 解析完成 =====
+  文档标题: Demonstration of DOCX support in calibre
+  文档作者: 
+  顶级章节: 5 个
+  总章节数: 16 个
+  内容总量: 25572 字符
+  最大深度: 2 层
+2026-02-25 05:02:53,554 [INFO] infrastructure.providers.docx_provider - 开始解析 Docx 字节流
