@@ -870,7 +870,21 @@ class DocxProvider:
             if blip is None:
                 return None
             
-            embed_id = blip.get(f'{ns_r}embed')
+            # Word 2016+ 在插入 SVG 时，会将真正的 SVG 存放在 a:extLst 中，
+            # 而把自动生成的 PNG 后备图存放在 blip 的默认 r:embed 中。
+            # 为了能够真正显示 SVG，我们必须优先尝试获取 SVG 的 embed_id：
+            embed_id = None
+            for ext in blip.findall(f'.//{ns_a}ext'):
+                asvg_blip = ext.find('.//{http://schemas.microsoft.com/office/drawing/2016/SVG/main}svgBlip')
+                if asvg_blip is not None:
+                    embed_id = asvg_blip.get(f'{ns_r}embed')
+                    if embed_id:
+                        break
+            
+            # 如果没有找到 SVG，或者非 SVG 格式，则回退读取默认图片资源
+            if not embed_id:
+                embed_id = blip.get(f'{ns_r}embed')
+                
             if not embed_id:
                 return None
             

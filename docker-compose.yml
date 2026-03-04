@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  cursor-caliper:
+  constellation:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: cursor-caliper
+    container_name: constellation
     restart: unless-stopped
     ports:
       - "28001:28001"
