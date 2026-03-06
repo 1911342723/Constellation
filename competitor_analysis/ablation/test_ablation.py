@@ -105,13 +105,10 @@ class AblationTester:
         """
         print("\n--- 实验 3: 剔除反身状态栈比对器 (w/o FSM Checkback) ---")
 
-        # 动态创建隔离魔改类，覆盖原有保护方法使其返回跳过
+        # 动态创建隔离魔改类，覆盖层级校验使其失效
         class UnprotectedResolver(IntervalResolver):
-            def _enforce_level_hierarchy(self, node_stack, current_node, max_level=6):
-                # 破坏原有校验，让它允许任意乱序插入栈内
-                while len(node_stack) > 1 and node_stack[-1].level >= current_node.level:
-                    node_stack.pop()
-                pass # 忽略一切检查（包含字号与逆行）
+            def _validate_hierarchy(self, chapters):
+                return chapters  # 跳过层级校验，允许任意乱序
                 
         mock_broken_anchors = [
             ChapterNode(start_block_id=0, level=3, title="I am Level 3", snippet="Root"),

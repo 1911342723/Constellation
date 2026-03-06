@@ -19,15 +19,17 @@ Compression strategies:
 """
 from __future__ import annotations
 
+import logging
+import re
 from typing import List, Optional, Tuple
 
 from infrastructure.models import Block
 from modules.parser.config import CompressorConfig
 from app.core.exceptions import CompressorError
 
-import logging
-
 logger = logging.getLogger(__name__)
+
+_GRAMMAR_PREFIX_RE = re.compile(r'^(\[[\d,\s-]+\]|\([\d,\s-]+\))\s*')
 
 
 class SkeletonCompressor:
@@ -109,11 +111,13 @@ class SkeletonCompressor:
     def _compress_with_sliding_window(self, blocks: List[Block]) -> List[str]:
         """Sliding-window compression for oversized documents.
 
-        Splits the block sequence into overlapping windows, compresses
-        each independently, and returns a list of skeleton strings —
-        one per window — so that each can be routed to the LLM in a
-        separate request (Map-Reduce pattern).
+        Splits the block sequence into overlapping windows and
+        compresses each independently using a thread pool.  Each
+        window's compression is pure CPU work with no shared mutable
+        state, making it safe to parallelise.
         """
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
         total = len(blocks)
         step = self.window_size - self.window_overlap
         windows: List[Tuple[int, int]] = []
@@ -126,57 +130,81 @@ class SkeletonCompressor:
                 break
             start += step
         
+        num_windows = len(windows)
         logger.info(
-            f"[滑动窗口] 超长文档 ({total} Blocks)，"
-            f"分为 {len(windows)} 个窗口 (size={self.window_size}, overlap={self.window_overlap})"
+            "[滑动窗口] 超长文档 (%d Blocks)，分为 %d 个窗口 (size=%d, overlap=%d)",
+            total, num_windows, self.window_size, self.window_overlap,
         )
         
-        chunks: List[str] = []
         original_chars = sum(len(b.text or "") for b in blocks)
-        total_skeleton_chars = 0
-        
-        for i, (ws, we) in enumerate(windows):
-            window_blocks = blocks[ws:we]
-            items = self._classify_and_compress(window_blocks)
-            if self.enable_rle:
-                items = self._run_length_fold_v2(items)
-            
-            # 每个窗口生成独立的骨架文本
-            lines = []
-            lines.append("=" * 60)
-            lines.append(f"Cursor-Caliper 文档虚拟骨架 — 窗口 {i+1}/{len(windows)}")
-            lines.append(f"原始 Block 总数: {total}")
-            lines.append(f"本窗口 Block 范围: {ws}~{we-1} ({we - ws} Blocks)")
-            lines.append("标记说明: <Bold>=加粗, <Size:N>=字号, <Center>=居中, <Heading N>=标题样式")
-            lines.append("注意: 折叠区域内每行 [id] 开头的是段落首句摘要，请仔细检查是否有遗漏的标题")
-            lines.append("=" * 60)
-            lines.append("")
-            
-            for item in items:
-                lines.append(item["text"])
-            
-            lines.append("")
-            lines.append("=" * 60)
-            lines.append(f"窗口 {i+1} 骨架结束 (Block {ws}~{we-1})")
-            lines.append("=" * 60)
-            
-            chunk_text = "\n".join(lines)
-            chunks.append(chunk_text)
-            total_skeleton_chars += len(chunk_text)
-            
-            logger.info(
-                f"[滑动窗口] 窗口 {i+1}/{len(windows)}: "
-                f"Block {ws}~{we-1}, 骨架 {len(chunk_text)} 字符"
-            )
-        
+
+        max_workers = min(num_windows, 4)
+        ordered_chunks: List[Optional[str]] = [None] * num_windows
+
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {
+                executor.submit(
+                    self._compress_window, blocks[ws:we], i, num_windows, total, ws, we,
+                ): i
+                for i, (ws, we) in enumerate(windows)
+            }
+            for future in as_completed(futures):
+                idx = futures[future]
+                ordered_chunks[idx] = future.result()
+
+        chunks = [c for c in ordered_chunks if c is not None]
+
+        total_skeleton_chars = sum(len(c) for c in chunks)
         ratio = (1 - total_skeleton_chars / max(original_chars, 1)) * 100
         logger.info(
-            f"[滑动窗口压缩] 原文: {original_chars} 字符 → "
-            f"骨架总计: {total_skeleton_chars} 字符 ({len(chunks)} 个分片, "
-            f"压缩率: {ratio:.1f}%)"
+            "[滑动窗口压缩] 原文: %d 字符 → 骨架总计: %d 字符 (%d 个分片, 压缩率: %.1f%%)",
+            original_chars, total_skeleton_chars, len(chunks), ratio,
         )
         
         return chunks
+
+    def _compress_window(
+        self,
+        window_blocks: List[Block],
+        window_index: int,
+        total_windows: int,
+        total_blocks: int,
+        ws: int,
+        we: int,
+    ) -> str:
+        """Compress a single sliding window into a skeleton string.
+
+        This method is stateless and safe to call from a thread pool.
+        """
+        items = self._classify_and_compress(window_blocks)
+        if self.enable_rle:
+            items = self._run_length_fold_v2(items)
+
+        lines = [
+            "=" * 60,
+            f"Cursor-Caliper 文档虚拟骨架 — 窗口 {window_index + 1}/{total_windows}",
+            f"原始 Block 总数: {total_blocks}",
+            f"本窗口 Block 范围: {ws}~{we - 1} ({we - ws} Blocks)",
+            "标记说明: <Bold>=加粗, <Size:N>=字号, <Center>=居中, <Heading N>=标题样式",
+            "注意: 折叠区域内每行 [id] 开头的是段落首句摘要，请仔细检查是否有遗漏的标题",
+            "=" * 60,
+            "",
+        ]
+        for item in items:
+            lines.append(item["text"])
+        lines.extend([
+            "",
+            "=" * 60,
+            f"窗口 {window_index + 1} 骨架结束 (Block {ws}~{we - 1})",
+            "=" * 60,
+        ])
+
+        chunk_text = "\n".join(lines)
+        logger.info(
+            "[滑动窗口] 窗口 %d/%d: Block %d~%d, 骨架 %d 字符",
+            window_index + 1, total_windows, ws, we - 1, len(chunk_text),
+        )
+        return chunk_text
     
     def _classify_and_compress(self, blocks: List[Block]) -> List[dict]:
         """Phase 1: classify each block as I-frame or P-frame and generate its skeleton line."""
@@ -188,7 +216,7 @@ class SkeletonCompressor:
                 tail_chars=self.tail_chars
             )
             
-            if block.type in ("image", "table", "formula"):
+            if block.type in ("image", "table", "formula", "code"):
                 items.append({
                     "type": "iframe",
                     "block": block,
@@ -253,22 +281,19 @@ class SkeletonCompressor:
                     f"<Text: {count} Paras, {total_chars} chars>"
                 ]
                 
-                # v2 核心改进：每个被折叠的 P 帧保留极简摘要行
-                # 让 LLM 始终能看到每个段落的开头
-                import re
                 for item in pframe_buffer:
                     b = item["block"]
                     full_text = (b.text or "").strip()
                     
-                    # 动态截取：如果开头包含引用标记（如 [1] 或 (1)），则向后延伸截取长度，保证有意义的词汇
-                    match = re.search(r'^(\[[\d,\s-]+\]|\([\d,\s-]+\))\s*', full_text)
+                    match = _GRAMMAR_PREFIX_RE.search(full_text)
                     prefix_len = match.end() if match else 0
                     
                     snippet_len = max(self.rle_dynamic_prefix_min_length, prefix_len + self.rle_dynamic_prefix_extra)
                     snippet = full_text[:snippet_len]
                     
-                    # 尝试保留完整的最后一个词
-                    if len(full_text) > snippet_len:
+                    # Try to preserve the last complete word (space-delimited).
+                    # For CJK text (no spaces), skip this heuristic entirely.
+                    if len(full_text) > snippet_len and " " in full_text[:snippet_len]:
                         next_space = full_text.find(" ", snippet_len)
                         if next_space != -1 and next_space - snippet_len < 10:
                             snippet = full_text[:next_space]

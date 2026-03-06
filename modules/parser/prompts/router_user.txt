@@ -2,7 +2,14 @@ Analyze the following document virtual skeleton and identify all section heading
 
 {skeleton_text}
 
-Return results strictly in the specified JSON format. Requirements:
-1. Only mark boundaries — do NOT output any body text.
-2. Each chapter MUST include a `snippet` field (first 30 characters copied verbatim from the skeleton).
-3. Carefully inspect folded region summaries for hidden headings.
+Follow these steps:
+1. Scan every line (including indented lines inside folded regions) for heading candidates based on the classification rules.
+2. Assign each candidate a level (1-6) using numbering patterns, formatting tags, and semantic context.
+3. Verify level continuity — levels must not jump (e.g. 1→3 is invalid; 1→2→3 is correct).
+4. Return results strictly in the specified JSON format.
+
+Requirements:
+- Only mark boundaries — do NOT output any body text.
+- Each chapter MUST include a `snippet` field (first 40 characters copied verbatim from the skeleton).
+- Carefully inspect folded region summaries for hidden headings — do NOT skip them.
+- Do NOT mark list items, captions, or inline bold text as headings.

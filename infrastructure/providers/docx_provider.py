@@ -121,14 +121,21 @@ class DocxProvider:
         self.image_counter = 0
         self.image_store: Dict[str, bytes] = {}
         self._doc_rels = None
+
+    def _reset_state(self) -> None:
+        """Reset per-extraction mutable state to avoid cross-document leaks."""
+        self.image_counter = 0
+        self.image_store = {}
+        self._doc_rels = None
     
     def extract(self, file_path: str) -> List[Block]:
         """从文件路径提取 .docx 内容为 Block 列表"""
-        logger.info(f"开始解析 Docx 文件: {file_path}")
+        self._reset_state()
+        logger.info("开始解析 Docx 文件: %s", file_path)
         try:
             doc = Document(file_path)
             blocks = self._extract_blocks(doc)
-            logger.info(f"解析完成，共提取 {len(blocks)} 个 Block")
+            logger.info("解析完成，共提取 %d 个 Block", len(blocks))
             self._log_debug_info(blocks)
             return blocks
         except Exception as e:
@@ -137,6 +144,7 @@ class DocxProvider:
     
     def extract_from_bytes(self, file_bytes: bytes) -> List[Block]:
         """从字节流提取 .docx 内容为 Block 列表"""
+        self._reset_state()
         logger.info("开始解析 Docx 字节流")
         try:
             doc = Document(io.BytesIO(file_bytes))
@@ -256,8 +264,7 @@ class DocxProvider:
         merged = []
         for block in blocks:
             if block.type == "code" and merged and merged[-1].type == "code":
-                # 合并连续代码块
-                merged[-1].text += "\n" + block.text
+                merged[-1].text = (merged[-1].text or "") + "\n" + (block.text or "")
             else:
                 merged.append(block)
                 
@@ -766,7 +773,7 @@ class DocxProvider:
                         grid_span = tc.get_or_add_tcPr().find(f'{{{NS["w"]}}}gridSpan')
                         if grid_span is not None:
                             colspan = int(grid_span.get(f'{{{NS["w"]}}}val', '1'))
-                    except:
+                    except Exception:
                         pass
                         
                     vmerge_val = 'none'
@@ -775,7 +782,7 @@ class DocxProvider:
                         if vmerge is not None:
                             val = vmerge.get(f'{{{NS["w"]}}}val')
                             vmerge_val = val if val else 'continue'
-                    except:
+                    except Exception:
                         pass
                     
                     if tc is prev_tc:

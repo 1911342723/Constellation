@@ -14,6 +14,7 @@ tree by performing three sequential operations:
 """
 from __future__ import annotations
 
+import copy
 from typing import List, Optional, Tuple
 
 from infrastructure.models import Block
@@ -22,59 +23,58 @@ from modules.parser.config import ResolverConfig
 from app.core.exceptions import AssemblerError
 
 import logging
-import re
 
 logger = logging.getLogger(__name__)
 
 
-def _levenshtein_ratio(s1: str, s2: str) -> float:
-    """Compute Levenshtein similarity ratio (0.0–1.0, 1.0 = identical).
+# ── Levenshtein implementation resolution (once at module load) ──
 
-    Uses the C extension ``python-Levenshtein`` when available;
-    falls back to a pure-Python two-row DP implementation otherwise.
+def _pure_python_levenshtein(s1: str, s2: str) -> float:
+    """Pure-Python two-row DP Levenshtein similarity ratio."""
+    len1, len2 = len(s1), len(s2)
+    if len1 == 0 or len2 == 0:
+        return 0.0
+    prev = list(range(len2 + 1))
+    curr = [0] * (len2 + 1)
+    for i in range(1, len1 + 1):
+        curr[0] = i
+        for j in range(1, len2 + 1):
+            cost = 0 if s1[i - 1] == s2[j - 1] else 1
+            curr[j] = min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost)
+        prev, curr = curr, prev
+    distance = prev[len2]
+    return 1.0 - (distance / max(len1, len2))
+
+
+def _resolve_levenshtein_impl():
+    """Resolve the fastest available Levenshtein backend once."""
+    try:
+        from rapidfuzz.distance import Levenshtein as _RL
+        return _RL.normalized_similarity
+    except ImportError:
+        pass
+    try:
+        from Levenshtein import ratio
+        return ratio
+    except ImportError:
+        pass
+    return _pure_python_levenshtein
+
+
+_lev_impl = _resolve_levenshtein_impl()
+
+
+def _levenshtein_ratio(s1: str, s2: str) -> float:
+    """Compute Levenshtein similarity ratio (0.0-1.0, 1.0 = identical).
+
+    The underlying C-extension backend is resolved once at module load
+    to avoid repeated try/except import overhead on the hot path.
     """
     if not s1 and not s2:
         return 1.0
     if not s1 or not s2:
         return 0.0
-    
-    try:
-        from rapidfuzz.distance import Levenshtein as RapidFuzzLevenshtein
-        return RapidFuzzLevenshtein.normalized_similarity(s1, s2)
-    except ImportError:
-        pass
-    
-    try:
-        from Levenshtein import ratio
-        return ratio(s1, s2)
-    except ImportError:
-        pass
-    
-    # 纯 Python 降级实现
-    len1, len2 = len(s1), len(s2)
-    if len1 == 0:
-        return 0.0
-    if len2 == 0:
-        return 0.0
-    
-    # 优化：只保留两行
-    prev = list(range(len2 + 1))
-    curr = [0] * (len2 + 1)
-    
-    for i in range(1, len1 + 1):
-        curr[0] = i
-        for j in range(1, len2 + 1):
-            cost = 0 if s1[i - 1] == s2[j - 1] else 1
-            curr[j] = min(
-                prev[j] + 1,       # 删除
-                curr[j - 1] + 1,   # 插入
-                prev[j - 1] + cost  # 替换
-            )
-        prev, curr = curr, prev
-    
-    distance = prev[len2]
-    max_len = max(len1, len2)
-    return 1.0 - (distance / max_len)
+    return _lev_impl(s1, s2)
 
 
 class IntervalResolver:
@@ -95,12 +95,17 @@ class IntervalResolver:
         self.anchor_match_min_length = cfg.anchor_match_min_length
         self.anchor_match_levenshtein_threshold = cfg.anchor_match_levenshtein_threshold
         self.level_jump_font_size_tolerance = cfg.level_jump_font_size_tolerance
+        self.orphan_bold_max_text_len = cfg.orphan_bold_max_text_len
+        self._level_font: dict[int, float] = {}
     
     def resolve(self, chapters: List[ChapterNode]) -> List[DocumentNode]:
         """Resolve *chapters* into a tree of :class:`DocumentNode`.
 
         Applies fuzzy correction, hierarchy repair, forced-closure
         slicing, and stack-based tree construction in sequence.
+
+        The input list is deep-copied to avoid mutating the caller's
+        data (important for ablation experiments that reuse chapters).
 
         Raises:
             AssemblerError: If *chapters* is empty or resolution fails.
@@ -109,7 +114,7 @@ class IntervalResolver:
             raise AssemblerError("章节列表为空，无法解析")
         
         try:
-            # 按 block_id 排序
+            chapters = copy.deepcopy(chapters)
             chapters = sorted(chapters, key=lambda x: x.start_block_id)
             
             # v2: 模糊锚定纠偏
@@ -133,7 +138,7 @@ class IntervalResolver:
             # 构建树状结构
             tree_nodes = self._build_tree(flat_nodes)
             
-            logger.info(f"[区间解析] 完成：{len(flat_nodes)} 个章节 → {len(tree_nodes)} 个顶级节点")
+            logger.info("[区间解析] 完成：%d 个章节 → %d 个顶级节点", len(flat_nodes), len(tree_nodes))
             
             return tree_nodes
             
@@ -187,7 +192,7 @@ class IntervalResolver:
             corrected.append(ch)
         
         if correction_count > 0:
-            logger.info(f"[模糊锚定] 共纠偏 {correction_count} 个锚点")
+            logger.info("[模糊锚定] 共纠偏 %d 个锚点", correction_count)
         else:
             logger.info("[模糊锚定] 所有锚点验证通过，无需纠偏")
         
@@ -296,14 +301,16 @@ class IntervalResolver:
         first = chapters[0]
         if first.level != 1:
             logger.warning(
-                f"[层级修复] 首章节 '{first.title}' level={first.level} → 1"
+                "[层级修复] 首章节 '%s' level=%d → 1", first.title, first.level,
             )
             first.level = 1
             fix_count += 1
         fixed.append(first)
         
         # level → font_size mapping (for physical-feature cross-check)
+        # Stored as instance attr so _infer_orphan_level can reuse it.
         level_font: dict[int, float] = {}
+        self._level_font = level_font
         blk = self.block_map.get(first.start_block_id)
         if blk and blk.font_size:
             level_font[first.level] = blk.font_size
@@ -330,9 +337,9 @@ class IntervalResolver:
                 
                 ch.level = resolved_level
                 logger.warning(
-                    f"[层级修复] '{ch.title}' level={old_level} → {ch.level} "
-                    f"(跳跃修复，前一层级为 {level_stack[-1]}"
-                    f"{', 字号辅助' if resolved_level != max_allowed else ''})"
+                    "[层级修复] '%s' level=%d → %d (跳跃修复，前一层级为 %d%s)",
+                    ch.title, old_level, ch.level, level_stack[-1],
+                    ", 字号辅助" if resolved_level != max_allowed else "",
                 )
                 fix_count += 1
             
@@ -353,7 +360,7 @@ class IntervalResolver:
             fixed.append(ch)
         
         if fix_count > 0:
-            logger.info(f"[层级修复] 共修复 {fix_count} 个层级跳跃")
+            logger.info("[层级修复] 共修复 %d 个层级跳跃", fix_count)
         else:
             logger.info("[层级修复] 层级结构合规，无需修复")
         
@@ -408,55 +415,118 @@ class IntervalResolver:
                 "end_id": end_id,
             })
             
-        # Inverse Audit: 探测被闭合吞并的异常段落
-        self._inverse_audit_intervals(intervals)
+        # Inverse Audit: detect and auto-repair swallowed headings
+        intervals = self._inverse_audit_and_repair(intervals)
         
         return intervals
         
-    def _inverse_audit_intervals(self, intervals: List[dict]):
-        """反向特征审计: 检查每一个强制闭合区间的内部片段。
-        如果在区间内发现某个普通文本的字号异常大于(或等于且加粗)当前章节的标题，
-        极大概念是 LLM 漏标（Attention Drop）导致标题被作为正文吞并，此处将输出强警告。
+    def _infer_orphan_level(self, block: Block, parent_level: int) -> int:
+        """Infer the correct heading level for a swallowed orphan block.
+
+        Uses the ``_level_font`` mapping built during hierarchy validation
+        to find the best matching level by font size.  Falls back to
+        ``parent_level + 1`` (child) when no match is found, avoiding
+        the old behaviour of assigning ``parent_level`` (sibling) which
+        corrupted the tree.
         """
-        audit_count = 0
+        level_font = getattr(self, "_level_font", {})
+        if block.font_size and level_font:
+            best_level = None
+            best_diff = float("inf")
+            for lv, fs in level_font.items():
+                diff = abs(block.font_size - fs)
+                if diff <= self.level_jump_font_size_tolerance and diff < best_diff:
+                    best_diff = diff
+                    best_level = lv
+            if best_level is not None:
+                return best_level
+        return min(parent_level + 1, 6)
+
+    def _inverse_audit_and_repair(self, intervals: List[dict]) -> List[dict]:
+        """Inverse audit with automatic orphan-node promotion.
+
+        Scans each forced-closure interval for child blocks whose
+        physical features (font size, bold) indicate they are
+        swallowed headings the LLM missed.  Instead of just warning,
+        the offending block is promoted to an independent chapter node,
+        splitting the parent interval in two.
+
+        Returns a new interval list with orphan nodes inserted and
+        boundaries recomputed.
+        """
+        orphan_chapters: List[ChapterNode] = []
+
         for interval in intervals:
             chapter = interval["chapter"]
             start_id = interval["start_id"]
             end_id = interval["end_id"]
-            
-            # 获取本章节锚点本身的字号
+
             anchor_block = self.block_map.get(start_id)
             if not anchor_block or not anchor_block.font_size:
                 continue
-                
+
             anchor_size = anchor_block.font_size
-            
-            # 扫描被闭合的下属内容 [start_id + 1, end_id]
+
             for bid in range(start_id + 1, end_id + 1):
                 child_block = self.block_map.get(bid)
                 if not child_block or child_block.type != "text" or not child_block.text:
                     continue
-                    
-                # 预警条件：该下属文本的字号 > 锚点字号，或者是完全相等的字号但具备更强烈的视觉强调（全粗体，且文本短小像个标题）
+
                 child_size = child_block.font_size or 0
                 is_larger = child_size > anchor_size + 0.5
                 is_same_but_bold = (
-                    abs(child_size - anchor_size) <= 0.5 
-                    and child_block.is_bold 
+                    abs(child_size - anchor_size) <= 0.5
+                    and child_block.is_bold
                     and not anchor_block.is_bold
-                    and len(child_block.text) < 40  # 类似标题
+                    and len(child_block.text) < self.orphan_bold_max_text_len
                 )
-                
+
                 if (is_larger or is_same_but_bold) and child_block.is_potential_title():
                     logger.warning(
-                        f"[反向特征审计] 吞词孤岛预警！章节 '{chapter.title[:20]}' "
-                        f"(Size: {anchor_size}) 吞并了下方可能漏标的隐藏标题: "
-                        f"ID={bid}, '{child_block.text[:20]}...' (Size: {child_size})"
+                        "[反向审计修复] 章节 '%s' (Size: %.1f) 吞并了漏标标题: "
+                        "ID=%d, '%s' (Size: %.1f) → 自动提升为独立章节",
+                        chapter.title[:20], anchor_size,
+                        bid, child_block.text[:30], child_size,
                     )
-                    audit_count += 1
-                    
-        if audit_count > 0:
-            logger.warning(f"[反向特征审计] 发现 {audit_count} 处潜在的 LLM 漏标吞词现象。建议重点核对。")
+                    orphan_level = self._infer_orphan_level(
+                        child_block, chapter.level,
+                    )
+                    orphan_chapters.append(ChapterNode(
+                        start_block_id=bid,
+                        title=child_block.text.strip(),
+                        level=orphan_level,
+                        snippet=child_block.text.strip()[:40],
+                    ))
+
+        if not orphan_chapters:
+            logger.info("[反向审计修复] 未发现漏标吞词，无需修复")
+            return intervals
+
+        logger.info("[反向审计修复] 自动提升 %d 个孤岛节点为独立章节", len(orphan_chapters))
+
+        # Merge orphan chapters with existing ones and recompute intervals
+        existing_chapters = [iv["chapter"] for iv in intervals]
+        all_chapters = existing_chapters + orphan_chapters
+        all_chapters.sort(key=lambda ch: ch.start_block_id)
+
+        # Deduplicate (orphan may coincide with existing)
+        seen_ids = set()
+        deduped = []
+        for ch in all_chapters:
+            if ch.start_block_id not in seen_ids:
+                seen_ids.add(ch.start_block_id)
+                deduped.append(ch)
+
+        # Rebuild intervals from the expanded chapter list
+        new_intervals = []
+        for i, chapter in enumerate(deduped):
+            s_id = chapter.start_block_id
+            e_id = deduped[i + 1].start_block_id - 1 if i + 1 < len(deduped) else self.max_block_id
+            if e_id < s_id:
+                e_id = s_id
+            new_intervals.append({"chapter": chapter, "start_id": s_id, "end_id": e_id})
+
+        return new_intervals
     
     def _build_flat_nodes(self, intervals: List[dict]) -> List[DocumentNode]:
         """Extract content for each interval and build flat :class:`DocumentNode` list."""

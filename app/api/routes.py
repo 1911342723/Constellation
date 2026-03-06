@@ -28,6 +28,8 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
+_shared_parser = CaliperParser()
+
 
 # ── Health ───────────────────────────────────────────────────
 
@@ -44,8 +46,7 @@ async def parse_blocks(request: ParseRequest):
     """Parse a Block list into a document tree (JSON + Markdown)."""
     blocks = [Block(**block_data) for block_data in request.blocks]
 
-    parser = CaliperParser()
-    document_tree = parser.parse(blocks)
+    document_tree = await _shared_parser.async_parse(blocks)
 
     return ParseResponse(
         success=True,
@@ -61,8 +62,7 @@ async def parse_for_paper_editor(request: ParseRequest):
     """Parse Blocks into PaperData format for the typesetting system."""
     blocks = [Block(**block_data) for block_data in request.blocks]
 
-    parser = CaliperParser()
-    document_tree = parser.parse(blocks)
+    document_tree = await _shared_parser.async_parse(blocks)
 
     paper_data = document_tree.to_paper_data()
     if request.title:
@@ -117,9 +117,8 @@ async def parse_docx_full(file: UploadFile = File(...)):
     blocks = provider.extract_from_bytes(content)
     logger.info("[Cursor-Caliper] Stage 1 done: %d blocks", len(blocks))
 
-    # Stages 2–4
-    parser = CaliperParser()
-    document_tree = parser.parse(blocks)
+    # Stages 2-4 (async to avoid blocking the event loop)
+    document_tree = await _shared_parser.async_parse(blocks)
 
     sections = document_tree.to_markdown_sections()
     full_markdown = document_tree.to_markdown()

@@ -18,6 +18,21 @@ Each line follows: `[Block_ID] <Meta-Tag> text_content`
   - IMPORTANT: Indented `[id] text...` lines within folded regions are per-paragraph summaries.
   - Inspect these carefully — they may contain headings that lack formatting tags.
 
+## Folded Region Handling (Critical)
+
+Within a folded region like:
+```
+[50 to 80] <Text: 30 Paras, 5000 chars>
+  [50] Lorem ipsum dolor sit amet...
+  [55] <Bold> <Size:14> 2.3 Experimental Setup...
+  [60] Results show that...
+```
+
+Block [55] above has Bold + Size:14 tags and starts with section numbering "2.3" — this IS a heading.
+You MUST output it as: `{"block_id": 55, "title": "2.3 Experimental Setup", "level": 2, "snippet": "2.3 Experimental Setup..."}`
+
+Do NOT skip headings just because they are inside a folded region.
+
 ## Classification Rules (by priority)
 
 1. HIGHEST: `<Heading N>` tag → definitely a level-N heading.
@@ -32,11 +47,21 @@ Each line follows: `[Block_ID] <Meta-Tag> text_content`
    - "致谢" / "Acknowledgment" → level 1
 6. Hidden headings inside folded regions: If a summary line looks like a heading (short text + numbering/keyword), mark it.
 
+## What is NOT a Heading (Negative Examples)
+
+Do NOT mark the following as headings:
+- Regular body paragraphs, even if they start with a number: `"1. First we preprocess the data by..."` (this is a list item, not a heading — it contains a long explanatory sentence).
+- Short phrases that are captions or labels: `"Table 1: Results"`, `"Figure 3: Architecture"`.
+- Inline bold text within a paragraph: `"**Note:** This is important..."`.
+- Paragraphs that merely repeat a heading from elsewhere (e.g. "本章小结" appearing as body text without heading formatting).
+
 ## Hierarchy Constraints
 
-- `level: 1` = top-level heading (e.g. "第一章 绪论", "1. Introduction")
-- `level: 2` = second-level heading (e.g. "1.1 研究背景")
-- `level: 3` = third-level heading (e.g. "1.1.1 具体问题")
+- `level: 1` = top-level chapter (e.g. "第一章 绪论", "1. Introduction", "摘要")
+- `level: 2` = section (e.g. "1.1 研究背景", "2.1 Data Collection")
+- `level: 3` = sub-section (e.g. "1.1.1 具体问题", "2.1.1 Dataset Description")
+- `level: 4` = sub-sub-section (e.g. "1.1.1.1 细节")
+- `level: 5-6` = deeper sub-sections (rare, use only when clearly nested)
 - Levels must expand contiguously (no jumping from level 1 directly to level 3).
 
 ## Output Specification
@@ -51,8 +76,8 @@ Each element in `chapters` must contain exactly four fields:
 
 - `block_id` (integer): The Block ID where this heading appears.
 - `title` (string): Concise heading text.
-- `level` (integer): Depth level (1/2/3).
-- `snippet` (string): First 30 characters of the block's original text, copied verbatim from the skeleton. Used for cross-validation.
+- `level` (integer): Depth level (1-6).
+- `snippet` (string): First 40 characters of the block's original text, copied verbatim from the skeleton. Used for cross-validation.
 
 The array MUST be sorted by `block_id` in ascending order.
 
@@ -70,6 +95,7 @@ The array MUST be sorted by `block_id` in ascending order.
     {"block_id": 12, "title": "2. 核心算法设计", "level": 1, "snippet": "2. 核心算法设计"},
     {"block_id": 14, "title": "2.1 物理降维层", "level": 2, "snippet": "2.1 物理降维层"},
     {"block_id": 20, "title": "2.2 虚拟空间构建", "level": 2, "snippet": "2.2 虚拟空间构建"},
+    {"block_id": 25, "title": "2.2.1 压缩策略", "level": 3, "snippet": "2.2.1 压缩策略"},
     {"block_id": 30, "title": "3. 实验与评估", "level": 1, "snippet": "3. 实验与评估"},
     {"block_id": 45, "title": "参考文献", "level": 1, "snippet": "参考文献"}
   ]

@@ -9,11 +9,14 @@ image, or formula) extracted from the source document.  It carries:
 - Physical formatting features (bold, font_size, alignment, heading
   style) used by the skeleton compressor to generate Meta-Tags.
 """
+import re
 from typing import Optional, Literal, List
 from pydantic import BaseModel, Field
 
 
 BlockType = Literal["text", "image", "table", "formula", "code"]
+
+_RAW_XML_RE = re.compile(r"\[RAW_XML_NODE:\s*([^\]]+)\]\s*(.*)")
 
 
 class Block(BaseModel):
@@ -151,8 +154,6 @@ class Block(BaseModel):
         - ``[RAW_XML_NODE: oMath…] …``      → inline math
         - ``[RAW_XML_NODE: *] …``            → HTML comment
         """
-        import re
-
         def _replace(m: re.Match) -> str:
             tag = m.group(1).strip()
             body = (m.group(2) or "").strip()
@@ -162,11 +163,7 @@ class Block(BaseModel):
                 return f"$ {body} $" if body else "$ … $"
             return f"<!-- 未识别元素: {tag} -->" if not body else f"<!-- {tag}: {body} -->"
 
-        return re.sub(
-            r"\[RAW_XML_NODE:\s*([^\]]+)\]\s*(.*)",
-            _replace,
-            text,
-        )
+        return _RAW_XML_RE.sub(_replace, text)
 
     def to_markdown(self) -> str:
         """Render this block as lossless Markdown for Stage 4 assembly.
