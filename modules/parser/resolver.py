@@ -111,7 +111,15 @@ class IntervalResolver:
             AssemblerError: If *chapters* is empty or resolution fails.
         """
         if not chapters:
-            raise AssemblerError("章节列表为空，无法解析")
+            logger.warning("[区间解析] 章节列表为空，自动回退为单一 Root 根节点")
+            first_text_block = next((b for b in self.blocks if getattr(b, 'type', '') == 'text' and getattr(b, 'text', '')), None)
+            snippet = first_text_block.text.strip()[:40] if first_text_block else "Document"
+            chapters = [ChapterNode(
+                block_id=0, 
+                title="Document", 
+                level=1, 
+                snippet=snippet
+            )]
         
         try:
             chapters = copy.deepcopy(chapters)
@@ -538,7 +546,10 @@ class IntervalResolver:
             end_id = interval["end_id"]
             
             section_type = self._infer_section_type(chapter.title)
-            content = self._extract_content(start_id, end_id, skip_title_id=start_id)
+            
+            # 如果是无特征文档回退生成的虚拟根节点，不应跳过原文正文内容
+            skip_title_id = start_id if chapter.title != "Document" else None
+            content = self._extract_content(start_id, end_id, skip_title_id=skip_title_id)
             
             node = DocumentNode(
                 title=chapter.title,
