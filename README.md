@@ -1,4 +1,4 @@
-# Constellation (游标卡尺)
+# Constellation
 
 基于控制-数据流解耦的零损耗文档结构化提取引擎。
 
