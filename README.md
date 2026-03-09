@@ -8,6 +8,7 @@
 
 [English](README_EN.md) | [📄 论文 (Zenodo)](https://zenodo.org/records/18917045)
 
+在线体验地址：http://42.193.17.130/constellation
 ---
 
 ## 概述
