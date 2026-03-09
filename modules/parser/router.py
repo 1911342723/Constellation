@@ -1,4 +1,4 @@
-"""LLM Router — Cursor-Caliper Stage 3: Cursor Pointer Routing.
+"""LLM Router — Constellation Stage 3: Cursor Pointer Routing.
 
 Routes the compressed virtual skeleton through an LLM to obtain
 section boundary anchors.  The LLM acts exclusively as a *pointer

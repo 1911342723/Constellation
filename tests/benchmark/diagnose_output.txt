@@ -1,0 +1,63 @@
+=== Block 结构 ===
+  [  0] text     <Size:20.0>              [TITLE]  Test Document
+  [  1] text                               Paragraph 2.1.1
+  [  2] text                               Paragraph 2.1.2
+  [  3] text     <Size:14.0>              [TITLE]  Test 1:
+  [  4] text                               List item 1
+  [  5] text                               List item 2
+  [  6] text                               List item 3
+  [  7] text     <Size:14.0>              [TITLE]  Test 2:
+  [  8] text                               List item a
+  [  9] text                               List item b
+  [ 10] text                               List item c
+  [ 11] text     <Size:14.0>              [TITLE]  Test 3:
+  [ 12] text                               List item 1
+  [ 13] text                               List item 2
+  [ 14] text                               List item 1.1
+  [ 15] text                               List item 1.2
+  [ 16] text                               List item 1.3
+  [ 17] text                               List item 3
+  [ 18] text     <Size:14.0>              [TITLE]  Test 4:
+  [ 19] text                               List item 1
+  [ 20] text                               List item 1.1
+  [ 21] text                               List item 2
+  [ 22] text     <Size:14.0>              [TITLE]  Test 5:
+  [ 23] text                               List item 1
+  [ 24] text                               List item 1.1
+  [ 25] text                               List item 1.1.1
+  [ 26] text                               List item 3
+  [ 27] text     <Size:14.0>              [TITLE]  Test 6:
+  [ 28] text                               List item 1
+  [ 29] text                               List item 2
+  [ 30] text                               List item 1.1
+  [ 31] text                               List item 1.2
+  [ 32] text                               List item 1.2.1
+  [ 33] text                               List item 3
+  [ 34] text                               [RAW_XML_NODE: sectPr]
+
+=== Constellation 实际输出 ===
+文档标题: Test Document
+
+[block=0] Level 1: Test Document
+  [block=3] Level 2: Test 1:
+  [block=7] Level 2: Test 2:
+  [block=11] Level 2: Test 3:
+  [block=18] Level 2: Test 4:
+  [block=22] Level 2: Test 5:
+  [block=27] Level 2: Test 6:
+
+=== Ground Truth 期望 ===
+  [block=3] Level 2: Test 1:
+  [block=7] Level 2: Test 2:
+  [block=11] Level 2: Test 3:
+  [block=18] Level 2: Test 4:
+  [block=22] Level 2: Test 5:
+  [block=27] Level 2: Test 6:
+
+=== 逐项对比 ===
+  OK block=3 GT=Level2 Pred=Level2  "Test 1:"
+  OK block=7 GT=Level2 Pred=Level2  "Test 2:"
+  OK block=11 GT=Level2 Pred=Level2  "Test 3:"
+  OK block=18 GT=Level2 Pred=Level2  "Test 4:"
+  OK block=22 GT=Level2 Pred=Level2  "Test 5:"
+  OK block=27 GT=Level2 Pred=Level2  "Test 6:"

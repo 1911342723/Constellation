@@ -1,4 +1,4 @@
-"""Pydantic data models for Cursor-Caliper pipeline stages.
+"""Pydantic data models for Constellation pipeline stages.
 
 Defines the structured schemas used across the four-stage pipeline:
 

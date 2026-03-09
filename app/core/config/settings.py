@@ -39,8 +39,12 @@ class Settings(BaseSettings):
     # 日志配置
     log_level: str = "INFO"
     
+    # IP 限流配置
+    rate_limit_max_requests: int = 10        # 每个 IP 每小时最大请求数
+    rate_limit_window_seconds: int = 3600    # 限流窗口（秒）
+    
     # 应用配置
-    app_name: str = "Cursor-Caliper"
+    app_name: str = "Constellation"
     app_version: str = "0.2.0"
 
 

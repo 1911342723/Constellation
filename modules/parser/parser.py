@@ -1,5 +1,5 @@
 """
-Cursor-Caliper 主解析器 (CaliperParser)
+Constellation 主解析器 (CaliperParser)
 
 游标卡尺算法的总调度器，协调四个阶段的流水线处理：
 
@@ -88,7 +88,7 @@ def _compute_blocks_hash(blocks: List[Block]) -> str:
 
 
 class CaliperParser:
-    """Cursor-Caliper main parser — orchestrates the four-stage pipeline.
+    """Constellation main parser — orchestrates the four-stage pipeline.
 
     Accepts optional :class:`CompressorConfig` and :class:`ResolverConfig`
     so that the pipeline can be driven without a global ``settings``

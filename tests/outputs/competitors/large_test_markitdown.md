@@ -2,7 +2,7 @@
 
 # 摘 要
 
-本文深入研究了在大型语言模型(LLM)时代下，针对复杂一维文档(如DOCX和TXT)的解析与结构化重建算法。基于提出的Cursor-Caliper。
+本文深入研究了在大型语言模型(LLM)时代下，针对复杂一维文档(如DOCX和TXT)的解析与结构化重建算法。基于提出的Constellation。
 
 Quaerat adipisci magnam quiquia numquam. Quiquia consectetur labore ipsum sit amet. Ipsum ut adipisci dolore consectetur etincidunt modi est. Labore sit tempora voluptatem. Dolore amet numquam labore voluptatem consectetur ipsum. Quiquia neque etincidunt est. Tempora quaerat neque amet. Labore eius consectetur labore ipsum adipisci sed. Sed consectetur sit amet ut quisquam sed. Etincidunt sit sit ut non ipsum ut.Quaerat adipisci magnam quiquia numquam. Quiquia consectetur labore ipsum sit amet. Ipsum ut adipisci dolore consectetur etincidunt modi est. Labore sit tempora voluptatem. Dolore amet numquam labore voluptatem consectetur ipsum. Quiquia neque etincidunt est. Tempora quaerat neque amet. Labore eius consectetur labore ipsum adipisci sed. Sed consectetur sit amet ut quisquam sed. Etincidunt sit sit ut non ipsum ut.
 

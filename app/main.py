@@ -1,4 +1,4 @@
-"""Cursor-Caliper FastAPI Application — document structure extraction service."""
+"""Constellation FastAPI Application — document structure extraction service."""
 
 import sys
 import logging
@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 # ── Application factory ──────────────────────────────────────
 app = FastAPI(
-    title="Cursor-Caliper API",
+    title="Constellation API",
     description="基于游标卡尺映射法的零损耗文档结构化提取服务",
     version=settings.app_version,
     docs_url="/docs",
@@ -39,6 +39,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ── IP Rate Limiting ─────────────────────────────────────────
+from app.core.rate_limiter import RateLimitMiddleware  # noqa: E402
+app.add_middleware(RateLimitMiddleware)
 
 # ── Global exception handlers ────────────────────────────────
 # These replace the per-route try/except boilerplate.  Each domain
@@ -87,7 +91,7 @@ app.include_router(router, prefix="/api/v1", tags=["parser"])
 @app.get("/")
 async def root():
     return {
-        "service": "Cursor-Caliper",
+        "service": "Constellation",
         "version": settings.app_version,
         "description": "游标卡尺文档解析服务",
         "docs": "/docs",

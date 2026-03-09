@@ -1,4 +1,4 @@
-"""Prompt template loader for Cursor-Caliper LLM Router."""
+"""Prompt template loader for Constellation LLM Router."""
 
 from pathlib import Path
 from typing import Optional

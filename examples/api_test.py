@@ -1,5 +1,5 @@
 """
-Cursor-Caliper API 测试示例
+Constellation API 测试示例
 演示如何调用 API 进行文档解析
 """
 import requests
@@ -168,7 +168,7 @@ def main():
     """运行所有测试"""
     print("\n")
     print("╔" + "=" * 58 + "╗")
-    print("║" + " " * 15 + "Cursor-Caliper API 测试" + " " * 20 + "║")
+    print("║" + " " * 15 + "Constellation API 测试" + " " * 20 + "║")
     print("╚" + "=" * 58 + "╝")
     print()
     
@@ -190,7 +190,7 @@ def main():
         print("=" * 60)
         
     except requests.exceptions.ConnectionError:
-        print("\n✗ 错误: 无法连接到 Cursor-Caliper API")
+        print("\n✗ 错误: 无法连接到 Constellation API")
         print("请确保服务已启动: python app/main.py")
     except Exception as e:
         print(f"\n✗ 测试失败: {str(e)}")

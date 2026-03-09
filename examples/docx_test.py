@@ -66,7 +66,7 @@ def test_full_pipeline(blocks):
     print("=" * 60)
     
     try:
-        # 使用 Cursor-Caliper 解析
+        # 使用 Constellation 解析
         parser = CaliperParser()
         print("\n正在使用游标卡尺法解析文档结构...")
         document_tree = parser.parse(blocks)

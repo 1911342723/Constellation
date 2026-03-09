@@ -2,7 +2,7 @@
 PaperEditor 适配器 - 纯粹的格式转换层
 
 这个文件的唯一职责：
-把 Cursor-Caliper 的 DocumentTree（LLM 已经识别完毕的结构）
+把 Constellation 的 DocumentTree（LLM 已经识别完毕的结构）
 转换为前端 PaperEditor 需要的 PaperData 格式。
 
 它 **不做** 任何结构识别、样式检测、特征嗅探！

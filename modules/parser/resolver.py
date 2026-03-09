@@ -1,4 +1,4 @@
-"""Interval Resolver — Cursor-Caliper Stage 4.
+"""Interval Resolver — Constellation Stage 4.
 
 Converts LLM-produced heading anchors back into a lossless document
 tree by performing three sequential operations:
@@ -293,11 +293,19 @@ class IntervalResolver:
         Rules: first chapter is forced to level 1; subsequent chapters
         may increase by at most 1 level; decreases are always legal.
 
-        Physical-feature assist: when a jump is detected, the block's
-        ``font_size`` is compared against the nearest same-level
-        ancestor.  If the sizes match, the node is promoted to that
-        ancestor's level instead of being blindly clamped to
-        ``max_allowed``.
+        Physical-feature assist (two phases):
+
+        1. **Jump repair** — when ``ch.level > max_allowed``, the block's
+           ``font_size`` is compared against the ``level_font`` map.  If a
+           match is found, the node is promoted to that level instead of
+           being blindly clamped to ``max_allowed``.
+
+        2. **Sibling promotion** (NEW) — even when ``ch.level <= max_allowed``
+           (i.e. no illegal jump), if the block's ``font_size`` exactly matches
+           a *higher-priority* (numerically smaller) level already recorded in
+           ``level_font``, the node is promoted to that level.  This corrects
+           the common LLM error where consecutive headings with identical font
+           sizes are incorrectly nested instead of being treated as siblings.
         """
         if not chapters:
             return chapters
@@ -332,6 +340,7 @@ class IntervalResolver:
             
             if ch.level > max_allowed:
                 old_level = ch.level
+                # Phase 1: Jump repair — 非法跳跃修复
                 # Physical-feature assist: check if font_size matches
                 # an existing level (the LLM may have typed the wrong
                 # number but the physical signal is correct).
@@ -350,6 +359,31 @@ class IntervalResolver:
                     ", 字号辅助" if resolved_level != max_allowed else "",
                 )
                 fix_count += 1
+            
+            elif ch.level > 1 and level_font:
+                # Phase 2: Sibling promotion — 合法但可疑的层级纠正
+                # 如果 LLM 给出的层级在合法范围内，但字号与某个更高层级
+                # （数字更小）完全匹配，说明 LLM 错误地嵌套了本应平级的标题。
+                # 例如: Test 1 (Level 2, Size 14) 之后 Test 2 (Level 3, Size 14)
+                #       → Test 2 的字号匹配 Level 2，应提升为 Level 2
+                blk = self.block_map.get(ch.start_block_id)
+                if blk and blk.font_size:
+                    best_match_level = None
+                    for lv in sorted(level_font.keys()):
+                        if abs(blk.font_size - level_font[lv]) <= self.level_jump_font_size_tolerance:
+                            best_match_level = lv
+                            break  # sorted → 取最高优先级（最小 level 数字）
+                    
+                    if best_match_level is not None and best_match_level < ch.level:
+                        old_level = ch.level
+                        ch.level = best_match_level
+                        logger.warning(
+                            "[层级修复] '%s' level=%d → %d (字号交叉验证: "
+                            "Size=%.1f 匹配已有 Level %d)",
+                            ch.title, old_level, ch.level,
+                            blk.font_size, best_match_level,
+                        )
+                        fix_count += 1
             
             # Record font_size for this level
             blk = self.block_map.get(ch.start_block_id)

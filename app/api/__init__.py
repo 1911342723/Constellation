@@ -1,5 +1,5 @@
 """
-Cursor-Caliper API Module
+Constellation API Module
 """
 from app.api.routes import router
 

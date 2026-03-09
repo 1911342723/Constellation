@@ -1,6 +1,6 @@
 """
 简单测试示例
-使用模拟的文本块测试 Cursor-Caliper 核心功能
+使用模拟的文本块测试 Constellation 核心功能
 """
 import sys
 from pathlib import Path
@@ -40,7 +40,7 @@ def create_sample_blocks():
 def main():
     """主函数"""
     print("=" * 60)
-    print("Cursor-Caliper 简单测试")
+    print("Constellation 简单测试")
     print("=" * 60)
     
     # 创建示例数据
@@ -49,7 +49,7 @@ def main():
     print(f"   创建了 {len(blocks)} 个文本块")
     
     # 初始化解析器
-    print("\n[2/4] 初始化 Cursor-Caliper 解析器...")
+    print("\n[2/4] 初始化 Constellation 解析器...")
     parser = CaliperParser()
     print("   解析器初始化完成")
     

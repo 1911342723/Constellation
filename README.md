@@ -1,16 +1,20 @@
-# Cursor-Caliper (游标卡尺)
+# Constellation (游标卡尺)
 
-基于游标卡尺映射法的零损耗文档结构化提取引擎。
+基于控制-数据流解耦的零损耗文档结构化提取引擎。
 
-[English](README_EN.md)
+[![Paper](https://img.shields.io/badge/Paper-Zenodo-blue)](https://zenodo.org/records/18917045)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://www.python.org/)
+
+[English](README_EN.md) | [📄 论文 (Zenodo)](https://zenodo.org/records/18917045)
 
 ---
 
 ## 概述
 
-Cursor-Caliper 是一个文档结构化解析工具，通过四阶段流水线将非结构化的 Word 文档转换为精确的章节树。核心思路是将 LLM 的角色限定为"打游标"——只负责在压缩骨架上标注章节边界，而将字符级无损重组交给确定性算法完成。
+Constellation 是一个文档结构化解析工具，通过四阶段流水线将非结构化的 Word 文档转换为精确的章节树。核心思路是将 LLM 的角色限定为"打游标"——只负责在压缩骨架上标注章节边界，而将字符级无损重组交给确定性算法完成。
 
-这一设计源于一个关键观察：LLM 擅长模糊语义提取，但极度不擅长字符级无损重组。Cursor-Caliper 将两者的职责彻底分离。
+这一设计源于一个关键观察：LLM 擅长模糊语义提取，但极度不擅长字符级无损重组。Constellation 将两者的职责彻底分离。
 
 ## 核心原理
 
@@ -116,7 +120,7 @@ API 文档：`http://localhost:28001/docs`
 ## 项目结构
 
 ```
-cursor-caliper/
+Constellation/
 ├── app/                          # 交付层
 │   ├── main.py                   # FastAPI 入口 + 全局异常处理
 │   ├── api/
@@ -202,17 +206,26 @@ FUZZY_MIN_SIMILARITY=0.4
 - python-docx + lxml (混合 XML 引擎)
 - python-Levenshtein (模糊锚定纠偏)
 
-## 文档
+## 论文
 
-- [算法原理论文](docs/算法论文.md)
-- [技术方案](docs/技术方案.md)
-- [API 使用指南](docs/API_USAGE.md)
-- [架构重构记录](docs/ARCHITECTURE_REFACTOR.md)
-- [开发规范](docs/开发规范.md)
+如果 Constellation 对您的研究有帮助，请引用我们的论文：
+
+> **Constellation: Lossless Document Structuring via Control-Data Flow Decoupling**
+>
+> 📄 [Zenodo Preprint](https://zenodo.org/records/18917045)
+
+```bibtex
+@article{constellation2025,
+  title={Constellation: Lossless Document Structuring via Control-Data Flow Decoupling},
+  year={2025},
+  doi={10.5281/zenodo.18917045},
+  publisher={Zenodo}
+}
+```
 
 ## 版本
 
-当前版本：0.2.0
+当前版本：1.0.0
 
 ## 许可证
 

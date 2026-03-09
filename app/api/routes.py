@@ -1,4 +1,4 @@
-"""Cursor-Caliper API Routes.
+"""Constellation API Routes.
 
 All domain exceptions (ProviderError, LLMRouterError, ParserError, etc.)
 are caught by the global exception handlers registered in ``app.main``.
@@ -36,7 +36,7 @@ _shared_parser = CaliperParser()
 @router.get("/health", response_model=HealthResponse)
 async def health_check():
     """Service liveness probe."""
-    return HealthResponse(status="healthy", service="Cursor-Caliper", version="0.2.0")
+    return HealthResponse(status="healthy", service="Constellation", version="0.2.0")
 
 
 # ── Block-level parsing ──────────────────────────────────────
@@ -82,11 +82,11 @@ async def parse_docx_file(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail="只支持 .docx 或 .doc 文件")
 
     content = await file.read()
-    logger.info("[Cursor-Caliper] File received: %s (%d bytes)", file.filename, len(content))
+    logger.info("[Constellation] File received: %s (%d bytes)", file.filename, len(content))
 
     provider = DocxProvider()
     blocks = provider.extract_from_bytes(content)
-    logger.info("[Cursor-Caliper] Stage 1 done: %d blocks", len(blocks))
+    logger.info("[Constellation] Stage 1 done: %d blocks", len(blocks))
 
     return DocxParseResponse(
         success=True,
@@ -100,7 +100,7 @@ async def parse_docx_file(file: UploadFile = File(...)):
 async def parse_docx_full(file: UploadFile = File(...)):
     """One-shot full-pipeline endpoint: .docx → structured Markdown.
 
-    Runs all four Cursor-Caliper stages in sequence:
+    Runs all four Constellation stages in sequence:
     1. DocxProvider  — physical block extraction
     2. SkeletonCompressor — virtual-space compression
     3. LLMRouter — AI cursor routing
@@ -110,12 +110,12 @@ async def parse_docx_full(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail="只支持 .docx 或 .doc 文件")
 
     content = await file.read()
-    logger.info("[Cursor-Caliper] Full-pipeline request: %s (%d bytes)", file.filename, len(content))
+    logger.info("[Constellation] Full-pipeline request: %s (%d bytes)", file.filename, len(content))
 
     # Stage 1
     provider = DocxProvider()
     blocks = provider.extract_from_bytes(content)
-    logger.info("[Cursor-Caliper] Stage 1 done: %d blocks", len(blocks))
+    logger.info("[Constellation] Stage 1 done: %d blocks", len(blocks))
 
     # Stages 2-4 (async to avoid blocking the event loop)
     document_tree = await _shared_parser.async_parse(blocks)
@@ -129,7 +129,7 @@ async def parse_docx_full(file: UploadFile = File(...)):
         paper_data["title"] = file.filename.rsplit(".", 1)[0]
 
     logger.info(
-        "[Cursor-Caliper] Pipeline complete: '%s', %d sections",
+        "[Constellation] Pipeline complete: '%s', %d sections",
         stats["doc_title"],
         stats["total_sections"],
     )

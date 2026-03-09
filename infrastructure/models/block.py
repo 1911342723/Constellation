@@ -1,4 +1,4 @@
-"""Block — atomic document element for the Cursor-Caliper pipeline.
+"""Block — atomic document element for the Constellation pipeline.
 
 Each Block represents a single physical element (paragraph, table,
 image, or formula) extracted from the source document.  It carries:

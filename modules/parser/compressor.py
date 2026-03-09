@@ -1,4 +1,4 @@
-"""Skeleton Compressor — Cursor-Caliper Stage 2.
+"""Skeleton Compressor — Constellation Stage 2.
 
 Compresses a full Block sequence into a compact *virtual skeleton*
 that maximises the structural signal-to-noise ratio while minimising
@@ -182,7 +182,7 @@ class SkeletonCompressor:
 
         lines = [
             "=" * 60,
-            f"Cursor-Caliper 文档虚拟骨架 — 窗口 {window_index + 1}/{total_windows}",
+            f"Constellation 文档虚拟骨架 — 窗口 {window_index + 1}/{total_windows}",
             f"原始 Block 总数: {total_blocks}",
             f"本窗口 Block 范围: {ws}~{we - 1} ({we - ws} Blocks)",
             "标记说明: <Bold>=加粗, <Size:N>=字号, <Center>=居中, <Heading N>=标题样式",
@@ -334,7 +334,7 @@ class SkeletonCompressor:
         lines = []
         
         lines.append("=" * 60)
-        lines.append("Cursor-Caliper 文档虚拟骨架")
+        lines.append("Constellation 文档虚拟骨架")
         lines.append(f"原始 Block 总数: {len(blocks)}")
         lines.append(f"骨架项数量: {len(items)}")
         lines.append("标记说明: <Bold>=加粗, <Size:N>=字号, <Center>=居中, <Heading N>=标题样式")

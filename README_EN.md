@@ -1,16 +1,20 @@
-# Cursor-Caliper
+# Constellation
 
-A zero-loss document structure extraction engine based on the Cursor-Caliper Mapping Method.
+A zero-loss document structure extraction engine via Control-Data Flow Decoupling.
 
-[中文](README.md)
+[![Paper](https://img.shields.io/badge/Paper-Zenodo-blue)](https://zenodo.org/records/18917045)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://www.python.org/)
+
+[中文](README.md) | [📄 Paper (Zenodo)](https://zenodo.org/records/18917045)
 
 ---
 
 ## Overview
 
-Cursor-Caliper is a document structure parsing tool that converts unstructured Word documents into precise chapter trees through a four-stage pipeline. The core idea is to confine the LLM's role to "placing cursors" — it only marks chapter boundaries on a compressed skeleton, while deterministic algorithms handle character-level lossless reassembly.
+Constellation is a document structure parsing tool that converts unstructured Word documents into precise chapter trees through a four-stage pipeline. The core idea is to confine the LLM's role to "placing cursors" — it only marks chapter boundaries on a compressed skeleton, while deterministic algorithms handle character-level lossless reassembly.
 
-This design stems from a key observation: LLMs excel at fuzzy semantic extraction but are fundamentally unreliable at character-level lossless reconstruction. Cursor-Caliper separates these two responsibilities entirely.
+This design stems from a key observation: LLMs excel at fuzzy semantic extraction but are fundamentally unreliable at character-level lossless reconstruction. Constellation separates these two responsibilities entirely.
 
 ## Core Architecture
 
@@ -116,7 +120,7 @@ Endpoints:
 ## Project Structure
 
 ```
-cursor-caliper/
+Constellation/
 ├── app/                          # Delivery layer
 │   ├── main.py                   # FastAPI entry + global exception handlers
 │   ├── api/
@@ -202,9 +206,26 @@ FUZZY_MIN_SIMILARITY=0.4
 - python-docx + lxml (hybrid XML engine)
 - python-Levenshtein (fuzzy anchor correction)
 
+## Citation
+
+If Constellation is helpful to your research, please cite our paper:
+
+> **Constellation: Lossless Document Structuring via Control-Data Flow Decoupling**
+>
+> 📄 [Zenodo Preprint](https://zenodo.org/records/18917045)
+
+```bibtex
+@article{constellation2025,
+  title={Constellation: Lossless Document Structuring via Control-Data Flow Decoupling},
+  year={2025},
+  doi={10.5281/zenodo.18917045},
+  publisher={Zenodo}
+}
+```
+
 ## Version
 
-Current version: 0.2.0
+Current version: 1.0.0
 
 ## License
 

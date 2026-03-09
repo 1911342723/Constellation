@@ -1,5 +1,5 @@
 """
-Cursor-Caliper API Schemas
+Constellation API Schemas
 定义 API 请求和响应的数据模型
 """
 from pydantic import BaseModel, Field

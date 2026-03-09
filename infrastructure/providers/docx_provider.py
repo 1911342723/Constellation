@@ -1,5 +1,5 @@
 """
-Docx Provider v2 for Cursor-Caliper — 混合 XML 引擎
+Docx Provider v2 for Constellation — 混合 XML 引擎
 
 混合引擎架构
 - 主引擎：python-docx 处理常规段落、表格、图片（稳定可靠）

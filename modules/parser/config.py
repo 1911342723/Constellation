@@ -1,4 +1,4 @@
-"""Pure-data configuration models for the Cursor-Caliper pipeline.
+"""Pure-data configuration models for the Constellation pipeline.
 
 These are intentionally decoupled from ``app.core.config.settings``
 so that the parser modules can be used as a standalone library without
