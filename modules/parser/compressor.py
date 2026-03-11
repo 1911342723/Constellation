@@ -211,9 +211,14 @@ class SkeletonCompressor:
         items = []
         
         for block in blocks:
+            is_iframe = (
+                block.type in ("image", "table", "formula", "code")
+                or (block.type == "text" and block.is_potential_title())
+            )
             skeleton_text = block.get_skeleton_text(
                 head_chars=self.head_chars,
-                tail_chars=self.tail_chars
+                tail_chars=self.tail_chars,
+                preserve_full_text=is_iframe,
             )
             
             if block.type in ("image", "table", "formula", "code"):

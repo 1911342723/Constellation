@@ -35,6 +35,7 @@ try:
 except ImportError:
     etree = None
 
+from app.core.exceptions import ProviderError
 from infrastructure.models import Block
 
 logger = logging.getLogger(__name__)
@@ -127,13 +128,21 @@ class DocxProvider:
         self.image_counter = 0
         self.image_store = {}
         self._doc_rels = None
+
+    @staticmethod
+    def _ensure_supported_path(file_path: str) -> Path:
+        path = Path(file_path)
+        if path.suffix.lower() != ".docx":
+            raise ProviderError("仅支持 .docx 文件；旧版 .doc 暂不支持")
+        return path
     
     def extract(self, file_path: str) -> List[Block]:
         """从文件路径提取 .docx 内容为 Block 列表"""
         self._reset_state()
-        logger.info("开始解析 Docx 文件: %s", file_path)
+        path = self._ensure_supported_path(file_path)
+        logger.info("开始解析 Docx 文件: %s", path)
         try:
-            doc = Document(file_path)
+            doc = Document(path)
             blocks = self._extract_blocks(doc)
             logger.info("解析完成，共提取 %d 个 Block", len(blocks))
             self._log_debug_info(blocks)

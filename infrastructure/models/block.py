@@ -43,7 +43,12 @@ class Block(BaseModel):
     is_heading_style: bool = Field(default=False, description="True if a Word Heading style is applied.")
     heading_level: Optional[int] = Field(None, description="Heading level (1/2/3…) when is_heading_style is True.")
     
-    def get_skeleton_text(self, head_chars: int = 40, tail_chars: int = 30) -> str:
+    def get_skeleton_text(
+        self,
+        head_chars: int = 40,
+        tail_chars: int = 30,
+        preserve_full_text: bool = False,
+    ) -> str:
         """Generate a skeleton line for this block with Meta-Tag injection.
 
         Short text blocks (I-frames) are preserved in full; long text
@@ -53,6 +58,8 @@ class Block(BaseModel):
         Args:
             head_chars: Characters to keep from the start of long text.
             tail_chars: Characters to keep from the end of long text.
+            preserve_full_text: Keep the full text even when it exceeds the
+                truncation threshold. Used for I-frames such as headings.
 
         Returns:
             A single skeleton line, e.g. ``[42] <Bold, Size:16> 第一章 绪论``.
@@ -65,7 +72,7 @@ class Block(BaseModel):
             text_len = len(text)
             
             # ===== I帧判定：短文本（可能是标题）全量保留 =====
-            if text_len <= head_chars + tail_chars:
+            if preserve_full_text or text_len <= head_chars + tail_chars:
                 return f"[{self.id}]{tag_str} {text}"
             else:
                 # ===== P帧截断：长文本头尾保留，中段切除 =====

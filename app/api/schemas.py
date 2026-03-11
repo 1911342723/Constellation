@@ -1,79 +1,86 @@
-"""
-Constellation API Schemas
-定义 API 请求和响应的数据模型
-"""
+"""Pydantic schemas for the Constellation API."""
+from typing import Any, Dict, List, Optional
+
 from pydantic import BaseModel, Field
-from typing import List, Dict, Any, Optional
 
 
 class BlockSchema(BaseModel):
-    """Block 数据模型"""
+    """Serialized block payload."""
+
     id: int = Field(..., description="Block ID")
-    type: str = Field(..., description="Block 类型: text, image, table, formula")
-    text: Optional[str] = Field(None, description="文本内容")
-    image_data: Optional[str] = Field(None, description="图片数据（Base64 或 URL）")
-    caption: Optional[str] = Field(None, description="图片或表格标题")
-    table_data: Optional[Dict[str, Any]] = Field(None, description="表格数据")
-    metadata: Optional[Dict[str, Any]] = Field(default_factory=dict, description="额外元数据")
-    # 物理特征字段
-    is_bold: bool = Field(default=False, description="是否加粗")
-    font_size: Optional[float] = Field(None, description="字号")
-    alignment: Optional[str] = Field(None, description="对齐方式")
-    is_heading_style: bool = Field(default=False, description="是否 Heading 样式")
-    heading_level: Optional[int] = Field(None, description="Heading 层级")
+    type: str = Field(..., description="Block type: text, image, table, formula")
+    text: Optional[str] = Field(None, description="Text content")
+    image_data: Optional[str] = Field(None, description="Image payload (Base64 or URL)")
+    caption: Optional[str] = Field(None, description="Image or table caption")
+    table_data: Optional[Dict[str, Any]] = Field(None, description="Raw table data")
+    metadata: Optional[Dict[str, Any]] = Field(default_factory=dict, description="Extra metadata")
+    is_bold: bool = Field(default=False, description="Whether the block is bold")
+    font_size: Optional[float] = Field(None, description="Font size in pt")
+    alignment: Optional[str] = Field(None, description="Paragraph alignment")
+    is_heading_style: bool = Field(default=False, description="Whether a heading style is applied")
+    heading_level: Optional[int] = Field(None, description="Heading level")
 
 
 class ParseRequest(BaseModel):
-    """解析请求"""
-    blocks: List[Dict[str, Any]] = Field(..., description="Block 列表")
-    title: Optional[str] = Field(None, description="文档标题（可选，覆盖 LLM 识别的结果）")
-    authors: Optional[str] = Field(None, description="作者信息（可选，覆盖 LLM 识别的结果）")
+    """Request body for block-based parsing."""
+
+    blocks: List[Dict[str, Any]] = Field(..., description="Input block list")
+    title: Optional[str] = Field(None, description="Optional title override")
+    authors: Optional[str] = Field(None, description="Optional authors override")
 
 
 class SectionOutput(BaseModel):
-    """分节 Markdown 输出"""
-    title: str = Field(..., description="章节标题")
-    content: str = Field(..., description="Markdown 内容")
-    section_type: str = Field(default="section", description="章节类型")
-    level: int = Field(default=1, description="层级")
+    """Markdown section output."""
+
+    title: str = Field(..., description="Section title")
+    content: str = Field(..., description="Markdown content")
+    section_type: str = Field(default="section", description="Section semantic type")
+    level: int = Field(default=1, description="Section depth")
 
 
 class ParseResponse(BaseModel):
-    """通用解析响应"""
-    success: bool = Field(..., description="是否成功")
-    document_tree: List[Dict[str, Any]] = Field(..., description="文档树结构")
-    markdown: str = Field(..., description="完整 Markdown 格式")
-    json_output: str = Field(..., description="JSON 格式", alias="json")
-    sections: List[Dict[str, Any]] = Field(default_factory=list, description="分节 Markdown 列表")
+    """Generic parsing response."""
+
+    success: bool = Field(..., description="Whether parsing succeeded")
+    document_tree: List[Dict[str, Any]] = Field(..., description="Document tree")
+    markdown: str = Field(..., description="Full Markdown output")
+    json_output: str = Field(..., description="JSON output", alias="json")
+    sections: List[Dict[str, Any]] = Field(default_factory=list, description="Markdown sections")
 
 
 class PaperParseResponse(BaseModel):
-    """文章排版系统专用响应"""
-    success: bool = Field(..., description="是否成功")
-    paper_data: Dict[str, Any] = Field(..., description="PaperData 格式数据")
+    """Paper-editor oriented response."""
+
+    success: bool = Field(..., description="Whether parsing succeeded")
+    paper_data: Dict[str, Any] = Field(..., description="PaperData payload")
 
 
 class DocxParseResponse(BaseModel):
-    """DOCX Block extraction response (Stage 1 only)."""
-    success: bool = Field(..., description="是否成功")
-    blocks: List[Dict[str, Any]] = Field(..., description="Block 列表")
-    filename: str = Field(..., description="原始文件名")
-    total_blocks: int = Field(..., description="Block 总数")
+    """Stage-1 file extraction response."""
+
+    success: bool = Field(..., description="Whether extraction succeeded")
+    blocks: List[Dict[str, Any]] = Field(..., description="Extracted blocks")
+    filename: str = Field(..., description="Original filename")
+    source_format: str = Field(..., description="Source format: docx|txt")
+    total_blocks: int = Field(..., description="Total block count")
 
 
 class FullParseResponse(BaseModel):
-    """全流程解析响应"""
-    success: bool = Field(..., description="是否成功")
-    doc_title: str = Field(default="", description="文档标题")
-    doc_authors: str = Field(default="", description="文档作者")
-    sections: List[Dict[str, Any]] = Field(..., description="分节 Markdown 列表")
-    full_markdown: str = Field(..., description="完整 Markdown")
-    paper_data: Dict[str, Any] = Field(..., description="PaperData 格式")
-    stats: Dict[str, Any] = Field(..., description="统计信息")
+    """Full-pipeline parsing response."""
+
+    success: bool = Field(..., description="Whether parsing succeeded")
+    doc_title: str = Field(default="", description="Detected document title")
+    doc_authors: str = Field(default="", description="Detected authors")
+    source_format: str = Field(default="docx", description="Source format: docx|txt")
+    sections: List[Dict[str, Any]] = Field(..., description="Markdown sections")
+    full_markdown: str = Field(..., description="Full Markdown output")
+    paper_data: Dict[str, Any] = Field(..., description="PaperData payload")
+    stats: Dict[str, Any] = Field(..., description="Parse statistics")
 
 
 class HealthResponse(BaseModel):
-    """健康检查响应"""
-    status: str = Field(..., description="服务状态")
-    service: str = Field(..., description="服务名称")
-    version: str = Field(..., description="版本号")
+    """Health-check response."""
+
+    status: str = Field(..., description="Service status")
+    service: str = Field(..., description="Service name")
+    version: str = Field(..., description="Service version")

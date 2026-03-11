@@ -15,6 +15,7 @@ tree by performing three sequential operations:
 from __future__ import annotations
 
 import copy
+import re
 from typing import List, Optional, Tuple
 
 from infrastructure.models import Block
@@ -25,6 +26,8 @@ from app.core.exceptions import AssemblerError
 import logging
 
 logger = logging.getLogger(__name__)
+
+_TRUNCATION_MARKER_RE = re.compile(r"\[(?:\u7701\u7565|omitted)[^\]]*\]", re.IGNORECASE)
 
 
 # ── Levenshtein implementation resolution (once at module load) ──
@@ -127,6 +130,7 @@ class IntervalResolver:
             
             # v2: 模糊锚定纠偏
             chapters = self._fuzzy_anchor_correction(chapters)
+            chapters = self._restore_anchor_titles(chapters)
             
             # v2: 层级合规性修复
             chapters = self._validate_hierarchy(chapters)
@@ -205,7 +209,62 @@ class IntervalResolver:
             logger.info("[模糊锚定] 所有锚点验证通过，无需纠偏")
         
         return corrected
-    
+
+    def _restore_anchor_titles(self, chapters: List[ChapterNode]) -> List[ChapterNode]:
+        """Recover full heading text when the LLM echoes a truncated skeleton line."""
+        restored_count = 0
+
+        for ch in chapters:
+            block = self.block_map.get(ch.start_block_id)
+            if not block or block.type != "text" or not block.text:
+                continue
+
+            full_title = block.text.strip()
+            if not full_title:
+                continue
+
+            if not self._should_restore_title(ch.title, ch.snippet, full_title):
+                continue
+
+            logger.info(
+                "[TitleRepair] Restored anchor title: '%s' -> '%s'",
+                ch.title[:40],
+                full_title[:60],
+            )
+            ch.title = full_title
+            if not ch.snippet or self._contains_truncation_marker(ch.snippet):
+                ch.snippet = full_title[:40]
+            restored_count += 1
+
+        if restored_count > 0:
+            logger.info("[TitleRepair] Restored %d truncated anchor titles", restored_count)
+
+        return chapters
+
+    @staticmethod
+    def _contains_truncation_marker(text: str) -> bool:
+        if not text:
+            return False
+        return bool(_TRUNCATION_MARKER_RE.search(text))
+
+    def _should_restore_title(self, title: str, snippet: str, full_title: str) -> bool:
+        if self._contains_truncation_marker(title) or self._contains_truncation_marker(snippet):
+            return True
+
+        normalized_title = (title or "").strip()
+        if "..." not in normalized_title and "?" not in normalized_title:
+            return False
+
+        normalized_full = full_title.strip()
+        if len(normalized_full) <= len(normalized_title):
+            return False
+
+        title_prefix = normalized_title.replace("?", "").replace("...", "").strip()
+        if len(title_prefix) < 8:
+            return False
+
+        return normalized_full.startswith(title_prefix)
+
     def _is_anchor_match(self, block_id: int, snippet: str) -> bool:
         """Return ``True`` if the block at *block_id* matches *snippet*.
 

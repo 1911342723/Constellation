@@ -22,6 +22,25 @@ from app.core.exceptions import (
 
 logger = logging.getLogger(__name__)
 
+
+def _build_cors_options(origins: list[str], allow_credentials: bool) -> dict:
+    normalized_origins = origins or ["*"]
+    normalized_credentials = allow_credentials
+
+    if "*" in normalized_origins and normalized_credentials:
+        logger.warning(
+            "[CORS] allow_credentials=True is incompatible with wildcard origins; disabling credentials."
+        )
+        normalized_credentials = False
+
+    return {
+        "allow_origins": normalized_origins,
+        "allow_credentials": normalized_credentials,
+        "allow_methods": ["*"],
+        "allow_headers": ["*"],
+    }
+
+
 # ── Application factory ──────────────────────────────────────
 app = FastAPI(
     title="Constellation API",
@@ -34,10 +53,10 @@ app = FastAPI(
 # ── CORS ─────────────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    **_build_cors_options(
+        settings.cors_allow_origins,
+        settings.cors_allow_credentials,
+    ),
 )
 
 # ── IP Rate Limiting ─────────────────────────────────────────
@@ -91,7 +110,7 @@ app.include_router(router, prefix="/api/v1", tags=["parser"])
 @app.get("/")
 async def root():
     return {
-        "service": "Constellation",
+        "service": settings.app_name,
         "version": settings.app_version,
         "description": "游标卡尺文档解析服务",
         "docs": "/docs",

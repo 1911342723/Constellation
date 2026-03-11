@@ -17,11 +17,12 @@ Stage 4: 游标闭合与组装 (IntervalResolver + DocumentTree)
 """
 from __future__ import annotations
 
+import copy
 import hashlib
 import logging
 import threading
 from collections import OrderedDict
-from typing import List, Optional
+from typing import Any, List, Optional
 
 from infrastructure.models import Block
 from modules.parser.compressor import SkeletonCompressor
@@ -39,29 +40,36 @@ logger = logging.getLogger(__name__)
 # Keyed by SHA-256 of the concatenated block texts so that
 # identical documents parsed twice skip the expensive LLM calls.
 
+def _clone_cache_value(value: Any) -> Any:
+    """Return an isolated copy so callers can never mutate cached state in place."""
+    return copy.deepcopy(value)
+
+
 class _LRUCache:
     """Thread-safe LRU cache with a configurable max size."""
 
     def __init__(self, max_size: int = 32):
-        self._store: OrderedDict[str, DocumentTree] = OrderedDict()
+        self._store: OrderedDict[str, Any] = OrderedDict()
         self._max_size = max_size
         self._lock = threading.Lock()
 
-    def get(self, key: str) -> Optional[DocumentTree]:
+    def get(self, key: str) -> Optional[Any]:
         with self._lock:
-            if key in self._store:
-                self._store.move_to_end(key)
-                return self._store[key]
-        return None
+            if key not in self._store:
+                return None
+            self._store.move_to_end(key)
+            value = self._store[key]
+        return _clone_cache_value(value)
 
-    def put(self, key: str, value: DocumentTree) -> None:
+    def put(self, key: str, value: Any) -> None:
+        cloned_value = _clone_cache_value(value)
         with self._lock:
             if key in self._store:
                 self._store.move_to_end(key)
             else:
                 if len(self._store) >= self._max_size:
                     self._store.popitem(last=False)
-            self._store[key] = value
+            self._store[key] = cloned_value
 
     def clear(self) -> None:
         with self._lock:

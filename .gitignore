@@ -37,3 +37,20 @@ test_output_markdown/
 
 # Documentation (internal papers and drafts)
 docs/
+
+
+# Generated benchmark/manual artifacts
+benchmarks/benchmark_report.md
+benchmarks/comparison_report.md
+benchmarks/block_inspection.txt
+benchmarks/diagnose_output.txt
+benchmarks/large_doc_results.txt
+scripts/manual/output/
+tests/logs/
+tests/outputs/
+tests/output_*.md
+tests/output_*.txt
+tests/ibm_lorem_*.md
+tests/ibm_lorem_*.txt
+tests/data/*_parsed.md
+tests/data/*_report*.md
