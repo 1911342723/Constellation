@@ -20,16 +20,14 @@ Compression strategies:
 from __future__ import annotations
 
 import logging
-import re
 from typing import List, Optional, Tuple
 
 from infrastructure.models import Block
 from modules.parser.config import CompressorConfig
+from modules.parser.prefix_detector import PrefixDetector
 from app.core.exceptions import CompressorError
 
 logger = logging.getLogger(__name__)
-
-_GRAMMAR_PREFIX_RE = re.compile(r'^(\[[\d,\s-]+\]|\([\d,\s-]+\))\s*')
 
 
 class SkeletonCompressor:
@@ -52,6 +50,7 @@ class SkeletonCompressor:
         self.window_overlap = cfg.window_overlap
         self.rle_dynamic_prefix_min_length = cfg.rle_dynamic_prefix_min_length
         self.rle_dynamic_prefix_extra = cfg.rle_dynamic_prefix_extra
+        self._prefix_detector = PrefixDetector()
     
     def compress(self, blocks: List[Block]) -> List[str]:
         """Compress *blocks* into one or more virtual skeleton strings.
@@ -290,8 +289,7 @@ class SkeletonCompressor:
                     b = item["block"]
                     full_text = (b.text or "").strip()
                     
-                    match = _GRAMMAR_PREFIX_RE.search(full_text)
-                    prefix_len = match.end() if match else 0
+                    prefix_len = self._prefix_detector.detect_length(full_text)
                     
                     snippet_len = max(self.rle_dynamic_prefix_min_length, prefix_len + self.rle_dynamic_prefix_extra)
                     snippet = full_text[:snippet_len]
