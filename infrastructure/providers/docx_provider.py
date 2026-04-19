@@ -17,6 +17,7 @@ from dataclasses import dataclass
 from typing import List, Dict, Any, Optional, Tuple
 from pathlib import Path
 import io
+import zipfile
 
 try:
     from docx import Document
@@ -73,6 +74,29 @@ SILENT_SKIP_TAGS = frozenset({
     'moveToRangeStart', 'moveToRangeEnd',
     'lastRenderedPageBreak',
 })
+
+STRICT_OOXML_REPLACEMENTS = (
+    (
+        b"http://purl.oclc.org/ooxml/officeDocument/relationships/",
+        b"http://schemas.openxmlformats.org/officeDocument/2006/relationships/",
+    ),
+    (
+        b"http://purl.oclc.org/ooxml/officeDocument/relationships",
+        b"http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+    ),
+    (
+        b"http://purl.oclc.org/ooxml/wordprocessingml/main",
+        b"http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+    ),
+    (
+        b"http://purl.oclc.org/ooxml/drawingml/main",
+        b"http://schemas.openxmlformats.org/drawingml/2006/main",
+    ),
+    (
+        b"http://purl.oclc.org/ooxml/officeDocument/math",
+        b"http://schemas.openxmlformats.org/officeDocument/2006/math",
+    ),
+)
 
 
 # ================================================================
@@ -135,6 +159,58 @@ class DocxProvider:
         if path.suffix.lower() != ".docx":
             raise ProviderError("仅支持 .docx 文件；旧版 .doc 暂不支持")
         return path
+
+    @staticmethod
+    def _normalize_strict_ooxml(file_bytes: bytes) -> bytes | None:
+        source = io.BytesIO(file_bytes)
+        output = io.BytesIO()
+        replacements_applied = 0
+
+        try:
+            with zipfile.ZipFile(source, "r") as input_zip, zipfile.ZipFile(output, "w") as output_zip:
+                for zip_info in input_zip.infolist():
+                    data = input_zip.read(zip_info.filename)
+
+                    if zip_info.filename.endswith((".xml", ".rels")):
+                        updated = data
+                        for old, new in STRICT_OOXML_REPLACEMENTS:
+                            count = updated.count(old)
+                            if count:
+                                updated = updated.replace(old, new)
+                                replacements_applied += count
+                        data = updated
+
+                    output_zip.writestr(zip_info, data)
+        except zipfile.BadZipFile:
+            return None
+
+        if replacements_applied == 0:
+            return None
+
+        return output.getvalue()
+
+    @staticmethod
+    def _load_document_from_bytes(file_bytes: bytes):
+        if not file_bytes:
+            raise ProviderError("上传的 .docx 文件为空")
+
+        try:
+            return Document(io.BytesIO(file_bytes))
+        except zipfile.BadZipFile as exc:
+            raise ProviderError("上传文件不是有效的 .docx 压缩包") from exc
+        except (KeyError, ValueError) as exc:
+            normalized_bytes = DocxProvider._normalize_strict_ooxml(file_bytes)
+            if normalized_bytes is not None:
+                logger.info("检测到 Strict Open XML，已转换为 Transitional OOXML 后重试解析")
+                try:
+                    return Document(io.BytesIO(normalized_bytes))
+                except Exception as retry_exc:
+                    raise ProviderError(
+                        "该 .docx 使用 Strict Open XML 或非标准 OOXML 打包格式，自动兼容转换后仍无法解析；"
+                        "请在 Word/WPS 中另存为常规 .docx 后重试"
+                    ) from retry_exc
+
+            raise ProviderError(f"无法解析 .docx 文件：{exc}") from exc
     
     def extract(self, file_path: str) -> List[Block]:
         """从文件路径提取 .docx 内容为 Block 列表"""
@@ -142,7 +218,7 @@ class DocxProvider:
         path = self._ensure_supported_path(file_path)
         logger.info("开始解析 Docx 文件: %s", path)
         try:
-            doc = Document(path)
+            doc = self._load_document_from_bytes(path.read_bytes())
             blocks = self._extract_blocks(doc)
             logger.info("解析完成，共提取 %d 个 Block", len(blocks))
             self._log_debug_info(blocks)
@@ -156,7 +232,7 @@ class DocxProvider:
         self._reset_state()
         logger.info("开始解析 Docx 字节流")
         try:
-            doc = Document(io.BytesIO(file_bytes))
+            doc = self._load_document_from_bytes(file_bytes)
             blocks = self._extract_blocks(doc)
             logger.info(f"解析完成，共提取 {len(blocks)} 个 Block")
             return blocks
