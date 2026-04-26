@@ -28,6 +28,7 @@ try:
     from docx.document import Document as DocumentType
     from docx.shared import Pt
     from docx.enum.text import WD_ALIGN_PARAGRAPH
+    from docx.text.run import Run
 except ImportError:
     raise ImportError("请安装 python-docx: pip install python-docx")
 
@@ -73,6 +74,7 @@ SILENT_SKIP_TAGS = frozenset({
     'moveFromRangeStart', 'moveFromRangeEnd',
     'moveToRangeStart', 'moveToRangeEnd',
     'lastRenderedPageBreak',
+    'sectPr',
 })
 
 STRICT_OOXML_REPLACEMENTS = (
@@ -118,12 +120,13 @@ class RichSegment:
     strike: bool = False
     superscript: bool = False
     subscript: bool = False
+    code: bool = False
 
     @property
     def style_key(self) -> Tuple[bool, ...]:
         """Hashable style fingerprint for homogeneous-run merging."""
         return (self.bold, self.italic, self.underline,
-                self.strike, self.superscript, self.subscript)
+                self.strike, self.superscript, self.subscript, self.code)
 
     @property
     def has_formatting(self) -> bool:
@@ -262,10 +265,16 @@ class DocxProvider:
                     # 检查段落内是否包含 OMML 公式
                     formula_blocks = self._extract_omml_from_paragraph(element, block_id)
                     
-                    has_text = bool(paragraph.text.strip())
-                    image_blocks = self._extract_images_from_paragraph(
-                        paragraph, block_id + (1 if has_text else 0) + len(formula_blocks)
+                    has_plain_text = bool(paragraph.text.strip())
+                    has_inline_images = self._paragraph_has_inline_image(element)
+                    has_text = has_plain_text or self._paragraph_has_inline_omml(element) or (
+                        has_plain_text and has_inline_images
                     )
+                    image_blocks = []
+                    if not (has_plain_text and has_inline_images):
+                        image_blocks = self._extract_images_from_paragraph(
+                            paragraph, block_id + (1 if has_text else 0) + len(formula_blocks)
+                        )
                     
                     # 检查段落内是否包含文本框
                     textbox_blocks = self._extract_textbox_from_element(
@@ -387,23 +396,21 @@ class DocxProvider:
                 ))
                 bid += 1
         
-        # 行内公式（不在 oMathPara 内的独立 oMath）
+        return formula_blocks
+
+    def _paragraph_has_inline_omml(self, element) -> bool:
+        if etree is None:
+            return False
+
         for math_elem in element.findall(f'.//{{{NS["m"]}}}oMath'):
-            # 跳过已被 oMathPara 包含的
             parent = math_elem.getparent()
             if parent is not None and parent.tag == f'{{{NS["m"]}}}oMathPara':
                 continue
-            formula_text = self._omml_to_text(math_elem)
-            if formula_text:
-                formula_blocks.append(Block(
-                    id=bid,
-                    type="formula",
-                    text=formula_text,
-                    metadata={"source": "omml_inline"},
-                ))
-                bid += 1
-        
-        return formula_blocks
+            return True
+        return False
+
+    def _paragraph_has_inline_image(self, element) -> bool:
+        return element.find(f'.//{{{NS["w"]}}}drawing') is not None or element.find(f'.//{{{NS["w"]}}}pict') is not None
     
     def _omml_to_text(self, element) -> str:
         """从 OMML 元素转化为可读文本（带有简单 LaTeX 降级支持），专门支持 fraction 等"""
@@ -525,12 +532,11 @@ class DocxProvider:
     
     def _process_paragraph(self, paragraph: Paragraph, block_id: int) -> Optional[Block]:
         """处理段落元素，嗅探物理特征 + 提取行内富文本"""
-        plain_text = paragraph.text.strip()
-        if not plain_text:
-            return None
-        
         rich_text = self._extract_rich_text(paragraph)
+        plain_text = paragraph.text.strip()
         text = rich_text.strip() if rich_text and rich_text.strip() else plain_text
+        if not text:
+            return None
         
         style_name = paragraph.style.name if paragraph.style else ""
         
@@ -543,6 +549,8 @@ class DocxProvider:
         
         is_bold = self._detect_bold(paragraph)
         is_code = self._detect_code_font(paragraph)
+        if is_code and plain_text:
+            text = plain_text
         font_size = self._detect_font_size(paragraph)
         alignment = self._detect_alignment(paragraph)
         
@@ -588,6 +596,9 @@ class DocxProvider:
         Returns a Markdown string with clean inline formatting:
         no ghost spaces, no fragmented bold runs, no marker bleed.
         """
+        if self._paragraph_has_inline_omml(paragraph._element) or self._paragraph_has_inline_image(paragraph._element):
+            return self._extract_rich_text_with_inline_objects(paragraph)
+
         runs = paragraph.runs
         if not runs:
             return paragraph.text or ""
@@ -598,6 +609,55 @@ class DocxProvider:
         segments = self._normalize_runs(runs, suppress_bold)
         segments = self._merge_homogeneous_segments(segments)
         return self._render_segments(segments)
+
+    def _extract_rich_text_with_inline_objects(self, paragraph: Paragraph) -> str:
+        segments: List[RichSegment] = []
+        suppress_bold = self._detect_bold(paragraph)
+
+        for child in paragraph._element:
+            if child.tag == f'{{{NS["w"]}}}r':
+                segments.extend(self._normalize_run_element_in_order(child, paragraph, suppress_bold))
+            elif child.tag == f'{{{NS["m"]}}}oMath':
+                formula_text = self._omml_to_text(child)
+                if formula_text:
+                    segments.append(RichSegment(text=f"${formula_text}$"))
+            elif child.tag == f'{{{NS["m"]}}}oMathPara':
+                formula_text = self._omml_to_text(child)
+                if formula_text:
+                    segments.append(RichSegment(text=f"\n$${formula_text}$$\n"))
+
+        segments = self._merge_homogeneous_segments(segments)
+        return self._render_segments(segments)
+
+    def _normalize_run_element_in_order(self, run_element, paragraph: Paragraph, suppress_bold: bool) -> List[RichSegment]:
+        run = Run(run_element, paragraph)
+        base_segments = self._normalize_runs([run], suppress_bold)
+        if not self._run_has_inline_image(run_element):
+            return base_segments
+
+        segments: List[RichSegment] = []
+        text_segments = iter(base_segments)
+        for child in run_element:
+            if child.tag == f'{{{NS["w"]}}}t':
+                try:
+                    segments.append(next(text_segments))
+                except StopIteration:
+                    if child.text:
+                        segments.append(RichSegment(text=child.text))
+            elif child.tag == f'{{{NS["w"]}}}drawing':
+                image_block = self._extract_image_from_drawing(child, -1)
+                if image_block:
+                    segments.append(RichSegment(text=image_block.to_markdown()))
+            elif child.tag == f'{{{NS["w"]}}}pict':
+                image_block = self._extract_image_from_pict(child, -1)
+                if image_block:
+                    segments.append(RichSegment(text=image_block.to_markdown()))
+
+        segments.extend(text_segments)
+        return segments
+
+    def _run_has_inline_image(self, run_element) -> bool:
+        return run_element.find(f'.//{{{NS["w"]}}}drawing') is not None or run_element.find(f'.//{{{NS["w"]}}}pict') is not None
 
     # -- Phase 1: Normalize ------------------------------------------------
 
@@ -620,6 +680,8 @@ class DocxProvider:
             is_italic = run.italic is True
             is_underline = run.underline is True
             is_strike = (run.font.strike is True) if run.font else False
+            font_name = self._get_run_font_name(run)
+            is_code = bool(font_name and font_name.lower() in self._mono_fonts())
 
             is_superscript = False
             is_subscript = False
@@ -644,6 +706,7 @@ class DocxProvider:
                 strike=is_strike,
                 superscript=is_superscript,
                 subscript=is_subscript,
+                code=is_code,
             ))
 
         return segments
@@ -676,6 +739,7 @@ class DocxProvider:
                     strike=prev.strike,
                     superscript=prev.superscript,
                     subscript=prev.subscript,
+                    code=prev.code,
                 )
             elif not seg.text.strip() and not seg.has_formatting:
                 # Pure whitespace with no formatting — absorb into prev
@@ -687,6 +751,7 @@ class DocxProvider:
                     strike=prev.strike,
                     superscript=prev.superscript,
                     subscript=prev.subscript,
+                    code=prev.code,
                 )
             else:
                 merged.append(seg)
@@ -729,6 +794,8 @@ class DocxProvider:
                 continue
 
             # Apply markers inside-out so nesting is correct
+            if seg.code:
+                text = cls._wrap_safe(text.replace("`", "\\`"), "`")
             if seg.strike:
                 text = cls._wrap_safe(text, "~~")
             if seg.italic:
@@ -783,18 +850,47 @@ class DocxProvider:
             return False
             
         code_count = 0
-        mono_fonts = {'courier', 'courier new', 'consolas', 'monaco', 'lucida console', 'dejavu sans mono'}
+        mono_fonts = self._mono_fonts()
         for run in runs:
-            font_name = None
-            if run.font and run.font.name:
-                font_name = run.font.name
-            elif paragraph.style and paragraph.style.font and paragraph.style.font.name:
+            font_name = self._get_run_font_name(run)
+            if not font_name and paragraph.style and paragraph.style.font and paragraph.style.font.name:
                 font_name = paragraph.style.font.name
                 
             if font_name and font_name.lower() in mono_fonts:
                 code_count += 1
                 
         return code_count >= len(runs) * 0.8
+
+    @staticmethod
+    def _mono_fonts() -> set[str]:
+        return {
+            'courier',
+            'courier new',
+            'consolas',
+            'monaco',
+            'lucida console',
+            'dejavu sans mono',
+            'menlo',
+            'source code pro',
+            'fira code',
+            'jetbrains mono',
+            '等线',
+        }
+
+    def _get_run_font_name(self, run) -> Optional[str]:
+        if run.font and run.font.name:
+            return run.font.name
+
+        try:
+            r_fonts = run._element.rPr.rFonts
+            for attr in ("ascii", "hAnsi", "eastAsia", "cs"):
+                value = getattr(r_fonts, attr, None)
+                if value:
+                    return value
+        except Exception:
+            pass
+
+        return None
     
     def _detect_font_size(self, paragraph: Paragraph) -> Optional[float]:
         """嗅探段落字号（取最大值）"""
