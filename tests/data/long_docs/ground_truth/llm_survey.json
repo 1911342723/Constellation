@@ -1,0 +1,582 @@
+{
+    "doc_title": "A Survey of Large Language Models",
+    "doc_authors": "",
+    "gt_source": "pdf_embedded_toc",
+    "headings": [
+        {
+            "block_id": 26,
+            "title": "Introduction",
+            "level": 1
+        },
+        {
+            "block_id": 165,
+            "title": "Overview",
+            "level": 1
+        },
+        {
+            "block_id": 167,
+            "title": "Background for LLMs",
+            "level": 2
+        },
+        {
+            "block_id": 264,
+            "title": "Technical Evolution of GPT-series Models",
+            "level": 2
+        },
+        {
+            "block_id": 1080,
+            "title": "Resources of LLMs",
+            "level": 1
+        },
+        {
+            "block_id": 1082,
+            "title": "Publicly Available Model Checkpoints or APIs",
+            "level": 2
+        },
+        {
+            "block_id": 1205,
+            "title": "Commonly Used Corpora for Pre-training",
+            "level": 2
+        },
+        {
+            "block_id": 1288,
+            "title": "Commonly Used Datasets for Fine-tuning",
+            "level": 2
+        },
+        {
+            "block_id": 1290,
+            "title": "Instruction Tuning Datasets",
+            "level": 3
+        },
+        {
+            "block_id": 1353,
+            "title": "Alignment Datasets",
+            "level": 3
+        },
+        {
+            "block_id": 1360,
+            "title": "Library Resource",
+            "level": 2
+        },
+        {
+            "block_id": 1373,
+            "title": "Pre-training",
+            "level": 1
+        },
+        {
+            "block_id": 1375,
+            "title": "Data Collection and Preparation",
+            "level": 2
+        },
+        {
+            "block_id": 1459,
+            "title": "Data Source",
+            "level": 3
+        },
+        {
+            "block_id": 1470,
+            "title": "Data Preprocessing",
+            "level": 3
+        },
+        {
+            "block_id": 1521,
+            "title": "Data Scheduling",
+            "level": 3
+        },
+        {
+            "block_id": 1553,
+            "title": "Summary of Data Preparation",
+            "level": 3
+        },
+        {
+            "block_id": 1558,
+            "title": "Architecture",
+            "level": 2
+        },
+        {
+            "block_id": 1561,
+            "title": "Typical Architectures",
+            "level": 3
+        },
+        {
+            "block_id": 1759,
+            "title": "Detailed Configuration",
+            "level": 3
+        },
+        {
+            "block_id": 1810,
+            "title": "Pre-training Tasks",
+            "level": 3
+        },
+        {
+            "block_id": 1843,
+            "title": "Decoding Strategy",
+            "level": 3
+        },
+        {
+            "block_id": 1880,
+            "title": "Summary and Discussion",
+            "level": 3
+        },
+        {
+            "block_id": 1888,
+            "title": "Model Training",
+            "level": 2
+        },
+        {
+            "block_id": 1890,
+            "title": "Optimization Setting",
+            "level": 3
+        },
+        {
+            "block_id": 2091,
+            "title": "Scalable Training Techniques",
+            "level": 3
+        },
+        {
+            "block_id": 2109,
+            "title": "Post-training of LLMs",
+            "level": 1
+        },
+        {
+            "block_id": 2111,
+            "title": "Instruction Tuning",
+            "level": 2
+        },
+        {
+            "block_id": 2114,
+            "title": "Formatted Instance Construction",
+            "level": 3
+        },
+        {
+            "block_id": 2136,
+            "title": "Instruction Tuning Strategies",
+            "level": 3
+        },
+        {
+            "block_id": 2157,
+            "title": "The Effect of Instruction Tuning",
+            "level": 3
+        },
+        {
+            "block_id": 2165,
+            "title": "Empirical Analysis for Instruction Tuning",
+            "level": 3
+        },
+        {
+            "block_id": 2205,
+            "title": "Alignment Tuning",
+            "level": 2
+        },
+        {
+            "block_id": 2207,
+            "title": "Background and Criteria for Alignment",
+            "level": 3
+        },
+        {
+            "block_id": 2213,
+            "title": "Collecting Human Feedback",
+            "level": 3
+        },
+        {
+            "block_id": 2254,
+            "title": "Reinforcement Learning from Human Feedback",
+            "level": 3
+        },
+        {
+            "block_id": 2313,
+            "title": "Alignment without RLHF",
+            "level": 3
+        },
+        {
+            "block_id": 2330,
+            "title": "Remarks on SFT and RLHF",
+            "level": 3
+        },
+        {
+            "block_id": 2343,
+            "title": "Parameter-Efficient Model Adaptation",
+            "level": 2
+        },
+        {
+            "block_id": 2345,
+            "title": "Parameter-Efficient Fine-Tuning Methods",
+            "level": 3
+        },
+        {
+            "block_id": 2358,
+            "title": "Parameter-Efficient Fine-Tuning on LLMs",
+            "level": 3
+        },
+        {
+            "block_id": 2362,
+            "title": "Utilization",
+            "level": 1
+        },
+        {
+            "block_id": 2367,
+            "title": "Prompting",
+            "level": 2
+        },
+        {
+            "block_id": 2369,
+            "title": "Prompt Creation",
+            "level": 3
+        },
+        {
+            "block_id": 2386,
+            "title": "Prompt Optimization",
+            "level": 3
+        },
+        {
+            "block_id": 2560,
+            "title": "In-Context Learning",
+            "level": 2
+        },
+        {
+            "block_id": 2562,
+            "title": "ICL Formulation",
+            "level": 3
+        },
+        {
+            "block_id": 2584,
+            "title": "Demonstration Design",
+            "level": 3
+        },
+        {
+            "block_id": 2627,
+            "title": "Underlying Mechanism",
+            "level": 3
+        },
+        {
+            "block_id": 2634,
+            "title": "Chain-of-Thought Prompting",
+            "level": 2
+        },
+        {
+            "block_id": 2642,
+            "title": "Basic CoT Prompting Approach",
+            "level": 3
+        },
+        {
+            "block_id": -1,
+            "title": "Improved CoT Prompting Strategies",
+            "level": 3
+        },
+        {
+            "block_id": 2691,
+            "title": "Further Discussion on CoT Prompting",
+            "level": 3
+        },
+        {
+            "block_id": 2714,
+            "title": "Planning",
+            "level": 2
+        },
+        {
+            "block_id": -1,
+            "title": "The Overall Framework",
+            "level": 3
+        },
+        {
+            "block_id": 2727,
+            "title": "Plan Generation",
+            "level": 3
+        },
+        {
+            "block_id": 2733,
+            "title": "Feedback Acquisition",
+            "level": 3
+        },
+        {
+            "block_id": 2737,
+            "title": "Plan Refinement",
+            "level": 3
+        },
+        {
+            "block_id": 2739,
+            "title": "Capacity and Evaluation",
+            "level": 1
+        },
+        {
+            "block_id": 2742,
+            "title": "Basic Ability",
+            "level": 2
+        },
+        {
+            "block_id": 2754,
+            "title": "Language Generation",
+            "level": 3
+        },
+        {
+            "block_id": 2755,
+            "title": "Knowledge Utilization",
+            "level": 3
+        },
+        {
+            "block_id": 2847,
+            "title": "Complex Reasoning",
+            "level": 3
+        },
+        {
+            "block_id": 2866,
+            "title": "Advanced Ability",
+            "level": 2
+        },
+        {
+            "block_id": 2868,
+            "title": "Human Alignment",
+            "level": 3
+        },
+        {
+            "block_id": 2870,
+            "title": "Interaction with External Environment",
+            "level": 3
+        },
+        {
+            "block_id": 2873,
+            "title": "Tool Manipulation",
+            "level": 3
+        },
+        {
+            "block_id": 2876,
+            "title": "Benchmarks and Evaluation Approaches",
+            "level": 2
+        },
+        {
+            "block_id": 2878,
+            "title": "Comprehensive Evaluation Benchmarks",
+            "level": 3
+        },
+        {
+            "block_id": 2885,
+            "title": "Evaluation Approaches",
+            "level": 3
+        },
+        {
+            "block_id": 3045,
+            "title": "Empirical Evaluation",
+            "level": 2
+        },
+        {
+            "block_id": 3047,
+            "title": "Experimental Settings",
+            "level": 3
+        },
+        {
+            "block_id": 3246,
+            "title": "Results Analysis and Findings",
+            "level": 3
+        },
+        {
+            "block_id": 3260,
+            "title": "Applications",
+            "level": 1
+        },
+        {
+            "block_id": 3263,
+            "title": "LLM for Research Community",
+            "level": 2
+        },
+        {
+            "block_id": 3277,
+            "title": "LLM for Classic NLP Tasks",
+            "level": 3
+        },
+        {
+            "block_id": 3337,
+            "title": "LLM for Information Retrieval",
+            "level": 3
+        },
+        {
+            "block_id": 3344,
+            "title": "LLM for Recommender Systems",
+            "level": 3
+        },
+        {
+            "block_id": 3349,
+            "title": "Multimodal Large Language Model",
+            "level": 3
+        },
+        {
+            "block_id": 3364,
+            "title": "KG-Enhanced LLM",
+            "level": 3
+        },
+        {
+            "block_id": 3373,
+            "title": "LLM for Evaluation",
+            "level": 3
+        },
+        {
+            "block_id": 3382,
+            "title": "LLM for Specific Domains",
+            "level": 2
+        },
+        {
+            "block_id": 3390,
+            "title": "Advanced Topics",
+            "level": 1
+        },
+        {
+            "block_id": 3392,
+            "title": "Long Context Modeling",
+            "level": 2
+        },
+        {
+            "block_id": 3394,
+            "title": "Scaling Position Embeddings",
+            "level": 3
+        },
+        {
+            "block_id": 3415,
+            "title": "Adapting Context Window",
+            "level": 3
+        },
+        {
+            "block_id": 3423,
+            "title": "Long Text Data",
+            "level": 3
+        },
+        {
+            "block_id": 3427,
+            "title": "LLM-empowered Agent",
+            "level": 2
+        },
+        {
+            "block_id": 3430,
+            "title": "Overall Framework.",
+            "level": 3
+        },
+        {
+            "block_id": 3436,
+            "title": "Applications",
+            "level": 3
+        },
+        {
+            "block_id": 3441,
+            "title": "Discussion",
+            "level": 3
+        },
+        {
+            "block_id": 3444,
+            "title": "Analysis and Optimization for Model Training",
+            "level": 2
+        },
+        {
+            "block_id": 3448,
+            "title": "Estimation of Training Memory Consumption",
+            "level": 3
+        },
+        {
+            "block_id": 3489,
+            "title": "Memory Optimization Methods",
+            "level": 3
+        },
+        {
+            "block_id": 3491,
+            "title": "Efficiency Optimization Methods",
+            "level": 3
+        },
+        {
+            "block_id": 3497,
+            "title": "Analysis and Optimization for Model Inference",
+            "level": 2
+        },
+        {
+            "block_id": 3499,
+            "title": "Analysis of Inference Efficiency",
+            "level": 3
+        },
+        {
+            "block_id": 3509,
+            "title": "System-level Optimization",
+            "level": 3
+        },
+        {
+            "block_id": 3683,
+            "title": "Algorithm-level Optimization",
+            "level": 3
+        },
+        {
+            "block_id": 3687,
+            "title": "Model Compression",
+            "level": 2
+        },
+        {
+            "block_id": 3689,
+            "title": "Quantization Methods",
+            "level": 3
+        },
+        {
+            "block_id": 3727,
+            "title": "Other Model Compression Methods",
+            "level": 3
+        },
+        {
+            "block_id": 3824,
+            "title": "Open-source Libraries",
+            "level": 3
+        },
+        {
+            "block_id": 3840,
+            "title": "Retrieval-Augmented Generation",
+            "level": 2
+        },
+        {
+            "block_id": 3856,
+            "title": "Hallucination",
+            "level": 2
+        },
+        {
+            "block_id": 3858,
+            "title": "Definition of Hallucination",
+            "level": 3
+        },
+        {
+            "block_id": 3860,
+            "title": "Source of Hallucination",
+            "level": 3
+        },
+        {
+            "block_id": 3867,
+            "title": "Hallucination Detection",
+            "level": 3
+        },
+        {
+            "block_id": 3872,
+            "title": "Hallucination Mitigation",
+            "level": 3
+        },
+        {
+            "block_id": 3877,
+            "title": "Complex Reasoning",
+            "level": 2
+        },
+        {
+            "block_id": 3880,
+            "title": "Overview and Analysis",
+            "level": 3
+        },
+        {
+            "block_id": 3888,
+            "title": "Construction of Long CoT Data",
+            "level": 3
+        },
+        {
+            "block_id": 3892,
+            "title": "Training Methods",
+            "level": 3
+        },
+        {
+            "block_id": 3909,
+            "title": "Extended Discussion",
+            "level": 3
+        },
+        {
+            "block_id": 3911,
+            "title": "Conclusion and Future Directions",
+            "level": 1
+        }
+    ]
+}

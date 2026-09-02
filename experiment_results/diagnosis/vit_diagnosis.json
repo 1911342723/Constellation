@@ -1,0 +1,2453 @@
+{
+  "doc": "vit",
+  "stage0_toc": {
+    "toc_entries": 30,
+    "toc_sample": [
+      [
+        1,
+        "1 Introduction",
+        1
+      ],
+      [
+        1,
+        "2 Related Work",
+        2
+      ],
+      [
+        1,
+        "3 Method",
+        3
+      ],
+      [
+        2,
+        "3.1 Vision Transformer (ViT)",
+        3
+      ],
+      [
+        2,
+        "3.2 Fine-tuning and Higher Resolution",
+        4
+      ],
+      [
+        1,
+        "4 Experiments",
+        4
+      ],
+      [
+        2,
+        "4.1 Setup",
+        4
+      ],
+      [
+        2,
+        "4.2 Comparison to State of the Art",
+        5
+      ],
+      [
+        2,
+        "4.3 Pre-training Data Requirements",
+        6
+      ],
+      [
+        2,
+        "4.4 Scaling Study",
+        8
+      ]
+    ],
+    "gt_headings": 30,
+    "gt_block_id_zero_count": 0
+  },
+  "stage1_blocks": {
+    "total_blocks": 1920,
+    "text_blocks": 1607,
+    "body_font_size": 10.0,
+    "font_size_min": 3.9,
+    "font_size_max": 20.0,
+    "font_size_median": 9.6,
+    "bold_blocks": 1,
+    "heading_style_blocks": 16
+  },
+  "stage2_skeleton": {
+    "windows": 8,
+    "skeleton_chars": 112162,
+    "original_chars": 68841,
+    "compression_pct": -62.9
+  },
+  "stage25_candidates": {
+    "candidate_count": 129,
+    "sample": [
+      {
+        "block_id": 0,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "large-font"
+        ],
+        "title": "AN IMAGE IS WORTH 16X16 WORDS:"
+      },
+      {
+        "block_id": 1,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "explicit-style",
+          "large-font"
+        ],
+        "title": "TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE"
+      },
+      {
+        "block_id": 3,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "centered"
+        ],
+        "title": "Xiaohua Zhai∗, Thomas Unterthiner, Mostafa Dehghani, Matthia"
+      },
+      {
+        "block_id": 8,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "large-font"
+        ],
+        "title": "arXiv:2010.11929v2 [cs.CV] 3 Jun 2021"
+      },
+      {
+        "block_id": 9,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "explicit-style",
+          "semantic-title",
+          "slightly-large-font"
+        ],
+        "title": "ABSTRACT"
+      },
+      {
+        "block_id": 21,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "1 INTRODUCTION"
+      },
+      {
+        "block_id": 57,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "2 RELATED WORK"
+      },
+      {
+        "block_id": 109,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "numbering"
+        ],
+        "title": "1 2 3 4 5 6 7 8 9"
+      },
+      {
+        "block_id": 123,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "3 METHOD"
+      },
+      {
+        "block_id": 127,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ],
+        "title": "3.1 VISION TRANSFORMER (VIT)"
+      },
+      {
+        "block_id": 137,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "numbering"
+        ],
+        "title": "0 = xclass), whose state at the output of the Transformer en"
+      },
+      {
+        "block_id": 141,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "numbering"
+        ],
+        "title": "L. The classiﬁcation head is implemented by a MLP with one h"
+      },
+      {
+        "block_id": 161,
+        "score": 0.85,
+        "reasons": [
+          "numbering"
+        ],
+        "title": "L) serves as the"
+      },
+      {
+        "block_id": 184,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ],
+        "title": "3.2 FINE-TUNING AND HIGHER RESOLUTION"
+      },
+      {
+        "block_id": 195,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "4 EXPERIMENTS"
+      }
+    ]
+  },
+  "reference_chain": [
+    {
+      "ref_title": "Abstract",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 9,
+        "similarity": 1.0,
+        "block_text": "ABSTRACT",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "center",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "explicit-style",
+          "semantic-title",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "1 Introduction",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 21,
+        "similarity": 1.0,
+        "block_text": "1 INTRODUCTION",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "2 Related Work",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 57,
+        "similarity": 1.0,
+        "block_text": "2 RELATED WORK",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "3 Method",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 123,
+        "similarity": 1.0,
+        "block_text": "3 METHOD",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "3.1 Vision Transformer (ViT)",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 98,
+        "similarity": 1.0,
+        "block_text": "Vision Transformer (ViT)",
+        "mode": "numbering-stripped"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 7.8,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 0.78
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": false,
+      "candidate_miss_analysis": {
+        "score": 0.0,
+        "breakdown": {},
+        "font_ratio": 0.78,
+        "text_len": 24,
+        "rejected": "score 0.00 < 0.55"
+      }
+    },
+    {
+      "ref_title": "3.2 Fine-tuning and Higher Resolution",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 184,
+        "similarity": 1.0,
+        "block_text": "3.2 FINE-TUNING AND HIGHER RESOLUTION",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4 Experiments",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 195,
+        "similarity": 1.0,
+        "block_text": "4 EXPERIMENTS",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.1 Setup",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 202,
+        "similarity": 1.0,
+        "block_text": "4.1 SETUP",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.2 Comparison to State of the Art",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 264,
+        "similarity": 1.0,
+        "block_text": "4.2 COMPARISON TO STATE OF THE ART",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.3 Pre-training Data Requirements",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 343,
+        "similarity": 1.0,
+        "block_text": "4.3 PRE-TRAINING DATA REQUIREMENTS",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.4 Scaling Study",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 445,
+        "similarity": 1.0,
+        "block_text": "4.4 SCALING STUDY",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.5 Inspecting Vision Transformer",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 463,
+        "similarity": 1.0,
+        "block_text": "4.5 INSPECTING VISION TRANSFORMER",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.6 Self-supervision",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 472,
+        "similarity": 1.0,
+        "block_text": "4.6 SELF-SUPERVISION",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "5 Conclusion",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 538,
+        "similarity": 1.0,
+        "block_text": "5 CONCLUSION",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "A Multihead Self-attention",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 763,
+        "similarity": 1.0,
+        "block_text": "A MULTIHEAD SELF-ATTENTION",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "B Experiment details",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 780,
+        "similarity": 1.0,
+        "block_text": "B EXPERIMENT DETAILS",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "B.1 Training",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 781,
+        "similarity": 1.0,
+        "block_text": "B.1 TRAINING",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "B.1.1 Fine-tuning",
+      "ref_level": 3,
+      "block_match": {
+        "block_id": 787,
+        "similarity": 1.0,
+        "block_text": "B.1.1 FINE-TUNING",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "B.1.2 Self-supervision",
+      "ref_level": 3,
+      "block_match": {
+        "block_id": 869,
+        "similarity": 1.0,
+        "block_text": "B.1.2 SELF-SUPERVISION",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "C Additional Results",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 890,
+        "similarity": 1.0,
+        "block_text": "C ADDITIONAL RESULTS",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "D Additional Analyses",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 1028,
+        "similarity": 1.0,
+        "block_text": "D ADDITIONAL ANALYSES",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.1 SGD vs. Adam for ResNets",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1029,
+        "similarity": 1.0,
+        "block_text": "D.1 SGD VS. ADAM FOR RESNETS",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.2 Transformer shape",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1173,
+        "similarity": 1.0,
+        "block_text": "D.2 TRANSFORMER SHAPE",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.3 Head Type and class token",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1185,
+        "similarity": 1.0,
+        "block_text": "D.3 HEAD TYPE AND CLASS TOKEN",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 8.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 0.8
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.4 Positional Embedding",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1245,
+        "similarity": 1.0,
+        "block_text": "D.4 POSITIONAL EMBEDDING",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.5 Empirical Computational Costs",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1363,
+        "similarity": 1.0,
+        "block_text": "D.5 EMPIRICAL COMPUTATIONAL COSTS",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.6 Axial Attention",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1417,
+        "similarity": 1.0,
+        "block_text": "D.6 AXIAL ATTENTION",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.7 Attention Distance",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1482,
+        "similarity": 1.0,
+        "block_text": "D.7 ATTENTION DISTANCE",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.8 Attention Maps",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1489,
+        "similarity": 1.0,
+        "block_text": "D.8 ATTENTION MAPS",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.9 ObjectNet Results",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1494,
+        "similarity": 1.0,
+        "block_text": "D.9 OBJECTNET RESULTS",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "D.10 VTAB Breakdown",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 1497,
+        "similarity": 1.0,
+        "block_text": "D.10 VTAB BREAKDOWN",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.0,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ]
+      }
+    }
+  ],
+  "chain_summary": {
+    "reference_headings": 31,
+    "found_in_blocks": 31,
+    "visible_in_skeleton": 31,
+    "in_candidate_table": 30,
+    "block_recall_upper_bound": 1.0,
+    "candidate_recall_upper_bound": 0.968
+  },
+  "stage3_llm": {
+    "windows_routed": 8,
+    "raw_anchor_total": 64,
+    "dropped_anchor_total": 0,
+    "final_tree_headings": [
+      {
+        "block_id": 9,
+        "level": 1,
+        "title": "ABSTRACT"
+      },
+      {
+        "block_id": 21,
+        "level": 1,
+        "title": "1 INTRODUCTION"
+      },
+      {
+        "block_id": 57,
+        "level": 1,
+        "title": "2 RELATED WORK"
+      },
+      {
+        "block_id": 109,
+        "level": 1,
+        "title": "1 2 3 4 5 6 7 8 9"
+      },
+      {
+        "block_id": 123,
+        "level": 1,
+        "title": "3 METHOD"
+      },
+      {
+        "block_id": 127,
+        "level": 2,
+        "title": "3.1 VISION TRANSFORMER (VIT)"
+      },
+      {
+        "block_id": 137,
+        "level": 1,
+        "title": "0 = xclass), whose state at the output of the Transformer encoder (z0"
+      },
+      {
+        "block_id": 141,
+        "level": 1,
+        "title": "L. The classiﬁcation head is implemented by a MLP with one hidden layer at pre-training"
+      },
+      {
+        "block_id": 161,
+        "level": 1,
+        "title": "L) serves as the"
+      },
+      {
+        "block_id": 184,
+        "level": 2,
+        "title": "3.2 FINE-TUNING AND HIGHER RESOLUTION"
+      },
+      {
+        "block_id": 195,
+        "level": 1,
+        "title": "4 EXPERIMENTS"
+      },
+      {
+        "block_id": 202,
+        "level": 2,
+        "title": "4.1 SETUP"
+      },
+      {
+        "block_id": 250,
+        "level": 1,
+        "title": "2015) with β1 = 0.9, β2 = 0.999, a batch size of 4096 and apply a high weight decay of 0.1, which"
+      },
+      {
+        "block_id": 264,
+        "level": 2,
+        "title": "4.2 COMPARISON TO STATE OF THE ART"
+      },
+      {
+        "block_id": 288,
+        "level": 2,
+        "title": "88.55 ± 0.04 87.76 ± 0.03 85.30 ± 0.02 87.54 ± 0.02"
+      },
+      {
+        "block_id": 290,
+        "level": 2,
+        "title": "90.72 ± 0.05 90.54 ± 0.03 88.62 ± 0.05"
+      },
+      {
+        "block_id": 292,
+        "level": 2,
+        "title": "99.50 ± 0.06 99.42 ± 0.03 99.15 ± 0.03 99.37 ± 0.06"
+      },
+      {
+        "block_id": 294,
+        "level": 2,
+        "title": "94.55 ± 0.04 93.90 ± 0.05 93.25 ± 0.05 93.51 ± 0.08"
+      },
+      {
+        "block_id": 296,
+        "level": 2,
+        "title": "97.56 ± 0.03 97.32 ± 0.11 94.67 ± 0.15 96.62 ± 0.23"
+      },
+      {
+        "block_id": 343,
+        "level": 2,
+        "title": "4.3 PRE-TRAINING DATA REQUIREMENTS"
+      },
+      {
+        "block_id": 445,
+        "level": 2,
+        "title": "4.4 SCALING STUDY"
+      },
+      {
+        "block_id": 463,
+        "level": 2,
+        "title": "4.5 INSPECTING VISION TRANSFORMER"
+      },
+      {
+        "block_id": 472,
+        "level": 2,
+        "title": "4.6 SELF-SUPERVISION"
+      },
+      {
+        "block_id": 538,
+        "level": 1,
+        "title": "5 CONCLUSION"
+      },
+      {
+        "block_id": 552,
+        "level": 1,
+        "title": "ACKNOWLEDGEMENTS"
+      },
+      {
+        "block_id": 558,
+        "level": 1,
+        "title": "REFERENCES"
+      },
+      {
+        "block_id": 762,
+        "level": 1,
+        "title": "APPENDIX"
+      },
+      {
+        "block_id": 763,
+        "level": 1,
+        "title": "A MULTIHEAD SELF-ATTENTION"
+      },
+      {
+        "block_id": 780,
+        "level": 1,
+        "title": "B EXPERIMENT DETAILS"
+      },
+      {
+        "block_id": 781,
+        "level": 1,
+        "title": "B.1 TRAINING"
+      },
+      {
+        "block_id": 787,
+        "level": 1,
+        "title": "B.1.1 FINE-TUNING"
+      },
+      {
+        "block_id": 869,
+        "level": 1,
+        "title": "B.1.2 SELF-SUPERVISION"
+      },
+      {
+        "block_id": 890,
+        "level": 1,
+        "title": "C ADDITIONAL RESULTS"
+      },
+      {
+        "block_id": 1028,
+        "level": 1,
+        "title": "D ADDITIONAL ANALYSES"
+      },
+      {
+        "block_id": 1029,
+        "level": 1,
+        "title": "D.1 SGD VS. ADAM FOR RESNETS"
+      },
+      {
+        "block_id": 1173,
+        "level": 1,
+        "title": "D.2 TRANSFORMER SHAPE"
+      },
+      {
+        "block_id": 1185,
+        "level": 1,
+        "title": "D.3 HEAD TYPE AND CLASS TOKEN"
+      },
+      {
+        "block_id": 1245,
+        "level": 1,
+        "title": "D.4 POSITIONAL EMBEDDING"
+      },
+      {
+        "block_id": 1363,
+        "level": 1,
+        "title": "D.5 EMPIRICAL COMPUTATIONAL COSTS"
+      },
+      {
+        "block_id": 1417,
+        "level": 1,
+        "title": "D.6 AXIAL ATTENTION"
+      },
+      {
+        "block_id": 1482,
+        "level": 1,
+        "title": "D.7 ATTENTION DISTANCE"
+      },
+      {
+        "block_id": 1489,
+        "level": 1,
+        "title": "D.8 ATTENTION MAPS"
+      },
+      {
+        "block_id": 1494,
+        "level": 1,
+        "title": "D.9 OBJECTNET RESULTS"
+      },
+      {
+        "block_id": 1497,
+        "level": 1,
+        "title": "D.10 VTAB BREAKDOWN"
+      },
+      {
+        "block_id": 1513,
+        "level": 1,
+        "title": "5"
+      },
+      {
+        "block_id": 1527,
+        "level": 1,
+        "title": "13"
+      },
+      {
+        "block_id": 1541,
+        "level": 1,
+        "title": "21"
+      },
+      {
+        "block_id": 1555,
+        "level": 1,
+        "title": "29"
+      },
+      {
+        "block_id": 1569,
+        "level": 1,
+        "title": "37"
+      },
+      {
+        "block_id": 1583,
+        "level": 1,
+        "title": "45"
+      },
+      {
+        "block_id": 1597,
+        "level": 1,
+        "title": "53"
+      },
+      {
+        "block_id": 1611,
+        "level": 1,
+        "title": "61"
+      },
+      {
+        "block_id": 1625,
+        "level": 1,
+        "title": "69"
+      },
+      {
+        "block_id": 1639,
+        "level": 1,
+        "title": "77"
+      },
+      {
+        "block_id": 1653,
+        "level": 1,
+        "title": "85"
+      },
+      {
+        "block_id": 1667,
+        "level": 1,
+        "title": "93"
+      },
+      {
+        "block_id": 1681,
+        "level": 1,
+        "title": "101"
+      },
+      {
+        "block_id": 1695,
+        "level": 1,
+        "title": "109"
+      },
+      {
+        "block_id": 1709,
+        "level": 1,
+        "title": "117"
+      },
+      {
+        "block_id": 1723,
+        "level": 1,
+        "title": "125"
+      },
+      {
+        "block_id": 1733,
+        "level": 2,
+        "title": "Figure 14: Further example attention maps as in Figure 6 (random selection)."
+      },
+      {
+        "block_id": 1894,
+        "level": 1,
+        "title": "Table 9: Breakdown of VTAB-1k performance across tasks."
+      },
+      {
+        "block_id": 1899,
+        "level": 2,
+        "title": "Camelyon"
+      },
+      {
+        "block_id": 1900,
+        "level": 2,
+        "title": "EuroSAT"
+      },
+      {
+        "block_id": 1901,
+        "level": 2,
+        "title": "Resisc45"
+      }
+    ],
+    "window_details": [
+      {
+        "allowed_ids": [
+          0,
+          1,
+          3,
+          8,
+          9,
+          21,
+          57,
+          109,
+          123,
+          127,
+          137,
+          141,
+          161,
+          184,
+          195,
+          202,
+          250,
+          264,
+          288,
+          290,
+          292,
+          294,
+          296,
+          298
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 9,
+            "level": 1,
+            "title": "ABSTRACT"
+          },
+          {
+            "block_id": 21,
+            "level": 1,
+            "title": "1 INTRODUCTION"
+          },
+          {
+            "block_id": 57,
+            "level": 1,
+            "title": "2 RELATED WORK"
+          },
+          {
+            "block_id": 123,
+            "level": 1,
+            "title": "3 METHOD"
+          },
+          {
+            "block_id": 127,
+            "level": 2,
+            "title": "3.1 VISION TRANSFORMER (VIT)"
+          },
+          {
+            "block_id": 184,
+            "level": 2,
+            "title": "3.2 FINE-TUNING AND HIGHER RESOLUTION"
+          },
+          {
+            "block_id": 195,
+            "level": 1,
+            "title": "4 EXPERIMENTS"
+          },
+          {
+            "block_id": 202,
+            "level": 2,
+            "title": "4.1 SETUP"
+          },
+          {
+            "block_id": 264,
+            "level": 2,
+            "title": "4.2 COMPARISON TO STATE OF THE ART"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 9,
+            "level": 1,
+            "title": "ABSTRACT"
+          },
+          {
+            "block_id": 21,
+            "level": 1,
+            "title": "1 INTRODUCTION"
+          },
+          {
+            "block_id": 57,
+            "level": 1,
+            "title": "2 RELATED WORK"
+          },
+          {
+            "block_id": 123,
+            "level": 1,
+            "title": "3 METHOD"
+          },
+          {
+            "block_id": 127,
+            "level": 2,
+            "title": "3.1 VISION TRANSFORMER (VIT)"
+          },
+          {
+            "block_id": 184,
+            "level": 2,
+            "title": "3.2 FINE-TUNING AND HIGHER RESOLUTION"
+          },
+          {
+            "block_id": 195,
+            "level": 1,
+            "title": "4 EXPERIMENTS"
+          },
+          {
+            "block_id": 202,
+            "level": 2,
+            "title": "4.1 SETUP"
+          },
+          {
+            "block_id": 264,
+            "level": 2,
+            "title": "4.2 COMPARISON TO STATE OF THE ART"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          250,
+          264,
+          288,
+          290,
+          292,
+          294,
+          296,
+          298,
+          300,
+          343,
+          361,
+          434,
+          435,
+          436,
+          437,
+          445,
+          463,
+          472,
+          525,
+          536,
+          538
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 264,
+            "level": 2,
+            "title": "4.2 COMPARISON TO STATE OF THE ART"
+          },
+          {
+            "block_id": 343,
+            "level": 2,
+            "title": "4.3 PRE-TRAINING DATA REQUIREMENTS"
+          },
+          {
+            "block_id": 445,
+            "level": 2,
+            "title": "4.4 SCALING STUDY"
+          },
+          {
+            "block_id": 463,
+            "level": 2,
+            "title": "4.5 INSPECTING VISION TRANSFORMER"
+          },
+          {
+            "block_id": 472,
+            "level": 2,
+            "title": "4.6 SELF-SUPERVISION"
+          },
+          {
+            "block_id": 538,
+            "level": 1,
+            "title": "5 CONCLUSION"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 264,
+            "level": 2,
+            "title": "4.2 COMPARISON TO STATE OF THE ART"
+          },
+          {
+            "block_id": 343,
+            "level": 2,
+            "title": "4.3 PRE-TRAINING DATA REQUIREMENTS"
+          },
+          {
+            "block_id": 445,
+            "level": 2,
+            "title": "4.4 SCALING STUDY"
+          },
+          {
+            "block_id": 463,
+            "level": 2,
+            "title": "4.5 INSPECTING VISION TRANSFORMER"
+          },
+          {
+            "block_id": 472,
+            "level": 2,
+            "title": "4.6 SELF-SUPERVISION"
+          },
+          {
+            "block_id": 538,
+            "level": 1,
+            "title": "5 CONCLUSION"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          525,
+          536,
+          538,
+          552,
+          558,
+          566,
+          568,
+          585,
+          650,
+          709,
+          713,
+          717,
+          721,
+          729,
+          733,
+          737,
+          740,
+          744,
+          755,
+          762,
+          763,
+          780,
+          781,
+          787
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 538,
+            "level": 1,
+            "title": "5 CONCLUSION"
+          },
+          {
+            "block_id": 552,
+            "level": 1,
+            "title": "ACKNOWLEDGEMENTS"
+          },
+          {
+            "block_id": 558,
+            "level": 1,
+            "title": "REFERENCES"
+          },
+          {
+            "block_id": 762,
+            "level": 1,
+            "title": "APPENDIX"
+          },
+          {
+            "block_id": 763,
+            "level": 2,
+            "title": "A MULTIHEAD SELF-ATTENTION"
+          },
+          {
+            "block_id": 780,
+            "level": 2,
+            "title": "B EXPERIMENT DETAILS"
+          },
+          {
+            "block_id": 781,
+            "level": 3,
+            "title": "B.1 TRAINING"
+          },
+          {
+            "block_id": 787,
+            "level": 4,
+            "title": "B.1.1 FINE-TUNING"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 538,
+            "level": 1,
+            "title": "5 CONCLUSION"
+          },
+          {
+            "block_id": 552,
+            "level": 1,
+            "title": "ACKNOWLEDGEMENTS"
+          },
+          {
+            "block_id": 558,
+            "level": 1,
+            "title": "REFERENCES"
+          },
+          {
+            "block_id": 762,
+            "level": 1,
+            "title": "APPENDIX"
+          },
+          {
+            "block_id": 763,
+            "level": 2,
+            "title": "A MULTIHEAD SELF-ATTENTION"
+          },
+          {
+            "block_id": 780,
+            "level": 2,
+            "title": "B EXPERIMENT DETAILS"
+          },
+          {
+            "block_id": 781,
+            "level": 3,
+            "title": "B.1 TRAINING"
+          },
+          {
+            "block_id": 787,
+            "level": 4,
+            "title": "B.1.1 FINE-TUNING"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          755,
+          762,
+          763,
+          780,
+          781,
+          787,
+          844,
+          846,
+          848,
+          852,
+          869,
+          890,
+          1028,
+          1029,
+          1035,
+          1038,
+          1041,
+          1044,
+          1047
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 762,
+            "level": 1,
+            "title": "APPENDIX"
+          },
+          {
+            "block_id": 763,
+            "level": 2,
+            "title": "A MULTIHEAD SELF-ATTENTION"
+          },
+          {
+            "block_id": 780,
+            "level": 1,
+            "title": "B EXPERIMENT DETAILS"
+          },
+          {
+            "block_id": 781,
+            "level": 2,
+            "title": "B.1 TRAINING"
+          },
+          {
+            "block_id": 787,
+            "level": 3,
+            "title": "B.1.1 FINE-TUNING"
+          },
+          {
+            "block_id": 869,
+            "level": 3,
+            "title": "B.1.2 SELF-SUPERVISION"
+          },
+          {
+            "block_id": 890,
+            "level": 1,
+            "title": "C ADDITIONAL RESULTS"
+          },
+          {
+            "block_id": 1028,
+            "level": 1,
+            "title": "D ADDITIONAL ANALYSES"
+          },
+          {
+            "block_id": 1029,
+            "level": 2,
+            "title": "D.1 SGD VS. ADAM FOR RESNETS"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 762,
+            "level": 1,
+            "title": "APPENDIX"
+          },
+          {
+            "block_id": 763,
+            "level": 2,
+            "title": "A MULTIHEAD SELF-ATTENTION"
+          },
+          {
+            "block_id": 780,
+            "level": 1,
+            "title": "B EXPERIMENT DETAILS"
+          },
+          {
+            "block_id": 781,
+            "level": 2,
+            "title": "B.1 TRAINING"
+          },
+          {
+            "block_id": 787,
+            "level": 3,
+            "title": "B.1.1 FINE-TUNING"
+          },
+          {
+            "block_id": 869,
+            "level": 3,
+            "title": "B.1.2 SELF-SUPERVISION"
+          },
+          {
+            "block_id": 890,
+            "level": 1,
+            "title": "C ADDITIONAL RESULTS"
+          },
+          {
+            "block_id": 1028,
+            "level": 1,
+            "title": "D ADDITIONAL ANALYSES"
+          },
+          {
+            "block_id": 1029,
+            "level": 2,
+            "title": "D.1 SGD VS. ADAM FOR RESNETS"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          1028,
+          1029,
+          1035,
+          1038,
+          1041,
+          1044,
+          1047,
+          1050,
+          1053,
+          1056,
+          1059,
+          1062,
+          1065,
+          1068,
+          1071,
+          1074,
+          1077,
+          1080,
+          1083,
+          1086,
+          1089,
+          1092,
+          1095,
+          1098,
+          1101,
+          1104,
+          1107,
+          1110,
+          1113,
+          1116,
+          1119,
+          1122,
+          1125,
+          1128,
+          1131,
+          1134,
+          1137,
+          1140,
+          1173,
+          1185,
+          1196,
+          1197,
+          1198,
+          1199,
+          1200,
+          1201,
+          1215,
+          1245,
+          1275,
+          1276
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 1028,
+            "level": 1,
+            "title": "D ADDITIONAL ANALYSES"
+          },
+          {
+            "block_id": 1029,
+            "level": 2,
+            "title": "D.1 SGD VS. ADAM FOR RESNETS"
+          },
+          {
+            "block_id": 1173,
+            "level": 2,
+            "title": "D.2 TRANSFORMER SHAPE"
+          },
+          {
+            "block_id": 1185,
+            "level": 2,
+            "title": "D.3 HEAD TYPE AND CLASS TOKEN"
+          },
+          {
+            "block_id": 1245,
+            "level": 2,
+            "title": "D.4 POSITIONAL EMBEDDING"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 1028,
+            "level": 1,
+            "title": "D ADDITIONAL ANALYSES"
+          },
+          {
+            "block_id": 1029,
+            "level": 2,
+            "title": "D.1 SGD VS. ADAM FOR RESNETS"
+          },
+          {
+            "block_id": 1173,
+            "level": 2,
+            "title": "D.2 TRANSFORMER SHAPE"
+          },
+          {
+            "block_id": 1185,
+            "level": 2,
+            "title": "D.3 HEAD TYPE AND CLASS TOKEN"
+          },
+          {
+            "block_id": 1245,
+            "level": 2,
+            "title": "D.4 POSITIONAL EMBEDDING"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          1275,
+          1276,
+          1313,
+          1314,
+          1360,
+          1363,
+          1367,
+          1370,
+          1373,
+          1375,
+          1412,
+          1417,
+          1448,
+          1482,
+          1489,
+          1494,
+          1497
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 1363,
+            "level": 2,
+            "title": "D.5 EMPIRICAL COMPUTATIONAL COSTS"
+          },
+          {
+            "block_id": 1417,
+            "level": 2,
+            "title": "D.6 AXIAL ATTENTION"
+          },
+          {
+            "block_id": 1482,
+            "level": 2,
+            "title": "D.7 ATTENTION DISTANCE"
+          },
+          {
+            "block_id": 1489,
+            "level": 2,
+            "title": "D.8 ATTENTION MAPS"
+          },
+          {
+            "block_id": 1494,
+            "level": 2,
+            "title": "D.9 OBJECTNET RESULTS"
+          },
+          {
+            "block_id": 1497,
+            "level": 2,
+            "title": "D.10 VTAB BREAKDOWN"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 1363,
+            "level": 2,
+            "title": "D.5 EMPIRICAL COMPUTATIONAL COSTS"
+          },
+          {
+            "block_id": 1417,
+            "level": 2,
+            "title": "D.6 AXIAL ATTENTION"
+          },
+          {
+            "block_id": 1482,
+            "level": 2,
+            "title": "D.7 ATTENTION DISTANCE"
+          },
+          {
+            "block_id": 1489,
+            "level": 2,
+            "title": "D.8 ATTENTION MAPS"
+          },
+          {
+            "block_id": 1494,
+            "level": 2,
+            "title": "D.9 OBJECTNET RESULTS"
+          },
+          {
+            "block_id": 1497,
+            "level": 2,
+            "title": "D.10 VTAB BREAKDOWN"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": null,
+        "raw_anchors": [
+          {
+            "block_id": 1513,
+            "level": 1,
+            "title": "5"
+          },
+          {
+            "block_id": 1527,
+            "level": 1,
+            "title": "13"
+          },
+          {
+            "block_id": 1541,
+            "level": 1,
+            "title": "21"
+          },
+          {
+            "block_id": 1555,
+            "level": 1,
+            "title": "29"
+          },
+          {
+            "block_id": 1569,
+            "level": 1,
+            "title": "37"
+          },
+          {
+            "block_id": 1583,
+            "level": 1,
+            "title": "45"
+          },
+          {
+            "block_id": 1597,
+            "level": 1,
+            "title": "53"
+          },
+          {
+            "block_id": 1611,
+            "level": 1,
+            "title": "61"
+          },
+          {
+            "block_id": 1625,
+            "level": 1,
+            "title": "69"
+          },
+          {
+            "block_id": 1639,
+            "level": 1,
+            "title": "77"
+          },
+          {
+            "block_id": 1653,
+            "level": 1,
+            "title": "85"
+          },
+          {
+            "block_id": 1667,
+            "level": 1,
+            "title": "93"
+          },
+          {
+            "block_id": 1681,
+            "level": 1,
+            "title": "101"
+          },
+          {
+            "block_id": 1695,
+            "level": 1,
+            "title": "109"
+          },
+          {
+            "block_id": 1709,
+            "level": 1,
+            "title": "117"
+          },
+          {
+            "block_id": 1723,
+            "level": 1,
+            "title": "125"
+          },
+          {
+            "block_id": 1733,
+            "level": 2,
+            "title": "Figure 14: Further example attention maps as in Figure 6 (random selection)."
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 1513,
+            "level": 1,
+            "title": "5"
+          },
+          {
+            "block_id": 1527,
+            "level": 1,
+            "title": "13"
+          },
+          {
+            "block_id": 1541,
+            "level": 1,
+            "title": "21"
+          },
+          {
+            "block_id": 1555,
+            "level": 1,
+            "title": "29"
+          },
+          {
+            "block_id": 1569,
+            "level": 1,
+            "title": "37"
+          },
+          {
+            "block_id": 1583,
+            "level": 1,
+            "title": "45"
+          },
+          {
+            "block_id": 1597,
+            "level": 1,
+            "title": "53"
+          },
+          {
+            "block_id": 1611,
+            "level": 1,
+            "title": "61"
+          },
+          {
+            "block_id": 1625,
+            "level": 1,
+            "title": "69"
+          },
+          {
+            "block_id": 1639,
+            "level": 1,
+            "title": "77"
+          },
+          {
+            "block_id": 1653,
+            "level": 1,
+            "title": "85"
+          },
+          {
+            "block_id": 1667,
+            "level": 1,
+            "title": "93"
+          },
+          {
+            "block_id": 1681,
+            "level": 1,
+            "title": "101"
+          },
+          {
+            "block_id": 1695,
+            "level": 1,
+            "title": "109"
+          },
+          {
+            "block_id": 1709,
+            "level": 1,
+            "title": "117"
+          },
+          {
+            "block_id": 1723,
+            "level": 1,
+            "title": "125"
+          },
+          {
+            "block_id": 1733,
+            "level": 2,
+            "title": "Figure 14: Further example attention maps as in Figure 6 (random selection)."
+          }
+        ],
+        "downgraded_anchors": [
+          {
+            "block_id": 1513,
+            "title": "5"
+          },
+          {
+            "block_id": 1527,
+            "title": "13"
+          },
+          {
+            "block_id": 1541,
+            "title": "21"
+          },
+          {
+            "block_id": 1555,
+            "title": "29"
+          },
+          {
+            "block_id": 1569,
+            "title": "37"
+          },
+          {
+            "block_id": 1583,
+            "title": "45"
+          },
+          {
+            "block_id": 1597,
+            "title": "53"
+          },
+          {
+            "block_id": 1611,
+            "title": "61"
+          },
+          {
+            "block_id": 1625,
+            "title": "69"
+          },
+          {
+            "block_id": 1639,
+            "title": "77"
+          },
+          {
+            "block_id": 1653,
+            "title": "85"
+          },
+          {
+            "block_id": 1667,
+            "title": "93"
+          },
+          {
+            "block_id": 1681,
+            "title": "101"
+          },
+          {
+            "block_id": 1695,
+            "title": "109"
+          },
+          {
+            "block_id": 1709,
+            "title": "117"
+          },
+          {
+            "block_id": 1723,
+            "title": "125"
+          },
+          {
+            "block_id": 1733,
+            "title": "Figure 14: Further example attention maps as in Figure 6 (random selection)."
+          }
+        ],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": null,
+        "raw_anchors": [
+          {
+            "block_id": 1894,
+            "level": 1,
+            "title": "Table 9: Breakdown of VTAB-1k performance across tasks."
+          },
+          {
+            "block_id": 1899,
+            "level": 2,
+            "title": "Camelyon"
+          },
+          {
+            "block_id": 1900,
+            "level": 2,
+            "title": "EuroSAT"
+          },
+          {
+            "block_id": 1901,
+            "level": 2,
+            "title": "Resisc45"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 1894,
+            "level": 1,
+            "title": "Table 9: Breakdown of VTAB-1k performance across tasks."
+          },
+          {
+            "block_id": 1899,
+            "level": 2,
+            "title": "Camelyon"
+          },
+          {
+            "block_id": 1900,
+            "level": 2,
+            "title": "EuroSAT"
+          },
+          {
+            "block_id": 1901,
+            "level": 2,
+            "title": "Resisc45"
+          }
+        ],
+        "downgraded_anchors": [
+          {
+            "block_id": 1894,
+            "title": "Table 9: Breakdown of VTAB-1k performance across tasks."
+          },
+          {
+            "block_id": 1899,
+            "title": "Camelyon"
+          },
+          {
+            "block_id": 1900,
+            "title": "EuroSAT"
+          },
+          {
+            "block_id": 1901,
+            "title": "Resisc45"
+          }
+        ],
+        "dropped_anchors": []
+      }
+    ]
+  }
+}

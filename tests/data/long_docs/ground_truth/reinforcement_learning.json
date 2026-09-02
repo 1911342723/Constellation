@@ -1,0 +1,467 @@
+{
+    "doc_title": "arXiv:1810.06339v1  [cs.LG]  15 Oct 2018",
+    "doc_authors": "",
+    "gt_source": "pdf_embedded_toc + abstract_entry",
+    "headings": [
+        {
+            "block_id": 2,
+            "title": "Abstract",
+            "level": 1
+        },
+        {
+            "block_id": 144,
+            "title": "1 Introduction",
+            "level": 1
+        },
+        {
+            "block_id": 290,
+            "title": "2 Background",
+            "level": 1
+        },
+        {
+            "block_id": 312,
+            "title": "2.1 Artificial Intelligence",
+            "level": 2
+        },
+        {
+            "block_id": 388,
+            "title": "2.2 Machine Learning",
+            "level": 2
+        },
+        {
+            "block_id": 488,
+            "title": "2.3 Deep Learning",
+            "level": 2
+        },
+        {
+            "block_id": 537,
+            "title": "2.4 Reinforcement Learning",
+            "level": 2
+        },
+        {
+            "block_id": 568,
+            "title": "2.4.1 Problem Setup",
+            "level": 3
+        },
+        {
+            "block_id": 592,
+            "title": "2.4.2 Value Function",
+            "level": 3
+        },
+        {
+            "block_id": 662,
+            "title": "2.4.3 Exploration vs. Exploitation",
+            "level": 3
+        },
+        {
+            "block_id": 673,
+            "title": "2.4.4 Dynamic Programming",
+            "level": 3
+        },
+        {
+            "block_id": 733,
+            "title": "2.4.5 Monte Carlo",
+            "level": 3
+        },
+        {
+            "block_id": 751,
+            "title": "2.4.6 Temporal Difference Learning",
+            "level": 3
+        },
+        {
+            "block_id": 820,
+            "title": "2.4.7 Multi-step Bootstrapping",
+            "level": 3
+        },
+        {
+            "block_id": 852,
+            "title": "2.4.8 Model-based RL",
+            "level": 3
+        },
+        {
+            "block_id": 880,
+            "title": "2.4.9 Function Approximation",
+            "level": 3
+        },
+        {
+            "block_id": 940,
+            "title": "2.4.10  Policy Optimization",
+            "level": 3
+        },
+        {
+            "block_id": 1013,
+            "title": "2.4.11  Deep RL",
+            "level": 3
+        },
+        {
+            "block_id": 1029,
+            "title": "2.4.12  Brief Summary",
+            "level": 3
+        },
+        {
+            "block_id": 1046,
+            "title": "2.5 Resources",
+            "level": 2
+        },
+        {
+            "block_id": 1079,
+            "title": "Part I: Core Elements",
+            "level": 1
+        },
+        {
+            "block_id": 1119,
+            "title": "3 Value Function",
+            "level": 1
+        },
+        {
+            "block_id": 1138,
+            "title": "3.1 Deep Q-Learning",
+            "level": 2
+        },
+        {
+            "block_id": 1318,
+            "title": "3.2 Distributional Value Function",
+            "level": 2
+        },
+        {
+            "block_id": 1398,
+            "title": "3.3 General Value Function",
+            "level": 2
+        },
+        {
+            "block_id": 1429,
+            "title": "4 Policy",
+            "level": 1
+        },
+        {
+            "block_id": 1503,
+            "title": "4.1 Policy Gradient",
+            "level": 2
+        },
+        {
+            "block_id": 1544,
+            "title": "4.2 Actor-Critic",
+            "level": 2
+        },
+        {
+            "block_id": 1622,
+            "title": "4.3 Trust Region Methods",
+            "level": 2
+        },
+        {
+            "block_id": 1666,
+            "title": "4.4 Policy Gradient with Off-Policy Learning",
+            "level": 2
+        },
+        {
+            "block_id": 1721,
+            "title": "4.5 Benchmark Results",
+            "level": 2
+        },
+        {
+            "block_id": 1741,
+            "title": "5 Reward",
+            "level": 1
+        },
+        {
+            "block_id": 1878,
+            "title": "6 Model",
+            "level": 1
+        },
+        {
+            "block_id": 2018,
+            "title": "7 Exploration vs. Exploitation",
+            "level": 1
+        },
+        {
+            "block_id": 2218,
+            "title": "8 Representation",
+            "level": 1
+        },
+        {
+            "block_id": 2260,
+            "title": "8.1 Classics",
+            "level": 2
+        },
+        {
+            "block_id": 2344,
+            "title": "8.2 Neural Networks",
+            "level": 2
+        },
+        {
+            "block_id": 2416,
+            "title": "8.3 Knowledge and Reasoning",
+            "level": 2
+        },
+        {
+            "block_id": 2539,
+            "title": "Part II: Important Mechanisms",
+            "level": 1
+        },
+        {
+            "block_id": 2547,
+            "title": "9 Attention and Memory",
+            "level": 1
+        },
+        {
+            "block_id": 2634,
+            "title": "10 Unsupervised Learning",
+            "level": 1
+        },
+        {
+            "block_id": 2782,
+            "title": "11 Hierarchical RL",
+            "level": 1
+        },
+        {
+            "block_id": 2888,
+            "title": "12 Multi-Agent RL",
+            "level": 1
+        },
+        {
+            "block_id": 3057,
+            "title": "13 Relational RL",
+            "level": 1
+        },
+        {
+            "block_id": 3136,
+            "title": "14 Learning to Learn",
+            "level": 1
+        },
+        {
+            "block_id": 3207,
+            "title": "14.1 Few/One/Zero-Shot Learning",
+            "level": 2
+        },
+        {
+            "block_id": 3284,
+            "title": "14.2 Transfer/Multi-task Learning",
+            "level": 2
+        },
+        {
+            "block_id": 3341,
+            "title": "14.3 Learning to Optimize",
+            "level": 2
+        },
+        {
+            "block_id": 3355,
+            "title": "14.4 Learning Reinforcement Learn",
+            "level": 2
+        },
+        {
+            "block_id": 3387,
+            "title": "14.5 Learning Combinatorial Optimization",
+            "level": 2
+        },
+        {
+            "block_id": 3417,
+            "title": "14.6 AutoML",
+            "level": 2
+        },
+        {
+            "block_id": 3472,
+            "title": "Part III: Applications",
+            "level": 1
+        },
+        {
+            "block_id": 3499,
+            "title": "15 Games",
+            "level": 1
+        },
+        {
+            "block_id": 3542,
+            "title": "15.1 Board Games",
+            "level": 2
+        },
+        {
+            "block_id": 3721,
+            "title": "15.2 Card Games",
+            "level": 2
+        },
+        {
+            "block_id": 3754,
+            "title": "15.3 Video Games",
+            "level": 2
+        },
+        {
+            "block_id": 3773,
+            "title": "16 Robotics",
+            "level": 1
+        },
+        {
+            "block_id": 3799,
+            "title": "16.1 Sim-to-Real",
+            "level": 2
+        },
+        {
+            "block_id": 3837,
+            "title": "16.2 Imitation Learning",
+            "level": 2
+        },
+        {
+            "block_id": 3863,
+            "title": "16.3 Value-based Learning",
+            "level": 2
+        },
+        {
+            "block_id": 3877,
+            "title": "16.4 Policy-based Learning",
+            "level": 2
+        },
+        {
+            "block_id": 3899,
+            "title": "16.5 Model-based Learning",
+            "level": 2
+        },
+        {
+            "block_id": 3913,
+            "title": "16.6 Autonomous Driving Vehicles",
+            "level": 2
+        },
+        {
+            "block_id": 3936,
+            "title": "17 Natural Language Processing",
+            "level": 1
+        },
+        {
+            "block_id": 3998,
+            "title": "17.1 Sequence Generation",
+            "level": 2
+        },
+        {
+            "block_id": 4024,
+            "title": "17.2 Machine Translation",
+            "level": 2
+        },
+        {
+            "block_id": 4053,
+            "title": "17.3 Dialogue Systems",
+            "level": 2
+        },
+        {
+            "block_id": 4109,
+            "title": "18 Computer Vision",
+            "level": 1
+        },
+        {
+            "block_id": 4155,
+            "title": "18.1 Recognition",
+            "level": 2
+        },
+        {
+            "block_id": 4172,
+            "title": "18.2 Motion Analysis",
+            "level": 2
+        },
+        {
+            "block_id": 4182,
+            "title": "18.3 Scene Understanding",
+            "level": 2
+        },
+        {
+            "block_id": 4202,
+            "title": "18.4 Integration with NLP",
+            "level": 2
+        },
+        {
+            "block_id": 4211,
+            "title": "18.5 Visual Control",
+            "level": 2
+        },
+        {
+            "block_id": 4221,
+            "title": "18.6 Interactive Perception",
+            "level": 2
+        },
+        {
+            "block_id": 4233,
+            "title": "19 Finance and Business Management",
+            "level": 1
+        },
+        {
+            "block_id": 4307,
+            "title": "19.1 Option Pricing",
+            "level": 2
+        },
+        {
+            "block_id": 4318,
+            "title": "19.2 Portfolio Optimization",
+            "level": 2
+        },
+        {
+            "block_id": 4336,
+            "title": "19.3 Business Management",
+            "level": 2
+        },
+        {
+            "block_id": 4360,
+            "title": "20 More Applications",
+            "level": 1
+        },
+        {
+            "block_id": 4364,
+            "title": "20.1 Healthcare",
+            "level": 2
+        },
+        {
+            "block_id": 4398,
+            "title": "20.2 Education",
+            "level": 2
+        },
+        {
+            "block_id": 4446,
+            "title": "20.3 Energy",
+            "level": 2
+        },
+        {
+            "block_id": 4463,
+            "title": "20.4 Transportation",
+            "level": 2
+        },
+        {
+            "block_id": 4484,
+            "title": "20.5 Computer Systems",
+            "level": 2
+        },
+        {
+            "block_id": 4561,
+            "title": "20.6 Science, Engineering and Art",
+            "level": 2
+        },
+        {
+            "block_id": 4620,
+            "title": "20.6.1  Chemistry",
+            "level": 3
+        },
+        {
+            "block_id": 4634,
+            "title": "20.6.2  Mathematics",
+            "level": 3
+        },
+        {
+            "block_id": 4648,
+            "title": "20.6.3  Music",
+            "level": 3
+        },
+        {
+            "block_id": 4668,
+            "title": "21 Discussions",
+            "level": 1
+        },
+        {
+            "block_id": 4675,
+            "title": "21.1 Brief Summary",
+            "level": 2
+        },
+        {
+            "block_id": 4707,
+            "title": "21.2 Challenges and Opportunities",
+            "level": 2
+        },
+        {
+            "block_id": 4999,
+            "title": "21.3 Epilogue",
+            "level": 2
+        }
+    ]
+}

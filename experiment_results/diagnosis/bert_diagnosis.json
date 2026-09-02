@@ -1,0 +1,1889 @@
+{
+  "doc": "bert",
+  "stage0_toc": {
+    "toc_entries": 0,
+    "toc_sample": [],
+    "gt_headings": 30,
+    "gt_block_id_zero_count": 0
+  },
+  "stage1_blocks": {
+    "total_blocks": 863,
+    "text_blocks": 813,
+    "body_font_size": 10.9,
+    "font_size_min": 3.2,
+    "font_size_max": 20.0,
+    "font_size_median": 9.0,
+    "bold_blocks": 55,
+    "heading_style_blocks": 3
+  },
+  "stage2_skeleton": {
+    "windows": 4,
+    "skeleton_chars": 38433,
+    "original_chars": 64096,
+    "compression_pct": 40.0
+  },
+  "stage25_candidates": {
+    "candidate_count": 89,
+    "sample": [
+      {
+        "block_id": 0,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "centered",
+          "explicit-style",
+          "large-font"
+        ],
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for"
+      },
+      {
+        "block_id": 1,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "centered",
+          "explicit-style",
+          "large-font"
+        ],
+        "title": "Language Understanding"
+      },
+      {
+        "block_id": 2,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "centered",
+          "slightly-large-font"
+        ],
+        "title": "Jacob Devlin Ming-Wei Chang Kenton Lee Kristina Toutanova"
+      },
+      {
+        "block_id": 3,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "slightly-large-font"
+        ],
+        "title": "Google AI Language"
+      },
+      {
+        "block_id": 4,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "slightly-large-font"
+        ],
+        "title": "{jacobdevlin,mingweichang,kentonl,kristout}@google.com"
+      },
+      {
+        "block_id": 5,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "semantic-title",
+          "slightly-large-font"
+        ],
+        "title": "Abstract"
+      },
+      {
+        "block_id": 7,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "large-font"
+        ],
+        "title": "arXiv:1810.04805v2 [cs.CL] 24 May 2019"
+      },
+      {
+        "block_id": 9,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "1 Introduction"
+      },
+      {
+        "block_id": 19,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "2 Related Work"
+      },
+      {
+        "block_id": 22,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ],
+        "title": "2.1 Unsupervised Feature-based Approaches"
+      },
+      {
+        "block_id": 24,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ],
+        "title": "2014) methods. Pre-trained word embeddings"
+      },
+      {
+        "block_id": 27,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "numbering"
+        ],
+        "title": "2018) or paragraph embeddings (Le and Mikolov,"
+      },
+      {
+        "block_id": 29,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ],
+        "title": "2.2 Unsupervised Fine-tuning Approaches"
+      },
+      {
+        "block_id": 31,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "centered"
+        ],
+        "title": "MNLI NER"
+      },
+      {
+        "block_id": 75,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ],
+        "title": "2.3 Transfer Learning from Supervised Data"
+      }
+    ]
+  },
+  "reference_chain": [
+    {
+      "ref_title": "Abstract",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 5,
+        "similarity": 1.0,
+        "block_text": "Abstract",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "semantic-title",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "1 Introduction",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 9,
+        "similarity": 1.0,
+        "block_text": "1 Introduction",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "2 Related Work",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 19,
+        "similarity": 1.0,
+        "block_text": "2 Related Work",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "2.1 Unsupervised Feature-based Approaches",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 22,
+        "similarity": 1.0,
+        "block_text": "2.1 Unsupervised Feature-based Approaches",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "2.2 Unsupervised Fine-tuning Approaches",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 29,
+        "similarity": 1.0,
+        "block_text": "2.2 Unsupervised Fine-tuning Approaches",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "2.3 Transfer Learning from Supervised Data",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 75,
+        "similarity": 1.0,
+        "block_text": "2.3 Transfer Learning from Supervised Data",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "3 BERT",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 50,
+        "similarity": 1.0,
+        "block_text": "BERT",
+        "mode": "numbering-stripped"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 11.1,
+        "is_bold": false,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.018
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": false,
+      "candidate_miss_analysis": {
+        "score": 0.45,
+        "breakdown": {
+          "block-title-heuristic": 0.45
+        },
+        "font_ratio": 1.018,
+        "text_len": 4,
+        "rejected": "score 0.45 < 0.55"
+      }
+    },
+    {
+      "ref_title": "3.1 Pre-training BERT",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 126,
+        "similarity": 1.0,
+        "block_text": "3.1 Pre-training BERT",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "3.2 Fine-tuning BERT",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 169,
+        "similarity": 1.0,
+        "block_text": "3.2 Fine-tuning BERT",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4 Experiments",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 195,
+        "similarity": 1.0,
+        "block_text": "4 Experiments",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.1 GLUE",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 197,
+        "similarity": 1.0,
+        "block_text": "4.1 GLUE",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.2 SQuAD v1.1",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 241,
+        "similarity": 1.0,
+        "block_text": "4.2 SQuAD v1.1",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.3 SQuAD v2.0",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 340,
+        "similarity": 1.0,
+        "block_text": "4.3 SQuAD v2.0",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.4 SWAG",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 362,
+        "similarity": 1.0,
+        "block_text": "4.4 SWAG",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "5 Ablation Studies",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 364,
+        "similarity": 1.0,
+        "block_text": "5 Ablation Studies",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "5.1 Effect of Pre-training Tasks",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 382,
+        "similarity": 1.0,
+        "block_text": "5.1 Effect of Pre-training Tasks",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "5.2 Effect of Model Size",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 386,
+        "similarity": 1.0,
+        "block_text": "5.2 Effect of Model Size",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "5.3 Feature-based Approach with BERT",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 389,
+        "similarity": 1.0,
+        "block_text": "5.3 Feature-based Approach with BERT",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "6 Conclusion",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 447,
+        "similarity": 1.0,
+        "block_text": "6 Conclusion",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "References",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 449,
+        "similarity": 1.0,
+        "block_text": "References",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "semantic-title",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "A Additional Details for BERT",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 546,
+        "similarity": 1.0,
+        "block_text": "A Additional Details for BERT",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "A.1 Illustration of the Pre-training Tasks",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 547,
+        "similarity": 1.0,
+        "block_text": "A.1 Illustration of the Pre-training Tasks",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "A.2 Pre-training Procedure",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 610,
+        "similarity": 1.0,
+        "block_text": "A.2 Pre-training Procedure",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "A.3 Fine-tuning Procedure",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 639,
+        "similarity": 1.0,
+        "block_text": "A.3 Fine-tuning Procedure",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "A.4 Comparison of BERT, ELMo ,and OpenAI GPT",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 646,
+        "similarity": 0.75,
+        "block_text": "A.4 Comparison of BERT, ELMo ,and",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "B Detailed Experimental Setup",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 657,
+        "similarity": 1.0,
+        "block_text": "B Detailed Experimental Setup",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "B.1 Detailed Descriptions for the GLUE Benchmark Experiments.",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 658,
+        "similarity": 0.623,
+        "block_text": "B.1 Detailed Descriptions for the GLUE",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "C Additional Ablation Studies",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 809,
+        "similarity": 1.0,
+        "block_text": "C Additional Ablation Studies",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.101
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "C.1 Effect of Number of Training Steps",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 810,
+        "similarity": 1.0,
+        "block_text": "C.1 Effect of Number of Training Steps",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    },
+    {
+      "ref_title": "C.2 Ablation for Different Masking Procedures",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 818,
+        "similarity": 0.756,
+        "block_text": "C.2 Ablation for Different Masking",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 10.9,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.0
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering"
+        ]
+      }
+    }
+  ],
+  "chain_summary": {
+    "reference_headings": 30,
+    "found_in_blocks": 30,
+    "visible_in_skeleton": 30,
+    "in_candidate_table": 29,
+    "block_recall_upper_bound": 1.0,
+    "candidate_recall_upper_bound": 0.967
+  },
+  "stage3_llm": {
+    "windows_routed": 4,
+    "raw_anchor_total": 41,
+    "dropped_anchor_total": 0,
+    "final_tree_headings": [
+      {
+        "block_id": 0,
+        "level": 1,
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for"
+      },
+      {
+        "block_id": 1,
+        "level": 1,
+        "title": "Language Understanding"
+      },
+      {
+        "block_id": 2,
+        "level": 2,
+        "title": "Jacob Devlin Ming-Wei Chang Kenton Lee Kristina Toutanova"
+      },
+      {
+        "block_id": 3,
+        "level": 2,
+        "title": "Google AI Language"
+      },
+      {
+        "block_id": 4,
+        "level": 2,
+        "title": "{jacobdevlin,mingweichang,kentonl,kristout}@google.com"
+      },
+      {
+        "block_id": 5,
+        "level": 1,
+        "title": "Abstract"
+      },
+      {
+        "block_id": 7,
+        "level": 2,
+        "title": "arXiv:1810.04805v2 [cs.CL] 24 May 2019"
+      },
+      {
+        "block_id": 9,
+        "level": 1,
+        "title": "1 Introduction"
+      },
+      {
+        "block_id": 19,
+        "level": 1,
+        "title": "2 Related Work"
+      },
+      {
+        "block_id": 22,
+        "level": 2,
+        "title": "2.1 Unsupervised Feature-based Approaches"
+      },
+      {
+        "block_id": 24,
+        "level": 1,
+        "title": "2014) methods. Pre-trained word embeddings"
+      },
+      {
+        "block_id": 27,
+        "level": 1,
+        "title": "2018) or paragraph embeddings (Le and Mikolov,"
+      },
+      {
+        "block_id": 29,
+        "level": 2,
+        "title": "2.2 Unsupervised Fine-tuning Approaches"
+      },
+      {
+        "block_id": 31,
+        "level": 3,
+        "title": "MNLI NER"
+      },
+      {
+        "block_id": 75,
+        "level": 2,
+        "title": "2.3 Transfer Learning from Supervised Data"
+      },
+      {
+        "block_id": 77,
+        "level": 1,
+        "title": "2017) and machine translation (McCann et al.,"
+      },
+      {
+        "block_id": 79,
+        "level": 1,
+        "title": "3 BERT"
+      },
+      {
+        "block_id": 123,
+        "level": 1,
+        "title": "2016) with a 30,000 token vocabulary. The ﬁrst"
+      },
+      {
+        "block_id": 126,
+        "level": 2,
+        "title": "3.1 Pre-training BERT"
+      },
+      {
+        "block_id": 167,
+        "level": 1,
+        "title": "2015) and English Wikipedia (2,500M words)."
+      },
+      {
+        "block_id": 169,
+        "level": 2,
+        "title": "3.2 Fine-tuning BERT"
+      },
+      {
+        "block_id": 195,
+        "level": 1,
+        "title": "4 Experiments"
+      },
+      {
+        "block_id": 197,
+        "level": 2,
+        "title": "4.1 GLUE"
+      },
+      {
+        "block_id": 241,
+        "level": 2,
+        "title": "4.2 SQuAD v1.1"
+      },
+      {
+        "block_id": 340,
+        "level": 2,
+        "title": "4.3 SQuAD v2.0"
+      },
+      {
+        "block_id": 362,
+        "level": 2,
+        "title": "4.4 SWAG"
+      },
+      {
+        "block_id": 364,
+        "level": 1,
+        "title": "5 Ablation Studies"
+      },
+      {
+        "block_id": 382,
+        "level": 2,
+        "title": "5.1 Effect of Pre-training Tasks"
+      },
+      {
+        "block_id": 386,
+        "level": 2,
+        "title": "5.2 Effect of Model Size"
+      },
+      {
+        "block_id": 389,
+        "level": 2,
+        "title": "5.3 Feature-based Approach with BERT"
+      },
+      {
+        "block_id": 447,
+        "level": 1,
+        "title": "6 Conclusion"
+      },
+      {
+        "block_id": 449,
+        "level": 1,
+        "title": "References"
+      },
+      {
+        "block_id": 536,
+        "level": 1,
+        "title": "Appendix for “BERT: Pre-training of"
+      },
+      {
+        "block_id": 537,
+        "level": 1,
+        "title": "Deep Bidirectional Transformers for Language Understanding”"
+      },
+      {
+        "block_id": 543,
+        "level": 1,
+        "title": "Appendix C."
+      },
+      {
+        "block_id": 546,
+        "level": 1,
+        "title": "A Additional Details for BERT"
+      },
+      {
+        "block_id": 547,
+        "level": 1,
+        "title": "A.1 Illustration of the Pre-training Tasks"
+      },
+      {
+        "block_id": 610,
+        "level": 1,
+        "title": "A.2 Pre-training Procedure"
+      },
+      {
+        "block_id": 639,
+        "level": 1,
+        "title": "A.3 Fine-tuning Procedure"
+      },
+      {
+        "block_id": 646,
+        "level": 1,
+        "title": "A.4 Comparison of BERT, ELMo ,and"
+      },
+      {
+        "block_id": 655,
+        "level": 1,
+        "title": "A.5 Illustrations of Fine-tuning on Different"
+      },
+      {
+        "block_id": 657,
+        "level": 1,
+        "title": "B Detailed Experimental Setup"
+      },
+      {
+        "block_id": 658,
+        "level": 1,
+        "title": "B.1 Detailed Descriptions for the GLUE"
+      },
+      {
+        "block_id": 809,
+        "level": 2,
+        "title": "C Additional Ablation Studies"
+      },
+      {
+        "block_id": 810,
+        "level": 1,
+        "title": "C.1 Effect of Number of Training Steps"
+      },
+      {
+        "block_id": 818,
+        "level": 1,
+        "title": "C.2 Ablation for Different Masking"
+      }
+    ],
+    "window_details": [
+      {
+        "allowed_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          9,
+          19,
+          22,
+          24,
+          27,
+          29,
+          31,
+          75,
+          77,
+          79,
+          123,
+          126,
+          167,
+          169,
+          195,
+          197,
+          230,
+          231,
+          239,
+          241
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 0,
+            "level": 1,
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for"
+          },
+          {
+            "block_id": 1,
+            "level": 1,
+            "title": "Language Understanding"
+          },
+          {
+            "block_id": 5,
+            "level": 1,
+            "title": "Abstract"
+          },
+          {
+            "block_id": 9,
+            "level": 1,
+            "title": "1 Introduction"
+          },
+          {
+            "block_id": 19,
+            "level": 1,
+            "title": "2 Related Work"
+          },
+          {
+            "block_id": 22,
+            "level": 2,
+            "title": "2.1 Unsupervised Feature-based Approaches"
+          },
+          {
+            "block_id": 29,
+            "level": 2,
+            "title": "2.2 Unsupervised Fine-tuning Approaches"
+          },
+          {
+            "block_id": 75,
+            "level": 2,
+            "title": "2.3 Transfer Learning from Supervised Data"
+          },
+          {
+            "block_id": 79,
+            "level": 1,
+            "title": "3 BERT"
+          },
+          {
+            "block_id": 126,
+            "level": 2,
+            "title": "3.1 Pre-training BERT"
+          },
+          {
+            "block_id": 169,
+            "level": 2,
+            "title": "3.2 Fine-tuning BERT"
+          },
+          {
+            "block_id": 195,
+            "level": 1,
+            "title": "4 Experiments"
+          },
+          {
+            "block_id": 197,
+            "level": 2,
+            "title": "4.1 GLUE"
+          },
+          {
+            "block_id": 241,
+            "level": 2,
+            "title": "4.2 SQuAD v1.1"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 0,
+            "level": 1,
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for"
+          },
+          {
+            "block_id": 1,
+            "level": 1,
+            "title": "Language Understanding"
+          },
+          {
+            "block_id": 5,
+            "level": 1,
+            "title": "Abstract"
+          },
+          {
+            "block_id": 9,
+            "level": 1,
+            "title": "1 Introduction"
+          },
+          {
+            "block_id": 19,
+            "level": 1,
+            "title": "2 Related Work"
+          },
+          {
+            "block_id": 22,
+            "level": 2,
+            "title": "2.1 Unsupervised Feature-based Approaches"
+          },
+          {
+            "block_id": 29,
+            "level": 2,
+            "title": "2.2 Unsupervised Fine-tuning Approaches"
+          },
+          {
+            "block_id": 75,
+            "level": 2,
+            "title": "2.3 Transfer Learning from Supervised Data"
+          },
+          {
+            "block_id": 79,
+            "level": 1,
+            "title": "3 BERT"
+          },
+          {
+            "block_id": 126,
+            "level": 2,
+            "title": "3.1 Pre-training BERT"
+          },
+          {
+            "block_id": 169,
+            "level": 2,
+            "title": "3.2 Fine-tuning BERT"
+          },
+          {
+            "block_id": 195,
+            "level": 1,
+            "title": "4 Experiments"
+          },
+          {
+            "block_id": 197,
+            "level": 2,
+            "title": "4.1 GLUE"
+          },
+          {
+            "block_id": 241,
+            "level": 2,
+            "title": "4.2 SQuAD v1.1"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          302,
+          305,
+          308,
+          311,
+          313,
+          322,
+          334,
+          337,
+          340,
+          347,
+          349,
+          353,
+          354,
+          362,
+          364,
+          371,
+          374,
+          376,
+          379,
+          382,
+          386,
+          389,
+          395,
+          396,
+          398,
+          399,
+          401,
+          402,
+          404,
+          405,
+          407,
+          408,
+          410,
+          415,
+          418,
+          422,
+          424,
+          445,
+          447,
+          449,
+          451,
+          459,
+          478,
+          494,
+          510,
+          515,
+          536,
+          537,
+          543,
+          546,
+          547
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 340,
+            "level": 2,
+            "title": "4.3 SQuAD v2.0"
+          },
+          {
+            "block_id": 362,
+            "level": 2,
+            "title": "4.4 SWAG"
+          },
+          {
+            "block_id": 364,
+            "level": 1,
+            "title": "5 Ablation Studies"
+          },
+          {
+            "block_id": 382,
+            "level": 2,
+            "title": "5.1 Effect of Pre-training Tasks"
+          },
+          {
+            "block_id": 386,
+            "level": 2,
+            "title": "5.2 Effect of Model Size"
+          },
+          {
+            "block_id": 389,
+            "level": 2,
+            "title": "5.3 Feature-based Approach with BERT"
+          },
+          {
+            "block_id": 447,
+            "level": 1,
+            "title": "6 Conclusion"
+          },
+          {
+            "block_id": 449,
+            "level": 1,
+            "title": "References"
+          },
+          {
+            "block_id": 536,
+            "level": 1,
+            "title": "Appendix for “BERT: Pre-training of"
+          },
+          {
+            "block_id": 537,
+            "level": 1,
+            "title": "Deep Bidirectional Transformers for Language Understanding”"
+          },
+          {
+            "block_id": 543,
+            "level": 1,
+            "title": "Appendix C."
+          },
+          {
+            "block_id": 546,
+            "level": 1,
+            "title": "A Additional Details for BERT"
+          },
+          {
+            "block_id": 547,
+            "level": 2,
+            "title": "A.1 Illustration of the Pre-training Tasks"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 340,
+            "level": 2,
+            "title": "4.3 SQuAD v2.0"
+          },
+          {
+            "block_id": 362,
+            "level": 2,
+            "title": "4.4 SWAG"
+          },
+          {
+            "block_id": 364,
+            "level": 1,
+            "title": "5 Ablation Studies"
+          },
+          {
+            "block_id": 382,
+            "level": 2,
+            "title": "5.1 Effect of Pre-training Tasks"
+          },
+          {
+            "block_id": 386,
+            "level": 2,
+            "title": "5.2 Effect of Model Size"
+          },
+          {
+            "block_id": 389,
+            "level": 2,
+            "title": "5.3 Feature-based Approach with BERT"
+          },
+          {
+            "block_id": 447,
+            "level": 1,
+            "title": "6 Conclusion"
+          },
+          {
+            "block_id": 449,
+            "level": 1,
+            "title": "References"
+          },
+          {
+            "block_id": 536,
+            "level": 1,
+            "title": "Appendix for “BERT: Pre-training of"
+          },
+          {
+            "block_id": 537,
+            "level": 1,
+            "title": "Deep Bidirectional Transformers for Language Understanding”"
+          },
+          {
+            "block_id": 543,
+            "level": 1,
+            "title": "Appendix C."
+          },
+          {
+            "block_id": 546,
+            "level": 1,
+            "title": "A Additional Details for BERT"
+          },
+          {
+            "block_id": 547,
+            "level": 2,
+            "title": "A.1 Illustration of the Pre-training Tasks"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          510,
+          515,
+          536,
+          537,
+          543,
+          546,
+          547,
+          610,
+          639,
+          646,
+          655,
+          657,
+          658
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 536,
+            "level": 1,
+            "title": "Appendix for “BERT: Pre-training of"
+          },
+          {
+            "block_id": 537,
+            "level": 1,
+            "title": "Deep Bidirectional Transformers for Language Understanding”"
+          },
+          {
+            "block_id": 543,
+            "level": 1,
+            "title": "Appendix C."
+          },
+          {
+            "block_id": 546,
+            "level": 1,
+            "title": "A Additional Details for BERT"
+          },
+          {
+            "block_id": 547,
+            "level": 2,
+            "title": "A.1 Illustration of the Pre-training Tasks"
+          },
+          {
+            "block_id": 610,
+            "level": 2,
+            "title": "A.2 Pre-training Procedure"
+          },
+          {
+            "block_id": 639,
+            "level": 2,
+            "title": "A.3 Fine-tuning Procedure"
+          },
+          {
+            "block_id": 646,
+            "level": 2,
+            "title": "A.4 Comparison of BERT, ELMo ,and"
+          },
+          {
+            "block_id": 655,
+            "level": 2,
+            "title": "A.5 Illustrations of Fine-tuning on Different"
+          },
+          {
+            "block_id": 657,
+            "level": 1,
+            "title": "B Detailed Experimental Setup"
+          },
+          {
+            "block_id": 658,
+            "level": 2,
+            "title": "B.1 Detailed Descriptions for the GLUE"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 536,
+            "level": 1,
+            "title": "Appendix for “BERT: Pre-training of"
+          },
+          {
+            "block_id": 537,
+            "level": 1,
+            "title": "Deep Bidirectional Transformers for Language Understanding”"
+          },
+          {
+            "block_id": 543,
+            "level": 1,
+            "title": "Appendix C."
+          },
+          {
+            "block_id": 546,
+            "level": 1,
+            "title": "A Additional Details for BERT"
+          },
+          {
+            "block_id": 547,
+            "level": 2,
+            "title": "A.1 Illustration of the Pre-training Tasks"
+          },
+          {
+            "block_id": 610,
+            "level": 2,
+            "title": "A.2 Pre-training Procedure"
+          },
+          {
+            "block_id": 639,
+            "level": 2,
+            "title": "A.3 Fine-tuning Procedure"
+          },
+          {
+            "block_id": 646,
+            "level": 2,
+            "title": "A.4 Comparison of BERT, ELMo ,and"
+          },
+          {
+            "block_id": 655,
+            "level": 2,
+            "title": "A.5 Illustrations of Fine-tuning on Different"
+          },
+          {
+            "block_id": 657,
+            "level": 1,
+            "title": "B Detailed Experimental Setup"
+          },
+          {
+            "block_id": 658,
+            "level": 2,
+            "title": "B.1 Detailed Descriptions for the GLUE"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          809,
+          810,
+          813,
+          815,
+          818
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 809,
+            "level": 2,
+            "title": "C Additional Ablation Studies"
+          },
+          {
+            "block_id": 810,
+            "level": 3,
+            "title": "C.1 Effect of Number of Training Steps"
+          },
+          {
+            "block_id": 818,
+            "level": 3,
+            "title": "C.2 Ablation for Different Masking"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 809,
+            "level": 2,
+            "title": "C Additional Ablation Studies"
+          },
+          {
+            "block_id": 810,
+            "level": 3,
+            "title": "C.1 Effect of Number of Training Steps"
+          },
+          {
+            "block_id": 818,
+            "level": 3,
+            "title": "C.2 Ablation for Different Masking"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      }
+    ]
+  }
+}

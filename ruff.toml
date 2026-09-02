@@ -1,0 +1,28 @@
+# Ruff static-analysis configuration for Constellation.
+#
+# Scope is deliberately narrow: correctness-class rules only.
+# Style rules are not enforced — the codebase predates this config
+# and wholesale reformatting would pollute git blame.
+#
+# Run: python -m ruff check .
+
+target-version = "py310"
+line-length = 100
+
+[lint]
+# F  — pyflakes (F821 undefined-name is the headline rule here:
+#      `from __future__ import annotations` masks undefined names in
+#      type annotations at runtime; ruff still catches them)
+# E9 — syntax errors / io errors
+# B  — bugbear (mutable defaults, useless expressions, etc.)
+select = ["F", "E9", "B"]
+ignore = [
+    # B008: function call in default argument — used intentionally by
+    # FastAPI dependency injection (Depends(...), File(...)).
+    "B008",
+]
+
+[lint.per-file-ignores]
+# Tests legitimately use asserts on private attributes and fixtures
+# with intentional shadowing.
+"tests/*" = ["B011"]

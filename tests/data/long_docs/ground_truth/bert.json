@@ -1,0 +1,157 @@
+{
+    "doc_title": "BERT: Pre-training of Deep Bidirectional Transformers for",
+    "doc_authors": "",
+    "gt_source": "manual_expert_reference",
+    "headings": [
+        {
+            "block_id": 11,
+            "title": "Abstract",
+            "level": 1
+        },
+        {
+            "block_id": 9,
+            "title": "1 Introduction",
+            "level": 1
+        },
+        {
+            "block_id": 20,
+            "title": "2 Related Work",
+            "level": 1
+        },
+        {
+            "block_id": 24,
+            "title": "2.1 Unsupervised Feature-based Approaches",
+            "level": 2
+        },
+        {
+            "block_id": 26,
+            "title": "2.2 Unsupervised Fine-tuning Approaches",
+            "level": 2
+        },
+        {
+            "block_id": 74,
+            "title": "2.3 Transfer Learning from Supervised Data",
+            "level": 2
+        },
+        {
+            "block_id": 76,
+            "title": "3 BERT",
+            "level": 1
+        },
+        {
+            "block_id": 89,
+            "title": "3.1 Pre-training BERT",
+            "level": 2
+        },
+        {
+            "block_id": 133,
+            "title": "3.2 Fine-tuning BERT",
+            "level": 2
+        },
+        {
+            "block_id": 138,
+            "title": "4 Experiments",
+            "level": 1
+        },
+        {
+            "block_id": 140,
+            "title": "4.1 GLUE",
+            "level": 2
+        },
+        {
+            "block_id": 225,
+            "title": "4.2 SQuAD v1.1",
+            "level": 2
+        },
+        {
+            "block_id": 302,
+            "title": "4.3 SQuAD v2.0",
+            "level": 2
+        },
+        {
+            "block_id": 322,
+            "title": "4.4 SWAG",
+            "level": 2
+        },
+        {
+            "block_id": 325,
+            "title": "5 Ablation Studies",
+            "level": 1
+        },
+        {
+            "block_id": 335,
+            "title": "5.1 Effect of Pre-training Tasks",
+            "level": 2
+        },
+        {
+            "block_id": 348,
+            "title": "5.2 Effect of Model Size",
+            "level": 2
+        },
+        {
+            "block_id": 352,
+            "title": "5.3 Feature-based Approach with BERT",
+            "level": 2
+        },
+        {
+            "block_id": 394,
+            "title": "6 Conclusion",
+            "level": 1
+        },
+        {
+            "block_id": 416,
+            "title": "References",
+            "level": 1
+        },
+        {
+            "block_id": 659,
+            "title": "A Additional Details for BERT",
+            "level": 1
+        },
+        {
+            "block_id": 660,
+            "title": "A.1 Illustration of the Pre-training Tasks",
+            "level": 2
+        },
+        {
+            "block_id": 747,
+            "title": "A.2 Pre-training Procedure",
+            "level": 2
+        },
+        {
+            "block_id": 754,
+            "title": "A.3 Fine-tuning Procedure",
+            "level": 2
+        },
+        {
+            "block_id": 762,
+            "title": "A.4 Comparison of BERT, ELMo ,and",
+            "level": 2
+        },
+        {
+            "block_id": 769,
+            "title": "B Detailed Experimental Setup",
+            "level": 1
+        },
+        {
+            "block_id": 770,
+            "title": "B.1 Detailed Descriptions for the GLUE",
+            "level": 2
+        },
+        {
+            "block_id": 903,
+            "title": "C Additional Ablation Studies",
+            "level": 1
+        },
+        {
+            "block_id": 904,
+            "title": "C.1 Effect of Number of Training Steps",
+            "level": 2
+        },
+        {
+            "block_id": 939,
+            "title": "C.2 Ablation for Different Masking",
+            "level": 2
+        }
+    ]
+}

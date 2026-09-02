@@ -1,0 +1,28 @@
+# Stage 1 — physical extraction
+python-docx>=1.1.0
+lxml>=5.0.0
+openpyxl>=3.1.0
+
+# PyMuPDF is pinned exactly, and the pin is load-bearing. Text extraction
+# changed in 1.25: on the evaluation corpus, bert.pdf yields 907 blocks on
+# 1.24.14 and 727 on 1.25+. Ground-truth `block_id` values are indices into
+# that block stream, so a newer PyMuPDF silently misaligns every ground-truth
+# file and drops reported candidate recall from 96.5% to 17.6%.
+#
+# To use a newer PyMuPDF, realign the ground truth first:
+#   python -m evaluation.repair_gt
+#   python scripts/manual/realign_manual_gt.py
+PyMuPDF==1.24.14
+
+# Stages 2, 2.5 and 4 — deterministic core
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+rapidfuzz>=3.6.0
+python-Levenshtein>=0.25.0
+
+# Stage 3 — LLM router. Only needed for end-to-end runs; the offline
+# metric suites in evaluation/ never import these.
+openai>=1.10.0
+httpx>=0.26.0
+tiktoken==0.12.0
