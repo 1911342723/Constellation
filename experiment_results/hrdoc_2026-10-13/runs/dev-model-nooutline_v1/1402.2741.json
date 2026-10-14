@@ -1,0 +1,178 @@
+{
+ "doc": "1402.2741",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9523809523809523,
+  "unmatched_gt": [
+   "implementations"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 520,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13749,
+   "completion_tokens": 813,
+   "total_tokens": 14562
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction and background",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Deﬁnitions, experimental design and",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Level Ancestor Implementations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Table Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 The Jump-Pointer Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 The Ladder Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4 The Jump-Ladder Algorithm",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.5 The Macro-Micro-Tree Algorithm",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.6 Menghani & Matani algorithm",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.7 Ben-Amram’s Find-Smaller algorithm",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.8 Torben Hagerup’s Find-Larger algorithm",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.9 Tree representation and random generation",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Algorithm Evaluation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Preprocessing",
+   "page": 10,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Space Requirements",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Query time performance",
+   "page": 13,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments.",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 28.997240199998487,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9523809523809523,
+  "unmatched_gt": [
+   "implementations"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "implementations"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

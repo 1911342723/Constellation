@@ -1,0 +1,95 @@
+{
+ "doc": "1701.05771",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 536,
+  "layout_marked": 8,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8621656050955414,
+  "inserted_word_share": 0.17140058765915767
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The EC in stellar interiors",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The EC process in the case without SES",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 The EC process in the case with SES",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 The results and disscusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.729304400003457,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

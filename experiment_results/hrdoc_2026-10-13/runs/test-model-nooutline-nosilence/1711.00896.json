@@ -1,0 +1,115 @@
+{
+ "doc": "1711.00896",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 3,
+  "pred": 7,
+  "tp": 3,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "1 \u0012h(z)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 469,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14274,
+   "completion_tokens": 158,
+   "total_tokens": 14432
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "R. KARGAR AND H. MAHZOON",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. Main Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "R. KARGAR AND H. MAHZOON",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "R. KARGAR AND H. MAHZOON",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1 \u0012h(z)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 22.167731400000775,
+ "metrics_v1": {
+  "gt": 3,
+  "pred": 7,
+  "tp": 3,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "1 \u0012h(z)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 2,
+  "pred": 6,
+  "tp": 2,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "1 \u0012h(z)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

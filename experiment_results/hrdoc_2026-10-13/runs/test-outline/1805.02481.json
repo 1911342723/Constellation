@@ -1,0 +1,148 @@
+{
+ "doc": "1805.02481",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Categorical Reparameterization",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Straight-Through Gumbel-Softmax",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Mixture of Experts GAN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Proposed Network Architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Gating Networks",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3 Load-Balancing Regularization",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.4 Total Loss",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.5 Discussions",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Experiment Details",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiment Environments",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6 Experimental Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Evaluation on Specialization",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.2 Quantitative analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.06809910000083619,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

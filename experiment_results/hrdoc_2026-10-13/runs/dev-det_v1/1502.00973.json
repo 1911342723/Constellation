@@ -1,0 +1,256 @@
+{
+ "doc": "1502.00973",
+ "system": "det",
+ "metrics": {
+  "gt": 22,
+  "pred": 30,
+  "tp": 22,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.7419354838709677,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 ≥ min",
+   "A Proof of Theorem 2",
+   "1 ≤ j ≤ l∗, deﬁne R(−k) (λ) = Pi∈{1,...,m}\\{k} 1{pi≤λ}, R(−k)",
+   "0 is “reciprocally conservative” as justiﬁed by Theorem 2 of Chen et al.",
+   "0 of π0 jointly aﬀect the FDR of the plug-in wFDR procedure.",
+   "B.1 Proof of Theorem 3",
+   "0 of proportion in Chen et al",
+   "0 ≤ ˜π0}, and Am the complement of Bm. Then"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 823,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Main contributions",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2 Relation to existing weighted FDR procedures",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3 Organization of article",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 A weighted FDR procedure for discrete paradigm",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Multiple testing Poisson means or Binomial means",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Rationale for the weighted FDR procedure",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 A new grouping algorithm",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.4 The weighted FDR procedure and its conservativeness",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "0 ≥ min",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Simulation study",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Simulation design under independence",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.2 Simulation design under dependence",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.3 Simulation results",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4 Two applications to multiple testing with discrete data",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Application to drug safety study",
+   "page": 17,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2 Application to methylation study",
+   "page": 18,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5 Discussion",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conﬂict of interest",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proof of Theorem 2",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 ≤ j ≤ l∗, deﬁne R(−k) (λ) = Pi∈{1,...,m}\\{k} 1{pi≤λ}, R(−k)",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B wFDR procedure with plug-in estimator of oracle weights",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 is “reciprocally conservative” as justiﬁed by Theorem 2 of Chen et al.",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 of π0 jointly aﬀect the FDR of the plug-in wFDR procedure.",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B.1 Proof of Theorem 3",
+   "page": 26,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "0 of proportion in Chen et al",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 ≤ ˜π0}, and Am the complement of Bm. Then",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.73448450000069,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 30,
+  "tp": 22,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.7419354838709677,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 ≥ min",
+   "A Proof of Theorem 2",
+   "1 ≤ j ≤ l∗, deﬁne R(−k) (λ) = Pi∈{1,...,m}\\{k} 1{pi≤λ}, R(−k)",
+   "0 is “reciprocally conservative” as justiﬁed by Theorem 2 of Chen et al.",
+   "0 of π0 jointly aﬀect the FDR of the plug-in wFDR procedure.",
+   "B.1 Proof of Theorem 3",
+   "0 of proportion in Chen et al",
+   "0 ≤ ˜π0}, and Am the complement of Bm. Then"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 27,
+  "tp": 19,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 ≥ min",
+   "A Proof of Theorem 2",
+   "1 ≤ j ≤ l∗, deﬁne R(−k) (λ) = Pi∈{1,...,m}\\{k} 1{pi≤λ}, R(−k)",
+   "0 is “reciprocally conservative” as justiﬁed by Theorem 2 of Chen et al.",
+   "0 of π0 jointly aﬀect the FDR of the plug-in wFDR procedure.",
+   "B.1 Proof of Theorem 3",
+   "0 of proportion in Chen et al",
+   "0 ≤ ˜π0}, and Am the complement of Bm. Then"
+  ],
+  "ignored_title_predictions": null
+ }
+}

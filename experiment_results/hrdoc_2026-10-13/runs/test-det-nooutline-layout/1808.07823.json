@@ -1,0 +1,119 @@
+{
+ "doc": "1808.07823",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 222,
+  "layout_marked": 11,
+  "content_preservation": 1.0,
+  "word_preservation": 0.936080740117746,
+  "inserted_word_share": 0.9103335302647833
+ },
+ "predictions": [
+  {
+   "text": "High frame-rate cardiac ultrasound imaging with",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Improving MLA with CNNs",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Data acquisition and training",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Experimental evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Settings",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Results",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.4822816000014427,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

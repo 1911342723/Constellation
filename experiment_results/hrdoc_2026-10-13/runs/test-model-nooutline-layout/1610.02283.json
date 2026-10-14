@@ -1,0 +1,116 @@
+{
+ "doc": "1610.02283",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Methods"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 5,
+  "tp": 4,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Methods"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 452,
+  "layout_marked": 9,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 21197,
+   "completion_tokens": 302,
+   "total_tokens": 21499
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9980553477935676,
+  "inserted_word_share": 0.5823474178403756
+ },
+ "predictions": [
+  {
+   "text": "Transition to a Moist Greenhouse with CO2 and solar forc-",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Author contributions",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Competing ﬁnancial interests",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methods",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.63362749999942,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Methods"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

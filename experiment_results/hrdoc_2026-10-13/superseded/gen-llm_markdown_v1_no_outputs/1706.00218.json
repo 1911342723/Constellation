@@ -1,0 +1,226 @@
+{
+ "doc": "1706.00218",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5300,
+   "completion_tokens": 4619
+  },
+  "elapsed_llm_seconds": 20.860492099996918,
+  "content_preservation": 0.9396248534583822,
+  "inserted_word_share": 0.03491872366044546,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Item-Item Music Recommendations With Side Information",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Methods",
+    0,
+    2
+   ],
+   [
+    "2.1 User Interaction Model",
+    0,
+    3
+   ],
+   [
+    "2.2 Train Set",
+    0,
+    3
+   ],
+   [
+    "2.3 Latent Factor Model",
+    0,
+    3
+   ],
+   [
+    "3 Experiments",
+    0,
+    2
+   ],
+   [
+    "4 Results",
+    0,
+    2
+   ],
+   [
+    "5 Conclusions",
+    0,
+    2
+   ],
+   [
+    "Acknowledgement",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 User Interaction Model",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Train Set",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Latent Factor Model",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.927121599997918,
+ "metrics_raw": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 5,
+  "fp": 7,
+  "fn": 6,
+  "level_correct": 0,
+  "parent_correct": 2,
+  "teds": 0.46153846153846156,
+  "unmatched_gt": [
+   "2.3 Latent Factor Mo del",
+   "3 Experiments",
+   "4 Results",
+   "5 Conclusions",
+   "Acknowledgement",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Item-Item Music Recommendations With Side Information",
+   "2.3 Latent Factor Model",
+   "3 Experiments",
+   "4 Results",
+   "5 Conclusions",
+   "Acknowledgement",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 5,
+  "fp": 6,
+  "fn": 6,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2.3 Latent Factor Mo del",
+   "3 Experiments",
+   "4 Results",
+   "5 Conclusions",
+   "Acknowledgement",
+   "References"
+  ],
+  "unmatched_pred": [
+   "2.3 Latent Factor Model",
+   "3 Experiments",
+   "4 Results",
+   "5 Conclusions",
+   "Acknowledgement",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

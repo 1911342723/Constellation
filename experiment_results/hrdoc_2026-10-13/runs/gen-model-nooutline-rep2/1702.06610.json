@@ -1,0 +1,139 @@
+{
+ "doc": "1702.06610",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "Wellington: Disaster prone capital city",
+   "Pok ´emon Go: A location-based augmented reality game",
+   "Investigated documents and material",
+   "Can AR game data be used in digital disaster response?",
+   "Do AR games create new barriers in disaster manage- ment?",
+   "Towards socio-technical emergency response augmenta- tion?"
+  ],
+  "unmatched_pred": [
+   "NISM AND DISASTER MANAGEMENT"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 118,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3379,
+   "completion_tokens": 293,
+   "total_tokens": 3672
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESEARCH METHOD AND SETTING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Case study setup",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MAPPING LOCATION-BASED AR GAMEPLAY MECHA-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "NISM AND DISASTER MANAGEMENT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.817113799999788,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "Wellington: Disaster prone capital city",
+   "Pok ´emon Go: A location-based augmented reality game",
+   "Investigated documents and material",
+   "Can AR game data be used in digital disaster response?",
+   "Do AR games create new barriers in disaster manage- ment?",
+   "Towards socio-technical emergency response augmenta- tion?"
+  ],
+  "unmatched_pred": [
+   "NISM AND DISASTER MANAGEMENT"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.3076923076923077,
+  "unmatched_gt": [
+   "Wellington: Disaster prone capital city",
+   "Pok ´emon Go: A location-based augmented reality game",
+   "Investigated documents and material",
+   "Can AR game data be used in digital disaster response?",
+   "Do AR games create new barriers in disaster manage- ment?",
+   "Towards socio-technical emergency response augmenta- tion?"
+  ],
+  "unmatched_pred": [
+   "NISM AND DISASTER MANAGEMENT"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "doc": "1705.05287",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 19.025921799999196
+ },
+ "predictions": [
+  {
+   "text": "Understanding Information Transmission in Complex Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS AND MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS AND DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ACKNOWLEDGEMENTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0029270999948494136,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

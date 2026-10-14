@@ -1,0 +1,143 @@
+{
+ "doc": "1807.10049",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 690,
+  "layout_marked": 15,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8732822219007667,
+  "inserted_word_share": 0.748290527018012
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 BACKGROUND ATMOSPHERE AND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 SIMULATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Velocity vector decomposition",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Velocity and ﬂux calculation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Flux surface displacement",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 SIMULATION RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Wave mode identiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Velocity components",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Flux contribution",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 701.8672808000047,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

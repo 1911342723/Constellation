@@ -1,0 +1,179 @@
+{
+ "doc": "1806.04080",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.85,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 516,
+  "layout_marked": 21,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9802686318792345,
+  "inserted_word_share": 0.02228808535862481
+ },
+ "predictions": [
+  {
+   "text": "On the Hardness of Satisﬁability with",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Π2 satisﬁability problem",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Expanders and superconcentrators",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Hardness of approximation for ∀∃-3-SAT-B",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Step 1",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.1.1 The reduction",
+   "page": 5,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.2 Completeness",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.3 Soundness",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Step 2",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Step 3",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 On the number of occurrences",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Extension to higher levels of the hierarchy",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Step 1",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.2 Step 2",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.3 Step 3",
+   "page": 13,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.4762025000018184,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.85,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "doc": "1609.02189",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Nodal domain count",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Combinatorics of noncrossing partitions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Applications",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Fractional Schrödinger operators on the real line",
+   "page": 10,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.2 Periodic potentials",
+   "page": 11,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.3 Steklov problems",
+   "page": 13,
+   "level": 2,
+   "parent": 3
+  }
+ ],
+ "seconds": 0.01883349999843631,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

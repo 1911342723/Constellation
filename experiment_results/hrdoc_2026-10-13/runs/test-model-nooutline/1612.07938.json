@@ -1,0 +1,140 @@
+{
+ "doc": "1612.07938",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2. Dirichlet pro cess mixture models",
+   "2.1. Dirichlet Process",
+   "2.3. Model implementation",
+   "2.4. Simulation-based parameter estimation algorithm",
+   "5.1. Simulated data",
+   "5.2. Case study",
+   "5.3. Comparison of two treatments"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 596,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10022,
+   "completion_tokens": 476,
+   "total_tokens": 10498
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Dirichlet process mixture models",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Dirichlet process Burr(XII) mixture model",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Modeling based on DPMMs with Burr(XII) kernel",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Data illustration and case study",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.357669699998951,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2. Dirichlet pro cess mixture models",
+   "2.1. Dirichlet Process",
+   "2.3. Model implementation",
+   "2.4. Simulation-based parameter estimation algorithm",
+   "5.1. Simulated data",
+   "5.2. Case study",
+   "5.3. Comparison of two treatments"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2. Dirichlet pro cess mixture models",
+   "2.1. Dirichlet Process",
+   "2.3. Model implementation",
+   "2.4. Simulation-based parameter estimation algorithm",
+   "5.1. Simulated data",
+   "5.2. Case study",
+   "5.3. Comparison of two treatments"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

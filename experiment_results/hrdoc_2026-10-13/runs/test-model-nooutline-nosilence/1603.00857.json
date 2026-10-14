@@ -1,0 +1,184 @@
+{
+ "doc": "1603.00857",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 10,
+  "pred": 16,
+  "tp": 9,
+  "fp": 7,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "3 C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]"
+  ],
+  "unmatched_pred": [
+   "i) the remainder of the spectrum of Lf",
+   "ii) the probability measure νf satisﬁes L ∗",
+   "iii) for all continuous functions ϕ ∈ C(Ω) we have",
+   "2) lim",
+   "Pressure",
+   "0 ≤ P quenched(Bt(·)) = E[log λB] ≤ log E[λB] ≤ log 4 + 1",
+   "m) lim"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 512,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18323,
+   "completion_tokens": 390,
+   "total_tokens": 18713
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i) the remainder of the spectrum of Lf",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ii) the probability measure νf satisﬁes L ∗",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "iii) for all continuous functions ϕ ∈ C(Ω) we have",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Brownian Type Potentials",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Stochastic Functional Equation for λB",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2) lim",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Bounds on the Expected Value of λB",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Existence and Finiteness of the Quenched",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Pressure",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 ≤ P quenched(Bt(·)) = E[log λB] ≤ log E[λB] ≤ log 4 + 1",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Concluding Remarks",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "m) lim",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.606003599998076,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 16,
+  "tp": 9,
+  "fp": 7,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "3 C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]"
+  ],
+  "unmatched_pred": [
+   "i) the remainder of the spectrum of Lf",
+   "ii) the probability measure νf satisﬁes L ∗",
+   "iii) for all continuous functions ϕ ∈ C(Ω) we have",
+   "2) lim",
+   "Pressure",
+   "0 ≤ P quenched(Bt(·)) = E[log λB] ≤ log E[λB] ≤ log 4 + 1",
+   "m) lim"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 13,
+  "tp": 6,
+  "fp": 7,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [
+   "3 C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]"
+  ],
+  "unmatched_pred": [
+   "i) the remainder of the spectrum of Lf",
+   "ii) the probability measure νf satisﬁes L ∗",
+   "iii) for all continuous functions ϕ ∈ C(Ω) we have",
+   "2) lim",
+   "Pressure",
+   "0 ≤ P quenched(Bt(·)) = E[log λB] ≤ log E[λB] ≤ log 4 + 1",
+   "m) lim"
+  ],
+  "ignored_title_predictions": null
+ }
+}

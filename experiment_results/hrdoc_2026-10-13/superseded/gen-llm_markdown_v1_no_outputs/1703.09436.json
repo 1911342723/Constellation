@@ -1,0 +1,210 @@
+{
+ "doc": "1703.09436",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [
+   "Apˆendice A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 13400,
+   "completion_tokens": 12552
+  },
+  "elapsed_llm_seconds": 66.19674490000034,
+  "content_preservation": 0.964264619019492,
+  "inserted_word_share": 0.017601925680758246,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Avaliac¸˜ao de Classiﬁcadores para Segmentac¸˜ao de Imagens: Aplicac¸˜oes para Invent´ario Florestal de Eucalipto",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUC¸ ˜AO",
+    0,
+    1
+   ],
+   [
+    "II. FUNDAMENTOS B ´ASICOS",
+    2,
+    1
+   ],
+   [
+    "A. Extrac¸˜ao de Caracter´ısticas das Imagens",
+    2,
+    2
+   ],
+   [
+    "B. M´etodos de Classiﬁcac¸˜ao",
+    3,
+    2
+   ],
+   [
+    "III. AVALIAC¸ ˜AO DE CLASSIFICADORES PARA SEGMENTAC¸ ˜AO DE IMAGENS",
+    4,
+    1
+   ],
+   [
+    "IV. AVALIAC¸ ˜AO EXPERIMENTAL",
+    7,
+    1
+   ],
+   [
+    "V. CONSIDERAC¸ ˜OES FINAIS",
+    9,
+    1
+   ],
+   [
+    "VI. AGRADECIMENTOS",
+    9,
+    1
+   ],
+   [
+    "REFERENCES",
+    9,
+    1
+   ],
+   [
+    "Apˆendice A",
+    11,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Avaliac¸˜ao de Classiﬁcadores para Segmentac¸˜ao de Imagens: Aplicac¸˜oes para Invent´ario Florestal de Eucalipto",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUC¸ ˜AO",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. FUNDAMENTOS B ´ASICOS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Extrac¸˜ao de Caracter´ısticas das Imagens",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. M´etodos de Classiﬁcac¸˜ao",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. AVALIAC¸ ˜AO DE CLASSIFICADORES PARA SEGMENTAC¸ ˜AO DE IMAGENS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. AVALIAC¸ ˜AO EXPERIMENTAL",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONSIDERAC¸ ˜OES FINAIS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. AGRADECIMENTOS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Apˆendice A",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 66.30707279999842,
+ "metrics_raw": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S"
+  ],
+  "unmatched_pred": [
+   "Avaliac¸˜ao de Classiﬁcadores para Segmentac¸˜ao de Imagens: Aplicac¸˜oes para I"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S"
+  ],
+  "unmatched_pred": [
+   "Avaliac¸˜ao de Classiﬁcadores para Segmentac¸˜ao de Imagens: Aplicac¸˜oes para I"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [
+   "Apˆendice A"
+  ],
+  "ignored_title_predictions": null
+ }
+}

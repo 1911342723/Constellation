@@ -1,0 +1,164 @@
+{
+ "doc": "1801.01465",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "100.62 MHz (carbon) and 376.48 MHz (ﬂuorines). (b) Preparation",
+   "X. N. Xu, H. P. Peng, S. Wei, J. Zhang, and X. Y"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 4922,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13848,
+   "completion_tokens": 629,
+   "total_tokens": 14477
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Quantum Image Processing and Its Application to Edge Detection: Theory and Experiment",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. FRAMEWORK OF QUANTUM IMAGE PROCESSING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Quantum image representation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Quantum image transforms",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Experimental demonstrations",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "100.62 MHz (carbon) and 376.48 MHz (ﬂuorines). (b) Preparation",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. QUANTUM EDGE DETECTION ALGORITHM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "X. N. Xu, H. P. Peng, S. Wei, J. Zhang, and X. Y",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A: COMPARISON OF QIMRS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C: IMAGE SPATIAL FILTERING",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX D",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX E",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 97.43377459999829,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Quantum Image Processing and Its Application to Edge Detection: Theory and Exper",
+   "100.62 MHz (carbon) and 376.48 MHz (ﬂuorines). (b) Preparation",
+   "X. N. Xu, H. P. Peng, S. Wei, J. Zhang, and X. Y"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "100.62 MHz (carbon) and 376.48 MHz (ﬂuorines). (b) Preparation",
+   "X. N. Xu, H. P. Peng, S. Wei, J. Zhang, and X. Y"
+  ],
+  "ignored_title_predictions": null
+ }
+}

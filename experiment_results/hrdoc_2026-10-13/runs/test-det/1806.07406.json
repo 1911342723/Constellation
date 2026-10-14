@@ -1,0 +1,229 @@
+{
+ "doc": "1806.07406",
+ "system": "det",
+ "metrics": {
+  "gt": 28,
+  "pred": 26,
+  "tp": 24,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.7931034482758621,
+  "unmatched_gt": [
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 835,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Contrastive Hebbian Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Random Contrastive Hebbian Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Bars and Stripes Classiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.1.1 Feedback Gain",
+   "page": 5,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.2 Learning Rate",
+   "page": 5,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.3 Number of Layers",
+   "page": 6,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.4 Feedback Random Matrix",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Exclusive Or (XOR)",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Handwritten Digit and Letter Classiﬁcation",
+   "page": 10,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 Autoencoder",
+   "page": 12,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Author Contributions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Appendix",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Λϵ-pseudospectra",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.2 Error and Accuracy Table",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.3 Abbreviations and Notation Tables",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.4 Simulation and Platform Details",
+   "page": 17,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.5 Simulation Parameters",
+   "page": 17,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on MNIST",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on eMNIST",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.328525299999455,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 26,
+  "tp": 24,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.7931034482758621,
+  "unmatched_gt": [
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.76,
+  "unmatched_gt": [
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": null
+ }
+}

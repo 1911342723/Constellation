@@ -1,0 +1,148 @@
+{
+ "doc": "1807.11712",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Perceived level of aggression can be subjective. There are some examples in t",
+   "2. There are several typos and misspellings in the data that affect the performa"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 220,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology and Data",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Data",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Data Pre-processing",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Features",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Experimental Settings",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Results",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Analysis",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "1. Perceived level of aggression can be subjective. There are some examples in the validation dataset",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. There are several typos and misspellings in the data that affect the performance.",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.731784299998253,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Perceived level of aggression can be subjective. There are some examples in t",
+   "2. There are several typos and misspellings in the data that affect the performa"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Perceived level of aggression can be subjective. There are some examples in t",
+   "2. There are several typos and misspellings in the data that affect the performa"
+  ],
+  "ignored_title_predictions": null
+ }
+}

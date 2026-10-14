@@ -1,0 +1,115 @@
+{
+ "doc": "1805.01017",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 44.751314599998295
+ },
+ "predictions": [
+  {
+   "text": "Mapping polar atmospheric features on Titan with VIMS: from the dissipation of the northern cloud to the onset of a southern polar vortex",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Data processing",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Temporal evolution of the north polar atmospheric features during 13 years: from a mammoth cloud to clear skies",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Temporal evolution over the south pole",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Temporal evolution of the HCN spectral signatures over the two poles",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.004370100003143307,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

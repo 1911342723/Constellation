@@ -1,0 +1,270 @@
+{
+ "doc": "1712.05693",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 14,
+  "pred": 28,
+  "tp": 14,
+  "fp": 14,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 8,
+  "teds": 0.3793103448275862,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics",
+   "M. Gilson,1 N. E. Kouvaris,1, 2 G",
+   "3. Another diﬀerence concerns the “normalization” associated with the matrix exp",
+   "4. The MOU dynamics are also determined by the input properties, in addition to ",
+   "0 \u0013 with a′2 = a2 + b2 .",
+   "a) Efect of network size",
+   "c) Efect of feedback",
+   "d) Efect of spread of",
+   "time constant τ",
+   "Efect of input",
+   "cross-correlations",
+   "Flow-based communities (strong reciprocal interactions)",
+   "d) Change in input fow for cross-correlations with 2 inputs",
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1188,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 15430,
+   "completion_tokens": 824,
+   "total_tokens": 16254
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A novel framework to analyze complex network dynamics",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "M. Gilson,1 N. E. Kouvaris,1, 2 G",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORY FOR STABLE NETWORK DYNAMICS WITH LINEAR FEEDBACK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Another diﬀerence concerns the “normalization” associated with the matrix exponential. The use of the Lapla-",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. The MOU dynamics are also determined by the input properties, in addition to the network connectivity. Unlike",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Dynamic communicability as a measure of interactions across time",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Deﬁnition of ﬂow to quantify the propagation of ﬂuctuating inputs via the network connectivity",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "0 \u0013 with a′2 = a2 + b2 .",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Deﬁnition of diversity D and spectral properties of the ﬂow",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III. BENCHMARK OF COMMUNICABILITY AND FLOW USING SYNTHETIC NETWORKS",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Communicability and ﬂow capture the properties of the network interactions and inputs",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "a) Efect of network size",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "c) Efect of feedback",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "d) Efect of spread of",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "time constant τ",
+   "page": 11,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "Efect of input",
+   "page": 11,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "cross-correlations",
+   "page": 11,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "B. Interplay between local connectivity, long-range connectivity and inputs in ring lattices",
+   "page": 12,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "C. Community merging in hierarchical networks",
+   "page": 12,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "Flow-based communities (strong reciprocal interactions)",
+   "page": 14,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "d) Change in input fow for cross-correlations with 2 inputs",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Multiple timescales and path selection in globally balanced excitatory-inhibitory network",
+   "page": 15,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ANNEX",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Communicability for static graph",
+   "page": 17,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "B. Exponential of graph Laplacian to describe multiscale structure",
+   "page": 17,
+   "level": 2,
+   "parent": 25
+  }
+ ],
+ "seconds": 28.716257299998688,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 28,
+  "tp": 14,
+  "fp": 14,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 8,
+  "teds": 0.3793103448275862,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics",
+   "M. Gilson,1 N. E. Kouvaris,1, 2 G",
+   "3. Another diﬀerence concerns the “normalization” associated with the matrix exp",
+   "4. The MOU dynamics are also determined by the input properties, in addition to ",
+   "0 \u0013 with a′2 = a2 + b2 .",
+   "a) Efect of network size",
+   "c) Efect of feedback",
+   "d) Efect of spread of",
+   "time constant τ",
+   "Efect of input",
+   "cross-correlations",
+   "Flow-based communities (strong reciprocal interactions)",
+   "d) Change in input fow for cross-correlations with 2 inputs",
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 27,
+  "tp": 14,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 8,
+  "teds": 0.3928571428571429,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics",
+   "M. Gilson,1 N. E. Kouvaris,1, 2 G",
+   "3. Another diﬀerence concerns the “normalization” associated with the matrix exp",
+   "4. The MOU dynamics are also determined by the input properties, in addition to ",
+   "0 \u0013 with a′2 = a2 + b2 .",
+   "a) Efect of network size",
+   "c) Efect of feedback",
+   "d) Efect of spread of",
+   "time constant τ",
+   "Efect of input",
+   "cross-correlations",
+   "Flow-based communities (strong reciprocal interactions)",
+   "d) Change in input fow for cross-correlations with 2 inputs"
+  ],
+  "ignored_title_predictions": null
+ }
+}

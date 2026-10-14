@@ -1,0 +1,151 @@
+{
+ "doc": "1709.08491",
+ "system": "model",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 2,
+  "parent_correct": 9,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "Cortical thickness measurements"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 175,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4775,
+   "completion_tokens": 607,
+   "total_tokens": 5382
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Statistical learning of spatiotemporal patterns",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "from longitudinal manifold-valued networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Manifold-valued networks",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Manifold-valued measurements distributed on a ﬁxed graph",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Spatial smoothness of the propagation",
+   "page": 3,
+   "level": 4,
+   "parent": 4
+  },
+  {
+   "text": "3 The statistical model",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "A propagation model",
+   "page": 3,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "Parameters estimation with the MCMC-SAEM algorithm",
+   "page": 4,
+   "level": 4,
+   "parent": 7
+  },
+  {
+   "text": "Model instantiation",
+   "page": 4,
+   "level": 4,
+   "parent": 7
+  },
+  {
+   "text": "4 Experimental results",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Data",
+   "page": 5,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "5 Discussion and perspectives",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.57711399999971,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 2,
+  "parent_correct": 5,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "Cortical thickness measurements"
+  ],
+  "unmatched_pred": [
+   "Statistical learning of spatiotemporal patterns",
+   "from longitudinal manifold-valued networks"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "Cortical thickness measurements"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

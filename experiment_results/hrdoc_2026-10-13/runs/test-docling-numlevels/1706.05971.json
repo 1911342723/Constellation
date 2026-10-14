@@ -1,0 +1,87 @@
+{
+ "doc": "1706.05971",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 116.86963189999733
+ },
+ "predictions": [
+  {
+   "text": "ENERGY METHODS FOR DIRAC-TYPE EQUATIONS IN TWO-DIMENSIONAL MINKOWSKI SPACE",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction and results",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Linear Dirac equations in two-dimensional Minkowski space",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Nonlinear Dirac equations in two-dimensional Minkowski space",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Dirac-wave maps from two-dimensional Minkowski space",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.002373300005274359,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

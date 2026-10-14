@@ -1,0 +1,170 @@
+{
+ "doc": "1803.05805",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 159,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10184,
+   "completion_tokens": 778,
+   "total_tokens": 10962
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.954186618351236,
+  "inserted_word_share": 0.7426796496003909
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BIOMOLECULAR CONFORMATIONAL DYNAMICS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Free energy landscape",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Molecular dynamics simulation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Markov Models",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. Alanine Dipeptide Model",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. SONIFICATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Soniﬁcation parameters",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.1.1. Static parameters",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.1.2. Dynamic parameters",
+   "page": 4,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.2. Mapping",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2.1. Interstate parameters",
+   "page": 4,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "3.2.2. Intrastate parameters",
+   "page": 5,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4. IMPLEMENTATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSIONS AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.634368200000608,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

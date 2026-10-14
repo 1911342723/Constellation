@@ -1,0 +1,147 @@
+{
+ "doc": "1805.00237",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 28.907274500001222
+ },
+ "predictions": [
+  {
+   "text": "RANDOMLY WEIGHTED CNNs FOR (MUSIC) AUDIO CLASSIFICATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. MOTIVATION - FROMPREVIOUSWORKS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. ARCHITECTURES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Features: randomly weighted CNNs",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Classifiers: SVMand ELM",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Datasets: music and acoustic events",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Reproducing former results to discuss our method",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 GTZAN: music genre recognition",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Extended Ballroom: rhythm/tempo classification",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 Urban Sounds 8K: acoustic event detection",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01642379999975674,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RANDOMLY WEIGHTED CNNs FOR (MUSIC) AUDIO CLASSIFICATION"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

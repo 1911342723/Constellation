@@ -1,0 +1,147 @@
+{
+ "doc": "1710.05481",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "IMMd"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "IMMd"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 47.76962139999887
+ },
+ "predictions": [
+  {
+   "text": "Small-depth Multilinear Formula Lower Bounds for Iterated Matrix Multiplication, with Applications",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Basic setup",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Multilinear formulas and circuits",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Lower bounds for multilinear formulas and circuits computing IMMd",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Proof of Theorem 10",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Step1 - The product lemma",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Step 2 - Rank measure and the hard polynomial",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Proof of Lemma 18",
+   "page": 13,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Part 1: IMMd has high rank",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Part 2: t-product polynomials have low rank",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Part 3: r-simple polynomials have low rank.",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.005633900000248104,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "IMMd"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

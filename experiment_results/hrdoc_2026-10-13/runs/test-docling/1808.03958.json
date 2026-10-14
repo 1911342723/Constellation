@@ -1,0 +1,156 @@
+{
+ "doc": "1808.03958",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 36.35196399999768
+ },
+ "predictions": [
+  {
+   "text": "Neural System Identification with Spike-triggered Non-negative Matrix Factorization",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ganglion cell model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Spike-triggered analysis",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Spike-triggered non-negative matrix factorization analysis",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Subunit filters revealed by STNMF",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Subunit connection weight revealed by STNMF",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Classification of spikes by STNMF",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Application of STNMF to real retinal data",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Neuronal circuit at single cell level",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Classifying spikes of postsynaptic neurons",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. System identification of neural network",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.013065500002994668,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Neural System Identification with Spike-triggered Non-negative Matrix Factorizat",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

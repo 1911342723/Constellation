@@ -1,0 +1,135 @@
+{
+ "doc": "1607.02970",
+ "system": "docling",
+ "metrics": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "Abstract."
+  ],
+  "unmatched_pred": [
+   "DAG NORMANN",
+   "Definition 3.6.",
+   "Definition 3.10.",
+   "Lemma 3.11."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 17.534220900000946
+ },
+ "predictions": [
+  {
+   "text": "THE SEQUENTIAL FUNCTIONALS OF TYPE (ι → ι)n → ι FORM A DCPO FOR ALL n ∈ N",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DAG NORMANN",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Sequential procedures and functionals",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The main Theorem",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 3.6.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 3.10.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 3.11.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Conclusions and discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.003984599999967031,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 11,
+  "tp": 6,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "Abstract."
+  ],
+  "unmatched_pred": [
+   "THE SEQUENTIAL FUNCTIONALS OF TYPE (ι → ι)n → ι FORM A DCPO FOR ALL n ∈ N",
+   "DAG NORMANN",
+   "Definition 3.6.",
+   "Definition 3.10.",
+   "Lemma 3.11."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 8,
+  "tp": 4,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "DAG NORMANN",
+   "Definition 3.6.",
+   "Definition 3.10.",
+   "Lemma 3.11."
+  ],
+  "ignored_title_predictions": null
+ }
+}

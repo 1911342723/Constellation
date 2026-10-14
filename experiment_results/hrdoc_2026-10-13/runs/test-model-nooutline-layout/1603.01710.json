@@ -1,0 +1,126 @@
+{
+ "doc": "1603.01710",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Acknowledgements."
+  ],
+  "unmatched_pred": [
+   "6.1. Constructing 2-covers"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "6.1. Constructing 2-covers"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 387,
+  "layout_marked": 8,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14452,
+   "completion_tokens": 421,
+   "total_tokens": 14873
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.971163454675232,
+  "inserted_word_share": 0.027448177269478236
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction and results",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Notation and preliminaries",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Sporadic Y -presentations and their twists",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Another existence proof of Γ1, and existence of its covers",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. The case s = (2000)",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Embedding of the group of Γ in Y -group",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "6. The mix construction",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Constructing 2-covers",
+   "page": 10,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.699034000004758,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Acknowledgements."
+  ],
+  "unmatched_pred": [
+   "6.1. Constructing 2-covers"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

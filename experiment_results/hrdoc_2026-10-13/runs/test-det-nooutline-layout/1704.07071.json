@@ -1,0 +1,168 @@
+{
+ "doc": "1704.07071",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "2.1.1. Formula",
+   "2.2.1. Formula"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "2.1.1. Formula",
+   "2.2.1. Formula"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 445,
+  "layout_marked": 18,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9442764076314565,
+  "inserted_word_share": 0.05341107871720119
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Zero-Multipole Summation Method",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.1.2. Accuracy",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2. Smooth Particle Mesh Ewald Method",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.2. Computational Cost",
+   "page": 6,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.3. Implementation and Optimization of the ZMM",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. Optimization of the SPME",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5. Materials",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.6. Accuracy measurement",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.7. Performance Measurement",
+   "page": 11,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Results and Discussion for the Performance",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Conclusion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5. Acknowledgement",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Verlet Buﬀer Distances",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.2166686999989906,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "2.1.1. Formula",
+   "2.2.1. Formula"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

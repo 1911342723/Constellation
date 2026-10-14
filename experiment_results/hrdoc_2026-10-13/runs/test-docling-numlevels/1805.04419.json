@@ -1,0 +1,249 @@
+{
+ "doc": "1805.04419",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 21,
+  "pred": 27,
+  "tp": 20,
+  "fp": 7,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 13,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "forcement Learning"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 hDRQN in POMDP",
+   "Require:",
+   "Ensure:",
+   "8: Initialize:",
+   "Algorithm 2 EPS GREEDY (x, h, B, ϵ, Q, f)",
+   "Require:",
+   "Ensure:"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 25,
+  "tp": 18,
+  "fp": 7,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.23076923076923073,
+  "unmatched_gt": [
+   "forcement Learning"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 hDRQN in POMDP",
+   "Require:",
+   "Ensure:",
+   "8: Initialize:",
+   "Algorithm 2 EPS GREEDY (x, h, B, ϵ, Q, f)",
+   "Require:",
+   "Ensure:"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 49.46088679999957
+ },
+ "predictions": [
+  {
+   "text": "Deep Hierarchical Reinforcement Learning Algorithm in Partially Observable Markov Decision Processes N",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Markov Decision Process",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Semi-Markov Decision Process for Hierarchical Reinforcement Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Partially observable Markov Decision Process in Reinforcement Learning",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Deep Reinforcement Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III. HIERARCHICAL DEEP RECURRENT Q-LEARNING IN PARTIALLY OBSERVABLE SEMI-MARKOV DECISION PROCESS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Learning Model",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Minibatch sampling strategy",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Subgoal Definition",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Intrinsic and Extrinsic Reward Functions",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "E. Learning Algorithm",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Algorithm 1 hDRQN in POMDP",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Require:",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Ensure:",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8: Initialize:",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 2 EPS GREEDY (x, h, B, ϵ, Q, f)",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Require:",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Ensure:",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Implementation Details",
+   "page": 7,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "B. Multiple Goals in a Gridworld",
+   "page": 8,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "C. Multiple Goals in a Four-rooms Domain",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Montezuma's Revenge game in ATARI 2600",
+   "page": 10,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.024946199999249075,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 27,
+  "tp": 20,
+  "fp": 7,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 13,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "forcement Learning"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 hDRQN in POMDP",
+   "Require:",
+   "Ensure:",
+   "8: Initialize:",
+   "Algorithm 2 EPS GREEDY (x, h, B, ϵ, Q, f)",
+   "Require:",
+   "Ensure:"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

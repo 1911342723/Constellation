@@ -1,0 +1,137 @@
+{
+ "doc": "1808.01104",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Multinomial Mixture Kernel For Abundance Maps",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "S. Ozkan and G.B"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 498,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Ozkan and G.B",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. IMPROVED DEEP SPECTRAL CONVOLUTION NETWORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Parameter Learning",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Spectral Variability Assumption",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "D. Implementation Details",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Synthetic Dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Urban Dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Jasper Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. DISCUSSION AND CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.721894600002997,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Multinomial Mixture Kernel For Abundance Maps",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "S. Ozkan and G.B"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "A. Multinomial Mixture Kernel For Abundance Maps"
+  ],
+  "unmatched_pred": [
+   "S. Ozkan and G.B"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "doc": "1710.01285",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries: Sequential Likelihood Ratio Tests",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Sequences of Estimators",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 An Efficient Family of Priors",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Applications in Online Testing",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 m-Sample Tests of a Binomial Outcome",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5.1.1 Risk Ratio",
+   "page": 9,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "5.1.2 Odds Ratio",
+   "page": 9,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "5.1.3 Difference in Proportions",
+   "page": 10,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "5.2 m-Sample Tests of a Numeric Outcome",
+   "page": 10,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5.2.1 Difference in Means",
+   "page": 11,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "5.3 Non-parametric Superiority",
+   "page": 12,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5.3.1 Extending the Test to Sequential Data",
+   "page": 13,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "6 Discussion",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04547119999915594,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

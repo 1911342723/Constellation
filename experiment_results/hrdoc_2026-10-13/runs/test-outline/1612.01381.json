@@ -1,0 +1,94 @@
+{
+ "doc": "1612.01381",
+ "system": "outline",
+ "metrics": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   " Acknowledgments",
+   " References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Experimental details",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Statistical analysis",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV Energetics of SrTiO3(001) and DyScO3(110) surfaces",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Conclusions",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01591980000011972,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   " Acknowledgments",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

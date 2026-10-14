@@ -1,0 +1,170 @@
+{
+ "doc": "1706.07034",
+ "system": "model",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "3.4. Estimation of the constant appearing in the variance. Due to the term C(P, ",
+   "6. Acknowledgement",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1037,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18551,
+   "completion_tokens": 734,
+   "total_tokens": 19285
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Definitions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Bifurcating Markov chain [21].",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2. Tagged-branched chain [21, 9]",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Estimation of the stationary distribution ν",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Deﬁnition of the estimator",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2. Bias-variance decomposition",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3. Selection rule",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4. Estimation of the constant appearing in the variance. Due to the term C(P, µ) which is",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4. Simulations",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Bifurcating autoregressive processes.",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2. Estimation of splitting rate in a growth-fragmentation model.",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5. Proofs",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Acknowledgement",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.672823100001551,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "3.4. Estimation of the constant appearing in the variance. Due to the term C(P, ",
+   "6. Acknowledgement",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "3.4. Estimation of the constant appearing in the variance. Due to the term C(P, "
+  ],
+  "ignored_title_predictions": null
+ }
+}

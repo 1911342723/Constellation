@@ -1,0 +1,140 @@
+{
+ "doc": "1808.04440",
+ "system": "det",
+ "metrics": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Calculating activations :"
+  ],
+  "unmatched_pred": [
+   "Rooms",
+   "1 Digital Surgery, London, United Kingdom",
+   "2 Wellcome / ESPRC Centre for Interventional and Surgical Sciences, London,"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 123,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "FaceOﬀ: Anonymizing Videos in the Operating",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Rooms",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Digital Surgery, London, United Kingdom",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Wellcome / ESPRC Centre for Interventional and Surgical Sciences, London,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods and Data",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Faster R-CNN",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Sliding Kernel Smoother",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Experiments and Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Discussion and Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.1969031000007817,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 12,
+  "tp": 8,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "Calculating activations :"
+  ],
+  "unmatched_pred": [
+   "FaceOﬀ: Anonymizing Videos in the Operating",
+   "Rooms",
+   "1 Digital Surgery, London, United Kingdom",
+   "2 Wellcome / ESPRC Centre for Interventional and Surgical Sciences, London,"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Calculating activations :"
+  ],
+  "unmatched_pred": [
+   "Rooms",
+   "1 Digital Surgery, London, United Kingdom",
+   "2 Wellcome / ESPRC Centre for Interventional and Surgical Sciences, London,"
+  ],
+  "ignored_title_predictions": null
+ }
+}

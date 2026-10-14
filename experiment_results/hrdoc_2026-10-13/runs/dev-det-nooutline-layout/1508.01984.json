@@ -1,0 +1,135 @@
+{
+ "doc": "1508.01984",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "double-cell configuration"
+  ],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "double-cell configuration"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 326,
+  "layout_marked": 12,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9520694259012016,
+  "inserted_word_share": 0.5938834785580045
+ },
+ "predictions": [
+  {
+   "text": "Heterogeneous Force Chains in Cellularized Biopolymer Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. NETWORK AND CELL MODELS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. FORCE-BASED RELAXATION METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. SINGLE-CELL CONTRACTION RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Heterogeneous distribution of forces on ﬁbers",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2. Identifying force chains",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3. Force decay along force chains",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5. DOUBLE-CELL CONTRACTION RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. CONCLUSIONS AND DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.8008361000029254,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "double-cell configuration"
+  ],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

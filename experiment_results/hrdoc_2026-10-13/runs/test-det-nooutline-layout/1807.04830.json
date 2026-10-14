@@ -1,0 +1,107 @@
+{
+ "doc": "1807.04830",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Index Terms",
+   "R E F ERE NCE S"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 402,
+  "layout_marked": 12,
+  "content_preservation": 1.0,
+  "word_preservation": 0.890343294640652,
+  "inserted_word_share": 0.12943733397730017
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SIDELINK SUBCHANNELS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SEMI-PERSISTENT SCHEDULING",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. PROBLEM FORMULATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. PROPOSED ALGORITHM",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. SIMULATIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.184951400005957,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Index Terms",
+   "R E F ERE NCE S"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

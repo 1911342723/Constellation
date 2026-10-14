@@ -1,0 +1,148 @@
+{
+ "doc": "1602.06575",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 9,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.375,
+  "unmatched_gt": [
+   "1.1. THz current without modeling the measurement apparatus",
+   "1.2. THz current modeling the measurement apparatus with operators",
+   "1.3. THz current modeling the measurement apparatus with quantum trajectories",
+   "2.1. How to calculate the output results",
+   "2.2. System-Probe interaction",
+   "4.1. Additional source of noise",
+   "4.2. Weak measurement",
+   "Acknowledgement",
+   "1. Displacement current on a large surface"
+  ],
+  "unmatched_pred": [
+   "N. Zangh`ı",
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 6744,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "On the noise induced by the measurement of the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "THz electrical current in quantum devices",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "N. Zangh`ı",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Model development",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Does it exist an unavoidable source of noise due to the measurement of",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Numerical results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusions and Discussions",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 145.53891080000176,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 9,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.3125,
+  "unmatched_gt": [
+   "1.1. THz current without modeling the measurement apparatus",
+   "1.2. THz current modeling the measurement apparatus with operators",
+   "1.3. THz current modeling the measurement apparatus with quantum trajectories",
+   "2.1. How to calculate the output results",
+   "2.2. System-Probe interaction",
+   "4.1. Additional source of noise",
+   "4.2. Weak measurement",
+   "Acknowledgement",
+   "1. Displacement current on a large surface"
+  ],
+  "unmatched_pred": [
+   "On the noise induced by the measurement of the",
+   "THz electrical current in quantum devices",
+   "N. Zangh`ı",
+   "Appendix A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.3571428571428571,
+  "unmatched_gt": [
+   "1.1. THz current without modeling the measurement apparatus",
+   "1.2. THz current modeling the measurement apparatus with operators",
+   "1.3. THz current modeling the measurement apparatus with quantum trajectories",
+   "2.1. How to calculate the output results",
+   "2.2. System-Probe interaction",
+   "4.1. Additional source of noise",
+   "4.2. Weak measurement",
+   "1. Displacement current on a large surface"
+  ],
+  "unmatched_pred": [
+   "N. Zangh`ı"
+  ],
+  "ignored_title_predictions": null
+ }
+}

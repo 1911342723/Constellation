@@ -1,0 +1,179 @@
+{
+ "doc": "1610.02703",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   " References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Nonparametric Bayesian inference of the microcanonical stochastic block model",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II The microcanonical degree-corrected SBM",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III Nonparametric Bayesian inference",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A Sampling vs. optimization and the minimum description length principle (MDL).",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "B Prior for the node partition",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "C Prior for the degrees",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "1 Non-degree-corrected model (NDC-SBM)",
+   "page": 4,
+   "level": 4,
+   "parent": 7
+  },
+  {
+   "text": "2 Arbitrary degree sequences",
+   "page": 5,
+   "level": 4,
+   "parent": 7
+  },
+  {
+   "text": "D Prior for the edge counts and nested SBM hierarchies",
+   "page": 7,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "E Model summary",
+   "page": 8,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "IV Ensemble equivalence",
+   "page": 8,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "V How many groups can be inferred?",
+   "page": 10,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VI Inference algorithm",
+   "page": 12,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VII Model comparison",
+   "page": 13,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VIII Results for empirical networks",
+   "page": 15,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "IX Discussion",
+   "page": 19,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " References",
+   "page": 20,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A Asymptotic degree distributions sampled from uniform priors and hyperpriors",
+   "page": 22,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "B Directed networks",
+   "page": 23,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.06867100000090431,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 21,
+  "tp": 18,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 7,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Nonparametric Bayesian inference of the microcanonical stochastic block model",
+   "Abstract",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

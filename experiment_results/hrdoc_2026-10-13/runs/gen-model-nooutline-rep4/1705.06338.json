@@ -1,0 +1,161 @@
+{
+ "doc": "1705.06338",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 147,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4884,
+   "completion_tokens": 622,
+   "total_tokens": 5506
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9989512323020451,
+   "in_order": 0.9627687467226009,
+   "inserted": 0.009360374414976613
+  },
+  "export_markdown": "# Distributed Vector Representation Of Shopping Items, The Customer And Shopping Cart To Build A Three Fold Recommendation System.\n\n*Bibek Behera, Manoj Joshi, Abhilash KK, Mohammad Ansari Ismail*\n\nDistributed Vector Representation Of Shopping\n\nItems, The Customer And Shopping Cart To\n\nBuild A Three Fold Recommendation System.\n\nBibek Behera, Manoj Joshi, Abhilash KK, Mohammad Ansari Ismail\n\nSears Holding Corporation\n\n{bibek.behera,manoj.joshi}@searshc.com\n\n{Abhilash.KK,Ansari.MohammedIsmail}@searshc.com\n\narXiv:1705.06338v1 [cs.IR] 17 May 2017\n\nAbstract. The main idea of this paper is to represent shopping items through vectors because these vectors act as the base for building embeddings for customers and shopping carts. Also, these vectors are input to the mathematical models that act as either a recommendation engine or help in targeting potential customers. We have used exponential family embeddings as the tool to construct two basic vectors - product embeddings and context vectors. Using the basic vectors, we build combined embeddings, trip embeddings and customer embeddings. Combined embeddings mix linguistic properties of product names with their shopping patterns. The customer embeddings establish an understanding of the buying pattern of customers in a group and help in building customer proﬁle. For example a customer proﬁle can represent customers frequently buying pet-food. Identifying such proﬁles can help us bring out oﬀers and discounts. Similarly, trip embeddings are used to build trip proﬁles. People happen to buy similar set of products in a trip and hence their trip embeddings can be used to predict the next product they would like to buy. This is a novel technique and the ﬁrst of its kind to make recommendation using product, trip and customer embeddings.\n\nKeywords: Product Embedding, shopping cart, vector representation\n\n## 1 Introduction\n\nWord embeddings have changed the research world in natural language processing. The word to vector model proposed by Mikolov et al. [9] took the ﬁeld of AI and NLP by storm. Later, word2vec model was extended to sentences and documents as sent2vec and doc2vec models [4] and found their ways into myriad of applications. In recent times, there has been research to bring similar concepts into other domains. Rudoplh et al. [10] has shown how to apply word2vec model in various domains like movies, grocery and medical science using the concept of family embeddings. In case of grocery, we obtain embeddings for each product by iterating over transactions that is available in huge quantities from the transaction logs of retail companies. Product embedding is the manifold space of products\n\n2\n\nBibek Behera, Manoj Joshi, Abhilash KK, Mohammad Ansari Ismail\n\nwhere their abstract representation makes semantic sense. For example cat-food and cat-accessories are nearby in the product embedding space. Secondly the vector diﬀerence between cat-food and cat-accessories is same as the vector difference between dog-food and dog-accessories. These kind of semantic structure hidden in the product embeddings speak of the quality of the representations and lead us to build the trip and customer embeddings on the foundation of\n\nproduct embeddings\n\nIn this paper we begin with the mathematical model called exponential family embedding (Ef-emb) [10] and the characteristics of product embeddings and context vectors. Then we construct a recommendation system that ﬁnds similar and co-occurring items. Here similar items mean items that can replace each other. For example ”Beverage A” can be a replacement of ”Beverage B”. By co-occurring products, we mean products that can be bought together. We then deploy a sent2vec model on the labels of products. This gives the product a linguistic prospective. We combine the sentence embeddings with the product embeddings and obtain combined embeddings. We investigate the properties of all three embeddings. Then we extend the concept of product embedding to trips and customers. A trip consists of all the products bought by a customer in one single transaction. The motivation is that we ﬁnd cluster amongst trips so that we can recommend products to customers based on their current cart. Similarly we ﬁnd customer embeddings and then ﬁnd meaningful customer clusters using K-means algorithm based on Lloyd’s algorithm [6]. These groupings lead us to departments of products that they buy frequently. The frequently observed departments make the proﬁle of the customer group. For example a proﬁle of customers can consist of girl tops, preschool and tod boy sportswear probably because the customers represent parents whose kids are in the age range of 3 to 5. Having done such proﬁling, oﬀers and discount can be targeted to a customer if she happens to be similar to a particular group based on the proﬁle of the group. The road map for the rest of the paper is as follows. First we lay down the speciﬁcs of the theory behind family embeddings and their extension from word2vec model but with their own peculiarities in section 2. Then we demonstrate the recommendation engine in section 3. Henceforth, we show a sent2vec model and a combined model in section 5. Afterwards, we explain the process behind construction of trip embeddings and analysis of trip in section 7 followed by similar construction of customer embeddings and customer proﬁling in section\n\n8. The description of entire pipeline is explained in section 9. This is followed by\n\nconclusion and future work in section 10.\n\n## 2 Exponential family embeddings\n\nExponential family embeddings (Ef-emb) [2] are statistical tools that generalise the technique to capture contextual information for various data sets and their varying distributions. They have been employed by Rudolph et al. [10] to extend the word2vec model to diﬀerent domains like grocery, movies, etc. This model\n\nLecture Notes in Computer Science: Authors’ Instructions\n\n3\n\nrequires two inputs -the data point and the context. For example, in grocery, the item bought is the data point while context is all other items bought in that cart or trip. In case of movies, the movie being watched is the data point while the context is all the movies rated by the same person. Thus Ef-emb gives the user the ﬂexibility to choose their context function. The motivation behind using an Ef-emb is to derive useful features of the data. Context vector, distribution of the data points and their embeddings are the key ingredients that are part of a loss function which has to be minimized iteratively. By distribution of data points, we mean to say the nature of data points can be continuous or discrete values. For example in grocery data we can have product quantities which are numerical in nature hence we can use Bernoulli or Poisson distribution [8]. In case of word2vec the words are binary in nature hence we can use Bernoulli distribution. In case of neural activity, their time of activity is a continuous variable wherein we use the Gaussian distribution. Thus, Ef-emb can eﬀectively consume any kind of data and produce distribution of vector representation of data points. We also get to know the semantic structure e.g. movies of the same genre are clubbed together or some neurons have same time of activity even if they are spatially distant.\n\n### 2.1 Similar and co-occuring products\n\nIn case of shopping data, the motivation is to get similar and co-occurring products [5]. According to the concept described in Rudolph et. al 2016 [10], product embeddings can help in determining similar products by using cosine distance in the vector space to generate nearest neighbors as shown in equation 1 where ρ stands for product embeddings. In other words if the product embeddings of a pair of products have high cosine similarity, then they can replace each other.\n\nsimilarity score = cosine distance (−→\n\nρx, −→\n\nρy)\n\n(1)\n\nCo-occurring items are obtained by calculating inner product between all pairs of product embeddings and context vectors. It has been found if a pair of product co-occur the inner product of product embedding of x (ρx) and context vector of y (αy), as shown in equation 2 is higher. If they do not co-occur their inner products tend to be negative.\n\ncooccurrence score = cosine distance (−→\n\nρx, −→\n\nαy)\n\n(2)\n\nUsing the two models for similar and co-occuring products we build a basic recommendation engine. Some of the examples from the recommendation system has been shown in Table 1.\n\n## 3 Recommendation engine\n\nWe have used six month’s transaction data of Sears Holdings Corporation. Firstly, we found all products that were bought in a single transaction henceforth called a trip. We consider those trips with 5 or more products, so that we\n\n4\n\nBibek Behera, Manoj Joshi, Abhilash KK, Mohammad Ansari Ismail\n\n| Product name | rec product 1 | rec product 2 | rec product 3 |\n| --- | --- | --- | --- |\n| Coke<br>Snickers<br>Aquafina water<br>Angel soft Tissue<br>Lay’s sour | Mt Dew<br>Twix Caramale<br>Dasani water<br>Scott Bath Tissue<br>Doritos Nacho | Sprite<br>Kit Kat<br>Smart sense water<br>Scott Towel<br>Lay’s classic potato | Pepsi<br>M n M Peanut<br>Pepsi Cola<br>Paper Towels<br>Cheetos |\n\nTable 1. Some examples from the recommendation engine\n\nhave a context for each product. Each product is a data point and the products bought in the transaction become the context word. Now this data is fed to the Ef-emb model which assume a Bernoulli distribution since we just account for the presence or absence of each product. We employ the algorithm implemented by Rudolph et. al 2016 [10]. The algorithm runs for 1000 iterations and the data has approximately 20 million trips and 500 thousand products. After completion, it creates two arrays - ρ for product embeddings and α for context vector for each product. Each vector has a length of 100. These vectors are fed to Annoy which is a fast c++ library with python bindings. Annoy generates an approximate nearest neighbour model as proposed by Arya et. al 1998 [1] for a million products . This model can be employed in a realtime recommendation system [11]. To ﬁnd similar items, we provide product embedding and labels. Given a product id of the reference item, the model generates similar items as per equation 1. We ﬁnd co-occuring items as discussed in section 2.1.\n\n## 4 Visualisation of product embedding and context\n\nvectors\n\nWe used TSNE to visualise the 100 dimension vector. TSNE is available as a python or R package and was developed by Maaten et. al. 2008 [7]. It converts n-dimensional vector space to m-dimensional vector space using a probabilistic approach and minimizes the KL divergence between the 2 data sets. The TSNE algorithm works well for data that is diﬃcult to classify at higher dimension. The beauty of TSNE is that even after converting to lower dimension it retains the clusters in the higher dimensions to a high degree of precision. So we can interpret patterns in data by actually visualising them in 2D or 3D. In reality we see a multiple number of interpretable clusters and ﬁnd relation easier to interpret. For example, cat-food and cat-accessories are placed closeby. Similarly dog-food and cat-food are clumped nearby. We also see semantic relation as show in 3\n\n# » cataccessories = # »\n\ndogfood − # »\n\ncatfood − # »\n\ndogaccessories\n\n(3)\n\nIn the 2D visualisation we found cluster that represents beverage like coke, pepsi, dew, etc and also the cluster of water products is nearer to that of beverage. For both vectors, we ran TSNE for 1000 iteration and converted a 100 dimension vector space to 2 dimension vector space. The visualisation of product\n\nLecture Notes in Computer Science: Authors’ Instructions\n\n5\n\n![image]()\n\nFig. 1. Product embedding after applying TSNE.\n\nembedding is shown in ﬁgure 1. We verify the cluster mathematically by running the recommendation system. The results returned by recommendation system which works on the 100 dimensional vector concurred with the 2D representation using TSNE.\n\n## 5 Sent2Vec model and combined model\n\nThe motivation is to ﬁnd linguistic patterns in products and then combine them with product embeddings to form a vector representation that is an amalgamation of linguistic and shopping patterns of products. We generate the labels of around ﬁve hundred thousand products and give it as input to the sent2vec model. The sent2vec model then creates vectors based on the context of every word present in those product names. The characteristic of this model is that it ﬁnds clusters of products bearing similar names while the characteristic of product embeddings is that they are capable of ﬁnding clusters of products that are conceptually similar. To bridge this gap between the two models, we build a combined model that takes vector representation of product embeddings and sentence embeddings and concatenate them. We use TSNE to project them to a 2D map. In the projection of sentence embeddings, Swimwear and Beachwear appear far apart but in the projection of combined embeddings they appear close. Another example is that of the cat food\n\n6\n\nBibek Behera, Manoj Joshi, Abhilash KK, Mohammad Ansari Ismail\n\nand dog food that are distant in the sent2vec model come closer in the combined model. This is probably due to the properties that are brought by the product embeddings. Although combined model is merely a merger of sentence embeddings and product embeddings but some examples show that the properties of product embeddings seem to improve the quality of clusters created in sent2vec model. The combination of sentence embeddings and product embeddings space can be seen as a merger of natural language vectors and shopping data patterns. Thus by combining these spaces together we have embeddings that are more useful conceptually. We have not veriﬁed mathematically whether the combined model is an improvement over product embeddings. That restrains us from using the combined model for recommendation.\n\n## 6 Application of product embedding\n\nHaving obtained the product embeddings of all products, we use them to ﬁnd out patterns in trips and customers. By patterns we mean any information which could help us proﬁle the trips and customers. By proﬁling we mean to summarise the products that are being bought by a group of trips or a cluster of customers. This information is particularly helpful in targetting customers for oﬀers and discounts. The only information we have prior to obtaining product embeddings are the departments of the product and we will use these departments to proﬁle a cluster of trips and customers. Everytime a new product appears in a department, we could ﬁnd a potential customer and then target her by giving oﬀers and discounts in that department category. Some of the department categories have been listed in table 2.\n\n| Carbonated soft drink<br>Halloween candy<br>Oral care<br>Cat food<br>Mens Sports Socks | sports toys<br>Juices and drinks<br>Towels<br>Mens underwear<br>Hair Care | arts n crafts<br>Paper supplies<br>Cups and plates<br>Cat foods<br>Antifreeze solvents | salty snacks<br>Bath tissue<br>Dog treats<br>Household Chemicals<br>Beach Towels |\n| --- | --- | --- | --- |\n\nTable 2. Some frequent department labels\n\n## 7 Trip Embedding\n\nThe idea is to convert each trip into vector by taking mean of the sum of the product embeddings ρ of all the n products bought in one single trip as shown in equation 5.\n\nn\n\nX\n\ntrip embedding[i] = 1\n\nρ[i]\n\n(4)\n\nn\n\ni=1\n\nLecture Notes in Computer Science: Authors’ Instructions\n\n7\n\nIn all there were 22 million trips and we converted them to vectors. We took a sub sample of 10k vectors after ﬁltering all trips that had 5 or more products. This was done because we needed to extract buying patterns in trips. If the number of products in a trip are lesser than a threshold (here 5) then we may not get a signiﬁcant pattern. After employing TSNE we project them onto a 2d map where we could actually see clusters as shown in ﬁgure 2.\n\n![image]()\n\nFig. 2. Trip embedding after applying TSNE.\n\n### 7.1 Trip analysis\n\nAfter obtaining the projection onto 2d map, we ran the KNN over the trip embedding space and extracted 5 clusters. The noticeable point is that despite having no common items some trip embeddings were paired together. We call such trip fake pairs. To estimate number of fake pairs, we ﬁnd nearest neighbours using Annoy and then if they do not have similar items we call them fake pairs. For each cluster we made the trip analysis as shown in table 3.\n\n### 7.2 Trip Proﬁling\n\nThe second analysis was to proﬁle each cluster based on the frequency of departmental tags assosciated with product bought in the trips. The cluster and their top tags have been shown in table 4.\n\n8\n\nBibek Behera, Manoj Joshi, Abhilash KK, Mohammad Ansari Ismail\n\n| Cluster Id | True pairs | Fake pairs | Cluster score |\n| --- | --- | --- | --- |\n| 1<br>2<br>3<br>4<br>5 | 95144<br>30176<br>35666<br>36262<br>14256 | 210946<br>83674<br>201484<br>101978<br>90504 | 0.310836682022<br>0.265050505051<br>0.150394265233<br>0.262311921296<br>0.136082474227 |\n\nTable 3. Trip Analysis\n\n| Cluster size | Dept 1 | Dept 2 | Dept 3 |\n| --- | --- | --- | --- |\n| 3401<br>1265<br>2635<br>1536<br>1164 | HOUSEHOLD CHEMICALS<br>GIRL TOPS<br>PERSONAL HYGIENE<br>GIRL TOPS<br>ROUTE 66 | FABRIC CARE SUPPLIES<br>BOY KNIT TOPS<br>ORAL CARE<br>PRESCHOOL<br>BE TOPS | TAKE HOME<br>GRL FASH BOTTOMS<br>TAKE HOME<br>TOD BOY SPORTSWEAR<br>JUNIORS |\n\nTable 4. Trip Proﬁle\n\n## 8 Customer Embedding\n\nThe idea is to represent each customer through a vector by averaging the product embeddings of all the n products bought in all trips over a period of six months by a customer i as shown in equation 5.\n\nn\n\nX\n\ncustomer embedding[i] = 1\n\nρ[i]\n\n(5)\n\nn\n\nj=1\n\nIn all, there were 16 million trips and we converted them to vectors. We took a subsample of 10k vectors after ﬁltering all trips that had 5 or more products. This was done because we needed to extract cluster of customers. In smaller trip, appearance of a pattern is not signiﬁcant. After employing TSNE we project them onto a 2d map where we could actually see clusters as shown in ﬁgure 3.\n\n### 8.1 Customer analysis\n\nAfter obtaining the projection onto 2d map, we ran the KNN over the customer embedding space and extracted 5 clusters. The customer analysis is similar to trip analysis as shown in table 5.\n\n### 8.2 Customer Proﬁling\n\nCustomer proﬁling was done in the same manner as trip proﬁling and has been shown in table 6. As shown in customer proﬁles, we can identify that cluster 1 reﬂects sportwear, cluster 2 is about tops, cluster 3 about chemicals, cluster 4 has more items related to hygiene and cluster 5 is about beverages. This way we can ﬁnd clusters and give them proﬁles.\n\nLecture Notes in Computer Science: Authors’ Instructions\n\n9\n\n![image]()\n\nFig. 3. Cluster embedding after applying TSNE.\n\n| Cluster Id | True pairs | Fake pairs | Cluster score |\n| --- | --- | --- | --- |\n| 1<br>2<br>3<br>4<br>5 | 50526<br>40154<br>188692<br>31328<br>151638 | 74934<br>77926<br>123338<br>5752<br>155802 | 0.402725968436<br>0.340057588076<br>0.604723904753<br>0.844875943905<br>0.493227946916 |\n\nTable 5. Customer Analysis\n\n| Cluster size | Dept 1 | Dept 2 | Dept 3 |\n| --- | --- | --- | --- |\n| 1394<br>1312<br>3467<br>412<br>3416 | GIRL TOPS<br>ROUTE 66<br>TAKE HOME<br>HOUSEHOLD CHEMICALS<br>TAKE HOME | BOY KNIT TOPS<br>BE KNIT TOPS<br>HOUSEHOLD CHEMICALS<br>PERSONAL HYGIENE<br>NEW AGE/ WATER | TOD BOY SPORTSWEAR<br>BE TOPS<br>NEW AGE/ WATER<br>FABRIC CARE SUPPLIES<br>CARBONATED SOFT DRINK |\n\nTable 6. Customer Proﬁles\n\n## 9 Schematic representation\n\nFigure 4 shows the semantic data model, which includes the abstracted information of the embedding module. The module contains mainly two layers, which include Data and Model. The data layer contains the instances and features for the further processing. On top of the Model layer data go through the preprocessing stage.\n\n10\n\nBibek Behera, Manoj Joshi, Abhilash KK, Mohammad Ansari Ismail\n\nThe model layer converts the features in to vectors representations by using exponential family embedding as the tool. These vector representations, as discussed earlier are embeddings for products, trips and customers. The basic two vectors are product embedding and context vectors. After performing the ﬁlter embedding all the embedding will be in N dimensions, which is converted to M-dimension (2D) before visualization. The visualization can be consider as the ﬁnal layer of the module, which is responsible for the graphical representation of the all embeddings by the help of required plugins.\n\n![image]()\n\nFig. 4. Pipeline for extraction of embeddings and their visualisation\n\n## 10 Conclusion\n\nWe have proposed a recommendation system with a novel approach that uses product embeddings, trip embeddings and customer embeddings to recommend products. We begin with Ef-emb to generate product embeddings and recommend products that are similar or co-occurring. We also created combined embeddings by combining product embeddings with sentence embeddings to bring linguistic patterns into shopping patterns. Then we use product embedding to generate trip and customer embeddings. Basically, we tried generalising the patterns at the product level to the higher understanding at the trip(shopping cart) level and customer level. We also demonstrate visually the presence of meaningful clusters in all embeddings and propose ways to recommend products by doing cluster analysis.\n\nLecture Notes in Computer Science: Authors’ Instructions\n\n11\n\nThe recommendation of combined embeddings model needs to be validated mathematically whether they are better in terms of quality when compared to recommendations using product embeddings and sentence embeddings. Currently, we are evaluating the quality manually. We have proposed a recommendation system based on customer, trips and products. But we have not proposed techniques to validate them. The problem with recommendation systems is that they have online veriﬁcation algorithms [3] i.e. if a user clicks on one of the recommendations then the score is given inversely proportional to the rank of that recommendation which was clicked. We need to build a front end where user clicks can be recorded and our recommendation system gets a score.\n\n## References\n\n1. Sunil Arya, David M Mount, Nathan S Netanyahu, Ruth Silverman, and Angela Y\n\nWu. An optimal algorithm for approximate nearest neighbor searching ﬁxed dimensions. Journal of the ACM (JACM), 45(6):891–923, 1998.\n\n2. Lawrence D Brown. Fundamentals of statistical exponential families with applica-\n\ntions in statistical decision theory. Lecture Notes-monograph series, 9:i–279, 1986.\n\n3. Marco Gori, Augusto Pucci, V Roma, and I Siena. Itemrank: A random-walk based\n\nscoring algorithm for recommender engines. In IJCAI, volume 7, pages 2766–2771, 2007.\n\n4. Quoc Le and Tomas Mikolov. Distributed representations of sentences and docu-\n\nments. In Proceedings of the 31st International Conference on Machine Learning (ICML-14), pages 1188–1196, 2014.\n\n5. Greg Linden, Brent Smith, and Jeremy York. Amazon. com recommendations:\n\nItem-to-item collaborative ﬁltering. IEEE Internet computing, 7(1):76–80, 2003.\n\n6. Stuart Lloyd. Least squares quantization in pcm. IEEE transactions on informa-\n\ntion theory, 28(2):129–137, 1982.\n\n7. Laurens van der Maaten and Geoﬀrey Hinton. Visualizing data using t-sne. Journal\n\nof Machine Learning Research, 9(Nov):2579–2605, 2008.\n\n8. Peter McCullagh. Generalized linear models. European Journal of Operational\n\nResearch, 16(3):285–292, 1984.\n\n9. Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and JeﬀDean. Dis-\n\ntributed representations of words and phrases and their compositionality. In Advances in neural information processing systems, pages 3111–3119, 2013.\n\n10. Maja Rudolph, Francisco Ruiz, Stephan Mandt, and David Blei. Exponential\n\nfamily embeddings. In Advances in Neural Information Processing Systems, pages 478–486, 2016.\n\n11. J Ben Schafer, Joseph Konstan, and John Riedl. Recommender systems in e-\n\ncommerce. In Proceedings of the 1st ACM conference on Electronic commerce, pages 158–166. ACM, 1999.\n"
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Exponential family embeddings",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Similar and co-occuring products",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Recommendation engine",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Visualisation of product embedding and context",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Sent2Vec model and combined model",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Application of product embedding",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Trip Embedding",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 Trip analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7.2 Trip Proﬁling",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "8 Customer Embedding",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 Customer analysis",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "8.2 Customer Proﬁling",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "9 Schematic representation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Conclusion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.826975800002401,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

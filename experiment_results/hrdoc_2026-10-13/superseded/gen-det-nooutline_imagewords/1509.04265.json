@@ -1,0 +1,183 @@
+{
+ "doc": "1509.04265",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "4.2 Factors"
+  ],
+  "unmatched_pred": [
+   "2. for i := 1 to m do begin",
+   "2. for i := 1 to m do begin",
+   "1 w dt"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 16,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [
+   "4.2 Factors"
+  ],
+  "unmatched_pred": [
+   "2. for i := 1 to m do begin",
+   "2. for i := 1 to m do begin",
+   "1 w dt"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 537,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9257114493712773,
+  "inserted_word_share": 0.08578431372549022
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Overview",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Relief",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. for i := 1 to m do begin",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Extensions of Relief",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2. for i := 1 to m do begin",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Double Relief",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Progressively weighted double Relief",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "1 w dt",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experimental design",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Objective",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Design",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4 Problems",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4.1 RDG1NamedContinuous",
+   "page": 10,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.2 RandomRBFRandRed1",
+   "page": 11,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.3 NonMonotonic",
+   "page": 12,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.4 MajorityN",
+   "page": 12,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.5 ModuloP",
+   "page": 12,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.6 RDG1NamedCategoric",
+   "page": 12,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "5 Results",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.7981390000059037
+}

@@ -1,0 +1,154 @@
+{
+ "doc": "1702.06610",
+ "system": "model",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "NISM AND DISASTER MANAGEMENT"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 118,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4007,
+   "completion_tokens": 504,
+   "total_tokens": 4511
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESEARCH METHOD AND SETTING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Case study setup",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Wellington: Disaster prone capital city",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Pok´emon Go: A location-based augmented reality game",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Investigated documents and material",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "MAPPING LOCATION-BASED AR GAMEPLAY MECHA-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "NISM AND DISASTER MANAGEMENT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Can AR game data be used in digital disaster response?",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Do AR games create new barriers in disaster management?",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Towards socio-technical emergency response augmentation?",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.713896999997814,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "NISM AND DISASTER MANAGEMENT"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "NISM AND DISASTER MANAGEMENT"
+  ],
+  "ignored_title_predictions": null
+ }
+}

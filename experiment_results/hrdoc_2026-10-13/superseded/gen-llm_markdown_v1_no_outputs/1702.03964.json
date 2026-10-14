@@ -1,0 +1,267 @@
+{
+ "doc": "1702.03964",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 6453,
+   "completion_tokens": 5094
+  },
+  "elapsed_llm_seconds": 22.860774200002197,
+  "content_preservation": 0.854717923115327,
+  "inserted_word_share": 0.038202247191011285,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "The Parallel Meaning Bank: Towards a Multilingual Corpus of Translations Annotated with Compositional Meaning Representations",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Languages and Corpora",
+    0,
+    2
+   ],
+   [
+    "3 Automatic Annotation Pipeline",
+    0,
+    2
+   ],
+   [
+    "3.1 Segmentation",
+    0,
+    3
+   ],
+   [
+    "3.2 Syntactic Analysis",
+    0,
+    3
+   ],
+   [
+    "3.3 Universal Semantic Tagging",
+    0,
+    3
+   ],
+   [
+    "3.4 Symbolization",
+    0,
+    3
+   ],
+   [
+    "3.5 Semantic Interpretation",
+    0,
+    3
+   ],
+   [
+    "4 Cross-lingual Projection",
+    0,
+    2
+   ],
+   [
+    "5 Adding Bits of Wisdom",
+    0,
+    2
+   ],
+   [
+    "6 Conclusion",
+    0,
+    2
+   ],
+   [
+    "Acknowledgements",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Languages and Corpora",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Automatic Annotation Pipeline",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Segmentation",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Syntactic Analysis",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Universal Semantic Tagging",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 Symbolization",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.5 Semantic Interpretation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Cross-lingual Projection",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Adding Bits of Wisdom",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 22.946425599999202,
+ "metrics_raw": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 6,
+  "fp": 9,
+  "fn": 8,
+  "level_correct": 0,
+  "parent_correct": 2,
+  "teds": 0.4375,
+  "unmatched_gt": [
+   "3.3 Universal Semantic Tagging",
+   "3.4 Symbolization",
+   "3.5 Semantic Interpretation",
+   "4 Cross-lingual Projection",
+   "5 Adding Bits of Wisdom",
+   "6 Conclusion",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "The Parallel Meaning Bank: Towards a Multilingual Corpus of Translations Annotat",
+   "3.3 Universal Semantic Tagging",
+   "3.4 Symbolization",
+   "3.5 Semantic Interpretation",
+   "4 Cross-lingual Projection",
+   "5 Adding Bits of Wisdom",
+   "6 Conclusion",
+   "Acknowledgements",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 6,
+  "fp": 8,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "3.3 Universal Semantic Tagging",
+   "3.4 Symbolization",
+   "3.5 Semantic Interpretation",
+   "4 Cross-lingual Projection",
+   "5 Adding Bits of Wisdom",
+   "6 Conclusion",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "3.3 Universal Semantic Tagging",
+   "3.4 Symbolization",
+   "3.5 Semantic Interpretation",
+   "4 Cross-lingual Projection",
+   "5 Adding Bits of Wisdom",
+   "6 Conclusion",
+   "Acknowledgements",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

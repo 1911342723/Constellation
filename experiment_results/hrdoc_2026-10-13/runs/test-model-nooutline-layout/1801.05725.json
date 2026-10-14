@@ -1,0 +1,210 @@
+{
+ "doc": "1801.05725",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 24,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.96,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1179,
+  "layout_marked": 24,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13924,
+   "completion_tokens": 950,
+   "total_tokens": 14874
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9538101916783543,
+  "inserted_word_share": 0.07179253867151958
+ },
+ "predictions": [
+  {
+   "text": "Bayesian Estimation of Gaussian Graphical",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Gaussian Graphical Models",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Regression-Based Interpretation",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Projection Predictive Selection",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Model Fitting",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2. Neighborhood Selection",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3. Symmetrization",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3.1. Partial Correlation Matrix",
+   "page": 7,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.3.2. Precision Matrix",
+   "page": 7,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4. Numerical Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Low-dimensional",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.1.1. Results: Risk Estimates",
+   "page": 11,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.1.2. Results: Edge Set Identiﬁcation",
+   "page": 11,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.2. High-dimensional",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2.1. Results: Speed of Estimation",
+   "page": 12,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "4.2.2. Results: Risk Estimates",
+   "page": 12,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "4.2.3. Results: Edge Set Identiﬁcation",
+   "page": 13,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "5. Applications",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Low-dimensional",
+   "page": 16,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "5.2. High-dimensional",
+   "page": 17,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.543141299996933,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.96,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

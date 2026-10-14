@@ -1,0 +1,229 @@
+{
+ "doc": "1512.07269",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "3.2 Shape functions for Yr Λ0"
+  ],
+  "unmatched_pred": [
+   "3 Shape Functions"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 12311,
+   "completion_tokens": 11524
+  },
+  "elapsed_llm_seconds": 48.07965709999917,
+  "content_preservation": 0.9935610302351624,
+  "inserted_word_share": 0.0033698399326032025,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Serendipity and Tensor Product Affine Pyramid Finite Elements",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Background and Notation",
+    1,
+    2
+   ],
+   [
+    "3 Shape Functions",
+    4,
+    2
+   ],
+   [
+    "3.1 Shape functions for Y−r Λ0",
+    4,
+    3
+   ],
+   [
+    "3.2 Shape functions for YrΛ0",
+    5,
+    3
+   ],
+   [
+    "3.3 The “lowest order bubble function” on K∞ and ˆK",
+    5,
+    3
+   ],
+   [
+    "4 Degrees of Freedom",
+    6,
+    2
+   ],
+   [
+    "5 Unisolvence and H1-conformity",
+    7,
+    2
+   ],
+   [
+    "6 Polynomial reproduction and error analysis",
+    10,
+    2
+   ],
+   [
+    "7 Dimension optimality and conclusions",
+    10,
+    2
+   ],
+   [
+    "References",
+    12,
+    2
+   ],
+   [
+    "A Additional background on finite element exterior calculus",
+    14,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Notation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Shape Functions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Shape functions for Y−r Λ0",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Shape functions for YrΛ0",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 The “lowest order bubble function” on K∞ and ˆK",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Degrees of Freedom",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Unisolvence and H1-conformity",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Polynomial reproduction and error analysis",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Dimension optimality and conclusions",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Additional background on finite element exterior calculus",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 48.264808100000664,
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 3,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Serendipity and Tensor Product Affine Pyramid Finite Elements"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 7,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "3.2 Shape functions for Yr Λ0"
+  ],
+  "unmatched_pred": [
+   "3 Shape Functions"
+  ],
+  "ignored_title_predictions": null
+ }
+}

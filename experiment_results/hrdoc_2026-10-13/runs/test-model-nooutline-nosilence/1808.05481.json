@@ -1,0 +1,934 @@
+{
+ "doc": "1808.05481",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 18,
+  "pred": 100,
+  "tp": 15,
+  "fp": 85,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 9,
+  "teds": 0.1188118811881188,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "A NEW COINDUCTIVE CONFLUENCE PROOF FOR INFINITARY",
+   "L. Czajka",
+   "L. Czajka",
+   "L. Czajka",
+   "m) for any γ, i.e., it does not",
+   "L. Czajka",
+   "2) then",
+   "1) and s1 → s′",
+   "1) → f(s, t, t′), by rule (2)",
+   "2) and t′",
+   "m) (it really is the Skolem",
+   "1) with s1 → t1 and s1 → t′",
+   "1 with t1 → s′",
+   "1 and t′",
+   "1. More precisely",
+   "1 we obtain s′",
+   "1 and t′",
+   "1. Hence t ≡ A(t1) → A(s′",
+   "1) and t ≡ A(t′",
+   "1 and s′",
+   "2 with t1 → s′",
+   "2. Hence t ≡ B(t1, t2) → B(s′",
+   "2) by rule (3). Analogously,",
+   "2) by rule (3). Thus we may take s′",
+   "L. Czajka",
+   "0 ≤ j ≤ n then t|p ≡ tj = sj = s|p",
+   "L. Czajka",
+   "0 be the",
+   "L. Czajka",
+   "Lemma 4.7. If s →∞",
+   "Lemma 4.8. If t1 →∞",
+   "Lemma 4.9. If t1 →∞",
+   "Proof. Suppose s is not in rnf, i.e., s ≡⊥ or s ≡ s1s2 with s1 →∗",
+   "L. Czajka",
+   "β⊥R-calculus in turn implies conﬂuence of →∞",
+   "5.1. Properties of ∼U",
+   "2 with ti ∼U t′",
+   "i. Thus",
+   "Lemma 5.3. If t →∞",
+   "Proof. By coinduction. If s ≡ a then t →∗",
+   "i. Take s′ ≡ s′",
+   "2. Then t′ →∞",
+   "Lemma 5.11. If s →∗",
+   "Corollary 5.12. If t1 ⇒⊥U t2 →∗",
+   "L. Czajka",
+   "2 with s′",
+   "2. Then u ≡ u1u2 with ui ⇒⊥U s′",
+   "2 with t′",
+   "2 such that t′",
+   "Corollary 5.15. If t ∈U and t →∞",
+   "Corollary 5.16. If s ∈U and t →∞",
+   "Lemma 5.17. If t →∞",
+   "Corollary 5.18. If t →∞",
+   "Proof. By Lemma 5.14 we have t →∞",
+   "Lemma 5.21. If t →∞",
+   "Proof. If the weak head redex in t is contracted in t →∞",
+   "m. Then t2 →∞",
+   "Lemma 5.22. If t →∞",
+   "Lemma 5.23. If t →∗",
+   "Lemma 5.25. If t →∞",
+   "L. Czajka",
+   "2 where t′",
+   "i. Then ti →∞",
+   "Theorem 5.32. If t →∞",
+   "Proof. By coinduction. If s ≡⊥ then t′ ∈U. By Corollary 5.16 also t ∈U. Hence",
+   "2. Then s ≡ s1s2 with t′",
+   "i. By the coinductive hypothesis ti ;NU si. Hence t ;NU s1s2 ≡ s.",
+   "2 with ti ;NU t′",
+   "Proof. By Lemma 5.28 there are t′",
+   "2. Take t3 ≡ t′",
+   "2. We have",
+   "L. Czajka",
+   "2 and t′",
+   "i. By Lemma 5",
+   "Lemma 5.45. If t →∞",
+   "Proof. Suppose t has a rnf. Then by Lemma 5.22 there is t′ in rnf with t →∗",
+   "L. Czajka",
+   "2 and t′",
+   "i. Then ui →2∞ ti. By the",
+   "L. Czajka",
+   "Appendix A",
+   "2 with si ∼U s′",
+   "i. Because t ∈R and",
+   "1 ∈U, and thus s′ ∈U, and thus t′ ∈U. Otherwise",
+   "Proof. First assume t ∈H, i.e., t →∗"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 1374,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 9,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 9,
+   "prompt_tokens": 37845,
+   "completion_tokens": 900,
+   "total_tokens": 38745
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A NEW COINDUCTIVE CONFLUENCE PROOF FOR INFINITARY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "LAMBDA CALCULUS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Related work",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2. Infinite terms and corecursion",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Coinduction",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "m) for any γ, i.e., it does not",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2) then",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "1) and s1 → s′",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "1) → f(s, t, t′), by rule (2)",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "2) and t′",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "m) (it really is the Skolem",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1) with s1 → t1 and s1 → t′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "1 with t1 → s′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "1 and t′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "1. More precisely",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "1 we obtain s′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "1 and t′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "1. Hence t ≡ A(t1) → A(s′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "1) and t ≡ A(t′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "1 and s′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "2 with t1 → s′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "2. Hence t ≡ B(t1, t2) → B(s′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "2) by rule (3). Analogously,",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "2) by rule (3). Thus we may take s′",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "L. Czajka",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 ≤ j ≤ n then t|p ≡ tj = sj = s|p",
+   "page": 9,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "4. Definitions and basic properties",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 be the",
+   "page": 12,
+   "level": 2,
+   "parent": 32
+  },
+  {
+   "text": "L. Czajka",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 4.7. If s →∞",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 4.8. If t1 →∞",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 4.9. If t1 →∞",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. Suppose s is not in rnf, i.e., s ≡⊥ or s ≡ s1s2 with s1 →∗",
+   "page": 14,
+   "level": 2,
+   "parent": 37
+  },
+  {
+   "text": "5. Confluence and normalisation of B¨ohm reductions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "β⊥R-calculus in turn implies conﬂuence of →∞",
+   "page": 15,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "5.1. Properties of ∼U",
+   "page": 15,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "2 with ti ∼U t′",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Thus",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.3. If t →∞",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. By coinduction. If s ≡ a then t →∗",
+   "page": 16,
+   "level": 2,
+   "parent": 45
+  },
+  {
+   "text": "i. Take s′ ≡ s′",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Then t′ →∞",
+   "page": 16,
+   "level": 2,
+   "parent": 47
+  },
+  {
+   "text": "5.2. Properties of parallel ⊥U-reduction",
+   "page": 16,
+   "level": 2,
+   "parent": 47
+  },
+  {
+   "text": "Lemma 5.11. If s →∗",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Corollary 5.12. If t1 ⇒⊥U t2 →∗",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 with s′",
+   "page": 17,
+   "level": 2,
+   "parent": 52
+  },
+  {
+   "text": "2. Then u ≡ u1u2 with ui ⇒⊥U s′",
+   "page": 17,
+   "level": 2,
+   "parent": 52
+  },
+  {
+   "text": "2 with t′",
+   "page": 17,
+   "level": 2,
+   "parent": 52
+  },
+  {
+   "text": "2 such that t′",
+   "page": 17,
+   "level": 2,
+   "parent": 52
+  },
+  {
+   "text": "Corollary 5.15. If t ∈U and t →∞",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Corollary 5.16. If s ∈U and t →∞",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.17. If t →∞",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Corollary 5.18. If t →∞",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. By Lemma 5.14 we have t →∞",
+   "page": 17,
+   "level": 2,
+   "parent": 60
+  },
+  {
+   "text": "Lemma 5.21. If t →∞",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. If the weak head redex in t is contracted in t →∞",
+   "page": 18,
+   "level": 2,
+   "parent": 62
+  },
+  {
+   "text": "m. Then t2 →∞",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.22. If t →∞",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.23. If t →∗",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.25. If t →∞",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.4. Inﬁnitary NU-reduction. In the λ∞",
+   "page": 19,
+   "level": 2,
+   "parent": 68
+  },
+  {
+   "text": "2 where t′",
+   "page": 20,
+   "level": 2,
+   "parent": 68
+  },
+  {
+   "text": "i. Then ti →∞",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Theorem 5.32. If t →∞",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. By coinduction. If s ≡⊥ then t′ ∈U. By Corollary 5.16 also t ∈U. Hence",
+   "page": 20,
+   "level": 2,
+   "parent": 72
+  },
+  {
+   "text": "2. Then s ≡ s1s2 with t′",
+   "page": 20,
+   "level": 2,
+   "parent": 72
+  },
+  {
+   "text": "i. By the coinductive hypothesis ti ;NU si. Hence t ;NU s1s2 ≡ s.",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.5. Conﬂuence and normalisation",
+   "page": 20,
+   "level": 2,
+   "parent": 75
+  },
+  {
+   "text": "2 with ti ;NU t′",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. By Lemma 5.28 there are t′",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Take t3 ≡ t′",
+   "page": 20,
+   "level": 2,
+   "parent": 78
+  },
+  {
+   "text": "2. We have",
+   "page": 20,
+   "level": 2,
+   "parent": 78
+  },
+  {
+   "text": "5.6. Root-active terms are strongly meaningless.",
+   "page": 20,
+   "level": 2,
+   "parent": 78
+  },
+  {
+   "text": "L. Czajka",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 and t′",
+   "page": 21,
+   "level": 2,
+   "parent": 82
+  },
+  {
+   "text": "i. By Lemma 5",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.45. If t →∞",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. Suppose t has a rnf. Then by Lemma 5.22 there is t′ in rnf with t →∗",
+   "page": 21,
+   "level": 2,
+   "parent": 85
+  },
+  {
+   "text": "5.7. Conﬂuence modulo equivalence of meaningless terms. From conﬂuence of the",
+   "page": 22,
+   "level": 2,
+   "parent": 85
+  },
+  {
+   "text": "6. Strongly convergent reductions",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 and t′",
+   "page": 23,
+   "level": 2,
+   "parent": 89
+  },
+  {
+   "text": "i. Then ui →2∞ ti. By the",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. The formalisation",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Conclusions",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 with si ∼U s′",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Because t ∈R and",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 ∈U, and thus s′ ∈U, and thus t′ ∈U. Otherwise",
+   "page": 30,
+   "level": 2,
+   "parent": 98
+  },
+  {
+   "text": "Proof. First assume t ∈H, i.e., t →∗",
+   "page": 30,
+   "level": 2,
+   "parent": 98
+  }
+ ],
+ "seconds": 27.68855429999894,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 101,
+  "tp": 15,
+  "fp": 86,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 9,
+  "teds": 0.11764705882352944,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "A NEW COINDUCTIVE CONFLUENCE PROOF FOR INFINITARY",
+   "LAMBDA CALCULUS",
+   "L. Czajka",
+   "L. Czajka",
+   "L. Czajka",
+   "m) for any γ, i.e., it does not",
+   "L. Czajka",
+   "2) then",
+   "1) and s1 → s′",
+   "1) → f(s, t, t′), by rule (2)",
+   "2) and t′",
+   "m) (it really is the Skolem",
+   "1) with s1 → t1 and s1 → t′",
+   "1 with t1 → s′",
+   "1 and t′",
+   "1. More precisely",
+   "1 we obtain s′",
+   "1 and t′",
+   "1. Hence t ≡ A(t1) → A(s′",
+   "1) and t ≡ A(t′",
+   "1 and s′",
+   "2 with t1 → s′",
+   "2. Hence t ≡ B(t1, t2) → B(s′",
+   "2) by rule (3). Analogously,",
+   "2) by rule (3). Thus we may take s′",
+   "L. Czajka",
+   "0 ≤ j ≤ n then t|p ≡ tj = sj = s|p",
+   "L. Czajka",
+   "0 be the",
+   "L. Czajka",
+   "Lemma 4.7. If s →∞",
+   "Lemma 4.8. If t1 →∞",
+   "Lemma 4.9. If t1 →∞",
+   "Proof. Suppose s is not in rnf, i.e., s ≡⊥ or s ≡ s1s2 with s1 →∗",
+   "L. Czajka",
+   "β⊥R-calculus in turn implies conﬂuence of →∞",
+   "5.1. Properties of ∼U",
+   "2 with ti ∼U t′",
+   "i. Thus",
+   "Lemma 5.3. If t →∞",
+   "Proof. By coinduction. If s ≡ a then t →∗",
+   "i. Take s′ ≡ s′",
+   "2. Then t′ →∞",
+   "Lemma 5.11. If s →∗",
+   "Corollary 5.12. If t1 ⇒⊥U t2 →∗",
+   "L. Czajka",
+   "2 with s′",
+   "2. Then u ≡ u1u2 with ui ⇒⊥U s′",
+   "2 with t′",
+   "2 such that t′",
+   "Corollary 5.15. If t ∈U and t →∞",
+   "Corollary 5.16. If s ∈U and t →∞",
+   "Lemma 5.17. If t →∞",
+   "Corollary 5.18. If t →∞",
+   "Proof. By Lemma 5.14 we have t →∞",
+   "Lemma 5.21. If t →∞",
+   "Proof. If the weak head redex in t is contracted in t →∞",
+   "m. Then t2 →∞",
+   "Lemma 5.22. If t →∞",
+   "Lemma 5.23. If t →∗",
+   "Lemma 5.25. If t →∞",
+   "L. Czajka",
+   "2 where t′",
+   "i. Then ti →∞",
+   "Theorem 5.32. If t →∞",
+   "Proof. By coinduction. If s ≡⊥ then t′ ∈U. By Corollary 5.16 also t ∈U. Hence",
+   "2. Then s ≡ s1s2 with t′",
+   "i. By the coinductive hypothesis ti ;NU si. Hence t ;NU s1s2 ≡ s.",
+   "2 with ti ;NU t′",
+   "Proof. By Lemma 5.28 there are t′",
+   "2. Take t3 ≡ t′",
+   "2. We have",
+   "L. Czajka",
+   "2 and t′",
+   "i. By Lemma 5",
+   "Lemma 5.45. If t →∞",
+   "Proof. Suppose t has a rnf. Then by Lemma 5.22 there is t′ in rnf with t →∗",
+   "L. Czajka",
+   "2 and t′",
+   "i. Then ui →2∞ ti. By the",
+   "L. Czajka",
+   "Appendix A",
+   "2 with si ∼U s′",
+   "i. Because t ∈R and",
+   "1 ∈U, and thus s′ ∈U, and thus t′ ∈U. Otherwise",
+   "Proof. First assume t ∈H, i.e., t →∗"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 98,
+  "tp": 14,
+  "fp": 84,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 8,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "A NEW COINDUCTIVE CONFLUENCE PROOF FOR INFINITARY",
+   "L. Czajka",
+   "L. Czajka",
+   "L. Czajka",
+   "m) for any γ, i.e., it does not",
+   "L. Czajka",
+   "2) then",
+   "1) and s1 → s′",
+   "1) → f(s, t, t′), by rule (2)",
+   "2) and t′",
+   "m) (it really is the Skolem",
+   "1) with s1 → t1 and s1 → t′",
+   "1 with t1 → s′",
+   "1 and t′",
+   "1. More precisely",
+   "1 we obtain s′",
+   "1 and t′",
+   "1. Hence t ≡ A(t1) → A(s′",
+   "1) and t ≡ A(t′",
+   "1 and s′",
+   "2 with t1 → s′",
+   "2. Hence t ≡ B(t1, t2) → B(s′",
+   "2) by rule (3). Analogously,",
+   "2) by rule (3). Thus we may take s′",
+   "L. Czajka",
+   "0 ≤ j ≤ n then t|p ≡ tj = sj = s|p",
+   "L. Czajka",
+   "0 be the",
+   "L. Czajka",
+   "Lemma 4.7. If s →∞",
+   "Lemma 4.8. If t1 →∞",
+   "Lemma 4.9. If t1 →∞",
+   "Proof. Suppose s is not in rnf, i.e., s ≡⊥ or s ≡ s1s2 with s1 →∗",
+   "L. Czajka",
+   "β⊥R-calculus in turn implies conﬂuence of →∞",
+   "5.1. Properties of ∼U",
+   "2 with ti ∼U t′",
+   "i. Thus",
+   "Lemma 5.3. If t →∞",
+   "Proof. By coinduction. If s ≡ a then t →∗",
+   "i. Take s′ ≡ s′",
+   "2. Then t′ →∞",
+   "Lemma 5.11. If s →∗",
+   "Corollary 5.12. If t1 ⇒⊥U t2 →∗",
+   "L. Czajka",
+   "2 with s′",
+   "2. Then u ≡ u1u2 with ui ⇒⊥U s′",
+   "2 with t′",
+   "2 such that t′",
+   "Corollary 5.15. If t ∈U and t →∞",
+   "Corollary 5.16. If s ∈U and t →∞",
+   "Lemma 5.17. If t →∞",
+   "Corollary 5.18. If t →∞",
+   "Proof. By Lemma 5.14 we have t →∞",
+   "Lemma 5.21. If t →∞",
+   "Proof. If the weak head redex in t is contracted in t →∞",
+   "m. Then t2 →∞",
+   "Lemma 5.22. If t →∞",
+   "Lemma 5.23. If t →∗",
+   "Lemma 5.25. If t →∞",
+   "L. Czajka",
+   "2 where t′",
+   "i. Then ti →∞",
+   "Theorem 5.32. If t →∞",
+   "Proof. By coinduction. If s ≡⊥ then t′ ∈U. By Corollary 5.16 also t ∈U. Hence",
+   "2. Then s ≡ s1s2 with t′",
+   "i. By the coinductive hypothesis ti ;NU si. Hence t ;NU s1s2 ≡ s.",
+   "2 with ti ;NU t′",
+   "Proof. By Lemma 5.28 there are t′",
+   "2. Take t3 ≡ t′",
+   "2. We have",
+   "L. Czajka",
+   "2 and t′",
+   "i. By Lemma 5",
+   "Lemma 5.45. If t →∞",
+   "Proof. Suppose t has a rnf. Then by Lemma 5.22 there is t′ in rnf with t →∗",
+   "L. Czajka",
+   "2 and t′",
+   "i. Then ui →2∞ ti. By the",
+   "L. Czajka",
+   "2 with si ∼U s′",
+   "i. Because t ∈R and",
+   "1 ∈U, and thus s′ ∈U, and thus t′ ∈U. Otherwise",
+   "Proof. First assume t ∈H, i.e., t →∗"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "doc": "1705.08730",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "4 Metho ds",
+   "4.1 Choosing a set of Databases"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 247,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Motivation:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Results:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Data extraction and visualisation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "5 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Reuse within Databases",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.2 Patterns of Reuse within databases",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.3 Reuse between Databases",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.4 Patterns between databases",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "6 Discussion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.079417299999477,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "4 Metho ds",
+   "4.1 Choosing a set of Databases"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "4 Metho ds",
+   "4.1 Choosing a set of Databases"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

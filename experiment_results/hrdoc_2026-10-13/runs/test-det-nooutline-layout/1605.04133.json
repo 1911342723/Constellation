@@ -1,0 +1,135 @@
+{
+ "doc": "1605.04133",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 220,
+  "layout_marked": 14,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9162719891745602,
+  "inserted_word_share": 0.9553884670498904
+ },
+ "predictions": [
+  {
+   "text": "Fragmentation of magnetism in artiﬁcial kagome dipolar spin ice",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESULTS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sample fabrication.",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Thermal annealing protocol.",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "Estimation of an eﬀective temperature.",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "Monte Carlo simulations.",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "Dipolar hamiltonian.",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "Ab initio coding of emergence.",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "AUTHOR CONTRIBUTIONS",
+   "page": 5,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "ADDITIONAL INFORMATION",
+   "page": 5,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "COMPETING FINANCIAL INTERESTS",
+   "page": 5,
+   "level": 3,
+   "parent": 4
+  }
+ ],
+ "seconds": 7.396301799999492,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

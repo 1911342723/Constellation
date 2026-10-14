@@ -1,0 +1,154 @@
+{
+ "doc": "1610.01900",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Outline of paper and our contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. Basic definitions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Consensus",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Distances",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Combining consensus and distance",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Simplex rules",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Distance rationalization in the simplex",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. Quotient distances",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3. The p-votewise case — Wasserstein distance",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. Tied sets and decisiveness",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Boundaries",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2. Geometric background",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3. Large boundary",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5. Analysis of 1-votewise metrics",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Small bisectors and hyperplane rules",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Discussion and future work",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04014189999725204,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

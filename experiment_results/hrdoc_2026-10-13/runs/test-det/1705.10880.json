@@ -1,0 +1,142 @@
+{
+ "doc": "1705.10880",
+ "system": "det",
+ "metrics": {
+  "gt": 16,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "II. I DEN TIT Y FE D ERAT ION AND ATT RI BU T E S HARIN G : A BR IEF H I S TORY",
+   "A. Web Single Sign-On & Identity Providers",
+   "C. OPAL-based Data Sharing Federation",
+   "B. The UMA Model for Consent Management",
+   "ACKN O W LED G M E NT"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 349,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Identity Federation",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III. OPEN ALGORITHMS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. OPAL Principles",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. OPAL Query-Response Model",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. OPAL FOR IDENTITY FEDERATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. TRUST FRAMEWORK FOR OPAL FEDERATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONSENT MANAGEMENT IN OPAL",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Consent to Execute an Algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "VII. FUTURE DIRECTIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.717622100000881,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "II. I DEN TIT Y FE D ERAT ION AND ATT RI BU T E S HARIN G : A BR IEF H I S TORY",
+   "A. Web Single Sign-On & Identity Providers",
+   "C. OPAL-based Data Sharing Federation",
+   "B. The UMA Model for Consent Management",
+   "ACKN O W LED G M E NT"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "II. I DEN TIT Y FE D ERAT ION AND ATT RI BU T E S HARIN G : A BR IEF H I S TORY",
+   "A. Web Single Sign-On & Identity Providers",
+   "C. OPAL-based Data Sharing Federation",
+   "B. The UMA Model for Consent Management"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

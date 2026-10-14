@@ -1,0 +1,195 @@
+{
+ "doc": "1804.10986",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 6,
+  "fp": 8,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.0,
+  "unmatched_gt": [
+   "2.1. Boundary reduction",
+   "2.2. Galerkin discretisation",
+   "3.1. Numerical Experiments",
+   "4.1. Error Analysis of Sparse Grids",
+   "4.2. Combination Technique",
+   "4.2.1. Numerical Experiments",
+   "4.3. Adaptive Sparse Grids",
+   "4.3.1. Numerical Experiments"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "4 }∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · X",
+   "22 max{µℓx,λℓt}∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · ∥ψ∥2",
+   "5 is 15",
+   "4 }−2(µℓx+λℓt)∥ψ∥2",
+   "0 ≤ ℓx ≤⌊L/σ⌋. This exponent is piecewise linear"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 992,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18454,
+   "completion_tokens": 320,
+   "total_tokens": 18774
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem Formulation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Error Analysis for Full Tensor-products",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 }∥w(ℓx,ℓt)∥2",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 }−2 max{µℓx,λℓt}\u0013 · X",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "22 max{µℓx,λℓt}∥w(ℓx,ℓt)∥2",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 }−2 max{µℓx,λℓt}\u0013 · ∥ψ∥2",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 is 15",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Sparse Grids",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 }−2(µℓx+λℓt)∥ψ∥2",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 ≤ ℓx ≤⌊L/σ⌋. This exponent is piecewise linear",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusions",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 22.953635900001245,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 6,
+  "fp": 8,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.0,
+  "unmatched_gt": [
+   "2.1. Boundary reduction",
+   "2.2. Galerkin discretisation",
+   "3.1. Numerical Experiments",
+   "4.1. Error Analysis of Sparse Grids",
+   "4.2. Combination Technique",
+   "4.2.1. Numerical Experiments",
+   "4.3. Adaptive Sparse Grids",
+   "4.3.1. Numerical Experiments"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "4 }∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · X",
+   "22 max{µℓx,λℓt}∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · ∥ψ∥2",
+   "5 is 15",
+   "4 }−2(µℓx+λℓt)∥ψ∥2",
+   "0 ≤ ℓx ≤⌊L/σ⌋. This exponent is piecewise linear"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 5,
+  "fp": 7,
+  "fn": 8,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.0,
+  "unmatched_gt": [
+   "2.1. Boundary reduction",
+   "2.2. Galerkin discretisation",
+   "3.1. Numerical Experiments",
+   "4.1. Error Analysis of Sparse Grids",
+   "4.2. Combination Technique",
+   "4.2.1. Numerical Experiments",
+   "4.3. Adaptive Sparse Grids",
+   "4.3.1. Numerical Experiments"
+  ],
+  "unmatched_pred": [
+   "4 }∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · X",
+   "22 max{µℓx,λℓt}∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · ∥ψ∥2",
+   "5 is 15",
+   "4 }−2(µℓx+λℓt)∥ψ∥2",
+   "0 ≤ ℓx ≤⌊L/σ⌋. This exponent is piecewise linear"
+  ],
+  "ignored_title_predictions": null
+ }
+}

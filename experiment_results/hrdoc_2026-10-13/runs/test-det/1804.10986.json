@@ -1,0 +1,205 @@
+{
+ "doc": "1804.10986",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 21,
+  "tp": 13,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "4 }∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · X",
+   "22 max{µℓx,λℓt}∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · ∥ψ∥2",
+   "Lemma 3.2. Let F be a monotonically increasing function. Then its minimum outsid",
+   "5 is 15",
+   "4 }−2(µℓx+λℓt)∥ψ∥2"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 992,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem Formulation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Boundary reduction",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Galerkin discretisation",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Error Analysis for Full Tensor-products",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 }∥w(ℓx,ℓt)∥2",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 }−2 max{µℓx,λℓt}\u0013 · X",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "22 max{µℓx,λℓt}∥w(ℓx,ℓt)∥2",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 }−2 max{µℓx,λℓt}\u0013 · ∥ψ∥2",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 3.2. Let F be a monotonically increasing function. Then its minimum outside the set Iσ",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Numerical Experiments",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 is 15",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Sparse Grids",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Error Analysis of Sparse Grids",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4 }−2(µℓx+λℓt)∥ψ∥2",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. Combination Technique",
+   "page": 13,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2.1. Numerical Experiments",
+   "page": 14,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "4.3. Adaptive Sparse Grids",
+   "page": 15,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.3.1. Numerical Experiments",
+   "page": 17,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "5. Conclusions",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.655754999999772,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 21,
+  "tp": 13,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "4 }∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · X",
+   "22 max{µℓx,λℓt}∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · ∥ψ∥2",
+   "Lemma 3.2. Let F be a monotonically increasing function. Then its minimum outsid",
+   "5 is 15",
+   "4 }−2(µℓx+λℓt)∥ψ∥2"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 20,
+  "tp": 13,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.5238095238095238,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4 }∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · X",
+   "22 max{µℓx,λℓt}∥w(ℓx,ℓt)∥2",
+   "4 }−2 max{µℓx,λℓt}\u0013 · ∥ψ∥2",
+   "Lemma 3.2. Let F be a monotonically increasing function. Then its minimum outsid",
+   "5 is 15",
+   "4 }−2(µℓx+λℓt)∥ψ∥2"
+  ],
+  "ignored_title_predictions": null
+ }
+}

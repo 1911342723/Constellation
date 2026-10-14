@@ -1,0 +1,193 @@
+{
+ "doc": "1609.03815",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 12,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "A. A Unified Framework for Gender-Aware Age Estimation",
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [
+   "A Uniﬁed Gender-Aware Age Estimation",
+   "1. Initialize wa, bm, and bf;",
+   "2. for t = 1, 2, ..., Tmax do",
+   "5. end for",
+   "6. Return wg, bg, wa, bm, and bf."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 527,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4582,
+   "completion_tokens": 485,
+   "total_tokens": 5067
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A Uniﬁed Gender-Aware Age Estimation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Initialize wa, bm, and bf;",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. for t = 1, 2, ..., Tmax do",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. end for",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Return wg, bg, wa, bm, and bf.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Datasets",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Experimental Setup",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Age Estimation With Race Variation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Age Estimation Without Race Variation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Reasonableness of Near-Orthogonality Penalty Across Hu-",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.084924500002671,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 12,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "A. A Unified Framework for Gender-Aware Age Estimation",
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [
+   "A Uniﬁed Gender-Aware Age Estimation",
+   "1. Initialize wa, bm, and bf;",
+   "2. for t = 1, 2, ..., Tmax do",
+   "5. end for",
+   "6. Return wg, bg, wa, bm, and bf."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 10,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "A. A Unified Framework for Gender-Aware Age Estimation",
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [
+   "A Uniﬁed Gender-Aware Age Estimation",
+   "1. Initialize wa, bm, and bf;",
+   "2. for t = 1, 2, ..., Tmax do",
+   "5. end for",
+   "6. Return wg, bg, wa, bm, and bf."
+  ],
+  "ignored_title_predictions": null
+ }
+}

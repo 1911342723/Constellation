@@ -1,0 +1,165 @@
+{
+ "doc": "1609.02189",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 9,
+  "pred": 13,
+  "tp": 9,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 and x−",
+   "2 in the negative nodal domain; see Figure 1",
+   "5 }} is an MNP of order 6; see",
+   "1 does not matter, since the monochromatic"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 688,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17675,
+   "completion_tokens": 403,
+   "total_tokens": 18078
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Oscillation Estimates of Eigenfunctions via",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "the Combinatorics of Noncrossing Partitions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Nodal domain count",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 and x−",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 in the negative nodal domain; see Figure 1",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Combinatorics of noncrossing partitions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 }} is an MNP of order 6; see",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Applications",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Fractional Schrödinger operators on the real line",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Periodic potentials",
+   "page": 11,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 Steklov problems",
+   "page": 13,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 does not matter, since the monochromatic",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.965959400000429,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 15,
+  "tp": 9,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Oscillation Estimates of Eigenfunctions via",
+   "the Combinatorics of Noncrossing Partitions",
+   "1 and x−",
+   "2 in the negative nodal domain; see Figure 1",
+   "5 }} is an MNP of order 6; see",
+   "1 does not matter, since the monochromatic"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 and x−",
+   "2 in the negative nodal domain; see Figure 1",
+   "5 }} is an MNP of order 6; see",
+   "1 does not matter, since the monochromatic"
+  ],
+  "ignored_title_predictions": null
+ }
+}

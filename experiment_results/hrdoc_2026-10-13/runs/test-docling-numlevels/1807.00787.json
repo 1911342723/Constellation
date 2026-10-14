@@ -1,0 +1,179 @@
+{
+ "doc": "1807.00787",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Unified Approach to Quantifying Algorithmic Unfairness: Measuring Individual &",
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Unified Approach to Quantifying Algorithmic Unfairness: Measuring Individual &"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 47.6116820999996
+ },
+ "predictions": [
+  {
+   "text": "A Unified Approach to Quantifying Algorithmic Unfairness: Measuring Individual & Group Unfairness via Inequality Indices",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACM Reference Format:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 MEASURINGALGORITHMICUNFAIRNESS VIA INEQUALITY INDICES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Setting",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Unfairness as Inequality in Benefits",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Axioms for Measuring Inequality",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4 Comparison with PreviousWork",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 THEORETICAL CHARACTERIZATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Accuracy vs. Individual Fairness",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2 Individual vs. Group Fairness",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 EMPIRICAL ANALYSIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Fairness vs. Accuracy Tradeoffs",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Fairness Decomposability",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Interaction Between Different Types of Unfairness",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A APPENDIX: TECHNICALMATERIAL",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.015059400000609457,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Unified Approach to Quantifying Algorithmic Unfairness: Measuring Individual &",
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

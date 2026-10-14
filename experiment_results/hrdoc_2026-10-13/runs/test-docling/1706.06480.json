@@ -1,0 +1,189 @@
+{
+ "doc": "1706.06480",
+ "system": "docling",
+ "metrics": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 50.3038947999994
+ },
+ "predictions": [
+  {
+   "text": "Advanced Steel Microstructural Classification by Deep Learning Methods",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Works",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Review of recent Deep Learning techniques in computer vision",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Fully Convolutional Neural Networks (FCNNs)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Methods",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Object-based Classification of Microstructures with CNNs",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Segmentation-based Classification of Microstructures with FCNNs",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 Implementation Details",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3.1 Training object-based CNN:",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3.2 Using pre-trained extracted features (DeCAFs):",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3.3 Training MVFCNN:",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3.4 Class Balancing and Data Augmentation",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Dataset",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Task Definition and Metrics",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Evaluation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Discussion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Acknowledgements",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Additional information",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.020395699997607153,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Advanced Steel Microstructural Classification by Deep Learning Methods"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

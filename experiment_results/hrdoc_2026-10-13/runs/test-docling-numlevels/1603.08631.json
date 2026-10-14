@@ -1,0 +1,131 @@
+{
+ "doc": "1603.08631",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "1) Convolutional Neural Networks (CNNs / ConvNets):"
+  ],
+  "unmatched_pred": [
+   "ACCURACIES ACHIEVED FROM CNN ACROSS 5 RUNS",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "1) Convolutional Neural Networks (CNNs / ConvNets):"
+  ],
+  "unmatched_pred": [
+   "ACCURACIES ACHIEVED FROM CNN ACROSS 5 RUNS"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 9.436752400000842
+ },
+ "predictions": [
+  {
+   "text": "Classification of Alzheimer's Disease Using fMRI Data and Deep Learning Convolutional Neural Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND ALGORITHMS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Acquisition and Preprocessing",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Deep Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. RESULTS AND DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACCURACIES ACHIEVED FROM CNN ACROSS 5 RUNS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ACKNOWLEDGEMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. APPENDIX I",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.009011099995404948,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "1) Convolutional Neural Networks (CNNs / ConvNets):"
+  ],
+  "unmatched_pred": [
+   "ACCURACIES ACHIEVED FROM CNN ACROSS 5 RUNS",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

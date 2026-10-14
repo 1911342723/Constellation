@@ -1,0 +1,132 @@
+{
+ "doc": "1805.00420",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methodology",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results: Spatial Patterns",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Prominent Spatial Patterns",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Testing the robustness of patterns",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 Seasonal evolution of spatial patterns",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4 Probability distribution of prominent spatial transitions",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4.1 Self transitions: length of spells",
+   "page": 8,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "4 Results: identifying the active and break spells",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 All-India Active-Break spells",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Local Wet-Dry Spells",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 Regional Wet-Dry Spells",
+   "page": 11,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Discussion and future directions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.19062579999808804,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

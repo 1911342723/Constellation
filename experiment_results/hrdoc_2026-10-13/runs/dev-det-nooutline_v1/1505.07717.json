@@ -1,0 +1,286 @@
+{
+ "doc": "1505.07717",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 17,
+  "fp": 10,
+  "fn": 10,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.2142857142857143,
+  "unmatched_gt": [
+   "OUT LINE A N D CO N TRIBUT I O NS",
+   "N O TAT ION",
+   "A. Similar factors",
+   "B. Shared component",
+   "C. Compressed coupled CP",
+   "D. Gamma coupling of positive variables",
+   "A WA R M S TART A ND C O LD S TA RT",
+   "B GRAD I ENT M AT RI CE S FOR THE MU A LGO R I THM",
+   "C SN R FO R S OM E COU P LING SC ENARIO S",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "1 HTHC + 1",
+   "c. The hybrid",
+   "c. Similarly to [20],",
+   "A. The components of the factor C′ have a similar",
+   "1 obtained with",
+   "APPENDIX A",
+   "APPENDIX B",
+   "PNc",
+   "APPENDIX C",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 1232,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Exploring multimodal data fusion through joint",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "decompositions with ﬂexible couplings",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. COUPLED DECOMPOSITIONS: A BAYESIAN APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. FLEXIBLE COUPLING MODELS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Joint Gaussian modeling",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Hybrid Gaussian coupling",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Non Gaussian conditional coupling",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ALGORITHMS FOR COUPLED TENSOR",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Hybrid Gaussian modeling and alternating least squares",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 HTHC + 1",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Coupled decompositions of large data sets Let us consider again the hybrid Gaussian problem (8) with",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "c. The hybrid",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Multiplicative updates for non Gaussian coupling of posi-",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. BAYESIAN AND HYBRID CRAM´ER-RAO BOUNDS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Introduction",
+   "page": 7,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "c. Similarly to [20],",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The components of the factor C′ have a similar",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "B. Bayesian Cram´er-Rao bound",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "C. Hybrid Cram´er-Rao bound",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. SIMULATIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Different sampling rates",
+   "page": 10,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "1 obtained with",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PNc",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 27.571589700000914,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 29,
+  "tp": 17,
+  "fp": 12,
+  "fn": 10,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.23333333333333328,
+  "unmatched_gt": [
+   "OUT LINE A N D CO N TRIBUT I O NS",
+   "N O TAT ION",
+   "A. Similar factors",
+   "B. Shared component",
+   "C. Compressed coupled CP",
+   "D. Gamma coupling of positive variables",
+   "A WA R M S TART A ND C O LD S TA RT",
+   "B GRAD I ENT M AT RI CE S FOR THE MU A LGO R I THM",
+   "C SN R FO R S OM E COU P LING SC ENARIO S",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "Exploring multimodal data fusion through joint",
+   "decompositions with ﬂexible couplings",
+   "1 HTHC + 1",
+   "c. The hybrid",
+   "c. Similarly to [20],",
+   "A. The components of the factor C′ have a similar",
+   "1 obtained with",
+   "APPENDIX A",
+   "APPENDIX B",
+   "PNc",
+   "APPENDIX C",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 23,
+  "tp": 17,
+  "fp": 6,
+  "fn": 9,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.2592592592592593,
+  "unmatched_gt": [
+   "OUT LINE A N D CO N TRIBUT I O NS",
+   "N O TAT ION",
+   "A. Similar factors",
+   "B. Shared component",
+   "C. Compressed coupled CP",
+   "D. Gamma coupling of positive variables",
+   "A WA R M S TART A ND C O LD S TA RT",
+   "B GRAD I ENT M AT RI CE S FOR THE MU A LGO R I THM",
+   "C SN R FO R S OM E COU P LING SC ENARIO S"
+  ],
+  "unmatched_pred": [
+   "1 HTHC + 1",
+   "c. The hybrid",
+   "c. Similarly to [20],",
+   "A. The components of the factor C′ have a similar",
+   "1 obtained with",
+   "PNc"
+  ],
+  "ignored_title_predictions": null
+ }
+}

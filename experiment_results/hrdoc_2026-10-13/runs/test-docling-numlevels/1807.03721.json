@@ -1,0 +1,123 @@
+{
+ "doc": "1807.03721",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "Listing 1: Query(v,c)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Listing 1: Query(v,c)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 51.816102200002206
+ },
+ "predictions": [
+  {
+   "text": "On the complexity of the (approximate) nearest colored node problem",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Static Color Distance Oracle",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Supporting color-reassignments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Lower bound for static Color Distance Oracles",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Lower bounds for the dynamic setting",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proof of Lemma 1",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Proof of Lemma 4",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.003710600001795683,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "Listing 1: Query(v,c)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

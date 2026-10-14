@@ -1,0 +1,226 @@
+{
+ "doc": "1807.11712",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "RiTUAL-UH at TRAC 2018 Shared Task: Aggression Identification",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Related Work",
+    0,
+    2
+   ],
+   [
+    "3 Methodology and Data",
+    1,
+    2
+   ],
+   [
+    "3.1 Data",
+    1,
+    3
+   ],
+   [
+    "3.2 Data Pre-processing",
+    1,
+    3
+   ],
+   [
+    "3.3 Features",
+    1,
+    3
+   ],
+   [
+    "4 Experiments and Results",
+    2,
+    2
+   ],
+   [
+    "4.1 Experimental Settings",
+    2,
+    3
+   ],
+   [
+    "4.2 Results",
+    2,
+    3
+   ],
+   [
+    "4.3 Analysis",
+    3,
+    3
+   ],
+   [
+    "5 Conclusion",
+    5,
+    2
+   ],
+   [
+    "References",
+    6,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5375,
+   "completion_tokens": 5092
+  },
+  "elapsed_llm_seconds": 19.208784900001774,
+  "word_preservation": {
+   "recall": 0.9988002399520096,
+   "in_order": 0.9988002399520096,
+   "inserted": 0.002396644697423622
+  },
+  "output_markdown": "# RiTUAL-UH at TRAC 2018 Shared Task: Aggression Identification\n\nNiloofar SafiSamghabadi\nDeepthi Mave\nSudipta Kar\nThamar Solorio\nDepartment of Computer Science\nUniversity of Houston\nHouston, TX 77204-3010\n{nsafisamghabadi, dmave, skar3, tsolorio}@uh.edu\n\n## Abstract\nThis paper presents our system for “TRAC 2018 Shared Task on Aggression Identification”. Our best systems for the English dataset use a combination of lexical and semantic features. However, for Hindi data using only lexical features gave us the best results. We obtained weighted F1-measures of 0.5921 for the English Facebook task (ranked 12th), 0.5663 for the English Social Media task (ranked 6th), 0.6292 for the Hindi Facebook task (ranked 1st), and 0.4853 for the Hindi Social Media task (ranked 2nd).\n\n## 1 Introduction\nUsers’ activities on social media is increasing at a fast rate. Unfortunately, a lot of people misuse these online platforms to harass, threaten, and bully other users. This growing aggression against social media users has caused serious effects on victims, which can even lead them to harm themselves. The TRAC 2018 Shared Task on Aggression Identification (Kumar et al., 2018a) aims at developing a classifier that could make a 3-way classification of a given data instance between “Overtly Aggressive”, “Covertly Aggressive”, and “Non-aggressive”. We present here the different systems we submitted to the shared task, which mainly use lexical and semantic features to distinguish different levels of aggression over multiple datasets from Facebook and other social media that cover both English and Hindi texts.\n\n## 2 Related Work\nIn recent years, several studies have been done towards detecting abusive and hateful language in online texts. Some of these works target different online platforms like Twitter (Waseem and Hovy, 2016), Wikipedia (Wulczyn et al., 2016), and ask.fm (Samghabadi et al., 2017) to encourage other research groups to contribute to aggression identification in these sources.\n\nMost of the approaches proposed to detect offensive language in social media make use of multiple types of hand-engineered features. Nobata et al. (2016) use n-grams, linguistic, syntactic and distributional semantic features to build a hate speech detection framework over Yahoo! Finance and News and get an F-score of 81% for a combination of all features. Davidson et al. (2017) combine n-grams, POS-colored n-grams, and sentiment lexicon features to detect hate speech on Twitter data. Van Hee et al. (2015) use word and character n-grams along with sentiment lexicon features to identify nasty posts in ask.fm. Samghabadi et al. (2017) build a model based on lexical, semantic, sentiment, and stylistic features to detect nastiness in ask.fm. They also show the robustness of the model by applying it to the dataset from different other sources.\n\nBased on Malmasi and Zampieri (2018), distinguishing hate speech from profanity is not a trivial task and requires features that capture deeper information from the comments. In this paper, we try different combinations of lexical, semantic, sentiment, and lexicon-based features to identify various levels of aggression in online texts.\n\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\nLicense details: http://creativecommons.org/licenses/by/4.0/.\n\narXiv:1807.11712v1  [cs.CL]  31 Jul 2018\n\n<<page 2>>\n## 3 Methodology and Data\n\n### 3.1 Data\n\nData\nTraining (FB)\nValidation (FB)\nTest (FB)\nTest (SM)\nEnglish\n12000\n3001\n916\n1257\nHindi\n12000\n3001\n970\n1194\n\nTable 1: Data distribution for English and Hindi corpus\n\nThe datasets were provided by Kumar et al. (2018b). Table 1 shows the distribution of training, validation and test (Facebook and social media) data for English and Hindi corpora. The data has been labeled with one out of three possible tags:\n• Non-aggressive (NAG): There is no aggression in the text.\n• Overtly aggressive (OAG): The text is containing either aggressive lexical items or certain syntactic structures.\n• Covertly aggressive (CAG): The text is containing an indirect attack against the target using polite expressions in most cases.\n\n### 3.2 Data Pre-processing\nGenerally the data from social media resources is noisy, grammar and syntactic errors are common, with a lot of ad-hoc spellings, that make it hard to analyze. Therefore, we first put our efforts to clean and prepare the data to feed it to our systems. For the English dataset, we lowercased the data and removed URLs, Email addresses, and numbers. We also did minor stemming by removing “ing”, plural and possessive “s”, and replaced a few common abstract grammatical forms with the formal versions.\n\nOn manual inspection of the training data for Hindi, we found that some of the instances are Hindi-English code-mixed, some use Roman script for Hindi and others are in Devanagari. Only 26% of the training data is in Devanagari script. We normalize the data by transliterating instances in Devanagari to Roman script. These instances are identified using Unicode pattern matching and are transliterated to Roman script using indic-trans transliteration tool1. For further analysis, we run an in-house word-level language identification system on the training data (Mave et al., 2018). This CRF system is trained on Facebook posts and has an F1-weighted score of 97%. Approximately 60% of the training data is code-mixed, 39% is only Hindi and 0.42% is only English.\n\n### 3.3 Features\nWe make use of the following features:\n\nLexical: Words are powerful mediums to convey a feeling, describe or express ideas. With this notion, we use word n-grams (n=1, 2, 3), char n-grams (n=3, 4, 5), and k-skip n-grams (k=2, n=2, 3) as features. We weigh each term with its term frequency-inverse document frequency (TF-IDF). We also consider using another weighting scheme by trying binary word n-grams (n=1, 2, 3).\n\nWord Embeddings: The idea behind this approach is to use a vector space model for extracting semantic information from the text (Le and Mikolov, 2014). For the embedding model we use pre-trained vectors trained on part of Google News dataset including about 3 million words2. We computed word embeddings feature vectors by averaging the word vector of all the words in each comment. We skip the words which are not in the vocabulary of the pre-trained model. This representation is only used for English data and the coverage of the Google word embedding is 63% for this corpus.\n\n1https://github.com/libindic/indic-trans\n2https://code.google.com/archive/p/word2vec/\n\n<<page 3>>\nSentiment: We use Stanford Sentiment Analysis tool (Socher et al., 2013)3 to extract fine-grained sentiment distribution of each comment. For every message, we calculate the mean and standard deviation of sentiment distribution over all sentences and use them as feature vector.\n\nLIWC (Linguistic Inquiry and Word Count): LIWC2007 (Pennebaker et al., 2007) includes around 70 word categories to analyze different language dimensions. In our approach, we only use the categories related to positive or negative emotions and self-references. To build the feature vectors in this case, we use a normalized count of words separated by any of the mentioned categories. This feature is only applicable to English data.\n\nGender Probability: Following the approach in Waseem (2016) we use the Twitter based lexicon presented in Sap et al. (2014) to calculate the probability of gender. We also convert these probabilities to binary gender by considering the positive cases as female and the rest as male. We make the feature vectors with the probability of the gender and binary gender for each message. This feature is not applicable to Hindi corpus.\n\n## 4 Experiments and Results\n\n### 4.1 Experimental Settings\nFor both datasets, we trained several classification models using different combinations of features discussed in 3.3. Since this is a multi-class classification task, we use a one-versus-rest classifier which trains a separate classifier for each class and labels each comment with the class with highest predicted probability across all classifiers. We tried Logistic Regression and linear SVM as the estimator for the classifier. We decided to use Logistic Regression in our final systems, since it works better in the validation phase. We implemented all models using scikit-learn tool4.\n\n### 4.2 Results\nTo build our best systems for both English and Hindi data, we experimented with several models using the different combinations of available features. Table 2 shows the validation results on training and validation sets.\n\nF1-weighted\nFeature\nEnglish\nHindi\nUnigram (U)\n0.5804\n0.6159\nBigram (B)\n0.4637\n0.5195\nTrigram (T)\n0.3846\n0.4300\nChar 3gram (C3)\n0.5694\n0.6065\nChar 4gram (C4)\n0.5794\n0.6212\nChar 5gram (C5)\n0.5758\n0.6195\nWord Embeddings (W2V)\n0.5463\nN/A\nSentiment (S)\n0.3961\nN/A\nLIWC\n0.4350\nN/A\nGender Probability (GP)\n0.3440\nN/A\nBU + U + C4 + C5 + W2V\n0.5875\nN/A\nC3 + C4 + C5\n0.5494\n0.6207\nU + C3 + C4 + C5\n0.5541\n0.6267\n\nTable 2: Validation results for different features for the English and Hindi datasets using Logistic Regression model. In this table BU stands for Binary Unigram.\n\nTable 3 shows the results of our three submitted systems for the English Facebook and Social Media data. In all three systems, we used the same set of features as follows: binary unigram, word unigram, 3https://nlp.stanford.edu/sentiment/code.html\n4http://scikit-learn.org/stable/\n\n<<page 4>>\ncharacter n-grams of length 4 and 5, and word embeddings. In the first system, we used both train and validation sets for training our ensemble classifier. In the second system we only used the train data for training the model. The only difference between the second and the third models is that we corrected the misspellings using PyEnchant5 spell checking tool. Unfortunately, we could not try applying the sentiment and lexicon-based features after spell correction due to the restrictions on the total number of submissions. However, we believe that it can improve the performance of the system.\n\nF1 (weighted)\nSystem\nFB\nSM\nRandom Baseline\n0.3535\n0.3477\nSystem 1\n0.5673\n0.5453\nSystem 2\n0.5847\n0.5391\nSystem 3\n0.5921\n0.5663\n\nTable 3: Results for the English test set. FB: Facebook and SM: Social Media.\n\nF1 (weighted)\nSystem\nFB\nSM\nRandom Baseline\n0.3571\n0.3206\nSystem 1\n0.6451\n0.4853\nSystem 2\n0.6292\n0.4689\n\nTable 4: Results for the Hindi test set. FB: Facebook and SM: Social Media.\n\nTable 4 shows the performance of our systems for the Hindi Facebook and social media data. For the Hindi dataset, the combination of word unigrams, character n-grams of length 3, 4 and 5 gives the best performance over the validation set. These features capture the word usage distribution across classes. Both System 1 and System 2 use these features, trained over training set only and training and validation sets respectively.\n\n### 4.3 Analysis\nLooking at the mislabeled instances at validation phase, we found that there are two main reasons for the classifier mistakes:\n1. Perceived level of aggression can be subjective. There are some examples in the validation dataset where the label is CAG but it is more likely to be OAG and vice versa. Table 5 shows some of these examples.\n2. There are several typos and misspellings in the data that affect the performance.\n\nLabel\nLanguage\nExample\nActual\nPredicted\nEnglish\nWhat has so far Mr.Yechuri done for this Country. Ask him to shut down his bloody piehole for good or I if given the chance will crap on his mouth hole.\nCAG\nOAG\nThe time you tweeted is around 3 am morning,,which is not at all a namaz time.,As you bollywood carrier is almost finished, you are preparing yourself for politics by these comments.\nOAG\nCAG\nHindi\najeeb chutya hai.... kahi se course kiya hai ya paida hee chutya hua tha\nCAG\nOAG\nSalman aur aamir ki kounsi movie release huyee jo aandhi me dub gaye?? ?Bikau chatukar media\nOAG\nCAG\n\nTable 5: Misclassified examples in case of the aggression level\n\n5https://pypi.org/project/pyenchant\n\n<<page 5>>\nAlso, it is obvious from Figure 1 that Hindi corpus is more balanced than the English one in case of OAG and CAG instances. That could be a good reason why the performance of the lexical features is better for Hindi data.\n\n(a) Data distribution for training sets\n(b) Data distribution for evaluation sets\nFigure 1: Label distribution comparison between training and evaluation sets\n\nTable 6 illustrates the most informative features learned by the classifier for all three classes in Hindi data. We observe that word unigrams and character trigrams are the most important features for the system. From the table, the top features for CAG are mostly swear words in Hindi and character n-grams of the swear words. More English words appear in the top list for NAG than the other two classes. There is no overlap between these features with top features from either CAG or OAG. Our system has difficulty differentiating between OAG and CAG when there is no strong swear word in the comments.\n\nNAG\nCAG\nOAG\nunigram :\nunigram ?\nchar tri gram kut\nunigram mera\nunigram baki\nunigram bc\nunigram bike\nunigram ??\nchar tri gram cho\nunigram jai\nunigram pm\nchar 4 gram kut\nunigram main\nunigram o\nunigram chutiya\nunigram sahi\nchar tri gram ky\nunigram maa\nunigram ...........\nunigram badla\nunigram mc\nunigram launch\ncha tri gram yad\nunigram gand\nunigram jay\nchar 5 gram e...\nchar tri gram tiy\nchar tri gram mer\nunigram 3\nchar tri gram chu\n\nTable 6: Top 10 features learned by System 1 for each class for the Hindi dataset.\n\nFigure 2a shows the confusion matrix of our best model for all three classes in English Facebook corpus. The most interesting part of this figure is that the classifier mislabeled several NAG instances with CAG label. Since our system is mostly based on lexical features, we can conclude that there are much fewer profanities in CAG instances comparing with the OAG ones, which make it hard to distinguish them from NAG examples without considering the sentiment aspects of the messages. This fact can also be proved by looking at Figure 2b, since it seems that the classifier was also confused to label CAG instances in both cases with and without profanities in English Social Media corpus.\n\nFigure 3a shows that for Hindi Facebook data, the most biggest challenge is to distinguish OAG instances from CAG ones. Since our proposed system, in this case, is completely built on lexical features, it can be inferred from the figure that even indirect aggressive comments in Hindi language contains lots of profanities. However, for the Hindi Social Media corpus, we have the same concern as English data.\n\n<<page 6>>\nOAG\nCAG\nNAG\nPredicted label\nOAG\nCAG\nNAG\nTrue label\n83\n42\n19\n28\n79\n35\n75\n210\n345\nConfusion Matrix\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n(a) EN-FB task\nOAG\nCAG\nNAG\nPredicted label\nOAG\nCAG\nNAG\nTrue label\n244\n74\n43\n150\n131\n132\n26\n105\n352\nConfusion Matrix\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n(b) EN-SM task\nFigure 2: plots of confusion matrices of our best performing systems for English Facebook and Social Media data\n\nOAG\nCAG\nNAG\nPredicted label\nOAG\nCAG\nNAG\nTrue label\n199\n155\n8\n69\n313\n31\n25\n54\n116\nConfusion Matrix\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n(a) HI-FB task\nOAG\nCAG\nNAG\nPredicted label\nOAG\nCAG\nNAG\nTrue label\n177\n134\n148\n50\n155\n176\n23\n78\n253\nConfusion Matrix\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n(b) HI-SM task\nFigure 3: Plots of confusion matrices of our best performing systems for Hindi Facebook and Social Media data\n\n## 5 Conclusion\nIn this paper, we present our approaches to identify the aggression level in English and Hindi comments in two different datasets, one from Facebook and another from other social media. In our best performing systems, we use a combination of lexical and semantic features for English corpus, and lexical features for Hindi data.\n\nFuture work for English data includes exploring more sentiment features to capture implicit hateful comments and adding more pre-processing levels. For instance, non-English character removal can improve the system since our proposed model is mainly based on lexical features, and is likely very sensitive to unknown characters and words. For the Hindi dataset, identifying the Hindi-English code-mixed instances and processing these instances and Hindi monolingual instances separately could be a future direction to explore. As the classification of aggression is subjective in most scenarios, adding sentiment features to the lexical information might help to model performance for Hindi data.\n\n<<page 7>>\n## References\n[Davidson et al.2017] Thomas Davidson, Dana Warmsley, Michael Macy, and Ingmar Weber. 2017. Automated Hate Speech Detection and the Problem of Offensive Language. In Proceedings of ICWSM.\n\n[Kumar et al.2018a] Ritesh Kumar, Atul Kr. Ojha, Shervin Malmasi, and Marcos Zampieri. 2018a. Benchmarking Aggression Identification in Social Media. In Proceedings of the First Workshop on Trolling, Aggression and Cyberbulling (TRAC), Santa Fe, USA.\n\n[Kumar et al.2018b] Ritesh Kumar, Aishwarya N. Reganti, Akshit Bhatia, and Tushar Maheshwari. 2018b. Aggression-annotated Corpus of Hindi-English Code-mixed Data. In Proceedings of the 11th Language Resources and Evaluation Conference (LREC), Miyazaki, Japan.\n\n[Le and Mikolov2014] Quoc V. Le and Tomas Mikolov. 2014. Distributed representations of sentences and documents. In ICML, volume 14, pages 1188–1196.\n\n[Malmasi and Zampieri2018] Shervin Malmasi and Marcos Zampieri. 2018. Challenges in Discriminating Profanity from Hate Speech. Journal of Experimental & Theoretical Artificial Intelligence, 30:1–16.\n\n[Mave et al.2018] Deepthi Mave, Suraj Maharjan, and Thamar Solorio. 2018. Language Identification and Analysis of Code-Switched Social Media Text. In Proceedings of the Third Workshop on Computational Approaches to Linguistic Code-Switching, Melbourne, Australia, July. Association for Computational Linguistics.\n\n[Nobata et al.2016] Chikashi Nobata, Joel Tetreault, Achint Thomas, Yashar Mehdad, and Yi Chang. 2016. Abusive Language Detection in Online User Content. In Proceedings of the 25th International Conference on World Wide Web, pages 145–153. International World Wide Web Conferences Steering Committee.\n\n[Pennebaker et al.2007] James W. Pennebaker, Roger J. Booth, and Martha E. Francis. 2007. Liwc2007: Linguistic inquiry and word count. Austin, Texas: liwc.net.\n\n[Samghabadi et al.2017] Niloofar SafiSamghabadi, Suraj Maharjan, Alan Sprague, Raquel Diaz-Sprague, and Thamar Solorio. 2017. Detecting nastiness in social media. In Proceedings of the First Workshop on Abusive Language Online, pages 63–72.\n\n[Sap et al.2014] Maarten Sap, Gregory Park, Johannes Eichstaedt, Margaret Kern, David Stillwell, Michal Kosinski, Lyle Ungar, and Hansen Andrew Schwartz. 2014. Developing age and gender predictive lexica over social media. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 1146–1151.\n\n[Socher et al.2013] Richard Socher, Alex Perelygin, Jean Wu, Jason Chuang, Christopher D Manning, Andrew Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of the 2013 conference on empirical methods in natural language processing, pages 1631–1642.\n\n[Van Hee et al.2015] Cynthia Van Hee, Els Lefever, Ben Verhoeven, Julie Mennes, Bart Desmet, Guy De Pauw, Walter Daelemans, and Veronique Hoste. 2015. Detection and fine-grained classification of cyberbullying events. In Proceedings of the International Conference Recent Advances in Natural Language Processing, pages 672–680. INCOMA Ltd. Shoumen, Bulgaria.\n\n[Waseem and Hovy2016] Zeerak Waseem and Dirk Hovy. 2016. Hateful symbols or hateful people? predictive features for hate speech detection on twitter. In Proceedings of the NAACL student research workshop, pages 88–93.\n\n[Waseem2016] Zeerak Waseem. 2016. Are you a racist or am i seeing things? annotator influence on hate speech detection on twitter. In Proceedings of the first workshop on NLP and computational social science, pages 138–142.\n\n[Wulczyn et al.2016] Ellery Wulczyn, Nithum Thain, and Lucas Dixon. 2016. Ex machina: Personal attacks seen at scale. CoRR, abs/1610.08914.",
+  "verbatim_heading_share": 1.0769230769230769
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology and Data",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Data",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Data Pre-processing",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Features",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Experimental Settings",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Results",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Analysis",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.2474768999964,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RiTUAL-UH at TRAC 2018 Shared Task: Aggression Identification"
+  ]
+ }
+}

@@ -1,0 +1,162 @@
+{
+ "doc": "1712.08349",
+ "system": "outline",
+ "metrics": {
+  "gt": 21,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "KEYWORDS",
+   "4.3.1 Additional Inf luence Dynamics – Entity-Adoption Con-",
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Named Entity Recognition",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Information Diffusion",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Datasets preparation and NER",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Subreddit extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 NER for Reddit",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Tuning entity recognition",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Entity Diffusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Entity Mention Cascades",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Entity Adoption Post-(k-1)th Exposure",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Global Threshold Diffusion Model",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4 Experiments",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Discussion and Future Work",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.07371129999955883,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "KEYWORDS",
+   "4.3.1 Additional Inf luence Dynamics – Entity-Adoption Con-",
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8421052631578947,
+  "unmatched_gt": [
+   "4.3.1 Additional Inf luence Dynamics – Entity-Adoption Con-",
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

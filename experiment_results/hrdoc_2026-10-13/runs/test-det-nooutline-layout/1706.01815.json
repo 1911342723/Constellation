@@ -1,0 +1,119 @@
+{
+ "doc": "1706.01815",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 848,
+  "layout_marked": 12,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9803419509374742,
+  "inserted_word_share": 0.7362737473614043
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Theory",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Hedin’s equations",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Bethe-Salpeter equation",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Diagrammatic analysis",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Computational procedure",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Results and discussion",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.5260884999952395,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

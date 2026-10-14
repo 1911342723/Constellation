@@ -1,0 +1,180 @@
+{
+ "doc": "1808.01970",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 11,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "Abstract."
+  ],
+  "unmatched_pred": [
+   "3.1. Almost conjugacy",
+   "3.2. Equilibrium states. Let f",
+   "3.3. Entropy-expansiveness",
+   "3.4. Partial hyperbolicity",
+   "6.1. A generalization"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 15,
+  "tp": 10,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.1. Almost conjugacy",
+   "3.2. Equilibrium states. Let f",
+   "3.3. Entropy-expansiveness",
+   "3.4. Partial hyperbolicity",
+   "6.1. A generalization"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 768,
+  "layout_marked": 13,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 26571,
+   "completion_tokens": 739,
+   "total_tokens": 27310
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9665211062590975,
+  "inserted_word_share": 0.5616004225538096
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Setting",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Preliminaries",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Almost conjugacy",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2. Equilibrium states. Let f",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3. Entropy-expansiveness",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4. Partial hyperbolicity",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4. Main results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Proof of Theorem A",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Proof of Theorem B",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. A generalization",
+   "page": 12,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "7. Proof of Corollary C",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Selection of the potentials",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. Proof of Theorem D",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. Proof of Corollary E",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.540756100002909,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 11,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "Abstract."
+  ],
+  "unmatched_pred": [
+   "3.1. Almost conjugacy",
+   "3.2. Equilibrium states. Let f",
+   "3.3. Entropy-expansiveness",
+   "3.4. Partial hyperbolicity",
+   "6.1. A generalization"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

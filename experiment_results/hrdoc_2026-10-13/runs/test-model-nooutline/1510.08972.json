@@ -1,0 +1,223 @@
+{
+ "doc": "1510.08972",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 6,
+  "pred": 19,
+  "tp": 5,
+  "fp": 14,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.30000000000000004,
+  "unmatched_gt": [
+   "4. Shifted K -Poirier-Reutenauer Algebra and a Littlewood-Richardson rule"
+  ],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "3.1. Weak shifted stable Grothendieck polynomials. We deﬁne the weak shifted sta",
+   "Example 3.3. We have",
+   "Proposition 3.5. We have",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "3.3. The symmetry of Kλ. From Proposition 3",
+   "4.1. Poirier-Reutenauer type algebras",
+   "Lemma 4.1. We have",
+   "4.2. Product structure"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1403,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 9,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 9,
+   "prompt_tokens": 36125,
+   "completion_tokens": 1012,
+   "total_tokens": 37137
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Shifted Hecke Insertion and Weak K-Knuth Equivalence",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Increasing shifted tableaux",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2. Shifted Hecke Insertion",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3. Recording tableaux",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4. Weak K-Knuth equivalence",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.5. Shifted K-theoretic jeu de taquin",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.6. Unique Rectiﬁcation Targets",
+   "page": 12,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Shifted weak stable Grothendieck polynomials",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Weak shifted stable Grothendieck polynomials. We deﬁne the weak shifted stable",
+   "page": 12,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Example 3.3. We have",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proposition 3.5. We have",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Kλ and fundamental quasisymmetric functions",
+   "page": 14,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.3. The symmetry of Kλ. From Proposition 3",
+   "page": 17,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.1. Poirier-Reutenauer type algebras",
+   "page": 19,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Lemma 4.1. We have",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. Product structure",
+   "page": 19,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.870381400000042,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 19,
+  "tp": 5,
+  "fp": 14,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.30000000000000004,
+  "unmatched_gt": [
+   "4. Shifted K -Poirier-Reutenauer Algebra and a Littlewood-Richardson rule"
+  ],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "3.1. Weak shifted stable Grothendieck polynomials. We deﬁne the weak shifted sta",
+   "Example 3.3. We have",
+   "Proposition 3.5. We have",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "3.3. The symmetry of Kλ. From Proposition 3",
+   "4.1. Poirier-Reutenauer type algebras",
+   "Lemma 4.1. We have",
+   "4.2. Product structure"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 17,
+  "tp": 3,
+  "fp": 14,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "4. Shifted K -Poirier-Reutenauer Algebra and a Littlewood-Richardson rule"
+  ],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "3.1. Weak shifted stable Grothendieck polynomials. We deﬁne the weak shifted sta",
+   "Example 3.3. We have",
+   "Proposition 3.5. We have",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "3.3. The symmetry of Kλ. From Proposition 3",
+   "4.1. Poirier-Reutenauer type algebras",
+   "Lemma 4.1. We have",
+   "4.2. Product structure"
+  ],
+  "ignored_title_predictions": null
+ }
+}

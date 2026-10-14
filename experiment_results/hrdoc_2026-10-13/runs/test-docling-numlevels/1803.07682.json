@@ -1,0 +1,111 @@
+{
+ "doc": "1803.07682",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 29.904180499994254
+ },
+ "predictions": [
+  {
+   "text": "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The role of US-to-US registration",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Feature-based registration strategy",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 GP kernel estimation",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0038544999988516793,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

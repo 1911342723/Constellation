@@ -1,0 +1,159 @@
+{
+ "doc": "1706.05655",
+ "system": "outline",
+ "metrics": {
+  "gt": 22,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.7391304347826086,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgements",
+   "References",
+   "Appendix",
+   "Pro of of Theorem 1",
+   "Pro of of Lemma 1"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preferential placement",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Definition",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Tree-based interpretation",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Analysis of preferential placement",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Experimental setup",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Clustering structure depending on ",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 The distribution of cluster sizes",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3.1 Theoretical analysis",
+   "page": 6,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.3.2 Empirical analysis.",
+   "page": 7,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.3.3 Influence of parameters",
+   "page": 10,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.4 Scatter of configurations",
+   "page": 11,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Graph models",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Possible definitions",
+   "page": 12,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Case study",
+   "page": 14,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusion and future work",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.10514300000068033,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.7391304347826086,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgements",
+   "References",
+   "Appendix",
+   "Pro of of Theorem 1",
+   "Pro of of Lemma 1"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "Pro of of Theorem 1",
+   "Pro of of Lemma 1"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

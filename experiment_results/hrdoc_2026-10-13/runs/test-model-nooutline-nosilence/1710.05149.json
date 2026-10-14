@@ -1,0 +1,139 @@
+{
+ "doc": "1710.05149",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": [
+   "Y. Pan, Z. Yang and M",
+   "M. Based on (14), (17) is simpliﬁed to"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 746,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3798,
+   "completion_tokens": 369,
+   "total_tokens": 4167
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Index Terms",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Y. Pan, Z. Yang and M",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. POWER CONTROL AND CHANNEL ASSIGNMENT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Power Control for CUs",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "M. Based on (14), (17) is simpliﬁed to",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATION RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.180408399999578,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": [
+   "Y. Pan, Z. Yang and M",
+   "M. Based on (14), (17) is simpliﬁed to"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": [
+   "Y. Pan, Z. Yang and M",
+   "M. Based on (14), (17) is simpliﬁed to"
+  ],
+  "ignored_title_predictions": null
+ }
+}

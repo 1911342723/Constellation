@@ -1,0 +1,96 @@
+{
+ "doc": "1803.07682",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 188,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4228,
+   "completion_tokens": 334,
+   "total_tokens": 4562
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9729493891797557,
+  "inserted_word_share": 0.9063025210084034
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The role of US-to-US registration",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Feature-based registration strategy",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 GP kernel estimation",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.124769900001411
+}

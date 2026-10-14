@@ -1,0 +1,177 @@
+{
+ "doc": "1806.09905",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9523809523809523,
+  "unmatched_gt": [
+   "Networks"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [
+   "Networks"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 88.82982560000164
+ },
+ "predictions": [
+  {
+   "text": "CONDITIONING DEEP GENERATIVE RAW AUDIO MODELS FOR STRUCTURED AUTOMATIC MUSIC",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 RawAudioModels",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Symbolic AudioModels",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. ARCHITECTURE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Unique Symbolic Melody Generation with LSTM Networks",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Local Conditioning with RawAudioModels",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 Hyperparameter Tuning",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. EMPIRICAL EVALUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Training Datasets and Loss Analysis",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 UnconditionedMusic Generation withWaveNet",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Structure in RawAudio Generations",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3.1 Raw Audio from Existing Melodies",
+   "page": 4,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4.3.2 Raw Audio FromUnique LSTMGenerations",
+   "page": 4,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4.3.3 Editing Existing Raw Audio",
+   "page": 4,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "5. CONCLUSIONS AND FUTUREWORK",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. ACKNOWLEDGEMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03998950000095647,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9523809523809523,
+  "unmatched_gt": [
+   "Networks"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

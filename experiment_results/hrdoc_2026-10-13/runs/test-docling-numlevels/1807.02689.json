@@ -1,0 +1,207 @@
+{
+ "doc": "1807.02689",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 28,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 11,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.3448275862068966,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: C2TCP's Main Algorithm at Sender"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 11,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.3214285714285714,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: C2TCP's Main Algorithm at Sender"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 40.583609199999046
+ },
+ "predictions": [
+  {
+   "text": "Cellular Controlled Delay TCP (C2TCP)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATIONS AND DESIGN DECISIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. C2TCP'S ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The Good and The Bad Conditions",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Main Logic",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Algorithm 1: C2TCP's Main Algorithm at Sender",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Why It Works",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Does C2TCP work in other networks?",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "IV. EVALUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Comparison with End-to-End Schemes",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Comparison with an In-Network Scheme",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Fairness",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Loss Resiliency",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "E. Impact of Target and Interval",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V. RELATED WORK",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.02551379999931669,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 11,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.3448275862068966,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: C2TCP's Main Algorithm at Sender"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

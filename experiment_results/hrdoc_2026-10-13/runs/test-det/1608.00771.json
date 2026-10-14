@@ -1,0 +1,181 @@
+{
+ "doc": "1608.00771",
+ "system": "det",
+ "metrics": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 17,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2. The second focuses on how legal contracts can be expressed and implemented in"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 202,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Foundations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Terminology — “smart contracts”",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2. The second focuses on how legal contracts can be expressed and implemented in software.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Automation",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Enforceability",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3.1 What to enforce",
+   "page": 2,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.3.2 How to enforce",
+   "page": 3,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.4 The semantics of contracts",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 Smart Contract Templates",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Templates and Parameters",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 The design landscape for Smart Contract Templates",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2.1 Increasing the sophistication of parameters",
+   "page": 7,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "3.2.2 Increasing the use of common standardised code",
+   "page": 9,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "3.2.3 Long-term research challenges",
+   "page": 9,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "3.2.4 Future developments and initial requirements",
+   "page": 11,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4 Summary and Further Work",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Summary",
+   "page": 12,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "4.2 Further Work",
+   "page": 12,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.377916899997217,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 17,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2. The second focuses on how legal contracts can be expressed and implemented in"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 15,
+  "teds": 0.85,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2. The second focuses on how legal contracts can be expressed and implemented in"
+  ],
+  "ignored_title_predictions": null
+ }
+}

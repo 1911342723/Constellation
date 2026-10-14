@@ -1,0 +1,195 @@
+{
+ "doc": "1807.02098",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:"
+  ],
+  "unmatched_pred": [
+   "10 Where each image is reﬂected horizontally",
+   "(a) Result: Validation Accuracy & Loss of VGG16 in G1.i Test",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 169,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4665,
+   "completion_tokens": 564,
+   "total_tokens": 5229
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "MAT-CNN-SOPC: Motionless Analysis of Trafﬁc",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Using Convolutional Neural Networks on",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "System-On-a-Programmable-Chip",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SYSTEM AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Dataset",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Problem Deﬁnition",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. PROPOSED METHODOLOGY: MAT-CNN-SOPC",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Employed CNN Models",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Classiﬁcation Results",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "10 Where each image is reﬂected horizontally",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(a) Result: Validation Accuracy & Loss of VGG16 in G1.i Test",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.373959500000637,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 19,
+  "tp": 13,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:"
+  ],
+  "unmatched_pred": [
+   "MAT-CNN-SOPC: Motionless Analysis of Trafﬁc",
+   "Using Convolutional Neural Networks on",
+   "System-On-a-Programmable-Chip",
+   "10 Where each image is reﬂected horizontally",
+   "(a) Result: Validation Accuracy & Loss of VGG16 in G1.i Test",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:"
+  ],
+  "unmatched_pred": [
+   "10 Where each image is reﬂected horizontally",
+   "(a) Result: Validation Accuracy & Loss of VGG16 in G1.i Test"
+  ],
+  "ignored_title_predictions": null
+ }
+}

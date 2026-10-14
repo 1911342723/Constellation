@@ -1,0 +1,124 @@
+{
+ "doc": "1807.04819",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 561,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4331,
+   "completion_tokens": 458,
+   "total_tokens": 4789
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Index Terms",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. 3GPP MODE-4",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Stage 1: Power Sensing",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Stage 2",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Stage 3: Subchannel Selection",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.480725299999904,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

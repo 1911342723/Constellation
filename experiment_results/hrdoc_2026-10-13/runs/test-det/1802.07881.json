@@ -1,0 +1,88 @@
+{
+ "doc": "1802.07881",
+ "system": "det",
+ "metrics": {
+  "gt": 9,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "A B S TRACT",
+   "RE F ERE N C ES",
+   "A P P EN DI X",
+   "RE S U LT S O N C I FAR -1 0",
+   "DE E P EN SEMBL E S W IT H DIFFERENT M"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 132,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 EVALUATING CALIBRATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 RESULTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.240140500001871,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "A B S TRACT",
+   "RE F ERE N C ES",
+   "A P P EN DI X",
+   "RE S U LT S O N C I FAR -1 0",
+   "DE E P EN SEMBL E S W IT H DIFFERENT M"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "RE S U LT S O N C I FAR -1 0",
+   "DE E P EN SEMBL E S W IT H DIFFERENT M"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

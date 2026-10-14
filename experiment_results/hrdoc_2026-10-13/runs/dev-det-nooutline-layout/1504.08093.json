@@ -1,0 +1,101 @@
+{
+ "doc": "1504.08093",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "SUPERGRAVITY"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "SUPERGRAVITY"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 220,
+  "layout_marked": 7,
+  "content_preservation": 1.0,
+  "word_preservation": 0.950098814229249,
+  "inserted_word_share": 0.03849999999999998
+ },
+ "predictions": [
+  {
+   "text": "Can Higgs Inﬂation be Saved with High-scale Supersymmetry ?",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RGE FOR λH BELOW SCALE MP /ξ",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EMBEDDING HIGGS INFLATION INTO",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONSTRAINTS ON SUSY MASS SPECTRUM",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. DISCUSSION AND SUMMARY",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.7568715999950655,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "SUPERGRAVITY"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

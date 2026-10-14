@@ -1,0 +1,101 @@
+{
+ "doc": "1704.03189",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1422,
+  "layout_marked": 9,
+  "content_preservation": 1.0,
+  "word_preservation": 0.933918009382011,
+  "inserted_word_share": 0.3943922761539479
+ },
+ "predictions": [
+  {
+   "text": "RECOVERING THE STRUCTURE OF RANDOM LINEAR GRAPHS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem statement and main results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The eigenvalues of the model matrix",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. The eigenvectors of the random graph",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Bounding the number of misplaced vertices",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Final remarks",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.829049200001464,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

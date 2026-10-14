@@ -1,0 +1,154 @@
+{
+ "doc": "1606.03052",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 17,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "Undergraduate Optics Course",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "Graduate Laboratory Modules"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 375,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4729,
+   "completion_tokens": 480,
+   "total_tokens": 5209
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Teaching Venues",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Scope of the Project",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "EXPERIMENTAL EQUIPMENT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Components",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Condenser",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Imaging Path",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "EXPERIMENTAL RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Measuring Magniﬁcation",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Measuring Resolution",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "ADVANCED TOPICS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Epi-Fluorescence Path",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Super-Resolution",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "SUMMARY",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.037954200000968,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "Undergraduate Optics Course",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "Graduate Laboratory Modules"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "Undergraduate Optics Course",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "Graduate Laboratory Modules"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

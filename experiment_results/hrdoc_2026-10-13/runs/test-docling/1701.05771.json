@@ -1,0 +1,99 @@
+{
+ "doc": "1701.05771",
+ "system": "docling",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 27.66902619999746
+ },
+ "predictions": [
+  {
+   "text": "Strongly screening on electron capture for Nuclides 52,53,59,60Fe by the Shell-Model Monte Carlo method in pre-supernova",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The EC in stellar interiors",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The EC process in the case without SES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 The EC process in the case with SES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 The results and disscusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.004357999998319428,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Strongly screening on electron capture for Nuclides 52,53,59,60Fe by the Shell-M"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "doc": "1510.08972",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 6,
+  "pred": 16,
+  "tp": 6,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4117647058823529,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "3.3. The symmetry of Kλ. From Proposition 3",
+   "4.1. Poirier-Reutenauer type algebras",
+   "4.2. Product structure"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 14,
+  "tp": 4,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "3.3. The symmetry of Kλ. From Proposition 3",
+   "4.1. Poirier-Reutenauer type algebras",
+   "4.2. Product structure"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1403,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 10,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 10,
+   "prompt_tokens": 38550,
+   "completion_tokens": 1049,
+   "total_tokens": 39599
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9603563474387528,
+  "inserted_word_share": 0.038530146271851584
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Shifted Hecke Insertion and Weak K-Knuth Equivalence",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Increasing shifted tableaux",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2. Shifted Hecke Insertion",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3. Recording tableaux",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4. Weak K-Knuth equivalence",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.5. Shifted K-theoretic jeu de taquin",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.6. Unique Rectiﬁcation Targets",
+   "page": 12,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Shifted weak stable Grothendieck polynomials",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Kλ and fundamental quasisymmetric functions",
+   "page": 14,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3. The symmetry of Kλ. From Proposition 3",
+   "page": 17,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4. Shifted K-Poirier-Reutenauer Algebra and a Littlewood-Richardson",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Poirier-Reutenauer type algebras",
+   "page": 19,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2. Product structure",
+   "page": 19,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.295586899999762,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 16,
+  "tp": 6,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4117647058823529,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "3.3. The symmetry of Kλ. From Proposition 3",
+   "4.1. Poirier-Reutenauer type algebras",
+   "4.2. Product structure"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

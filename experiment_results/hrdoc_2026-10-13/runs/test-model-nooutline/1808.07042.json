@@ -1,0 +1,241 @@
+{
+ "doc": "1808.07042",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 28,
+  "pred": 27,
+  "tp": 25,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 25,
+  "parent_correct": 25,
+  "teds": 0.8275862068965517,
+  "unmatched_gt": [
+   "Worker Selection",
+   "Annotation Interface",
+   "Additional Examples"
+  ],
+  "unmatched_pred": [
+   "In-domain vs. Out-of-domain All models per-",
+   "Augmented DrQA vs. Combined Model Al-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 671,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14368,
+   "completion_tokens": 954,
+   "total_tokens": 15322
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Task Deﬁnition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Dataset Collection",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Collection Interface",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Passage Selection",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Collecting Multiple Answers",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Dataset Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Comparison with SQuAD 2.0",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Linguistic Phenomena",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Analysis of Free-form Answers",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.4 Conversation Flow",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Models",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Conversational Models",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.2 Reading Comprehension Models",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.3 A Combined Model",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 Evaluation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Evaluation Metric",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.2 Experimental Setup",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.3 Results and Discussion",
+   "page": 9,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "In-domain vs. Out-of-domain All models per-",
+   "page": 9,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "Augmented DrQA vs. Combined Model Al-",
+   "page": 10,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "7 Related work",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusions",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.746191700000054,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 27,
+  "tp": 25,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 25,
+  "parent_correct": 25,
+  "teds": 0.8275862068965517,
+  "unmatched_gt": [
+   "Worker Selection",
+   "Annotation Interface",
+   "Additional Examples"
+  ],
+  "unmatched_pred": [
+   "In-domain vs. Out-of-domain All models per-",
+   "Augmented DrQA vs. Combined Model Al-"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Worker Selection",
+   "Annotation Interface",
+   "Additional Examples"
+  ],
+  "unmatched_pred": [
+   "In-domain vs. Out-of-domain All models per-",
+   "Augmented DrQA vs. Combined Model Al-"
+  ],
+  "ignored_title_predictions": null
+ }
+}

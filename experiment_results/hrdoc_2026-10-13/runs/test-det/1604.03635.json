@@ -1,0 +1,163 @@
+{
+ "doc": "1604.03635",
+ "system": "det",
+ "metrics": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MOTA↑ MOTP↑ MT%↑ ML%↓"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 366,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Recurrent Neural Networks",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Bayesian Filtering",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Our Approach",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Preliminaries and Notation",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Multi-Target Tracking with RNNs",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Target Motion",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Initiation and Termination",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Data Association with LSTMs",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Training Data",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Implementation Details",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MOTA↑ MOTP↑ MT%↑ ML%↓",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.041982499998994,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MOTA↑ MOTP↑ MT%↑ ML%↓"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MOTA↑ MOTP↑ MT%↑ ML%↓"
+  ],
+  "ignored_title_predictions": null
+ }
+}

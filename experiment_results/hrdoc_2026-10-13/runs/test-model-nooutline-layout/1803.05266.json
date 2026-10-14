@@ -1,0 +1,110 @@
+{
+ "doc": "1803.05266",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 142,
+  "layout_marked": 8,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4319,
+   "completion_tokens": 295,
+   "total_tokens": 4614
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9819212088505127,
+  "inserted_word_share": 0.8674944470742454
+ },
+ "predictions": [
+  {
+   "text": "On the Applicability of Registration Uncertainty",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Ambiguity of Registration Uncertainty",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The DPR Set Up",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Transformation Uncertainty and Label Uncertainty",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Credibility of Label Distribution",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.3993305999974837,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

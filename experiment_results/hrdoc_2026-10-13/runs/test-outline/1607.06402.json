@@ -1,0 +1,152 @@
+{
+ "doc": "1607.06402",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Smartphone Power Management & Dataset",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Dataset and Pre-processing",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Charging Events",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Charging Techniques",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Battery Voltage",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Charging Rate",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Summary",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "SOC Estimation Techniques",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Battery Properties",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Battery Capacity Loss",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Battery Temperature",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Battery Health",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "User Behavior in Charging",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusions and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES ",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.028883099999802653,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,195 @@
+{
+ "doc": "1601.02377",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "– Web Browsing Prediction (CF Task). Each user’s online browsing be-",
+   "– Ad Response Prediction (CTR Task). Each user’s online ad feedback"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 540,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10188,
+   "completion_tokens": 641,
+   "total_tokens": 10829
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Implicit Look-alike Modelling in Display Ads",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "– Transfer Collaborative Filtering to CTR Estimation",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Implicit Look-alike Modelling",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "– Web Browsing Prediction (CF Task). Each user’s online browsing be-",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "– Ad Response Prediction (CTR Task). Each user’s online ad feedback",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.1 The Joint Conditional Likelihood",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 CF Prediction",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 CTR Task Prediction Model",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4 Dual-Task Bridge",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.5 Learning the Model",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dataset",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Experiment Protocol",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Evaluation Metrics",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.4 Compared Models",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.5 Result",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.959197199998016,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 21,
+  "tp": 17,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Implicit Look-alike Modelling in Display Ads",
+   "– Transfer Collaborative Filtering to CTR Estimation",
+   "– Web Browsing Prediction (CF Task). Each user’s online browsing be-",
+   "– Ad Response Prediction (CTR Task). Each user’s online ad feedback"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "– Web Browsing Prediction (CF Task). Each user’s online browsing be-",
+   "– Ad Response Prediction (CTR Task). Each user’s online ad feedback"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "doc": "1602.07027",
+ "system": "model",
+ "metrics": {
+  "gt": 10,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "B. Ai",
+   "C. Ai"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1271,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 22637,
+   "completion_tokens": 582,
+   "total_tokens": 23219
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORETICAL FRAMEWORK AND CALCULATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The eﬀective weak Hamiltonian and hadronic matrix element",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Ai",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1(M1, M2) in scheme I",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Ai",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1(M1, M2) in scheme II",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. NUMERICAL RESULTS AND DISCUSSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SUMMARY",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B: Input parameters",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.98564659999829,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "B. Ai",
+   "C. Ai"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "B. Ai",
+   "C. Ai"
+  ],
+  "ignored_title_predictions": null
+ }
+}

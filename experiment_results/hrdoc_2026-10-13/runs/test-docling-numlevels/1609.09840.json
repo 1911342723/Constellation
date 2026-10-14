@@ -1,0 +1,327 @@
+{
+ "doc": "1609.09840",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 28,
+  "pred": 39,
+  "tp": 28,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 17,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "SUMMARY",
+   "Lemma 1",
+   "Lemma 2",
+   "Lemma 3",
+   "Definition 1",
+   "Lemma 4",
+   "Lemma 5",
+   "Lemma 7",
+   "Algorithm 1 Tree-based algorithm",
+   "Definition 2",
+   "Lemma 9"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 37,
+  "tp": 26,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "SUMMARY",
+   "Lemma 1",
+   "Lemma 2",
+   "Lemma 3",
+   "Definition 1",
+   "Lemma 4",
+   "Lemma 5",
+   "Lemma 7",
+   "Algorithm 1 Tree-based algorithm",
+   "Definition 2",
+   "Lemma 9"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 49.897083199997724
+ },
+ "predictions": [
+  {
+   "text": "Regular and almost universal hashing: an efficient implementation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "SUMMARY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RANDOMHASHING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. ∆-universality",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Lemma 1",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2. Strong universality",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3. Composition and concatenation of families",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Lemma 2",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 3",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. REGULARITY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 1",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 4",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Component-wise regularity",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "3.2. K-regularity",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "Lemma 7",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. A TREE-BASED CONSTRUCTION FOR UNIVERSALITYAND REGULARITY",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Tree-based algorithm",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. UNIVERSALITYAND REGULARITYWITH PM+",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 2",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 9",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. AN EFFICIENT IMPLEMENTATION OF PM+",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Scalar product computation",
+   "page": 10,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "6.2. Efficient modulo reduction",
+   "page": 11,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "7. ACHIEVING THE AVALANCHE EFFECT",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. EXPERIMENTS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1. Variable-length results on recent Intel processors",
+   "page": 14,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "8.2. Multiplatform performance testing",
+   "page": 14,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "9. CONCLUSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. ACKNOWLEDGEMENTS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. PLATFORMS USED",
+   "page": 19,
+   "level": 2,
+   "parent": 31
+  },
+  {
+   "text": "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ONX86 AND X64 PROCESSORS",
+   "page": 19,
+   "level": 2,
+   "parent": 31
+  },
+  {
+   "text": "B.1. Vectorizing the Computation of the Scalar Product",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B.2. Faster sums using two sets of accumulators",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS (ASSEMBLER)",
+   "page": 22,
+   "level": 2,
+   "parent": 36
+  },
+  {
+   "text": "E. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS USING INTEL INTRINSICS",
+   "page": 22,
+   "level": 2,
+   "parent": 36
+  },
+  {
+   "text": "F. NON-REGULARITYOF THE VHASH FAMILY",
+   "page": 23,
+   "level": 2,
+   "parent": 36
+  }
+ ],
+ "seconds": 0.028920200005813967,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 39,
+  "tp": 28,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 17,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "SUMMARY",
+   "Lemma 1",
+   "Lemma 2",
+   "Lemma 3",
+   "Definition 1",
+   "Lemma 4",
+   "Lemma 5",
+   "Lemma 7",
+   "Algorithm 1 Tree-based algorithm",
+   "Definition 2",
+   "Lemma 9"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "doc": "1610.01900",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 18,
+  "pred": 13,
+  "tp": 8,
+  "fp": 5,
+  "fn": 10,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.26315789473684215,
+  "unmatched_gt": [
+   "1.1. Outline of paper and our contribution.",
+   "2.1. Consensus.",
+   "2.2. Distances.",
+   "2.3. Combining consensus and distance.",
+   "3.1. Distance rationalization in the simplex.",
+   "3.2. Quotient distances.",
+   "3.3. The ℓ p -votewise case — Wasserstein distance.",
+   "4.1. Boundaries.",
+   "4.2. Geometric background .",
+   "4.3. Large boundary."
+  ],
+  "unmatched_pred": [
+   "BENJAMIN HADJIBEYLI AND MARK C. WILSON",
+   "Definition 2.11. (votewise distances)",
+   "Definition 2.16. (DR scores and rules)",
+   "Proposition 5.1. Let d be an ℓ1 -votewise distance. Then d induces a norm N on H",
+   "ENS LYON"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 12,
+  "tp": 7,
+  "fp": 5,
+  "fn": 10,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "1.1. Outline of paper and our contribution.",
+   "2.1. Consensus.",
+   "2.2. Distances.",
+   "2.3. Combining consensus and distance.",
+   "3.1. Distance rationalization in the simplex.",
+   "3.2. Quotient distances.",
+   "3.3. The ℓ p -votewise case — Wasserstein distance.",
+   "4.1. Boundaries.",
+   "4.2. Geometric background .",
+   "4.3. Large boundary."
+  ],
+  "unmatched_pred": [
+   "BENJAMIN HADJIBEYLI AND MARK C. WILSON",
+   "Definition 2.11. (votewise distances)",
+   "Definition 2.16. (DR scores and rules)",
+   "Proposition 5.1. Let d be an ℓ1 -votewise distance. Then d induces a norm N on H",
+   "ENS LYON"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 34.02086059999783
+ },
+ "predictions": [
+  {
+   "text": "DISTANCE RATIONALIZATION OF ANONYMOUS AND HOMOGENEOUS VOTING RULES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "BENJAMIN HADJIBEYLI AND MARK C. WILSON",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BASIC DEFINITIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 2.11. (votewise distances)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 2.16. (DR scores and rules)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. SIMPLEX RULES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. TIED SETS AND DECISIVENESS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. ANALYSIS OF ℓ1 -VOTEWISE METRICS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proposition 5.1. Let d be an ℓ1 -votewise distance. Then d induces a norm N on H .",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. SMALL BISECTORS AND HYPERPLANE RULES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. DISCUSSION AND FUTURE WORK",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ENS LYON",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0071306000027107075,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 13,
+  "tp": 8,
+  "fp": 5,
+  "fn": 10,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.26315789473684215,
+  "unmatched_gt": [
+   "1.1. Outline of paper and our contribution.",
+   "2.1. Consensus.",
+   "2.2. Distances.",
+   "2.3. Combining consensus and distance.",
+   "3.1. Distance rationalization in the simplex.",
+   "3.2. Quotient distances.",
+   "3.3. The ℓ p -votewise case — Wasserstein distance.",
+   "4.1. Boundaries.",
+   "4.2. Geometric background .",
+   "4.3. Large boundary."
+  ],
+  "unmatched_pred": [
+   "BENJAMIN HADJIBEYLI AND MARK C. WILSON",
+   "Definition 2.11. (votewise distances)",
+   "Definition 2.16. (DR scores and rules)",
+   "Proposition 5.1. Let d be an ℓ1 -votewise distance. Then d induces a norm N on H",
+   "ENS LYON"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

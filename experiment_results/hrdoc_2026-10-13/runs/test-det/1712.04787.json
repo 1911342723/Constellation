@@ -1,0 +1,178 @@
+{
+ "doc": "1712.04787",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 19,
+  "tp": 15,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. extracts acoustic features from audio",
+   "2. extracts linguistic features from text",
+   "3. aligns features based on phonetic labels",
+   "5. packages data (for unit selection)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 90,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Background",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. New Language Support",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. extracts acoustic features from audio",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. extracts linguistic features from text",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. aligns features based on phonetic labels",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. packages data (for unit selection)",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Voice Building",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Data Preparation",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2. Feature Extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3. Model Building",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3.1. Unit Selection",
+   "page": 3,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.3.2. Statistical Parametric Synthesis",
+   "page": 3,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.4. New Conﬁguration Mechanism",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5. Global Project Management",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Bibliographical References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.4156335999978182,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 19,
+  "tp": 15,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. extracts acoustic features from audio",
+   "2. extracts linguistic features from text",
+   "3. aligns features based on phonetic labels",
+   "5. packages data (for unit selection)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 13,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. extracts acoustic features from audio",
+   "2. extracts linguistic features from text",
+   "3. aligns features based on phonetic labels",
+   "5. packages data (for unit selection)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

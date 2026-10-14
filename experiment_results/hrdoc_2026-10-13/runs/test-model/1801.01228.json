@@ -1,0 +1,199 @@
+{
+ "doc": "1801.01228",
+ "system": "model",
+ "metrics": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 15,
+  "fp": 4,
+  "fn": 4,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.44999999999999996,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Comparison of POMDP to heuristic and random policy",
+   "B. Sample POMDP policy run in simulation and on drone",
+   "AC K NO WLE DGME N T"
+  ],
+  "unmatched_pred": [
+   "(b) Step 2",
+   "(e) Step 5",
+   "(h) Step 8",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 165,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4349,
+   "completion_tokens": 569,
+   "total_tokens": 4918
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. OUR POMDP FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Reduced State Space",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Actions",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Observations",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "D. Belief",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Transition Function",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "F. Reward Function and Discount Factor",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Heuristic Policy",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Random policy",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Experimental Setup",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "D. Drone Implementation",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Step 2",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(e) Step 5",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(h) Step 8",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSIONS AND FUTURE WORK",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.361557500000345,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 15,
+  "fp": 4,
+  "fn": 4,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.44999999999999996,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Comparison of POMDP to heuristic and random policy",
+   "B. Sample POMDP policy run in simulation and on drone",
+   "AC K NO WLE DGME N T"
+  ],
+  "unmatched_pred": [
+   "(b) Step 2",
+   "(e) Step 5",
+   "(h) Step 8",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [
+   "A. Comparison of POMDP to heuristic and random policy",
+   "B. Sample POMDP policy run in simulation and on drone"
+  ],
+  "unmatched_pred": [
+   "(b) Step 2",
+   "(e) Step 5",
+   "(h) Step 8"
+  ],
+  "ignored_title_predictions": null
+ }
+}

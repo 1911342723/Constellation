@@ -1,0 +1,418 @@
+{
+ "doc": "1603.00007",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 2,
+  "fp": 16,
+  "fn": 16,
+  "level_correct": 1,
+  "parent_correct": 2,
+  "teds": 0.1578947368421053,
+  "unmatched_gt": [
+   "1 Brief Review and Results",
+   "2 Lo cal Asymptotic Stability of the Fixed Points",
+   "3 Verification of Different Criteria",
+   "3.1 Verification of Convergence Criteria",
+   "3.2 Verification of Divergence Criteria",
+   "3.3 Verification of Constant Criteria",
+   "4 Perio dic of Solutions",
+   "4.1 Example Cases of Periodic Solutions of Different Periods",
+   "5 Slow and Fast Convergence",
+   "6 Chaotic Solutions",
+   "7 A Few Special Cases of Parameters",
+   "7.1 α = β, γ = δ",
+   "7.2 α = −β , γ = δ",
+   "7.3 γ = α, δ = β",
+   "7.4 γ = β, δ = α",
+   "8 Future Endeavours"
+  ],
+  "unmatched_pred": [
+   "1",
+   "2",
+   "3",
+   "3.1",
+   "3.2",
+   "3.3",
+   "4",
+   "4.1",
+   "5",
+   "6",
+   "7",
+   "7.1",
+   "7.2",
+   "7.3",
+   "7.4",
+   "8"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9802,
+   "completion_tokens": 9633
+  },
+  "elapsed_llm_seconds": 38.65799630000038,
+  "content_preservation": 0.9995915032679739,
+  "inserted_word_share": 0.00020429009193057013,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Computational Complex Dynamics of fα,β,γ,δ(z) = αz + β",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1",
+    0,
+    1
+   ],
+   [
+    "2",
+    1,
+    1
+   ],
+   [
+    "3",
+    3,
+    1
+   ],
+   [
+    "3.1",
+    3,
+    2
+   ],
+   [
+    "3.2",
+    4,
+    2
+   ],
+   [
+    "3.3",
+    4,
+    2
+   ],
+   [
+    "4",
+    5,
+    1
+   ],
+   [
+    "4.1",
+    5,
+    2
+   ],
+   [
+    "5",
+    8,
+    1
+   ],
+   [
+    "6",
+    9,
+    1
+   ],
+   [
+    "7",
+    12,
+    1
+   ],
+   [
+    "7.1",
+    12,
+    2
+   ],
+   [
+    "7.2",
+    12,
+    2
+   ],
+   [
+    "7.3",
+    13,
+    2
+   ],
+   [
+    "7.4",
+    13,
+    2
+   ],
+   [
+    "8",
+    14,
+    1
+   ],
+   [
+    "References",
+    14,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Computational Complex Dynamics of fα,β,γ,δ(z) = αz + β",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1",
+   "page": 2,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.2",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.3",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.4",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "8",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 38.75651890000154,
+ "metrics_raw": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 2,
+  "fp": 17,
+  "fn": 16,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.15000000000000002,
+  "unmatched_gt": [
+   "1 Brief Review and Results",
+   "2 Lo cal Asymptotic Stability of the Fixed Points",
+   "3 Verification of Different Criteria",
+   "3.1 Verification of Convergence Criteria",
+   "3.2 Verification of Divergence Criteria",
+   "3.3 Verification of Constant Criteria",
+   "4 Perio dic of Solutions",
+   "4.1 Example Cases of Periodic Solutions of Different Periods",
+   "5 Slow and Fast Convergence",
+   "6 Chaotic Solutions",
+   "7 A Few Special Cases of Parameters",
+   "7.1 α = β, γ = δ",
+   "7.2 α = −β , γ = δ",
+   "7.3 γ = α, δ = β",
+   "7.4 γ = β, δ = α",
+   "8 Future Endeavours"
+  ],
+  "unmatched_pred": [
+   "Computational Complex Dynamics of fα,β,γ,δ(z) = αz + β",
+   "1",
+   "2",
+   "3",
+   "3.1",
+   "3.2",
+   "3.3",
+   "4",
+   "4.1",
+   "5",
+   "6",
+   "7",
+   "7.1",
+   "7.2",
+   "7.3",
+   "7.4",
+   "8"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 2,
+  "fp": 17,
+  "fn": 16,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.15000000000000002,
+  "unmatched_gt": [
+   "1 Brief Review and Results",
+   "2 Lo cal Asymptotic Stability of the Fixed Points",
+   "3 Verification of Different Criteria",
+   "3.1 Verification of Convergence Criteria",
+   "3.2 Verification of Divergence Criteria",
+   "3.3 Verification of Constant Criteria",
+   "4 Perio dic of Solutions",
+   "4.1 Example Cases of Periodic Solutions of Different Periods",
+   "5 Slow and Fast Convergence",
+   "6 Chaotic Solutions",
+   "7 A Few Special Cases of Parameters",
+   "7.1 α = β, γ = δ",
+   "7.2 α = −β , γ = δ",
+   "7.3 γ = α, δ = β",
+   "7.4 γ = β, δ = α",
+   "8 Future Endeavours"
+  ],
+  "unmatched_pred": [
+   "Computational Complex Dynamics of fα,β,γ,δ(z) = αz + β",
+   "1",
+   "2",
+   "3",
+   "3.1",
+   "3.2",
+   "3.3",
+   "4",
+   "4.1",
+   "5",
+   "6",
+   "7",
+   "7.1",
+   "7.2",
+   "7.3",
+   "7.4",
+   "8"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 0,
+  "fp": 16,
+  "fn": 16,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.05882352941176472,
+  "unmatched_gt": [
+   "1 Brief Review and Results",
+   "2 Lo cal Asymptotic Stability of the Fixed Points",
+   "3 Verification of Different Criteria",
+   "3.1 Verification of Convergence Criteria",
+   "3.2 Verification of Divergence Criteria",
+   "3.3 Verification of Constant Criteria",
+   "4 Perio dic of Solutions",
+   "4.1 Example Cases of Periodic Solutions of Different Periods",
+   "5 Slow and Fast Convergence",
+   "6 Chaotic Solutions",
+   "7 A Few Special Cases of Parameters",
+   "7.1 α = β, γ = δ",
+   "7.2 α = −β , γ = δ",
+   "7.3 γ = α, δ = β",
+   "7.4 γ = β, δ = α",
+   "8 Future Endeavours"
+  ],
+  "unmatched_pred": [
+   "1",
+   "2",
+   "3",
+   "3.1",
+   "3.2",
+   "3.3",
+   "4",
+   "4.1",
+   "5",
+   "6",
+   "7",
+   "7.1",
+   "7.2",
+   "7.3",
+   "7.4",
+   "8"
+  ],
+  "ignored_title_predictions": null
+ }
+}

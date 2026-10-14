@@ -1,0 +1,208 @@
+{
+ "doc": "1807.02255",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 27,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 17,
+  "parent_correct": 11,
+  "teds": 0.4642857142857143,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "1) Web Service Provider and Client Plugin: Our proposed",
+   "1) Search Engine Confidence Score (Ssec): According",
+   "2) Content Matching Score (Scms): During errors or excep-",
+   "3) Stack Trace Matching Score (Sstm ): To solve the pro-",
+   "4) Source Code Context Matching Score (Sccx ): Some-",
+   "5) StackOverflow Vote Score (Sso ): StackOverflow, a popu-",
+   "6) Search Traffic Rank Score (Sstr ): The amount of search"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 17,
+  "parent_correct": 11,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "1) Web Service Provider and Client Plugin: Our proposed",
+   "1) Search Engine Confidence Score (Ssec): According",
+   "2) Content Matching Score (Scms): During errors or excep-",
+   "3) Stack Trace Matching Score (Sstm ): To solve the pro-",
+   "4) Source Code Context Matching Score (Sccx ): Some-",
+   "5) StackOverflow Vote Score (Sso ): StackOverflow, a popu-",
+   "6) Search Traffic Rank Score (Sstr ): The amount of search"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 28.91117579999991
+ },
+ "predictions": [
+  {
+   "text": "Towards a Context-Aware IDE-Based Meta Search Engine for Recommendation about Programming Errors and Exceptions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Cosine Similarity",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Degree of Interest",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. PROPOSED APPROACH FOR IDE-BASED CONTEXT-AWARE WEB SEARCH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proposed Model for IDE-Based Search",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Proposed Metrics",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Result Scores Calculation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENT DESIGN, RESULTS AND VALIDATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Dataset preparation",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Investigation with Eclipse IDE",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Search Query Formulation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Performance Metrics",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "E. Experimental Results on Proposed Approach",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "F. Experiments with Existing Approaches",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "G. Experiments with Existing Search Engines",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V. THREATS TO VALIDITY",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. RELATED WORKS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION AND FUTURE WORKS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03256800000235671,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 17,
+  "parent_correct": 11,
+  "teds": 0.4642857142857143,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "1) Web Service Provider and Client Plugin: Our proposed",
+   "1) Search Engine Confidence Score (Ssec): According",
+   "2) Content Matching Score (Scms): During errors or excep-",
+   "3) Stack Trace Matching Score (Sstm ): To solve the pro-",
+   "4) Source Code Context Matching Score (Sccx ): Some-",
+   "5) StackOverflow Vote Score (Sso ): StackOverflow, a popu-",
+   "6) Search Traffic Rank Score (Sstr ): The amount of search"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

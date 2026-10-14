@@ -1,0 +1,173 @@
+{
+ "doc": "1609.08932",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 6,
+  "pred": 13,
+  "tp": 6,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "C. A. R´ıos Rubiano and R. Della Picca",
+   "D. M. Mitnik",
+   "V. M. Silkin",
+   "M. S. Gravielle",
+   "0.7 and 1.5 a.u",
+   "0.4 a.u",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 213,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4685,
+   "completion_tokens": 309,
+   "total_tokens": 4994
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Crystallographic orientation and induced potential eﬀects in photoelectron emission",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "from metal surfaces by ultrashort laser pulses",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. A. R´ıos Rubiano and R. Della Picca",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. M. Mitnik",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. M. Silkin",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "M. S. Gravielle",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORETICAL METHOD",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Photoelectron emission from SESs",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Induced potential eﬀects",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "0.7 and 1.5 a.u",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "0.4 a.u",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.008260400001745,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 15,
+  "tp": 6,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Crystallographic orientation and induced potential eﬀects in photoelectron emiss",
+   "from metal surfaces by ultrashort laser pulses",
+   "C. A. R´ıos Rubiano and R. Della Picca",
+   "D. M. Mitnik",
+   "V. M. Silkin",
+   "M. S. Gravielle",
+   "0.7 and 1.5 a.u",
+   "0.4 a.u",
+   "Acknowledgments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 12,
+  "tp": 6,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "C. A. R´ıos Rubiano and R. Della Picca",
+   "D. M. Mitnik",
+   "V. M. Silkin",
+   "M. S. Gravielle",
+   "0.7 and 1.5 a.u",
+   "0.4 a.u"
+  ],
+  "ignored_title_predictions": null
+ }
+}

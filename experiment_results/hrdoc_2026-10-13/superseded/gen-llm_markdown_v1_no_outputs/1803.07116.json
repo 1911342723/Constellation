@@ -1,0 +1,261 @@
+{
+ "doc": "1803.07116",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "of Articles",
+   "of Active Users"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7044,
+   "completion_tokens": 6294
+  },
+  "elapsed_llm_seconds": 28.124368600001617,
+  "content_preservation": 0.9258215962441314,
+  "inserted_word_share": 0.03498898947883533,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Learning to Generate Wikipedia Summaries for Underserved Languages from Wikidata",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "of Articles",
+    1,
+    1
+   ],
+   [
+    "of Active Users",
+    1,
+    1
+   ],
+   [
+    "2 Model",
+    1,
+    2
+   ],
+   [
+    "2.1 Encoding the Triples",
+    1,
+    3
+   ],
+   [
+    "2.2 Decoding the Summary",
+    1,
+    3
+   ],
+   [
+    "2.3 Copy Actions",
+    1,
+    3
+   ],
+   [
+    "2.4 Implementation and Training Details",
+    2,
+    3
+   ],
+   [
+    "3 Dataset",
+    3,
+    2
+   ],
+   [
+    "4 Baselines",
+    3,
+    2
+   ],
+   [
+    "5 Results and Discussion",
+    3,
+    2
+   ],
+   [
+    "6 Conclusions",
+    4,
+    2
+   ],
+   [
+    "Acknowledgements",
+    4,
+    2
+   ],
+   [
+    "References",
+    4,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Learning to Generate Wikipedia Summaries for Underserved Languages from Wikidata",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "of Articles",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "of Active Users",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Model",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.1 Encoding the Triples",
+   "page": 1,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Decoding the Summary",
+   "page": 1,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Copy Actions",
+   "page": 1,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.4 Implementation and Training Details",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3 Dataset",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Baselines",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Results and Discussion",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  }
+ ],
+ "seconds": 28.213783199997124,
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 4,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Learning to Generate Wikipedia Summaries for Underserved Languages from Wikidata",
+   "of Articles",
+   "of Active Users"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 4,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Learning to Generate Wikipedia Summaries for Underserved Languages from Wikidata",
+   "of Articles",
+   "of Active Users"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "of Articles",
+   "of Active Users"
+  ],
+  "ignored_title_predictions": null
+ }
+}

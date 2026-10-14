@@ -1,0 +1,127 @@
+{
+ "doc": "1610.02283",
+ "system": "det",
+ "metrics": {
+  "gt": 6,
+  "pred": 8,
+  "tp": 4,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "Author contributions",
+   "Competing financial interests"
+  ],
+  "unmatched_pred": [
+   "ing",
+   "Methods",
+   "appendix of ref. 34",
+   "K. Furthermore the water vapour self-broadened continuum is introduced in the up"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 452,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Transition to a Moist Greenhouse with CO2 and solar forc-",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ing",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methods",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "appendix of ref. 34",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "K. Furthermore the water vapour self-broadened continuum is introduced in the upper atmosphere",
+   "page": 14,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "References",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 32.48979329999929,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 9,
+  "tp": 4,
+  "fp": 5,
+  "fn": 2,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Author contributions",
+   "Competing financial interests"
+  ],
+  "unmatched_pred": [
+   "Transition to a Moist Greenhouse with CO2 and solar forc-",
+   "ing",
+   "Methods",
+   "appendix of ref. 34",
+   "K. Furthermore the water vapour self-broadened continuum is introduced in the up"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 5,
+  "tp": 2,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Author contributions",
+   "Competing financial interests"
+  ],
+  "unmatched_pred": [
+   "ing",
+   "Methods",
+   "K. Furthermore the water vapour self-broadened continuum is introduced in the up"
+  ],
+  "ignored_title_predictions": null
+ }
+}

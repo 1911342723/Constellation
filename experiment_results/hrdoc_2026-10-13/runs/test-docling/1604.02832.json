@@ -1,0 +1,156 @@
+{
+ "doc": "1604.02832",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Algebraic Graph Theory",
+   "CO MM U NICAT ION",
+   "SEN S I NG"
+  ],
+  "unmatched_pred": [
+   "From Lemma 6 in [3], we have",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 10.126397399999405
+ },
+ "predictions": [
+  {
+   "text": "Self-Triggered Control for Multi-Agent Systems with Quantized Communication or Sensing",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PRELIMINARIES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Stochastic Matrix",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "From Lemma 6 in [3], we have",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SELF-TRIGGERED CONTROL WITH QUANTIZED COMMUNICATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Centralized Triggering",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Distributed Triggering",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SELF-TRIGGERED CONTROL WITH QUANTIZED SENSING",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Centralized Triggering",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Distributed Triggering",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. SIMULATIONS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.013284799999382813,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Algebraic Graph Theory",
+   "CO MM U NICAT ION",
+   "SEN S I NG"
+  ],
+  "unmatched_pred": [
+   "Self-Triggered Control for Multi-Agent Systems with Quantized Communication or S",
+   "From Lemma 6 in [3], we have",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "A. Algebraic Graph Theory",
+   "CO MM U NICAT ION",
+   "SEN S I NG"
+  ],
+  "unmatched_pred": [
+   "From Lemma 6 in [3], we have"
+  ],
+  "ignored_title_predictions": null
+ }
+}

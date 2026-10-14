@@ -1,0 +1,158 @@
+{
+ "doc": "1605.06249",
+ "system": "docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "3.5 Directed Networks",
+   "3.7 Kronecker Approximations"
+  ],
+  "unmatched_pred": [
+   "3.5 Directed Networks",
+   "3.7 Kronecker Approximations"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 31.742543299998943
+ },
+ "predictions": [
+  {
+   "text": "Striations in PageRank-Ordered Matrices",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RelatedWork",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Generating Scale-Free Striations",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Generating Small World Striations.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Variations on theWatts-Strogatz Process",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Node Neighborhoods",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5 Directed Networks",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.6 RandomNetworks",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.7 Kronecker Approximations",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Methods",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussion",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.006237000001419801,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "3.5 Directed Networks",
+   "3.7 Kronecker Approximations"
+  ],
+  "unmatched_pred": [
+   "Striations in PageRank-Ordered Matrices",
+   "3.5 Directed Networks",
+   "3.7 Kronecker Approximations"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "3.5 Directed Networks",
+   "3.7 Kronecker Approximations"
+  ],
+  "unmatched_pred": [
+   "3.5 Directed Networks",
+   "3.7 Kronecker Approximations"
+  ],
+  "ignored_title_predictions": null
+ }
+}

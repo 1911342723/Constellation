@@ -1,0 +1,92 @@
+{
+ "doc": "1702.06610",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "RESEARCH METHOD AND SETTING",
+   "Case study setup",
+   "Wellington: Disaster prone capital city",
+   "Pok ´emon Go: A location-based augmented reality game",
+   "Investigated documents and material",
+   "MAPPING LOCATION-BASED AR GAMEPLAY MECHA- NISM AND DISASTER MANAGEMENT",
+   "Can AR game data be used in digital disaster response?",
+   "Do AR games create new barriers in disaster manage- ment?",
+   "Towards socio-technical emergency response augmenta- tion?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.3076923076923077,
+  "unmatched_gt": [
+   "RESEARCH METHOD AND SETTING",
+   "Case study setup",
+   "Wellington: Disaster prone capital city",
+   "Pok ´emon Go: A location-based augmented reality game",
+   "Investigated documents and material",
+   "MAPPING LOCATION-BASED AR GAMEPLAY MECHA- NISM AND DISASTER MANAGEMENT",
+   "Can AR game data be used in digital disaster response?",
+   "Do AR games create new barriers in disaster manage- ment?",
+   "Towards socio-technical emergency response augmenta- tion?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 118,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9777448071216617,
+   "in_order": 0.9757665677546983,
+   "inserted": 0.034196384953590675
+  }
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.06668759999593
+}

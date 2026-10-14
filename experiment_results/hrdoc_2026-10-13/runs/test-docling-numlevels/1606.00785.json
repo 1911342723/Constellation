@@ -1,0 +1,263 @@
+{
+ "doc": "1606.00785",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 27,
+  "pred": 30,
+  "tp": 25,
+  "fp": 5,
+  "fn": 2,
+  "level_correct": 22,
+  "parent_correct": 14,
+  "teds": 0.4516129032258065,
+  "unmatched_gt": [
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 ADMM for Minimizing hb to hf",
+   "1: Initialization:",
+   "8: Repeat Until Convergence:",
+   "TABLE IV",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 28,
+  "tp": 24,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 21,
+  "parent_correct": 13,
+  "teds": 0.4482758620689655,
+  "unmatched_gt": [
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 ADMM for Minimizing hb to hf",
+   "1: Initialization:",
+   "8: Repeat Until Convergence:",
+   "TABLE IV"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 24.46442709999974
+ },
+ "predictions": [
+  {
+   "text": "Piano Transcription in the Studio Using an Extensible Alternating Directions Framework",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Encouraging Data Fidelity and Non-Negativity",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Encouraging Sparsity",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Encouraging a Temporally Meaningful Template Order",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Constraining the Concurrency of Templates",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "E. Differentiating between Estimation Noise and Note Events",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "F. Encouraging Meaningful Long-Term Note Activity",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. PARAMETER ESTIMATION USING THE ALTERNATING DIRECTION METHOD OF MULTIPLIERS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Consensus Form ADMM",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Linearized ADMM",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V. MINIMIZING THE INDIVIDUAL TERMS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Kullback-Leibler Data Fidelity Term",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Non-negativity Term",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "C. LASSO and Total Diagonal Variation Terms",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Markov-State Regularizer",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "Algorithm 1 ADMM for Minimizing hb to hf",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1: Initialization:",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8: Repeat Until Convergence:",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Thresholding Set Term",
+   "page": 9,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "F. Binary Markov-State and Strict Coupling Regularizer",
+   "page": 9,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "VI. EXPERIMENTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. University of Minnesota / Native Instruments (UM-NI) Dataset",
+   "page": 9,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "B. MIDI Aligned Piano Sounds (MAPS) Dataset",
+   "page": 10,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "C. Influence of Individual Regularizers and Error Analysis",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "TABLE IV",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03999599999951897,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 30,
+  "tp": 25,
+  "fp": 5,
+  "fn": 2,
+  "level_correct": 22,
+  "parent_correct": 14,
+  "teds": 0.4516129032258065,
+  "unmatched_gt": [
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 ADMM for Minimizing hb to hf",
+   "1: Initialization:",
+   "8: Repeat Until Convergence:",
+   "TABLE IV",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

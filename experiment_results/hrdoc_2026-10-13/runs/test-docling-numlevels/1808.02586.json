@@ -1,0 +1,243 @@
+{
+ "doc": "1808.02586",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 29,
+  "pred": 30,
+  "tp": 29,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 21,
+  "teds": 0.7741935483870968,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1: Adversarial Training Procedure"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 18,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1: Adversarial Training Procedure"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 36.40932440000324
+ },
+ "predictions": [
+  {
+   "text": "Adversarial Domain Adaptation for Variational Neural Language Generation in Dialogue Systems",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RelatedWork",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Variational Domain-Adaptation Neural Language Generator",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Variational Neural Encoder",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Variational Neural Inferer",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Neural Posterior Approximator",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Neural Prior Model",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Variational Neural Decoder",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.4 Critics",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Text similarity critic",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Domain critic",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Training Domain AdaptationModel",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Training Critics",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.2 Training Variational Generator",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.3 Adversarial Training",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "Algorithm 1: Adversarial Training Procedure",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Results and Analysis",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Integrating Variational Inference",
+   "page": 6,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.2 Ablation Studies",
+   "page": 7,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.3 Distance of Dataset Pairs",
+   "page": 7,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.4 Adaptation vs. All Training Scenario",
+   "page": 8,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.5 Unsupervised Domain Adaptation",
+   "page": 8,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.6 Comparison on Generated Outputs",
+   "page": 8,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "7 Conclusion and FutureWork",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Experimental Setups",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B. Generated Utterances",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.036760299997695256,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 30,
+  "tp": 29,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 21,
+  "teds": 0.7741935483870968,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1: Adversarial Training Procedure"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

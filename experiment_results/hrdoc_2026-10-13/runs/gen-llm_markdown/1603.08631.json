@@ -1,0 +1,214 @@
+{
+ "doc": "1603.08631",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2) Adoped LeNet-5:",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2) Adoped LeNet-5:"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Classification of Alzheimer’s Disease Using fMRI Data and Deep Learning Convolutional Neural Networks",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "II. BACKGROUND AND ALGORITHMS",
+    0,
+    2
+   ],
+   [
+    "A. Data Acquisition and Preprocessing",
+    0,
+    3
+   ],
+   [
+    "B. Deep Learning",
+    1,
+    3
+   ],
+   [
+    "1) Convolutional Neural Networks (CNNs / ConvNets):",
+    1,
+    4
+   ],
+   [
+    "2) Adoped LeNet-5:",
+    1,
+    4
+   ],
+   [
+    "III. RESULTS AND DISCUSSION",
+    1,
+    2
+   ],
+   [
+    "IV. CONCLUSIONS",
+    3,
+    2
+   ],
+   [
+    "V. ACKNOWLEDGEMENT",
+    3,
+    2
+   ],
+   [
+    "VI. APPENDIX I",
+    3,
+    2
+   ],
+   [
+    "REFERENCES",
+    4,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5213,
+   "completion_tokens": 4704
+  },
+  "elapsed_llm_seconds": 19.5894816,
+  "word_preservation": {
+   "recall": 0.9963570127504554,
+   "in_order": 0.9942319368548876,
+   "inserted": 0.0069591527987896695
+  },
+  "output_markdown": "# Classification of Alzheimer’s Disease Using fMRI Data and Deep Learning Convolutional Neural Networks\n\nSaman Sarraf, Ghassem Tofighi\n\n**Abstract**— Over the past decade, machine learning techniques especially predictive modeling and pattern recognition in biomedical sciences from drug delivery system [7] to medical imaging has become one of the important methods which are assisting researchers to have deeper understanding of entire issue and to solve complex medical problems. Deep learning is power learning machine learning algorithm in classification while extracting high-level features. In this paper, we used convolutional neural network to classify Alzheimer’s brain from normal healthy brain. The importance of classifying this kind of medical data is to potentially develop a predict model or system in order to recognize the type disease from normal subjects or to estimate the stage of the disease. Classification of clinical data such as Alzheimer’s disease has been always challenging and most problematic part has been always selecting the most discriminative features. Using Convolutional Neural Network (CNN) and the famous architecture LeNet-5, we successfully classified functional MRI data of Alzheimer’s subjects from normal controls where the accuracy of test data on trained data reached 96.85%. This experiment suggests us the shift and scale invariant features extracted by CNN followed by deep learning classification is most powerful method to distinguish clinical data from healthy data in fMRI. This approach also enables us to expand our methodology to predict more complicated systems.\n\n## I. INTRODUCTION\n\nAlzheimer’s disease is a neurological, irreversible, progressive brain disorder and multifaceted disease that slowly destroys brain cells causing memory and thinking skills loss, and ultimately the ability to carry out the simplest tasks. The cognitive decline caused by this disorder ultimately leads to dementia. For instance, the disease begins with mild deterioration and gets progressively worse in a neurodegenerative type of dementia. Diagnosing Alzheimer’s disease requires very careful medical assessments such as patients? history, Mini Mental State Examination (MMSE) and physical and neurobiological exam. In addition to those evaluations, resting state functional magnetic resonance imaging (rs-fMRI) provides a non-invasive method to measure functional brain activity and changes in the brain [13]. There are two impor-\n\nData used in preparation of this article were obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database (adni.loni.usc.edu). As such, the investigators within the ADNI contributed to the design and implementation of ADNI and/or provided data but did not participate in analysis or writing of this report. A complete listing of ADNI investigators can be found at: http://adni.loni.usc.edu/wp-content/uploads/how to apply/ADNI Acknowledgement List.pdf\n\nSaman Sarraf was with the Department of Electrical and Computer Engineering, McMaster University, Hamilton, ON, L8S 4L8, Canada. samansarraf@ieee.org\n\nGhassem Tofighi is with the Electrical and Computer Engineering Department, Ryerson University, Toronto, ON M5B 2K3 Canada. gtofighi@ryerson.ca\n\ntant concepts about resting-state fMRI. First of all, as patients do not need to do any task and there is no simulation, the procedure will be more comfortable than a normal fMRI and secondly, rs-fMRI data acquisition can be performed during a clinical scan and most researchers are interested in brain network analysis and extraction from rs-fMRI data [8] [9] [11] [6] [2]. However, development of an assistant tool or algorithm to classify fMRI data and more importantly to recognize brain disorder data from healthy subjects has been always clinicians? interests. Any machine learning algorithm which is able to classify Alzheimer’s disease assists scientists and clinicians to diagnose this brain disorder. In this work, the convolutional neural network (CNN) which is one of the Deep Learning Network architecture is utilized in order to classify the Alzheimer’s brains and healthy brains and to produce a trained and predictive model.\n\n## II. BACKGROUND AND ALGORITHMS\n\n### A. Data Acquisition and Preprocessing\n\nFor this study, Alzheimer‘s Disease (AD) patients and 15 elderly normal control subjects (24 female and 19 male) with a mean age of 74.9 5.7 years were selected from ADNI dataset. The AD patients had MMSE over 20 reported by *ADNI and all normal participants were healthy and had no reported history of medical or neurological conditions. Scanning was performed on a Siemens Trio 3 Tesla MRI scanner. Anatomical scans were acquired with a 3D MPRAGE sequence (TR=2s, TE=2.63 ms, FOV=25.6 cm, 256 x 256 matrix, 160 slices of 1mm thickness). Functional runs were obtained with an EPI sequence (150 volumes, TR=2 s, TE=30 ms, flip angle=70?, FOV=20 cm, 64 x 64 matrix, 30 axial slices of 5mm thickness, no gap). The fMRI data were pre-processed using the standard modules of FMRIB Software Library v5.0 [10]. The pre-processing steps for the anatomical data involved the removal of non-brain tissue from T1 anatomical images using the Brain Extraction Tool. For functional data the preprocessing steps included: motion correction (MCFLRIT), skull stripping, and spatial smoothing (Gaussian kernel of 5-mm FWHM). Low-level noise was removed using a high-pass temporal filtering (?=90.0 sec). The functional images were then aligned to the individual?s high-resolution T1-weighted scans, which were subsequently registered to the Montreal Neurological Institute standard space (MNI152) using affine linear registration and resampled at 2mm cubic voxels. The product of preprocessing step was 45x54x45x300 images in which the first 10 slices of each image were removed as they contained no functional information.\n\narXiv:1603.08631v1  [cs.CV]  29 Mar 2016\n\n<<page 2>>\n### B. Deep Learning\n\nHierarchical or structured deep learning is a modern branch of machine learning that was inspired by human brain. It has been developed based on complicated algorithms that model high-level features and extract those abstractions from data by using similar neural network architecture but much complicated. The neuroscientists discovered the ?neocortex? which is a part of the cerebral cortex concerned with sight and hearing in mammals, process sensory signals by propagating them through a complex hierarchy over time. That was the main motivation to develop the deep machine learning focusing on computational models for information representation that exhibit similar characteristics to that of the neocortex [1] [4] [3].\n\n#### 1) Convolutional Neural Networks (CNNs / ConvNets):\n\nConvolutional Neural Networks which are inspired by human visual system are similar to classic neural networks. This architecture has been particularly designed based on the explicit assumption that raw data are two-dimensional (images) that enables us to encode certain properties and also to reduce the amount of hyper parameters. The CNN topology utilizes spatial relationships to reduce the number of parameters which must be learned and thus improves upon general feed-forward back propagation training. Equation ?? shows how Error is calculated in the back propagation step where E is error function, y is the ith, jth neuron, x is the input, l represent layer numbers w is filter weight with a and b indices, N is the number of neurons in a given layer and m is the filter size.\n\n∂E/∂Wab = Σ_{i=0}^{N−m} Σ_{j=0}^{N−m} (∂E/∂W^l_{ij}) (∂x^l_{ij}/∂Wab)  (1)\n\n= Σ_{i=0}^{N−m} Σ_{j=0}^{N−m} (∂E/∂x^l_{ij}) y^{l−1}_{(i+a)(j+b)}  (2)\n\nIn CNNs, small portions of the image (dubbed a local receptive field) are treated as inputs to the lowest layer of the hierarchical structure. One of the most important features of CNN is that complex architecture provides a level of invariance to shift, scale and rotation as the local receptive field allows the neuron or processing unit access to elementary features such as oriented edges or corners. This network is basically made up of neurons having learnable weights and biases forming Convolutional Layer. It also includes other network structures such as Pooling Layer, Normalization Layer and Fully-Connected Layer. As briefly mentioned above, Convolutional or so called CONV layer computed the output of neurons that are connected to local regions in the input, each computing a dot product between their weights and the region they are connected to in the input volume. Pooling or so called POOL Layer performs a down sampling operation along the spatial dimensions. The Normalization Layer or RELU layer applies an elementwise activation function, such as the max (0, x) thresholding at zero. This layer does not change the size of the image volume. Fully-Connected Layer (FC) layer computes the class scores, resulting in volume of number of classes. As with ordinary Neural Networks and as the name implies, each neuron in this layer will be connected to all the numbers in the previous volume [1] [4]. The Convolutional Layer plays an important role in CNN architecture and is the core building block in this network. The CONV layer’s parameters consist of a set of learnable filters. Every filter is spatially small but extends through the full depth of the input volume. During the forward pass, each filter is convolved across the width and height of the input volume, producing a 2D activation map of that filter. During this convolving, the network learns filters that activate when they see some specific type of feature at some spatial position in the input. Next, these activation maps are stacked for all filters along the depth dimension forms the full output volume. Every entry in the output volume can thus also be interpreted as an output of a neuron that looks at only a small region in the input and shares parameters with neurons in the same activation map [1] [4] [3]. A Pooling layer is usually inserted in-between successive Conv layers in ConvNet architecture. Its function is to reduce (down sample) the spatial size of the representation in order to reduce the amount of network hyper parameters, and hence to also control overfitting. The Pooling Layer operates independently on every depth slice of the input and resizes it spatially, using the MAX operation. Recently, more successful CNN have been developed such as LeNet, AlexNet, ZF Net, GoogleNet, VGGNet and ResNet. The major bottleneck of constructing ConvNet architectures is the memory restrictions of GPU [1] [4] [3].\n\n#### 2) Adoped LeNet-5:\n\nAs you can see in the figure 3, LeNet-5 was firstly designed by Y. LeCun et Al. [4] and this famous network successfully classified digits and was applied to hand-written check numbers. The application of this network was expanded to more complicated problems and their hyper parameters adjusted for new issues. However, more developed versions of LeNet have been successfully tested. In this work, we dealt with a binary but very complicated binary classification of Alzheimer’s and Normal data. In other word, we needed a complicated network but for two classes which was leading us to choose LeNet-5 and adjust this architecture for fMRI data.\n\nFig. 1. LeNet-5 architecture adopted for fMRI data\n\nThe implemented network is shown in figure 2 in details.\n\n## III. RESULTS AND DISCUSSION\n\nThe preprocessed fMRI 4D data in Nifti format were concatenated across z and t axes and the converted to a\n\n<<page 3>>\nFig. 2. LeNet-5 network implemented for fMRI data\n\nstack of 2D images in JPEG using Neuroimaging package Nibabel (http://nipy.org/nibabel/) and Python OpenCV (opencv.org). Next, images were labeled for binary classification of Alzheimer’s Vs Normal data. The labeled images were converted to lmdb storage Databases for high-throughput to be fed into Deep Learning platform. LeNet model which is based on Convolutional Neural Network architecture from Caffe DIGITS 0.2 - deep learning framework (Nvidia version) - was used to perform binary image classification. The data was divided into three parts: training (60%), validation (20%) and testing (20%). The number of epochs was set to 30 and the batch size was 64 resulting in 126990 iterations. The LeNet was trained by 270900 samples and validated and tested by 90300 images. In order to achieve the robustness and reproducibility of the deep neural network, the cross validation process was repeated 5 times (5-fold cross validation) and gathered in table I. The\n\nTABLE I\nACCURACIES ACHIEVED FROM CNN ACROSS 5 RUNS\n\nRun1 | Run2 | Run3 | Run4 | Run5 | Mean\n--- | --- | --- | --- | --- | ---\n96.858 | 96.857 | 96.854 | 96.863 | 96.8588 | 96.8588\n\nmean of images removed from data in the Deep Learning preprocessing step. In the training phase, loss of training and testing and also accuracy of validation data were measured. Learning rate dramatically fell down after the 10th epoch and slightly decreased after 20th epoch as is shown in. Deep Learning LeNet model successfully recognized the Alzheimer’s data from Normal Control and the averaged accuracy reached 96.8588% as it is depicted in figure 3. The training and testing process were performed on NVIDIA GPU Cloud Computing which significantly improved the performance of Deep Learning classifier.\n\nFig. 3. Loss train, Accuracy Validation (Test), Loss Validation for Run5\n\nFigure 4 shows how learning rate is dropping each 10 epochs in our training sets. We have started with 0.01 and divided it by 10 in each 10 epochs.\n\nFig. 4. Learning Rate dropping each 10 epochs\n\nMost challenges in traditional medical image processing and analyses have been to select the best and most discriminative features that must be extracted from data and\n\n<<page 4>>\nchoosing the best classification method. Two important advantages of Deep Learning methods especially Convolutional Neural Network used in this work is to contain those two characteristics simultaneously. It is possible to visualize the results of filters (kernels) in each layer.\n\nFigures 5, 6 and 7 illustrate some of the final filter of different layers. CNN is a strong feature extractor because of its convolutional layers that is able to extract high level features from images. This deep learning method is also a powerful classifier because of its complicated network architecture. Our current solution based on fully advanced preprocessing steps followed by CNN classification improved the accuracy of AD data classification from 84% using Support Vector Machine (SVM) reported in the literature [14] [5] [12] to 96.86%. However, the deep learning solutions have very few problems such as high algorithm complexity and expensive infrastructure.\n\nFig. 5. Statistics and Visualization for data and scale of Alzheimer’s Disease sample\n\n## IV. CONCLUSIONS\n\nIn this paper, we successfully classified the AD data from normal control with 96.86% accuracy using CNN deep learning architecture (LeNet) which was trained and tested with huge number of images. This deep learning solution and our proposed pipeline not only open new avenues in medical image analyses but also it enables researchers and physicians to potentially predict any new data. It is also possible to generalize this method to predict different stages of Alzheimer’s disease for different age groups. Furthermore, this deep learning-based solution allows researchers to perform feature selection and classification with a unique architecture. The accuracy achieved in this work was very high confirming the network architecture was correctly selected. However, more complicated network architecture including\n\nFig. 6. Statistics and visualization for first convolution layer of Alzheimer’s Disease sample\n\nFig. 7. Statistics and visualization for second convolution layer of Alzheimer’s Disease sample\n\nmore convolutional neural layers is recommended for future works and more complicated problems.\n\n## V. ACKNOWLEDGEMENT\n\nWe would like to express our gratitude towards Dr. Cristina Saverino, post-doctoral fellowship at Toronto Rehabilitation Institute-University Health Network and Department of Psychology - University of Toronto and for extending her help and support in this study.\n\n## VI. APPENDIX I\n\nData collection and sharing for this project was funded by the Alzheimer’s Disease Neuroimaging Initiative (ADNI)\n\n<<page 5>>\n(National Institutes of Health Grant U01 AG024904) and DOD ADNI (Department of Defense award number W81XWH-12-2-0012). ADNI is funded by the National Institute on Aging, the National Institute of Biomedical Imaging and Bioengineering, and through generous contributions from the following: AbbVie, Alzheimer?s Association; Alzheimer?s Drug Discovery Foundation; Araclon Biotech; BioClinica, Inc.; Biogen; Bristol-Myers Squibb Company; CereSpir, Inc.; Eisai Inc.; Elan Pharmaceuticals, Inc.; Eli Lilly and Company; EuroImmun; F. Hoffmann-La Roche Ltd and its affiliated company Genentech, Inc.; Fujirebio; GE Healthcare; IXICO Ltd.; Janssen Alzheimer Immunotherapy Research & Development, LLC.; Johnson & Johnson Pharmaceutical Research & Development LLC.; Lumosity; Lundbeck; Merck & Co., Inc.; Meso Scale Diagnostics, LLC.; NeuroRx Research; Neurotrack Technologies; Novartis Pharmaceuticals Corporation; Pfizer Inc.; Piramal Imaging; Servier; Takeda Pharmaceutical Company; and Transition Therapeutics. The Canadian Institutes of Health Research is providing funds to support ADNI clinical sites in Canada. Private sector contributions are facilitated by the Foundation for the National Institutes of Health (www.fnih.org). The grantee organization is the Northern California Institute for Research and Education, and the study is coordinated by the Alzheimer’s Disease Cooperative Study at the University of California, San Diego. ADNI data are disseminated by the Laboratory for Neuro Imaging at the University of Southern California.\n\n## REFERENCES\n\n[1] I. Arel, D. C. Rose, and T. P. Karnowski, “Deep machine learning-a new frontier in artificial intelligence research [research frontier],” Computational Intelligence Magazine, IEEE, vol. 5, no. 4, pp. 13–18, 2010.\n\n[2] C. Grady, S. Sarraf, C. Saverino, and K. Campbell, “Age differences in the functional interactions among the default, frontoparietal control and dorsal attention networks,” Neurobiology of Aging, 2016.\n\n[3] Y. Jia, E. Shelhamer, J. Donahue, S. Karayev, J. Long, R. Girshick, S. Guadarrama, and T. Darrell, “Caffe: Convolutional architecture for fast feature embedding,” in Proceedings of the ACM International Conference on Multimedia, pp. 675–678, ACM, 2014.\n\n[4] Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner, “Gradient-based learning applied to document recognition,” Proceedings of the IEEE, vol. 86, no. 11, pp. 2278–2324, 1998.\n\n[5] A. RAVENT ´OS and M. ZAIDI, “Automating neurological disease diagnosis using structural mr brain scan features,”\n\n[6] S. Sarraf, C. Saverino, H. Ghaderi, and J. Anderson, “Brain network extraction from probabilistic ica using functional magnetic resonance images and advanced template matching techniques,” in Electrical and Computer Engineering (CCECE), 2014 IEEE 27th Canadian Conference on, pp. 1–6, IEEE, 2014.\n\n[7] S. Sarraf, E. Marzbanrad, and H. Mobedi, “Mathematical modeling for predicting betamethasone profile and burst release from in situ forming systems based on plga,” in Electrical and Computer Engineering (CCECE), 2014 IEEE 27th Canadian Conference on, pp. 1–6, IEEE, 2014.\n\n[8] S. Sarraf and J. Sun, “Functional brain imaging: A comprehensive survey,” arXiv preprint arXiv:1602.02225, 2016.\n\n[9] S. Sarraf and A. M. Golestani, “A robust and adaptive decision-making algorithm for detecting brain networks using functional mri within the spatial and frequency domain,” in The IEEE International Conference on Biomedical and Health Informatics (BHI), pp. 1–6, IEEE, 2016.\n\n[10] S. M. Smith, M. Jenkinson, M. W. Woolrich, C. F. Beckmann, T. E. Behrens, H. Johansen-Berg, P. R. Bannister, M. De Luca, I. Drobnjak, D. E. Flitney, et al., “Advances in functional and structural mr image analysis and implementation as fsl,” Neuroimage, vol. 23, pp. S208–S219, 2004.\n\n[11] S. C. Strother, S. Sarraf, and C. Grady, “A hierarchy of cognitive brain networks revealed by multivariate performance metrics,” in Signals, Systems and Computers, 2014 48th Asilomar Conference on, pp. 603–607, IEEE, 2014.\n\n[12] E. E. Tripoliti, D. I. Fotiadis, and M. Argyropoulou, “A supervised method to assist the diagnosis and classification of the status of alzheimer’s disease using data from an fmri experiment,” in Engineering in Medicine and Biology Society, 2008. EMBS 2008. 30th Annual International Conference of the IEEE, pp. 4419–4422, IEEE, 2008.\n\n[13] P. Vemuri, D. T. Jones, and C. R. Jack Jr, “Resting state functional mri in alzheimer’s disease,” Alzheimer’s research & therapy, vol. 4, no. 1, pp. 1–9, 2012.\n\n[14] X. Zhang, B. Hu, X. Ma, and L. Xu, “Resting-state whole-brain functional connectivity networks for mci classification using l2-regularized logistic regression,” NanoBioscience, IEEE Transactions on, vol. 14, no. 2, pp. 237–247, 2015.",
+  "verbatim_heading_share": 1.0909090909090908
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND ALGORITHMS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Acquisition and Preprocessing",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Deep Learning",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1) Convolutional Neural Networks (CNNs / ConvNets):",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2) Adoped LeNet-5:",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III. RESULTS AND DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ACKNOWLEDGEMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. APPENDIX I",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.651269000001776,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2) Adoped LeNet-5:",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 9,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 3,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Classification of Alzheimer’s Disease Using fMRI Data and Deep Learning Convolut",
+   "2) Adoped LeNet-5:",
+   "REFERENCES"
+  ]
+ }
+}

@@ -1,0 +1,219 @@
+{
+ "doc": "1803.00317",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 19,
+  "pred": 23,
+  "tp": 18,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 15,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "A P P EN DI X A"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Channel estimation and HBF design algorithm",
+   "Stage 1. AOD estimation at the users",
+   "Stage 2 User scheduling and ABF design at the BS",
+   "Stage 3 Equivalent channel estimation at the users",
+   "Stage 4 DBF design at the BS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 19,
+  "tp": 14,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 11,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "P RO OF O F T HE T HE ORE M 1"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Channel estimation and HBF design algorithm",
+   "Stage 1. AOD estimation at the users",
+   "Stage 2 User scheduling and ABF design at the BS",
+   "Stage 3 Equivalent channel estimation at the users",
+   "Stage 4 DBF design at the BS"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 95.67970680000144
+ },
+ "predictions": [
+  {
+   "text": "Hybrid Beamforming Design and Performance with Imperfect Phase Shifters in Multiuser Millimeter Wave Systems",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Index Terms",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. System Model",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Channel Model",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III. PERFORMANCE LOSS IN MULTIUSER SCENARIO",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CHANNEL ESTIMATION AND HYBRID BEAMFORMING DESIGN",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Resolution of phase shifters",
+   "page": 14,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Algorithm 1: Channel estimation and HBF design algorithm",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Stage 1. AOD estimation at the users",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Stage 2 User scheduling and ABF design at the BS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Stage 3 Equivalent channel estimation at the users",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Stage 4 DBF design at the BS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. The number of users supported",
+   "page": 15,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "C. The number of channel paths and Rice K-factor",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Computational complexity and training overhead",
+   "page": 16,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "V. SIMULATIONS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Performance loss due to phase-shifting error and gain error",
+   "page": 17,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "B. Performance of our proposed channel estimation and hybrid beamforming algorithm",
+   "page": 19,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A PROOF OF THE THEOREM 1",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01692909999837866,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 23,
+  "tp": 18,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 15,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "A P P EN DI X A"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Channel estimation and HBF design algorithm",
+   "Stage 1. AOD estimation at the users",
+   "Stage 2 User scheduling and ABF design at the BS",
+   "Stage 3 Equivalent channel estimation at the users",
+   "Stage 4 DBF design at the BS"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

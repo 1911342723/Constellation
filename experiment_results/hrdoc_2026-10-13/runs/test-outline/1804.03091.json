@@ -1,0 +1,142 @@
+{
+ "doc": "1804.03091",
+ "system": "outline",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "Acknowledgement",
+   "Supporting Information Available"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods and Computational Details",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Polarizable Model",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Simulation Setup",
+   "page": 10,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Trajectory Analysis",
+   "page": 13,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Results and Discussion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Optimized Force Field Parameters",
+   "page": 16,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Water Transfer",
+   "page": 18,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Ion Rejection",
+   "page": 23,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 Discussions",
+   "page": 26,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supporting Information Available",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.11495529999956489,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "Acknowledgement",
+   "Supporting Information Available"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supporting Information Available"
+  ],
+  "ignored_title_predictions": null
+ }
+}

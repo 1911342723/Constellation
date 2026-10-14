@@ -1,0 +1,112 @@
+{
+ "doc": "1807.01582",
+ "system": "outline",
+ "metrics": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "ABSTRACT",
+   "REFERENCES"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 X-IFU instrumental response calibration",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Numerical validation of calibration requirements",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Quantum efficiency",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Realistic variations in the detector's quantum efficiency",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.2 Impact on the observations",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "5 Energy resolution",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Impact on the energy resolution",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5.2 Impact on turbulent speed measurements and analytical model",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.06738070000210428,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "ABSTRACT",
+   "REFERENCES"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

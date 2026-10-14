@@ -1,0 +1,248 @@
+{
+ "doc": "1705.08550",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 8,
+  "pred": 22,
+  "tp": 8,
+  "fp": 14,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.3913043478260869,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Dept. of Computer Science, University of California, Irvine",
+   "Abstract. Mammogram classiﬁcation is directly related to computer-aided di-",
+   "agnosis of breast cancer. Traditional methods rely on regions of interest (ROIs)",
+   "volutional features for natural image analysis and multi-instance learning (MIL)",
+   "instance networks for mass classiﬁcation based on whole mammogram without",
+   "the aforementioned ROIs. We explore three different schemes to construct deep",
+   "multi-instance networks for whole mammogram classiﬁcation. Experimental re-",
+   "sults on the INbreast dataset demonstrate the robustness of proposed networks",
+   "compared to previous work using segmentation and detection annotations. 1",
+   "Keywords: Deep multi-instance learning, whole mammogram classiﬁcation, max",
+   "1 The code can be downloaded from https",
+   "W. Zhu et al.",
+   "W. Zhu et al.",
+   "W. Zhu et al."
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 199,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4620,
+   "completion_tokens": 405,
+   "total_tokens": 5025
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Deep Multi-instance Networks with Sparse Label",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Assignment for Whole Mammogram Classiﬁcation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Dept. of Computer Science, University of California, Irvine",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract. Mammogram classiﬁcation is directly related to computer-aided di-",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "agnosis of breast cancer. Traditional methods rely on regions of interest (ROIs)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "volutional features for natural image analysis and multi-instance learning (MIL)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "instance networks for mass classiﬁcation based on whole mammogram without",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "the aforementioned ROIs. We explore three different schemes to construct deep",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "multi-instance networks for whole mammogram classiﬁcation. Experimental re-",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "sults on the INbreast dataset demonstrate the robustness of proposed networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "compared to previous work using segmentation and detection annotations. 1",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords: Deep multi-instance learning, whole mammogram classiﬁcation, max",
+   "page": 0,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 The code can be downloaded from https",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "W. Zhu et al.",
+   "page": 1,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "2 Deep MIL for Whole Mammogram Mass Classiﬁcation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Max Pooling-based Multi-instance Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "2.2 Label Assignment-based Multi-instance Learning",
+   "page": 3,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "2.3 Sparse Multi-instance Learning",
+   "page": 3,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "3 Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "W. Zhu et al.",
+   "page": 5,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "W. Zhu et al.",
+   "page": 7,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.10783420000007,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 24,
+  "tp": 8,
+  "fp": 16,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.36,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Deep Multi-instance Networks with Sparse Label",
+   "Assignment for Whole Mammogram Classiﬁcation",
+   "Dept. of Computer Science, University of California, Irvine",
+   "Abstract. Mammogram classiﬁcation is directly related to computer-aided di-",
+   "agnosis of breast cancer. Traditional methods rely on regions of interest (ROIs)",
+   "volutional features for natural image analysis and multi-instance learning (MIL)",
+   "instance networks for mass classiﬁcation based on whole mammogram without",
+   "the aforementioned ROIs. We explore three different schemes to construct deep",
+   "multi-instance networks for whole mammogram classiﬁcation. Experimental re-",
+   "sults on the INbreast dataset demonstrate the robustness of proposed networks",
+   "compared to previous work using segmentation and detection annotations. 1",
+   "Keywords: Deep multi-instance learning, whole mammogram classiﬁcation, max",
+   "1 The code can be downloaded from https",
+   "W. Zhu et al.",
+   "W. Zhu et al.",
+   "W. Zhu et al."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 20,
+  "tp": 7,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Dept. of Computer Science, University of California, Irvine",
+   "agnosis of breast cancer. Traditional methods rely on regions of interest (ROIs)",
+   "volutional features for natural image analysis and multi-instance learning (MIL)",
+   "instance networks for mass classiﬁcation based on whole mammogram without",
+   "the aforementioned ROIs. We explore three different schemes to construct deep",
+   "multi-instance networks for whole mammogram classiﬁcation. Experimental re-",
+   "sults on the INbreast dataset demonstrate the robustness of proposed networks",
+   "compared to previous work using segmentation and detection annotations. 1",
+   "Keywords: Deep multi-instance learning, whole mammogram classiﬁcation, max",
+   "1 The code can be downloaded from https",
+   "W. Zhu et al.",
+   "W. Zhu et al.",
+   "W. Zhu et al."
+  ],
+  "ignored_title_predictions": null
+ }
+}

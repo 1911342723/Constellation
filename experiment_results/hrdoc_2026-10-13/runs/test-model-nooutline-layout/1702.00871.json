@@ -1,0 +1,191 @@
+{
+ "doc": "1702.00871",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 24,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.52,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 576,
+  "layout_marked": 18,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 9921,
+   "completion_tokens": 701,
+   "total_tokens": 10622
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9605609114811569,
+  "inserted_word_share": 0.9347688075335944
+ },
+ "predictions": [
+  {
+   "text": "Video Salient Object Detection via",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Saliency Detection",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Deep Learning Models in Dynamic Scenes In this section, we mainly focus on famous, deep learning models for computer vision applications in dynamic scenes, including action recognition [20], [54], object segmentation [55], [22], object tracking [56], [57], [59], [60], [61], attention prediction [21] and semantic segmentation [62], and explore their architectures and training schemes. This will help to clarify how our approach differs from previous efforts and will help to highlight the important beneﬁts in terms of effectiveness and efﬁciency. Many approaches [56], [57], [62] directly feed single video frames into neural networks trained on image data and adopt various techniques for post-processing the results with temporal or motion information. Unfortunately, these neural networks give up learning the temporal information which is often very important in video processing applications. A famous architecture for training CNNs for action recognition in videos is proposed in [20], which incorporates twostream convolutional networks for learning complementary information on appearance and motion. Other works [21], [55] adopt this architecture for dynamic attention prediction and video object segmentation . However, these methods train their models on multi-frame dense optical ﬂow, which causes heavy computational burden. In the areas of human pose estimation and video object processing, online learning strategy is introduced for improving performance [22], [54], [59], [60], [61]. Before processing an input video, these approaches generate various training samples for ﬁne-tuning the neural networks learned from image data, thus enabling the models to be optimized towards the object of interest in the test video sequence. Obviously, these models are quite time-consuming and the ﬁne-tuned models are only specialized for speciﬁc classes of objects. In this work, we show the possibilities of learning to detect generic salient objects in dynamic scenes by training on videos and images via an entirely ofﬂine manner. We proposed a novel technique for synthesizing video data via leveraging large amounts of image training data. The CNNs model can be efﬁciently and entirely trained on rich video sequences and images, thus successfully learning both static and dynamic saliency features. Meanwhile, it directly learns inner relationship between frames, getting rid of time-consuming motion computation. Thus, our algorithm is signiﬁcantly faster than traditional video saliency methods and the deep learning architectures that demand optical ﬂow as input. In summary,",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. DEEP NETWORKS FOR VIDEO SALIENCY DETECTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Architecture Overview",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Deep Networks for Static Saliency",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Deep Networks for Dynamic Saliency",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SYNTHETIC VIDEO DATA GENERATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Performance Comparison",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C. Validation of the Proposed Method",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Runtime Analysis",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 23.009463399997912,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.52,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

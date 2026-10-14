@@ -1,0 +1,207 @@
+{
+ "doc": "1507.02346",
+ "system": "docling",
+ "metrics": {
+  "gt": 27,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Maturity Classification",
+   "Graders",
+   "6.1 Performance of Human Graders",
+   "Classification and Its Performance",
+   "Its Performance"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 22.69561330000215
+ },
+ "predictions": [
+  {
+   "text": "Neural Network Classifiers for Natural Food Products∗",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. REVIEWOF LITERATURE",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Current State-of-the-art in Tomato Maturity Classification",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Current State-of-the-art inEggGrading",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. SCIENTIFIC FRAMEWORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Artificial Neural Networks",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Artificial Chemistry Optimization",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. OBJECTIVES",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. METHODOLOGY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Materials",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Measuring the Performance of Human Graders",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Image Acquisition",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.4 Processing Images for Inputs to ANN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.5 ANNOptimization and Training",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. RESULTS ANDDISCUSSION 6.1 Performance of Human Graders",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.2 Optimized ANN for Tomato Maturity Classification and Its Performance",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.3 Optimized ANN for Egg Grading and Its Performance",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. CONCLUSIONANDEXTENSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.12423739999940153,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5357142857142857,
+  "unmatched_gt": [
+   "Maturity Classification",
+   "Graders",
+   "6.1 Performance of Human Graders",
+   "Classification and Its Performance",
+   "Its Performance"
+  ],
+  "unmatched_pred": [
+   "Neural Network Classifiers for Natural Food Products∗"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Maturity Classification",
+   "Graders",
+   "6.1 Performance of Human Graders",
+   "Classification and Its Performance",
+   "Its Performance"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

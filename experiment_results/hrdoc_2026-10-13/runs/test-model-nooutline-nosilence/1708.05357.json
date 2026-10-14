@@ -1,0 +1,276 @@
+{
+ "doc": "1708.05357",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 27,
+  "pred": 33,
+  "tp": 27,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2 DUHL",
+   "6: end for",
+   "Appendix",
+   "1 Pn",
+   "6: end for",
+   "c) L2-regularized SVM"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 874,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14529,
+   "completion_tokens": 1008,
+   "total_tokens": 15537
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Learning Problem",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Approximate Block Coordinate Descent",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Algorithm Description",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Algorithm 2 DUHL",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "6: end for",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Convergence Analysis",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Gap-Selection Scheme",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Heterogeneous Training",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 DUHL",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Experimental Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Algorithm Behavior",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2 Reference Schemes",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.3 Performance Analysis of DUHL",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B and C respectively",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proofs",
+   "page": 10,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "A.1 Key Lemma",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Pn",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 Proof Theorem 1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.3 Proof Theorem 2",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Coordinate Descent",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6: end for",
+   "page": 13,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "C Local Subproblem",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.1 Examples",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "c) L2-regularized SVM",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D Generalization of TPA-SCD",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D.1 Elastic Net",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D.2 L2-regularized SVM",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E Duality Gap",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 23.83609979999892,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 33,
+  "tp": 27,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2 DUHL",
+   "6: end for",
+   "Appendix",
+   "1 Pn",
+   "6: end for",
+   "c) L2-regularized SVM"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 29,
+  "tp": 24,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 18,
+  "teds": 0.6333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2 DUHL",
+   "6: end for",
+   "1 Pn",
+   "6: end for",
+   "c) L2-regularized SVM"
+  ],
+  "ignored_title_predictions": null
+ }
+}

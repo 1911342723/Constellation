@@ -1,0 +1,253 @@
+{
+ "doc": "1807.00790",
+ "system": "model",
+ "metrics": {
+  "gt": 29,
+  "pred": 31,
+  "tp": 29,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 29,
+  "parent_correct": 29,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1.1 Input",
+   "2.3.2 Form"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 306,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13944,
+   "completion_tokens": 1201,
+   "total_tokens": 15145
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Representations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.1.1 Input",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1.2 Pitch-Class Spectra",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Features",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 Spectral Distance",
+   "page": 1,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.2.2 Harmonicity",
+   "page": 1,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.2.3 Roughness",
+   "page": 2,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.2.4 Voice-Leading Distance",
+   "page": 2,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.2.5 Summary",
+   "page": 2,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.3 Statistical Model",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3.1 Overview",
+   "page": 2,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "2.3.2 Form",
+   "page": 2,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "2.3.3 Estimation",
+   "page": 3,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "2.3.4 Feature Importance",
+   "page": 3,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "2.3.5 Related Work",
+   "page": 3,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "2.4 Corpora",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5 Efﬁciency",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.6 Numeric Integration",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.7 Software",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Corpus level",
+   "page": 4,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "3.1.1 Importance by Feature",
+   "page": 4,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "3.1.2 Importance by Corpus",
+   "page": 4,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "3.1.3 Signs of Weights",
+   "page": 4,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "3.2 Composition Level",
+   "page": 4,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "4. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.46969579999859,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 31,
+  "tp": 29,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 29,
+  "parent_correct": 29,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1.1 Input",
+   "2.3.2 Form"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 28,
+  "tp": 26,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.9310344827586207,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1.1 Input",
+   "2.3.2 Form"
+  ],
+  "ignored_title_predictions": null
+ }
+}

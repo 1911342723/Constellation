@@ -1,0 +1,128 @@
+{
+ "doc": "1710.10663",
+ "system": "outline",
+ "metrics": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Abstract",
+   "8 Pro of of Theorem 3",
+   "References"
+  ],
+  "unmatched_pred": [
+   "7 Proof of Theorem ??"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Our results (binary alphabet)",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Overview of the proof of Theorem ??",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Mean radii",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Averaging",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Abundance of random-like L-tuples",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Proof of Theorem ??",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Proof of Theorem ??",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Proof of Theorem ??",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Spherical codes in the Hilbert space",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Remarks and open problems",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.026412700000946643,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Abstract",
+   "8 Pro of of Theorem 3",
+   "References"
+  ],
+  "unmatched_pred": [
+   "7 Proof of Theorem ??"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "8 Pro of of Theorem 3"
+  ],
+  "unmatched_pred": [
+   "7 Proof of Theorem ??"
+  ],
+  "ignored_title_predictions": null
+ }
+}

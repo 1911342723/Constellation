@@ -1,0 +1,228 @@
+{
+ "doc": "1803.04102",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 17,
+  "parent_correct": 16,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Trojan Detection by Signal Sensitivity Tracing"
+  ],
+  "unmatched_pred": [
+   "1) Potential Adversaries",
+   "P |= assert never ((N1 == N23)∨(¬N1 == N23))"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 239,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13921,
+   "completion_tokens": 856,
+   "total_tokens": 14777
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Hardware Trojan Detection through Information Flow",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Security Veriﬁcation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PRELIMINARIES AND DEFINITIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. SoC Design Flow",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Threat Model",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "1) Potential Adversaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PREVIOUS WORKS AND THEIR LIMITATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Formal Veriﬁcation",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "P |= assert never ((N1 == N23)∨(¬N1 == N23))",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. GLIFT-based Trojan Detection",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Jasper Security Path Veriﬁcation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TROJAN DETECTION THROUGH IFS VERIFICATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Conﬁdentiality Veriﬁcation",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Integrity Veriﬁcation",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "C. Trigger Condition Extraction",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "B. Conﬁdentiality Veriﬁcation",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "C. Integrity Veriﬁcation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Comparison",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. LIMITATIONS OF PROPOSED APPROACH",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. ACKNOWLEDGMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 23.860210700000607,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 25,
+  "tp": 21,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 17,
+  "parent_correct": 16,
+  "teds": 0.5769230769230769,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Trojan Detection by Signal Sensitivity Tracing"
+  ],
+  "unmatched_pred": [
+   "Hardware Trojan Detection through Information Flow",
+   "Security Veriﬁcation",
+   "1) Potential Adversaries",
+   "P |= assert never ((N1 == N23)∨(¬N1 == N23))"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "D. Trojan Detection by Signal Sensitivity Tracing",
+   "V III . AC K NO W L EDG MEN T"
+  ],
+  "unmatched_pred": [
+   "1) Potential Adversaries",
+   "P |= assert never ((N1 == N23)∨(¬N1 == N23))"
+  ],
+  "ignored_title_predictions": null
+ }
+}

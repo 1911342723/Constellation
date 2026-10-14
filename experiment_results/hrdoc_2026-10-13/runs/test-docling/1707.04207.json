@@ -1,0 +1,141 @@
+{
+ "doc": "1707.04207",
+ "system": "docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 52.25720060000094
+ },
+ "predictions": [
+  {
+   "text": "Incidental or influential? - Challenges in automatically detecting citation importance using publication full texts.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Classification features used by prior studies",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Classification",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dataset",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Analysis and comparison of selected features.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results for Individual Features",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 The value of complex features.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Acknowledgements",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.011462599999504164,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Incidental or influential? - Challenges in automatically detecting citation impo"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

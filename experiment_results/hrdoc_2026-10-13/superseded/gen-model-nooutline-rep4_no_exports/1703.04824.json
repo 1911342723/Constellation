@@ -1,0 +1,299 @@
+{
+ "doc": "1703.04824",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 28,
+  "pred": 35,
+  "tp": 23,
+  "fp": 12,
+  "fn": 5,
+  "level_correct": 19,
+  "parent_correct": 16,
+  "teds": 0.2777777777777778,
+  "unmatched_gt": [
+   "B. So – what should the ground truth be?",
+   "C. Notation reconstruction and final representation",
+   "1) Computing agreement:",
+   "2) Agreement results:",
+   "A. What can we do with MUSCIMA++?"
+  ],
+  "unmatched_pred": [
+   "(b) Replayable output: pitches, durations, onsets. Time is the",
+   "horizontal axis, pitch is the vertical axis. This visualization is called",
+   "(d) Reprintable output: same music expressed differently",
+   "Score image",
+   "“Cleaned” image",
+   "Binary image",
+   "(Staff-less) image",
+   "Symbol regions",
+   "Symbol regs. & labels",
+   "Notation graph",
+   "(b) Writer 49: Disjoint notation primitives",
+   "(c) Writer 22: Disjoint primitives and deformed noteheads. Some"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 33,
+  "tp": 21,
+  "fp": 12,
+  "fn": 5,
+  "level_correct": 17,
+  "parent_correct": 14,
+  "teds": 0.23529411764705888,
+  "unmatched_gt": [
+   "B. So – what should the ground truth be?",
+   "C. Notation reconstruction and final representation",
+   "1) Computing agreement:",
+   "2) Agreement results:",
+   "A. What can we do with MUSCIMA++?"
+  ],
+  "unmatched_pred": [
+   "(b) Replayable output: pitches, durations, onsets. Time is the",
+   "horizontal axis, pitch is the vertical axis. This visualization is called",
+   "(d) Reprintable output: same music expressed differently",
+   "Score image",
+   "“Cleaned” image",
+   "Binary image",
+   "(Staff-less) image",
+   "Symbol regions",
+   "Symbol regs. & labels",
+   "Notation graph",
+   "(b) Writer 49: Disjoint notation primitives",
+   "(c) Writer 22: Disjoint primitives and deformed noteheads. Some"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 408,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13630,
+   "completion_tokens": 853,
+   "total_tokens": 14483
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9888749826171603,
+   "in_order": 0.9587679043248505,
+   "inserted": 0.005524089224529738
+  }
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION: WHAT DATASET?",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Replayable output: pitches, durations, onsets. Time is the",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "horizontal axis, pitch is the vertical axis. This visualization is called",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(d) Reprintable output: same music expressed differently",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Contributions and outline",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "II. GROUND TRUTH OF MUSICAL SYMBOLS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Interfaces in the OMR pipeline",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Score image",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "“Cleaned” image",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Binary image",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(Staff-less) image",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Symbol regions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Symbol regs. & labels",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Notation graph",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. CHOICE OF DATA",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Notation complexity",
+   "page": 5,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "B. Image quality",
+   "page": 6,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "C. Topological consistency",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXISTING DATASETS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Staff removal",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "B. Symbol classiﬁcation and localization",
+   "page": 7,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "(b) Writer 49: Disjoint notation primitives",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(c) Writer 22: Disjoint primitives and deformed noteheads. Some",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. THE MUSCIMA++ DATASET",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Designated test sets",
+   "page": 9,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "B. MUSCIMA++ ground truth",
+   "page": 9,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "C. Available tools",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Annotation process",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Inter-annotator agreement",
+   "page": 11,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "F. Known limitations",
+   "page": 12,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Future work",
+   "page": 13,
+   "level": 2,
+   "parent": 30
+  },
+  {
+   "text": "C. Final remarks",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.918762699999206
+}

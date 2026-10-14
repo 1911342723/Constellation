@@ -1,0 +1,172 @@
+{
+ "doc": "1606.03052",
+ "system": "model",
+ "metrics": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.42105263157894735,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Fit parameters are: I0 = 87.2 ± 0.2, A = −20.1 ± 0.3, x0 ="
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 375,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10042,
+   "completion_tokens": 633,
+   "total_tokens": 10675
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Teaching Venues",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Undergraduate Optics Course",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Undergraduate Advanced Laboratory Course for Physics",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Graduate Laboratory Modules",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Scope of the Project",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "EXPERIMENTAL EQUIPMENT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Components",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Condenser",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Imaging Path",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "EXPERIMENTAL RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Measuring Magniﬁcation",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Measuring Resolution",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "ADVANCED TOPICS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Epi-Fluorescence Path",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "Super-Resolution",
+   "page": 8,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "SUMMARY",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fit parameters are: I0 = 87.2 ± 0.2, A = −20.1 ± 0.3, x0 =",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.9396319999978,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.42105263157894735,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Fit parameters are: I0 = 87.2 ± 0.2, A = −20.1 ± 0.3, x0 ="
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.42105263157894735,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Fit parameters are: I0 = 87.2 ± 0.2, A = −20.1 ± 0.3, x0 ="
+  ],
+  "ignored_title_predictions": null
+ }
+}

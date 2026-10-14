@@ -1,0 +1,205 @@
+{
+ "doc": "1706.05077",
+ "system": "model",
+ "metrics": {
+  "gt": 18,
+  "pred": 22,
+  "tp": 18,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8260869565217391,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Short duration enrollment and test utterances: This hap-",
+   "Imbalanced multi-session training: There are two enroll-",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 211,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10131,
+   "completion_tokens": 808,
+   "total_tokens": 10939
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Short duration enrollment and test utterances: This hap-",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Imbalanced multi-session training: There are two enroll-",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2. SYSTEM DESCRIPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Dataset",
+   "page": 0,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2. VAD",
+   "page": 0,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3. Features",
+   "page": 0,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4. UBM training",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.5. i-vector extractor training",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.6. Preconditioning i-vectors",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.6.1. NAP trained on languages",
+   "page": 1,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "2.6.2. Regularized LDA",
+   "page": 1,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "2.7. Model enrollment",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.8. PLDA",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.9. Score normalization",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.10. Systems",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.11. Final fusion",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.12. Execution time and memory consumption",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3. SYSTEM PERFORMANCE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CONCLUSIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.1618407999994815,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 22,
+  "tp": 18,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8260869565217391,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Short duration enrollment and test utterances: This hap-",
+   "Imbalanced multi-session training: There are two enroll-",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 20,
+  "tp": 16,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Short duration enrollment and test utterances: This hap-",
+   "Imbalanced multi-session training: There are two enroll-",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": null
+ }
+}

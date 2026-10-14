@@ -1,0 +1,134 @@
+{
+ "doc": "1803.10136",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 199,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9969293756397134,
+   "in_order": 0.9379051518253156,
+   "inserted": 0.0030706243602866
+  },
+  "export_markdown": "Comprehending Real Numbers: Development of Bengali\n\nReal Number Speech Corpus\n\nMd Mahadi Hasan Nahid*,1, Md. Ashraful Islam *,2, Bishwajit Purkaystha*,2,\n\nand Md Saiful Islam*,1\n\n*Department of Computer Science and Engineering\n\nShahjalal University of Science and Technology, Sylhet-3114.\n\n*,1{nahid-cse,saiful-cse}@sust.edu\n\narXiv:1803.10136v1 [eess.AS] 27 Mar 2018\n\n*,2{ashrafulcse.sust, bishwa420}@gmail.com\n\n# Abstract\n\nSpeech recognition has received a less attention in Bengali literature due to the lack\n\nof a comprehensive dataset. In this paper, we describe the development process of the\n\nﬁrst comprehensive Bengali speech dataset on real numbers. It comprehends all the\n\npossible words that may arise in uttering any Bengali real number. The corpus has ten\n\nspeakers from the diﬀerent regions of Bengali native people. It comprises of more than\n\ntwo thousands of speech samples in a total duration of closed to four hours. We also\n\nprovide a deep analysis of our corpus, highlight some of the notable features of it, and\n\nﬁnally evaluate the performances of two of the notable Bengali speech recognizers on it.\n\n# 1 Introductions\n\nAutomatic Speech Recognition (ASR) capability of machines is very important as it reduces the cost of communication between humans and machines. The recent resurgence in ASR [1, 2] is signiﬁcant and due to the large recurrent neural networks [3]. The neural networks are most useful when they have large datasets. The improvement in automatic speech recognition is not reﬂected in Bengali literature. This is due to a lack of comprehensive corpus in the literature. There are few corpora in the literature [4], but they are not comprehensive, meaning that they do not encompass all the possible words in a speciﬁc portion of the literature. In this paper, we address this issue by describing the development of a Bengali speech corpus which encompasses all possible words that may appear in a Bengali real number. We call our corpus “Bengali real number speech corpus”.\n\nThis corpus was developed to cover all the words that could possibly involve in any Bengali real number. The corpus comprises the speeches of several Bengali native speakers from diﬀerent regions. The summary of our corpus is given in Table 1. One of the limitations of our corpus is that its speakers are all male speakers and the standard deviation in the ages of the speakers is relatively small. The vocabulary of the corpus, mentioned in Table 1, contains all the Bengali numbers from zero to hundred. Each number from zero to hundred in Bengali is uttered in a singular way, except for the number ‘45’. It is uttered as both ‘/p/o/y/t/a/l/l/i/sh’ and ‘/p/o/y/ch/o/l/l/i/sh’. Therefore, 102 words in our vocabulary stand for number 0 to number\n\nTable 1: Bengali real number audio corpus summary\n\n| Number of speakers<br>Age range<br>Number of speech samples<br>Duration<br>Vocabulary size<br>Number of distinct phonemes<br>Average number of words per sample | 10<br>20-23 years<br>2302 samples<br>3.79 hours<br>115 words<br>30<br>8 words<br>≈ |\n| --- | --- |\n\nAverage number of words per sample ≈ 8 words\n\nTable 2: Special twelve words\n\n| # | Bengali word | English correspondence | Bengali utterance |\n| --- | --- | --- | --- |\n| 1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13 |  | One hundred<br>Two hundred<br>Three hundred<br>Four hundred<br>Five hundred<br>Six hundred<br>Seven hundred<br>Eight hundred<br>Nine hundred<br>Thousand<br>Lakh<br>Crore<br>Decimal | ekSho<br>duiSho<br>tinSho<br>charSho<br>pachSho<br>choySho<br>satSho<br>aTSho<br>noySho<br>hajar<br>lokSho<br>koTi<br>doShomik |\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n100. The details about the rest of twelve words are given in Table 2. All the words involved in uttering any Bengali real number fall to either the category of ﬁrst 102 words or to the category of the words mentioned in Table 2.\n\nThe main motivation behind this work was to develop a balanced corpus, meaning that all unique words would occur with more or less an equal probability. This will be useful for any learning method modeling the speech samples, but this may be a shortcoming in terms of representing the actual prior probabilities of occurring the individual words. The prior probabilities were not considered because we did not have any authentic information about them.\n\nThe rest of the paper is organized as follows. In Section 2, we describe how we have developed the corpus. In the same section we also describe some key features of our corpus. In the next section, Section 3, we evaluate two methods of automatic speech recognition on our corpus. And ﬁnally, in Section 4, we draw the conclusion to our paper.\n\n# 2 Development of Bengali Real Number Speech Dataset\n\nIn this section, we give a detailed description of our development process and some key features of it.\n\n## 2.1 Data Preparation\n\nWe developed the corpus in two steps. At ﬁrst, we had to decide what real numbers should be present in the dataset. Therefore, we generated individual random strings containing the Bengali real numbers. We had also generated some strings that did not contain the real numbers, rather, they only contained sequences of numbers (like, “One Two Three ... Ten”). The algorithm of generating the strings is given in Algorithm 1.\n\nAlgorithm 1 String generation algorithm\n\n1: procedure StringGeneration\n\nw1 ← list of each word for numbers from 0 to 99\n\n▷ size = 101\n\n2:\n\nw2 ← list of each word for numbers {100,200,300, ..., 900}\n\n▷ size = 9\n\n3:\n\nw3 ←{\n\n}\n\n▷ {hundred, thousand, lakh, crore}\n\n,\n\n,\n\n,\n\n![image]()\n\n![image]()\n\n![image]()\n\n![image]()\n\n4:\n\nw4 ←{\n\n}\n\n▷ {decimal}\n\n![image]()\n\n5:\n\nN ← total number of strings to generate\n\n6:\n\ncounter ← 0\n\n7:\n\nS ←{}\n\n▷ ﬁnal set of generated strings to return\n\n8:\n\nloop outer:\n\n9:\n\nL ← rand(2, 4)\n\n▷ a random integer in range [2,4]\n\n10:\n\nL ← L × 2\n\n▷ the string will have 4 to 8 words\n\n11:\n\ni ← 0\n\n12:\n\ns ← “”\n\n▷ generated string in this iteration\n\n13:\n\nloop inner:\n\n14:\n\ni ← i + 2\n\n15:\n\nr1 ← rand(1, 14)\n\n16:\n\nif r1 > 1 then\n\n17:\n\ns ← s + w1[rand(1, len(w1))]\n\n18:\n\nelse\n\n19:\n\ns ← s + w2[rand(1, len(w2))]\n\n20:\n\nend if\n\n21:\n\nr2 ← rand(1, 7)\n\n22:\n\nif r2 ≤ 6 or i = L then\n\n▷ the utterance should not end in ‘decimal’\n\n23:\n\ns ← s + w3[rand(1, len(w3))]\n\n24:\n\nelse\n\n25:\n\ns ← s + w4[rand(1, len(w4))]\n\n26:\n\nend if\n\n27:\n\nif i < L then\n\n28:\n\ngoto loop inner\n\n29:\n\nadd s to S\n\n30:\n\ncounter ← counter + 1\n\n31:\n\nif counter < N then\n\n32:\n\ngoto loop outer\n\n33:\n\nend if\n\n34:\n\nreturn S\n\n35:\n\nIn the algorithm, we made two clusters (i.e., {w1, w2} and {w3, w4}) to comprehend all the\n\nwords in the vocabulary. We constricted the length of the strings to be either four, or six, or eight. A string can be logically split into a number of groups (depending on the length of the string) where each group has exactly two words. The ﬁrst word comes from either w1 or w2 and the last word comes from either w3 or w4. This reﬂects the real world scenario. The\n\nword ‘decimal’ does not appear as the ﬁnal word in the sentence, so we have restricted it from appearing as the ﬁnal word in line number 23 in the algorithm. Thus, we have generated the strings for our corpus. All the generated strings are grammatically valid, but still, there can be a very few strings which are semantically invalid. For example, a semantically invalid string\n\n![image]()\n\nmay be like: ‘\n\n’. For such strings, we have also incorporated them in our corpus\n\n![image]()\n\n![image]()\n\nas these strings should not impede the learning process of a recognizer.\n\nAfter generating the strings, a set of diﬀerent recording environments was set. This included lab rooms, class rooms, closed rooms, and etc. The noise in the environment was kept to a minimum level. The volunteers were given the scripts (which contained the randomly generated strings) and were asked to read out in front of a microphone. Their speeches were recorded and ﬁltered using a band-pass ﬁlter with the cutoﬀfrequencies 300 Hz and 3 KHz. Finally, we stored the ﬁltered speech samples in “.wav” ﬁle format with the original bit rate of 256 kbps. A sample speech, in its ﬁnal representation, is shown in Figure 1.\n\n![image]()\n\nFigure 1: Contents of ﬁle speaker 1 1.wav\n\n## 2.2 Data Organization\n\n### 2.2.1 Transcripts of the Speech Samples\n\nAlthough we have mentioned before that we had not taken actual prior probabilities into account, but still we made sure that any impossible combination of the words does not occur.\n\nFor example, the word\n\nnever occurs at the beginning of any speech sample throughout the\n\n![image]()\n\ncorpus. Figure 2 shows a snapshot of the contents of text-data.txt ﬁle of the corpus. This ﬁle\n\n![image]()\n\nFigure 2: Transcript ﬁle: text-data.txt\n\ncontains transcripts of all the speech samples. Each line contains the transcript of one speech sample. Each line has mainly two important parts. The actual content contained in the audio ﬁle is transcribed within the <s></s> tag as shown in the ﬁgure. The second part contains a unique identiﬁer in the format: speaker {1-10} {1-}. The ﬁrst two parts of the identiﬁer in\n\nthis format describe whose voice it is (i.e., there are ten speakers in the corpus) whereas the remaining part denotes the recorded ﬁle number of that speaker. For example, the second line\n\nTable 3: Mapping of the words to the phonemes\n\n| Bengali word | Corresponding phonemes | English correspondence |\n| --- | --- | --- |\n| COUShoTTi<br>Ek<br>Ekotrish<br>UnoShaT<br>choy<br>hajar<br>poyCollish<br>poytallish<br>teish<br>teppanno | C OU SH O T T I<br>E K<br>E K O T R I SH<br>U N O SH A T<br>CH O Y<br>H A J A R<br>P OY C O L L I SH<br>P OY T A L L I SH<br>T E I SH<br>T E P P A N N O | 64<br>1<br>31<br>59<br>6<br>Thousand<br>45<br>45<br>23<br>53 |\n\nof Figure 2 transcribes the speech (of the ﬁrst speaker) contained in the seventeenth ﬁle. This text ﬁle may be used as the labels for the speech samples.\n\n### 2.2.2 Dictionary of Words to Phonemes\n\nIndividual words (i.e., 115 unique words) were mapped to a set of phonemes according to the rules prescribed in a ﬁle “asr avro.dic”. These rules follow the popular avro phonetic method. We recognized thirty individual Bengali phonemes which were necessary for constructing individual words in the speech samples. A few examples from the dictionary of matches of the individual words to their corresponding phonemes are given in Table 3.\n\nThis phoneme list is only a supplementary to our data corpus; one can have their own list of phonemes to interpret the sentences corresponding to the speech samples. In our interpretation of the phonemes, the data corpus contains a total of 126,776 phonemes. The frequency of each of the phonemes is given in Table 4.\n\n### 2.2.3 Organization of the Audio Samples\n\nThe speech samples are organized into an appropriate structure. Each speech sample is under a directory whose name is the unique identiﬁer for that speaker. In other words, each speaker has a dedicated directory for all the speech samples attributed to him. The audio ﬁles have an “.wav” extension. For example, the twenty ﬁrst speech sample of the ﬁfth speaker has the name “speaker 5 21.wav”. The information about the speech contained in the sample is in “text-data.txt” ﬁle as described in Section 2.2.1.\n\n## 2.3 Characteristics of the Data Corpus\n\nIn this section, we discuss some of the important characteristics of the corpus which provide a more important insight to the dataset. The dataset has 2302 examples, and 17,582 words in total. The transcripts to all the speech samples span 155,908 characters (without the spaces). Our data corpus has more longer words (i.e., the words that have seven or more characters comprise 36% of the whole dataset) as compared to the shorter words (i.e., the words that have three or less characters comprise 24% of the whole dataset).\n\nInterestingly, no real number in Bengali language utters phonemes ‘M’, ‘BH’, ‘GH’, ‘PH’ (or ‘F’). This is the reason why these phonemes have not appeared in Table 4. Another observation is that there is a signiﬁcant amount of disproportions in the frequencies of phonemes (e.g., the\n\nTable 4: The phoneme list and their frequency in the corpus\n\n| Phonemes | Occurrences | Normalized frequency (%) |\n| --- | --- | --- |\n| A<br>AI<br>B<br>C<br>CH<br>D<br>E<br>G<br>H<br>I<br>J<br>K<br>KH<br>L<br>N<br>NG<br>O<br>OI<br>OU<br>OY<br>P<br>R<br>S<br>SH<br>T<br>TH<br>U<br>Y<br>YA | 13,943<br>193<br>4,452<br>3,228<br>950<br>491<br>7,238<br>419<br>12,212<br>8,603<br>1,716<br>4,931<br>1,644<br>3,715<br>4,477<br>307<br>11,546<br>1,357<br>344<br>623<br>4,078<br>7,740<br>8,235<br>9,152<br>11,646<br>205<br>2,031<br>623<br>870 | 10.80<br>0.15<br>3.51<br>2.55<br>0.75<br>0.39<br>5.71<br>0.33<br>9.62<br>6.76<br>1.35<br>3.89<br>1.30<br>2.93<br>3.53<br>0.24<br>9.11<br>1.07<br>0.27<br>0.49<br>3.22<br>6.11<br>6.50<br>7.22<br>9.19<br>0.16<br>1.60<br>0.49<br>0.69 |\n\nphoneme ‘A’ has a normalized frequency 10.8% while the phoneme ‘AI’ has 0.15%). This is a limitation of our data corpus, and therefore, any method that would train on this dataset has to pay a signiﬁcant attention to this discrepancy. As we were not biased to any phoneme while building the dataset, yet such disproportions arose, it can be inferred that the disproportions of the phonemes exist in the language itself.\n\n# 3 Two Speech Recognizers\n\n![image]()\n\nFigure 3: Error rates incurred by CMU-Sphinx4 model with the respect to diﬀerent durations of the corpus. The word error rates are smaller as compared to the sentence error rate because of shorter length dependency modeling.\n\nIn this section, we describe the ﬁndings of the experiments undergone with two Bengali speech recognizers [5, 6]. These two recognizers had been developed for recognizing Bengali real numbers. The ideas and methods of these two recognizers are very diﬀerent.\n\nTo analyze and evaluate these two recognizers we need two types of error metrics; the ﬁrst one is the word detection error rate (Ew) and the second one is the phoneme detection error rate (Ep). In our experiment we deﬁne them as follows:\n\nEp = #mismatches in phonemes\n\n(1)\n\n#total phonemes\n\nEw = #mismatches in words\n\n(2)\n\n#total words\n\nThe ﬁrst recognizer uses a popular recognizer CMU Sphinx 4 [7] which employs a hidden markov model (HMM). This model has been trained on our corpus with diﬀerent durations of the dataset and the error rates are shown in Figure 3. These error rates are incurred when the\n\ntraining and the test data are the same. Finally, with diﬀerent training and test data (with a 80:20 ratio for training and test purposes respectively) this model incurs a 15% word error rate.\n\n![image]()\n\nFigure 4: The LSTM model’s learning process with respect to the length of training period.\n\nThe second recognizer tries to recognize the speech samples by dividing them into a number of frames. It is actually a bidirectional long short term memory (LSTM) (a recurrent neural network) that does sequence learning, and has a post-processing algorithm to produce a ﬁnal output. However, it can only recognize the individual words, not the entire sentence. The hourly training progression is given in Figure 4. In this ﬁgure, the error rates in individual phonemes are also given. The word detection error rate improves after the initial couple of hours because of the post-processing algorithm. Finally, the recognizer incurred a 13.2% word detection error rate and a 29% phoneme detection error rate.\n\n# 4 Conclusion\n\nIn this paper, we described the development of Bengali real number audio corpus that comprises of all possible words involving any Bengali real number. The major contribution of our corpus is that it comprehends a great combination of Bengali real numbers. We also provided a brief analysis of our corpus and highlighted some of the key features of it. We have also performed experiments with two methods on our corpus and evaluated their performances. On a future note, we would like to extend our corpus with more combinations of words, and with an increased and balanced number of male and female speakers.\n\n# References\n\n[1] Chan, W., Jaitly, N., Le, Q., & Vinyals, O. (2016, March). Listen, attend and spell: A neural network for large vocabulary conversational speech recognition. In Acoustics, Speech\n\nand Signal Processing (ICASSP), 2016 IEEE International Conference on (pp. 4960-4964). IEEE.\n\n[2] Graves, A., & Jaitly, N. (2014, January). Towards end-to-end speech recognition with recurrent neural networks. In International Conference on Machine Learning (pp. 1764-1772).\n\n[3] Zaremba, W., Sutskever, I., & Vinyals, O. (2014). Recurrent neural network regularization. arXiv preprint arXiv:1409.2329.\n\n[4] Alam, F., Habib, S. M., Sultana, D. A., & Khan, M. (2010). Development of annotated Bangla speech corpora. In Spoken Languages Technologies for Under-Resourced Languages.\n\n[5] Nahid, M. M. H., Islam, M. A., & Islam, M. S. (2016, May). A noble approach for recognizing Bangla real number automatically using CMU Sphinx4. In Informatics, Electronics and Vision (ICIEV), 2016 5th International Conference on (pp. 844-849). IEEE.\n\n[6] Nahid, M. M. H., Purkaystha, B., & Islam, M. S. (2017, December). Bengali speech recognition: A double layered LSTM-RNN approach. In Computer and Information Technology (ICCIT), 2017 20th International Conference of (pp. 1-6). IEEE.\n\n[7] Walker, W., Lamere, P., Kwok, P., Raj, B., Singh, R., Gouvea, E., ... & Woelfel, J. (2004). Sphinx-4: A ﬂexible open source framework for speech recognition.\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introductions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Development of Bengali Real Number Speech Dataset",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Data Preparation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Data Organization",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 Transcripts of the Speech Samples",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.2 Dictionary of Words to Phonemes",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.3 Organization of the Audio Samples",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Characteristics of the Data Corpus",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Two Speech Recognizers",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.8590086000040174,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

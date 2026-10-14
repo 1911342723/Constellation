@@ -1,0 +1,187 @@
+{
+ "doc": "1607.06402",
+ "system": "det",
+ "metrics": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [
+   "Battery Voltage"
+  ],
+  "unmatched_pred": [
+   "Author Keywords",
+   "ACM Classiﬁcation Keywords",
+   "ID. We next sort the samples of a user according to times-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 369,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Author Keywords",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACM Classiﬁcation Keywords",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Smartphone Power Management & Dataset",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Dataset and Pre-processing",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Charging Events",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "ID. We next sort the samples of a user according to times-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Charging Techniques",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Charging Rate",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Summary",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "SOC Estimation Techniques",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Battery Properties",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Battery Capacity Loss",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Battery Temperature",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Battery Health",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "User Behavior in Charging",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusions and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.525532399999065,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [
+   "Battery Voltage"
+  ],
+  "unmatched_pred": [
+   "Author Keywords",
+   "ACM Classiﬁcation Keywords",
+   "ID. We next sort the samples of a user according to times-"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "Battery Voltage"
+  ],
+  "unmatched_pred": [
+   "Author Keywords",
+   "ACM Classiﬁcation Keywords",
+   "ID. We next sort the samples of a user according to times-"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,266 @@
+{
+ "doc": "1602.05603",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 25,
+  "pred": 28,
+  "tp": 22,
+  "fp": 6,
+  "fn": 3,
+  "level_correct": 22,
+  "parent_correct": 15,
+  "teds": 0.5862068965517242,
+  "unmatched_gt": [
+   "a. Retarded perturbation",
+   "b. AC-driving",
+   "c. The relation"
+  ],
+  "unmatched_pred": [
+   "1 \u0010rωe−iω(t−x/v)",
+   "dynamics",
+   "m) [38] . In the",
+   "2 log(λm",
+   "m) as a function of m",
+   "and Linear Response Theory"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 852,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13642,
+   "completion_tokens": 868,
+   "total_tokens": 14510
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Full two-photon downconversion of just a single photon",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. A POSSIBLE IMPLEMENTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 \u0010rωe−iω(t−x/v)",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NUMERICAL SOLUTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Two photon generation: scattering and",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "dynamics",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Characterization for the two-photon output",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "m) [38] . In the",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 log(λm",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "m) as a function of m",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ANALYTICAL THEORY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EFFICIENCY",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "and Linear Response Theory",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Input-output ﬁelds calculations",
+   "page": 6,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "2. Linear Response theory (LRT)",
+   "page": 7,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "3. Practical calculation",
+   "page": 7,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "4. Final formula",
+   "page": 8,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5. Transmission calculation",
+   "page": 8,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "6. Leakage",
+   "page": 8,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "Appendix B: Eﬃciency calculations",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C: Numerical simulations",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Matrix Product States",
+   "page": 9,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "2. Simulated model, input state and parameters",
+   "page": 10,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "used",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 25.28579489999902,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 29,
+  "tp": 22,
+  "fp": 7,
+  "fn": 3,
+  "level_correct": 22,
+  "parent_correct": 15,
+  "teds": 0.5666666666666667,
+  "unmatched_gt": [
+   "a. Retarded perturbation",
+   "b. AC-driving",
+   "c. The relation"
+  ],
+  "unmatched_pred": [
+   "Full two-photon downconversion of just a single photon",
+   "1 \u0010rωe−iω(t−x/v)",
+   "dynamics",
+   "m) [38] . In the",
+   "2 log(λm",
+   "m) as a function of m",
+   "and Linear Response Theory"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 24,
+  "tp": 18,
+  "fp": 6,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 11,
+  "teds": 0.56,
+  "unmatched_gt": [
+   "a. Retarded perturbation",
+   "b. AC-driving",
+   "c. The relation"
+  ],
+  "unmatched_pred": [
+   "1 \u0010rωe−iω(t−x/v)",
+   "dynamics",
+   "m) [38] . In the",
+   "2 log(λm",
+   "m) as a function of m",
+   "and Linear Response Theory"
+  ],
+  "ignored_title_predictions": null
+ }
+}

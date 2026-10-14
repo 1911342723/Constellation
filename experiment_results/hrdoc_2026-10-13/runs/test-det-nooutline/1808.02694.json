@@ -1,0 +1,220 @@
+{
+ "doc": "1808.02694",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 21,
+  "tp": 12,
+  "fp": 9,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.40909090909090906,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [
+   "R. Mahillo-Isla",
+   "M. J. Gonz´alez-Morales",
+   "2 \u0010∂µ ˜ψ e−iωt + ∂µ ˜ψ∗eiωt\u0011, µ = x, y, z.",
+   "2 hℑn ˜ψ∗ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011o −ℑn ˜ψ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011e−i2ωtoi",
+   "2 ℑn ˜ψ∗ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011o.",
+   "3 ZZ",
+   "Appendix A",
+   "2 \u0010ℑn ˜ψ∗∇ ˜ψo −ℑn ˜ψ∇ ˜ψ e−i2ωto\u0011.",
+   "2 \u0010ℑn ˜ψ∇ ˜ψ∗o + ℑn ˜ψ∇ψ e−i2ωto\u0011."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 770,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Energy ﬂow and momentum under paraxial regime",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "R. Mahillo-Isla",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "M. J. Gonz´alez-Morales",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PARAXIAL PROPAGATION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. ANALYSIS OF THE LAGRANGIAN DENSITY OF THE PARAXIAL",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TIME HARMONIC SOLUTIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 \u0010∂µ ˜ψ e−iωt + ∂µ ˜ψ∗eiωt\u0011, µ = x, y, z.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 hℑn ˜ψ∗ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011o −ℑn ˜ψ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011e−i2ωtoi",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 ℑn ˜ψ∗ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011o.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXAMPLES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Generic traveling wave towards +z",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Paraxial plane waves",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C. Green’s function of the time harmonic paraxial wave equation",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 ZZ",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Fundamental Gaussian beam",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 \u0010ℑn ˜ψ∗∇ ˜ψo −ℑn ˜ψ∇ ˜ψ e−i2ωto\u0011.",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 \u0010ℑn ˜ψ∇ ˜ψ∗o + ℑn ˜ψ∇ψ e−i2ωto\u0011.",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. The connection of energy density ﬂow and momentum with raytracing",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 25.322091099998943,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 22,
+  "tp": 12,
+  "fp": 10,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.3913043478260869,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [
+   "Energy ﬂow and momentum under paraxial regime",
+   "R. Mahillo-Isla",
+   "M. J. Gonz´alez-Morales",
+   "2 \u0010∂µ ˜ψ e−iωt + ∂µ ˜ψ∗eiωt\u0011, µ = x, y, z.",
+   "2 hℑn ˜ψ∗ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011o −ℑn ˜ψ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011e−i2ωtoi",
+   "2 ℑn ˜ψ∗ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011o.",
+   "3 ZZ",
+   "Appendix A",
+   "2 \u0010ℑn ˜ψ∗∇ ˜ψo −ℑn ˜ψ∇ ˜ψ e−i2ωto\u0011.",
+   "2 \u0010ℑn ˜ψ∇ ˜ψ∗o + ℑn ˜ψ∇ψ e−i2ωto\u0011."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 19,
+  "tp": 11,
+  "fp": 8,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [
+   "R. Mahillo-Isla",
+   "M. J. Gonz´alez-Morales",
+   "2 \u0010∂µ ˜ψ e−iωt + ∂µ ˜ψ∗eiωt\u0011, µ = x, y, z.",
+   "2 hℑn ˜ψ∗ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011o −ℑn ˜ψ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011e−i2ωtoi",
+   "2 ℑn ˜ψ∗ \u0010∇⊥ ˜ψ + ik ˜ψez\u0011o.",
+   "3 ZZ",
+   "2 \u0010ℑn ˜ψ∗∇ ˜ψo −ℑn ˜ψ∇ ˜ψ e−i2ωto\u0011.",
+   "2 \u0010ℑn ˜ψ∇ ˜ψ∗o + ℑn ˜ψ∇ψ e−i2ωto\u0011."
+  ],
+  "ignored_title_predictions": null
+ }
+}

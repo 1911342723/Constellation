@@ -1,0 +1,82 @@
+{
+ "doc": "1808.04440",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09999999999999998,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Methods and Data",
+   "2.1 Faster R-CNN",
+   "2.2 Sliding Kernel Smoother",
+   "3 Experiments and Results",
+   "Calculating activations :",
+   "4 Discussion and Conclusion",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "FaceOff: Anonymizing Videos in the Operating Rooms",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01878009999927599,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09999999999999998,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Methods and Data",
+   "2.1 Faster R-CNN",
+   "2.2 Sliding Kernel Smoother",
+   "3 Experiments and Results",
+   "Calculating activations :",
+   "4 Discussion and Conclusion",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "FaceOff: Anonymizing Videos in the Operating Rooms"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.125,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Methods and Data",
+   "2.1 Faster R-CNN",
+   "2.2 Sliding Kernel Smoother",
+   "3 Experiments and Results",
+   "Calculating activations :",
+   "4 Discussion and Conclusion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

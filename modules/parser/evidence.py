@@ -46,6 +46,10 @@ _POSITIVE_LR: dict[str, float] = {
     "semantic_title": 30.0,
     "toc_destination": 150.0,
     "run_in_pattern": 10.0,
+    # Heading region reported by an external layout detector (e.g. Docling);
+    # as strong as visible numbering, but not structural: the reader's
+    # silence can still overrule it.
+    "layout_detector": 30.0,
 }
 _NEGATIVE_LR: dict[str, float] = {
     "document_metadata_negative": 0.0001,
@@ -65,6 +69,10 @@ _NEGATIVE_LR: dict[str, float] = {
     # to a style that is *corroborated* -- numbering or a font step alongside
     # the style still clears the bar -- and win against a style standing alone.
     "body_signature_negative": 0.05,
+    # The layout detector read the page and did not report this block as a
+    # heading: its silence, (1 - recall) / (1 - false-detection rate) with
+    # recall ~0.93 on the development split, rounded up to 0.1.
+    "layout_detector_negative": 0.10,
 }
 _DEFAULT_LEVEL_PRIOR: dict[HeadingLabel, float] = {
     "L1": 0.42,

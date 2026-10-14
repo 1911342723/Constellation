@@ -1,0 +1,159 @@
+{
+ "doc": "1808.05164",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "Problem 1. Localization of a drifter using ocean dynamics and proprioceptive sen",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Problem 1. Localization of a drifter using ocean dynamics and proprioceptive sen"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 24.051240900000266
+ },
+ "predictions": [
+  {
+   "text": "An Underactuated Vehicle Localization Method in Marine Environments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. MODEL AND PROBLEM DEFINITION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Model Definition",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Problem Formulation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Problem 1. Localization of a drifter using ocean dynamics and proprioceptive sensing:",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Acquisition",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Create the Water Flow Pattern",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Long-Term Water Flow Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Generate the Most Likely Localized Trajectory for a Drifter",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V. SIMULATION RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.016293900000164285,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "Problem 1. Localization of a drifter using ocean dynamics and proprioceptive sen",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

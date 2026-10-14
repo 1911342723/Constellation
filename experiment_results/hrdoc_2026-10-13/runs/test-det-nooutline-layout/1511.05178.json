@@ -1,0 +1,119 @@
+{
+ "doc": "1511.05178",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 239,
+  "layout_marked": 12,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9755474452554744,
+  "inserted_word_share": 0.02123764188941779
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Deﬁnitions",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2 Results",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3 Related Work",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Proofs",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Linear Constraint Sets",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Weakly Positive and Weakly Negative Constraint Sets",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 2CNF Constraint Sets",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.6138510999953724,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

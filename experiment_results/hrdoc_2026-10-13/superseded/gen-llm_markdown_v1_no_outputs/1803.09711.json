@@ -1,0 +1,303 @@
+{
+ "doc": "1803.09711",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "2.2. Data"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 25854,
+   "completion_tokens": 18404
+  },
+  "elapsed_llm_seconds": 82.5952025000006,
+  "content_preservation": 0.7664368089406729,
+  "inserted_word_share": 0.04411328588374852,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Cost optimal scenarios of a future highly renewable European electricity system: Exploring the influence of weather data, cost parameters and policy constraints",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1. Introduction",
+    0,
+    2
+   ],
+   [
+    "2. Methods",
+    0,
+    2
+   ],
+   [
+    "2.1. Model",
+    0,
+    3
+   ],
+   [
+    "2.2. Data",
+    0,
+    3
+   ],
+   [
+    "2.3. The base scenarios",
+    0,
+    3
+   ],
+   [
+    "3. Results I: Sensitivity to the input weather and load time series",
+    0,
+    2
+   ],
+   [
+    "4. Results II: Sensitivity to cost assumptions",
+    0,
+    2
+   ],
+   [
+    "5. Results III: Influence of policy constraints",
+    0,
+    2
+   ],
+   [
+    "5.1. Onshore wind potentials",
+    0,
+    3
+   ],
+   [
+    "5.2. Carbon dioxide emission constraint",
+    0,
+    3
+   ],
+   [
+    "6. Discussion: Limitations of the study",
+    0,
+    2
+   ],
+   [
+    "7. Summary and Conclusions",
+    0,
+    2
+   ],
+   [
+    "Acknowledgements",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Model",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Data",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. The base scenarios",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Results I: Sensitivity to the input weather and load time series",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Results II: Sensitivity to cost assumptions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Results III: Influence of policy constraints",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Onshore wind potentials",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5.2. Carbon dioxide emission constraint",
+   "page": 12,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6. Discussion: Limitations of the study",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Summary and Conclusions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 82.96179630000188,
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 1,
+  "fp": 15,
+  "fn": 12,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.11764705882352944,
+  "unmatched_gt": [
+   "2. Methods",
+   "2.1. Model",
+   "2.3. The base scenarios",
+   "3. Results I: Sensitivity to the input weather and load time series",
+   "4. Results II: Sensitivity to cost assumptions",
+   "5. Results III: Influence of policy constraints",
+   "5.1. Onshore wind potentials",
+   "5.2. Carbon dioxide emission constraint",
+   "6. Discussion: Limitations of the study",
+   "7. Summary and Conclusions",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Cost optimal scenarios of a future highly renewable European electricity system:",
+   "Abstract",
+   "2. Methods",
+   "2.1. Model",
+   "2.2. Data",
+   "2.3. The base scenarios",
+   "3. Results I: Sensitivity to the input weather and load time series",
+   "4. Results II: Sensitivity to cost assumptions",
+   "5. Results III: Influence of policy constraints",
+   "5.1. Onshore wind potentials",
+   "5.2. Carbon dioxide emission constraint",
+   "6. Discussion: Limitations of the study",
+   "7. Summary and Conclusions",
+   "Acknowledgements",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 1,
+  "fp": 14,
+  "fn": 12,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.125,
+  "unmatched_gt": [
+   "2. Methods",
+   "2.1. Model",
+   "2.3. The base scenarios",
+   "3. Results I: Sensitivity to the input weather and load time series",
+   "4. Results II: Sensitivity to cost assumptions",
+   "5. Results III: Influence of policy constraints",
+   "5.1. Onshore wind potentials",
+   "5.2. Carbon dioxide emission constraint",
+   "6. Discussion: Limitations of the study",
+   "7. Summary and Conclusions",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "2. Methods",
+   "2.1. Model",
+   "2.2. Data",
+   "2.3. The base scenarios",
+   "3. Results I: Sensitivity to the input weather and load time series",
+   "4. Results II: Sensitivity to cost assumptions",
+   "5. Results III: Influence of policy constraints",
+   "5.1. Onshore wind potentials",
+   "5.2. Carbon dioxide emission constraint",
+   "6. Discussion: Limitations of the study",
+   "7. Summary and Conclusions",
+   "Acknowledgements",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2. Data"
+  ],
+  "ignored_title_predictions": null
+ }
+}

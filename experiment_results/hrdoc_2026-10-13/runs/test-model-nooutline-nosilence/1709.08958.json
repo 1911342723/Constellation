@@ -1,0 +1,337 @@
+{
+ "doc": "1709.08958",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 7,
+  "pred": 33,
+  "tp": 7,
+  "fp": 26,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.23529411764705888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "D. Long and A. Reid",
+   "1.1. Isoaxial groups",
+   "G. MCSHANE",
+   "1.2. Spectra",
+   "1.3. Sketch of proof",
+   "1.3.1. Two properties of (simple) length functions. Recall that the simple lengt",
+   "1.3.2. Analogues for angles",
+   "1.4. Further remarks",
+   "G. MCSHANE",
+   "2.1. Fuchsian groups of the second kind. G",
+   "2.2. Arithemetic groups",
+   "2.2.1. Multiplicities for arithemetic groups",
+   "3.1. Geodesic length",
+   "G. MCSHANE",
+   "3.1.1. Analyticity",
+   "3.1.2. Characterization of simple geodesics",
+   "4.1. The Fenchel-Nielsen twist",
+   "4.2. The lift of the twist to H",
+   "G. MCSHANE",
+   "4.3. Separated geodesics",
+   "5.1. Traces and analyticity",
+   "G. MCSHANE",
+   "5.1.1. Cross ratio formula",
+   "6.1. Variation of angles",
+   "G. MCSHANE",
+   "0 ≤ tan(θ/2) ≤ 2/δ2."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 425,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18750,
+   "completion_tokens": 1276,
+   "total_tokens": 20026
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "D. Long and A. Reid",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Isoaxial groups",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "G. MCSHANE",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2. Spectra",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3. Sketch of proof",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3.1. Two properties of (simple) length functions. Recall that the simple length",
+   "page": 1,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "1.3.2. Analogues for angles",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "1.4. Further remarks",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2. Automorphisms and commensurators",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "G. MCSHANE",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2.1. Fuchsian groups of the second kind. G",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2.2. Arithemetic groups",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2.2.1. Multiplicities for arithemetic groups",
+   "page": 4,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "3. Functions on Teichmeuller space",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Geodesic length",
+   "page": 4,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "G. MCSHANE",
+   "page": 5,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "3.1.1. Analyticity",
+   "page": 5,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "3.1.2. Characterization of simple geodesics",
+   "page": 5,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "4. Fenchel-Nielsen twist deformation",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. The Fenchel-Nielsen twist",
+   "page": 6,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "4.2. The lift of the twist to H",
+   "page": 6,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "G. MCSHANE",
+   "page": 7,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "4.3. Separated geodesics",
+   "page": 7,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "5. Geodesic angle functions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Traces and analyticity",
+   "page": 8,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "G. MCSHANE",
+   "page": 9,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "5.1.1. Cross ratio formula",
+   "page": 9,
+   "level": 3,
+   "parent": 26
+  },
+  {
+   "text": "6. Angles defined by closed geodesics",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Variation of angles",
+   "page": 9,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "G. MCSHANE",
+   "page": 11,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "0 ≤ tan(θ/2) ≤ 2/δ2.",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.285919599999033,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 33,
+  "tp": 7,
+  "fp": 26,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.23529411764705888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "D. Long and A. Reid",
+   "1.1. Isoaxial groups",
+   "G. MCSHANE",
+   "1.2. Spectra",
+   "1.3. Sketch of proof",
+   "1.3.1. Two properties of (simple) length functions. Recall that the simple lengt",
+   "1.3.2. Analogues for angles",
+   "1.4. Further remarks",
+   "G. MCSHANE",
+   "2.1. Fuchsian groups of the second kind. G",
+   "2.2. Arithemetic groups",
+   "2.2.1. Multiplicities for arithemetic groups",
+   "3.1. Geodesic length",
+   "G. MCSHANE",
+   "3.1.1. Analyticity",
+   "3.1.2. Characterization of simple geodesics",
+   "4.1. The Fenchel-Nielsen twist",
+   "4.2. The lift of the twist to H",
+   "G. MCSHANE",
+   "4.3. Separated geodesics",
+   "5.1. Traces and analyticity",
+   "G. MCSHANE",
+   "5.1.1. Cross ratio formula",
+   "6.1. Variation of angles",
+   "G. MCSHANE",
+   "0 ≤ tan(θ/2) ≤ 2/δ2."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 32,
+  "tp": 6,
+  "fp": 26,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.21212121212121215,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "D. Long and A. Reid",
+   "1.1. Isoaxial groups",
+   "G. MCSHANE",
+   "1.2. Spectra",
+   "1.3. Sketch of proof",
+   "1.3.1. Two properties of (simple) length functions. Recall that the simple lengt",
+   "1.3.2. Analogues for angles",
+   "1.4. Further remarks",
+   "G. MCSHANE",
+   "2.1. Fuchsian groups of the second kind. G",
+   "2.2. Arithemetic groups",
+   "2.2.1. Multiplicities for arithemetic groups",
+   "3.1. Geodesic length",
+   "G. MCSHANE",
+   "3.1.1. Analyticity",
+   "3.1.2. Characterization of simple geodesics",
+   "4.1. The Fenchel-Nielsen twist",
+   "4.2. The lift of the twist to H",
+   "G. MCSHANE",
+   "4.3. Separated geodesics",
+   "5.1. Traces and analyticity",
+   "G. MCSHANE",
+   "5.1.1. Cross ratio formula",
+   "6.1. Variation of angles",
+   "G. MCSHANE",
+   "0 ≤ tan(θ/2) ≤ 2/δ2."
+  ],
+  "ignored_title_predictions": null
+ }
+}

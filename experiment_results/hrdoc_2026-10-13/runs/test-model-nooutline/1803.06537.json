@@ -1,0 +1,190 @@
+{
+ "doc": "1803.06537",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.5 Angular structure of the limit set in R2"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1465,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 9,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 9,
+   "prompt_tokens": 37326,
+   "completion_tokens": 987,
+   "total_tokens": 38313
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction and notation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Background",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2 Motivation",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.3 Renormalization with the radius function",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.4 Eigen-equation problem",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Results for aﬃne IFS’s",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Strategy: a general result",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Convergence of (dn)n",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Case of homotheties",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Results for linear IFS’s",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 New strategy",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2 LCP sets of matrices",
+   "page": 12,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.3 Identity-block matrices",
+   "page": 14,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.4 Orbit of the unit ball",
+   "page": 19,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.5 Angular structure of the limit set in R2",
+   "page": 21,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Other renormalizations",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Renormalization with a size function",
+   "page": 23,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2 Renormalization with the max-radius function",
+   "page": 24,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.3 Renormalization with the diameter function",
+   "page": 24,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 25.814636499999324,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.5 Angular structure of the limit set in R2"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.95,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.5 Angular structure of the limit set in R2"
+  ],
+  "ignored_title_predictions": null
+ }
+}

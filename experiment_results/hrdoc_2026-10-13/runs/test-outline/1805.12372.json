@@ -1,0 +1,94 @@
+{
+ "doc": "1805.12372",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Hidden Markov Models for Tree Structured Data",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Parsing Direction and Causality Assumptions",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Learning Isomorph Transductions",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Learning Tree Automata with Infinite States",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Infinite BU HMTMM",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.043496400001458824,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

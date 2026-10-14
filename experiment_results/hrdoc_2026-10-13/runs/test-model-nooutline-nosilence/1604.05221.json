@@ -1,0 +1,228 @@
+{
+ "doc": "1604.05221",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 19,
+  "pred": 25,
+  "tp": 19,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Keywords",
+   "4. Fixed-ﬁeld alternating-gradient accelerator, otherwise known as FFAGs.",
+   "1. The designers started with a scaling law based on a radial-sector FFAG",
+   "2. The second stable region of Hill’s equation was used, with a horizontal",
+   "3. The ﬁeld was decomposed into its multipole components and the expan-",
+   "4. The shape of the magnets was changed to rectangular rather than sector-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 280,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14304,
+   "completion_tokens": 818,
+   "total_tokens": 15122
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Preface",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Fixed-ﬁeld alternating-gradient accelerators",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 A historical perspective",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 The original or ‘scaling’ FFAG",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Fixed-ﬁeld alternating-gradient accelerator, otherwise known as FFAGs.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 The non-scaling FFAG",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Linear non-scaling FFAG",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 The EMMA non-scaling FFAG",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 FFAGs for hadron therapy",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 The KEK 150 MeV FFAG",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 The RACCAM project",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Linear non-scaling FFAG designs",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.4 PAMELA",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "1. The designers started with a scaling law based on a radial-sector FFAG",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. The second stable region of Hill’s equation was used, with a horizontal",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The ﬁeld was decomposed into its multipole components and the expan-",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. The shape of the magnets was changed to rectangular rather than sector-",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.5 NORMA",
+   "page": 12,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "4.6 Arbitrary-edge-angle non-scaling FFAG designs",
+   "page": 13,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "5 FFAG gantry designs",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Summary",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.510386099998868,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 25,
+  "tp": 19,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Keywords",
+   "4. Fixed-ﬁeld alternating-gradient accelerator, otherwise known as FFAGs.",
+   "1. The designers started with a scaling law based on a radial-sector FFAG",
+   "2. The second stable region of Hill’s equation was used, with a horizontal",
+   "3. The ﬁeld was decomposed into its multipole components and the expan-",
+   "4. The shape of the magnets was changed to rectangular rather than sector-"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 21,
+  "tp": 16,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4. Fixed-ﬁeld alternating-gradient accelerator, otherwise known as FFAGs.",
+   "1. The designers started with a scaling law based on a radial-sector FFAG",
+   "2. The second stable region of Hill’s equation was used, with a horizontal",
+   "3. The ﬁeld was decomposed into its multipole components and the expan-",
+   "4. The shape of the magnets was changed to rectangular rather than sector-"
+  ],
+  "ignored_title_predictions": null
+ }
+}

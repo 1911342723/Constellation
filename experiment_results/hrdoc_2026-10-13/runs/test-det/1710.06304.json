@@ -1,0 +1,115 @@
+{
+ "doc": "1710.06304",
+ "system": "det",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 134,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. METHODS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Restoration of medical ultrasound scans",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Data Sources",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. CNN-based approximation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. EXPERIMENTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Fast approximation of despeckling",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. Reconstructing ‘CT-quality’ images",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.8715550000015355,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

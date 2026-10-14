@@ -1,0 +1,131 @@
+{
+ "doc": "1805.00438",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "2.2. Job Execution Sequence"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "2.2. Job Execution Sequence"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 134,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9388379204892966,
+  "inserted_word_share": 0.8977379402234806
+ },
+ "predictions": [
+  {
+   "text": "An open-source job management framework for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Overview",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Data Structure",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Read-Only Mode",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. Application Programming Interfaces",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Getting Started with OACIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Installation",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. Registering Hosts and Simulators",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.6827625000005355,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "2.2. Job Execution Sequence"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

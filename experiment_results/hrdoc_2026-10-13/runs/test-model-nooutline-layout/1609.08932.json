@@ -1,0 +1,108 @@
+{
+ "doc": "1609.08932",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 213,
+  "layout_marked": 8,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4118,
+   "completion_tokens": 295,
+   "total_tokens": 4413
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9523665048543689,
+  "inserted_word_share": 0.8376938986556359
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORETICAL METHOD",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Photoelectron emission from SESs",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Induced potential eﬀects",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.48277170000074,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

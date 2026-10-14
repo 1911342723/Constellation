@@ -1,0 +1,144 @@
+{
+ "doc": "1712.04953",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1059,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14230,
+   "completion_tokens": 563,
+   "total_tokens": 14793
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 OBSERVATIONS AND DATA REDUCTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Line-strength measurements",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Derived ages and metallicities",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Elemental abundance ratios",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 DISCUSSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Na abundances",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Abundance ratios and the formation of dEs",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A: CA ABUNDANCES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 24.751337499998044,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "1 CA ABUNDANCES"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

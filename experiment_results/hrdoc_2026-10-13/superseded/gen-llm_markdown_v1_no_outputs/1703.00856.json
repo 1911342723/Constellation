@@ -1,0 +1,155 @@
+{
+ "doc": "1703.00856",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 1556,
+   "completion_tokens": 1387
+  },
+  "elapsed_llm_seconds": 7.194012299998576,
+  "content_preservation": 0.9770642201834863,
+  "inserted_word_share": 0.006993006993006978,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Araguaia Medical Vision Lab at ISIC 2017 Skin Lesion Classification Challenge",
+    0,
+    1
+   ],
+   [
+    "I. MOTIVATION AND OVERVIEW",
+    0,
+    2
+   ],
+   [
+    "II. IMAGE PRE-PROCESSING",
+    0,
+    2
+   ],
+   [
+    "III. NETWORK TRAINING AND EVALUATION",
+    0,
+    2
+   ],
+   [
+    "A. Seborrheic Keratosis Task",
+    0,
+    3
+   ],
+   [
+    "B. Melanoma Task",
+    0,
+    3
+   ],
+   [
+    "IV. CONCLUSION",
+    0,
+    2
+   ],
+   [
+    "REFERENCES",
+    1,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "I. MOTIVATION AND OVERVIEW",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. IMAGE PRE-PROCESSING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NETWORK TRAINING AND EVALUATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Seborrheic Keratosis Task",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Melanoma Task",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.2398425999999745,
+ "metrics_raw": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 2,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Araguaia Medical Vision Lab at ISIC 2017 Skin Lesion Classification Challenge"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

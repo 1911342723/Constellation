@@ -1,0 +1,200 @@
+{
+ "doc": "1806.08600",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "4. EXPERIMENTS",
+   "4.1. Experimental Results"
+  ],
+  "unmatched_pred": [
+   "4. EXPERIMENTS",
+   "4.1. Experimental Results"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5559,
+   "completion_tokens": 4968
+  },
+  "elapsed_llm_seconds": 24.439181999998254,
+  "content_preservation": 0.9472938509492774,
+  "inserted_word_share": 0.0259324009324009,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "KINSHIPGAN: SYNTHESIZING OF KINSHIP FACES FROM FAMILY PHOTOS BY REGULARIZING A DEEP FACE NETWORK",
+    0,
+    1
+   ],
+   [
+    "ABSTRACT",
+    0,
+    2
+   ],
+   [
+    "1. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "2. RELATED WORK",
+    0,
+    2
+   ],
+   [
+    "3. KINSHIP FACE SYNTHESIS",
+    1,
+    2
+   ],
+   [
+    "4. EXPERIMENTS",
+    2,
+    2
+   ],
+   [
+    "4.1. Experimental Results",
+    3,
+    3
+   ],
+   [
+    "5. CONCLUSION",
+    3,
+    2
+   ],
+   [
+    "6. REFERENCES",
+    4,
+    2
+   ],
+   [
+    "Appendix",
+    5,
+    2
+   ],
+   [
+    "Additional Qualitative Results",
+    5,
+    3
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RELATED WORK",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. KINSHIP FACE SYNTHESIS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. EXPERIMENTS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Experimental Results",
+   "page": 0,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Additional Qualitative Results",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  }
+ ],
+ "seconds": 24.52411060000304,
+ "metrics_raw": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 2,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "KINSHIPGAN: SYNTHESIZING OF KINSHIP FACES FROM FAMILY PHOTOS BY REGULARIZING A D"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "4. EXPERIMENTS",
+   "4.1. Experimental Results"
+  ],
+  "unmatched_pred": [
+   "4. EXPERIMENTS",
+   "4.1. Experimental Results"
+  ],
+  "ignored_title_predictions": null
+ }
+}

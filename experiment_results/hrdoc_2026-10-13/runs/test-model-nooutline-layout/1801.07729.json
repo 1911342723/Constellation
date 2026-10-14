@@ -1,0 +1,200 @@
+{
+ "doc": "1801.07729",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 13,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification"
+  ],
+  "unmatched_pred": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification"
+  ],
+  "unmatched_pred": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 630,
+  "layout_marked": 21,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13627,
+   "completion_tokens": 841,
+   "total_tokens": 14468
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9610505450941527,
+  "inserted_word_share": 0.9640959563982657
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methodology",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Main Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Detailed Methodology",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Challenges with Art Style Classiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Studied Deep Learning Models:",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4 Increasing the interpretability of the representation",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 Quantitative Comparative Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Effect of adding layers with reduced dimensionality:",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Shape of Art History",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Few Factors Explain the Characteristics of Styles:",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Smooth Temporal Evolution of Style:",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Interpretation of the Modes of Variations - Relation to W¨olfﬂin’s Pairs:",
+   "page": 12,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Discovering Limitations of W¨olfﬂin’s Concepts:",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Identiﬁcation of Representative Artists:",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Interpretations of the Activation Manifold and Understanding Inﬂuences:",
+   "page": 17,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5 Conclusions and Discussion",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 24.68112430000474,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 13,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification"
+  ],
+  "unmatched_pred": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

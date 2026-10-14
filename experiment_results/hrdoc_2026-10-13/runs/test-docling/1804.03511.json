@@ -1,0 +1,227 @@
+{
+ "doc": "1804.03511",
+ "system": "docling",
+ "metrics": {
+  "gt": 28,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.3793103448275862,
+  "unmatched_gt": [
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 SCA Algorithm",
+   "Algorithm 2 BPSO with GP for PS-based EH TWR using AF"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 46.587576400001126
+ },
+ "predictions": [
+  {
+   "text": "Optimization of a Power Splitting Protocol for Two-Way Multiple Energy Harvesting Relay System",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Contributions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Paper Organization",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Channel Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Energy Harvesting Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Relay Power Model",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROBLEM FORMULATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Rate Expression",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Optimization Problem",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Utility Selection",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. JOINT-OPTIMIZATION SOLUTION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Geometric Programming Method for PS Ratios and Relays' Transmit Power Optimization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 SCA Algorithm",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Selected Relays Optimization",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 2 BPSO with GP for PS-based EH TWR using AF",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. SIMULATION RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Simulation Parameters",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. System Performance",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Convergence Speed",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.027069900002970826,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 24,
+  "tp": 21,
+  "fp": 3,
+  "fn": 7,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.3448275862068966,
+  "unmatched_gt": [
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": [
+   "Optimization of a Power Splitting Protocol for Two-Way Multiple Energy Harvestin",
+   "Algorithm 1 SCA Algorithm",
+   "Algorithm 2 BPSO with GP for PS-based EH TWR using AF"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.3571428571428571,
+  "unmatched_gt": [
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 SCA Algorithm",
+   "Algorithm 2 BPSO with GP for PS-based EH TWR using AF"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "doc": "1711.11060",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "Acknowledgement.",
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 614,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18048,
+   "completion_tokens": 425,
+   "total_tokens": 18473
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Technical version of the main theorems",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Robust results in the abelian group setting",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Proof of Propositions 2.2 and 2.3",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Robust results with other assumptions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Proof of Theorem 1.3",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. A continuous analogue of Theorem 1.3",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.369860399998288,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "Acknowledgement.",
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3."
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

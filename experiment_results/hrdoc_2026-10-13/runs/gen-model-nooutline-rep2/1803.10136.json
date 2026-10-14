@@ -1,0 +1,217 @@
+{
+ "doc": "1803.10136",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 21,
+  "tp": 11,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "if r1 > 1 then",
+   "else",
+   "end if",
+   "if r2 ≤ 6 or i = L then",
+   "else",
+   "end if",
+   "if i < L then",
+   "end if",
+   "return S",
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 199,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4349,
+   "completion_tokens": 492,
+   "total_tokens": 4841
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introductions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Development of Bengali Real Number Speech Dataset",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Data Preparation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "if r1 > 1 then",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "else",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end if",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "if r2 ≤ 6 or i = L then",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "else",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end if",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "if i < L then",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end if",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "return S",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Data Organization",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 Transcripts of the Speech Samples",
+   "page": 3,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "2.2.2 Dictionary of Words to Phonemes",
+   "page": 4,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "2.2.3 Organization of the Audio Samples",
+   "page": 4,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "2.3 Characteristics of the Data Corpus",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Two Speech Recognizers",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.7389868999998725,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 21,
+  "tp": 11,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "if r1 > 1 then",
+   "else",
+   "end if",
+   "if r2 ≤ 6 or i = L then",
+   "else",
+   "end if",
+   "if i < L then",
+   "end if",
+   "return S",
+   "2.2.3 Organization of the Audio Samples"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 19,
+  "tp": 9,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.44999999999999996,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "if r1 > 1 then",
+   "else",
+   "end if",
+   "if r2 ≤ 6 or i = L then",
+   "else",
+   "end if",
+   "if i < L then",
+   "end if",
+   "return S",
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": null
+ }
+}

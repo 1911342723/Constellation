@@ -1,0 +1,574 @@
+{
+ "doc": "1611.04260",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 9,
+  "pred": 60,
+  "tp": 9,
+  "fp": 51,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.16393442622950816,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Institute of High Energy Physics, Beijing 100049, People’s Republic of China",
+   "2 Beihang University, Beijing 100191, People’s Republic of China",
+   "3 Beijing Institute of Petrochemical Technology, Beijing 102617, People’s Republ",
+   "4 Bochum Ruhr-University, D-44780 Bochum, Germany",
+   "5 Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA",
+   "6 Central China Normal University, Wuhan 430079, People’s Republic of China",
+   "7 China Center of Advanced Science and Technology, Beijing 100190, People’s Repu",
+   "8 COMSATS Institute of Information Technology, Lahore, Defence Road, Off Raiwind",
+   "9 G.I",
+   "10 GSI Helmholtzcentre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany",
+   "11 Guangxi Normal University, Guilin 541004, People’s Republic of China",
+   "12 GuangXi University, Nanning 530004, People’s Republic of China",
+   "13 Hangzhou Normal University, Hangzhou 310036, People’s Republic of China",
+   "14 Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germa",
+   "15 Henan Normal University, Xinxiang 453007, People’s Republic of China",
+   "16 Henan University of Science and Technology, Luoyang 471003, People’s Republic",
+   "17 Huangshan College, Huangshan 245000, People’s Republic of China",
+   "18 Hunan University, Changsha 410082, People’s Republic of China",
+   "19 Indiana University, Bloomington, Indiana 47405, USA",
+   "22 Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099",
+   "23 Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia",
+   "24 Justus-Liebig-Universitaet Giessen, II",
+   "25 KVI-CART, University of Groningen, NL-9747 AA Groningen, The Netherlands",
+   "26 Lanzhou University, Lanzhou 730000, People’s Republic of China",
+   "27 Liaoning University, Shenyang 110036, People’s Republic of China",
+   "28 Nanjing Normal University, Nanjing 210023, People’s Republic of China",
+   "29 Nanjing University, Nanjing 210093, People’s Republic of China",
+   "30 Nankai University, Tianjin 300071, People’s Republic of China",
+   "31 Peking University, Beijing 100871, People’s Republic of China",
+   "32 Seoul National University, Seoul, 151-747 Korea",
+   "33 Shandong University, Jinan 250100, People’s Republic of China",
+   "34 Shanghai Jiao Tong University, Shanghai 200240, People’s Republic of China",
+   "35 Shanxi University, Taiyuan 030006, People’s Republic of China",
+   "36 Sichuan University, Chengdu 610064, People’s Republic of China",
+   "37 Soochow University, Suzhou 215006, People’s Republic of China",
+   "38 Sun Yat-Sen University, Guangzhou 510275, People’s Republic of China",
+   "39 Tsinghua University, Beijing 100084, People’s Republic of China",
+   "41 University of Chinese Academy of Sciences, Beijing 100049, People’s Republic ",
+   "42 University of Hawaii, Honolulu, Hawaii 96822, USA",
+   "43 University of Minnesota, Minneapolis, Minnesota 55455, USA",
+   "44 University of Rochester, Rochester, New York 14627, USA",
+   "45 University of Science and Technology Liaoning, Anshan 114051, People’s Republ",
+   "46 University of Science and Technology of China, Hefei 230026, People’s Republi",
+   "47 University of South China, Hengyang 421001, People’s Republic of China",
+   "48 University of the Punjab, Lahore-54590, Pakistan",
+   "50 Uppsala University, Box 516, SE-75120 Uppsala, Sweden",
+   "51 Wuhan University, Wuhan 430072, People’s Republic of China",
+   "52 Zhejiang University, Hangzhou 310027, People’s Republic of China",
+   "53 Zhengzhou University, Zhengzhou 450001, People’s Republic of China",
+   "S. They are determined to be B(D+ → K0",
+   "S. Throughout this Letter, charged"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 851,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 15214,
+   "completion_tokens": 330,
+   "total_tokens": 15544
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Institute of High Energy Physics, Beijing 100049, People’s Republic of China",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Beihang University, Beijing 100191, People’s Republic of China",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Beijing Institute of Petrochemical Technology, Beijing 102617, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Bochum Ruhr-University, D-44780 Bochum, Germany",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Central China Normal University, Wuhan 430079, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 China Center of Advanced Science and Technology, Beijing 100190, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 COMSATS Institute of Information Technology, Lahore, Defence Road, Off Raiwind Road, 54000 Lahore, Pakistan",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 G.I",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 GSI Helmholtzcentre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 Guangxi Normal University, Guilin 541004, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "12 GuangXi University, Nanning 530004, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "13 Hangzhou Normal University, Hangzhou 310036, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "14 Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "15 Henan Normal University, Xinxiang 453007, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "16 Henan University of Science and Technology, Luoyang 471003, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "17 Huangshan College, Huangshan 245000, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "18 Hunan University, Changsha 410082, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "19 Indiana University, Bloomington, Indiana 47405, USA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "22 Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "23 Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "24 Justus-Liebig-Universitaet Giessen, II",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "25 KVI-CART, University of Groningen, NL-9747 AA Groningen, The Netherlands",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "26 Lanzhou University, Lanzhou 730000, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "27 Liaoning University, Shenyang 110036, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "28 Nanjing Normal University, Nanjing 210023, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "29 Nanjing University, Nanjing 210093, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "30 Nankai University, Tianjin 300071, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "31 Peking University, Beijing 100871, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "32 Seoul National University, Seoul, 151-747 Korea",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "33 Shandong University, Jinan 250100, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "34 Shanghai Jiao Tong University, Shanghai 200240, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "35 Shanxi University, Taiyuan 030006, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "36 Sichuan University, Chengdu 610064, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "37 Soochow University, Suzhou 215006, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "38 Sun Yat-Sen University, Guangzhou 510275, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "39 Tsinghua University, Beijing 100084, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "41 University of Chinese Academy of Sciences, Beijing 100049, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "42 University of Hawaii, Honolulu, Hawaii 96822, USA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "43 University of Minnesota, Minneapolis, Minnesota 55455, USA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "44 University of Rochester, Rochester, New York 14627, USA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "45 University of Science and Technology Liaoning, Anshan 114051, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "46 University of Science and Technology of China, Hefei 230026, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "47 University of South China, Hengyang 421001, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "48 University of the Punjab, Lahore-54590, Pakistan",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "50 Uppsala University, Box 516, SE-75120 Uppsala, Sweden",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "51 Wuhan University, Wuhan 430072, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "52 Zhejiang University, Hangzhou 310027, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "53 Zhengzhou University, Zhengzhou 450001, People’s Republic of China",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. They are determined to be B(D+ → K0",
+   "page": 2,
+   "level": 2,
+   "parent": 49
+  },
+  {
+   "text": "1. Introduction",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Throughout this Letter, charged",
+   "page": 2,
+   "level": 2,
+   "parent": 51
+  },
+  {
+   "text": "2. BESIII detector and Monte Carlo simulation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Data analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Branching fractions",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Systematic uncertainty",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Summary",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.25996110000051,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 60,
+  "tp": 9,
+  "fp": 51,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.16393442622950816,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Institute of High Energy Physics, Beijing 100049, People’s Republic of China",
+   "2 Beihang University, Beijing 100191, People’s Republic of China",
+   "3 Beijing Institute of Petrochemical Technology, Beijing 102617, People’s Republ",
+   "4 Bochum Ruhr-University, D-44780 Bochum, Germany",
+   "5 Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA",
+   "6 Central China Normal University, Wuhan 430079, People’s Republic of China",
+   "7 China Center of Advanced Science and Technology, Beijing 100190, People’s Repu",
+   "8 COMSATS Institute of Information Technology, Lahore, Defence Road, Off Raiwind",
+   "9 G.I",
+   "10 GSI Helmholtzcentre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany",
+   "11 Guangxi Normal University, Guilin 541004, People’s Republic of China",
+   "12 GuangXi University, Nanning 530004, People’s Republic of China",
+   "13 Hangzhou Normal University, Hangzhou 310036, People’s Republic of China",
+   "14 Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germa",
+   "15 Henan Normal University, Xinxiang 453007, People’s Republic of China",
+   "16 Henan University of Science and Technology, Luoyang 471003, People’s Republic",
+   "17 Huangshan College, Huangshan 245000, People’s Republic of China",
+   "18 Hunan University, Changsha 410082, People’s Republic of China",
+   "19 Indiana University, Bloomington, Indiana 47405, USA",
+   "22 Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099",
+   "23 Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia",
+   "24 Justus-Liebig-Universitaet Giessen, II",
+   "25 KVI-CART, University of Groningen, NL-9747 AA Groningen, The Netherlands",
+   "26 Lanzhou University, Lanzhou 730000, People’s Republic of China",
+   "27 Liaoning University, Shenyang 110036, People’s Republic of China",
+   "28 Nanjing Normal University, Nanjing 210023, People’s Republic of China",
+   "29 Nanjing University, Nanjing 210093, People’s Republic of China",
+   "30 Nankai University, Tianjin 300071, People’s Republic of China",
+   "31 Peking University, Beijing 100871, People’s Republic of China",
+   "32 Seoul National University, Seoul, 151-747 Korea",
+   "33 Shandong University, Jinan 250100, People’s Republic of China",
+   "34 Shanghai Jiao Tong University, Shanghai 200240, People’s Republic of China",
+   "35 Shanxi University, Taiyuan 030006, People’s Republic of China",
+   "36 Sichuan University, Chengdu 610064, People’s Republic of China",
+   "37 Soochow University, Suzhou 215006, People’s Republic of China",
+   "38 Sun Yat-Sen University, Guangzhou 510275, People’s Republic of China",
+   "39 Tsinghua University, Beijing 100084, People’s Republic of China",
+   "41 University of Chinese Academy of Sciences, Beijing 100049, People’s Republic ",
+   "42 University of Hawaii, Honolulu, Hawaii 96822, USA",
+   "43 University of Minnesota, Minneapolis, Minnesota 55455, USA",
+   "44 University of Rochester, Rochester, New York 14627, USA",
+   "45 University of Science and Technology Liaoning, Anshan 114051, People’s Republ",
+   "46 University of Science and Technology of China, Hefei 230026, People’s Republi",
+   "47 University of South China, Hengyang 421001, People’s Republic of China",
+   "48 University of the Punjab, Lahore-54590, Pakistan",
+   "50 Uppsala University, Box 516, SE-75120 Uppsala, Sweden",
+   "51 Wuhan University, Wuhan 430072, People’s Republic of China",
+   "52 Zhejiang University, Hangzhou 310027, People’s Republic of China",
+   "53 Zhengzhou University, Zhengzhou 450001, People’s Republic of China",
+   "S. They are determined to be B(D+ → K0",
+   "S. Throughout this Letter, charged"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 57,
+  "tp": 6,
+  "fp": 51,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.12068965517241381,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Institute of High Energy Physics, Beijing 100049, People’s Republic of China",
+   "2 Beihang University, Beijing 100191, People’s Republic of China",
+   "3 Beijing Institute of Petrochemical Technology, Beijing 102617, People’s Republ",
+   "4 Bochum Ruhr-University, D-44780 Bochum, Germany",
+   "5 Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA",
+   "6 Central China Normal University, Wuhan 430079, People’s Republic of China",
+   "7 China Center of Advanced Science and Technology, Beijing 100190, People’s Repu",
+   "8 COMSATS Institute of Information Technology, Lahore, Defence Road, Off Raiwind",
+   "9 G.I",
+   "10 GSI Helmholtzcentre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany",
+   "11 Guangxi Normal University, Guilin 541004, People’s Republic of China",
+   "12 GuangXi University, Nanning 530004, People’s Republic of China",
+   "13 Hangzhou Normal University, Hangzhou 310036, People’s Republic of China",
+   "14 Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germa",
+   "15 Henan Normal University, Xinxiang 453007, People’s Republic of China",
+   "16 Henan University of Science and Technology, Luoyang 471003, People’s Republic",
+   "17 Huangshan College, Huangshan 245000, People’s Republic of China",
+   "18 Hunan University, Changsha 410082, People’s Republic of China",
+   "19 Indiana University, Bloomington, Indiana 47405, USA",
+   "22 Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099",
+   "23 Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia",
+   "24 Justus-Liebig-Universitaet Giessen, II",
+   "25 KVI-CART, University of Groningen, NL-9747 AA Groningen, The Netherlands",
+   "26 Lanzhou University, Lanzhou 730000, People’s Republic of China",
+   "27 Liaoning University, Shenyang 110036, People’s Republic of China",
+   "28 Nanjing Normal University, Nanjing 210023, People’s Republic of China",
+   "29 Nanjing University, Nanjing 210093, People’s Republic of China",
+   "30 Nankai University, Tianjin 300071, People’s Republic of China",
+   "31 Peking University, Beijing 100871, People’s Republic of China",
+   "32 Seoul National University, Seoul, 151-747 Korea",
+   "33 Shandong University, Jinan 250100, People’s Republic of China",
+   "34 Shanghai Jiao Tong University, Shanghai 200240, People’s Republic of China",
+   "35 Shanxi University, Taiyuan 030006, People’s Republic of China",
+   "36 Sichuan University, Chengdu 610064, People’s Republic of China",
+   "37 Soochow University, Suzhou 215006, People’s Republic of China",
+   "38 Sun Yat-Sen University, Guangzhou 510275, People’s Republic of China",
+   "39 Tsinghua University, Beijing 100084, People’s Republic of China",
+   "41 University of Chinese Academy of Sciences, Beijing 100049, People’s Republic ",
+   "42 University of Hawaii, Honolulu, Hawaii 96822, USA",
+   "43 University of Minnesota, Minneapolis, Minnesota 55455, USA",
+   "44 University of Rochester, Rochester, New York 14627, USA",
+   "45 University of Science and Technology Liaoning, Anshan 114051, People’s Republ",
+   "46 University of Science and Technology of China, Hefei 230026, People’s Republi",
+   "47 University of South China, Hengyang 421001, People’s Republic of China",
+   "48 University of the Punjab, Lahore-54590, Pakistan",
+   "50 Uppsala University, Box 516, SE-75120 Uppsala, Sweden",
+   "51 Wuhan University, Wuhan 430072, People’s Republic of China",
+   "52 Zhejiang University, Hangzhou 310027, People’s Republic of China",
+   "53 Zhengzhou University, Zhengzhou 450001, People’s Republic of China",
+   "S. They are determined to be B(D+ → K0",
+   "S. Throughout this Letter, charged"
+  ],
+  "ignored_title_predictions": null
+ }
+}

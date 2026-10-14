@@ -1,0 +1,207 @@
+{
+ "doc": "1603.07173",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "2.2.3 2nd Variation"
+  ],
+  "unmatched_pred": [
+   "2.2.3 2nd Variation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 6077,
+   "completion_tokens": 5621
+  },
+  "elapsed_llm_seconds": 24.750757099998737,
+  "content_preservation": 0.9797165200391007,
+  "inserted_word_share": 0.008654797230464917,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Deductive Refinement of Species Labelling in Weakly Labelled Birdsong Recordings",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Proposed Method",
+    1,
+    2
+   ],
+   [
+    "2.1 Segmentation-Detection",
+    2,
+    3
+   ],
+   [
+    "2.2 Classification",
+    2,
+    3
+   ],
+   [
+    "2.2.1 First-Pass",
+    2,
+    4
+   ],
+   [
+    "2.2.2 1st Variation",
+    4,
+    4
+   ],
+   [
+    "2.2.3 2nd Variation",
+    5,
+    4
+   ],
+   [
+    "3 Evaluation",
+    5,
+    2
+   ],
+   [
+    "4 Conclusions",
+    8,
+    2
+   ],
+   [
+    "References",
+    9,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Proposed Method",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Segmentation-Detection",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Classification",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 First-Pass",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.2 1st Variation",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.3 2nd Variation",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3 Evaluation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 24.843169599997054,
+ "metrics_raw": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Deductive Refinement of Species Labelling in Weakly Labelled Birdsong Recordings"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "2.2.3 2nd Variation"
+  ],
+  "unmatched_pred": [
+   "2.2.3 2nd Variation"
+  ],
+  "ignored_title_predictions": null
+ }
+}

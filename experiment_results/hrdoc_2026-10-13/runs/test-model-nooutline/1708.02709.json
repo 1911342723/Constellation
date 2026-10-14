@@ -1,0 +1,292 @@
+{
+ "doc": "1708.02709",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 36,
+  "pred": 37,
+  "tp": 35,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 27,
+  "parent_correct": 22,
+  "teds": 0.6052631578947368,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "2) Long Short-Term Memory",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 556,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 19170,
+   "completion_tokens": 1475,
+   "total_tokens": 20645
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. DISTRIBUTED REPRESENTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Word Embeddings",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Word2vec",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Character Embeddings",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Contextualized Word Embeddings",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. CONVOLUTIONAL NEURAL NETWORKS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Basic CNN",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Applications",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "IV. RECURRENT NEURAL NETWORKS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Need for Recurrent Networks",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. RNN models",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "2) Long Short-Term Memory",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Applications",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Attention Mechanism",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Parallelized Attention: The Transformer",
+   "page": 14,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "V. RECURSIVE NEURAL NETWORKS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Basic model",
+   "page": 16,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "B. Applications",
+   "page": 16,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "VI. DEEP REINFORCED MODELS AND DEEP UNSUPERVISED LEARNING",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Reinforcement learning for sequence generation",
+   "page": 16,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "B. Unsupervised sentence representation learning",
+   "page": 18,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "C. Deep generative models",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. MEMORY-AUGMENTED NETWORKS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. PERFORMANCE OF DIFFERENT MODELS ON DIFFERENT NLP TASKS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. POS tagging",
+   "page": 20,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "B. Parsing",
+   "page": 20,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "C. Named-Entity Recognition",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Semantic Role Labeling",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Sentiment Classiﬁcation",
+   "page": 22,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "F. Machine Translation",
+   "page": 22,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "G. Question answering",
+   "page": 22,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "H. Dialogue Systems",
+   "page": 23,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "I. Contextual Embeddings",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IX. CONCLUSION",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 35.52701330000127,
+ "metrics_v1": {
+  "gt": 36,
+  "pred": 37,
+  "tp": 35,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 27,
+  "parent_correct": 22,
+  "teds": 0.6052631578947368,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "2) Long Short-Term Memory",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 34,
+  "pred": 35,
+  "tp": 34,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 26,
+  "parent_correct": 21,
+  "teds": 0.6388888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2) Long Short-Term Memory"
+  ],
+  "ignored_title_predictions": null
+ }
+}

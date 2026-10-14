@@ -1,0 +1,127 @@
+{
+ "doc": "1512.07269",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 or Q[1,1]"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 or Q[1,1]"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 684,
+  "content_preservation": 1.0,
+  "word_preservation": 0.943868980963046,
+  "inserted_word_share": 0.8408130503552964
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Notation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Shape Functions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Shape functions for Y−",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Shape functions for YrΛ0",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 The “lowest order bubble function” on K∞ and ˆK",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Degrees of Freedom",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Unisolvence and H1-conformity",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 or Q[1,1]",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Polynomial reproduction and error analysis",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Dimension optimality and conclusions",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Additional background on ﬁnite element exterior calculus",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.414352300002065
+}

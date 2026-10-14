@@ -1,0 +1,209 @@
+{
+ "doc": "1610.02703",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 21,
+  "tp": 16,
+  "fp": 5,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "V. HOW MANY GROUPS CAN BE INFERRED?",
+   "I. ASYMPTOTIC DEGREE DISTRIBUTIONS SAMPLED FROM UNIFORM PRIORS AND HYPERPRIORS"
+  ],
+  "unmatched_pred": [
+   "(pn2r/2 + 1)ers/2+1 Y",
+   "N. This property is",
+   "2 Available at https://graph-tool.skewed.de.",
+   "Appendix A",
+   "0 exp(λ + µk) − 1 = Li3(e−λ)"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 1929,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Nonparametric Bayesian inference of the microcanonical stochastic block model",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THE MICROCANONICAL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NONPARAMETRIC BAYESIAN",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Sampling vs",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Prior for the node partition",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Prior for the degrees",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Non-degree-corrected model (NDC-SBM)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Arbitrary degree sequences",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Prior for the edge counts and nested SBM",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Model summary",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "IV. ENSEMBLE EQUIVALENCE",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(pn2r/2 + 1)ers/2+1 Y",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "N. This property is",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI. INFERENCE ALGORITHM",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. MODEL COMPARISON",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Available at https://graph-tool.skewed.de.",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. RESULTS FOR EMPIRICAL NETWORKS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IX. DISCUSSION",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 exp(λ + µk) − 1 = Li3(e−λ)",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B: Directed networks",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 36.14596530000199,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.4782608695652174,
+  "unmatched_gt": [
+   "V. HOW MANY GROUPS CAN BE INFERRED?",
+   "I. ASYMPTOTIC DEGREE DISTRIBUTIONS SAMPLED FROM UNIFORM PRIORS AND HYPERPRIORS"
+  ],
+  "unmatched_pred": [
+   "Nonparametric Bayesian inference of the microcanonical stochastic block model",
+   "(pn2r/2 + 1)ers/2+1 Y",
+   "N. This property is",
+   "2 Available at https://graph-tool.skewed.de.",
+   "Appendix A",
+   "0 exp(λ + µk) − 1 = Li3(e−λ)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 15,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.44999999999999996,
+  "unmatched_gt": [
+   "V. HOW MANY GROUPS CAN BE INFERRED?",
+   "I. ASYMPTOTIC DEGREE DISTRIBUTIONS SAMPLED FROM UNIFORM PRIORS AND HYPERPRIORS",
+   "II. DIRECTED NETWORKS"
+  ],
+  "unmatched_pred": [
+   "(pn2r/2 + 1)ers/2+1 Y",
+   "N. This property is",
+   "2 Available at https://graph-tool.skewed.de.",
+   "0 exp(λ + µk) − 1 = Li3(e−λ)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

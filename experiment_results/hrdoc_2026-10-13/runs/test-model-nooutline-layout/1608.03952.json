@@ -1,0 +1,225 @@
+{
+ "doc": "1608.03952",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 14,
+  "pred": 22,
+  "tp": 14,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "C. Wigner function",
+   "Acknowledgments",
+   "1) Density operator",
+   "2) Characteristic function",
+   "Appendix B",
+   "1) Normalization factor",
+   "2) characteristic function",
+   "3) Wigner function"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 20,
+  "tp": 14,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.6190476190476191,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "C. Wigner function",
+   "1) Density operator",
+   "2) Characteristic function",
+   "1) Normalization factor",
+   "2) characteristic function",
+   "3) Wigner function"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 436,
+  "layout_marked": 23,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10463,
+   "completion_tokens": 923,
+   "total_tokens": 11386
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9214963119072708,
+  "inserted_word_share": 0.5023474178403755
+ },
+ "predictions": [
+  {
+   "text": "On the optical ﬁelds propagation in realistic environments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PHYSICAL AND MATHEMATICAL MODEL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. BEAM SPLITTER FORMALISM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Density operator",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Photon number distribution",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Wigner function",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. OPTICAL-CHANNEL FORMALISM",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Density operator",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Photon number distribution",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. APPLICATION OF THE EVOLUTION FORMULAS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Photon number distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1) Density operator",
+   "page": 6,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "2) Characteristic function",
+   "page": 6,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "3) Wigner function",
+   "page": 6,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "Appendix B",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1) Normalization factor",
+   "page": 6,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "2) characteristic function",
+   "page": 6,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "3) Wigner function",
+   "page": 7,
+   "level": 2,
+   "parent": 19
+  }
+ ],
+ "seconds": 6.323936100001447,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 22,
+  "tp": 14,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "C. Wigner function",
+   "Acknowledgments",
+   "1) Density operator",
+   "2) Characteristic function",
+   "Appendix B",
+   "1) Normalization factor",
+   "2) characteristic function",
+   "3) Wigner function"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

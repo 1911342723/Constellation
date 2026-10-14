@@ -1,0 +1,171 @@
+{
+ "doc": "1604.00125",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 16.338812699999835
+ },
+ "predictions": [
+  {
+   "text": "AttSum: Joint Learning of Focusing and Summarization with Neural Attention",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Query-Focused Sentence Ranking",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 CNN Layer",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Pooling Layer",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Ranking Layer",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Sentence Selection",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dataset",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Model Setting",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 EvaluationMetric",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.4 Baselines",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.5 Summarization Performance",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.6 Query Relevance Performance",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 RelatedWork",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Extractive Summarization",
+   "page": 7,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.2 Deep Learning in Summarization",
+   "page": 7,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "6 Conclusion and FutureWork",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.017373499998939224,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

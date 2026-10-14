@@ -1,0 +1,201 @@
+{
+ "doc": "1806.07317",
+ "system": "det",
+ "metrics": {
+  "gt": 17,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 2,
+  "level_correct": 1,
+  "parent_correct": 10,
+  "teds": 0.47619047619047616,
+  "unmatched_gt": [
+   "I. THE Q-GAUSSIAN DISTRIBUTION FUNCTION",
+   "II. LUMINOSITY CALCULATION FOR Q-GAUSSIAN DENSITY DISTRIBUTION FUNCTIONS"
+  ],
+  "unmatched_pred": [
+   "S. Papadopoulou",
+   "F. Antoniou, T. Argyropoulos, M. Hostettler, Y",
+   "1 Here it is assumed that the ratio of the transverse beam sizes is initially σx",
+   "Appendix A",
+   "Appendix B"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 690,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Impact of Non-Gaussian Beam Proﬁles in the Performance of Hadron Colliders",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Papadopoulou",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "F. Antoniou, T. Argyropoulos, M. Hostettler, Y",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. MOTIVATION- IMPACT OF NON-GAUSSIAN DISTRIBUTIONS ON LUMINOSITY",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III. INTRABEAM SCATTERING THEORIES, OBSERVATIONS AND SIMULATIONS",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Software for IBS and Radiations Eﬀects (SIRE)",
+   "page": 4,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "B. The logarithmic Coulomb factor",
+   "page": 5,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "C. Benchmarking of IBS theoretical model with SIRE",
+   "page": 6,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "IV. SIMULATIONS PERFORMED WITH SIRE FOR THE LHC",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Reduced lattice",
+   "page": 7,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "B. Convergence studies",
+   "page": 8,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "C. Benchmarking of SIRE with the B-M IBS theoretical model",
+   "page": 9,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "1. At the LHC injection energy (450 GeV)",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Here it is assumed that the ratio of the transverse beam sizes is initially σx/σy = 1.",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. At the LHC collision energy (6.5 TeV)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. BUNCH PROFILE MEASUREMENTS IN THE LHC",
+   "page": 14,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "A. Comparison between experimental data, the SIRE and the B-M analytical formalism, at the LHC",
+   "page": 14,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "VI. SUMMARY AND OUTLOOK",
+   "page": 17,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "Appendix A",
+   "page": 18,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "Appendix B",
+   "page": 19,
+   "level": 2,
+   "parent": 15
+  }
+ ],
+ "seconds": 14.469200499999715,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 21,
+  "tp": 15,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 1,
+  "parent_correct": 6,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "I. THE Q-GAUSSIAN DISTRIBUTION FUNCTION",
+   "II. LUMINOSITY CALCULATION FOR Q-GAUSSIAN DENSITY DISTRIBUTION FUNCTIONS"
+  ],
+  "unmatched_pred": [
+   "Impact of Non-Gaussian Beam Proﬁles in the Performance of Hadron Colliders",
+   "S. Papadopoulou",
+   "F. Antoniou, T. Argyropoulos, M. Hostettler, Y",
+   "1 Here it is assumed that the ratio of the transverse beam sizes is initially σx",
+   "Appendix A",
+   "Appendix B"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 1,
+  "parent_correct": 10,
+  "teds": 0.42105263157894735,
+  "unmatched_gt": [
+   "I. THE Q-GAUSSIAN DISTRIBUTION FUNCTION",
+   "II. LUMINOSITY CALCULATION FOR Q-GAUSSIAN DENSITY DISTRIBUTION FUNCTIONS"
+  ],
+  "unmatched_pred": [
+   "S. Papadopoulou",
+   "F. Antoniou, T. Argyropoulos, M. Hostettler, Y",
+   "1 Here it is assumed that the ratio of the transverse beam sizes is initially σx"
+  ],
+  "ignored_title_predictions": null
+ }
+}

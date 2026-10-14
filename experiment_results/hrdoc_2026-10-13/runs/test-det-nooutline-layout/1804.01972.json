@@ -1,0 +1,167 @@
+{
+ "doc": "1804.01972",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "4.3 Access Counters"
+  ],
+  "unmatched_pred": [
+   "3.4 Access Counters"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 10,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "4.3 Access Counters"
+  ],
+  "unmatched_pred": [
+   "3.4 Access Counters"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 227,
+  "layout_marked": 18,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9668658337859859,
+  "inserted_word_share": 0.027499544709524648
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 TAXONOMY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Defnitions",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Taxonomy of MRC Constructions",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 STACK DISTANCE ALGORITHMS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Mattson’s Stack Distance Algorithm",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Tree",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Buckets",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 Access Counters",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 REUSE TIME ALGORITHMS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Reuse Time",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Histogram",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Access Counters",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 OPEN PROBLEMS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.5506069000039133,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "4.3 Access Counters"
+  ],
+  "unmatched_pred": [
+   "3.4 Access Counters"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

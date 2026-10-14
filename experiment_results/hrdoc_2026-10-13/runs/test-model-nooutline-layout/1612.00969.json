@@ -1,0 +1,194 @@
+{
+ "doc": "1612.00969",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 212,
+  "layout_marked": 24,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10507,
+   "completion_tokens": 727,
+   "total_tokens": 11234
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9536318758815233,
+  "inserted_word_share": 0.036344200962052375
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Unit Dependency Graph",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Learning to Predict UDGs",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Vertex Classiﬁer",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Edge Classiﬁer",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Constrained Inference",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Joint Inference With An Arithmetic Solver",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Monotonic Expression Tree",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Arithmetic Word Problem Solver",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Joint Inference",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Consistent Rate Unit Graphs",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Dataset",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Data Acquisition",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "UDG Prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Solving Arithmetic Word Problems",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Discussion",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 Related Work",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.021538699998928,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

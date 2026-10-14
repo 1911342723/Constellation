@@ -1,0 +1,128 @@
+{
+ "doc": "1804.08576",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 19,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 14,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.30000000000000004,
+  "unmatched_gt": [
+   "Transition Path Sampling",
+   "Order Parameter",
+   "Metashooting",
+   "Calculation details",
+   "Molecular Dynamics",
+   "Transition Path Sampling",
+   "Metadynamics",
+   "Mechanistic analysis",
+   "Metashooting",
+   "Progression of the metashooting",
+   "Energy profile and intermediate configurations",
+   "Free-energy intermediates and maxima",
+   "Energy barriers",
+   "DISCUSSION AND CONCLUSIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 14,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "Transition Path Sampling",
+   "Order Parameter",
+   "Metashooting",
+   "Calculation details",
+   "Molecular Dynamics",
+   "Transition Path Sampling",
+   "Metadynamics",
+   "Mechanistic analysis",
+   "Metashooting",
+   "Progression of the metashooting",
+   "Energy profile and intermediate configurations",
+   "Free-energy intermediates and maxima",
+   "Energy barriers",
+   "DISCUSSION AND CONCLUSIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 196,
+  "layout_marked": 23,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9820415879017014,
+  "inserted_word_share": 0.9817524016930399
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "METHODS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.157092000001285,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 14,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.30000000000000004,
+  "unmatched_gt": [
+   "Transition Path Sampling",
+   "Order Parameter",
+   "Metashooting",
+   "Calculation details",
+   "Molecular Dynamics",
+   "Transition Path Sampling",
+   "Metadynamics",
+   "Mechanistic analysis",
+   "Metashooting",
+   "Progression of the metashooting",
+   "Energy profile and intermediate configurations",
+   "Free-energy intermediates and maxima",
+   "Energy barriers",
+   "DISCUSSION AND CONCLUSIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

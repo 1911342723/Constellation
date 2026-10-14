@@ -1,0 +1,158 @@
+{
+ "doc": "1806.01117",
+ "system": "docling",
+ "metrics": {
+  "gt": 12,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Navjot Kukreja",
+   "Jan Hückelheim",
+   "Gerard J. Gorman"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 47.56400070000018
+ },
+ "predictions": [
+  {
+   "text": "Backpropagation for long sequences: beyond memory constraints with constant overheads",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Navjot Kukreja",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Jan Hückelheim",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Gerard J. Gorman",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Checkpointing for neural networks",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.2 Multistage checkpointing",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.3 Contributions",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Asynchronous multistage checkpointing",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Performance Model",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Implementation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experimental Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions and future work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.009233799995854497,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Backpropagation for long sequences: beyond memory constraints with constant over",
+   "Navjot Kukreja",
+   "Jan Hückelheim",
+   "Gerard J. Gorman"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Navjot Kukreja",
+   "Jan Hückelheim",
+   "Gerard J. Gorman"
+  ],
+  "ignored_title_predictions": null
+ }
+}

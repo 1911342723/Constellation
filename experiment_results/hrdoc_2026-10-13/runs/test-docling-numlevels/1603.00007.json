@@ -1,0 +1,162 @@
+{
+ "doc": "1603.00007",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "7.1 α = β, γ = δ",
+   "7.2 α = −β , γ = δ"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "7.1 α = β, γ = δ",
+   "7.2 α = −β , γ = δ"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 24.98421740000049
+ },
+ "predictions": [
+  {
+   "text": "Computational Complex Dynamics of fα,β,γ,δ(z) = αz + β γz2 + δz",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Brief Review and Results",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Local Asymptotic Stability of the Fixed Points",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Verification of Different Criteria",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Verification of Convergence Criteria",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Verification of Divergence Criteria",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Verification of Constant Criteria",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Periodic of Solutions",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Example Cases of Periodic Solutions of Different Periods",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Slow and Fast Convergence",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Chaotic Solutions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 A Few Special Cases of Parameters",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.3 γ = α, δ = β",
+   "page": 13,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.4 γ = β, δ = α",
+   "page": 13,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "8 Future Endeavours",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01327070000115782,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "7.1 α = β, γ = δ",
+   "7.2 α = −β , γ = δ"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

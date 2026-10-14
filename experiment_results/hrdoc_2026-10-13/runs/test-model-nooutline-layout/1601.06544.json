@@ -1,0 +1,145 @@
+{
+ "doc": "1601.06544",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "element methods"
+  ],
+  "unmatched_pred": [
+   "First Stabilize and Then Dualize",
+   "First Dualize and Then Stabilize",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "element methods"
+  ],
+  "unmatched_pred": [
+   "First Stabilize and Then Dualize",
+   "First Dualize and Then Stabilize"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1319,
+  "layout_marked": 11,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 27006,
+   "completion_tokens": 478,
+   "total_tokens": 27484
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9279631439341058,
+  "inserted_word_share": 0.666290132289078
+ },
+ "predictions": [
+  {
+   "text": "Goal-oriented a posteriori error control",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem formulation and stabilized discretization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. A dual weighted residual approach for stabilized ﬁnite",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "First Stabilize and Then Dualize",
+   "page": 13,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "First Dualize and Then Stabilize",
+   "page": 13,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Practical Aspects",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Numerical studies",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Summary",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Appendix",
+   "page": 32,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.076644099994155,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "element methods"
+  ],
+  "unmatched_pred": [
+   "First Stabilize and Then Dualize",
+   "First Dualize and Then Stabilize",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

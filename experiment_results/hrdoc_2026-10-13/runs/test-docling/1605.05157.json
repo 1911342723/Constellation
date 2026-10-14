@@ -1,0 +1,124 @@
+{
+ "doc": "1605.05157",
+ "system": "docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Metric global localization in the urban area",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 9.531513599999016
+ },
+ "predictions": [
+  {
+   "text": "Monocular Urban Localization using Street View",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHOD",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Metric global localization in the urban area",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data preparation and generation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Database construction and retrieval acceleration",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Global metric localization",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EXPERIMENTAL EVALUATION AND DISCUSSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.006888999996590428,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Monocular Urban Localization using Street View",
+   "Algorithm 1 Metric global localization in the urban area",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Metric global localization in the urban area"
+  ],
+  "ignored_title_predictions": null
+ }
+}

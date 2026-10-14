@@ -1,0 +1,239 @@
+{
+ "doc": "1803.10136",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 6,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "| Bengali word | English correspondence | Bengali utterance",
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 4542,
+   "completion_tokens": 4373
+  },
+  "elapsed_llm_seconds": 20.716583200002788,
+  "content_preservation": 0.9904664623765748,
+  "inserted_word_share": 0.0024005486968450285,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Comprehending Real Numbers: Development of Bengali Real Number Speech Corpus",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introductions",
+    0,
+    2
+   ],
+   [
+    "| Bengali word | English correspondence | Bengali utterance",
+    1,
+    1
+   ],
+   [
+    "2 Development of Bengali Real Number Speech Dataset",
+    1,
+    2
+   ],
+   [
+    "2.1 Data Preparation",
+    2,
+    3
+   ],
+   [
+    "2.2 Data Organization",
+    3,
+    3
+   ],
+   [
+    "2.2.1 Transcripts of the Speech Samples",
+    3,
+    4
+   ],
+   [
+    "2.2.2 Dictionary of Words to Phonemes",
+    4,
+    4
+   ],
+   [
+    "2.2.3 Organization of the Audio Samples",
+    4,
+    4
+   ],
+   [
+    "2.3 Characteristics of the Data Corpus",
+    4,
+    3
+   ],
+   [
+    "3 Two Speech Recognizers",
+    6,
+    2
+   ],
+   [
+    "4 Conclusion",
+    7,
+    2
+   ],
+   [
+    "References",
+    7,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Comprehending Real Numbers: Development of Bengali Real Number Speech Corpus",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introductions",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "| Bengali word | English correspondence | Bengali utterance",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Development of Bengali Real Number Speech Dataset",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.1 Data Preparation",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Data Organization",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.1 Transcripts of the Speech Samples",
+   "page": 3,
+   "level": 4,
+   "parent": 6
+  },
+  {
+   "text": "2.2.2 Dictionary of Words to Phonemes",
+   "page": 4,
+   "level": 4,
+   "parent": 6
+  },
+  {
+   "text": "2.2.3 Organization of the Audio Samples",
+   "page": 4,
+   "level": 4,
+   "parent": 6
+  },
+  {
+   "text": "2.3 Characteristics of the Data Corpus",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3 Two Speech Recognizers",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  }
+ ],
+ "seconds": 20.78290989999732,
+ "metrics_raw": {
+  "gt": 11,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 4,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Comprehending Real Numbers: Development of Bengali Real Number Speech Corpus",
+   "| Bengali word | English correspondence | Bengali utterance",
+   "2.2.3 Organization of the Audio Samples"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 4,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Comprehending Real Numbers: Development of Bengali Real Number Speech Corpus",
+   "| Bengali word | English correspondence | Bengali utterance",
+   "2.2.3 Organization of the Audio Samples"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "| Bengali word | English correspondence | Bengali utterance",
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": null
+ }
+}

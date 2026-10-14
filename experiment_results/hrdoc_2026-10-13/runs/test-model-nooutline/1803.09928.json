@@ -1,0 +1,172 @@
+{
+ "doc": "1803.09928",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.95,
+  "unmatched_gt": [
+   "Computing Density Entropy from Local Observation"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 370,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13427,
+   "completion_tokens": 725,
+   "total_tokens": 14152
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Motivating Problems (MSMPs)",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Background: Reinforcement Learning",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Q-Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Deep Q-Networks (DQN)",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3 Advantage Actor Critic (A2C)",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Anonymous Multi-Agent Reinforcement",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Entropy based Independent Learning in",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Density Entropy based Deep Q-Networks,",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "6.2 Density Entropy based A2C, DE-A2C",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "7 Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 Implementation Details",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.2 Results",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "8 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.34096800000043,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.95,
+  "unmatched_gt": [
+   "Computing Density Entropy from Local Observation"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [
+   "Computing Density Entropy from Local Observation"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

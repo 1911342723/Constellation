@@ -1,0 +1,142 @@
+{
+ "doc": "1702.04299",
+ "system": "det",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 177,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Cyclic Dominance in the Spatial Coevolutionary",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Optional Prisoner’s Dilemma Game ⋆",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Optional Prisoner’s Dilemma",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Monte Carlo Simulation",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Experimental Set-up",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Cyclic Competition with Three Strategies",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Breaking the Cyclic Competition: Extinction of Species",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Two Species",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.2 Three Species",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.3 Destroying the Environment",
+   "page": 9,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "6 Conclusions and Future Work",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.307617800001026,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Cyclic Dominance in the Spatial Coevolutionary",
+   "Optional Prisoner’s Dilemma Game ⋆"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

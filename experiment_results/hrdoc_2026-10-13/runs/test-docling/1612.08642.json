@@ -1,0 +1,135 @@
+{
+ "doc": "1612.08642",
+ "system": "docling",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "A. Problem and Data Set Description"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 14.89891390000048
+ },
+ "predictions": [
+  {
+   "text": "Bayesian Nonparametric Models for Synchronous Brain-Computer Interfaces",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. HMM APPROACH",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. BAYESIAN NONPARAMETRIC HMM APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The HDP-HMM and the Sticky HDP-HMM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DESCRIPTION OF EXPERIMENTS AND METHODS A. Problem and Data Set Description",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Artifact Reduction",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Spatial Filter",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Spectral Power Estimation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.011989799997536466,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "A. Problem and Data Set Description"
+  ],
+  "unmatched_pred": [
+   "Bayesian Nonparametric Models for Synchronous Brain-Computer Interfaces"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "A. Problem and Data Set Description"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,159 @@
+{
+ "doc": "1708.00961",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 424,
+  "layout_marked": 17,
+  "content_preservation": 1.0,
+  "word_preservation": 0.919828115408226,
+  "inserted_word_share": 0.9583031868119636
+ },
+ "predictions": [
+  {
+   "text": "Low Dose CT Image Denoising Using a Generative",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Noise Reduction Model",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. WGAN",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Perceptual Loss",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Network Structures",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Other Networks",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Datasets",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Network Training",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Network Convergence",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Denoising Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Quantitative Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "F. VGG Feature Extractor",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "IV. DISCUSSIONS AND CONCLUSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.929150799995114,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

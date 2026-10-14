@@ -1,0 +1,304 @@
+{
+ "doc": "1411.3334",
+ "system": "det",
+ "metrics": {
+  "gt": 17,
+  "pred": 33,
+  "tp": 17,
+  "fp": 16,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 13,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "arXiv:1411.3334v5 [quant-ph] 17 Feb 2017",
+   "1. V = cΠ where 0 < c ≤ 1 and Π is a projection onto a stabilizer subspace.",
+   "1. For a Pauli operator P, if V ̸= PV P then V PV = 0.",
+   "2. For any two Pauli operators P and Q, if V = QV P then also V = QV Q and V = P",
+   "1. The space im V is a stabilizer subspace, say corresponding to stabilizer subg",
+   "2. Since V is a sub-projection we have cV = V †V = PV QQV P = PV 2P = cPV P. The",
+   "2. We assume that T = 2, noting that all higher values of T follow from inductio",
+   "2. If (VG, EG) has edge expansion ≥ 1 then this gadget is fault-tolerant.",
+   "1. The vertex block is initialized to |+⟩⊗|VG|",
+   "2. For each i ∈ [w] perform a controlled-Pi gate from vertex qubit i to data qub",
+   "3. Postselect the vertex block onto ⟨+|⊗|VG| and the edge block onto ⟨0|⊗|EG|.",
+   "2 hI⊗w ⊗ I⊗|EG|i + 1",
+   "1 S⊆VG P S Y",
+   "2 log 1",
+   "0) per cell, or O(n) total.",
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 1054,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Sparse Quantum Codes from Quantum Circuits",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "arXiv:1411.3334v5 [quant-ph] 17 Feb 2017",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. BACKGROUND AND RELATED WORK",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Quantum Subsystem Codes",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "B. Sparse Quantum Codes and Related Work",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III. CONSTRUCTING THE CODES",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. The Base Code and Error-Detecting Circuits",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "B. Localized codes",
+   "page": 5,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "IV. CODE PROPERTIES",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. The circuit-code isomorphism",
+   "page": 7,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "B. Characterizing the logical and stabilizer groups",
+   "page": 8,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "1. Spackling",
+   "page": 8,
+   "level": 4,
+   "parent": 11
+  },
+  {
+   "text": "2. Proving the isomorphism",
+   "page": 9,
+   "level": 4,
+   "parent": 11
+  },
+  {
+   "text": "C. Distance",
+   "page": 15,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "1. V = cΠ where 0 < c ≤ 1 and Π is a projection onto a stabilizer subspace.",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. For a Pauli operator P, if V ̸= PV P then V PV = 0.",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. For any two Pauli operators P and Q, if V = QV P then also V = QV Q and V = PV P.",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. The space im V is a stabilizer subspace, say corresponding to stabilizer subgroup ⟨s1, . . . , sk⟩.",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Since V is a sub-projection we have cV = V †V = PV QQV P = PV 2P = cPV P. The same",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. We assume that T = 2, noting that all higher values of T follow from induction. We need",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. FAULT-TOLERANT GADGETS",
+   "page": 17,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "2. If (VG, EG) has edge expansion ≥ 1 then this gadget is fault-tolerant.",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. The vertex block is initialized to |+⟩⊗|VG|",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. For each i ∈ [w] perform a controlled-Pi gate from vertex qubit i to data qubit i. At the",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Postselect the vertex block onto ⟨+|⊗|VG| and the edge block onto ⟨0|⊗|EG|.",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 hI⊗w ⊗ I⊗|EG|i + 1",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 S⊆VG P S Y",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. SPARSE QUANTUM CODES WITH IMPROVED DISTANCE AND RATE",
+   "page": 21,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "2 log 1",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. MAKING SPARSE CODES LOCAL",
+   "page": 22,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "0) per cell, or O(n) total.",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. DISCUSSION",
+   "page": 24,
+   "level": 2,
+   "parent": 31
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 25,
+   "level": 2,
+   "parent": 31
+  }
+ ],
+ "seconds": 29.24703750000117,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 34,
+  "tp": 17,
+  "fp": 17,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 9,
+  "teds": 0.5142857142857142,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Sparse Quantum Codes from Quantum Circuits",
+   "arXiv:1411.3334v5 [quant-ph] 17 Feb 2017",
+   "1. V = cΠ where 0 < c ≤ 1 and Π is a projection onto a stabilizer subspace.",
+   "1. For a Pauli operator P, if V ̸= PV P then V PV = 0.",
+   "2. For any two Pauli operators P and Q, if V = QV P then also V = QV Q and V = P",
+   "1. The space im V is a stabilizer subspace, say corresponding to stabilizer subg",
+   "2. Since V is a sub-projection we have cV = V †V = PV QQV P = PV 2P = cPV P. The",
+   "2. We assume that T = 2, noting that all higher values of T follow from inductio",
+   "2. If (VG, EG) has edge expansion ≥ 1 then this gadget is fault-tolerant.",
+   "1. The vertex block is initialized to |+⟩⊗|VG|",
+   "2. For each i ∈ [w] perform a controlled-Pi gate from vertex qubit i to data qub",
+   "3. Postselect the vertex block onto ⟨+|⊗|VG| and the edge block onto ⟨0|⊗|EG|.",
+   "2 hI⊗w ⊗ I⊗|EG|i + 1",
+   "1 S⊆VG P S Y",
+   "2 log 1",
+   "0) per cell, or O(n) total.",
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 32,
+  "tp": 17,
+  "fp": 15,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 13,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "arXiv:1411.3334v5 [quant-ph] 17 Feb 2017",
+   "1. V = cΠ where 0 < c ≤ 1 and Π is a projection onto a stabilizer subspace.",
+   "1. For a Pauli operator P, if V ̸= PV P then V PV = 0.",
+   "2. For any two Pauli operators P and Q, if V = QV P then also V = QV Q and V = P",
+   "1. The space im V is a stabilizer subspace, say corresponding to stabilizer subg",
+   "2. Since V is a sub-projection we have cV = V †V = PV QQV P = PV 2P = cPV P. The",
+   "2. We assume that T = 2, noting that all higher values of T follow from inductio",
+   "2. If (VG, EG) has edge expansion ≥ 1 then this gadget is fault-tolerant.",
+   "1. The vertex block is initialized to |+⟩⊗|VG|",
+   "2. For each i ∈ [w] perform a controlled-Pi gate from vertex qubit i to data qub",
+   "3. Postselect the vertex block onto ⟨+|⊗|VG| and the edge block onto ⟨0|⊗|EG|.",
+   "2 hI⊗w ⊗ I⊗|EG|i + 1",
+   "1 S⊆VG P S Y",
+   "2 log 1",
+   "0) per cell, or O(n) total."
+  ],
+  "ignored_title_predictions": null
+ }
+}

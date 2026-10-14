@@ -1,0 +1,187 @@
+{
+ "doc": "1609.09840",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 28,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 14,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.5172413793103448,
+  "unmatched_gt": [
+   "2.1. ∆-universality",
+   "2.2. Strong universality",
+   "2.3. Composition and concatenation of families",
+   "3.1. Component-wise regularity",
+   "3.2. K -regularity",
+   "6.1. Scalar product computation",
+   "6.2. Efficient modulo reduction",
+   "8.1. Variable-length results on recent Intel processors",
+   "8.2. Multiplatform performance testing",
+   "A. PLATFORMS USED",
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators",
+   "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 932,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10500,
+   "completion_tokens": 829,
+   "total_tokens": 11329
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RANDOM HASHING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. REGULARITY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. A TREE-BASED CONSTRUCTION FOR UNIVERSALITY AND REGULARITY",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. UNIVERSALITY AND REGULARITY WITH PM+",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. AN EFFICIENT IMPLEMENTATION OF PM+",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. ACHIEVING THE AVALANCHE EFFECT",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. EXPERIMENTS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. CONCLUSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. ACKNOWLEDGEMENTS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS (ASSEMBLER)",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS USING INTEL",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. NON-REGULARITY OF THE VHASH FAMILY",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.569521099998383,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 14,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.5172413793103448,
+  "unmatched_gt": [
+   "2.1. ∆-universality",
+   "2.2. Strong universality",
+   "2.3. Composition and concatenation of families",
+   "3.1. Component-wise regularity",
+   "3.2. K -regularity",
+   "6.1. Scalar product computation",
+   "6.2. Efficient modulo reduction",
+   "8.1. Variable-length results on recent Intel processors",
+   "8.2. Multiplatform performance testing",
+   "A. PLATFORMS USED",
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators",
+   "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 14,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.4814814814814815,
+  "unmatched_gt": [
+   "2.1. ∆-universality",
+   "2.2. Strong universality",
+   "2.3. Composition and concatenation of families",
+   "3.1. Component-wise regularity",
+   "3.2. K -regularity",
+   "6.1. Scalar product computation",
+   "6.2. Efficient modulo reduction",
+   "8.1. Variable-length results on recent Intel processors",
+   "8.2. Multiplatform performance testing",
+   "A. PLATFORMS USED",
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators",
+   "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "doc": "1611.00218",
+ "system": "docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 12.839684500002477
+ },
+ "predictions": [
+  {
+   "text": "Sliding Dictionary Based Sparse Representation For Action Recognition",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Proposed Approach",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Sliding Dictionary - Sparse Representation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Difference of 3D Joints Feature",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3. Score Level Fusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Experimental Evaluation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. UTKinect Action Dataset",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. UT Dallas Multimodal Dataset",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3. MSRC - 12 Gesture Dataset",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4. Online Action Recognition",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.013797499996144325,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Sliding Dictionary Based Sparse Representation For Action Recognition"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

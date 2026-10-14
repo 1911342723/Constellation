@@ -1,0 +1,101 @@
+{
+ "doc": "1708.03426",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "• Please cite this version:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "• Please cite this version:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 114,
+  "layout_marked": 10,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9892553723138431,
+  "inserted_word_share": 0.9915813424345847
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 EXPERIMENTAL SET-UP",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 RESULTS, VALIDATION AND ERROR ANALYSIS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 CONCLUSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 ACKNOWLEDGEMENTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.501378499997372,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "• Please cite this version:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

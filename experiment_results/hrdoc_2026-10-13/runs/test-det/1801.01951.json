@@ -1,0 +1,123 @@
+{
+ "doc": "1801.01951",
+ "system": "det",
+ "metrics": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "75 Q (pC)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 238,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Concept",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Beam-dynamics simulations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Methods",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. Results",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "75 Q (pC)",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Summary",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Acknowledgments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.6633713000010175,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "75 Q (pC)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "75 Q (pC)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

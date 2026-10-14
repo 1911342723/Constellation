@@ -1,0 +1,196 @@
+{
+ "doc": "1802.05318",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5950,
+   "completion_tokens": 5338
+  },
+  "elapsed_llm_seconds": 25.6035023000004,
+  "content_preservation": 0.9158212229229503,
+  "inserted_word_share": 0.03884892086330938,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "NONLINEAR SHAPE REGRESSION FOR FILTERING SEGMENTATION RESULTS FROM CALCIUM IMAGING",
+    0,
+    1
+   ],
+   [
+    "ABSTRACT",
+    0,
+    2
+   ],
+   [
+    "1. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "2. SHAPE FILTER",
+    0,
+    2
+   ],
+   [
+    "2.1. Data preparation and shape representation",
+    0,
+    3
+   ],
+   [
+    "2.2. Weighted smoothed nonlinear regression",
+    0,
+    3
+   ],
+   [
+    "2.3. Local weight selections",
+    0,
+    3
+   ],
+   [
+    "3. EXPERIMENTAL RESULTS",
+    0,
+    2
+   ],
+   [
+    "4. CONCLUSION",
+    0,
+    2
+   ],
+   [
+    "5. REFERENCES",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. SHAPE FILTER",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Data preparation and shape representation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Weighted smoothed nonlinear regression",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Local weight selections",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. EXPERIMENTAL RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 25.666844799998216,
+ "metrics_raw": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 5,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 0,
+  "parent_correct": 2,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "2.3. Local weight selections",
+   "3. EXPERIMENTAL RESULTS",
+   "4. CONCLUSION",
+   "5. REFERENCES"
+  ],
+  "unmatched_pred": [
+   "NONLINEAR SHAPE REGRESSION FOR FILTERING SEGMENTATION RESULTS FROM CALCIUM IMAGI",
+   "2.3. Local weight selections",
+   "3. EXPERIMENTAL RESULTS",
+   "4. CONCLUSION",
+   "5. REFERENCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 5,
+  "fp": 4,
+  "fn": 4,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "2.3. Local weight selections",
+   "3. EXPERIMENTAL RESULTS",
+   "4. CONCLUSION",
+   "5. REFERENCES"
+  ],
+  "unmatched_pred": [
+   "2.3. Local weight selections",
+   "3. EXPERIMENTAL RESULTS",
+   "4. CONCLUSION",
+   "5. REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

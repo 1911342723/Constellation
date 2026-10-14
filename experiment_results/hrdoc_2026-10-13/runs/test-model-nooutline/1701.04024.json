@@ -1,0 +1,145 @@
+{
+ "doc": "1701.04024",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "• Per-Response Accuracy: Bordes and We-",
+   "• Per-Dialogue Accuracy: Bordes and Weston"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 191,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4397,
+   "completion_tokens": 388,
+   "total_tokens": 4785
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Architecture",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Experiments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Data",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Training",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Metrics",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "• Per-Response Accuracy: Bordes and We-",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "• Per-Dialogue Accuracy: Bordes and Weston",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 Results",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Discussion and Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.55426720000105,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "• Per-Response Accuracy: Bordes and We-",
+   "• Per-Dialogue Accuracy: Bordes and Weston"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "• Per-Response Accuracy: Bordes and We-",
+   "• Per-Dialogue Accuracy: Bordes and Weston"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,156 @@
+{
+ "doc": "1612.06551",
+ "system": "outline",
+ "metrics": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "ABSTRACT"
+  ],
+  "unmatched_pred": [
+   "11 References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 The Simulation Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Implementation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Initialising an Agent and her Interests",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.2 Social Network Setup",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.3 Content Creation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.4 Rating",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "5 Personalisation Algorithms",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Content Based Personalisation",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5.2 Author Based Personalisation",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6 Measuring Filter Bubble Effects",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Simulation Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Discussion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Summary and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.07167570000092383,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "ABSTRACT"
+  ],
+  "unmatched_pred": [
+   "11 References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

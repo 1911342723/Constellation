@@ -1,0 +1,160 @@
+{
+ "doc": "1511.07199",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 8,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "DIFFUSIVITIES",
+   "IONIZATION CHEMISTRY",
+   "Abundance"
+  ],
+  "unmatched_pred": [
+   "2 Yuanpei College, Peking University, Beijing, 100871, China and",
+   "3 Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophys"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 906,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "2 Yuanpei College, Peking University, Beijing, 100871, China and",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophysics, 60 Garden St., MS-51, Cambridge, MA, 02138;",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. A SIMPLIFIED MODEL FOR GRAIN-MODIFIED",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Asymptotic Relations",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2. Representative Cases",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. APPLICATION TO PROTOPLANETARY DISKS:",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Threshold Field Strength in PPDs",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. An Empirical Criterion on Grain Size and",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3. Diﬀusivities in the Outer Disk",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. MHD SIMULATIONS OF THE INNER PPD",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Simulation Setup and Parameters",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2. Simulation Results",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5. SUMMARY AND DISCUSSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.510816300000442,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 8,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "DIFFUSIVITIES",
+   "IONIZATION CHEMISTRY",
+   "Abundance"
+  ],
+  "unmatched_pred": [
+   "2 Yuanpei College, Peking University, Beijing, 100871, China and",
+   "3 Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophys"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 7,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "DIFFUSIVITIES",
+   "IONIZATION CHEMISTRY",
+   "Abundance"
+  ],
+  "unmatched_pred": [
+   "2 Yuanpei College, Peking University, Beijing, 100871, China and",
+   "3 Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophys"
+  ],
+  "ignored_title_predictions": null
+ }
+}

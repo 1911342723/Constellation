@@ -1,0 +1,129 @@
+{
+ "doc": "1709.08524",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 556,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4219,
+   "completion_tokens": 490,
+   "total_tokens": 4709
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9922258592471358,
+   "in_order": 0.9547872340425532,
+   "inserted": 0.018218623481781382
+  }
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Deep conditional independent models",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 An approximation for conditional independent models",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Deep conditional independent models",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Generative learning of deep networks",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Relations to other models",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 MNIST dense",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 MNIST CNN",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.6473450000048615
+}

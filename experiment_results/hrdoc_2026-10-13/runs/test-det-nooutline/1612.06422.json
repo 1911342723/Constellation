@@ -1,0 +1,168 @@
+{
+ "doc": "1612.06422",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 21,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [
+   "Appendices",
+   "A Benchmark Populations from Particle-Resolved Model",
+   "B Critical supersaturation for CCN activation",
+   "C Modified Moments from Legendre Polynomials",
+   "D Distributional Entropy",
+   "E Linear Program to Compute Quadrature Approximation and CCN bounds",
+   "F Genetic Algorithm to Optimize Constraints"
+  ],
+  "unmatched_pred": [
+   "1 \u0014 dl"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 274,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Constructing sparse and continuous representations from distribution moments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Computing CCN activity for benchmark populations",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Constructing quadratures from moments of n(Ddry, κ)",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Reconstructing n(sc) from quadrature",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Evaluating error in NCCN(s)/N",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Moment constraints for aerosol simulations",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Moments of n(sc) for reconstructing distributions",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Moments of n(Ddry, κ) for constructing bivariate quadrature",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Sparse approximation for efﬁcient and accurate aerosol representation",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussion and Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 \u0014 dl",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.48164519999773,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [
+   "Appendices",
+   "A Benchmark Populations from Particle-Resolved Model",
+   "B Critical supersaturation for CCN activation",
+   "C Modified Moments from Legendre Polynomials",
+   "D Distributional Entropy",
+   "E Linear Program to Compute Quadrature Approximation and CCN bounds",
+   "F Genetic Algorithm to Optimize Constraints"
+  ],
+  "unmatched_pred": [
+   "1 \u0014 dl"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "A Benchmark Populations from Particle-Resolved Model",
+   "B Critical supersaturation for CCN activation",
+   "C Modified Moments from Legendre Polynomials",
+   "D Distributional Entropy",
+   "E Linear Program to Compute Quadrature Approximation and CCN bounds",
+   "F Genetic Algorithm to Optimize Constraints"
+  ],
+  "unmatched_pred": [
+   "1 \u0014 dl"
+  ],
+  "ignored_title_predictions": null
+ }
+}

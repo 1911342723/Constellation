@@ -1,0 +1,112 @@
+{
+ "doc": "1706.07162",
+ "system": "outline",
+ "metrics": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Wavenet",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Wavenet for Speech Denoising",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dataset",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.2 Basic experimental setup",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.3 Evaluation based on computational measurements",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.4 Perceptual evaluation",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03988960000060615,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

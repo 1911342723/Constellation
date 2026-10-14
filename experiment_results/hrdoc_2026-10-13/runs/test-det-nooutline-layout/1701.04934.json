@@ -1,0 +1,149 @@
+{
+ "doc": "1701.04934",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2: Text Substitution Technique"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2: Text Substitution Technique"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 638,
+  "layout_marked": 20,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8919087395586586,
+  "inserted_word_share": 0.9641886378767477
+ },
+ "predictions": [
+  {
+   "text": "Investigating the Application of Common-Sense",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. RESEARCH MOTIVATION AND AIM",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESEARCH CONTRIBUTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SOLUTION APPROACH",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Worked-Out Example",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Solution Pseudo-code and Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "V. EXPERIMENTAL EVALUATION AND VALIDATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Dataset",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Term Substitution Technique",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Algorithm 2: Text Substitution Technique",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Experimental Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. THREATS TO VALIDITY AND LIMITATIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.261337600000843,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2: Text Substitution Technique"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

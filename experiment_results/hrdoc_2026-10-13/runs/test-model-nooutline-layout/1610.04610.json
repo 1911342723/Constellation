@@ -1,0 +1,170 @@
+{
+ "doc": "1610.04610",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "2.1.1. Matrix"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1.1. Matrix"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 960,
+  "layout_marked": 18,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 21902,
+   "completion_tokens": 696,
+   "total_tokens": 22598
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9728818132757691,
+  "inserted_word_share": 0.9525326662936511
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Computational framework",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Material constitutive models",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.1.1. Matrix",
+   "page": 6,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1.2. Yarns/ﬁbres",
+   "page": 8,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1.3. Fibres/matrix interfaces",
+   "page": 9,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2. Multi-scale computational homogenisation",
+   "page": 10,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Calibration and validation of plasticity model",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Numerical Examples",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Unidirectional GFRP composites",
+   "page": 14,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2. Multi-ﬁbres multi-layer RVE",
+   "page": 16,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3. Plain weave textile composites",
+   "page": 19,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5. Concluding remarks",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.35043069999665,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "2.1.1. Matrix"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

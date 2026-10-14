@@ -1,0 +1,148 @@
+{
+ "doc": "1709.08524",
+ "system": "det",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 9,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 cosh\u0002⟨wj, ¯x⟩ + bj\u0003 ,",
+   "2 cosh(ad"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 556,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Deep conditional independent models",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 An approximation for conditional independent models",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2 cosh\u0002⟨wj, ¯x⟩ + bj\u0003 ,",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Deep conditional independent models",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2 cosh(ad",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Generative learning of deep networks",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.4 Relations to other models",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3 Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 MNIST dense",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2 MNIST CNN",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.916638899998361,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 9,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 cosh\u0002⟨wj, ¯x⟩ + bj\u0003 ,",
+   "2 cosh(ad"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 7,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 cosh\u0002⟨wj, ¯x⟩ + bj\u0003 ,",
+   "2 cosh(ad"
+  ],
+  "ignored_title_predictions": null
+ }
+}

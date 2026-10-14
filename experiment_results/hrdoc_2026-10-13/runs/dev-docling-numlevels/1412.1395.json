@@ -1,0 +1,262 @@
+{
+ "doc": "1412.1395",
+ "system": "docling-numlevels",
+ "derived_from": "dev-docling",
+ "metrics": {
+  "gt": 35,
+  "pred": 30,
+  "tp": 28,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 23,
+  "parent_correct": 10,
+  "teds": 0.36111111111111116,
+  "unmatched_gt": [
+   "Abstract—",
+   "C O LL I S I ON AVOI D A NC E ( C S MA /E C A)",
+   "protocols",
+   "1) A conservative schedule reduction: Schedule Reset is",
+   "2) Aggressive approach to face channel errors: the default",
+   "2) Effect of clock drift over the achieved throughput in",
+   "3) Time between successful transmissions: It is related to"
+  ],
+  "unmatched_pred": [
+   "A High Efficiency MAC Protocol for WLANs: Providing Fairness in Dense Scenarios",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 34,
+  "pred": 29,
+  "tp": 28,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 23,
+  "parent_correct": 10,
+  "teds": 0.37142857142857144,
+  "unmatched_gt": [
+   "C O LL I S I ON AVOI D A NC E ( C S MA /E C A)",
+   "protocols",
+   "1) A conservative schedule reduction: Schedule Reset is",
+   "2) Aggressive approach to face channel errors: the default",
+   "2) Effect of clock drift over the achieved throughput in",
+   "3) Time between successful transmissions: It is related to"
+  ],
+  "unmatched_pred": [
+   "A High Efficiency MAC Protocol for WLANs: Providing Fairness in Dense Scenarios"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 57.1945360000027
+ },
+ "predictions": [
+  {
+   "text": "A High Efficiency MAC Protocol for WLANs: Providing Fairness in Dense Scenarios",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Zero Collision MAC",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Learning-MAC",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. CARRIER SENSE MULTIPLE ACCESS WITH ENHANCED COLLISION AVOIDANCE (CSMA/ECA)",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Supporting many more contenders",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. The effects of Aggregation",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Throughput bounds of CSMA/ECAHys+FS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Clock drift issue in descentralized collision-free MAC protocols",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "E. Channel errors",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "F. Hidden terminals",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "G. Schedule Reset Mechanism",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "H. Backwards compatibilty and coexistence",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. SIMULATION SCENARIO",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Scenario details",
+   "page": 8,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "B. Saturated and Non-saturated stations",
+   "page": 8,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "C. Performance under clock drift",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Channel errors",
+   "page": 8,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "E. Coexistance with CSMA/CA",
+   "page": 9,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "F. Applying Schedule Reset",
+   "page": 9,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Saturated nodes",
+   "page": 9,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "B. Non-saturated nodes",
+   "page": 9,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "C. Coexistence with CSMA/CA",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Channel errors and Schedule Reset",
+   "page": 11,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "VI. REAL HARDWARE IMPLEMENTATION",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. TRANSITIONING TOWARDS CSMA/ECAHYS+FS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSIONS",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.14058620000287192,
+ "metrics_v1": {
+  "gt": 35,
+  "pred": 30,
+  "tp": 28,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 23,
+  "parent_correct": 10,
+  "teds": 0.36111111111111116,
+  "unmatched_gt": [
+   "Abstract—",
+   "C O LL I S I ON AVOI D A NC E ( C S MA /E C A)",
+   "protocols",
+   "1) A conservative schedule reduction: Schedule Reset is",
+   "2) Aggressive approach to face channel errors: the default",
+   "2) Effect of clock drift over the achieved throughput in",
+   "3) Time between successful transmissions: It is related to"
+  ],
+  "unmatched_pred": [
+   "A High Efficiency MAC Protocol for WLANs: Providing Fairness in Dense Scenarios",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

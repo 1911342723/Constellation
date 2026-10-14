@@ -1,0 +1,115 @@
+{
+ "doc": "1603.07173",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "50 recordings"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "50 recordings"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 166,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9853372434017595,
+  "inserted_word_share": 0.7946524064171123
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Proposed Method",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Segmentation-Detection",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Classiﬁcation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 First-Pass",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.2 1st Variation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2.3 2nd Variation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "50 recordings",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.955405699998664
+}

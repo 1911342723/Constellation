@@ -1,0 +1,160 @@
+{
+ "doc": "1807.00787",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "ACM Reference Format:",
+   "ACKNOWLEDGEMEN TS"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Measuring Algorithmic Unfairness via Inequality Indices",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Setting",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Unfairness as Inequality in Benefits",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Axioms for Measuring Inequality",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Comparison with Previous Work",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Theoretical Characterization",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Accuracy vs. Individual Fairness",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Individual vs. Group Fairness",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Empirical Analysis",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Fairness vs. Accuracy Tradeoffs",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Fairness Decomposability",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Interaction Between Different Types of Unfairness",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Appendix: Technical Material",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.08170369999788818,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "ACM Reference Format:",
+   "ACKNOWLEDGEMEN TS"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [
+   "ACM Reference Format:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

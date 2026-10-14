@@ -1,0 +1,158 @@
+{
+ "doc": "1803.09901",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 327,
+  "layout_marked": 17,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4654,
+   "completion_tokens": 604,
+   "total_tokens": 5258
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.8315115969074913,
+  "inserted_word_share": 0.1531360304099919
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Mittens",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Vectorizing GloVe",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 The Mittens Objective Function",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Notes on Mittens Representations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Sentiment Experiments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Word Representations",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 IMDB Sentiment Classiﬁcation",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Clinical Text Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Word Representations",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Disease Diagnosis Sequence Modeling",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 SNOMED CT edge prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.68819600000279,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

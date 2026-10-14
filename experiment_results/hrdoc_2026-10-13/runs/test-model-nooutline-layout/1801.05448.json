@@ -1,0 +1,144 @@
+{
+ "doc": "1801.05448",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 69,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4373,
+   "completion_tokens": 523,
+   "total_tokens": 4896
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9715583646059649,
+  "inserted_word_share": 0.9650226829927329
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 MAGNUM SURVEY: OVERVIEW",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Sample selection",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Data analysis",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 MUSE MAPS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 NGC 1365",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 NGC 4945",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CONFLICT OF INTEREST STATEMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AUTHOR CONTRIBUTIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "FUNDING",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.920194599995739,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "doc": "1705.08828",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 17,
+  "tp": 10,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Cross-Language",
+   "Character",
+   "N-Gram",
+   "Cross-Language Conceptual Thesaurus-based",
+   "Cross-Language Alignment-based Similarity",
+   "Cross-Language Explicit Semantic Analysis",
+   "Translation + Monolingual Analysis (T+MA)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 223,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13057,
+   "completion_tokens": 398,
+   "total_tokens": 13455
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Dataset",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Overview of State-of-the-Art Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Cross-Language",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Character",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "N-Gram",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Cross-Language Conceptual Thesaurus-based",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Cross-Language Alignment-based Similarity",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Cross-Language Explicit Semantic Analysis",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Translation + Monolingual Analysis (T+MA)",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Evaluation Protocol",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Investigation of Cross-Language",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Across Language Pairs",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.2 Detailed Analysis for English-French",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.969812000003003,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 17,
+  "tp": 10,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Cross-Language",
+   "Character",
+   "N-Gram",
+   "Cross-Language Conceptual Thesaurus-based",
+   "Cross-Language Alignment-based Similarity",
+   "Cross-Language Explicit Semantic Analysis",
+   "Translation + Monolingual Analysis (T+MA)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 15,
+  "tp": 8,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Cross-Language",
+   "Character",
+   "N-Gram",
+   "Cross-Language Conceptual Thesaurus-based",
+   "Cross-Language Alignment-based Similarity",
+   "Cross-Language Explicit Semantic Analysis",
+   "Translation + Monolingual Analysis (T+MA)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

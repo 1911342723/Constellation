@@ -1,0 +1,105 @@
+{
+ "doc": "1806.05182",
+ "system": "docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 14.657806899998832
+ },
+ "predictions": [
+  {
+   "text": "Fully Convolutional Network for Automatic Road Extraction from Satellite Imagery",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Dataset",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Training",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusions",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0039586999992025085,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Fully Convolutional Network for Automatic Road Extraction from Satellite Imagery"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

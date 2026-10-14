@@ -1,0 +1,222 @@
+{
+ "doc": "1805.01017",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "Keywords:"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 10290,
+   "completion_tokens": 9387
+  },
+  "elapsed_llm_seconds": 44.233413500001916,
+  "content_preservation": 0.9536309336686577,
+  "inserted_word_share": 0.023970398970398987,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Mapping polar atmospheric features on Titan with VIMS: from the dissipation of the northern cloud to the onset of a southern polar vortex",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "Keywords:",
+    0,
+    2
+   ],
+   [
+    "1. Introduction",
+    0,
+    2
+   ],
+   [
+    "2. Data processing",
+    0,
+    2
+   ],
+   [
+    "3. Temporal evolution of the north polar atmospheric features during 13 years: from a mammoth cloud to clear skies",
+    0,
+    2
+   ],
+   [
+    "4. Temporal evolution over the south pole",
+    0,
+    2
+   ],
+   [
+    "5. Temporal evolution of the HCN spectral signatures over the two poles",
+    0,
+    2
+   ],
+   [
+    "6. Conclusion",
+    0,
+    2
+   ],
+   [
+    "Acknowledgment",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Data processing",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Temporal evolution of the north polar atmospheric features during 13 years: from a mammoth cloud to clear skies",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Temporal evolution over the south pole",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Temporal evolution of the HCN spectral signatures over the two poles",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 44.34037200000239,
+ "metrics_raw": {
+  "gt": 8,
+  "pred": 11,
+  "tp": 2,
+  "fp": 9,
+  "fn": 6,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "3. Temporal evolution of the north polar atmo- spheric features during 13 years:",
+   "4. Temporal evolution over the south pole",
+   "5. Temporal evolution of the HCN spectral signa- tures over the two poles",
+   "6. Conclusion",
+   "Acknowledgment",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Mapping polar atmospheric features on Titan with VIMS: from the dissipation of t",
+   "Abstract",
+   "Keywords:",
+   "3. Temporal evolution of the north polar atmospheric features during 13 years: f",
+   "4. Temporal evolution over the south pole",
+   "5. Temporal evolution of the HCN spectral signatures over the two poles",
+   "6. Conclusion",
+   "Acknowledgment",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 2,
+  "fp": 8,
+  "fn": 6,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.2727272727272727,
+  "unmatched_gt": [
+   "3. Temporal evolution of the north polar atmo- spheric features during 13 years:",
+   "4. Temporal evolution over the south pole",
+   "5. Temporal evolution of the HCN spectral signa- tures over the two poles",
+   "6. Conclusion",
+   "Acknowledgment",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "Keywords:",
+   "3. Temporal evolution of the north polar atmospheric features during 13 years: f",
+   "4. Temporal evolution over the south pole",
+   "5. Temporal evolution of the HCN spectral signatures over the two poles",
+   "6. Conclusion",
+   "Acknowledgment",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

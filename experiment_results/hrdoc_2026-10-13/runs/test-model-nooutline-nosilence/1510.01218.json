@@ -1,0 +1,313 @@
+{
+ "doc": "1510.01218",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 17,
+  "pred": 31,
+  "tp": 14,
+  "fp": 17,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.40625,
+  "unmatched_gt": [
+   "2. Flow: experiments, imaging, simulations, and upscaling",
+   "Acknowledgments.",
+   "7. Anisotropic conductivities and at large flow rates"
+  ],
+  "unmatched_pred": [
+   "2 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "4 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "1 : ωijk ∈ Ωr (rock (glass beads)) .",
+   "2 : ωijk ∈ Ωb (bioﬁlm)",
+   "2.2. Grid for ﬂow computations",
+   "8 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "3.1. Porescale ﬂow model and upscaling",
+   "3.2. Upscaling ﬂow results",
+   "4.1. Process description",
+   "4.2. Bioﬁlm models in literature",
+   "4.3. Biomass evolution and (BN) model",
+   "4.4. Numerical model",
+   "4.4.2. Finite volume/CCFD discretization",
+   "5.3. Cumulative values",
+   "Appendix A",
+   "REFERENCES",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 700,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 19849,
+   "completion_tokens": 1332,
+   "total_tokens": 21181
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "AND UPSCALING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Experimental set-up and notation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 : ωijk ∈ Ωr (rock (glass beads)) .",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 : ωijk ∈ Ωb (bioﬁlm)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2. Grid for ﬂow computations",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.3. Evaluating eﬀect of bioﬁlm growth without simulations. Some",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "8 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Flow simulations and comparison with experiment",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Porescale ﬂow model and upscaling",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2. Upscaling ﬂow results",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4. Biomass-nutrient model coupled to hydrodynamics",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Process description",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.2. Bioﬁlm models in literature",
+   "page": 13,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.3. Biomass evolution and (BN) model",
+   "page": 14,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.4. Numerical model",
+   "page": 16,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.4.1. Time-discretized coupled (H-BN) model",
+   "page": 17,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "4.4.2. Finite volume/CCFD discretization",
+   "page": 17,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "4.4.3. Implementing the inequality constraint",
+   "page": 18,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "5. Numerical simulations of (H-BN) model",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Simulation results",
+   "page": 21,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "5.2. Eﬀect of ﬂow rates and biomass advection parameter ν1. Now",
+   "page": 23,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "5.3. Cumulative values",
+   "page": 25,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "5.4. Further discussion of simulation results. The simulations and the",
+   "page": 26,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "6. Conclusions",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1. Computations of full tensor on cropped rectangular domains.",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2. Computations with varying ﬂow rates. In addition to conductiv-",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 31,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 25.283994899997197,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 32,
+  "tp": 14,
+  "fp": 18,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.3939393939393939,
+  "unmatched_gt": [
+   "2. Flow: experiments, imaging, simulations, and upscaling",
+   "Acknowledgments.",
+   "7. Anisotropic conductivities and at large flow rates"
+  ],
+  "unmatched_pred": [
+   "AND UPSCALING",
+   "2 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "4 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "1 : ωijk ∈ Ωr (rock (glass beads)) .",
+   "2 : ωijk ∈ Ωb (bioﬁlm)",
+   "2.2. Grid for ﬂow computations",
+   "8 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "3.1. Porescale ﬂow model and upscaling",
+   "3.2. Upscaling ﬂow results",
+   "4.1. Process description",
+   "4.2. Bioﬁlm models in literature",
+   "4.3. Biomass evolution and (BN) model",
+   "4.4. Numerical model",
+   "4.4.2. Finite volume/CCFD discretization",
+   "5.3. Cumulative values",
+   "Appendix A",
+   "REFERENCES",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 28,
+  "tp": 14,
+  "fp": 14,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.4482758620689655,
+  "unmatched_gt": [
+   "2. Flow: experiments, imaging, simulations, and upscaling",
+   "7. Anisotropic conductivities and at large flow rates"
+  ],
+  "unmatched_pred": [
+   "2 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "4 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "1 : ωijk ∈ Ωr (rock (glass beads)) .",
+   "2 : ωijk ∈ Ωb (bioﬁlm)",
+   "2.2. Grid for ﬂow computations",
+   "8 M. PESZYNSKA, A. TRYKOZKO, G. ILTIS, S",
+   "3.1. Porescale ﬂow model and upscaling",
+   "3.2. Upscaling ﬂow results",
+   "4.1. Process description",
+   "4.2. Bioﬁlm models in literature",
+   "4.3. Biomass evolution and (BN) model",
+   "4.4. Numerical model",
+   "4.4.2. Finite volume/CCFD discretization",
+   "5.3. Cumulative values"
+  ],
+  "ignored_title_predictions": null
+ }
+}

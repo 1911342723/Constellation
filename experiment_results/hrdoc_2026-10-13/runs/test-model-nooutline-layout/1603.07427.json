@@ -1,0 +1,197 @@
+{
+ "doc": "1603.07427",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "Proof of Theorem 1"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "Proof of Theorem 1"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1019,
+  "layout_marked": 21,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 23291,
+   "completion_tokens": 803,
+   "total_tokens": 24094
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9580736543909348,
+  "inserted_word_share": 0.5593140831856562
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Penalized Weighted Least Squares",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 A Bayesian understanding of the PWLS",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 In connection with M-estimation",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 The adaptive PWLS",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Implementation and Tuning",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Algorithms",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Tuning parameter selection",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Extension of the PWLS to Heterogeneous Models",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Numerical Results",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Simulation studies",
+   "page": 13,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2 Real data applications",
+   "page": 16,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2.1 Coleman Data",
+   "page": 16,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "5.2.2 Salinity Data",
+   "page": 20,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "5.2.3 Real Estate Data",
+   "page": 20,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "6 Discussion",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof of Theorem 1",
+   "page": 22,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.340124299997115,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "Proof of Theorem 1"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

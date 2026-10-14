@@ -1,0 +1,113 @@
+{
+ "doc": "1807.04830",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "Index Terms",
+   "V I. S I M UL AT IO NS",
+   "R E F ERE NCE S"
+  ],
+  "unmatched_pred": [
+   "1. After the reservation time countdown has reached zero—i.e. when TSP S/T conti"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 402,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SIDELINK SUBCHANNELS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SEMI-PERSISTENT SCHEDULING",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. After the reservation time countdown has reached zero—i.e. when TSP S/T contiguous time",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. PROBLEM FORMULATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. PROPOSED ALGORITHM",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.673410600000352,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "Index Terms",
+   "V I. S I M UL AT IO NS",
+   "R E F ERE NCE S"
+  ],
+  "unmatched_pred": [
+   "1. After the reservation time countdown has reached zero—i.e. when TSP S/T conti"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "V I. S I M UL AT IO NS"
+  ],
+  "unmatched_pred": [
+   "1. After the reservation time countdown has reached zero—i.e. when TSP S/T conti"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "doc": "1703.02773",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 11,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 584,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13075,
+   "completion_tokens": 493,
+   "total_tokens": 13568
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Two-Qubit Pure Entanglement as Optimal Social Welfare",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Resource in Bayesian Game",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Game theory: Prelude",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Mathematical preliminaries",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Quantum game theory",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Quantum correlations as advice",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Result",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Nash equilibrium",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B Correlations (as Advice)– Local vs Nonlocal",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "2-party–2-input–2-output NS correlations",
+   "page": 10,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "C Pure entanglement as quantum-sw solution",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.02058390000093,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 11,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Two-Qubit Pure Entanglement as Optimal Social Welfare",
+   "Resource in Bayesian Game"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

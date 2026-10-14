@@ -1,0 +1,104 @@
+{
+ "doc": "1807.02326",
+ "system": "outline",
+ "metrics": {
+  "gt": 7,
+  "pred": 5,
+  "tp": 2,
+  "fp": 3,
+  "fn": 5,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "Abstract",
+   "The Infant Health and Development Program:",
+   "Experiment 1:",
+   "Experiment 2:",
+   "References"
+  ],
+  "unmatched_pred": [
+   "1 Introduction",
+   "2 Preliminaries and Related Work",
+   "3 Method"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries and Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Method",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.026414899999508634,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 5,
+  "tp": 2,
+  "fp": 3,
+  "fn": 5,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "Abstract",
+   "The Infant Health and Development Program:",
+   "Experiment 1:",
+   "Experiment 2:",
+   "References"
+  ],
+  "unmatched_pred": [
+   "1 Introduction",
+   "2 Preliminaries and Related Work",
+   "3 Method"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 2,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "The Infant Health and Development Program:",
+   "Experiment 1:",
+   "Experiment 2:"
+  ],
+  "unmatched_pred": [
+   "1 Introduction",
+   "2 Preliminaries and Related Work",
+   "3 Method"
+  ],
+  "ignored_title_predictions": null
+ }
+}

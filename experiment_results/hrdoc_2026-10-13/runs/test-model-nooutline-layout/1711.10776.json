@@ -1,0 +1,251 @@
+{
+ "doc": "1711.10776",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 22,
+  "pred": 25,
+  "tp": 18,
+  "fp": 7,
+  "fn": 4,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm",
+   "A PROOF OF LEM M A 2",
+   "C PRO OF O F T HEO R E M 2"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Iterative Power Control and Time Allocation for",
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "APPENDIX E",
+   "APPENDIX F"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 13,
+  "parent_correct": 17,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm",
+   "A PROOF OF LEM M A 2",
+   "C PRO OF O F T HEO R E M 2"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Iterative Power Control and Time Allocation for"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 2089,
+  "layout_marked": 29,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 28643,
+   "completion_tokens": 1116,
+   "total_tokens": 29759
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.8513377445339471,
+  "inserted_word_share": 0.14682139253279514
+ },
+ "predictions": [
+  {
+   "text": "Energy Efﬁcient Resource Allocation in",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM AND POWER CONSUMPTION MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. System Model",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. NOMA Strategy",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. TDMA Strategy",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. ENERGY EFFICIENT RESOURCE ALLOCATION FOR",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Conditions",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Algorithm 1: Iterative Power Control and Time Allocation for",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Convergence and Complexity Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. ENERGY EFFICIENT RESOURCE ALLOCATION FOR",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Conditions",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C. Convergence and Complexity Analysis",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V. NUMERICAL RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 1",
+   "page": 11,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "APPENDIX C",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX D",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 3",
+   "page": 13,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "APPENDIX E",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 4",
+   "page": 14,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "APPENDIX F",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 6",
+   "page": 14,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.849402399995597,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 25,
+  "tp": 18,
+  "fp": 7,
+  "fn": 4,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm",
+   "A PROOF OF LEM M A 2",
+   "C PRO OF O F T HEO R E M 2"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Iterative Power Control and Time Allocation for",
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "APPENDIX E",
+   "APPENDIX F"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

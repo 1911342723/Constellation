@@ -1,0 +1,147 @@
+{
+ "doc": "1703.09436",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "A. Extrac¸ ˜ao de Caracter´ısticas das Imagens",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [
+   "tagem de ´arvores ap´os a segmentac¸˜ao; e"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 681,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13099,
+   "completion_tokens": 398,
+   "total_tokens": 13497
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Avaliac¸˜ao de Classiﬁcadores para Segmentac¸˜ao de Imagens:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Aplicac¸˜oes para Invent´ario Florestal de Eucalipto",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUC¸ ˜AO",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. FUNDAMENTOS B ´ASICOS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. M´etodos de Classiﬁcac¸˜ao",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. AVALIAC¸ ˜AO DE CLASSIFICADORES PARA",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "SEGMENTAC¸ ˜AO DE IMAGENS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "tagem de ´arvores ap´os a segmentac¸˜ao; e",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. AVALIAC¸ ˜AO EXPERIMENTAL",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONSIDERAC¸ ˜OES FINAIS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. AGRADECIMENTOS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 159.78551510000034,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "A. Extrac¸ ˜ao de Caracter´ısticas das Imagens",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [
+   "Avaliac¸˜ao de Classiﬁcadores para Segmentac¸˜ao de Imagens:",
+   "Aplicac¸˜oes para Invent´ario Florestal de Eucalipto",
+   "tagem de ´arvores ap´os a segmentac¸˜ao; e"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "A. Extrac¸ ˜ao de Caracter´ısticas das Imagens",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [
+   "tagem de ´arvores ap´os a segmentac¸˜ao; e"
+  ],
+  "ignored_title_predictions": null
+ }
+}

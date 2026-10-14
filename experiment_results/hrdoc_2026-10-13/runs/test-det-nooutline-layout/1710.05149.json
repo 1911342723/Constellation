@@ -1,0 +1,109 @@
+{
+ "doc": "1710.05149",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Index Terms",
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 746,
+  "layout_marked": 12,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8826416778224007,
+  "inserted_word_share": 0.12010676156583633
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. POWER CONTROL AND CHANNEL ASSIGNMENT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Power Control for CUs",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. SIMULATION RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.6596382999996422,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Index Terms",
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

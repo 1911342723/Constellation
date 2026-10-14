@@ -1,0 +1,219 @@
+{
+ "doc": "1612.04646",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 25,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 8,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [
+   "Numerical Example:",
+   "APPE N DIX A",
+   "G RA D IEN T DE RI VATI O N O F T H E D IFFE R E NT",
+   "D ET E R MIN I S TIC EQU I VALE NTS",
+   "Useful Lemmas",
+   "Inversion Lemma:",
+   "Some Useful Notations",
+   "Gradient of the WEV"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "GRADIENT DERIVATION OF THE DIFFERENT",
+   "Useful Lemmas"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 12,
+  "parent_correct": 13,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "Numerical Example:",
+   "G RA D IEN T DE RI VATI O N O F T H E D IFFE R E NT",
+   "D ET E R MIN I S TIC EQU I VALE NTS",
+   "Useful Lemmas",
+   "Inversion Lemma:",
+   "Some Useful Notations",
+   "Gradient of the WEV"
+  ],
+  "unmatched_pred": [
+   "GRADIENT DERIVATION OF THE DIFFERENT",
+   "Useful Lemmas"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1026,
+  "layout_marked": 21,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14575,
+   "completion_tokens": 851,
+   "total_tokens": 15426
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.8615155336466812,
+  "inserted_word_share": 0.13947097217451043
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PROBLEM FORMULATION AND RELATED WORKS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Measurement selection",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Related Works",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. BLIND MEASUREMENT SELECTION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Asymptotic analysis of the error measures In this section, we determine, in closed form, accurate approximations for the MSE, LCE and WEV. For technical purposes, we shall consider the following growth regime:",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Blind selection techniques",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Complexity Analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV. POTENTIAL APPLICATIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Antenna Selection for Single-cell Uplink Massive MIMO",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Sensor Selection in WSN",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "GRADIENT DERIVATION OF THE DIFFERENT",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "Useful Lemmas",
+   "page": 10,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "Gradient of the LCE",
+   "page": 10,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "Gradient of the MSE",
+   "page": 10,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 1",
+   "page": 11,
+   "level": 2,
+   "parent": 18
+  }
+ ],
+ "seconds": 19.944780699996045,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 8,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [
+   "Numerical Example:",
+   "APPE N DIX A",
+   "G RA D IEN T DE RI VATI O N O F T H E D IFFE R E NT",
+   "D ET E R MIN I S TIC EQU I VALE NTS",
+   "Useful Lemmas",
+   "Inversion Lemma:",
+   "Some Useful Notations",
+   "Gradient of the WEV"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "GRADIENT DERIVATION OF THE DIFFERENT",
+   "Useful Lemmas"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

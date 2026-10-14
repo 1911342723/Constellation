@@ -1,0 +1,167 @@
+{
+ "doc": "1605.08464",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.631578947368421,
+  "unmatched_gt": [
+   "A. Additive white gaussian noise in synthetic depth data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "A. Additive white gaussian noise in synthetic depth data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 251,
+  "layout_marked": 18,
+  "content_preservation": 1.0,
+  "word_preservation": 0.970970970970971,
+  "inserted_word_share": 0.9018346369038153
+ },
+ "predictions": [
+  {
+   "text": "Low-Cost Scene Modeling using a Density Function Improves Segmentation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. DATASET GENERATION USING A DENSITY FUNCTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ALGORITHM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Feature Selection",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Classiﬁer",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Conditional Random Fields",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. IMPLEMENTATION DETAILS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EXPERIMENTAL EVALUATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Collection",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Noise Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Feature Response Evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Comparison of Models",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Demonstration",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.940568199999689,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.631578947368421,
+  "unmatched_gt": [
+   "A. Additive white gaussian noise in synthetic depth data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

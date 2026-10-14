@@ -1,0 +1,192 @@
+{
+ "doc": "1702.00871",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 24,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.43999999999999995,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": [
+   "Network for static saliency"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 13,
+  "parent_correct": 11,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": [
+   "Network for static saliency"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 36.872958399999334
+ },
+ "predictions": [
+  {
+   "text": "Video Salient Object Detection via Fully Convolutional Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Saliency Detection",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Deep Learning Models in Dynamic Scenes",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. DEEP NETWORKS FOR VIDEO SALIENCY DETECTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Architecture Overview",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Network for static saliency",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Deep Networks for Static Saliency",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Deep Networks for Dynamic Saliency",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SYNTHETIC VIDEO DATA GENERATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Performance Comparison",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "C. Validation of the Proposed Method",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Runtime Analysis",
+   "page": 10,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.020869100000709295,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.43999999999999995,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": [
+   "Network for static saliency"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,466 @@
+{
+ "doc": "1806.07406",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.8275862068965517,
+  "unmatched_gt": [
+   "3.1.3 Numb er of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "3.1.3 Number of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 21,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "3.1.3 Numb er of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "3.1.3 Number of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Contrastive Hebbian Learning with Random Feedback Weights",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Materials and Methods",
+    0,
+    2
+   ],
+   [
+    "2.1 Contrastive Hebbian Learning",
+    0,
+    3
+   ],
+   [
+    "2.2 Random Contrastive Hebbian Learning",
+    0,
+    3
+   ],
+   [
+    "3 Results",
+    0,
+    2
+   ],
+   [
+    "3.1 Bars and Stripes Classification",
+    0,
+    3
+   ],
+   [
+    "3.1.1 Feedback Gain",
+    0,
+    4
+   ],
+   [
+    "3.1.2 Learning Rate",
+    0,
+    4
+   ],
+   [
+    "3.1.3 Number of Layers",
+    0,
+    4
+   ],
+   [
+    "3.1.4 Feedback Random Matrix",
+    0,
+    4
+   ],
+   [
+    "3.2 Exclusive Or (XOR)",
+    0,
+    3
+   ],
+   [
+    "3.3 Handwritten Digit and Letter Classification",
+    0,
+    3
+   ],
+   [
+    "3.4 Autoencoder",
+    0,
+    3
+   ],
+   [
+    "4 Discussion",
+    0,
+    2
+   ],
+   [
+    "Author Contributions",
+    0,
+    2
+   ],
+   [
+    "Acknowledgments",
+    0,
+    2
+   ],
+   [
+    "5 Appendix",
+    0,
+    2
+   ],
+   [
+    "5.1 Λϵ-pseudospectra",
+    0,
+    3
+   ],
+   [
+    "5.2 Error and Accuracy Table",
+    0,
+    3
+   ],
+   [
+    "5.3 Abbreviations and Notation Tables",
+    0,
+    3
+   ],
+   [
+    "5.4 Simulation and Platform Details",
+    0,
+    3
+   ],
+   [
+    "5.5 Simulation Parameters",
+    0,
+    3
+   ],
+   [
+    "Supplementary Information",
+    0,
+    2
+   ],
+   [
+    "Backpropagation and Feedback Alignment on XOR",
+    0,
+    3
+   ],
+   [
+    "Backpropagation and Feedback Alignment on MNIST",
+    0,
+    3
+   ],
+   [
+    "Backpropagation and Feedback Alignment on eMNIST",
+    0,
+    3
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 17286,
+   "completion_tokens": 15533
+  },
+  "elapsed_llm_seconds": 59.67464829999517,
+  "word_preservation": {
+   "recall": 0.9696464926892467,
+   "in_order": 0.9590967980751435,
+   "inserted": 0.0006676204101097039
+  },
+  "output_markdown": "# Contrastive Hebbian Learning with Random Feedback Weights\n\nGeorgios Detorakis, Travis Bartley, and Emre Neftci\n\n## Abstract\n\nNeural networks are commonly trained to make predictions through learning algorithms. Contrastive Hebbian learning, which is a powerful rule inspired by gradient backpropagation, is based on Hebb’s rule and the contrastive divergence algorithm. It operates in two phases, the forward (or free) phase, where the data are fed to the network, and a backward (or clamped) phase, where the target signals are clamped to the output layer of the network and the feedback signals are transformed through the transpose synaptic weight matrices. This implies symmetries at the synaptic level, for which there is no evidence in the brain. In this work, we propose a new variant of the algorithm, called random contrastive Hebbian learning, which does not rely on any synaptic weights symmetries. Instead, it uses random matrices to transform the feedback signals during the clamped phase, and the neural dynamics are described by first order non-linear differential equations. The algorithm is experimentally verified by solving a Boolean logic task, classification tasks (handwritten digits and letters), and an autoencoding task. This article also shows how the parameters affect learning, especially the random matrices. We use the pseudospectra analysis to investigate further how random matrices impact the learning process. Finally, we discuss the biological plausibility of the proposed algorithm, and how it can give rise to better computational models for learning.\n\n## 1 Introduction\n\nLearning is one of the fundamental aspects of any living organism, regardless of their complexity. From less complex biological entities such as viruses [9], to highly complex primates [14, 17], learning is of vital importance for survival and evolution. Research in neuroscience has dedicated significant effort to understanding the mechanisms and principles that govern learning in highly complex organisms, such as rodents and primates. Both Hebbian learning [14] and spike-timing dependent plasticity (STDP) [4, 28, 51] have had high impact on modern computational neuroscience, since both Hebb and STDP rules solve the problem of adaptation in the nervous system and can account for explaining synaptic plasticity [2, 6]. On the other hand, the field of machine learning has made progress using gradient backpropagation (BP) [42, 8] in deep neural networks, providing state-of-the-art solutions to a variety of classification and representation tasks [20].\n\nDespite this progress, most learning algorithms employed with artificial neural networks are implausible from a biological standpoint, this is especially true for methods based on BP. In particular, some of the more common properties that are implausible are (i) the requirement of symmetric weights, (ii) neurons that do not have temporal dynamics (i.e., neural dynamics are not described by autonomous dynamical systems or maps as in the case of recurrent neural networks), (iii) the derivatives of the non-linearities have to be computed for each layer with high precision, (iv) the flow of information in the neural network is not similar to the one in real biological systems (synchronization between different phases–forward, backward–is required), and (v) the backward phase requires the neural activity of the forward phase to be stored.\n\nIn the aforementioned context there are attempts to make Machine Learning algorithms more biologically plausible. Such a biologically plausible alternative to BP is the target propagation algorithm [21]. The target propagation algorithm computes local errors at each layer of the network using information about the target, which is propagated instead of the error signal as in classical BP. However, target propagation still computes derivatives (locally) and requires symmetries at the synaptic level. Another biologically plausible learning algorithm is the recirculation algorithm [16] and its generalization the GeneRec [38], where the neural network has some recurrent connections that propagate the error signals from the output layer to the hidden(s) one(s) via symmetric weights. Furthermore, the recirculation algorithm does not preserve the symmetries at the synaptic level, though GeneRec is still based on derivatives and back-propagation of error signals. Moreover, all the aforementioned algorithms require a specific pattern of information flow. Every layer should wait for the previous one to reach its equilibrium and then to proceed in receiving and processing the incoming information. This issue can be circumvented by the Contrastive Hebbian learning (CHL, deterministic Boltzmann Machine or a mean field approach) [31, 3, 50], which is similar to the contrastive divergence algorithm [15]. CHL is based on the Hebbian learning rule and does not require knowledge of any derivatives. Moreover, due to its non-linear continuous coupled dynamics the information flows in a continuous way. All the neural activities in all the layers may be updated simultaneously without waiting for the convergence of previous or subsequent layers. However, CHL requires synaptic symmetries since it relies on the transpose of the synaptic matrix to propagate backwards the feedback signals.\n\nMotivated to create a more biologically plausible CHL, we proposed random Contrastive Hebbian learning (rCHL), which avoids the use of symmetric synaptic weights, instead replacing the transpose of the synaptic weights in CHL with fixed random matrices. This was performed in a manner similar to that of Feedback Alignment (FDA) [22, 35, 33]. CHL provides a good basis upon which to develop biologically realistic learning rules because it employs continuous nonlinear dynamics at the neuronal level, does not rely on gradients, allows information to flow in a coupled, synchronous way, and, is grounded upon Hebb’s learning rule. CHL uses feedback to transmit information from the output layer to hidden(s) layer(s), and in instances when the feedback gain is small (such as in the clamped phase), has been demonstrated by Xie and Seung to be equivalent to BP [50].\n\nUsing this approach, the information necessary for learning propagates backwards, though it is not transmitted through the same axons (as required in the symmetric case), but instead via separate pathways or neural populations. Therefore, the randomness we introduce may account for the structure and dynamics of other cerebral areas interfering with the transmitted signals of interest or feed-back projections as occur in the visual system [27, 25, 24, 43]. By this we do not necessarily imply that the brain implements random transformations, instead that the random matrices being used here in place of transpose synaptic matrices may be thought of in a more general sense as instruments for modeling unknown or hard-to-model dynamics within the brain.\n\nThe proposed learning scheme can be used in different contexts, as demonstrated on several learning tasks. We show how rCHL can cope with (i) binary operations such as the XOR, (ii) classifying handwritten digits and letters, and (iii) autoencoding. In most of these cases, the performance (in terms of the mean squared error) of rCHL was either equivalent or similar to BP, FDA, and CHL, suggesting that rCHL can be a potential candidate for general biologically plausible learning models.\n\n## 2 Materials and Methods\n\nIn this section we summarize Contrastive Hebbian learning (CHL) [50] and introduce random Contrastive Hebbian learning (rCHL). We assume feed-forward networks along with their corresponding feed-backs. L is the total number of layers with 1 being the input layer and L the output one. Connections from layer k −1 to k are given by a matrix Wk ∈Rm×n where m and n are the sizes of the k −1 and k layers (number of neurons), respectively. Feedback connections are given by Vk ∈Rn×m, which can be either a transpose matrix W⊺k (in the case of CHL) or a random matrix Gk ∈Rn×m in the case of random CHL. In both CHL and rCHL, the feedback connections are multiplied by a constant gain, γ ∈R. We define the non-linearities as Lipschitz continuous functions fk : Rn →Rn, with Lipschitz constant αk (i.e. |fk(x) −fk(y)| ≤αk|x−y|, ∀x, y ∈R, k ∈N). The state of a neuron in the k-th layer is described by the state function xi k : R →R, and the corresponding bias is given by bi k ∈R. The dynamics of all neurons at the k-th layer are given by:\n\ndxk dt = −xk + fk \u0000Wk · xk−1 + γVk+1 · xk+1 + bk \u0001 . (1)\n\n### 2.1 Contrastive Hebbian Learning\n\nBoth CHL and the proposed rCHL operate on the same principle as contrastive divergence [15]. This means that learning takes place in two phases. In the positive (free) phase, the input is presented and the output is built by forward propagation of neural activities. In the negative (clamped) phase, the outputs are clamped, and the activity is propagated backwards towards the input layer.\n\nIn the free phase, the input layer x0 is held fixed, and the signals are propagated forward through each layer (see the red arrows in figures 1). The dynamics of the neurons at each k-th layer are computed through the equation (1) for k = 1, . . . , L (the L + 1 layer does not exist and thus xL+1 = 0 and WL+1 = 0). During the clamped phase, the target signal is clamped at the output layer xL and the activity of all the neurons in every layer is computed through equation (1) for k = 1, . . . , L −1 (notice here that the input layer k = 0 does not express any dynamics). The backward flow is illustrated as cyan arrows in figure 1. At the end of the two phases we update the synaptic weights and the biases based on the following equations,\n\n∆Wk = ηγk−L\u0000ˆxk ⊗ˆxk−1 −ˇxk ⊗ˇxk−1 \u0001 , k = 1, . . . , L, (2a)\n\n∆bk = ηγk−L\u0010 ˆxk −ˇxk \u0011 (2b)\n\nwhere ⊗is the tensor product, η is the learning rate, γ is the feedback gain, and ∆Wk is weight update. ˇxk represents the activity of neurons in the k-th layer at the equilibrium configuration of equation (1) in the free phase and ˆxk the activity of the k-th layer in the clamped phase.\n\n### 2.2 Random Contrastive Hebbian Learning\n\nAs described by equation (1), CHL implicitly requires the synaptic weights to be symmetric (W⊺k) in order to use the feedback information. In this work, the main contribution is to cast aside the symmetry and replace all the transpose matrices that appear in CHL with random matrices Gk. This idea is similar to random feedback alignment [22, 35], where the error signals are propagated back through random matrices that remain constant during learning. Therefore, equation (1) is modified to the following:\n\ndxk dt = −xk + fk \u0000Wk · xk−1 + γGk+1 · xk+1 + bk \u0001 , (3)\n\nwhere the learning increments remain the same. In order to properly apply CHL and rCHL, we follow the second strategy of training proposed by Movellan in [31] (pg. 12, case 2), suggesting to first let activity settle during the clamped phase. Then, without resetting activations, free the output units and allow activity to settle again. This method assures that when the minimum for the clamped phase has been reached, it remains stable. We summarize rCHL in Algorithm 1, where I is the input dataset, T is the corresponding target set, N is the number of input samples, and L is the number of layers. The rCHL starts with randomly initializing the synaptic weights and the feed-back random matrices. If the bias is not allowed to learn then it is fixed at the very beginning. If it’s permitted to adapt then it is randomly initialized. Then in every epoch rCHL picks up randomly an input sample and assigns it to the input layer, ˇx0. At the same time, it assigns the corresponding label (target) to the output layer ˆxL. Then it solves all the non-linear coupled differential equations for each layer using a Forward Euler method for the backward phase. This means that it computes the ˆxk and then it solves again the system of the coupled non-linear equations for the forward phase in order to compute the ˇxk. Once all the activities for the forward and the backward phases have been computed, rCHL updates the synaptic weights and the biases, if they are allowed to be updated, based on equations (2)a and b.\n\nFigure 1 illustrates the neural network architecture and the information flow of CHL (top panel) and rCHL (bottom panel). In the forward pass, the input is provided and information is propagated through matrices Wk. In the backward phase, the output is clamped, and the information flows from the output layer to the hidden(s) through the transpose matrix W⊺k+1 (CHL) or random matrices Gk+1 (rCHL).\n\n0 L k k+1 Wk Forward Feedback Wk+1 T CHL 0 L k k+1 Wk Forward Feedback Gk+1 rCHL\n\nFigure 1: Learning scheme information flow. CHL (top panel) and rCHL (lower panel) are illustrated in this figure. Both CHL and rCHL consist of two phases. In the forward phase, the input signal is fed to the network, and the activity propagates up to the deepest layer through matrices Wk (red arrows). In the backward phase, the output (target) signal is clamped, whilst the input signal is still present and affects the neural dynamics. The activity is propagated backwards through matrix W⊺k+1 (navy color arrows) in the CHL and Gk+1 in the rCHL. It is clear that rCHL’s feedback mechanisms does not require any symmetries and acts more like a feedback system on the dynamics of neurons conveying information from the k + 1-th layer back to k-th layer.\n\nAlgorithm 1 Random contrastive Hebbian learning (rCHL). I is the input dataset, T is the corresponding target set (labels) of the input data set, and L is the number of layers of the network, tf is the simulation time and dt the Forward Euler method’s time-step.\n\nRequire: I, T , L, epochs, tf, dt\nEnsure: W\nN = |I|\nInitialize Gk and Wk randomly for k = 1, . . . , L\nif Bias is adaptive then\nInitialize bk randomly\nelse\nbk is fixed\nend if\nfor e ←1, . . . , epochs do\ni ∼U(1, N)\nˇx0 = Ii\nˆxL = Ti\nfor k ←1, . . . , L −1 do\nfor n ←1, . . . , tf with step dt do\n▷Forward Phase\nˆxk[n] = ˆxk[n −1] + dt \u0010 −ˆxk[n −1] + fk \u0000Wk · ˆxk−1[n −1] + γGk+1 · ˆxk+1[n −1] + bk \u0001\u0011\nend for\nend for\nfor k ←1, . . . , L do\nfor n ←1, . . . , tf with step dt do\n▷Backward Phase\nˇxk[n] = ˇxk[n −1] + dt \u0010 −ˇxk[n −1] + fk \u0000Wk · ˇxk−1[n −1] + γGk+1 · ˇxk+1[n −1] + bk \u0001\u0011\nend for\nend for\nfor k ←1, . . . , L do\nWk ←Wk + ηγk−L\u0000ˆxkˆx⊺ k−1 −ˇxkˇx⊺ k−1 \u0001\nif Bias is adaptive then\nbk ←bk + ηγk−L\u0000ˆxk −ˇxk \u0001\nend if\nend for\nend for\n\n## 3 Results\n\nNext, we demonstrate rCHL on a variety of tasks. The algorithm successfully solves logical operations, classification tasks and pattern generation problems. In the logical operations and classification tasks we compared our results against the state-of-the-art back-propagation (BP) and feed-back alignment (FDA). In all rCHL and CHL simulations, we used the following settings, unless otherwise stated: time step dt = 0.08, total simulation time tf = 30ms, learning rate η = 0.1, and feedback gain γ = 0.05.\n\n### 3.1 Bars and Stripes Classification\n\nWe investigate how the parameters of the rCHL affect the learning process. In particular, we examine how to select the random matrix G, the feedback gain γ, and the number of layers L. To this end we use the bars and stripes classification task to demonstrate the effect of the different parameters [23]. The dataset consists of 32 binary images (black–0 and white–1) of size 4 × 4 representing bars and stripes, as shown in figure 2A. We train a network of of three layers (L = 3) with sizes 16 −50 −2 to classify the input data into bars and stripes. During each epoch we pick up randomly one out of 32 images and present it to the network for 20, 000 epochs. Every 500 epochs we freeze the learning and we test the performance of the network. We measure the Mean Square Error (MSE) (i.e., 1 N PN i=1(yi −ˆyi)2, where y is a reference signal of N components and ˆy is the estimated signal) and the accuracy of the network. All neurons have sigmoid activation functions (fk(x) = 1 1+exp(−x) for all k = 1, . . . , L).\n\nThe achieved test MSE is shown in figure 2B and the test accuracy in figure 2C. It is apparent that rCHL converges, and the binary classification task has been learned after 5, 000 epochs. We tested two different versions of rCHL, first we used the bias terms (cyan color in figure 2) in equation (3). All bk have been initialized randomly from a uniform distribution U(−0.1, 0.1) and they are allowed to learn based on equation (2). In the second case we set the bias terms to zero (purple color in figure 2). The same method was also followed for CHL. Figures 2B and 2C indicate that CHL and rCHL can achieve similar results in the task. Once we have established the functionality of the rCHL, we investigate how the parameters of the random matrix G, the feedback gain γ, the learning rate η, and the number of layers L affect the learning. Therefore, we can conclude at that point that the rCHL has similar behavior with the CHL and the learning\n\nA 0 10 20 30 40 Epochs (x500) 0.0 0.1 0.2 0.3 0.4 0.5 Test MSE B CHL_NoBias CHL_Bias rCHL_NoBias rCHL_Bias 0 10 20 30 40 Epochs (x500) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy C CHL_NoBias CHL_Bias rCHL_NoBias rCHL_Bias\n\nFigure 2: Bars and stripes classification with rCHL. A Bars and stripes dataset used to train the neural network. B the test MSE computed every 500 epochs. In every epoch, a stimulus (image) is presented to the network. Here, the rCHL algorithm (cyan and magenta curves) are compared against the CHL algorithm (black and red curves). After 5, 000 epochs the network has converged. C Test accuracy of the network on classifying the bars and stripes. We presented the entire dataset (32 images) during testing.\n\nprocess works as well as CHL’s. In the following paragraphs we are investigating how four basic parameters of the model (learning rate, feed-back gain, number of layers, and the random matrix) affect the learning using the Bars and Stripes classification task as toy model. We choose to not use the bias terms since they do not affect the learning in this particular task.\n\n#### 3.1.1 Feedback Gain\n\nFirst we start with the feedback gain by sweeping it over the interval [0.01, 1.0], and drawing the initial values of the synaptic weights as well as the random matrix from a uniform distribution U(−0.5, 0.5). The effect of the feedback gain for standard CHL has been examined in [50]. In figures 3A and B, the test MSE and accuracy are shown for different values of γ. Lower feedback gain (about 0.1), works well for rCHL. Even when the feedback gain is around 0.0001 the learning process still works (data not shown) and the convergence is fast. This is explained by the fact that the term γk−L in equation (2)(a) becomes extremely large for small feedback gains for the very first layers and quite small for the deeper layers. On the other hand, when when the feedback gain is high (e.g., γ = 1.0) the rCHL does not converge (gray color in figure 3).\n\n#### 3.1.2 Learning Rate\n\nAnother important parameter that affects learning is the rate the rCHL adjusts the synaptic weights, or the learning rate η. Therefore, we use the same network architecture 16 −50 −2 and we keep fix the feedback gain γ = 0.05 and we vary the learning rate, i.e. η = {0.001, 0.005, 0.01, 0.05, 0.1, 0.5}. Figure 4 shows the test error and accuracy for the various values of learning rate. When the learning rate is too low the learning diverges. On the other hand when the learning rate is higher the learning converges faster. For the values between 0.005 and 0.01 the learning converges smoother but takes more time to reach the equilibrium in comparison to the higher values. In this case the random matrix and the synaptic weights have been initialized by a uniform distribution U(−0.5, 0.5).\n\n0 5 10 15 20 25 30 35 40 Epochs (x500) 0.0 0.1 0.2 0.3 0.4 0.5 0.6 Test MSE A 0 5 10 15 20 25 30 35 40 Epochs (x500) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy B = 0.01 = 0.02 = 0.03 = 0.04 = 0.05 = 0.09 = 0.1 = 0.5 = 1.0\n\nFigure 3: Effect of feedback gain γ on bars and stripes classification. This figure illustrates the test MSE A and the test accuracy B for nine different values of feedback gain γ. Both panels illustrate that the neural network trained using the rCHL algorithm learns to classify the bars and stripes dataset in all cases, except where γ = 1.0. In this case, the MSE is high and the classification is unstable.\n\n0 50 100 150 200 Epochs (x500) 0.0 0.1 0.2 0.3 0.4 0.5 0.6 Test MSE A 0 50 100 150 200 Epochs (x500) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy B = 0.001 = 0.005 = 0.01 = 0.05 = 0.1 = 0.5\n\nFigure 4: Effect of learning rate η on bars and stripes classification. This figure illustrates the test MSE A and the test accuracy B for six different values of learning rate η. It is apparent that if the learning rate is too low the learning process takes more time to converge. In this case we keep the feed-back gain constant at γ = 0.5.\n\n#### 3.1.3 Number of Layers\n\nNext, we investigate how the number of hidden layers affects learning. To this end, we train four different neural networks using rCHL. The configurations for the networks are 16 −50 −2 (L = 3), 16 −50 −10 −2 (L = 4), 16−50−20−10−2 (L = 5), and 16−50−30−20−10−2 (L = 6). As before, we draw the synaptic weights and the random matrix from a uniform distribution U(−0.5, 0.5). Figures 5 A and B show the test MSE and test accuracy of the networks. As we increase the number of layers, the rCHL networks fail to converge (data not shown). However, when we increase the feedback gain γ, convergence is achievable (gray curves in figure 5). This behavior can be explained by the fact that the feedback gain affects the synaptic weight update by a factor γk−L. This means that the more layers a network has, the higher γ should be.\n\n0 20 40 60 80 100 120 Epochs (x500) 0.0 0.1 0.2 0.3 0.4 0.5 0.6 Test MSE A 0 20 40 60 80 100 120 Epochs (x500) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy B L = 3 L = 4 L = 5 L = 6, = 0.1\n\nFigure 5: Effect of number of layers L on bars and stripes classification. This figure illustrates the test MSE A and the test accuracy B for four different values of L, which represents the number of layers. For the largest value L = 6, rCHL diverges (data not shown) and we have to re-tune the feedback gain. Once the feedback gain has been increased, the convergence of rCHL is guaranteed (gray line).\n\n#### 3.1.4 Feedback Random Matrix\n\nThe random feedback matrix plays a crucial role in the rCHL learning process. It conveys the information from the output layer back to the hidden(s) one(s). Therefore, the feedback random matrix, essentially, alters the signals by applying the feedback from layer k + 1 to neural dynamics at layer k. Therefore, the learning process is directly affected by the choice of the feedback random matrices within the network. The properties of random matrices arise from the distributions that generate them. In this case we investigate how random matrices generated by a normal N(0, σ) and a uniform U(a, b) distribution can impact the learning process. Furthermore, we define the length of the uniform distribution interval as ℓ= |b| + |a|. We start by varying the variance σ, and the length ℓof the two different distributions. Next the network is evaluated on the bars and stripes classification task, and the MSE and accuracy are recorded. Figures 6A and B show the test MSE and accuracy, for sixteen different σ values for the normal distribution. As shown, the higher the variance, the faster convergence is reached. Figures 6 C and D indicate the test MSE and accuracy for sixteen different values of ℓof the uniform distribution. In this case, we observe that the shorter the interval (smaller ℓ), the slower the convergence. Meanwhile, the wider the interval, the faster and the convergence is. The convergence for short intervals is slower for the uniform distribution than for corresponding small variance values for the normal distribution (see figures 6A and C).\n\nOne of the key aspects in Random Matrix Theory is the spectrum (i.e., eigenvalues) of the random matrix and especially the distribution of the eigenvalues [48]. However, most connection matrices in neural networks are not square and non-normal (i.e., VV∗̸= V∗V, where V ∈Rn×n). Therefore, one alternative to study the spectrum of random matrices that are rectangular and non-normal is to study their singular values and the corresponding λϵ-pseudospectra [46, 47, 49] (we provide a brief description of the λϵ-pseudospectra in the Appendix 5.1). The pseudospectra define a set of pseudoeigenvalues (λ) of a matrix A ∈Rm×n, if for some eigenvector υυυ with ||υυυ|| = 1 it holds ||(A −λ˜I)υυυ|| ≤ϵ. Hence pseudospectra indicates potential sensitivity of eigenvalues under perturbations of the matrix A. In this study we are interested in identifying spectral properties that can be related to the learning (i.e., convergence, speed of convergence, oscillations). Figure 7 illustrates the λϵ-pseudospectra for the random matrix G2 for the Bars and Stripes classification task. We chose three cases for the uniform and three for the normal distribution from figure 6 and we then applied on the random matrices the algorithm given in [49] to compute the λϵ-pseudospectra of G2 in each case. In every panel the contour lines indicate the minimum singular values that correspond to different values of log10(ϵ) on the complex plane. In addition in every panel we provide the corresponding test MSE (inset plot). Subplots 7A B and C depict the pseudospectra of G2 drawn from uniform distributions (U(−0.01, 0.01), U(−0.5, 0.5), U(−1, 1), respectively), as well as the test MSE. Likewise, subplots D, E, and F illustrate the cases of normal distributions (N(0, 0.01), N(0, 0.5), N(0, 1), respectively).\n\nSince the only varying parameter in this experiment is the way we generate the random matrix the learning process is solely affected by that matrix. Therefore, in the cases A and D the pseudospectra of the two different distributions look identical, whilst the test MSE has similar behavior, it decays slower (blue and black lines in the insets). In both cases the minimum value for ϵ is the same (and around the origin). In the other cases B, C, E, and F the convergence of the test MSE toward zero is faster (inset) and less violent (in terms of oscillations). The pseudospectra show higher minimum values for ϵ. For the uniform distribution all the ϵ values are arranged on concentric circles. On the other hand, the normal distribution with variances σ = 0.5 and σ = 1 causes a shift towards the right-half complex plane of the pseudospectrum. The minimum ϵ is higher in comparison to the uniform cases. One more remark is that for these four cases the uniform distributions have smaller ϵ values in comparison to their normal counterparts. This might lead to a less oscillatory behavior of the test MSE as it is shown in the insets (blue and black curves). In all cases, we compute the pseudospectra using the implementation provided in [49]1.\n\n-4 -2 0 2 4 A ( 0.01, 0.01) 0.4 0.2 0.0 0.2 0.4 0.6 0.8 B ( 0.5, 0.5) 0.32 0.40 0.48 0.56 0.64 0.72 0.80 C ( 1, 1) 0.60 0.65 0.70 0.75 0.80 0.85 0.90 -4 -2 0 2 4 -4 -2 0 2 4 D (0, 0.01) 0.4 0.2 0.0 0.2 0.4 0.6 0.8 -4 -2 0 2 4 E (0, 0.5) 0.55 0.60 0.65 0.70 0.75 0.80 0.85 -4 -2 0 2 4 F (0, 1) 0.84 0.86 0.88 0.90 0.92 0.94 0.96 0.98\n\nFigure 7: Λϵ-pseudospectra of G2 for the Bars and Stripes classification. Six different feedback random matrices have been analyzed using the Λϵ-pseudospectra method. The colormap indicates the different ϵ values. The top row shows the Λϵ for the matrices drawn by uniform distributions from intervals (A) (−0.01, 0.01), (B) (−0.5, 0.5), and (C) (−1, 1). The bottom row illustrates Λϵ for the random matrices drawn from normal distributions with zero mean and variances (D) σ = 0.01, (E) σ = 0.5, and (F) σ = 1.\n\n### 3.2 Exclusive Or (XOR)\n\nThe exclusive or (denoted XOR or ⊕) problem consists of the evaluation of four possible Boolean input states (i.e., 1 ⊕0 = 1, 1 ⊕1 = 0, 0 ⊕1 = 1, 0 ⊕0 = 0). To solve the XOR problem, we use a feed-forward network with one hidden layer and one output layer (L = 3) with a configuration 2 −2 −1. All neural units are sigmoidal: f(x) = (1 + exp(−x))−1, and we train the neural network on the XOR problem for 5, 000 epochs using CHL and rCHL. The random matrix G for rCHL has been initialized from a uniform distribution U(−0.2, 0.2). In every epoch we present 128 samples to the network and every 500 epochs we measure the MSE and the accuracy on the test dataset. The accuracy here is defined to be 1 4 P4 i=1 |x2(t)−Ti| < ϵ, where ϵ = 0.01 and the index i runs over the test samples.\n\n0 2 4 6 8 10 Samples(×500) 0.0 0.05 0.1 0.15 0.2 0.25 0.3 Test MSE A 0 2 4 6 8 10 Samples(×500) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy B CHL rCHL BP FDA\n\nFigure 8: Exclusive OR (XOR). Four different learning algorithms have been use to train a feed-forward network with three layers, L = 3, (2 −2 −1). (A) Test MSE error illustrated against the number of samples, (B) test accuracy. The red and purples lines indicate the CHL and rCHL, respectively. The brown and gray dashed lines show the minimum test MSE and the maximum test accuracy for the BP and the FDA, respectively.\n\nThe results of the learning are shown in figure 8, where figure 8A shows the test error, and figure 8B the test accuracy for CHL (red line) and rCHL (purple line). The test error and the test accuracy attained is the same for BP (brown dashed line) and FDA (gray dashed line). Comparing against the error and accuracy of BP and FDA (see SI figure 11), rCHL converges faster and more smoothly. This is because rCHL and CHL are on-line learning algorithms, and the input and target signals are both embedded into the dynamics of the neurons. This leads to a rapid convergence of the Hebbian learning rule, which rapidly assimilates the proper associations between input and output signals.\n\n### 3.3 Handwritten Digit and Letter Classification\n\nFor the classification tasks, we used the MNIST [7] dataset of 10 handwritten digits and the eMNIST datasets [5] of 26 handwritten letters of the English alphabet. The neural network layouts for the MNIST and the eMNIST was 784−128−64−10 and 784−256−128−26, respectively. On every unit in both MNIST and eMNIST networks, we use a sigmoid function: f(x) = (1 + exp(−x))−1. We drew the initial synaptic weights and the random matrices from uniform distributions U(−0.6, 0.6) and U(−0.3, 0.3), respectively. We trained the network for 20 (MNIST) and 40 (eMNIST) epochs, and in each epoch we present the entire MNIST and eMNIST datasets, which consist of 60, 000 and 124, 800 images, respectively. At the end of each epoch, we measured the MSE and the accuracy of the network. The accuracy is defined to be the ratio of the successfully classified images to the total presented test images (10, 000 for MNIST and 20, 800 for eMNIST, respectively). Figure 9A illustrates the test error of CHL (red line) and rCHL (purple line), respectively. The error is lower than BP and FDA (brown and gray dashed lines, respectively), and the convergence is faster (compared against SI figure 12, where BP and FDA test MSE and accuracy are illustrated). However, the classification test accuracy is the same as for BP and FDA, as figure 9B indicates. The convergence of the BP and FDA algorithms can be seen in SI figure 12, as well as the test accuracy of those algorithms performing on the same type of neural network (same neural units and network architecture).\n\nFor the eMNIST dataset, the test error is illustrated in figure 9C, where the error of CHL (red line) and rCHL (purple line) are close to the error attained by BP and FDA (brown and gray dashed lines). However, the classification test accuracy of rCHL is worse than the other three learning algorithms (CHL, BP and FDA), as figures 9D and SI 13 B show. For the eMNIST data set the accuracy of the rCHL is lower than the other three algorithms despite the fact that the error is smaller than the errors of BP and FDA. This drawback might be due to the feed-back random matrix and the lack of symmetric synaptic connections.\n\n0 2 5 7 10 12 15 17 20 Samples(×50000) 0.0 0.005 0.01 0.015 0.02 0.025 0.03 Test MSE A MNIST 0 2 5 7 10 12 15 17 20 Samples(×50000) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy B MNIST CHL rCHL BP FDA 0 5 10 15 20 25 30 35 40 Samples (x120000) 0.0 0.02 0.04 0.06 0.08 0.1 Test MSE C eMNIST 0 5 10 15 20 25 30 35 40 Samples (x120000) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy D eMNIST\n\nFigure 9: MNIST and eMNIST digits classification. The figure illustrates (A) the test error and (B) the accuracy of a neural network (784 −128 −64 −10) with sigmoid function as non-linearity in all layers. The network was trained on the entire MNIST set of digits (50, 000 images) and tested on the whole MNIST test set (10, 000 images). In addition, (C) illustrates the test error and (D) the accuracy of a neural network (784 −256 −128 −26) with sigmoid function as non-linearity in all layers. The network was trained on the entire eMNIST set of digits (124, 800 images) and tested on the whole eMNIST test set (20, 800 images). In both cases the MNIST and the eMNIST, CHL and rCHL have similar performance (red and purple curves, respectively).\n\nThis is also supported by the fact that the CHL (which differs from rCHL only in the way the feedback signals are transmitted) achieves an accuracy as good as the BP and FDA (minimum test error and maximum test accuracy for all four algorithms are provided in table 5.2,Appendix 5.2).\n\n### 3.4 Autoencoder\n\nThe final test case was the implementation of an autoencoder using CHL and rCHL. An autoencoder is a neural network that learns to reconstruct the input data using a restricted latent representation. Classic autoencoders consist of three layers: the first layer is called the encoder, which is responsible for encoding the input data to the hidden layer, which describes a code. The third layer is the decoder, which generates the approximation of the input data, based on the code provided by the hidden layer [12].\n\nTo this end, we use a network with three layers L = 3, with a layout 784 −36 −784, and we use the MNIST handwritten digits. This means that we encode the input images of dimension 784 to a dimension of 36. For both CHL and rCHL, the learning rate is set to η = 0.05. The synaptic weights and the random matrix G were initialized from uniform distributions U(−0.5, 0.5) and U(−1, 1), respectively. We trained the network for 20 epochs, and in each epoch we presented to the network 5, 000 samples of MNIST handwritten digits.\n\nA B C D 4 2 0 2 E 8 6 4 2 0 2 4 6 8\n\nFigure 10: CHL and rCHL autoencoder. The MNIST dataset was used to train an autoencoder using CHL and rCHL. (A) shows some randomly chosen MNIST digits. After training the network for 40 epochs (during each epoch we presented 5, 000 MNIST images to the network), it was able to reconstruct the learned digits as panel (B) shows for CHL, and panel (C) for rCHL. The learned representations are shown in panels (D) and (E) for CHL and rCHL, respectively.\n\nAfter training the autoencoder, we fed 9 digits (figure 10A) from the MNIST dataset to the autoencoders. The decoding (reconstruction) of the input data is illustrated in figures 10B and 10C for CHL and rCHL, respectively. The results indicate that rCHL and its non-random counterpart (CHL), can both learn to approximate the identity function, and thus they are both good candidates for implementing autoencoders. The reconstruction (decoding) was not perfect, which implies that the network correctly learned an approximation (and not the exact function), indicating that the network had learned the appropriate representations (code). The representations (codebooks) are shown in figures 10D and 10E for the CHL and rCHL models, respectively. As expected, the representations of rCHL were more noisy than that of the CHL model. This can be partially explained by the chosen simulation parameters in this experiment.\n\n## 4 Discussion\n\nIn this work, we introduced a modified version of Contrastive Hebbian Learning [50, 31, 3], based on random feedback connections. The key contribution of this work is a biologically plausible variant of CHL, attained by using random fixed matrices (during learning) instead of bidirectional synapses. We have shown that this new variation of CHL, random Contrastive Hebbian Learning, can achieve results equivalent to that of CHL, BP, or FDA. In addition, rCHL can solve logical problems such as the XOR, as well as classification tasks, such as the handwritten digits and letters classification (MNIST and eMNIST datasets). Furthermore, rCHL supports representation learning (e.g., autoencoders), as well.\n\nWe provide a thorough investigation of the algorithm, examining how the different parameters of the learning scheme affect the learning process. We have shown that the feedback gain γ affects the performance of learning. The smaller the gain γ, the better the performance of the algorithm, implying that the feedback gain should be small. This is in accordance with previous theoretical results found in [50], where CHL requires low values of γ in order to be equivalent to BP. A second factor that affects learning is the number of hidden layers. When the number of hidden layers increases, the performance of the learning decreases. However, this can be mitigated by increasing the feedback gain γ (see figure 5). Finally, we tested the initial conditions of the random matrix G. We found that if we choose the random matrix from a normal distribution with zero mean, the convergence speed of the learning algorithm is faster than if we draw G from a uniform distribution. In addition, the variance σ and the interval length λ of the normal and uniform distributions, respectively, affect the learning as well. The smaller the values, the faster the convergence of the learning.\n\nWe further investigated the feedback random matrices using tools provided by the pseudospectra analysis [46, 49]. The convergence of learning can be affected by the choice of distribution that generates the feedback random matrix. We found that sub-Gaussian feedback matrices with normal-like pseudospectrum tend to cause slower convergence of learning, but a more robust one. On the other hand, Gaussian random matrices tend to have faster convergence.\n\nBoth CHL and rCHL share some common properties such as (i) the neurons express non-linear dynamics, (ii) the learning rule is based on Hebb’s rule [14], which means no biologically implausible information is necessary (e.g., knowledge of the derivatives of the non-linearities of the neural units), (iii) the propagation of the activity from one layer to the next takes place in a manner similar that of biological systems. All the layers are coupled through a non-linear dynamical system, which implies that when an input is presented the algorithm does not have to wait until all the units in the k-th layer have fired. Instead, neurons can propagate their activity through couplings to the next (k + 1)-th layer. This is not the case for artificial neural networks where the activity is computed for all the units of the k-th layer prior to transmission to the subsequent layer. Thus, CHL and rCHL circulate signals in a more natural fashion (similar to the processes evident in biological nervous systems).\n\nThe salient difference between CHL and rCHL is the replacement of symmetric synaptic weights (CHL) with fixed random matrices (rCHL). Therefore, the feedback connections do not require any symmetric weights (transpose matrices) of the feed-forward connections. This is in accordance with biology since there is no evidence thus far to indicate that chemical synapses (one of the two major synapse types in the nervous system, the other being electrical synapses) are bidirectional [17, 40]. More precisely, we can interpret the random feedback as a model of afferent feedback connections from higher hierarchical layers to lower ones. For instance, primary sensory areas are connected in series with higher sensory or multi-modal areas. These higher areas project back to the primary areas through feedback pathways [26, 36, 11]. Other types of feedback pathways to which our approach may be considered relevant are the inter-laminar connections within cortical layers [13, 45]. Therefore, such feedback pathways can be modeled as random feedback matrices that interfere with the neural dynamics of the lower layers (top-down signal transmission). The randomness in these feedback pathways can account for currently unknown underlying neural dynamics or random networks with interesting properties [29, 48].\n\nOur current implementation, rCHL, allows us to interpret the backward phase (clamped) as a top-down signal propagation. For instance, when a visual stimulus is presented, such as a letter, and a subject is required to learn the semantic of the letter (which letter is presented), then the target can be the semantic and the input signal the image of the letter. Therefore, we can assume that the forward phase simulates the bottom-up signal propagation from the primary sensory cortices to higher associate cortices, and the backward phase as the top-down signal propagation from the higher cognitive areas back to the lower cortical areas.\n\nDue to the nature of the learning algorithm and the two phases (positive and negative), the input and the target signals are clamped, and the dynamics of those signals are captured and embedded in the neural dynamics of the network. This can be compared to target propagation [21, 19], where the loss gradient of BP is replaced by a target value. When the target value is very close to the neural activation of the forward pass, TP behaves like BP. These sort of learning algorithms solve the credit assignment problem [30], using local information. In the proposed model, the target and the input signals are both embedded into the dynamics of the neural activity and affect the learning process in an indirect way through a Hebb and an anti-Hebb rule.\n\nThe major contribution of this work is the development of a new method to implement CHL using random feedback instead of symmetric one. This leads to a more biologically plausible implementation of CHL without loss of performance and accuracy in most of the cases studied. In addition, the algorithm offers a shorter runtime since it does not require the computation of the transpose matrix for synaptic weights at every time step. Furthermore, the proposed algorithm offers a suitable learning scheme for neuromorphic devices since its neural dynamics can be transformed into spiking neurons [10]. Therefore, we can build spiking neural networks with STDP-like learning rules as equivalent to the Hebb’s rule in rCHL and use ideas from event-based Contrastive Divergence [32] and synaptic sampling machines [34] in order to implement a neuromorphic rCHL. This idea is similar to the event-based random back-propagation algorithm [33], where the authors have implemented an event-based feedback alignment equivalent for neuromorphic devices.\n\nA potential extension of the model might be a replacement of the firing rate units with spiking neurons, such as leaky integrate-and-fire units, in order to make the computations even more similar to the biological case. Another potential direction would be to remove entirely the synchronization in the neural dynamics integration. This means that the integrations of neural dynamics can take place on-demand in a more event-based fashion [41, 44]. Since the units are coupled with each other, and the propagation of activity takes place in a more natural way, we might be able to use asynchronous algorithms for implementing rCHL such that it scales up in a more efficient and natural way. Another extension of the model in the future would be to impose sparsity constraints on the learning rule in order to render data encoding processes more efficient. Furthermore, such a modification would make the model able to simulate more biological phenomena, such as the sparse compression occurring within the hippocampus [39].\n\nIn the future, we would like to conduct more analytical work to determine the optimal type of random matrix G, for a given problem, and how to design such a matrix, if it does exist. This means that if an optimal random matrix G exists, then one can properly choose the eigenvalues (or singular values) and the distribution that generates that matrix based on the problem they would like to solve. To this end, the pseudospectra analysis can play a key role. Pseudospectra can help us to better understand the relations between singular values, convergence of learning and accuracy. This can lead to the development of sophisticated methods for designing feedback matrices with particular properties. Therefore, we could improve and accelerate the learning process.\n\n## Author Contributions\n\nGD conceived the idea, implemented CHL and rCHL, ran the CHL and rCHL experiments; TB implemented and ran the BP and FDA experiments; GD analyzed and interpreted the results; All the authors wrote and reviewed the manuscript.\n\n## Acknowledgments\n\nThis work was supported in part by the Intel Corporation and by the National Science Foundation under grant 1640081. We thank NVIDIA corporation for providing the GPU used in this work.\n\n## 5 Appendix\n\n### 5.1 Λϵ-pseudospectra\n\nLet V ∈Rm×n be a rectangular matrix, not necessarily normal (i.e., VV∗̸= V∗V). The ϵ-pseudospectra (Λϵ) [47, 49] is the set of ϵ-eigenvalues a closed subset of C.\n\nDefinition 5.1 (ϵ-Pseudospectra). Let V ∈C or R, z ∈C and ˜I ∈Rm×n (the identity matrix with ones on the main diagonal and zeros elsewhere), then the ϵ-pseudospectra Λϵ = {z ∈C : ||(V −z˜I)υυυ|| ≤ ϵ for some υυυ ∈Cn, ||υυυ|| = 1}.\n\nDefinition 5.2 (ϵ-Pseudospectra). Let V ∈C or R, z ∈C and ˜I ∈Rm×n (the identity matrix with ones on the main diagonal and zeros elsewhere), then the ϵ-pseudospectra Λϵ = {z ∈C : σmin(z˜I −V) ≤ϵ}.\n\nDefinitions 5.1 and 5.2 are equivalent [49], and both account for the computation of Λϵ of rectangular matrices of dimension m × n, where m ≥n. The algorithm given in [49] for the numerical computation of the set Λϵ can be applied on matrices of dimension m × n, where either m ≥2n or m ≤2n.\n\n### 5.2 Error and Accuracy Table\n\nHere we provide the minimum test error and maximum test accuracy for each of the experiments (XOR, MNIST and eMNIST). We compare in the following table our CHL and rCHL implementations against each other and against the BP and the FDA.\n\nAlgorithm Experiment XOR MNIST eMNIST BP 0.003/1 0.0087/0.962 0.0116/0.8935 FDA 0.0009/1 0.0066/0.969 0.0087/0.9035 CHL 2.503e−8/1 0.0038/0.977 0.0061/0.899 rCHL 1.117e−6/1 0.0044/0.975 0.0073/0.8461\n\nTable 1: Mean squared error (MSE) and Accuracy. The test MSE and accuracy of three experiments, XOR, MNIST, and eMNIST are given in this table. BP–Backpropagation, FDA–Feedback Alignment, CHL–Contrastive Hebbian Learning, and rCHL–random Contrastive Hebbian Learning.\n\n### 5.3 Abbreviations and Notation Tables\n\nAbbreviation Description STDP Spike-timing Dependent Plasticity BP Back-propagation FDA Feedback Alignment CHL Contrastive Hebbian Learning rCHL random Contrastive Hebbian Learning MSE Mean Squared Error\n\nTable 2: Abbreviations\n\nSymbols Description L Total number of layers k Index of layer xk Neural state at layer k ˇxk Neural state at layer k in the free phase ˆxk Neural state at layer k in the clamped phase Wk Synaptic matrix (connects layer k −1 with k) Gk Random feedback matrix (connects layer k −1 with k bk Bias for layer k fk Non-linear function (transfer function) η Learning rate γ Feedback gain ⊗ Tensor product dt Forward Euler time-step tf Forward Euler total integration time I Input data set T Target set Λϵ Set of pseudospectra λ Eigenvalue U Uniform distribution ℓ Length of uniform’s distribution interval N Normal distribution σ Normal distribution’s variance ⊕ Exclusive Or (XOR)\n\nTable 3: Notation\n\n### 5.4 Simulation and Platform Details\n\nAll serial simulations were run on a Dell OptiPlex 7040 with 16GB physical memory, and a 6th generation Intel i7 processor (Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz) running Arch Linux (4.11.9 −1-ARCH ×86 64 GNU/Linux). The source code for CHL and rCHL were written in the C programming language [18] (gcc (GCC) 7.1.120170630). In all C simulations, we used the random number generator provided by [37]2. The backpropagation and feedback alignment algorithms were written in Python using Tensorflow [1], and ran on an Nvidia GeForce GTX Titan X with 12 GB memory. The source code is distributed under the GNU General Public License, and can be found at: [LINK]. All simulation parameters are provided in the Results section and in the Supplementary Information (SI).\n\n### 5.5 Simulation Parameters\n\nExperiment η γ Epochs Layout Gk W0 k b0 k XOR 0.1 0.05 5, 000 (2, 2, 1) U(−0.2, 0.2) U(0, 1) − MNIST 0.1 0.05 20 (784, 128, 64, 10) U(−0.6, 0.6) U(−0.5, 0.5) − eMNIST 0.1 0.1 40 (784, 256, 128, 26) U(−0.3, 0.3) U(−0.5, 0.5) U(−0.2, 0.2) Autoencoder 0.05 0.05 20 (784, 36, 784) U(−1, 1) U(−0.5, 0.5) −\n\nTable 4: Simulation Parameters. In the experiments, we integrated the dynamics for tf = 30 ms using the forward Euler method with time-step dt = 0.08. η is the learning rate and γ is the feedback gain.\n\n## Supplementary Information\n\n### Backpropagation and Feedback Alignment on XOR\n\n0 32768 65536 Samples 0.0 0.05 0.1 0.15 0.2 0.25 0.3 Test MSE A 0 32768 65536 Samples 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy B BP FDA\n\nFigure 11: Backpropagation (BP) and feedback alignment (FDA) on XOR. The test MSE (A) and the test accuracy (B) show the convergence of BP (red) and FDA (gray) in solving the XOR problem. For training both BP and FDA, we used 65, 536 batches, and each batch had a size of 1 sample. The learning rate was η = 0.1 and the momentum α = 0.1. Synaptic weights and biases were initialized using uniform distributions U(−0.3, 0.3) and U(−0.1, 0.1), respectively.\n\n0 100 200 300 400 500 Samples(×1024) 0.0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 Test MSE A 0 100 200 300 400 500 Samples(×1024) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy B BP FDA\n\nFigure 12: Backpropagation (BP) and feedback alignment (FDA) on MNIST. The test MSE (A) and the test accuracy (B) show the convergence of BP (red) and FDA (gray) in solving MNIST handwritten digits classification problem. For training both BP and FDA, we used 524, 288 batches, and each batch had a size of 128 samples. The learning rate was η = 0.07. Synaptic weights and biases were initialized using uniform distributions U(−0.3, 0.3) and U(−0.1, 0.1), respectively.\n\n0 200 400 600 800 1000 Samples (×131072) 0.0 0.02 0.04 0.06 0.08 0.1 Test MSE A 0 200 400 600 800 1000 Samples (×131072) 0.0 0.2 0.4 0.6 0.8 1.0 Test Accuracy B BP FDA\n\nFigure 13: Backpropagation (BP) and feedback alignment (FDA) on eMNIST. The test MSE (A) and the test accuracy (B) show the convergence of BP (red) and FDA (gray) in solving the eMNIST handwritten letters classification problem (26 letters of the English alphabet). For training both BP and FDA, we used 1, 048, 576 batches, and each batch had size of 128 samples. The learning rate was η = 0.07. Synaptic weights and biases were initialized using uniform distributions U(−0.3, 0.3) and U(−0.1, 0.1), respectively.\n\n### Backpropagation and Feedback Alignment on MNIST\n\n### Backpropagation and Feedback Alignment on eMNIST\n\n## References\n\n[1] Mart´ın Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, et al. Tensorflow: A system for large-scale machine learning. In OSDI, volume 16, pages 265–283, 2016.\n\n[2] Larry F Abbott and Sacha B Nelson. Synaptic plasticity: taming the beast. Nature neuroscience, 3(11s):1178, 2000.\n\n[3] Pierre Baldi and Fernando Pineda. Contrastive learning and neural oscillations. Neural Computation, 3(4):526–545, 1991.\n\n[4] Guo-qiang Bi and Mu-ming Poo. Synaptic modifications in cultured hippocampal neurons: dependence on spike timing, synaptic strength, and postsynaptic cell type. Journal of neuroscience, 18(24):10464–10472, 1998.\n\n[5] Gregory Cohen, Saeed Afshar, Jonathan Tapson, and Andr´e van Schaik. Emnist: an extension of mnist to handwritten letters. arXiv preprint arXiv:1702.05373, 2017.\n\n[6] Steven J Cooper. Donald o. hebb’s synapse and learning rule: a history and commentary. Neuroscience & Biobehavioral Reviews, 28(8):851–874, 2005.\n\n[7] Li Deng. The mnist database of handwritten digit images for machine learning research [best of the web]. IEEE Signal Processing Magazine, 29(6):141–142, 2012.\n\n[8] Stuart Dreyfus. The numerical solution of variational problems. Journal of Mathematical Analysis and Applications, 5(1):30–45, 1962.\n\n[9] Nels C Elde, Stephanie J Child, Michael T Eickbush, Jacob O Kitzman, Kelsey S Rogers, Jay Shendure, Adam P Geballe, and Harmit S Malik. Poxviruses deploy genomic accordions to adapt rapidly against host antiviral defenses. Cell, 150(4):831–841, 2012.\n\n[10] Wulfram Gerstner and Werner M Kistler. Spiking neuron models: Single neurons, populations, plasticity. Cambridge university press, 2002.\n\n[11] Matthew F Glasser, Timothy S Coalson, Emma C Robinson, Carl D Hacker, John Harwell, Essa Yacoub, Kamil Ugurbil, Jesper Andersson, Christian F Beckmann, Mark Jenkinson, et al. A multi-modal parcellation of human cerebral cortex. Nature, 536(7615):171–178, 2016.\n\n[12] Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Deep Learning. MIT Press, 2016.\n\n[13] Kenneth D Harris and Thomas D Mrsic-Flogel. Cortical connectivity and sensory coding. Nature, 503(7474):51, 2013.\n\n[14] Donald Olding Hebb. The organization of behavior: A neuropsychological theory. Psychology Press, 2005.\n\n[15] Geoffrey E Hinton. Training products of experts by minimizing contrastive divergence. Neural computation, 14(8):1771–1800, 2002.\n\n[16] Geoffrey E Hinton and James L McClelland. Learning representations by recirculation. In Neural information processing systems, pages 358–366, 1988.\n\n2http://www.pcg-random.org/\n\n[17] Eric R Kandel, James H Schwartz, Thomas M Jessell, Steven A Siegelbaum, A James Hudspeth, et al. Principles of neural science, volume 4. McGraw-hill New York, 2000.\n\n[18] Brian W Kernighan and Dennis M Ritchie. The C programming language. 2006.\n\n[19] Yann Le Cun. Learning process in an asymmetric threshold network. In Disordered systems and biological organization, pages 233–240. Springer, 1986.\n\n[20] Yann LeCun, Yoshua Bengio, and Geoffrey Hinton. Deep learning. nature, 521(7553):436, 2015.\n\n[21] Dong-Hyun Lee, Saizheng Zhang, Asja Fischer, and Yoshua Bengio. Difference target propagation. In Joint european conference on machine learning and knowledge discovery in databases, pages 498–515. Springer, 2015.\n\n[22] Timothy P Lillicrap, Daniel Cownden, Douglas B Tweed, and Colin J Akerman. Random synaptic feedback weights support error backpropagation for deep learning. Nature communications, 7, 2016.\n\n[23] David JC MacKay. Information theory, inference, and learning algorithms, volume 7. Citeseer, 2003.\n\n[24] Stephen L Macknik and Susana Martinez-Conde. The role of feedback in visual masking and visual processing. Advances in cognitive psychology, 2007.\n\n[25] Stephen L Macknik and Susana Martinez-Conde. The role of feedback in visual attention and awareness. Cognitive Neurosciences, 1, 2009.\n\n[26] Nikola T Markov, MM Ercsey-Ravasz, AR Ribeiro Gomes, Camille Lamy, Loic Magrou, Julien Vezoli, P Misery, A Falchier, R Quilodran, MA Gariel, et al. A weighted and directed interareal connectivity matrix for macaque cerebral cortex. Cerebral cortex, 24(1):17–36, 2012.\n\n[27] Nikola T Markov, Julien Vezoli, Pascal Chameau, Arnaud Falchier, Ren´e Quilodran, Cyril Huissoud, Camille Lamy, Pierre Misery, Pascale Giroud, Shimon Ullman, et al. Anatomy of hierarchy: feedforward and feedback pathways in macaque visual cortex. Journal of Comparative Neurology, 522(1):225–259, 2014.\n\n[28] Henry Markram, Joachim L¨ubke, Michael Frotscher, and Bert Sakmann. Regulation of synaptic efficacy by coincidence of postsynaptic aps and epsps. Science, 275(5297):213–215, 1997.\n\n[29] Robert M May. Simple mathematical models with very complicated dynamics. Nature, 261(5560):459, 1976.\n\n[30] Marvin Minsky. Steps toward artificial intelligence. Proceedings of the IRE, 49(1):8–30, 1961.\n\n[31] Javier R Movellan. Contrastive hebbian learning in the continuous hopfield model. In Connectionist models: Proceedings of the 1990 summer school, pages 10–17, 1991.\n\n[32] Emre Neftci, Srinjoy Das, Bruno Pedroni, Kenneth Kreutz-Delgado, and Gert Cauwenberghs. Event-driven contrastive divergence for spiking neuromorphic systems. Frontiers in neuroscience, 7:272, 2014.\n\n[33] Emre O Neftci, Charles Augustine, Somnath Paul, and Georgios Detorakis. Event-driven random backpropagation: Enabling neuromorphic deep learning machines. Frontiers in neuroscience, 11, 2017.\n\n[34] Emre O Neftci, Bruno U Pedroni, Siddharth Joshi, Maruan Al-Shedivat, and Gert Cauwenberghs. Stochastic synapses enable efficient brain-inspired learning machines. Frontiers in neuroscience, 10:241, 2016.\n\n[35] Arild Nøkland. Direct feedback alignment provides learning in deep neural networks. In Advances in Neural Information Processing Systems, pages 1037–1045, 2016.\n\n[36] Seung Wook Oh, Julie A Harris, Lydia Ng, Brent Winslow, Nicholas Cain, Stefan Mihalas, Quanxin Wang, Chris Lau, Leonard Kuan, Alex M Henry, et al. A mesoscale connectome of the mouse brain. Nature, 508(7495):207, 2014.\n\n[37] Melissa E. O’Neill. Pcg: A family of simple fast space-efficient statistically good algorithms for random number generation. Technical Report HMC-CS-2014-0905, Harvey Mudd College, Claremont, CA, September 2014.\n\n[38] Randall C O’Reilly. Biologically plausible error-driven learning using local activation differences: The generalized recirculation algorithm. Neural computation, 8(5):895–938, 1996.\n\n[39] Panagiotis C Petrantonakis and Panayiota Poirazi. A compressed sensing perspective of hippocampal function. Frontiers in systems neuroscience, 8, 2014.\n\n[40] Virginia M Pickel and Menahem Segal. The synapse: structure and function. Elsevier, 2013.\n\n[41] Nicolas P Rougier and Axel Hutt. Synchronous and asynchronous evaluation of dynamic neural fields. Journal of Difference Equations and Applications, 17(8):1119–1133, 2011.\n\n[42] David E Rumelhart, Geoffrey E Hinton, Ronald J Williams, et al. Learning representations by back-propagating errors. Cognitive modeling, 5(3):1, 1988.\n\n[43] Tian-De Shou. The functional roles of feedback projections in the visual system. Neuroscience bulletin, 26(5):401–410, 2010.\n\n[44] Wahiba Taouali, Fr´ed´eric Alexandre, Axel Hutt, and Nicolas P Rougier. Asynchronous evaluation as an efficient and natural way to compute neural networks. In AIP Conference Proceedings, volume 1168, pages 554–558. AIP, 2009.\n\n[45] Alex M Thomson and A Peter Bannister. Interlaminar connections in the neocortex. Cerebral cortex, 13(1):5–14, 2003.\n\n[46] Lloyd N Trefethen. Pseudospectra of matrices. Numerical analysis, 91:234–266, 1991.\n\n[47] Lloyd N Trefethen and Mark Embree. Spectra and pseudospectra: the behavior of nonnormal matrices and operators. Princeton University Press, 2005.\n\n[48] Van H Vu. Modern Aspects of Random Matrix Theory, volume 72. American Mathematical Society, 2014.\n\n[49] Thomas G Wright and Lloyd N Trefethen. Pseudospectra of rectangular matrices. IMA Journal of Numerical Analysis, 22(4):501–519, 2002.\n\n[50] Xiaohui Xie and H Sebastian Seung. Equivalence of backpropagation and contrastive hebbian learning in a layered network. Neural computation, 15(2):441–454, 2003.\n\n[51] Li I Zhang, Huizhong W Tao, Christine E Holt, William A Harris, and Mu-ming Poo. A critical window for cooperation and competition among developing retinotectal synapses. Nature, 395(6697):37, 1998.",
+  "verbatim_heading_share": 1.0357142857142858
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Contrastive Hebbian Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Random Contrastive Hebbian Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Bars and Stripes Classification",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.1.1 Feedback Gain",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.2 Learning Rate",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.3 Number of Layers",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.4 Feedback Random Matrix",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Exclusive Or (XOR)",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Handwritten Digit and Letter Classification",
+   "page": 10,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 Autoencoder",
+   "page": 12,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Author Contributions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Appendix",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Λϵ-pseudospectra",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.2 Error and Accuracy Table",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.3 Abbreviations and Notation Tables",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.4 Simulation and Platform Details",
+   "page": 17,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.5 Simulation Parameters",
+   "page": 17,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "Supplementary Information",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on XOR",
+   "page": 17,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on MNIST",
+   "page": 19,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on eMNIST",
+   "page": 19,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 59.78464720000193,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.8275862068965517,
+  "unmatched_gt": [
+   "3.1.3 Numb er of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "3.1.3 Number of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 28,
+  "pred": 29,
+  "tp": 3,
+  "fp": 26,
+  "fn": 25,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09999999999999998,
+  "unmatched_gt": [
+   "2.1 Contrastive Hebbian Learning",
+   "2.2 Random Contrastive Hebbian Learning",
+   "3 Results",
+   "3.1 Bars and Stripes Classification",
+   "3.1.1 Feedback Gain",
+   "3.1.2 Learning Rate",
+   "3.1.3 Numb er of Layers",
+   "3.1.4 Feedback Random Matrix",
+   "3.2 Exclusive Or (XOR)",
+   "3.3 Handwritten Digit and Letter Classification",
+   "3.4 Autoenco der",
+   "4 Discussion",
+   "Author Contributions",
+   "Acknowledgments",
+   "5 Appendix",
+   "5.1 Λϵ-pseudospectra",
+   "5.2 Error and Accuracy Table",
+   "5.3 Abbreviations and Notation Tables",
+   "5.4 Simulation and Platform Details",
+   "5.5 Simulation Parameters",
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Contrastive Hebbian Learning with Random Feedback Weights",
+   "2.1 Contrastive Hebbian Learning",
+   "2.2 Random Contrastive Hebbian Learning",
+   "3 Results",
+   "3.1 Bars and Stripes Classification",
+   "3.1.1 Feedback Gain",
+   "3.1.2 Learning Rate",
+   "3.1.3 Number of Layers",
+   "3.1.4 Feedback Random Matrix",
+   "3.2 Exclusive Or (XOR)",
+   "3.3 Handwritten Digit and Letter Classification",
+   "3.4 Autoencoder",
+   "4 Discussion",
+   "Author Contributions",
+   "Acknowledgments",
+   "5 Appendix",
+   "5.1 Λϵ-pseudospectra",
+   "5.2 Error and Accuracy Table",
+   "5.3 Abbreviations and Notation Tables",
+   "5.4 Simulation and Platform Details",
+   "5.5 Simulation Parameters",
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST",
+   "References"
+  ]
+ }
+}

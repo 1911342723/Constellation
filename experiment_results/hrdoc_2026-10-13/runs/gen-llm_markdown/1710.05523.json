@@ -1,0 +1,95 @@
+{
+ "doc": "1710.05523",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 1,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 0,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "An open window to neutrino mass hierarchy at maximal Dirac CP violation",
+    0,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 3624,
+   "completion_tokens": 3392
+  },
+  "elapsed_llm_seconds": 15.249273099994753,
+  "word_preservation": {
+   "recall": 1.0,
+   "in_order": 1.0,
+   "inserted": 0.0
+  },
+  "output_markdown": "# An open window to neutrino mass hierarchy at maximal Dirac CP violation\n\nYing Zhang∗\n\nSchool of Science, Xi’an Jiaotong University, Xi’an, 710049, China\n\nNon-zero leptonic CP phases in the neutrino sector are clear evidence for physics beyond the Standard Model and have many implications in particle physics and cosmology. Some clues to maximal Dirac CP violation δCP = 3π/2 are reviewed. An approach to connect the Dirac CP violation phase and the neutrino mass hierarchy in terms of the measurement of CP asymmetry is proposed. Under appropriate requirements for baseline distance and beam energy, the problem of neutrino mass hierarchy can be revealed at maximal Dirac CP violation. General allowed parameter spaces are investigated, within which the two unknown neutrino issues, mass hierarchy and Dirac CP violation, can be solved simultaneously. The abilities of addressing the mass hierarchy of current long baseline neutrino experiments are also discussed.\n\nPACS numbers: 12.15.Ff, 14.60.Pq, 11.30.Er\n\nKey words: neutrino, Dirac CP violation, neutrino mass hierarchy\n\nIn the past several decades, substantial progress has been made in the field of neutrino physics. Three-flavor neutrino oscillations have been confirmed from atmosphere, solar, reactor, accelerator and other neutrino experiments. Including non-zero θ13, all mixing angles have also been measured precisely [1]. However, there are still some unsolved problems in the neutrino sector such as the mass hierarchy, leptonic CP violation (CPV), and Dirac/Majorana fermions. These principal issues closely relate to the nature of neutrinos and also play important roles in particle physics and cosmology [2]. A paper [3] has shown that CPV in neutrino mixing is a necessary source of the generation of the baryon asymmetry of the Universe in popular leptogenesis scenarios. In addition, non-zero CPV must be a clear signal to guide new physics beyond the Standard Model. Due to the more interesting implications and roles in phenomenology, Dirac CVP often garners greater attention. It exists for both Dirac neutrinos and Majorana fermions. Inspired by its similar form as CKM in the quark sector, it is also a bridge to establishing the relation between CPV in CKM and in the\n\n∗E-mail:hepzhy@mail.xjtu.edu.cn.\n\narXiv:1710.05523v1  [hep-ph]  16 Oct 2017\n\n<<page 2>>\n2\nPMNS matrix. Although Dirac CPV is essentially unknown, we still have some clues and hints from global fits of neutrino experiment data and flavor physics.\n\nThe updated neutrino oscillation data have been fitted for the CP phase by νe appearance data from long-baseline experiments in combination with precise θ13 to improve the sensitivity to δCP [4–7]. The fit results show a maximal Dirac CPV, i.e., the center value of 3π/2 for both NH and IN. The maximal CPV was first reported by the NOνA neutrino oscillation experiment [8]. T2K also declared δCP = −π/2 as the first hint [9]. On the other hand, flavor symmetry also predicts a maximal value of the phase such as A4 [10, 11]. In the paper, we will focus on its indication in the neutrino mass hierarchy problem, especially at its most likely value: 3π/2. The effect of leptonic CPV can be enhanced in neutrino oscillations with matter effects [12]. When a neutrino travels through Earth matter, the asymmetric contributions to neutrino oscillations and anti-neutrino oscillations can break the asymmetry Aµe\nCP into two bands for a normal hierarchy (NH) and for an inverted hierarchy (IH). Due to the suppressed deviation at maximal Dirac CPV, the error bands of NH and IH decrease to form a gap. At the range of the gap between NH and IH, the neutrino mass hierarchy problem can be addressed. The two principal issues concerning the nature of neutrinos, leptonic CPV and mass hierarchy, are connected. After a short review of neutrino mixing, we will focus on the neutrino CP violation observable, the asymmetry ACP, which helps to address the mass hierarchy problem. The ability of current long-baseline neutrino experiments to address the neutrino mass hierarchy is also investigated. The optimized neutrino detector performance, detector distance L and energy will be presented. As the main result, the parameter space for detecting distance and neutrino energy is given.\n\nThe relation between the weak gauge eigenstates να (α = e, µ, τ) and the mass eigenstates νi (i = 1, 2, 3) can be expressed by a unitary rotation\n\n|να⟩=\n3\nX\ni=1\nU ∗\nαi|νi⟩\n(1)\n\nwith the 3 × 3 PMNS matrix U\n\nU =\n\n\n\n1\n0\n0\n0\nc23\ns23\n0 −s23 c23\n\n\n\n\n\n\nc13\n0 s13e−iδ\n0\n1\n0\n−s13eiδ 0\nc13\n\n\n\n\n\n\nc12\ns12 0\n−s12 c12 0\n0\n0\n1\n\n\ndiag(ei α1\n2 , ei α2\n2 , 1).\n=\n\n\n\nc12c13\ns12c13\ns13e−iδ\n−s12c23 −c12s23s13eiδ\nc12c23 −s12s23s13eiδ\ns23c13\ns12s23 −c12c23s13eiδ\n−c12s23 −s12c23s13eiδ\nc23c13\n\n\ndiag(ei α1\n2 , ei α2\n2 , 1).\n\nThe oscillation probability from flavor να to flavor νβ at a distance of L with energy E is\n\nP(να →νβ) =\n\f\f\f\nX\ni\nU ∗\nαiUβie−im2\ni L/(2E)\f\f\f\n2\n\n<<page 3>>\n3\nAfter expanding the above expression in terms of the small parameter α = ∆m2\n21/∆m2\n31, the CPV effect appears at the next-leading-order term and only contributes slightly. A more convenient observable is an asymmetry between νµ −νe oscillations and ¯νµ −¯νe oscillations\n\nAµe\nCP = P(νµ →νe) −P(¯νµ −¯νe)\n= −JCP\nn\nsin(∆m2\n21L\n2E\n) + sin(∆m2\n32L\n2E\n) + sin(∆m2\n13L\n2E\n)\no\n\nwith\n\nJCP = 1\n8 cos θ13 sin 2θ12 sin 2θ23 sin 2θ13 sin δCP.\n\nDue to the dependence on not only the absolute value of ∆m2\n13 but also its sign, Aµe\nCP provides a way to address the neutrino mass hierarchy problem. Using the error transfer formula, the errors from the mixing angles, squared-mass difference, CP phase, and energy generate error bands for Aµe\nCP. If there is a gap of Aµe\nCP between NH and IH, the neutrino mass hierarchy will be determined. An excitation gap appears in neutrino oscillations with matter effects. When a neutrino travels through the Earth, the electrons in matter will interact with the neutrino. Due of a lack of anti-matter interactions, asymmetric contributions from neutrino oscillations from anti-neutrino oscillations cause a separation of ACP for NH and IH [12]. The oscillation probability up to second order in the small parameters α and s2\n13 is approximated as\n\nP m(νµ →νe) = s2\n23\nsin2(2θ13)\n(A −1)2 sin2[(A −1)∆]\n−\n8α\nA(1 −A)JCP\nn\nsin(∆) −cos(∆)\no\nsin(A∆) sin[∆(1 −A)]\n+α2 cosθ\n23\nsin2(2θ12)\nA2\nsin2(A∆)\n\nwhere A =\n√\n22GFNeE/∆m2\n31 with the electron number density of the Earth Ne (for antineutrino oscillations, the probability can be obtained by changing A →−A and δCP →−δCP). In contrast to vacuum oscillations, the asymmetry Aµe\nCP with matter effects depends on not only the ratio of E/L but also the distance or the neutrino energy itself. Fig.1 shows that a gap appears with increasing source-detector distance L due to the accumulation of asymmetric contributions from interactions with Earth matter. More precisely, the gap can be described by the number of statistical deviations λ, defined as\n\nλ =\n\f\f\fAµe\nCP|NH −Aµe\nCP|IH\n\f\f\f\nδ(Aµe\nCP)|NH + δ(Aµe\nCP)|IH\n.\n(2)\n\nThe gap that appears corresponds to λ = 1, i.e., NH and IH can be divided as 1σ C.L.. A general parameter space of E and L is shown in Fig.2. An extra requirement in the determination of Dirac CPV has been included. Experiments have hinted at δCP = 3π/2 as\n\n<<page 4>>\n4\n(a) L=50km\n(b) L=500km\n(c) L=1000km\n(d) L=2000km\nFIG. 1: A gap of ACP for NH and IH with different lengths of baselines in 2σ C.L.. The purple area is the overlay area from NH and IH. The best fit values of the mixing angles and squared-mass difference can be found in [5].\n\na typical valve and have shown a large standard deviation simultaneously. A minimal limit of this standard deviation of less than π/4 is recommended [13], which corresponds to 95% C.L. on a half cycle. In the overlapping areas in Fig.2, long-baseline neutrino oscillation experiment can determine the most likely Dirac CPV and address the mass hierarchy problem simultaneously. The minimal distance of the baseline is approximately 937 km (2400 km) in 2σ (5σ) C.L. corresponding to a minimal beam energy of approximately 1.8GeV (13.3GeV ). When ignoring the statistical requirement of the standard deviation of δCP or for a measured Dirac CPV, the minimal L is 613 km (1437 km) in 2σ (5σ) C.L. corresponding to a minimal E of approximately 1.2GeV (7.9GeV ).\n\nSome long-baseline neutrino oscillation experiments have been run or planned to address the leptonic CVP and/or neutrino mass hierarchy problem. Tab. I lists the λ values of some\n\n<<page 5>>\n5\nFIG. 2: The parameter space in the plane of E-L. The yellow area (the green area) indicates the separation of NH and IH in 2σ (5σ) C.L.. The purple area is allowed by the requirement of the standard deviation of Dirac CPV being less than π/4.\n\nlong-baseline neutrino oscillation experiments at δCP = 3π/2 and the range of Dirac CPV corresponding to 1σ C.L. Here, the actual energy distinguishability has been considered in exp.\n\nλ|δCP =3π/2\nδCP range for λ > 1\nMINOS\n1.7\n[0.46, 0.54]π,[1.46, 1.54]π\nNOνA\n2.6\n[0.45, 0.55]π,[1.45, 1.55]π\nDUNE\n3.5\n[0.41, 0.59]π,[1.41, 1.59]π\n\nTABLE I: λ values of current long-baseline neutrino oscillation experiments\n\nthe table, which tends to increase the error in the denominator of Eq. 2 and suppress λ. Due to the sensitive energy error in high-energy neutrino beams, the suppressing effect on λ will become more notable for high energy ranges. This will be an effective method for enhancing the confidence level by improving the energy resolution of detectors. The data in Tab.I show that only a narrow window is open at maximal Dirac CPV. The reason comes from the error of the Dirac CPV. Only at the point of maximal CPV does the contribution from the energy resolution vanish. When considering Dirac CPV and taking the minimal distinguishable error, δ[δCP] = π/4, a relatively large error dominates the error band of ACP. Thus, the window rapidly closes at a range slightly away from δCP = 3π/2.\n\nIn conclusion, the asymmetric contributions to Aµe\nCP between NH and IH are enhanced when neutrinos travel through Earth matter. Analyzing the role of Dirac CPV can open a window to provide insight into the neutrino mass hierarchy problem at maximum δCP. A connection between two unknown essential issues characterizing the nature of neutrinos, Dirac CPV and mass hierarchy, has been established. The minimal requirements on de-\n\n<<page 6>>\n6\ntecting distance and energy are L > 613 km and E > 1.2 GeV in 2σ C.L. (without the distinguishability requirement).\n\nAcknowledgement\n\nThe author would like to thank R. Li for useful discussions. This work was supported in part also by the Fundamental Research Funds for the Central Universities and by NSFC Grant 11775165.\n\n[1] R.N. Mohapatra et al, Rept.Prog.Phys. 70 (2007) 1757; J.W.F. Valle, J.Phys.Conf.Ser. 53 (2006) 473.\n\n[2] G.C. Branco, R.Gonzalez Felipe, F.R. Joaquim, Rev.Mod.Phys. 84 (2012) 515.\n\n[3] S.T. Petcov, Nucl.Phys. B908 (2016) 279.\n\n[4] D.V. Forero, M. T´ortola, and J.W.F. Valle, Phys. Rev. D 90, 093006 (2014).\n\n[5] F. Capozzi, et al, Phys. Rev. D 89, 093018 (2014).\n\n[6] F. Capozzi, E. Lisi, A. Marrone, D. Montanino, A. Palazzo, Nucl. Phys. B908 (2016) 218.\n\n[7] I. Esteban, M.C. Gonzalez-Garcia, M. Maltoni, I. Martinez-Soler, T. Schwetz, JHEP 1701 (2017) 087.\n\n[8] P. Adamson, et al., Phys. Rev. Lett. 116, 151806 (2016); F. Capozzi, et al., Nucl. Phys. B 908, 218 (2016).\n\n[9] M. Ghosh, arXiv:1702.0788.\n\n[10] I. Girardi, S.T. Petcov, A.V. Titov, Int.J.Mod.Phys. A30 (2015) 1530035. (2015).\n\n[11] S.T. Petcov, Nucl. Phys. B 892 (2015) 400.\n\n[12] R. Gandhi, P. Ghoshal, S. Goswami, P. Mehta, S.U. Sankar, Phys.Rev. D73 (2006) 053001.\n\n[13] K. Fu, Y. Zhang, Phys. Lett. B 746 (2015) 104.",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "An open window to neutrino mass hierarchy at maximal Dirac CP violation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.267227600001206,
+ "metrics_v1": {
+  "gt": 1,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 1,
+  "pred": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "An open window to neutrino mass hierarchy at maximal Dirac CP violation"
+  ]
+ }
+}

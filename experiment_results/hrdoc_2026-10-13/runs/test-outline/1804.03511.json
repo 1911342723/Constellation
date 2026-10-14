@@ -1,0 +1,262 @@
+{
+ "doc": "1804.03511",
+ "system": "outline",
+ "metrics": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 21,
+  "fp": 7,
+  "fn": 7,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.7586206896551724,
+  "unmatched_gt": [
+   "A. Channel Model",
+   "A. Data Rate Expression",
+   "C. Utility Selection",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "2) Approximations:",
+   "3) GP Standard Form:"
+  ],
+  "unmatched_pred": [
+   "II-A Channel Model",
+   "III-A Data Rate Expression",
+   "III-C Utility Selection",
+   "III-C1 Max Sum Utility",
+   "III-C2 Max Min Utility",
+   "IV-A2 Approximations",
+   "IV-A3 GP Standard Form"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I-A Related Work",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-B Contributions",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-C Paper Organization",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II System Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Channel Model",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-B Energy Harvesting Model",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-C Relay Power Model",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III Problem Formulation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Data Rate Expression",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-B Optimization Problem",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-C Utility Selection",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-C1 Max Sum Utility",
+   "page": 4,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "III-C2 Max Min Utility",
+   "page": 5,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "IV Joint-Optimization Solution",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Geometric Programming Method for PS Ratios and Relays' Transmit Power Optimization",
+   "page": 5,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "IV-A1 Introduction to Geometric Programming",
+   "page": 5,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "IV-A2 Approximations",
+   "page": 5,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "IV-A3 GP Standard Form",
+   "page": 6,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "IV-B Selected Relays Optimization",
+   "page": 7,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "IV-B1 Binary Particle Swarm Optimization",
+   "page": 7,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "IV-B2 Branch-and-Bound Method",
+   "page": 8,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "V Simulation Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-A Simulation Parameters",
+   "page": 8,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "V-B System Performance",
+   "page": 8,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "V-C Convergence Speed",
+   "page": 10,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "VI Conclusions",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.11246709999977611,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 21,
+  "fp": 7,
+  "fn": 7,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.7586206896551724,
+  "unmatched_gt": [
+   "A. Channel Model",
+   "A. Data Rate Expression",
+   "C. Utility Selection",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "2) Approximations:",
+   "3) GP Standard Form:"
+  ],
+  "unmatched_pred": [
+   "II-A Channel Model",
+   "III-A Data Rate Expression",
+   "III-C Utility Selection",
+   "III-C1 Max Sum Utility",
+   "III-C2 Max Min Utility",
+   "IV-A2 Approximations",
+   "IV-A3 GP Standard Form"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 20,
+  "fp": 7,
+  "fn": 7,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "A. Channel Model",
+   "A. Data Rate Expression",
+   "C. Utility Selection",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "2) Approximations:",
+   "3) GP Standard Form:"
+  ],
+  "unmatched_pred": [
+   "II-A Channel Model",
+   "III-A Data Rate Expression",
+   "III-C Utility Selection",
+   "III-C1 Max Sum Utility",
+   "III-C2 Max Min Utility",
+   "IV-A2 Approximations",
+   "IV-A3 GP Standard Form"
+  ],
+  "ignored_title_predictions": null
+ }
+}

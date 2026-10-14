@@ -1,0 +1,146 @@
+{
+ "doc": "1703.02773",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 11,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 584,
+  "layout_marked": 15,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13122,
+   "completion_tokens": 436,
+   "total_tokens": 13558
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9626131444313263,
+  "inserted_word_share": 0.04611484839621727
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Game theory: Prelude",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Mathematical preliminaries",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Quantum game theory",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Quantum correlations as advice",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Result",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Nash equilibrium",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B Correlations (as Advice)– Local vs Nonlocal",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2-party–2-input–2-output NS correlations",
+   "page": 10,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "C Pure entanglement as quantum-sw solution",
+   "page": 11,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.83053359999758,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 11,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

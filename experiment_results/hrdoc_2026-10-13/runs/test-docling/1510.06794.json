@@ -1,0 +1,84 @@
+{
+ "doc": "1510.06794",
+ "system": "docling",
+ "metrics": {
+  "gt": 3,
+  "pred": 4,
+  "tp": 3,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 4.8545995999993465
+ },
+ "predictions": [
+  {
+   "text": "Liquid-theory analogy of direct-coupling analysis of multiple-sequence alignment and its implications for protein structure prediction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.002112200003466569,
+ "metrics_v1": {
+  "gt": 3,
+  "pred": 5,
+  "tp": 3,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Liquid-theory analogy of direct-coupling analysis of multiple-sequence alignment",
+   "Acknowledgments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 3,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

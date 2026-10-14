@@ -1,0 +1,233 @@
+{
+ "doc": "1609.09840",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 28,
+  "pred": 26,
+  "tp": 25,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.7241379310344828,
+  "unmatched_gt": [
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators"
+  ],
+  "unmatched_pred": [
+   "SUMMARY"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 24,
+  "tp": 23,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 20,
+  "parent_correct": 21,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators"
+  ],
+  "unmatched_pred": [
+   "SUMMARY"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 932,
+  "layout_marked": 40,
+  "content_preservation": 1.0,
+  "word_preservation": 0.971450946888794,
+  "inserted_word_share": 0.018627733026467252
+ },
+ "predictions": [
+  {
+   "text": "Regular and almost universal hashing: an efﬁcient implementation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "SUMMARY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RANDOM HASHING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. ∆-universality",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2. Strong universality",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3. Composition and concatenation of families",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. REGULARITY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Component-wise regularity",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2. K-regularity",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. A TREE-BASED CONSTRUCTION FOR UNIVERSALITY AND REGULARITY",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. UNIVERSALITY AND REGULARITY WITH PM+",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. AN EFFICIENT IMPLEMENTATION OF PM+",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Scalar product computation",
+   "page": 10,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.2. Efﬁcient modulo reduction",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7. ACHIEVING THE AVALANCHE EFFECT",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. EXPERIMENTS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1. Variable-length results on recent Intel processors",
+   "page": 14,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "8.2. Multiplatform performance testing",
+   "page": 14,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9. CONCLUSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. ACKNOWLEDGEMENTS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. PLATFORMS USED",
+   "page": 19,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS (ASSEMBLER)",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS USING INTEL",
+   "page": 22,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "F. NON-REGULARITY OF THE VHASH FAMILY",
+   "page": 23,
+   "level": 2,
+   "parent": 24
+  }
+ ],
+ "seconds": 6.919365900001139,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 26,
+  "tp": 25,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.7241379310344828,
+  "unmatched_gt": [
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators"
+  ],
+  "unmatched_pred": [
+   "SUMMARY"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

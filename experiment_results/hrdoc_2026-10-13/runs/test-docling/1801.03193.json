@@ -1,0 +1,87 @@
+{
+ "doc": "1801.03193",
+ "system": "docling",
+ "metrics": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 20.760906100000284
+ },
+ "predictions": [
+  {
+   "text": "Finite conformal quantum gravity and spacetime singularities",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. UV-finite quantum gravity",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Finite conformal quantum gravity",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Resolution of the black hole singularity in conformal gravity",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0029293000043253414,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Finite conformal quantum gravity and spacetime singularities"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

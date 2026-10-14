@@ -1,0 +1,156 @@
+{
+ "doc": "1609.03815",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 11,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "(GenAge)",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [
+   "A Unified Gender-Aware Age Estimation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "(GenAge)",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [
+   "A Unified Gender-Aware Age Estimation"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 19.394384499999433
+ },
+ "predictions": [
+  {
+   "text": "A Unified Gender-Aware Age Estimation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. A Unified Framework for Gender-Aware Age Estimation (GenAge)",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Exemplification of the GenAge Framework",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. EXPERIMENT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Datasets",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Experimental Setup",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Age Estimation With Race Variation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Age Estimation Without Race Variation",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "E. Reasonableness of Near-Orthogonality Penalty Across Human Gender and Age Semantic Spaces",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.014953400001104455,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 11,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "(GenAge)",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [
+   "A Unified Gender-Aware Age Estimation"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

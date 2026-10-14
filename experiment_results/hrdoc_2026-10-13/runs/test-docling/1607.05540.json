@@ -1,0 +1,147 @@
+{
+ "doc": "1607.05540",
+ "system": "docling",
+ "metrics": {
+  "gt": 9,
+  "pred": 12,
+  "tp": 8,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "Definition 1. Kleene Valuations",
+   "Definition 2. Consensus Operator",
+   "Definition 3. A Measure of Vagueness",
+   "Definition 4. Inconsistency Measure"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 13.669048699997802
+ },
+ "predictions": [
+  {
+   "text": "Exploiting Vagueness for Multi-Agent Consensus",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 A Three Valued Consensus Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 1. Kleene Valuations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 2. Consensus Operator",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 3. A Measure of Vagueness",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 4. Inconsistency Measure",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Simulation Experiments based on Random Selection of Agents",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Simulation Experiments Incorporating a Payoff Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.009954700006346684,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 13,
+  "tp": 8,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "Exploiting Vagueness for Multi-Agent Consensus",
+   "Definition 1. Kleene Valuations",
+   "Definition 2. Consensus Operator",
+   "Definition 3. A Measure of Vagueness",
+   "Definition 4. Inconsistency Measure"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Definition 1. Kleene Valuations",
+   "Definition 2. Consensus Operator",
+   "Definition 3. A Measure of Vagueness",
+   "Definition 4. Inconsistency Measure"
+  ],
+  "ignored_title_predictions": null
+ }
+}

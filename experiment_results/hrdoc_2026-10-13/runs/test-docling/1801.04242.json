@@ -1,0 +1,152 @@
+{
+ "doc": "1801.04242",
+ "system": "docling",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "KEYWORDS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 22.945224999999482
+ },
+ "predictions": [
+  {
+   "text": "Development of Energy Models for Design Space Exploration of Embedded Many-Core Systems",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "KEYWORDS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 THE COREVA-MPSOC PROJECT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Hardware Architecture",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Programming Infrastructure",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 RELATEDWORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 ENERGY ESTIMATIONMETHODOLOGIES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Model Constants and Functions",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Exemplary MPSoC Component Models",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 ENERGYMODELING FRAMEWORK",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 VALIDATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.009402800002135336,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Development of Energy Models for Design Space Exploration of Embedded Many-Core ",
+   "ABSTRACT",
+   "KEYWORDS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

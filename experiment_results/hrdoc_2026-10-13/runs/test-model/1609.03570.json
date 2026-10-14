@@ -1,0 +1,167 @@
+{
+ "doc": "1609.03570",
+ "system": "model",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 9,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "I. FROM H TO NE TO K AND BACK"
+  ],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS",
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 835,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13688,
+   "completion_tokens": 610,
+   "total_tokens": 14298
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Corrections to ns and nt from high scale physics",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. THEORY",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Scalar ﬁelds in time dependent backgrounds",
+   "page": 1,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "B. Equation of motion in de Sitter space",
+   "page": 1,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "C. The Bunch-Davies vacuum",
+   "page": 2,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "D. α-vacua",
+   "page": 2,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "III. PHENOMENOLOGY",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Two-point functions and spectra",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "C. Corrections from mixed states",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "B. Scale dependence",
+   "page": 4,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "D. Corrections from α-vacua",
+   "page": 5,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "E. Correction to the consistency relation",
+   "page": 6,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 7,
+   "level": 2,
+   "parent": 14
+  }
+ ],
+ "seconds": 21.776172400001087,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 5,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "I. FROM H TO NE TO K AND BACK"
+  ],
+  "unmatched_pred": [
+   "Corrections to ns and nt from high scale physics",
+   "ACKNOWLEDGMENTS",
+   "Appendix A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 9,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "I. FROM H TO NE TO K AND BACK"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "doc": "1606.03052",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 17,
+  "pred": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 16,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "Teaching Venues",
+   "Undergraduate Optics Course",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "Graduate Laboratory Modules",
+   "Scope of the Pro ject",
+   "EXPERIMENTAL EQUIPMENT",
+   "Components",
+   "Condenser",
+   "Imaging Path",
+   "EXPERIMENTAL RESULTS",
+   "Measuring Magnification",
+   "Measuring Resolution",
+   "ADVANCED TOPICS",
+   "Epi-Fluorescence Path",
+   "Super-Resolution",
+   "SUMMARY"
+  ],
+  "unmatched_pred": [
+   "I(x) = I0 + A sin(π x − x0"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 375,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I(x) = I0 + A sin(π x − x0",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.886718500001734,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 16,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "Teaching Venues",
+   "Undergraduate Optics Course",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "Graduate Laboratory Modules",
+   "Scope of the Pro ject",
+   "EXPERIMENTAL EQUIPMENT",
+   "Components",
+   "Condenser",
+   "Imaging Path",
+   "EXPERIMENTAL RESULTS",
+   "Measuring Magnification",
+   "Measuring Resolution",
+   "ADVANCED TOPICS",
+   "Epi-Fluorescence Path",
+   "Super-Resolution",
+   "SUMMARY"
+  ],
+  "unmatched_pred": [
+   "I(x) = I0 + A sin(π x − x0"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 16,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "Teaching Venues",
+   "Undergraduate Optics Course",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "Graduate Laboratory Modules",
+   "Scope of the Pro ject",
+   "EXPERIMENTAL EQUIPMENT",
+   "Components",
+   "Condenser",
+   "Imaging Path",
+   "EXPERIMENTAL RESULTS",
+   "Measuring Magnification",
+   "Measuring Resolution",
+   "ADVANCED TOPICS",
+   "Epi-Fluorescence Path",
+   "Super-Resolution",
+   "SUMMARY"
+  ],
+  "unmatched_pred": [
+   "I(x) = I0 + A sin(π x − x0"
+  ],
+  "ignored_title_predictions": null
+ }
+}

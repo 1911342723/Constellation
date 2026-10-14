@@ -1,0 +1,93 @@
+{
+ "doc": "1709.00172",
+ "system": "docling",
+ "metrics": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 27.089107600000716
+ },
+ "predictions": [
+  {
+   "text": "Water-based peeling of thin hydrophobic films",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Supplementary materials",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.2 Effective capillary peeling",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0027189000029466115,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Water-based peeling of thin hydrophobic films"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 3,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

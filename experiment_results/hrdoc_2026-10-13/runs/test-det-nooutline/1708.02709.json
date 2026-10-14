@@ -1,0 +1,250 @@
+{
+ "doc": "1708.02709",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 36,
+  "pred": 28,
+  "tp": 27,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 22,
+  "parent_correct": 18,
+  "teds": 0.5945945945945945,
+  "unmatched_gt": [
+   "Index Terms",
+   "A. Word Embeddings",
+   "B. Word2vec",
+   "A. Basic CNN",
+   "A. Need for Recurrent Networks",
+   "C. Applications",
+   "D. Attention Mechanism",
+   "B. Unsupervised sentence representation learning",
+   "C. Deep generative models"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 556,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. DISTRIBUTED REPRESENTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Character Embeddings",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Contextualized Word Embeddings",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. CONVOLUTIONAL NEURAL NETWORKS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Applications",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. RECURRENT NEURAL NETWORKS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. RNN models",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "E. Parallelized Attention: The Transformer",
+   "page": 14,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. RECURSIVE NEURAL NETWORKS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Basic model",
+   "page": 16,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Applications",
+   "page": 16,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VI. DEEP REINFORCED MODELS AND DEEP UNSUPERVISED LEARNING",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Reinforcement learning for sequence generation",
+   "page": 16,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "VII. MEMORY-AUGMENTED NETWORKS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. PERFORMANCE OF DIFFERENT MODELS ON DIFFERENT NLP TASKS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. POS tagging",
+   "page": 20,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "B. Parsing",
+   "page": 20,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "C. Named-Entity Recognition",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Semantic Role Labeling",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Sentiment Classiﬁcation",
+   "page": 22,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "F. Machine Translation",
+   "page": 22,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "G. Question answering",
+   "page": 22,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "H. Dialogue Systems",
+   "page": 23,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "I. Contextual Embeddings",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IX. CONCLUSION",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.571456699999544,
+ "metrics_v1": {
+  "gt": 36,
+  "pred": 28,
+  "tp": 27,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 22,
+  "parent_correct": 18,
+  "teds": 0.5945945945945945,
+  "unmatched_gt": [
+   "Index Terms",
+   "A. Word Embeddings",
+   "B. Word2vec",
+   "A. Basic CNN",
+   "A. Need for Recurrent Networks",
+   "C. Applications",
+   "D. Attention Mechanism",
+   "B. Unsupervised sentence representation learning",
+   "C. Deep generative models"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 34,
+  "pred": 26,
+  "tp": 26,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 21,
+  "parent_correct": 17,
+  "teds": 0.6285714285714286,
+  "unmatched_gt": [
+   "A. Word Embeddings",
+   "B. Word2vec",
+   "A. Basic CNN",
+   "A. Need for Recurrent Networks",
+   "C. Applications",
+   "D. Attention Mechanism",
+   "B. Unsupervised sentence representation learning",
+   "C. Deep generative models"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,329 @@
+{
+ "doc": "1709.10221",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 34,
+  "tp": 12,
+  "fp": 22,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 C X",
+   "2 C m1 p X",
+   "2 Nc",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "1 p2 (x3 − x2)oEn(td) αs(td) C2(td),",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 31,
+  "tp": 9,
+  "fp": 22,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.21875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 C X",
+   "2 C m1 p X",
+   "2 Nc",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "1 p2 (x3 − x2)oEn(td) αs(td) C2(td),",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 851,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9699111470113085,
+   "in_order": 0.8521809369951535,
+   "inserted": 0.020395676116663264
+  },
+  "export_markdown": "Υ(nS) → Bcρ, BcK∗ decays with perturbative QCD approach\n\nJunfeng Sun,1 Yueling Yang,1 Jinshu Huang,2 Gongru Lu,1 and Qin Chang1\n\n1Institute of Particle and Nuclear Physics,\n\nHenan Normal University, Xinxiang 453007, China\n\n2College of Physics and Electronic Engineering,\n\narXiv:1709.10221v1 [hep-ph] 29 Sep 2017\n\nNanyang Normal University, Nanyang 473061, China\n\n# Abstract\n\nInspired by the potential prospects of Υ(nS) data samples (n = 1, 2, 3) at LHC and SuperKEKB,\n\nΥ(nS) → Bcρ, BcK∗ decays are studied phenomenologically with pQCD approach. Branching ratios for Υ(nS) → Bcρ and BcK∗ decays are estimated to reach up to O(10−11) and O(10−12), respectively. Given the identiﬁcation and detection eﬃciency of ﬁnal states, searching for these\n\nweak decay modes should be fairly challenging experimentally in the future.\n\n# I. INTRODUCTION\n\nThe spin-triplet S-wave b¯b states Υ(1S), Υ(2S), and Υ(3S) have some common features.\n\nThey all lie below the open bottom threshold, and carry the same quantum numbers of IGJP C = 0−1−− [1]. For each of them, the mass is ten times as large as proton, but the\n\nfull decay width is very narrow, only a few keV. Based on the above-mentioned facts, here we will use a notation Υ(nS) to represent special Υ(1S), Υ(2S), and Υ(3S) mesons for simplicity if it is not speciﬁed explicitly. Thanks to the unremitting endeavor and splendid\n\nperformance from experimental groups of CLEO, CDF, D0, BaBar, Belle, LHCb, ATLAS, and so on, great achievements have been made in understanding of bottomonium properties [2]. The Υ(nS) decays through the strong interaction, electromagnetic interaction and\n\nradiative transition, have been extensively studied. The rapid accumulation of Υ(nS) data samples with high precision will enable a realistic possibility to search for Υ(1S) weak decay at the LHC and SuperKEKB. In this paper, we will study the Υ(nS) → BcV weak decays (V = ρ, K∗) with perturbative QCD (pQCD) approach [3–5] to oﬀer a ready reference for the future experimental research. Both b and ¯b quarks in Υ(nS) meson can decay individually via the weak interaction. It is\n\nwell known that a clear hierarchy of the quark-mixing Cabibbo-Kabayashi-Maskawa (CKM) matrix elements opts favorably for the b → c transition, so Υ(nS) weak decay into ﬁnal states containing a ¯bc or b¯c bound state should have a relatively large branching fraction.\n\nRecently, we have studied the nonleptonic Υ(nS) → B(∗)\n\nc P decays (P = π, K, D) with\n\npQCD approach [6–10], and our estimation of branching ratio for Υ(1S) → BcP decays is basically consistent with previous results using other theoretical models [11–13]. This\n\npositive fact encourages us to investigate other Υ(nS) weak decay modes. The amplitudes for Υ(nS) → BcV decays are relatively complicated because of the s, p, d wave contributions rather than only p wave contribution for Υ(nS) → BcP decays. In addition, the Υ(nS) → BcV decays oﬀer another plaza to further explore the underlying dynamical mechanism of heavy quarkonium weak decay. This paper is organized as follows. In section II, we present the theoretical framework\n\nand the amplitudes for Υ(nS) → BcV decay. The numerical results and discussion are given in section III. The last section is a summary.\n\n# II. THEORETICAL FRAMEWORK\n\n## A. The eﬀective Hamiltonian\n\nPhenomenologically, assisted with the operator product expansion and renormalization\n\ngroup (RG) technique, the eﬀective weak Hamiltonian accounting for Υ(nS) → BcV decay has the following structure [14],\n\nHeﬀ = GF\n\nuq nC1(µ) Q1(µ) + C2(µ) Q2(µ)o + h.c.,\n\n2 VcbV ∗\n\n√\n\n(1)\n\nwhere GF ≃ 1.166×10−5 GeV−2 [1] is the Fermi constant. Using the Wolfenstein parameterization, the CKM factors are written approximately in term of A and λ, i.e.,\n\n2Aλ4 − 1\n\nud = Aλ2 − 1\n\n8Aλ6 + O(λ8),\n\nVcbV ∗\n\n(2)\n\nfor Υ(nS) → Bcρ decay, and\n\nus = Aλ3 + O(λ8),\n\nVcbV ∗\n\n(3)\n\nfor Υ(nS) → BcK∗ decay. The local operators are expressed as\n\nQ1 = [¯cαγµ(1 − γ5)bα][¯qβγµ(1 − γ5)uβ],\n\n(4)\n\nQ2 = [¯cαγµ(1 − γ5)bβ][¯qβγµ(1 − γ5)uα].\n\n(5)\n\nwhere α and β are color indices, and q denotes d and s. In Eq.(1), the auxiliary scale µ factorizes physical contributions into two parts. The phys-\n\nical contributions above µ are integrated into the Wilson coeﬃcients C1,2, which has been reliably calculated to the next-to-leading order with the RG-improved perturbation theory [14]. The physical contributions below µ are embodied in hadronic matrix elements (HME),\n\nwhere the local operators are sandwiched between initial and ﬁnal hadron states. The incorporation of long distance contributions make HME very challenging and complicated to\n\nevaluate. HME is not yet fully understood so far. However, to obtain decay amplitudes, one has to treat HME with certain comprehensible approximation or assumptions, which result in a number of uncertainties.\n\n## B. Hadronic matrix elements\n\nBased on factorization ansatz [15–17] and hard-scattering approach [18–22], HME has a simple structure, and is commonly expressed as a convolution of hard scattering kernel func-\n\ntion T with distribution amplitudes (DAs). Only DAs are nonperturbative inputs, which, on the other hand, are process independent, i.e., DAs determined by nonperturbative meth-\n\nods or extracted from experimental data can be employed to make predictions. With the collinear approximation, hard scattering kernels for annihilation contributions and spectator interactions can not provide suﬃcient endpoint suppression [23–25]. In order to admit\n\na perturbative treatment for HME, the intrinsic transverse momentum of valence quarks is kept explicitly and a Sudakov factor for each DAs is introduced with pQCD approach [3–5]. Finally, a pQCD amplitude is written as a convolution integral of three parts: Wilson\n\ncoeﬃcients Ci, hard scattering kernel T and wave functions Φ,\n\nZ dk Ci(t) T (t, k) Φ(k) e−S,\n\n(6)\n\nwhere t is a typical scale, k is the momentum of valence quarks and e−S is a Sudakov factor.\n\n# C. Kinematic variables\n\nIn the center-of-mass frame of Υ(nS), kinematic variables are deﬁned as follows.\n\npΥ = p1 = m1\n\n√\n\n2(1, 1, 0),\n\n(7)\n\npBc = p2 = (p+\n\n2 , p−\n\n2 , 0),\n\n(8)\n\npV = p3 = (p−\n\n3 , p+\n\n3 , 0),\n\n(9)\n\nki = xi pi + (0, 0,⃗ki⊥),\n\n(10)\n\ni = pi\n\nmi\n\nǫ∥\n\nmi −\n\nn+,\n\n(11)\n\npi·n+\n\ni = (0, 0,⃗1),\n\nǫ⊥\n\n(12)\n\nn+ = (1, 0, 0),\n\n(13)\n\n√\n\np±\n\ni = (Ei ± p)/\n\n2,\n\n(14)\n\ns = 2 p2·p3 = m2\n\n1 − m2\n\n2 − m2\n\n3,\n\n(15)\n\nt = 2 p1·p2 = m2\n\n1 + m2\n\n2 − m2\n\n3 = 2 m1 E2,\n\n(16)\n\nu = 2 p1·p3 = m2\n\n1 − m2\n\n2 + m2\n\n3 = 2 m1 E3,\n\n(17)\n\n1 p2 = 0,\n\ns t + s u − t u − 4 m2\n\n(18)\n\nwhere xi and ⃗ki⊥ are the longitudinal momentum fraction and transverse momentum of\n\nvalence quark, respectively; ǫ∥\n\ni and ǫ⊥\n\ni are the longitudinal and transverse polarization vec-\n\ntors, respectively, satisfying relationship ǫ2\n\ni = −1 and ǫi·pi = 0; n+ is a positive null vector;\n\nthe subscript i = 1, 2, 3 on variables (pi, Ei, mi and ǫi) corresponds to Υ(nS), Bc and V mesons, respectively; s, t and u are Lorentz-invariant variables. The notation of momentum is displayed in Fig.2(a).\n\n# D. Wave functions\n\nWith the notation in [26, 27], meson wave functions are deﬁned as\n\n1)⟩ = fΥ\n\n4 Z d4k1 e−ik1·zn̸ ǫ∥\n\n⟨0|bi(z)¯bj(0)|Υ(p1, ǫ∥\n\n1hm1 Φv\n\nΥ(k1)io\n\nΥ(k1)−̸ p1 Φt\n\nji,\n\n(19)\n\n1 )⟩ = fΥ\n\n4 Z d4k1 e−ik1·zn̸ ǫ⊥\n\n⟨0|bi(z)¯bj(0)|Υ(p1, ǫ⊥\n\n1 hm1 ΦV\n\nΥ(k1)io\n\nΥ(k1)−̸ p1 ΦT\n\nji,\n\n(20)\n\n⟨Bc(p2)|¯ci(z)bj(0)|0⟩ = i\n\nZ dk2 eik2·z nγ5h̸ p2 Φa\n\nBc(k2)io\n\nBc(k2) + m2 Φp\n\nji,\n\n(21)\n\n4fBc\n\n4Z 1\n\n3)|ui(0)¯qj(z)|0⟩ = 1\n\n0dk3 eik3·zn̸ ǫ∥\n\nV (k3)+̸ ǫ∥\n\n⟨V (p3, ǫ∥\n\nV (k3)o\n\n3 m3 Φv\n\n3̸ p3 Φt\n\nV (k3) + m3 Φs\n\nji, (22)\n\n4Z 1\n\n3 )|ui(0)¯qj(z)|0⟩ = 1\n\n0dk3 eik3·zn̸ ǫ⊥\n\n⟨V (p3, ǫ⊥\n\n3 m3 ΦV\n\nV (k3)\n\nV (k3) + i m3\n\nεµναβ γ5 γµ ǫ⊥,ν\n\nV (k3)o\n\n3 nβ\n\n+̸ ǫ⊥\n\n3 ̸ p3 ΦT\n\n3 pα\n\n+ ΦA\n\nji,\n\n(23)\n\np3·n+\n\nwhere fΥ and fBc are decay constants; Φv,T\n\nBc are twist-2; Φt,s,V,A\n\nand Φp\n\nV and Φa\n\nBc are twist-3.\n\nV\n\nThe expressions of DAs for double heavy Υ(nS) and Bc mesons are [7]\n\nm2\n\no,\n\nΥ(1S)(x) = A x ¯x expn −\n\nb\n\nφv\n\nΥ(1S)(x) = φT\n\n(24)\n\n8 β2\n\n1 x ¯x\n\nΥ(1S)(x) = B (¯x − x)2 expn − m2\n\no,\n\nb\n\nφt\n\n(25)\n\n8 β2\n\n1 x ¯x\n\nm2\n\no,\n\nΥ(1S)(x) = C {1 + (¯x − x)2} expn −\n\nb\n\nφV\n\n(26)\n\n8 β2\n\n1 x ¯x\n\nm2\n\no,\n\nΥ(1S) (x) n1 +\n\nφv,t,T,V\n\nΥ(2S) (x) = D φv,t,T,V\n\nb\n\n(27)\n\n2 β2\n\n1 x ¯x\n\nm2\n\n\u00112 + 6o,\n\nΥ(1S) (x) n\u00101 −\n\nφv,t,T,V\n\nΥ(3S) (x) = E φv,t,T,V\n\nb\n\n(28)\n\n2 β2\n\n1 x ¯x\n\nBc(x) = F x ¯x expn − ¯x m2\n\nc + x m2\n\no,\n\nb\n\nφa\n\n(29)\n\n8 β2\n\n2 x ¯x\n\nBc(x) = G expn − ¯x m2\n\nc + x m2\n\no,\n\nφp\n\nb\n\n(30)\n\n8 β2\n\n2 x ¯x\n\nwhere ¯x = 1 − x; βi ≃ mi αs(mi) according to nonrelativistic quantum chromodynamics (NRQCD) power counting rules [28–30]; parameters A, B, C, D, E, F, G are normalization\n\ncoeﬃcients satisfying the conditions\n\nZ 1\n\nZ 1\n\n0dx φv,t,V,T\n\n0dx φa,p\n\n(x) = 1,\n\nBc (x) = 1.\n\n(31)\n\nΥ\n\nThe shape lines of DAs for Υ(nS) and Bc mesons are showed in Fig. 1. It is clearly seen that (1) DAs for Υ(nS) and Bc are basically consistent with a picture that valence quarks share momentum fractions according to their masses; (2) DAs fall quickly down to zero at\n\nendpoint x, ¯x → 0 due to suppression from exponential functions, which are bound to oﬀer a natural and eﬀective cutoﬀfor soft contributions.\n\n3\n\n| HaL<br>Φv HxL<br>U H1 SL<br>Φv HxL<br>U H2 SL<br>Φv HxL<br>U H3 SL | Φt HxL<br>U H1 SL HbL<br>Φt HxL<br>U H2 SL<br>Φt HxL<br>U H3 SL |\n| --- | --- |\n| HcL<br>ΦV HxL<br>U H1 SL<br>ΦV HxL<br>U H2 SL<br>ΦV HxL<br>U H3 SL | HdL<br>Φa HxL<br>Bc<br>Φp HxL<br>Bc |\n\n2\n\n1\n\n0\n\n2\n\n1\n\n0\n\n0\n\n0.2\n\n0.4\n\n0.6\n\n0.8\n\n0\n\n0.2\n\n0.4\n\n0.6\n\n0.8\n\n1\n\nFIG. 1: The normalized distribution amplitudes for Υ(nS) and Bc mesons.\n\nV and ΦV,A\n\nFor the light vector mesons, only three wave functions Φv\n\nV are involved in actual\n\ncalculation (see Appendix). Their asymptotic forms are [26, 27]:\n\nφv\n\nV (x) = 6 x ¯x,\n\n(32)\n\nV (x) = 3\n\n4 n1 + (¯x − x)2o,\n\nφV\n\n(33)\n\nV (x) = 3\n\nφA\n\n2 (¯x − x).\n\n(34)\n\np3\n\nρ−\n\nρ−\n\nρ−\n\nρ−\n\n¯u\n\n¯u\n\n¯u\n\nd\n\nd\n\nd\n\n¯u(¯k3)\n\nd(k3)\n\nb(k1)\n\nc(k2)\n\nc\n\nc\n\nc\n\nb\n\nb\n\nb\n\np1\n\np2\n\nB+\n\nB+\n\nB+\n\nB+\n\nΥ\n\nG\n\nΥ\n\nG\n\nΥ\n\nG\n\nΥ\n\nG\n\nc\n\nc\n\nc\n\nc\n\n¯b\n\n¯b\n\n¯b\n\n¯b\n\n¯b\n\n¯b\n\n¯b\n\n¯b\n\n(a)\n\n(b)\n\n(c)\n\n(d)\n\nFIG. 2: Feynman diagrams for Υ(nS) → Bcρ decay, where (a,b) are factorizable topologies, (c,d) are nonfactorizable topologies.\n\n## E. Decay amplitudes\n\nThe Feynman diagrams for Υ(nS) → Bcρ decay are shown in Fig.2, including factorizable emission topologies (a) and (b) where gluon connects initial Υ(nS) with recoiled Bc mesons, and nonfactorizable emission topologies (c) and (d) where gluon attaches the spectator quark\n\nwith emitted vector mesons. After a straightforward calculation, amplitude for Υ(nS) → BcV decay can be decomposed as below,\n\nA(Υ(nS)→BcV ) = AL(ǫ∥\n\n1, ǫ∥\n\n3 ) + i AT εµναβ ǫµ\n\n1 pβ\n\n3) + AN(ǫ⊥\n\n1 ·ǫ⊥\n\n1 ǫν\n\n3 pα\n\n3,\n\n(35)\n\nwhich is conventionally written as helicity amplitudes,\n\ni Ai,L(ǫ∥\n\n1, ǫ∥\n\nA0 = −C X\n\n3),\n\n(36)\n\n√\n\n# 2 C X\n\nA∥ =\n\ni Ai,N,\n\n(37)\n\n√\n\n# 2 C m1 p X\n\nA⊥ =\n\ni Ai,T,\n\n(38)\n\nC = iGF\n\nπ CF\n\nfΥ fBc fV VcbV ∗\n\n√\n\nuq,\n\n(39)\n\n# 2 Nc\n\nwhere CF = 4/3 and the color number Nc = 3; the ﬁrst superscript i on Ai,L(N,T) corresponds to the indices of Fig.2. The detailed analytical expressions of building blocks Ai,L(N,T) are displayed in Appendix.\n\n# III. NUMERICAL RESULTS AND DISCUSSION\n\nIn the rest frame of Υ(nS), decaying into Bc and light vector V mesons, branching ratio\n\nis deﬁned as\n\n1 p\n\n(40)\n\nn|A0|2 + |A∥|2 + |A⊥|2o,\n\nBr =\n\nm2\n\n12π\n\nΥΓΥ\n\nwhere p is the center-of-mass momentum of ﬁnal states.\n\nTABLE I: The numerical values of input parameters.\n\nCKM parameter [1]\n\nA = 0.814+0.023\n\n−0.024,\n\nλ = 0.22537±0.00061,\n\nmass, width and decay constant\n\nmΥ(1S) = 9460.30±0.26 MeV [1], mΥ(2S) = 10023.26±0.31 MeV [1], mΥ(3S) = 10355.2±0.5 MeV [1], mBc = 6275.6±1.1 MeV [1], fBc = 434±15 MeV [31],\n\nΓΥ(1S) = 54.02±1.25 keV [1], ΓΥ(2S) = 31.98±2.63 keV [1], ΓΥ(3S) = 20.32±1.85 keV [1], mb = 4.78±0.06 GeV [1], fρ = 216±3 MeV [27],\n\nfΥ(1S) = 676.4±10.7 MeV [7], fΥ(2S) = 473.0±23.7 MeV [7], fΥ(3S) = 409.5±29.4 MeV [7], mc = 1.67±0.07 GeV [1], fK∗ = 220±5 MeV [27]\n\nTABLE II: Branching ratio for Υ(nS) → Bcρ, BcK∗.\n\nthis work\n\nRef. [11]\n\nRef. [12]\n\nRef. [13]\n\n13.25+1.04+1.14+0.91\n\n1011×Br(Υ(1S)→Bcρ)\n\n17.6\n\n13.0\n\n15.3\n\n−0.63−1.14−0.87\n\n8.88+0.64+0.67+0.61\n\n1011×Br(Υ(2S)→Bcρ)\n\n...\n\n...\n\n...\n\n−0.40−0.74−0.58\n\n8.46+0.61+0.71+0.58\n\n1011×Br(Υ(3S)→Bcρ)\n\n...\n\n...\n\n...\n\n−0.37−0.68−0.56\n\n7.97+0.62+0.65+0.59\n\n1012×Br(Υ(1S)→BcK∗)\n\n10.0\n\n7.0\n\n8.75\n\n−0.38−0.67−0.57\n\n5.28+0.38+0.48+0.39\n\n1012×Br(Υ(2S)→BcK∗)\n\n...\n\n...\n\n...\n\n−0.24−0.45−0.37\n\n4.98+0.36+0.44+0.37\n\n1012×Br(Υ(3S)→BcK∗)\n\n...\n\n...\n\n...\n\n−0.22−0.43−0.35\n\nThe values of input parameters are listed in Table I. If it is not speciﬁed explicitly, their central values will be used as default inputs. Our numerical results are presented in Table II, where the uncertainties come from scale (1±0.1)ti, mb and mc, and CKM parameters,\n\nrespectively. The following are some comments.\n\n(1) By and large, our results are consistent with previous estimation on branching ratio for Υ(1S) → Bcρ, BcK∗ decays. The hierarchical structure of CKM factors |VcbV ∗\n\nud| >\n\n|VcbV ∗\n\nus| leads to the general rank-size relationship among branching ratios Br(Υ(nS)→Bcρ) > Br(Υ(nS)→BcK∗). Normally, there should be Br(Υ(3S)→BcV ) > Br(Υ(2S)→BcV ) > Br(Υ(1S)→BcV ) for the same ﬁnal V meson, due to the fact that mΥ(3S) > mΥ(2S) > mΥ(1S) and ΓΥ(3S) < ΓΥ(2S) < ΓΥ(1S). However, the numbers in Table II are beyond expectation. Why is it that? In addition to form factors, one of the possible factors is\n\nBr(Υ(3S)→BcV ) : Br(Υ(2S)→BcV ) : Br(Υ(1S)→BcV )\n\nf 2\n\nf 2\n\nf 2\n\nΥ(2S)\n\nΥ(1S)\n\nΥ(3S)\n\n:\n\n:\n\nΥ(1S) ΓΥ(1S) ≃ 0.8 : 0.7 : 1.\n\n(41)\n\n∝\n\nm2\n\nm2\n\nm2\n\nΥ(3S) ΓΥ(3S)\n\nΥ(2S) ΓΥ(2S)\n\n(2) Branching ratio for Υ(nS) → Bcρ decay can reach up to O(10−11). The Υ(nS) production cross section in p-Pb collision is about a few µb at LHCb [32] and ALICE [33]. Over 1011 Υ(nS) data samples per ab−1 data collected at LHCb and ALICE are in principle available, corresponding to dozens of Υ(nS) → Bcρ events. If the experimental identiﬁcation of ﬁnal states is considered, for example, the best experimental identiﬁcation of Bc meson is through Bc → J/ψµ+νµ or J/ψπ decays with branching ratios O(10−3) ∼O(10−4) [34–36] and detection eﬃciency about O(10−2) [36, 37], then the feasibility of observation of Υ(nS) → BcV decays is very small.\n\n| %<br>66.1<br>(a)<br>r(Υ(1S) B ρ)<br>B → c<br>20.<br>8.72<br>2.44 1.06 0.64 0.37 0.21 0.46 |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n| 0.1 | 0.2 | 0.3 | 0.4 | 0.5 0.6 0.7 0.8 αs/π |\n\n| %<br>61.68 (b)<br>r(Υ(2S) B ρ)<br>B → c<br>25.74<br>7.28<br>2.59 1.09 0.6 0.36 0.2 0.47 |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n| 0.1 | 0.2 | 0.3 | 0.4 | 0.5 0.6 0.7 0.8 αs/π |\n\n| %<br>(c)<br>59.18<br>r(Υ(3S) B ρ)<br>B → c<br>28.24<br>7.45<br>2.39 1.07 0.63 0.36 0.2 0.48 |  |  |  |\n| --- | --- | --- | --- |\n|  |  |  |  |\n|  |  |  |  |\n| 0.1 | 0.2 | 0.3 | 0.4 0.5 0.6 0.7 0.8 αs/π |\n\n60\n\n60\n\n60\n\n40\n\n40\n\n40\n\n20\n\n20\n\n20\n\n0\n\n0\n\n0\n\nαs/π\n\nαs/π\n\nαs/π\n\n0.5\n\n0.5\n\n0.5\n\nFIG. 3: Contributions to branching ratio from diﬀerent region of αs/π (abscissa axis), where the\n\nnumbers over histogram denote percentage of the corresponding contributions.\n\n(3) From Fig.2, the spectator is a heavy bottom quark in the Υ(nS) → Bc transition. It is assumed that the bottom quark is near on-shell and the gluon attaching to the spectator\n\nmight be soft. It is natural to question the validity of perturbative calculation with pQCD approach. So, it is necessary to check how many shares come from the perturbative region. The contributions to branching ratio Br(Υ(nS)→Bcρ) from diﬀerent region of αs/π are\n\ndisplayed in Fig.3. It is clearly seen that more than 85% (some 95%) contributions to branching ratio come from αs/π ≤ 0.2 (0.3) regions, which implies that the calculation with pQCD approach is feasible. Compared with contributions from αs/π ∈ [0.1, 0.2] region, one of crucial reasons for a small percentage in the region αs/π ≤ 0.1 is that the absolute values of Wilson coeﬃcients C1,2, parameter a1 and coupling αs decrease along with the increase of renormalization scale. (4) Besides uncertainties listed in Table II, decay constants fΥ and fBc can bring some 8%, 12%, 16% uncertainties for Υ(1S), Υ(2S), Υ(3S) decays, respectively. These are two ways to\n\nreduce theoretical uncertainty. One is to construct some relative ratios of branching ratios, for example, Br(Υ(nS)→BcK∗)/Br(Υ(nS)→Bcρ) and Br(Υ(mS)→Bcρ)/Br(Υ(nS)→Bcρ). The other is to consider higher order corrections to HME, relativistic eﬀects on DAs, and\n\nso on. Here, our results just provide an order of magnitude estimation.\n\n# IV. SUMMARY\n\nBesides the predominant strong and electromagnetic decay modes, Υ(nS) can also decay through the weak interaction within the standard model. Study of Υ(nS) weak decay is\n\ntheoretically interesting and experimentally feasible. In this paper, we investigated the bottom- and charm-changing Υ(nS) → Bcρ, BcK∗ decays with phenomenological pQCD approach. It is found that branching ratio for Υ(nS) → Bcρ and BcK∗ decays can reach up to O(10−11) and O(10−12), respectively, and their actual detection at the future LHC and SuperKEKB experiments should be quite challenging.\n\n# Acknowledgments\n\nThe work is supported by National Natural Science Foundation of China (Grant Nos. 11547014, 11475055, U1332103 and 11275057). We thank the referees for their constructive\n\ncomments.\n\n# Appendix A\n\nBuilding blocks of decay amplitudes\n\nThe amplitude for the Υ(nS) → BcV decays (V = ρ, K∗) are constituted of a linear combination of building block Ai,j, where the ﬁrst subscript i corresponds to the indices of Fig.2, and the second subscript j = L, N, T denotes to three diﬀerent helicity amplitudes.\n\nThe expressions of Ai,j are written as follows.\n\nAa,L = Z 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\n0dx1\n\n0dx2\n\n# 0 b1db1\n\n0 b2db2 Hf(αg, βa, b1, b2) Ef(ta) αs(ta) a1(ta)\n\n1 p2 + m2\n\nΥ(x1) nφa\n\nBc(x2) hm2\n\n2 u) ¯x2i + φp\n\nBc(x2) m2 mb uo,\n\n× φv\n\n1 s − (4 m2\n\n(A1)\n\nZ 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\nAa,N = m1 m3\n\n0dx1\n\n0dx2\n\n# 0 b1db1\n\n0 b2db2 Hf(αg, βa, b1, b2) Ef(ta) αs(ta)\n\nBc(x2) 2 m2 mbo,\n\nΥ(x1) nφa\n\n2 ¯x2 − t) − φp\n\n× a1(ta) φV\n\nBc(x2) (2 m2\n\n(A2)\n\nZ 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\nAa,T = 2 m1 m3\n\n0dx1\n\n0dx2\n\n# 0 b1db1\n\n0 b2db2 Hf(αg, βa, b1, b2) Ef(ta)\n\n× αs(ta) a1(ta) φV\n\nΥ(x1) φa\n\nBc(x2),\n\n(A3)\n\nZ ∞\n\nZ ∞\n\nZ 1\n\nAb,L = Z 1\n\n0 b2db2 Hf(αg, βb, b2, b1) Ef(tb) αs(tb) a1(tb)\n\n# 0 b1db1\n\n0dx2\n\n0dx1\n\n× nφv\n\nΥ(x1) hφa\n\nBc(x2) 2 m2 mc ui\n\n2 u} + φp\n\nBc(x2) {m2\n\n1 (s − 4 p2) ¯x1 − m2\n\nΥ(x1) hφp\n\nBc(x2) m1 mc sio,\n\n+ φt\n\nBc(x2) 2 m1 m2 (s − u ¯x1) − φa\n\n(A4)\n\nZ ∞\n\nZ ∞\n\nZ 1\n\nZ 1\n\n0 b2db2 Hf(αg, βb, b2, b1) Ef(tb) αs(tb)\n\n# 0 b1db1\n\n0dx2\n\n0dx1\n\nAb,N = m3\n\n× a1(tb)nφV\n\nΥ(x1) m1 hφa\n\nBc(x2) 4 m2 mci\n\n2 − t ¯x1) − φp\n\nBc(x2) (2 m2\n\nΥ(x1) hφa\n\n1 ¯x1 − 2 t)io,\n\nBc(x2) mc t + φp\n\n+ φT\n\nBc(x2) m2 (4 m2\n\n(A5)\n\nZ ∞\n\nZ ∞\n\nZ 1\n\nZ 1\n\n0 b2db2 Hf(αg, βb, b2, b1) Ef(tb) αs(tb)\n\n0dx1\n\n0dx2\n\n# 0 b1db1\n\nAb,T = −2 m3\n\n× a1(tb)nφV\n\nΥ(x1) hφa\n\nBc(x2) 2 m2io, (A6)\n\nBc(x2) mc − φp\n\nΥ(x1) φa\n\nBc(x2) m1 ¯x1 + φT\n\n1 Z 1\n\nZ 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\nZ ∞\n\n0dx1\n\n0dx2\n\n0dx3\n\n# 0 db1\n\n# 0 b2db2\n\n0 b3db3 Hn(αg, βc, b2, b3)\n\nAc,L =\n\nNc\n\n× δ(b1 − b2) En(tc) αs(tc) nφv\n\nΥ(x1) φa\n\nBc(x2) u (t x1 − 2 m2\n\n2 x2 − s ¯x3)\n\n3 ¯x3 − u x1)oφv\n\nΥ(x1) φp\n\n+ φt\n\nBc(x2) m1 m2 (s x2 + 2 m2\n\nV (x3) C2(tc),\n\n(A7)\n\nZ 1\n\nZ 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\nZ ∞\n\nAc,N = m3\n\n0dx1\n\n0dx2\n\n0dx3\n\n# 0 db1\n\n# 0 b2db2\n\n0 b3db3 Hn(αg, βc, b2, b3)\n\nNc\n\n× δ(b1 − b2) nφV\n\nBc(x2) φV\n\nV (x3) m1 (2 s ¯x3 + 4 m2\n\nΥ(x1) φa\n\n2 x2 − 2 t x1)\n\nBc(x2) m2 hφV\n\nΥ(x1) φp\n\nV (x3) (2 m2\n\n+ φT\n\n1 x1 − t x2 − u ¯x3)\n\nV (x3) 2 m1 p (x2 − ¯x3)ioEn(tc) αs(tc) C2(tc),\n\n+ φA\n\n(A8)\n\nZ 1\n\nZ 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\nZ ∞\n\nm3\n\nAc,T =\n\n0dx1\n\n0dx2\n\n0dx3\n\n# 0 db1\n\n# 0 b2db2\n\n0 b3db3 Hn(αg, βc, b2, b3)\n\nNc p\n\n× δ(b1 − b2) nφV\n\nΥ(x1) φa\n\nBc(x2) φA\n\nV (x3) (2 s ¯x3 + 4 m2\n\n2 x2 − 2 t x1)\n\nBc(x2) hφA\n\nΥ(x1) φp\n\nV (x3) m2/m1 (2 m2\n\n+ φT\n\n1 x1 − t x2 − u ¯x3)\n\nV (x3) 2 m2 p (x2 − ¯x3)ioEn(tc) αs(tc) C2(tc),\n\n+ φV\n\n(A9)\n\n1 Z 1\n\nZ 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\nZ ∞\n\nAd,L =\n\n0dx1\n\n0dx2\n\n0dx3\n\n# 0 db1\n\n# 0 b2db2\n\n0 b3db3 Hn(αg, βd, b2, b3)\n\nNc\n\nV (x3) nφt\n\nΥ(x1) φp\n\n× δ(b1 − b2) φv\n\nBc(x2) m1 m2 (s x2 + 2 m2\n\n3 x3 − u x1)\n\n# 1 p2 (x3 − x2)oEn(td) αs(td) C2(td),\n\nBc(x2) 4 m2\n\nΥ(x1) φa\n\n+ φv\n\n(A10)\n\nZ 1\n\nZ 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\nZ ∞\n\nAd,N = m2 m3\n\n0dx1\n\n0dx2\n\n0dx3\n\n# 0 db1\n\n# 0 b2db2\n\n0 b3db3 δ(b1 − b2)\n\nNc\n\n× Hn(αg, βd, b2, b3) En(td) αs(td) nφV\n\nV (x3) (2 m2\n\n1 x1 − t x2 − u x3)\n\nV (x3) 2 m1 p (x2 − x3)oφT\n\nΥ(x1) φp\n\n+ φA\n\nBc(x2) C2(td),\n\n(A11)\n\nZ 1\n\nZ 1\n\nZ ∞\n\nZ ∞\n\nZ ∞\n\nZ 1\n\nm2 m3\n\nAd,T =\n\n0dx1\n\n0dx2\n\n0dx3\n\n# 0 db1\n\n# 0 b2db2\n\n0 b3db3 δ(b1 − b2)\n\nNc m1 p\n\n× Hn(αg, βd, b2, b3) En(td) αs(td) nφA\n\nV (x3) (2 m2\n\n1 x1 − t x2 − u x3)\n\nV (x3) 2 m1 p (x2 − x3)oφT\n\nΥ(x1) φp\n\n+ φV\n\nBc(x2) C2(td),\n\n(A12)\n\nwhere xi and ¯xi = 1 − xi are longitudinal momentum fractions of valence quarks; bi is the conjugate variable of the transverse momentum ki⊥; a1 = C1 + C2/Nc; Nc = 3 is the color number; C1,2 are the Wilson coeﬃcients. The Sudakov factor Ef,n and function Hf,n are deﬁned as follows, where the subscript f (n) corresponds to (non)factorizable topologies.\n\nEf(z) = exp{−SΥ(z) − SBc(z)},\n\n(A13)\n\nEn(z) = exp{−SΥ(z) − SBc(z) − SV (z)},\n\n(A14)\n\n1 , 1/b1) + 2Z z\n\ndµ\n\nSΥ(z) = s(x1, p+\n\nµ γq,\n\n(A15)\n\n1/b1\n\n2 , 1/b2) + 2Z z\n\ndµ\n\nSBc(z) = s(x2, p+\n\nµ γq,\n\n(A16)\n\n1/b2\n\n3 , 1/b3) + 2Z z\n\ndµ\n\nSV (z) = s(x3, p+\n\n3 , 1/b3) + s(¯x3, p+\n\nµ γq,\n\n(A17)\n\n1/b3\n\nHf(α, β, bi, bj) = K0(bi√\n\n−α)nθ(bi − bj)K0(biq\n\n−β)I0(bjq\n\n−β) + (bi↔bj)o,\n\n(A18)\n\n−β) + π\n\n2 θ(β)hiJ0(b3q\n\nHn(α, β, b2, b3) = nθ(−β)K0(b3q\n\nβ) − Y0(b3q\n\nβ)io\n\n√\n\n× nθ(b2 − b3)K0(b2√\n\n−α) + (b2↔b3)o,\n\n−α)I0(b3\n\n(A19)\n\nwhere the form of s(x, Q, 1/b) can be found in Ref.[3]; γq = −αs/π is the quark anomalous dimension; I0, J0, K0 and Y0 are Bessel functions; the gluon virtuality αg, the quark virtuality βi, and scale ti are deﬁned as follows.\n\nαg = ¯x2\n\n1m2\n\n1 + ¯x2\n\n2m2\n\n2 − ¯x1¯x2t,\n\n(A20)\n\nβa = m2\n\n1 − m2\n\nb + ¯x2\n\n2m2\n\n2 − ¯x2t,\n\n(A21)\n\nβb = m2\n\n2 − m2\n\nc + ¯x2\n\n1m2\n\n1 − ¯x1t,\n\n(A22)\n\nβc = x2\n\n1m2\n\n1 + x2\n\n2m2\n\n2 + ¯x2\n\n3m2\n\n3\n\n− x1x2t − x1¯x3u + x2¯x3s,\n\n(A23)\n\n3m2\n\n2 + x2\n\n2m2\n\n1 + x2\n\n1m2\n\nβd = x2\n\n3\n\n− x1x2t − x1x3u + x2x3s,\n\n(A24)\n\n−αg, q\n\nta(b) = max(q\n\n−βa(b), 1/b1, 1/b2),\n\n(A25)\n\n−αg, q\n\ntc(d) = max(q\n\n|βc(d)|, 1/b2, 1/b3).\n\n(A26)\n\n[1] K. Olive et al. (Particle Data Group), Chin. Phys. C 38, 090001 (2014).\n\n[2] C. Patrignani, T. Pedlar and J. Rosner, Annu. Rev. Nucl. Part. Sci. 63, 21 (2013).\n\n[3] H. Li, Phys. Rev. D 52, 3958 (1995).\n\n[4] C. Chang, H. Li, Phys. Rev. D 55, 5577 (1997).\n\n[5] T. Yeh, H. Li, Phys. Rev. D 56, 1615 (1997). [6] J. Sun et al., Phys. Rev. D 92, 074028 (2015).\n\n[7] Y. Yang et al., Phys. Lett. B 751, 171 (2015). [8] J. Sun et al., Phys. Lett. B 752, 322 (2015).\n\n[9] J. Sun et al., Nucl. Phys. B 903, 374 (2016). [10] J. Sun et al., Adv. in High Energy Phys. 2016, 4893649 (2016).\n\n[11] K. Sharma, R. Verma, Int. J. Mod. Phys. A 14, 937 (1999).\n\n[12] R. Dhir, R. Verma, A. Sharma, Adv. in High Energy Phys. 2013, 706543 (2013). [13] J. Sun et al., Adv. in High Energy Phys. 2015, 691261 (2015).\n\n[14] G. Buchalla, A. Buras, M. Lautenbacher, Rev. Mod. Phys. 68, 1125, (1996).\n\n[15] D. Fakirov and B. Stech, Nucl. Phys. B 133, 315 (1978).\n\n[16] M. Wirbel, B. Stech, and M. Bauer, Z. Phys. C 29, 637 (1985).\n\n[17] J. Bjorken, Nucl. Phys. B (Proc. Suppl.) 11, 325 (1989).\n\n[18] G. Lepage and S. Brodsky, Phys. Lett. B 87, 359 (1979).\n\n[19] G. Lepage and S. Brodsky, Phys. Rev. D 22, 2157 (1980).\n\n[20] A. Duncan and A. Mueller, Phys. Lett. B 90, 159 (1980).\n\n[21] A. Duncan and A. Mueller, Phys. Rev. D 21, 1636 (1980).\n\n[22] A. Efremov and A. Radyushkin, Phys. Lett. B 94, 245 (1980).\n\n[23] D. Du, D. Yang and G. Zhu, Phys. Lett. B 488, 46 (2000).\n\n[24] D. Du, D. Yang and G. Zhu, Phys. Rev. D 64, 014036 (2000). [25] M. Beneke et al., Nucl. Phys. B 606, 245 (2001).\n\n[26] T. Kurimoto, H. Li, A. Sanda, Phys. Rev. D 65, 014007 (2001).\n\n[27] P. Ball, G. Jones, JHEP, 0703, 069, (2007).\n\n[28] G. Lepage et al., Phys. Rev. D 46, 4052 (1992).\n\n[29] G. Bodwin, E. Braaten, G. Lepage, Phys. Rev. D 51, 1125 (1995). [30] N. Brambilla et al., Rev. Mod. Phys. 77, 1423 (2005).\n\n[31] B. Colquhoun et al. (HPQCD Collaboration), Phys. Rev. D 91, 114509 (2015). [32] R. Aaij et al. (LHCb Collaboration), JHEP 1407, 094 (2014).\n\n[33] B. Abelev et al. (ALICE Collaboration), Phys. Lett. B 740, 105 (2015). [34] J. Sun et al., Phys. Rev. D 77, 074013 (2008).\n\n[35] J. Sun, D. Du and Y. Yang, Eur. Phys. J. C 60, 107 (2009).\n\n[36] R. Aaij et al. (LHCb Collaboration), Phys. Rev. D 90, 032009 (2014). [37] R. Aaij et al. (LHCb Collaboration), Phys. Rev. D 92, 072007 (2015).\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORETICAL FRAMEWORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The eﬀective Hamiltonian",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Hadronic matrix elements",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Kinematic variables",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Wave functions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Decay amplitudes",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2 C X",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 C m1 p X",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Nc",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NUMERICAL RESULTS AND DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SUMMARY",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b1db1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b1db1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b1db1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b1db1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b1db1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b1db1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 db1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b2db2",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 db1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b2db2",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 db1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b2db2",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 db1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b2db2",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 p2 (x3 − x2)oEn(td) αs(td) C2(td),",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 db1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b2db2",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 db1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 b2db2",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.1107365999996546,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 34,
+  "tp": 12,
+  "fp": 22,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 C X",
+   "2 C m1 p X",
+   "2 Nc",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 b1db1",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2",
+   "1 p2 (x3 − x2)oEn(td) αs(td) C2(td),",
+   "0 db1",
+   "0 b2db2",
+   "0 db1",
+   "0 b2db2"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

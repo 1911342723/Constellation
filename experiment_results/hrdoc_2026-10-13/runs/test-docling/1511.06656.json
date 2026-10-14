@@ -1,0 +1,191 @@
+{
+ "doc": "1511.06656",
+ "system": "docling",
+ "metrics": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Abstract—",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have"
+  ],
+  "unmatched_pred": [
+   "A Study of Age and Gender seen through Mobile Phone Usage Patterns in Mexico",
+   "Algorithm 1: Population Pyramid Scaling",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 15.227257899998222
+ },
+ "predictions": [
+  {
+   "text": "A Study of Age and Gender seen through Mobile Phone Usage Patterns in Mexico",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. DATASET DESCRIPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. OBSERVATIONAL STUDY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Characterization Variables",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Data Preprocessing",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Insights on Key Features from PCA",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Observed Gender Differences",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Observed Age Differences",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Links between Age Groups",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. AGE AND GENDER PREDICTION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Population Pyramid Scaling (PPS)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1: Population Pyramid Scaling",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Gender Prediction",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Age Prediction using Node Attributes",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Age Prediction using Network Topology",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Enriching the Graph Algorithm with Node Attributes",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Summary of Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.030590299997129478,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Abstract—",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have"
+  ],
+  "unmatched_pred": [
+   "A Study of Age and Gender seen through Mobile Phone Usage Patterns in Mexico",
+   "Algorithm 1: Population Pyramid Scaling",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have"
+  ],
+  "unmatched_pred": [
+   "A Study of Age and Gender seen through Mobile Phone Usage Patterns in Mexico",
+   "Algorithm 1: Population Pyramid Scaling"
+  ],
+  "ignored_title_predictions": null
+ }
+}

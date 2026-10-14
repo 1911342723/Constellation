@@ -1,0 +1,122 @@
+{
+ "doc": "1506.04787",
+ "system": "outline",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II System Design",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Vision-Based Head Position Estimation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV System Identification and Modeling",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Data Collection",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV-B Data Pre-Processing and System Model Identification",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV-C Model Estimation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV-D Residual Analysis",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "V Control Design",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Experimental Validation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04038800000125775,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

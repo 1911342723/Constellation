@@ -1,0 +1,115 @@
+{
+ "doc": "1604.05016",
+ "system": "det",
+ "metrics": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "B. Detector Assembly and Read-Out Electronics",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 233,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THE GERDA EXPERIMENT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Phase I Results",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. UPGRADE TO PHASE II",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. BEGe Detectors",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. LAr Instrumentation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. START OF PHASE II DATA TAKING",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.1144304999979795,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "B. Detector Assembly and Read-Out Electronics",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "B. Detector Assembly and Read-Out Electronics"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

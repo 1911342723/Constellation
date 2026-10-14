@@ -1,0 +1,233 @@
+{
+ "doc": "1703.04824",
+ "system": "docling",
+ "metrics": {
+  "gt": 28,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.48275862068965514,
+  "unmatched_gt": [
+   "1) Computing agreement:",
+   "2) Agreement results:"
+  ],
+  "unmatched_pred": [
+   "annotated so far."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 43.05335080000077
+ },
+ "predictions": [
+  {
+   "text": "In Search of a Dataset for Handwritten Optical Music Recognition: Introducing MUSCIMA++",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION: WHAT DATASET?",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Contributions and outline",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. GROUND TRUTH OF MUSICAL SYMBOLS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Interfaces in the OMR pipeline",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. So - what should the ground truth be?",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. CHOICE OF DATA",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Notation complexity",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Image quality",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Topological consistency",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXISTING DATASETS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Staff removal",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Symbol classification and localization",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Notation reconstruction and final representation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. THE MUSCIMA++ DATASET",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "annotated so far.",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Designated test sets",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. MUSCIMA++ ground truth",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Available tools",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Annotation process",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Inter-annotator agreement",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Known limitations",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. What can we do with MUSCIMA++?",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Future work",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Final remarks",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.024936399997386616,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 26,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4482758620689655,
+  "unmatched_gt": [
+   "1) Computing agreement:",
+   "2) Agreement results:"
+  ],
+  "unmatched_pred": [
+   "In Search of a Dataset for Handwritten Optical Music Recognition: Introducing MU",
+   "annotated so far."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [
+   "1) Computing agreement:",
+   "2) Agreement results:"
+  ],
+  "unmatched_pred": [
+   "annotated so far."
+  ],
+  "ignored_title_predictions": null
+ }
+}

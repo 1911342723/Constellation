@@ -1,0 +1,174 @@
+{
+ "doc": "1604.05046",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "I. EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "I I. EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMA-",
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "ACKNOWLEDGMENTS",
+   "Appendix A",
+   "Appendix B"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "I. EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "I I. EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMA-",
+   "TIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 889,
+  "layout_marked": 16,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14891,
+   "completion_tokens": 789,
+   "total_tokens": 15680
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9481182795698925,
+  "inserted_word_share": 0.8671012472210708
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NONLINEAR ENVELOPE EQUATIONS AND GIANT KERR EFFECT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TRAPPING OF WEAK SIGNAL PULSES BY SOLITON",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ultraslow and matched group velocities",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. One weak signal pulse trapped by probe soliton",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Multiple signal pulses trapped by the probe soliton pulse",
+   "page": 11,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "V. TRAJECTORY CONTROL OF TRAPPED SIGNAL PULSE AND SOLITON",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. SG deﬂection of trapped signal pulse and soliton",
+   "page": 12,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Trajectory control by using a time-dependent SG gradient magnetic ﬁeld",
+   "page": 14,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "VI. SUMMARY",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.234385299998394,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "I. EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "I I. EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMA-",
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "ACKNOWLEDGMENTS",
+   "Appendix A",
+   "Appendix B"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

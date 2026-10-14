@@ -1,0 +1,351 @@
+{
+ "doc": "1511.06546",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 25,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 21,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "extraction",
+   "ing data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9754,
+   "completion_tokens": 9216
+  },
+  "elapsed_llm_seconds": 39.870014600001014,
+  "content_preservation": 0.9795681063122924,
+  "inserted_word_share": 0.008240834174234823,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Bayesian identiﬁcation of bacterial strains from sequencing data",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Materials and methods",
+    2,
+    1
+   ],
+   [
+    "2.1 Step 1: Reference strain selection and core genome extraction",
+    2,
+    2
+   ],
+   [
+    "2.2 Step 2: Strain abundance estimation",
+    3,
+    2
+   ],
+   [
+    "2.3 Abundance estimation model in detail",
+    3,
+    2
+   ],
+   [
+    "2.4 Generation of data for validation experiments",
+    3,
+    2
+   ],
+   [
+    "3 Results",
+    4,
+    1
+   ],
+   [
+    "3.1 Clustering and selection of strains",
+    4,
+    2
+   ],
+   [
+    "3.2 Identiﬁcation of Staphylococcus strains from sequencing data",
+    5,
+    2
+   ],
+   [
+    "3.3 Estimation in the presence contaminant species",
+    6,
+    2
+   ],
+   [
+    "3.4 Estimation in the presence of unknown strain clusters",
+    7,
+    2
+   ],
+   [
+    "3.5 Estimation without clustering",
+    8,
+    2
+   ],
+   [
+    "3.6 Analysis of clinical samples",
+    8,
+    2
+   ],
+   [
+    "3.7 Runtime",
+    9,
+    2
+   ],
+   [
+    "4 Discussion",
+    9,
+    1
+   ],
+   [
+    "4.1 Interpretation of proportions and benchmarking",
+    9,
+    2
+   ],
+   [
+    "4.2 Applicability to diﬀerent bacterial species",
+    10,
+    2
+   ],
+   [
+    "4.3 Relationship to transcript-level RNA-seq analysis",
+    11,
+    2
+   ],
+   [
+    "5 Conclusion",
+    11,
+    1
+   ],
+   [
+    "Acknowledgements",
+    12,
+    1
+   ],
+   [
+    "Funding",
+    12,
+    1
+   ],
+   [
+    "References",
+    12,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Bayesian identiﬁcation of bacterial strains from sequencing data",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Step 1: Reference strain selection and core genome extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Step 2: Strain abundance estimation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Abundance estimation model in detail",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Generation of data for validation experiments",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Clustering and selection of strains",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 Identiﬁcation of Staphylococcus strains from sequencing data",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3 Estimation in the presence contaminant species",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.4 Estimation in the presence of unknown strain clusters",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.5 Estimation without clustering",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.6 Analysis of clinical samples",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.7 Runtime",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Interpretation of proportions and benchmarking",
+   "page": 9,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4.2 Applicability to diﬀerent bacterial species",
+   "page": 10,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4.3 Relationship to transcript-level RNA-seq analysis",
+   "page": 11,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Funding",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 40.10399680000046,
+ "metrics_raw": {
+  "gt": 25,
+  "pred": 24,
+  "tp": 23,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [
+   "extraction",
+   "ing data"
+  ],
+  "unmatched_pred": [
+   "Bayesian identiﬁcation of bacterial strains from sequencing data"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 24,
+  "tp": 23,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [
+   "extraction",
+   "ing data"
+  ],
+  "unmatched_pred": [
+   "Bayesian identiﬁcation of bacterial strains from sequencing data"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8260869565217391,
+  "unmatched_gt": [
+   "extraction",
+   "ing data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

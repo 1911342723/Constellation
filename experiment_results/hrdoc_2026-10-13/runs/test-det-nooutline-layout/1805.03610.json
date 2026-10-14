@@ -1,0 +1,152 @@
+{
+ "doc": "1805.03610",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "M 87",
+   "Sgr A*"
+  ],
+  "unmatched_pred": [
+   "M. Lacy, M. J. Page, J. A. Stevens, and E",
+   "S. Corbel, J. Rodriguez, A. Loh, S",
+   "S. Corbel, J. Rodriguez, A. Loh, and S"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "M 87",
+   "Sgr A*"
+  ],
+  "unmatched_pred": [
+   "M. Lacy, M. J. Page, J. A. Stevens, and E",
+   "S. Corbel, J. Rodriguez, A. Loh, S",
+   "S. Corbel, J. Rodriguez, A. Loh, and S"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 507,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9720430107526882,
+  "inserted_word_share": 0.022551745443311733
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PHYSICS OF THE ”COLD“ ACCRETION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "THERMAL RADIATION FROM THE DISK AT THE ”COLD“ ACCRETION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Scattering dominates over free-free absorption",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Free-free absorption dominates over scattering",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "COMPARISON WITH THE FUNDAMENTAL PLANE OF THE BLACK HOLES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "COMPARISON WITH THE SPECIFIC SOURCES",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "M. Lacy, M. J. Page, J. A. Stevens, and E",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Corbel, J. Rodriguez, A. Loh, S",
+   "page": 18,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "S. Corbel, J. Rodriguez, A. Loh, and S",
+   "page": 18,
+   "level": 2,
+   "parent": 10
+  }
+ ],
+ "seconds": 2.898649099995964,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "M 87",
+   "Sgr A*"
+  ],
+  "unmatched_pred": [
+   "M. Lacy, M. J. Page, J. A. Stevens, and E",
+   "S. Corbel, J. Rodriguez, A. Loh, S",
+   "S. Corbel, J. Rodriguez, A. Loh, and S"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

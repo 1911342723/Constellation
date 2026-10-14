@@ -1,0 +1,135 @@
+{
+ "doc": "1603.07173",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2: Classification Process (1st Variation)"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2: Classification Process (1st Variation)"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 17.522442099998443
+ },
+ "predictions": [
+  {
+   "text": "Deductive Refinement of Species Labelling in Weakly Labelled Birdsong Recordings",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Proposed Method",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Segmentation-Detection",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Classification",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2.1 First-Pass",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.2.2 1st Variation",
+   "page": 4,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "Algorithm 2: Classification Process (1st Variation)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2.3 2nd Variation",
+   "page": 5,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3 Evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.005913000000873581,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2: Classification Process (1st Variation)"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "doc": "1705.00094",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "Dilemma game",
+   "Biased Environment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 9,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Dilemma game",
+   "Biased Environment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 364,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 9886,
+   "completion_tokens": 669,
+   "total_tokens": 10555
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9413991125032628,
+  "inserted_word_share": 0.9742718134929411
+ },
+ "predictions": [
+  {
+   "text": "The Impact of Coevolution and Abstention on",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 The Beneﬁts of Coevolution and Abstention",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Presence of Abstainers in the Coevolutionary Model",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Inspecting the Coevolutionary Environment",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Exploring the Coevolutionary Optional Prisoner’s",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Investigating the properties of ∆ and δ",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5.2 Varying the Number of States",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5.3 Investigating the Relationship between ∆/δ, b and l",
+   "page": 11,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6 Investigating the Robustness of Cooperation in a",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusions and Future Work",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 28.8623998999974,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "Dilemma game",
+   "Biased Environment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

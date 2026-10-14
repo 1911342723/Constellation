@@ -1,0 +1,206 @@
+{
+ "doc": "1704.07982",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "Lemma 11. [10] Let A be an algorithm for a problem P, B be an algorithm for a cl"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "Lemma 11. [10] Let A be an algorithm for a problem P, B be an algorithm for a cl"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 628,
+  "layout_marked": 25,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14588,
+   "completion_tokens": 764,
+   "total_tokens": 15352
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9760757007677201,
+  "inserted_word_share": 0.02287756925826634
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Random Sampling and Multivariate Subroutines",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Derandomization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Enumeration",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Feedback Vertex Set",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 11. [10] Let A be an algorithm for a problem P, B be an algorithm for a class C of instances of P, c ≥ 0 and r > 1 be constants, and µ(·), µB(·), η(·) be measures for P, such that for any input instance I from C, µB(·) ≤ µ(I), and for any input instance I, A either solves P on I ∈ C by invoking B with running time O(η(I)c+1rµB(I)), or reduces I to k instances I1, ..., Ik, solves these recursively, and combines their solutions to solve I, using time O(η(I)c) for the reduction and combination steps (but not the recursive solves),",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7.0.1 Measure",
+   "page": 7,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "7.0.2 Algorithm",
+   "page": 8,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "7.0.3 Results",
+   "page": 9,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "8 Minimal Vertex Covers",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Minimal Feedback Vertex Sets",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1 Measure",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "9.2 Algorithm",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "9.3 Results",
+   "page": 16,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "10 Minimal Hitting Sets",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10.1 Measure",
+   "page": 16,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "10.2 Analysis",
+   "page": 17,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "11 Conclusion",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.667407700006152,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "Lemma 11. [10] Let A be an algorithm for a problem P, B be an algorithm for a cl"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

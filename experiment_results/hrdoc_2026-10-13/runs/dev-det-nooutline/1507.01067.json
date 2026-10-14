@@ -1,0 +1,145 @@
+{
+ "doc": "1507.01067",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "3.0.1 HTTP Servers",
+   "3.0.2 Installing and Configuring Kerrighed",
+   "3.0.3 Installing and Configuring OpenMosix",
+   "3.0.4 Installing and Configuring OpenSSI",
+   "3.0.5 Performance Evaluation"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 440,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. REVIEW OF LITERATURE",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Single Sytem Image",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Overview of Kerrighed",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Overview of OpenMosix",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Overview of OpenSSI",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. METHODOLOGY",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. RESULTS AND DISCUSSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Response Time",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Missed Requests",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5. SUMMARY AND CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.454377400001249,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "3.0.1 HTTP Servers",
+   "3.0.2 Installing and Configuring Kerrighed",
+   "3.0.3 Installing and Configuring OpenMosix",
+   "3.0.4 Installing and Configuring OpenSSI",
+   "3.0.5 Performance Evaluation"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [
+   "3.0.1 HTTP Servers",
+   "3.0.2 Installing and Configuring Kerrighed",
+   "3.0.3 Installing and Configuring OpenMosix",
+   "3.0.4 Installing and Configuring OpenSSI",
+   "3.0.5 Performance Evaluation"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

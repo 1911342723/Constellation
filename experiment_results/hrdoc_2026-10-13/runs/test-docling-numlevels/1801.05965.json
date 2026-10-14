@@ -1,0 +1,105 @@
+{
+ "doc": "1801.05965",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MANUEL BODIRSKY AND JOHANNES GREINER"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MANUEL BODIRSKY AND JOHANNES GREINER"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 61.28992500000095
+ },
+ "predictions": [
+  {
+   "text": "THE COMPLEXITY OF COMBINATIONS OF QUALITATIVE CONSTRAINT SATISFACTION PROBLEMS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MANUEL BODIRSKY AND JOHANNES GREINER",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Generic Combinations",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. On the Necessity of the Nelson-Oppen Conditions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Examples",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Difficulties for a General Complexity Classification",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0023283000045921654,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MANUEL BODIRSKY AND JOHANNES GREINER"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

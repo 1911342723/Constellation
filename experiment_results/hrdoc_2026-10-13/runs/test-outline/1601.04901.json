@@ -1,0 +1,146 @@
+{
+ "doc": "1601.04901",
+ "system": "outline",
+ "metrics": {
+  "gt": 19,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgment",
+   "References",
+   "Bibliography"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods of acceleration",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Electrostatic acceleration",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Induction – the betatron",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Radio-frequency acceleration",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4 Transit-time factor",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.5 Disc-loaded travelling wave structures",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Phase stability and energy-phase oscillation in a linac",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Circular accelerators – cyclotron",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Synchrotron",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Dispersion effects in a synchrotron",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.2 Stationary bucket",
+   "page": 16,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.3 Bunch matching into the stationary bucket",
+   "page": 16,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.4 Potential energy function and Hamiltonian",
+   "page": 18,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.5 Adiabatic damping",
+   "page": 19,
+   "level": 2,
+   "parent": 9
+  }
+ ],
+ "seconds": 0.04657460000089486,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgment",
+   "References",
+   "Bibliography"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

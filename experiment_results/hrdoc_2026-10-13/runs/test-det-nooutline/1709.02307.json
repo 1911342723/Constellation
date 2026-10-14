@@ -1,0 +1,130 @@
+{
+ "doc": "1709.02307",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 7,
+  "tp": 3,
+  "fp": 4,
+  "fn": 7,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.2727272727272727,
+  "unmatched_gt": [
+   "PRELIMINARIES",
+   "DISTINGUISHING PSEUDOMIXTURES OF QUANTUM STATES",
+   "GENERALIZED DISTINGUISHING PROTOCOL",
+   "EXPERIMENTAL TEST",
+   "Experimental setup",
+   "Complete Results and Simulations",
+   "DISCUSSION"
+  ],
+  "unmatched_pred": [
+   "1. Eﬀectiveness",
+   "2. Null class",
+   "2 even and N",
+   "A. Ac´ın, Physical Review Letters 116, 230402 (2016)."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 385,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Eﬀectiveness",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Null class",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 even and N",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix 1",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix 2",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ac´ın, Physical Review Letters 116, 230402 (2016).",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  }
+ ],
+ "seconds": 11.33650900000066,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 7,
+  "tp": 3,
+  "fp": 4,
+  "fn": 7,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.2727272727272727,
+  "unmatched_gt": [
+   "PRELIMINARIES",
+   "DISTINGUISHING PSEUDOMIXTURES OF QUANTUM STATES",
+   "GENERALIZED DISTINGUISHING PROTOCOL",
+   "EXPERIMENTAL TEST",
+   "Experimental setup",
+   "Complete Results and Simulations",
+   "DISCUSSION"
+  ],
+  "unmatched_pred": [
+   "1. Eﬀectiveness",
+   "2. Null class",
+   "2 even and N",
+   "A. Ac´ın, Physical Review Letters 116, 230402 (2016)."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 5,
+  "tp": 1,
+  "fp": 4,
+  "fn": 7,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "PRELIMINARIES",
+   "DISTINGUISHING PSEUDOMIXTURES OF QUANTUM STATES",
+   "GENERALIZED DISTINGUISHING PROTOCOL",
+   "EXPERIMENTAL TEST",
+   "Experimental setup",
+   "Complete Results and Simulations",
+   "DISCUSSION"
+  ],
+  "unmatched_pred": [
+   "1. Eﬀectiveness",
+   "2. Null class",
+   "2 even and N",
+   "A. Ac´ın, Physical Review Letters 116, 230402 (2016)."
+  ],
+  "ignored_title_predictions": null
+ }
+}

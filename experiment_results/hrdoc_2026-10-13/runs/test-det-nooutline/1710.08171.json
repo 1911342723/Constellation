@@ -1,0 +1,127 @@
+{
+ "doc": "1710.08171",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 5,
+  "tp": 2,
+  "fp": 3,
+  "fn": 9,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "Model 1: estimating the SNARC effect",
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Model 2: estimating the numerical distance effect",
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Comparing the mo del to the classical approach"
+  ],
+  "unmatched_pred": [
+   "A hierarchical Bayesian model for measuring individual-level",
+   "Thomas J. Faulkenberry",
+   "Abstract"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 180,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A hierarchical Bayesian model for measuring individual-level",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "and group-level numerical representations",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Thomas J. Faulkenberry",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.910319000002346,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 6,
+  "tp": 2,
+  "fp": 4,
+  "fn": 9,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "Model 1: estimating the SNARC effect",
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Model 2: estimating the numerical distance effect",
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Comparing the mo del to the classical approach"
+  ],
+  "unmatched_pred": [
+   "A hierarchical Bayesian model for measuring individual-level",
+   "and group-level numerical representations",
+   "Thomas J. Faulkenberry",
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 3,
+  "tp": 1,
+  "fp": 2,
+  "fn": 9,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.18181818181818177,
+  "unmatched_gt": [
+   "Model 1: estimating the SNARC effect",
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Model 2: estimating the numerical distance effect",
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Comparing the mo del to the classical approach"
+  ],
+  "unmatched_pred": [
+   "A hierarchical Bayesian model for measuring individual-level",
+   "Thomas J. Faulkenberry"
+  ],
+  "ignored_title_predictions": null
+ }
+}

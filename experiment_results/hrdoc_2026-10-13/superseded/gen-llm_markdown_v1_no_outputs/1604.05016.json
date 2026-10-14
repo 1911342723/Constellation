@@ -1,0 +1,204 @@
+{
+ "doc": "1604.05016",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7293,
+   "completion_tokens": 6279
+  },
+  "elapsed_llm_seconds": 28.93647300000157,
+  "content_preservation": 0.948102921936328,
+  "inserted_word_share": 0.007305936073059405,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Status Report of the GERDA Phase II Startup",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "II. THE GERDA EXPERIMENT",
+    0,
+    2
+   ],
+   [
+    "A. Phase I Results",
+    0,
+    3
+   ],
+   [
+    "III. UPGRADE TO PHASE II",
+    1,
+    2
+   ],
+   [
+    "A. BEGe Detectors",
+    1,
+    3
+   ],
+   [
+    "B. Detector Assembly and Read-Out Electronics",
+    2,
+    3
+   ],
+   [
+    "C. LAr Instrumentation",
+    3,
+    3
+   ],
+   [
+    "IV. START OF PHASE II DATA TAKING",
+    3,
+    2
+   ],
+   [
+    "V. CONCLUSION",
+    5,
+    2
+   ],
+   [
+    "ACKNOWLEDGMENT",
+    5,
+    2
+   ],
+   [
+    "REFERENCES",
+    5,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THE GERDA EXPERIMENT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Phase I Results",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. UPGRADE TO PHASE II",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. BEGe Detectors",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Detector Assembly and Read-Out Electronics",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. LAr Instrumentation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. START OF PHASE II DATA TAKING",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.055727999999363,
+ "metrics_raw": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 4,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Status Report of the GERDA Phase II Startup",
+   "REFERENCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "doc": "1806.10161",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 150.4719279000019
+ },
+ "predictions": [
+  {
+   "text": "Embodying probabilistic inference in biochemical circuits",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Analysis",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Real-time probabilistic inference in a changing environment",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Representing a changing environment using sensors, recorders and integrators",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Programmatic generation of a biochemical circuit that performs inference",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Embodied inference is constrained by the logic of protein production",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Circuit failure modes",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Searching for the molecular correlates of inference",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methods",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Real-time inference in a discrete-time Markov model",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Stochastic and deterministic simulations of circuit",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.00429440000152681,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

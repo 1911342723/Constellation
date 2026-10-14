@@ -1,0 +1,237 @@
+{
+ "doc": "1512.05906",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "parameters"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 10559,
+   "completion_tokens": 9754
+  },
+  "elapsed_llm_seconds": 40.98363139999856,
+  "content_preservation": 0.9619504396482814,
+  "inserted_word_share": 0.01859403033762841,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Diffusive nature of thermal transport in stanene",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "II. METHODOLOGY",
+    1,
+    1
+   ],
+   [
+    "A. Lattice thermal conductivity",
+    1,
+    2
+   ],
+   [
+    "B. Relaxation rates",
+    1,
+    2
+   ],
+   [
+    "1. Phonon-phonon scattering",
+    1,
+    3
+   ],
+   [
+    "2. Phonon-boundary scattering",
+    1,
+    3
+   ],
+   [
+    "C. Details of ﬁrst-principles calculations",
+    2,
+    2
+   ],
+   [
+    "III. RESULTS AND DISCUSSION",
+    2,
+    1
+   ],
+   [
+    "A. Phonon dispersions",
+    2,
+    2
+   ],
+   [
+    "B. Phonon group velocities and Gr¨uneisen parameters",
+    3,
+    2
+   ],
+   [
+    "C. Lattice thermal conductivity",
+    3,
+    2
+   ],
+   [
+    "IV. CONCLUSIONS",
+    5,
+    1
+   ],
+   [
+    "ACKNOWLEDGEMENTS",
+    5,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Diffusive nature of thermal transport in stanene",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Lattice thermal conductivity",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Relaxation rates",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1. Phonon-phonon scattering",
+   "page": 1,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2. Phonon-boundary scattering",
+   "page": 1,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "C. Details of ﬁrst-principles calculations",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. RESULTS AND DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Phonon dispersions",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Phonon group velocities and Gr¨uneisen parameters",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Lattice thermal conductivity",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 41.24045910000132,
+ "metrics_raw": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "parameters"
+  ],
+  "unmatched_pred": [
+   "Diffusive nature of thermal transport in stanene"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "parameters"
+  ],
+  "unmatched_pred": [
+   "Diffusive nature of thermal transport in stanene"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "parameters"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

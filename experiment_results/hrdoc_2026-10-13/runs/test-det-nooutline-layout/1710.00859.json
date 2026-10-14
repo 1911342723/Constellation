@@ -1,0 +1,116 @@
+{
+ "doc": "1710.00859",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "tion Implied Volatilities",
+   "Condition?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "tion Implied Volatilities",
+   "Condition?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 770,
+  "layout_marked": 10,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9259504570141741,
+  "inserted_word_share": 0.08062606865710908
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Karhunen-Loève Decomposition: Theoretical Background",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Karhunen-Loève Decomposition: Application on Swap-",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Filtered Historical Simulation for Projected Time Series",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Do Reconstructed Volatility Smiles Violate Non-Arbitrage",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Backtesting VaR",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.157699800001865,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "tion Implied Volatilities",
+   "Condition?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

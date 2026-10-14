@@ -1,0 +1,156 @@
+{
+ "doc": "1708.00961",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 43.24638109999796
+ },
+ "predictions": [
+  {
+   "text": "Low Dose CT Image Denoising Using a Generative Adversarial Network with Wasserstein Distance and Perceptual Loss",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Noise Reduction Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. WGAN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Perceptual Loss",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Network Structures",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Other Networks",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Datasets",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Network Training",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Network Convergence",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Denoising Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Quantitative Analysis",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. VGG Feature Extractor",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DISCUSSIONS AND CONCLUSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.014474099996732548,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Low Dose CT Image Denoising Using a Generative Adversarial Network with Wasserst",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

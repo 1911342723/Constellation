@@ -1,0 +1,135 @@
+{
+ "doc": "1709.08491",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Spatial smoothness of the propagation",
+   "A propagation model",
+   "Data",
+   "Cortical thickness measurements"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 172,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4183,
+   "completion_tokens": 454,
+   "total_tokens": 4637
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Statistical learning of spatiotemporal patterns",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Manifold-valued networks",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Manifold-valued measurements distributed on a ﬁxed graph",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 The statistical model",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Parameters estimation with the MCMC-SAEM algorithm",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Model instantiation",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Experimental results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussion and perspectives",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.755140400000528,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "Spatial smoothness of the propagation",
+   "A propagation model",
+   "Data",
+   "Cortical thickness measurements"
+  ],
+  "unmatched_pred": [
+   "Statistical learning of spatiotemporal patterns"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "Spatial smoothness of the propagation",
+   "A propagation model",
+   "Data",
+   "Cortical thickness measurements"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

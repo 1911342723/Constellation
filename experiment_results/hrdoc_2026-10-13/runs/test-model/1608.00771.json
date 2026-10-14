@@ -1,0 +1,178 @@
+{
+ "doc": "1608.00771",
+ "system": "model",
+ "metrics": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 202,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10589,
+   "completion_tokens": 829,
+   "total_tokens": 11418
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Foundations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Terminology — “smart contracts”",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Automation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Enforceability",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3.1 What to enforce",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.3.2 How to enforce",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.4 The semantics of contracts",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Smart Contract Templates",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Templates and Parameters",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2 The design landscape for Smart Contract Templates",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2.1 Increasing the sophistication of parameters",
+   "page": 7,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "3.2.2 Increasing the use of common standardised code",
+   "page": 9,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "3.2.3 Long-term research challenges",
+   "page": 9,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "3.2.4 Future developments and initial requirements",
+   "page": 11,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4 Summary and Further Work",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Summary",
+   "page": 12,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4.2 Further Work",
+   "page": 12,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.984673999999359,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

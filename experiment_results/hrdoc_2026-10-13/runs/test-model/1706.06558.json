@@ -1,0 +1,106 @@
+{
+ "doc": "1706.06558",
+ "system": "model",
+ "metrics": {
+  "gt": 10,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "3.1 PDF of proton multiplicity distributions",
+   "3.2 PDF of anti-proton multiplicity distributions",
+   "3.3 PDF of net-proton proton multiplicity distributions",
+   "3.4 Test for the criticality of the net-proton multiplicity distributions",
+   "3.5 Estimating higher-order cumulants"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 623,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4836,
+   "completion_tokens": 194,
+   "total_tokens": 5030
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Pearson curve method",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results and discussion",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Summary",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.923961200001941,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "3.1 PDF of proton multiplicity distributions",
+   "3.2 PDF of anti-proton multiplicity distributions",
+   "3.3 PDF of net-proton proton multiplicity distributions",
+   "3.4 Test for the criticality of the net-proton multiplicity distributions",
+   "3.5 Estimating higher-order cumulants"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "3.1 PDF of proton multiplicity distributions",
+   "3.2 PDF of anti-proton multiplicity distributions",
+   "3.3 PDF of net-proton proton multiplicity distributions",
+   "3.4 Test for the criticality of the net-proton multiplicity distributions",
+   "3.5 Estimating higher-order cumulants"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

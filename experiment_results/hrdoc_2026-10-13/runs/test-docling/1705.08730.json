@@ -1,0 +1,147 @@
+{
+ "doc": "1705.08730",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 45.09171399999832
+ },
+ "predictions": [
+  {
+   "text": "On Patterns and Re-Use in Bioinformatics Databases",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Motivation:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Results:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Choosing a set of Databases",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Data extraction and visualisation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Reuse within Databases",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Patterns of Reuse within databases",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Reuse between Databases",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.4 Patterns between databases",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Discussion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.006930099996679928,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On Patterns and Re-Use in Bioinformatics Databases"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

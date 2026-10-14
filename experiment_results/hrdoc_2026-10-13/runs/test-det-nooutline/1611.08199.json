@@ -1,0 +1,109 @@
+{
+ "doc": "1611.08199",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 4,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "4. A global weak solution for wave maps with scalar and two-form potential"
+  ],
+  "unmatched_pred": [
+   "x. Recall the extrinsic version of the equation for wave maps with scalar and",
+   "4.1. Existence of a global weak solution",
+   "4.2. A priori estimates"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 796,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction and Results",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Wave maps with scalar and two-form potential",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Wave maps with two-form potential",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "x. Recall the extrinsic version of the equation for wave maps with scalar and",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Existence of a global weak solution",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.2. A priori estimates",
+   "page": 9,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.642697600000247,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 4,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "4. A global weak solution for wave maps with scalar and two-form potential"
+  ],
+  "unmatched_pred": [
+   "x. Recall the extrinsic version of the equation for wave maps with scalar and",
+   "4.1. Existence of a global weak solution",
+   "4.2. A priori estimates"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 6,
+  "tp": 3,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "4. A global weak solution for wave maps with scalar and two-form potential"
+  ],
+  "unmatched_pred": [
+   "x. Recall the extrinsic version of the equation for wave maps with scalar and",
+   "4.1. Existence of a global weak solution",
+   "4.2. A priori estimates"
+  ],
+  "ignored_title_predictions": null
+ }
+}

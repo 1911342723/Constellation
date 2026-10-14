@@ -1,0 +1,178 @@
+{
+ "doc": "1610.02703",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.631578947368421,
+  "unmatched_gt": [
+   "I. ASYMPTOTIC DEGREE DISTRIBUTIONS SAMPLED FROM UNIFORM PRIORS AND HYPERPRIORS"
+  ],
+  "unmatched_pred": [
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.5789473684210527,
+  "unmatched_gt": [
+   "I. ASYMPTOTIC DEGREE DISTRIBUTIONS SAMPLED FROM UNIFORM PRIORS AND HYPERPRIORS",
+   "II. DIRECTED NETWORKS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1929,
+  "layout_marked": 19,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8619242416192956,
+  "inserted_word_share": 0.861877559360128
+ },
+ "predictions": [
+  {
+   "text": "Nonparametric Bayesian inference of the microcanonical stochastic block model",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THE MICROCANONICAL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NONPARAMETRIC BAYESIAN",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Sampling vs",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Prior for the node partition",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Prior for the degrees",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Non-degree-corrected model (NDC-SBM)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Arbitrary degree sequences",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Prior for the edge counts and nested SBM",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Model summary",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "IV. ENSEMBLE EQUIVALENCE",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. HOW MANY GROUPS CAN BE INFERRED?",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. INFERENCE ALGORITHM",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. MODEL COMPARISON",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. RESULTS FOR EMPIRICAL NETWORKS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IX. DISCUSSION",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B: Directed networks",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 28.10736960000213,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.631578947368421,
+  "unmatched_gt": [
+   "I. ASYMPTOTIC DEGREE DISTRIBUTIONS SAMPLED FROM UNIFORM PRIORS AND HYPERPRIORS"
+  ],
+  "unmatched_pred": [
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

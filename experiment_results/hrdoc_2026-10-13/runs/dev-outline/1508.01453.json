@@ -1,0 +1,91 @@
+{
+ "doc": "1508.01453",
+ "system": "outline",
+ "metrics": {
+  "gt": 2,
+  "pred": 5,
+  "tp": 2,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 2,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   " Acknowledgments",
+   " References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Asymptotic Green's function for the stochastic reproduction of competing variants via Fisher's angular transformation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " References",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Green's function under weak selection",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Supplementary Figures",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.017050799997377908,
+ "metrics_v1": {
+  "gt": 2,
+  "pred": 6,
+  "tp": 2,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Asymptotic Green's function for the stochastic reproduction of competing variant",
+   "Abstract",
+   " Acknowledgments",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 2,
+  "pred": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 2,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

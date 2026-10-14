@@ -1,0 +1,134 @@
+{
+ "doc": "1711.07135",
+ "system": "outline",
+ "metrics": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgment",
+   "References",
+   "App endix"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Distributed Computing and Topological Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Immediate snapshot in the read-write model",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Simplicial complexes and subdivisions",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Distributed task and asynchronous computability",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Immediate Snapshot as Iterated Subdivision Using Schlegel Diagram",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Schlegel diagram and subdivision",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 The immediate snapshot protocol with oblivious scan",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 The Generic Protocol for Solving Tasks and Its Optimization",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 A generic protocol via iterated immediate snapshot",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Protocol optimization for reduced memory access",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Conclusion and Future Work",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A A Quick Look at Partial Evaluation",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.05981610000162618,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgment",
+   "References",
+   "App endix"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

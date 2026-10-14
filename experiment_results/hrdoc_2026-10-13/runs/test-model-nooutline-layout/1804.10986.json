@@ -1,0 +1,156 @@
+{
+ "doc": "1804.10986",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 992,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 19056,
+   "completion_tokens": 639,
+   "total_tokens": 19695
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9133495145631068,
+  "inserted_word_share": 0.14690546361369305
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem Formulation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Boundary reduction",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Galerkin discretisation",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Error Analysis for Full Tensor-products",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Numerical Experiments",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4. Sparse Grids",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Error Analysis of Sparse Grids",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2. Combination Technique",
+   "page": 13,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2.1. Numerical Experiments",
+   "page": 14,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "4.3. Adaptive Sparse Grids",
+   "page": 15,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3.1. Numerical Experiments",
+   "page": 17,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "5. Conclusions",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.895830299996305,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

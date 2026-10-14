@@ -1,0 +1,151 @@
+{
+ "doc": "1608.07981",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 5,
+  "level_correct": 7,
+  "parent_correct": 5,
+  "teds": 0.3846153846153846,
+  "unmatched_gt": [
+   "DATA",
+   "O RD ER - P R E S ERV I NG EN CRY P TIO N O N",
+   "G O OGL E B I GQ U ERY",
+   "IV. GO O GLE BI G QU E RY AS EXA MPL E IA A S PROV IDE R",
+   "V. E N C RYPT E D B I GQ UERY C O MMAN D L I NE I NTE R FAC E"
+  ],
+  "unmatched_pred": [
+   "25.9 kB",
+   "2.8 MB",
+   "28.9 MB"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 210,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Secure Parallel Processing of Big Data Using",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Order-Preserving Encryption on Google BigQuery",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION TO ORDER PRESERVING ENCRYPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. USING ORDER-PRESERVING ENCRYPTION ON BIG",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. THE INFRASTRUCTURE OF MUTABLE",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Limitations on Order-Preserving Encryption for Big Data",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Solving the Limitations",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "25.9 kB",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.8 MB",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "28.9 MB",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "VI. CONCLUSION, FUTURE WORK AND DISCUSSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.329667199999676,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 8,
+  "fp": 4,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 6,
+  "teds": 0.23076923076923073,
+  "unmatched_gt": [
+   "DATA",
+   "G O OGL E B I GQ U ERY",
+   "IV. GO O GLE BI G QU E RY AS EXA MPL E IA A S PROV IDE R",
+   "V. E N C RYPT E D B I GQ UERY C O MMAN D L I NE I NTE R FAC E"
+  ],
+  "unmatched_pred": [
+   "Secure Parallel Processing of Big Data Using",
+   "25.9 kB",
+   "2.8 MB",
+   "28.9 MB"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 5,
+  "level_correct": 6,
+  "parent_correct": 4,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "DATA",
+   "O RD ER - P R E S ERV I NG EN CRY P TIO N O N",
+   "G O OGL E B I GQ U ERY",
+   "IV. GO O GLE BI G QU E RY AS EXA MPL E IA A S PROV IDE R",
+   "V. E N C RYPT E D B I GQ UERY C O MMAN D L I NE I NTE R FAC E"
+  ],
+  "unmatched_pred": [
+   "25.9 kB",
+   "2.8 MB",
+   "28.9 MB"
+  ],
+  "ignored_title_predictions": null
+ }
+}

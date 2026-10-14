@@ -1,0 +1,106 @@
+{
+ "doc": "1710.08171",
+ "system": "det",
+ "metrics": {
+  "gt": 11,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Data.",
+   "Results.",
+   "Data.",
+   "Results."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 180,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Model 1: estimating the SNARC eﬀect",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fitting the model",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Model 2: estimating the numerical distance eﬀect",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fitting the model",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Comparing the model to the classical approach",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.0183455000005779,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Data.",
+   "Results.",
+   "Data.",
+   "Results."
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "Data.",
+   "Results.",
+   "Data.",
+   "Results."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

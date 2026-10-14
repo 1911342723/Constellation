@@ -1,0 +1,187 @@
+{
+ "doc": "1412.7419",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "repeat",
+   "end"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 425,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4487,
+   "completion_tokens": 641,
+   "total_tokens": 5128
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Directional Secant Approximation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Variance Reduction for Robust Stochastic Gradient Descent",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Adaptive Step-size in Stochastic Case",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Algorithmic Details",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Approximate Variability",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.2 Outlier Gradient Detection",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.3 Variance Reduction",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "6 Improving Convergence",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Appendix",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Derivation of Eq 11",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "repeat",
+   "page": 5,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "end",
+   "page": 5,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "A.2 Algorithm pseudo-code",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.3 Further Experimental Details",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.994853400003194,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "repeat",
+   "end"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 14,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "repeat",
+   "end"
+  ],
+  "ignored_title_predictions": null
+ }
+}

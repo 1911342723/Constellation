@@ -1,0 +1,141 @@
+{
+ "doc": "1712.04787",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 90,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4692,
+   "completion_tokens": 566,
+   "total_tokens": 5258
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9500968992248062,
+   "in_order": 0.9348352713178295,
+   "inserted": 0.029688273132112863
+  }
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Background",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. New Language Support",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Voice Building",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Data Preparation",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2. Feature Extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3. Model Building",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3.1. Unit Selection",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4.3.2. Statistical Parametric Synthesis",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4.4. New Conﬁguration Mechanism",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5. Global Project Management",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Bibliographical References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.268575399997644
+}

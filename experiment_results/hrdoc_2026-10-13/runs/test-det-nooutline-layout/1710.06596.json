@@ -1,0 +1,239 @@
+{
+ "doc": "1710.06596",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 29,
+  "pred": 30,
+  "tp": 29,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.9032258064516129,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "6.1 FSI"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.9642857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "6.1 FSI"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 529,
+  "layout_marked": 31,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9824288117639728,
+  "inserted_word_share": 0.017265021191722796
+ },
+ "predictions": [
+  {
+   "text": "Abstract:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Financial support",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2 Main Contributors",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 The Parallel Framework",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Mesh partitioning: ParMETIS and Zoltan",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Distributed arrays: Epetra",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Parallel preconditioners",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4 Parallel I/O with HDF5",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 Features and Paradigms",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 I/O data formats",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2 Expression Templates for Finite Elements",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Basics",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 The Poisson problem",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Matrix form and expression templates",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Linear algebra",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 The CFD Portfolio",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Preconditioners for Stokes problem",
+   "page": 10,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5.2 Algebraic Factorizations",
+   "page": 11,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6 Beyond the proof of concept",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 FSI",
+   "page": 14,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.2 Geometric Multiscale",
+   "page": 14,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.3 Heart dynamics",
+   "page": 14,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.4 Inverse problems and data assimilation",
+   "page": 15,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.5 Model reduction",
+   "page": 15,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.6 Darcy equations and porous media",
+   "page": 16,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.7 Ice sheets",
+   "page": 16,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "7 Perspectives",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.542774499997904,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 30,
+  "tp": 29,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.9032258064516129,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "6.1 FSI"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

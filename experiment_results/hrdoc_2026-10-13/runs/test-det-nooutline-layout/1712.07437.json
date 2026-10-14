@@ -1,0 +1,211 @@
+{
+ "doc": "1712.07437",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "Equations for finding orthogonal parameters (Huzurbazar, 1956)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "Equations for finding orthogonal parameters (Huzurbazar, 1956)",
+   "1. Datasets",
+   "2. Extra formulas"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1055,
+  "layout_marked": 32,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9418480958797248,
+  "inserted_word_share": 0.5365691953381255
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Aspects of orthogonal parametrization for statistical models",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Gaussian process regression with the heteroscedastic Student-t model",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Student-t model and basic properties",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Gaussian process regression in the location and scale parameter",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Approximate inference with the Laplace method",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Laplace approximation",
+   "page": 9,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Laplace-Fisher approximation",
+   "page": 9,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Prediction of future outcomes with the Laplace approximation",
+   "page": 9,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5. On the computational implementation",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Natural gradient for ﬁnding the mode",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2 Approximate marginal likelihood and parameter adaptation",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6. Experiments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Priors for the GP hyperparameters and degrees-of-freedom parameter",
+   "page": 14,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6.2 Simulated data with simple regressions",
+   "page": 15,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6.3 Predictive performance on real datasets",
+   "page": 17,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "7. Concluding remarks and discussion",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Datasets",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B. Extra formulas",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B.1 The elements of the matrix W",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B.2 The elements of the Fisher information matrix EY | f,θ[W]",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B.3 Derivatives of the log L(y | f, ν) and W",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.405876199998602,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "Equations for finding orthogonal parameters (Huzurbazar, 1956)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

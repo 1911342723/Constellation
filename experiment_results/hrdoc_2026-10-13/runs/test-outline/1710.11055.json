@@ -1,0 +1,115 @@
+{
+ "doc": "1710.11055",
+ "system": "outline",
+ "metrics": {
+  "gt": 6,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   " Acknowledgments",
+   " References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Using Social Network Analysis on classroom video data",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Social Network Analysis (SNA)",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III What is IMPRESS?",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "IV Data Collection and Coding",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "V Analysis and Discussion",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VI Conclusions and Future Work",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " References",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.021911700001510326,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Using Social Network Analysis on classroom video data",
+   "Abstract",
+   " Acknowledgments",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

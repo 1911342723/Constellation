@@ -1,0 +1,164 @@
+{
+ "doc": "1801.05599",
+ "system": "docling",
+ "metrics": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Feng Wang UESTC"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 23.416028100000403
+ },
+ "predictions": [
+  {
+   "text": "Additive Margin Softmax for Face Verification",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Feng Wang UESTC",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Additive Margin Softmax",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Definition",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Discussion",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.1 Geometric Interpretation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.2 Angular Margin or Cosine Margin",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.3 Feature Normalization",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.4 Feature Distribution Visualization",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Experiment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Implementation Details",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. Dataset Overlap Removal",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3. Effect of Hyper-parameter m",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion and Future Work",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.019289800002297852,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5789473684210527,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Additive Margin Softmax for Face Verification",
+   "Feng Wang UESTC"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Feng Wang UESTC"
+  ],
+  "ignored_title_predictions": null
+ }
+}

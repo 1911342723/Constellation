@@ -1,0 +1,196 @@
+{
+ "doc": "1805.12462",
+ "system": "model",
+ "metrics": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 396,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10559,
+   "completion_tokens": 920,
+   "total_tokens": 11479
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 A New Evaluation Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Full Image Gaussian Mixture Model",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Avoiding Inversion of Large Matrices",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Generating Sharp Images with GMMs",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Pairing GMM with a Conditional GAN",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5.2 Adversarial GMM Training",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Technical Details",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 NDB Evaluation Method",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "A.2 MFA Training",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "A.3 MFA Inference – Image Reconstruction",
+   "page": 12,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "A.4 Measuring Sharpness",
+   "page": 12,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B Interpretation of the NDB Bins",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C Additional NDB Results",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D Additional MFA Samples",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E Internal Representation of the MFA Model",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F MFA Representation Quality vs Number of Components",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "G Pairing GMM with a Conditional GAN",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.3230126999988,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

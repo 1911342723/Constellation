@@ -1,0 +1,131 @@
+{
+ "doc": "1804.08282",
+ "system": "det",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "Abstract—",
+   "AC K NOWLE DGM ENT"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 438,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SYSTEM MODEL AND ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Model Assumptions",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Problem Statement",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Mathematical Results",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "D. Optimisation and Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. SIMULATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Construction of Risk Functions",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Algorithm Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.5437449000019114,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "Abstract—",
+   "AC K NOWLE DGM ENT"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

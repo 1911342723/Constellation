@@ -1,0 +1,123 @@
+{
+ "doc": "1608.07981",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 7,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "DATA",
+   "O RD ER - P R E S ERV I NG EN CRY P TIO N O N",
+   "G O OGL E B I GQ U ERY"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "DATA",
+   "O RD ER - P R E S ERV I NG EN CRY P TIO N O N",
+   "G O OGL E B I GQ U ERY"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 10.460681200002
+ },
+ "predictions": [
+  {
+   "text": "Secure Parallel Processing of Big Data Using Order-Preserving Encryption on Google BigQuery",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION TO ORDER PRESERVING ENCRYPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. USING ORDER-PRESERVING ENCRYPTION ON BIG DATA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. THE INFRASTRUCTURE OF MUTABLE ORDER-PRESERVING ENCRYPTION ON GOOGLE BIGQUERY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Limitations on Order-Preserving Encryption for Big Data",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Solving the Limitations",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. GOOGLE BIGQUERY AS EXAMPLE IAAS PROVIDER",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ENCRYPTED BIGQUERY COMMAND LINE INTERFACE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION, FUTURE WORK AND DISCUSSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.02076420000230428,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 7,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "DATA",
+   "O RD ER - P R E S ERV I NG EN CRY P TIO N O N",
+   "G O OGL E B I GQ U ERY"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

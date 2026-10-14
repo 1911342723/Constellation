@@ -1,0 +1,171 @@
+{
+ "doc": "1511.01088",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "There is no fast lunch: an examination of the running speed of evolutionary algorithms in several languages",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 State of the art",
+    1,
+    2
+   ],
+   [
+    "3 Experimental setup",
+    1,
+    2
+   ],
+   [
+    "4 Results and analysis",
+    3,
+    2
+   ],
+   [
+    "5 Conclusions",
+    4,
+    2
+   ],
+   [
+    "6 Acknowledgements",
+    5,
+    2
+   ],
+   [
+    "References",
+    5,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 4274,
+   "completion_tokens": 3929
+  },
+  "elapsed_llm_seconds": 19.01373269999749,
+  "word_preservation": {
+   "recall": 0.9989150090415914,
+   "in_order": 0.9989150090415914,
+   "inserted": 0.0021676300578035157
+  },
+  "output_markdown": "# There is no fast lunch: an examination of the running speed of evolutionary algorithms in several languages\n\nJ.J. Merelo∗1, P. Garc´ıa-S´anchez †1, M. Garc´ıa-Valdez‡2, and I. Blancas§1\n\n1University of Granada, Spain\n2Instituto Tecnol´ogico de Tijuana, Mexico\n\n## Abstract\n\nIt is quite usual when an evolutionary algorithm tool or library uses a language other than C, C++, Java or Matlab that a reviewer or the audience questions its usefulness based on the speed of those other languages, purportedly slower than the aforementioned ones. Despite speed being not everything needed to design a useful evolutionary algorithm application, in this paper we will measure the speed for several very basic evolutionary algorithm operations in several languages which use different virtual machines and approaches, and prove that, in fact, there is no big difference in speed between interpreted and compiled languages, and that in some cases, interpreted languages such as JavaScript or Python can be faster than compiled languages such as Scala, making them worthy of use for evolutionary algorithm experimentation.\n\n## 1 Introduction\n\nIt is a well extended myth in scientific programming to claim that compiled languages such as C++ or Java are always, in every circumstance, faster than interpreted languages such as Perl, JavaScript or Python.\n\nHowever, while it is quite clear that efficiency matters, as said in [1], in general and restricting the concept of speed to speed of the compiled/interpreted application it might be the case that some languages are faster to others, as evidenced by benhmarks such as [2, 3]. Taken in general or even restricting it to some particular set of problems such as floating point computation, some compiled languages tend to be faster than interpreted languages.\n\nBut, in the same spirit of the There is no free lunch theorem [4] we can affirm there is a no fast lunch theorem for the implementation of evolutionary\n\n∗jmerelo@ugr.es. Reachable also at the issues section of the repository for this paper.\n†fergunet@gmail.com\n‡mariosky@gmail.com\n§iblancasa@gmail.com\n\n1\n\narXiv:1511.01088v1  [cs.NE]  3 Nov 2015\n\n<<page 2>>\noptimization, in the sense that, while there are particular languages that might be the fastests for particular problem sizes and specially fitness functions, in general the fastest language will have those two dependencies, and, specially, for non-trivial problem sizes and limiting ourselves to the realm of evolutionary algorithm operators, scripting languages such as JavaScript might be as fast or even faster than compiled languages such as Java.\n\nComing up next, we will write a brief state of the art of the analysis of implementations of evolutionary algorithms. Next we will present the test we have used for this paper and its rationale, and finally we will present the results of examining four different languages running the most widely used evolutionary algorithm operator: mutation. Finally, we will draw the conclusions and present future lines of work.\n\n## 2 State of the art\n\nIn fact, the examination of the running time of an evolutionary algorithm has received some attention from early on. Implementation matters [5, 6], which implies that paying attention to the particular way an algorithm is implemented might result in speed improvements that outclass that achieved by using the a priori fastest language available. In fact, careful coding led us to prove [7] that Perl, an interpreted and not optimized for speed language, could obtain times that were on the same order the magnitude as Java. However, that paper also proved that, for the particular type of problems used in scientific computing in general, the running speed is not as important as coding speed or even learning speed, since most scientific programs are, in fact, run a few times while a lot of time is spent on coding them. That is why expressive languages such as Perl, JavaScript or Python are, in many cases, superior to these fast-to-run languages. However the benchmarks done in those papers were restricted to particular problem sizes. Since program speed is the result of many factors, including memory management and implementation of loop control structures, in this paper we will examine how fast several languages are for different problem sizes. This will be done next.\n\n## 3 Experimental setup\n\nFirst, a particular problem was chosen for testing different languages and also data representations: performing bit-flip mutation on a binary string. In fact, this is not usually the part of the program an evolutionary algorithm spends the most time in [6]. In general, that is the fitness function, and then reproduction-related functions: chromosome ranking, for instance. However, mutation is the operation that is performed the most times on every evolutionary algorithm and is quintessential to the algorithm itself, so it allows the comparison of the different languages in the proper context. Essentially, mutation is performed by\n\n1. Generating a random integer from 0 to the length of the chromosome.\n2. Choosing the bit in that position and flipping it\n3. Building a chromosome with the value of that bit changed.\n\n2\n\n<<page 3>>\nChromosomes can be represented in at least two different ways: an array or vector of boolean values, or any other scalar value that can be assimilated to it, or as a bitstring using generally “1” for true values or “0” for false values. Different data structures will have an impact on the result, since the operations that are applied to them are, in many cases, completely different and thus the underlying implementation is more or less efficient.\n\nThen, four languages have been chosen for performing the benchmark. The primary reason for chosing these languages was the availability of open source implementations for the author, but also they represent different philosophies in language design.\n\nLanguage\nVersion\nURL\nScala\n2.11.7\nhttp://git.io/bfscala\nLua\n5.2.3\nhttp://git.io/bflua\nPerl\nv5.20.0\nhttp://git.io/bfperl\nJavaScript\nnode.js 5.0.0\nhttp://git.io/bfnode\nhttp://git.io/bfpython Python\n2.7.3\nhttp://git.io/bfpython\n\nTable 1: Languages used and file written to carry out the benchmark. No special flags were used for the interpreter or compiler.\n\nCompiled languages are represented by Scala, a strongly-typed functional language that compiles to a Java Virtual Machine bytecode. Scala is in many cases faster than Java [3] due to its more efficient implementation of type handling. Two different representations were used in Scala: String and Vector[Boolean]. They both have the same underlying type, IndexedSeq and in fact the overloading of operators allows us to use the same syntax independently of the type. The benchmark, bitflip.scala, is available under a GPL license, at the URL shown in Table 1.\n\nInterpreted languages are represented by Lua, Perl and Javascript. Lua is a popular embedded language that is designed for easy implementation; Perl has been used extensively for evolutionary algorithms [7, 8, 9] with satisfactory results, and node.js, an implementation of JavaScript, which uses a the V8 JIT compiler to create bytecode when in reads the script, and has been used lately by our research group as part of our NodEO library [10] and volunteer computing framework NodIO [11]. In fact, this paper is in part a rebuttal to concerns made by reviewers of the lack of speed and thereof adequacy of JavaScript for evolutionary algorithm experimentation. Versions and files are shown in the Table 1. Only Perl used two data structures as in Scala: a string, which is a scalar structure in Perl, and an array of booleans.\n\nIn all cases except in Scala, implementation took less than one hour and was inspired by the initial implementation made in Perl. Adequate data and control structures were used for running the application, which applies mutation to a single generated chromosome a hundred thousand times. The length of the mutated string starts at 16 and is doubled until 215 is reached, that is, 32768. This upper length was chosen to have an ample range, but also so small as to be able to run the benchmarks within one hour. Results are shown next.\n\n3\n\n<<page 4>>\n## 4 Results and analysis\n\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\n1\n100\n100\n1000\n10000\nlength\ntime\nfactor(languagerepresentation)\nG\nG\nG\nG\nG\nG\nG\nlua−BitString\nnode−BitString\nperl−BitString\nperl−Bit_Vector\npython−BitString\nScala−BitString\nScala−BitVector\nEvolutionary algorithm language benchmarks\n\nFigure 1: Plot of time needed to perform 100K mutations in strings with lengths increasing by a factor of two from 16 to 215. Please note that x and y both have a logarithmic scale.\n\nAll measurements and processing scripts are included in this paper repository, although in fact the programs were written to directly produce a CSV (comma separated value) representation of measurements, which was then plotted using R and ggplot as shown in Figure 1. The first unexpected behavior shown here is the remarkable speed of the Lua language, which is, in fact, faster than any other small sizes, although slower than Python at bigger sizes. After these two, next position goes to node.js, which uses a very efficient implementation of a Just-in-Time interpreter for the JavaScript language. Then Scala, whose bitvector representation is better than the bitstring and finally Perl, with a bitstring representation being slightly better than bit vectors, although the difference dilutes with time. In fact, Scala is a bit better than node for the smaller sizes, less than 128 bits and any representation, but that advantage disappears for greater sizes.\n\n4\n\n<<page 5>>\nThe behavior of the languages is not linear either. Node.js and Python both have an interesting feature: its speed is roughly independent of the string size up to size 1024. The same happens also for several size segments for Lua, showing some plateaus that eventually break for the bigger sizes. It probably means that the creation and accessing of strings is done in constant time, or is roughly constant, giving it a performance advantage over other languages. Even so, it never manages to beat the fastest language in this context, which is either Lua or Python, depending on the size.\n\nThe trend from size 1024 on is for the differences to keep in more or less the same style for bigger sizes, so we do not think it would be interesting to extend it to 216 and upwards. In any case, these measures allow us to measure the performance of the most widely used genetic operator in four different and popular languages, since all four of them (except for Lua) show up in most rankings of the most popular languages, such as the Tiobe ranking [12].\n\n## 5 Conclusions\n\nIn this paper we set out to measure the speed of different languages when running the classical evolutionary algorithm operation: mutating a chromosome represented as a binary string or vector. The results can be a factor on the choice of a language for implementing solution to problems using evolutionary algorithms, at least if raw running speed is the main consideration. And, if that is our main concern, the fastest language for mutating strings has been found to be Lua and Python, followed by node.js and Perl. Most interpreted languages are faster for the wider range of chromosome sizes than Scala, which is a compiled language that uses the Java Virtual machine.\n\nDespite its speed Lua is not exactly a popular language, although it definitely has found its niche in embedded systems and applications such as in-game scripting, game development or servers so our choice for EA programming languages would be Python or JavaScript, which are fast enough, popular, allow for fast development and have a great and thriving community. JavaScript does have an advantage over Python: Besides being interpreted languages and using dynamic typing, it can express complex operations in a terse syntax and bestows implementations both in browsers and on the server. We can conclude from these facts and the measurements made in this paper that JavaScript is perfectly adequate for any scientific computing task, including evolutionary algorithms.\n\nThat does not mean that Perl or Scala are not adequate for scientific computing. However, they might not be if experiments take a long time and time is of the essence; in that case implementing the critical parts of the program using C, Go, Lua or Python might be the right way to go. But in general, it cannot be said that interpreted languages are not an adequate platform for implementing evolutionary algorithms, as proved in this paper.\n\nFuture lines of work might include a more extensive measurement of other operators such as crossover, tournament selection and other selection algorithms. However, they are essentially CPU integer operations and their behavior might be, in principle, very similar to the one shown here. This remains to be proved, however, but it is left as future line of work.\n\n5\n\n<<page 6>>\n## 6 Acknowledgements\n\nThis paper is part of the open science effort at the university of Granada. It has been written using knitr, and its source as well as the data used to create it can be downloaded from the GitHub repository. It has been supported in part by GeNeura Team.\n\nThis work has been supported in part SPIP2014-01437 (Direcci´on General de Tr´afico), PRY142/14 (Fundaci´on P´ublica Andaluza Centro de Estudios Andaluces en la IX Convocatoria de Proyectos de Investigaci´on), TIN2014-56494-C4-3-P (Spanish Ministry of Economy and Competitivity), and PYR-2014-17 GENIL project (CEI-BIOTIC Granada).\n\n## References\n\n[1] E. Anderson, J. Tucek, Efficiency matters!, ACM SIGOPS Operating Systems Review 44 (1) (2010) 40–45.\n\n[2] L. Prechelt, An empirical comparison of seven programming languages, Computer 33 (10) (2000) 23–29.\n\n[3] B. Fulgham, I. Gouy, The computer language benchmarks game (2010).\nURL http://shootout.alioth.debian.org\n\n[4] D. H. Wolpert, W. G. Macready, No free lunch theorems for optimization, IEEE Transactions on Evolutionary Computation 1 (1) (1997) 67–82.\nURL citeseer.nj.nec.com/wolpert96no.html\n\n[5] J.-J. Merelo-Guerv´os, G. Romero, M. Garc´ıa-Arenas, P. A. Castillo, A.-M. Mora, J.-L. Jim´enez-Laredo, Implementation matters: Programming best practices for evolutionary algorithms, in: J. Cabestany, I. Rojas, G. J. Caparr´os (Eds.), IWANN (2), Vol. 6692 of Lecture Notes in Computer Science, Springer, 2011, pp. 333–340.\n\n[6] S. Nesmachnow, F. Luna, E. Alba, Time analysis of standard evolutionary algorithms as software programs, in: Intelligent Systems Design and Applications (ISDA), 2011 11th International Conference on, IEEE, 2011, pp. 271–276.\n\n[7] J.-J. Merelo-Guerv´os, P.-A. Castillo, E. Alba, Algorithm::Evolutionary, a flexible Perl module for evolutionary computation, Soft Computing 14 (10) (2010) 1091–1109, accesible at http://sl.ugr.es/000K.\ndoi:10.1007/s00500-009-0504-3.\nURL http://www.springerlink.com/content/8h025g83j0q68270/fulltext.pdf\n\n[8] J. J. Merelo, P. A. Castillo, A. Mora, A. Fern´andez-Ares, A. I. Esparcia-Alc´azar, C. Cotta, N. Rico, Studying and tackling noisy fitness in evolutionary design of game characters, in: A. Rosa, J. J. Merelo, J. Filipe (Eds.), ECTA 2014 - Proceedings of the International Conference on Evolutionary Computation Theory and Applications, 2014, pp. 76–85.\n\n6\n\n<<page 7>>\n[9] J. J. M. Guerv´os, A. M. Mora, P. A. Castillo, C. Cotta, M. G. Valdez, A search for scalable evolutionary solutions to the game of mastermind, in: IEEE Congress on Evolutionary Computation, IEEE, 2013, pp. 2298–2305.\n\n[10] J.-J. Merelo-Guerv´os, P.-A. Castillo-Valdivieso, A. Mora-Garc´ıa, A. Esparcia-Alc´azar, V.-M. Rivas-Santos, NodEO, a multi-paradigm distributed evolutionary algorithm platform in JavaScript, in: D. V. Arnold, E. Alba (Eds.), Genetic and Evolutionary Computation Conference, GECCO ’14, Vancouver, BC, Canada, July 12-16, 2014, Companion Material Proceedings, ACM, 2014, pp. 1155–1162.\ndoi:10.1145/2598394.2605688.\nURL http://doi.acm.org/10.1145/2598394.2605688\n\n[11] J. J. M. Guerv´os, P. Garc´ıa-S´anchez, Modeling browser-based distributed evolutionary computation systems, CoRR abs/1503.06424.\nURL http://arxiv.org/abs/1503.06424\n\n[12] TIOBE, Tiobe index for october 2015, Tech. rep., TIOBE (October 2015).\nURL http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html\n\n7",
+  "verbatim_heading_share": 1.125
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 State of the art",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Experimental setup",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Results and analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Acknowledgements",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 22.739674000004015,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "There is no fast lunch: an examination of the running speed of evolutionary algo"
+  ]
+ }
+}

@@ -1,0 +1,220 @@
+{
+ "doc": "1712.04313",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 17,
+  "fp": 5,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "4.2.1. Evaluation as matching system",
+   "4.2.2. Evaluation as lexicon discovery system",
+   "4.2.3. Evaluation as word segmentation system"
+  ],
+  "unmatched_pred": [
+   "2 LIG, Univ",
+   "3 Elsa Corp., Lisbon, Portugal",
+   "three are grouping precision, recall and F-score. These are",
+   "The ﬁrst three are token precision, recall, and F-score. To-",
+   "long. Finally, boundary precision, recall, and F-score are"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 591,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13821,
+   "completion_tokens": 715,
+   "total_tokens": 14536
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "2 LIG, Univ",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Elsa Corp., Lisbon, Portugal",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. THE CHALLENGE",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Track one: Subword modelling",
+   "page": 0,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2. Track two: Spoken term discovery",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3. Generalization across languages",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4. Adaptation to new speakers",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3. DATA SETS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. EVALUATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Evaluation of subword modelling",
+   "page": 1,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2. Evaluation of spoken term discovery",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "three are grouping precision, recall and F-score. These are",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "The ﬁrst three are token precision, recall, and F-score. To-",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "long. Finally, boundary precision, recall, and F-score are",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. DESCRIPTION OF SUBMITTED SYSTEMS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Track 1",
+   "page": 3,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5.2. Track 2",
+   "page": 4,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6. RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.540653600000951,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 17,
+  "fp": 5,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "4.2.1. Evaluation as matching system",
+   "4.2.2. Evaluation as lexicon discovery system",
+   "4.2.3. Evaluation as word segmentation system"
+  ],
+  "unmatched_pred": [
+   "2 LIG, Univ",
+   "3 Elsa Corp., Lisbon, Portugal",
+   "three are grouping precision, recall and F-score. These are",
+   "The ﬁrst three are token precision, recall, and F-score. To-",
+   "long. Finally, boundary precision, recall, and F-score are"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6190476190476191,
+  "unmatched_gt": [
+   "4.2.1. Evaluation as matching system",
+   "4.2.2. Evaluation as lexicon discovery system",
+   "4.2.3. Evaluation as word segmentation system"
+  ],
+  "unmatched_pred": [
+   "2 LIG, Univ",
+   "3 Elsa Corp., Lisbon, Portugal",
+   "three are grouping precision, recall and F-score. These are",
+   "The ﬁrst three are token precision, recall, and F-score. To-",
+   "long. Finally, boundary precision, recall, and F-score are"
+  ],
+  "ignored_title_predictions": null
+ }
+}

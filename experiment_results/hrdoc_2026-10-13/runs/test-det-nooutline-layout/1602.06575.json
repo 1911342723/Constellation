@@ -1,0 +1,174 @@
+{
+ "doc": "1602.06575",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "Acknowledgement",
+   "1. Displacement current on a large surface"
+  ],
+  "unmatched_pred": [
+   "D. Marian and X. Oriols",
+   "N. Zangh`ı",
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "1. Displacement current on a large surface"
+  ],
+  "unmatched_pred": [
+   "D. Marian and X. Oriols",
+   "N. Zangh`ı"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 6744,
+  "layout_marked": 18,
+  "content_preservation": 1.0,
+  "word_preservation": 0.965086932136848,
+  "inserted_word_share": 0.9217858685029886
+ },
+ "predictions": [
+  {
+   "text": "On the noise induced by the measurement of the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Marian and X. Oriols",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "N. Zangh`ı",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. THz current without modeling the measurement apparatus",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "1.2. THz current modeling the measurement apparatus with operators",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "1.3. THz current modeling the measurement apparatus with quantum trajectories",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2. Model development",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. How to calculate the output results",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "2.2. System-Probe interaction",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3. Does it exist an unavoidable source of noise due to the measurement of",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Numerical results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Additional source of noise",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2. Weak measurement",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5. Conclusions and Discussions",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 81.65310599999793,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "Acknowledgement",
+   "1. Displacement current on a large surface"
+  ],
+  "unmatched_pred": [
+   "D. Marian and X. Oriols",
+   "N. Zangh`ı",
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

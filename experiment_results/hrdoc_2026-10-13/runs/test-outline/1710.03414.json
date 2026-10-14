@@ -1,0 +1,143 @@
+{
+ "doc": "1710.03414",
+ "system": "outline",
+ "metrics": {
+  "gt": 21,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 10,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Abstract",
+   "Systems Theory",
+   "Whole Emergence",
+   "Recurrent Neural Networks at the Edge of Chaos",
+   "Multi-Agent",
+   "Multi-Scale",
+   "Self-Similarity",
+   "Gate-Specialization",
+   "Relationship with LSTM and GRU",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Network of Recurrent Neural Networks",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Overall Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Methodology i: Aggregation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Methodology ii: Specialization",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sentiment Classification",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Question Type Classification",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Named Entity Recognition",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.025783299999602605,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 10,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Abstract",
+   "Systems Theory",
+   "Whole Emergence",
+   "Recurrent Neural Networks at the Edge of Chaos",
+   "Multi-Agent",
+   "Multi-Scale",
+   "Self-Similarity",
+   "Gate-Specialization",
+   "Relationship with LSTM and GRU",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Systems Theory",
+   "Whole Emergence",
+   "Recurrent Neural Networks at the Edge of Chaos",
+   "Multi-Agent",
+   "Multi-Scale",
+   "Self-Similarity",
+   "Gate-Specialization",
+   "Relationship with LSTM and GRU"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

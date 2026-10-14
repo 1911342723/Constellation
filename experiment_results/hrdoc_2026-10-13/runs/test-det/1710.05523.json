@@ -1,0 +1,90 @@
+{
+ "doc": "1710.05523",
+ "system": "det",
+ "metrics": {
+  "gt": 1,
+  "pred": 3,
+  "tp": 1,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "8 cos θ13 sin 2θ12 sin 2θ23 sin 2θ13 sin δCP.",
+   "13 is"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 170,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "An open window to neutrino mass hierarchy at maximal Dirac",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CP violation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 cos θ13 sin 2θ12 sin 2θ23 sin 2θ13 sin δCP.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "13 is",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.0950735000005807,
+ "metrics_v1": {
+  "gt": 1,
+  "pred": 5,
+  "tp": 1,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "An open window to neutrino mass hierarchy at maximal Dirac",
+   "CP violation",
+   "8 cos θ13 sin 2θ12 sin 2θ23 sin 2θ13 sin δCP.",
+   "13 is"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 0,
+  "pred": 2,
+  "tp": 0,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "8 cos θ13 sin 2θ12 sin 2θ23 sin 2θ13 sin δCP.",
+   "13 is"
+  ],
+  "ignored_title_predictions": null
+ }
+}

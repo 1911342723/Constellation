@@ -1,0 +1,101 @@
+{
+ "doc": "1710.06794",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "4 g(φAX + AφX, Y ) + αX(h)η(Y ) − αY (h)η(X)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 550,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Some basic concepts and related results",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 g(φAX + AφX, Y ) + αX(h)η(Y ) − αY (h)η(X)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Hopf real hypersurfaces of complex space forms",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Ruled hypersurfaces of non-ﬂat complex space forms",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Compact hypersurfaces of complex space forms",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.9520951000013156,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "4 g(φAX + AφX, Y ) + αX(h)η(Y ) − αY (h)η(X)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4 g(φAX + AφX, Y ) + αX(h)η(Y ) − αY (h)η(X)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

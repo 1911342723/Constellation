@@ -1,0 +1,243 @@
+{
+ "doc": "1608.03952",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "On the optical fields propagation in realistic environments",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "II. PHYSICAL AND MATHEMATICAL MODEL",
+    0,
+    1
+   ],
+   [
+    "III. BEAM SPLITTER FORMALISM",
+    1,
+    1
+   ],
+   [
+    "A. Density operator",
+    1,
+    2
+   ],
+   [
+    "B. Photon number distribution",
+    2,
+    2
+   ],
+   [
+    "C. Wigner function",
+    2,
+    2
+   ],
+   [
+    "IV. OPTICAL-CHANNEL FORMALISM",
+    3,
+    1
+   ],
+   [
+    "A. Density operator",
+    3,
+    2
+   ],
+   [
+    "B. Photon number distribution",
+    3,
+    2
+   ],
+   [
+    "C. Wigner function",
+    4,
+    2
+   ],
+   [
+    "V. APPLICATION OF THE EVOLUTION FORMULAS",
+    4,
+    1
+   ],
+   [
+    "A. Photon number distribution",
+    4,
+    2
+   ],
+   [
+    "B. Wigner function",
+    4,
+    2
+   ],
+   [
+    "VI. CONCLUSION",
+    5,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7397,
+   "completion_tokens": 7163
+  },
+  "elapsed_llm_seconds": 30.70172840000305,
+  "word_preservation": {
+   "recall": 0.9973621735689792,
+   "in_order": 0.9973621735689792,
+   "inserted": 0.0007928118393234485
+  },
+  "output_markdown": "# On the optical fields propagation in realistic environments\n\nXue-xiang Xu†\n\nCenter for Quantum Science and Technology,\nJiangxi Normal University, Nanchang 330022, China\n\n†Corresponding author: xuxuexiang@jxnu.edu.cn\n\nEvolution formulas of the density operator, the photon number distribution, and the Wigner function are derived for the problem on the optical fields propagation in realistic environments. The method of deriving these formulas is novel and the results are very useful for quantum optics and quantum statistics.\n\n# I. INTRODUCTION\n\nIn quantum optics and quantum statistical mechanics, people often come across such problems: (1) when a system is immersed in a realistic environment; or (2) a signal (a quantum state) passes through a quantum channel. Among them, the decay of the radiation field inside a cavity plays an important role in many realistic problems. In general, damping of the radiation field is described by its interaction with a reservoir with a large number of degrees of freedom. However, we are interested in the evolution of the variables associated with the optical field only. This requires us to obtain all relevant properties for the optical field of interest only after tracing over the reservoir variables [1, 2].\n\nActually, the decay of the radiation field inside a cavity is an problem on the dynamics of a open quantum system [3, 4]. One can use the Liouville equation (a master equation) to describe the dynamical evolution of the density matrix of the optical field. That is, the decay (or decoherence) due to the interaction between a system and its environment can be described by a Liouville (super) operator. However, the Liouville (super) operator describes a nonunitary time evolution, which cannot trivially be integrated through standard Lie-algebra techniques. Analytical solutions of the Liouville equation can be obtain upon resorting to quasiprobability representations of the density matrix [5], or upon evaluating eigenvalues and eigenvectors (i.e. eigen density matrices) of the Liouville (super) operator [6], or even upon using group-theoretical approach [7], or by virtue of the thermo-entangled state representation [8].\n\nFollowed by above works, we also pay our attention to study the optical fields propagation in realistic environment in this paper. The physical problem is abstracted into a mathematical model. Then using our technique on the quantum operators and the quantum states, we cleverly deduce some formulas for the propagated optical fields. These formulas are very useful to quantum optics and quantum statistics.\n\nThe manuscript is organized as follows. We start in Sec. II by introducing the theoretical model and abstracting two formalism. That is, we imagine the fact of the optical fields propagation in realistic environment as a fictitious beam splitter (BS) model and construct the correspondences between the optical channel formalism and the BS formalism. In Sec. III, as the section of the BS formalism, we derive the density operator of the output optical fields by using the Weyl expansion of the density operator in the characteristic function (CF) formalism. Moreover, the formula of the photon number distribution (PND) and the Wigner function (WF) for the output state are derived in detail. In Sec. IV, as the section of the optical-channel formalism, we obtian the time evolution formula of the density operator, the PND and the WF. As the application of these formulas, we use a single-photon-addition coherent state as the initial state and discuss its evolution in thermal channel in Sec.V. Our conclusions are summarized in the last section.\n\n# II. PHYSICAL AND MATHEMATICAL MODEL\n\nThe fact that a optical field propagation in the realistic environment (in optical-channel formalism) can be simulated as the interaction of a fictitious BS (in the BS formalism). The initial optical field ρ (0) (denoted by the input quantum state ρin) in the main mode a and the environment (also reservoir or channel, denoted by a general environment state ρb) in the auxiliary mode b are interacted by a BS (described by the operator B). The output quantum state ρout (i.e. the final optical field ρ (τ)) can be given by making partial trace over the ancillary mode b,\n\nρout = Trb\n\u0002\nB (ρin ⊗ρb) B†\u0003\n.\n(1)\n\nOur equivalent model ia shown in Fig.1. There exist the one-to-one correspondence between the optical-channel\n\n<<page 2>>\n2\n\nchannel\na\nb\n\u000b \f\n0\nU\n\u000b \f\nU W\nin\nU\nout\nU\nb\nU\nBS\n\nFIG. 1: (Colour online) Theoretical equivalent model. Optical fields propagation in realistic environment, can be equivalent to the optical field propagation in a optical channel formalism and also can be abstracted to a fictitious beam-splitter formalism .The correspondences include ρ (0) ⇐⇒ρin; ρ (τ) ⇐⇒ρout.\n\nformalism and the BS formalism. In their respective formalism, we have\n\n\u0012\na (τ)\nb (τ)\n\u0013\n=\n\u0012\ne−κτ/2\n√\n1 −e−κτ\n−\n√\n1 −e−κτ\ne−κτ/2\n\u0013 \u0012\na (0)\nb (0)\n\u0013\n⇐⇒B\n\u0012\na\nb\n\u0013\nB† =\n\u0012\nt\nr\n−r t\n\u0013 \u0012\na\nb\n\u0013\n.\n(2)\n\nIn optical-channel formalism, a (τ) is the attenuated light mode, b (τ) is a flunctutation mode, and κ is a damping constant. While in the BS formalism, we defined the BS operator B = exp\n\u0000θ\n\u0000a†b −ab†\u0001\u0001\nin terms of the creation (annihilation) operator a† (a) and b† (b) with the transmission coefficient t = cos θ and r = sin θ. The relationship can be linked by t = e−κτ/2, r =\np\n(1 −e−κτ), and ρ (0) ⇐⇒ρin; ρ (τ) ⇐⇒ρout. It should be emphased that t is the transmission coefficient of the BS and τ is the time of the optical field propagation in the channel.\n\nAs pointed in Ref.[9], the simple intuitive model is exact for dissipation in Gaussian reservoirs. Hence, we take a squeezed thermal state (a general Gaussian quantum state), i.e.\n\nρb = S (λ) ρth (¯n) S† (λ) ,\n(3)\n\nas the environment. This environment can be reduced the reservoirs of vacuum (¯n = λ = 0), thermal (λ = 0), or squeezed vacuum (¯n = 0). By the way, S (λ) = exp\n\u0002 λ\n2\n\u0000a†2 −a2\u0001\u0003\nis the single-mode squeezed operator with real squeezing parameter r. Moreover, ρth (¯n) = P∞\nn=0\n¯nn\n(¯n+1)n+1 |n⟩⟨n| is a thermal state with the average photon number ¯n.\n\n# III. BEAM SPLITTER FORMALISM\n\nIn this section, we shall derive the output density operator, the output photon number distribution, and the output WF in the BS formalism.\n\n## A. Density operator\n\nBy using the Weyl expansion of the density operator [10, 11], we can express ρin and ρb in the CF formalism\n\nρin =\nZ d2α\nπ χin (α) Da (−α) ,\n(4)\n\nand\n\nρb =\nZ d2β\nπ χb (β) Db (−β)\n(5)\n\nwhere Da (α) = exp\n\u0000αa† −α∗a\n\u0001\nis the displacement operator in mode a, and χin (α) =Tr(ρinDa (α)) is the CF of ρin. Similarly, Db (β) = exp\n\u0000βb† −β∗b\n\u0001\nis the displacement operator in mode b, and χb (β) =Tr(ρbDb (β)) = exp\n\u0010\n−M |β|2 + Nβ2 + Nβ∗2\u0011\nis the CF of ρb with M =\n\u0000¯n + 1\n2\n\u0001\ncosh 2λ and N = 1\n2\n\u0000¯n + 1\n2\n\u0001\nsinh 2λ.\n\nSubstituting Eqs. (4) and (5) into Eq.(1) and using the BS transformation relations, we have\n\nρout =\nZ d2α\nπ\nZ d2β\nπ χin (α) χb (β) Da ((rβ −tα)) Trb [Db (−(rα + tβ))]\n=\n1\nt2\nZ d2α\nπ χin (α) Da\n\u0012\n−1\nt α\n\u0013\nexp\n\u0010\n−X |α|2 + Y α2 + Y α∗2\u0011\n.\n(6)\n\n<<page 3>>\n3\n\nwith X = Mr2/t2 and Y\n= Nr2/t2.\n\nIn the above step, we have used the relation Trb [Db (−(rα + tβ))] =\nπδ(2) (−(rα + tβ)) and δ(2) (−(rα + tβ)) = 1\nt2 δ(2) \u0000−\n\u0000 r\nt α + β\n\u0001\u0001\n[12]. Eq.(6) can also be written as\n\nρout =\nZ d2α\nπ χin (tα) Da (−α) exp\n\u0010\n−Mr2 |α|2 + Nr2α2 + Nr2α∗2\u0011\n.\n(7)\n\nTherefore, once the input CF χin (α) is known, then the density operator of the output optical field can be obtained by performing the integration in Eqs. (6) or (7).\n\n## B. Photon number distribution\n\nThe PND is a key characteristic of every optical field. All interesting states of the field are constructed as a combination of Fock states, and different combinations have different quantum properties. Optical field propagation at different time has different character by analyzing the PND. Noticing the definition of the PND, i.e. Pout (n) = ⟨n| ρout |n⟩ and using Eq.(7), we have\n\nPout (n) =\n1\nn!\nd2n\ndhndsn\nZ d2α\nπ χin (αt) exp\n\u0012\n−\n\u0012\nMr2 + 1\n2\n\u0013\n|α|2\n\u0013\n× exp\n\u0000+Nr2α2 + Nr2α∗2 + hα∗−sα + hs\n\u0001\n|s=h=0\n(8)\n\nwhere\nwe\nhave\nused\nthat\nDa (−α)\n=\ne\n|α|2\n2 eα∗ae−αa†\nand\n⟨n|\n=\n⟨0|\n1\n√\nn!\ndn\ndsn exp (sa) |s=0\nas\nwell\nas\n|n⟩\n1\n√\nn!\ndn\ndhn exp\n\u0000ha†\u0001\n|h=0 |0⟩. Here, we remain the differential form. Thus, once the input CF is known, then the output PND can be obtained by performing the integration in Eq. (8).\n\n## C. Wigner function\n\nThe WF is a well-known quantum mechanical quasi-distribution function used extensively in molecular and quantum optical computations as well as in various theoretical contexts [13], whose negativity is a witness of the nonclassicality of a quantum state [14]. For a single-mode density operator ρ, the WF in the coherent state representation |z⟩ can be expressed as\n\nW(ε) = 2e2|ε|2\nπ\nZ d2z\nπ ⟨−z|ρ |z⟩exp (2εz∗−2zε∗) ,\n(9)\n\nwith ε = (x + ip) /\n√\n2. Thus, we have the WF\n\nWin(ε) = 1\nπ\nZ d2α\nπ χin (α) exp (−αε∗+ εα∗) ,\n(10)\n\nfor the input state ρin and\n\nWout(ε) = 1\nπ\n1\nt2\nZ d2α\nπ χin (α) exp\n\u0012\n−1\nt αε∗+ 1\nt εα∗\n\u0013\n× exp\n\u0000−Xαα∗+ Y α2 + Y α∗2\u0001\n,\n(11)\n\nfor the output state ρout. Next, we try our best to find the input-output relationship of the WF.\n\nRecalling the following identity [15, 16]\n\nZ d2z\nπ exp\n\u0010\nζ |z|2 + ξz + ηz∗+ fz2 + gz∗2\u0011\n=\n1\np\nζ2 −4fg\nexp\n\u0012\n1\nζ2 −4fg\n\u0000−ζξη + ξ2g + η2f\n\u0001\u0013\n,\n(12)\n\n<<page 4>>\n4\n\nwe find\n\nexp\n\u0000−Xαα∗+ Y α2 + Y α∗2\u0001\n=\nr\n1\nX2 −4Y 2\nZ d2γ\nπ exp\n\u0012\n−\nX\nX2 −4Y 2 |γ|2\n\u0013\n× exp\n\u0012\n+iα∗γ + iαγ∗−\nY\nX2 −4Y 2 γ2 −\nY\nX2 −4Y 2 γ∗2\n\u0013\n.\n(13)\n\nThen we change Eq.(13) into\n\nWout(ε) =\nr\n1\nX2 −4Y 2\n1\nt2\nZ d2γ\nπ Win(1\nt ε + iγ)\n× exp\n\u0012\n−\nX\nX2 −4Y 2 |γ|2 −\nY\nX2 −4Y 2 γ2 −\nY\nX2 −4Y 2 γ∗2\n\u0013\n,\n(14)\n\nthat is,\n\nWout(ε) =\n2\nT\nZ d2γ\nπ Win(1\nt ε + iγ)\n× exp\n\u0012\n−2t2 cosh 2λ\nT\n|γ|2 −t2 sinh 2λ\nT\nγ2 −t2 sinh 2λ\nT\nγ∗2\n\u0013\n,\n(15)\n\nwith T = r2 (2¯n + 1).\n\nReplacing z = 1\nt ε + iγ, then we change Eq.(15) in another form as follows\n\nWout(ε) =\n2\nT\nZ d2z\nπ Win(z) exp\n\u0012\n−2 cosh2λ\nT\n|zt −ε|2\n\u0013\n× exp\n\u0012sinh 2λ\nT\n(zt −ε)2 + sinh 2λ\nT\n(z∗t −ε∗)2\n\u0013\n.\n(16)\n\nThus the transformation formula of the input-output WF in the BS formalism have been obtained. Once the input WF is known, then the output WF can be obtained by performing the integration in Eq. (15) or (16).\n\n# IV. OPTICAL-CHANNEL FORMALISM\n\nNow, we come back to the realistic situation. Noticing the correspondences between the BS formalism and the optical-channel formalism, i.e., t = e−κτ/2, r =\np\n(1 −e−κτ), we can easily obtain the time evolution formulas of the density operator, the PND and the WF at the moment τ from Eqs.(7), (8) and (16).\n\n## A. Density operator\n\nFrom Eq.(7), we obtain the density operator of the optical field at any time\n\nρ (τ) =\nZ d2α\nπ χ\n\u0010\nαe−κτ/2; 0\n\u0011\nDa (−α) exp\n\u0010\n−M\n\u00001 −e−κτ\u0001\n|α|2\u0011\n× exp\n\u0000N\n\u00001 −e−κτ\u0001\nα2 + N\n\u00001 −e−κτ\u0001\nα∗2\u0001\n.\n(17)\n\nwhere χ (α; 0) is the CF of the initial state ρ (0). Hence, as long as we know the initial CF, we can obtain the density operator at any time.\n\n## B. Photon number distribution\n\nFrom Eq.(8), we obtain the PND of the optical field at any time\n\nP (n; τ) =\n1\nn!\nd2n\ndhndsn\nZ d2α\nπ χ\n\u0010\nαe−κτ/2; 0\n\u0011\nexp\n\u0012\n−\n\u0012\nM\n\u00001 −e−κτ\u0001\n+ 1\n2\n\u0013\n|α|2\n\u0013\n× exp\n\u0000N\n\u00001 −e−κτ\u0001\nα2 + N\n\u00001 −e−κτ\u0001\nα∗2 + hα∗−sα + hs\n\u0001\n|s=h=0.\n(18)\n\n<<page 5>>\n5\n\nOne can verify the correctness of this formula in two extreme cases, i.e. τ →0 and τ →∞. Once the initial CF is known, then the final PND can be obtained by performing the integration in Eq. (18).\n\n## C. Wigner function\n\nUsing the correspondences Win(z) →W(z; 0) and Wout(z) →W(ε; τ), Eq.(16) can further expressed as\n\nW(ε; τ) =\n2\nT\nZ d2z\nπ W(z; 0) exp\n\u0012\n−2 cosh2λ\nT\n\f\f\fze−κτ/2 −ε\n\f\f\f\n2\u0013\n× exp\n\u0012sinh 2λ\nT\n\u0010\nze−κτ/2 −ε\n\u00112\n+ sinh 2λ\nT\n\u0010\nz∗e−κτ/2 −ε∗\u00112\u0013\n,\n(19)\n\nwith T = (2¯n + 1) (1 −e−κτ). This is an important result, which shows the evolution formula of the WF for the optical field through the optical channel. Thus once the initial WF is known, the WF at any time can be obtained by performing the integration in Eq. (19). In particular, when λ = 0, ¯n = 0, Eq.(19) is reduced to the result in Ref.[17]. Moreover, when κτ →∞, W(ε; τ) →Wρb(ε), just like in Appendix A.\n\n# V. APPLICATION OF THE EVOLUTION FORMULAS\n\nActually, we have derive some general formulas in the general Gaussian reservoir (or environment) with squeezed thermal state. However, for the sake of simplicity, we discuss the time evolution of the PND and the WF by taking thermal channel (that is, we set λ = 0 and M = ¯n + 1\n2, N = 0) and the initial single-photon-added coherent state\n\n|ψa⟩=\n1\n√\nΓ\na† |κ⟩.\n(20)\n\nHere |κ⟩is a coherent state and Γ = 1 + |κ|2 is the normalization factor.\n\n## A. Photon number distribution\n\nUsing Eq.(30) and (18), we have\n\nP (n; τ) =\nΛ\nn!Γ\nd2+2n\ndh1ds1dhndsn exp (+κh1 + s1κ∗+ h1s1 + hs)\n× exp\n\u0010\nΛ\n\u0010\nh1e−κτ/2 + κ∗e−κτ/2 −s\n\u0011 \u0010\nh −κe−κτ/2 −s1e−κτ/2\u0011\u0011\n|s=h=s1=h1=0,\n(21)\n\nwith Λ = (¯n −¯ne−κτ + 1)−1. After verfication, we find that P (n; 0) →P|ψa⟩(n) and P (n; ∞) →¯nn/ (¯n + 1)n+1 as expected.\n\nIn Fig.2, we plot the PND for two different cases with (a) κ = 0.5 + 0.5i ¯n = 0.5 and (b) κ = 1, ¯n = 0.3 at different evolution time. The blue, purple, brown and green bars are corresponding to the cases at κτ = 0, κτ = 0.05, κτ = 0.25, and κτ →∞. Taking P (0) as an example, as shown for the first bars in Fig.2 (a), the zero-photon component P (0) is increasing with the evolution time κτ, where we find P (0) =0 at κτ = 0, P (0) =0.0302572 at κτ = 0.05, P (0) =0.145164 at κτ = 0.25, and P (0) =0.666667 at κτ →∞.\n\n## B. Wigner function\n\nSubstituting Eq.(31) into Eq.(19), we have\n\nW(ε; τ) = 2\nπΓ\n\u0010\ng1 |κ|2 −2g2κε∗−2g2κ∗ε + 4g3 |ε|2 −g4\n\u0011\nexp\n\u0012\n−2g\n\f\f\fκe−κτ/2 −ε\n\f\f\f\n2\u0013\n,\n(22)\n\nwith g1 = (2ge−κτ −1)2 g, g2 = 2g3e−3κτ/2 −g2e−κτ/2, g3 = g3e−κτ, g4 = 2g2e−κτ −g, and g = (2¯n −2¯ne−κτ + 1)−1. In particular, when κτ →0, we find that W(ε; 0) →W|ψa⟩(ε), (see appendix B (3)); while κτ →∞, we have\n\n<<page 6>>\n6\n\n      \n(a)\n(b)\n\nFIG. 2: (Colour online) Time evolution of the photon number distribution for a single-photon-addition coherent state as the initial state through thermal channel with (a) κ = 0.5 + 0.5i ¯n = 0.5; (b) κ = 1, ¯n = 0.3. The blue, purple, brass and green bars are corresponding to the cases κτ = 0, κτ = 0.05, κτ = 0.25, and κτ →∞(i.e. the thermal state).\n\n(b) \n(c) \n(d)\n(a)\n\nFIG. 3: (Colour online) Time evolution of the Wigner function for a single-photon-addition coherent state with κ = 0.5 + 0.5i as the initial state in thermal channel with ¯n = 0.5. (a) κτ = 0; (b) κτ = 0.05; (c) κτ = 0.25; (d) κτ →∞(i.e. the thermal state).\n\nW(ε; ∞) = 2\nπ\n1\n2¯n+1 exp\n\u0010\n−\n2\n2¯n+1 |ε|2\u0011\n, (see appendix A (3) with λ = 0) which is just the WF of the thermal state, also the environment, as expected.\n\nIn Fig.3, we plot the WFs for the case κ = 0.5 + 0.5i, ¯n = 0.5 at κτ = 0, κτ = 0.05, κτ = 0.25, and κτ →∞. With the increase of time, the negativity of the WF gradually decreases until it disappears.\n\n# VI. CONCLUSION\n\nIn this paper, we have explored the problem on the optical fields propagation in realistic environments. For our purpose, we have abstracted it into the optical-channel formalism and the BS formalism. In the BS formalism, we derive the input-output relation of the density operator in the CF formalism, which is convenient for obtaining the formulas of the PND and the WF. Using the correspondences of these two formalisms, we easily obtain the time evolution formulas of the density operator, the PND and the WF. These formulas are very important in quantum optics and quantum statistics. As long as we know the CF or the WF of the initial optical field, we can readily find the statistical properties of the optical fields at any time. As an example, we have discussed the case of the single-photon-added coherent state propagated in thermal channel.\n\nAcknowledgments\n\nThis work was supported by the Natural Science Foundation of Jiangxi Province of China (20151BAB202013) and the Research Foundation of the Education Department of Jiangxi Province of China (GJJ150338).\n\nAppendix A: Some character of squeezed thermal state\n\n<<page 7>>\n7\n\nIn this appendix, we give a good expression of the density operator and then calculate the CF and WF for squeezed thermal state.\n\n1) Density operator\n\nRecalling the P-function of squeezed thermal state ρb\n\nρb = 1\n¯n\nZ d2η\nπ e−1\n¯n |η|2S (λ) |η⟩⟨η| S† (λ) .\n(23)\n\nand noticing the squeezing operator S (λ) = R\ndx\n√\ne−λ\n\f\f\nx\ne−λ\n\u000b\n⟨x| with |x⟩= π−1\n4 e−x2/2+\n√\n2xb†−b†2/2 |0⟩, leading to\n\nS (λ) |η⟩=\n1\n√µ exp\n \n−|η|2\n2\n−ν\n2 η2 + η\nµb† + ν\n2 b†2\n!\n|0⟩,\n(24)\n\nwith µ = cosh λ and ν = tanh λ, we know\n\nρb =\n1\nµ¯n\nZ d2η\nπ exp\n\u0012\n−1\n¯n |η|2 −|η|2 −ν\n2 η2 −ν\n2 η∗2\n\u0013\n× exp\n\u0012 1\nµηb† + ν\n2 b†2\n\u0013\n|0⟩⟨0| exp\n\u0012 1\nµη∗b + ν\n2 b2\n\u0013\n.\n(25)\n\nThis expression of the density operator can help us calculate its statistical properties.\n\n2) Characteristic function\n\nThe CF of squeezed thermal state is given by χb (β) =Tr(ρbDb (β)) with Db (β) = e|β|2/2e−β∗beβb† [18]. Thus, we have\n\nχb (β) =\n1\nµ¯ne\n|β|2\n2\nZ d2η\nπ exp\n\u0012\n−1\n¯n |η|2 −|η|2 −ν\n2 η2 −ν\n2 η∗2\n\u0013\n⟨0| exp\n\u0012 1\nµη∗b −β∗b + ν\n2 b2\n\u0013\nexp\n\u0012 1\nµηb† + βb† + ν\n2 b†2\n\u0013\n|0⟩\n= exp\n\u0010\n−M |β|2 + Nβ2 + Nβ∗2\u0011\n.\n(26)\n\n3) Wigner function\n\nUsing Eqs.(9) and (25), we obtain the WF of the squeezed thermal state as follows\n\nWρb(ε) = 2\nπ\n1\n2¯n + 1 exp\n\u0012\n−2cosh2λ\n2¯n + 1 |ε|2 + sinh 2λ\n2¯n + 1 ε2 + sinh 2λ\n2¯n + 1 (ε∗)2\n\u0013\n.\n(27)\n\nAppendix B: Some character of single-photon-added coherent state\n\nIn this appendix, we derive the normalization factor, the CF and the WF for the single-photon-added coherent state |ψa⟩=\n1\n√\nΓa† |κ⟩. The density operator ρa = |ψa⟩⟨ψa| can be expressed as\n\nρa = 1\nΓ exp\n\u0010\n−|κ|2\u0011\nd2\ndh1ds1\nexp\n\u0000s1a† + κa†\u0001\n|0⟩⟨0| exp (h1a + κ∗a) |s1=h1=0,\n(28)\n\n1) Normalization factor\n\nUsing Tr(ρa) = 1, we have the normalization factor\n\nΓ = exp\n\u0010\n−|κ|2\u0011\n⟨0| exp (h1a + κ∗a) exp\n\u0000s1a† + κa†\u0001\n|0⟩|s1=h1=0\n= exp\n\u0010\n−|κ|2\u0011\nd2\ndh1ds1\nexp ((h1 + κ∗) (s1 + κ)) |s1=h1=0\n= 1 + |κ|2 ,\n(29)\n\n2) characteristic function\n\n<<page 8>>\n8\n\nSubstituting Da (α) = e\n|α|2\n2 e−α∗aeαa† and Eq.(28) into χin (α) =Tr(ρaDa (α)), we obtain the CF as follows\n\nχin (α) = 1\nΓ exp\n \n|α|2\n2\n−|κ|2\n!\nd2\ndh1ds1\nexp ((h1 + κ∗−α∗) (s1 + κ + α)) |s1=h1=0\n= 1\nΓ\n\u0010\nακ∗−|α|2 −κα∗+ |κ|2 + 1\n\u0011\nexp\n \n−|α|2\n2\n+ ακ∗−κα∗\n!\n(30)\n\n3) Wigner function\n\nSubstituting Eq.(28) into Eq.(9), we obtain the WF\n\nW|ψa⟩(ε) =\n2\nπΓ exp\n\u0010\n2 |ε|2 −|κ|2\u0011\nd2\ndh1ds1\nexp ((h1 + κ∗−2ε∗) (2ε −s1 −κ)) |s1=h1=0\n=\n2\nπΓ (κκ∗−2κε∗−2εκ∗+ 4εε∗−1) exp\n\u0010\n−2 |κ −ε|2\u0011\n.\n(31)\n\n[1] M. O. Scully and M. S. Zubairy, Quantum optics (Cambridge University Press, 1997).\n[2] H. J. Carmichael, Statistical methods in quantum Optics 1 (Springer-Verlag Berlin Heidelberg, 1999).\n[3] H. J. Carmichael, An open systems approach to quantum optics (Springer-Verlag Berlin Heidelberg, 1999).\n[4] U. Weiss, Quantum Dissipative Systems (World Scientific, Singapore, 1999).\n[5] B. Daeubler, H. Risken, and L. Schoendorff, Phys. Rev. A 48, 3955 (1993).\n[6] H. J. Briegel and B. G. Englert, Phys. Rev. A 47, 3311 (1993).\n[7] G. M. d’Ariano, Phys. Lett. A 187, 231 (1994).\n[8] H. Y. Fan and L. Y. Hu, Mod. Phys. lett. B 22, 2435 (2008).\n[9] U. Leonhardt, Phys. Rev. A 48, 3265 (1993).\n[10] G. D. Palma, A. Mari, V. Giovannetti, and A. S. Holevo, J. Math. Phys. 56, 052202 (2015).\n[11] L. Y. Hu, Z. Y. Liao, S. L. Ma, and M. S. Zubairy, Phys. Rev. A 93, 033807 (2016).\n[12] S. M. Barnett and P. M. Radmore, Methods in theoretical quantum optics (Clarendon Press, Oxford, 1997).\n[13] S. H. H. Chowdhury and S. T. Ali, J. Math. Phys. 56, 122102 (2015).\n[14] A. Kenfack, K. Zyczkowski, J. Opt. B, Quantum Semiclass. Opt. 6, 396 (2004).\n[15] R. R. Puri, Mathematical Methods of Quantum Optics (Springer-Verlag, Berlin, 2001).\n[16] N. Spagnolo, C. Vitelli, T. D. Angelis, F. Sciarrino, and F. D. Martini, Phys. Rev. A 80, 032318 2009.\n[17] L. Y. Hu and H. Y. Fan, Opt. Commun. 282, 4379 (2009).\n[18] F. Parisio, J. Math. Phys. 57, 032101 (2016).",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "On the optical fields propagation in realistic environments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PHYSICAL AND MATHEMATICAL MODEL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. BEAM SPLITTER FORMALISM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Density operator",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Photon number distribution",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Wigner function",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. OPTICAL-CHANNEL FORMALISM",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Density operator",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Photon number distribution",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. APPLICATION OF THE EVOLUTION FORMULAS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Photon number distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.786537200001476,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On the optical fields propagation in realistic environments"
+  ]
+ }
+}

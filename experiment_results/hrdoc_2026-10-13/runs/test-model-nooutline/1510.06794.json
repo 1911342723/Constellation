@@ -1,0 +1,86 @@
+{
+ "doc": "1510.06794",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 3,
+  "pred": 4,
+  "tp": 3,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 74,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3355,
+   "completion_tokens": 176,
+   "total_tokens": 3531
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.168129300000146,
+ "metrics_v1": {
+  "gt": 3,
+  "pred": 4,
+  "tp": 3,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 3,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

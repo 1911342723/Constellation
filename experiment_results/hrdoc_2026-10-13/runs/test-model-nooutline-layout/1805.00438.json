@@ -1,0 +1,140 @@
+{
+ "doc": "1805.00438",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 134,
+  "layout_marked": 13,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4173,
+   "completion_tokens": 532,
+   "total_tokens": 4705
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9388379204892966,
+  "inserted_word_share": 0.8977936503132472
+ },
+ "predictions": [
+  {
+   "text": "An open-source job management framework for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Overview",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Data Structure",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Job Execution Sequence",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Read-Only Mode",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. Application Programming Interfaces",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Getting Started with OACIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Installation",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2. Registering Hosts and Simulators",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.433108000004722,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "doc": "1612.05362",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "2 Methods"
+  ],
+  "unmatched_pred": [
+   "2 Methods"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7300,
+   "completion_tokens": 6759
+  },
+  "elapsed_llm_seconds": 29.561214900000778,
+  "content_preservation": 0.9838318512530315,
+  "inserted_word_share": 0.008149959250203787,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Medical Image Synthesis with Context-Aware Generative Adversarial Networks",
+    0,
+    1
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Methods",
+    2,
+    2
+   ],
+   [
+    "2.1 Proposed Generative Adversarial Networks",
+    3,
+    3
+   ],
+   [
+    "2.2 Auto-Context Model (ACM) for Refinement",
+    5,
+    3
+   ],
+   [
+    "3 Datasets",
+    6,
+    2
+   ],
+   [
+    "4 Experimental Results",
+    7,
+    2
+   ],
+   [
+    "4.1 Impact of Proposed GAN model",
+    7,
+    3
+   ],
+   [
+    "4.2 Impact of Auto-Context Refinement",
+    7,
+    3
+   ],
+   [
+    "4.3 Experimental Results for Brain Dataset",
+    8,
+    3
+   ],
+   [
+    "4.4 Experimental Results for Pelvic Dataset",
+    8,
+    3
+   ],
+   [
+    "5 Conclusions",
+    9,
+    2
+   ],
+   [
+    "References",
+    11,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Proposed Generative Adversarial Networks",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Auto-Context Model (ACM) for Refinement",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Datasets",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experimental Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Impact of Proposed GAN model",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2 Impact of Auto-Context Refinement",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3 Experimental Results for Brain Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.4 Experimental Results for Pelvic Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.6944653999999,
+ "metrics_raw": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Medical Image Synthesis with Context-Aware Generative Adversarial Networks"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "2 Methods"
+  ],
+  "unmatched_pred": [
+   "2 Methods"
+  ],
+  "ignored_title_predictions": null
+ }
+}

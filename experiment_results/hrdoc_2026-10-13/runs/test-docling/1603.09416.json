@@ -1,0 +1,105 @@
+{
+ "doc": "1603.09416",
+ "system": "docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "pansion of the Universe"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 6.794722300001013
+ },
+ "predictions": [
+  {
+   "text": "Search for the primordial gravitational waves with Very Long Baseline Interferometry",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Galactic Aberration",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Rotation, Primordial Gravitational Waves, and Anisotropic Expansion of the Universe",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Observations and results",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Acknowledgment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.005731499993999023,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "pansion of the Universe"
+  ],
+  "unmatched_pred": [
+   "Search for the primordial gravitational waves with Very Long Baseline Interferom"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "pansion of the Universe"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

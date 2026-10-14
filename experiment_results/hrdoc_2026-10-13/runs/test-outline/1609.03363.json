@@ -1,0 +1,182 @@
+{
+ "doc": "1609.03363",
+ "system": "outline",
+ "metrics": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [
+   "Abstract—",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Background and Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A The 3GPP MTC Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Software Defined Networking (SDN) and Network Function Virtualization (NFV)",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-C Notational preliminaries",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III CONDENSE Architecture: IoT/Cloud Integration for 5G",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A CONDENSE Architecture: Modules and Layers",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III-B CONDENSE Architecture: Implementation",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV Atomic Function Computation Layer",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Analog-domain Atomic Function Computation (A-AFC)",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV-B Digital-domain Atomic Function Computation (D-AFC)",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V Network Function Computation Layer",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-A Theoretical Aspects of NFC Layer",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "V-B Implementation Aspects of NFC Layer",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "VI Application Layer",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A Data recovery through network coding",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VI-B Statistical estimation and learning",
+   "page": 10,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VI-C Neural networks",
+   "page": 11,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VII Other implementation aspects",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII Conclusions",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.06908280000061495,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [
+   "Abstract—",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "doc": "1803.10889",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 170,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. PRELIMINARIES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. notations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. DM framework",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1. distortion function",
+   "page": 1,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.2. adaptive coding method",
+   "page": 1,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3. STEGANOGRAPHIC ADVERSARIAL EXAMPLE",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. adversarial example",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2. fast gradient sign method",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3. steganographic adversarial example",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. EXPERIMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.5848374999986845,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

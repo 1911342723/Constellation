@@ -1,0 +1,147 @@
+{
+ "doc": "1807.09205",
+ "system": "docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "Hierarchical Convolutional Neural Network (H-CNN) We propose a hierarchical",
+   "Recurrent Convolutional Neural Network (Recurrent-CNN) We also propose a re-"
+  ],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 36.0806663000003
+ },
+ "predictions": [
+  {
+   "text": "End-to-End Deep Imitation Learning: Robot Soccer Case Study",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RelatedWork",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 End to End Learning",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Ball Dribbling Task",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Dataset Creation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Deep Imitation Learning",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 The Learning Performance",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.006712100002914667,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "Hierarchical Convolutional Neural Network (H-CNN) We propose a hierarchical",
+   "Recurrent Convolutional Neural Network (Recurrent-CNN) We also propose a re-"
+  ],
+  "unmatched_pred": [
+   "End-to-End Deep Imitation Learning: Robot Soccer Case Study",
+   "Acknowledgments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [
+   "Hierarchical Convolutional Neural Network (H-CNN) We propose a hierarchical",
+   "Recurrent Convolutional Neural Network (Recurrent-CNN) We also propose a re-"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

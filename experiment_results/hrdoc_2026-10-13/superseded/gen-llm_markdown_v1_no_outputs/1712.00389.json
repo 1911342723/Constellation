@@ -1,0 +1,470 @@
+{
+ "doc": "1712.00389",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.9642857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 33651,
+   "completion_tokens": 20487
+  },
+  "elapsed_llm_seconds": 93.75091710000197,
+  "content_preservation": 0.5821956622533615,
+  "inserted_word_share": 0.16338466094166415,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Statistical properties of Fermi GBM GRBs' spectra",
+    0,
+    1
+   ],
+   [
+    "ABSTRACT",
+    0,
+    2
+   ],
+   [
+    "1 INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "2 GBM SPECTRAL DATA",
+    0,
+    2
+   ],
+   [
+    "3 MULTIVARIATE ANALYSIS OF THE DATA",
+    0,
+    2
+   ],
+   [
+    "3.1 Analysis of contingency tables",
+    0,
+    3
+   ],
+   [
+    "3.1.1 Similarity between columns and between rows",
+    0,
+    4
+   ],
+   [
+    "3.1.2 Homogeneity test of the contingency table",
+    0,
+    4
+   ],
+   [
+    "3.2 Correspondence analysis (CA)",
+    0,
+    3
+   ],
+   [
+    "3.2.1 Mathematical Background",
+    0,
+    4
+   ],
+   [
+    "3.2.2 CA of the GBM Data",
+    0,
+    4
+   ],
+   [
+    "3.3 Discriminant Analysis",
+    0,
+    3
+   ],
+   [
+    "3.3.1 Mathematical background",
+    0,
+    4
+   ],
+   [
+    "3.3.2 LDA of the GBM Data",
+    0,
+    4
+   ],
+   [
+    "3.3.3 LDA of GRBs jointly detected with the Swift satellite",
+    0,
+    4
+   ],
+   [
+    "3.3.4 LDA of GRBs having measured redshift",
+    0,
+    4
+   ],
+   [
+    "4 DISCUSSION",
+    0,
+    2
+   ],
+   [
+    "4.1 Discriminant power of the observed variables",
+    0,
+    3
+   ],
+   [
+    "4.1.1 Discriminant power of peak flux and fluence",
+    0,
+    4
+   ],
+   [
+    "4.1.2 Reliability of the spectra (cross validation)",
+    0,
+    4
+   ],
+   [
+    "4.2 Transition from peak flux to fluence spectral types",
+    0,
+    3
+   ],
+   [
+    "4.2.1 Role of the signal to noise ratio",
+    0,
+    4
+   ],
+   [
+    "4.2.2 Physical differences between the spectral type obtained from the pflx and flnc",
+    0,
+    4
+   ],
+   [
+    "4.2.3 Comparison of the spectral types detected by the Swift and Fermi",
+    0,
+    4
+   ],
+   [
+    "4.2.4 Physics of the transition of peak flux to fluence spectra",
+    0,
+    4
+   ],
+   [
+    "5 SUMMARY AND CONCLUSIONS",
+    0,
+    2
+   ],
+   [
+    "ACKNOWLEDGEMENTS",
+    0,
+    2
+   ],
+   [
+    "REFERENCES",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 GBM SPECTRAL DATA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 MULTIVARIATE ANALYSIS OF THE DATA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Analysis of contingency tables",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.1.1 Similarity between columns and between rows",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3.1.2 Homogeneity test of the contingency table",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Correspondence analysis (CA)",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 Mathematical Background",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.2.2 CA of the GBM Data",
+   "page": 4,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.3 Discriminant Analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3.1 Mathematical background",
+   "page": 5,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.2 LDA of the GBM Data",
+   "page": 6,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.3 LDA of GRBs jointly detected with the Swift satellite",
+   "page": 6,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.4 LDA of GRBs having measured redshift",
+   "page": 7,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "4 DISCUSSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Discriminant power of the observed variables",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.1.1 Discriminant power of peak flux and fluence",
+   "page": 8,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "4.1.2 Reliability of the spectra (cross validation)",
+   "page": 9,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "4.2 Transition from peak flux to fluence spectral types",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2.1 Role of the signal to noise ratio",
+   "page": 9,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "4.2.2 Physical differences between the spectral type obtained from the pflx and flnc",
+   "page": 10,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "4.2.3 Comparison of the spectral types detected by the Swift and Fermi",
+   "page": 11,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "4.2.4 Physics of the transition of peak flux to fluence spectra",
+   "page": 12,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "5 SUMMARY AND CONCLUSIONS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 94.14126880000185,
+ "metrics_raw": {
+  "gt": 26,
+  "pred": 28,
+  "tp": 4,
+  "fp": 24,
+  "fn": 22,
+  "level_correct": 0,
+  "parent_correct": 1,
+  "teds": 0.1724137931034483,
+  "unmatched_gt": [
+   "3.1.1 Similarity between columns and between rows",
+   "3.1.2 Homogeneity test of the contingency table",
+   "3.2 Correspondence analysis (CA)",
+   "3.2.1 Mathematical Background",
+   "3.2.2 CA of the GBM Data",
+   "3.3 Discriminant Analysis",
+   "3.3.1 Mathematical background",
+   "3.3.2 LDA of the GBM Data",
+   "3.3.3 LDA of GRBs jointly detected with the Swift satellite",
+   "3.3.4 LDA of GRBs having measured redshift",
+   "4 DISCUSSION",
+   "4.1 Discriminant power of the observed variables",
+   "4.1.1 Discriminant power of peak flux and fluence",
+   "4.1.2 Reliability of the spectra (cross validation)",
+   "4.2 Transition from peak flux to fluence spectral types",
+   "4.2.1 Role of the signal to noise ratio",
+   "4.2.2 Physical differences between the spectral type obtained from the pflx and ",
+   "4.2.3 Comparison of the spectral types detected by the Swift and Fermi",
+   "4.2.4 Physics of the transition of peak flux to fluence spectra",
+   "5 SUMMARY AND CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES"
+  ],
+  "unmatched_pred": [
+   "Statistical properties of Fermi GBM GRBs' spectra",
+   "ABSTRACT",
+   "3.1.1 Similarity between columns and between rows",
+   "3.1.2 Homogeneity test of the contingency table",
+   "3.2 Correspondence analysis (CA)",
+   "3.2.1 Mathematical Background",
+   "3.2.2 CA of the GBM Data",
+   "3.3 Discriminant Analysis",
+   "3.3.1 Mathematical background",
+   "3.3.2 LDA of the GBM Data",
+   "3.3.3 LDA of GRBs jointly detected with the Swift satellite",
+   "3.3.4 LDA of GRBs having measured redshift",
+   "4 DISCUSSION",
+   "4.1 Discriminant power of the observed variables",
+   "4.1.1 Discriminant power of peak flux and fluence",
+   "4.1.2 Reliability of the spectra (cross validation)",
+   "4.2 Transition from peak flux to fluence spectral types",
+   "4.2.1 Role of the signal to noise ratio",
+   "4.2.2 Physical differences between the spectral type obtained from the pflx and ",
+   "4.2.3 Comparison of the spectral types detected by the Swift and Fermi",
+   "4.2.4 Physics of the transition of peak flux to fluence spectra",
+   "5 SUMMARY AND CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 4,
+  "fp": 23,
+  "fn": 22,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.1785714285714286,
+  "unmatched_gt": [
+   "3.1.1 Similarity between columns and between rows",
+   "3.1.2 Homogeneity test of the contingency table",
+   "3.2 Correspondence analysis (CA)",
+   "3.2.1 Mathematical Background",
+   "3.2.2 CA of the GBM Data",
+   "3.3 Discriminant Analysis",
+   "3.3.1 Mathematical background",
+   "3.3.2 LDA of the GBM Data",
+   "3.3.3 LDA of GRBs jointly detected with the Swift satellite",
+   "3.3.4 LDA of GRBs having measured redshift",
+   "4 DISCUSSION",
+   "4.1 Discriminant power of the observed variables",
+   "4.1.1 Discriminant power of peak flux and fluence",
+   "4.1.2 Reliability of the spectra (cross validation)",
+   "4.2 Transition from peak flux to fluence spectral types",
+   "4.2.1 Role of the signal to noise ratio",
+   "4.2.2 Physical differences between the spectral type obtained from the pflx and ",
+   "4.2.3 Comparison of the spectral types detected by the Swift and Fermi",
+   "4.2.4 Physics of the transition of peak flux to fluence spectra",
+   "5 SUMMARY AND CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "3.1.1 Similarity between columns and between rows",
+   "3.1.2 Homogeneity test of the contingency table",
+   "3.2 Correspondence analysis (CA)",
+   "3.2.1 Mathematical Background",
+   "3.2.2 CA of the GBM Data",
+   "3.3 Discriminant Analysis",
+   "3.3.1 Mathematical background",
+   "3.3.2 LDA of the GBM Data",
+   "3.3.3 LDA of GRBs jointly detected with the Swift satellite",
+   "3.3.4 LDA of GRBs having measured redshift",
+   "4 DISCUSSION",
+   "4.1 Discriminant power of the observed variables",
+   "4.1.1 Discriminant power of peak flux and fluence",
+   "4.1.2 Reliability of the spectra (cross validation)",
+   "4.2 Transition from peak flux to fluence spectral types",
+   "4.2.1 Role of the signal to noise ratio",
+   "4.2.2 Physical differences between the spectral type obtained from the pflx and ",
+   "4.2.3 Comparison of the spectral types detected by the Swift and Fermi",
+   "4.2.4 Physics of the transition of peak flux to fluence spectra",
+   "5 SUMMARY AND CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

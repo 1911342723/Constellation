@@ -1,0 +1,195 @@
+{
+ "doc": "1706.10170",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 23,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.5416666666666667,
+  "unmatched_gt": [
+   "Electron-phonon interactions",
+   "UNITARY TIME EVOLUTION",
+   "DISSIPATIVE TIME EVOLUTION",
+   "photoemission",
+   "I. NUMERICAL SOLUTION OF THE MASTER",
+   "EQUATION"
+  ],
+  "unmatched_pred": [
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.5217391304347826,
+  "unmatched_gt": [
+   "Electron-phonon interactions",
+   "UNITARY TIME EVOLUTION",
+   "DISSIPATIVE TIME EVOLUTION",
+   "photoemission",
+   "I. NUMERICAL SOLUTION OF THE MASTER",
+   "EQUATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 837,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10414,
+   "completion_tokens": 821,
+   "total_tokens": 11235
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.8929902718428948,
+  "inserted_word_share": 0.9315568687023539
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Quench dynamics",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Electron-phonon coupling",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Equations of motion in the presence of",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. OBSERVABLES IN EQUILIBRIUM",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Circular asymmetry",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Time-resolved Hall eﬀect",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. TRACING THE QUENCH DYNAMICS –",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Time-dependent Hall eﬀect",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Steady-state conductance",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Transient circular asymmetry",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. TRACING THE QUENCH DYNAMICS –",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Transient dynamics probed by time-resolved",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Transient circular asymmetry",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 28.259163100003207,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.5416666666666667,
+  "unmatched_gt": [
+   "Electron-phonon interactions",
+   "UNITARY TIME EVOLUTION",
+   "DISSIPATIVE TIME EVOLUTION",
+   "photoemission",
+   "I. NUMERICAL SOLUTION OF THE MASTER",
+   "EQUATION"
+  ],
+  "unmatched_pred": [
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

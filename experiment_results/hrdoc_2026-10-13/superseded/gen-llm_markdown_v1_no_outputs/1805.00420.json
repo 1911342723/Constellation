@@ -1,0 +1,320 @@
+{
+ "doc": "1805.00420",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 11911,
+   "completion_tokens": 11060
+  },
+  "elapsed_llm_seconds": 51.26716859999942,
+  "content_preservation": 0.9392193745591347,
+  "inserted_word_share": 0.05567375886524828,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Spatio-temporal Patterns of Indian Monsoon Rainfall",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Methodology",
+    0,
+    1
+   ],
+   [
+    "3 Results: Spatial Patterns",
+    0,
+    1
+   ],
+   [
+    "3.1 Prominent Spatial Patterns",
+    0,
+    2
+   ],
+   [
+    "3.2 Testing the robustness of patterns",
+    0,
+    2
+   ],
+   [
+    "3.3 Seasonal evolution of spatial patterns",
+    0,
+    2
+   ],
+   [
+    "3.4 Probability distribution of prominent spatial transitions",
+    0,
+    2
+   ],
+   [
+    "3.4.1 Self transitions: length of spells",
+    0,
+    3
+   ],
+   [
+    "4 Results: identifying the active and break spells",
+    0,
+    1
+   ],
+   [
+    "4.1 All-India Active-Break spells",
+    0,
+    2
+   ],
+   [
+    "4.2 Local Wet-Dry Spells",
+    0,
+    2
+   ],
+   [
+    "4.3 Regional Wet-Dry Spells",
+    0,
+    2
+   ],
+   [
+    "5 Discussion and future directions",
+    0,
+    1
+   ],
+   [
+    "Acknowledgements",
+    0,
+    1
+   ],
+   [
+    "References",
+    0,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Spatio-temporal Patterns of Indian Monsoon Rainfall",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methodology",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results: Spatial Patterns",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Prominent Spatial Patterns",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Testing the robustness of patterns",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Seasonal evolution of spatial patterns",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4 Probability distribution of prominent spatial transitions",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4.1 Self transitions: length of spells",
+   "page": 8,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4 Results: identifying the active and break spells",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 All-India Active-Break spells",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Local Wet-Dry Spells",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Regional Wet-Dry Spells",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Discussion and future directions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 51.36734010000146,
+ "metrics_raw": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 2,
+  "fp": 15,
+  "fn": 14,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "2 Methodology",
+   "3 Results: Spatial Patterns",
+   "3.1 Prominent Spatial Patterns",
+   "3.2 Testing the robustness of patterns",
+   "3.3 Seasonal evolution of spatial patterns",
+   "3.4 Probability distribution of prominent spatial transitions",
+   "3.4.1 Self transitions: length of sp ells",
+   "4 Results: identifying the active and break spells",
+   "4.1 All-India Active-Break spells",
+   "4.2 Lo cal Wet-Dry Sp ells",
+   "4.3 Regional Wet-Dry Spells",
+   "5 Discussion and future directions",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Spatio-temporal Patterns of Indian Monsoon Rainfall",
+   "2 Methodology",
+   "3 Results: Spatial Patterns",
+   "3.1 Prominent Spatial Patterns",
+   "3.2 Testing the robustness of patterns",
+   "3.3 Seasonal evolution of spatial patterns",
+   "3.4 Probability distribution of prominent spatial transitions",
+   "3.4.1 Self transitions: length of spells",
+   "4 Results: identifying the active and break spells",
+   "4.1 All-India Active-Break spells",
+   "4.2 Local Wet-Dry Spells",
+   "4.3 Regional Wet-Dry Spells",
+   "5 Discussion and future directions",
+   "Acknowledgements",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 2,
+  "fp": 15,
+  "fn": 14,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "2 Methodology",
+   "3 Results: Spatial Patterns",
+   "3.1 Prominent Spatial Patterns",
+   "3.2 Testing the robustness of patterns",
+   "3.3 Seasonal evolution of spatial patterns",
+   "3.4 Probability distribution of prominent spatial transitions",
+   "3.4.1 Self transitions: length of sp ells",
+   "4 Results: identifying the active and break spells",
+   "4.1 All-India Active-Break spells",
+   "4.2 Lo cal Wet-Dry Sp ells",
+   "4.3 Regional Wet-Dry Spells",
+   "5 Discussion and future directions",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Spatio-temporal Patterns of Indian Monsoon Rainfall",
+   "2 Methodology",
+   "3 Results: Spatial Patterns",
+   "3.1 Prominent Spatial Patterns",
+   "3.2 Testing the robustness of patterns",
+   "3.3 Seasonal evolution of spatial patterns",
+   "3.4 Probability distribution of prominent spatial transitions",
+   "3.4.1 Self transitions: length of spells",
+   "4 Results: identifying the active and break spells",
+   "4.1 All-India Active-Break spells",
+   "4.2 Local Wet-Dry Spells",
+   "4.3 Regional Wet-Dry Spells",
+   "5 Discussion and future directions",
+   "Acknowledgements",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

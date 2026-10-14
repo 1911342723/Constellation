@@ -1,0 +1,334 @@
+{
+ "doc": "1605.04133",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 13,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Ab initio coding of emergence.",
+   "Fragmentation of magnetism in the SI2 phase.",
+   "Looking for signatures of spin fragmentation.",
+   "Experimental evidence of spin fragmentation."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9378,
+   "completion_tokens": 8188
+  },
+  "elapsed_llm_seconds": 37.513087900002574,
+  "content_preservation": 0.9472259810554804,
+  "inserted_word_share": 0.026933101650738478,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Fragmentation of magnetism in artificial kagome dipolar spin ice",
+    0,
+    1
+   ],
+   [
+    "RESULTS",
+    0,
+    2
+   ],
+   [
+    "Ab initio coding of emergence.",
+    0,
+    3
+   ],
+   [
+    "Fragmentation of magnetism in the SI2 phase.",
+    0,
+    3
+   ],
+   [
+    "Looking for signatures of spin fragmentation.",
+    0,
+    3
+   ],
+   [
+    "Experimental evidence of spin fragmentation.",
+    0,
+    3
+   ],
+   [
+    "DISCUSSION",
+    0,
+    2
+   ],
+   [
+    "METHODS",
+    0,
+    2
+   ],
+   [
+    "Sample fabrication.",
+    0,
+    3
+   ],
+   [
+    "Thermal annealing protocol.",
+    0,
+    3
+   ],
+   [
+    "Estimation of an effective temperature.",
+    0,
+    3
+   ],
+   [
+    "Monte Carlo simulations.",
+    0,
+    3
+   ],
+   [
+    "Dipolar hamiltonian.",
+    0,
+    3
+   ],
+   [
+    "Ab initio coding of emergence.",
+    0,
+    3
+   ],
+   [
+    "ACKNOWLEDGMENTS",
+    0,
+    2
+   ],
+   [
+    "AUTHOR CONTRIBUTIONS",
+    0,
+    2
+   ],
+   [
+    "ADDITIONAL INFORMATION",
+    0,
+    2
+   ],
+   [
+    "COMPETING FINANCIAL INTERESTS",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "RESULTS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Ab initio coding of emergence.",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Fragmentation of magnetism in the SI2 phase.",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Looking for signatures of spin fragmentation.",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Experimental evidence of spin fragmentation.",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sample fabrication.",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Thermal annealing protocol.",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Estimation of an effective temperature.",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Monte Carlo simulations.",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Dipolar hamiltonian.",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Ab initio coding of emergence.",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AUTHOR CONTRIBUTIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ADDITIONAL INFORMATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "COMPETING FINANCIAL INTERESTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 37.60976479999954,
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 18,
+  "tp": 1,
+  "fp": 17,
+  "fn": 12,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.10526315789473684,
+  "unmatched_gt": [
+   "DISCUSSION",
+   "METHODS",
+   "Sample fabrication.",
+   "Thermal annealing protocol.",
+   "Estimation of an effective temperature.",
+   "Monte Carlo simulations.",
+   "Dipolar hamiltonian.",
+   "Ab initio coding of emergence.",
+   "ACKNOWLEDGMENTS",
+   "AUTHOR CONTRIBUTIONS",
+   "ADDITIONAL INFORMATION",
+   "COMPETING FINANCIAL INTERESTS"
+  ],
+  "unmatched_pred": [
+   "Fragmentation of magnetism in artificial kagome dipolar spin ice",
+   "Ab initio coding of emergence.",
+   "Fragmentation of magnetism in the SI2 phase.",
+   "Looking for signatures of spin fragmentation.",
+   "Experimental evidence of spin fragmentation.",
+   "DISCUSSION",
+   "METHODS",
+   "Sample fabrication.",
+   "Thermal annealing protocol.",
+   "Estimation of an effective temperature.",
+   "Monte Carlo simulations.",
+   "Dipolar hamiltonian.",
+   "Ab initio coding of emergence.",
+   "ACKNOWLEDGMENTS",
+   "AUTHOR CONTRIBUTIONS",
+   "ADDITIONAL INFORMATION",
+   "COMPETING FINANCIAL INTERESTS"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 1,
+  "fp": 16,
+  "fn": 12,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "DISCUSSION",
+   "METHODS",
+   "Sample fabrication.",
+   "Thermal annealing protocol.",
+   "Estimation of an effective temperature.",
+   "Monte Carlo simulations.",
+   "Dipolar hamiltonian.",
+   "Ab initio coding of emergence.",
+   "ACKNOWLEDGMENTS",
+   "AUTHOR CONTRIBUTIONS",
+   "ADDITIONAL INFORMATION",
+   "COMPETING FINANCIAL INTERESTS"
+  ],
+  "unmatched_pred": [
+   "Ab initio coding of emergence.",
+   "Fragmentation of magnetism in the SI2 phase.",
+   "Looking for signatures of spin fragmentation.",
+   "Experimental evidence of spin fragmentation.",
+   "DISCUSSION",
+   "METHODS",
+   "Sample fabrication.",
+   "Thermal annealing protocol.",
+   "Estimation of an effective temperature.",
+   "Monte Carlo simulations.",
+   "Dipolar hamiltonian.",
+   "Ab initio coding of emergence.",
+   "ACKNOWLEDGMENTS",
+   "AUTHOR CONTRIBUTIONS",
+   "ADDITIONAL INFORMATION",
+   "COMPETING FINANCIAL INTERESTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Ab initio coding of emergence.",
+   "Fragmentation of magnetism in the SI2 phase.",
+   "Looking for signatures of spin fragmentation.",
+   "Experimental evidence of spin fragmentation."
+  ],
+  "ignored_title_predictions": null
+ }
+}

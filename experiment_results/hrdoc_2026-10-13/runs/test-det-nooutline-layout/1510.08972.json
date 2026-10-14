@@ -1,0 +1,224 @@
+{
+ "doc": "1510.08972",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 6,
+  "pred": 20,
+  "tp": 6,
+  "fp": 14,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "Deﬁnition 3.2. The weak shifted stable Grothendieck polynomial is",
+   "Example 3.3. We have",
+   "Proposition 3.4. {Kλ} does not lie in the ring of signed symmetric functions. Th",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "Case 1: QSK(ti) = i′ and QSK(ti+1) = i + 1: This cannot occur since wi+1 trigger",
+   "Case 2: QSK(ti) = i and QSK(ti+1) = i + 1: In this case, both the insertion of w",
+   "4.1. Poirier-Reutenauer type algebras",
+   "4.2. Product structure"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 18,
+  "tp": 4,
+  "fp": 14,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.26315789473684215,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "Deﬁnition 3.2. The weak shifted stable Grothendieck polynomial is",
+   "Example 3.3. We have",
+   "Proposition 3.4. {Kλ} does not lie in the ring of signed symmetric functions. Th",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "Case 1: QSK(ti) = i′ and QSK(ti+1) = i + 1: This cannot occur since wi+1 trigger",
+   "Case 2: QSK(ti) = i and QSK(ti+1) = i + 1: In this case, both the insertion of w",
+   "4.1. Poirier-Reutenauer type algebras",
+   "4.2. Product structure"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1403,
+  "layout_marked": 14,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9603563474387528,
+  "inserted_word_share": 0.038530146271851584
+ },
+ "predictions": [
+  {
+   "text": "SHIFTED HECKE INSERTION AND THE K-THEORY OF OG(n, 2n + 1)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Shifted Hecke Insertion and Weak K-Knuth Equivalence",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Increasing shifted tableaux",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Shifted Hecke Insertion",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Recording tableaux",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. Weak K-Knuth equivalence",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5. Shifted K-theoretic jeu de taquin",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.6. Unique Rectiﬁcation Targets",
+   "page": 12,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Shifted weak stable Grothendieck polynomials",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Deﬁnition 3.2. The weak shifted stable Grothendieck polynomial is",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Example 3.3. We have",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proposition 3.4. {Kλ} does not lie in the ring of signed symmetric functions. The weak shifted stable Grothendieck polynomial Kλ is closely related to the shifted stable Grothendieck polynomial GPλ deﬁned by Ikeda and Naruse in [9]. Here,",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Kλ and fundamental quasisymmetric functions",
+   "page": 14,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Case 1: QSK(ti) = i′ and QSK(ti+1) = i + 1: This cannot occur since wi+1 triggers row insertion in a row weakly above the row where wi triggers column insertion.",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Case 2: QSK(ti) = i and QSK(ti+1) = i + 1: In this case, both the insertion of wi and of wi+1 only use row insertion and never fail to insert into an empty row. Therefore, using the standard doubling argument for shifted tableaux (Section 7 of [4]), ti is strictly above ti+1 by the corresponding result for Hecke insertion found in Lemma 2 of [2]. Hence i ∈D(QSK(w)).",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Shifted K-Poirier-Reutenauer Algebra and a Littlewood-Richardson",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Poirier-Reutenauer type algebras",
+   "page": 19,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4.2. Product structure",
+   "page": 19,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.7649949000042398,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 20,
+  "tp": 6,
+  "fp": 14,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Increasing shifted tableaux",
+   "2.2. Shifted Hecke Insertion",
+   "2.3. Recording tableaux",
+   "2.4. Weak K-Knuth equivalence",
+   "2.5. Shifted K-theoretic jeu de taquin",
+   "2.6. Unique Rectiﬁcation Targets",
+   "Deﬁnition 3.2. The weak shifted stable Grothendieck polynomial is",
+   "Example 3.3. We have",
+   "Proposition 3.4. {Kλ} does not lie in the ring of signed symmetric functions. Th",
+   "3.2. Kλ and fundamental quasisymmetric functions",
+   "Case 1: QSK(ti) = i′ and QSK(ti+1) = i + 1: This cannot occur since wi+1 trigger",
+   "Case 2: QSK(ti) = i and QSK(ti+1) = i + 1: In this case, both the insertion of w",
+   "4.1. Poirier-Reutenauer type algebras",
+   "4.2. Product structure"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

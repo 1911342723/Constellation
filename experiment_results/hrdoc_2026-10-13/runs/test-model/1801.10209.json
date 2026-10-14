@@ -1,0 +1,164 @@
+{
+ "doc": "1801.10209",
+ "system": "model",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 742,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 30734,
+   "completion_tokens": 728,
+   "total_tokens": 31462
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Dynamical mean ﬁeld theory (DMFT) solver",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. CT-HYB impurity solver",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Steps",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. Estimators",
+   "page": 11,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3. Statistical uncertainties",
+   "page": 12,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4. Local trace",
+   "page": 14,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.5. Quantum numbers",
+   "page": 14,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.6. Bath trace",
+   "page": 15,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Installation and community site",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Where to ﬁnd the project and the code",
+   "page": 15,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2. Installation",
+   "page": 16,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5. Input/output",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusions",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.21142019999752,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "doc": "1710.05481",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "IMMd",
+   "Part 1: IMMd has high rank"
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "IMMd",
+   "Part 1: IMMd has high rank"
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 777,
+  "layout_marked": 15,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9645923696556608,
+  "inserted_word_share": 0.032925097621583244
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Depth-reduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Separations from general formulas",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Basic setup",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Multilinear formulas and circuits",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 Lower bounds for multilinear formulas and circuits computing",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Proof of Theorem 10",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Step1 – The product lemma",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Step 2 – Rank measure and the hard polynomial",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Proof of Lemma 18",
+   "page": 13,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Part 2: t-product polynomials have low rank",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Part 3: r-simple polynomials have low rank.",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.5327950999999302,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "IMMd",
+   "Part 1: IMMd has high rank"
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

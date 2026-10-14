@@ -1,0 +1,154 @@
+{
+ "doc": "1801.05599",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 469,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4897,
+   "completion_tokens": 614,
+   "total_tokens": 5511
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Additive Margin Softmax",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Deﬁnition",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. Discussion",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 Geometric Interpretation",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2.2 Angular Margin or Cosine Margin",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2.3 Feature Normalization",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2.4 Feature Distribution Visualization",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "4. Experiment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Implementation Details",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2. Dataset Overlap Removal",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3. Effect of Hyper-parameter m",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5. Conclusion and Future Work",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.9512567999991,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

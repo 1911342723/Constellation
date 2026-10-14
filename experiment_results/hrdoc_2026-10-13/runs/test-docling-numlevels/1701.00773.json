@@ -1,0 +1,147 @@
+{
+ "doc": "1701.00773",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 22.66202390000035
+ },
+ "predictions": [
+  {
+   "text": "Security-related Research in Ubiquitous Computing - Results of a Systematic Literature Review",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Research method",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Security challenges in ubiquitous computing: vulnerabilities, threats, and attacks",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Vulnerabilities",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Threats",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Attacks",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Defenses",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Trust computation and management",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Cryptographic protocols",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 Authentication and access control",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.4 Privacy protection mechanisms",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Countries participating in the research",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.010811799998919014,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

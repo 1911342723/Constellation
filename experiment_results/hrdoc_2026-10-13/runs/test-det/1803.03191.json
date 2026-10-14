@@ -1,0 +1,238 @@
+{
+ "doc": "1803.03191",
+ "system": "det",
+ "metrics": {
+  "gt": 28,
+  "pred": 30,
+  "tp": 28,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.935483870967742,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "106 Wiggins Road",
+   "1. Given a training set,{(zi,yi),.."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 420,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "106 Wiggins Road",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Inﬂuence Model for IM-RO",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Graph Inﬂuence Model",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Negative Inﬂuence Model",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Bayesian Analysis",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.1.1 The Bayesian Hierarchical Model",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4.1.2 MCMC method",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Machine Learning Algorithms",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2.1 Naive Bayes",
+   "page": 4,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.2.2 Decision Trees",
+   "page": 5,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.2.3 Random Forests",
+   "page": 5,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "1. Given a training set,{(zi,yi),..",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiments for the GIM and NIM",
+   "page": 6,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5.1.1 Dataset Description",
+   "page": 6,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "5.1.2 Sensitivity analysis of the GIM and NIM",
+   "page": 6,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "5.2 Estimation of α",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5.2.1 Microblog Dataset for Bayesian Analysis",
+   "page": 8,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "5.2.2 Results for Bayesian Analysis",
+   "page": 8,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "5.3 Estimation of p0",
+   "page": 10,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5.3.1 Dataset Description",
+   "page": 10,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "5.3.2 Performance Measure",
+   "page": 11,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "5.4 Results for Machine Learning Algorithms",
+   "page": 12,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5.5 Cross Validation",
+   "page": 13,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.034592799998791,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 30,
+  "tp": 28,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.935483870967742,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "106 Wiggins Road",
+   "1. Given a training set,{(zi,yi),.."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 28,
+  "tp": 26,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.9310344827586207,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "106 Wiggins Road",
+   "1. Given a training set,{(zi,yi),.."
+  ],
+  "ignored_title_predictions": null
+ }
+}

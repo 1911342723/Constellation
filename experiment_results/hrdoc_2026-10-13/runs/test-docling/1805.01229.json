@@ -1,0 +1,143 @@
+{
+ "doc": "1805.01229",
+ "system": "docling",
+ "metrics": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Overall solution algorithm for the mechanochemical problem",
+   "Time convergence"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 78.18511659999785
+ },
+ "predictions": [
+  {
+   "text": "Numerical approximation of a mechanochemical interface model for skin appendage∗",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction and modelling considerations",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Set of governing equations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Weak formulation for the multidomain problem",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 A finite element method and its splitting scheme",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Nonlinear, partitioned Galerkin formulation",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Adaptive timestep scheme",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Algorithmic details",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Overall solution algorithm for the mechanochemical problem",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Numerical tests",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Time convergence",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Concluding remarks",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.006906400005391333,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Numerical approximation of a mechanochemical interface model for skin appendage∗",
+   "Algorithm 1 Overall solution algorithm for the mechanochemical problem",
+   "Time convergence"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Overall solution algorithm for the mechanochemical problem",
+   "Time convergence"
+  ],
+  "ignored_title_predictions": null
+ }
+}

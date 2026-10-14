@@ -1,0 +1,412 @@
+{
+ "doc": "1808.03947",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 22,
+  "pred": 25,
+  "tp": 22,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8846153846153846,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MStep",
+   "identify",
+   "sample hyperparameters"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8695652173913043,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MStep",
+   "identify",
+   "sample hyperparameters"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "An Asymptotically Efficient Metropolis-Hastings Sampler for Bayesian Inference in Large-Scale Educational Measurement",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 A Lemma",
+    0,
+    2
+   ],
+   [
+    "3 About the Algorithm",
+    0,
+    2
+   ],
+   [
+    "3.1 The Simplest Case",
+    0,
+    3
+   ],
+   [
+    "3.2 The General Case",
+    0,
+    3
+   ],
+   [
+    "3.2.1 The Sum-Matched Approximate Bayes Algorithm:",
+    0,
+    4
+   ],
+   [
+    "3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:",
+    0,
+    4
+   ],
+   [
+    "4 Simulation Experiments",
+    0,
+    2
+   ],
+   [
+    "4.1 Computational Complexity",
+    0,
+    3
+   ],
+   [
+    "4.2 Autocorrelation and Convergence",
+    0,
+    3
+   ],
+   [
+    "5 Efficiency of the SM-AB Algorithm when n Increases",
+    0,
+    2
+   ],
+   [
+    "5.1 Convergence",
+    0,
+    3
+   ],
+   [
+    "5.2 Convergence Rate",
+    0,
+    3
+   ],
+   [
+    "6 Discussion",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ],
+   [
+    "7 Appendix",
+    0,
+    2
+   ],
+   [
+    "7.1 The Acceptance Probability Function for the MH Algorithm",
+    0,
+    3
+   ],
+   [
+    "7.2 R Code",
+    0,
+    3
+   ],
+   [
+    "7.2.1 Quickselect",
+    0,
+    4
+   ],
+   [
+    "7.2.2 The SM-MH Algorithm",
+    0,
+    4
+   ],
+   [
+    "7.2.3 A Gibbs Sampler for the 2PL",
+    0,
+    4
+   ],
+   [
+    "MStep",
+    0,
+    2
+   ],
+   [
+    "identify",
+    0,
+    2
+   ],
+   [
+    "sample hyperparameters",
+    0,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 11212,
+   "completion_tokens": 11209
+  },
+  "elapsed_llm_seconds": 40.55905910000001,
+  "word_preservation": {
+   "recall": 0.8339798293250582,
+   "in_order": 0.821722265321955,
+   "inserted": 0.16185872446592853
+  },
+  "output_markdown": "# An Asymptotically Efficient Metropolis-Hastings Sampler for Bayesian Inference in Large-Scale Educational Measurement\n\nTimo Bechger^1, Gunter Maris^2, and Maarten Marsman^3\n\n^1Cito\n^2ACTNext by ACT\n^3University of Amsterdam\n\n## Abstract\n\nThis paper discusses a Metropolis-Hastings algorithm developed by Marsman, Maris, Bechger, and Glas (2015). The algorithm is derived from first principles, and it is proven that the algorithm becomes more efficient with more data and meets the growing demands of large scale educational measurement.\n\nAcknowledgment: This article was partly written when the first two authors where visiting the catholic university of Santiago in Chile. We wish to thank Ernesto San Martin for his hospitality.\n\n## 1 Introduction\n\nBayesian inference in educational measurement often demands that we sample from posterior distributions of the form:\n\n$$f(\\eta|x) \\propto f(\\eta, x) = \\prod_{i=1}^n F_i(\\eta)^{x_i} (1 - F_i(\\eta))^{1-x_i} f(\\eta), \\tag{1}$$\n\nwhere $x$ is a vector of binary observations, $f(\\eta)$ is a prior density, and^1\n\n$$F_i(\\eta) = P(X_i = 1|\\eta, a_i, b_i) = \\frac{\\exp(a_i\\eta + b_i)}{1 + \\exp(a_i\\eta + b_i)} \\tag{2}$$\n\nis a logistic cumulative distribution function (cdf) with location $-b_i a_i^{-1}$ and (positive) scale parameter $a_i^{-1}$ such that the posterior depends on the observations only via $\\sum_{i=1}^n a_i x_i$ (Dawid, 1979). This is the problem this article is about. Note that the same problem is encountered in the Bayesian analysis of (dynamic) logistic regression models, negative-binomial regression models, auto-logistic models (e.g., Besag, 1975), and the logistic stick-breaking representations of multinomial distributions (e.g., Linderman, Johnson, & Adams, 2015).\n\nThe problem is ubiquitous in Bayesian item response theory (IRT) modeling and must be considered, for instance, when $\\eta$ represents student ability in a two-parameter logistic (2PL) model (Birnbaum, 1968, p. 400) and we wish to produce so-called plausible values; i.e., sample from the posterior of ability (Mislevy, 1991; Marsman, Maris, Bechger, & Glas, 2016). In fact, any full-conditional posterior distribution of the 2PL (e.g., the posterior of the item parameters given ability) is of the same form (see Appendix). The same is true for multi-dimensional IRT models. Thus, if we solve the problem, we can start building Gibbs samplers for most, if not all, IRT models used in practice.\n\nA solution was presented by Marsman et al. (2015) in a paper on Bayesian inference for the Ising network model^2 (Lenz, 1920; Ising, 1925) and their sampling algorithm is the topic of the present paper. Our goal is to prove that the efficiency of the algorithm improves when the number of observations $n$ becomes large. This property makes the algorithm particularly suited for large scale applications in educational measurement. Where Marsman et al. (2015) state their algorithm in just a few phrases we will make an effort to explain how and why its works. For ease of presentation, we choose the familiar context of plausible values. We then discuss the efficiency of the algorithm with large samples and end with a discussion.\n\n## 2 A Lemma\n\nThe following innocuous lemma is the basis for the algorithm.\n\n**Lemma 1.** Consider a set of $n + 1$ independent random variables $Z_r$ each with a potentially unique distribution function $F_r(z) = P(Z_r \\le z)$, where $r = 0, \\ldots, n$. Define, for $r \\neq j$, the random indicator variables\n\n$$Y_{rj} = (Z_r \\le Z_j) = \\begin{cases} 1 & \\text{if } Z_r \\le Z_j \\\\ 0 & \\text{otherwise} \\end{cases}.$$\n\nThen, for $j \\in \\{0, \\ldots, n\\}$,\n\n$$f_j(z_j, y_j) = \\prod_{r \\neq j} F_r(z_j)^{y_{rj}}(1 - F_r(z_j))^{1-y_{rj}}f_j(z_j)$$\n\nwhere $y_j = (y_{rj})_{r \\neq j}$.\n\n*Proof.* Trivial\n\nThe next sections will explain the significance of Lemma 1 and, to this aim, its notation will be used throughout the text. Observe that the joint distribution $f_j(z_j, y_j)$ in the lemma is of the same form as the posterior distribution in Equation 1. For our present purpose, we choose $F_0$ to be the prior distribution, and assume that $F_i$, for $i > 0$, is logistic so that $f_0(\\eta, x)$ corresponds to the target posterior $f(\\eta, x)$; defined by Equations 1 and 2. The random variables $Z_0, \\ldots, Z_n$ will be called auxiliary variables. The letters $i$, $j$ and $r$ are reserved for indexes with $i$ running from one to $n$ and $j$ and $r$ from zero to $n$. We use the original indexes when we refer to entries of $y_j$. For example, the second entry of $y_2 = (y_{02}, y_{12}, y_{32}, \\ldots, y_{n2})$ will be written as $y_{12}$. This makes it easy to remember that $y_{12} = (z_1 \\le z_2)$.\n\n## 3 About the Algorithm\n\nWe explain how the algorithm is used to generate plausible values starting with the simple case where all items in the test are equivalent (Rasch) items and the item response functions (IRF), $F_i(\\eta)$, are standard logistic cdfs. The problem is then the following: A student produces an item response pattern $x$ and our aim is to sample from the posterior of ability:\n\n$$f(\\eta|x) \\propto \\prod_i \\frac{\\exp(x_i\\eta)}{1 + \\exp(\\eta)}f(\\eta) = \\frac{\\exp(x_+\\eta)}{[1 + \\exp(\\eta)]^n}f(\\eta),$$\n\nwhere we assume a standard logistic prior $f(\\eta)$. Note that, even in this simple case, the posterior is not a known distribution and the problem is not trivial and many have therefore turned to normal-ogive models.\n\n### 3.1 The Simplest Case\n\nA posterior $f(\\eta|y)$ can be defined as the collection of values of $\\eta$ that generate the observations $y$ (cf. Rubin, 1984, section 3.1). This powerful idea implies that we can sample from the posterior if we can simulate data (e.g., Marsman, Maris, Bechger, & Glas, 2017). In IRT, simulating data is simple and entails sampling from the joint distribution $f(\\eta, x) = P(x|\\eta)f(\\eta)$ by first drawing an ability $\\eta^*$ from $f(\\eta)$ and then responses $y$ from $P(x|\\eta^*)$. On this occasion we are not interested in the data but in the ability that generated the data. To wit, if an ability $\\eta^*$ generates a response pattern $y$, it is a plausible value for a student with $y_+$ correct responses. Unfortunately, it is likely that $y_+ \\neq x_+$ and we generate a plausible value for the wrong student. A solution is to simulate a number of response patterns and keep the ability that generated a response pattern whose sum equals $x_+$. To this effect, we use Lemma 1 which provides the following algorithm to simulate $n + 1$ response patterns from one sample of auxiliary variables:\n\n**Algorithm 1** Sample data using Lemma 1\n\n```\nfor r = 0 to n do\n    Sample: z_r ~ F_r(z)\nfor j = 0 to n do\n    for r ≠ j do\n        Produce an item response: y_rj = (z_r ≤ z_j)\n```\n\nAlgorithm 1 implements the method of composition (Tanner, 1996) as we described it earlier. That is, we draw a sample $z_0, \\ldots, z_n$ of auxiliary variables each of which is then called on to be the ability and used to generate item responses. We illustrate this with a small example.\n\n**Example 1 (Toy Example).** For example, if we sample $z_2 \\le z_1 \\le z_3 \\le z_0$ we generate four response patterns:\n\n- $y_2 = (0, 0, 0)$ and $y_{+2} = 0$\n- $y_1 = (0, 1, 0)$ and $y_{+1} = 1$\n- $y_3 = (0, 1, 1)$ and $y_{+3} = 2$\n- $y_0 = (1, 1, 1)$ and $y_{+0} = 3$\n\nNote that, obviously, we do not generate each of the $2^3 = 8$ possible response pattern but we do generate each possible score.\n\nFinally, we observe that we can actually get our plausible value without calculating the response patterns. The sum $y_{+j}$ is, by definition, the number of values smaller than $z_j$. This means that each generated response pattern has a different sum and there is always one whose sum corresponds to $x_+$. Noting that this response pattern is generated by the $(x_+ + 1)$th smallest of the auxiliary variables we find the following procedure to generate a plausible value for the student with a test-score $x_+$:\n\n**Algorithm 2** SM-AB Algorithm\n\n```\nfor r = 0 to n do\n    Sample: z_r ~ F_r(z)\nSelect the (x_+ + 1)th smallest of the z_r\n```\n\nNote that this algorithm is simple and computationally cheap. Only a partial sort is required to find the $(x_+ + 1)$th smallest of set of numbers and computation time is of order $n$. For later reference, we call Algorithm 2 the Sum-Matched Approximate Bayes (SM-AB) algorithm: The name will be explained in the next section.\n\n### 3.2 The General Case\n\nIn practice, the items will differ in difficulty and/or discrimination and we now consider what happens when the items follow a 2PL. This means that the item response functions are logistic as in Equation 2 with $a_i > 0$ the discrimination and $b_i$ the easiness parameter of item $i$.\n\n#### 3.2.1 The Sum-Matched Approximate Bayes Algorithm:\n\nFormally, Algorithm 2 draws a value $\\eta^*$ from a proposal, $f_j(\\eta|y)$, such that $y_+ = x_+$. A sample of auxiliary variables determines which proposal is selected. This means that the proposal is random and the algorithm produces an independent sample from a mixture of proposals as illustrated with the following example.\n\n**Example 2 (Toy Example Cont.).** Suppose that $x_+ = 1$ and we select $z_1$ which is drawn from a proposal $f_1(\\eta|y_1 = (0, 1, 0)) = f_1(\\eta|x_+)$. If we repeat this a number of times we might:\n\nsample:\n$$z_3 \\le z_0 \\le z_1 \\le z_2$$\n$$z_2 \\le z_1 \\le z_0 \\le z_3$$\n$$z_0 \\le z_2 \\le z_1 \\le z_3$$\n$$\\ldots$$\n\nso that $\\eta^*$ is:\ndrawn from proposal:\n$$z_0 \\quad f_0(\\eta|y_j = (0, 0, 1))$$\n$$z_1 \\quad f_1(\\eta|y_j = (0, 1, 0))$$\n$$z_2 \\quad f_2(\\eta|y_j = (1, 0, 0))$$\n$$\\ldots \\quad \\ldots$$\n\nNote that each sample of auxiliary variables generates a unique response pattern and each of these is a random permutation of the observed response pattern $x$.\n\nIf the auxiliary variables are identically distributed, all proposals are the same and we always sample from the target posterior. This is no longer true when the prior is not standard logistic and/or the items are not equivalent. Specifically, if $j \\neq 0$, $\\eta^*$ is drawn from:\n\n$$f_j(\\eta|y_j) \\propto \\prod_{r \\neq j} F_r(\\eta)^{y_{rj}}(1 - F_r(\\eta))^{1-y_{rj}}f_j(\\eta)$$\n$$= F_0(\\eta)^{y_{0j}}(1 - F_0(\\eta))^{1-y_{0j}} \\left( \\prod_{i \\neq j} F_i(\\eta)^{y_{ij}}(1 - F_i(\\eta))^{1-y_{ij}} \\right) f_j(\\eta)$$\n$$\\Downarrow \\text{rearranging}$$\n$$= \\left( \\prod_{i < j} F_i(\\eta)^{y_{ij}}[1 - F_i(\\eta)]^{1-y_{ij}} \\right) F_0(\\eta)^{y_{0j}}(1 - F_0(\\eta))^{1-y_{0j}} \\left( \\prod_{i > j} F_i(\\eta)^{y_{ij}}(1 - F_i(\\eta))^{1-y_{ij}} \\right) f_j(\\eta)$$\n\nwhere $y_{+j} = x_+$. We see that the prior trades places with the IRF of the $j$th item so that, once more, we sample a plausible value for the wrong student; that is, a student who scored $x_+$ correct answers on a (slightly) different test. If, for instance, $f_0$ is a normal prior, we would sample from a posterior where the prior is logistic and the $j$th item is a normal-ogive item (Lord & Novick, 1968, pp. 365-366). A further complication is added when the items differ in discrimination and the sum is no longer sufficient. Even if $j = 0$ we would not sample from the correct posterior unless the weighted sums match; i.e., $\\sum_i a_i y_{i0} = \\sum_i a_i x_i$.\n\nIt follows that in any realistic situation, $\\eta^*$ is most likely drawn from a proposal that approximates the target posterior. The name we gave to Algorithm 2 is intended to emphasize that each approximate proposal is \"matched\" to the target posterior on the sum; i.e., the number of correct answers.\n\n**Figure 1:** We use the SM-AB algorithm to produce plausible values for 100, 000 (different) students each answering to 50 different 2PL items. The left panel shows starting values. The right panel shows the true abilities against the values produced by the SM-AB algorithm.\n\n#### 3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:\n\nThe SM-AB algorithm produces an independent sample from an approximate posterior and although experience suggests that it works quite well (see Figure 1), it is not exact. As a remedy, Marsman et al. (2015) add a Metropolis-Hastings step (Metropolis, Rosenbluth, Rosenbluth, & Teller, 1953; Hastings, 1970) and construct a dependent sample from the target posterior. This gives us the Sum-Matched Metropolis-Hastings (SM-MH) algorithm:\n\n**Algorithm 3** SM-MH Algorithm\n\nGiven $\\eta^{(t)}$:\n\n1. Draw an ability $\\eta^*$ and a response pattern $y_j$ from $f_j(\\eta^*, y_j)$\n2. Take\n$$\\eta^{(t+1)} = \\begin{cases} \\eta^* & \\text{with probability } \\pi(\\eta^{(t)} \\to \\eta^*) = \\min \\{1, \\alpha\\} \\\\ \\eta^{(t)} & \\text{otherwise} \\end{cases}$$\nwhere\n$$\\alpha = \\frac{f_0(\\eta^*, x)f_j(\\eta^{(t)}, y_j)}{f_0(\\eta^{(t)}, x)f_j(\\eta^*, y_j)}$$\n\nThe MH algorithm produces a sample from a Markov chain. The acceptance probability function $\\pi(\\eta^{(t)} \\to \\eta^*)$ is chosen such that the following detailed balance condition holds:\n\n$$\\pi(\\eta^{(t)} \\to \\eta^*)f_0(\\eta^{(t)}, x)f_j(\\eta^*, y_j) = \\pi(\\eta^* \\to \\eta^{(t)})f_0(\\eta^*, x)f_j(\\eta^{(t)}, y_j)$$\n\nand the chain converges to the target posterior $f_0(\\eta|x)$ for any initial value $\\eta^{(0)}$. This means that the SM-MH algorithm produces a sequence of values such that, as $t$ increases, the distribution of these values more closely approximates the target posterior. Note that the MH algorithm works with any proposal even if it is random (Tierney, 1994).\n\nAfter some algebra, detailed in the Appendix, we find that the acceptance ratio $\\alpha$ can be written as:\n\n$$\\alpha = \\begin{cases} A_j \\exp \\left[ (\\eta^{(t+1)} - \\eta^{(t)}) \\left( \\sum_{i \\neq j} a_i x_i - \\sum_{i \\neq j} a_i y_{ij} \\right) \\right] & \\text{if } j \\neq 0 \\\\ \\exp \\left[ (\\eta^{(t+1)} - \\eta^{(t)}) \\left( \\sum_i a_i x_i - \\sum_i a_i y_{ij} \\right) \\right] & \\text{if } j = 0 \\end{cases} \\tag{3}$$\n\nwith, for $j \\neq 0$,\n\n$$A_j = e^{(x_j-1)[a_j(\\eta^{(t+1)}-\\eta^{(t)})]} \\frac{1 + e^{a_j\\eta^{(t+1)}+b_j}}{1 + e^{a_j\\eta^{(t)}+b_j}} \\frac{f_0(\\eta^{(t+1)})}{f_0(\\eta^{(t)})} \\frac{F_0^{y_{0j}}(\\eta^{(t)})[1 - F_0(\\eta^{(t)})]^{1-y_{0j}}}{F_0^{y_{0j}}(\\eta^{(t+1)})[1 - F_0(\\eta^{(t+1)})]^{1-y_{0j}}}.$$\n\nNote that the MH step adds little computational complexity and the expressions remain simple for large values of $n$.\n\nThe acceptance ratio indicates how probable the new value $\\eta^*$ is with respect to the current value, according to the target posterior. If $j = 0$, it depends only on the difference between the weighted sums of the generated and the observed response pattern. If $j \\neq 0$, it also accounts for the fact that item $j$ has traded places with the prior.\n\n**Example 3.** If, for example, we have Rasch items and assume a logistic prior\n\n$$\\alpha = \\frac{1 + \\exp(\\eta^* + b_j)}{1 + \\exp(\\eta^{(0)} + b_j)} \\frac{1 + \\exp(\\eta^{(0)} + b_0)}{1 + \\exp(\\eta^* + b_0)},$$\n\nfor any $j \\in \\{0, \\ldots, n\\}$, so that we always accept if $j = 0$. If all items are equivalent, we accept regardless of $j$ and the MH algorithm reduces to the SM-AB algorithm.\n\n## 4 Simulation Experiments\n\nIn this section, we present some simulation results to evaluate the computational burden and the auto-correlation in samples produced by the SM-MH algorithm. We use the R-code given in the Appendix on a ASUS R301L laptop with an Intel i5 CPU with a clock speed of 2.2 GHz and 3.8 gigabytes of memory running Ubuntu.\n\n**Figure 2:** Number of observations ($n$) versus average time per iteration (in seconds) for the GNU R implementation (left panel) and a C implementation (right panel).\n\n**Figure 3:** Autocorrelations. $n = 50$, $b_i \\sim U(-1, 2)$.\n\n### 4.1 Computational Complexity\n\nThe complexity of the algorithm is determined by the generation and sorting of the auxiliary variables. As mentioned above, finding the $(x_+ + 1)$th smallest value of a set of numbers does not require a full sort. In fact, it can be done in linear time using the quickselect algorithm (Hoare, 1961) which means that computation time increases linearly with $n$ as illustrated^3 in Figure 2.\n\nNote that loops are time-consuming when performed in R. Especially when $n$ is large, significant computational advantages can be obtained by coding (parts of) the algorithm in a compiled language (e.g., C, C++, Fortran, Pascal). Comparing, for example, the right with the left-hand panel in Figure 2 shows that a C implementation is about thirty times faster.\n\n### 4.2 Autocorrelation and Convergence\n\nIf we accept all proposed values in the first two iterations, convergence is almost immediate (see Figure 1). After these first iterations, acceptance rates remain high. Figure 3 gives an impression of typical autocorrelations with $n = 50$ observations. The left panel shows that, when the items are Rasch items, the SM-MH algorithm comes close to generating an independent and identically distributed sample, with virtually no autocorrelation whatsoever. The right panel shows that autocorrelations are higher when items differ in discrimination. Even then, Figure 4 suggests that autocorrelations vanish when $n$ increases and acceptance probabilities go to one. It is the burden of the next sections to prove that this is indeed the case.\n\n**Figure 4:** Autocorrelations. $n = 5000$, $b_i \\sim U(-1, 2)$.\n\n## 5 Efficiency of the SM-AB Algorithm when n Increases\n\nIn this section, we will prove that, as $n$ increases, the SM-AB algorithm will increasingly produce proposals that are accepted in the MH step. The SM-AB and the SM-MH will become equal and the cost of producing a sample of $n$ observations from the posterior approximates that of generating a sample of $n$ observations under the posited model; i.e., one response pattern^4.\n\nWe first demonstrate that the proposal value converges to the true value. We then demonstrate that acceptance rates in the SM-MH algorithm will increase in proportion to the square root of $n$.\n\n### 5.1 Convergence\n\nHere is a second lemma that proves that the proposal value from the SM-AB algorithm will converge (strongly) to the true value of $\\eta$.\n\n**Lemma 2.** Consider a set of $n+1$ independent random variables $Z_0^*, \\ldots, Z_n^*$. Define a second, set of $n + 1$ random variables $Z_0, \\ldots, Z_n$ such that $Z_r \\sim Z_r^*$, for all $r \\in \\{0, \\ldots, n\\}$. Then,\n\n$$Z_{[(n+1)p_n]} \\xrightarrow{a.s.} Z_0^*,$$\n\nwhere $p_n = Z_n^*(Z_0^*) = \\frac{1}{n+1} \\sum_{r=0}^n (Z_r^* \\le Z_0^*)$ and $Z_{[p]}$ denotes the $p$th order statistic of the $Z_i$; i.e., the $[p]$th smallest with $[p]$ the integer part of $p$.\n\n*Proof.* Define the random function $Z_n^*(t)$ (and similarly $Z_n(t)$) to be\n\n$$Z_n^*(t) = \\frac{1}{n + 1} \\sum_{i=0}^n (Z_i^* \\le t)$$\n\nsuch that $(Z_n^*(t) \\le p)$ corresponds to $(Z_{[(n+1)p]}^* \\ge t)$. We find the difference between the random functions $Z_n(t)$ and $Z_n^*(t)$ to be characterized by a simple random walk:\n\n$$Z_n(t) - Z_n^*(t) = \\frac{1}{n + 1} \\sum_{i=0}^n (Z_i \\le t) - (Z_i^* \\le t) = \\frac{1}{n + 1}\\Delta N_n(t), \\tag{4}$$\n\nwhere $N_n = \\sum_{i=0}^n (Z_i \\le t) \\neq (Z_i^* \\le t) \\to \\infty$. $\\Delta N(t)$ is a simple random walk since $Z_i^* \\sim Z_i$ and $Z_i^* \\perp\\!\\!\\!\\perp Z_i$ implies\n\n$$p(Z_i \\le t|(Z_i \\le t) \\neq (Z_i^* \\le t)) = 1/2.$$\n\nSince $p - (n + 1)^{-1}\\Delta N_n(t) \\xrightarrow{a.s.} p$,\n\n$$(Z_n(t) \\le p) = (Z_n^*(t) \\le p - (n + 1)^{-1}\\Delta N_n(t)) \\xrightarrow{a.s.} (Z_n^*(t) \\le p)$$\n\nso that\n\n$$Z_{[(n+1)p]} \\ge t \\xrightarrow{a.s.} Z_{[(n+1)p]}^* \\ge t.$$\n\nSince\n\n$$Z_{[(n+1)Z_n^*(Z_0^*)]}^* = Z_0^*.$$\n\nThe result follows.\n\nAlthough Lemma 2 is admittedly technical, it has a simple interpretation. To wit, \"nature\" uses Algorithm 1 and samples $z_0^* = \\eta$ from a distribution $f_0(z_0^*)$, and $n$ item responses $x_i = (z_i^* \\le z_0^*)$. The SM-AB algorithm imitates nature. It samples a second set of $n + 1$ independent variables $Z_r$ such that $Z_r \\sim Z_r^*$ and offers the $(x_+ + 1)$th order statistic as a proposal value. Lemma 2 states that this proposal value will be arbitrary close to $\\eta$ for large $n$. A numerical illustration is shown in Figure 5.1 where we plotted several chains produced by the SM-AB algorithm.\n\n**Figure 5:** Consider a person with ability $\\eta = -0.21$ that answers $n$ (different) 2PL items. We used the SM-AB algorithm a number of times to estimate $\\eta$ for every $n$ based on all previous responses (solid lines). Hoeffding's inequality implies the 95% confidence bounds (dotted lines)\n\nFigure 5.1 also provides confidence bounds and an interval which contains 95% of the chains we might generate. The key observation is that the confidence interval decreases with the square root of $n$. How the confidence bounds were derived will be explained in the following paragraph.\n\n**Figure 6:** The mean response of the same person used to make Figure 5.1 is plotted for different values of $n$ (solid line) together with its expected value (dashed line) and 95% confidence intervals as implied by Hoeffdings inequality (dotted lines).\n\n### 5.2 Convergence Rate\n\nThe confidence bounds in Figure 5.1 are implied by the classical Hoeffding inequality (Hoeffding, 1963). Hoeffding's inequality, in its simplest form, deals with $n$ independent but not necessarily identically distributed random variables $X_1, \\ldots, X_n$ that are all defined on the unit interval. Hoeffding's inequality puts a bound on the difference between the mean value of these variables $\\bar{X} = \\frac{1}{n} \\sum_{i=1}^n X_i$ and its expected value $E(\\bar{X})$:\n\n$$P(|\\bar{X} - E(\\bar{X})| \\ge \\varepsilon) \\le 2 \\exp \\left( -2n\\varepsilon^2 \\right), \\tag{5}$$\n\nfor an arbitrary positive real number $\\varepsilon$. As a simple illustration consider $n$ copies of a Bernoulli random variable $X_i \\in \\{0, 1\\}$ with success probability $p$. The expected value of the mean of these random variables $E(\\bar{X}|p) = p$, and (5) implies that\n\n$$P(p - \\varepsilon \\le \\bar{X} \\le p + \\varepsilon) \\ge 1 - 2 \\exp \\left( -2n\\varepsilon^2 \\right), \\tag{6}$$\n\nfor all positive real numbers $\\varepsilon$. In other words, the probability that $\\bar{X}$ lies in an arbitrary small interval around its expected value goes to one if $n$ goes to infinity. Or, if we fix $n$ and define $\\alpha = 2 \\exp \\left( -2n\\varepsilon^2 \\right)$, $\\bar{X}$ can be found with probability $1 - \\alpha$ in an interval of width $2 \\sqrt{\\frac{\\log (2/\\alpha)}{2n}}$ around its mean. If we have a test taker with ability $\\eta$ that answers a set of $n$ 2PL items, the mean of the response $\\bar{X}$ has expected value\n\n$$E(\\bar{X}|\\eta, a, b) = \\sum_{i=1}^n \\frac{\\exp(a_i\\eta + b_i)}{1 + \\exp(a_i\\eta + b_i)}. \\tag{7}$$\n\nFigure 5.1 shows an example where we plotted the mean together with the 95% confidence interval (i.e., $\\alpha = 0.05$) around its expected value for different values of $n$. Note that the width of the confidence interval decreases in proportion to the square root of $n$; e.g., multiplying $n$ by four halves the interval.\n\n**Figure 7:** The estimated ability $\\hat{\\eta}$ for the same person and items used to produce Figure 5.1 is plotted for different values of $n$ (solid line) and 95% confidence intervals as implied by Hoeffdings inequality (dotted lines). The dashed horizontal line shows the true ability.\n\nHoeffding's inequality, together with the monotonicity of $E(\\bar{X}|\\eta, a, b)$ as a function of $\\eta$, implies that an estimator $\\hat{\\eta}$ obtained by solving\n\n$$E(\\bar{X}|\\hat{\\eta}, a, b) = \\bar{X} \\tag{8}$$\n\nconverges to the true value of $\\eta$ if $n$ goes to infinity. This is illustrated in Figure 5.2 in which the same person, items and responses are used as in Figure 5.1. The confidence bounds are obtained by inverting $E(\\bar{X}|\\eta, a, b)$ as function of $\\eta$ and evaluating the resulting function in the bounds implied by Hoeffding's inequality^5. As with the mean, the width of the confidence interval decreases in proportion to the square root of $n$.\n\nWe can estimate $\\eta$ using a generated response pattern instead of the observed one. To this aim, we determine $\\hat{\\hat{\\eta}}$ by solving $E_j(Y|\\hat{\\hat{\\eta}}, a, b) = \\bar{Y}$, where $\\bar{Y} = \\bar{X}$, and $E_j()$ denotes the expected value of the mean under the proposal. While $E_j()$ is a monotone function of $\\eta$, it is not equal to the one under the model (7) because, if $j \\neq 0$, one item response function is replaced by the prior cdf. It will be clear, however, that the difference becomes negligible as $n$ goes to infinity so that $\\hat{\\hat{\\eta}}$ converges to $\\hat{\\eta}$ and the confidence bounds apply to both estimators. Thus, the confidence bounds in Figure 5.1 are based on Hoeffding's inequality, and 95% of the realizations of the SM-AB algorithm stay withing these bounds and are ever closer to the true value of $\\eta$ as $n$ increases.\n\n## 6 Discussion\n\nWe have discussed a MH algorithm proposed by Marsman et al. (2015) and have proven that it becomes more efficient when more data becomes available and scales-up to handle large problems.\n\nMarsman et al. (2015) introduce their algorithm is a few phrases and present no derivation. We have found that the complete formal underpinning for the algorithm is provided by two lemmas. It is worth noting that these lemmas are valid for any distribution of the auxiliary variables which implies that the SM-algorithms can be used, and with minimal changes, for any IRT model where the item response functions are distribution functions as in a normal-ogive model. Lemma 2, is of independent interest because it implies that ability can be estimated consistently from the number-correct score under any monotone IRT model.\n\nThat the algorithm becomes better with more data is an important property that, to the best of our knowledge, is not shared by any of the existing samplers; e.g., Patz and Junker (1999), or Maris and Maris (2002). The most widely used MCMC algorithm in educational measurement is probably the data-augmentation (DA) Gibbs sampler proposed by Albert (1992); see also Albert and Chib (1993) and Polson, Scott, and Windle (2013). Compared to the SM-algorithms, the DA Gibbs sampler has two important disadvantages. First, it is restricted to normal-ogive models and forces the user to adopt normal priors. Second, DA causes auto-correlation and this auto-correlation will not diminish as more data are observed. Especially with large datasets^6, good starting values are essential for the algorithm to reach the posterior support whereas the SM-AB algorithm takes us there in a few iteration.\n\nIn closing, we will sketch a possible extension for future research. That is, we adapt the sampler for models where response patterns are restricted to lie in a subset $S$. To this effect, we adapt the MH step, as it stands, and multiply $\\alpha$ in (3) by:\n\n$$\\frac{Z_S(\\eta^*)Z(\\eta')}{Z_S(\\eta')Z(\\eta^*)}, \\tag{9}$$\n\nwhere $Z(\\eta) = \\prod_i(1 + e^{a_i\\eta + b_i})$ is the normalizing constant in the proposal, and $Z_S(\\eta)$ is the normalizing constant when $y \\in S$. This extension of the algorithm is useful because would allow us to handle multi-stage designs and/or polytomous item responses.\n\n## References\n\nAlbert, J. (1992). Bayesian estimation of normal ogive item response curves using Gibbs sampling. *Journal of Educational Statistics, 17*(3), 251–269.\n\nAlbert, J., & Chib, S. (1993). Bayesian analysis of binary and polytomous response data. *Journal of the American Statistical Association, 88*(422), 669–679.\n\nBesag, J. (1975). Statistical analysis of non-lattice data. *The Statistician, 24*(3), 179–195.\n\nBirnbaum, A. (1968). Some latent trait models and their use in inferring an examinee's ability. In F. Lord & M. Novick (Eds.), *Statistical theories of mental test scores* (pp. 395–479). Reading, MA: Addison-Wesley.\n\nDawid, A. (1979). Conditional independence in statistical theory. *Journal of the Royal Statistical Society, Series B (Methodological), 41*(1), 1–31.\n\nEddelbuettel, D., & Francois, R. (2011). Rcpp: Seamless R and C++ integration. *Journal of Statistical Software, 40*(8), 1–18.\n\nEpskamp, S., Maris, G., Waldorp, L., & Borsboom, D. (In press). Network psychometrics. In P. Irwing, D. Hughes, & T. Booth (Eds.), *Handbook of psychometrics*. New-York: Wiley.\n\nHastings, W. (1970). Monte Carlo sampling methods using Markov chains and their applications. *Biometrika, 57*(1), 97–109.\n\nHoare, C. (1961). Algorithm 65: Find. *Communications of the ACM, 4*(7), 321–322.\n\nHoeffding, W. (1963). Probability inequalities for sums of bounded random variables. *Journal of the American Statistical Association, 58*(301), 13–30.\n\nIsing, E. (1925). Beitrag zur theorie des ferromegnetismus. *Zeitschrift für Physik, 31*(1), 253–258.\n\nKruis, J., & Maris, G. (2016). Three representations of the Ising model. *Scientific Reports, 6*(34175).\n\nLenz, W. (1920). Beiträge zum verstandnis der magnetischen eigenschaften in festen korpern. *Physikalische Zeitschrift, 21*, 613–615.\n\nLinderman, S., Johnson, M., & Adams, R. (2015). Dependent multinomial models made easy: Stick-breaking with the Polya-Gamma augmentation. In C. Cortes, N. Lawrence, D. Lee, M. Sugiyama, & R. Garnett (Eds.), *Advances in neural information processing systems 28* (pp. 3456–3464). Curran Associates, Inc.\n\nLord, F., & Novick, M. (1968). *Statistical theories of mental test scores*. Reading, MA: Addison-Wesley.\n\nMarin, J.-M., & Robert, C. (2014). *Bayesian essentials with R*. New-York: Spinger.\n\nMaris, G., & Maris, E. (2002). A MCMC-method for models with continuous latent responses. *Psychometrika, 67*(3), 335–350.\n\nMarsman, M., Borsboom, D., Kruis, J., Epskamp, S., van Bork, R., Waldorp, L., . . . Maris, G. (2016). An introduction to network psychometrics: Relating Ising network models to item response theory models. Manuscript submitted for publication.\n\nMarsman, M., Maris, G., Bechger, T., & Glas, C. (2015). Bayesian inference for low-rank Ising networks. *Scientific Reports, 5*(9050), 1–7.\n\nMarsman, M., Maris, G., Bechger, T., & Glas, C. (2017). Turning simulation into estimation: Generalized exchange algorithms for exponential family models. *PLoS One, 12*(1), 1–15.\n\nMarsman, M., Maris, G., Bechger, T. M., & Glas, C. A. W. (2016). What can we learn from plausible values? *Psychometrika, 81*(2), 274–289.\n\nMetropolis, N., Rosenbluth, A., Rosenbluth, M., & Teller, A. (1953). Equation of state calculations by fast computing machines. *The Journal of Chemical Physics, 21*(6), 1087–1092.\n\nMislevy, R. (1991). Randomization-based inference about latent variables from complex samples. *Psychometrika, 56*(2), 177–196.\n\nPatz, R., & Junker, B. (1999). A straightforward approach to Markov Chain Monte Carlo methods for item response models. *Journal of Educational and Behavioral Statistics, 24*(2), 146–178.\n\nPolson, N. G., Scott, J. G., & Windle, J. (2013). Bayesian Inference for Logistic Models Using Polya-Gamma Latent Variables. *Journal of the American Statistical Association, 108*, 1339–1349.\n\nR Core Team. (2016). *R: A language and environment for statistical computing* [Computer software manual]. Vienna, Austria. Retrieved from https://www.R-project.org/\n\nRubin, D. (1984). Bayesianly justifiable and relevant frequency calculations for the applied statistician. *Annals of Statistics, 12*, 1151–1172.\n\nTanner, M. (1996). *Tools for statistical inference* (Third ed.). New york: Springer-Verlag.\n\nTierney, L. (1994). Markov chains for exploring posterior distributions. *The Annals of Statistics, 22*(4), 1701–1762.\n\n## 7 Appendix\n\n### 7.1 The Acceptance Probability Function for the MH Algorithm\n\nLet $\\eta'$ denote the current parameter value, $\\eta^*$ the proposal value so that\n\n$$\\alpha = \\frac{f_0(\\eta^*, x)f_j(\\eta', y)}{f_0(\\eta', x)f_j(\\eta^*, y)}.$$\n\nWe now find the expression for $\\alpha$ when the $F_i$, for $i = 1, \\ldots, n$ are logistic as in (2). The case for $j = 0$ is relatively simple and we focus on deriving expressions for the case where $j \\neq 0$.\n\nFirst, ignoring terms unrelated to $\\eta$, we find that\n\n$$\\frac{f_0(\\eta, x)}{f_j(\\eta, y)} = \\left( \\frac{\\prod_{i \\neq j} \\frac{e^{x_i(a_i\\eta+b_i)}}{D_i}}{\\prod_{i \\neq j} \\frac{e^{y_{ij}(a_i\\eta+b_i)}}{D_i}} \\right) \\frac{F_j^{x_j}(\\eta)[1 - F_j(\\eta)]^{1-x_j}}{F_0^{y_{0j}}(\\eta)[1 - F_0(\\eta)]^{1-y_{0j}}} \\frac{f_0(\\eta)}{f_j(\\eta)}$$\n$$= e^{\\eta(\\sum_{i \\neq j} a_i x_i - \\sum_{i \\neq j} a_i y_{ij})} \\frac{F_j^{x_j}(\\eta)[1 - F_j(\\eta)]^{1-x_j}}{f_j(\\eta)} \\frac{f_0(\\eta)}{F_0^{y_{0j}}(\\eta)[1 - F_0(\\eta)]^{1-y_{0j}}}$$\n\nwhere $D_i(\\eta) = 1 + \\exp(a_i\\eta + b_i)$. We will simplify this further. Since $j \\neq 0$,\n\n$$f_j(\\eta) = \\frac{e^{a_j\\eta+b_j}}{a_j^{-1}D_j^2(\\eta)}, \\quad a_j > 0.$$\n\nIt follows that:\n\n$$\\frac{F_j^{x_j}(\\eta)[1 - F_j(\\eta)]^{1-x_j}}{f_j(\\eta)} = \\frac{\\frac{e^{x_j(a_j\\eta+b_j)}}{D_j(\\eta)}}{a_j^{-1}D_j^2(\\eta)} e^{a_j\\eta+b_j} = e^{(x_j-1)(a_j\\eta+b_j)}a_j^{-1}D_j(\\eta)$$\n\nHence, we find that:\n\n$$\\alpha = \\frac{f_0(\\eta^*, x)}{f_j(\\eta^*, y)} \\frac{f_j(\\eta', y)}{f_0(\\eta', x)}$$\n$$= \\frac{e^{\\eta^*(\\sum_{i \\neq j} a_i x_i - \\sum_{i \\neq j} a_i y_{ij})}e^{(x_j-1)(a_j\\eta^*+b_j)}a_j^{-1}D_j(\\eta^*)}{e^{\\eta'(\\sum_{i \\neq j} a_i x_i - \\sum_{i \\neq j} a_i y_{ij})}e^{(x_j-1)(a_j\\eta'+b_j)}a_j^{-1}D_j(\\eta')} \\times R$$\n$$= e^{(\\eta^*-\\eta')(\\sum_{i \\neq j} a_i x_i - \\sum_{i \\neq j} a_i y_{ij})}e^{(x_j-1)[a_j(\\eta^*-\\eta')]}\\frac{D_j(\\eta^*)}{D_j(\\eta')} \\times R$$\n\nwhere the rest-term $R$\n\n$$R = \\frac{f_0(\\eta^*)}{F_0^{y_{0j}}(\\eta^*)[1 - F_0(\\eta^*)]^{1-y_{0j}}} \\frac{F_0^{y_{0j}}(\\eta')[1 - F_0(\\eta')]^{1-y_{0j}}}{f_0(\\eta')}$$\n$$= \\frac{f_0(\\eta^*)}{f_0(\\eta')} \\frac{F_0^{y_{0j}}(\\eta')[1 - F_0(\\eta')]^{1-y_{0j}}}{F_0^{y_{0j}}(\\eta^*)[1 - F_0(\\eta^*)]^{1-y_{0j}}}$$\n\nHow complex the rest-term is depends on the prior. If the prior is logistic with parameters $a_0$ and $b_0$,\n\n$$R = e^{(\\eta^*-\\eta')a_0(1-y_{0j})} \\frac{D_0(\\eta')}{D_0(\\eta^*)}$$\n\nLet $\\Delta = (\\eta^* - \\eta')$. It follows that, for $j \\neq 0$, and with a logistic prior:\n\n$$\\alpha = e^{\\Delta(\\sum_{i \\neq j} a_i x_i - \\sum_{i \\neq j} a_i y_{ij})}e^{(x_j-1)[a_j\\Delta]}e^{\\Delta a_0(1-y_{0j})}\\frac{D_j(\\eta^*)}{D_j(\\eta')}\\frac{D_0(\\eta')}{D_0(\\eta^*)}$$\n$$= e^{\\Delta(\\sum_i a_i x_i - \\sum_{r \\neq j} a_j y_{rj})}e^{\\Delta(a_0-a_j)}\\frac{D_j(\\eta^*)}{D_j(\\eta')}\\frac{D_0(\\eta')}{D_0(\\eta^*)}$$\n\nwhere $r$ runs from 0 to $n$. Thus, if the items are Rasch items and the prior is logistic with scaling parameter $a_0 = 1$ and mean $b_0$ we find that\n\n$$\\alpha_j = \\frac{1 + \\exp(\\eta^* + b_j)}{1 + \\exp(\\eta' + b_j)} \\frac{1 + \\exp(\\eta' + b_0)}{1 + \\exp(\\eta^* + b_0)}$$\n\nfor any $j \\in \\{0, 1, \\ldots, n\\}$ given that the sum-scores are matched.\n\n### 7.2 R Code\n\nAs a courtesy to the reader we provide a minimal set of R-scripts (R Core Team, 2016) that read as pseudo-code for readers who program in other languages.\n\n#### 7.2.1 Quickselect\n\nAt the time of writing, the quickselect algorithm is not yet implemented in R. A C++ implementation can be made available via the Rcpp-package (Eddelbuettel & Francois, 2011).\n\n```cpp\n#include <algorithm>\n#include <functional>\n#include <Rcpp.h>\nusing namespace Rcpp;\n// [[Rcpp::plugins(cpp11)]]\n// [[Rcpp::export]]\nList qselect(NumericVector x, int k)\n{\ndouble out;\nint iout;\nIntegerVector ivec(x.size());\nfor (int i=0;i<ivec.size();i++) { ivec[i]=i;}\nstd::nth_element(ivec.begin(),ivec.begin()+k-1,ivec.end()\n,[&](int i1, int i2) { return x[i1] < x[i2]; });\niout=ivec[k-1];\nout=x[iout];\nreturn List::create(Named(\"value\", out),\nNamed(\"index\", iout+1));\n}\n```\n\nNote that the output is a list with the k-th smallest element and its original index; one-based for use in R.\n\n#### 7.2.2 The SM-MH Algorithm\n\nThe following is a straightforward implementation assuming a normal prior and index $n + 1$.\n\n```r\nAB<-function(x,a,b,mu,sigma)\n{\nn=length(x)\nz=rlogis(n,location=-b/a,scale=1/a)\nz=c(z,rnorm(1,mean=mu,sd=sigma))\nreturn(qselect(z,sum(x)+1))\n}\nMH<-function(x,a,b,current,mu,sigma)\n{\nn=length(x)\nz=rlogis(n,location=-b/a,scale=1/a)\nz=c(z,rnorm(1,mean=mu,sd=sigma))\nabc=qselect(z,sum(x)+1)\nj=abc$index\ny=sapply(z[-j],function(x) 1*(x<=z[j]))\nif (j<(n+1))\n{\nc_1=(x[j]-1)*a[j]*(z[j]-current)\nc_2=log(1+exp(a[j]*z[j]+b[j]))\nc_3=log(1+exp(a[j]*current+b[j]))\nc_4=dnorm(z[j], mean=mu,sd=sigma,log = TRUE)\nc_5=dnorm(current,mean=mu,sd=sigma,log = TRUE)\nc_6=pnorm(current,mean=mu,sd=sigma,lower.tail=y[n],log.\np = TRUE)\nc_7=pnorm(z[j],mean=mu,sd=sigma,lower.tail=y[n],log.p =\nTRUE)\nlogA=c_1+c_2-c_3+c_4-c_5+c_6-c_7\nlogalpha=logA+sum(a[-j]*(x[-j]-y[-n]))*(z[j]-current)\n}else\n{\nlogalpha=sum(a*(x-y))*(z[j]-current)\n}\nnew=current\nif (log(runif(1,0,1))<=logalpha) new=z[j]\nreturn(new)\n}\n```\n\n#### 7.2.3 A Gibbs Sampler for the 2PL\n\nLet np be the number of persons, and nI the number of items. The following script performs one iteration of a Gibbs sampler for the 2PL.\n\n```r\n## MStep\ntheta=sapply(1:nP,function(p) MH(x[p,],alpha,delta,theta[p\n],mu.th,sigma.th))\ndelta=sapply(1:nI,function(i) MH(x[,i],rep(1,m),alpha[i]*\ntheta,delta[i],0,2))\nalpha=sapply(1:nI,function(i) MH(x[,i],theta,rep(delta[i],\nm),alpha[i],mu.al,sigma.al)\n## identify\ns=sum(delta)/sum(alpha)\nm=1/sd(theta)\ndelta = delta-s*alpha\ntheta=m*(theta+s)\nalpha=alpha/m\n## sample hyperparameters\nmu.th = rnorm(1,mean(theta),sigma.th/sqrt(nP))\nmu.al = rnorm(1,mean(alpha),sigma.al/sqrt(nI))\n```",
+  "verbatim_heading_share": 1.04
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 A Lemma",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 About the Algorithm",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Simplest Case",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 The General Case",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 The Sum-Matched Approximate Bayes Algorithm:",
+   "page": 4,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:",
+   "page": 6,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "4 Simulation Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Computational Complexity",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Autocorrelation and Convergence",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Efficiency of the SM-AB Algorithm when n Increases",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Convergence",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2 Convergence Rate",
+   "page": 13,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 Discussion",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Appendix",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 The Acceptance Probability Function for the MH Algorithm",
+   "page": 20,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7.2 R Code",
+   "page": 21,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7.2.1 Quickselect",
+   "page": 21,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "7.2.2 The SM-MH Algorithm",
+   "page": 22,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "7.2.3 A Gibbs Sampler for the 2PL",
+   "page": 23,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "MStep",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "identify",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "sample hyperparameters",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 40.618218899995554,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 25,
+  "tp": 22,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8846153846153846,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "MStep",
+   "identify",
+   "sample hyperparameters"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 22,
+  "pred": 26,
+  "tp": 3,
+  "fp": 23,
+  "fn": 19,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.14814814814814814,
+  "unmatched_gt": [
+   "3 About the Algorithm",
+   "3.1 The Simplest Case",
+   "3.2 The General Case",
+   "3.2.1 The Sum-Matched Approximate Bayes Algorithm:",
+   "3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:",
+   "4 Simulation Experiments",
+   "4.1 Computational Complexity",
+   "4.2 Autocorrelation and Convergence",
+   "5 Efficiency of the SM-AB Algorithm when n In- creases",
+   "5.1 Convergence",
+   "5.2 Convergence Rate",
+   "6 Discussion",
+   "References",
+   "7 Appendix",
+   "7.1 The Acceptance Probability Function for the MH Algorithm",
+   "7.2 R Co de",
+   "7.2.1 Quickselect",
+   "7.2.2 The SM-MH Algorithm",
+   "7.2.3 A Gibbs Sampler for the 2PL"
+  ],
+  "unmatched_pred": [
+   "An Asymptotically Efficient Metropolis-Hastings Sampler for Bayesian Inference i",
+   "3 About the Algorithm",
+   "3.1 The Simplest Case",
+   "3.2 The General Case",
+   "3.2.1 The Sum-Matched Approximate Bayes Algorithm:",
+   "3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:",
+   "4 Simulation Experiments",
+   "4.1 Computational Complexity",
+   "4.2 Autocorrelation and Convergence",
+   "5 Efficiency of the SM-AB Algorithm when n Increases",
+   "5.1 Convergence",
+   "5.2 Convergence Rate",
+   "6 Discussion",
+   "References",
+   "7 Appendix",
+   "7.1 The Acceptance Probability Function for the MH Algorithm",
+   "7.2 R Code",
+   "7.2.1 Quickselect",
+   "7.2.2 The SM-MH Algorithm",
+   "7.2.3 A Gibbs Sampler for the 2PL",
+   "MStep",
+   "identify",
+   "sample hyperparameters"
+  ]
+ }
+}

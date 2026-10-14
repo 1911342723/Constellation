@@ -1,0 +1,180 @@
+{
+ "doc": "1806.04742",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Construction of G′",
+   "Algorithm 2 Approximation Algorithm for MSPEC"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Construction of G′",
+   "Algorithm 2 Approximation Algorithm for MSPEC"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 40.28679209999973
+ },
+ "predictions": [
+  {
+   "text": "Minimum Shared-Power Edge Cut ∗",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Related Models and Work",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2 Alternative Formulations of MSPEC",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Barrier Coverage in a Sensor Network",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Background on Barrier Coverage",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Minimum Shrinkage",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Reduction from Minimum Shrinkage to MSPEC",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Minimum Bottleneck Shared-Power Edge Cut",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Approximation Scheme for MSPEC",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Construction of G′",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 2 Approximation Algorithm for MSPEC",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Variations of MSPEC",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Uniform/Integral edge weights",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6.2 Polynomial Domain",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6.3 MSPEC with Vertex Costs",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "7 Faster Approximation for MSPEC",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Open Problems",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.012813000001187902,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Construction of G′",
+   "Algorithm 2 Approximation Algorithm for MSPEC"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

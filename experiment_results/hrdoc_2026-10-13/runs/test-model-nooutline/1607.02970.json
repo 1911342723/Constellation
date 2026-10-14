@@ -1,0 +1,137 @@
+{
+ "doc": "1607.02970",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 301,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 12866,
+   "completion_tokens": 487,
+   "total_tokens": 13353
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract. We prove that the sequential functionals of some ﬁxed types at type level 2,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Sequential procedures and functionals",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The main Theorem",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Theorem and Key Lemma",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. Matching paths",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3. Projections and preservation",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4. Proof of the Key Lemma",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Conclusions and discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.114038700001402,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 8,
+  "tp": 4,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ],
+  "ignored_title_predictions": null
+ }
+}

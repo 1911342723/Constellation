@@ -1,0 +1,107 @@
+{
+ "doc": "1703.09436",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "A. Extrac¸ ˜ao de Caracter´ısticas das Imagens",
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "A. Extrac¸ ˜ao de Caracter´ısticas das Imagens",
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 681,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13096,
+   "completion_tokens": 479,
+   "total_tokens": 13575
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9694329592439457,
+   "in_order": 0.9670702894270525,
+   "inserted": 0.015742128935532285
+  }
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUC¸ ˜AO",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. FUNDAMENTOS B ´ASICOS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. M´etodos de Classiﬁcac¸˜ao",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. AVALIAC¸ ˜AO DE CLASSIFICADORES PARA",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. AVALIAC¸ ˜AO EXPERIMENTAL",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONSIDERAC¸ ˜OES FINAIS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. AGRADECIMENTOS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 116.38389710000047
+}

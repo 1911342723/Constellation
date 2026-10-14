@@ -1,0 +1,226 @@
+{
+ "doc": "1708.00961",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 22,
+  "tp": 15,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.4347826086956522,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Y. Zhang and H",
+   "M. K",
+   "(a) Full Dose FBP",
+   "(d) GAN",
+   "(g) WGAN",
+   "(c) DictRecon",
+   "(f) CNN-VGG"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 424,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Low Dose CT Image Denoising Using a Generative",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Adversarial Network with Wasserstein Distance and",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Perceptual Loss",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Y. Zhang and H",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "M. K",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Noise Reduction Model",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. WGAN",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Perceptual Loss",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Network Structures",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Other Networks",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Datasets",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Network Training",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "C. Network Convergence",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Denoising Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(a) Full Dose FBP",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(d) GAN",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(g) WGAN",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(c) DictRecon",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(f) CNN-VGG",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Quantitative Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "F. VGG Feature Extractor",
+   "page": 7,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "IV. DISCUSSIONS AND CONCLUSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.742551700001059,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 25,
+  "tp": 15,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.3846153846153846,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Low Dose CT Image Denoising Using a Generative",
+   "Adversarial Network with Wasserstein Distance and",
+   "Perceptual Loss",
+   "Y. Zhang and H",
+   "M. K",
+   "(a) Full Dose FBP",
+   "(d) GAN",
+   "(g) WGAN",
+   "(c) DictRecon",
+   "(f) CNN-VGG"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 22,
+  "tp": 15,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.4347826086956522,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Y. Zhang and H",
+   "M. K",
+   "(a) Full Dose FBP",
+   "(d) GAN",
+   "(g) WGAN",
+   "(c) DictRecon",
+   "(f) CNN-VGG"
+  ],
+  "ignored_title_predictions": null
+ }
+}

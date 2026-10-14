@@ -1,0 +1,189 @@
+{
+ "doc": "1803.01834",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1160,
+  "layout_marked": 29,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9367080209646388,
+  "inserted_word_share": 0.15379083008690442
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Local Representation Alignment",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Notation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Setting the targets.",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Divide and Conquer",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3.1 Instantiation",
+   "page": 7,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "page": 8,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.4 Overcoming Poor Initializations",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5 Overcoming Exploding and Vanishing Gradients",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Experimental Results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Eﬀect of Manifold-Walking",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Robustness to Initialization",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Training from Null Initialization",
+   "page": 16,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.4 Stochastic Networks",
+   "page": 18,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.5 Feature Extraction versus Optimization",
+   "page": 21,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4. Related Work",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion & Future Work",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A.",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B.",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 27.460889199996018,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

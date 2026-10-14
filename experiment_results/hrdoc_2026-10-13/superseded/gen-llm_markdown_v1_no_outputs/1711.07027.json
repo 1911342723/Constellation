@@ -1,0 +1,321 @@
+{
+ "doc": "1711.07027",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "4. Experiment",
+   "4.1. Datasets"
+  ],
+  "unmatched_pred": [
+   "3.2. SPGAN: Approach Details",
+   "4. Experiment",
+   "4.1. Datasets"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 12863,
+   "completion_tokens": 9522
+  },
+  "elapsed_llm_seconds": 40.66724809999869,
+  "content_preservation": 0.7839875227449961,
+  "inserted_word_share": 0.027567306142189274,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Image-Image Domain Adaptation with Preserved Self-Similarity and Domain-Dissimilarity for Person Re-identification",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1. Introduction",
+    0,
+    2
+   ],
+   [
+    "2. Related Work",
+    0,
+    2
+   ],
+   [
+    "3. Proposed Method",
+    0,
+    2
+   ],
+   [
+    "3.1. Baseline Overview",
+    0,
+    3
+   ],
+   [
+    "3.2. SPGAN: Approach Details",
+    0,
+    3
+   ],
+   [
+    "3.2.1 CycleGAN Revisit",
+    0,
+    4
+   ],
+   [
+    "3.2.2 SPGAN",
+    0,
+    4
+   ],
+   [
+    "3.3. Feature Learning",
+    0,
+    3
+   ],
+   [
+    "4. Experiment",
+    0,
+    2
+   ],
+   [
+    "4.1. Datasets",
+    0,
+    3
+   ],
+   [
+    "4.2. Implementation Details",
+    0,
+    3
+   ],
+   [
+    "4.3. Evaluation",
+    0,
+    3
+   ],
+   [
+    "4.4. Comparison with State-of-the-art Methods",
+    0,
+    3
+   ],
+   [
+    "5. Conclusion",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Proposed Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Baseline Overview",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. SPGAN: Approach Details",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 CycleGAN Revisit",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2.2 SPGAN",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.3. Feature Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Experiment",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Datasets",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2. Implementation Details",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3. Evaluation",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4. Comparison with State-of-the-art Methods",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 40.85667929999909,
+ "metrics_raw": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 3,
+  "fp": 14,
+  "fn": 12,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "3. Proposed Method",
+   "3.1. Baseline Overview",
+   "3.2. SPGAN: Approach Details",
+   "3.2.1 CycleGAN Revisit",
+   "3.3. Feature Learning",
+   "4. Experiment",
+   "4.1. Datasets",
+   "4.2. Implementation Details",
+   "4.3. Evaluation",
+   "4.4. Comparison with State-of-the-art Methods",
+   "5. Conclusion",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Image-Image Domain Adaptation with Preserved Self-Similarity and Domain-Dissimil",
+   "3. Proposed Method",
+   "3.1. Baseline Overview",
+   "3.2. SPGAN: Approach Details",
+   "3.2.1 CycleGAN Revisit",
+   "3.2.2 SPGAN",
+   "3.3. Feature Learning",
+   "4. Experiment",
+   "4.1. Datasets",
+   "4.2. Implementation Details",
+   "4.3. Evaluation",
+   "4.4. Comparison with State-of-the-art Methods",
+   "5. Conclusion",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 3,
+  "fp": 13,
+  "fn": 12,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.23529411764705888,
+  "unmatched_gt": [
+   "3. Proposed Method",
+   "3.1. Baseline Overview",
+   "3.2. SPGAN: Approach Details",
+   "3.2.1 CycleGAN Revisit",
+   "3.3. Feature Learning",
+   "4. Experiment",
+   "4.1. Datasets",
+   "4.2. Implementation Details",
+   "4.3. Evaluation",
+   "4.4. Comparison with State-of-the-art Methods",
+   "5. Conclusion",
+   "References"
+  ],
+  "unmatched_pred": [
+   "3. Proposed Method",
+   "3.1. Baseline Overview",
+   "3.2. SPGAN: Approach Details",
+   "3.2.1 CycleGAN Revisit",
+   "3.2.2 SPGAN",
+   "3.3. Feature Learning",
+   "4. Experiment",
+   "4.1. Datasets",
+   "4.2. Implementation Details",
+   "4.3. Evaluation",
+   "4.4. Comparison with State-of-the-art Methods",
+   "5. Conclusion",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 6,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "4. Experiment",
+   "4.1. Datasets"
+  ],
+  "unmatched_pred": [
+   "3.2. SPGAN: Approach Details",
+   "4. Experiment",
+   "4.1. Datasets"
+  ],
+  "ignored_title_predictions": null
+ }
+}

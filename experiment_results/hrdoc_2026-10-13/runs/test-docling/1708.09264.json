@@ -1,0 +1,176 @@
+{
+ "doc": "1708.09264",
+ "system": "docling",
+ "metrics": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.65,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Box 1: The Finite State Projection Algorithm"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 82.80952629999956
+ },
+ "predictions": [
+  {
+   "text": "Stochasticity or Noise in Biochemical Reactions∗",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Chemical Master Equation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Analyzing Population Statistics with FSP Approaches.",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Notation for the FSP",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Properties of The Finite State Projection",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 The FSP Algorithm.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Box 1: The Finite State Projection Algorithm",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3.1 Initialization of the FSP",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Further reductions to the Finite State Projection",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Comparing CME models to single-cell data",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Examples",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Toggle Model",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Matching stochastic models to small RNA measurements in bacteria",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Matching stochastic models stress response regulation in yeast",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Summary",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supplemental Exercises",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.009404099997482263,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6190476190476191,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Stochasticity or Noise in Biochemical Reactions∗",
+   "Box 1: The Finite State Projection Algorithm"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Box 1: The Finite State Projection Algorithm"
+  ],
+  "ignored_title_predictions": null
+ }
+}

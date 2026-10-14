@@ -1,0 +1,209 @@
+{
+ "doc": "1803.08625",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 25,
+  "parent_correct": 24,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 22,
+  "teds": 0.88,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 441,
+  "layout_marked": 28,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8375946293386659,
+  "inserted_word_share": 0.464377055169894
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 VERSION SPACE LEARNING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 VeSC-CoL OVERVIEW",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 HYPOTHESIS SPACE PARTITION",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 BDD-BASED LEARNING",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 VeSC-CoL FLOW",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.1 IDEA OF ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3 HYPOTHESIS SUB-SPACE ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.4 POSITIVE SAMPLE SPACE ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.5 NEGATIVE SAMPLE SPACE ENCODING",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.6 OBTAINING VERSION SPACE",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.6.1 Handling Non-Canonicality",
+   "page": 5,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "5 SAT-BASED LEARNING",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 HYPOTHESIS SUB-SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.2 POSITIVE SAMPLE SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.3 NEGATIVE SAMPLE SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.4 SIZE OF VERSION SPACE",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6 EXPERIMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 RUNTIME COMPARISON",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6.2 COMPARISON WITH OTHER METHODS",
+   "page": 7,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6.3 COMPLEXITY ORDERING",
+   "page": 8,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6.4 ACCURACY OF VeSC-CoL",
+   "page": 8,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "7 CONCLUSION AND FUTURE WORK",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.207857900000818,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 25,
+  "parent_correct": 24,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

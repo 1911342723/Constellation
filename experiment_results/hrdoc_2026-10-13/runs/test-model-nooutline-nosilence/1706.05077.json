@@ -1,0 +1,220 @@
+{
+ "doc": "1706.05077",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 18,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "2.6.1. NAP trained on languages",
+   "2.6.2. Regularized LDA"
+  ],
+  "unmatched_pred": [
+   "1 Sharif University of Technology, Tehran, Iran",
+   "2 Brno University of Technology, Speech@FIT and IT4I Center of Excellence, Czech",
+   "Short duration enrollment and test utterances: This hap-",
+   "Imbalanced multi-session training: There are two enroll-",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 211,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4840,
+   "completion_tokens": 754,
+   "total_tokens": 5594
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Sharif University of Technology, Tehran, Iran",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Brno University of Technology, Speech@FIT and IT4I Center of Excellence, Czech Republic",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Short duration enrollment and test utterances: This hap-",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Imbalanced multi-session training: There are two enroll-",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2. SYSTEM DESCRIPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Dataset",
+   "page": 0,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.2. VAD",
+   "page": 0,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.3. Features",
+   "page": 0,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.4. UBM training",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.5. i-vector extractor training",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.6. Preconditioning i-vectors",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.7. Model enrollment",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.8. PLDA",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.9. Score normalization",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.10. Systems",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.11. Final fusion",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.12. Execution time and memory consumption",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3. SYSTEM PERFORMANCE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CONCLUSIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.72955390000061,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "2.6.1. NAP trained on languages",
+   "2.6.2. Regularized LDA"
+  ],
+  "unmatched_pred": [
+   "1 Sharif University of Technology, Tehran, Iran",
+   "2 Brno University of Technology, Speech@FIT and IT4I Center of Excellence, Czech",
+   "Short duration enrollment and test utterances: This hap-",
+   "Imbalanced multi-session training: There are two enroll-",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 20,
+  "tp": 14,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6190476190476191,
+  "unmatched_gt": [
+   "2.6.1. NAP trained on languages",
+   "2.6.2. Regularized LDA"
+  ],
+  "unmatched_pred": [
+   "1 Sharif University of Technology, Tehran, Iran",
+   "2 Brno University of Technology, Speech@FIT and IT4I Center of Excellence, Czech",
+   "Short duration enrollment and test utterances: This hap-",
+   "Imbalanced multi-session training: There are two enroll-",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": null
+ }
+}

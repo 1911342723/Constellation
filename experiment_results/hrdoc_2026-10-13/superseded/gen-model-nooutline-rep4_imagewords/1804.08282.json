@@ -1,0 +1,130 @@
+{
+ "doc": "1804.08282",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 438,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17422,
+   "completion_tokens": 494,
+   "total_tokens": 17916
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9529775463716238,
+  "inserted_word_share": 0.38502729945401093
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SYSTEM MODEL AND ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Model Assumptions",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Problem Statement",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Mathematical Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Optimisation and Algorithm",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Construction of Risk Functions",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Algorithm Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.330000599999039
+}

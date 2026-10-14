@@ -1,0 +1,365 @@
+{
+ "doc": "1805.09887",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 26,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8518518518518519,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2",
+   "A.3 Variables"
+  ],
+  "unmatched_pred": [
+   "A.3 Variables"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Super-stability in the Student-Project Allocation Problem with Ties⋆⋆⋆",
+    0,
+    1
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Preliminary deﬁnitions and results",
+    2,
+    1
+   ],
+   [
+    "2.1 Formal deﬁnition of SPA-S",
+    2,
+    2
+   ],
+   [
+    "2.2 Ties in the preference lists",
+    2,
+    2
+   ],
+   [
+    "2.3 Cloning from spa-st to hrt does not work in general",
+    5,
+    2
+   ],
+   [
+    "3 An algorithm for SPA-ST under super-stability",
+    7,
+    1
+   ],
+   [
+    "3.1 Deﬁnitions relating to the algorithm",
+    7,
+    2
+   ],
+   [
+    "3.2 Description of the algorithm",
+    8,
+    2
+   ],
+   [
+    "3.3 Example algorithm execution",
+    10,
+    2
+   ],
+   [
+    "3.4 Correctness of Algorithm SPA-ST-super",
+    10,
+    2
+   ],
+   [
+    "3.5 Properties of super-stable matchings in spa-st",
+    18,
+    2
+   ],
+   [
+    "4 Empirical Evaluation",
+    19,
+    1
+   ],
+   [
+    "4.1 Datasets",
+    19,
+    2
+   ],
+   [
+    "4.2 Experimental Setup",
+    19,
+    2
+   ],
+   [
+    "5 Discussions and Concluding Remarks",
+    21,
+    1
+   ],
+   [
+    "Acknowledgements",
+    22,
+    1
+   ],
+   [
+    "References",
+    22,
+    1
+   ],
+   [
+    "Appendix A An IP model for super-stability in SPA-ST",
+    24,
+    1
+   ],
+   [
+    "A.1 Introduction",
+    24,
+    2
+   ],
+   [
+    "A.2 Constraints",
+    24,
+    2
+   ],
+   [
+    "A.3 Variables",
+    26,
+    2
+   ],
+   [
+    "A.4 Objective function",
+    26,
+    2
+   ],
+   [
+    "A.5 Correctness of the IP model",
+    26,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 29905,
+   "completion_tokens": 29000
+  },
+  "elapsed_llm_seconds": 120.40786409999419,
+  "content_preservation": 0.9967862061929297,
+  "inserted_word_share": 0.0008181632235630953,
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Super-stability in the Student-Project Allocation Problem with Ties⋆⋆⋆",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminary deﬁnitions and results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Formal deﬁnition of SPA-S",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Ties in the preference lists",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Cloning from spa-st to hrt does not work in general",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 An algorithm for SPA-ST under super-stability",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Deﬁnitions relating to the algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Description of the algorithm",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 Example algorithm execution",
+   "page": 10,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Correctness of Algorithm SPA-ST-super",
+   "page": 10,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.5 Properties of super-stable matchings in spa-st",
+   "page": 18,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Empirical Evaluation",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 19,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Experimental Setup",
+   "page": 19,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Discussions and Concluding Remarks",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A An IP model for super-stability in SPA-ST",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Introduction",
+   "page": 24,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "A.2 Constraints",
+   "page": 24,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "A.3 Variables",
+   "page": 24,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "A.4 Objective function",
+   "page": 26,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "A.5 Correctness of the IP model",
+   "page": 26,
+   "level": 2,
+   "parent": 18
+  }
+ ],
+ "seconds": 122.47401849999733,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8148148148148149,
+  "unmatched_gt": [
+   "2.2 Ties in the preference lists",
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "Super-stability in the Student-Project Allocation Problem with Ties⋆⋆⋆",
+   "2.2 Ties in the preference lists"
+  ]
+ },
+ "metrics_raw": {
+  "gt": 26,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8148148148148149,
+  "unmatched_gt": [
+   "2.2 Ties in the preference lists",
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "Super-stability in the Student-Project Allocation Problem with Ties⋆⋆⋆",
+   "2.2 Ties in the preference lists"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2",
+   "A.3 Variables"
+  ],
+  "unmatched_pred": [
+   "A.3 Variables"
+  ],
+  "ignored_title_predictions": null
+ }
+}

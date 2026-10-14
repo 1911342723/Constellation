@@ -1,0 +1,182 @@
+{
+ "doc": "1702.07360",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 22,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5217391304347826,
+  "unmatched_gt": [
+   "1) Supervised Case:",
+   "2) Semi-Supervised Learning:",
+   "3) Unsupervised Case:",
+   "1) Iterative Optimization Schemes:",
+   "2) Regularization Techniques:",
+   "1) Two-moon Dataset:",
+   "2) Two-circle Dataset:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "1) Supervised Case:",
+   "2) Semi-Supervised Learning:",
+   "3) Unsupervised Case:",
+   "1) Iterative Optimization Schemes:",
+   "2) Regularization Techniques:",
+   "1) Two-moon Dataset:",
+   "2) Two-circle Dataset:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 537,
+  "layout_marked": 16,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4822,
+   "completion_tokens": 584,
+   "total_tokens": 5406
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9657847875858561,
+  "inserted_word_share": 0.9211133275152724
+ },
+ "predictions": [
+  {
+   "text": "Neural Decision Trees",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION AND DECISION TREE REVIEW",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Motivations",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Univariate and Oblique Decision Trees",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II. NEURAL DECISION TREES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Locality Sensitive Hashing",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Model",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Local and Global Loss",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. HASHING NEURAL NETWORK",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Motivation",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. The Hashing Layer",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Training",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Toy Dataset",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. FUTURE WORK",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.36432000000059,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5217391304347826,
+  "unmatched_gt": [
+   "1) Supervised Case:",
+   "2) Semi-Supervised Learning:",
+   "3) Unsupervised Case:",
+   "1) Iterative Optimization Schemes:",
+   "2) Regularization Techniques:",
+   "1) Two-moon Dataset:",
+   "2) Two-circle Dataset:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

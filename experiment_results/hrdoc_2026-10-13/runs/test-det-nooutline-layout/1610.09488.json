@@ -1,0 +1,107 @@
+{
+ "doc": "1610.09488",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Resumen"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "Resumen"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 297,
+  "layout_marked": 10,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9146491588018055,
+  "inserted_word_share": 0.3257713248638838
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 General features",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Existence of positive periodic solutions",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 A priori bounds",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Degree computation",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.3529089000003296,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Resumen"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

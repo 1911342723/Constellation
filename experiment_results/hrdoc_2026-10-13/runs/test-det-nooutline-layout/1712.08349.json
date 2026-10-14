@@ -1,0 +1,173 @@
+{
+ "doc": "1712.08349",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 21,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "4.3.1 Additional Inf luence Dynamics – Entity-Adoption Con-",
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8421052631578947,
+  "unmatched_gt": [
+   "4.3.1 Additional Inf luence Dynamics – Entity-Adoption Con-",
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 280,
+  "layout_marked": 19,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9445544554455445,
+  "inserted_word_share": 0.30548429591624493
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "KEYWORDS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Named Entity Recognition",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Information Diffusion",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 DATASETS PREPARATION AND NER",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Subreddit extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 NER for Reddit",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 Tuning entity recognition",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 ENTITY DIFFUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Entity Mention Cascades",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Entity Adoption Post-(k − 1)th Exposure",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Global Threshold Diffusion Model",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.4 Experiments",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 DISCUSSION AND FUTURE WORK",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 CONCLUSIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 24.71325149999757,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "4.3.1 Additional Inf luence Dynamics – Entity-Adoption Con-",
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

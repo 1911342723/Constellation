@@ -1,0 +1,60 @@
+{
+ "doc": "1710.05523",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 1,
+  "pred": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 0,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 170,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3447,
+   "completion_tokens": 116,
+   "total_tokens": 3563
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9602109300095877,
+  "inserted_word_share": 0.8841057686744199
+ },
+ "predictions": [
+  {
+   "text": "An open window to neutrino mass hierarchy at maximal Dirac",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.0861997999963933
+}

@@ -1,0 +1,189 @@
+{
+ "doc": "1808.01524",
+ "system": "docling",
+ "metrics": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [
+   "Conditional generative model"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 22.771417699997983
+ },
+ "predictions": [
+  {
+   "text": "Learning disentangled representation from 12-lead electrograms: application in localizing the origin of Ventricular Tachycardia",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Works",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Background",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Variational Autoencoder",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MMD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Model Conditional generative model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discriminative regularization",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MMD",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Contrastive loss",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Training architecture",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "The Data",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Experimental setup",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Classification",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Analyzing disentanglement",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.008691999995789956,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5217391304347826,
+  "unmatched_gt": [
+   "Conditional generative model"
+  ],
+  "unmatched_pred": [
+   "Learning disentangled representation from 12-lead electrograms: application in l"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Conditional generative model"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,160 @@
+{
+ "doc": "1608.00771",
+ "system": "outline",
+ "metrics": {
+  "gt": 20,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Foundations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Terminology — ``smart contracts''",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Automation",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Enforceability",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3.1 What to enforce",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.3.2 How to enforce",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.4 The semantics of contracts",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Smart Contract Templates",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Templates and Parameters",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 The design landscape for Smart Contract Templates",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2.1 Increasing the sophistication of parameters",
+   "page": 7,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.2.2 Increasing the use of common standardised code",
+   "page": 9,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.2.3 Long-term research challenges",
+   "page": 9,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.2.4 Future developments and initial requirements",
+   "page": 11,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "4 Summary and Further Work",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Summary",
+   "page": 12,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2 Further Work",
+   "page": 12,
+   "level": 2,
+   "parent": 15
+  }
+ ],
+ "seconds": 0.0581397999994806,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

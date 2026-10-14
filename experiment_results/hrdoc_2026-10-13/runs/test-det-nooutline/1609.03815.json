@@ -1,0 +1,177 @@
+{
+ "doc": "1609.03815",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 10,
+  "fp": 5,
+  "fn": 6,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.2941176470588235,
+  "unmatched_gt": [
+   "A. A Unified Framework for Gender-Aware Age Estimation",
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "E. Reasonableness of Near-Orthogonality Penalty Across Hu-",
+   "man Gender and Age Semantic Spaces",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "A Uniﬁed Gender-Aware Age Estimation",
+   "1. Initialize wa, bm, and bf;",
+   "2. for t = 1, 2, ..., Tmax do",
+   "5. end for",
+   "6. Return wg, bg, wa, bm, and bf."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 527,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A Uniﬁed Gender-Aware Age Estimation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Initialize wa, bm, and bf;",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. for t = 1, 2, ..., Tmax do",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. end for",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Return wg, bg, wa, bm, and bf.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Datasets",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Experimental Setup",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Age Estimation With Race Variation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Age Estimation Without Race Variation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.148725099999865,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 10,
+  "fp": 5,
+  "fn": 6,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.2941176470588235,
+  "unmatched_gt": [
+   "A. A Unified Framework for Gender-Aware Age Estimation",
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "E. Reasonableness of Near-Orthogonality Penalty Across Hu-",
+   "man Gender and Age Semantic Spaces",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "A Uniﬁed Gender-Aware Age Estimation",
+   "1. Initialize wa, bm, and bf;",
+   "2. for t = 1, 2, ..., Tmax do",
+   "5. end for",
+   "6. Return wg, bg, wa, bm, and bf."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 9,
+  "fp": 5,
+  "fn": 5,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.2666666666666667,
+  "unmatched_gt": [
+   "A. A Unified Framework for Gender-Aware Age Estimation",
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "E. Reasonableness of Near-Orthogonality Penalty Across Hu-",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [
+   "A Uniﬁed Gender-Aware Age Estimation",
+   "1. Initialize wa, bm, and bf;",
+   "2. for t = 1, 2, ..., Tmax do",
+   "5. end for",
+   "6. Return wg, bg, wa, bm, and bf."
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "doc": "1807.01857",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 19,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": [
+   "SEARCH RESULTS AGAINST 25 QUERIES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.4736842105263158,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": [
+   "SEARCH RESULTS AGAINST 25 QUERIES"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 102,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.985114419017996,
+  "inserted_word_share": 0.6981209150326797
+ },
+ "predictions": [
+  {
+   "text": "An IDE-Based Context-Aware Meta Search Engine",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proposed Metrics",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Result Scores Calculation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. EXPERIMENTAL RESULTS AND VALIDATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Results",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "SEARCH RESULTS AGAINST 25 QUERIES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RELATED WORKS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION AND FUTURE WORKS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.084047299998929,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": [
+   "SEARCH RESULTS AGAINST 25 QUERIES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

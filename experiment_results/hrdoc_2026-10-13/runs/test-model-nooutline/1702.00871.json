@@ -1,0 +1,178 @@
+{
+ "doc": "1702.00871",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 24,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.48,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "B. Deep Learning Models in Dynamic Scenes",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 576,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10420,
+   "completion_tokens": 653,
+   "total_tokens": 11073
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Saliency Detection",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. DEEP NETWORKS FOR VIDEO SALIENCY DETECTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Architecture Overview",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Deep Networks for Static Saliency",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Deep Networks for Dynamic Saliency",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SYNTHETIC VIDEO DATA GENERATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Performance Comparison",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Validation of the Proposed Method",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Runtime Analysis",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.788351300001523,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.48,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "B. Deep Learning Models in Dynamic Scenes",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.45833333333333337,
+  "unmatched_gt": [
+   "Index Terms—Video saliency, deep learning, synthetic video",
+   "data, salient object detection, fully convolutional network.",
+   "B. Deep Learning Models in Dynamic Scenes",
+   "1) Datasets:",
+   "2) Implementation:",
+   "1) Qualitative Results:",
+   "2) Quantitative Results:",
+   "1) Ablation study:",
+   "2) Training strategy:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

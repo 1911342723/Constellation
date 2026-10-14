@@ -1,0 +1,189 @@
+{
+ "doc": "1612.07034",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 25,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "1.4. Application to more advanced diffusion models.",
+   "2. HE T E ROS CED A S T IC R IC IA N AND N C-χ R E G RESSI ON",
+   "2.1. Rician regression.",
+   "2.2. NC- χ regression.",
+   "3.1. Posterior distribution and posterior probability maps.",
+   "5.4. Comparisons between the Rician and Gaussian DTI models.",
+   "7.1. Derivatives w.r.t. to µ:",
+   "7.2. Derivatives w.r.t. to ϕ:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "1.4. Application to more advanced diffusion models.",
+   "2. HE T E ROS CED A S T IC R IC IA N AND N C-χ R E G RESSI ON",
+   "2.1. Rician regression.",
+   "2.2. NC- χ regression.",
+   "3.1. Posterior distribution and posterior probability maps.",
+   "5.4. Comparisons between the Rician and Gaussian DTI models.",
+   "7. GRA DI ENTS AND H E S S IA NS",
+   "7.1. Derivatives w.r.t. to µ:",
+   "7.2. Derivatives w.r.t. to ϕ:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 575,
+  "layout_marked": 9,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9670434039319974,
+  "inserted_word_share": 0.6976930613699118
+ },
+ "predictions": [
+  {
+   "text": "BAYESIAN NON-CENTRAL CHI REGRESSION FOR NEUROIMAGING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Rician models in fMRI",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2. Rician models in DTI",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3. Non-central chi regression",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. BAYESIAN INFERENCE",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Prior distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3. Variable selection",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4. Markov Chain Monte Carlo algorithm",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4. ACTIVITY LOCALIZATION IN FMRI DATA",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. ESTIMATING FRACTIONAL ANISOTROPY AND MEAN DIFFUSIVITY IN DWI DATA",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Diffusion weighted imaging",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2. The diffusion tensor model",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.3. Data",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6. DISCUSSION",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A. GRADIENTS AND HESSIANS",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.973848000001453,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "1.4. Application to more advanced diffusion models.",
+   "2. HE T E ROS CED A S T IC R IC IA N AND N C-χ R E G RESSI ON",
+   "2.1. Rician regression.",
+   "2.2. NC- χ regression.",
+   "3.1. Posterior distribution and posterior probability maps.",
+   "5.4. Comparisons between the Rician and Gaussian DTI models.",
+   "7.1. Derivatives w.r.t. to µ:",
+   "7.2. Derivatives w.r.t. to ϕ:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

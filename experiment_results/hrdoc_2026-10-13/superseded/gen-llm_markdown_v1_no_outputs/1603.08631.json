@@ -1,0 +1,209 @@
+{
+ "doc": "1603.08631",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2) Adoped LeNet-5:",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5213,
+   "completion_tokens": 4692
+  },
+  "elapsed_llm_seconds": 20.341234200001054,
+  "content_preservation": 0.9801682692307693,
+  "inserted_word_share": 0.013010590015128609,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Classification of Alzheimer’s Disease Using fMRI Data and Deep Learning Convolutional Neural Networks",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "II. BACKGROUND AND ALGORITHMS",
+    0,
+    2
+   ],
+   [
+    "A. Data Acquisition and Preprocessing",
+    0,
+    3
+   ],
+   [
+    "B. Deep Learning",
+    1,
+    3
+   ],
+   [
+    "1) Convolutional Neural Networks (CNNs / ConvNets):",
+    1,
+    4
+   ],
+   [
+    "2) Adoped LeNet-5:",
+    1,
+    4
+   ],
+   [
+    "III. RESULTS AND DISCUSSION",
+    1,
+    2
+   ],
+   [
+    "IV. CONCLUSIONS",
+    3,
+    2
+   ],
+   [
+    "V. ACKNOWLEDGEMENT",
+    3,
+    2
+   ],
+   [
+    "VI. APPENDIX I",
+    3,
+    2
+   ],
+   [
+    "REFERENCES",
+    4,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND ALGORITHMS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Acquisition and Preprocessing",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Deep Learning",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1) Convolutional Neural Networks (CNNs / ConvNets):",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2) Adoped LeNet-5:",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III. RESULTS AND DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ACKNOWLEDGEMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. APPENDIX I",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.40662760000123,
+ "metrics_raw": {
+  "gt": 9,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 3,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Classification of Alzheimer’s Disease Using fMRI Data and Deep Learning Convolut",
+   "2) Adoped LeNet-5:",
+   "REFERENCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2) Adoped LeNet-5:",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2) Adoped LeNet-5:"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,321 @@
+{
+ "doc": "1805.09887",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 26,
+  "pred": 34,
+  "tp": 22,
+  "fp": 12,
+  "fn": 4,
+  "level_correct": 17,
+  "parent_correct": 16,
+  "teds": 0.4571428571428572,
+  "unmatched_gt": [
+   "3.4 Correctness of Algorithm SPA-ST-super",
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "1 For further reading on the classiﬁcation of matching problems, we refer the in",
+   "2 This approximation algorithm ﬁnds a weakly stable matching that is at least tw",
+   "3.1. We give a description of our algorithm in Section 3.2, before presenting it",
+   "2 contains only s2 – thus we delete the pair (s2, p3) (and",
+   "2 contains only s5 – thus we delete the pair (s5, p3).",
+   "1. Hence, the repeat-until loop terminates and",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "7 https",
+   "1. Can we formalise the results on the probability of a super-stable matching ex",
+   "2. Is there a characterisation of the set of super-stable matchings in I in term"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 918,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Super-stability in the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Student-Project Allocation Problem with Ties⋆⋆⋆",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 For further reading on the classiﬁcation of matching problems, we refer the interested reader to [20].",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 This approximation algorithm ﬁnds a weakly stable matching that is at least two-thirds the size of a maximum weakly stable matching.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminary deﬁnitions and results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Formal deﬁnition of SPA-S",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Ties in the preference lists",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Cloning from spa-st to hrt does not work in general",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 An algorithm for SPA-ST under super-stability",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. We give a description of our algorithm in Section 3.2, before presenting it in pseudocode form. In",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.1 Deﬁnitions relating to the algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2 Description of the algorithm",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.3 Example algorithm execution",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2 contains only s2 – thus we delete the pair (s2, p3) (and",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 contains only s5 – thus we delete the pair (s5, p3).",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Hence, the repeat-until loop terminates and",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i = pt2i+1).",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i = pt2i+1).",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i = pt2i+1).",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5 Properties of super-stable matchings in spa-st",
+   "page": 18,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "4 Empirical Evaluation",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 19,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "4.2 Experimental Setup",
+   "page": 19,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "7 https",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussions and Concluding Remarks",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Can we formalise the results on the probability of a super-stable matching existing in I? As",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Is there a characterisation of the set of super-stable matchings in I in terms of a lattice structure?",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A An IP model for super-stability in SPA-ST",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Introduction",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 Constraints",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.3 Variables",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.4 Objective function",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.5 Correctness of the IP model",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.48820610000257,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 36,
+  "tp": 22,
+  "fp": 14,
+  "fn": 4,
+  "level_correct": 17,
+  "parent_correct": 16,
+  "teds": 0.43243243243243246,
+  "unmatched_gt": [
+   "3.4 Correctness of Algorithm SPA-ST-super",
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "Super-stability in the",
+   "Student-Project Allocation Problem with Ties⋆⋆⋆",
+   "1 For further reading on the classiﬁcation of matching problems, we refer the in",
+   "2 This approximation algorithm ﬁnds a weakly stable matching that is at least tw",
+   "3.1. We give a description of our algorithm in Section 3.2, before presenting it",
+   "2 contains only s2 – thus we delete the pair (s2, p3) (and",
+   "2 contains only s5 – thus we delete the pair (s5, p3).",
+   "1. Hence, the repeat-until loop terminates and",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "7 https",
+   "1. Can we formalise the results on the probability of a super-stable matching ex",
+   "2. Is there a characterisation of the set of super-stable matchings in I in term"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 31,
+  "tp": 19,
+  "fp": 12,
+  "fn": 4,
+  "level_correct": 14,
+  "parent_correct": 18,
+  "teds": 0.46875,
+  "unmatched_gt": [
+   "3.4 Correctness of Algorithm SPA-ST-super",
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "1 For further reading on the classiﬁcation of matching problems, we refer the in",
+   "2 This approximation algorithm ﬁnds a weakly stable matching that is at least tw",
+   "3.1. We give a description of our algorithm in Section 3.2, before presenting it",
+   "2 contains only s2 – thus we delete the pair (s2, p3) (and",
+   "2 contains only s5 – thus we delete the pair (s5, p3).",
+   "1. Hence, the repeat-until loop terminates and",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "7 https",
+   "1. Can we formalise the results on the probability of a super-stable matching ex",
+   "2. Is there a characterisation of the set of super-stable matchings in I in term"
+  ],
+  "ignored_title_predictions": null
+ }
+}

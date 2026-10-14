@@ -1,0 +1,156 @@
+{
+ "doc": "1803.09711",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2.1. Model",
+   "2.3. The base scenarios",
+   "5.1. Onshore wind potentials",
+   "5.2. Carbon dioxide emission constraint"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "Nomenclature",
+   "series"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1062,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13929,
+   "completion_tokens": 434,
+   "total_tokens": 14363
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Nomenclature",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Results I",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "series",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Results II",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Results III",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Discussion",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Summary and Conclusions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 40.162042899999506,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2.1. Model",
+   "2.3. The base scenarios",
+   "5.1. Onshore wind potentials",
+   "5.2. Carbon dioxide emission constraint"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "Nomenclature",
+   "series"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2.1. Model",
+   "2.3. The base scenarios",
+   "5.1. Onshore wind potentials",
+   "5.2. Carbon dioxide emission constraint"
+  ],
+  "unmatched_pred": [
+   "Nomenclature",
+   "series"
+  ],
+  "ignored_title_predictions": null
+ }
+}

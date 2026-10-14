@@ -1,0 +1,148 @@
+{
+ "doc": "1808.05164",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Generate the Most Likely Localized Trajectory for a Drifter"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 153,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10201,
+   "completion_tokens": 529,
+   "total_tokens": 10730
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. MODEL AND PROBLEM DEFINITION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Model Deﬁnition",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Problem Formulation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Acquisition",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Create the Water Flow Pattern",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Long-Term Water Flow Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. SIMULATION RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 27.717182699998375,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Generate the Most Likely Localized Trajectory for a Drifter"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "D. Generate the Most Likely Localized Trajectory for a Drifter"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

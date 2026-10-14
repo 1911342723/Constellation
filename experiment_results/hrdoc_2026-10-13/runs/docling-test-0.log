@@ -1,0 +1,98 @@
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  28%|##8       | 216/770 [00:00<00:00, 2155.75it/s]Loading weights:  56%|#####6    | 432/770 [00:00<00:00, 1183.81it/s]Loading weights: 100%|##########| 770/770 [00:00<00:00, 2097.34it/s]
+1509.00488 14 
+Traceback (most recent call last):
+  File "D:\Constellation\evaluation\hrdoc\docling_predict.py", line 60, in <module>
+    main()
+  File "D:\Constellation\evaluation\hrdoc\docling_predict.py", line 26, in main
+    from docling.datamodel.base_models import InputFormat
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\base_models.py", line 47, in <module>
+    from docling.datamodel.pipeline_options import PipelineOptions
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\pipeline_options.py", line 26, in <module>
+    from docling.datamodel import (
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\asr_model_specs.py", line 12, in <module>
+    from docling.datamodel.pipeline_options_asr_model import (
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\pipeline_options_asr_model.py", line 30, in <module>
+    from docling.datamodel.pipeline_options_vlm_model import (
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\pipeline_options_vlm_model.py", line 12, in <module>
+    from transformers import StoppingCriteria
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\utils\import_utils.py", line 2590, in __getattr__
+    value = getattr(module, name)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\utils\import_utils.py", line 2589, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\utils\import_utils.py", line 2820, in _get_module
+    raise e
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\utils\import_utils.py", line 2818, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\xiujianyan\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\generation\stopping_criteria.py", line 9, in <module>
+    import torch
+  File "D:\datasets\venv-docling\Lib\site-packages\torch\__init__.py", line 309, in <module>
+    _load_dll_libraries()
+  File "D:\datasets\venv-docling\Lib\site-packages\torch\__init__.py", line 292, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] \u9875\u9762\u6587\u4ef6\u592a\u5c0f\uff0c\u65e0\u6cd5\u5b8c\u6210\u64cd\u4f5c\u3002 Error loading "D:\datasets\venv-docling\Lib\site-packages\torch\lib\torch_python.dll" or one of its dependencies.
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  20%|##        | 155/770 [00:00<00:00, 1545.92it/s]Loading weights:  40%|####      | 310/770 [00:00<00:00, 763.64it/s] Loading weights:  53%|#####2    | 407/770 [00:00<00:00, 618.49it/s]Loading weights:  90%|########9 | 691/770 [00:00<00:00, 1147.57it/s]Loading weights: 100%|##########| 770/770 [00:00<00:00, 1098.15it/s]
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  21%|##1       | 162/770 [00:00<00:00, 1616.27it/s]memory allocation of 9437184 bytes failed
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Traceback (most recent call last):
+  File "D:\Constellation\evaluation\hrdoc\docling_predict.py", line 60, in <module>
+    main()
+  File "D:\Constellation\evaluation\hrdoc\docling_predict.py", line 26, in main
+    from docling.datamodel.base_models import InputFormat
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\base_models.py", line 47, in <module>
+    from docling.datamodel.pipeline_options import PipelineOptions
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\pipeline_options.py", line 26, in <module>
+    from docling.datamodel import (
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\asr_model_specs.py", line 12, in <module>
+    from docling.datamodel.pipeline_options_asr_model import (
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\pipeline_options_asr_model.py", line 30, in <module>
+    from docling.datamodel.pipeline_options_vlm_model import (
+  File "D:\datasets\venv-docling\Lib\site-packages\docling\datamodel\pipeline_options_vlm_model.py", line 12, in <module>
+    from transformers import StoppingCriteria
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\__init__.py", line 30, in <module>
+    from . import dependency_versions_check
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\utils\__init__.py", line 22, in <module>
+    from .auto_docstring import (
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\utils\auto_docstring.py", line 33, in <module>
+    from .generic import ModelOutput
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\utils\generic.py", line 39, in <module>
+    from .import_utils import is_mlx_available, is_torch_available, is_torch_fx_proxy, resolve_internal_import
+  File "D:\datasets\venv-docling\Lib\site-packages\transformers\utils\import_utils.py", line 51, in <module>
+    PACKAGE_DISTRIBUTION_MAPPING = importlib.metadata.packages_distributions()
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\xiujianyan\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 947, in packages_distributions
+    for pkg in _top_level_declared(dist) or _top_level_inferred(dist):
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\xiujianyan\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 959, in _top_level_inferred
+    for f in always_iterable(dist.files)
+                             ^^^^^^^^^^
+  File "D:\Users\xiujianyan\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 502, in files
+    self._read_files_distinfo()
+  File "D:\Users\xiujianyan\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 512, in _read_files_distinfo
+    text = self.read_text('RECORD')
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\xiujianyan\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 819, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\xiujianyan\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1028, in read_text
+    return f.read()
+           ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+MemoryError
+OpenBLAS error: Memory allocation still failed after 10 retries, giving up.
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  22%|##1       | 169/770 [00:00<00:00, 1665.06it/s]Loading weights:  44%|####3     | 336/770 [00:00<00:00, 989.96it/s] Loading weights:  58%|#####8    | 450/770 [00:00<00:00, 901.33it/s]Loading weights: 100%|##########| 770/770 [00:00<00:00, 1553.83it/s]
+Stage preprocess failed for run 1, pages [16]: Could not allocate bytes object!
+1509.04265 21 
+1509.05821 0 RuntimeError
+1509.08457 0 RuntimeError
+1510.00140 0 RuntimeError
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  24%|##3       | 182/770 [00:00<00:00, 1745.14it/s]Loading weights:  46%|####6     | 357/770 [00:00<00:00, 1384.66it/s]Loading weights: 100%|##########| 770/770 [00:00<00:00, 2363.43it/s]
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  28%|##7       | 212/770 [00:00<00:00, 1828.00it/s]Loading weights:  51%|#####1    | 395/770 [00:00<00:00, 934.02it/s] Loading weights: 100%|##########| 770/770 [00:00<00:00, 1685.36it/s]

@@ -1,0 +1,176 @@
+{
+ "doc": "1803.00317",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.85,
+  "unmatched_gt": [
+   "P RO OF O F T HE T HE ORE M 1"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "P RO OF O F T HE T HE ORE M 1"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 865,
+  "layout_marked": 24,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14063,
+   "completion_tokens": 794,
+   "total_tokens": 14857
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9501405810684161,
+  "inserted_word_share": 0.049592200243742335
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Index Terms",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. System Model",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Channel Model",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. PERFORMANCE LOSS IN MULTIUSER SCENARIO",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CHANNEL ESTIMATION AND HYBRID BEAMFORMING DESIGN",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Resolution of phase shifters",
+   "page": 14,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. The number of users supported",
+   "page": 15,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. The number of channel paths and Rice K-factor",
+   "page": 16,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "D. Computational complexity and training overhead",
+   "page": 16,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. SIMULATIONS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Performance loss due to phase-shifting error and gain error",
+   "page": 17,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Performance of our proposed channel estimation and hybrid beamforming algorithm",
+   "page": 19,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.603313500003424,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.85,
+  "unmatched_gt": [
+   "P RO OF O F T HE T HE ORE M 1"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

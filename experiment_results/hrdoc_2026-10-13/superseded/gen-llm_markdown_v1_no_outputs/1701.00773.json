@@ -1,0 +1,263 @@
+{
+ "doc": "1701.00773",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "3.2 Threats",
+   "3.3 Attacks"
+  ],
+  "unmatched_pred": [
+   "3.2 Threats",
+   "3.3 Attacks"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7936,
+   "completion_tokens": 7409
+  },
+  "elapsed_llm_seconds": 32.87123799999972,
+  "content_preservation": 0.9842796375069355,
+  "inserted_word_share": 0.006162464985994376,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Security-related Research in Ubiquitous Computing – Results of a Systematic Literature Review",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Research method",
+    1,
+    1
+   ],
+   [
+    "3 Security challenges in ubiquitous computing: vulnerabilities, threats, and attacks",
+    2,
+    1
+   ],
+   [
+    "3.1 Vulnerabilities",
+    2,
+    2
+   ],
+   [
+    "3.2 Threats",
+    4,
+    2
+   ],
+   [
+    "3.3 Attacks",
+    5,
+    2
+   ],
+   [
+    "4 Defenses",
+    6,
+    1
+   ],
+   [
+    "4.1 Trust computation and management",
+    6,
+    2
+   ],
+   [
+    "4.2 Cryptographic protocols",
+    6,
+    2
+   ],
+   [
+    "4.3 Authentication and access control",
+    7,
+    2
+   ],
+   [
+    "4.4 Privacy protection mechanisms",
+    9,
+    2
+   ],
+   [
+    "5 Countries participating in the research",
+    9,
+    1
+   ],
+   [
+    "6 Conclusion",
+    9,
+    1
+   ],
+   [
+    "References",
+    10,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Security-related Research in Ubiquitous Computing – Results of a Systematic Literature Review",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Research method",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Security challenges in ubiquitous computing: vulnerabilities, threats, and attacks",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Vulnerabilities",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Threats",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Attacks",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Defenses",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Trust computation and management",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Cryptographic protocols",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 Authentication and access control",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.4 Privacy protection mechanisms",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Countries participating in the research",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 33.10570550000193,
+ "metrics_raw": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Security-related Research in Ubiquitous Computing – Results of a Systematic Lite"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Security-related Research in Ubiquitous Computing – Results of a Systematic Lite"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "3.2 Threats",
+   "3.3 Attacks"
+  ],
+  "unmatched_pred": [
+   "3.2 Threats",
+   "3.3 Attacks"
+  ],
+  "ignored_title_predictions": null
+ }
+}

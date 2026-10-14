@@ -1,0 +1,150 @@
+{
+ "doc": "1509.06542",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 487,
+  "layout_marked": 16,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17155,
+   "completion_tokens": 555,
+   "total_tokens": 17710
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9671052631578947,
+  "inserted_word_share": 0.6703004381389526
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Index Terms",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Background and Motivation",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Notations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "D. Organization",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "II. CONTROLLER DESIGN",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Problem Formulation and Objective Deﬁnition",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Adaptive Robust Outer Loop Controller",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III. APPLICATION: NONHOLONOMIC WMR",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Results and Comparison",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.351674400000775,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

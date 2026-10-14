@@ -1,0 +1,122 @@
+{
+ "doc": "1701.00938",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4.2 Temporal correlation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4.2 Temporal correlation"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 66,
+  "layout_marked": 10,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3658,
+   "completion_tokens": 355,
+   "total_tokens": 4013
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9536842105263158,
+  "inserted_word_share": 0.04379947229551451
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. DATA COLLECTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. MISSING AT FIRST GLANCE",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CROSS WITH CONNECTION EVENTS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Overlap with connected period",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Temporal correlation",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5. CONCLUSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.585648300002504,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4.2 Temporal correlation"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

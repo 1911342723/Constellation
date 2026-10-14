@@ -1,0 +1,159 @@
+{
+ "doc": "1710.11283",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 91.77886249999938
+ },
+ "predictions": [
+  {
+   "text": "MACROECONOMICS AND FINTECH: UNCOVERING LATENT MACROECONOMIC EFFECTS ON PEER-TO-PEER LENDING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "SUMMARY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Literature Review",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Basic Model",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 CCA Factor Model",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Data",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 P2P Credit Spreads",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Macroeconomic Variables",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Multiple Regressions",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2 Canonical Correlation Analysis",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.3 CCA Factor Regressions",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.007914599998912308,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,160 @@
+{
+ "doc": "1804.11259",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "XA,eff = XA + SNRin × std(XB)",
+   "Sin = |Iin|",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 91,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MATERIAL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Original data",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Simulated design",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Pre-processing",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "D. Simulation of signals",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "XA,eff = XA + SNRin × std(XB)",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sin = |Iin|",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Modelling",
+   "page": 1,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Recovery metrics",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Performance",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Recovery",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "V. DISCUSSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.711803000001964,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "XA,eff = XA + SNRin × std(XB)",
+   "Sin = |Iin|",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "XA,eff = XA + SNRin × std(XB)",
+   "Sin = |Iin|"
+  ],
+  "ignored_title_predictions": null
+ }
+}

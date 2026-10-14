@@ -1,0 +1,188 @@
+{
+ "doc": "1704.03895",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 16,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 473,
+  "layout_marked": 22,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18499,
+   "completion_tokens": 768,
+   "total_tokens": 19267
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9360311940141216,
+  "inserted_word_share": 0.9782618804623695
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Inspiration",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Image description",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. Object Classiﬁcation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Method",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Model",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2. Training",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3. Unanswered questions on novel images",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.4. Testing",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5. Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Unanswered questions on training images",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2. Unanswered questions on novel images",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.3. Data augmentation for VQA",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6. Conclusions",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Extracting Objects from the Questions",
+   "page": 8,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "A.1. Algorithm",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 24.561155200004578,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

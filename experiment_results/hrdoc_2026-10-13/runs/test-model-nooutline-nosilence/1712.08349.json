@@ -1,0 +1,202 @@
+{
+ "doc": "1712.08349",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": [
+   "Leon Derczynski",
+   "3 probability to a"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 280,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10254,
+   "completion_tokens": 753,
+   "total_tokens": 11007
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "KEYWORDS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Leon Derczynski",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2 RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Named Entity Recognition",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Information Diffusion",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 probability to a",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 DATASETS PREPARATION AND NER",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Subreddit extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 NER for Reddit",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3 Tuning entity recognition",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 ENTITY DIFFUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Entity Mention Cascades",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Entity Adoption Post-(k − 1)th Exposure",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Global Threshold Diffusion Model",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3.1 Additional Influence Dynamics – Entity-Adoption Con-",
+   "page": 6,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "4.4 Experiments",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 DISCUSSION AND FUTURE WORK",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 CONCLUSIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 63.341368199999124,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": [
+   "Leon Derczynski",
+   "3 probability to a"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [
+   "4.4.1 Experimental Setup.",
+   "4.4.2 Results."
+  ],
+  "unmatched_pred": [
+   "Leon Derczynski",
+   "3 probability to a"
+  ],
+  "ignored_title_predictions": null
+ }
+}

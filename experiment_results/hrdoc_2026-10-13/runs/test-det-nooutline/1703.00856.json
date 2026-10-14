@@ -1,0 +1,126 @@
+{
+ "doc": "1703.00856",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 41,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Araguaia Medical Vision Lab at ISIC 2017 Skin",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lesion Classiﬁcation Challenge",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. MOTIVATION AND OVERVIEW",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. IMAGE PRE-PROCESSING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NETWORK TRAINING AND EVALUATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Seborrheic Keratosis Task",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Melanoma Task",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "0.00001 over 30 epochs, best result was at epoch 15.",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.3251404000002367,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Araguaia Medical Vision Lab at ISIC 2017 Skin",
+   "Lesion Classiﬁcation Challenge",
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ],
+  "ignored_title_predictions": null
+ }
+}

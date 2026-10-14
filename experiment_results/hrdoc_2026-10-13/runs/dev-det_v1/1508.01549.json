@@ -1,0 +1,229 @@
+{
+ "doc": "1508.01549",
+ "system": "det",
+ "metrics": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 25,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 25,
+  "parent_correct": 18,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "MARG I N CL A SS I FIE R",
+   "WITH M EAN -S HIFT"
+  ],
+  "unmatched_pred": [
+   "U. Kamath is with the Ontolabs, Ashburn, VA 20147.",
+   "C. Domeniconi and K"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 734,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "U. Kamath is with the Ontolabs, Ashburn, VA 20147.",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "C. Domeniconi and K",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 THE PSBML ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Initialization",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Node behavior at each epoch",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Grid behavior at each epoch",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4 Iterative process",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 THEORETICAL ANALYSIS: PSBML IS A LARGE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Distribution of a node at time t = 1",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Distribution of the Grid at time t = 1",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Final Distribution of the Grid",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 EMPIRICAL ANALYSIS OF PSBML AND GMM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 A Non-linearly Separable Dataset",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.2 Weight Distribution Changes",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.3 Linearly Separable Bivariate Gaussians",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.4 Hard Instances and Support Vectors",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6 EXPERIMENTAL RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Parameter Sensitivity Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6.2 Meta-learning Experiments",
+   "page": 7,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6.3 Scalability Experiments",
+   "page": 8,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6.3.1 Real-world Dataset",
+   "page": 8,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "6.4 Comparison against AdaBoost and Impact of Noise",
+   "page": 10,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "7 CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 SOFTWARE AND DATA",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 165.35092639999857,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 25,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 25,
+  "parent_correct": 18,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "MARG I N CL A SS I FIE R",
+   "WITH M EAN -S HIFT"
+  ],
+  "unmatched_pred": [
+   "U. Kamath is with the Ontolabs, Ashburn, VA 20147.",
+   "C. Domeniconi and K"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 26,
+  "tp": 24,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 24,
+  "parent_correct": 17,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "MARG I N CL A SS I FIE R",
+   "WITH M EAN -S HIFT"
+  ],
+  "unmatched_pred": [
+   "U. Kamath is with the Ontolabs, Ashburn, VA 20147.",
+   "C. Domeniconi and K"
+  ],
+  "ignored_title_predictions": null
+ }
+}

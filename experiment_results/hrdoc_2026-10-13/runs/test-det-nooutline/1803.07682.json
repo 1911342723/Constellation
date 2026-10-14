@@ -1,0 +1,134 @@
+{
+ "doc": "1803.07682",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "2.3 GP kernel estimation"
+  ],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for",
+   "2. We explore applying a GP model and variograms for image registration.",
+   "1 : N}, where di = d(xi) is modeled as a observation of displacements."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 188,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A Feature-Driven Active Framework for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Ultrasound-Based Brain Shift Compensation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. We explore applying a GP model and variograms for image registration.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The role of US-to-US registration",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Feature-based registration strategy",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "1 : N}, where di = d(xi) is modeled as a observation of displacements.",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.895320699997683,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "2.3 GP kernel estimation"
+  ],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for",
+   "Ultrasound-Based Brain Shift Compensation",
+   "2. We explore applying a GP model and variograms for image registration.",
+   "1 : N}, where di = d(xi) is modeled as a observation of displacements."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "2.3 GP kernel estimation"
+  ],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for",
+   "2. We explore applying a GP model and variograms for image registration.",
+   "1 : N}, where di = d(xi) is modeled as a observation of displacements."
+  ],
+  "ignored_title_predictions": null
+ }
+}

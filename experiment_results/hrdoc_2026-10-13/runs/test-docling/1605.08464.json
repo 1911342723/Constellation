@@ -1,0 +1,165 @@
+{
+ "doc": "1605.08464",
+ "system": "docling",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 13.910048000001552
+ },
+ "predictions": [
+  {
+   "text": "Low-Cost Scene Modeling using a Density Function Improves Segmentation Performance",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. DATASET GENERATION USING A DENSITY FUNCTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ALGORITHM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Additive white gaussian noise in synthetic depth data",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Feature Selection",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Classifier",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Conditional Random Fields",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. IMPLEMENTATION DETAILS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EXPERIMENTAL EVALUATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Collection",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Noise Evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Feature Response Evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Comparison of Models",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Demonstration",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.022935399996640626,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Low-Cost Scene Modeling using a Density Function Improves Segmentation Performan"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

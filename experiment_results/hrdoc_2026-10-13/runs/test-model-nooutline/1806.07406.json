@@ -1,0 +1,321 @@
+{
+ "doc": "1806.07406",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 28,
+  "pred": 36,
+  "tp": 25,
+  "fp": 11,
+  "fn": 3,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.6216216216216216,
+  "unmatched_gt": [
+   "Abstract",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "Ensure: W",
+   "else",
+   "end if",
+   "end for",
+   "end for",
+   "end for",
+   "end for",
+   "end if",
+   "end for",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 835,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18694,
+   "completion_tokens": 981,
+   "total_tokens": 19675
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Contrastive Hebbian Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Random Contrastive Hebbian Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Ensure: W",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "else",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end if",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end for",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end for",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end for",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end for",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end if",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "end for",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "3 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Bars and Stripes Classiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "3.1.1 Feedback Gain",
+   "page": 5,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "3.1.2 Learning Rate",
+   "page": 5,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "3.1.3 Number of Layers",
+   "page": 6,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "3.1.4 Feedback Random Matrix",
+   "page": 7,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "3.2 Exclusive Or (XOR)",
+   "page": 9,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "3.3 Handwritten Digit and Letter Classiﬁcation",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "3.4 Autoencoder",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4 Discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Author Contributions",
+   "page": 14,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Appendix",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Λϵ-pseudospectra",
+   "page": 15,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "5.2 Error and Accuracy Table",
+   "page": 15,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "5.3 Abbreviations and Notation Tables",
+   "page": 15,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "5.4 Simulation and Platform Details",
+   "page": 17,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "5.5 Simulation Parameters",
+   "page": 17,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "Supplementary Information",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on XOR",
+   "page": 17,
+   "level": 2,
+   "parent": 31
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on MNIST",
+   "page": 19,
+   "level": 2,
+   "parent": 31
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on eMNIST",
+   "page": 19,
+   "level": 2,
+   "parent": 31
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 26.236442699999316,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 36,
+  "tp": 25,
+  "fp": 11,
+  "fn": 3,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.6216216216216216,
+  "unmatched_gt": [
+   "Abstract",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "Ensure: W",
+   "else",
+   "end if",
+   "end for",
+   "end for",
+   "end for",
+   "end for",
+   "end if",
+   "end for",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 33,
+  "tp": 22,
+  "fp": 11,
+  "fn": 2,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.6764705882352942,
+  "unmatched_gt": [
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "Ensure: W",
+   "else",
+   "end if",
+   "end for",
+   "end for",
+   "end for",
+   "end for",
+   "end if",
+   "end for",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "doc": "1708.09021",
+ "system": "outline",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "ACKN OW L EDG EM ENT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I-A Preliminaries and notations",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-B Problem statement",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Preserving the connectedness of graphs",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Applications",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A The consensus problem",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III-B Signal processing on graphs",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV Numerical simulations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Experiments using synthetic data",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "IV-B Experiments using real data",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.08343729999978677,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "ACKN OW L EDG EM ENT"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

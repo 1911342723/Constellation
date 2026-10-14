@@ -1,0 +1,164 @@
+{
+ "doc": "1807.09205",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 1,
+  "parent_correct": 12,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "Hierarchical Convolutional Neural Network (H-CNN) We propose a hierarchical",
+   "Recurrent Convolutional Neural Network (Recurrent-CNN) We also propose a re-"
+  ],
+  "unmatched_pred": [
+   "Acknowledgments",
+   "2 Intel 7700HQ 4 cores 2.8 GHz, 32GB 2400MHz RAM"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 209,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "End-to-End Deep Imitation Learning: Robot Soccer",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Case Study",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.1 End to End Learning",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Ball Dribbling Task",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "3 Methods",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3.1 Dataset Creation",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Deep Imitation Learning",
+   "page": 5,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 7,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "4.1 The Learning Performance",
+   "page": 8,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Discussion",
+   "page": 9,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 10,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Intel 7700HQ 4 cores 2.8 GHz, 32GB 2400MHz RAM",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.924371900000551,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 1,
+  "parent_correct": 7,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "Hierarchical Convolutional Neural Network (H-CNN) We propose a hierarchical",
+   "Recurrent Convolutional Neural Network (Recurrent-CNN) We also propose a re-"
+  ],
+  "unmatched_pred": [
+   "End-to-End Deep Imitation Learning: Robot Soccer",
+   "Case Study",
+   "Acknowledgments",
+   "2 Intel 7700HQ 4 cores 2.8 GHz, 32GB 2400MHz RAM"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 0,
+  "parent_correct": 11,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "Hierarchical Convolutional Neural Network (H-CNN) We propose a hierarchical",
+   "Recurrent Convolutional Neural Network (Recurrent-CNN) We also propose a re-"
+  ],
+  "unmatched_pred": [
+   "2 Intel 7700HQ 4 cores 2.8 GHz, 32GB 2400MHz RAM"
+  ],
+  "ignored_title_predictions": null
+ }
+}

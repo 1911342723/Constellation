@@ -1,0 +1,153 @@
+{
+ "doc": "1808.00432",
+ "system": "model",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 8,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 929,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4676,
+   "completion_tokens": 597,
+   "total_tokens": 5273
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Longwave nonlinear theory for chemically active droplet division instability",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. FORMULATION OF THE PROBLEM",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. The continuum model",
+   "page": 0,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "B. The eﬀective sharp-interface model",
+   "page": 1,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "C. Formulation of the nondimensional local",
+   "page": 2,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "III. STABILITY ANALYSIS FOR STATIONARY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Stationary state of the ﬂat interface",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Dispersion relation",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "C. Longwave nonlinear theory",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "IV. MOVING FRONT ANALYSIS",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V. DYNAMICS OF THE TWO DIMENSIONAL",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Appendix A",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.24265430000014,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 6,
+  "teds": 0.5625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Longwave nonlinear theory for chemically active droplet division instability",
+   "Appendix A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

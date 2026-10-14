@@ -1,0 +1,110 @@
+{
+ "doc": "1702.00304",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 843,
+  "layout_marked": 10,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 8,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 8,
+   "prompt_tokens": 29252,
+   "completion_tokens": 397,
+   "total_tokens": 29649
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9578241591867632,
+  "inserted_word_share": 0.041553944378314056
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Signs of life",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Pushing",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Minimization",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Testing equivalence",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.596615800001018,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

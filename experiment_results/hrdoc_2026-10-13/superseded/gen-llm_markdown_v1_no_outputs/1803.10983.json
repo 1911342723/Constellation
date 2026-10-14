@@ -1,0 +1,200 @@
+{
+ "doc": "1803.10983",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "unmatched_pred": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 8588,
+   "completion_tokens": 8221
+  },
+  "elapsed_llm_seconds": 36.29500769999868,
+  "content_preservation": 0.944464096215069,
+  "inserted_word_share": 0.058367131017457274,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Preliminaries",
+    1,
+    2
+   ],
+   [
+    "3 Max-Cut for embedded 1-planar graphs",
+    2,
+    2
+   ],
+   [
+    "3.1 Removing the crossings",
+    3,
+    3
+   ],
+   [
+    "3.2 The Max-Cut Algorithm",
+    4,
+    3
+   ],
+   [
+    "3.3 Correctness",
+    6,
+    3
+   ],
+   [
+    "3.4 Running time",
+    8,
+    3
+   ],
+   [
+    "4 Conclusion and open problems",
+    9,
+    2
+   ],
+   [
+    "References",
+    10,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Max-Cut for embedded 1-planar graphs",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Removing the crossings",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 The Max-Cut Algorithm",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Correctness",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 Running time",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Conclusion and open problems",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 36.440176100000826,
+ "metrics_raw": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 4,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "unmatched_pred": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "ignored_title_predictions": null
+ }
+}

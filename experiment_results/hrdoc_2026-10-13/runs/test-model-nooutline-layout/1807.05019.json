@@ -1,0 +1,170 @@
+{
+ "doc": "1807.05019",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.4736842105263158,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 7,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 164,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14532,
+   "completion_tokens": 716,
+   "total_tokens": 15248
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.8983505564387917,
+  "inserted_word_share": 0.8729214983484433
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. COMPUTATIONAL DETAILS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Crystal Structure",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1. In the absence of vacancy",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. In the presence of vacancy",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Electronic structure",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "1. In the absence of vacancy",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. In the presence of vacancy",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Magnetic structure and Curie temperature",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1. In the absence of vacancy",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. In the presence of vacancy",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. LINEAR OPTICAL PROPERTIES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. In the absence of vacancy",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. In the presence of vacancy",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. DISCUSSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. ACKNOWLEDGMENT",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.697345000000496,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.4736842105263158,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

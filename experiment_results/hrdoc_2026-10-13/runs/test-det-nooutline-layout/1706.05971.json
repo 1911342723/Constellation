@@ -1,0 +1,110 @@
+{
+ "doc": "1706.05971",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4.1. Conserved Energies",
+   "4.2. An existence result via energy methods"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 6,
+  "tp": 4,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4.1. Conserved Energies",
+   "4.2. An existence result via energy methods"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1356,
+  "layout_marked": 6,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9412963322336503,
+  "inserted_word_share": 0.05678172095284395
+ },
+ "predictions": [
+  {
+   "text": "ENERGY METHODS FOR DIRAC-TYPE EQUATIONS IN",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction and results",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Linear Dirac equations in two-dimensional Minkowski space",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Nonlinear Dirac equations in two-dimensional Minkowski space",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Dirac-wave maps from two-dimensional Minkowski space",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Conserved Energies",
+   "page": 12,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2. An existence result via energy methods",
+   "page": 14,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.2791618000046583,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4.1. Conserved Energies",
+   "4.2. An existence result via energy methods"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,246 @@
+{
+ "doc": "1608.02787",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 25,
+  "pred": 28,
+  "tp": 24,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8620689655172413,
+  "unmatched_gt": [
+   "2 Target environment"
+  ],
+  "unmatched_pred": [
+   "Keywords",
+   "2 Target environment",
+   "Interlock",
+   "Some accelerators that use this as a target interlock"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 360,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14246,
+   "completion_tokens": 979,
+   "total_tokens": 15225
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction to high-power targets",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Target environment",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Beam windows",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Beam parameters",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Methods to ﬂatten the beam distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5 What can go wrong?",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Calculating the beam density",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Example 1: rectangular DC beam",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6.2 Example 2: rectangular pulsed beam",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6.3 Example 3: pulsed Gaussian beam",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "7 Target protection",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 Protection by rapid beam turn off",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.2 Protection by equipment lock down",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.3 Protection by collimation",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Interlock",
+   "page": 12,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Some accelerators that use this as a target interlock",
+   "page": 12,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.4 Protection by interlocking on off-normal measured beam parameters",
+   "page": 12,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.5 Protection by beam line design",
+   "page": 13,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "8 Some example target protection implementations",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 J-PARC target protection",
+   "page": 14,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "8.2 FNAL NuMI target protection",
+   "page": 14,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "8.3 ISIS target protection",
+   "page": 14,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "9 SNS target tune up",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Summary",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.687801899999613,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 28,
+  "tp": 24,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8620689655172413,
+  "unmatched_gt": [
+   "2 Target environment"
+  ],
+  "unmatched_pred": [
+   "Keywords",
+   "2 Target environment",
+   "Interlock",
+   "Some accelerators that use this as a target interlock"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 21,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.88,
+  "unmatched_gt": [
+   "2 Target environment"
+  ],
+  "unmatched_pred": [
+   "2 Target environment",
+   "Interlock",
+   "Some accelerators that use this as a target interlock"
+  ],
+  "ignored_title_predictions": null
+ }
+}

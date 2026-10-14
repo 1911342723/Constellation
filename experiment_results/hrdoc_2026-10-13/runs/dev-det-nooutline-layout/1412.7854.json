@@ -1,0 +1,113 @@
+{
+ "doc": "1412.7854",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "2. Related Work",
+   "3. Our Approach",
+   "3.1. Input Data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 5,
+  "parent_correct": 3,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "2. Related Work",
+   "3. Our Approach",
+   "3.1. Input Data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 140,
+  "layout_marked": 10,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8490239683716333,
+  "inserted_word_share": 0.8696163624634766
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "3.2. Part Maps",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "3.3. Deformation Layer",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "3.4. Classiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "4. Experimental Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.2382968999954755,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "2. Related Work",
+   "3. Our Approach",
+   "3.1. Input Data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

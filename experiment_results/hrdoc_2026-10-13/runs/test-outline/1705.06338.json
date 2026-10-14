@@ -1,0 +1,152 @@
+{
+ "doc": "1705.06338",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Lecture Notes in Computer Science"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Lecture Notes in Computer Science",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Exponential family embeddings",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2.1 Similar and co-occuring products",
+   "page": 2,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "3 Recommendation engine",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "4 Visualisation of product embedding and context vectors",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "5 Sent2Vec model and combined model",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "6 Application of product embedding",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "7 Trip Embedding",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "7.1 Trip analysis",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "7.2 Trip Profiling",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "8 Customer Embedding",
+   "page": 7,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "8.1 Customer analysis",
+   "page": 7,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "8.2 Customer Profiling",
+   "page": 7,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "9 Schematic representation",
+   "page": 8,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "10 Conclusion",
+   "page": 9,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.05654140000115149,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Lecture Notes in Computer Science"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Lecture Notes in Computer Science"
+  ],
+  "ignored_title_predictions": null
+ }
+}

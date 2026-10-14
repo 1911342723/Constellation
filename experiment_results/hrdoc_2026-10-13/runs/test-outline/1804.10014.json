@@ -1,0 +1,104 @@
+{
+ "doc": "1804.10014",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Abstract",
+   "4 Emb edding Θℓ,t",
+   "References"
+  ],
+  "unmatched_pred": [
+   "4 Embedding Theta_l,t"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Case l=3",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 General case",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Embedding Theta_l,t",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Lower bound for odd length paths",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Lower bound for even length paths",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Analysis of the random algebraic construction",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.053996599999663886,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Abstract",
+   "4 Emb edding Θℓ,t",
+   "References"
+  ],
+  "unmatched_pred": [
+   "4 Embedding Theta_l,t"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "4 Emb edding Θℓ,t"
+  ],
+  "unmatched_pred": [
+   "4 Embedding Theta_l,t"
+  ],
+  "ignored_title_predictions": null
+ }
+}

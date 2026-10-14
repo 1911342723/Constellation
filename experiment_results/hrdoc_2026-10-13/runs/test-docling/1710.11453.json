@@ -1,0 +1,153 @@
+{
+ "doc": "1710.11453",
+ "system": "docling",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "(CMDP)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 20.09321970000019
+ },
+ "predictions": [
+  {
+   "text": "Optimal Traffic Splitting Policy in LTE-based Heterogeneous Network",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. States",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Decision epochs and Actions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Transition probabilities",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Cost function",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROBLEM FORMULATION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Formulation as Constrained Markov Decision Process (CMDP)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Uniformization",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Lagrangian Approach",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NUMERICAL RESULTS AND ANALYSIS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal policy structure",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Parameter variation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.018943000002764165,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "(CMDP)"
+  ],
+  "unmatched_pred": [
+   "Optimal Traffic Splitting Policy in LTE-based Heterogeneous Network"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "(CMDP)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

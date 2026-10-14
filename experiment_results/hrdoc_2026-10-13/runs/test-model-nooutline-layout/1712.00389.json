@@ -1,0 +1,228 @@
+{
+ "doc": "1712.00389",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.9642857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 3115,
+  "layout_marked": 28,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14984,
+   "completion_tokens": 1247,
+   "total_tokens": 16231
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.7102158569883056,
+  "inserted_word_share": 0.22139387778154296
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 GBM SPECTRAL DATA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 MULTIVARIATE ANALYSIS OF THE DATA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Analysis of contingency tables",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.1.1 Similarity between columns and between rows",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3.1.2 Homogeneity test of the contingency table",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Correspondence analysis (CA)",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 Mathematical Background",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.2.2 CA of the GBM Data",
+   "page": 4,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.3 Discriminant Analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3.1 Mathematical background",
+   "page": 5,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.2 LDA of the GBM Data",
+   "page": 6,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.3 LDA of GRBs jointly detected with the Swift",
+   "page": 6,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.4 LDA of GRBs having measured redshift",
+   "page": 7,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "4 DISCUSSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Discriminant power of the observed variables",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.1.1 Discriminant power of peak ﬂux and ﬂuence",
+   "page": 8,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "4.1.2 Reliability of the spectra (cross validation)",
+   "page": 9,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "4.2 Transition from peak ﬂux to ﬂuence spectral",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2.1 Role of the signal to noise ratio",
+   "page": 9,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "4.2.2 Physical diﬀerences between the spectral type",
+   "page": 10,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "4.2.3 Comparison of the spectral types detected by the",
+   "page": 11,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "4.2.4 Physics of the transition of peak ﬂux to ﬂuence",
+   "page": 12,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "5 SUMMARY AND CONCLUSIONS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 55.527017599997635,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.9642857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

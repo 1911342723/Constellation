@@ -1,0 +1,117 @@
+{
+ "doc": "1610.04700",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgements"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 199,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13322,
+   "completion_tokens": 349,
+   "total_tokens": 13671
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9988155167308261,
+   "in_order": 0.9958543085578916,
+   "inserted": 0.00236616385684707
+  },
+  "export_markdown": "Dynamics of piecewise translation maps\n\nSang Truong\n\nUniversity of California, Irvine\n\narXiv:1610.04700v2 [math.DS] 19 Aug 2017\n\nJuly 10, 2018\n\n# Abstract\n\nIn this paper, we introduce a generalized piecewise translation map on the Euclidean\n\nspace. We provide a special case when this map is always of ﬁnite type. For a ﬁnite\n\ntype map in this case, we form conjectures on the semi-continuity of the attractor.\n\nMoreover, we also provide some conjectures and pictures on piecewise translations on\n\na two dimensional torus.\n\n# 1 Background\n\nThe goal of this paper is to study the dynamics of piecewise translation maps. These maps are special types of piecewise isometries on a region Ωin the Euclidean space. To deﬁne piecewise isometries, we partition Ωinto smaller regions P0, · · · , Pm such that these pieces\n\nintersect only at their boundaries. We also assume that the boundary of each piece has zero Lebesgue measure. A map f : Ω → Ωis called a piecewise isometry if the restriction of f\n\nto any piece Pi is an isometry, i.e. it preserves distance on each piece. Piecewise isometries, especially piecewise translation maps, serve as models for many engineering applications, such as the second order digital ﬁlter [6, 7], the sigma-delta modulator [3, 8, 10], the buck converter [7, 9], the three-capacitance model [16], error diﬀusion in digital printing [1, 2], and machine learning.\n\nOne of the simplest examples of such piecewise translation can be formed using interval exchange transformations (IET). These transformations are a generalization of a classical dynamical system – circle rotation. To deﬁne an IET, let Ω= [0, 1) ⊆ R be partitioned into\n\na ﬁnite number of distinct intervals. The map f : Ω → Ωthat permutes the intervals deﬁnes\n\na piecewise isometry.\n\nSeveral nice properties of IET have been discovered. In particular, M. Kean [14] showed that every orbit of f is dense in [0, 1). He also proved that if the partition has only two or three\n\n1\n\n![image]()\n\nFigure 1: Interval Exchange Transformation (IET)\n\nintervals, then all minimal IETs are also uniquely ergodic. The statement is not necessarily true if the number of intervals exceeds 3. However, it was proven by Masur [15] and Veech [20] that almost every interval exchange transformation is uniquely ergodic. This motivates a generalized conjecture that most piecewise isometries (restriction to the attractors) are also uniquely ergodic.\n\nWe can also consider a variation of interval exchange transformations, namely interval translation mappings (ITM). These mappings are introduced by M. Boshernitzan and I. Kornfeld in 1995 [5]. For ITM, the images of the intervals are not required to be disjoint. We classify ITM into two types: ﬁnite and inﬁnite. In the case f(Ω) ̸= Ω, consider the sequence\n\nΩ0 = Ω, Ω1 = f(Ω0), . . .. From this, we get the nested chain Ω0 ⊇ Ω1 ⊇ . . .. If this chain\n\nstabilizes we say the map f : Ω → Ωis of ﬁnite type; otherwise, f is of inﬁnite type. We\n\nsee that the map can only be of inﬁnite type if there are more than two elements in the partition. In particular, Boshernitzan and Kornﬁeld constructed an ITM of inﬁnite type with three branches [5].\n\nAnother class of one dimensional piecewise isometries is the double rotations of the circle. Let Ω= S1 = [0, 1]/{0 ∼1} be partitioned into two arcs P0 and P1. We deﬁne the double\n\nrotation map f : S1 → S1 as following:\n\nf(x) = \u001a x + α0 (mod 1),\n\nif x ∈ P0;\n\nx + α1 (mod 1), if x ∈ P1.\n\nAlmost all double rotations of the circle are uniquely ergodic, even most of those of inﬁnite type [4]. We would like to emphasize that this text is the result of an undergraduate research\n\n2\n\n![image]()\n\nFigure 2: Piecewise translation of 3 branches on a 2-dimensional disk.\n\nproject under the guidance of Prof. Gorodetski, based on the original ideas and results from [13] and [19]. The pictures were inspired by those from [13] and [19], but were recreated by independent reproduction of their numerical experiments.\n\n# 2 General set-up\n\nLet Ωbe a compact set in the Euclidean space Rd. Suppose Ω= Sm−1\n\ni=0 Bi where Bi’s are\n\ncompact for all i = 0, 1, . . . , m − 1. Here we allow the subsets Bi’s to have non-trivial inter-\n\nsections. We deﬁne a translation map on each Bi’s by Ti(x) = x + vi, where vi is a vector in Rd. Let X be the space of all compact subsets of Ω.\n\nDeﬁnition 2.1. The map F : X →X, F(K) = Sm−1\n\ni=0 Ti(K ∩ Bi) is called a piecewise\n\ntranslation of m branches on Ω.\n\nEach Bi is called a branch of Ω. Locally, if x is in both Bi and Bj, then x will be translated by both vi and vj. Figure 2 represents a piecewise translation of 3 branches on a 2-dimensional disk. These three branches intersect only at their boundaries, which have zero Lebesgue measure. Figure 2 is a simpliﬁed model of machine learning. In order for the machine to learn, we need multiple inputs from the environment. Each input is represented by a translation vector. The process of machine learning is modeled by the dynamics of applying the piecewise translation map many times. Therefore, it is natural to deﬁne what we get after applying the map over and over again, which we will call the attractor.\n\nDeﬁnition 2.2. The set A = T∞\n\nn=1 F n(Ω) is called the attractor of the map F. If A = F N(Ω)\n\nfor some N ∈ N, then we say the map F (or the attractor A) is of ﬁnite type. Otherwise, F\n\nis of inﬁnite type.\n\nBecause {F n(Ω)}∞\n\nn=1 is a non-increasing sequence of non-empty compact sets, it has a non-\n\nempty intersection. Therefore, the attractor is always non-empty and compact. Moreover,\n\n3\n\nthe attractor should be invariant under the map F. This expected property is a direct consequence of the following lemma.\n\nLemma 2.1. Let K0 ⊇ K1 ⊇ . . . is a non-increasing sequence of non-empty compact sets\n\nin X, then F (T∞\n\nn=0 Kn) = T∞\n\nn=0 F(Kn).\n\nProof. The inclusion F (T∞\n\nn=0 Kn) ⊆ T∞\n\nn=0 F(Kn) is trivial. In order to show the other\n\ndirection, let x ∈ T∞\n\nn=0 F(Kn), then x ∈ F(Kn) for all n ∈ N. Let H = {y ∈ Ω | F({y}) ∋ x}.\n\nNote that H is a ﬁnite union of compact sets, hence is compact. Indeed, H has ﬁnitely many points in Ω. Since x ∈ F(Kn) for all n, the sets Hn = H ∩ Kn are non-empty. So {Hn}∞\n\nn=0\n\nis a non-increasing sequence of non-empty compact sets. Therefore it has a non-empty\n\nintersection; i.e. ∃y ∈ H such that y ∈ T∞\n\nn=0 Kn. As a consequence, {x} ⊆ F({y}) ⊆\n\nF (T∞\n\nn=0 Kn). This shows that x ∈ F (T∞\n\nn=0 Kn).\n\nCorollary 2.1. The attractor is invariant under the map F; i.e. F(A) = A.\n\nIn some cases, a small change in the translation vectors v0, v1, . . . , vm−1 leads to a huge change in the geometry of A. In other words, A is not “continuous” in the parameter space. It is convenient to introduce the Hausdorﬀmetric on X to study the continuity of A. Here\n\nwe denote the ε-neighborhood of a set X with the standard Euclidean metric by Xε. We will show that the orbit of Ωgets arbitrarily close to the attractor with respect to the Hausdorﬀ metric.\n\nDeﬁnition 2.3. Let X, Y ∈X, the Hausdorﬀdistance between X and Y is deﬁned by\n\ndH(X, Y ) = inf{ε > 0 | X ⊆ Yε and Y ⊆ Xε}.\n\nLemma 2.2. Let K0 ⊇ K1 ⊇ . . . be a non-increasing sequence of non-empty compact sets\n\nin X. For every ε > 0, there exists N ∈ N such that KN ⊆ (T∞\n\nn=0 Kn)ε.\n\nProof. Denote Sn = Kn \\ (T∞\n\nn=0 Kn)ε, then Sn are compact and S0 ⊇ S1 ⊇ . . . If all Sn are\n\nnon-empty, then they have a non-empty intersection. This leads to (T∞\n\nn=0 Kn)\\(T∞\n\nn=0 Kn)ε ̸=\n\n∅ (contradiction \u0012). Therefore, ∃N ∈ N such that SN = ∅, which means KN ⊆ (T∞\n\nn=0 Kn)ε.\n\nCorollary 2.2. For every ε > 0, there exists N ∈ N such that dH(A, F n(Ω)) < ε for all\n\nn ≥ N.\n\n# 3 Finiteness theorem when m = d + 1\n\nIn this section, we are interested in piecewise translation maps of m = d + 1 branches in Rd. We assume that rank{v0, v1, . . . , vm−1} = d; that is, the vectors in B = {v1 − v0, v2 −\n\n4\n\nv0, . . . , vm−1 − v0} form a basis for Rd. Let L be the lattice generated by B, then T = Rd/L\n\nis a d-dimensional torus. In this case, v0 serves as the translation vector in T; i.e. we have the torus rotation map R : T → T, R(x+L) = x+v0 +L. Atom-wise, the action of F is the\n\nsame as the action of R on T. Globally, it is also true and can be seen through the canonical projection π : Rd → T, π(x) = x + L.\n\nLemma 3.1. If K ⊆ Ωis compact, then π ◦ F(K) = R ◦ π(K).\n\nProof. Let φ ∈ π ◦ T(K), then φ ∈ Sm−1\n\ni=1 π(Ti(Bi ∩ K)). So φ = π(Tj(Bj ∩ K)) for some j.\n\nTherefore, ∃y ∈ Bj ∩ K such that φ = π(y + vj). As a result,\n\nφ = y + vj + L = y + v0 + (vj − v0) + L = y + v0 + L = R ◦ π(y) ∈ R ◦ π(K).\n\nFor the backward inclusion, let φ ∈ R◦π(K), then φ = R◦π(y) = y+v0+L for some y ∈ K.\n\nWithout loss of generality, we can assume y ∈ Bj. In this case, φ = π(y+vj) ∈ π(Tj(Bj∩K)).\n\nHence, x ∈ π ◦ F(K).\n\nIt was proven that any piecewise translation of an interval with 2 branches is of ﬁnite type [18]. However, this does not hold for dimension 2 or higher. Indeed, not all double rotation on a torus is of ﬁnite type. In the case where m = d + 1, there is a space of parameters (translation vectors) where we will get ﬁnite type attractors. We assume that the translation vectors v0, v1, . . . , vm−1 are rationally independent, i.e. they are linearly independent in\n\nQ-vector space. This is equivalent for the toral map R to be ergodic. In this case, we say that the translation vectors are minimal. With this assumption, the map F is necessarily of ﬁnite type. We start with some deﬁnitions that will be used in the proof.\n\nDeﬁnition 3.1. A set X is said to be invariant under the map f : M → M if f(X) = X.\n\nDeﬁnition 3.2. A toral map R : T → T is said to be minimal if every orbit is dense; i.e\n\nthere is no proper closed invariant subset.\n\nDeﬁnition 3.3. A set X ⊆ Rd is nowhere dense if int ¯A = ∅.\n\nTheorem 3.1. Piecewise translation maps with rationally independent translation vectors are of ﬁnite type.\n\nProof. The idea is to show that F N(Ω) is contained in some ε-neighborhood of A but not contained in ε-neighborhood of ∂A for some N > 0. In this case, F N(Ω) must be in the interior of A, thus a subset of A.\n\nSince A is compact, non-empty and π is continuous, π(A) is compact and non-empty. Moreover, R ◦ π(A) = π ◦ F(A) = π(A) by Lemma 2.1, so π(A) is invariant under R. We know\n\n5\n\nthat ergodic torus rotation is minimal; therefore, there is no proper closed invariant sets. Since π(A) is non-empty, π(A) = T. Since A is closed, ∂A is nowhere dense in Rd. Since Ωis compact, the projection π is at most ﬁnitely branched, so locally π(∂A) is a ﬁnite union of nowhere dense sets, and thus is nowhere dense in T. Therefore, we can take a small ball B in the complement of π(∂A) and ε > 0 such that for U = (π(∂A))ε we have U ∩B = ∅. By Lemma 2.2, there exists N > 0 such that F n(Ω) ⊆ Aε for all n > N. So we only\n\nneed to show that F n(Ω) is not in (∂A)ε if n is large enough. It is known that every ergodic toral rotation map is uniformly minimal; i.e. for the open set B, there exists M > 0 such that ∀φ ∈ T, Rk(φ)φ ∈ B for some 0 < k(φ) < M. Note that k depends on φ while M does\n\nnot.\n\nClaim: π ◦ F n+k({x}) ∩ U = ∅ for some 0 < k < M.\n\nIndeed, we can apply Lemma 3.1 and the uniformly minimal property for φ = Rn ◦ π(x):\n\nπ ◦ F n+k({x}) = Rn+k ◦ π({x})\n\n= {Rn+k ◦ π(x)}\n\n(1)\n\n= {Rk(Rn ◦ π(x)\n\n)} ⊆ B.\n\n| {z\n\n}\n\nφ\n\nSince π is continuous, we can choose a positive δ < ε such that π((∂A)δ) ⊆ (π(∂A))ε = U.\n\nHence π◦F n+k({x})∩ U = ∅. Therefore, F n+k({x}) ∩ (∂A)ϵ = ∅. This leads to F n+k({x}) ⊆\n\nint A ⊆ A. Since k = k(x) is uniformly bounded by M, we have F N+M(Ω) ⊆ A, i.e. the\n\nmap F is of ﬁnite type.\n\n# 4 Semi-continuity of the attractors\n\nIn general, it is not true that the attractor is continuous with respect to Hausdorﬀmetric in the parameter space. Even in the case m = d + 1, we observed that sometimes the two separate pieces of the attractor reglue to each other. One of our concerns has not been proven yet.\n\nQuestion 4.1. Is it true that for a generic family of partitions, the attractor depends continuously on the translation vectors?\n\nHowever, in the case m = d + 1, the question of semi-continuity of the attractor is easier to answer. We will show that for a particular family of partitions, ﬁnite type attractors are semi-continuous on the translation vectors. Before showing the proof for this, we need a formal deﬁnition for semi-continuity of the attractors.\n\n6\n\n![image]()\n\nFigure 3: The black regions represent F n(D2) for n = 1, 2, 8, 9.\n\nThe disk converges to the attractor after 8 iterations. The map is of ﬁnite type.\n\nDeﬁnition 4.1. Let W be the space of translation vectors such that the associated piecewise\n\ntranslation map Fv0,v1,...,vm−1 is of ﬁnite type with a ﬁxed partition B. Denote Xa the attrac-\n\ntor associated with the parameter a ∈W. We say that the attractors are semi-continuous\n\non W if for every a ∈W, there exists a neighborhood O(a) such that for each b ∈ O(a), we\n\nhave Xb ⊆ (Xa)ε.\n\nNote that the semi-continuity of the attractor corresponds to the pseudo-Hausdorﬀmetric\n\nd(X, Y ) = sup{d(x, Y ) | x ∈ X}. It is clear that\n\ndH(X, Y ) = max{d(X, Y ), d(Y, X)}.\n\nConjecture 4.1. If m = d+1, there exists a generic parameter value such that the attractors are semi-continuous in W.\n\n# 5 Piecewise translation maps on tori\n\nIn this section, we discuss a special class of piecewise translations of two branches on a two dimensional torus called double rotations. Double rotations were discussed in [17] and [11]. Synchronization properties of random double rotations on tori were studied in [12]. Here we will show some pictures of double rotations with ﬁnite and inﬁnite types.\n\n7\n\nDeﬁnition 5.1. Let T be a two-dimensional torus and v0, v1 are vectors in R2. Consider a\n\nsubset R of T. The map f : T → T deﬁned as\n\nf(x) = \u001a x + v0 (mod 1),\n\nif x ∈ R;\n\nx + v1 (mod 1), otherwise\n\nis called a double rotation on T.\n\nIn Figure 4, the torus is partitioned into two regions - green and blue. We assign a diﬀerent translation vector to each region. After applying the map, we see that a region from the torus is lost (the red region). In this case, it is the translational image of the green region. Applying the map one more time, we get an additional lost region. Again, this is a translational image of the previous red region. After 500 times, we no longer get any additional lost region. The map is of ﬁnite type and its attractor is the blue part in Figure 5. On the other hands, in Figure 6, we do not get the attractor even after 5000 iterates. The map seems to be of inﬁnite type.\n\nLet V be the space of parameters {v0, v1} with a ﬁxed partition such that the double rota-\n\ntion map fv0,v1 is of ﬁnite type. By computer simulation, we conjecture that the map is of ﬁnite type for almost every parameter. If the map is ﬁnite, we also expect the attractor is semi-continuous with respect to Hausdorﬀdistance. This behavior has already been seen in the previous section.\n\nConjecture 5.1. V is an open, dense, and full measure subset of the set of all parameters.\n\nConjecture 5.2. The attractor is semi-continuous with respect to the parameters in V.\n\nQuestion 5.1. Is it true that the attractor is continuous with respect to the parameters in V?\n\n8\n\n![image]()\n\nFigure 4: Double rotation on a torus T. The green rectangle\n\nindicates the smaller region. The blue parts represent f n(T) for n = 0, 1, 2, 3.\n\n![image]()\n\nFigure 5: The blue part is the attractor of the map in Figure 4.\n\nThe attractor is attained after 500 iterates. The map is of ﬁnite type.\n\n9\n\n![image]()\n\nFigure 6: Seemingly inﬁnite type attractor.\n\n# Acknowledgements\n\nI would like to thank my advisor, Prof. Anton Gorodetski for the patient guidance, encouragement, and advice he provided during my research. I also want to thank UCI UROP for funding me during the summer of 2016 to ﬁnish this project.\n\n# References\n\n[1] R. Adler, B. Kitchens, M. Martens, C. Pugh, M. Shub, C. Tresser, Convex dynamics and applications, Ergodic Theory Dynam. Systems, 25 (2005), no. 2, pp. 321–352. [2] R. Adler, T. Nowicki, G. ´Swirszcz, C. Tresser, and S. Winograd, Error diﬀusion on simplices: Invariant regions, tessellations and acuteness, Preprint, 2012.\n\n[3] P. Ashwin, J. Deane, X.-C. Fu, Dynamics of a Bandpass Sigma-Delta Modulator as a Piecewise Isometry, Proc. - IEEE Int. Symp. on Circuits and Sys., 3 (2001), pp. 811– 814.\n\n[4] H. Bruin, G. Clack, Inducing and Unique Ergodicity of Double Rotations, Discrete Contin. Dyn. Sys., 32 (2012), pp. 4133–4147.\n\n10\n\n[5] M. Boshernitzan, I. Kornfeld, Interval translation mappings, Ergodic Theory Dynam. Systems, 15 (1995), no. 5, pp. 821–832.\n\n[6] L. Chua, T. Lin, Chaos in digital ﬁlters, IEEE Trans. Circuits Syst., vol. CAS-35 (1988), pp. 648–658. 648?58.\n\n[7] J. Deane, Piecewise Isometries: Applications in Engineering, Meccanica, 41 (2006), pp. 241–252.\n\n[8] J. Deane, Global attraction in the sigma-delta piecewise isometry, Dynamical Systems 17 (2002), pp. 377–388.\n\n[9] J. Deane, The buck converter planar piecewise isometry, preprint.\n\n[10] O. Feely, Nonlinear dynamics of bandpass sigma?elta modulation, Proceedings of NDES, Dublin (1995), pp. 33–36.\n\n[11] C. Gregory, Double Rotations, Doctoral Thesis, (2013), pp. 20–69.\n\n[12] A. Gorodetski, V. Kleptsyn, Synchronization properties of random piecewise isometries.\n\nComm. Math. Phys. 345 (2016), no.3, pp. 781–796.\n\n[13] A. Gorodetski, D. Volk, M. Welling, Some remarks on piecewise translation maps, Print., (2015), pp. 01–16.\n\n[14] M. Keane, Interval Exchange Transformations, Math. Z. 141 (1975), pp. 25–31.\n\n[15] H. Masur, Interval Exchange Transformations and Measured Foliations, Ann. of Math., 115 (1982), pp. 169–200.\n\n[16] H. Suzuki, K. Aihara, T. Okamoto, Complex behaviour of a simple partial discharge model, Europhys. Lett., 66 (2004), pp. 28–34.\n\n[17] H. Suzuki, S. Ito, K. Aihara, Double rotations. (English summary) Discrete Contin. Dyn.\n\nSyst. 13 (2005), no. 2, pp. 515–532.\n\n[18] D. Volk, Almost every interval translation map of three intervals is ﬁnite type. Discrete Contin. Dyn. Syst. 34 (2014), no. 5, pp. 2307–2314.\n\n[19] D. Volk, Attractors of Piecewise Translation Maps, Preprint., (2017).\n\n[20] W. Veech, Gauss measures for transformations on the space of interval exchange maps,\n\nAnn. of Math., 115 (1982), pp. 201–242.\n\n11\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Background",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 General set-up",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Finiteness theorem when m = d + 1",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Semi-continuity of the attractors",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Piecewise translation maps on tori",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.33656499999779,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgements"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

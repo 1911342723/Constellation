@@ -1,0 +1,132 @@
+{
+ "doc": "1501.04826",
+ "system": "docling-numlevels",
+ "derived_from": "dev-docling",
+ "metrics": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "3.3. Characterization in the presence of classic implications. Thus, we move on ",
+   "5.3. Enforcing homogeneity: further properties. Enforcing homogeneity turned out",
+   "Proposition 6.2.",
+   "Proof."
+  ],
+  "unmatched_pred": [
+   "Definition 3.6."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "3.3. Characterization in the presence of classic implications. Thus, we move on ",
+   "5.3. Enforcing homogeneity: further properties. Enforcing homogeneity turned out",
+   "Proposition 6.2.",
+   "Proof."
+  ],
+  "unmatched_pred": [
+   "Definition 3.6."
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 89.82203499999741
+ },
+ "predictions": [
+  {
+   "text": "RELATIVE ENTAILMENT AMONG PROBABILISTIC IMPLICATIONS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Preliminaries and notation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Previous work and some related facts",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Definition 3.6.",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Low thresholds: Cases of improper entailment",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. High thresholds",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Intervening thresholds",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Closing remarks",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.012196200001199031,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "3.3. Characterization in the presence of classic implications. Thus, we move on ",
+   "5.3. Enforcing homogeneity: further properties. Enforcing homogeneity turned out",
+   "Proposition 6.2.",
+   "Proof."
+  ],
+  "unmatched_pred": [
+   "Definition 3.6."
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,342 @@
+{
+ "doc": "1712.03829",
+ "system": "model",
+ "metrics": {
+  "gt": 21,
+  "pred": 32,
+  "tp": 12,
+  "fp": 20,
+  "fn": 9,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.1515151515151515,
+  "unmatched_gt": [
+   "Interest of the problem.",
+   "Related work.",
+   "Non-idemp otent intersection types.",
+   "Organization of the pap er.",
+   "Definition 3.1.",
+   "Definition 3.4.",
+   "Prop osition 3.9.",
+   "Example 3.14.",
+   "Acknowledgements."
+  ],
+  "unmatched_pred": [
+   "Γ ⊢ x : A(varw)",
+   "σ, τ, ρ ::= α | A → τ (types)",
+   "(var)",
+   "x : [[ ] → α] ⊢ x(DupDup) : α",
+   "x : [σ], y : [α0, α1] ⊢ xy(IDup) : τ",
+   "x : [σ1, σ2], y : [α, α] ⊢ xΩ(xyy) : α",
+   "x : [σ1, σ2], y : [α, α] ⊢ x(Iy)(xyy) : α",
+   "ai ⊩ TI(+i∈IΓi, [σi]i∈I)",
+   "a ⊩ T(Γ + x : [A1 → . . . An → τ], τ) (Head)",
+   "ai ⊩ TI(+i∈IΓi, [σi]i∈I)",
+   "Γ = +i=1...nΓi (bi ⊩ TI(Γi, Ai))i=1...n",
+   "xb1 . . . bn ⊩ T(Γ + (x : [A1 → . . . An → τ]), τ) (Headb)",
+   "::= [σi]i∈I (I ̸= ∅) (multiset types)",
+   "x : [ρ] ⊢ x : ρ (var)",
+   "t ⊩ TI(+i∈IΓi, [σi]i∈I) (Union)",
+   "t ⊩ T(Γ + x : [A1 → . . . An → τ], τ) (Head)",
+   "∆+ x : [α] ⊢ x : α (var)",
+   "Πst ▷ Γ \\ x ⊢ λx.u : Γ(x) → τ (→I)",
+   "sti ▷ ∆i ⊢ t : σi)i∈I",
+   "Πst ▷ +i∈I∆i ⊢ t : [σi]i∈I"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 938,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 22469,
+   "completion_tokens": 558,
+   "total_tokens": 23027
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Γ ⊢ x : A(varw)",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Preliminaries",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Systems characterizing head normalization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "σ, τ, ρ ::= α | A → τ (types)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(var)",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "x : [[ ] → α] ⊢ x(DupDup) : α",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "x : [σ], y : [α0, α1] ⊢ xy(IDup) : τ",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. The key role of approximants",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "x : [σ1, σ2], y : [α, α] ⊢ xΩ(xyy) : α",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "x : [σ1, σ2], y : [α, α] ⊢ x(Iy)(xyy) : α",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. The inhabitation algorithm",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "ai ⊩ TI(+i∈IΓi, [σi]i∈I)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "a ⊩ T(Γ + x : [A1 → . . . An → τ], τ) (Head)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3. Breaking relevance",
+   "page": 15,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "ai ⊩ TI(+i∈IΓi, [σi]i∈I)",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Γ = +i=1...nΓi (bi ⊩ TI(Γi, Ai))i=1...n",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "xb1 . . . bn ⊩ T(Γ + (x : [A1 → . . . An → τ]), τ) (Headb)",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Systems characterizing strong normalization",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Disallowing untyped formal parameters",
+   "page": 17,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "::= [σi]i∈I (I ̸= ∅) (multiset types)",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "x : [ρ] ⊢ x : ρ (var)",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "t ⊩ TI(+i∈IΓi, [σi]i∈I) (Union)",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "t ⊩ T(Γ + x : [A1 → . . . An → τ], τ) (Head)",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. Disallowing untyped actual parameters",
+   "page": 20,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "4.2.1. Inhabitation for Sw",
+   "page": 22,
+   "level": 3,
+   "parent": 24
+  },
+  {
+   "text": "∆+ x : [α] ⊢ x : α (var)",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Πst ▷ Γ \\ x ⊢ λx.u : Γ(x) → τ (→I)",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "sti ▷ ∆i ⊢ t : σi)i∈I",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Πst ▷ +i∈I∆i ⊢ t : [σi]i∈I",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.583068100000673,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 32,
+  "tp": 12,
+  "fp": 20,
+  "fn": 9,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.1515151515151515,
+  "unmatched_gt": [
+   "Interest of the problem.",
+   "Related work.",
+   "Non-idemp otent intersection types.",
+   "Organization of the pap er.",
+   "Definition 3.1.",
+   "Definition 3.4.",
+   "Prop osition 3.9.",
+   "Example 3.14.",
+   "Acknowledgements."
+  ],
+  "unmatched_pred": [
+   "Γ ⊢ x : A(varw)",
+   "σ, τ, ρ ::= α | A → τ (types)",
+   "(var)",
+   "x : [[ ] → α] ⊢ x(DupDup) : α",
+   "x : [σ], y : [α0, α1] ⊢ xy(IDup) : τ",
+   "x : [σ1, σ2], y : [α, α] ⊢ xΩ(xyy) : α",
+   "x : [σ1, σ2], y : [α, α] ⊢ x(Iy)(xyy) : α",
+   "ai ⊩ TI(+i∈IΓi, [σi]i∈I)",
+   "a ⊩ T(Γ + x : [A1 → . . . An → τ], τ) (Head)",
+   "ai ⊩ TI(+i∈IΓi, [σi]i∈I)",
+   "Γ = +i=1...nΓi (bi ⊩ TI(Γi, Ai))i=1...n",
+   "xb1 . . . bn ⊩ T(Γ + (x : [A1 → . . . An → τ]), τ) (Headb)",
+   "::= [σi]i∈I (I ̸= ∅) (multiset types)",
+   "x : [ρ] ⊢ x : ρ (var)",
+   "t ⊩ TI(+i∈IΓi, [σi]i∈I) (Union)",
+   "t ⊩ T(Γ + x : [A1 → . . . An → τ], τ) (Head)",
+   "∆+ x : [α] ⊢ x : α (var)",
+   "Πst ▷ Γ \\ x ⊢ λx.u : Γ(x) → τ (→I)",
+   "sti ▷ ∆i ⊢ t : σi)i∈I",
+   "Πst ▷ +i∈I∆i ⊢ t : [σi]i∈I"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 31,
+  "tp": 11,
+  "fp": 20,
+  "fn": 8,
+  "level_correct": 11,
+  "parent_correct": 7,
+  "teds": 0.15625,
+  "unmatched_gt": [
+   "Interest of the problem.",
+   "Related work.",
+   "Non-idemp otent intersection types.",
+   "Organization of the pap er.",
+   "Definition 3.1.",
+   "Definition 3.4.",
+   "Prop osition 3.9.",
+   "Example 3.14."
+  ],
+  "unmatched_pred": [
+   "Γ ⊢ x : A(varw)",
+   "σ, τ, ρ ::= α | A → τ (types)",
+   "(var)",
+   "x : [[ ] → α] ⊢ x(DupDup) : α",
+   "x : [σ], y : [α0, α1] ⊢ xy(IDup) : τ",
+   "x : [σ1, σ2], y : [α, α] ⊢ xΩ(xyy) : α",
+   "x : [σ1, σ2], y : [α, α] ⊢ x(Iy)(xyy) : α",
+   "ai ⊩ TI(+i∈IΓi, [σi]i∈I)",
+   "a ⊩ T(Γ + x : [A1 → . . . An → τ], τ) (Head)",
+   "ai ⊩ TI(+i∈IΓi, [σi]i∈I)",
+   "Γ = +i=1...nΓi (bi ⊩ TI(Γi, Ai))i=1...n",
+   "xb1 . . . bn ⊩ T(Γ + (x : [A1 → . . . An → τ]), τ) (Headb)",
+   "::= [σi]i∈I (I ̸= ∅) (multiset types)",
+   "x : [ρ] ⊢ x : ρ (var)",
+   "t ⊩ TI(+i∈IΓi, [σi]i∈I) (Union)",
+   "t ⊩ T(Γ + x : [A1 → . . . An → τ], τ) (Head)",
+   "∆+ x : [α] ⊢ x : α (var)",
+   "Πst ▷ Γ \\ x ⊢ λx.u : Γ(x) → τ (→I)",
+   "sti ▷ ∆i ⊢ t : σi)i∈I",
+   "Πst ▷ +i∈I∆i ⊢ t : [σi]i∈I"
+  ],
+  "ignored_title_predictions": null
+ }
+}

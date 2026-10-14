@@ -1,0 +1,297 @@
+{
+ "doc": "1807.02255",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 17,
+  "fp": 10,
+  "fn": 10,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.2142857142857143,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "1) Web Service Provider and Client Plugin: Our proposed",
+   "1) Search Engine Confidence Score (Ssec): According",
+   "2) Content Matching Score (Scms): During errors or excep-",
+   "3) Stack Trace Matching Score (Sstm ): To solve the pro-",
+   "4) Source Code Context Matching Score (Sccx ): Some-",
+   "5) StackOverflow Vote Score (Sso ): StackOverflow, a popu-",
+   "6) Search Traffic Rank Score (Sstr ): The amount of search",
+   "E. Experimental Results on Proposed Approach",
+   "G. Experiments with Existing Search Engines"
+  ],
+  "unmatched_pred": [
+   "1 Metrics for the top 10 results",
+   "2 Metrics for the top 20 results",
+   "3 Metrics for the top 30 results",
+   "4 No. of exceptions ﬁxed",
+   "5 Percentage of exceptions ﬁxed",
+   "1 Contains exception message and stack trace.",
+   "2 Contains exception message, stack trace and code context.",
+   "1 No",
+   "2 No",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 185,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Towards a Context-Aware IDE-Based Meta Search",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Engine for Recommendation about Programming",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Errors and Exceptions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Cosine Similarity",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Degree of Interest",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III. PROPOSED APPROACH FOR IDE-BASED",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proposed Model for IDE-Based Search",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Proposed Metrics",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Result Scores Calculation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENT DESIGN, RESULTS AND VALIDATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Dataset preparation",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Investigation with Eclipse IDE",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "C. Search Query Formulation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Performance Metrics",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Metrics for the top 10 results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Metrics for the top 20 results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Metrics for the top 30 results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 No. of exceptions ﬁxed",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Percentage of exceptions ﬁxed",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Experiments with Existing Approaches",
+   "page": 6,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "1 Contains exception message and stack trace.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Contains exception message, stack trace and code context.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 No",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 No",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. THREATS TO VALIDITY",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. RELATED WORKS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION AND FUTURE WORKS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.761109600000054,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 30,
+  "tp": 17,
+  "fp": 13,
+  "fn": 10,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.19354838709677424,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "1) Web Service Provider and Client Plugin: Our proposed",
+   "1) Search Engine Confidence Score (Ssec): According",
+   "2) Content Matching Score (Scms): During errors or excep-",
+   "3) Stack Trace Matching Score (Sstm ): To solve the pro-",
+   "4) Source Code Context Matching Score (Sccx ): Some-",
+   "5) StackOverflow Vote Score (Sso ): StackOverflow, a popu-",
+   "6) Search Traffic Rank Score (Sstr ): The amount of search",
+   "E. Experimental Results on Proposed Approach",
+   "G. Experiments with Existing Search Engines"
+  ],
+  "unmatched_pred": [
+   "Towards a Context-Aware IDE-Based Meta Search",
+   "Engine for Recommendation about Programming",
+   "Errors and Exceptions",
+   "1 Metrics for the top 10 results",
+   "2 Metrics for the top 20 results",
+   "3 Metrics for the top 30 results",
+   "4 No. of exceptions ﬁxed",
+   "5 Percentage of exceptions ﬁxed",
+   "1 Contains exception message and stack trace.",
+   "2 Contains exception message, stack trace and code context.",
+   "1 No",
+   "2 No",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 26,
+  "tp": 17,
+  "fp": 9,
+  "fn": 10,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "1) Web Service Provider and Client Plugin: Our proposed",
+   "1) Search Engine Confidence Score (Ssec): According",
+   "2) Content Matching Score (Scms): During errors or excep-",
+   "3) Stack Trace Matching Score (Sstm ): To solve the pro-",
+   "4) Source Code Context Matching Score (Sccx ): Some-",
+   "5) StackOverflow Vote Score (Sso ): StackOverflow, a popu-",
+   "6) Search Traffic Rank Score (Sstr ): The amount of search",
+   "E. Experimental Results on Proposed Approach",
+   "G. Experiments with Existing Search Engines"
+  ],
+  "unmatched_pred": [
+   "1 Metrics for the top 10 results",
+   "2 Metrics for the top 20 results",
+   "3 Metrics for the top 30 results",
+   "4 No. of exceptions ﬁxed",
+   "5 Percentage of exceptions ﬁxed",
+   "1 Contains exception message and stack trace.",
+   "2 Contains exception message, stack trace and code context.",
+   "1 No",
+   "2 No"
+  ],
+  "ignored_title_predictions": null
+ }
+}

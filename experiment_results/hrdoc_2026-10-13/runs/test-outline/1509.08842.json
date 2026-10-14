@@ -1,0 +1,82 @@
+{
+ "doc": "1509.08842",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09999999999999998,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Cho osing the Telling Extract",
+   "3 Discourse Segmentation",
+   "4 Data and Methods",
+   "5 Comparing Manual Segmentations",
+   "6 Comparing Automatic Segmentations",
+   "7 Discussion and Future Work",
+   "8 Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "AutomaticallySegmenting Oral History Transcripts",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.006605800001125317,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09999999999999998,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Cho osing the Telling Extract",
+   "3 Discourse Segmentation",
+   "4 Data and Methods",
+   "5 Comparing Manual Segmentations",
+   "6 Comparing Automatic Segmentations",
+   "7 Discussion and Future Work",
+   "8 Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [
+   "AutomaticallySegmenting Oral History Transcripts"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.125,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Cho osing the Telling Extract",
+   "3 Discourse Segmentation",
+   "4 Data and Methods",
+   "5 Comparing Manual Segmentations",
+   "6 Comparing Automatic Segmentations",
+   "7 Discussion and Future Work"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

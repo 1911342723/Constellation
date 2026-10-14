@@ -1,0 +1,262 @@
+{
+ "doc": "1603.00232",
+ "system": "model",
+ "metrics": {
+  "gt": 14,
+  "pred": 27,
+  "tp": 14,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.5357142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Parameter",
+   "Value",
+   "Parameter",
+   "Value",
+   "Parameter",
+   "Parameter",
+   "60 m channel width",
+   "2 cm",
+   "60 m bender m",
+   "60 m nchannels",
+   "60 m bender radius",
+   "60 m transmission at 4˚A",
+   "60 m Cost"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 217,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10349,
+   "completion_tokens": 616,
+   "total_tokens": 10965
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. INPUT DATA AND COST ESTIMATES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Line of Sight Option",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Out of Line of Sight",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Concept Neutral Costs",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. REQUIREMENTS AND MATCHED",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Standard Guide Concept",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Curved Guides",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Multi-Channel Bender Options",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. SUITE COST TOTALS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Parameter",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Value",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Parameter",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Value",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Parameter",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Parameter",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "60 m channel width",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 cm",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "60 m bender m",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "60 m nchannels",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "60 m bender radius",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "60 m transmission at 4˚A",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "60 m Cost",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. COSTING VALIDATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Approximate Benchmarking",
+   "page": 6,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.566144699998404,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 27,
+  "tp": 14,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.5357142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Parameter",
+   "Value",
+   "Parameter",
+   "Value",
+   "Parameter",
+   "Parameter",
+   "60 m channel width",
+   "2 cm",
+   "60 m bender m",
+   "60 m nchannels",
+   "60 m bender radius",
+   "60 m transmission at 4˚A",
+   "60 m Cost"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 26,
+  "tp": 13,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.5185185185185186,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Parameter",
+   "Value",
+   "Parameter",
+   "Value",
+   "Parameter",
+   "Parameter",
+   "60 m channel width",
+   "2 cm",
+   "60 m bender m",
+   "60 m nchannels",
+   "60 m bender radius",
+   "60 m transmission at 4˚A",
+   "60 m Cost"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "doc": "1605.06132",
+ "system": "model",
+ "metrics": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 773,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4285,
+   "completion_tokens": 397,
+   "total_tokens": 4682
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Generalized Darboux transformation and higher-order rogue wave solutions to the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. GENERALIZED DARBOUX TRANSFORMATION",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III. ROGUE WAVE SOLUTIONS",
+   "page": 7,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 8,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "V. REFERENCES",
+   "page": 10,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VI. APPENDIX:",
+   "page": 10,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 8.319146099998761,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Generalized Darboux transformation and higher-order rogue wave solutions to the"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 4,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

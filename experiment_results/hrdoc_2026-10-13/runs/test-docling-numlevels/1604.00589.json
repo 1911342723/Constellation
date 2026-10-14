@@ -1,0 +1,185 @@
+{
+ "doc": "1604.00589",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 24,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.76,
+  "unmatched_gt": [
+   "Abstract.",
+   "Scenario 1: Coop eration between vehicles and semaphore signals",
+   "Scenario 2: Co operation between vehicles",
+   "Network Parameters",
+   "Data Naming and Interests",
+   "Traffic Settings"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.7727272727272727,
+  "unmatched_gt": [
+   "Scenario 1: Coop eration between vehicles and semaphore signals",
+   "Scenario 2: Co operation between vehicles",
+   "Network Parameters",
+   "Data Naming and Interests",
+   "Traffic Settings"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 38.431260100001964
+ },
+ "predictions": [
+  {
+   "text": "RAdNet-VE: An Interest-Centric Mobile Ad Hoc Network for Vehicular Environments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Works",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Background",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Interest-Centric Mobile Ad Hoc Network",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Communication Requirements of Application Categories for VANETs",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Interest-Centric Vehicular Ad Hoc Network",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Addressing the Communication Requirements of Application Categories for VANETs",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Description of the Extensions of the Message Header of the RAdNet",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Design of the RAdNet-VE Communication Protocol",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.4 RAdNet-VE and Access Technologies",
+   "page": 11,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Experiments",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Use Scenarios",
+   "page": 12,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2 Simulation Settings",
+   "page": 13,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 Analysis of Results",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Discussion",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusions",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.012790100001438987,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.76,
+  "unmatched_gt": [
+   "Abstract.",
+   "Scenario 1: Coop eration between vehicles and semaphore signals",
+   "Scenario 2: Co operation between vehicles",
+   "Network Parameters",
+   "Data Naming and Interests",
+   "Traffic Settings"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

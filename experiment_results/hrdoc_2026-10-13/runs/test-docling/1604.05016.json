@@ -1,0 +1,126 @@
+{
+ "doc": "1604.05016",
+ "system": "docling",
+ "metrics": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 12.444039699999848
+ },
+ "predictions": [
+  {
+   "text": "Status Report of the GERDA Phase II Startup",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THE GERDA EXPERIMENT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Phase I Results",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. UPGRADE TO PHASE II",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. BEGe Detectors",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Detector Assembly and Read-Out Electronics",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. LAr Instrumentation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. START OF PHASE II DATA TAKING",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.007768000003125053,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Status Report of the GERDA Phase II Startup",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "doc": "1801.10209",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8421052631578947,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "PROGRAM SUMMARY"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "PROGRAM SUMMARY"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 742,
+  "layout_marked": 20,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18633,
+   "completion_tokens": 702,
+   "total_tokens": 19335
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9488317757009346,
+  "inserted_word_share": 0.04311969839773799
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROGRAM SUMMARY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Dynamical mean ﬁeld theory (DMFT) solver",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. CT-HYB impurity solver",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Steps",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2. Estimators",
+   "page": 11,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3. Statistical uncertainties",
+   "page": 12,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4. Local trace",
+   "page": 14,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.5. Quantum numbers",
+   "page": 14,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.6. Bath trace",
+   "page": 15,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4. Installation and community site",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Where to ﬁnd the project and the code",
+   "page": 15,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2. Installation",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5. Input/output",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusions",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.884463000002143,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8421052631578947,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "PROGRAM SUMMARY"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "doc": "1805.09887",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 26,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8148148148148149,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 918,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 28213,
+   "completion_tokens": 964,
+   "total_tokens": 29177
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminary deﬁnitions and results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Formal deﬁnition of SPA-S",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Ties in the preference lists",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Cloning from spa-st to hrt does not work in general",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 An algorithm for SPA-ST under super-stability",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Deﬁnitions relating to the algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Description of the algorithm",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Example algorithm execution",
+   "page": 10,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 Correctness of Algorithm SPA-ST-super",
+   "page": 10,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.5 Properties of super-stable matchings in spa-st",
+   "page": 18,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Empirical Evaluation",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 19,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2 Experimental Setup",
+   "page": 19,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5 Discussions and Concluding Remarks",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A An IP model for super-stability in SPA-ST",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Introduction",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 Constraints",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.3 Variables",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.4 Objective function",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.5 Correctness of the IP model",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 25.302500199999486,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8148148148148149,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 20,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

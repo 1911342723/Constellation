@@ -1,0 +1,98 @@
+{
+ "doc": "1805.01017",
+ "system": "outline",
+ "metrics": {
+  "gt": 8,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "4. Temporal evolution over the south pole",
+   "Acknowledgment",
+   "References"
+  ],
+  "unmatched_pred": [
+   "4 Temporal evolution over the south pole"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Data processing",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Temporal evolution of the north polar atmospheric features during 13 years: from a mammoth cloud to clear skies",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Temporal evolution over the south pole",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Temporal evolution of the HCN spectral signatures over the two poles",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.062031500001467066,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "4. Temporal evolution over the south pole",
+   "Acknowledgment",
+   "References"
+  ],
+  "unmatched_pred": [
+   "4 Temporal evolution over the south pole"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "4. Temporal evolution over the south pole"
+  ],
+  "unmatched_pred": [
+   "4 Temporal evolution over the south pole"
+  ],
+  "ignored_title_predictions": null
+ }
+}

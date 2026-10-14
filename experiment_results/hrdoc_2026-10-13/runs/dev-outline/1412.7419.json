@@ -1,0 +1,150 @@
+{
+ "doc": "1412.7419",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.6842105263157895,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgments",
+   "References",
+   "A Appendix"
+  ],
+  "unmatched_pred": [
+   "A Appendix"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Directional Secant Approximation",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "3 Variance Reduction for Robust Stochastic Gradient Descent",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "4 Adaptive Step-size in Stochastic Case",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "5 Algorithmic Details",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Approximate Variability",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5.2 Outlier Gradient Detection",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5.3 Variance Reduction",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "6 Improving Convergence",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Appendix",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Derivation of Eq ??",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "A.2 Algorithm pseudo-code",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "A.3 Further Experimental Details",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  }
+ ],
+ "seconds": 0.0591058999998495,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.6842105263157895,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgments",
+   "References",
+   "A Appendix"
+  ],
+  "unmatched_pred": [
+   "A Appendix"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

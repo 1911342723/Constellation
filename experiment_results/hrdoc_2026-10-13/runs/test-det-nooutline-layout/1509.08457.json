@@ -1,0 +1,130 @@
+{
+ "doc": "1509.08457",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "STREAM"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "2 Indranil Banik & Hongsheng Zhao",
+   "4 Indranil Banik & Hongsheng Zhao"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "STREAM"
+  ],
+  "unmatched_pred": [
+   "2 Indranil Banik & Hongsheng Zhao",
+   "4 Indranil Banik & Hongsheng Zhao"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 391,
+  "layout_marked": 9,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9527076696888017,
+  "inserted_word_share": 0.6914530592810094
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Indranil Banik & Hongsheng Zhao",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 EXTERNAL FIELD DOMINANCE IN",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 EXTERNAL FIELD DOMINANCE IN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Indranil Banik & Hongsheng Zhao",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 APPLICATION TO THE SAGITTARIUS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.26926850000018,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "STREAM"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "2 Indranil Banik & Hongsheng Zhao",
+   "4 Indranil Banik & Hongsheng Zhao"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

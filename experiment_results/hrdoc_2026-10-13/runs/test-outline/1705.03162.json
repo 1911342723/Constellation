@@ -1,0 +1,146 @@
+{
+ "doc": "1705.03162",
+ "system": "outline",
+ "metrics": {
+  "gt": 17,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [
+   "Acknowledgments"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 GPU architecture and memory",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Methodology",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Experimental method",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.2 First-order domain of dependence",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.3 Higher-order domain of dependence",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "5 Implementation",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Swept rule variants",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5.2 Test cases",
+   "page": 12,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6 Results and discussion",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusions",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A Availability of materials",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B Heat equation",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C Kuramoto–Sivashinsky equation",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix D Euler equations (Sod shock tube)",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04215509999994538,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [
+   "Acknowledgments"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

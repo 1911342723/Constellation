@@ -1,0 +1,202 @@
+{
+ "doc": "1609.03363",
+ "system": "det",
+ "metrics": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.7391304347826086,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Digital-domain Atomic Function Computation (D-AFC)",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "G. The set of all edges in the graph is completely determined",
+   "v. The collection of sets {V(v)}v∈V fully describes the set of",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 658,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND PRELIMINARIES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The 3GPP MTC Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Software Deﬁned Networking (SDN) and Network Function",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Notational preliminaries",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. CONDENSE ARCHITECTURE: IOT/CLOUD",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. CONDENSE Architecture: Modules and Layers",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "G. The set of all edges in the graph is completely determined",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "v. The collection of sets {V(v)}v∈V fully describes the set of",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. CONDENSE Architecture",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. ATOMIC FUNCTION COMPUTATION LAYER",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Analog-domain Atomic Function Computation (A-AFC)",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V. NETWORK FUNCTION COMPUTATION LAYER",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Theoretical Aspects of NFC Layer",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Implementation Aspects of NFC Layer",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI. APPLICATION LAYER",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data recovery through network coding",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "B. Statistical estimation and learning",
+   "page": 10,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "C. Neural networks",
+   "page": 11,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "VII. OTHER IMPLEMENTATION ASPECTS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSIONS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.667355699999462,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.7391304347826086,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Digital-domain Atomic Function Computation (D-AFC)",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "G. The set of all edges in the graph is completely determined",
+   "v. The collection of sets {V(v)}v∈V fully describes the set of",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "B. Digital-domain Atomic Function Computation (D-AFC)"
+  ],
+  "unmatched_pred": [
+   "G. The set of all edges in the graph is completely determined",
+   "v. The collection of sets {V(v)}v∈V fully describes the set of"
+  ],
+  "ignored_title_predictions": null
+ }
+}

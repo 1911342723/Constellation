@@ -1,0 +1,181 @@
+{
+ "doc": "1507.01067",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Keywords",
+   "Like the architecture in de Robles and Pabico [7], the Web architecture used in "
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Like the architecture in de Robles and Pabico [7], the Web architecture used in "
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 440,
+  "layout_marked": 21,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9747252747252747,
+  "inserted_word_share": 0.688849912302681
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. REVIEW OF LITERATURE",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Single Sytem Image",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Overview of Kerrighed",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Overview of OpenMosix",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Overview of OpenSSI",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. METHODOLOGY",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Like the architecture in de Robles and Pabico [7], the Web architecture used in this study is presented in which each node is hosting a complete replica of the application.",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.0.1 HTTP Servers",
+   "page": 3,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "3.0.2 Installing and Conﬁguring Kerrighed",
+   "page": 3,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "3.0.3 Installing and Conﬁguring OpenMosix",
+   "page": 4,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "3.0.4 Installing and Conﬁguring OpenSSI",
+   "page": 4,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "3.0.5 Performance Evaluation",
+   "page": 5,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "4. RESULTS AND DISCUSSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Response Time",
+   "page": 5,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2 Missed Requests",
+   "page": 6,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5. SUMMARY AND CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.8373443000018597,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Keywords",
+   "Like the architecture in de Robles and Pabico [7], the Web architecture used in "
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "doc": "1807.10049",
+ "system": "model",
+ "metrics": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 690,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13207,
+   "completion_tokens": 526,
+   "total_tokens": 13733
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 BACKGROUND ATMOSPHERE AND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 SIMULATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Velocity vector decomposition",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Velocity and ﬂux calculation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Flux surface displacement",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 SIMULATION RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Wave mode identiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Velocity components",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Flux contribution",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1825.9999304999983,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

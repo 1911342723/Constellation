@@ -1,0 +1,111 @@
+{
+ "doc": "1506.06314",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "collisions"
+  ],
+  "unmatched_pred": [
+   "1) Physics Department, Temple University, Philadelphia, 19122, USA"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 72,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Jet measurements in polarized p+p collisions at",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "STAR at RHIC",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1) Physics Department, Temple University, Philadelphia, 19122, USA",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Inclusive jet cross section in 200 GeV p+p collisions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Inclusive jet longitudinal double spin asymmetries ALL in 200/510 GeV p+p",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Summary and Outlook",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.312045599999692,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 8,
+  "tp": 5,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "collisions"
+  ],
+  "unmatched_pred": [
+   "Jet measurements in polarized p+p collisions at",
+   "STAR at RHIC",
+   "1) Physics Department, Temple University, Philadelphia, 19122, USA"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 4,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "collisions"
+  ],
+  "unmatched_pred": [
+   "1) Physics Department, Temple University, Philadelphia, 19122, USA"
+  ],
+  "ignored_title_predictions": null
+ }
+}

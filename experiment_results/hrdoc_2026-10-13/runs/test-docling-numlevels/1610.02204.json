@@ -1,0 +1,69 @@
+{
+ "doc": "1610.02204",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 2,
+  "pred": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 1,
+  "pred": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 12.902401200000895
+ },
+ "predictions": [
+  {
+   "text": "Mapping atomic orbitals with the transmission electron microscope: Images of defective graphene predicted from first-principles theory",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "BIBLIOGRAPHY STYLES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0011117000030935742,
+ "metrics_v1": {
+  "gt": 2,
+  "pred": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

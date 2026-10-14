@@ -1,0 +1,185 @@
+{
+ "doc": "1805.04419",
+ "system": "outline",
+ "metrics": {
+  "gt": 21,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "forcement Learning",
+   "A. Learning Model",
+   "C. Subgoal Definition",
+   "E. Learning Algorithm",
+   "AC K NOWL E DGM EN T",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [
+   "III-A Learning Model",
+   "III-C Subgoal Definition",
+   "III-E Learning Algorithm"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Markov Decision Process",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Semi-Markov Decision Process for Hierarchical Reinforcement Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-C Partially observable Markov Decision Process in Reinforcement Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-D Deep Reinforcement Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Hierarchical Deep Recurrent Q-Learning in Partially Observable Semi-Markov Decision Process",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Learning Model",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-B Minibatch sampling strategy",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-C Subgoal Definition",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-D Intrinsic and Extrinsic Reward Functions",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-E Learning Algorithm",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV Experiments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Implementation Details",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "IV-B Multiple Goals in a Gridworld",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "IV-C Multiple Goals in a Four-rooms Domain",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "IV-D Montezuma's Revenge game in ATARI 2600",
+   "page": 10,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.16536259999702452,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "forcement Learning",
+   "A. Learning Model",
+   "C. Subgoal Definition",
+   "E. Learning Algorithm",
+   "AC K NOWL E DGM EN T",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [
+   "III-A Learning Model",
+   "III-C Subgoal Definition",
+   "III-E Learning Algorithm"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "forcement Learning",
+   "A. Learning Model",
+   "C. Subgoal Definition",
+   "E. Learning Algorithm"
+  ],
+  "unmatched_pred": [
+   "III-A Learning Model",
+   "III-C Subgoal Definition",
+   "III-E Learning Algorithm"
+  ],
+  "ignored_title_predictions": null
+ }
+}

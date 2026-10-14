@@ -1,0 +1,243 @@
+{
+ "doc": "1808.06289",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9490,
+   "completion_tokens": 8997
+  },
+  "elapsed_llm_seconds": 41.5167720999998,
+  "content_preservation": 0.9896580483736447,
+  "inserted_word_share": 0.005197853789403073,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Multi-Perspective Context Aggregation for Semi-supervised Cloze-style Reading Comprehension",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Model",
+    1,
+    2
+   ],
+   [
+    "2.1 MPNet: Multi-Perspective Context Aggregation Network",
+    1,
+    3
+   ],
+   [
+    "2.2 SemiMPNet: Semi-supervised Learning with Distribution Matching",
+    3,
+    3
+   ],
+   [
+    "3 Experiments",
+    4,
+    2
+   ],
+   [
+    "3.1 Experimental Setup",
+    4,
+    3
+   ],
+   [
+    "3.2 Baselines",
+    5,
+    3
+   ],
+   [
+    "3.3 Main Results",
+    5,
+    3
+   ],
+   [
+    "3.4 Ablation Study",
+    7,
+    3
+   ],
+   [
+    "3.5 Examining Effects of Background Corpus",
+    7,
+    3
+   ],
+   [
+    "4 Related Work",
+    8,
+    2
+   ],
+   [
+    "5 Conclusion",
+    8,
+    2
+   ],
+   [
+    "Acknowledgements",
+    9,
+    2
+   ],
+   [
+    "References",
+    9,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Model",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 MPNet: Multi-Perspective Context Aggregation Network",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 SemiMPNet: Semi-supervised Learning with Distribution Matching",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Experimental Setup",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Baselines",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Main Results",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 Ablation Study",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.5 Examining Effects of Background Corpus",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Related Work",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 41.626599900002475,
+ "metrics_raw": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 7,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Multi-Perspective Context Aggregation for Semi-supervised Cloze-style Reading Co"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

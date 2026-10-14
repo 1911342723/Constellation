@@ -1,0 +1,170 @@
+{
+ "doc": "1609.04377",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "10 Indranil Banik & Hongsheng Zhao"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "10 Indranil Banik & Hongsheng Zhao"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 929,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18997,
+   "completion_tokens": 618,
+   "total_tokens": 19615
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9210879618119437,
+  "inserted_word_share": 0.680901276463799
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 REVIEW OF 2D AXISYMMETRIC MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Governing Equations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Statistical analysis",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 2D Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 THE 3D METHOD",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Governing equations",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Statistical analysis",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 3D RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Indranil Banik & Hongsheng Zhao",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 DISCUSSION",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Eﬀects of the Great Attractor and the Virgo",
+   "page": 14,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2 Modiﬁed Gravity",
+   "page": 15,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 CONCLUSIONS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 ACKNOWLEDGEMENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 27.68616369999654,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "10 Indranil Banik & Hongsheng Zhao"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

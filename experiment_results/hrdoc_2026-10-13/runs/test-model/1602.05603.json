@@ -1,0 +1,236 @@
+{
+ "doc": "1602.05603",
+ "system": "model",
+ "metrics": {
+  "gt": 25,
+  "pred": 26,
+  "tp": 24,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 13,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [
+   "ω ⟩, and c) left-moving photons, ⟨n(l)",
+   "fout(ω, ω′, α) := ⟨αω|rout(ω′)|αω⟩,"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 852,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13902,
+   "completion_tokens": 949,
+   "total_tokens": 14851
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Full two-photon downconversion of just a single photon",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. MODEL",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III. A POSSIBLE IMPLEMENTATION",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "IV. NUMERICAL SOLUTION",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Two photon generation: scattering and",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "B. Characterization for the two-photon output",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "ω ⟩, and c) left-moving photons, ⟨n(l)",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "V. ANALYTICAL THEORY",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VI. EFFICIENCY",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "fout(ω, ω′, α) := ⟨αω|rout(ω′)|αω⟩,",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "1. Input-output ﬁelds calculations",
+   "page": 6,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "2. Linear Response theory (LRT)",
+   "page": 7,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "3. Practical calculation",
+   "page": 7,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "a. Retarded perturbation",
+   "page": 7,
+   "level": 4,
+   "parent": 16
+  },
+  {
+   "text": "b. AC-driving",
+   "page": 8,
+   "level": 4,
+   "parent": 16
+  },
+  {
+   "text": "4. Final formula",
+   "page": 8,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "c. The relation",
+   "page": 8,
+   "level": 4,
+   "parent": 19
+  },
+  {
+   "text": "5. Transmission calculation",
+   "page": 8,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "6. Leakage",
+   "page": 8,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "Appendix B: Eﬃciency calculations",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Appendix C: Numerical simulations",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "1. Matrix Product States",
+   "page": 9,
+   "level": 3,
+   "parent": 24
+  },
+  {
+   "text": "2. Simulated model, input state and parameters",
+   "page": 10,
+   "level": 3,
+   "parent": 24
+  }
+ ],
+ "seconds": 26.461002399999416,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 27,
+  "tp": 24,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 6,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [
+   "Full two-photon downconversion of just a single photon",
+   "ω ⟩, and c) left-moving photons, ⟨n(l)",
+   "fout(ω, ω′, α) := ⟨αω|rout(ω′)|αω⟩,"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 11,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [
+   "ω ⟩, and c) left-moving photons, ⟨n(l)",
+   "fout(ω, ω′, α) := ⟨αω|rout(ω′)|αω⟩,"
+  ],
+  "ignored_title_predictions": null
+ }
+}

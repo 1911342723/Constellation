@@ -1,0 +1,146 @@
+{
+ "doc": "1704.07071",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 11,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.26315789473684215,
+  "unmatched_gt": [
+   "2.1. Zero-Multipole Summation Method",
+   "2.1.1. Formula",
+   "2.1.2. Accuracy",
+   "2.2. Smooth Particle Mesh Ewald Method",
+   "2.2.1. Formula",
+   "2.2.2. Computational Cost",
+   "2.3. Implementation and Optimization of the ZMM",
+   "2.4. Optimization of the SPME",
+   "2.5. Materials",
+   "2.6. Accuracy measurement",
+   "2.7. Performance Measurement"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 445,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13590,
+   "completion_tokens": 376,
+   "total_tokens": 13966
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Results and Discussion for the Performance",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Conclusion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5. Acknowledgement",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Verlet Buﬀer Distances",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.97812630000044,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 11,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.26315789473684215,
+  "unmatched_gt": [
+   "2.1. Zero-Multipole Summation Method",
+   "2.1.1. Formula",
+   "2.1.2. Accuracy",
+   "2.2. Smooth Particle Mesh Ewald Method",
+   "2.2.1. Formula",
+   "2.2.2. Computational Cost",
+   "2.3. Implementation and Optimization of the ZMM",
+   "2.4. Optimization of the SPME",
+   "2.5. Materials",
+   "2.6. Accuracy measurement",
+   "2.7. Performance Measurement"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 11,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.3125,
+  "unmatched_gt": [
+   "2.1. Zero-Multipole Summation Method",
+   "2.1.1. Formula",
+   "2.1.2. Accuracy",
+   "2.2. Smooth Particle Mesh Ewald Method",
+   "2.2.1. Formula",
+   "2.2.2. Computational Cost",
+   "2.3. Implementation and Optimization of the ZMM",
+   "2.4. Optimization of the SPME",
+   "2.5. Materials",
+   "2.6. Accuracy measurement",
+   "2.7. Performance Measurement"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

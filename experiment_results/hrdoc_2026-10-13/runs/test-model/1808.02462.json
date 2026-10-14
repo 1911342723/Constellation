@@ -1,0 +1,254 @@
+{
+ "doc": "1808.02462",
+ "system": "model",
+ "metrics": {
+  "gt": 33,
+  "pred": 29,
+  "tp": 28,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "B. Atmospheric Turbulence Effects Mitigation",
+   "3) Modal Diversity:",
+   "C. Machine Learning-Based OAM Recovery Approach",
+   "E. Underwater Turbulence Effects Mitigation",
+   "G. Optimized RF Transceiver/Receiver Design"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 453,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 23393,
+   "completion_tokens": 1068,
+   "total_tokens": 24461
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. OAM Mode Generation and Detection",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "B. OAM Deployment",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "C. Related Reviews",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. OAM POTENTIALS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Free Space Optical Communication",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Optical Fiber Communication",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Underwater Communication",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "D. Wireless Indoor Connections",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "E. On-chip Photonic Circuits",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "F. Optical Switching and Routing",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "G. Radio Frequency Communication",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "H. Acoustic Communication",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III. OAM CHALLENGES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Free Space Propagation Effects",
+   "page": 9,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Fiber Propagation Effects",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "C. Underwater Propagation Effects",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "D. Inter-modal Crosstalk",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "E. RF Challenges",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "IV. OAM PERSPECTIVES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Towards a Complete Mode Set",
+   "page": 13,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "D. Beam Tracking",
+   "page": 16,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "F. OAM Maintaining Fibers",
+   "page": 16,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "V. OPEN PROBLEMS AND FUTURE RESEARCH DIRECTIONS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACRONYMS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.869766399999207,
+ "metrics_v1": {
+  "gt": 33,
+  "pred": 29,
+  "tp": 28,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "B. Atmospheric Turbulence Effects Mitigation",
+   "3) Modal Diversity:",
+   "C. Machine Learning-Based OAM Recovery Approach",
+   "E. Underwater Turbulence Effects Mitigation",
+   "G. Optimized RF Transceiver/Receiver Design"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 32,
+  "pred": 27,
+  "tp": 27,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 27,
+  "parent_correct": 27,
+  "teds": 0.8484848484848485,
+  "unmatched_gt": [
+   "B. Atmospheric Turbulence Effects Mitigation",
+   "3) Modal Diversity:",
+   "C. Machine Learning-Based OAM Recovery Approach",
+   "E. Underwater Turbulence Effects Mitigation",
+   "G. Optimized RF Transceiver/Receiver Design"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

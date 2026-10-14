@@ -1,0 +1,101 @@
+{
+ "doc": "1607.02892",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [
+   "CONCLUSIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.375,
+  "unmatched_gt": [
+   "CONCLUSIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 537,
+  "layout_marked": 9,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9155005382131324,
+  "inserted_word_share": 0.9124249184829243
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MODEL",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "FLOW AROUND DIMERS",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "DIFFUSION EFFECTS",
+   "page": 2,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "LARGER COLONIES",
+   "page": 4,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "THECATE CELLS",
+   "page": 4,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "APPENDIX: NUMERICAL METHOD",
+   "page": 6,
+   "level": 3,
+   "parent": 1
+  }
+ ],
+ "seconds": 7.452660499999183,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [
+   "CONCLUSIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

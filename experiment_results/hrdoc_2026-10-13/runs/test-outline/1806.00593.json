@@ -1,0 +1,91 @@
+{
+ "doc": "1806.00593",
+ "system": "outline",
+ "metrics": {
+  "gt": 12,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 12,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.07692307692307687,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Method",
+   "2.1 A new pro cedure for annotating tilted bounding boxes",
+   "2.2 Computing rough segmentation based on box annotation",
+   "2.3 Generating accurate masks from rough segmentation",
+   "3 Evaluation datasets and implementation details",
+   "4 Experiments and results",
+   "4.1 Evaluation of our final segmentation results",
+   "4.2 Ablation study",
+   "5 Conclusions",
+   "Acknowledgment.",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "BoxNet: Deep Learning Based Biomedical Image Segmentation Using Boxes Only Annotation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.09097409999958472,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 12,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.07692307692307687,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Method",
+   "2.1 A new pro cedure for annotating tilted bounding boxes",
+   "2.2 Computing rough segmentation based on box annotation",
+   "2.3 Generating accurate masks from rough segmentation",
+   "3 Evaluation datasets and implementation details",
+   "4 Experiments and results",
+   "4.1 Evaluation of our final segmentation results",
+   "4.2 Ablation study",
+   "5 Conclusions",
+   "Acknowledgment.",
+   "References"
+  ],
+  "unmatched_pred": [
+   "BoxNet: Deep Learning Based Biomedical Image Segmentation Using Boxes Only Annot"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 10,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09090909090909094,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Method",
+   "2.1 A new pro cedure for annotating tilted bounding boxes",
+   "2.2 Computing rough segmentation based on box annotation",
+   "2.3 Generating accurate masks from rough segmentation",
+   "3 Evaluation datasets and implementation details",
+   "4 Experiments and results",
+   "4.1 Evaluation of our final segmentation results",
+   "4.2 Ablation study",
+   "5 Conclusions"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

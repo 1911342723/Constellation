@@ -1,0 +1,218 @@
+{
+ "doc": "1608.02787",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9615384615384616,
+  "unmatched_gt": [
+   "2 Target environment"
+  ],
+  "unmatched_pred": [
+   "2 Target environment"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [
+   "2 Target environment"
+  ],
+  "unmatched_pred": [
+   "2 Target environment"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 360,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9950957854406131,
+   "in_order": 0.986360153256705,
+   "inserted": 0.0026113671274962114
+  },
+  "export_markdown": "Protection Related to High-power Targets\n\nM.A. Plum\n\nOak Ridge National Laboratory, Oak Ridge, Tennessee, USA\n\n# Abstract\n\nTarget protection is an important part of machine protection. The beam power\n\nin high-intensity accelerators is high enough that a single wayward pulse can\n\ncause serious damage. Today’s high-power targets operate at the limit of avail-\n\nable technology, and are designed for a very narrow range of beam parameters.\n\nIf the beam pulse is too far off centre, or if the beam size is not correct, or if the\n\narXiv:1608.02787v1 [physics.acc-ph] 9 Aug 2016\n\nbeam density is too high, the target can be seriously damaged. We will start\n\nwith a brief introduction to high-power targets and then move to a discussion\n\nof what can go wrong, and what are the risks. Next we will discuss how to\n\ncontrol the beam-related risk, followed by examples from a few different ac-\n\ncelerator facilities. We will ﬁnish with a detailed example of the Oak Ridge\n\nSpallation Neutron Source target tune up and target protection.\n\nKeywords\n\nTarget protection; beam; proton; high-intensity.\n\n# 1 Introduction to high-power targets\n\nIn general, high-power targets are needed to create either lots of secondary particles for applications where the interaction cross-sections are low, or to make as many secondary particles as possible when the creation cross-sections are low. Example applications include:\n\n– neutron spallation targets (LANSCE, ISIS, SNS, J-PARC, PSI); – muon production targets (J-PARC, PSI, TRIUMF, ISIS); – Isotope Separation On-Line (ISOL) facilities (CERN, TRIUMF, IRIS); – material irradiation studies (IFMIF); – antiproton production (FNAL); – neutrino production (FNAL, J-PARC, CERN).\n\nHigh-power targets come in many shapes and sizes, and have many uses. Some example highpower targets are shown in Figs. 1–3, and parameters [1] from some example high-power facilities are shown in Table 1. High-power targetry is a highly developed and complex ﬁeld, and there are many technological challenges. Some of the biggest beam-related challenges are:\n\n– removing the heat generated mainly by the beam, but also by nuclear decay; – mechanical shock due to thermal stress from pulsed beams; – radiation damage, including swelling and embrittlement; – target handling (including installation and maintenance in a high-radiation environment); – corrosive environment; – beam parameters—matching target requirements to what the accelerator can deliver.\n\n# 2 Target environment\n\nThe target environment is often rough vacuum or helium. Vacuum is good because it does not interfere with the beams (primary or secondary). Helium atmosphere is good because it helps cool components\n\n![image]()\n\nFig. 1: Some example neutron spallation targets. Images reproduced from Refs. [2–6]\n\n![image]()\n\nFig. 2: Some example neutrino and pbar targets. Images reproduced from Refs. [7,8]\n\n![image]()\n\nFig. 3: Some example isotope production targets. Images reproduced from Ref. [9]\n\nTable 1: Some example high-power target facilities\n\nPeak\n\nPeak\n\nBeam\n\nRep\n\nFacility\n\nStatus\n\nTarget\n\nProton\n\nTime\n\nenergy\n\ntime ave\n\nmate-\n\npulse\n\nrate\n\nenergy\n\navg\n\ndensity\n\npower\n\nrial\n\ndura-\n\nbeam\n\ntion\n\ndensity\n\npower\n\n(µs)\n\n(Hz)\n\n(GeV)\n\n(MW)\n\n(GW/m3)\n\n(MJ/m3)\n\nISIS\n\nOperating\n\nW\n\n0.4\n\n50\n\n0.8\n\n0.16\n\n0.25\n\n5\n\nLANSCE–Lujan\n\nOperating\n\nW\n\n0.3\n\n20\n\n0.8\n\n0.16\n\n0.5\n\n25\n\nNuMI\n\nOperating\n\nC\n\n8.6\n\n0.53\n\n120\n\n0.4\n\n0.32\n\n600\n\nSINQ/Solid target\n\nOperating\n\nPb–SS\n\nCW\n\n0.57\n\n1\n\n1\n\nNA\n\nclad\n\nSINQ/MEGAPIE\n\nCompleted\n\nPb–Bi\n\nCW\n\n0.57\n\n1\n\n1\n\nNA\n\nJSNS\n\nOperating\n\nHg\n\n25\n\n3\n\n1\n\n0.63\n\n25\n\nSNS\n\nOperating\n\nHg\n\n0.7\n\n60\n\n1\n\n2\n\n0.8\n\n13\n\nESS—long pulse\n\nProposed\n\nHg\n\n2000\n\n16.7\n\n1.3\n\n5\n\n2.5\n\n150\n\nESS—short pulse\n\nProposed\n\nHg\n\n1.2\n\n50\n\n1.3\n\n5\n\n2.5\n\n50\n\nEURISOL\n\nProposed\n\nHg\n\n3\n\n50\n\n2.2\n\n4\n\n100\n\n2000\n\nIFMIF\n\nProposed\n\nLi\n\nCW\n\n0.04\n\n10\n\n100\n\nNA\n\n(D2)\n\nLANSCE–MTS\n\nProposed\n\nPb–\n\n1000\n\n120\n\n0.8\n\n0.8\n\n2.4\n\n20\n\nBi/W\n\nUS Neutrino Fac-\n\nProposed\n\nHg or C\n\n0.003\n\n15\n\n24\n\n1\n\n3.8\n\n1080\n\ntory\n\nAUSTRON\n\nProposed\n\nW\n\n1\n\n10\n\n1.6\n\n0.5\n\nwhile minimizing beam scattering; however, impurities in helium can lead to corrosion of components. Beam transport lines leading up to the target need good vacuum to minimize beam loss due to scattering, so high-power targets often involve windows to separate the beam line vacuum from the target environment. Safety separation must also be considered (usually required for a liquid metal target). A partial pressure of air in the target environment can result in the formation of nitric acid, which can cause stress corrosion cracking in high-strength steel. Nitric acid can also cause vacuum leaks in thin bellows exposed to stray beam with air outside. For example, IPNS had a target bolt fail from stress corrosion cracking in a nominal helium atmosphere with air impurities when high-strength steel was substituted for stainless steel. Also, ISIS observed corrosion around the target/reﬂector assemblies and consequently limited impurities to below a couple of percent in helium. And, as shown in Fig. 4, Fermilab had a broken chain due to acidic vapour/condensate from air ionization.\n\n![image]()\n\nFig. 4: High-strength broken steel chain from hydrogen embrittlement caused by acidic vapour/condensate from air ionization (MiniBooNE 25 m absorber). Figure reproduced from Ref. [10].\n\n# 3 Beam windows\n\nJust like the target, beam windows are also challenged by high-power beams, due to heating, thermal stress, radiation damage, etc. An example beam window is shown in Fig. 5. This window is used to separate the SNS beam line vacuum of approximately 1 × 10−7 Torr from the target environment, which\n\nis 1 atm He. The window is made of water-cooled Inconel.\n\n![image]()\n\n![image]()\n\nFig. 5: Side view and end view of the SNS proton beam window, located about 2 m upstream of the neutron spallation target. The end view also shows the eight thermocouple halo monitors; the red ellipse indicates the approximate beam size. Images reproduced from Refs. [4,11].\n\n# 4 Beam parameters\n\nThe highest-power targets push the edge of achievable technology, and to live on the edge requires a very narrow range of beam parameters to avoid overpowering the target. High-power targets require the nominal beam distribution to be in the correct location, without exceeding the maximum beam current or the maximum beam density. The most important beam parameters are:\n\n– beam position; – beam size and shape (i.e. distribution); – beam energy; – beam current; – beam pulse length, repetition rate, energy per pulse (short pulses cause a pressure pulse).\n\nHigh-power targets often prefer ﬂat or uniform beam distributions because they minimize the beam density and thereby minimize the density of energy deposited in the target. However, unless special measures are taken in the accelerator/beam delivery systems, the beam distribution will usually be nearly Gaussian. A possible target protection requirement could then be to monitor the beam distribution and to shut off the beam if the distribution exceeds requirements. For example, Fig. 6 shows two possible beam distributions. One is rectangular and the other is Gaussian. They both have the same area (or beam power), but the Gaussian distribution has twice the peak beam density.\n\n![image]()\n\nFig. 6: Two possible beam distributions. One is rectangular and the other is Gaussian. They both have the same area (or beam power), but the Gaussian distribution has twice the beam density.\n\n## 4.1 Methods to ﬂatten the beam distribution\n\nDepending on the application, there are several ways to ﬂatten the beam distribution, to make it more favourable for the target by decreasing the peak density. For storage rings and synchrotrons that employ multiturn injection (e.g. LANSCE, SNS, J-PARC), injection painting can be an easy way to control the distribution. Another method is to employ multipole magnets (e.g. octupoles) in the beam transport line to target. This method was recently implemented at J-PARC, as shown in Fig. 7. Note that the beam must be well centred in the octupoles for proper ﬂattening, since off-centre beams will produce skewed distributions. Another method is a rastering system, that ‘draws’ the desired proﬁle by quickly moving a small beam spot on the surface of the target. This is the method planned for the ESS, as shown in Fig. 8. All these methods rely on magnets or pulsed power supplies to achieve the desired beam proﬁle. This highlights possible equipment that would be important to include as inputs to the machine protection system (MPS), and also possible beam monitoring systems, such as beam distribution monitors, that could also be part of the MPS interlock system.\n\n# 5 What can go wrong?\n\nIn this section, we brieﬂy describe some examples that highlight the importance of MPSs for high-power target protection. In May 2013, a gold target (shown in Fig. 9) melted in the Hadron Experimental Facility at J-PARC and radioactive material was released from the building [15]. The root cause was traced to a\n\n![image]()\n\n![image]()\n\n![image]()\n\nFig. 7: Simulations of beam distributions on the J-PARC neutron production target. Left: no octupoles. Centre: with octupoles. Right: with octupoles and beam off centre at octupoles. Figures reproduced from Refs. [12,13].\n\nquadrupole magnet power supply in the main ring, which caused the beam to be spilled in 5 ms instead of the nominal 2 s. Due to this accident all beam operations were terminated for about 8 months and beam operations to the hadron hall were stopped for more than one year. In January 2010, the neutron production target (shown in Fig. 10) failed at the ISIS second target station [16]. The root cause was traced to a combination of the high-density beam proﬁle and a water leak. The water disassociated in the high-temperature environment and then the oxygen attacked the grain boundaries on the tantalum cladding. The cladding essentially fell apart, leaving a hole in the target. In 2004 the beam density on the PSI neutron production target increased to 3.5 times the nominal value [17, 18] because the transport line (shown in Fig. 11) was accidentally set up for the case of the muon target being inserted, but actually the muon target was not inserted. The over-density condition was caught by a newly installed beam distribution monitor (VIMOS) before any serious damage could occur. We also need to be concerned with beam windows. They are often part of the target system, and can also be damaged by the beam. High-power beam windows must be cooled, usually with water. Windows can fail due to over-focused or off-centre beams. Radioactive water can be spilled into the beam line vacuum and/or the target environment. In 1996 the beam window at the LAMPF linac beam dump failed [19], probably due to a combination of an unusually small beam size (set up on purpose for an experiment) and a weld joint where a thermocouple was attached to the air-side surface of the water-cooled window.\n\n# 6 Calculating the beam density\n\nTo demonstrate how the beam density depends on various beam parameters, we will consider several examples.\n\n## 6.1 Example 1: rectangular DC beam\n\nAssume a 2 MW DC beam of 1 GeV protons with rectangular cross-section 2 cm × 2 cm. Assume that\n\nit stops 0.75 m into the target. Also assume uniform energy deposition and no scattering. The energy deposition will be as depicted in Fig. 12. The 1-s power density is then\n\n(2 MW)/(2 cm)/(2 cm)/(0.75 m) = 6.67 GW/m3.\n\nNow assume that if the beam is too far off centre it must be shut off before it can deposit 100 J. What is the acceptable time delay (or MPS response time)? The beam must be shut off within (100 J)/(2 MJ/s) = 50 µs.\n\n![image]()\n\n![image]()\n\nFig. 8: The ESS design to achieve the desired beam distribution on the target by rastering the beam. Top: the beam transport line just upstream of the target. Bottom: simulation of the achieved beam distribution. Figures reproduced from Ref. [14].\n\n## 6.2 Example 2: rectangular pulsed beam\n\nConsider a pulsed version of the DC beam in Example 1. Assume that the beam is divided into 10 pulses per second, and the duration of each pulse is 1.5 µs.\n\n– The 1-s power density is still (2 MW)/(2 cm)/(2 cm)/(0.75 m) = 6.67 GW/m3. – The energy per pulse = (2 MW)/(10 Hz) = 0.2 MJ. – The energy density per pulse in target = (0.2 MJ)/(2 cm)/(2 cm)/(0.75 m) = 667 MJ/m3. – The peak power density = (667 MJ/m3)/(1.5 µs) = 4.45 × 1014 W/m3. Each beam pulse contains more than 100 J of energy, so even one off-centre pulse will exceed the 100 J limit in Example 1. With 1.5 µs beam pulses, it is not practical to shut off the beam mid-pulse. We can only prevent the next pulse from occurring, and there is a fair amount of time to do that—about\n\n0.1 s.\n\n## 6.3 Example 3: pulsed Gaussian beam\n\nConsider a Gaussian version of the pulsed beam in Example 2. Assume that the Gaussian shape is characterized by σx = σy = 0.5 cm, as shown in Fig. 13. The functional form of the Gaussian is\n\nf(x, y) = Aexp\u0012−\u0012(x − x0)2\n\n\u0013\u0013.\n\n+ (y − y0)2\n\n2σ2x\n\n2σ2y\n\n![image]()\n\nFig. 9: Photographs of the gold target in the J-PARC hadron hall, melted by a proton beam that was accidentally extracted over 5 ms. Figure reproduced from Ref. [15].\n\nThe volume under this two-dimensional Gaussian is\n\nV = Z ∞\n\ndxZ ∞\n\ndyf(x, y) = 2πAσxσy\n\n−∞\n\n−∞\n\nand the 1-s peak power density is\n\n(2 MW)/(2π)/(0.5 cm)/(0.5 cm)/(0.75 m) = 17 GW/m3,\n\nwhich is 2.25 times greater than the rectangular distribution case. The per-pulse peak energy density and peak power density also increase by a factor of 2.5.\n\n# 7 Target protection\n\nWe will consider only the beam-related protection. The targets themselves will have their own separate non-beam-related protection systems to monitor coolant ﬂow, over temperature, etc. The main beam parameters of concern are density (sometimes derived from a beam proﬁle measurement), beam size, beam position, and beam current (from which beam power can be calculated). Beam-related target protection involves control over these parameters, monitoring these parameters, and turning off the beam if these parameters move outside allowable limits. Types of beam-related target protection include:\n\n– rapid and automatic beam turn off for off-normal beams; – locking down equipment and operating control parameters to prevent accidental changes; – alarms that alert operators when certain parameters move outside of pre-deﬁned limits; – collimators to partially intercept off-normal beams;\n\n![image]()\n\nFig. 10: A photograph of a failed target from the ISIS second target station. The tantalum cladding on the tungsten target failed. Figure reproduced from Ref. [16].\n\n![image]()\n\nFig. 11: The beam transport line leading to the PSI neutron production target, showing the beam sizes for the two different sets of parameters (one for the muon target inserted, the other for the muon target retracted). Figure reproduced from Ref. [17].\n\n– beam transport designs that avoid high sensitivity—e.g. do not want to live on the edge, do not want to be very sensitive to small magnet changes; – target designs that can tolerate off-normal beam for a short period of time (e.g. most SNS equip-\n\nment is designed such that it can withstand two full-power off-normal beam pulses).\n\n## 7.1 Protection by rapid beam turn off\n\nThe time it takes to automatically turn off the beam varies depending on the method used. Figure 14 shows some typical turn-off times for the SNS case. The fastest method to turn off the beam is through the MPS. After all, that is the purpose of the MPS. A typical time to turn off the beam at SNS is 20 to 30 µs for trips that originate in the linac, for example if a beam loss monitor exceeds a pre-determined threshold. Trips that originate further downstream, in the ring or in the ring-to-target beam transport, can take a few µs longer. An interesting\n\n![image]()\n\nFig. 12: A beam pulse with a rectangular cross-section\n\n![image]()\n\nFig. 13: A two-dimensional Gaussian beam proﬁle\n\n![image]()\n\nFig. 14: Some typical turn-off times for the SNS case\n\nﬁne point is that if the trip occurs upstream of or within the accumulator ring, the MPS can stop beam injection, but the beam that has already been injected into the ring will be sent to the target. The beam intensity can be anywhere from small to full intensity. If the trip occurs downstream of the ring, it can only prevent the next pulse from beginning the accumulation process. For example, at SNS, PLCs monitor magnet current transformers on the power supplies for the last few magnets in the transport line to the target. If the magnet current strays outside pre-determined limits, the beam will be automatically turned off. The time for a PLC trip to turn off the beam is about 50 ms. As an additional precaution, PLC trips also turn off the high voltage to the ion source and turn off the high voltage to the ﬁrst few klystrons. The third-fastest method is faults detected by the control computers. The computers interface to the MPS to turn off the beam. For example, at SNS, computers monitor all the magnet power supply currents in the beam transport to the target (as read by the power supply controller—not by separate current transformers). The estimated time to turn off the beam is about 1 s. For example, Fig. 15 shows a partial list of these magnets and their high- and low-trip limits.\n\n![image]()\n\nFig. 15: Some of the power supplies in the SNS beam transport from the ring to the target, and their trip limits that are monitored by the control computer.\n\nThe fourth-fastest method is the alarm system, which alerts the operators to off-normal conditions. The alarms are generated by the control system, and require operator action to turn off the beam or to correct the off-normal condition. A strength of this method is that the control system can monitor a huge number of parameters, and also values derived from those parameters. For example, at SNS, the control system alarms if the beam position on target strays outside of pre-determined limits. The estimated time to correct the alarm state is 10 to 30 s, or possibly longer, depending on the operator reaction time and the complexity of the alarm. Beam loss monitors (BLMs) are a standard part of machine protection for any beam transport system, and their purpose is primarily to protect beam line components. But BLMs can also be used to protect a target. The idea is that a quadrupole magnet change that can cause the beam to be too small or too large at the target will sometimes also cause beam loss upstream of the target, because the misfocused beam could be large enough somewhere along the beam line that the beam tails will strike the beam pipe walls. BLMs can also protect against deviations from the nominal beam trajectory that could result in a bad position on the target, if the deviation is large enough to cause beam loss. At SNS, BLMs are located, and thresholds are set, such that some of the quadrupole magnet changes that can result in off-normal beams at the target will trip the BLMs. Figure 16 shows, for each quadrupole magnet in the beam line from the ring to the target, how much the beam size on the target changes for a 5% change in the quadrupole magnet gradient. It also shows the greatest amount of change anywhere in the beam line. Figure 17 shows the six of 19 quadruple magnets that will cause a BLM trip (beam loss greater than 0.1%) before causing dangerous beam parameters at the target.\n\n![image]()\n\nFig. 16: These plots show, for each quadrupole magnet in the beam line from the ring to the target, how much the beam size on the target changes for a 5% change in the quadrupole magnet gradient (blue line). Also shown is the maximum beam size fractional change along the beam line (red line). Figure reproduced from Ref. [20].\n\n## 7.2 Protection by equipment lock down\n\nAnother method to protect the target is to lock down certain control parameters. The idea is to administratively control critical hardware set points to prevent inadvertent changes. An example of this method is that at SNS the operators set a gate generator at the ion source that limits the possible beam pulse lengths, which limits the beam power on the target.\n\n## 7.3 Protection by collimation\n\nHigh beam power facilities often have collimators in the last part of the beam transport leading to the target, to protect against large beam position variations and overly large beam sizes, and to ensure that the beam hits the central region of the target. For example, SNS has a collimator immediately upstream of the target. The 27.9 × 12.7 cm2 aperture is smaller than the face of the target, but slightly larger than\n\nthe nominal beam size (90% of beam must ﬁt within a 20 × 7 cm2 rectangle). SNS also has collimators\n\n![image]()\n\nFig. 17: The six of 19 quadrupole magnets that will cause a BLM trip (beam loss greater than 0.1%) before causing dangerous beam parameters at the target. Figure reproduced from Ref. [20].\n\nTable 2: Some example target interlocks\n\nInterlock\n\nBeam loss monitors\n\nBeam current monitors Beam position monitors\n\nHarp proﬁle monitors\n\nIonization proﬁle monitors Glowing screen just upstream of target (proﬁle monitor)\n\nHalo thermocouples\n\nAmount of beam intercepted\n\nby collimator\n\nSome accelerators that use this as a target interlock\n\nEverybody\n\nEverybody\n\nPSI and FNAL have automatic beam centring based on beam\n\nposition monitor signals\n\nISISa, LANSCEa, J-PARCa, SNSa\n\nPSI\n\nPSI\n\nSNS\n\nPSI\n\na No interlock at present but this is under consideration\n\nin the beam transport line that can intercept a portion of the beam that does not receive the nominal kick angle from the extraction kickers, thus protecting the target from some of the mis-kicked beam that would consequently arrive off centre at the target. Figure 18 shows the collimator that is embedded in the bulk shielding surrounding the SNS target, Fig. 19 shows the positions of the beam line collimators, and Fig. 20 shows simulations of the beam trajectory deviations due to extraction kickers that do not ﬁre\n\nproperly.\n\n## 7.4 Protection by interlocking on off-normal measured beam parameters\n\nThis protection category involves continuously monitoring critical beam parameters, and then automatically turning off the beam if the parameters exceed pre-determined thresholds. Table 2 shows some of the more common beam instrumentation used for this purpose.\n\n![image]()\n\nFig. 18: The collimator and shielding just upstream of the SNS neutron production target. The PBW label refers to the Proton Beam Window.\n\n![image]()\n\nFig. 19: The downstream portion of the SNS RTBT beam line. The blue arrows show the positions of the RTBT collimators.\n\n## 7.5 Protection by beam line design\n\nIt is usually desirable to design the beam transport line to avoid high sensitivity to beam parameters at the target. For example, small adjustments to dipole magnets should not cause large position changes on the target, and small adjustments to quadrupole magnets should not cause large beam size changes on the target. At SNS, one way this design practice was implemented was to require the phase advance from the extraction kickers to the target to be approximately a multiple of π. In this way, a missed kick from an extraction kicker will not cause a large position change on the target. This effect is illustrated in Fig. 20.\n\n![image]()\n\nFig. 20: Simulations of beam trajectory deviations caused by missed kicks in the ring extraction kicker system. The thin lines indicate trajectory deviations for individual missed kicks, and the thick lines indicate the maximum and minimum trajectory deviations for the case of two simultaneous missed kicks. Figure reproduced from Ref. [21].\n\n# 8 Some example target protection implementations\n\n## 8.1 J-PARC target protection\n\nThe J-PARC design parameters call for a 1 MW, 3 GeV, 25 Hz proton beam to be delivered to a liquid mercury target. To protect the target [22], there is a waveform monitor on each of the eight extraction kickers. A PLC monitors some of the quadrupole and dipole magnet power supply currents. A PLC also monitors the beam proﬁle measurement device upstream of the target, and it is possible to connect this to the machine protection system, but presently this is not the case. A recent addition to the MPS interlock system is a fast beam current monitor to shut off the beam if the beam current exceeds a pre-deﬁned limit.\n\n## 8.2 FNAL NuMI target protection\n\nThe NuMI neutrino production target at FNAL now operates with 120 GeV, approximately 400 kW protons, <1 Hz, with an upgrade to 700 kW planned in 2015. A later upgrade to >1 MW is planned. Prior to beam extraction from the main injector (MI), more than 250 different inputs to the beam permit system are checked [23]. The beam is sent to the abort dump if inputs are not correct. The inputs checked include the following: beam position and angle for the MI extraction channel, possible excessive residual MI beam in the kicker beam gap, the extraction kicker status, proper NuMI power supply ﬂat-top values, the beam readiness of the target station and absorbers, all beam loss monitor readings from the previous extraction, and the previous pulse position and trajectory at the target. The beam delivery system also has an automatic beam steering system to keep the beam centred on the target. If a beam pulse is >1.5 mm off centre, the beam is automatically turned off.\n\n## 8.3 ISIS target protection\n\nThe ISIS facility at RAL operates two targets, TS1 and TS2. TS1 operates with 800 MeV, 160 kW, 40 Hz protons, and TS2 operates with 800 MeV, 40 kW, 10 Hz protons. A beam halo monitor (comprising eight equally spaced thermocouples in the penumbra of the beam ∼100 mm upstream of the target) indicates\n\nmis-focused and mis-steered beams. If the thermocouple signals exceed pre-determined trip thresholds, the protection system turns off the beam. The protection system [24] is capable of turning off the machine within 2 ms and hence inhibits the next beam pulse from the ion source in the 50 Hz synchrotron cycle. There is also a steering servo system to accommodate variations in the upstream beam. The servo and trip system is slow, running at ∼2 s. On TS2 there is also a harp proﬁle monitor which sits permanently\n\nin the beam, but this is not interlocked. A similar harp is planned for TS1 as part of an upgrade project.\n\n# 9 SNS target tune up\n\nTo provide a detailed example of target protection, we will now discuss the SNS case. We will be referring to the beam instrumentation shown in Fig. 21. The initial beam tuning to the target is performed at low intensity, low power, 1 Hz (<1 kW) beam. Once the beam position has been adjusted to centre the beam on the target, the beam power is slowly increased to full intensity, but still at 1 Hz (∼23 kW). The\n\nbeam intensity is now high enough that an image can be seen on the target imaging system (TIS), which is based on a light-emitting coating on the surface of the target, and hence gives a direct measurement of beam position and beam distribution at the target. The TIS is used to check the beam centring, and then the beam size is measured not with the TIS (due to unresolved discrepancies with the measurement technique about to be discussed), but with the four wire scanners and one harp located at various positions in the ring to target beam transport (RTBT) beam line, as shown in Fig. 21. The beam size at the target is determined by ﬁtting the measured rms beam sizes with an online model, and varying the simulated beam parameters until the best ﬁt to the measured rms beam sizes is obtained. The model is then used to extrapolate the beam size at the target. An example ﬁt is shown in Fig. 22, and Fig. 23 shows the corresponding output table with the extrapolated beam size at the target. The same online model is then used to extrapolate the peak beam density, measured with the harp, to the target. The critical beam parameters for the target have now been measured. To meet requirements:\n\n– the beam must be centred on the target to within 6 mm horizontal and 4 mm vertical; – the rms beam size must be <49 mm horizontal and <17 mm vertical; – the peak density on target must be less than 2 × 1016 protons/m2;\n\n– the peak density on the proton beam window must be less than 2.9 × 1016 protons/m2. Once the measured beam parameters have been determined to meet requirements, the beam delivery system is locked down. This is required before increasing the beam power above 100 kW. The lock down is accomplished by engaging the following interlock thresholds.\n\n– The last ﬁve quadrupole magnet power supplies are monitored by a PLC with current limits set to ±7%.\n\n– Both large dipoles are monitored by a PLC with current limits set to ±2 A.\n\n– The last two horizontal dipole correctors and last two vertical dipole correctors are monitored by a PLC with current limits set to ±5 A.\n\n– The injection kicker waveform monitor system is engaged. If waveforms stray outside of predeﬁned windows, the MPS trips the beam. – The extraction kicker waveform monitor system is engaged. If waveforms stray outside of predeﬁned windows, the MPS trips the beam. – All RTBT magnets are monitored by the control computer with current limits set to ±5% on\n\nquadrupole magnets, ±5% on large dipole magnets, and ±0.5 A on dipole corrector magnets.\n\n– The beam power limit is set into the control system, and monitored by the computer.\n\nThe beam pulse length and beam duty factor are also locked down, but in a way that does not cause a beam trip. It simply prevents the timing system hardware from being set in a way that could exceed a pre-determined beam power. A screen shot of this system is shown in Fig. 24. Figure 25 shows a screen shot of the magnet currents that are monitored by a PLC. The PLC monitors those magnets that have the biggest impact on beam size and position at the target. The control system computers also monitor these magnets, as well as many more, as shown in Fig. 26, but the PLC is a more robust and reliable system compared to the control computer.\n\nThere are four horizontal and four vertical injection kickers to paint the beam distribution in the ring. An example set of waveforms is shown in Fig. 27. If for some reason the waveforms were accidentally set to paint a smaller beam, it would result in an excessively high beam density on the target. Or, the kicker system may fail in a way that could also cause the beam size to be too small. To protect against these possibilities an injection kicker waveform monitor system, based on commercially available oscilloscopes, watches the readback waveforms and automatically trips off the beam if the waveforms stray outside pre-determined envelopes. Some interlocks are always in effect, not just when the beam power is greater than 100 kW. Examples include the beam loss monitors (direct MPS interlock), the proton beam window halo thermocouples (shown in Fig. 5, and interlocked through a PLC connected to the MPS), and the target protection system, which monitors parameters such as mercury ﬂow, water cooling, etc (PLC interlock). The control system computers monitor the following parameters and alert the operators if they stray outside of pre-set bounds:\n\n– beam position on target calculated by the target imaging system; – the beam density at the harp 9.52 m upstream of the target. The beam density at the target should be proportional to the beam density at the harp; – the beam size at the harp 9.52 m upstream of the target. The beam size at the target should be proportional to the beam size at the harp; – beam power; – beam centring estimated from the proton beam window halo thermocouples (top–bottom, left– right); – some magnet currents.\n\nThe last three items on the list are also interlocked by other methods as discussed above, but in this case the thresholds are more loosely set to give the operators a chance to correct the problem before it becomes severe enough to trip off the beam. The alarm summary screen is shown in Fig. 28.\n\n# 10 Summary\n\nIn summary, high-power targetry is an active ﬁeld that is continuously advancing. The highest power targets require tight control over the beam position, density, and distribution, and even then the target lifetimes can be short (e.g. 6 months at SNS). Machine protection systems must monitor these beam parameters and quickly activate interlocks if they stray outside of limits. Protection can include monitoring equipment set points, equipment readback parameters, beam parameters, locking down certain controls, beam line design, and collimator systems.\n\n![image]()\n\nFig. 21: A drawing of the SNS beam line upstream of the target, showing the locations of the proﬁle and position monitors. Image reproduced from Ref. [25].\n\n![image]()\n\nFig. 22: Screen shot of the application that ﬁts a model to measured beam sizes to extrapolate the beam size at the target. The points show the measured beam sizes and the lines show the model beam sizes.\n\n![image]()\n\nFig. 23: Another screen shot of the application that extrapolates the beam size on the target. The resultant size predictions at the beam window and target are circled.\n\n![image]()\n\nFig. 24: A screen shot of the application showing the DG535 pulse generator settings that lock down the maximum possible beam pulse width.\n\n![image]()\n\nFig. 25: A screen shot showing the PLC limits on the last magnets upstream of the target\n\n![image]()\n\nFig. 26: A screen shot showing the magnets monitored by the control system to lock down the beam transport to\n\nthe target.\n\n![image]()\n\nFig. 27: (Colour) A screen shot showing the injection kicker waveforms. The region marked by the rectangle and arrow shows the portion of the waveform that is monitored for one of the kickers (note that all eight are monitored).\n\n![image]()\n\nFig. 28: A screen shot of the alarm summary screen and example screen shots of the beam proﬁle measured by the harp and the beam distribution measured by the TIS. The arrows show how the measured beam parameters are monitored by the alarm system.\n\n# Acknowledgements\n\nORNL is managed by UT-Battelle, LLC, under contract DE-AC05-00OR22725 for the U.S. Department of Energy. Notice: This manuscript has been authored by UT-Battelle, LLC, under Contract No. DE-AC05-00OR22725 with the U.S. Department of Energy. The United States Government retains, and the publisher, by accepting the article for publication, acknowledges that the United States Government retains a non-exclusive, paid-up, irrevocable, world-wide licence to publish or reproduce the published form of this manuscript, or allow others to do so, for United States Government purposes.\n\n# References\n\n[1] J. Haines, U.S. Particle Accelerator School, High Power Beam Targets Class, Vanderbilt University, Nashville, Tennessee, 20 January 2009. [2] B. Reimer, \"Spallation Source Facilities,\" 5th High Power Targetry Workshop, Fermilab, 20–23 May 2014. https://indico.fnal.gov/conferenceDisplay.py?confId=7870. [3] D. Haynes, \"Introduction and Overview of the ISIS Target Systems,\" ISIS and SNS Bilateral Workshop, Oak Ridge, Tennessee, 25–26 June 2013. [4] T. McManamy, U.S. Particle Accelerator School, High Power Beam Targets Class, Vanderbilt University, Nashville, Tennessee, 20 January 2009. [5] R. Werbeck, \"LANSCE Short-Pulse Target Operation,\" Workshop on High-power Targetry for Future Accelerators, Long Island, New York, 8–12 September 2003. [6] W. Wagner et al., \"The SINQ solid spallation target ? operational experience and recent improvements ,\" High Power Targetry Workshop, Malmo, Sweden, 2–6 May 2011. Also http://www.hep.princeton.edu/mumu/target/Wagner/Wagner_050311.pdf. [7] N. Mokhov, \"Beam-Material Interactions,\" Joint US–CERN Accelerator School on Machine Protection, Newport Beach, CA, USA, 5–14 November 2014. [8] J. Hylen, \"Survey of Target Facility Landscape: Neutrino Beam Facilities,\" 5th High Power Targetry Workshop, Fermilab, 20–23 May 2014. [9] P. Bricault, \"Radioactive Ion Beam Facilities ? High Power Target, Current status and Future Directions,\" 5th High Power Targetry Workshop, Fermilab, 20–23 May 2014. Also https://indico.fnal.gov/getFile.py/access?contribId=91&sessionId=0&resId=0&materialId=slides& confId=7870. [10] P. Hurh, Third High Power Target Workshop, Bad Zurach, Switzerland, September 2007. [11] T. McManamy, \"Operational Experience with the SNS Target Systems and Upgrade Plans,\" Workshop on Applications of High Intensity Proton Accelerators, Fermi National Accelerator Laboratory, Batavia, IL, USA, 19–21 October 2009. [12] S. Meigo, \"Development of beam ﬂattening system using non-linear beam optics at J-PARC,\" Eleventh International Topical Meeting on Nuclear Applications of Accelerators, Bruges, Belgium, 5–8 August 2014. [13] S. Meigo et al., Beam ﬂattening system based on non-linear optics for high power spallation neutron target at J-PARC, Proc. IPAC2014, Dresden, Germany, 15–20 June 2014. [14] H.D. Thomsen, A.I.S. Holm, and S.P. Møller, \"A linear beam raster system for the European Spallation Source,\" Proc. IPAC2013, Shanghai, China, May 2013, p. 70. [15] http://j-parc.jp/en/topics/20130812Accident_Report.html; http://j-parc.jp/en/topics/HDAccident\n\n20131217.pdf\n\n[16] L. Jones, PASI Working Group Report by D.M. Jenkins, April 2013; http://pasi.org.uk/images/2/2c/DavidJenkins_PASI_meeting_28_Feb_13.pdf.\n\n[17] K. Thomsen and P.A. Schmelzbach, \"A dedicated beam interrupt system for the safe operation of the Megapie Liquid Metal Target,\" Utilisation and Reliability of High Power Proton Accelerators (HPPA5), Workshop Proc., Mol, Belgium, 6–9 May 2007. [18] K. Thomsen, \"VIMOS, near-target beam diagnostics for MEGAPIE,\" NIM A 575(3) (2007) 347.\n\nhttp://dx.doi.org/10.1016/j.nima.2007.03.011\n\n[19] W. F. Sommer et al., \"Failure analysis of a radio-activated accelerator component,\" Practical Failure\n\nAnal. 3(1) (2003) 71. http://dx.doi.org/10.1007/BF02717412\n\n[20] J. Holmes, \"Quadrupole Strength Limits in the RTBT,\" SNS Tech. Note 162, 2005. [21] N. Catalan-Lasheras and D. Raparia, \"The Collimation System of the SNS Transfer Lines,\" Proc. of the 2001 Particle Accelerator Conference, Chicago, p. 3263.\n\nhttp://accelconf.web.cern.ch/AccelConf/p01/INDEX.HTM\n\n[22] M. Kinsho, Private communication, 2014. [23] S. Childress, \"NUMI Proton Beam Diagnostics and Control: Achieving 2 Megawatt Capability,\" Proc. HB2008 Workshop, Nashville, TN, USA, 25–29 August 2008, p. 475. [24] D. Adams, Private communication, 2014. [25] M. Plum, \"SNS Injection and Extraction Systems - Issues And Solutions,\" Proc. HB2008 Workshop, Nashville, TN, USA, 25–29 August 2008, p. 268.\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction to high-power targets",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Target environment",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Beam windows",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Beam parameters",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Methods to ﬂatten the beam distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 What can go wrong?",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Calculating the beam density",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Example 1: rectangular DC beam",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.2 Example 2: rectangular pulsed beam",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.3 Example 3: pulsed Gaussian beam",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7 Target protection",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 Protection by rapid beam turn off",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "7.2 Protection by equipment lock down",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "7.3 Protection by collimation",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "7.4 Protection by interlocking on off-normal measured beam parameters",
+   "page": 12,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "7.5 Protection by beam line design",
+   "page": 13,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "8 Some example target protection implementations",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 J-PARC target protection",
+   "page": 14,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "8.2 FNAL NuMI target protection",
+   "page": 14,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "8.3 ISIS target protection",
+   "page": 14,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "9 SNS target tune up",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Summary",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.967708599993784,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9615384615384616,
+  "unmatched_gt": [
+   "2 Target environment"
+  ],
+  "unmatched_pred": [
+   "2 Target environment"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

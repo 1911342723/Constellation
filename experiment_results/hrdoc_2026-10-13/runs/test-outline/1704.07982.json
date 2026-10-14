@@ -1,0 +1,170 @@
+{
+ "doc": "1704.07982",
+ "system": "outline",
+ "metrics": {
+  "gt": 22,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "Abstract",
+   "Cases",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Random Sampling and Multivariate Subroutines",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Derandomization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Enumeration",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Feedback Vertex Set",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.0.1 Measure",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "7.0.2 Algorithm",
+   "page": 8,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "7.0.3 Results",
+   "page": 9,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "8 Minimal Vertex Covers",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Minimal Feedback Vertex Sets",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1 Measure",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9.2 Algorithm",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9.3 Results",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "10 Minimal Hitting Sets",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10.1 Measure",
+   "page": 16,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "10.2 Analysis",
+   "page": 17,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "11 Conclusion",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04357489999893005,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "Abstract",
+   "Cases",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "doc": "1612.01381",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 5,
+  "pred": 9,
+  "tp": 5,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "Acknowledgments",
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 309,
+  "layout_marked": 8,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9453159041394336,
+  "inserted_word_share": 0.9417615161602062
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. EXPERIMENTAL DETAILS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. STATISTICAL ANALYSIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ENERGETICS OF SRTIO3(001) AND DYSCO3(110) SURFACES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 K. Morito and T",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "J. Ravichandran, R. Ramesh, J. E",
+   "page": 14,
+   "level": 2,
+   "parent": 7
+  }
+ ],
+ "seconds": 4.831544199994823,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 9,
+  "tp": 5,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "Acknowledgments",
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

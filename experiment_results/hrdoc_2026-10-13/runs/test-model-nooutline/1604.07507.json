@@ -1,0 +1,131 @@
+{
+ "doc": "1604.07507",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "3.1. Architecture",
+   "3.2. Loss Function",
+   "3.3. Two-stage Training",
+   "5.1. Overal l Results",
+   "5.2. Attribute Based Comparison",
+   "5.3. Speed Analysis"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 319,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4750,
+   "completion_tokens": 298,
+   "total_tokens": 5048
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. YCNN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Visual Tracking via YCNN",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.319860699997662,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "3.1. Architecture",
+   "3.2. Loss Function",
+   "3.3. Two-stage Training",
+   "5.1. Overal l Results",
+   "5.2. Attribute Based Comparison",
+   "5.3. Speed Analysis"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [
+   "3.1. Architecture",
+   "3.2. Loss Function",
+   "3.3. Two-stage Training",
+   "5.1. Overal l Results",
+   "5.2. Attribute Based Comparison",
+   "5.3. Speed Analysis"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

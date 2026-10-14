@@ -1,0 +1,151 @@
+{
+ "doc": "1804.03091",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgement",
+   "Supporting Information Available"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supporting Information Available"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 659,
+  "layout_marked": 16,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9710776999885229,
+  "inserted_word_share": 0.9578643851716101
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods and Computational Details",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Polarizable Model",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Simulation Setup",
+   "page": 10,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Trajectory Analysis",
+   "page": 13,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Results and Discussion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Optimized Force Field Parameters",
+   "page": 16,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Water Transfer",
+   "page": 18,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 Ion Rejection",
+   "page": 23,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Discussions",
+   "page": 26,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supporting Information Available",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.529829700004484,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgement",
+   "Supporting Information Available"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

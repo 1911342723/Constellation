@@ -1,0 +1,150 @@
+{
+ "doc": "1705.08550",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 12,
+  "tp": 8,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 The code can be downloaded from https",
+   "W. Zhu et al.",
+   "W. Zhu et al.",
+   "W. Zhu et al."
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 199,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Deep Multi-instance Networks with Sparse Label",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Assignment for Whole Mammogram Classiﬁcation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 The code can be downloaded from https",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "W. Zhu et al.",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2 Deep MIL for Whole Mammogram Mass Classiﬁcation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Max Pooling-based Multi-instance Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Label Assignment-based Multi-instance Learning",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Sparse Multi-instance Learning",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "W. Zhu et al.",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "W. Zhu et al.",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.12104299999919,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 14,
+  "tp": 8,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Deep Multi-instance Networks with Sparse Label",
+   "Assignment for Whole Mammogram Classiﬁcation",
+   "1 The code can be downloaded from https",
+   "W. Zhu et al.",
+   "W. Zhu et al.",
+   "W. Zhu et al."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 The code can be downloaded from https",
+   "W. Zhu et al.",
+   "W. Zhu et al.",
+   "W. Zhu et al."
+  ],
+  "ignored_title_predictions": null
+ }
+}

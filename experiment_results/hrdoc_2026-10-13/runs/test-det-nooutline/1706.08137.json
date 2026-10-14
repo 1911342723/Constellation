@@ -1,0 +1,244 @@
+{
+ "doc": "1706.08137",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 34,
+  "pred": 30,
+  "tp": 30,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 30,
+  "parent_correct": 30,
+  "teds": 0.8857142857142857,
+  "unmatched_gt": [
+   "3.1.1 Recording Measurements in Space and Time",
+   "3.1.2 The Grouping Structure of the Data",
+   "5.1 Spatiotemporal Mo dels",
+   "5.2.1 Normal Linear Models"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1015,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Basic Deﬁnitions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 What is a Probability Model?",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 What is a Statistical Model?",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 What is a Bayesian Model?",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. The Probabilistic Approach to Latent Variable Models",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Probabilistic Modeling Approach",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 What is a Latent Variable?",
+   "page": 10,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 What is a Probabilistic Latent Variable Model?",
+   "page": 12,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Implicit Vs Explicit Models",
+   "page": 14,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.5 Deep Vs Shallow Models",
+   "page": 15,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. Brief History of Latent Variable Models",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Summary of Key Developments",
+   "page": 15,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 The Statistical Myth of Measuring Hypothetical Constructs",
+   "page": 16,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 The First Latent Variable Model",
+   "page": 17,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.4 Latent Variable Models in Machine Learning",
+   "page": 18,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5. Constructing Probabilistic Latent Variable Models",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Multivariate Models",
+   "page": 20,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.3 Reduced Rank Regression (RRR)",
+   "page": 22,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.4 Principle Component Analysis (PCA)",
+   "page": 23,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.5 Factor Analysis (FA)",
+   "page": 23,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.6 Independent Component Analysis (ICA)",
+   "page": 24,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.7 Canonical Correlation Analysis (CCA)",
+   "page": 24,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.8 Inter-Battery Factor Analysis (IBFA)",
+   "page": 25,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.9 Multi-Battery Factor Analysis (MBFA)",
+   "page": 25,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.10 Group Factor Analysis (GFA)",
+   "page": 26,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.11 Structural Equation Models (SEM)",
+   "page": 26,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.12 Deep Latent Gaussian Models (DLGM)",
+   "page": 28,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.901330099997722,
+ "metrics_v1": {
+  "gt": 34,
+  "pred": 30,
+  "tp": 30,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 30,
+  "parent_correct": 30,
+  "teds": 0.8857142857142857,
+  "unmatched_gt": [
+   "3.1.1 Recording Measurements in Space and Time",
+   "3.1.2 The Grouping Structure of the Data",
+   "5.1 Spatiotemporal Mo dels",
+   "5.2.1 Normal Linear Models"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 32,
+  "pred": 28,
+  "tp": 28,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.8787878787878788,
+  "unmatched_gt": [
+   "3.1.1 Recording Measurements in Space and Time",
+   "3.1.2 The Grouping Structure of the Data",
+   "5.1 Spatiotemporal Mo dels",
+   "5.2.1 Normal Linear Models"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

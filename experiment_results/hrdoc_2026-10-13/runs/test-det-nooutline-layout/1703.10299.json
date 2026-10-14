@@ -1,0 +1,129 @@
+{
+ "doc": "1703.10299",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgements"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 293,
+  "layout_marked": 12,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9489861259338314,
+  "inserted_word_share": 0.041810344827586166
+ },
+ "predictions": [
+  {
+   "text": "Measurements of the Total Cross section for Thermal Neutrons at",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Experimental Setup",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Data acquisition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Simulation Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Data Analysis and Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Response of a Time-of-Flight Spectrometer by Simulation",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.2 Background",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.3 Total Cross Section",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.4401258999932907,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgements"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

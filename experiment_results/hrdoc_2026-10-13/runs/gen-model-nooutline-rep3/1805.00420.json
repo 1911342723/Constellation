@@ -1,0 +1,154 @@
+{
+ "doc": "1805.00420",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 240,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13223,
+   "completion_tokens": 652,
+   "total_tokens": 13875
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methodology",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results: Spatial Patterns",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Prominent Spatial Patterns",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Testing the robustness of patterns",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Seasonal evolution of spatial patterns",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 Probability distribution of prominent spatial transitions",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4.1 Self transitions: length of spells",
+   "page": 8,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4 Results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 All-India Active-Break spells",
+   "page": 9,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Local Wet-Dry Spells",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Regional Wet-Dry Spells",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Discussion and future directions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 37.9072339000013,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

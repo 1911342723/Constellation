@@ -1,0 +1,180 @@
+{
+ "doc": "1804.11259",
+ "system": "model",
+ "metrics": {
+  "gt": 14,
+  "pred": 18,
+  "tp": 14,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 13,
+  "teds": 0.6842105263157895,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1) Univariate testing",
+   "1) Univariate",
+   "1) Univariate",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 91,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4382,
+   "completion_tokens": 603,
+   "total_tokens": 4985
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MATERIAL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Original data",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Simulated design",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Pre-processing",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "D. Simulation of signals",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Modelling",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "1) Univariate testing",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Recovery metrics",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1) Univariate",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Performance",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Recovery",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "1) Univariate",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. DISCUSSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.031742499999382,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 18,
+  "tp": 14,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 13,
+  "teds": 0.6842105263157895,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1) Univariate testing",
+   "1) Univariate",
+   "1) Univariate",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1) Univariate testing",
+   "1) Univariate",
+   "1) Univariate"
+  ],
+  "ignored_title_predictions": null
+ }
+}

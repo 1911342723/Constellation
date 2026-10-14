@@ -1,0 +1,166 @@
+{
+ "doc": "1803.05266",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "On the Applicability of Registration Uncertainty",
+    0,
+    1
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 The Ambiguity of Registration Uncertainty",
+    2,
+    1
+   ],
+   [
+    "2.1 The DPR Set Up",
+    2,
+    2
+   ],
+   [
+    "2.2 Transformation Uncertainty and Label Uncertainty",
+    2,
+    2
+   ],
+   [
+    "3 Credibility of Label Distribution",
+    5,
+    1
+   ],
+   [
+    "4 Discussion",
+    7,
+    1
+   ],
+   [
+    "References",
+    7,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5724,
+   "completion_tokens": 5191
+  },
+  "elapsed_llm_seconds": 21.344375000000582,
+  "word_preservation": {
+   "recall": 0.9839105535860376,
+   "in_order": 0.9839105535860376,
+   "inserted": 0.0016602102933037655
+  },
+  "output_markdown": "# On the Applicability of Registration Uncertainty\n\nJie Luo1,2, Alireza Sedghi3, Karteek Popuri4, Dana Cobzas5, Miaomiao Zhang6, Frank Preiswerk1, Matthew Toews7, Alexandra Golby1, Masashi Sugiyama8,2, William M. Wells III1, and Sarah Frisken1\n\n1 Brigham and Women’s Hospital, Harvard Medical School, USA\n2 Graduate School of Frontier Sciences, The University of Tokyo, Japan\n3 School of Computing, Queens University, Canada\n4 School of Engineering Science, Simon Fraser University, Canada\n5 Computing Science Department, University of Alberta, Canada\n6 McKelvey School of Enginerring, Washington University in St.Louis, USA\n7 Ecole de Technologie Superieure, Canada\n8 Center for Advanced Intelligence Project, RIKEN, Japan\njluo5@bwh.harvard.edu\n\n**Abstract.** Estimating the uncertainty in (probabilistic) image registration enables, e.g., surgeons to assess the operative risk based on the trustworthiness of the registered image data. If surgeons receive inaccurately calculated registration uncertainty and misplace unwarranted confidence in the alignment solutions, severe consequences may result. For probabilistic image registration (PIR), the predominant way to quantify the registration uncertainty is using summary statistics of the distribution of transformation parameters. The majority of existing research focuses on trying out different summary statistics as well as means to exploit them. Distinctively, in this paper, we study two rarely examined topics: (1) whether those summary statistics of the transformation distribution most informatively represent the registration uncertainty; (2) Does utilizing the registration uncertainty always be beneficial. We show that there are two types of uncertainties: the transformation uncertainty, Ut, and label uncertainty Ul. The conventional way of using Ut to quantify Ul is inappropriate and can be misleading. By a real data experiment, we also share a potentially critical finding that making use of the registration uncertainty may not always be an improvement.\n\n**Keywords:** Image registration, Registration uncertainty.\n\n# 1 Introduction\n\nNon-rigid image registration is the foundation for many image-guided medical tasks [1,2]. However, given the current state of the registration technology and the difficulty of the problem, an uncertainty measure that highlights locations where the algorithm had difficulty finding a proper alignment can be very helpful. Among the approaches that characterize the uncertainty of non-rigid image registration, the most popular, or perhaps the most successful framework is the probabilistic image registration (PIR) [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17].\n\n<<page 2>>\nIn contrast to traditional “point-estimate” image registration approaches that report a unique set of transformation parameters that best align two images, PIR models transformation parameters as random variables and estimates distributions over them. The mode of the distribution is then chosen as the most likely value of that transformation parameter. PIR has the advantage that the registration uncertainty can be naturally obtained from the distribution of transformation parameters. PIR methods can be broadly categorized into discrete probabilistic registration (DPR) [3,7,8,13] and continuous probabilistic registration (CPR) [4,5,6,9,10,11,12,14,15,16,17,18]\n\n**Related Work** Registration uncertainty is a measure of confidence in image alignment solutions. In the PIR literature, the predominant way to quantify the registration uncertainty is using summary statistics of the transformation distribution. Applications of various summary statistics have been proposed in previous research: the Shannon entropy and its variants of the categorical transformation distribution were used to measure the registration uncertainty of DPR [7]; the variance [4,12,14], standard deviation [11], inter-quartile range [6,20] and the covariance Frobenius norm [10] of the transformation distribution were used to quantify the registration uncertainty of CPR. In order to visually assess the registration uncertainty, each of these summary statistics was either mapped to a color scheme, or an object overlaid on the registered image. By inspecting the color of voxels or the geometry of that object, end users can infer the registration uncertainty, which suggests the confidence they can place in the registration result. Utilizing the registration uncertainty is presumably an advantage of PIR [19,20,21], to date, the majority of existing research focuses on trying out different summary statistics and means to exploit the registration uncertainty.\n\n**Clinical Motivation** In image-guided neurosurgery, surgeons need to correctly understand the registration uncertainty so as to make better informed decisions, e.g., If the surgeon observes a large registration error at location A and small error at location B, without knowledge of registration uncertainty, s/he would most likely assume a large error everywhere and thus entirely ignore the registration. With an accurate knowledge of uncertainty, once the surgeon knows that A lies in an area of high uncertainty while B lies in an area of low uncertainty, s/he would have greater confidence in the registration at B and other locations of low uncertainty. If surgeons are influenced by inaccurate amount of registration uncertainty and place unwarranted confidence in the alignment solutions, severe consequences may result [6,19,20].\n\nThe majority of research takes the registration uncertainty for granted. In this paper, we investigate two rarely examined topics: (1) whether summary statistics of the transformation distribution most informatively reflect the registration uncertainty; (2) Does utilizing the registration uncertainty always be beneficial. In Section 2, we identify and discuss two types of uncertainties: the transformation uncertainty Ut and label uncertainty Ul. By concrete examples, we show that the conventional way of using Ut to quantify Ul is inappropriate and\n\n<<page 3>>\ncan be misleading. In Section 3, by a real data example, we share a potentially critical finding that making use of the registration uncertainty may not always be an improvement. Finally, we summarize in Section 4. It should be noted that registration uncertainty is not equal to registration accuracy. There are excellent works which study standards of registration evaluation [22,23,24]. However, here we focus on the relation among different types of registration uncertainty.\n\n# 2 The Ambiguity of Registration Uncertainty\n\nFor illustration purpose, we use DPR in all examples.\n\n## 2.1 The DPR Set Up\n\nIn the DPR setting, let It and Is respectively be the target and source images It, Is : ΩI →R, ΩI ⊂Rd, d = 2 or 3. The algorithm discretizes the transformation space into a set of K displacement vectors, D = {dk}K\nk=1, dk ∈Rd. These displacement vectors radiate from voxels on It and point to their candidate transformation locations on Is [2]. For every voxel vi, the algorithm computes a unity-sum probabilistic vector P(vi) = {Pk(vi)}K\nk=1 as the transformation distribution. Pk(vi) is the probability of displacement vector dk. In a standard DPR, the algorithm takes a displacement vector that has the highest probability in P(vi) as the most likely transformation dm.\n\nConventionally, the uncertainty of registered vi is quantified by the Shannon entropy of P(vi) [7]. Since the algorithm takes dm as its “point-estimate”, the entropy provides a measure of the extent of dispersion from dm of the rest of displacement vectors in D. If other displacement vectors are all as equally likely to occur as dm, then the entropy is maximal, which indicates that it is completely uncertain which displacement vector should be chosen as the most likely transformation. When the probability of dm is much higher than that of other displacement vectors, the entropy decreases, and there is greater certainty that dm is the correct choice.\n\nFor example, P(vl) = [0.25, 0.25, 0.25, 0.25] and P(vr) = [0.1, 0.7, 0.1, 0.1] are two discrete transformation distributions. P(vl) is uniformly distributed, and its entropy is E(P(vl)) = 2. P(vr) has an obvious peak, and its entropy is E(P(vr)) ≈1.36, which is lower than E(P(vl)). For a registered voxel, the entropy of its transformation distribution is usually mapped to a color scheme, clinicians can infer the level of confidence of the registration result by the color of the voxel.\n\n## 2.2 Transformation Uncertainty and Label Uncertainty\n\nIn the context of neurosurgery, the goal of image registration is frequently to map the pre-operatively labeled tumor, and/or other tissue, onto the intra-operative patient space for resection. Since registration uncertainty is strongly linked to the goal of registration, here it should also reflect the confidence in the registered\n\n<<page 4>>\n**Fig. 1.** The target image It and souce image Is ; (b) The discretized transformation space D; (c) The corresponding tissue label L(dk) for D. .\n\nlabels. However, does the conventional uncertainty measure of DPR, which is the entropy of transformation distribution, truly give insight into the trustworthiness of registered labels?\n\nIn a hypothetical DIR example, It and Is in Fig.1(a) are the intra-operative target and pre-operative source images, respectively. Voxel v1 on It is the voxel we want to register. In Fig.1(b), we can see that the discretized transformation space D = {dk}9\nk=1 is a set of nine displacement vectors. Each displacement vector is linked to a candidate corresponding voxel of v1. The labels L(dk) are for voxels associated with dk. In this example, there are labels for the tumor and other tissue, as shown in Fig.1(c).\n\nFig.2 shows a transformation distribution P(v1) = {Pk(v1)}9\nk=1 and its bar chart. We observe that P5(v1) has the highest probability in P(v1); therefore, d5’s corresponding label, L(d5) = Tumor, will be assigned to the registered v1. Although P(v1) has its mode at P5(v1), the entire distribution is more or less uniformly distributed. The entropy of P(v1), E(P(v1)) ≈3.15, is close to the maximum. Therefore, the conventional uncertainty measure will suggest that the registration uncertainty of v1 is very high and highlight it with a bright color. Upon noticing the high degree of uncertainty in registered v1, surgeons would place less confidence in its tumor label and make surgical plans accordingly.\n\n**Fig. 2.** (a) P(v1) and corresponding labels; (b) The bar chart of P(v1).\n\nOn the other hand, let us take into account the label L(dk) associated with each dk and form a label distribution. As shown in Fig.3(a), even if d1, . . . , d8 are different displacement vectors, they correspond to the same label as the most likely displacement vector d5. If we accumulate the probability for all labels in L, it is clear that “tumor” is the dominant one. Interestingly, despite\n\n<<page 5>>\n**Fig. 3.** (a) Bar chart of the transformation distribution P(v1) taking into account L(dk); (b) The label distribution of the registered v1.\n\nbeing suggestive of having high registration uncertainty using the conventional uncertainty measure, the label distribution in Fig.3(b) indicates that it is quite trustworthy to assign a tumor label to the registered v1. In addition, the entropy of the label distribution is as low as 0.4, which also differs from the high entropy value computed from the transformation distribution.\n\nIn the example above, there appear to be two kinds of uncertainty. We name the uncertainty computed from the transformation distribution as the transformation uncertainty Ut, and the uncertainty relating to the goal of registration as label uncertainty Ul. Examples of Ul can be uncertainty in a categorical classification, or uncertainty in the intensity value of registered voxels.\n\nIn the PIR literature, the definition of registration uncertainty is ambiguous, because researchers do not differentiate Ut from Ul, and perhaps subconsciously use Ut to quantify Ul. The previous counter-intuitive example demonstrates that high Ut does not guarantee high Ul. In fact, the value of Ut can barely guarantee any useful information at all about the Ul.\n\nMore precisely, for point-estimate image registration, let ΩT be the set of all estimated transformation, and ΩL be the set of all possible corresponding labels (categorical labels or intensity values). The algorithm assigns a transformation t ∈ΩT to a voxel. By a non-linear function fpoint : ΩT →ΩL, the voxel will have its label l ∈ΩL as:\n\nl = fpoint(t). (1)\n\nIn this case, the function fpoint is surjective, and t always has a unique corresponding l. However, in the PIR setting, the voxel transformation becomes a random variable T. The corresponding label L is a function of T:\n\nL = fprob(T). (2)\n\ntherefore, it is also a random variable. Even if T and L are intuitively correlated, given different image context, there is no guaranteed analytical way to compute the uncertainty propagation from T to L. Thus it’s inappropriate to measure the uncertainty of L, by the summary statistics of T.\n\nIn the registration community, researchers routinely distinguish between intensity match and e.g. DICE scores. It also makes sense to distinguish the transformation uncertainty and label uncertainty. In practice, Ut and Ul around certain areas, i.e., the tumor boundary, is quite dissimilar. Propagating Ut to the\n\n<<page 6>>\n**Fig. 4.** (a) Input and result of the CUMC12 data example, vc and ve are two voxels of interest on the registered source image; (b) The transformation distribution of vc and ve in the DIR; (c) Label distributions of registered vc and ve.\n\nsurgeon, as if it is the Ul can mislead them to place unwarranted confidence in the alignment solution and result in severe consequences.\n\n**Real data examples** As shown in Fig.4, It and Is are two brain MRI images arbitrarily chosen from the CUMC12 dataset. Subsequent to performing a DIR, we obtained the registered source image Irs. The goal of this registration was to determine the categorical label, whether it is a ventricle or a white matter, for registered voxels of interest vc and ve. The transformation distribution of vc is more uniformly distributed than that of ve. Therefore, conventional entropy-based methods will report vc as having higher registration uncertainty than ve. However, as we form a label distribution in Fig.4(c), it is clear that ve, despite having a lower Ut, is assigned a label that is more uncertain. Examples that demonstrate the dissimilarity between Ut and Ul can be frequently found in the registration of various kind of images.\n\n# 3 Credibility of Label Distribution\n\nUtilizing the registration uncertainty, in particular the full label distribution, to benefit registration-based tasks is presumably an advantage of PIR. Many research of registration uncertainty reported positively over its impact in applications [19,20,21]. However, to the best of our knowledge, there does not exist any validation study about whether we should use the registration uncertainty. In this section, we design an experiment to explore whether utilizing the registration uncertainty always results in an improvement.\n\nIn PIR, the registered voxel has the corresponding label of the most likely transformation L(dm), upon which the registration evaluation is also based [3,4,5,6,7,8,9,10,11,12,13,14,15,16]. Likewise, we can derive the most likely label Lm from the full label distribution. If utilizing the registration uncertainty, like\n\n<<page 7>>\n**Fig. 5.** (a) Input and result of the registration example; (b,c,d,e) Intensity label distributions of voxels vb,vc,vd and ve; (f) Approximate locations of tested voxels.\n\nreported in previous research, always be beneficial, then Lm should be always better than L(dm).\n\nIn the following pilot experiment: an MRI image is arbitrarily chosen from the BRATS dataset [25] and synthetically deformed.Then we registered the original data with the deformed data using DIR. By doing so, we know the ground truth intensity for every registered voxel so that we can compare whether it is L(dm) or Lm closer to the ground truth.\n\nHere we are interested in the intensity label distributions of four registered voxels vb, vc, vd and ve, shown in Fig.5(b), (c), (d), and (e) respectively. In Fig.5, the red circle indicates the most likely intensity label Lm given by the full transformation distribution, the orange circle indicates the corresponding intensity label of the transformation mode L(dm), and the green circle is the Ground Truth (GT). We observe that for vb, Lm and L(dm) are both equal to the GT. On the other hand, Lm and I(dm) for vc, vd and ve, are not the same. As seen in Fig.5(c), the Lm of the registered vc is equal to the GT intensity, and is more accurate than I(dm). Yet, unexpectedly, for vd and ve, their I(dm) is closer to the GT than their Lm. Voxels such as vd and ve were found frequently in our experiments using other real data. This surprising result indicates that utilizing the full transformation distribution can actually give a poorer/less accurate estimation than using the transformation mode alone.\n\nResearchers have attempted to present the visualized full label distribution of functional areas in fMRI to neurosurgeons [20]. However, based on the above finding, if Lm can give poorer estimation, the full label distribution might also have questionable credibility. Conveying such false information to surgeons would certainly be detrimental to the outcome of surgery.\n\nIt is noteworthy that in PIR, the estimation of T and L is influenced by the choice of hyper parameters, priors, and image context. Other PIR approaches can yield different findings. Nevertheless, studying the credibility of the label distribution before using it in practice warrants increased investigation.\n\n<<page 8>>\n# 4 Discussion\n\nThe majority of research takes the registration uncertainty for granted. We summarize current approaches of quantifying registration uncertainty and point out some fundamental problems which would make researchers rethink, or even rework approaches for quantifying and applying registration uncertainty.\n\nAt this stage, even the uncertainty is a useful addition to the registration result, we recommend treating it with caution: (1) It is advised to distinguish Ut and Ul in applications. Instead of using the unified term ”registration uncertainty”, i.e., we can use Ut to indicate the confidence for a predicted instrument location in neurosurgery; (2) Since the credibility of label distribution is unclear, we should avoid using Ul in clinical settings and put further effort in studying the implication of PIR results. We believe that this paper will serve as a foundation and draw more attention to this topic.\n\n**Acknowledgement** MS was supported by the International Research Center for Neurointelligence (WPI-IRCN) at The University of Tokyo Institutes for Advanced Study. This work was also supported by NIH grants P41EB015898, P41EB015902 and 5R01NS049251.\n\n# References\n\n1. Maintz, J.B.A., Viergever, M.A.: A Survey of Medical Image Registration. Med. Image Anal. 2(1): 1-36 (1998)\n2. Sotiras, A., Davatzikos, C.: Deformable Medical Image Registration: A Survey. IEEE Trans. Med. Imaging 32(7), 1153-1190 (2013)\n3. Cobzas, D., Sen, A.: Random Walks for Deformable Registration. In: MICCAI’11. LNCS, vol. 6892, pp. 557-565. (2011)\n4. Simpson, I.J.A., et al.: Probabilistic Inference of Regularisation in Non-rigid Registration. NeuroImage. 59: 2438-2451 (2012)\n5. Janoos, F., et al.: Bayesian Characterization of Uncertainty in Multi-modal Image Registration. In: WBIR’12, LNCS, vol. 7359. pp.50-59. (2013)\n6. Risholm, P., et al.: Bayesian Characterization of Uncertainty in Intra-subject Non-rigid Registration. Med. Image Anal. 17(5), 538-555 (2013)\n7. Lotfi, T., et al.: Improving Probabilistic Image Registration via Reinforcement Learning and Uncertainty Evaluation. In: LNCS, vol. 8184, pp. 187-194. (2013)\n8. Popuri, K., Cobzas, D., Jgersand, M.: A Variational Formulation for Discrete Registration. In: MICCAI’13. LNCS, vol. 8151, pp. 187-194. (2013)\n9. Zhang, M., et al.: Bayesian Estimation of Regularization and Atlas Building in Diffeomorphic Image Registration. In: IPMI’13. LNCS, vol. 7917, pp. 37-48. (2013)\n10. Wassermann D., et al.: Probabilistic Diffeomorphic Registration: Representing Uncertainty. In: WBIR’14. LNCS, vol. 8545. pp. 72-82. (2014)\n11. Simpson, I.J.A., et al.: Probabilistic non-linear registration with spatially adaptive regularisation. Med. Image Anal. 26(1): 203-216 (2015)\n12. Yang, X., Niethammer, M.: Uncertainty Quantification for LDDMM Using a Low-rank Hessian Approximation. In: MICCAI’15. LNCS, vol. 9350, pp. 289-296. (2015)\n\n<<page 9>>\n13. Heinrich, M.P., et al.: Deformable Image Registration by Combining Uncertainty Estimates From Supervoxel Belief Propagation. Med. Image Anal. 27, 57-71 (2016)\n14. Folgoc, L.L., et al.: Quantifying Registration Uncertainty With Sparse Bayesian Modelling. IEEE Trans. Image Process, 36(2): 607-617 (2017)\n15. Wang, J., et al.: Efficient Laplace Approximation for Bayesian Registration Uncertainty Quantification. In: MICCAI’18. LNCS, vol. 11073, pp. 880-888. (2018)\n16. Luo, J., et al: A feature-driven active framework for ultrasound-based brain shift compensation. In: MICCAI’18. LNCS, vol. 11073, pp. 3038. (2018)\n17. Dalca, A.V., et al: Unsupervised Learning for Fast Probabilistic Diffeomorphic Registration. In: MICCAI’18. LNCS, vol. 11070, pp. 729-738. (2018)\n18. Sedghi, A., et al.: Semi-supervised image registration using deep learning. In: SPIE Medical Imaging, vol. 10951, p. 109511G. (2019)\n19. Risholm, et al.: Estimation of Delivered Dose in Radiotherapy: The influence of Registration Uncertainty. In: MICCAI’11. LNCS, vol. 6891, pp. 548-555 (2011)\n20. Risholm, P., et al.: Summarizing and Visualizing Uncertainty in Non-rigid Registration. In: MICCAI’10. LNCS, vol. 6362, pp. 554-561. (2010)\n21. Simpson, J.A., et al.: Ensemble Learning Incorporating Uncertain Registration. IEEE Trans. Med. Imaging 32(4), 748-756 (2013)\n22. Rohlfing T.: Image Similarity and Tissue Overlaps as Surrogates for Image Registration Accuracy: Widely Used but Unreliable. IEEE TMI 31(2), 153–163 (2012)\n23. Fitzpatrick, J.M.: Fiducial registration error and target registration error are uncorrelated. In Proc. SPIE 7261, Medical Imaging’09; doi: 10.1117/12.813601 (2009)\n24. Min Z., et al.: Statistical Model of Total Target Registration Error in Image-Guided Surgery. IEEE Trans on Auto. Sci. and Eng. 31(2), 1–15 (2019)\n25. Menze, B.H., et.al.: The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)”, IEEE Trans. Med. Imaging 34(10), 1993-2024 (2015)",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "On the Applicability of Registration Uncertainty",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Ambiguity of Registration Uncertainty",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The DPR Set Up",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Transformation Uncertainty and Label Uncertainty",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Credibility of Label Distribution",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.38278320000245,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On the Applicability of Registration Uncertainty"
+  ]
+ }
+}

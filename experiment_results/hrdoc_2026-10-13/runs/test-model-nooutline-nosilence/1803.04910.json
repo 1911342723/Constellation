@@ -1,0 +1,164 @@
+{
+ "doc": "1803.04910",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 9,
+  "pred": 13,
+  "tp": 9,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 edge state",
+   "ky",
+   "kx",
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 408,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10186,
+   "completion_tokens": 474,
+   "total_tokens": 10660
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Experimental evidence of robust acoustic valley Hall edge states",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "in a non-resonant topological elastic waveguide",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. TOPOLOGICAL ELASTIC WAVEGUIDE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Topological band structure analysis",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Topological edge states at the domain wall",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. EXPERIMENTAL VALIDATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Existence of the edge states",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2 edge state",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Selective valley injection",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. CHIRAL VORTICES OF ENERGY FLUX",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ky",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "kx",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 42.5186629000018,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 15,
+  "tp": 9,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Experimental evidence of robust acoustic valley Hall edge states",
+   "in a non-resonant topological elastic waveguide",
+   "2 edge state",
+   "ky",
+   "kx",
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 edge state",
+   "ky",
+   "kx"
+  ],
+  "ignored_title_predictions": null
+ }
+}

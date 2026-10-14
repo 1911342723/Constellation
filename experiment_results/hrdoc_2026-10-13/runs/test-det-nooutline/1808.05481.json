@@ -1,0 +1,657 @@
+{
+ "doc": "1808.05481",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 71,
+  "tp": 15,
+  "fp": 56,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 2,
+  "teds": 0.1527777777777778,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "L. Czajka",
+   "L. Czajka",
+   "L. Czajka",
+   "m) for any γ, i.e., it does not",
+   "L. Czajka",
+   "2) then",
+   "1) and s1 → s′",
+   "1) → f(s, t, t′), by rule (2)",
+   "2) and t′",
+   "1) with s1 → t1 and s1 → t′",
+   "1 with t1 → s′",
+   "1 and t′",
+   "1. More precisely",
+   "1 we obtain s′",
+   "1 and t′",
+   "1. Hence t ≡ A(t1) → A(s′",
+   "1) and t ≡ A(t′",
+   "1 and s′",
+   "2 with t1 → s′",
+   "2. Hence t ≡ B(t1, t2) → B(s′",
+   "2) by rule (3). Analogously,",
+   "2) by rule (3). Thus we may take s′",
+   "L. Czajka",
+   "0 ≤ j ≤ n then t|p ≡ tj = sj = s|p",
+   "L. Czajka",
+   "0 be the",
+   "L. Czajka",
+   "L. Czajka",
+   "5.1. Properties of ∼U",
+   "2 with ti ∼U t′",
+   "i. Thus",
+   "i. Take s′ ≡ s′",
+   "2. Then t′ →∞",
+   "L. Czajka",
+   "2 with s′",
+   "2. Then u ≡ u1u2 with ui ⇒⊥U s′",
+   "2 with t′",
+   "2 such that t′",
+   "m. Then t2 →∞",
+   "L. Czajka",
+   "2 where t′",
+   "2. Then s ≡ s1s2 with t′",
+   "i. By the coinductive hypothesis ti ;NU si. Hence t ;NU s1s2 ≡ s.",
+   "2 with ti ;NU t′",
+   "2. Take t3 ≡ t′",
+   "2. We have",
+   "L. Czajka",
+   "2 and t′",
+   "i. By Lemma 5",
+   "L. Czajka",
+   "2 and t′",
+   "L. Czajka",
+   "Appendix A",
+   "2 with si ∼U s′",
+   "i. Because t ∈R and",
+   "1 ∈U, and thus s′ ∈U, and thus t′ ∈U. Otherwise"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1374,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Related work",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2. Infinite terms and corecursion",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Coinduction",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "L. Czajka",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "m) for any γ, i.e., it does not",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2) then",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1) and s1 → s′",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1) → f(s, t, t′), by rule (2)",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2) and t′",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1) with s1 → t1 and s1 → t′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 with t1 → s′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 and t′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1. More precisely",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 we obtain s′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 and t′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1. Hence t ≡ A(t1) → A(s′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1) and t ≡ A(t′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 and s′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2 with t1 → s′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2. Hence t ≡ B(t1, t2) → B(s′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2) by rule (3). Analogously,",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2) by rule (3). Thus we may take s′",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "L. Czajka",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 ≤ j ≤ n then t|p ≡ tj = sj = s|p",
+   "page": 9,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "4. Definitions and basic properties",
+   "page": 10,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "L. Czajka",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 be the",
+   "page": 12,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "L. Czajka",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Confluence and normalisation of B¨ohm reductions",
+   "page": 14,
+   "level": 2,
+   "parent": 31
+  },
+  {
+   "text": "L. Czajka",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Properties of ∼U",
+   "page": 15,
+   "level": 2,
+   "parent": 33
+  },
+  {
+   "text": "2 with ti ∼U t′",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Thus",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Take s′ ≡ s′",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Then t′ →∞",
+   "page": 16,
+   "level": 2,
+   "parent": 37
+  },
+  {
+   "text": "5.2. Properties of parallel ⊥U-reduction",
+   "page": 16,
+   "level": 2,
+   "parent": 37
+  },
+  {
+   "text": "L. Czajka",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 with s′",
+   "page": 17,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "2. Then u ≡ u1u2 with ui ⇒⊥U s′",
+   "page": 17,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "2 with t′",
+   "page": 17,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "2 such that t′",
+   "page": 17,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "m. Then t2 →∞",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "L. Czajka",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.4. Inﬁnitary NU-reduction. In the λ∞",
+   "page": 19,
+   "level": 2,
+   "parent": 46
+  },
+  {
+   "text": "2 where t′",
+   "page": 20,
+   "level": 2,
+   "parent": 46
+  },
+  {
+   "text": "2. Then s ≡ s1s2 with t′",
+   "page": 20,
+   "level": 2,
+   "parent": 46
+  },
+  {
+   "text": "i. By the coinductive hypothesis ti ;NU si. Hence t ;NU s1s2 ≡ s.",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.5. Conﬂuence and normalisation",
+   "page": 20,
+   "level": 2,
+   "parent": 50
+  },
+  {
+   "text": "2 with ti ;NU t′",
+   "page": 20,
+   "level": 2,
+   "parent": 50
+  },
+  {
+   "text": "2. Take t3 ≡ t′",
+   "page": 20,
+   "level": 2,
+   "parent": 50
+  },
+  {
+   "text": "2. We have",
+   "page": 20,
+   "level": 2,
+   "parent": 50
+  },
+  {
+   "text": "5.6. Root-active terms are strongly meaningless.",
+   "page": 20,
+   "level": 2,
+   "parent": 50
+  },
+  {
+   "text": "L. Czajka",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 and t′",
+   "page": 21,
+   "level": 2,
+   "parent": 56
+  },
+  {
+   "text": "i. By Lemma 5",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.7. Conﬂuence modulo equivalence of meaningless terms. From conﬂuence of the",
+   "page": 22,
+   "level": 2,
+   "parent": 58
+  },
+  {
+   "text": "6. Strongly convergent reductions",
+   "page": 22,
+   "level": 2,
+   "parent": 58
+  },
+  {
+   "text": "L. Czajka",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 and t′",
+   "page": 23,
+   "level": 2,
+   "parent": 61
+  },
+  {
+   "text": "7. The formalisation",
+   "page": 24,
+   "level": 2,
+   "parent": 61
+  },
+  {
+   "text": "L. Czajka",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Conclusions",
+   "page": 25,
+   "level": 2,
+   "parent": 64
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 with si ∼U s′",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Because t ∈R and",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 ∈U, and thus s′ ∈U, and thus t′ ∈U. Otherwise",
+   "page": 30,
+   "level": 2,
+   "parent": 69
+  }
+ ],
+ "seconds": 16.920314099999814,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 71,
+  "tp": 15,
+  "fp": 56,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 2,
+  "teds": 0.1527777777777778,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "L. Czajka",
+   "L. Czajka",
+   "L. Czajka",
+   "m) for any γ, i.e., it does not",
+   "L. Czajka",
+   "2) then",
+   "1) and s1 → s′",
+   "1) → f(s, t, t′), by rule (2)",
+   "2) and t′",
+   "1) with s1 → t1 and s1 → t′",
+   "1 with t1 → s′",
+   "1 and t′",
+   "1. More precisely",
+   "1 we obtain s′",
+   "1 and t′",
+   "1. Hence t ≡ A(t1) → A(s′",
+   "1) and t ≡ A(t′",
+   "1 and s′",
+   "2 with t1 → s′",
+   "2. Hence t ≡ B(t1, t2) → B(s′",
+   "2) by rule (3). Analogously,",
+   "2) by rule (3). Thus we may take s′",
+   "L. Czajka",
+   "0 ≤ j ≤ n then t|p ≡ tj = sj = s|p",
+   "L. Czajka",
+   "0 be the",
+   "L. Czajka",
+   "L. Czajka",
+   "5.1. Properties of ∼U",
+   "2 with ti ∼U t′",
+   "i. Thus",
+   "i. Take s′ ≡ s′",
+   "2. Then t′ →∞",
+   "L. Czajka",
+   "2 with s′",
+   "2. Then u ≡ u1u2 with ui ⇒⊥U s′",
+   "2 with t′",
+   "2 such that t′",
+   "m. Then t2 →∞",
+   "L. Czajka",
+   "2 where t′",
+   "2. Then s ≡ s1s2 with t′",
+   "i. By the coinductive hypothesis ti ;NU si. Hence t ;NU s1s2 ≡ s.",
+   "2 with ti ;NU t′",
+   "2. Take t3 ≡ t′",
+   "2. We have",
+   "L. Czajka",
+   "2 and t′",
+   "i. By Lemma 5",
+   "L. Czajka",
+   "2 and t′",
+   "L. Czajka",
+   "Appendix A",
+   "2 with si ∼U s′",
+   "i. Because t ∈R and",
+   "1 ∈U, and thus s′ ∈U, and thus t′ ∈U. Otherwise"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 69,
+  "tp": 14,
+  "fp": 55,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 1,
+  "teds": 0.1428571428571429,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "L. Czajka",
+   "L. Czajka",
+   "L. Czajka",
+   "m) for any γ, i.e., it does not",
+   "L. Czajka",
+   "2) then",
+   "1) and s1 → s′",
+   "1) → f(s, t, t′), by rule (2)",
+   "2) and t′",
+   "1) with s1 → t1 and s1 → t′",
+   "1 with t1 → s′",
+   "1 and t′",
+   "1. More precisely",
+   "1 we obtain s′",
+   "1 and t′",
+   "1. Hence t ≡ A(t1) → A(s′",
+   "1) and t ≡ A(t′",
+   "1 and s′",
+   "2 with t1 → s′",
+   "2. Hence t ≡ B(t1, t2) → B(s′",
+   "2) by rule (3). Analogously,",
+   "2) by rule (3). Thus we may take s′",
+   "L. Czajka",
+   "0 ≤ j ≤ n then t|p ≡ tj = sj = s|p",
+   "L. Czajka",
+   "0 be the",
+   "L. Czajka",
+   "L. Czajka",
+   "5.1. Properties of ∼U",
+   "2 with ti ∼U t′",
+   "i. Thus",
+   "i. Take s′ ≡ s′",
+   "2. Then t′ →∞",
+   "L. Czajka",
+   "2 with s′",
+   "2. Then u ≡ u1u2 with ui ⇒⊥U s′",
+   "2 with t′",
+   "2 such that t′",
+   "m. Then t2 →∞",
+   "L. Czajka",
+   "2 where t′",
+   "2. Then s ≡ s1s2 with t′",
+   "i. By the coinductive hypothesis ti ;NU si. Hence t ;NU s1s2 ≡ s.",
+   "2 with ti ;NU t′",
+   "2. Take t3 ≡ t′",
+   "2. We have",
+   "L. Czajka",
+   "2 and t′",
+   "i. By Lemma 5",
+   "L. Czajka",
+   "2 and t′",
+   "L. Czajka",
+   "2 with si ∼U s′",
+   "i. Because t ∈R and",
+   "1 ∈U, and thus s′ ∈U, and thus t′ ∈U. Otherwise"
+  ],
+  "ignored_title_predictions": null
+ }
+}

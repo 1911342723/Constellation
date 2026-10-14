@@ -1,0 +1,132 @@
+{
+ "doc": "1410.8366",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 6,
+  "fp": 5,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "Abstract",
+   "Index Terms",
+   "ACK NOW LE DG M EN T"
+  ],
+  "unmatched_pred": [
+   "Appendix A",
+   "Appendix B",
+   "Appendix C",
+   "Appendix D",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Optimum asymptotic multiuser efficiency",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A The optimum asymptotic multiuser efficiency for i.i.d. binary antipodal random spreading",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B The optimum asymptotic multiuser efficiency for i.i.d. Gaussian spreading",
+   "page": 9,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Random Detecting Matrices",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV Conclusion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix D",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.015309599999454804,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 6,
+  "fp": 5,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "Abstract",
+   "Index Terms",
+   "ACK NOW LE DG M EN T"
+  ],
+  "unmatched_pred": [
+   "Appendix A",
+   "Appendix B",
+   "Appendix C",
+   "Appendix D",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

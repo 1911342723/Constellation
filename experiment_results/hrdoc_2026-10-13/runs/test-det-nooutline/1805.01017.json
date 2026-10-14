@@ -1,0 +1,115 @@
+{
+ "doc": "1805.01017",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Acknowledgment"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "2.78 and 5 µm (Sotin et al., 2005). However, it should"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 270,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Data processing",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.78 and 5 µm (Sotin et al., 2005). However, it should",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Temporal evolution of the north polar atmo-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Temporal evolution over the south pole",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Temporal evolution of the HCN spectral signa-",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.345567100001062,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Acknowledgment"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "2.78 and 5 µm (Sotin et al., 2005). However, it should"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.78 and 5 µm (Sotin et al., 2005). However, it should"
+  ],
+  "ignored_title_predictions": null
+ }
+}

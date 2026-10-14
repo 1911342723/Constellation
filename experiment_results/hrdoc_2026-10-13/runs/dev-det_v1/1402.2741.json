@@ -1,0 +1,195 @@
+{
+ "doc": "1402.2741",
+ "system": "det",
+ "metrics": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 16,
+  "teds": 0.7727272727272727,
+  "unmatched_gt": [
+   "Acknowledgments."
+  ],
+  "unmatched_pred": [
+   "1 Department of Computer Science,",
+   "2 Department of Informatics,"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 520,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Static Level Ancestors in Practice",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Department of Computer Science,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Department of Informatics,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction and background",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Deﬁnitions, experimental design and",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "implementations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Level Ancestor Implementations",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.1 The Table Algorithm",
+   "page": 3,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.2 The Jump-Pointer Algorithm",
+   "page": 3,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.3 The Ladder Algorithm",
+   "page": 3,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.4 The Jump-Ladder Algorithm",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.5 The Macro-Micro-Tree Algorithm",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.6 Menghani & Matani algorithm",
+   "page": 5,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.7 Ben-Amram’s Find-Smaller algorithm",
+   "page": 6,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.8 Torben Hagerup’s Find-Larger algorithm",
+   "page": 6,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.9 Tree representation and random generation",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "4 Algorithm Evaluation",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.1 Preprocessing",
+   "page": 10,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "4.2 Space Requirements",
+   "page": 11,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "4.3 Query time performance",
+   "page": 13,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 15,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.520947100001649,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 16,
+  "teds": 0.7391304347826086,
+  "unmatched_gt": [
+   "Acknowledgments."
+  ],
+  "unmatched_pred": [
+   "Static Level Ancestors in Practice",
+   "1 Department of Computer Science,",
+   "2 Department of Informatics,"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 15,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Department of Computer Science,",
+   "2 Department of Informatics,"
+  ],
+  "ignored_title_predictions": null
+ }
+}

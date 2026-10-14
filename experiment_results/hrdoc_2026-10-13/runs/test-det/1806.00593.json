@@ -1,0 +1,163 @@
+{
+ "doc": "1806.00593",
+ "system": "det",
+ "metrics": {
+  "gt": 12,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "Acknowledgment."
+  ],
+  "unmatched_pred": [
+   "1 Department of Computer Science and Engineering,",
+   "2 Department of Health Technology and Informatics,",
+   "3 Department of Imaging and Interventional Radiology,"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 145,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "BoxNet: Deep Learning Based Biomedical Image",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Segmentation Using Boxes Only Annotation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Department of Computer Science and Engineering,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Department of Health Technology and Informatics,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Department of Imaging and Interventional Radiology,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 A new procedure for annotating tilted bounding boxes",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.2 Computing rough segmentation based on box annotation",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.3 Generating accurate masks from rough segmentation",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3 Evaluation datasets and implementation details",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments and results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Evaluation of our ﬁnal segmentation results",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2 Ablation study",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.31975369999782,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 11,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "Acknowledgment."
+  ],
+  "unmatched_pred": [
+   "BoxNet: Deep Learning Based Biomedical Image",
+   "Segmentation Using Boxes Only Annotation",
+   "1 Department of Computer Science and Engineering,",
+   "2 Department of Health Technology and Informatics,",
+   "3 Department of Imaging and Interventional Radiology,"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Department of Computer Science and Engineering,",
+   "2 Department of Health Technology and Informatics,",
+   "3 Department of Imaging and Interventional Radiology,"
+  ],
+  "ignored_title_predictions": null
+ }
+}

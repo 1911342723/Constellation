@@ -1,0 +1,121 @@
+{
+ "doc": "1709.08924",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "B. Training",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "B. Training"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 131,
+  "layout_marked": 10,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9868244752121483,
+  "inserted_word_share": 0.840814121037464
+ },
+ "predictions": [
+  {
+   "text": "UBSegNet: Uniﬁed Biometric Region of Interest",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PROPOSED UBSEGNET",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. UBSegNet",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Training",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "(b) Training RPN network : Initially, we have trained the region proposal network along with the shared layers using the above computed ground truths for the RPN. We are training UBSegNet from scratch rather than considering pre-trained weights in order to make out the trained model as problem speciﬁc as possible. One has to notice, that RPN along with the shared layers has to be trained as an end-to-end network so as to achieve good performance.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. TESTING STRATEGY USED",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENTAL RESULTS AND DISCUSSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.5506698000026518,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "B. Training",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

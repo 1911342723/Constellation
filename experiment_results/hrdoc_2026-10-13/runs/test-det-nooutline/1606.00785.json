@@ -1,0 +1,334 @@
+{
+ "doc": "1606.00785",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 27,
+  "pred": 30,
+  "tp": 14,
+  "fp": 16,
+  "fn": 13,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.06451612903225812,
+  "unmatched_gt": [
+   "A. Encouraging Data Fidelity and Non-Negativity",
+   "C. Encouraging a Temporally Meaningful Template Order",
+   "D. Constraining the Concurrency of Templates",
+   "E. Differentiating between Estimation Noise and Note Events",
+   "F. Encouraging Meaningful Long-Term Note Activity",
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "C. LASSO and Total Diagonal Variation Terms",
+   "D. Markov-State Regularizer",
+   "F. Binary Markov-State and Strict Coupling Regularizer",
+   "Dataset",
+   "B. MIDI Aligned Piano Sounds (MAPS) Dataset",
+   "C. Influence of Individual Regularizers and Error Analysis",
+   "ACKN O W L ED G EM ENT"
+  ],
+  "unmatched_pred": [
+   "S. Ewert and M",
+   "2 xi −CiAi 2",
+   "2 xi − CiAk",
+   "2 with",
+   "2 x1−PAk 2",
+   "1 := argmin",
+   "2 := argmin",
+   "2 := argminχRK×L×N(x2) + ρ",
+   "2 onto the set RK×L×N",
+   "2 := πRK×L×N",
+   "3 := argmin",
+   "3 := sign(v) max(|v| − λ1",
+   "3 and all operations are element-wise.",
+   "4 := sign(v) max(|v| − λ2",
+   "5 := argmin",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 807,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Piano Transcription in the Studio Using an",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Extensible Alternating Directions Framework",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Ewert and M",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Encouraging Sparsity",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. PARAMETER ESTIMATION USING THE ALTERNATING",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Consensus Form ADMM",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "2 xi −CiAi 2",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 xi − CiAk",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Linearized ADMM",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "2 with",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. MINIMIZING THE INDIVIDUAL TERMS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Kullback-Leibler Data Fidelity Term",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "2 x1−PAk 2",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 := argmin",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Non-negativity Term",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "2 := argmin",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 := argminχRK×L×N(x2) + ρ",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 onto the set RK×L×N",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 := πRK×L×N",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 := argmin",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 := sign(v) max(|v| − λ1",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 and all operations are element-wise.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 := sign(v) max(|v| − λ2",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 := argmin",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Thresholding Set Term",
+   "page": 9,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "VI. EXPERIMENTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. University of Minnesota / Native Instruments (UM-NI)",
+   "page": 9,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.476314999999886,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 32,
+  "tp": 14,
+  "fp": 18,
+  "fn": 13,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.06060606060606055,
+  "unmatched_gt": [
+   "A. Encouraging Data Fidelity and Non-Negativity",
+   "C. Encouraging a Temporally Meaningful Template Order",
+   "D. Constraining the Concurrency of Templates",
+   "E. Differentiating between Estimation Noise and Note Events",
+   "F. Encouraging Meaningful Long-Term Note Activity",
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "C. LASSO and Total Diagonal Variation Terms",
+   "D. Markov-State Regularizer",
+   "F. Binary Markov-State and Strict Coupling Regularizer",
+   "Dataset",
+   "B. MIDI Aligned Piano Sounds (MAPS) Dataset",
+   "C. Influence of Individual Regularizers and Error Analysis",
+   "ACKN O W L ED G EM ENT"
+  ],
+  "unmatched_pred": [
+   "Piano Transcription in the Studio Using an",
+   "Extensible Alternating Directions Framework",
+   "S. Ewert and M",
+   "2 xi −CiAi 2",
+   "2 xi − CiAk",
+   "2 with",
+   "2 x1−PAk 2",
+   "1 := argmin",
+   "2 := argmin",
+   "2 := argminχRK×L×N(x2) + ρ",
+   "2 onto the set RK×L×N",
+   "2 := πRK×L×N",
+   "3 := argmin",
+   "3 := sign(v) max(|v| − λ1",
+   "3 and all operations are element-wise.",
+   "4 := sign(v) max(|v| − λ2",
+   "5 := argmin",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 29,
+  "tp": 14,
+  "fp": 15,
+  "fn": 12,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.06666666666666665,
+  "unmatched_gt": [
+   "A. Encouraging Data Fidelity and Non-Negativity",
+   "C. Encouraging a Temporally Meaningful Template Order",
+   "D. Constraining the Concurrency of Templates",
+   "E. Differentiating between Estimation Noise and Note Events",
+   "F. Encouraging Meaningful Long-Term Note Activity",
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "C. LASSO and Total Diagonal Variation Terms",
+   "D. Markov-State Regularizer",
+   "F. Binary Markov-State and Strict Coupling Regularizer",
+   "Dataset",
+   "B. MIDI Aligned Piano Sounds (MAPS) Dataset",
+   "C. Influence of Individual Regularizers and Error Analysis"
+  ],
+  "unmatched_pred": [
+   "S. Ewert and M",
+   "2 xi −CiAi 2",
+   "2 xi − CiAk",
+   "2 with",
+   "2 x1−PAk 2",
+   "1 := argmin",
+   "2 := argmin",
+   "2 := argminχRK×L×N(x2) + ρ",
+   "2 onto the set RK×L×N",
+   "2 := πRK×L×N",
+   "3 := argmin",
+   "3 := sign(v) max(|v| − λ1",
+   "3 and all operations are element-wise.",
+   "4 := sign(v) max(|v| − λ2",
+   "5 := argmin"
+  ],
+  "ignored_title_predictions": null
+ }
+}

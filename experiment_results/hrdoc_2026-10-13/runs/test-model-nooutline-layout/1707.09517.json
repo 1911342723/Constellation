@@ -1,0 +1,188 @@
+{
+ "doc": "1707.09517",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1923,
+  "layout_marked": 23,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14541,
+   "completion_tokens": 966,
+   "total_tokens": 15507
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9116412340907577,
+  "inserted_word_share": 0.0827355011733154
+ },
+ "predictions": [
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Examples",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A1",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A2",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B1: The maximum kmax",
+   "page": 13,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Appendix B2",
+   "page": 14,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Appendix C: Proof of Theorem A",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C1",
+   "page": 18,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Appendix C2",
+   "page": 20,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Appendix C3",
+   "page": 23,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Appendix C4",
+   "page": 25,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Appendix C5",
+   "page": 26,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Appendix D: Proof of Theorem B",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix E",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix F: Supplementary networks",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix G",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix H: Ineﬃcient networks",
+   "page": 32,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 23.46427920000133,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

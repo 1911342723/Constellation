@@ -1,0 +1,239 @@
+{
+ "doc": "1606.00785",
+ "system": "outline",
+ "metrics": {
+  "gt": 27,
+  "pred": 28,
+  "tp": 24,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 24,
+  "parent_correct": 22,
+  "teds": 0.7586206896551724,
+  "unmatched_gt": [
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "Dataset",
+   "ACKN O W L ED G EM ENT"
+  ],
+  "unmatched_pred": [
+   "References",
+   "Biographies",
+   "Sebastian Ewert",
+   "Mark Sandler"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Proposed Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Encouraging Data Fidelity and Non-Negativity",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-B Encouraging Sparsity",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-C Encouraging a Temporally Meaningful Template Order",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-D Constraining the Concurrency of Templates",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-E Differentiating between Estimation Noise and Note Events",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-F Encouraging Meaningful Long-Term Note Activity",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV Parameter Estimation using the Alternating Direction Method of Multipliers",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Consensus Form ADMM",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "IV-B Linearized ADMM",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V Minimizing the Individual Terms",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-A Kullback-Leibler Data Fidelity Term",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V-B Non-negativity Term",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V-C LASSO and Total Diagonal Variation Terms",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V-D Markov-State Regularizer",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V-E Thresholding Set Term",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V-F Binary Markov-State and Strict Coupling Regularizer",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI Experiments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A University of Minnesota / Native Instruments (UM-NI) Dataset",
+   "page": 9,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "VI-B MIDI Aligned Piano Sounds (MAPS) Dataset",
+   "page": 10,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "VI-C Influence of Individual Regularizers and Error Analysis",
+   "page": 11,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "VII Conclusions",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Biographies",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sebastian Ewert",
+   "page": 14,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "Mark Sandler",
+   "page": 14,
+   "level": 2,
+   "parent": 25
+  }
+ ],
+ "seconds": 0.09674090000044089,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 28,
+  "tp": 24,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 24,
+  "parent_correct": 22,
+  "teds": 0.7586206896551724,
+  "unmatched_gt": [
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "Dataset",
+   "ACKN O W L ED G EM ENT"
+  ],
+  "unmatched_pred": [
+   "References",
+   "Biographies",
+   "Sebastian Ewert",
+   "Mark Sandler"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 24,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 24,
+  "parent_correct": 22,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "Biographies",
+   "Sebastian Ewert",
+   "Mark Sandler"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,183 @@
+{
+ "doc": "1610.08445",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9545454545454546,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1027,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Notation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Converting Inference for SRL Models into WFOMC",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Calculating the WFOMC of a Theory",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Domain-Liftability",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 The Domain Recursion Rule",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Domain Recursion Makes More Theories Domain-Liftable",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 S 2FO2 and S 2RU",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experiments and Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Proofs of the Theorems, Propositions, and Lemmas",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1 Proof of Proposition 1",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "9.2 Proof of Proposition 2",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "9.3 Proof of Proposition 3",
+   "page": 10,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "9.4 Proof of Theorem 1",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "9.5 Proof of Lemma 1",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "9.6 Proof of Lemma 2",
+   "page": 16,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "9.7 Proof of Proposition 4",
+   "page": 20,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.758033499998419,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9545454545454546,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

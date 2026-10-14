@@ -1,0 +1,113 @@
+{
+ "doc": "1807.09332",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Abstract—",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 618,
+  "layout_marked": 12,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9184720638540479,
+  "inserted_word_share": 0.3900807672892479
+ },
+ "predictions": [
+  {
+   "text": "Multipath Transmission Scheduling in Millimeter",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL AND ASSUMPTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SOLVING THE OPTIMAL CONTROL POLICY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal MDP Solution",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Approximate Learning Scheme",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "V. NUMERICAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.6580446000007214,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Abstract—",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

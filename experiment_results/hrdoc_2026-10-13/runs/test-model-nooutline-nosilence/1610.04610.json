@@ -1,0 +1,140 @@
+{
+ "doc": "1610.04610",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 15,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2.1. Material constitutive models",
+   "2.1.2. Yarns/fibres",
+   "2.1.3. Fibres/matrix interfaces",
+   "2.2. Multi-scale computational homogenisation",
+   "4.1. Unidirectional GFRP composites",
+   "4.2. Multi-fibres multi-layer RVE",
+   "4.3. Plain weave textile composites"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 960,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 20944,
+   "completion_tokens": 316,
+   "total_tokens": 21260
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Computational framework",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Calibration and validation of plasticity model",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Numerical Examples",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Concluding remarks",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.85985779999828,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "2.1. Material constitutive models",
+   "2.1.2. Yarns/fibres",
+   "2.1.3. Fibres/matrix interfaces",
+   "2.2. Multi-scale computational homogenisation",
+   "4.1. Unidirectional GFRP composites",
+   "4.2. Multi-fibres multi-layer RVE",
+   "4.3. Plain weave textile composites"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.46153846153846156,
+  "unmatched_gt": [
+   "2.1. Material constitutive models",
+   "2.1.2. Yarns/fibres",
+   "2.1.3. Fibres/matrix interfaces",
+   "2.2. Multi-scale computational homogenisation",
+   "4.1. Unidirectional GFRP composites",
+   "4.2. Multi-fibres multi-layer RVE",
+   "4.3. Plain weave textile composites"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

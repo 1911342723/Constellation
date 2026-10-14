@@ -1,0 +1,113 @@
+{
+ "doc": "1806.05936",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 852,
+  "layout_marked": 11,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9779993909866017,
+  "inserted_word_share": 0.020658636987345602
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Kolmogorov Complexity",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Characterization of EXT",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Translating the problem: hypergraphs",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 The positive case: random hypergraphs",
+   "page": 10,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 The negative case: β ≥ kα/(1 + (k − 1)α)",
+   "page": 12,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Characterization of EXTp",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Going beyond constant-size advice",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.087117399998533,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

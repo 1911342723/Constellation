@@ -1,0 +1,162 @@
+{
+ "doc": "1509.04706",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 516,
+  "layout_marked": 18,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10070,
+   "completion_tokens": 646,
+   "total_tokens": 10716
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9392346854984398,
+  "inserted_word_share": 0.9699955405157262
+ },
+ "predictions": [
+  {
+   "text": "Direct high-order edge-preserving regularization for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Image reconstruction problem",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Regularization",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. A note on the regularization error",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. Edge-preserving piecewise-smooth regularization",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5. Regularized reconstruction with LS data ﬁdelity term",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.6. Regularized reconstruction with Poisson data ﬁdelity term",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Numerical Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. CT reconstruction",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2. ET reconstruction",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4. Discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.968977000004088,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

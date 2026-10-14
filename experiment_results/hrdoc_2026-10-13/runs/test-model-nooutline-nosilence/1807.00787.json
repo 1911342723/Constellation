@@ -1,0 +1,204 @@
+{
+ "doc": "1807.00787",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 18,
+  "pred": 21,
+  "tp": 17,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 13,
+  "teds": 0.7727272727272727,
+  "unmatched_gt": [
+   "ACM Reference Format:"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "VIA INEQUALITY INDICES",
+   "Unfairness",
+   "1 and the other (1 − p) fraction receives 2. The mean benefit is,"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 571,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17749,
+   "completion_tokens": 753,
+   "total_tokens": 18502
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 MEASURING ALGORITHMIC UNFAIRNESS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIA INEQUALITY INDICES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Setting",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Unfairness as Inequality in Benefits",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Axioms for Measuring Inequality",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Comparison with Previous Work",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 THEORETICAL CHARACTERIZATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Accuracy vs. Individual Fairness",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 Individual vs. Group Fairness",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 EMPIRICAL ANALYSIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Fairness vs. Accuracy Tradeoffs",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2 Fairness Decomposability",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.3 Interaction Between Different Types of",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Unfairness",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A APPENDIX: TECHNICAL MATERIAL",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 and the other (1 − p) fraction receives 2. The mean benefit is,",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.953362899999775,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 21,
+  "tp": 17,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 13,
+  "teds": 0.7727272727272727,
+  "unmatched_gt": [
+   "ACM Reference Format:"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "VIA INEQUALITY INDICES",
+   "Unfairness",
+   "1 and the other (1 − p) fraction receives 2. The mean benefit is,"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "ACM Reference Format:"
+  ],
+  "unmatched_pred": [
+   "VIA INEQUALITY INDICES",
+   "Unfairness",
+   "1 and the other (1 − p) fraction receives 2. The mean benefit is,"
+  ],
+  "ignored_title_predictions": null
+ }
+}

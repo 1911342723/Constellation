@@ -1,0 +1,148 @@
+{
+ "doc": "1704.01960",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 383,
+  "layout_marked": 15,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13806,
+   "completion_tokens": 493,
+   "total_tokens": 14299
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9780879092213381,
+  "inserted_word_share": 0.9806342483795161
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Methodology",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. IB/FE Framework",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. MV-LV Model Construction",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Soft Tissue Mechanics",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. Boundary Conditions and Model Implementation",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Conﬂict interests",
+   "page": 11,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.234833599999547,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

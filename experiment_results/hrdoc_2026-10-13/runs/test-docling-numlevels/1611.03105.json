@@ -1,0 +1,115 @@
+{
+ "doc": "1611.03105",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "Abstract:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 26.13689290000184
+ },
+ "predictions": [
+  {
+   "text": "Formation Control for Multi-Agent Systems with Connectivity Preservation and Event-Triggered Controllers ‹",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. PRELIMINARIES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Algebraic Graph Theory",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Formation Control Problem",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. FORMATION CONTROL WITH CONNECTIVITY PRESERVATION: SINGLE INTEGRATORS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. FORMATION CONTROL WITH CONNECTIVITY PRESERVATION: DOUBLE INTEGRATORS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. SIMULATIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. CONCLUSIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.007526499997766223,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "Abstract:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

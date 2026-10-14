@@ -1,0 +1,161 @@
+{
+ "doc": "1808.03958",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 5,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "II . ME THOD S",
+   "A. Ganglion cell model",
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "C. Classification of spikes by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "S. Jia, Z. Yu, Y. Tian, T",
+   "Correlated spikes between same subunits",
+   "Uncorrelated spikes between different subunits"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 509,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Neural System Identiﬁcation with Spike-triggered",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Non-negative Matrix Factorization",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Jia, Z. Yu, Y. Tian, T",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Spike-triggered analysis",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Subunit ﬁlters revealed by STNMF",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Correlated spikes between same subunits",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Uncorrelated spikes between different subunits",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Neuronal circuit at single cell level",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. System identiﬁcation of neural network",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 80.9031019000031,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 7,
+  "fp": 5,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 5,
+  "teds": 0.1875,
+  "unmatched_gt": [
+   "II . ME THOD S",
+   "A. Ganglion cell model",
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "C. Classification of spikes by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "Neural System Identiﬁcation with Spike-triggered",
+   "Non-negative Matrix Factorization",
+   "S. Jia, Z. Yu, Y. Tian, T",
+   "Correlated spikes between same subunits",
+   "Uncorrelated spikes between different subunits"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 7,
+  "level_correct": 6,
+  "parent_correct": 5,
+  "teds": 0.19999999999999996,
+  "unmatched_gt": [
+   "II . ME THOD S",
+   "A. Ganglion cell model",
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "C. Classification of spikes by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons"
+  ],
+  "unmatched_pred": [
+   "S. Jia, Z. Yu, Y. Tian, T",
+   "Correlated spikes between same subunits",
+   "Uncorrelated spikes between different subunits"
+  ],
+  "ignored_title_predictions": null
+ }
+}

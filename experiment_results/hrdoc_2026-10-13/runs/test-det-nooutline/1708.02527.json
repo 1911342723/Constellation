@@ -1,0 +1,140 @@
+{
+ "doc": "1708.02527",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 9,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "V. Durant,1, 2, ∗ P. Capel,1, 2, 3, † L",
+   "2.224 MeV",
+   "1.6 fm (green)"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 307,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Double-folding potentials from chiral eﬀective ﬁeld theory",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. Durant,1, 2, ∗ P. Capel,1, 2, 3, † L",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. DOUBLE-FOLDING POTENTIAL:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. LOCAL CHIRAL EFT INTERACTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Nucleon-nucleon potentials",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.224 MeV",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Double-folding potential",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. ELASTIC SCATTERING",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.6 fm (green)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. FUSION REACTIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. SUMMARY AND OUTLOOK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.840440500000113,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 13,
+  "tp": 9,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Double-folding potentials from chiral eﬀective ﬁeld theory",
+   "V. Durant,1, 2, ∗ P. Capel,1, 2, 3, † L",
+   "2.224 MeV",
+   "1.6 fm (green)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "V. Durant,1, 2, ∗ P. Capel,1, 2, 3, † L",
+   "2.224 MeV",
+   "1.6 fm (green)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

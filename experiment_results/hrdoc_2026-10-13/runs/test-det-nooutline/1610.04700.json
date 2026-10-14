@@ -1,0 +1,111 @@
+{
+ "doc": "1610.04700",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "x + v1 (mod 1), otherwise",
+   "Acknowledgements"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 199,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Background",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 General set-up",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Finiteness theorem when m = d + 1",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Semi-continuity of the attractors",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Piecewise translation maps on tori",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "x + v1 (mod 1), otherwise",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.544740700002876,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "x + v1 (mod 1), otherwise",
+   "Acknowledgements"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "x + v1 (mod 1), otherwise"
+  ],
+  "ignored_title_predictions": null
+ }
+}

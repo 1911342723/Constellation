@@ -1,0 +1,129 @@
+{
+ "doc": "1603.08631",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "B. Deep Learning"
+  ],
+  "unmatched_pred": [
+   "II-B Deep Learning",
+   "II-B.2 Adoped LeNet-5",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Background and Algorithms",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Data Acquisition and Preprocessing",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Deep Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B.1 Convolutional Neural Networks (CNNs / ConvNets)",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "II-B.2 Adoped LeNet-5",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III Results and Discussion",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV Conclusions",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Acknowledgement",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Appendix I",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.02750240000023041,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "B. Deep Learning"
+  ],
+  "unmatched_pred": [
+   "II-B Deep Learning",
+   "II-B.2 Adoped LeNet-5",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "B. Deep Learning"
+  ],
+  "unmatched_pred": [
+   "II-B Deep Learning",
+   "II-B.2 Adoped LeNet-5"
+  ],
+  "ignored_title_predictions": null
+ }
+}

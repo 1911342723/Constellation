@@ -1,0 +1,82 @@
+{
+ "doc": "1604.07649",
+ "system": "model",
+ "metrics": {
+  "gt": 6,
+  "pred": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 252,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 12717,
+   "completion_tokens": 95,
+   "total_tokens": 12812
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.344237099998281,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

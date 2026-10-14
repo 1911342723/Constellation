@@ -1,0 +1,183 @@
+{
+ "doc": "1508.07509",
+ "system": "docling",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 49.758440900001006
+ },
+ "predictions": [
+  {
+   "text": "Statistically-estimated tree composition for the northeastern United States at the time of Euro-American settlement",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Data",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Statistical model",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Data model",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Spatial process models",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Prior Distributions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Latent Variable Model",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5 Model for township data",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.6 Computation",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Model comparison",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Design",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Results",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Data product",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Discussion",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Author contributions",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Appendix",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 MCMC details",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.2 Estimating θp(s) via Monte Carlo integration",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.020658599998569116,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6956521739130435,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Statistically-estimated tree composition for the northeastern United States at t"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 9,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

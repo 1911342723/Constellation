@@ -1,0 +1,159 @@
+{
+ "doc": "1806.02133",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 8,
+  "pred": 12,
+  "tp": 8,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Michal Praszalowicza,1",
+   "for heavy baryons",
+   "in the Chiral Quark Soliton Model",
+   "3 For reader’s convenience we give the relations of the constants a1,2,3 to nucl"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 505,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4152,
+   "completion_tokens": 361,
+   "total_tokens": 4513
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Heavy baryon decay widths in the large Nc limit",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "in chiral theory",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Michal Praszalowicza,1",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Chiral Quark Soliton Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "for heavy baryons",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 Large Nc representations for heavy baryons",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Heavy baryon masses",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "in the Chiral Quark Soliton Model",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Decay widths",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 For reader’s convenience we give the relations of the constants a1,2,3 to nucleon axial charges in the chiral",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Summary",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 25.132606399998622,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 14,
+  "tp": 8,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Heavy baryon decay widths in the large Nc limit",
+   "in chiral theory",
+   "Michal Praszalowicza,1",
+   "for heavy baryons",
+   "in the Chiral Quark Soliton Model",
+   "3 For reader’s convenience we give the relations of the constants a1,2,3 to nucl"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Michal Praszalowicza,1",
+   "for heavy baryons",
+   "in the Chiral Quark Soliton Model",
+   "3 For reader’s convenience we give the relations of the constants a1,2,3 to nucl"
+  ],
+  "ignored_title_predictions": null
+ }
+}

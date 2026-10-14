@@ -1,0 +1,118 @@
+{
+ "doc": "1806.05936",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 852,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 9,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 9,
+   "prompt_tokens": 35539,
+   "completion_tokens": 550,
+   "total_tokens": 36089
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Kolmogorov Complexity",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Characterization of EXT",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Translating the problem: hypergraphs",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 The positive case: random hypergraphs",
+   "page": 10,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 The negative case: β ≥ kα/(1 + (k − 1)α)",
+   "page": 12,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Characterization of EXTp",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Going beyond constant-size advice",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.90999920000104,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "doc": "1610.02204",
+ "system": "det",
+ "metrics": {
+  "gt": 2,
+  "pred": 7,
+  "tp": 1,
+  "fp": 6,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "BIBLIOGRAPHY STYLES"
+  ],
+  "unmatched_pred": [
+   "10 bohr",
+   "10 bohr",
+   "C. Joachim, Phys. Rev. Lett. 94, 026803 (2005).",
+   "N. Luchier,",
+   "P. Schorsch,",
+   "P. Schattschneider,"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 135,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Mapping atomic orbitals with the transmission electron microscope: Images of",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "defective graphene predicted from ﬁrst-principles theory",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 bohr",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 bohr",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Joachim, Phys. Rev. Lett. 94, 026803 (2005).",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "N. Luchier,",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "P. Schorsch,",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "P. Schattschneider,",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  }
+ ],
+ "seconds": 2.2673796999988554,
+ "metrics_v1": {
+  "gt": 2,
+  "pred": 9,
+  "tp": 1,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.19999999999999996,
+  "unmatched_gt": [
+   "BIBLIOGRAPHY STYLES"
+  ],
+  "unmatched_pred": [
+   "Mapping atomic orbitals with the transmission electron microscope: Images of",
+   "defective graphene predicted from ﬁrst-principles theory",
+   "10 bohr",
+   "10 bohr",
+   "C. Joachim, Phys. Rev. Lett. 94, 026803 (2005).",
+   "N. Luchier,",
+   "P. Schorsch,",
+   "P. Schattschneider,"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 1,
+  "pred": 6,
+  "tp": 0,
+  "fp": 6,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.1428571428571429,
+  "unmatched_gt": [
+   "BIBLIOGRAPHY STYLES"
+  ],
+  "unmatched_pred": [
+   "10 bohr",
+   "10 bohr",
+   "C. Joachim, Phys. Rev. Lett. 94, 026803 (2005).",
+   "N. Luchier,",
+   "P. Schorsch,",
+   "P. Schattschneider,"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "doc": "1511.07373",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 19,
+  "pred": 29,
+  "tp": 19,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Robustness assumption*: A plausibility space",
+   "Monotonicity assumption*: The domain of plau-",
+   "Uniform partition assumption[15]: For every",
+   "Standard events and precise measurements",
+   "Embeddability assumption[49]: Inference should",
+   "Reﬁnability assumption*[4]: In a plausibility",
+   "Closedness assumption*[5]: The functions F, S",
+   "Deﬁnition 1 A proper plausibility space is a",
+   "S(⊥) = ⊤. A proper ordered plausibility space",
+   "Archimedean assumption: Fine[17] assumes that"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 335,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17452,
+   "completion_tokens": 776,
+   "total_tokens": 18228
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Symbols and Plausibilities.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Robustness assumption*: A plausibility space",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Monotonicity assumption*: The domain of plau-",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Coherence, or Dutch Book",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Embeddability, Denseness,",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Uniform partition assumption[15]: For every",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Standard events and precise measurements",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Embeddability assumption[49]: Inference should",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Reﬁnability assumption*[4]: In a plausibility",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Closedness assumption*[5]: The functions F, S",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Deﬁnition 1 A proper plausibility space is a",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "S(⊥) = ⊤. A proper ordered plausibility space",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Common sense assumptions entail",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Pragmatics",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Extended Probability",
+   "page": 6,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "Archimedean assumption: Fine[17] assumes that",
+   "page": 6,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "7 Summary and Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Retrospect",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 Countable additivity",
+   "page": 9,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "8.2 Partially ordered domains and",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "8.2.1 Representing rings as subdirect sums",
+   "page": 10,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "8.2.2 Robustness examples",
+   "page": 11,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "8.3 Philosophy",
+   "page": 12,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "A Proof of Theorem 1",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Proof of Theorem 2",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.808104199997615,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 29,
+  "tp": 19,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Robustness assumption*: A plausibility space",
+   "Monotonicity assumption*: The domain of plau-",
+   "Uniform partition assumption[15]: For every",
+   "Standard events and precise measurements",
+   "Embeddability assumption[49]: Inference should",
+   "Reﬁnability assumption*[4]: In a plausibility",
+   "Closedness assumption*[5]: The functions F, S",
+   "Deﬁnition 1 A proper plausibility space is a",
+   "S(⊥) = ⊤. A proper ordered plausibility space",
+   "Archimedean assumption: Fine[17] assumes that"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 26,
+  "tp": 16,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6296296296296297,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Robustness assumption*: A plausibility space",
+   "Monotonicity assumption*: The domain of plau-",
+   "Uniform partition assumption[15]: For every",
+   "Standard events and precise measurements",
+   "Embeddability assumption[49]: Inference should",
+   "Reﬁnability assumption*[4]: In a plausibility",
+   "Closedness assumption*[5]: The functions F, S",
+   "Deﬁnition 1 A proper plausibility space is a",
+   "S(⊥) = ⊤. A proper ordered plausibility space",
+   "Archimedean assumption: Fine[17] assumes that"
+  ],
+  "ignored_title_predictions": null
+ }
+}

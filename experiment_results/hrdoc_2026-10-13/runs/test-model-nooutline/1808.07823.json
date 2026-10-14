@@ -1,0 +1,139 @@
+{
+ "doc": "1808.07823",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "14. Mao, X., Shen, C., Yang, Y.B.",
+   "15. Ronneberger, O., Fischer, P., Brox, T."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 222,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13966,
+   "completion_tokens": 379,
+   "total_tokens": 14345
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Improving MLA with CNNs",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Data acquisition and training",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Experimental evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Settings",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Results",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "14. Mao, X., Shen, C., Yang, Y.B.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "15. Ronneberger, O., Fischer, P., Brox, T.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.610108900000341,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "14. Mao, X., Shen, C., Yang, Y.B.",
+   "15. Ronneberger, O., Fischer, P., Brox, T."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "14. Mao, X., Shen, C., Yang, Y.B.",
+   "15. Ronneberger, O., Fischer, P., Brox, T."
+  ],
+  "ignored_title_predictions": null
+ }
+}

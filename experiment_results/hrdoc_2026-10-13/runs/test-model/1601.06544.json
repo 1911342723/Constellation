@@ -1,0 +1,116 @@
+{
+ "doc": "1601.06544",
+ "system": "model",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1319,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 27509,
+   "completion_tokens": 419,
+   "total_tokens": 27928
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem formulation and stabilized discretization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. A dual weighted residual approach for stabilized ﬁnite",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "element methods",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Practical Aspects",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Numerical studies",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Summary",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Appendix",
+   "page": 32,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.774035799997364,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

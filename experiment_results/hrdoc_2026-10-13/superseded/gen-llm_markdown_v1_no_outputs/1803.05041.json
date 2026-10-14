@@ -1,0 +1,207 @@
+{
+ "doc": "1803.05041",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7706,
+   "completion_tokens": 7664
+  },
+  "elapsed_llm_seconds": 34.566313100000116,
+  "content_preservation": 1.0,
+  "inserted_word_share": 0.0,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "METAL-POOR TYPE II CEPHEIDS WITH PERIODS LESS THAN THREE DAYS",
+    0,
+    1
+   ],
+   [
+    "ABSTRACT",
+    0,
+    2
+   ],
+   [
+    "1. INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "2. OBSERVATIONS AND DATA REDUCTION",
+    1,
+    1
+   ],
+   [
+    "3. SPECTROSCOPIC ANALYSIS",
+    1,
+    1
+   ],
+   [
+    "3.1. Oxygen",
+    1,
+    2
+   ],
+   [
+    "3.2. Sodium",
+    1,
+    2
+   ],
+   [
+    "4. DISCUSSION",
+    1,
+    1
+   ],
+   [
+    "4.1. Carbon, Nitrogen, and Oxygen",
+    3,
+    2
+   ],
+   [
+    "4.2. Light Elements",
+    3,
+    2
+   ],
+   [
+    "5. CONCLUSIONS",
+    3,
+    1
+   ],
+   [
+    "REFERENCES",
+    3,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "METAL-POOR TYPE II CEPHEIDS WITH PERIODS LESS THAN THREE DAYS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. OBSERVATIONS AND DATA REDUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. SPECTROSCOPIC ANALYSIS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Oxygen",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2. Sodium",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4. DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Carbon, Nitrogen, and Oxygen",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2. Light Elements",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5. CONCLUSIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 34.631817699999374,
+ "metrics_raw": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "METAL-POOR TYPE II CEPHEIDS WITH PERIODS LESS THAN THREE DAYS"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "METAL-POOR TYPE II CEPHEIDS WITH PERIODS LESS THAN THREE DAYS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

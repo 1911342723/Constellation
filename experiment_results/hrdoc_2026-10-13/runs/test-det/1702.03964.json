@@ -1,0 +1,145 @@
+{
+ "doc": "1702.03964",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 ´Ecole Normale Sup´erieure de Cachan, France"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 187,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "2 ´Ecole Normale Sup´erieure de Cachan, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Languages and Corpora",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Automatic Annotation Pipeline",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Segmentation",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Syntactic Analysis",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Universal Semantic Tagging",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4 Symbolization",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.5 Semantic Interpretation",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Cross-lingual Projection",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Adding Bits of Wisdom",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.241871899997932,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 ´Ecole Normale Sup´erieure de Cachan, France"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 ´Ecole Normale Sup´erieure de Cachan, France"
+  ],
+  "ignored_title_predictions": null
+ }
+}

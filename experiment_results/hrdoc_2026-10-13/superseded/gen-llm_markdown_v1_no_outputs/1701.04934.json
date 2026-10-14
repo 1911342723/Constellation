@@ -1,0 +1,229 @@
+{
+ "doc": "1701.04934",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 12204,
+   "completion_tokens": 11286
+  },
+  "elapsed_llm_seconds": 48.875198400000954,
+  "content_preservation": 0.9910235631467398,
+  "inserted_word_share": 0.004508453350031361,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Investigating the Application of Common-Sense Knowledge-Base for Identifying Term Obfuscation in Adversarial Communication",
+    0,
+    1
+   ],
+   [
+    "I. RESEARCH MOTIVATION AND AIM",
+    0,
+    1
+   ],
+   [
+    "II. BACKGROUND",
+    1,
+    1
+   ],
+   [
+    "III. RESEARCH CONTRIBUTIONS",
+    1,
+    1
+   ],
+   [
+    "IV. SOLUTION APPROACH",
+    2,
+    1
+   ],
+   [
+    "A. Worked-Out Example",
+    2,
+    2
+   ],
+   [
+    "B. Solution Pseudo-code and Algorithm",
+    3,
+    2
+   ],
+   [
+    "V. EXPERIMENTAL EVALUATION AND VALIDATION",
+    4,
+    1
+   ],
+   [
+    "A. Experimental Dataset",
+    4,
+    2
+   ],
+   [
+    "B. Term Substitution Technique",
+    5,
+    2
+   ],
+   [
+    "C. Experimental Results",
+    7,
+    2
+   ],
+   [
+    "VI. THREATS TO VALIDITY AND LIMITATIONS",
+    9,
+    1
+   ],
+   [
+    "VII. CONCLUSIONS",
+    10,
+    1
+   ],
+   [
+    "REFERENCES",
+    10,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Investigating the Application of Common-Sense Knowledge-Base for Identifying Term Obfuscation in Adversarial Communication",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. RESEARCH MOTIVATION AND AIM",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESEARCH CONTRIBUTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SOLUTION APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Worked-Out Example",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Solution Pseudo-code and Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "V. EXPERIMENTAL EVALUATION AND VALIDATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Dataset",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Term Substitution Technique",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Experimental Results",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "VI. THREATS TO VALIDITY AND LIMITATIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 49.03763369999797,
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Investigating the Application of Common-Sense Knowledge-Base for Identifying Ter"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Investigating the Application of Common-Sense Knowledge-Base for Identifying Ter"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

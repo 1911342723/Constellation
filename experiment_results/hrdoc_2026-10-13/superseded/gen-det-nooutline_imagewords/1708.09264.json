@@ -1,0 +1,187 @@
+{
+ "doc": "1708.09264",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 22,
+  "tp": 17,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "Supplemental Exercises"
+  ],
+  "unmatched_pred": [
+   "5. You observe a protein that is normally absent, but has occasional spikes in p",
+   "6. Prove that the Eqn",
+   "7. Show that maximization of the likelihood of the data (Eqn. 24) and the minimi",
+   "10. Use the Finite State Projection approach to analyze the system from problem ",
+   "11. Use the parameters in the caption of Fig"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 19,
+  "tp": 14,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Supplemental Exercises"
+  ],
+  "unmatched_pred": [
+   "5. You observe a protein that is normally absent, but has occasional spikes in p",
+   "6. Prove that the Eqn",
+   "7. Show that maximization of the likelihood of the data (Eqn. 24) and the minimi",
+   "10. Use the Finite State Projection approach to analyze the system from problem ",
+   "11. Use the parameters in the caption of Fig"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1237,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9311984212414783,
+  "inserted_word_share": 0.2840195875577626
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Chemical Master Equation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Analyzing Population Statistics with FSP Approaches.",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Notation for the FSP",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Properties of The Finite State Projection",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 The FSP Algorithm.",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3.1 Initialization of the FSP",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Further reductions to the Finite State Projection",
+   "page": 9,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Comparing CME models to single-cell data",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Examples",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Toggle Model",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2 Matching stochastic models to small RNA measurements in bacteria",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.3 Matching stochastic models stress response regulation in yeast",
+   "page": 14,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6 Summary",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. You observe a protein that is normally absent, but has occasional spikes in population level.",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Prove that the Eqn",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Show that maximization of the likelihood of the data (Eqn. 24) and the minimization of the",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. Use the Finite State Projection approach to analyze the system from problem 6.9. For your",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11. Use the parameters in the caption of Fig",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.157661700002791
+}

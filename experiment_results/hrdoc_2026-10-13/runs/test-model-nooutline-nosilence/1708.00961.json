@@ -1,0 +1,486 @@
+{
+ "doc": "1708.00961",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 15,
+  "pred": 50,
+  "tp": 15,
+  "fp": 35,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 7,
+  "teds": 0.196078431372549,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Y. Zhang and H",
+   "M. K",
+   "WGAN-MSE minG maxG LWGAN(G, D) + λ2LMSE(G)",
+   "WGAN-VGG minG maxG LWGAN(G, D) + λ1LVGG(G)",
+   "minG maxG LWGAN(G, D)",
+   "minG maxG LGAN(G, D)",
+   "(b) Quarter Dose FBP",
+   "(e) CNN-MSE",
+   "(h) WGAN-MSE",
+   "(a) Full Dose FBP",
+   "(c) DictRecon",
+   "(b) Quarter Dose FBP",
+   "(b) Quarter Dose FBP",
+   "(e) CNN-MSE",
+   "(d) GAN",
+   "(f) CNN-VGG",
+   "(g) WGAN",
+   "(e) CNN-MSE",
+   "(h) WGAN-MSE",
+   "(a) Full Dose FBP",
+   "(b) Quarter Dose FBP",
+   "(c) DictRecon",
+   "(d) GAN",
+   "(e) CNN-MSE",
+   "(f) CNN-VGG",
+   "(g) WGAN",
+   "(h) WGAN-MSE",
+   "(i) WGAN-VGG",
+   "(h) WGAN-MSE",
+   "SSIM",
+   "Mean SD",
+   "(a) VGG Map of Full Dose Image",
+   "(b) VGG Map of Quarter Dose Image",
+   "(c) Absolute Difference",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 424,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14269,
+   "completion_tokens": 596,
+   "total_tokens": 14865
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Low Dose CT Image Denoising Using a Generative",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Adversarial Network with Wasserstein Distance and",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Perceptual Loss",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Y. Zhang and H",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "M. K",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Noise Reduction Model",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. WGAN",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Perceptual Loss",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Network Structures",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Other Networks",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Datasets",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "WGAN-MSE minG maxG LWGAN(G, D) + λ2LMSE(G)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "WGAN-VGG minG maxG LWGAN(G, D) + λ1LVGG(G)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "minG maxG LWGAN(G, D)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "minG maxG LGAN(G, D)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Network Training",
+   "page": 3,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "C. Network Convergence",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Quarter Dose FBP",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(e) CNN-MSE",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(h) WGAN-MSE",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Denoising Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(a) Full Dose FBP",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(c) DictRecon",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Quarter Dose FBP",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Quarter Dose FBP",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(e) CNN-MSE",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(d) GAN",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(f) CNN-VGG",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(g) WGAN",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(e) CNN-MSE",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(h) WGAN-MSE",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(a) Full Dose FBP",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Quarter Dose FBP",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(c) DictRecon",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(d) GAN",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(e) CNN-MSE",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(f) CNN-VGG",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(g) WGAN",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(h) WGAN-MSE",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(i) WGAN-VGG",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(h) WGAN-MSE",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "SSIM",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Mean SD",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Quantitative Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 45
+  },
+  {
+   "text": "(a) VGG Map of Full Dose Image",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) VGG Map of Quarter Dose Image",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(c) Absolute Difference",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. VGG Feature Extractor",
+   "page": 7,
+   "level": 2,
+   "parent": 49
+  },
+  {
+   "text": "IV. DISCUSSIONS AND CONCLUSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.97847349999938,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 53,
+  "tp": 15,
+  "fp": 38,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 7,
+  "teds": 0.18518518518518523,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Low Dose CT Image Denoising Using a Generative",
+   "Adversarial Network with Wasserstein Distance and",
+   "Perceptual Loss",
+   "Y. Zhang and H",
+   "M. K",
+   "WGAN-MSE minG maxG LWGAN(G, D) + λ2LMSE(G)",
+   "WGAN-VGG minG maxG LWGAN(G, D) + λ1LVGG(G)",
+   "minG maxG LWGAN(G, D)",
+   "minG maxG LGAN(G, D)",
+   "(b) Quarter Dose FBP",
+   "(e) CNN-MSE",
+   "(h) WGAN-MSE",
+   "(a) Full Dose FBP",
+   "(c) DictRecon",
+   "(b) Quarter Dose FBP",
+   "(b) Quarter Dose FBP",
+   "(e) CNN-MSE",
+   "(d) GAN",
+   "(f) CNN-VGG",
+   "(g) WGAN",
+   "(e) CNN-MSE",
+   "(h) WGAN-MSE",
+   "(a) Full Dose FBP",
+   "(b) Quarter Dose FBP",
+   "(c) DictRecon",
+   "(d) GAN",
+   "(e) CNN-MSE",
+   "(f) CNN-VGG",
+   "(g) WGAN",
+   "(h) WGAN-MSE",
+   "(i) WGAN-VGG",
+   "(h) WGAN-MSE",
+   "SSIM",
+   "Mean SD",
+   "(a) VGG Map of Full Dose Image",
+   "(b) VGG Map of Quarter Dose Image",
+   "(c) Absolute Difference",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 49,
+  "tp": 15,
+  "fp": 34,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 7,
+  "teds": 0.19999999999999996,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Y. Zhang and H",
+   "M. K",
+   "WGAN-MSE minG maxG LWGAN(G, D) + λ2LMSE(G)",
+   "WGAN-VGG minG maxG LWGAN(G, D) + λ1LVGG(G)",
+   "minG maxG LWGAN(G, D)",
+   "minG maxG LGAN(G, D)",
+   "(b) Quarter Dose FBP",
+   "(e) CNN-MSE",
+   "(h) WGAN-MSE",
+   "(a) Full Dose FBP",
+   "(c) DictRecon",
+   "(b) Quarter Dose FBP",
+   "(b) Quarter Dose FBP",
+   "(e) CNN-MSE",
+   "(d) GAN",
+   "(f) CNN-VGG",
+   "(g) WGAN",
+   "(e) CNN-MSE",
+   "(h) WGAN-MSE",
+   "(a) Full Dose FBP",
+   "(b) Quarter Dose FBP",
+   "(c) DictRecon",
+   "(d) GAN",
+   "(e) CNN-MSE",
+   "(f) CNN-VGG",
+   "(g) WGAN",
+   "(h) WGAN-MSE",
+   "(i) WGAN-VGG",
+   "(h) WGAN-MSE",
+   "SSIM",
+   "Mean SD",
+   "(a) VGG Map of Full Dose Image",
+   "(b) VGG Map of Quarter Dose Image",
+   "(c) Absolute Difference"
+  ],
+  "ignored_title_predictions": null
+ }
+}

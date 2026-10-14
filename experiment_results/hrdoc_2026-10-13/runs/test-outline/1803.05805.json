@@ -1,0 +1,152 @@
+{
+ "doc": "1803.05805",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "ABSTRACT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1  Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2  Biomolecular conformational dynamics",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1  Free energy landscape",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2  Molecular dynamics simulation",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3  Markov Models",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4  Alanine Dipeptide Model",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3  Sonification",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1  Sonification parameters",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.1.1  Static parameters",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.1.2  Dynamic parameters",
+   "page": 4,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3.2  Mapping",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2.1  Interstate parameters",
+   "page": 4,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.2.2  Intrastate parameters",
+   "page": 5,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "4  Implementation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5  Conclusions and Future work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6  ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7  References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0695917000011832,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "ABSTRACT"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

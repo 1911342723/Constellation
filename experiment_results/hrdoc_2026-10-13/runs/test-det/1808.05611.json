@@ -1,0 +1,181 @@
+{
+ "doc": "1808.05611",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 19,
+  "tp": 14,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "15 epochs, α = 0.01",
+   "based on Semantic Similarity",
+   "1. WordNet-based synset selection (static",
+   "2. Model-based synset selection (dynamic",
+   "30 sec."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 289,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Learning Graph Metric Embeddings",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "15 epochs, α = 0.01",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Computing Pairwise Similarities",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Selection of the Similarity Measures",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2 Pruning the Dissimilar Pairs of Nodes",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5 Experiment 1: Intrinsic Evaluation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "based on Semantic Similarity",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. WordNet-based synset selection (static",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Model-based synset selection (dynamic",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experiment 2: Extrinsic Evaluation",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "based on Word Sense Disambiguation",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Computational Efﬁciency Evaluation",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "30 sec.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Discussion and Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.192321300000913,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 19,
+  "tp": 14,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "15 epochs, α = 0.01",
+   "based on Semantic Similarity",
+   "1. WordNet-based synset selection (static",
+   "2. Model-based synset selection (dynamic",
+   "30 sec."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 16,
+  "tp": 11,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "15 epochs, α = 0.01",
+   "based on Semantic Similarity",
+   "1. WordNet-based synset selection (static",
+   "2. Model-based synset selection (dynamic",
+   "30 sec."
+  ],
+  "ignored_title_predictions": null
+ }
+}

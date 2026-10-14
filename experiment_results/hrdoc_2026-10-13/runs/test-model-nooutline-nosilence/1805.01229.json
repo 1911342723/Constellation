@@ -1,0 +1,217 @@
+{
+ "doc": "1805.01229",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 11,
+  "pred": 21,
+  "tp": 11,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 ´ r3wD",
+   "1 wE",
+   "1 ´ r7wE",
+   "1 wD",
+   "Coupling mechanisms. Extensive experimental evidence indicates that both biochem",
+   "0 otherwise,",
+   "2 q M ˚",
+   "2 cosp5πpx ´ yq{2q, 3",
+   "11 “ M D",
+   "11 “ M E"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1555,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 5140,
+   "completion_tokens": 460,
+   "total_tokens": 5600
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction and modelling considerations",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Set of governing equations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 ´ r3wD",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 wE",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 ´ r7wE",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 wD",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Coupling mechanisms. Extensive experimental evidence indicates that both biochemical and mechanical processes work in concert during pattern formation (see for instance [1, 2, 25, 30, 35, 53]). In the speciﬁc context of skin appendage formation, signalling pathways control cell movements that eventually lead to mechanical tissue deformation due to cell aggregation [1, 25, 53]. These interactions can be represented by diverse local or non-local processes including advection, cytoskeleton regulation, chemical gradients, active stress, strain dependent diﬀusivity, and many others [40, 38]. In the present model we opt for including only local variations of the ADR and mechanical variables. This simpliﬁcation rules out some phenomena such as inter-cellular force transmission through cytoskeleton, nonlinear interactions (e.g., cells sensing, through ﬁlopodia, long-range variations), or anisotropy",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Weak formulation for the multidomain problem",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "0 otherwise,",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 A ﬁnite element method and its splitting scheme",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Nonlinear, partitioned Galerkin formulation",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Adaptive timestep scheme",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Algorithmic details",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4 Numerical tests",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 q M ˚",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 cosp5πpx ´ yq{2q, 3",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 “ M D",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 “ M E",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Concluding remarks",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.07089570000244,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 21,
+  "tp": 11,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 ´ r3wD",
+   "1 wE",
+   "1 ´ r7wE",
+   "1 wD",
+   "Coupling mechanisms. Extensive experimental evidence indicates that both biochem",
+   "0 otherwise,",
+   "2 q M ˚",
+   "2 cosp5πpx ´ yq{2q, 3",
+   "11 “ M D",
+   "11 “ M E"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 19,
+  "tp": 9,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.44999999999999996,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 ´ r3wD",
+   "1 wE",
+   "1 ´ r7wE",
+   "1 wD",
+   "Coupling mechanisms. Extensive experimental evidence indicates that both biochem",
+   "0 otherwise,",
+   "2 q M ˚",
+   "2 cosp5πpx ´ yq{2q, 3",
+   "11 “ M D",
+   "11 “ M E"
+  ],
+  "ignored_title_predictions": null
+ }
+}

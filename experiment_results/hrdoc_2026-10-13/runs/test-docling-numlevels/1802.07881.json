@@ -1,0 +1,123 @@
+{
+ "doc": "1802.07881",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "end for"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "end for"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 19.807722500001546
+ },
+ "predictions": [
+  {
+   "text": "DIVERSITY REGULARIZATION IN DEEP ENSEMBLES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 EVALUATING CALIBRATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "end for",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 RESULTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESULTS ON CIFAR-10",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DEEP ENSEMBLES WITH DIFFERENT M",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.005708999997295905,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "end for"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "doc": "1610.07651",
+ "system": "outline",
+ "metrics": {
+  "gt": 21,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9545454545454546,
+  "unmatched_gt": [
+   "ABSTRACT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1  INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2  CRSS baselines",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1  CRSS1: UBM i-Vector",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2  CRSS2: SWB DNN i-Vector",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3  CRSS3: UBM i-Vector",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4  CRSS4: Fisher English DNN i-Vector",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3  Core components in system development",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1  Speaker clustering of unlabeled data",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2  Discriminant analysis via support vectors (SVDA)",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3  Unlabeled data PLDA",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4  Calibration and fusion",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4  CRSS sub-systems",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5  CRSS submissions",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6  Performance of CRSS sub-systems on SRE 2016 Dev data",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7  COMPUTATIONAL RESOURCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1  CPU cluster",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "7.2  GPU machines",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "7.3  CPU execution time",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "8  Acknowledgement",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9  References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.11384840000027907,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9545454545454546,
+  "unmatched_gt": [
+   "ABSTRACT"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

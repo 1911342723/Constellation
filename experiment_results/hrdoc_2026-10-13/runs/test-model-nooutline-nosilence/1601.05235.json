@@ -1,0 +1,349 @@
+{
+ "doc": "1601.05235",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 36,
+  "pred": 44,
+  "tp": 36,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 27,
+  "parent_correct": 27,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 exp\u0010− x2",
+   "2 )e(inΦ+i nµ",
+   "IP1",
+   "IP5",
+   "2 : e:F 1: e:f2",
+   "2 : e:f1",
+   "2 : e:f2",
+   "2 :einΦ = einµ1einΦ = ein(µ1+Φ)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1477,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 19742,
+   "completion_tokens": 1367,
+   "total_tokens": 21109
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Beam–beam force",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Elliptical beams",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Round beams",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Incoherent effects—single-particle effects",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Beam–beam parameter",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Non-linear effects",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Beam stability",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Beam–beam limit",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Crossing angle",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10.1 Long-range beam–beam effects",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "10.1.1 Opposite-sign tune shift",
+   "page": 9,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "10.1.2 Strength of long-range interactions",
+   "page": 9,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "10.1.3 Footprint for long-range interactions",
+   "page": 10,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "10.1.4 Dynamic aperture reduction due to long-range interactions",
+   "page": 11,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "11 Beam–beam-induced orbit effects",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "12 PACMAN bunches",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "13 Coherent beam–beam effects",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "14 Coherent beam–beam modes",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "15 Compensation of beam–beam effects",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "16 Electron lenses",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "17 Electrostatic wire",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "18 Möbius scheme",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendices",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Appendix A",
+   "page": 19,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "0 exp\u0010− x2",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Appendix B",
+   "page": 21,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "C Appendix C",
+   "page": 23,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "C.1 Classical approach",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.2 Map-based approach using Lie transforms and invariant",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.2.1 Single interaction point",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 )e(inΦ+i nµ",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.2.2 Non-linear beam–beam tune shift",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.2.3 Two interaction points",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IP1",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IP5",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 : e:F 1: e:f2",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 : e:f1",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 : e:f2",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 :einΦ = einµ1einΦ = ein(µ1+Φ)",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.2.4 Comparison with numerical model",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.3 Behaviour near a resonance",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.59516050000093,
+ "metrics_v1": {
+  "gt": 36,
+  "pred": 44,
+  "tp": 36,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 27,
+  "parent_correct": 27,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 exp\u0010− x2",
+   "2 )e(inΦ+i nµ",
+   "IP1",
+   "IP5",
+   "2 : e:F 1: e:f2",
+   "2 : e:f1",
+   "2 : e:f2",
+   "2 :einΦ = einµ1einΦ = ein(µ1+Φ)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 33,
+  "pred": 41,
+  "tp": 33,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 exp\u0010− x2",
+   "2 )e(inΦ+i nµ",
+   "IP1",
+   "IP5",
+   "2 : e:F 1: e:f2",
+   "2 : e:f1",
+   "2 : e:f2",
+   "2 :einΦ = einµ1einΦ = ein(µ1+Φ)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

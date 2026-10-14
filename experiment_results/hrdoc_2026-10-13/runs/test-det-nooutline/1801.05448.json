@@ -1,0 +1,125 @@
+{
+ "doc": "1801.05448",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "CONFLICT OF INTEREST STATEMENT",
+   "AUTHOR CONTRIBUTIONS",
+   "FUNDING"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 69,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 MAGNUM SURVEY: OVERVIEW",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Sample selection",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Data analysis",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 MUSE MAPS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 NGC 1365",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 NGC 4945",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.155149099999107,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "CONFLICT OF INTEREST STATEMENT",
+   "AUTHOR CONTRIBUTIONS",
+   "FUNDING"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "CONFLICT OF INTEREST STATEMENT",
+   "AUTHOR CONTRIBUTIONS",
+   "FUNDING"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

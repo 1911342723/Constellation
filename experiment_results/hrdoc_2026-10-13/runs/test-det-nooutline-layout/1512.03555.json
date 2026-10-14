@@ -1,0 +1,95 @@
+{
+ "doc": "1512.03555",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 6,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "Conflict of Interests"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "Conflict of Interests"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 435,
+  "layout_marked": 7,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8572410238790585,
+  "inserted_word_share": 0.18102740850155918
+ },
+ "predictions": [
+  {
+   "text": "Comparing the Tsallis distribution with and without thermodynamical description in",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. TSALLIS DISTRIBUTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SUMMARY",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.232263999998395,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "Conflict of Interests"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

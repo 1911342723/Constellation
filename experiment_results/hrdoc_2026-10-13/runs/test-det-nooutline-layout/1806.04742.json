@@ -1,0 +1,155 @@
+{
+ "doc": "1806.04742",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 402,
+  "layout_marked": 20,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9866519715895176,
+  "inserted_word_share": 0.012864493996569415
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Related Models and Work",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Alternative Formulations of MSPEC",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Barrier Coverage in a Sensor Network",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Background on Barrier Coverage",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Minimum Shrinkage",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Reduction from Minimum Shrinkage to MSPEC",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Minimum Bottleneck Shared-Power Edge Cut",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Approximation Scheme for MSPEC",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Variations of MSPEC",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Uniform/Integral edge weights",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6.2 Polynomial Domain",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6.3 MSPEC with Vertex Costs",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "7 Faster Approximation for MSPEC",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Open Problems",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.61943969999993,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

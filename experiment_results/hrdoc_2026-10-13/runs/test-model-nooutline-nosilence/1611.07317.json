@@ -1,0 +1,197 @@
+{
+ "doc": "1611.07317",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 17,
+  "parent_correct": 14,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Résumé",
+   "OF LOCAL WAVELET SPECTRA"
+  ],
+  "unmatched_pred": [
+   "Time-scale characteristics of Kasaï river hydrological regime",
+   "Figure 8 – Percentage of variance explained"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 203,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13901,
+   "completion_tokens": 747,
+   "total_tokens": 14648
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Time-scale characteristics of Kasaï river hydrological regime",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "variability for 1940-1999",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 STUDY AREA AND DATA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Climate data",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 METHODS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 HIERARCHICAL CLUSTERING ON PRINCIPAL COMPONENTS",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 THE SEGMENTATION METHOD OF HILBERT",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 WAVELET TRANSFORM",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 GLOBAL WAVELET SPECTRUM (GWS) OR TIME AVERAGE",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.5 SCALE-AVERAGED WAVELET POWER (SAWP)",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.6 WAVELET COHERENCE ANALYSIS",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Figure 8 – Percentage of variance explained",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 IDENTIFICATION OF VARIABILITY MODES",
+   "page": 9,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.2 COHERENCE BETWEEN RAINFALLS AND DISCHARGES",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.3 RELATIONSHIP TO CLIMATE FORCING",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5 5 DISCUSSIONS AND CONCLUSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Références",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.383375199999136,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 17,
+  "parent_correct": 14,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [
+   "Résumé",
+   "OF LOCAL WAVELET SPECTRA"
+  ],
+  "unmatched_pred": [
+   "Time-scale characteristics of Kasaï river hydrological regime",
+   "variability for 1940-1999",
+   "Figure 8 – Percentage of variance explained"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 13,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [
+   "Résumé",
+   "OF LOCAL WAVELET SPECTRA"
+  ],
+  "unmatched_pred": [
+   "Time-scale characteristics of Kasaï river hydrological regime",
+   "Figure 8 – Percentage of variance explained"
+  ],
+  "ignored_title_predictions": null
+ }
+}

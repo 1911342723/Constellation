@@ -1,0 +1,152 @@
+{
+ "doc": "1702.03407",
+ "system": "outline",
+ "metrics": {
+  "gt": 17,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "Abstract—",
+   "C. Summary",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "II-C Summary"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I-A Related Work",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-B Contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Reverse Classification Accuracy",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Learning Reverse Classifiers",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "II-B Predicting Segmentation Accuracy",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "II-C Summary",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III Experimental Validation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Experimental Setting",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III-B Quantifying Prediction Accuracy",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III-C Results for Predicting Dice's Similarity Coefficients",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III-D Detecting Segmentation Failure",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III-E Results for Predicting Different Segmentation Metrics",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "IV Discussion and Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.05100089999905322,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "Abstract—",
+   "C. Summary",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "II-C Summary"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [
+   "C. Summary"
+  ],
+  "unmatched_pred": [
+   "II-C Summary"
+  ],
+  "ignored_title_predictions": null
+ }
+}

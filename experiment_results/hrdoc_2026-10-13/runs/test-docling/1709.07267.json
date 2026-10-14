@@ -1,0 +1,138 @@
+{
+ "doc": "1709.07267",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "Unimodal classification.",
+   "Multimodal classification.",
+   "Cross-validation.",
+   "Metrics."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 41.68608740000127
+ },
+ "predictions": [
+  {
+   "text": "Yet Another ADNI Machine Learning Paper? Paving The Way Towards Fully-reproducible Research on Classification of Alzheimer's Disease",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Material and methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Dataset",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 A standardized data structure",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Preprocessing and feature extraction pipelines",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.4 Classification methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.5 Validation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supplementary material",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.00891599999886239,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "Unimodal classification.",
+   "Multimodal classification.",
+   "Cross-validation.",
+   "Metrics."
+  ],
+  "unmatched_pred": [
+   "Yet Another ADNI Machine Learning Paper? Paving The Way Towards Fully-reproducib"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Unimodal classification.",
+   "Multimodal classification.",
+   "Cross-validation.",
+   "Metrics."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "doc": "1807.02098",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1: Training Module Execution",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1: Training Module Execution"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 22.33598500000153
+ },
+ "predictions": [
+  {
+   "text": "MAT-CNN-SOPC: Motionless Analysis of Traffic Using Convolutional Neural Networks on System-On-a-Programmable-Chip",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SYSTEM AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Hardware Infrastructure & Software Infrastructure",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Dataset",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Problem Definition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. PROPOSED METHODOLOGY: MAT-CNN-SOPC",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1: Training Module Execution",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Employed CNN Models",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Classification Results",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Observation:",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.014881399998557754,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1: Training Module Execution",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

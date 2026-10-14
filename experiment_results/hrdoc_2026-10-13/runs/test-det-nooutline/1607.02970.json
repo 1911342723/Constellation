@@ -1,0 +1,142 @@
+{
+ "doc": "1607.02970",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 11,
+  "tp": 5,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "Abstract.",
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "2.2. This case is trivial.",
+   "2.3. In this case we use that when fi is strict, then JPK(⃗f) = J ˆPK(⃗f), and t",
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 301,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Sequential procedures and functionals",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2. This case is trivial.",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3. In this case we use that when fi is strict, then JPK(⃗f) = J ˆPK(⃗f), and the rest follows",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. The main Theorem",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Theorem and Key Lemma",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2. Matching paths",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3. Projections and preservation",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4. Proof of the Key Lemma",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4. Conclusions and discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.5165616999984195,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 11,
+  "tp": 5,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "Abstract.",
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "2.2. This case is trivial.",
+   "2.3. In this case we use that when fi is strict, then JPK(⃗f) = J ˆPK(⃗f), and t",
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 10,
+  "tp": 4,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2. This case is trivial.",
+   "2.3. In this case we use that when fi is strict, then JPK(⃗f) = J ˆPK(⃗f), and t",
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ],
+  "ignored_title_predictions": null
+ }
+}

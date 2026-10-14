@@ -1,0 +1,80 @@
+{
+ "doc": "1610.02204",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 2,
+  "pred": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 1,
+  "pred": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 135,
+  "layout_marked": 3,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3422,
+   "completion_tokens": 202,
+   "total_tokens": 3624
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9403912543153049,
+  "inserted_word_share": 0.8795471965096398
+ },
+ "predictions": [
+  {
+   "text": "Mapping atomic orbitals with the transmission electron microscope: Images of",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "BIBLIOGRAPHY STYLES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.593217699999514,
+ "metrics_v1": {
+  "gt": 2,
+  "pred": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

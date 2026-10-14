@@ -1,0 +1,139 @@
+{
+ "doc": "1509.06542",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 487,
+  "layout_marked": 16,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9671052631578947,
+  "inserted_word_share": 0.6703004381389526
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Background and Motivation",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Notations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Organization",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. CONTROLLER DESIGN",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Problem Formulation and Objective Deﬁnition",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Adaptive Robust Outer Loop Controller",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III. APPLICATION: NONHOLONOMIC WMR",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Results and Comparison",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.92856120000215,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

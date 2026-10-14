@@ -1,0 +1,139 @@
+{
+ "doc": "1806.05942",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "4. Applications"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "4. Applications",
+   "Acknowledgements"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "4. Applications"
+  ],
+  "unmatched_pred": [
+   "4. Applications"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 67.01920179999797
+ },
+ "predictions": [
+  {
+   "text": "Enhanced string factoring from alphabet orderingsI,II",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Notation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2. Unique Maximal Factorization Families (UMFFs)",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Alphabet ordering",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Greedy algorithm",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4. Applications",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Experimentation: Factorization of DNA strings",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Research Problems",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.004907299997285008,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "4. Applications"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "4. Applications",
+   "Acknowledgements"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

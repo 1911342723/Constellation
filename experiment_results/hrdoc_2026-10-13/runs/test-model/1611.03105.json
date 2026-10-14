@@ -1,0 +1,105 @@
+{
+ "doc": "1611.03105",
+ "system": "model",
+ "metrics": {
+  "gt": 10,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Abstract:",
+   "2.1 Algebraic Graph Theory",
+   "2.2 Formation Control Problem",
+   "3. FORMATION CONTROL WITH CONNECTIVITY PRESERVATION: SINGLE INTEGRATORS",
+   "4. FORMATION CONTROL WITH CONNECTIVITY PRESERVATION: DOUBLE INTEGRATORS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1138,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 12819,
+   "completion_tokens": 214,
+   "total_tokens": 13033
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. PRELIMINARIES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. SIMULATIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. CONCLUSIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.113509200000408,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Abstract:",
+   "2.1 Algebraic Graph Theory",
+   "2.2 Formation Control Problem",
+   "3. FORMATION CONTROL WITH CONNECTIVITY PRESERVATION: SINGLE INTEGRATORS",
+   "4. FORMATION CONTROL WITH CONNECTIVITY PRESERVATION: DOUBLE INTEGRATORS"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "2.1 Algebraic Graph Theory",
+   "2.2 Formation Control Problem",
+   "3. FORMATION CONTROL WITH CONNECTIVITY PRESERVATION: SINGLE INTEGRATORS",
+   "4. FORMATION CONTROL WITH CONNECTIVITY PRESERVATION: DOUBLE INTEGRATORS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

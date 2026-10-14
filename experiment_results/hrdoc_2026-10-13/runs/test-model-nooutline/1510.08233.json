@@ -1,0 +1,146 @@
+{
+ "doc": "1510.08233",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "B. Randomized Homotopy Classes Finder"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 241,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4592,
+   "completion_tokens": 466,
+   "total_tokens": 5058
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. OUR APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Navigation Graph",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Cost deﬁnition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Yen’s Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Environments",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Metrics",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Parameters",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. RESULTS AND DISCUSSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.964484100000846,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "B. Randomized Homotopy Classes Finder"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "B. Randomized Homotopy Classes Finder"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

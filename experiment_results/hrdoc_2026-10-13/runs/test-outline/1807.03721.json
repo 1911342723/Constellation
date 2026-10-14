@@ -1,0 +1,104 @@
+{
+ "doc": "1807.03721",
+ "system": "outline",
+ "metrics": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Abstract",
+   "Listing 1: Query(v,c)",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Static Color Distance Oracle",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Supporting color-reassignments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Lower bound for static Color Distance Oracles",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Lower bounds for the dynamic setting",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proof of Lemma ??",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Proof of Lemma ??",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03998820000197156,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Abstract",
+   "Listing 1: Query(v,c)",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Listing 1: Query(v,c)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

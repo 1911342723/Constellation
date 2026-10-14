@@ -1,0 +1,232 @@
+{
+ "doc": "1607.00276",
+ "system": "outline",
+ "metrics": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 20,
+  "fp": 5,
+  "fn": 6,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Data",
+   "A. Openstack",
+   "B. Apache Hadoop",
+   "C. SAMtools",
+   "ACKN O W LED G M E NTS"
+  ],
+  "unmatched_pred": [
+   "II-B Data",
+   "IV-A Openstack",
+   "IV-B Apache Hadoop",
+   "IV-C SAMtools",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Background",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A The 1000 Genomes Project",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Data",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-C Processing Large Data Sets",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV Experimental Framework and Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Openstack",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV-B Apache Hadoop",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV-C SAMtools",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V Experiments",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-A Methods",
+   "page": 1,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VI Results",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A Sample Size per Population Group",
+   "page": 2,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI-B Frequency of Structural Variation per Population Group",
+   "page": 2,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI-C Frequency of Structural Variation per Population Supergroup",
+   "page": 2,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI-D Frequency of Structural Variation per Population Group and Gender",
+   "page": 2,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI-E Frequency of Structural Variation per Population Supergroup and Gender",
+   "page": 2,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI-F Location of Structural Variation in the Reference Genome per Population Group",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI-G Average Length of Alignment per Population",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VII Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII-A Analysis of Structural Variation",
+   "page": 3,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "VII-B Evaluation of the Computing Framework",
+   "page": 3,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "VIII Conclusions and Future Work",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.1505905999983952,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 20,
+  "fp": 5,
+  "fn": 6,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Data",
+   "A. Openstack",
+   "B. Apache Hadoop",
+   "C. SAMtools",
+   "ACKN O W LED G M E NTS"
+  ],
+  "unmatched_pred": [
+   "II-B Data",
+   "IV-A Openstack",
+   "IV-B Apache Hadoop",
+   "IV-C SAMtools",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 20,
+  "fp": 4,
+  "fn": 4,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.84,
+  "unmatched_gt": [
+   "B. Data",
+   "A. Openstack",
+   "B. Apache Hadoop",
+   "C. SAMtools"
+  ],
+  "unmatched_pred": [
+   "II-B Data",
+   "IV-A Openstack",
+   "IV-B Apache Hadoop",
+   "IV-C SAMtools"
+  ],
+  "ignored_title_predictions": null
+ }
+}

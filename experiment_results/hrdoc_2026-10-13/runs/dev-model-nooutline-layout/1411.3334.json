@@ -1,0 +1,174 @@
+{
+ "doc": "1411.3334",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.631578947368421,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1054,
+  "layout_marked": 21,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18843,
+   "completion_tokens": 804,
+   "total_tokens": 19647
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9731510254816657,
+  "inserted_word_share": 0.023023647594684005
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND RELATED WORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Quantum Subsystem Codes",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Sparse Quantum Codes and Related Work",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. CONSTRUCTING THE CODES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The Base Code and Error-Detecting Circuits",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Localized codes",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV. CODE PROPERTIES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The circuit-code isomorphism",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Characterizing the logical and stabilizer groups",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "1. Spackling",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Proving the isomorphism",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Distance",
+   "page": 15,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "V. FAULT-TOLERANT GADGETS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. SPARSE QUANTUM CODES WITH IMPROVED DISTANCE AND RATE",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. MAKING SPARSE CODES LOCAL",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. DISCUSSION",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.972637300001225,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.631578947368421,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

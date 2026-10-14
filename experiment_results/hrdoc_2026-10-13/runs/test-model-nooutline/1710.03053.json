@@ -1,0 +1,145 @@
+{
+ "doc": "1710.03053",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "stants",
+   "ces",
+   "for effective Stokes constants",
+   "effective Stokes constants"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 374,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14421,
+   "completion_tokens": 480,
+   "total_tokens": 14901
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Connection matrices and eﬀective Stokes con-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Symmetry relations for the connection matri-",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Symmetry relations and functional equations",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Eﬀective Stokes diagram",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Example: the Weber equation",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Discussion on the possible generalizations",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Connection between traditional and",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.89754130000074,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "stants",
+   "ces",
+   "for effective Stokes constants",
+   "effective Stokes constants"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "stants",
+   "ces",
+   "for effective Stokes constants",
+   "effective Stokes constants"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

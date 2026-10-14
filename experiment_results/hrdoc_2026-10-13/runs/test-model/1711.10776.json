@@ -1,0 +1,237 @@
+{
+ "doc": "1711.10776",
+ "system": "model",
+ "metrics": {
+  "gt": 22,
+  "pred": 26,
+  "tp": 20,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "APPENDIX E",
+   "APPENDIX F"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 2089,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 8,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 8,
+   "prompt_tokens": 31974,
+   "completion_tokens": 1109,
+   "total_tokens": 33083
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM AND POWER CONSUMPTION MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. System Model",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. NOMA Strategy",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. TDMA Strategy",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. ENERGY EFFICIENT RESOURCE ALLOCATION FOR",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Conditions",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Convergence and Complexity Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. ENERGY EFFICIENT RESOURCE ALLOCATION FOR",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Conditions",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Convergence and Complexity Analysis",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. NUMERICAL RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF LEMMA 2",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 2",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX D",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 3",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX E",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 4",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX F",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 6",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.007628999999724,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 26,
+  "tp": 20,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "APPENDIX E",
+   "APPENDIX F"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

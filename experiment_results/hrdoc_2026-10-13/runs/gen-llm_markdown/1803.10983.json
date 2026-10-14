@@ -1,0 +1,211 @@
+{
+ "doc": "1803.10983",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "unmatched_pred": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "unmatched_pred": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Preliminaries",
+    1,
+    2
+   ],
+   [
+    "3 Max-Cut for embedded 1-planar graphs",
+    2,
+    2
+   ],
+   [
+    "3.1 Removing the crossings",
+    3,
+    3
+   ],
+   [
+    "3.2 The Max-Cut Algorithm",
+    4,
+    3
+   ],
+   [
+    "3.3 Correctness",
+    6,
+    3
+   ],
+   [
+    "3.4 Running time",
+    8,
+    3
+   ],
+   [
+    "4 Conclusion and open problems",
+    9,
+    2
+   ],
+   [
+    "References",
+    10,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 8588,
+   "completion_tokens": 7968
+  },
+  "elapsed_llm_seconds": 30.940260399998806,
+  "word_preservation": {
+   "recall": 0.9412811387900356,
+   "in_order": 0.9286476868327402,
+   "inserted": 0.04166666666666663
+  },
+  "output_markdown": "# A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs\n\nChristine Dahn, Nils M. Kriege, and Petra Mutzel\n\nDepartment of Computer Science, TU Dortmund University, Germany\n\n{christine.dahn|nils.kriege|petra.mutzel}@cs.tu-dortmund.de\n\n## Abstract\n\nWe propose a fixed-parameter tractable algorithm for the Max-Cut problem on embedded 1-planar graphs parameterized by the crossing number k of the given embedding. A graph is called 1-planar if it can be drawn in the plane with at most one crossing per edge. Our algorithm recursively reduces a 1-planar graph to at most 3^k planar graphs, using edge removal and node contraction. The Max-Cut problem is then solved on the planar graphs using established polynomial-time algorithms. We show that a maximum cut in the given 1-planar graph can be derived from the solutions for the planar graphs. Our algorithm computes a maximum cut in an embedded 1-planar graph with n nodes and k edge crossings in time O(3^k · n^{3/2} log n).\n\n**Keywords:** maximum cut, fixed-parameter tractable, 1-planar graphs\n\n## 1 Introduction\n\nPartitioning problems on graphs receive increasing attention in the literature. Here the task is to partition the set of nodes of a given (weighted) undirected graph so that the number (or weighted sum) of connections between the parts is minimized. A special case is the Max-Cut problem which asks for a node partition into two sets so that the sum of the edge weights in the cut is maximised. The problem is getting increasing attention in the literature, since it is directly related to solving Ising spin glass models (see, e.g., Barahona [3]) which are of high interest in physics. Besides its theoretical merits, Ising spin glass models need to be solved in adiabatic quantum computation [20]. Other applications occur in the layout of electronic circuits [6,8].\n\nThe Max-Cut problem has been shown to be NP-hard for general graphs [15]. Moreover, Papadimitriou and Yannakakis [24] have shown that the Max-Cut problem is APX-hard, i.e., there does not exist a polynomial-time approximation scheme unless P=NP. Goemans and Williamson suggested a randomized constant factor approximation algorithm [10] which has been derandomized by Mahajan and Ramesh [19] and has a performance guarantee of 0.87856. There are a number of special cases for which the problem can be solved in polynomial time. The most prominent case arises if the weights of all edges are negative, since then the problem can be solved via network flow. Other special cases are graphs without long odd cycles [11] or weakly bipartite graphs [12]. Another\n\n<<page 2>>\n\nprominent case arises for planar input graphs. Orlova and Dorfman [22] and Hadlock [13] have shown that the Max-Cut problem can be solved in polynomial time for unweighted planar graphs. Their algorithms can be extended to work on weighted planar graphs (e.g., Mutzel [21]). Currently, the fastest algorithms have been suggested by Shih et.al. [25] and by Liers and Pardella [18]. These results have been extended to the class of graphs not contractible to K_5 [5] and to toroidal graphs [4,9] (i.e., graphs that can be embedded on the torus). In this paper, we show an extension of the planar special case to that of the class of 1-planar graphs.\n\nA graph is 1-planar if it can be drawn into the plane so that every edge is crossed at most once. While planarity testing can be done in linear time [14], the recognition problem for 1-planar graphs is much harder. Korzhik and Mohar showed that 1-planarity testing is NP-hard [16]. However, there are fixed-parameter tractable (FPT) algorithms parameterized by the cyclomatic number (the minimum number of edges that must be removed from the graph to create a forest), the tree-depth or the node cover number [2]. For 1-planar graphs these algorithms construct a 1-planar embedding.\n\n**Our contribution.** Given an embedded 1-planar graph with k crossings, we suggest a fixed-parameter tractable algorithm for the Max-Cut problem with parameter k. The idea of our algorithm is to recursively reduce the input graph into a set of at most 3^k planar graphs using a series of edge removals and node contractions. The planar instances can then be solved using the polynomial time algorithms suggested in [25,18] with running time O(n^{3/2} log n) for a planar graph with n nodes.\n\nThe paper is organized as follows. Section 2 contains the basic definitions concerning cuts and 1-planarity. We also introduce the class of k-almost-planar graphs which have 1-planar drawings not exceeding k crossings. In Section 3 we present our new algorithm for embedded 1-planar graphs and prove its correctness. Our analysis of its running time shows that it is fixed-parameter tractable with parameter k. We end with a conclusion and open problems in Section 4.\n\n## 2 Preliminaries\n\nThroughout our paper, we consider undirected weighted graphs G = (V, E, c) with arbitrary edge weights. A partition of the nodes of G into two sets S ⊆ V and S = V \\ S defines the cut δ(S, G) = {(uv) ∈ E | (u ∈ S and v ∈ S) or (v ∈ S and u ∈ S)}. The value of a cut δ(S, G) in the graph G is the sum of weights of all edges in the cut: c(δ(S, G)) = Σ_{e∈δ(S,G)} c_e. The Max-Cut problem searches for a cut in a given weighted graph with highest value. For the graph class of planar graphs, the Max-Cut problem can be solved in polynomial time.\n\nA graph is planar if it admits a planar drawing, i.e., a drawing on the plane without any edge crossing. A drawing admits a rotation system which is a clockwise-ordering of the incident edges for every node. In a planar drawing, a rotation system defines the faces, i.e., the topologically connected regions of\n\n<<page 3>>\n\nthe plane. One of the faces, the outer face, is unbounded. A face is uniquely described by its boundary edges. Such a description for each face is an equivalent definition of a (planar) embedding. A (planar) embedding represents the set of all planar drawings with the same faces. It can be represented by the description of the faces or by the rotation system. It is well known that planarity testing can be solved in linear time [14]. The same is true for computing a planar embedding. In order to generate crossing free drawings of planar graphs, a number of various algorithms exist, e.g., the straight-line drawing algorithm by de Fraysseix et.al. [7].\n\nPlanar graphs are contained in the class of 1-planar graphs. A graph is 1-planar, if it admits a 1-planar drawing, i.e., a drawing on the plane with at most one crossing per edge. Testing 1-planarity is NP-hard [16] even in the case of bounded treewidth or bandwith [2]. A 1-planar embedding defines the faces of a given 1-planar drawing and can be represented by the set of crossings X and a list of edges and edge segments (half edges) for the crossings for each face. Note that a 1-planar embedding uniquely defines a rotation system for the nodes. However, the opposite is not true. In general, a rotation system does not allow for computing the crossings efficiently or a 1-planar embedding. Auer et al. [1] have shown that testing 1-planarity of a graph with a fixed rotation system is NP-hard even if the graph is 3-connected.\n\nWe call a 1-planar graph k-almost-planar if it admits a 1-planar drawing with at most k edge crossings. For edge removal and node contraction we use the following notation: G − e = (V, E \\ {e}) denotes the graph obtained from G = (V, E) by deleting the edge e ∈ E. G/xy contracts the two nodes x and y into a new node v_{xy} ∉ V. In doing so, the edges leading to x or y are replaced by a new edge to v_{xy}. Multi-edges to v_{xy} are contracted to one edge and their edge weights are added, self-loops are deleted. We denote the inverse operation of contraction by Split. The contraction and Split operation can be applied to a subset of nodes S ⊆ V:\n\nS/xy = ( S \\ {x, y} ∪ {v_{xy}} if x, y ∈ S ; S otherwise )\n\nSplit(S, v_{xy}) = ( S \\ {v_{xy}} ∪ {x, y} if v_{xy} ∈ S ; S otherwise )\n\n## 3 Max-Cut for embedded 1-planar graphs\n\nOur main idea for computing the maximum cut in an embedded 1-planar graph G is to eliminate its k crossings and then use a Max-Cut algorithm for planar graphs on the resulting planar graph. In order to remove a crossing, we need to know the two crossing edges of each crossing. We use two methods to remove a crossing: Either by deleting one of the crossing edges, or by contracting two nodes that do not belong to the same crossing edge.\n\n<<page 4>>\n\n### 3.1 Removing the crossings\n\nIn this section let G = (V, E, c) be a k-almost-planar graph with a 1-planar embedding (Π, X) and a set of crossing edges X with |X| = k. A crossing is defined by a pair of crossing edges, e.g., let χ = {e_{vy}, e_{wz}} ∈ X be an arbitrary crossing. The following lemma shows that specific node contractions (and edge deletions) remove at least one crossing and do not introduce new crossings. Figures 1b and 1c show examples of node contraction and Figure 1d shows an example of edge deletion.\n\n**Lemma 1.** Let G be a k-almost-planar graph with 1-planar embedding (Π, X) and χ = {e_{vy}, e_{wz}} ∈ X be an arbitrary crossing. The graphs G/ab, G − e_{vy} and G − e_{wz} are (k − 1)-almost-planar for ab ∈ {vw, vz, wy, yz}. The set of crossings in the resulting 1-planar embedding is a proper subset of X.\n\n*Proof.* Since the contracted nodes a and b are each an endpoint to one of the crossing edges, the contracted node is an endpoint to both edges. Since e_{vy} and e_{wz} now have a common endpoint, they can be drawn without a crossing. Therefore the crossing χ is removed. The contraction does not create new crossings because the two nodes a and b can be moved along their half edges towards the crossing. This is possible because we have a 1-planar embedding which has the property that every crossing is incident to two half edges connecting it with its endpoints. The new node v_{ab} is then placed where the crossing used to be. All other edges can be extended to the new node along the way of the same half edges without creating new crossings. Multi-edges are merged into a single edge and self-loops are deleted. In G − e_{vy} and G − e_{wz}, the crossing χ is removed by deleting one of its crossing edges. Obviously this does not lead to new crossings. So in both cases the number of crossings decreases. ⊓⊔\n\nThe recursive application of Lemma 1 shows that all crossings can be removed with these two operations. Thus after k contraction or removal operations, the resulting graph is planar and a planar Max-Cut algorithm can be applied to compute a maximum cut. The following lemma shows how to project a cut in G/xy or G − e back onto G.\n\n**Lemma 2.** Let G = (V, E, c) be a weighted graph, x ≠ y ∈ V and S ⊆ V.\n\n(i) Let δ(S, G/xy) be a cut in G/xy, then the cut δ(Split(S, v_{xy}), G) in G has the same value.\n\n(ii) If x and y are in the same set (x, y ∈ S or x, y ∈ S) then δ(S, G) = δ(S, G − e_{xy}) for e_{xy} ∈ E.\n\n*Proof.* (i) Let S define a cut in G/xy. If the contracted node v_{xy} is split, the cut is projected from G/xy to G. The corresponding set of nodes in G is S′ = Split(S, v_{xy}). It defines a cut in G. If v_{xy} ∉ S then S = S′. The weight of an edge e ∈ δ(S, G/xy) in G/xy is either the same as the weight of the corresponding edge e′ ∈ δ(S′, G) in G or it is split between two edges e′, e′′ ∈ δ(S′, G) in G. The only edge that might exist in G but not in G/xy is e_{xy}. Since x and y\n\n<<page 5>>\n\nwere contracted in G/xy, they are either both in S′ or both in S′. Therefore the only edge that could be added in G by splitting v_{xy} can not add to the value of δ(S′, G) in G. So no weights are lost or added due to the projection and the two cuts have the same value.\n\n(ii) This is obvious because e_{xy} is in neither of the two cuts. ⊓⊔\n\nFig. 1: An example how a crossing can be removed. (Blue dashed edges are merged edges from H.)\n\n### 3.2 The Max-Cut Algorithm\n\nWe use the three operations introduced above to successively remove all crossings of a 1-planar graph. All planar instances obtained in this way are then solved by a Max-Cut algorithm for planar graphs. From the solutions of the planar graphs, we construct a solution for the original graph. Note that the algorithm only needs the graph G and the set of edge crossings X as input. However, the 1-planar embedding is needed to show the correctness of the algorithm.\n\nAlgorithm 1.1 realizes this approach with a recursive function, which is initially called with the input graph G and the set of crossings X present in its embedding. As the algorithm progresses, the graph is successively modified and the set of crossings is adjusted according to the modifications applied. If the graph G passed as parameter to the function is planar (X = ∅), then a planar Max-Cut algorithm is called (line 2). If there are still crossings remaining,\n\n<<page 6>>\n\n**MaxCut(G, X)**\n\nInput: An undirected weighted 1-planar graph G and a set of crossing edges X in a 1-planar embedding of G.\n\nOutput: A set S ⊆ V_G defining a maximum cut δ(S, G) ⊆ E_G in G.\n\n1: if X = ∅ then\n2:   S ← MaxCut_planar(G)\n3: else\n4:   choose an element χ ← {e_{vy}, e_{wz}} ∈ X\n5:   S_1 ← MaxCut(G/wy, Update(X, w, y))\n6:   S_2 ← MaxCut(G/yz, Update(X, y, z))\n7:   S_3 ← MaxCut(G − e_{wz}, X \\ {χ})\n8:   G_1 ← G/wy, G_2 ← G/yz, G_3 ← G − e_{wz}\n9:   j ← argmax_{1≤i≤3} c(δ(S_i, G_i))\n10:  if j = 1 then\n11:    S ← Split(S_1, v_{wy})\n12:  else if j = 2 then\n13:    S ← Split(S_2, v_{yz})\n14:  else\n15:    S ← S_3\n16:  end if\n17: end if\n18: return S\n\n**Algorithm 1.1:** Max-Cut algorithm for embedded 1-planar graphs\n\nan arbitrary crossing is selected and removed in three different ways: Let y be an arbitrary endpoint of one crossing edge and e_{wz}, w ≠ y, z ≠ y, the other crossing edge, then (i) the nodes y and w are contracted, (ii) the nodes y and z are contracted, and (iii) the edge e_{wz} is deleted. Each operation removes at least the selected crossing, but in case (i) and (ii) also other crossing may be affected. Therefore, the set of crossings X is adjusted by the function Update. If two nodes w, y are contracted, Update(X, w, y) removes every crossing in X which was dissolved by contracting w and y, and replaces every appearance of w or y in X with the contracted node v_{wy}. To check if a crossing was dissolved, Update checks if w and y are both part of the crossing. Since every crossing needs to be checked once, Update has a linear running time. For each case, the recursive function is called with the modified graph and the set of crossings as a parameter (lines 5-7). Each call returns a node set defining a maximum cut in the modified instance. The cut with maximal value is then projected back to G. If the maximum cut is obtained in a graph with contracted nodes, i.e., case (i) or (ii), then the original nodes are restored by the function Split(S, v_{wy}), which replaces v_{wy} with w and y if S contains the contracted node. This cut-defining set is then returned as the solution to the subproblem.\n\n**Example 1.** Given the 2-almost planar graph H in Figure 1a with uniform edge weights, e.g. 1. The algorithm removes the left crossing in the three described\n\n<<page 7>>\n\nways. The resulting graphs are shown in Figure 1b-1d. The recursively calculated cuts of these graphs are depicted in Figure 2a-2c with 2b being the largest cut. This cut is transferred back to H by splitting the contracted node v_{cd}. The resulting cut is shown in Figure 2d. It is a maximum cut in H.\n\nFig. 2: An example how the algorithm calculates a Max-Cut in an embedded 2-almost-planar graph. (Blue dotted edges were merged and have weight 2; all other edges have weight 1; curvy edges belong to the cut; black dashed edges do not belong to the cut.)\n\n### 3.3 Correctness\n\nThe four endpoints of a crossing can be partitioned in eight non-isomorphic ways, cf. Figure 3: (a) all endpoints in one set, (b)/(c)/(d)/(e) three endpoints in one set without v/w/y/z, (f)/(g) the two endpoints of different crossing edges in the same sets, or (h) the two endpoints of the same crossing edges in one set each. For arbitrary graphs, the induced cut is different because non-crossing edges might be replaced with a path or might not exist at all.\n\n**Lemma 3.** Let G = (V, E, c) be a 1-planar graph with a 1-planar embedding (Π, X), S ⊆ V, and χ = {e_{vy}, e_{wz}} ∈ X be an arbitrary crossing.\n\n(i) If a cut δ(S, G) in G separates the four endpoints of χ as shown in Fig. 3 (a), (b), (c) or (f) then S_2 = S/yz defines a cut in G/yz with the same value. If δ(S, G) is maximal in G so is δ(S_2, G/yz) in G/yz.\n\n<<page 8>>\n\nFig. 3: The 8 non-isomorphic partitions of the four endpoints of a crossing. (The red and curvy edges belong to the cut that is defined by the corresponding partition on the K_4.)\n\n(ii) If a cut δ(S, G) in G separates the four endpoints of χ as shown in Fig. 3 (a), (b), (e) or (g) then S_1 = S/wy defines a cut in G/wy with the same value. If δ(S, G) is maximal in G so is δ(S_1, G/wy) in G/wy.\n\n(iii) If a cut δ(S, G) in G separates the four endpoints of χ as shown in Fig. 3 (a), (b), (d) or (h) then S_3 = S defines a cut in G − e_{wz} with the same value. If δ(S, G) is maximal in G, so is δ(S_3, G − e_{wz}) in G − e_{wz}.\n\n*Proof.* (i) Let S define a cut in G that separates the endpoints of χ as shown in Fig. 3 (a), (b), (c) or (f). By contracting y and z, the set of nodes is projected to G/yz and δ(S_2, G/yz) is a cut in G/yz. The only edge that might have been removed in G/yz does not add to the value of δ(S, G) in G because y and z are not separated by the cut (Fig. 3 (a), (b), (c) or (f)). Therefore, the two cuts have the same value in both graphs. Let S define a maximum cut in G (with the required property). If there was a cut δ(S′, G/yz) in G/yz larger than δ(S_2, G/yz), then Split(S′, v_{yz}) would define a cut in G with the same value as δ(S′, G) (Lemma 2 i), contradicting that δ(S, G) is maximal in G.\n\n(ii) The proof of the second proposition is analogous to the proof of the first.\n\n(iii) Let S define a cut in G that separates the endpoints of χ as shown in Fig. 3 (a), (b), (d) or (h). Since G and G − e_{wz} have the same set of nodes, δ(S_3, G − e_{wz}) is a cut in G − e_{wz} as well. We know that w and z are not separated by the cut (Fig. 3 (a), (b), (d) or (h)). Therefore the only edge that was removed in G − e_{wz} does not add to the value of the cut in G and the cut has the same value in both graphs. Let S define a maximum cut in G (with the required property). If there was a cut δ(S′, G − e_{wz}) in G − e_{wz} larger than δ(S_3, G − e_{wz}), then δ(S′, G) would be a cut in G as well (Lemma 2 ii), contradicting that δ(S, G) is maximal in G. ⊓⊔\n\n**Theorem 1.** Algorithm 1.1 computes a maximum cut in a 1-planar graph G, given a set of crossing edges X in a 1-planar embedding of G.\n\n*Proof.* We prove its optimality by induction over k. For k = 0, the given graph is planar. Thus the Max-Cut algorithm for planar graphs calculates a node set defining a maximum cut in G. Let S* define a maximum cut in G. We show that the cut δ(S, G) defined by the calculated node set S is not smaller than δ(S*, G). Let G_1 = G/wy, G_2 = G/yz and G_3 = G − e_{wz} be the (k − 1)-almost-planar graphs (Lemma 1) whose cuts δ(S_1, G_1), δ(S_2, G_2) and δ(S_3, G_3) are calculated recursively by the algorithm. There are 8 possible ways for S* to separate the\n\n<<page 9>>\n\nfour endpoints of χ. These are shown in Fig. 3 (a)–(h). If the endpoints of χ are separated as shown in (a), (b), (e) or (g), then δ(S*, G) has the same value as a maximum cut δ(S*_1, G_1) in G_1 (Lemma 3 ii). Due to the induction hypothesis, δ(S_1, G_1) is not smaller than δ(S*_1, G_1). If the endpoints of χ are separated as shown in (c) or (f), then δ(S*, G) has the same value as a maximum cut δ(S*_2, G_2) in G_2 (Lemma 3 i). Due to the induction hypothesis, δ(S_2, G_2) is not smaller than δ(S*_2, G_2). If the endpoints of χ are separated as shown in (d) or (h), then δ(S*, G) has the same value as a maximum cut δ(S*_3, G_3) in G_3 (Lemma 3 iii). Due to the induction hypothesis, δ(S_3, G_3) is not smaller than δ(S*_3, G_3). The algorithm chooses the node set defining the largest of these three cuts (line 9–16) and projects it back to G without changing its value (Lemma 2). Thus the calculated cut δ(S, G) is not smaller than δ(S_1, G_1), δ(S_2, G_2) and δ(S_3, G_3). ⊓⊔\n\n### 3.4 Running time\n\nLet n be the number of nodes and m be the number of edges of a given graph. It is well known that a 1-planar graph has at most 4n − 8 edges [23]. For an arbitrary 1-planar drawing, the number of crossings is bounded by m/2, since every edge can be crossed at most once and every crossing needs two edges. With the previous observation, we can establish a bound depending on the number of nodes: k ≤ 2n − 4.\n\n**Theorem 2.** Algorithm 1.1 computes a maximum cut in an embedded 1-planar graph with n nodes and k crossings in time O(3^k · T_p(n)), where T_p(n) is the running time of a planar Max-Cut algorithm. Using the algorithms suggested in [17] or [25], the running time is O(3^k · n^{3/2} log n).\n\n*Proof.* Let T(k, n) be the running time of Algorithm 1.1 on an embedded 1-planar graph G with n nodes and k crossings. If G is planar, our algorithm uses a planar Max-Cut algorithm, resulting in T(0, n) = T_p(n). Update has a linear running time of O(k), since every crossing in X needs to be checked only once. The contractions of G/wy and G/yz take time O(n + m) and the edge removal G − e_{wz} takes time O(m). Reversing a contraction on a set of nodes S_i with Split takes |S_i| steps, resulting in a running time of O(n). Hence the recursive running time is:\n\nT(k, n) = 3 · T(k − 1, n) + O(k + n + m)\n\nAn induction proof shows that T(k, n) = 3^k · (T(0, n) + Σ_{i=1}^k 3^{−i} · O(i + n + m)). Since m is bounded by 4n − 8 [23], k is bounded by 2n − 4 (see above), i is bounded by k and the geometric sum equals a value between 0 and 1, the overall running time is O(3^k · (T_p(n) + n)). Liers and Pardella [17] or Shih et al. [25] describe a planar Max-Cut algorithm with a running time of O(n^{3/2} · log n), resulting in a concrete running time of O(3^k · n^{3/2} log n) for our algorithm. ⊓⊔\n\nIf the number of crossings k in a 1-planar embedding is fixed, the running time of Algorithm 1.1 is polynomial. However, in an arbitrary 1-planar embedding, k\n\n<<page 10>>\n\nis not fixed and the factor 3^k leads to an exponential worst case running time. But we can show that our algorithm is fixed-parameter tractable with parameter k. Since its running time can be split into an exponential part, depending only on the parameter k, (3^k) and a polynomial part in the size of the input graph (T_p(n) + n), the algorithm is fixed-parameter tractable with parameter k.\n\n**Theorem 3.** The Max-Cut problem on embedded 1-planar graphs is fixed-parameter tractable parameterized by the crossing number k of the given 1-planar embedding.\n\n## 4 Conclusion and open problems\n\nWe have presented a polynomial time algorithm for computing a Max-Cut in a 1-planar graph provided with a 1-planar embedding with a constant number of crossings. This shows that the Max-Cut problem on embedded 1-planar graphs is in the class FPT.\n\nThe question arises if our approach can be extended to general graphs with up to k crossings per edge, so called k-planar graphs. Our approach is based on the fact that node contractions and edge deletions decrease the number of crossings (see Lemma 1). Figure 4 shows that this is no longer true if an edge is crossed more than once. In this case, there are crossings that do not have direct half edges connecting it to its endpoints like, e.g., the crossing (ad, cf) in Figure 4. If we contract d and f, we get plenty of new crossings in the new graph G/df. We are currently working to generalize our approach to embedded k-planar graphs.\n\nFig. 4: A 4-planar graph where the contraction of the nodes d and f leads to O(l) new crossings. The two edges that generate the new crossings are drawn in red. Between a and f (resp. c and d) in G are l independent paths. Beneath b there are l paths between a and c that are pairwise connected and therefore have a specific order. The highest path contains a node connected to b and the lowest path contains a node connected to e. No matter where e is drawn in G/df, one of the two red edges crosses at least l − 1 other edges.\n\n<<page 11>>\n\nAnother interesting question would be to drop the assumption that we are given a 1-planar embedding. Note that our algorithm does not need such an embedding as input, it only needs to get a list of edge crossings that must correspond to a 1-planar embedding. However, for our correctness analysis it is important to have a 1-planar embedding of the graph.\n\n## References\n\n1. Christopher Auer, Franz J. Brandenburg, Andreas Gleißner, and Josef Reislhuber. 1-planarity of graphs with a rotation system. Journal of Graph Algorithms and Applications, 19(1):67–86, 2015.\n2. Michael J. Bannister, Sergio Cabello, and David Eppstein. Parameterized complexity of 1-planarity. In Frank Dehne, Roberto Solis-Oba, and Jörg-Rüdiger Sack, editors, Algorithms and Data Structures - 13th International Symposium, WADS 2013, London, ON, Canada, August 12-14, 2013. Proceedings, volume 8037 of Lecture Notes in Computer Science, pages 97–108. Springer, 2013.\n3. Francisco Barahona. On the computational complexity of ising spin glass models. Journal of Physics A: Mathematical and General, 15(10):3241, 1982.\n4. Francisco Barahona. Balancing signed toroidal graphs in polynomial time. Departamento de Matematicas, Universidad de Chile, Santiago, Chile, 1983.\n5. Francisco Barahona. The max-cut problem on graphs not contractible to k5. Operations Research Letters, 2(3):107–111, 1983.\n6. Francisco Barahona, Martin Grötschel, Michael Jünger, and Gerhard Reinelt. An application of combinatorial optimization to statistical physics and circuit layout design. Operations Research, 36(3):493–513, 1988.\n7. Hubert de Fraysseix, János Pach, and Richard Pollack. How to draw a planar graph on a grid. Combinatorica, 10(1):41–51, Mar 1990.\n8. Caterina De Simone, Martin Diehl, Michael Jünger, Petra Mutzel, Gerhard Reinelt, and Giovanni Rinaldi. Exact ground states of ising spin glasses: New experimental results with a branch-and-cut algorithm. Journal of Statistical Physics, 80(1-2):487–496, 1995.\n9. Anna Galluccio and Martin Loebl. Max cut in toroidal graphs. Instituto di Analisi dei Sistemi ed Informatica, Consiglio Nazionale delle Ricerche, Oktober 1998.\n10. Michel X. Goemans and David P. Williamson. Improved approximation algorithms for maximum cut and satisfiability problems using semidefinite programming. Journal of the ACM (JACM), 42(6):1115–1145, 1995.\n11. Martin Grötschel and George L. Nemhauser. A polynomial algorithm for the max-cut problem on graphs without long odd cycles. Mathematical Programming, 29(1):28–40, 1984.\n12. Martin Grötschel and William R. Pulleyblank. Weakly bipartite graphs and the max-cut problem. Operations Research Letters, 1(1):23–27, 1981.\n13. F. Hadlock. Finding a maximum cut of a planar graph in polynomial time. SIAM Journal on Computing, 4(3):221–225, 1975.\n14. John E. Hopcroft and Robert E. Tarjan. Dividing a graph into triconnected components. SIAM Journal on Computing, 2(3):135–158, 1973.\n15. Richard M. Karp. Reducibility among combinatorial problems. In Raymond E. Miller and James W. Thatcher, editors, Proceedings of a symposium on the Complexity of Computer Computations, New York, The IBM Research Symposia Series, pages 85–103. Plenum Press, New York, 1972.\n\n<<page 12>>\n\n16. Vladimir P. Korzhik and Bojan Mohar. Minimal obstructions for 1-immersions and hardness of 1-planarity testing. Journal of Graph Theory, 72(1):30–71, 2013.\n17. Frauke Liers and Gregor Pardella. A simple MAX-CUT algorithm for planar graphs. In Sonia Cafieri, Antonio Mucherino, Giacomo Nannicini, Fabien Tarissan, and Leo Liberti, editors, Proceedings of the 8th Cologne-Twente Workshop on Graphs and Combinatorial Optimization, CTW 2009, Paris, France, June 2-4 2009, pages 351–354, 2009.\n18. Frauke Liers and Gregor Pardella. Partitioning planar graphs: a fast combinatorial approach for max-cut. Comp. Opt. and Appl., 51(1):323–344, 2012.\n19. Sanjeev Mahajan and H. Ramesh. Derandomizing approximation algorithms based on semidefinite programming. SIAM Journal on Computing, 28(5):1641–1663, 1999.\n20. Catherine C. McGeoch. Adiabatic Quantum Computation and Quantum Annealing: Theory and Practice. Synthesis Lectures on Quantum Computing. Morgan & Claypool Publishers, 2014.\n21. Petra Mutzel. Graphenalgorithmen, Master Vertiefungsvorlesung. Fakultät für Informatik, TU Dortmund, 2016.\n22. G. I. Orlova and Ya. G. Dorfman. Finding the maximum cut in a graph. Engineering Cybernetics, 10(3):502–506, 1972.\n23. János Pach and Géza Tóth. Graphs drawn with few crossings per edge. Combinatorica, 17(3):427–439, 1997.\n24. Christos H. Papadimitriou and Mihalis Yannakakis. Optimization, approximation, and complexity classes. Journal of Computer and System Sciences, 43(3):425 – 440, 1991.\n25. Wei-Kuan Shih, Sun Wu, and Yue-Sun Kuo. Unifying maximum cut and minimum cut of a planar graph. IEEE Transactions on Computers, 39(5):694–697, 1990.",
+  "verbatim_heading_share": 1.1
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Max-Cut for embedded 1-planar graphs",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Removing the crossings",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 The Max-Cut Algorithm",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Correctness",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 Running time",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Conclusion and open problems",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 31.006771300002583,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "unmatched_pred": [
+   "3.3 Correctness",
+   "3.4 Running time"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 4,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs"
+  ]
+ }
+}

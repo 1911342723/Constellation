@@ -1,0 +1,270 @@
+{
+ "doc": "1804.02160",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Enumerating Graph Partitions Without Too Small Connected Components Using Zero-suppressed Binary and Ternary Decision Diagrams",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Preliminaries",
+    1,
+    2
+   ],
+   [
+    "2.1 Notation",
+    1,
+    3
+   ],
+   [
+    "2.2 Zero-suppressed binary decision diagram",
+    2,
+    3
+   ],
+   [
+    "2.3 Ternary decision diagram",
+    2,
+    3
+   ],
+   [
+    "2.4 Frontier-based search",
+    3,
+    3
+   ],
+   [
+    "3 Algorithms",
+    4,
+    2
+   ],
+   [
+    "3.1 Overview of the proposed algorithms",
+    4,
+    3
+   ],
+   [
+    "3.2 Constructing ZS",
+    6,
+    3
+   ],
+   [
+    "3.3 Constructing TS±",
+    6,
+    3
+   ],
+   [
+    "3.4 Constructing ZS↑",
+    7,
+    3
+   ],
+   [
+    "4 Experimental results",
+    7,
+    2
+   ],
+   [
+    "5 Conclusion",
+    10,
+    2
+   ],
+   [
+    "A Example of execution of the whole algorithm",
+    10,
+    2
+   ],
+   [
+    "B Pseudocode",
+    11,
+    2
+   ],
+   [
+    "References",
+    11,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 14049,
+   "completion_tokens": 14052
+  },
+  "elapsed_llm_seconds": 52.544515300003695,
+  "word_preservation": {
+   "recall": 0.9989755264655663,
+   "in_order": 0.9989755264655663,
+   "inserted": 0.0009107468123861207
+  },
+  "output_markdown": "# Enumerating Graph Partitions Without Too Small Connected Components Using Zero-suppressed Binary and Ternary Decision Diagrams\n\nYu Nakahata∗1, Jun Kawahara†1, and Shoji Kasahara‡1\n\n1Nara Institute of Science and Technology, Ikoma, Japan\n\n## Abstract\n\nPartitioning a graph into balanced components is important for several applications. For multi-objective problems, it is useful not only to find one solution but also to enumerate all the solutions with good values of objectives. However, there are a vast number of graph partitions in a graph, and thus it is difficult to enumerate desired graph partitions efficiently. In this paper, an algorithm to enumerate all the graph partitions such that all the weights of the connected components are at least a specified value is proposed. To deal with a large search space, we use zero-suppressed binary decision diagrams (ZDDs) to represent sets of graph partitions and we design a new algorithm based on frontier-based search, which is a framework to directly construct a ZDD. Our algorithm utilizes not only ZDDs but also ternary decision diagrams (TDDs) and realizes an operation which seems difficult to be designed only by ZDDs. Experimental results show that the proposed algorithm runs up to tens of times faster than an existing state-of-the-art algorithm.\n\n## 1 Introduction\n\nPartitioning a graph is a fundamental problem in computer science and has several important applications such as evacuation planning, political redistricting, VLSI design, and so on. In some applications among them, it is often required to balance the weights of connected components in a partition. For example, the task of the evacuation planning is to design which evacuation shelter inhabitants escape to. This problem is formulated as a graph partitioning problem, and it is important to obtain a graph partition consisting of balanced connected components (each of which contains a shelter and satisfies some conditions). Another example is political redistricting, the purpose of which is to divide a region (such as a prefecture) into several balanced political districts for fairness.\n\nThere are a vast number of studies for graph optimization problems. An approach is to use a zero-suppressed binary decision diagram (ZDD) [11], which has originally been proposed as a compressed representation of a family of sets. A distinguished characteristic of the approach is not only to compute the single optimal solution but also to enumerate all the feasible solutions in the form of a ZDD. In addition, using several queries for a family of sets provided by ZDDs, we can impose various constraint conditions on solutions represented by a ZDD. Using this approach, Inoue et al. [4] designed an algorithm that constructs the ZDD representing the set of rooted spanning forests and utilized it to minimize the loss of electricity in an electrical distribution network under complex conditions, e.g., voltage, electric current and phase. There are other applications such as solving a variant of the longest path problem [8], reliability evaluation [2, 3], some puzzle problems [16], and exact calculation of impact diffusion in Web [10].\n\n∗nakahata.yu.nm2@is.naist.jp\n†jkawahara@is.naist.jp\n‡kasahara@is.naist.jp\n\n1\n\narXiv:1804.02160v1  [cs.DS]  6 Apr 2018\n\n<<page 2>>\nFor balanced graph partitioning, Kawahara et al. [6] proposed an algorithm to construct a ZDD representing the set of balanced graph partitions by frontier-based search [7, 9, 13], which is a framework to directly construct a ZDD, and applied it to political redistricting. However, their method stores the weights of connected components, represented as integers, into the ZDD, which generates a not compressed ZDD. As a result, the computation is tractable only for graphs only with less than 100 vertices. Nakahata et al. [12] proposed an algorithm to construct the ZDD representing the set of partitions such that all the weights of connected components are bounded by a given upper threshold (and applied it to evacuation planning). Their approach enumerates connected components with weight more than the upper threshold as a ZDD, say forbidden components, and constructs a ZDD representing partitions not containing any forbidden component as a subgraph by set operations, which are performed by so-called apply-like methods [1]. However, it seems difficult to directly use their method to obtain balanced partitions by letting connected components with weight less than a lower threshold be forbidden components because partitions not containing any forbidden component as a connected component (i.e., one of parts in a partition coincides a forbidden component) cannot be obtained by apply-like methods.\n\nIn this paper, for a ZDD ZA and an integer L, we propose a novel algorithm to construct the ZDD representing the set of graph partitions such that the partitions are represented by ZA and all the weights of the connected components in the partitions are at least L. The input ZDD ZA can be the sets of spanning forests used for evacuation planning (e.g., [12]), rooted spanning forests used for power distribution networks (e.g., [4]), and simply connected components representing regions (e.g., [6]), all of which satisfy complex conditions according to problems. We generically call these structures “partitions.” Roughly speaking, our algorithm excludes partitions containing any forbidden component as a connected component from ZA. We first construct the ZDD, say ZS, representing the set of forbidden components, each of which has weight less than L. Then, for a component in ZS, we consider the cutset that separates the input graph into the component and the rest. We represent the set of pairs of every component in ZS and its cutset as a ternary decision diagram (TDD) [15], say TS±. We propose a method to construct the TDD TS± from ZS by frontier-based search. By using the TDD TS±, we show how to obtain partitions each of which belongs to ZA, contains all the edges in a component of a pair in TS± and contains no edge in the cutset of the pair. Finally, we exclude such partitions from ZA and obtain the desired partitions. By numerical experiments, we show that the proposed algorithm runs up to tens of times faster than an existing state-of-the-art algorithm.\n\nThis paper is organized as follows. In Sec. 2, we give some preliminaries and explain ZDDs, TDDs, and frontier-based search. We describe an overview of our algorithm in Sec. 3.1, and the detail in the rest of Sec. 3. Section 4 gives experimental results. The conclusion is described in Sec. 5.\n\n## 2 Preliminaries\n\n### 2.1 Notation\n\nLet Z+ be the set of positive integers. For k ∈Z+, we define [k] = {1, 2, . . . , k}. In this paper, we deal with a vertex-weighted undirected graph G = (V, E, p), where V = [n] is the vertex set and E = {e1, e2, . . . , em} ⊆{{u, v} | u, v ∈V } is the edge set. The function p: V →Z+ gives the weights of the vertices. We often drop p from (V, E, p) when there is no ambiguity. For an edge set E′ ⊆E, we call the subgraph (V, E′) a graph partition. We often identify the edge set E′ with the partition (V, E′) by fixing the graph G. For edge sets E′, E′′ with E′′ ⊆E′ ⊆E and a vertex set V ′′ ⊆V , we say that (V ′′, E′′) is included in the partition (V, E′) as a subgraph. The subgraph (V ′′, E′′) is called a connected component in the partition (V, E′) if V ′′ = dom(E′′) holds, there is no edge in E′ \\ E′′ incident with a vertex in V ′′, and for any two distinct vertices u, v ∈V ′′, there is a u-v path on (V ′′, E′′), where dom(E′′) is the set of vertices which are endpoints of at least one edge in E′′. In this case, we say that (V ′′, E′′) is included in the partition (V, E′) as a connected component. We denote the neighborhood of a vertex v in a partition E′ ⊆E by N(E′, v) = {u | {u, v} ∈E′}. For i ∈[m], E≤i denotes the set\n\n2\n\n<<page 3>>\nFigure 1: The ZDD representing the family {{1, 3}, {2, 3}, {3}}. A square represents a terminal node. A circle is a non-terminal node and the number in it is a label. A solid arc is a 1-arc and a dashed arc is a 0-arc.\n\nFigure 2: The TDD representing the signed family {{+1, −2}, {+1, −3}, {−2, +3}}. A dashed arc is a ZERO-arc, a solid single arc is a POS-arc and a solid double arc is NEG-arc. For simplicity, ⊥and the arcs pointing at it are omitted.\n\nof edges whose indices are at most i. We define E<i, E≥i and E>i in the same way.\n\nFor a set U, let U + = {+e | e ∈U}, U −= {−e | e ∈U} and U ± = U +∪U −. A signed set is a subset of U ± such that, for all e ∈U, the set contains at most one of +e and −e. For example, when U = [3], both {+1, −2} and {−3} are signed sets but {+1, −1, +3} is not. A signed family is a family of signed sets. In particular, when U = E, we sometimes call a signed set a signed subgraph and call a signed family a set of signed subgraphs. For a signed set S±, we define abs(S±) = {e | (+e ∈S±)∨(−e ∈S±)}.\n\n### 2.2 Zero-suppressed binary decision diagram\n\nA zero-suppressed binary decision diagram (ZDD) [11] is a directed acyclic graph Z = (NZ, AZ) representing a family of sets. Here NZ is the set of nodes and AZ is the set of arcs.1 NZ contains two terminal nodes ⊤and ⊥. The other nodes than the terminal nodes are called non-terminal nodes. Each non-terminal node α has the 0-arc, the 1-arc, and the label corresponding to an item in the universe set. For x ∈{0, 1}, we call the destination of the x-arc of a non-terminal node α the x-child of α. We denote the label of α by l(α) and in this paper, assume that l(α) ∈Z+ ∪{∞} for any α ∈NZ. For convenience, we let l(⊤) = l(⊥) = ∞. For each directed arc (α, β) ∈AZ, the inequality l(α) < l(β) holds, which ensures that Z is acyclic. There is exactly one node whose in-degree is zero, called the root node and denoted by rZ. The number of the non-terminal nodes of Z is called the size of Z and denoted by |Z|.\n\nZ represents the family of sets in the following way. Let PZ be the set of all the directed paths from rZ to ⊤. For a directed path p = (n1, a1, n2, a2, . . . , nk, ak, ⊤) ∈PZ with ni ∈NZ, ai ∈AZ and n1 = rZ, we define Sp = {l(ni) | ai ∈AZ,1, i ∈[k]}, where AZ,1 is the set of the 1-arcs of Z. We interpret that Z represents the family {Sp | p ∈PZ}. In other words, a directed path from rZ to ⊤ corresponds to a set in the family represented by Z. As an example, we illustrate the ZDD representing the family {{1, 3}, {2, 3}, {3}} in Fig. 1. In the figure, a dashed arc (99K) and a solid arc (→) are a 0-arc and a 1-arc, respectively. On the ZDD in Fig. 1, there are three directed paths from the root node to ⊤: 1 →3 →⊤, 1 99K 2 →3 →⊤, and 1 99K 2 99K 3 →⊤, which correspond to {1, 3}, {2, 3}, and {3}, respectively. We denote a ZDD representing a family F by ZF.\n\n### 2.3 Ternary decision diagram\n\nA ternary decision diagram (TDD) [15] is a directed acyclic graph T = (NT , AT ) representing a signed family. A TDD shares many concepts with a ZDD, and thus we use the same notation as a ZDD for\n\n1To avoid confusion, we use the words “vertex” and “edge” for input graphs and “nodes” and “arcs” for decision diagrams.\n\n3\n\n<<page 4>>\na TDD. The difference between a ZDD and a TDD is that, while a node of the former has two arcs, that of the latter has three, which are called the ZERO-arc, the POS-arc, and the NEG-arc. T represents the signed family in the following way. For a directed path p = (n1, a1, n2, a2, . . . , nk, ak, ⊤) ∈PT with ni ∈NZ, ai ∈AT and n1 = rT , we define S± p = {+l(ni) | ai ∈AT,+, i ∈[k]} ∪{−l(ni) | ai ∈AT,−, i ∈[k]}, where AT,+ and AT,−are the set of the POS-arcs of T and the set of the NEG-arcs of T , respectively. We interpret that T represents the signed family {S± p | p ∈PT }. We illustrate the TDD representing the signed family {{+1, −2}, {+1, −3}, {−2, +3}} in Fig. 2 for example. In the figure, a dashed arc (99K), a solid single arc (→), and a solid double arc (⇒) are a ZERO-arc, a POS-arc, and a NEG-arc, respectively. The TDD in the figure has three directed paths from the root node to ⊤: 1 →2 ⇒⊤, 1 →2 99K 3 ⇒⊤, and 1 99K 2 ⇒3 →⊤, which correspond to {+1, −2}, {+1, −3}, and {−2, +3}, respectively.\n\n### 2.4 Frontier-based search\n\nFrontier-based search [7, 9, 13] is a framework of algorithms that efficiently construct a decision diagram representing the set of subgraphs satisfying given constraints of an input graph. We explain the general framework of frontier-based search. Given a graph G, let M be a class of subgraphs we would like to enumerate (for example, M is the set of all the s-t paths on G). Frontier-based search constructs the ZDD representing the family M of subgraphs. By fixing G, a subgraph is identified with the edge set the subgraph has, and thus the ZDD represents the family of edge sets actually. Non-terminal nodes of ZDDs constructed by frontier-based search have labels e1, . . . , em. We identify ei with the integer i. We assume that it is determined in advance which edge in G has which index i of ei.\n\nWe directly construct the ZDD in a breadth-first manner. We first create the root node of the ZDD, make it have label e1, and then we carry out the following procedure for i = 1, . . . , m. For each node ni with label ei, we create two nodes, each of which is either a terminal node or a non-terminal node whose label is ei+1 (if i = m, the candidate is only a terminal node), as the 0-child and the 1-child of ni. Which node the x-arc of a node ni with label ei points at is determined by a function, called MakeNewNode, of which we design the detail according to M, i.e., what subgraphs we want to enumerate. Here we describe the generalized nature that MakeNewNode must possess. The node ni represents the set of the subgraphs, denoted by G(ni), corresponding to the set of the directed paths from the root node to ni. Each subgraph in G(ni) contains only edges in E<i. Note that G(⊤) is the desired set of subgraphs represented by the ZDD after the construction finishes. To decide which node the x-arc of ni points at without traversing the ZDD (under construction), we make each node ni have the information ni.conf, which is shared by all the subgraphs in G(ni). The content of ni.conf also depends on M (for example, in the case of s-t paths, we store degrees and components of the subgraphs in G(ni) into ni.conf). MakeNewNode creates a new node, say nnew, with label ei+1 and must behave in the following manner.\n\n1. For all edge sets S≤i ∈G(nnew), if there is no edge set S>i ⊆E>i such that S≤i ∪S>i ∈M, the function discards nnew and returns ⊥to avoid redundant expansion of nodes. (pruning)\n2. Otherwise, if i = m, the function returns ⊤.\n3. Otherwise, the function calculates nnew.conf from ni.conf. If there is a node ni+1 such that whose label is ei+1 and nnew.conf = ni+1.conf, the function abandons nnew and returns ni+1. (node merging) If not, the function returns nnew.\n\nWe make the x-arc of ni point at the node returned by MakeNewNode.\n\nAs for ni.conf, in the case of several kinds of subgraphs such as paths and cycles, it is known that we only have to store states relating to the vertices to which both an edge in E<i and an edge in E≥i are incident into each node [9] (in the case of s-t paths, we store degrees and components of such vertices into each node). The set of the vertices are called the frontier. More precisely, the i-th\n\n4\n\n<<page 5>>\nfrontier is defined as Fi = (Si−1 j=1 ej) ∩(Sm k=i ek). For convenience, we define F0 = Fm = ∅. States of vertices in Fi−1 are stored into ni.conf. By limiting the domain of the information to the frontier, we can reduce memory consumption and share more nodes, which leads to a more efficient algorithm.\n\nThe efficiency of an algorithm based on frontier-based search is often evaluated by the width of a ZDD constructed by the algorithm. The width WZ of a ZDD Z is defined as WZ = max{|Ni| | i ∈[m]}, where Ni denotes the set of nodes whose labels are ei. Using WZ, the number of nodes in Z can be written as |Z| = O(mWZ) and the time complexity of the algorithm is O(τ|Z|), where τ denotes the time complexity of MakeNewNode for one node.\n\n## 3 Algorithms\n\n### 3.1 Overview of the proposed algorithms\n\nIn this section, for a ZDD ZA and L ∈Z+, we propose a novel algorithm to construct the ZDD representing the set of graph partitions such that the partitions are represented by ZA and each connected component in the partitions has weight at least L. In general, there are two techniques to obtain ZDDs having desired conditions. One is frontier-based search, described in the previous section. The method proposed by Kawahara et al. [6] directly stores the weight of each component into ZDD nodes (as conf) and prunes a node when it is determined that the weight of a component is less than L. However, for two nodes, if the weight of a single component on the one node differs from that on the other node, the two nodes cannot be merged. Consequently, node merging rarely occurs in Kawahara et al.’s method and thus the size of the resulting ZDD is too large to construct it if the input graph has more than 100 vertices.\n\nThe other technique is the usage of the recursive structure of a ZDD. Methods based on the recursive structure are called apply-like methods [1]. For each node α of a ZDD, the nodes and arcs reachable from α compose another ZDD, whose root is α. For a ZDD Z and x ∈{0, 1}, let cx(Z) be the ZDD composed by the nodes and arcs reachable from the x-child of the root. For (one or more) ZDDs F (and G), an apply-like method constructs a target ZDD by recursively calling itself against c0(F) and c1(F) (and c0(G) and c1(G)). For example, the ZDD representing F ∩G can be computed from c0(F) ∩c0(G) and c1(F) ∩c1(G). Apply-like methods support various set operations [1, 9].\n\nNakahata et al. [12] developed an algorithm to upperbound the weights of connected components in each partition, i.e., to construct the ZDD representing the set A of partitions included in a given ZDD and the weights of all the components in the partitions are at most H ∈Z+. Their algorithm first constructs the ZDD ZS representing the set of forbidden components (described in the introduction) with weight more than H by frontier-based search. Then, the algorithm constructs the ZDD representing {A ∈A | ∃S ∈S, A ⊇S}, written as ZA.restrict(ZS), which means the set of all the partitions each of which includes a component in S as a subgraph, in a way of apply-like methods. Finally, we extract subgraphs not in ZA.restrict(ZS) from ZA by the set difference operation ZA \\ (ZA.restrict(ZS)) [11], which is also an apply-like method.\n\nIn our case, lowerbounding the weights of components, it is difficult to compute desired partitions by the above approach because a partition including a forbidden component (i.e., weight less than L) as a subgraph can be a feasible solution. We want to obtain a partition including a forbidden component as a connected component. Although we can perform various set operations by designing apply-like methods, it seems difficult to obtain such partitions by direct set operations.\n\nOur idea in this paper is to employ the family of signed sets to represent the set of pairs of every forbidden component and its cutset. We use the following observation.\n\nObservation 1. Let A be a graph partition of G = (V, E) and S ⊆E be an edge set such that (dom(S), S) is connected. The partition A contains (dom(S), S) as a connected component if and only if both of the following hold.\n\n1. A contains all the edges in S.\n\n5\n\n<<page 6>>\nFigure 3: A graph partition A and a connected subgraph S. Bold lines are edges contained in the partition or the subgraph. Values in vertices are its weights. A contains S as a connected component. The weight of S is 1 + 2+3+4 = 10, and thus, when L > 10, A does not satisfy the lower bound constraint.\n\nFigure 4: A signed subgraph S± with minimal cutset corresponding to S in Fig. 3. Thin single lines, bold single lines, and doubled lines are zero edges, positive edges, and negative edges, respectively.\n\n2. A does not contain any edge e in E \\ S such that e has at least one vertex in dom(S).\n\nBased on Observation 1, we associate a signed subgraph S± with a connected subgraph (dom(S), S):\n\nS± = S+ ∪S−, (1)\n\nS+ = {+e | e ∈S}, (2)\n\nS− = {−e | (e ∈E \\ S) ∧(e ∩dom(S) ̸= ∅)}. (3)\n\nS± is a signed subgraph such that abs(S+) and abs(S−) are sets of edges satisfying Conditions 1 and 2 in Observation 1, respectively. Note that abs(S−) is a cutset of G, that is, removing the edges in abs(S−) separates G into the connected component (dom(abs(S+)), abs(S+)) and the rest. In addition, abs(S−) is minimal among such cutsets. In this sense, we say that S± is a signed subgraph with minimal cutset for S.\n\nHereinafter, we call edges in abs(S+) positive edges, abs(S−) negative edges and the other edges zero edges. Figure 4 shows S± associated with S in Fig. 3. The partition A in Fig. 3 indeed contains all the edges in abs(S+) and does not contain any edges in abs(S−). For a graph partition E′ ⊆E, when the weights of all the connected components of E′ is at least L, we say that E′ satisfies the lower bound constraint. To extract partitions not satisfying the lower bound constraint from an input ZDD, we compute the set of partitions each of which has all the edges in abs(S+) and no edge in abs(S−) for some S ∈S.\n\nThe overview of the proposed method is as follows. In the following, let A be the set of graph partitions represented by the input ZDD and B be the set of graph partitions each of which belongs to A and satisfies the lower bound constraint.\n\n1. We construct the ZDD ZS representing the set S of forbidden components, where S is the set of the connected components of G whose weights are less than L.\n2. Using ZS, we construct the TDD TS±, where S± is a set of signed subgraphs with minimal cutset corresponding to S by a way of frontier-based search.\n3. Using TS±, we construct the ZDD ZS↑, where S↑is the set of partitions each of which contains at least one forbidden component in S as a connected component.\n4. We obtain the ZDD ZB by the set difference operation ZA \\ ZS↑[11].\n\nIn the rest of this section, we describe each step from 1 to 3.\n\n6\n\n<<page 7>>\n### 3.2 Constructing ZS\n\nWe describe how to construct ZS, which represents the set S of forbidden subgraphs whose weights are less than L. In this subsection, we consider only forbidden components with at least one edge. Note that a component with only one vertex cannot be distinguished by sets of edges because all such subgraphs are represented by the empty edge set. We show how to deal with components having only one vertex in Sec. 3.4.\n\nWe can construct ZS using frontier-based search. Due to the page restriction, we describe a brief overview. To construct ZS, in the frontier-based search, it suffices to ensure that every enumerated subgraph has only one connected component and its weight is less than L. The former can be dealt by storing the connectivity of the vertices in the frontier as comp [7]. The latter can be checked by managing the total weight of vertices such that at least one edge is incident to as weight.\n\nLet us analyze the width of ZS. For nodes with the same label, there are O(Bf) different states for comp [6], where, for k ∈Z+, Bk is the k-th Bell number and f = max{|Fi| | i ∈[m]}. As for weight, when weight exceeds L, we can immediately conclude that the subgraphs whose weights are less than L are generated no more. If we prune such cases, there are O(L) different states for weight. As a result, we can obtain the following lemma on the width of ZS.\n\nLemma 1. The width of ZS is O(BfL), where f = max{|Fi| | i ∈[m]}.\n\n### 3.3 Constructing TS±\n\nIn this subsection, we propose an algorithm to construct TS±. First, we show how to construct the TDD representing the set of all the signed subgraphs with minimal cutset, including a disconnected one. Next, we describe the method to construct TS± using ZS.\n\nLet S± = S+ ∪S−be a signed subgraph. Our algorithm uses the following observation on signed subgraphs with minimal cutset.\n\nObservation 2. A signed subgraph S± is a signed subgraph with minimal cutset if and only if the following two conditions hold:\n\n1. For all v ∈V , at most one of a zero edge or a positive edge is incident to v.\n2. For all the negative edges {u, v}, a positive edge is incident to at least one of u and v.\n\nConditions 1 and 2 in Observation 2 ensure that abs(S−) is a cutset such that removing it leaves the connected component whose edge set is abs(S+) and the minimality of abs(S−). This shows the correctness of the observation. We design an algorithm based on frontier-based search to construct a TDD representing the set of all the signed subgraphs satisfying Conditions 1 and 2 in Observation 2.\n\nFirst, we consider Condition 1. To ensure Condition 1, we store an array colors : V →2{0,+,−} into each TDD node. For all v ∈Fi−1, we manage ni.colors[v] so that it is equal to the set of types of edges incident to v. For example, if a zero edge and a positive edge are incident to v and no negative edges are, colors[v] must be {0, +}. We can prune the case such that Condition 1 is violated using colors, which ensures Condition 1.\n\nNext, we consider Condition 2. Let {u, v} be a negative edge. When u and v leave the frontier at the same time, we check if Condition 2 is satisfied from colors[u] and colors[v] and, if not, we prune the case. When one of u or v leaves the frontier (without loss of generality, we assume the vertex is u), if no positive edges are incident to u, at least one positive edge must be incident to v later. To deal with this situation, we store an array reserved : V →{0, 1} into each TDD node. For all v ∈Fi−1, we manage reserved[v] so that reserved[v] = 1 if and only if at least one positive edge must be incident to v later. We can prune the cases such that v ∈V is leaving the frontier and both reserved[v] = 1 and + /∈colors[v] hold, which violate Condition 2. We show MakeNewNode function and its subroutine Reserve in Algorithms 1 and 2 in Appendix B, respectively.\n\nWe give the following lemma on the width of a ZDD constructed by Algorithms 1 and 2.\n\n7\n\n<<page 8>>\nLemma 2. The width WT of a ZDD constructed by Algorithms 1 and 2 is WT = O(6f).\n\nProof. We analyze the number of different non-terminal nodes which are returned by MakeNewNode function and have the label ei. To this end, we analyze the number of a pair (colors[w], reserved[w]) for each w ∈Fi−1. Because of Lines 4–5 in MakeNewNode, + and 0 are never in colors[w] together. In addition, colors[w] is never empty because, when MakeNewNode returns a non-terminal node, there are at least one processed edge incident to w and its type has been added into colors[w] in Line 16. Therefore, there are at most five different states for colors[w]: {0}, {−}, {+}, {0, −}, and {−, +}. As for reserved[w], it may be 1 only when colors[w] = {−} because of Lines 3–4 in Reserve. Thus, there are at most six different states for (colors[w], reserved[w]). There are at most f vertices in the frontier, and therefore WT = O(6f).\n\nNext, we show how to construct TS± using ZS. We can achieve this goal using subsetting technique [5] with Algorithms 1 and 2. Subsetting technique is a framework to construct a decision diagram corresponding to another decision diagram. We ensure that, for all S± = S+ ∪S−∈S±, there exists S ∈S such that abs(S+) = S in the construction of TS± using subsetting technique.\n\n### 3.4 Constructing ZS↑\n\nIn this section, we show how to construct ZS↑and how to deal with forbidden components consisting only of one vertex whose weight is less than L, which was left as a problem in Sec. 3.2. From Observation 1 and Eqs. (1)–(3), S↑can be written as\n\nS↑= {E′ ⊆E | ∃S± ∈S±, (∀+ e ∈S±, e ∈E′) ∧(∀−e ∈S±, e /∈E′)}. (4)\n\nUsing TS±, we can construct ZS by the algorithm of Suzuki et al. [14].\n\nFinally, we show how to deal with a graph partition containing a single vertex v such that p(v) < L as a connected component, i.e., a partition has an isolated vertex with small weight. Let Fv be the set of graph partitions containing ({v}, ∅) as a connected component. A graph partition E′ ⊆E belongs to Fv if and only if E′ does not contain any edge incident to v. Using this, we can construct the ZDD Zv representing Fv in O(m) time. For each v ∈V such that p(v) < L, we construct Zv and update ZS↑←ZS↑∪Zv. In this way, we can deal with all the graph partitions containing a connected component whose weight is less than L. We show an example of execution of the whole algorithm in Appendix A.\n\n## 4 Experimental results\n\nWe conducted computational experiments to evaluate the proposed algorithm and to compare it with the existing state-of-the-art algorithm of Kawahara et al [6]. We used a machine with an Intel Xeon Processor E5-2690v2 (3.00 GHz) CPU and a 64 GB memory (Oracle Linux 6) for the experiments. We have implemented the algorithms in C++ and compiled them by g++ with the -O3 optimization option. In the implementation, we used the TdZdd library [5] and the SAPPORO BDD library.2 The timeout is set to be an hour.\n\nWe used graphs representing some prefectures in Japan for the input graphs. The vertices represent cities and there is an edge between two cities if and only if they have the common border. The weight of a vertex represents the number of residents living in the city represented by the vertex. As for the input ZDD ZA, we adopted three types of graph partitions: graph partitions such that each connected component is an induced subgraph [6], which we call induced partition, forests, and rooted forests. There is a one-to-one correspondence between induced partitions and partitions of the vertex set. A rooted forest is a forest such that each tree in the forest has exactly one specified vertex. We chose\n\n2Although the SAPPORO BDD library is not released officially, you can see the code in https://github.com/takemaru/graphillion/tree/master/src/SAPPOROBDD.\n\n8\n\n<<page 9>>\nTable 1: Summary of input graphs and input graph partitions.\n\n| | | | | Induced partition | | Forest | | Rooted forest | |\n|---|---|---|---|---|---|---|---|---|---|\n| Name | n | m | k | \\|ZA\\| | \\|A\\| | \\|ZA\\| | \\|A\\| | \\|ZA\\| | \\|A\\| |\n| G1 (Gumma) | 37 | 80 | 4 | 10236 | 1.25 × 108 | 26361 | 1.01 × 1019 | 8957 | 1.66 × 1016 |\n| G2 (Ibaraki) | 44 | 95 | 7 | 17107 | 6.38 × 1013 | 15553 | 6.14 × 1023 | 3238 | 1.94 × 1019 |\n| G3 (Chiba) | 60 | 134 | 14 | 301946 | 6.69 × 1022 | 213773 | 4.86 × 1033 | 15741 | 5.04 × 1025 |\n| G4 (Aichi) | 69 | 173 | 17 | 1598213 | 9.26 × 1029 | 879361 | 1.78 × 1042 | 43465 | 3.10 × 1030 |\n| G5 (Nagano) | 77 | 185 | 5 | 13203 | 2.77 × 1017 | 44804 | 2.95 × 1043 | 26476 | 7.66 × 1039 |\n\nspecial vertices for each graph randomly. A summary of input graphs and input graph partitions is in Tab. 1. In the table, we show graph names and the prefecture represented by the graph, the number of vertices (n), edges (m) and connected components (k) in graph partitions. The groups of columns “Induced partition”, “Forest”, and “Rooted forest” indicate the types of input graph partitions. Inside each of them, we show the size (the number of non-terminal nodes) of ZA and the cardinality of A.\n\nThe lower bounds of weights are determined as follows. Let k be the number of connected components in a graph partition and r be the maximum ratio of the weights of two connected components in the graph partition. From k and r, we can derive the necessary condition that the weight of every connected component must be at least L(k, r) = P/(r(k −1) + 1), where P = P v∈V p(v) [6]. We used L(k, r) as the lower bound of weights in the experiment. For each graph, we run the algorithms in r = 1.1, 1.2, 1.3, 1.4, and 1.5.\n\nWe show the experimental results in Tab. 2. In the table, we show the graph name, the value of r and L(k, r), and the execution time of Alg. N, the proposed algorithm, and Alg. K, the algorithm of Kawahara et al. The size of ZB and the cardinality of B are also shown. “OOM” means out of memory and “-” means both algorithms failed to construct the ZDD (due to timeout or out of memory). We marked the values of the time of the algorithm which finished faster as bold.\n\nFirst, we analyze the results for induced partitions. For the input graphs from G1 to G4, both Alg. N and Alg. K succeeded in constructing ZB, except when r = 1.1 in G4 for Alg. K. In cases where both algorithms succeeded in constructing ZB, the time for Alg. N to construct the ZDD is 2–32 times shorter than that for Alg. K. In addition, Alg. N succeeded in constructing the ZDD when r = 1.1 in G4, where Alg. K failed to construct the ZDD because of out of memory. These results show the efficiency of our algorithm. In contrast, for G5, although both algorithms failed to construct the ZDD when r = 1.1, 1.2, 1.3 and 1.4, only Alg. K succeeded when r = 1.5. In this case, the size of the ZDD constructed by Alg. N did stay in the limitation of memory while, in our algorithm, the size of ZS↑exceeded the limitation of memory.\n\nSecond, we investigate the results for forests. Both Alg. N and Alg. K succeeded in constructing ZB for the input graph from G1 to G4. In all those cases, Alg. N was faster than Alg. K. Comparing the results with those of induced partitions, we found that the execution time of Alg. K depends on the input partitions more than Alg. N does. For example, for G1, while the execution time of Alg. N is almost irrelevant to the types of input ZDDs, that of Alg. K differ up to about five times. This is because the efficiency of Alg. K strongly depends on the sizes of input ZDDs. This makes the sizes of output ZDDs constructed by Alg. K large, which implies the increase in the execution time of Alg. K. In contrast, the execution time of Alg. N does not depend on the sizes of input ZDDs in many cases because Alg. N uses the input ZDD only in the set difference operation, which is executed in the last of the algorithm (by the existing apply-like method). As we show later, the bottleneck of Alg. N is the construction of ZS↑. Therefore, in many cases, the sizes of input ZDDs do not change the execution time of Alg. N.\n\nThird, we examine the results when the input graph partitions are rooted forests. There are 13 cases such that Alg. K was faster than Alg. N. In the cases, the sizes of input ZDDs and output ZDDs are small, that is, thousands, or even zero. These results show that Alg. K tends to be faster when the sizes of input ZDDs and output ZDDs are small.\n\nIn order to assess the efficiency of our algorithm in each step, we show detailed experimental results\n\n9\n\n<<page 10>>\nTable 2: Experimental results for three types of input graph partitions.\n\n| | | | Induced partition | | | Forest | | | Rooted forest | | |\n|---|---|---|---|---|---|---|---|---|---|---|---|\n| | r | L(r, k) | Alg. N | Alg. K | \\|ZB\\| | \\|B\\| | Alg. N | Alg. K | \\|ZB\\| | \\|B\\| | Alg. N | Alg. K | \\|ZB\\| | \\|B\\| |\n| G1 | 1.1 | 458947 | 4.22 | 12.07 | 4912 | 1.74 × 104 | 4.03 | 50.84 | 29502 | 8.24 × 1012 | 3.95 | 14.96 | 17920 | 3.52 × 1011 |\n| | 1.2 | 429016 | 2.06 | 10.50 | 3500 | 5.40 × 104 | 2.04 | 47.30 | 21364 | 3.10 × 1013 | 2.02 | 13.34 | 6331 | 1.68 × 1012 |\n| | 1.3 | 402750 | 1.15 | 7.49 | 2986 | 9.02 × 104 | 1.18 | 36.10 | 18113 | 7.42 × 1013 | 1.17 | 10.54 | 4655 | 4.44 × 1012 |\n| | 1.4 | 379514 | 0.99 | 5.72 | 3115 | 2.52 × 105 | 1.03 | 24.41 | 20605 | 3.84 × 1014 | 1.03 | 6.97 | 7677 | 3.18 × 1013 |\n| | 1.5 | 358813 | 0.90 | 5.12 | 3562 | 2.99 × 105 | 0.89 | 23.29 | 20367 | 7.19 × 1014 | 0.88 | 6.52 | 6719 | 6.17 × 1013 |\n| G2 | 1.1 | 383928 | 3.70 | 29.48 | 27927 | 1.91 × 106 | 3.60 | 35.28 | 47461 | 2.56 × 1013 | 3.53 | 2.19 | 391 | 4.32 × 106 |\n| | 1.2 | 355836 | 3.03 | 23.03 | 83053 | 1.25 × 108 | 2.92 | 25.59 | 143455 | 2.11 × 1015 | 2.95 | 1.81 | 3103 | 3.72 × 109 |\n| | 1.3 | 331574 | 1.73 | 16.25 | 92334 | 1.02 × 109 | 1.70 | 18.09 | 154449 | 1.41 × 1016 | 1.60 | 1.74 | 5861 | 1.36 × 1011 |\n| | 1.4 | 310410 | 1.21 | 12.45 | 105507 | 4.54 × 109 | 1.30 | 14.03 | 179186 | 1.02 × 1017 | 1.28 | 1.55 | 5710 | 1.54 × 1012 |\n| | 1.5 | 291785 | 0.73 | 8.88 | 98231 | 1.25 × 1010 | 0.74 | 9.38 | 149403 | 3.06 × 1017 | 0.70 | 1.21 | 5855 | 6.74 × 1012 |\n| G3 | 1.1 | 377742 | 83.76 | 1008.11 | 0 | 0 | 77.19 | 811.03 | 0 | 0 | 78.68 | 66.96 | 0 | 0 |\n| | 1.2 | 348159 | 32.87 | 852.47 | 6641 | 2.32 × 105 | 27.12 | 657.89 | 17252 | 1.34 × 1013 | 27.27 | 89.75 | 0 | 0 |\n| | 1.3 | 322874 | 23.33 | 626.94 | 261978 | 3.12 × 1010 | 20.87 | 452.10 | 768876 | 1.53 × 1019 | 36.20 | 36.30 | 0 | 0 |\n| | 1.4 | 301013 | 12.08 | 386.91 | 328581 | 4.92 × 1011 | 10.88 | 266.19 | 917102 | 3.23 × 1020 | 9.70 | 22.14 | 0 | 0 |\n| | 1.5 | 281924 | 10.81 | 315.40 | 405816 | 3.02 × 1012 | 9.29 | 205.90 | 1062331 | 9.94 × 1020 | 7.64 | 19.44 | 606 | 2.88 × 1010 |\n| G4 | 1.1 | 402370 | 155.05 | OOM | 190520 | 1.54 × 1010 | 64.12 | 1032.53 | 374111 | 5.43 × 1018 | 51.95 | 0.65 | 0 | 0 |\n| | 1.2 | 370499 | 86.91 | 628.93 | 739356 | 1.98 × 1014 | 24.09 | 317.44 | 1374522 | 1.41 × 1023 | 20.82 | 0.96 | 0 | 0 |\n| | 1.3 | 343307 | 125.06 | 408.97 | 1148330 | 1.98 × 1016 | 14.83 | 190.25 | 2005760 | 7.27 × 1024 | 11.69 | 1.48 | 0 | 0 |\n| | 1.4 | 319833 | 108.25 | 281.81 | 1465722 | 6.32 × 1017 | 12.18 | 134.15 | 2495000 | 1.87 × 1026 | 8.31 | 3.09 | 5645 | 2.19 × 1011 |\n| | 1.5 | 299363 | 29.13 | 190.59 | 1761682 | 1.65 × 1019 | 9.60 | 85.84 | 2434632 | 4.02 × 1027 | 5.55 | 3.46 | 15587 | 9.56 × 1014 |\n| G5 | 1.1 | 388844 | > 1 h | OOM | - | - | > 1 h | OOM | - | - | > 1 h | < 0.01 | 0 | 0 |\n| | 1.2 | 362027 | > 1 h | OOM | - | - | > 1 h | OOM | - | - | > 1 h | < 0.01 | 0 | 0 |\n| | 1.3 | 338670 | OOM | OOM | - | - | > 1 h | OOM | - | - | > 1 h | < 0.01 | 0 | 0 |\n| | 1.4 | 318145 | OOM | OOM | - | - | OOM | OOM | - | - | OOM | < 0.01 | 0 | 0 |\n| | 1.5 | 299965 | OOM | 1960.28 | 393178 | 9.20 × 1013 | OOM | OOM | - | - | OOM | < 0.01 | 0 | 0 |\n\n10\n\n<<page 11>>\nTable 3: Detailed experimental results of the proposed algorithm for G3 (Chiba) and G4 (Aichi) when the input graph partitions are induced partitions.\n\n| | | ZS | | | TS± | | ZS↑ | | | ZA \\ ZS↑ |\n|---|---|---|---|---|---|---|---|---|---|---|\n| | r | time | node | card | time | node | time | node | card | time |\n| G3 | 1.1 | 1.90 | 54745 | 4.24 × 108 | 0.93 | 99057 | 75.88 | 2117874 | 2.17532 × 1040 | 5.05 |\n| | 1.2 | 1.01 | 39845 | 1.67 × 108 | 0.69 | 75581 | 27.94 | 977840 | 2.17528 × 1040 | 3.23 |\n| | 1.3 | 0.58 | 31030 | 6.62 × 107 | 0.51 | 60034 | 18.83 | 814538 | 2.17498 × 1040 | 3.41 |\n| | 1.4 | 0.34 | 24066 | 3.30 × 107 | 0.38 | 48818 | 8.49 | 490753 | 2.17490 × 1040 | 2.87 |\n| | 1.5 | 0.25 | 19877 | 1.42 × 107 | 0.34 | 40340 | 7.23 | 410152 | 2.17486 × 1040 | 2.99 |\n| G4 | 1.1 | 0.02 | 2376 | 2.09 × 104 | 0.32 | 11109 | 80.03 | 3074734 | 1.19200 × 1052 | 74.68 |\n| | 1.2 | 0.01 | 1686 | 1.03 × 104 | 0.20 | 8511 | 22.24 | 1205320 | 1.19174 × 1052 | 64.46 |\n| | 1.3 | 0.01 | 1235 | 6.11 × 103 | 0.17 | 6935 | 11.51 | 692798 | 1.19170 × 1052 | 113.37 |\n| | 1.4 | < 0.01 | 961 | 3.67 × 103 | 0.14 | 5808 | 8.30 | 529214 | 1.19164 × 1052 | 99.81 |\n| | 1.5 | < 0.01 | 756 | 2.67 × 103 | 0.13 | 4930 | 5.30 | 348832 | 1.19153 × 1052 | 23.70 |\n\nfor G3 and G4 when the input graph partitions are induced partitions in Tab. 3. In the table, we show the time to construct decision diagrams, the size of decision diagrams, and the cardinality of the family represented by ZDDs. The cardinality of S± is omitted because it is equal to that of S. The size and cardinality for ZA \\ ZS↑are also omitted because they are the same as |ZB| and |B|, which are shown in Tab. 2. For both G3 and G4, the time to construct ZS and TS± are within one or two seconds. The most time-consuming parts are the construction of ZS↑in G3 and ZS↑or ZA \\ ZS↑in G4. The set difference operation in G4 took a lot of time because the sizes of ZA and ZS↑are large, that is, more than a hundred. The reason why the construction of ZS↑takes a lot of time is the increase in the sizes of decision diagrams. While the size of TS± is only 2–7 times larger than that of ZS, that of ZS↑is about 10–276 times larger than that of TS±. This also made the execution of the algorithm in G5 impossible.\n\n## 5 Conclusion\n\nIn this paper, we have proposed an algorithm to construct a ZDD representing all the graph partitions such that all the weights of its connected components are at least a given value. As shown in the experimental results, the proposed algorithm has succeeded in constructing a ZDD representing a set of more than 1012 graph partitions in ten seconds, which is 30 times faster than the existing state-of-the-art algorithm. Future work is devising a more memory efficient algorithm that enables us to deal with larger graphs, that is, graphs with hundreds of vertices. It is also important to seek for efficient algorithms to deal with other constraints on weights such that the ratio of the maximum and the minimum of weights is at most a specified value.\n\n## A Example of execution of the whole algorithm\n\nWe show an example of execution of the whole algorithm. Let an input graph G be the cycle of four vertices, as shown in Fig. 5. In the figure, an integer in a vertex represents its weight. Let A be the set of partitions of G which has exactly two components. A consists of six partitions as shown in Fig. 6. Let us extract graph partitions from A each of whose components have at least weight L = 3. First, we enumerate connected subgraphs in G whose weights are less than L and have at least two vertices. G contains only one such subgraph, {e1}. Thus S consists of only the subgraph. Second, we obtain the set S± of signed subgraphs each of which is a signed subgraph with minimal cutset for a subgraph in S. Now S± is {{+e1, −e2, −e3}}. Third, we calculate the set S↑of graph partitions each of which contains a component whose weight is less than L as a connected subgraph. There is two partitions containing {e1} as a connected component: {e1} and {e1, e4}. In addition, we consider subgraphs with\n\n11\n\n<<page 12>>\nFigure 5: An example input graph.\n\nFigure 6: Graph sets in the execution of the algorithm.\n\nonly one vertex whose weight is less than L: ({v1}, ∅) and ({v2}, ∅). Adding partitions which have v1 or v2 as an isolated vertex, we obtain S↑and it consists of eight partitions, as shown in the figure. Finally, we remove the graph partitions in S↑from A and obtain the solutions: {e1, e2}, {e1, e3}, and {e2, e3}.\n\n## B Pseudocode\n\nWe show pseudocode in Algorithms 1 and 2 referred to from the main sections.\n\n## References\n\n[1] Randal E. Bryant. Graph-based algorithms for boolean function manipulation. IEEE Transactions on Computers, 100(8):677–691, 1986.\n\n[2] Gary Hardy, Corinne Lucet, and Nikolaos Limnios. K-terminal network reliability measures with binary decision diagrams. IEEE Transactions on Reliability, 56(3):506–515, 2007.\n\n[3] Hiroshi Imai, Kyoko Sekine, and Keiko Imai. Computational investigations of all-terminal network reliability via BDDs. IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, E82-A:714–721, 1999.\n\n[4] Takeru Inoue, Keiji Takano, Takayuki Watanabe, Jun Kawahara, Ryo Yoshinaka, Akihiro Kishimoto, Koji Tsuda, Shin-ichi Minato, and Yasuhiro Hayashi. Distribution loss minimization with guaranteed error bound. IEEE Transactions on Smart Grid, 5(1):102–111, 2014.\n\n[5] Hiroaki Iwashita and Shin-ichi Minato. Efficient top-down ZDD construction techniques using recursive specifications. TCS Technical Reports, TCS-TR-A-13-69, 2013.\n\n12\n\n<<page 13>>\n[6] Jun Kawahara, Takashi Horiyama, Keisuke Hotta, and Shin-ichi Minato. Generating all patterns of graph partitions within a disparity bound. In Proc. of the 11th International Conference and Workshops on Algorithms and Computation (WALCOM), pages 119–131, 2017.\n\n[7] Jun Kawahara, Takeru Inoue, Hiroaki Iwashita, and Shin-ichi Minato. Frontier-based search for enumerating all constrained subgraphs with compressed representation. IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, 100(9):1773–1784, 2017.\n\n[8] Jun Kawahara, Toshiki Saitoh, Hirofumi Suzuki, and Ryo Yoshinaka. Solving the longest oneway-ticket problem and enumerating letter graphs by augmenting the two representative approaches with ZDDs. In Computational Intelligence in Information Systems, pages 294–305, 2017.\n\n[9] Donald E. Knuth. The art of computer programming, Vol. 4A, Combinatorial algorithms, Part 1. Addison-Wesley, 2011.\n\n[10] Takanori Maehara, Hirofumi Suzuki, and Masakazu Ishihata. Exact computation of influence spread by binary decision diagrams. In Proc. of the 26th International World Wide Conference (WWW), pages 947–956, 2017.\n\n[11] Shin-ichi Minato. Zero-suppressed BDDs for set manipulation in combinatorial problems. In Proc. of the 30th ACM/IEEE design automation conference, pages 272–277, 1993.\n\n[12] Yu Nakahata, Jun Kawahara, Takashi Horiyama, and Shoji Kasahara. Enumerating all spanning shortest path forests with distance and capacity constraints. IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences (to appear).\n\n[13] Kyoko Sekine, Hiroshi Imai, and Seiichiro Tani. Computing the Tutte polynomial of a graph of moderate size. In Proc. of the 6th International Symposium on Algorithms and Computation (ISAAC), pages 224–233, 1995.\n\n[14] Hirofumi Suzuki, Jun Kawahara, Toshiki Saitoh, and Ryo Yoshinaka. Enumeration of chordal graphs. Personal communications (to be submitted to ArXiv and a journal).\n\n[15] Koichi Yasuoka. A new method to represent sets of products: ternary decision diagrams. IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, 78(12):1722–1728, 1995.\n\n[16] Ryo Yoshinaka, Toshiki Saitoh, Jun Kawahara, Koji Tsuruma, Hiroaki Iwashita, and Shin-ichi Minato. Finding all solutions and instances of numberlink and slitherlink by ZDDs. Algorithms, 5(2):176–213, 2012.\n\n13\n\n<<page 14>>\nAlgorithm 1: MakeNewNode(ni, i, s) for constructing a TDD representing the set of signed subgraphs with minimal cutset.\n\n// This function returns s(∈{0, +, −})-child of ni whose label is ei.\n1 Let ei = {u, v}.\n2 Copy ni to n′ i.\n3 foreach x ∈{u, v} do\n// violates Condition 1 in Observation 2\n4 if 0 ∈n′ i.colors[x] and s = + then return ⊥\n5 if + ∈n′ i.colors[x] and s = 0 then return ⊥\n6 if n′ i.colors[x] = {−} and s = 0 then\n// Reserve the vertices in the frontier which are connected to x by the processed edges.\n7 n′ i ←Reserve(n′ i, N(E<i, x) ∩(Fi−1 ∪Fi))\n8 if n′ i = ⊥then return ⊥\n9 if 0 ∈n′ i.colors[x] and s = −then\n// There is a zero edge incident to x, which is an endpoint of ei. Therefore, we reserve the other endpoint of ei.\n10 n′ i ←Reserve(n′ i, ei \\ {x})\n11 if n′ i = ⊥then return ⊥\n12 if n′ i.reserved[x] = 1 and s = 0 then\n// Since x has been already reserved, if ei (zero edge) becomes incident to x, positive edges cannot become incident to x. This violates Condition 1 in Observation 2.\n13 return ⊥\n14 if n′ i.reserved[x] = 1 and s = + then\n15 n′ i.reserved[x] ←0\n// The reservation is archived.\n16 n′ i.colors[x] ←n′ i.colors[x] ∪{s}\n17 foreach x ∈{u, v} do\n18 if x /∈Fi then\n// x is leaving the frontier.\n19 if n′ i.reserved[x] = 1 and + /∈n′ i.colors[x] then\n// Although x is reserved, no positive edges are incident to x.\n20 return ⊥\n21 if n′ i.colors[x] = {−} then\n// Reserve the vertices in the frontier which are connected to x by the processed edges.\n22 n′ i ←Reserve(n′ i, N(E≤i, x) ∩(Fi−1 ∪Fi))\n23 if n′ i = ⊥then return ⊥\n// Delete the information about the vertices leaving the frontier.\n24 n′ i.colors[x] ←{}\n25 n′ i.reserved[x] ←0\n26 if i = m then\n27 return ⊤\n// All the constraints are satisfied.\n28 return n′ i\n\n14\n\n<<page 15>>\nAlgorithm 2: Reserve(n′, X)\n\n// This function reserves the vertices in X ⊆V in a TDD node n′ and returns the node n′′ who has an updated state from n′.\n1 Copy n′ to n′′.\n2 for x ∈X do\n// We cannot reserve x if there is a zero edge incident to x.\n3 if 0 ∈n′′.colors[x] then return ⊥\n// Reserve x if there are no positive edges incident to x.\n4 if + /∈n′′.colors[x] then n′′.reserved[x] ←1\n5 return n′′\n\n15",
+  "verbatim_heading_share": 1.0588235294117647
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Notation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Zero-suppressed binary decision diagram",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Ternary decision diagram",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Frontier-based search",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Algorithms",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Overview of the proposed algorithms",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Constructing ZS",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3 Constructing TS±",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.4 Constructing ZS↑",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Experimental results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Example of execution of the whole algorithm",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Pseudocode",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 52.61583719999908,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 8,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Enumerating Graph Partitions Without Too Small Connected Components Using Zero-s"
+  ]
+ }
+}

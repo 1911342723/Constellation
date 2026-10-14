@@ -183,6 +183,7 @@ EvidenceKind = Literal[
     "semantic_title",
     "toc_destination",
     "run_in_pattern",
+    "layout_detector",
     "caption_negative",
     "non_lexical_negative",
     "bibliography_negative",
@@ -192,6 +193,7 @@ EvidenceKind = Literal[
     "margin_negative",
     "styled_prose_negative",
     "body_signature_negative",
+    "layout_detector_negative",
 ]
 _HEADING_LABELS: tuple[HeadingLabel, ...] = (
     "NONE", "L1", "L2", "L3", "L4", "L5", "L6",

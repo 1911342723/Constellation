@@ -1,0 +1,245 @@
+{
+ "doc": "1507.01715",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 26,
+  "tp": 16,
+  "fp": 10,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6296296296296297,
+  "unmatched_gt": [
+   "8.1.4. Remaining breakout discussions: Citation ecosystems. This group defined i",
+   "8.1.5. Remaining breakout discussions: Taxonomy of contributorship/guidelines fo"
+  ],
+  "unmatched_pred": [
+   "3.2. Neil Chue Hong, We are the 92% Hongslides",
+   "6.2. Papers",
+   "7.1. Discussion and Actions",
+   "7.2. Papers",
+   "8.1. Discussion and Actions",
+   "8.2. Papers",
+   "9.1. Discussion and Actions",
+   "9.2. Papers",
+   "10.1. Discussion and Actions",
+   "10.2. Papers"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Submissions, Peer-Review, and Peer-Grouping",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Keynotes",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Kaitlin Thaney, Designing for Truth, Scale, and Sustainability Thaneyslides",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2. Neil Chue Hong, We are the 92% Hongslides",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4. Lightning Talks",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Defining Sustainability",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Exploring Sustainability",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Discussion and Actions",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.2. Papers",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7. Software Development Experiences",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1. Discussion and Actions",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "7.2. Papers",
+   "page": 13,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "8. Credit & Incentives",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1. Discussion and Actions",
+   "page": 14,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "8.2. Papers",
+   "page": 18,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "9. Reproducibility & Reuse & Sharing",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1. Discussion and Actions",
+   "page": 19,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.2. Papers",
+   "page": 22,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "10. Code Testing & Code Review",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10.1. Discussion and Actions",
+   "page": 22,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "10.2. Papers",
+   "page": 24,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "11. Conclusions",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Attendees",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.053900099999736995,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 26,
+  "tp": 16,
+  "fp": 10,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6296296296296297,
+  "unmatched_gt": [
+   "8.1.4. Remaining breakout discussions: Citation ecosystems. This group defined i",
+   "8.1.5. Remaining breakout discussions: Taxonomy of contributorship/guidelines fo"
+  ],
+  "unmatched_pred": [
+   "3.2. Neil Chue Hong, We are the 92% Hongslides",
+   "6.2. Papers",
+   "7.1. Discussion and Actions",
+   "7.2. Papers",
+   "8.1. Discussion and Actions",
+   "8.2. Papers",
+   "9.1. Discussion and Actions",
+   "9.2. Papers",
+   "10.1. Discussion and Actions",
+   "10.2. Papers"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 23,
+  "tp": 13,
+  "fp": 10,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.5416666666666667,
+  "unmatched_gt": [
+   "8.1.4. Remaining breakout discussions: Citation ecosystems. This group defined i",
+   "8.1.5. Remaining breakout discussions: Taxonomy of contributorship/guidelines fo",
+   "12. Attendees"
+  ],
+  "unmatched_pred": [
+   "3.2. Neil Chue Hong, We are the 92% Hongslides",
+   "6.2. Papers",
+   "7.1. Discussion and Actions",
+   "7.2. Papers",
+   "8.1. Discussion and Actions",
+   "8.2. Papers",
+   "9.1. Discussion and Actions",
+   "9.2. Papers",
+   "10.1. Discussion and Actions",
+   "10.2. Papers"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -126,6 +126,7 @@ _LEGACY_REASON_BY_KIND = {
     "standalone_line": "standalone-line",
     "toc_destination": "toc-destination",
     "run_in_pattern": "run-in-pattern",
+    "layout_detector": "layout-detector",
 }
 
 
@@ -895,6 +896,26 @@ def _extract_evidence(
             level=_safe_int(metadata.get("toc_level")),
             level_confidence=0.97,
             source="toc",
+        ))
+    if metadata.get("layout_heading"):
+        evidence.append(_make_evidence(
+            block=block,
+            anchor=anchor,
+            kind="layout_detector",
+            polarity=1,
+            observed_value=metadata.get("layout_heading"),
+            reliability=0.90,
+            correlation_group="layout_detector",
+        ))
+    elif metadata.get("layout_checked"):
+        evidence.append(_make_evidence(
+            block=block,
+            anchor=anchor,
+            kind="layout_detector_negative",
+            polarity=-1,
+            observed_value="not_detected",
+            reliability=0.90,
+            correlation_group="layout_detector",
         ))
     if metadata.get("run_in_prefix") or metadata.get("run_in_heading"):
         evidence.append(_make_evidence(

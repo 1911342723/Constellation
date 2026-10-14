@@ -1,0 +1,153 @@
+{
+ "doc": "1705.06338",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 30.044821200001024
+ },
+ "predictions": [
+  {
+   "text": "Distributed Vector Representation Of Shopping Items, The Customer And Shopping Cart To Build A Three Fold Recommendation System.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Exponential family embeddings",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Similar and co-occuring products",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Recommendation engine",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Visualisation of product embedding and context vectors",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Sent2Vec model and combined model",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Application of product embedding",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Trip Embedding",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 Trip analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "7.2 Trip Profiling",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "8 Customer Embedding",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 Customer analysis",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "8.2 Customer Profiling",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9 Schematic representation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Conclusion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.013318099998286925,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

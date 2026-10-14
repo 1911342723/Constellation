@@ -1,0 +1,122 @@
+{
+ "doc": "1604.07649",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 6,
+  "pred": 4,
+  "tp": 0,
+  "fp": 4,
+  "fn": 6,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.0,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion",
+   "REFERENCES"
+  ],
+  "unmatched_pred": [
+   "epl draft",
+   "G. Attuel1, N. Derval2, T. Desplantez1, M",
+   "G. Attuel et al.",
+   "3 For instance l ∼ 1mm, since a typical cell length is 100µm, and cell width is "
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 252,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "epl draft",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Critical ﬂuctuations of the electrical activity of the heart: Short-",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "comings of models of excitability and interpretation.",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "G. Attuel1, N. Derval2, T. Desplantez1, M",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "G. Attuel et al.",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "3 For instance l ∼ 1mm, since a typical cell length is 100µm, and cell width is 10µm, with z is the average number of connected cells,",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.190211799999815,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 0,
+  "fp": 6,
+  "fn": 6,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.0,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion",
+   "REFERENCES"
+  ],
+  "unmatched_pred": [
+   "epl draft",
+   "Critical ﬂuctuations of the electrical activity of the heart: Short-",
+   "comings of models of excitability and interpretation.",
+   "G. Attuel1, N. Derval2, T. Desplantez1, M",
+   "G. Attuel et al.",
+   "3 For instance l ∼ 1mm, since a typical cell length is 100µm, and cell width is "
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 4,
+  "tp": 0,
+  "fp": 4,
+  "fn": 5,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.0,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion"
+  ],
+  "unmatched_pred": [
+   "epl draft",
+   "G. Attuel1, N. Derval2, T. Desplantez1, M",
+   "G. Attuel et al.",
+   "3 For instance l ∼ 1mm, since a typical cell length is 100µm, and cell width is "
+  ],
+  "ignored_title_predictions": null
+ }
+}

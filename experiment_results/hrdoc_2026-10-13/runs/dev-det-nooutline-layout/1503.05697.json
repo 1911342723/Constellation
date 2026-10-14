@@ -1,0 +1,114 @@
+{
+ "doc": "1503.05697",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 466,
+  "layout_marked": 8,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8853754940711462,
+  "inserted_word_share": 0.1032448377581121
+ },
+ "predictions": [
+  {
+   "text": "Maximal quantum Fisher information for general su(2) parametrization processes",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MAXIMAL QUANTUM FISHER",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. APPLICATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Time-independent Hamiltonians",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Time-dependent Hamiltonian",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. DISCUSSION AND CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.2012976999976672,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

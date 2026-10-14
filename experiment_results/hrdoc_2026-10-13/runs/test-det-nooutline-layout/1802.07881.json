@@ -1,0 +1,110 @@
+{
+ "doc": "1802.07881",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "RE S U LT S O N C I FAR -1 0",
+   "DE E P EN SEMBL E S W IT H DIFFERENT M"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "RE S U LT S O N C I FAR -1 0",
+   "DE E P EN SEMBL E S W IT H DIFFERENT M"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 132,
+  "layout_marked": 11,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8355951919348584,
+  "inserted_word_share": 0.22061482820976497
+ },
+ "predictions": [
+  {
+   "text": "DIVERSITY REGULARIZATION IN DEEP ENSEMBLES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 EVALUATING CALIBRATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 RESULTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.5818538000021363,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "RE S U LT S O N C I FAR -1 0",
+   "DE E P EN SEMBL E S W IT H DIFFERENT M"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

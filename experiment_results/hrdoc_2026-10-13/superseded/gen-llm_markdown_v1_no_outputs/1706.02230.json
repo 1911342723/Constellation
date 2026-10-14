@@ -1,0 +1,270 @@
+{
+ "doc": "1706.02230",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates",
+   "test"
+  ],
+  "unmatched_pred": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 8015,
+   "completion_tokens": 7145
+  },
+  "elapsed_llm_seconds": 33.077427800002624,
+  "content_preservation": 0.8757396449704142,
+  "inserted_word_share": 0.10717876533279713,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Protocol to perform pressurized blister tests on thin elastic films",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Preparation of the blister test device",
+    2,
+    2
+   ],
+   [
+    "2.1 Donor substrates",
+    2,
+    3
+   ],
+   [
+    "2.2 Preparation of PS films on donor substrates",
+    2,
+    3
+   ],
+   [
+    "2.3 Receiver substrates",
+    2,
+    3
+   ],
+   [
+    "2.4 Transferring the PS film",
+    2,
+    3
+   ],
+   [
+    "3 Measurement of the adhesion energy in a blister test",
+    2,
+    2
+   ],
+   [
+    "3.1 Visualization of the blister shape",
+    2,
+    3
+   ],
+   [
+    "3.2 Estimation of the adhesion energy",
+    5,
+    3
+   ],
+   [
+    "4 Comparison with a cleavage test",
+    5,
+    2
+   ],
+   [
+    "5 Conclusion",
+    5,
+    2
+   ],
+   [
+    "6 Acknowledgments",
+    5,
+    2
+   ],
+   [
+    "References",
+    5,
+    2
+   ],
+   [
+    "7 Appendix",
+    5,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preparation of the blister test device",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Donor substrates",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Preparation of PS films on donor substrates",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Receiver substrates",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Transferring the PS film",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Measurement of the adhesion energy in a blister test",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Visualization of the blister shape",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Estimation of the adhesion energy",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Comparison with a cleavage test",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Acknowledgments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Appendix",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 33.214220699999714,
+ "metrics_raw": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "3.1 Visualization of the blister shape",
+   "test",
+   "7 Appendix"
+  ],
+  "unmatched_pred": [
+   "Protocol to perform pressurized blister tests on thin elastic films",
+   "3.1 Visualization of the blister shape",
+   "7 Appendix"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "3.1 Visualization of the blister shape",
+   "test",
+   "7 Appendix"
+  ],
+  "unmatched_pred": [
+   "3.1 Visualization of the blister shape",
+   "7 Appendix"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 6,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates",
+   "test"
+  ],
+  "unmatched_pred": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates"
+  ],
+  "ignored_title_predictions": null
+ }
+}

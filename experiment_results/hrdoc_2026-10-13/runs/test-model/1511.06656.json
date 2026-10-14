@@ -1,0 +1,185 @@
+{
+ "doc": "1511.06656",
+ "system": "model",
+ "metrics": {
+  "gt": 20,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 5,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "TUKEY HSD FOR THE VARIABLE log10(in-time-total + 1)",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 388,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10041,
+   "completion_tokens": 660,
+   "total_tokens": 10701
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. DATASET DESCRIPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. OBSERVATIONAL STUDY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Characterization Variables",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Data Preprocessing",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Insights on Key Features from PCA",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "D. Observed Gender Differences",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "E. Observed Age Differences",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "TUKEY HSD FOR THE VARIABLE log10(in-time-total + 1)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Links between Age Groups",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. AGE AND GENDER PREDICTION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Population Pyramid Scaling (PPS)",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Gender Prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C. Age Prediction using Node Attributes",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "F. Summary of Results",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V. CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.875479800000903,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 5,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "TUKEY HSD FOR THE VARIABLE log10(in-time-total + 1)",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.65,
+  "unmatched_gt": [
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "TUKEY HSD FOR THE VARIABLE log10(in-time-total + 1)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

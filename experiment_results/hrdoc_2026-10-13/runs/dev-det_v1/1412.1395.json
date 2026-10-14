@@ -1,0 +1,260 @@
+{
+ "doc": "1412.1395",
+ "system": "det",
+ "metrics": {
+  "gt": 35,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 10,
+  "level_correct": 22,
+  "parent_correct": 16,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Abstract—",
+   "C O LL I S I ON AVOI D A NC E ( C S MA /E C A)",
+   "C. Throughput bounds of CSMA/ECAHys+FS",
+   "protocols",
+   "G. Schedule Reset Mechanism",
+   "1) A conservative schedule reduction: Schedule Reset is",
+   "2) Aggressive approach to face channel errors: the default",
+   "H. Backwards compatibilty and coexistence",
+   "2) Effect of clock drift over the achieved throughput in",
+   "3) Time between successful transmissions: It is related to"
+  ],
+  "unmatched_pred": [
+   "802.11 networks is called Carrier Sense Multiple Access with",
+   "1 is the biggest deterministic backoff, and γ is referred to as the Schedule Res",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 934,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "802.11 networks is called Carrier Sense Multiple Access with",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Zero Collision MAC",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Learning-MAC",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. CARRIER SENSE MULTIPLE ACCESS WITH ENHANCED",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Supporting many more contenders",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. The effects of Aggregation",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "D. Clock drift issue in descentralized collision-free MAC",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Channel errors",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "F. Hidden terminals",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 is the biggest deterministic backoff, and γ is referred to as the Schedule Reset threshold from this point forward.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATION SCENARIO",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Scenario details",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Saturated and Non-saturated stations",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "C. Performance under clock drift",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "D. Channel errors",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "E. Coexistance with CSMA/CA",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "F. Applying Schedule Reset",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Saturated nodes",
+   "page": 9,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "B. Non-saturated nodes",
+   "page": 9,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "C. Coexistence with CSMA/CA",
+   "page": 10,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "D. Channel errors and Schedule Reset",
+   "page": 11,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "VI. REAL HARDWARE IMPLEMENTATION",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. TRANSITIONING TOWARDS CSMA/ECAHYS+FS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSIONS",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 34.983985899998515,
+ "metrics_v1": {
+  "gt": 35,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 10,
+  "level_correct": 22,
+  "parent_correct": 16,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Abstract—",
+   "C O LL I S I ON AVOI D A NC E ( C S MA /E C A)",
+   "C. Throughput bounds of CSMA/ECAHys+FS",
+   "protocols",
+   "G. Schedule Reset Mechanism",
+   "1) A conservative schedule reduction: Schedule Reset is",
+   "2) Aggressive approach to face channel errors: the default",
+   "H. Backwards compatibilty and coexistence",
+   "2) Effect of clock drift over the achieved throughput in",
+   "3) Time between successful transmissions: It is related to"
+  ],
+  "unmatched_pred": [
+   "802.11 networks is called Carrier Sense Multiple Access with",
+   "1 is the biggest deterministic backoff, and γ is referred to as the Schedule Res",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 34,
+  "pred": 27,
+  "tp": 25,
+  "fp": 2,
+  "fn": 9,
+  "level_correct": 22,
+  "parent_correct": 16,
+  "teds": 0.5142857142857142,
+  "unmatched_gt": [
+   "C O LL I S I ON AVOI D A NC E ( C S MA /E C A)",
+   "C. Throughput bounds of CSMA/ECAHys+FS",
+   "protocols",
+   "G. Schedule Reset Mechanism",
+   "1) A conservative schedule reduction: Schedule Reset is",
+   "2) Aggressive approach to face channel errors: the default",
+   "H. Backwards compatibilty and coexistence",
+   "2) Effect of clock drift over the achieved throughput in",
+   "3) Time between successful transmissions: It is related to"
+  ],
+  "unmatched_pred": [
+   "802.11 networks is called Carrier Sense Multiple Access with",
+   "1 is the biggest deterministic backoff, and γ is referred to as the Schedule Res"
+  ],
+  "ignored_title_predictions": null
+ }
+}

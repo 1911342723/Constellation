@@ -1,0 +1,157 @@
+{
+ "doc": "1804.04440",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 12,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "4.4 Experiments and Results"
+  ],
+  "unmatched_pred": [
+   "1. Root-mean-squared-error (RMSE)",
+   "3. Residual motion (ResMot)",
+   "4. Error in motion to a reference image (RefMotErrIm): For 4D reconstruction, ea",
+   "5. Using the estimated motion ﬁelds for determining positions of interpolated im",
+   "6. Landmark error (LandmarkErr)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 15,
+  "tp": 10,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "4.4 Experiments and Results"
+  ],
+  "unmatched_pred": [
+   "1. Root-mean-squared-error (RMSE)",
+   "3. Residual motion (ResMot)",
+   "4. Error in motion to a reference image (RefMotErrIm): For 4D reconstruction, ea",
+   "5. Using the estimated motion ﬁelds for determining positions of interpolated im",
+   "6. Landmark error (LandmarkErr)"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 208,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9788672865595942,
+  "inserted_word_share": 0.9275199038605979
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Loss Functions",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Cycle Consistency",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dataset",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Implementation details",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "1. Root-mean-squared-error (RMSE)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Residual motion (ResMot)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Error in motion to a reference image (RefMotErrIm): For 4D reconstruction, each",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Using the estimated motion ﬁelds for determining positions of interpolated images",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Landmark error (LandmarkErr)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.06797060000099
+}

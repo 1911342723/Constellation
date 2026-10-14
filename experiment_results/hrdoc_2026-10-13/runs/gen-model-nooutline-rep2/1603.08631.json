@@ -1,0 +1,122 @@
+{
+ "doc": "1603.08631",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "1) Convolutional Neural Networks (CNNs / ConvNets):"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 97,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3698,
+   "completion_tokens": 368,
+   "total_tokens": 4066
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND ALGORITHMS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Acquisition and Preprocessing",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Deep Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. RESULTS AND DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ACKNOWLEDGEMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. APPENDIX I",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.839050899998256,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "1) Convolutional Neural Networks (CNNs / ConvNets):"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "1) Convolutional Neural Networks (CNNs / ConvNets):"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

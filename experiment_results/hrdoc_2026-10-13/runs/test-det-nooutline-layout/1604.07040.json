@@ -1,0 +1,125 @@
+{
+ "doc": "1604.07040",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1880,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.7801103646833013,
+  "inserted_word_share": 0.19963076923076928
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORETICAL FRAMEWORK",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The eﬀective Hamiltonian",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Hadronic matrix elements",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Kinematic variables",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Wave functions",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Decay amplitudes",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III. NUMERICAL RESULTS AND DISCUSSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SUMMARY",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.798081599998113,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "doc": "1706.10005",
+ "system": "outline",
+ "metrics": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Fixman's Theorem",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Descending Distance Ordering Method",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Only Torsional Angles are Allowed to be Hard Variable",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Any Internal Coordinate Variable can be Constrained",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Numerical Validations",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Calculation of =qr and =cr ",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03563330000179121,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

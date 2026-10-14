@@ -1,0 +1,191 @@
+{
+ "doc": "1808.03958",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.3125,
+  "unmatched_gt": [
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons"
+  ],
+  "unmatched_pred": [
+   "S. Jia, Z. Yu, Y. Tian, T",
+   "Correlated spikes between same subunits",
+   "Uncorrelated spikes between different subunits",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 509,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10370,
+   "completion_tokens": 496,
+   "total_tokens": 10866
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Neural System Identiﬁcation with Spike-triggered",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Non-negative Matrix Factorization",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Jia, Z. Yu, Y. Tian, T",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "II. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ganglion cell model",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Spike-triggered analysis",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Subunit ﬁlters revealed by STNMF",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Classiﬁcation of spikes by STNMF",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Correlated spikes between same subunits",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Uncorrelated spikes between different subunits",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Neuronal circuit at single cell level",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "C. System identiﬁcation of neural network",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 89.0413335000012,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 11,
+  "fp": 6,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.2777777777777778,
+  "unmatched_gt": [
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons"
+  ],
+  "unmatched_pred": [
+   "Neural System Identiﬁcation with Spike-triggered",
+   "Non-negative Matrix Factorization",
+   "S. Jia, Z. Yu, Y. Tian, T",
+   "Correlated spikes between same subunits",
+   "Uncorrelated spikes between different subunits",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons"
+  ],
+  "unmatched_pred": [
+   "S. Jia, Z. Yu, Y. Tian, T",
+   "Correlated spikes between same subunits",
+   "Uncorrelated spikes between different subunits"
+  ],
+  "ignored_title_predictions": null
+ }
+}

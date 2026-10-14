@@ -1,0 +1,133 @@
+{
+ "doc": "1601.06544",
+ "system": "docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "element methods"
+  ],
+  "unmatched_pred": [
+   "First Stabilize and Then Dualize",
+   "First Dualize and Then Stabilize",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 56.585807999999815
+ },
+ "predictions": [
+  {
+   "text": "Goal-oriented a posteriori error control for nonstationary convection-dominated transport problems",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem formulation and stabilized discretization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. A dual weighted residual approach for stabilized finite element methods",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "First Stabilize and Then Dualize",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "First Dualize and Then Stabilize",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Practical Aspects",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Numerical studies",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Summary",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Appendix",
+   "page": 32,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0024707000047783367,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "element methods"
+  ],
+  "unmatched_pred": [
+   "Goal-oriented a posteriori error control for nonstationary convection-dominated ",
+   "First Stabilize and Then Dualize",
+   "First Dualize and Then Stabilize",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "element methods"
+  ],
+  "unmatched_pred": [
+   "First Stabilize and Then Dualize",
+   "First Dualize and Then Stabilize"
+  ],
+  "ignored_title_predictions": null
+ }
+}

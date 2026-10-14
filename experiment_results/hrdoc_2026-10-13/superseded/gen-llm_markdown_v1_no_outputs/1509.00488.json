@@ -1,0 +1,255 @@
+{
+ "doc": "1509.00488",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "The Tournament Scheduling Problem with Absences"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 16508,
+   "completion_tokens": 16430
+  },
+  "elapsed_llm_seconds": 72.30288929999733,
+  "content_preservation": 1.0,
+  "inserted_word_share": 0.0,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "The Tournament Scheduling Problem with Absences",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Pre-Fixed Absences and Pre-Scheduling",
+    4,
+    1
+   ],
+   [
+    "2.1 General Lower Bounds (pre-scheduling)",
+    6,
+    2
+   ],
+   [
+    "2.2 General Upper Bounds (pre-scheduling)",
+    7,
+    2
+   ],
+   [
+    "2.3 Bipartite Tournaments (pre-scheduling)",
+    8,
+    2
+   ],
+   [
+    "2.4 Complete Tournaments (pre-scheduling)",
+    9,
+    2
+   ],
+   [
+    "3 Unannounced Absences and On-Line Scheduling",
+    12,
+    1
+   ],
+   [
+    "3.1 General Lower Bounds (on-line scheduling)",
+    14,
+    2
+   ],
+   [
+    "3.2 General Upper Bounds (on-line scheduling)",
+    15,
+    2
+   ],
+   [
+    "3.3 Bipartite Tournaments (on-line scheduling)",
+    16,
+    2
+   ],
+   [
+    "3.4 Complete Tournaments (on-line scheduling)",
+    17,
+    2
+   ],
+   [
+    "4 Comparison",
+    17,
+    1
+   ],
+   [
+    "5 Concluding Remarks",
+    19,
+    1
+   ],
+   [
+    "References",
+    19,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "The Tournament Scheduling Problem with Absences",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Pre-Fixed Absences and Pre-Scheduling",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 General Lower Bounds (pre-scheduling)",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 General Upper Bounds (pre-scheduling)",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Bipartite Tournaments (pre-scheduling)",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Complete Tournaments (pre-scheduling)",
+   "page": 9,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Unannounced Absences and On-Line Scheduling",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 General Lower Bounds (on-line scheduling)",
+   "page": 14,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 General Upper Bounds (on-line scheduling)",
+   "page": 15,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3 Bipartite Tournaments (on-line scheduling)",
+   "page": 16,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.4 Complete Tournaments (on-line scheduling)",
+   "page": 17,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 Comparison",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Concluding Remarks",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 78.63654270000188,
+ "metrics_raw": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "The Tournament Scheduling Problem with Absences"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "The Tournament Scheduling Problem with Absences"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "The Tournament Scheduling Problem with Absences"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "doc": "1607.05540",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 244,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9344196338764836,
+  "inserted_word_share": 0.06726907630522083
+ },
+ "predictions": [
+  {
+   "text": "Exploiting Vagueness for Multi-Agent Consensus",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 A Three Valued Consensus Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Simulation Experiments based on",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Simulation Experiments Incorporating a",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.320142599994142,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

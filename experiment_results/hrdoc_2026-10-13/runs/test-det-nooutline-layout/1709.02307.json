@@ -1,0 +1,113 @@
+{
+ "doc": "1709.02307",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.36363636363636365,
+  "unmatched_gt": [
+   "DISCUSSION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "DISCUSSION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 385,
+  "layout_marked": 11,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9436350257542311,
+  "inserted_word_share": 0.22522957950700817
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PRELIMINARIES",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "DISTINGUISHING PSEUDOMIXTURES OF",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "GENERALIZED DISTINGUISHING PROTOCOL",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "EXPERIMENTAL TEST",
+   "page": 2,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Experimental setup",
+   "page": 4,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Complete Results and Simulations",
+   "page": 5,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Appendix 1",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix 2",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.954618299998401,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.36363636363636365,
+  "unmatched_gt": [
+   "DISCUSSION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

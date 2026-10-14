@@ -1,0 +1,140 @@
+{
+ "doc": "1612.02675",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract. 3D imaging modalities are becoming increasingly popular",
+   "0.3893 with a standard deviation of 0.2987"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 177,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3922,
+   "completion_tokens": 341,
+   "total_tokens": 4263
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Domain knowledge assisted cyst segmentation in",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "OCT retinal images",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract. 3D imaging modalities are becoming increasingly popular",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0.3893 with a standard deviation of 0.2987",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methodology",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Preprocessing",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Candidate selection",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 False positive rejection",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Experimental Results and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.85807990000103,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 12,
+  "tp": 8,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Domain knowledge assisted cyst segmentation in",
+   "OCT retinal images",
+   "Abstract. 3D imaging modalities are becoming increasingly popular",
+   "0.3893 with a standard deviation of 0.2987"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.3893 with a standard deviation of 0.2987"
+  ],
+  "ignored_title_predictions": null
+ }
+}

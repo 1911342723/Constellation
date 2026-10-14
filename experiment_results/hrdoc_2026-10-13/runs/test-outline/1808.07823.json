@@ -1,0 +1,85 @@
+{
+ "doc": "1808.07823",
+ "system": "outline",
+ "metrics": {
+  "gt": 10,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 10,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09090909090909094,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Methods",
+   "2.1 Improving MLA with CNNs",
+   "2.2 Data acquisition and training",
+   "3 Experimental evaluation",
+   "3.1 Settings",
+   "3.2 Results",
+   "4 Conclusion",
+   "5 Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "High frame-rate cardiac ultrasound imaging with deep learning",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.013327699998626485,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 10,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09090909090909094,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Methods",
+   "2.1 Improving MLA with CNNs",
+   "2.2 Data acquisition and training",
+   "3 Experimental evaluation",
+   "3.1 Settings",
+   "3.2 Results",
+   "4 Conclusion",
+   "5 Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "High frame-rate cardiac ultrasound imaging with deep learning"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Methods",
+   "2.1 Improving MLA with CNNs",
+   "2.2 Data acquisition and training",
+   "3 Experimental evaluation",
+   "3.1 Settings",
+   "3.2 Results",
+   "4 Conclusion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

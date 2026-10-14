@@ -1,0 +1,226 @@
+{
+ "doc": "1509.05821",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 28,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 702,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18714,
+   "completion_tokens": 1149,
+   "total_tokens": 19863
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Tangent curves",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2 Orthogonal curves",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.3 Previous work",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.4 Proof sketch",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Algebraic geometry preliminaries",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Power series and Bézout’s theorem",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Derivatives and tangent spaces",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Plane curves",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.4 Coordinates",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Plane and space curves",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Notation for plane and space curves",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Implicit differentiation from the formal viewpoint",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Space curves modeling plane curve tangency",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.4 Space curves modeling plane curve orthogonality",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4 Plane curve tangency and space curve intersection",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Proof of Theorem 1",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Orthogonal curves",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Constructible sets",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "6.2 The Chow variety of curves",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "6.3 Sets of curves with many rich points",
+   "page": 16,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "6.4 Space curves respecting tangency conditions",
+   "page": 16,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "7 Proof of Theorem 2",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Generalizations and further directions",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 Improved bounds",
+   "page": 18,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "8.2 Higher-order tangency",
+   "page": 19,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "8.3 Higher-dimensional hypersurfaces",
+   "page": 20,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 32.60816540000087,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 28,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 27,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 27,
+  "parent_correct": 27,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

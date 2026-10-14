@@ -1,0 +1,246 @@
+{
+ "doc": "1805.06084",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 26,
+  "tp": 16,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6296296296296297,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 ASYMPTOTIC INDEPENDENCE OF THE MAX-ID MODEL",
+   "2 SPECTRAL REPRESENTATION",
+   "3 SIMULATING HOUGAARD RANDOM VARIABLES",
+   "4 MCMC DETAILS",
+   "5 POSTERIOR PREDICTIVE DRAWS",
+   "6 SIMULATION STUDY",
+   "6.1 Simulation designs and results",
+   "6.2 Computation time",
+   "7 Additional Precipitation Analysis",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1115,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 22029,
+   "completion_tokens": 1126,
+   "total_tokens": 23155
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 HIERARCHICAL CONSTRUCTION OF SPATIAL MAX-ID",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Max-Stable Reich and Shaby (2012) Model",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Sub-Asymptotic Modeling Based on a Max-Inﬁnitely Divisible Process",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Prior Speciﬁcation for the Spatial Kernels Based on Flexible Log-Gaussian",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Marginal Modeling and Realizations",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5 Dependence Properties",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 APPLICATION TO EXTREME PRECIPITATION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Data and Motivation",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 Model Fitting and Validation",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3 Principal Modes of Spatial Variability Among Precipitation Extremes",
+   "page": 14,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 DISCUSSION",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Model Tail Dependence Properties",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 ASYMPTOTIC INDEPENDENCE OF THE MAX-ID MODEL",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 SPECTRAL REPRESENTATION",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 SIMULATING HOUGAARD RANDOM VARIABLES",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 MCMC DETAILS",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 POSTERIOR PREDICTIVE DRAWS",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 SIMULATION STUDY",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Simulation designs and results",
+   "page": 27,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "6.2 Computation time",
+   "page": 27,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "7 Additional Precipitation Analysis",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 32,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 45.71836959999928,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 26,
+  "tp": 16,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6296296296296297,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 ASYMPTOTIC INDEPENDENCE OF THE MAX-ID MODEL",
+   "2 SPECTRAL REPRESENTATION",
+   "3 SIMULATING HOUGAARD RANDOM VARIABLES",
+   "4 MCMC DETAILS",
+   "5 POSTERIOR PREDICTIVE DRAWS",
+   "6 SIMULATION STUDY",
+   "6.1 Simulation designs and results",
+   "6.2 Computation time",
+   "7 Additional Precipitation Analysis",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 22,
+  "tp": 13,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.6086956521739131,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 ASYMPTOTIC INDEPENDENCE OF THE MAX-ID MODEL",
+   "2 SPECTRAL REPRESENTATION",
+   "3 SIMULATING HOUGAARD RANDOM VARIABLES",
+   "4 MCMC DETAILS",
+   "5 POSTERIOR PREDICTIVE DRAWS",
+   "6 SIMULATION STUDY",
+   "6.1 Simulation designs and results",
+   "6.2 Computation time",
+   "7 Additional Precipitation Analysis"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,241 @@
+{
+ "doc": "1505.07717",
+ "system": "docling",
+ "metrics": {
+  "gt": 27,
+  "pred": 28,
+  "tp": 26,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.6551724137931034,
+  "unmatched_gt": [
+   "A. Hybrid Gaussian modeling and alternating least squares (ALS)"
+  ],
+  "unmatched_pred": [
+   "TABLE II",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 34.801960800003144
+ },
+ "predictions": [
+  {
+   "text": "Exploring multimodal data fusion through joint decompositions with flexible couplings",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "OUTLINE AND CONTRIBUTIONS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "NOTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. COUPLED DECOMPOSITIONS: A BAYESIAN APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. FLEXIBLE COUPLING MODELS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Joint Gaussian modeling",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Hybrid Gaussian coupling",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Non Gaussian conditional coupling",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ALGORITHMS FOR COUPLED TENSOR DECOMPOSITIONS WITH FLEXIBLE COUPLINGS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Coupled decompositions of large data sets",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Multiplicative updates for non Gaussian coupling of positive variables",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. BAYESIAN AND HYBRID CRAM´ER-RAO BOUNDS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Introduction",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Bayesian Cram´er-Rao bound",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Hybrid Cram´er-Rao bound",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. SIMULATIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Similar factors",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Shared component",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Compressed coupled CP",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "TABLE II",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Gamma coupling of positive variables",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Different sampling rates",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A WARM START AND COLD START",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B GRADIENT MATRICES FOR THE MU ALGORITHM",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C SNR FOR SOME COUPLING SCENARIOS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.07272659999944153,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 29,
+  "tp": 26,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.6333333333333333,
+  "unmatched_gt": [
+   "A. Hybrid Gaussian modeling and alternating least squares (ALS)"
+  ],
+  "unmatched_pred": [
+   "Exploring multimodal data fusion through joint decompositions with flexible coup",
+   "TABLE II",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "A. Hybrid Gaussian modeling and alternating least squares (ALS)",
+   "A WA R M S TART A ND C O LD S TA RT",
+   "B GRAD I ENT M AT RI CE S FOR THE MU A LGO R I THM",
+   "C SN R FO R S OM E COU P LING SC ENARIO S"
+  ],
+  "unmatched_pred": [
+   "TABLE II"
+  ],
+  "ignored_title_predictions": null
+ }
+}

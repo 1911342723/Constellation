@@ -1,0 +1,271 @@
+{
+ "doc": "1706.02230",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates",
+   "test"
+  ],
+  "unmatched_pred": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 6,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates",
+   "test"
+  ],
+  "unmatched_pred": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Protocol to perform pressurized blister tests on thin elastic films",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Preparation of the blister test device",
+    2,
+    2
+   ],
+   [
+    "2.1 Donor substrates",
+    2,
+    3
+   ],
+   [
+    "2.2 Preparation of PS films on donor substrates",
+    2,
+    3
+   ],
+   [
+    "2.3 Receiver substrates",
+    2,
+    3
+   ],
+   [
+    "2.4 Transferring the PS film",
+    3,
+    3
+   ],
+   [
+    "3 Measurement of the adhesion energy in a blister test",
+    3,
+    2
+   ],
+   [
+    "3.1 Visualization of the blister shape",
+    3,
+    3
+   ],
+   [
+    "3.2 Estimation of the adhesion energy",
+    5,
+    3
+   ],
+   [
+    "4 Comparison with a cleavage test",
+    5,
+    2
+   ],
+   [
+    "5 Conclusion",
+    5,
+    2
+   ],
+   [
+    "6 Acknowledgments",
+    6,
+    2
+   ],
+   [
+    "References",
+    6,
+    2
+   ],
+   [
+    "7 Appendix",
+    7,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 8015,
+   "completion_tokens": 7167
+  },
+  "elapsed_llm_seconds": 29.074954600000638,
+  "word_preservation": {
+   "recall": 0.9845226130653266,
+   "in_order": 0.9837185929648241,
+   "inserted": 0.015081439774783822
+  },
+  "output_markdown": "# Protocol to perform pressurized blister tests on thin elastic films\n\nFrançois Boulogne^1,2^, Sepideh Khodaparast^1^, Christophe Poulard^2^, and Howard A. Stone^1^\n\n^1^Department of Mechanical and Aerospace Engineering, Princeton University, Princeton, NJ 08544, USA\n^2^Laboratoire de Physique des Solides, CNRS, Univ. Paris-Sud, Université Paris-Saclay, Orsay 91405, France\n\nMarch 19, 2018\n\n## Abstract\n\nThis work aims to identify common challenges in the preparation of the blister test devices designed for measurement of energy release rate for brittle thin films and to propose easy-to-implement solutions accordingly. To this end, we provide a step-by-step guide for fabricating a blister test device comprised of thin polystyrene films adhered to glass substrates. Thin films are first transferred from donor substrates to an air-water interface, which is then used as a platform to locate them on a receiver substrate. We embed a microchannel at the back of the device to evacuate the air trapped in the opening, through which the pressure is applied. We quantify the height and the radius of the blister to estimate the adhesion energy using the available expressions correlating the normal force and the moment with the shape of the blister. The present blister test provided adhesion energy per unit area of G = 18 ± 2 mJ/m² for polystyrene on glass, which is in good agreement with the measurement of G = 14 ± 2 mJ/m² found in our independent cleavage test.\n\n## 1 Introduction\n\nCharacterization of adhesion energies between materials is of broad interest for scientific and engineering purposes. In practice, measuring the work of adhesion remains a difficult task both for the complex mechanical problems involved and for the technical barriers. Several measurement techniques have been developed in the past century. The most intuitive test is probably the peeling test [1, 2] that aims to propagate an interfacial crack between two materials. However, certain materials are difficult to manipulate as required in the peeling test, especially when the film is particularly thin and brittle. In addition, the Johnson-Kendall-Roberts contact adhesion test relies on the deformation of a small sphere in contact with a surface of interest [3], which assumes thick materials to avoid finite-thickness effects [4, 5, 6].\n\nDannenberg developed the blister test in 1961 to measure the adhesion of paints on surfaces [7] which was further developed in particular by Jensen [8, 9]. The so-called blister test consists of debonding a thin film by imposing a pressure via injecting a fluid between the film and the substrate to form a blister. Since then the blister test has been employed in different systems to quantify the adhesion energy between films of different properties and thicknesses and a large variety of substrates [10, 11, 12, 13, 14] including graphene membranes [15, 16, 17, 18]. Originally, the pressure and the volume of the injected liquid were measured to estimate the work required to detach the film [7]. However, recent studies have often employed more advanced optical techniques such as interferometry to quantify the shape of the blister [14, 19].\n\nMultiple studies have investigated the theoretical and empirical models to correlate the adhesion energy with the shape of the blister for the potential different deformation regimes in a blister test, including the bending plate, the stretching membrane and the transitional regime in between [20, 21, 22]. Recently, Sofla et al. (2010) proposed a mechanical model, which was solved numerically, to relate the energy release rate to the morphology of the deformed film in a blister test for a wide range of physical parameters, which covers both the membrane and the plate regimes [23]. These authors quantified the adhesion energy of millimeter thickness polydimethylsiloxane PDMS films on glass. However, for thinner and more brittle materials, this measurement can be significantly more difficult to carry out. In particular, in the present study we show the preparation and the measurement protocols for polystyrene films with higher elastic modulus (E = 3.4 GPa) compared to less stiff materials such as PDMS (E ≈ 1.2 MPa), which imposes additional challenges in the preparation and transfer of the thin film, and visualization of the deflection of the blister.\n\nAlthough preparation of the blister device and performing the tests are often described to be rather simple tasks, multiple practical challenges are faced during the\n\n<<page 2>>\n\nFigure 1: Schematic of the setup for the blister test. (a) A microchannel with a cross-sectional area of 250 × 250 µm² is fabricated in PDMS using a transparency mask and performing soft lithography technique. (b) The inlet of the PDMS microchannel is aligned with the hole drilled in the receiver substrate before the two pieces are bonded together. Finally, the thin PS of thickness t is transferred to the free side of the glass slide to create the blister test device. (c) Dyed water is injected through the inlet underneath the thin film, whilst the trapped air in the hole is evacuated through the outlet of the microchannel. The side-view and top-view images of the blister are captured to determine the maximum deflection h and the diameter 2r of the blister, respectively.\n\n<<page 3>>\n\nprocess, which are rarely discussed in earlier works. In fact, most of the previous studies are dedicated more to the estimation of the work of adhesion using the blister test than to how to perform the test. Thus, in this paper, we aim to focus on how to prepare sample devices and perform the blister test itself, especially for thin elastic films. We illustrate our method on polystyrene films with thicknesses that range between 590 to 1200 nm. This protocol includes the preparation of a specific device to pressurize a film and the coating of this device with the film of interest. To validate our experimental approach and the numerical model used to derive the energy release rate, we compared our results to those obtained with a cleavage test on a polystyrene film of thickness about 100 µm.\n\n## 2 Preparation of the blister test device\n\nIn this section, we describe the preparation of a device to perform the blister test depicted in Fig. 1, which aims to measure the energy release rate between a thin film and a substrate. The device must consist of a flat substrate made of the material of interest and pierced in its center for the inlet. The surface must be covered by the thin elastic film, which is then pressurized by injecting a liquid through the inlet to perform the blister test measurement. The shape of the blister formed by the thin film can be related to the energy release rate.\n\nTo compensate for the high elastic modulus of materials such as polystyrene, adhesion energy measurements of films must be performed on small thicknesses to avoid crack propagation over large distances. Therefore, the inherent difficulty of the blister test is to make a thin film on a pierced surface, which prevents the use of spin-coating techniques.\n\nThe principle of our protocol is to spin-coat a solution of polystyrene on a donor substrate, and the resulting thin film is then floated on a water bath. We prepare a receiver substrate of interest, pierced in its center, which is connected to an inlet for injecting the liquid. Then, the film is transferred to the latter surface with a method inspired by the Langmuir-Blodgett (LB) technique [24].\n\nA second difficulty is to withdraw the air trapped in the injection hole. Having a blister filled only with the liquid phase is of critical importance, especially if the shape of the blister is estimated according to the volume of the liquid [25]. Here, we propose to add a microchannel to the back of the blister test device for this purpose, as shown in Fig. 1.\n\n### 2.1 Donor substrates\n\nMicroscope glass slides (Dow Corning, 25 mm by 75 mm) are used as donor substrates in all experiments. To clean the surface of the glass slides, we plunge them\n\nMeasurements\nt = 55.8 (mPS/mt)^1.23\nt [nm]\n100\n1000\nMass fraction (mPS/mt)\n0.001\n0.01\n0.1\n1\n\nFigure 2: Thickness t of the PS films vs. the mass fraction of PS in toluene used in the spin-coating. Error bars represent the standard deviations of the measurements.\n\nin a bath of acetone for 30 minutes and then they are thoroughly rinsed with deionized (DI) water, and a solution of ethanol and acetone. Glass slides are dried with clear air and heated at 100°C for 30 minutes prior to the experiments.\n\n### 2.2 Preparation of PS films on donor substrates\n\nPolystyrene PS films are produced from a solution of PS (Sigma-Aldrich, Mw ≃ 280 kg/mol) in toluene. To achieve thin films of uniform thickness, the PS solution is spin-coated on solid glass substrates at 2000 rpm for 30 seconds. Solutions of different mass fractions of PS in toluene (0.005 < mPS/mt < 0.14) are used to achieve film thicknesses ranging from t = 50 nm to t = 2 µm. A frame is then cut out with a sharp blade around the spin-coated films before they were annealed at 130°C under vacuum for two hours to release any pre-stress in the films. After annealing, the thickness of the polystyrene films are measured by a Leica DCM 3D optical profilometer. To ensure the spatial uniformity of the film thickness for the polystyrene films, we measured the film thickness in four different locations of the film using a Woollam M2000 Spectroscopic Ellipsometer to confirm the values obtained with the optical profilometer. The average film thicknesses t achieved at different polystyrene concentrations are presented in Fig. 2. The resulting films have an elastic modulus E = 3.4 GPa and Poisson’s ratio ν = 0.33 [26]. The measurement of the elastic modulus can be performed with different techniques such as indentation [27] or buckling instability [28].\n\n### 2.3 Receiver substrates\n\nMicroscope glass slides (Dow Corning, 25 mm by 75 mm) are used as receiver substrates. A hole of approximately\n\n<<page 4>>\n\n1 mm diameter is drilled in the middle of the glass slide with a 1 mm diameter diamond drill bit mounted on a Dremel tool. The receiver glass slides are cleaned after the drilling process following the procedure described above for the donor substrates.\n\nA microchannel of length L = 20 mm and with a cross-section of 250 × 250 µm² is fabricated in PDMS (Dow Corning, Sylgard 184 at a 1:10 wt ratio of crosslinking agent to prepolymer) using conventional soft lithography techniques [29]. The lithography mask used in our experiments is provided in Supplementary Materials. As shown in Fig. 1a, two vertical openings of 1 mm diameter are created in the PDMS slab at the inlet and the outlet of the channel with a biopsy punch (Miltex, 98PUN6-1). The PDMS microchannel and the receiver glass slide are then activated with a plasma gun (Electro-Technic Product, BD20-AC) [30]. Following this step, the inlet of the microchannel is aligned with the hole drilled in the receiver glass slide, and the two activated pieces are bonded together. In order to enhance the bonding, the assembly is heated at 90°C for 1 hour (Fig. 1b).\n\n### 2.4 Transferring the PS film\n\nThe thin PS film is transferred from the donor substrate to the receiver substrate. The first step consists of detaching the PS film from the donor surface. To this end, the donor substrate is slowly dipped into a water bath until the entire PS film is floating on the free air-water interface. The water bath is then placed on a motorized translation stage (Thorlabs, NRT200) with the receiver glass slide dipped in it.\n\nThe second step in the transfer process starts with a PS film floating at the water interface. The thin floating PS film is brought in contact with the glass side of the receiver substrate and the film slightly bends due to the curvature of the meniscus. Simultaneously, the water bath is displaced downward at a speed U = 1 µm/s (Fig. 3), to mimic the LB deposition technique [31]. The air-water interface, which holds the thin PS film moves towards the hydrophilic glass slide and subsequently transfers the thin film onto the substrate [32, 33]. The film transfer is easier for small water contact angles on the receiving glass slide. Optionally, a stripe of one centimeter at the top of the receiver substrate can be activated by a plasma treatment. During this treatment, the rest of the glass slide is covered with another glass slide to prevent any modification of the surface that would affect the adhesion energy.\n\nFinally the prepared device is annealed at 130°C under vacuum overnight to release the eventual pre-stress in the films and remove water trapped underneath the film. The pre-stress could be caused by the mechanical vibrations of the translation stage occurring during the film transfer. At the end of this process, we obtain a device coated with a PS film ready for the blister test (Fig. 1b).\n\nmotorised linear stage\nU\nfloating PS film\nglass slide bonded to PDMS\n\nFigure 3: Schematic of the experimental setup for the transfer of the PS film (orange) onto the device.\n\n## 3 Measurement of the adhesion energy in a blister test\n\nDevices are mounted with the PS film facing up on a 3-axis translational stage (Thorlabs, PT3) and a rotational stage (Thorlabs, PR01) equipped with micrometers to ensure the alignment of the device with a horizontal microscope. The inlet and outlet of the microchannel on the PDMS side of the device are connected to two syringes, which are mounted on two syringe pumps (Harvard Apparatus, PhD Ultra) functioning in infusion and withdrawal modes, respectively. Fig. 1c shows the schematic of the experimental setup used in the present blister test measurements. For visualization purposes, the inlet syringe is filled with a solution of a dye (Sigma-Aldrich, methylene blue) dissolved in DI water. The microchannel is slowly filled with water by pushing the liquid through the inlet while removing the trapped air in the channel through the outlet. At this point the blister test device is ready for measurements.\n\nA finite volume of liquid is pumped through the hole in the glass substrate until an interfacial crack is initiated between the two materials. The system is left to achieve equilibrium at this stage, especially by inspecting that the radius of the bulge does not further evolve. Once a blister is formed underneath the PS film, the radius and the height of the blister are measured by top-view and side-view visualization of the blister, respectively.\n\n### 3.1 Visualization of the blister shape\n\nThe side-view visualization is performed using a horizontal home-made microscope. The microscope consists of a long working distance infinity corrected apochromatic objective (Mitutoyo 10×, focal length 20 mm) aligned to\n\n<<page 5>>\n\nFigure 4: Top-view visualization of the infused liquid between the polystyrene film and the glass substrate for four liquid volumes. (a) Original image, (b) thresholded image and (c) contour detection and fitted circle.\n\na tube lens (Mitutoyo, MT-1, 1×) with a 57 mm long tube (2.5 cm diameter). The tube lens is mounted on a DSLR camera (Nikon, D7100) with a 161 mm long tube and a C-mount-to-Nikon lens mount adapter (Fotodiox). This optical setup provides a spatial resolution of 0.5 µm per pixel. A green LED light source (Thorlabs, M530L3) is positioned in line with the tube microscope and behind the blister test device. The LED light is collimated using a biconvex lens (Thorlabs, LB1761) located at its focal distance from the LED light source.\n\nThe top-view visualization, which provides the diameter 2r of the blister, is performed with a macro lens (Nikon, 105 mm) mounted on a DSLR camera (Nikon, D5100). The spatial resolution in the top-view optical system is 10 µm per pixel. Sample snapshots of the top-view and the side-view visualizations are provide in Fig. 4 and Fig. 5, respectively. The diameter of the blister 2r is quantified by fitting a circle to the thresholded image of the blister from the top. A Python code performing this task with Scikit-image [34] is provided in the Supplementary Materials. The height is simply measured in the side-view images by identifying the distance between initial level of the thin film and the highest level of the blister for every injection volume.\n\nThe reproducibility of the measurements is controlled by performing measurements on three different devices. As an example, Fig. 6 shows the measurements of the\n\n(a)\n(b)\n100 μm\n5 mm\nh\n2r\n\nFigure 5: Visualization of the deflection of the film. (a) Side-view visualization of the center of the blister. The dashed red line represents the zero level before the injection of liquid under the PS film. (b) The corresponding top-view images are included to facilitate visualizing the size of the blister.\n\ntest 1\ntest 2\ntest 3\nh [mm]\n0\n0.2\n0.4\n0.6\n0.8\nr [mm]\n0\n5\n10\n15\n\nFigure 6: The height versus the radius of the blister as quantified in the experimental measurements in three separate tests for a film thickness t = 850 nm. The maximum relative errors for measurements of the height h and radius r of the blister were 2% and 5%, respectively.\n\n<<page 6>>\n\nTable 1: Measurements of adhesion energy using blister test. The uncertainty on the film thickness is calculated from the standard deviation of the thicknesses measured on a batch of films obtained under the same experimental conditions.\n\n| Film thickness, t [nm] | Adhesion energy, G [mJ/m²] |\n|------------------------|----------------------------|\n| 590 ± 10               | 18.5 ± 2.5                 |\n| 850 ± 30               | 17.8 ± 2                   |\n| 1200 ± 80              | 18.6 ± 2                   |\n\nheight of the blister versus its radius obtained on three devices for a film thickness t = 850 nm.\n\n### 3.2 Estimation of the adhesion energy\n\nBlister tests measurements are performed for three different film thicknesses, namely t = 590, 850, 1200 nm. To derive the energy release rate G as a function of the blister height h, we use the expressions provided by Sofla et al. [23]\n\nG = (Ēt⁵)/(2r⁴) (12 M̄(h)² + N̄(h)²)    (1)\n\nwhere M̄(h) and N̄(h) are the dimensionless moment per unit length and the normal force, respectively and Ē = E/(1 − ν²). The expressions for M̄(h) and N̄(h) are given in the Appendix. The average values of adhesion energy G obtained in the blister tests are presented in Table 1. The reported results and the corresponding errors indicate the average and standard deviation achieved for individual tests in three separate devices. The agreement of these values of G for different thicknesses shows the self-consistency of the method.\n\n## 4 Comparison with a cleavage test\n\nTo validate the analysis made on the blister test, we measured the adhesion energy with a second method, namely a cleavage test, on the same material. The cleavage test consists of propagating an interfacial crack between the film and the substrate with a wedge. As the wedge must be pushed between the film and the substrate, this test prevents us to measure the adhesion energy on thicknesses smaller than few tens of micrometers.\n\nTo prepare these thicker polystyrene films, the spin-coating or the Landau-Levich coating [35] from a solution of polystyrene in toluene causes thickness variations due to surface instabilities triggered during the solvent evaporation [36]. As a consequence, we prepare our polystyrene film with a solvent-free method by melting the polymer.\n\nGlass slides are prepared with the protocol described in Sec. 2.1. Polystyrene pellets (Sigma-Aldrich, Mw ≃ 280\n\nδ\nPS film (t, E, ν)\na\nWedge\nGlass\n\nFigure 7: Picture and schematic of the cleavage test of a PS film on a glass slide.\n\nkg/mol, as used before) are placed between two glass slides, themselves placed between two aluminum plates (1 cm × 10 cm × 10 cm) held together by three screws. This press is placed in a oven at an initial temperature of 130°C. Screws are regularly tightened to squeeze the pellets and the temperature is raised until 220°C and the desired thickness is obtained. The temperature is decreased to 130°C and maintained for 12 hours to relax the difference of thermal dilation between the film and the substrate and is then further decreased to the room temperature. Aluminum plates and one of the glass slides are removed and the film is annealed again with the same protocol as described in Section 2.2. Films are selected for their film thickness uniformity measured with a micrometer caliper. The film thickness is typically of 100 µm in our experiments.\n\nA razor blade of thickness δ = 385 µm is used as a wedge. The wedge is placed parallel and in contact with the substrate and pushed by a translational stage. Once the crack is initiated, we stop the motor and measure the distance a between the wedge and the crack tip (Fig. 7). From the minimization of the sum of the bending and adhesion energies, the energy release rate is [37]\n\nG = (3/16) (Et³δ²)/((1 − ν²)a⁴),    (2)\n\nwhere δ is the height of the blade and a the length of the crack. From our measurements, we obtain G = 14 ± 2 mJ/m², which is in good agreement with the values from the blister test presented in Table 1 and thus validates our approach.\n\n## 5 Conclusion\n\nIn this work, a step-by-step guide is provided for preparation of a device to perform blister test for thin delicate materials. More specifically, we performed blister tests to determine the adhesion energy between glass substrates and polystyrene films of micron and sub-micron thicknesses. Side-view and top-view visualizations were performed to quantify the maximum deflection and the radius of the blister, respectively. The adhesion energy\n\n<<page 7>>\n\nwas estimated for the experimental measurements based on the closed-form expressions proposed by Sofla et al. (2010). The average adhesion energy per unit area G measured using the present blister test was G = 18 ± 2 mJ/m², which is in good agreement with the results of independent measurements of G = 14 ± 2 mJ/m² obtained in our cleavage test.\n\nThe current device can be used for blister test measurements in the fixed radius mode to estimate the material properties of ultra thin films. Moreover, the protocols described here can be tailored conveniently to be applied to less conventional material pairs such as multi-layers of soft films and biomaterials such as biofilms for which performing a peeling test may damage the substrate and/or the adhering substance.\n\n## 6 Acknowledgments\n\nWe thank F. Restagno and T. Salez for valuable discussions on the preparation of PS films. F.B. acknowledges that part of the research leading to these results received funding from the People Programme (Marie Curie Actions) of the European Union’s Seventh Framework Programme (FP7/2007-2013) under REA grant agreement 623541. S.K. appreciates the early mobility funding from the Swiss National Science Foundation (P2ELP2-158896).\n\n## References\n\n[1] J. W. Obreimoff. The splitting strength of mica. Proceedings of the Royal Society of London. Series A, 127(805):290–297, 1930.\n\n[2] K Kendall. Thin-film peeling-the elastic term. Journal of Physics D: Applied Physics, 8(13):1449, 1975.\n\n[3] K. L. Johnson, K. Kendall, and A. D. Roberts. Surface energy and the contact of elastic solids. Proceedings of the Royal Society of London A, 324(1558):301–313, 1971.\n\n[4] K. R. Shull, D. Ahn, and C. L. Mowery. Finite-size corrections to the jkr technique for measuring adhesion: soft spherical caps adhering to flat, rigid surfaces. Langmuir, 13(6):1799–1804, 1997.\n\n[5] K. R. Shull. Contact mechanics and the adhesion of soft solids. Materials Science and Engineering: R: Reports, 36(1):1 – 45, 2002.\n\n[6] E. Barthel. Adhesive elastic contacts: JKR and more. Journal of Physics D: Applied Physics, 41(16):163001, 2008.\n\n[7] H. Dannenberg. Measurement of adhesion by a blister method. Journal of Applied Polymer Science, 5(14):125–134, 1961.\n\n[8] Henrik Myhre Jensen. The blister test for interface toughness measurement. Engineering Fracture Mechanics, 40(3):475 – 486, 1991.\n\n[9] H. M. Jensen. Analysis of mode mixity in blister tests. International Journal of Fracture, 94(1):79, 1998.\n\n[10] J. A. Hinkley. A blister test for adhesion of polymer films to SiO2. The Journal of Adhesion, 16(2):115–125, 1983.\n\n[11] B. J. Briscoe and S. S. Panesar. The application of the blister test to an elastomeric adhesive. Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences, 433(1887):23–43, 1991.\n\n[12] J. Sizemore, R. J. Hohlfelder, J. J. Vlassak, and W. D. Nix. Measuring the adhesion of diamond thin films to substrates using the blister test. MRS Proceedings, 383, 1995.\n\n[13] M. Dupeux and A. Bosseboeuf. Application of the Blister Test to Adhesion Energy Measurements in Metal/Ceramic Film-on-Substrate Systems, pages 319–327. Springer Netherlands, Dordrecht, 1998.\n\n[14] Z. Cao, P. Wang, W. Gao, L. Tao, J.W. Suk, R.S. Ruoff, D. Akinwande, R. Huang, and K.M. Liechti. A blister test for interfacial adhesion of large-scale transferred graphene. Carbon, 69:390–400, 2014.\n\n[15] S. P. Koenig, N. G. Boddeti, M. L. Dunn, and J. S. Bunch. Ultrastrong adhesion of graphene membranes. Nat. Nanotechnol., 6:543–546, 2011.\n\n[16] W. Gao and R. Huang. Effect of surface roughness on adhesion of graphene membranes. Journal of Physics D: Applied Physics, 44(45):452001, 2011.\n\n[17] N. G. Boddeti, S. P. Koenig, R. Long, J. Xiao, and J. S. Bunch. Mechanics of adhered, pressurized graphene blisters. J. Appl. Mech., 80:040909–1–040909–8, 2013.\n\n[18] D. Metten, F. Federspiel, M. Romeo, and S. Berci-aud. All-optical blister test of suspended graphene using micro-raman spectroscopy. Phys. Rev. Applied, 2:054008, Nov 2014.\n\n[19] R. Yahiaoui, K. Danaie, S. Petitgrand, and A. Bosseboeuf. Automated interferometric system for bulge and blister test measurements of micromachined membranes, 2001.\n\n[20] S. Guo, K. Wan, and D. A. Dillard. A bending-to-stretching analysis of the blister test in the presence of tensile residual stress. International Journal of Solids and Structures, 42(910):2771–2784, 2005.\n\n<<page 8>>\n\n[21] U. Komaragiri, M. R. Begley, and J. G. Simmonds. The mechanical response of freestanding circular elastic films under point and pressure loads. Journal of Applied Mechanics, 72(2):203–212, 2005.\n\n[22] Y. Wang and L. Tong. Closed-form formulas for adhesion energy of blister tests under pressure and point load. The Journal of Adhesion, 92(3):171–193, 2016.\n\n[23] A. Sofla, E. Seker, M. R. Begley, and J. P. Landers. PDMS-glass interface adhesion energy determined via comprehensive solutions for thin film bulge/blister tests. Journal of Applied Mechanics, 77(3):031007–031007, 2010.\n\n[24] K. B. Blodgett and I. Langmuir. Built-up films of barium stearate and their optical properties. Phys. Rev., 51:964–982, Jun 1937.\n\n[25] R. J. Hohlfelder, H. Luo, J. J. Vlassak, C. E. D Chidsey, and W. D. Nix. Measuring interfacial fracture toughness with the blister test. MRS Proceedings, 436:115, 1997.\n\n[26] J. Brandrup, E. H. Immergut, E. A/ Grulke, A. Abe, and D. R. Bloch. Polymer handbook. Wiley New York etc, fourth edition edition, 1989.\n\n[27] W.C. Oliver and G.M. Pharr. Measurement of hardness and elastic modulus by instrumented indentation: Advances in understanding and refinements to methodology. Journal of Materials Research, 19(1):320, 2004.\n\n[28] C. M. Stafford, C. Harrison, K. L. Beers, A. Karim, E. J. Amis, M. R. VanLandingham, H.-C. Kim, W. Volksen, R. D. Miller, and E. E. Simonyi. A buckling-based metrology for measuring the elastic moduli of polymeric thin films. Nat Mater, 3(8):545–550, August 2004.\n\n[29] Y. N. Xia and G. M. Whitesides. Soft lithography. Annual Review of Materials Science, 28:153–184, 1998.\n\n[30] K. Haubert, T. Drier, and D. Beebe. PDMS bonding by means of a portable, low-cost corona system. Lab Chip, 6:1548–1549, 2006.\n\n[31] G. G. Roberts, P. S. Vincett, and W. A. Barlow. Technological applications of langmuir-blodgett films. Physics in Technology, 12(2):69, 1981.\n\n[32] M. J. Savelski, S. A. Shetty, W. B. Kolb, and R.L. Cerro. Flow patterns associated with the steady movement of a solid/liquid/fluid contact line. Journal of Colloid and Interface Science, 176(1):117–127, 1995.\n\n[33] R. L. Cerro. Moving contact lines and Langmuir–Blodgett film deposition. Journal of Colloid and Interface Science, 257(2):276–283, 2003.\n\n[34] S. van der Walt, J. L. Schönberger, J. Nunez-Iglesias, F. Boulogne, J. D. Warner, N. Yager, E. Gouillart, and T. Yu. scikit-image: Image processing in python. PeerJ, 2:e453, 6 2014.\n\n[35] E. Rio and F. Boulogne. Withdrawing a solid of a bath: how much liquid is coated? Advances in Colloid and Interface Science, 2017.\n\n[36] N. Bassou and Y. Rharbi. Role of Bénard-Marangoni instabilities during solvent evaporation in polymer surface corrugations. Langmuir, 25(1):624–632, 2009.\n\n[37] K. Kendall. Cracks at adhesive interfaces. Journal of Adhesion Science and Technology, 8(11):1271–1284, 1994.\n\n## 7 Appendix\n\nSofla et al. (2010) provided the relationships for the characteristics of the film deformation [23]. Here, we recall the expressions of the moment and the normal force. The dimensionless moment M̄ = (1−ν²)r²M / Et⁴ and the normal force N̄ = (1−ν²)r²N / Et⁴ are given by\n\nM̄ = (2/3) h̄ + ( m(ν)h̄^1.25 / (2.2 + h̄^1.25) ) h̄²,    (3)\n\nN̄ = n(ν) ( −0.255h̄² exp(−0.16h̄^1.3) + 0.667h̄² ),    (4)\n\nwhere the dimensionless deflection is h̄ = h/t and\n\nm(ν) = 0.509 + 0.221ν − 0.263ν²,    (5)\n\nn(ν) = 0.809 − 1.073ν − 0.816ν².    (6)",
+  "verbatim_heading_share": 1.0666666666666667
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preparation of the blister test device",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Donor substrates",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Preparation of PS films on donor substrates",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Receiver substrates",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Transferring the PS film",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Measurement of the adhesion energy in a blister test",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Visualization of the blister shape",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Estimation of the adhesion energy",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Comparison with a cleavage test",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Acknowledgments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Appendix",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.16193029999704,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates",
+   "test"
+  ],
+  "unmatched_pred": [
+   "2 Preparation of the blister test device",
+   "2.1 Donor substrates"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "test"
+  ],
+  "unmatched_pred": [
+   "Protocol to perform pressurized blister tests on thin elastic films"
+  ]
+ }
+}

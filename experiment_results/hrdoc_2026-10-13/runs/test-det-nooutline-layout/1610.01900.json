@@ -1,0 +1,179 @@
+{
+ "doc": "1610.01900",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "1.1. Outline of paper and our contribution."
+  ],
+  "unmatched_pred": [
+   "BENJAMIN HADJIBEYLI AND MARK C. WILSON"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "1.1. Outline of paper and our contribution."
+  ],
+  "unmatched_pred": [
+   "BENJAMIN HADJIBEYLI AND MARK C. WILSON"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 604,
+  "layout_marked": 14,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9596333226117723,
+  "inserted_word_share": 0.029440468445022794
+ },
+ "predictions": [
+  {
+   "text": "DISTANCE RATIONALIZATION OF ANONYMOUS AND HOMOGENEOUS VOTING RULES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "BENJAMIN HADJIBEYLI AND MARK C. WILSON",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BASIC DEFINITIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Consensus",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2. Distances",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3. Combining consensus and distance",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. SIMPLEX RULES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Distance rationalization in the simplex",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2. Quotient distances",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3. The ℓp-votewise case — Wasserstein distance",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. TIED SETS AND DECISIVENESS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Boundaries",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2. Geometric background",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.3. Large boundary",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5. ANALYSIS OF ℓ1-VOTEWISE METRICS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. SMALL BISECTORS AND HYPERPLANE RULES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. DISCUSSION AND FUTURE WORK",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.8573639999958687,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "1.1. Outline of paper and our contribution."
+  ],
+  "unmatched_pred": [
+   "BENJAMIN HADJIBEYLI AND MARK C. WILSON"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

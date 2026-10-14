@@ -1,0 +1,117 @@
+{
+ "doc": "1612.04140",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A microscopically derived formula for alpha-decay half-lives"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A microscopically derived formula for alpha-decay half-lives"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 25.40286869999909
+ },
+ "predictions": [
+  {
+   "text": "A microscopically derived formula for alpha-decay half-lives",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Theoretical framework",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Decay width or half-life of α-decay",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 The effective α+nucleus potential",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Expression for decay half-life",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Results and Discussions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Summary and Conclusion",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Acknowledgement",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.004393899995193351,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A microscopically derived formula for alpha-decay half-lives"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

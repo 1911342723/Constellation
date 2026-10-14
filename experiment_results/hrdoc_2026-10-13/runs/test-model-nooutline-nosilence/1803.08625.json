@@ -1,0 +1,469 @@
+{
+ "doc": "1803.08625",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 26,
+  "pred": 53,
+  "tp": 25,
+  "fp": 28,
+  "fn": 1,
+  "level_correct": 25,
+  "parent_correct": 21,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [
+   "Li-C. Wang",
+   "Output: BDD dd",
+   "2 for w ∈{1, 2, . . . , l + 1} do",
+   "4 end",
+   "5 for j ∈{1, 2, . . . , k} do",
+   "Output: BDD dd",
+   "2 for i ∈{1, 2, . . . , n} do",
+   "5 end",
+   "6 return dd;",
+   "i. The outer two loops iterate all xj",
+   "Output: BDD dd",
+   "else",
+   "end",
+   "end",
+   "13 end",
+   "14 return dd;",
+   "end",
+   "13 end",
+   "14 return dd;",
+   "k pos-ﬁrst/neg-ﬁrst",
+   "Output: BDD dd",
+   "3 for i ∈{1, 2, . . . , n} do",
+   "11 end",
+   "12 return dd;",
+   "VeSC-CoL",
+   "CART",
+   "ID3",
+   "2 and the number of negative samples is 10000."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 441,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 15629,
+   "completion_tokens": 1133,
+   "total_tokens": 16762
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Li-C. Wang",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 VERSION SPACE LEARNING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 VeSC-CoL OVERVIEW",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 HYPOTHESIS SPACE PARTITION",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 BDD-BASED LEARNING",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 VeSC-CoL FLOW",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.1 IDEA OF ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 HYPOTHESIS SUB-SPACE ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Output: BDD dd",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2 for w ∈{1, 2, . . . , l + 1} do",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 end",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 for j ∈{1, 2, . . . , k} do",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Output: BDD dd",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "2 for i ∈{1, 2, . . . , n} do",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 end",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 return dd;",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. The outer two loops iterate all xj",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4 POSITIVE SAMPLE SPACE ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Output: BDD dd",
+   "page": 4,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "else",
+   "page": 4,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "end",
+   "page": 4,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "end",
+   "page": 4,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "13 end",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "14 return dd;",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.5 NEGATIVE SAMPLE SPACE ENCODING",
+   "page": 4,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "end",
+   "page": 4,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "13 end",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "14 return dd;",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.6 OBTAINING VERSION SPACE",
+   "page": 4,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "4.6.1 Handling Non-Canonicality",
+   "page": 5,
+   "level": 3,
+   "parent": 30
+  },
+  {
+   "text": "k pos-ﬁrst/neg-ﬁrst",
+   "page": 5,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "Output: BDD dd",
+   "page": 5,
+   "level": 2,
+   "parent": 29
+  },
+  {
+   "text": "3 for i ∈{1, 2, . . . , n} do",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 end",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "12 return dd;",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 SAT-BASED LEARNING",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 HYPOTHESIS SUB-SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 37
+  },
+  {
+   "text": "5.2 POSITIVE SAMPLE SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 37
+  },
+  {
+   "text": "5.3 NEGATIVE SAMPLE SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 37
+  },
+  {
+   "text": "5.4 SIZE OF VERSION SPACE",
+   "page": 6,
+   "level": 2,
+   "parent": 37
+  },
+  {
+   "text": "6 EXPERIMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 RUNTIME COMPARISON",
+   "page": 6,
+   "level": 2,
+   "parent": 42
+  },
+  {
+   "text": "6.2 COMPARISON WITH OTHER METHODS",
+   "page": 7,
+   "level": 2,
+   "parent": 42
+  },
+  {
+   "text": "VeSC-CoL",
+   "page": 8,
+   "level": 2,
+   "parent": 42
+  },
+  {
+   "text": "CART",
+   "page": 8,
+   "level": 2,
+   "parent": 42
+  },
+  {
+   "text": "ID3",
+   "page": 8,
+   "level": 2,
+   "parent": 42
+  },
+  {
+   "text": "6.3 COMPLEXITY ORDERING",
+   "page": 8,
+   "level": 2,
+   "parent": 42
+  },
+  {
+   "text": "6.4 ACCURACY OF VeSC-CoL",
+   "page": 8,
+   "level": 2,
+   "parent": 42
+  },
+  {
+   "text": "2 and the number of negative samples is 10000.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 CONCLUSION AND FUTURE WORK",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.922031300000526,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 53,
+  "tp": 25,
+  "fp": 28,
+  "fn": 1,
+  "level_correct": 25,
+  "parent_correct": 21,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [
+   "Li-C. Wang",
+   "Output: BDD dd",
+   "2 for w ∈{1, 2, . . . , l + 1} do",
+   "4 end",
+   "5 for j ∈{1, 2, . . . , k} do",
+   "Output: BDD dd",
+   "2 for i ∈{1, 2, . . . , n} do",
+   "5 end",
+   "6 return dd;",
+   "i. The outer two loops iterate all xj",
+   "Output: BDD dd",
+   "else",
+   "end",
+   "end",
+   "13 end",
+   "14 return dd;",
+   "end",
+   "13 end",
+   "14 return dd;",
+   "k pos-ﬁrst/neg-ﬁrst",
+   "Output: BDD dd",
+   "3 for i ∈{1, 2, . . . , n} do",
+   "11 end",
+   "12 return dd;",
+   "VeSC-CoL",
+   "CART",
+   "ID3",
+   "2 and the number of negative samples is 10000."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 51,
+  "tp": 23,
+  "fp": 28,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 19,
+  "teds": 0.3653846153846154,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [
+   "Li-C. Wang",
+   "Output: BDD dd",
+   "2 for w ∈{1, 2, . . . , l + 1} do",
+   "4 end",
+   "5 for j ∈{1, 2, . . . , k} do",
+   "Output: BDD dd",
+   "2 for i ∈{1, 2, . . . , n} do",
+   "5 end",
+   "6 return dd;",
+   "i. The outer two loops iterate all xj",
+   "Output: BDD dd",
+   "else",
+   "end",
+   "end",
+   "13 end",
+   "14 return dd;",
+   "end",
+   "13 end",
+   "14 return dd;",
+   "k pos-ﬁrst/neg-ﬁrst",
+   "Output: BDD dd",
+   "3 for i ∈{1, 2, . . . , n} do",
+   "11 end",
+   "12 return dd;",
+   "VeSC-CoL",
+   "CART",
+   "ID3",
+   "2 and the number of negative samples is 10000."
+  ],
+  "ignored_title_predictions": null
+ }
+}

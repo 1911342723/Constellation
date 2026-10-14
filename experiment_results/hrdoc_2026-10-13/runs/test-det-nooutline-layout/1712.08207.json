@@ -1,0 +1,173 @@
+{
+ "doc": "1712.08207",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 246,
+  "layout_marked": 21,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9712843168191858,
+  "inserted_word_share": 0.9569064486321508
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Motivation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Variational Autoencoder (VAE)",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Variational Encoder-Decoder (VED)",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Seq2Seq and Attention Mechanism",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 “Bypassing” Phenomenon",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 The Proposed Variational Attention",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Lower Bound",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Prior",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3 Posterior",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.4 Training Objective",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.5 Geometric Interpretation",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Experiment I: Question Generation",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.2 Experiment II: Dialog Systems",
+   "page": 8,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5 Related Work",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion and Future Work",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.27191280000261,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "doc": "1605.05085",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "ics"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 363,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14048,
+   "completion_tokens": 651,
+   "total_tokens": 14699
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Experimental details",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Hydrogels",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Colloidal drop",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Optical microscopy",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Observations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Absorption regimes",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Particle deposition",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Results and interpretation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Model for the contact angle dynam-",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Measurement of θliq(t)",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Eﬀect of the particle concentration",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Appendix",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.310981999999058,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "ics"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [
+   "ics"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

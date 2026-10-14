@@ -1,0 +1,92 @@
+{
+ "doc": "1712.06195",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Nomenclature",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Experimental Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Nanocomposite Fabrication",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B SEM and Vickers Microhardness Testing",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Results and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.023949200000060955,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Nomenclature",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "Nomenclature"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

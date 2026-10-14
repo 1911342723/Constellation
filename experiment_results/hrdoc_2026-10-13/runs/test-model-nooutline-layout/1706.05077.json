@@ -1,0 +1,191 @@
+{
+ "doc": "1706.05077",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 211,
+  "layout_marked": 22,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10178,
+   "completion_tokens": 833,
+   "total_tokens": 11011
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9038894246223079,
+  "inserted_word_share": 0.08671646638519004
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. SYSTEM DESCRIPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Dataset",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. VAD",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Features",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. UBM training",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5. i-vector extractor training",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.6. Preconditioning i-vectors",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.6.1. NAP trained on languages",
+   "page": 1,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "2.6.2. Regularized LDA",
+   "page": 1,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "2.7. Model enrollment",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.8. PLDA",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.9. Score normalization",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.10. Systems",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.11. Final fusion",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.12. Execution time and memory consumption",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. SYSTEM PERFORMANCE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CONCLUSIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.244086400001834,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

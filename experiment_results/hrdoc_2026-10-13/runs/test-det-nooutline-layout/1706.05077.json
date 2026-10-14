@@ -1,0 +1,191 @@
+{
+ "doc": "1706.05077",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 21,
+  "tp": 18,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Sharif University of Technology, Tehran, Iran",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 19,
+  "tp": 16,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.85,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Sharif University of Technology, Tehran, Iran",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 211,
+  "layout_marked": 22,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9038894246223079,
+  "inserted_word_share": 0.08284409654272673
+ },
+ "predictions": [
+  {
+   "text": "1 Sharif University of Technology, Tehran, Iran",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. SYSTEM DESCRIPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Dataset",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2. VAD",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3. Features",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4. UBM training",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.5. i-vector extractor training",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.6. Preconditioning i-vectors",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.6.1. NAP trained on languages",
+   "page": 1,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "2.6.2. Regularized LDA",
+   "page": 1,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "2.7. Model enrollment",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.8. PLDA",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.9. Score normalization",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.10. Systems",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.11. Final fusion",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.12. Execution time and memory consumption",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. SYSTEM PERFORMANCE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CONCLUSIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.6100825000030454,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 21,
+  "tp": 18,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Sharif University of Technology, Tehran, Iran",
+   "2.2. VAD",
+   "2.8. PLDA"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

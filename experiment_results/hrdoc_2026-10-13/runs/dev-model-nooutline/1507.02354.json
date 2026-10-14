@@ -1,0 +1,145 @@
+{
+ "doc": "1507.02354",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "DISTRIBUTION",
+   "4.3 Constrain the circumburst medium before the deceleration phase"
+  ],
+  "unmatched_pred": [
+   "4.3 Constrain the circumburst medium before the deceleration phase"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 381,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4667,
+   "completion_tokens": 551,
+   "total_tokens": 5218
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 HIGH-ENERGY OBSERVATION AND DATA REDUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 TNT observations",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 MULTI-BAND AFTERGLOWS IN TEMPORAL AND SPECTRAL ENERGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 ANALYSIS AND DISCUSSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Estimate the redshift",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Test with the standard forward shock model",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3 Constrain the circumburst medium before the deceleration phase",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.4 No any signatures of reverse shock and long lasting central engine activity",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.5 Onset process and constrain of initial Lorentz factor",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 SUMMARY",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.996651699999347,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "DISTRIBUTION",
+   "4.3 Constrain the circumburst medium before the deceleration phase"
+  ],
+  "unmatched_pred": [
+   "4.3 Constrain the circumburst medium before the deceleration phase"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "DISTRIBUTION",
+   "4.3 Constrain the circumburst medium before the deceleration phase"
+  ],
+  "unmatched_pred": [
+   "4.3 Constrain the circumburst medium before the deceleration phase"
+  ],
+  "ignored_title_predictions": null
+ }
+}

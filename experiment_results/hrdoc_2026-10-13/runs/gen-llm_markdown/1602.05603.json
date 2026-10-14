@@ -1,0 +1,518 @@
+{
+ "doc": "1602.05603",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 25,
+  "pred": 24,
+  "tp": 4,
+  "fp": 20,
+  "fn": 21,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.1923076923076923,
+  "unmatched_gt": [
+   "I. INTRODUCTION",
+   "I I. MODEL",
+   "III. A POSSIBLE IMPLEMENTATION",
+   "IV. NUMERICAL SOLUTION",
+   "A. Two photon generation: scattering and dynamics",
+   "B. Characterization for the two-photon output",
+   "V. ANALYTICAL THEORY",
+   "VI. EFFICIENCY",
+   "VII. CONCLUSIONS",
+   "1. Input-output fields calculations",
+   "2. Linear Response theory (LRT)",
+   "3. Practical calculation",
+   "a. Retarded perturbation",
+   "b. AC-driving",
+   "c. The relation",
+   "4. Final formula",
+   "5. Transmission calculation",
+   "6. Leakage",
+   "1. Matrix Pro duct States",
+   "2. Simulated model, input state and parameters",
+   "used"
+  ],
+  "unmatched_pred": [
+   "I.",
+   "II.",
+   "III.",
+   "IV.",
+   "A.",
+   "B.",
+   "V.",
+   "VI.",
+   "VII.",
+   "1.",
+   "2.",
+   "3.",
+   "a.",
+   "b.",
+   "c.",
+   "4.",
+   "5.",
+   "6.",
+   "1.",
+   "2."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 20,
+  "tp": 0,
+  "fp": 20,
+  "fn": 21,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.045454545454545414,
+  "unmatched_gt": [
+   "I. INTRODUCTION",
+   "I I. MODEL",
+   "III. A POSSIBLE IMPLEMENTATION",
+   "IV. NUMERICAL SOLUTION",
+   "A. Two photon generation: scattering and dynamics",
+   "B. Characterization for the two-photon output",
+   "V. ANALYTICAL THEORY",
+   "VI. EFFICIENCY",
+   "VII. CONCLUSIONS",
+   "1. Input-output fields calculations",
+   "2. Linear Response theory (LRT)",
+   "3. Practical calculation",
+   "a. Retarded perturbation",
+   "b. AC-driving",
+   "c. The relation",
+   "4. Final formula",
+   "5. Transmission calculation",
+   "6. Leakage",
+   "1. Matrix Pro duct States",
+   "2. Simulated model, input state and parameters",
+   "used"
+  ],
+  "unmatched_pred": [
+   "I.",
+   "II.",
+   "III.",
+   "IV.",
+   "A.",
+   "B.",
+   "V.",
+   "VI.",
+   "VII.",
+   "1.",
+   "2.",
+   "3.",
+   "a.",
+   "b.",
+   "c.",
+   "4.",
+   "5.",
+   "6.",
+   "1.",
+   "2."
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Full two-photon downconversion of just a single photon",
+    0,
+    1
+   ],
+   [
+    "I.",
+    0,
+    2
+   ],
+   [
+    "II.",
+    1,
+    2
+   ],
+   [
+    "III.",
+    1,
+    2
+   ],
+   [
+    "IV.",
+    2,
+    2
+   ],
+   [
+    "A.",
+    2,
+    3
+   ],
+   [
+    "B.",
+    2,
+    3
+   ],
+   [
+    "V.",
+    4,
+    2
+   ],
+   [
+    "VI.",
+    5,
+    2
+   ],
+   [
+    "VII.",
+    6,
+    2
+   ],
+   [
+    "ACKNOWLEDGMENTS",
+    6,
+    2
+   ],
+   [
+    "Appendix A: One photon scattering, input-output",
+    6,
+    2
+   ],
+   [
+    "1.",
+    6,
+    3
+   ],
+   [
+    "2.",
+    7,
+    3
+   ],
+   [
+    "3.",
+    7,
+    3
+   ],
+   [
+    "a.",
+    7,
+    4
+   ],
+   [
+    "b.",
+    8,
+    4
+   ],
+   [
+    "c.",
+    8,
+    4
+   ],
+   [
+    "4.",
+    8,
+    3
+   ],
+   [
+    "5.",
+    8,
+    3
+   ],
+   [
+    "6.",
+    8,
+    3
+   ],
+   [
+    "Appendix B: Eﬃciency calculations",
+    9,
+    2
+   ],
+   [
+    "Appendix C: Numerical simulations",
+    9,
+    2
+   ],
+   [
+    "1.",
+    9,
+    3
+   ],
+   [
+    "2.",
+    10,
+    3
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 15352,
+   "completion_tokens": 15294
+  },
+  "elapsed_llm_seconds": 65.9407613000003,
+  "word_preservation": {
+   "recall": 0.9852338999875915,
+   "in_order": 0.98486164536543,
+   "inserted": 0.02945850140569617
+  },
+  "output_markdown": "# Full two-photon downconversion of just a single photon\n\nE. S´anchez-Burillo,1 L. Mart´ın-Moreno,1 J. J. Garc´ıa-Ripoll,2 and D. Zueco1, 3\n\n1Instituto de Ciencia de Materiales de Aragon and Departamento de Fisica de la Materia Condensada,\nCSIC-Universidad de Zaragoza, E-50012 Zaragoza, Spain\n2Instituto de Fisica Fundamental, IFF-CSIC, Calle Serrano 113b, Madrid E-28006, Spain\n3Fundacion ARAID, Paseo Maria Agustin 36, E-50004 Zaragoza, Spain\n\nWe demonstrate, both numerically and analytically, that it is possible to generate two photons\nfrom one and only one photon. We characterize the output two photon ﬁeld and make our calcula-\ntions close to reality by including losses. Our proposal relies on real or artiﬁcial three-level atoms\nwith a cyclic transition strongly coupled to a one-dimensional waveguide. We show that close to\nperfect downconversion with eﬃciency over 99% is reachable using state-of-the-art Waveguide QED\narchitectures such as photonic crystals or superconducting circuits.\nIn particular, we sketch an\nimplementation in circuit QED, where the three level atom is a transmon.\n\nPACS numbers: 42.50.Ct, 42.50.Hz, 42.65.-k, 78.20.Bh\n\n## I.\nINTRODUCTION\n\nThe interaction between the electromagnetic ﬁeld and\nquantum discrete level systems (like atoms) may be en-\nhanced by conﬁning light in one-dimensional waveguides\n[1–12].\nIn these setups, a key parameter is the ratio\nbetween the decay rate due to coupling to waveguide\nphotons and that due to coupling to all other channels.\nWhenever the former dominates, we are in strong cou-\npling regime of light-matter interactions. In this case, a\nsingle two-level system can not be only used to induce\neﬀective photon-photon interactions, but it also enables\nminimal and highly eﬃcient optical devices, such as per-\nfect mirrors [13–15], single photon lasing [16] and Raman\nscattering [17–19].\n\nAnother optical process that could strongly beneﬁt\nfrom an enhanced light-matter interaction is photon\ndownconversion, where a light beam of a given frequency\nis split into two beams whose frequencies add up to the\noriginal one. Downconversion is routinely used for the\ngeneration of entangled photons, and light at convenient\nfrequencies. This is already done in atomic and molecular\nexperiments and it could also be useful for energy har-\nvesting, by using photons of high energy to excite more\nsuitable transitions in a photovoltaic material. Photon\ndown- and up-conversion are currently realized in bulk\noptics with the help of nonlinear noncentrosymmetric\nmaterials [20].\nMoreover, due to the smallness of the\nﬁne structure constant, the typical performance of this\nprocess in crystals such as BBOs is very small, with only\nabout one in every 1012 photons being downconverted\n[20].\n\nA cyclic three level system (C3LS) strongly coupled to\na waveguide is the minimal setup that produces down-\nconversion. When classical light is used as input, only a\nsmall part of the incident power is converted into a cor-\nrelated two-photon output ﬁeld [21–23]. In chiral waveg-\nuides, however, it has been argued that two photons can\nbe generated when one and only one photon is scattered\nin a C3LS structure [24]. Other downconversion mech-\n\n2\n0\n1\n\nFIG. 1. (Color online) Downconversion setup. (a) A single\nincoming photon interacts with the three-level system. Part\nof it is transmitted/reﬂected (ω02, blue) and part is down-\nconverted into a pair of photons with frequencies ω12 and ω01\n(orange and red). (b) Placing a mirror right after the scatterer\nat a suitable distance, downconversion can become determin-\nistic: all reﬂected photons have downconverted frequencies.\n\nanisms at the single photon limit, requiring the driving\nof nonlinear cavities, has been recently proposed [25]. In\nthis paper we generalize the results in C3LS, considering\nfull downconversion eﬃciency in non chiral waveguides.\nMore precisely, we consider a waveguide photon imping-\ning on the C3LS and resonantly populating level |2⟩, as\nschematically represented in Fig. 1. Additionally to the\ndirect relaxation of |2⟩to the ground state, the cascade\n|2⟩→|1⟩→|0⟩allows the relaxation to be accompanied\nby the emission of two photons [26]. In our study we in-\nclude losses, analyze the entanglement of the output ﬁeld\nand suggest a possible experimental realization.\n\nThe rest of the paper is organized as follows. In the\nnext section, we introduce the model. Then, in Sect. III\nwe sketch a realization in circuit QED. We continue by\n\narXiv:1602.05603v2  [quant-ph]  7 Apr 2016\n\n<<page 2>>\n2\n\nreporting our numerical results, based on matrix product\nstates (MPS). There, we discuss the two photon probabil-\nity and the dynamics both for the ﬁeld and the atom. We\nalso characterize the output ﬁeld and its entanglement.\nIn Sect. V we develop an analytical theory, wich allows\nto compute the eﬃciency in presence of losses [Sect. VI].\nWe conclude with the conclusions and send some techni-\ncal issues to three appendices.\n\n## II.\nMODEL\n\nWe consider a cyclic three level quantum system\n(C3LS) strongly coupled to a one-dimensional waveguide\nwhere photons can freely travel. We neglect thermal ﬂuc-\ntuations and losses in the waveguide and, for the moment\nin the C3LS, so the eﬀective Hamiltonian is (ℏ= 1)\n\nH = H0 + Hint,\n(1)\n\nwhere\n\nH0 =\nZ\ndω ω r†\nωrω +\nZ\ndω ω l†\nωlω +\n2\nX\nj=0\nωj |j⟩⟨j| ,\n(2)\n\nwith rω and lω being bosonic operators that, respectively,\nannihilate right- and left- moving waveguide photons; r†\nω\nand l†\nω are the corresponding creation operators, and ωj\nand |j⟩are the eigenenergies and eigenstates of the iso-\nlated 3LS. The coupling between the 3LS and the waveg-\nuide photons is represented by Hint = G X, with X the\nelectromagnetic (EM) displacement given by\n\nX =\nZ\ndω D(ω) (rω + lω) + H.c.\n(3)\n\nwhere D(ω) is the density of states.\nThe operator G\naccounts for the transitions between levels in the C3LS\ninduced by the EM ﬁeld:\n\nG = g01 |0⟩⟨1| + g12 |1⟩⟨2| + g02 |0⟩⟨2| + H.c.\n\n(4)\n\n## III.\nA POSSIBLE IMPLEMENTATION\n\nAn important point is that a C3LS cannot be realized\nin systems where (i) quantum states are labelled by a spa-\ntial parity tag and (ii) are small enough and the dipolar\ninteraction dominates (like atoms). The reason is that at\nleast two of the three states in the C3LS must have the\nsame parity, but the dipole interaction only couples states\nwith diﬀerent parity. However, eﬀective C3LSs may ap-\npear in extended quantum systems, where couplings be-\nyond the dipolar must be considered. Implementations\nof C3LS are some molecules [27] and ﬂux qubits made\nof superconducting circuits [21, 22]. However, this last\nsystem leads to three quite dissimilar excitation energies.\nWe chose an alternative design for an eﬀective C3LS in\n\nFIG. 2. (a) A transmon can be both inductively and capac-\nitively coupled to an LC resonator.\nCoupling strenght can\nbe increased by either increasing the SQUID area or (b) by\nsharing a conductor segment, in the spirit of Ref. [29] and\nsimilar proposals.\n\nthe microwave range using a transmon (a charge super-\nconducting qubit shunted by a big capacitor) that makes\nthe C3LS transitions more harmonic [28].\n\nTypically, inductive coupling between the transmon\nand the transmission line is negligible. The reason is that\nthe transmon design is basically that of a one-dimensional\nelectric dipole, without support for currents.\nIn addi-\ntion to this, the SQUID that controls the transmon fre-\nquency is small and shielded away from any coupling with\nthe transmission line. Inductive couplings between tran-\nmons have been however demonstrated [30, 31]. We make\nuse of similar ideas to envision a diﬀerent coupling archi-\ntecture that allows breaking the parity symmetry in the\ntransmon setup.\n\nOur starting point is a setup such as the one in Fig.\n2a, where the transmon SQUID is no longer screened\nan the superconducting island couples both capacitively\nand inductively to the resonator. The circuit Lagrangian\n(with inductive and capacitive coupling) is,\n\nL =\nZ\ndx c(∂tφ(x, t))2 −1\nl (∂xφ(x, t))2\n(5)\n\n+\n1\n2CΣ\n(q −Q)2 −EJ cos(2πΦ/Φ0) cos ϕ .\n\nThe ﬁrst line accounts for the transmission line La-\ngrangian. Here, φ(x, t) is the (quantum) ﬂux ﬁeld, that\nin the interaction picture reads,\n\nφ(x, t) =\nr\nℏZ0\n4π\nZ ∞\n0\ndω\n1\n√ω\n\u0010\nrωe−iω(t−x/v)\n(6)\n+ lωe−iω(t+x/v) + H.c.\n\u0011\n,\n\nwith c (l), the capacitance (inductance) per unit length\nand Z0 =\np\nl/c is the line impedance. The transmon and\nits coupling is written in the second line. There, EJ is\nthe Josephson energy and CΣ is the capacitance. Charge\nand phase invariant gauge are quantized via [eiϕ, q] =\n2e eiϕ. The transmon is driven and coupled to the line\nvia the charge Q and the ﬂux Φ ( Φ0 = h/2e is the ﬂux\nquantum):\n\nQ = 2e ng + c ∂tφ(x, t)\n(7)\n\nΦ = λ ∂xφ(x, t) + Φ0\n2π ϕext .\n(8)\n\n<<page 3>>\n3\n\n<1|q|2>\n<0|q|1>\n<0|cos(φ)|2>\n\n0.04 0.05 0.06 0.07 0.08 0.09\n0.020\n0.025\n0.030\n0.035\n0.040\nEC/EJ\n\nFIG. 3. (Color online) Non zero charge and ﬂux matrix ele-\nments ⟨i|q|j⟩and ⟨i| cos ϕ|j⟩respectively contributing to the\ncoupling operator G. The vertical line marks the parameters\nchosen in our simulations with EC/EJ = 1/20.\n\nWe have introduced the coupling factor λ that accounts\nfor the eﬀective ﬁeld by the transmon’s SQUID after tak-\ning into account the screening. Inserting the latter in (5)\nand expanding the cosine we get the coupling Hamilto-\nnian,\n\nHcoupling =\nc\nCΣ\nq∂tφ−λd π\nΦ0\nEJ sin(ϕext) cos(ϕ)∂xφ. (9)\n\nWe still need to show that (9) provides the cyclic struc-\nture. We numerically diagonalize Htransmon =\n1\n2CΣ q2 −\nEJ cos ϕ in the charge basis, retaining the ﬁrst three lev-\nels Htransmon = P2\nj=0 ωj|j⟩⟨j|. With the eigenstates at\nhand, we can compute the diﬀerent contributions to G\nin H [Eq. (1) in the main text]. In Figure 3 we plot\nthe contributions due to the charge operator q in (9). As\nalready explained in the literature, ⟨i|q|i + 1⟩̸= 0 but\n⟨0|q|2⟩= 0 [28].\nThe necessary non zero g02 value is\nobtained through the inductive coupling. The values for\n⟨0| cos(ϕ)|2⟩̸= 0 is also plotted in 3 (⟨i| cos(ϕ)|i+1⟩= 0).\nTherefore, by combining inductive and capacitive (elec-\ntric and magnetic) coupling the transmon has a cyclic\nstructure. Through the main text we set EC/EJ = 1/20.\nWe ﬁx λ and CΣ making the transition rates between\nquantum levels induced by coupling to the waveguide\nphotons, Γ(0)\nij\n≡2πD2(ωij)g2\nij, optimal for the two pho-\nton generation (see below).\n\n## IV.\nNUMERICAL SOLUTION\n\nWe compute the time evolution of an initial single-\nphoton wavepacket. Even though, the results are inde-\npendent of the actual wavepacket, our numerical simu-\nlations assume the incident photon being generated via\nspontaneous emission in an auxiliary two level system\n(a single photon generator). Besides, we discretize both\nspace and time and use the Matrix Product States (MPS)\ntechnique, which is a well known method for obtaining\nthe ground state and low energy states in interacting one-\ndimensional systems [29, 32–35]. MPS has been applied\nto photon scattering in waveguides [19, 36, 37].\nThis\nmethod is specially suited for Hamiltonians like (2) that\neither have a nonlinear dispersion relation or, as in the\nconsidered case, do not conserve the number of excita-\ntions. It is worth to emphasize here that we solve the time\nevolution for the full Hamiltonian. As a consequence, we\nhave access to both ﬁeld and system observables at any\ntime. Technical details of our simulations can be found\nin App. C.\n\n### A.\nTwo photon generation: scattering and\ndynamics\n\nIn Fig.\n4 we plot the spectrum for the one\nphoton transmittance and reﬂectance,\n|t(1)(ω)|2\n=\nlimt→∞|⟨Ω|rωe−iHt|ψin⟩/⟨Ω|rω|ψin⟩|2 and |r(1)(ω)|2 =\nlimt→∞|⟨Ω|lωe−iHt|ψin⟩/⟨Ω|rω|ψin⟩|2, respectively, and\nthe total energy radiated in the two-photon channel\nP (2)(ω). The ﬁrst transmission dip occurs when the pho-\nton energy is centered around ω = ω01 ≡ω1 −ω0. In this\nspectral region the |0⟩→|1⟩is the only transition avail-\nable. Thus, the C3LS behaves as an eﬀective two-level\nsystem and the photon is fully reﬂected at resonance [13–\n15]. Consequently, P (2)(ω) = 0 in this frequency range\n[Cf. Fig. 4 c)]. In the second transmission dip, located\nat ω = ω02, the transmittance presents a ﬁnite minimum\nvalue, that is close to 0.5. Figs. 4 b)-c) shows a remark-\nable 50% downconversion eﬃciency of the incoming pho-\nton into just two (and only two) outgoing photons, with\nonly a very small amount of light being backreﬂected.\n\nFor the shake of completeness and to emphasize the\nfact that we have access to the time domain too, we plot\nthe 3CLS level population in Fig. 5 a). We see that the\nsecond excited state gets populated ﬁrst, since our inci-\ndent photon is resonant with the transition |0⟩↔|2⟩.\nAfter the transient period, both levels decay to the\nground state. We also plot the particles in energy space,\n⟨n(r)\nω ⟩= ⟨r†\nωrω⟩and similarly for ⟨n(l)\nω ⟩in Fig. 5 b) and\nc). In doing so, we can visualize the two photon gener-\nation in time domain. In the beginning, we have a sin-\ngle peak around the incident energy for the right-moving\nphotons.\nAfter the interaction occurs, a peak appears\nfor a left-moving photon at ω02, corresponding to the\nsingle-photon reﬂection [See panel 5 c)]. In addition, two\npeaks emerge after the scattering for both forward and\nbackward travelling photons centered at ω12 and ω01, as-\nsociated to the generation of the two-photon state.\n\n### B.\nCharacterization for the two-photon output\n\nIn order to characterize the two-photon wave function\nemerging from the downconversion process we compute\nthe two-point correlation function, both in position space\n\n<<page 4>>\n4\n\nT\nTMPS\n1\n0.8\n0.6\n1.2\n0\n0.2\n0.4\n0.6\n0.8\n1.0\nω\n\nR\nRMPS\n1\n0.8\n0.6\n1.2\n0\n0.2\n0.4\n0.6\n0.8\n1.0\nω\n\nP2\nPMPS\n(2)\n1\n0.8\n0.6\n1.2\n0\n0.1\n0.2\n0.3\n0.4\n0.5\nω\n\na)\nb)\nc)\n\nFIG. 4.\n(Color online).\nScattering coeﬃcients in a cyclic\nthree-level system, as a function of the incident frequency ω.\nOne photon transmittance (panel (a)), reﬂectance (panel(b))\nand energy transferred into the two photon channel P (2)(ω)\n(panel(c)).\nWe show both analytical (solid lines) and nu-\nmerical results obtained with MPS (dotted lines). The pa-\nrameters are ω01 = 0.59, ω02 = 1, Γ(0)(ω01) = 1.7 × 10−3,\nΓ(0)(ω02) = 2.3 × 10−3 and Γ(0)(ω12) = 3.5 × 10−3. We re-\nmind that Γ(0)\nij = 2πD2(ωij)g2\nij.\n\nφout\nx1x2 := ⟨Ω|ax1ax2|Ψ(tout)⟩, where ax annihilates a pho-\nton at x and in energy space for right-moving photons\n˜φout\nω1ω2 := ⟨Ω|rω1rω2|Ψ(tout)⟩. As shown in Fig. 6, both\nphotons are emitted spatially in a symmetric way with\nrespect to the position of the scatterer (x = 0). In energy\nspace, ˜φout\nω1ω2 is centered around (ω1, ω2) = (ω01, ω12) and\n(ω12, ω01) (white dotted lines), as expected from emission\nfrom a double resonant process. However, and similarly\nto the phenomena of resonant ﬂuorescence, ˜φout\nω1ω2 is non-\nzero all along the isoenergetic curve ω1 + ω2 = ω (white\nsolid line in the panel b).\n\nThe two photons generated are entangled. The corre-\nsponding von Neumann entropy SVN can be computed af-\n\n1\n2\n0\n20\n40\n60\n80\n100 120 140\n0.00\n0.02\n0.04\n0.06\n0.08\n0.10\n0.12\nJt\nP\n\na)\nb)                                                            c)\n\nω02\nω12\nω01\nω02\nω12\nω01\n\nFIG. 5. (Color online) a) Population of the ﬁrst (blue solid\nline) and second (red dashed line) excited states as a func-\ntion of time. Photon occupation in energy space for b) right-\nmoving, ⟨n(r)\nω ⟩, and c) left-moving photons, ⟨n(l)\nω ⟩, respec-\ntively, as a function of time.\nSame parameters as in Fig.\n4.\n\nter normalizing the two-photon wave function, such that\nP\nx1x2 |φout\nx1x2|2 = 1, and ﬁnding its Schmidt decomposi-\ntion, φout\nx1x2 = P\nm λmϕx1,mχx2,m, being {λm} the singu-\nlar values. Then SVN = −P\nm λ2\nm log(λ2\nm) [38] . In the\nrepresentative case shown in Fig. 6 we get SVN = 1.44.\nFor a better understanding, we plot the contribution of\neach mode to SVN in Fig. 7 a). The entropy is domi-\nnated by the ﬁrst two modes, but the contribution from\nthe other modes is non negligible. In order to quantify\nhow the entropy is recovered from a given number of\nmodes, we deﬁne the entanglement entropy of the ﬁrst m\nmodes\n\nSVN,m = −\nm\nX\nn=1\nλ2\nn log(λ2\nn) ,\n(10)\n\nand show SVN,m/SVN in the inset of Fig. 7.\n\nAnother measure of how the wavefunction can be rep-\nresented by a ﬁxed number of modes is the ﬁdelity,\ni.e.\nthe overlap between the actual two photon state,\n|Ψ2⟩= 1/\n√\n2 P\nx1,x2 φx1,x2a†\nx1a†\nx2|Ω⟩and the state recon-\nstructed with m modes:\n\n|Ψ2,m⟩=\n1\n√\n2\nX\nx1,x2\nm\nX\nn=1\nλn ˜ϕx1,n ˜χx2,na†\nx1a†\nx2|Ω⟩.\n(11)\n\n<<page 5>>\n5\n\na)\nb)\n\nω01\nω12\nω01\nω12\n\nFIG. 6.\n(Color online) Square modulus of the two-photon\nwave function in a) position and b) energy space. The isoen-\nergetic line, ω1 + ω2 = ω, is shown in the bottom panel\n(white line).\nWe normalize both wave functions such that\nmax(|φout\nx1x2|2) = max(|˜φout\nω1ω2|2) = 1. Same parameters as in\nFig. 4.\n\nIn Fig. 7 a) (inset) we check that the overlap qualitatively\nbehaves as SVN,m.\n\nLastly, we can visualize how the two-point correlation\nfunction is reconstructed by adding modes. In Fig. 7 we\nplot |˜φm\nω1,ω2|2 = |⟨Ω|rω1rω2|Ψ2,m⟩|2 for diﬀerent values of\nm. The white lines, as in Fig. 6, mark the isoenergertic\ncondition. For m = 1 we do not catch the bimodal aspect\nof the state. However, already with m = 2 we see the\ndouble-peaked structure.\n\n■■\n■\n■\n■\n■■■■■■■■■■■■■■■\n5\n10\n15\n20\n0\n0.1\n0.2\n0.3\nm\n- λm\n2 log(λm\n2 )\n\n●\n●\n●\n●●●●●●●●●●●●●●●●●●\n▲\n▲\n▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲\n▲|<ψ |ψ2,m> 2\n●SVN,m/\n5\n10\n15\n20\n0\n0.2\n0.4\n0.6\n0.6\n0.8\n1.0\nm\nSVN\n2\n\na)\nb)\nc)\nd)\ne)\n\nFIG. 7. (Color online) a) Contribution of each mode to SVN,\n−λ2\nm log(λ2\nm) as a function of m. In the inset, we plot the\nentropy of |Ψ2,m⟩over the whole entropy, SVN,m/SVN (red\ncircles) and the overlap between |Ψ2⟩and |Ψ2,m⟩(blue trian-\ngles) as a function of m. |˜φm\nω1,ω2|2 for b) m = 1, c) m = 2, d)\nm = 3 and e) m = L which is the exact result, Cf. Fig. 6b).\n\n## V.\nANALYTICAL THEORY\n\nIn order to provide an approximate analytical theory\nfor the numerical results presented above, we use the\ninput-output formalism [39] that has been recently intro-\nduced to scattering problems in Waveguide QED [40, 41].\nThe central object in this theory is the relation among\nthe input and output ﬁelds, namely,\n\nrout(t) = rin(t) −i\n√\n2πD(ω)G(t) ,\n(12)\n\ndeﬁned as rin(t) :=\nR ∞\n0\ndω\n√\n2π rω(t0)e−iωt and rout(t) :=\nR ∞\n0\ndω\n√\n2πrω(tf)e−iω(t−tf ) with rω(t) = eiHtrωe−iHt. The\ntimes t0 and tf must be taken well before and after the\nscattering event has occurred. As we are interested in\n\n<<page 6>>\n6\n\nasymptotic behavior, we can set t0 →−∞and tf →∞.\nIt is important to notice that, in general, the relation\n(A12) is obtained assuming that the atom spontaneous\nemission rates Γ(0)\nij\n= 2πD2(ωij)g2\nij are small compared\nto the bare atom transitions.\n\nThe crucial point, as expressed in Eq. (A12), is that\nthe full photon dynamics can be obtained from that of\nthe quantum scatterer by solving the quantum optical\nmaster equation [39] for the reduced density matrix of\nthe C3LS:\n\ndϱ\ndt = −i[H0, ϱ] −2ıαD(ω) cos(ωt)[G(t), ϱ]\n(13)\n\n+ 2\nX\nωij>0\nΓij\n\u0010\nLijϱL†\nij −1\n2{L†\nijLij, ϱ}\n\u0011\n,\n\nwhere Lij = |j⟩⟨i| and Γij are the transition rates be-\ntween the discrete levels in the scatterer. Additionally to\nthe transition rates induced by coupling to the waveguide\nphotons this formulation allows us to consider the transi-\ntions γij induced by coupling to other baths (as phonons\nor other components of the EM ﬁeld). In this case, the\ntotal transition rate is Γij = Γ(0)\nij + γij.\n\nAs stated above, we have numerically tested that no\nmore than two photons are generated in the dynamics.\nTherefore, the two photon generation probability can be\ncomputed by energy conservation:\n\nP (2)(ω) = 1 −|t(1)(ω)|2 −|r(1)(ω)|2 −A(ω) .\n(14)\n\nThe one photon transmittance t1(ω) is given by\n\nt(1)(ω) = lim\nα→0\n⟨αω|rout(t)|αω⟩\n⟨αω|rin(t)|αω⟩\n(15)\n\nwith |αω⟩= eαr†\nin(ω)−H.c.|Ω⟩, being r†\nin(ω) the Fourier\ntransform of r†\nin(t).\nThus, t(1)(ω) can be obtained by\nsolving (A13) within linear response theory. After some\nalgebra, we get A\n\nt(1)(ω) = 1−\niΓ(0)\n01\n(ω −ω01) + iΓ01\n−\niΓ(0)\n02\n(ω −ω02) + i(Γ01 + Γ02).\n(16)\n\nIn addition, 1 + r(1)(ω) = t(1)(ω).\n\nThe last term in (17) is the energy “absorbed” by the\nlossy channels, A(ω). Here, we consider a unique channel\ndissipating all the C3LS transitions.\nAround the two\nphoton frequency generation A(ω) can be approximated,\n\nA(ω ∼= ω02) = 2 γ02 |r(1)(ω02)|2/Γ02\n(17)\n\nThe validity of these approximate analytical expressions\nis shown in Fig. 4, where they are compared to the nu-\nmerical results for the “lossless” case γij = 0.\n\n## VI.\nEFFICIENCY\n\nEquation (17) allows for the search of optimal param-\neters for downconversion. The ﬁrst observation is that\n\nFIG. 8.\n(Color online) P (2)(ω = ω02) as a function of the\ndistance atom-mirror kd, See Fig. 1, and the ratio Γ(0)\n12 /Γ(0)\n02 .\nLosses are taken into account. In the ﬁgure, a conservative\nratio γ02/Γ(0)\n02 = 0.1 is used. The rest of the parameters are\nthe same as in Fig. 4. White lines mark iso-eﬃciency curves,\nstarting at 0.9 and ﬁnishing at 0.99.\n\nlosses are detrimental, always reducing P (2)(ω).\nEven\nin absence of losses (γij = 0), the two-photon generation\ncan be considered as a loss mechanism for the one-photon\nchannel, which implies that the fraction of energy down-\nconverted is at most max P (2)(ω) = 1\n2 (occurring when\nr(ω) = −1\n2). This fundamental bound is related to the\nfact that a deep subwavelength scatterer re-emits equally\nto the left and to the right [42].\nBut this bound can\nbe exceeded by breaking the left-right symmetry in the\nwaveguide by, e.g. placing a mirror next to the C3LS, as\nsketched in Fig. 1b).\n\nThe reﬂectance and (for γij ̸= 0) absorption can be\ncalculated in this conﬁguration by summing all multiple-\nscattering processes that the waveguide photon has with\nboth the C3LS and the mirror [43]. The sum can be done\nanalytically B, resulting in:\n\nP (2)(ω) = 1 −\n\nr(1)(ω) −\n\u0010\n1 + 2r(1)(ω)\n\u0011\nΦ(ω)\n1 + r(1)(ω)Φ(ω)\n\n2\n(18)\n\n−\n\n1 −Φ(ω)\n1 + r(1)(ω)Φ(ω)\n\n2\nA(ω),\n\nwhere Φ(ω) = e2ik(ω)d, d is the distance between the\nmirror and the C3LS and k(ω) is the waveguide photon\nwavevector at frequency ω.\n\nAs drawn in Fig.\n8, the maximum downconversion\neﬃciency predicted by Eq. (18) occurs at resonance (ω =\nω02), and for Γ(0)\n12 /Γ(0)\n02 ∼= 2 and kd = π/2, and can be\n\n<<page 7>>\n7\n\napproximated by:\n\nmaxP2 = 1 −γ02\nΓ02\n(19)\n\nSo, remarkably, downconversion may be perfect in the\nconsidered conﬁguration if losses are negligible. It pro-\nvides a simple expression for the maximum eﬃciency as\na function of the ratio between the rates for absorption\nand coupling into waveguide photons. This ratio is a key\nﬁgure of merit in Waveguide QED and values as small as\n10−2 have already reported for eﬀective two-level systems\nin both superconducting circuits [8] and photonic crys-\ntals [44]. Thus, two photon generation with one and only\none photon with an eﬃciency larger than 0.99 is doable\nusing an appropriate C3LS.\n\n## VII.\nCONCLUSIONS\n\nWe have shown that two photons can be eﬃciently gen-\nerated by sending one and only one photon through a\ncyclic three-level atom in a realistic scenario. Remark-\nably, the downconversion process can occur with unit\nprobability, being only limited by energy leakage in the\nthree-level system. Based on reported experimental data,\nwe have estimated that a nearly perfect two photon gen-\nerator operating at the single photon level is feasible in\narchitectures based on either photonic crystals or super-\nconducting circuits. Together with single atomic mirrors\n[13–15], single photon lasing [16] or single photon Raman\nscattering [19], this work contributes to the toolbox of\nphotonics with minimum power, where even tasks usu-\nally associated to high intensities are performed at the\none-photon level.\n\n## ACKNOWLEDGMENTS\n\nWe acknowledge support by the Spanish Ministe-\nrio de Economia y Competitividad within projects\nMAT2014-53432-C5-1-R, FIS2012-33022 and FIS2014-\n55867-P, CAM Research Network QUITEMAD+ and the\nGobierno de Arag´on (FENOL group).\n\n## Appendix A: One photon scattering, input-output\nand Linear Response Theory\n\nTo start with, we deﬁne the S-matrix, as S\n:=\nlimt→∞U(t, −t) with U(t, t′) = e−iH(t−t′) the evolution\noperator. Then [40, 41]:\n\nt(1)(ω) = lim\nt→∞\n⟨Ω| rωr†\nout(t) |ψin⟩\n⟨Ω| rωr†\nin(t) |ψin⟩\n.\n(A1)\n\nThe second equality holds after direct replacement of the\ndeﬁnitions for the input output ﬁeds appearing in the\nGardiner and Collet seminal paper [39],\n\nrin(t) :=\nZ ∞\n0\ndω\n√\n2π rω(t0)e−iω(t−t0)\n(A2)\n\nrout(t) :=\nZ ∞\n0\ndω\n√\n2π rω(tf)e−iω(t−tf )\n(A3)\n\nHere, rω(t) = eiHtrωe−iHt are Heisenberg evolved oper-\nators. The times t0 and tf are times well before and well\nafter the scatterer and the impinged photons have inter-\nacted. If we are interested in asymptotics, we can set\nt0 →−∞and tf →∞.\n\nConsider now a coherent input state,\n\n|αω⟩= eαr†\nin(ω)−H.c.|Ω⟩.\n(A4)\n\nWe consider the following expected value\n\nfout(ω, ω′, α) := ⟨αω|rout(ω′)|αω⟩,\n(A5)\n\nwith rout(ω) the Fourier transform of rout(t), Eq. (A3).\nWe take a series expansion in α\n\nfout(ω, ω′, α) = α ⟨Ω|rout(ω′)r†\nin(ω)|Ω⟩+ O(α2)\n(A6)\n\nFollowing Fan et al.\n[40],\n\n⟨Ω|rout(ω′)r†\nin(ω)|Ω⟩\n=\nt(1)(ω)δ(ω −ω′). Thus\n\nfout(ω, ω′, α) = α t(1)(ω)δ(ω −ω′) + O(α2).\n(A7)\n\nFourier transforming with respect to ω′\n\nfout(ω, t, α) :=\n1\n√\n2π\nZ\ndω′fout(ω, ω′, α)eiω′t\n(A8)\n\n= α\n√\n2π t(1)(ω)eiωt + O(α2).\n(A9)\n\nNotice that fout(ω, t, α) = ⟨αω|rout(t)|αω⟩.\nThen, the\ntransmission amplitude can be computed as\n\nt(1)(ω) = lim\nα→0\n⟨αω|rout(t)|αω⟩\n⟨αω|rin(t)|αω⟩\n(A10)\n\nTherefore, the one photon scattering can be obtained by\ndriving the scatterer with a coherent (classical) state in\nthe limit of weak amplitude, α. Thus, Linear Response\nTheory can be used.\n\n### 1.\nInput-output ﬁelds calculations\n\nThe exact relation between input and output ﬁelds,\nEqs. (A2) and (A3) is [39]\n\nrout(t) = rin(t)−i\nZ ∞\n0\ndω\n√\n2π\nZ tf\nt0\ndτ D(ω)e−iω(t−τ)X(τ) .\n(A11)\n\nIf we assume that the coupling to the line is small com-\npared to the the scatterer transitions, only photons close\n\n<<page 8>>\n8\n\nto resonance (with such transitions) will actually inter-\nact with the scatterer. This is typical in experiments.\nThen, we can approximate the functional form D(ω) for\nits value at the incident photon frequency, ω, and (A11)\nis simpliﬁed:\n\nrout(t) = rin(t) −i\n√\n2πD(ω)G(t)\n(A12)\n\nAs a main consequence, rout(t) can be obtained by cal-\nculating the system dynamics. It tuns out that, with the\nsame assumption yielding (A12), G(t) can be obtained\nthrough the quantum optical master equation [39],\n\ndϱ\ndt = −i[Hsct, ϱ] −ix(t)[G, ϱ]\n(A13)\n\n+ 2\nX\nωij>0\nΓ(ωij)\n\u0010\nLijϱL†\nij −1\n2{L†\nijLij, ϱ}\n\u0011\n.\n\nwhere Lij = |j⟩⟨i| and\n\nΓ(ωij) = 2πD2(Ω)g2\nij + γij\n(A14)\n\nHere, γij are the decays to another environments. The\n(classical) driving, due to the coherent input state, enters\nin the second term of (A13).\nThe driving due to the\ncoherent input state (A4) is taken into account in the\nsecond term of (A13) via\n\nx(t) = ⟨X(t)⟩line = Tr\n\u0000X(t)ϱline(t0)\n\u0001\n(A15)\n\nhere, X(t) = eiHlinet X e−iHlinet, with ϱline(t0) is the state\nof the line (already with the input state). In the case of\na coherent state as input (A4),\n\nx(t) = 2αD(ω) cos(ωt)\n(A16)\n\nTo solve for t(1)(ω) [Cf. Eq. (15)] equation (A13) must\nbe solved in the limit of weak driving: α →0.\n\n### 2.\nLinear Response theory (LRT)\n\nWe review the Linear Response Theory (LRT), See.\ne.g. Ref. 45, Chap. 6. We rewrite (A13) as,\n\n∂ϱ = L0ϱ + λ f(t) L1ϱ\n(A17)\n\nwith,\n\nL0ϱ = −i[HS, ϱ]\n(A18)\n\n+ 2\nX\nΩ\nΓ(Ω)\n\u0010\nG(Ω)ϱ G†(Ω) −1\n2{G†(Ω)G(Ω), ϱ}\n\u0011\n.\n\nL1ϱ =f(t)[G, ϱ]\n(A19)\n\nand,\n\nλ = α\ns\n\ndω\ndk\n\nD(ω)\nf(t) = e−iωt.\n(A20)\n\nLRT solves the above evolution up to ﬁrst order in λ:\n\nϱ = ϱ0 + λϱ1\n(A21)\n\nwith L0ϱ0 = 0, i.e. in absence of perturbation the system\nis in equilibrium. Replacing the above in (A17) we get\n(up to ﬁrst order)\n\n∂tϱ1 = L0ϱ1 + f(t)L1ϱ0 .\n(A22)\n\nThe solution (ϱ1(−∞) = 0) is\n\nϱ1 =\nZ t\n−∞\nds e(t−s)L0 f(s) L1ϱ0 .\n(A23)\n\nThe solution (A23) is used to compute averages. In\nparticular the one for G:\n\n∆G(t) := ⟨G⟩(t) −⟨G⟩0\n⟨G⟩0 ≡Tr(Gϱ0) ,\n(A24)\n\nobtaining,\n\n∆G(t) = λ\nZ ∞\n−∞\ndsR(t −s)f(s)\n(A25)\n\nwith the response function (θ(t) = 0 if t < 0, θ(t) = 1\notherwise)\n\nR(t) = θ(t) Tr( e(t−s)L0 L1ϱ0) .\n(A26)\n\nImportantly enough, the response function R(t) does not\ndepend on the actual form for f(t).\n\n### 3.\nPractical calculation\n\nWe discuss two important perturbation functions f(t).\nWe also give the relation between them.\n\n#### a.\nRetarded perturbation\n\nIn the, so called retarded perturbation, the perturba-\ntion L1 switched oﬀat t = 0. Therefore,\n\nfr(t) = θ(−t)\n(A27)\n\nIn this case (A25)\n\n∆Gr(t) = λ\nZ ∞\n−∞\ndsR(t −s)θ(−s)\n(A28)\n\n= λ\nZ ∞\n−∞\ndsR(s)θ(s −t)\n\n= λ\nZ ∞\nt\ndsR(s)\n\n−→\nd\ndt∆Gr = −λR(t)\n\n<<page 9>>\n9\n\n#### b.\nAC-driving\n\nWe consider now, the AC-driving f(t) = e−iωt. In this\ncase,\n\n∆GAC(t) = λ\nZ ∞\n−∞\ndsR(t −s)e−iωs\n(A29)\n\n= λ e−iωt\nZ ∞\n−∞\ndsR(s)eiωs\n\n= λ e−iωt\nZ ∞\n0\ndsR(s)eiωs ≡λG(ω)e−iωt .\n\nThe last equality deﬁnes the susceptibility.\n\n#### c.\nThe relation\n\nFinally, both results the AC susceptibility and the re-\ntarded evolution, Eqs. (A28) and (A29) can be related,\n\n∆GAC(t) = −e−iωt\u0010 Z ∞\n0\nds d\nds∆Gr eiωs\u0011\n(A30)\n\n= −e−iωt\u0010 Z ∞\n0\nds dGr\nds eiωs\u0011\n\n= e−iωt\u0010\nGr(0) + iω\nZ ∞\n0\nds Gr(s) eiωs\u0011\n\nHere Gr(∞) = 0.\n\nSummarazing, for computing the evolution under AC\ndriving we do not need to solve the explicit time depen-\ndent problem (A17) but solve the unperturbed evolution\nwith initial conditions (L0 + λL1)ϱ = 0 (the retarded\nresponse).\n\n### 4.\nFinal formula\n\nThe solution for ∂tϱ = L0ϱ is\n\nGr(s) =\nX\nij\nGi,jϱij(0)e−(iωij+Γij)s\n(A31)\n\nwith Gi,j = ⟨i|G|j⟩and ϱij(0) the initial conditions ob-\ntained by solving (L0 + λL1)ϱ = 0. Eq. (A30) can be\nrewritten (and approximated) in energy space\n\n∆GAC(ω) =\nX\nij\nGi,jϱij(0)\n\u0012\n1 +\niω\ni(ωij −ω) + Γij\n\u0013\n\n=\nX\nij\nGi,jϱij(0) iωij + Γ(ωij)\ni(ωij −ω) + Γij\n\n∼=\nX\nωij>0\nGi,jϱij(0) iωij + Γ(ωij)\ni(ωij −ω) + Γij\n(A32)\n\nThe last approximation considers that the main contri-\nbution comes from the terms with poles.\n\n### 5.\nTransmission calculation\n\nFollowing Eq. (A32), we can approximate\n\nGr(s) ∼= G01ϱ10(0)e−(iω01+Γ(ω01))s + G02ϱ20(0)e−(iω02+Γ(ω02))s\n(A33)\n\nFinally, we solve for ϱij(0), that are solutions of (L0 + λL1)ϱ = 0. We get the equations,\n\n˙ϱ10 = 0 = −iω01ϱ10 −iαg10(ϱ00 −ϱ11) −Γ01ϱ20\n(A34)\n\n˙ϱ20 = 0 = −iω02ϱ20 −ix(t)g20(ϱ00 −ϱ22) −\n\u0010\nΓ02 + Γ01\n\u0011\nϱ20\n(A35)\n\nand the ones for the diagonals\n\n˙ϱ00 = 0 = −iαg10(ϱ01 −ϱ10) −iαg20(ϱ02 −ϱ20) + Γ01ρ11 + Γ02ρ22\n(A36)\n\n˙ϱ11 = 0 = +iαg10(ϱ01 −ϱ10) −iαg21(ϱ12 −ϱ21) −Γ01ρ11 + Γ12ρ22\n(A37)\n\nand ϱ22 = 1 −ϱ11 −ϱ00. From (A36) and (A37) we see that, ϱ11 ∼ϱ22 ∼O(α) and ϱ00 ∼1 −O(α) wich makes\ntrivial solve (A34) and (A35) up to ﬁrst order in α. Inserting their solutions in the general expression (A32) we get\nthe equation in main text.\n\n### 6.\nLeakage\n\nLosses can be modelled as decays to another channels.\nHere, we take into account one channel (others will sum\nup), see Fig. 9. The input-ouput relations (A12) must\n\n<<page 10>>\n10\n\n2\n1\n0\nrin\nrout\nγ\nbout\n\nFIG. 9. (Color online) Schematics for the modeling of non-\nradiative losses\n\nbe generalized now to include this extra channel,\n\nrout(t) =rin(t) −i\n√\n2πD(ω)G(t)\n(A38)\n\nbout(t) =bin(t) −i\np\n2γG(t) .\n(A39)\n\nThe γ gives a phenomenological loss rate, and the 2 in\nfront is because we do not consider left and right modes\nin the non radiative channel but just b-modes. Besides,\nbin(t) = 0 and the transmission in the b-modes read,\n\nτ(ω) = −i√2γ⟨G⟩\n⟨rin⟩\n(A40)\n\n## Appendix B: Eﬃciency calculations\n\nIn order to compute the reﬂection and leakage when\nthe mirror is placed, we must sum over all the possible\nreﬂection, transmission and leakage events, as shown in\nFigure 10. In doing so, we name Φ(ω) = exp(ik(ω)d)\nthe phase accumulated by a photon with quasi momen-\ntum k travelling a distance d (this will be the distance\nbetween the mirror and the atom). Finally, we denote\nthe reﬂection in the mirror as rM. Eventually, we will\nset rM = −1, i.e. we neglect losses in the mirror, wich is\na good experimental assumption.\n\nWith the mirror, P2(ω) is written as,\n\nP2(ω) = 1 −|rtot,1(ω)|2 −|τtot(ω)|2\n(B1)\n\nwhere rtot,1(ω) is the total one photon reﬂection.\nIt\nshould be distinguished from r1 wich stands for the re-\nﬂection occurring in every event. Finally, τtot(ω) is the\ntotal leakage. Summing over all the events, see Figure\n10, we ﬁnally get\n\nrtot,1(ω) =r1(ω) + t(1)(ω)Φ(ω)rMt(1)(ω)\n\n+ t(1)(ω)Φ(ω)rMt(1)(ω)r1(ω)Φ(ω)rMt(1)(ω) + . . .\n\n=r1(ω) + (t(1)(ω))2Φ(ω)rM\n1 −r1(ω)Φ(ω)rM\n,\n(B2)\n\nand\n\nτtot(ω) =τ(ω) + t(1)(ω)Φ(ω)rMτ(ω)\n\n+ t(1)(ω)Φ(ω)rMt(1)(ω)r1(ω)Φ(ω)rMτ(ω) + . . .\n\n=τ(ω) + τ(ω)t(1)(ω)Φ(ω)rM\n1 −r1(ω)Φ(ω)rM\n.\n(B3)\n\nCombining (B2), (B3) with (B1) we can compute the two\nphoton generation P (2)(ω), considering rM = −1. In the\nmain text, we introduce\n\nA(ω) ≡|τ(ω)|2 .\n(B4)\n\n## Appendix C: Numerical simulations\n\n### 1.\nMatrix Product States\n\nWe are studying the dynamics of a state with one or\ntwo photons ﬂying over the ground state, i.e. the state is\nexpected to have a small amount of entanglement. There-\nfore, we can use the variational ansatz of Matrix Product\nStates [34, 35] to describe the discrete wave function as\nwe have shown recently [19, 36]. This ansatz has the form\n\n|ψ⟩=\nX\nsx∈{1,dx}\ntr\nhY\nAsx\nx\ni\n|s1, s2, . . . , sL⟩.\n(C1)\n\nIt is constructed from L sets of complex matrices Asx\nx ∈\nM[CD], with L the number of sites, where each set is la-\nbelled by the quantum state sx of the corresponding site.\nThe local Hilbert space dimension dx is inﬁnity, since\nwe are dealing with bosonic sites. During the dynam-\nics, processes that create more than two photons are still\nhighly oﬀ-resonance. In consequence, we can truncate the\nbosonic space and consider states with 0 to nmax photons\nper cavity. The composite Hilbert space is H = N\nx Cdx,\nwhere the dimension is dx = nmax + 1 for the empty res-\nonators and dx0 = 3(nmax + 1) for the cavity with the\nthree-level system. We thus expect the composite wave\nfunction of the photon-C3LS to consist of a superposition\nwith a small number of photons\n\nThe total number of variational parameters (L −\n1)D2(nmax + 1) + 3D2(nmax + 1) depends on the size\nof the matrices, D. The key point is that, for describ-\ning a general state, D increases exponentially with L,\nwhereas it increase polynomially if the entanglement is\nsmall enough.\n\nOur work with MPS uses four diﬀerent algorithms.\nThe most basic one is to create product states such as a\nvacuum state with the deexcited C3LS: |ψ⟩= |0⟩|vac⟩.\nThese states can be reproduced using matrices of bond\ndimension D = 1, so each matrix is just a coeﬃcient\nAsx\nx\n= δsx1.\nThe second algorithm is to compute ex-\npectation values from MPS. This amounts to a contrac-\ntion of tensors that can be performed eﬃciently [34], and\nallows us to compute single-site operators ⟨a†\nxax⟩, ⟨σz⟩,\ncorrelators as ⟨a†\nxax⟩or even projections as ⟨Ω|ax1ax2|ψ⟩.\nThe third operation that we need to perform is to apply\noperators on to the state, O |ψ⟩, such as introducing or\nremoving excitations a†\nx |ψ⟩. We do this in an eﬃcient\nfashion by interpreting the operator O as a Matrix Prod-\nuct Operator (MPO) [46]. A MPO is a matrix product\nrepresentation of an operator:\n\n<<page 11>>\n11\n\n2\n1\n0\nτtotal,1\nrtotal,1\n=\n2\n1\n0\nτ1\nr1\n2\n1\n0\nτ'1\nr'1\n+\n2\n1\n0\nτ''1\nr''1\n+ \n...\n+\n\nFIG. 10. (Color online) Diagrammatic plot for the possible scattering events giving the total reﬂection\n\nO =\nX\nsx,s′x∈{1,dx}\ntr\nhY\nBsx,s′\nx\nx\ni\n|s1, s2, . . . , sL⟩⟨s′\n1, s′\n2, . . . , s′\nL|\n(C2)\n\nSo, now we have L sets of complex matrices Bsx,s′\nx\nx\n∈\nM[CDO], where each set is labelled by two indices sx, s′\nx\nof the corresponding site.\nWe just need to apply sums of one-body operators\n\nO = a†\nφ =\nX\nx\nφxa†\nx.\n(C3)\n\nIn such a case, an eﬃcient representation of the MPO\nis obtained with DO = 2\n\nBsx,s′\nx\nx\n=\n\u0012\nδsx,s′x\n0\nφx(a†\nx)sx,s′x δsx,s′x\n\u0013\nx = 2, 3, . . . , L −1,\n(C4)\n\nwhereas Bs1,s′\n1\n1\n= (φ1(a†\n1)s1,s′\n1, δs1,s′\n1) and BsL,s′\nL\nL\n=\n(δsL,s′\nL, φL(a†\nL)sL,s′\nL)T , with (a†\nx)sx,s′x =: ⟨sx| a†\nx |s′\nx⟩.\n\nFinally, we can also approximate time evolution, re-\npeatedly contracting the state with an MPO approxima-\ntion of the unitary operator exp(−iH∆t) for short times,\nand truncating it to an ansatz with a ﬁxed D.\nSince\nour problem does not contain long-range interactions and\nsince the state is well approximated by MPS, it is suﬃ-\ncient to rely on a third-order Suzuki-Trotter formula [47].\nIn the same way as we can consider time evolution, we\ncan take imaginary time to obtain the ground state, that\nis solving the equation\nd\ndt |ψ⟩= −H |ψ⟩for ﬁnite time-\nsteps, while constantly normalizing the state. Provided\na suitable initial state, the algorithm converges to the\nlowest-energy state of H. Notice that the ground state is\ntotally necessary to study the dynamics, since our initial\nstate is obtained by applying a single-body operator as\nthat of Eq. C3 over the ground state.\n\n### 2.\nSimulated model, input state and parameters\nused\n\nFor\nthe\nphotonic\nmedium,\nwe\nconsider\na\none-\ndimensional array of coupled cavities:\n\nH =ϵ\nX\nx\na†\nxax −J\nX\nx\n(a†\nxax+1 + H.c.)\n(C5)\n\n+\nX\ni\nωi|i⟩⟨i| +\nX\nij\n(gij |i⟩⟨j| + H.c.)(a0 + a†\n0),\n\nbeing ϵ the bare frequencies of the cavities, J the hopping\nbetween nearest neighbours and gij the coupling constant\nfor the |i⟩↔|j⟩transition.\nThe lattice spacing d is\nﬁxed to 1.\nThe photonic part can be diagonalized in\nmomentum space, giving the dispersion relation ω(k) =\nϵ −2J cos k. The density of electromagnetic modes will\nbe D(ω) = 1/\np\n2J| sin(k(ω))|.\n\nWe ﬁx ϵ = 1, J = 1/π, ω0 = 0, ω1 = 0.59 and\nω2 = 1.10 (these energies were obtained from the model\nintroduced in the main part of the text).\nWe take\nL = 1000 cavities and we place the scatterer at x0 = 500\n(in the main text, we consider x0 = 0). The couplings\nused in the simulations to compute the full spectrum are\ng01 = −0.0225, and g12 = g02 = 0.03, which were ob-\ntained from the physical implementation we shall explain\nbelow.\nIn the simulations in which we computed the\ntwo-photon wave function, in order to get a cleaner scat-\ntering state and due to limitations in the time of simula-\ntion, we artiﬁcially increased the couplings: g01 = −0.10,\ng12 = g02 = 0.13.\n\nWe work in position space. The input state is:\n\n|Ψin⟩=\nX\nx\neik0xe(x−¯x)/2σθ(x0 −x)a†\nx|Ω⟩,\n(C6)\n\nup to a normalization constant, with ¯x the position of\nthe wave front, σ the width, k0 the mean momentum\n\n<<page 12>>\n12\n\nand θ(x) the Heaviside function. We ﬁx ¯x = 420 and\nk0 = 1.73 (on resonance with ω02).\nWe take σ = 2\nfor the simulations to get the full spectrum and σ = 20\nfor the simulation in which we compute the two-photon\nwave function. The results reported used bond dimen-\nsion D = 10 and the cut-oﬀfor the cavities is nmax = 3.\nWe checked that these sizes are already suﬃcient.\n\n[1] O. Astaﬁev, A. M. Zagoskin, A. A. Abdumalikov, Y. A.\nPashkin, T. Yamamoto, K. Inomata, Y. Nakamura, and\nJ. S. Tsai, Science 327, 840 (2010).\n[2] I. C. Hoi, C. M. Wilson, G. Johansson, T. Palomaki,\nB. Peropadre,\nand P. Delsing, Phys. Rev. Lett. 107,\n073601 (2011).\n[3] I.-C. Hoi, A. F. Kockum, T. Palomaki, T. M. Stace,\nB. Fan, L. Tornberg, S. R. Sathyamoorthy, G. Johans-\nson, P. Delsing,\nand C. M. Wilson, Phys. Rev. Lett.\n111, 053601 (2013).\n[4] A. F. van Loo, A. Fedorov, K. Lalumi`ere, B. C. Sanders,\nA. Blais, and A. Wallraﬀ, Science (New York, N.Y.) 342,\n1494 (2013).\n[5] I.-C. Hoi, C. M. Wilson, G. Johansson, J. Lindkvist,\nB. Peropadre, T. Palomaki, and P. Delsing, New Journal\nof Physics 15, 025011 (2013).\n[6] D. Reitz, C. Sayrin, R. Mitsch, P. Schneeweiss,\nand\nA. Rauschenbeutel, Phys. Rev. Lett. 110, 243603 (2013).\n[7] J. D. Thompson, T. G. Tiecke, N. P. de Leon, J. Feist,\nA. V. Akimov, M. Gullans, A. S. Zibrov, V. Vuleti´c, and\nM. D. Lukin, Science (New York, N.Y.) 340, 1202 (2013).\n[8] M. Arcari, I. S¨ollner, A. Javadi, S. Lindskov Hansen,\nS. Mahmoodian, J. Liu, H. Thyrrestrup, E. Lee, J. Song,\nS. Stobbe, and P. Lodahl, Phys. Rev. Lett. 113, 093603\n(2014).\n[9] R. Yalla, M. Sadgrove, K. P. Nayak,\nand K. Hakuta,\nPhys. Rev. Lett. 113, 143601 (2014).\n[10] A. Goban, C.-L. Hung, S.-P. Yu, J. D. Hood, J. A. Mu-\nniz, J. H. Lee, M. J. Martin, A. C. McClung, K. S. Choi,\nD. E. Chang, O. Painter, and H. J. Kimble, Nature Com-\nmunications 5, 3808 (2014).\n[11] P. Lodahl, S. Mahmoodian, and S. Stobbe, Reviews of\nModern Physics 87, 347 (2015).\n[12] A. Javadi, I. S¨ollner, M. Arcari, S. L. Hansen, L. Mi-\ndolo, S. Mahmoodian, G. Kirˇsansk, T. Pregnolato, E. H.\nLee, J. D. Song, S. Stobbe,\nand P. Lodahl,\n(2015),\narXiv:1504.06895.\n[13] J.-T. Shen and S. Fan, Optics Letters 30, 2001 (2005).\n[14] J.-T. Shen and S. Fan, Phys. Rev. Lett. 95, 213001\n(2005).\n[15] L. Zhou, Z. R. Gong, Y. xi Liu, C. P. Sun, and F. Nori,\nPhys. Rev. Lett. 101, 100501 (2008).\n[16] E. Rephaeli and S. Fan, Phys. Rev. Lett. 108, 143602\n(2012).\n[17] K. Koshino, K. Inomata, T. Yamamoto,\nand Y. Naka-\nmura, Phys. Rev. Lett. 111, 153601 (2013).\n[18] K. Inomata, K. Koshino, Z. R. Lin, W. D. Oliver, J. S.\nTsai, Y. Nakamura, and T. Yamamoto, Phys. Rev. Lett.\n113, 063604 (2014).\n[19] E. S´anchez-Burillo, D. Zueco, J. J. Garc´ıa-Ripoll,\nand\nL. Martin-Moreno, Phys. Rev. Lett. 113, 263604 (2014).\n[20] R. W. Boyd, Nonlinear Optics, Second Edition, 2nd ed.\n(Academic Press, 2003).\n[21] Y.-x. Liu, J. Q. You, L. F. Wei, C. P. Sun, and F. Nori,\nPhys. Rev. Lett. 95, 087001 (2005).\n[22] Y.-x. Liu, H.-C. Sun, Z. H. Peng, A. Miranowicz, J. S.\nTsai, and F. Nori, Scientiﬁc Reports 4, 7289 (2014).\n[23] S. R. Sathyamoorthy, A. Bengtsson, P. Delsing,\nand\nG. Johansson, (2015), arXiv:1511.03038.\n[24] K. Koshino, Phys. Rev. A 79, 013804 (2009).\n[25] Y. Chang,\nA. Gonz´alez-Tudela,\nC. S´anchez-Mu˜noz,\nC. Navarrete-Benlloch,\nand T. Shi,\n, 14 (2015),\narXiv:1510.07307.\n[26] M. O. Scully and M. S. Zubairy, Quantum Optics (Cam-\nbridge University Press, 1997).\n[27] P. Kr´al and M. Shapiro, Phys. Rev. Lett. 87, 183002\n(2001).\n[28] J. Koch, T. Yu, J. Gambetta, A. Houck, D. Schus-\nter, J. Majer, A. Blais, M. Devoret, S. Girvin,\nand\nR. Schoelkopf, Phys. Rev. A 76, 042319 (2007).\n[29] B. Peropadre, D. Zueco, D. Porras,\nand J. J. Garc´ıa-\nRipoll, Phys. Rev. Lett. 111, 243602 (2013).\n[30] Y. Chen, C. Neill, P. Roushan, N. Leung, M. Fang,\nR. Barends, J. Kelly, B. Campbell, Z. Chen, B. Chiaro,\nA. Dunsworth,\nE. Jeﬀrey,\nA. Megrant,\nJ. Y. Mu-\ntus, P. J. J. O’Malley, C. M. Quintana, D. Sank,\nA. Vainsencher, J. Wenner, T. C. White, M. R. Geller,\nA. N. Cleland, and J. M. Martinis, Phys. Rev. Lett. 113,\n220502 (2014).\n[31] ´E. Dumur, B. K¨ung, A. K. Feofanov, T. Weissl, N. Roch,\nC. Naud, W. Guichard, and O. Buisson, Phy. Rev. B 92,\n020515 (2015).\n[32] G. Vidal, Phys. Rev. Lett. 91, 147902 (2003).\n[33] G. Vidal, Phys. Rev. Lett. 93, 040502 (2004).\n[34] J. J. Garc´ıa-Ripoll, New Journal of Physics 8, 305 (2006).\n[35] F. Verstraete, V. Murg,\nand J. I. Cirac, Advances in\nPhysics 57, 143 (2008).\n[36] E. S´anchez-Burillo, J. Garc´ıa-Ripoll, L. Mart´ın-Moreno,\nand D. Zueco, Faraday discussions 178, 335 (2015).\n[37] T. Ramos, B. Vermersch, P. Hauke, H. Pichler,\nand\nP. Zoller, (2016), arXiv:1602.00926.\n[38] R. Pa˘skauskas and L. You, Phys. Rev. A 64, 042310\n(2001).\n[39] C. Gardiner and M. Collett, Phys. Rev. A 31, 3761\n(1985).\n[40] S. Fan, S¸¨ukr¨u Kocaba¸s,\nand J.-T. Chen, Phys. Rev. A\n82, 063821 (2010).\n[41] S. Xu and S. Fan, Phys. Rev. A 91, 043845 (2015).\n[42] B. Peropadre, G. Romero, G. Johansson, C. M. Wilson,\nE. Solano,\nand J. J. Garc´ıa-Ripoll, Phys. Rev. A 84,\n063834 (2011).\n[43] Eventually, we will set rM = −1, i.e. we neglect losses in\nthe mirror, wich is a good experimental assumption.\n[44] I. S¨ollner, S. Mahmoodian, S. L. Hansen, L. Midolo,\nA. Javadi, G. Kirˇsansk, T. Pregnolato, H. El-Ella, E. H.\nLee, J. D. Song, S. Stobbe, and P. Lodahl, Nature Nan-\notechnology 10, 775 (2015).\n[45] J. L. Garcia-Palacios, , 104 (2007), arXiv:0701242 [cond-\nmat].\n\n<<page 13>>\n13\n\n[46] B. Pirvu, V. Murg, J. Cirac,\nand F. Verstraete, New\nJournal of Physics 12, 025012 (2010).\n[47] M. Suzuki, Journal of Mathematical Physics 32, 400\n(1991).",
+  "verbatim_heading_share": 1.0416666666666667
+ },
+ "predictions": [
+  {
+   "text": "I.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B.",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "V.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A: One photon scattering, input-output",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "2.",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "a.",
+   "page": 6,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "b.",
+   "page": 6,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "c.",
+   "page": 6,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4.",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6.",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Appendix B: Eﬃciency calculations",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C: Numerical simulations",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.",
+   "page": 9,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "2.",
+   "page": 9,
+   "level": 2,
+   "parent": 21
+  }
+ ],
+ "seconds": 66.04886480000278,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 24,
+  "tp": 4,
+  "fp": 20,
+  "fn": 21,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.1923076923076923,
+  "unmatched_gt": [
+   "I. INTRODUCTION",
+   "I I. MODEL",
+   "III. A POSSIBLE IMPLEMENTATION",
+   "IV. NUMERICAL SOLUTION",
+   "A. Two photon generation: scattering and dynamics",
+   "B. Characterization for the two-photon output",
+   "V. ANALYTICAL THEORY",
+   "VI. EFFICIENCY",
+   "VII. CONCLUSIONS",
+   "1. Input-output fields calculations",
+   "2. Linear Response theory (LRT)",
+   "3. Practical calculation",
+   "a. Retarded perturbation",
+   "b. AC-driving",
+   "c. The relation",
+   "4. Final formula",
+   "5. Transmission calculation",
+   "6. Leakage",
+   "1. Matrix Pro duct States",
+   "2. Simulated model, input state and parameters",
+   "used"
+  ],
+  "unmatched_pred": [
+   "I.",
+   "II.",
+   "III.",
+   "IV.",
+   "A.",
+   "B.",
+   "V.",
+   "VI.",
+   "VII.",
+   "1.",
+   "2.",
+   "3.",
+   "a.",
+   "b.",
+   "c.",
+   "4.",
+   "5.",
+   "6.",
+   "1.",
+   "2."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 4,
+  "fp": 21,
+  "fn": 21,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.15384615384615385,
+  "unmatched_gt": [
+   "I. INTRODUCTION",
+   "I I. MODEL",
+   "III. A POSSIBLE IMPLEMENTATION",
+   "IV. NUMERICAL SOLUTION",
+   "A. Two photon generation: scattering and dynamics",
+   "B. Characterization for the two-photon output",
+   "V. ANALYTICAL THEORY",
+   "VI. EFFICIENCY",
+   "VII. CONCLUSIONS",
+   "1. Input-output fields calculations",
+   "2. Linear Response theory (LRT)",
+   "3. Practical calculation",
+   "a. Retarded perturbation",
+   "b. AC-driving",
+   "c. The relation",
+   "4. Final formula",
+   "5. Transmission calculation",
+   "6. Leakage",
+   "1. Matrix Pro duct States",
+   "2. Simulated model, input state and parameters",
+   "used"
+  ],
+  "unmatched_pred": [
+   "Full two-photon downconversion of just a single photon",
+   "I.",
+   "II.",
+   "III.",
+   "IV.",
+   "A.",
+   "B.",
+   "V.",
+   "VI.",
+   "VII.",
+   "1.",
+   "2.",
+   "3.",
+   "a.",
+   "b.",
+   "c.",
+   "4.",
+   "5.",
+   "6.",
+   "1.",
+   "2."
+  ]
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "doc": "1610.01900",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 604,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18376,
+   "completion_tokens": 1000,
+   "total_tokens": 19376
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Outline of paper and our contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. BASIC DEFINITIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Consensus",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Distances",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Combining consensus and distance",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. SIMPLEX RULES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Distance rationalization in the simplex",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. Quotient distances",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3. The ℓp-votewise case — Wasserstein distance",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. TIED SETS AND DECISIVENESS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Boundaries",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2. Geometric background",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3. Large boundary",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5. ANALYSIS OF ℓ1-VOTEWISE METRICS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. SMALL BISECTORS AND HYPERPLANE RULES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. DISCUSSION AND FUTURE WORK",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.002550899997004,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "doc": "1701.04934",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 638,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 15563,
+   "completion_tokens": 542,
+   "total_tokens": 16105
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9927689814237626,
+   "in_order": 0.8920334122927316,
+   "inserted": 0.006115826260609136
+  }
+ },
+ "predictions": [
+  {
+   "text": "I. RESEARCH MOTIVATION AND AIM",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESEARCH CONTRIBUTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SOLUTION APPROACH",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Worked-Out Example",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Solution Pseudo-code and Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "V. EXPERIMENTAL EVALUATION AND VALIDATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Dataset",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Term Substitution Technique",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Experimental Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. THREATS TO VALIDITY AND LIMITATIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.576738399999158
+}

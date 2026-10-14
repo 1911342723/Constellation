@@ -1,0 +1,394 @@
+{
+ "doc": "1401.3699",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 43,
+  "tp": 15,
+  "fp": 28,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.36363636363636365,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Undecorated puzzle",
+   "3.1. Flaps",
+   "6.1. Computing the linking number",
+   "6.2. Contribution of the straight tiles to Lt",
+   "6.3. Contribution of the ﬂap tiles to Lt",
+   "6.5. Examples of conﬁgurations with nonzero linking number. Due to The-",
+   "9.1. Sequences with no ﬂaps",
+   "9.2. Sequences with one ﬂap",
+   "9.3. The two sequences with two adjacent ﬂaps",
+   "9.4.1. Sequence EENWSEWW",
+   "9.4.2. Sequence ENEWSNWS",
+   "9.4.3. Sequence ENEWNSWS",
+   "9.4.4. Sequence ENWESNWS",
+   "9.4.5. Sequence EENWSSNW",
+   "9.5. The three sequences with two ﬂaps separated by two tiles. All three",
+   "9.6. The twelve sequences with two ﬂaps in antipodal position. Of the 12",
+   "9.7. Sequences with three ﬂaps",
+   "9.8. Sequences with four ﬂaps",
+   "9.8.1. Sequence ENSEWNSW",
+   "9.8.2. Sequence EEWNSEWW",
+   "9.8.3. Sequence EEWNSSNW",
+   "9.8.4. Sequence ENSEWSNW",
+   "9.9. Sequences with ﬁve ﬂaps",
+   "9.10. Sequences with six ﬂaps",
+   "9.11. Sequences with seven ﬂaps. There is none.",
+   "9.12. Sequences with eight ﬂaps",
+   "11.1. 3D octominoid shapes. The name of the executable is rubiksmagic. If",
+   "11.2. Planar face-up shapes"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 660,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. The puzzle",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Undecorated puzzle",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Local constraints",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Flaps",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. The ribbon trick",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Behaviour of the ribbon at a ﬂap tile",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5. Metric invariant",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Topological invariant",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Computing the linking number",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6.2. Contribution of the straight tiles to Lt",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6.3. Contribution of the ﬂap tiles to Lt",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6.4. Linking number of constructible conﬁgurations.",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6.5. Examples of conﬁgurations with nonzero linking number. Due to The-",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "7. Octominoid configurations",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Planar face-up configurations",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. Configurations with vanishing invariants",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1. Sequences with no ﬂaps",
+   "page": 16,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.2. Sequences with one ﬂap",
+   "page": 17,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.3. The two sequences with two adjacent ﬂaps",
+   "page": 18,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.4. The ﬁve sequences with two ﬂaps separated by one tile.",
+   "page": 18,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.4.1. Sequence EENWSEWW",
+   "page": 18,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "9.4.2. Sequence ENEWSNWS",
+   "page": 18,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "9.4.3. Sequence ENEWNSWS",
+   "page": 18,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "9.4.4. Sequence ENWESNWS",
+   "page": 18,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "9.4.5. Sequence EENWSSNW",
+   "page": 18,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "9.5. The three sequences with two ﬂaps separated by two tiles. All three",
+   "page": 19,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.6. The twelve sequences with two ﬂaps in antipodal position. Of the 12",
+   "page": 19,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.7. Sequences with three ﬂaps",
+   "page": 21,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.8. Sequences with four ﬂaps",
+   "page": 21,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.8.1. Sequence ENSEWNSW",
+   "page": 22,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "9.8.2. Sequence EEWNSEWW",
+   "page": 22,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "9.8.3. Sequence EEWNSSNW",
+   "page": 22,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "9.8.4. Sequence ENSEWSNW",
+   "page": 22,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "9.9. Sequences with ﬁve ﬂaps",
+   "page": 22,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.10. Sequences with six ﬂaps",
+   "page": 22,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.11. Sequences with seven ﬂaps. There is none.",
+   "page": 23,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "9.12. Sequences with eight ﬂaps",
+   "page": 23,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "10. Unclassified configurations",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11. The software codes",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11.1. 3D octominoid shapes. The name of the executable is rubiksmagic. If",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11.2. Planar face-up shapes",
+   "page": 26,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "References",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 24.46270060000097,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 43,
+  "tp": 15,
+  "fp": 28,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.36363636363636365,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Undecorated puzzle",
+   "3.1. Flaps",
+   "6.1. Computing the linking number",
+   "6.2. Contribution of the straight tiles to Lt",
+   "6.3. Contribution of the ﬂap tiles to Lt",
+   "6.5. Examples of conﬁgurations with nonzero linking number. Due to The-",
+   "9.1. Sequences with no ﬂaps",
+   "9.2. Sequences with one ﬂap",
+   "9.3. The two sequences with two adjacent ﬂaps",
+   "9.4.1. Sequence EENWSEWW",
+   "9.4.2. Sequence ENEWSNWS",
+   "9.4.3. Sequence ENEWNSWS",
+   "9.4.4. Sequence ENWESNWS",
+   "9.4.5. Sequence EENWSSNW",
+   "9.5. The three sequences with two ﬂaps separated by two tiles. All three",
+   "9.6. The twelve sequences with two ﬂaps in antipodal position. Of the 12",
+   "9.7. Sequences with three ﬂaps",
+   "9.8. Sequences with four ﬂaps",
+   "9.8.1. Sequence ENSEWNSW",
+   "9.8.2. Sequence EEWNSEWW",
+   "9.8.3. Sequence EEWNSSNW",
+   "9.8.4. Sequence ENSEWSNW",
+   "9.9. Sequences with ﬁve ﬂaps",
+   "9.10. Sequences with six ﬂaps",
+   "9.11. Sequences with seven ﬂaps. There is none.",
+   "9.12. Sequences with eight ﬂaps",
+   "11.1. 3D octominoid shapes. The name of the executable is rubiksmagic. If",
+   "11.2. Planar face-up shapes"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 42,
+  "tp": 14,
+  "fp": 28,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.34883720930232553,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Undecorated puzzle",
+   "3.1. Flaps",
+   "6.1. Computing the linking number",
+   "6.2. Contribution of the straight tiles to Lt",
+   "6.3. Contribution of the ﬂap tiles to Lt",
+   "6.5. Examples of conﬁgurations with nonzero linking number. Due to The-",
+   "9.1. Sequences with no ﬂaps",
+   "9.2. Sequences with one ﬂap",
+   "9.3. The two sequences with two adjacent ﬂaps",
+   "9.4.1. Sequence EENWSEWW",
+   "9.4.2. Sequence ENEWSNWS",
+   "9.4.3. Sequence ENEWNSWS",
+   "9.4.4. Sequence ENWESNWS",
+   "9.4.5. Sequence EENWSSNW",
+   "9.5. The three sequences with two ﬂaps separated by two tiles. All three",
+   "9.6. The twelve sequences with two ﬂaps in antipodal position. Of the 12",
+   "9.7. Sequences with three ﬂaps",
+   "9.8. Sequences with four ﬂaps",
+   "9.8.1. Sequence ENSEWNSW",
+   "9.8.2. Sequence EEWNSEWW",
+   "9.8.3. Sequence EEWNSSNW",
+   "9.8.4. Sequence ENSEWSNW",
+   "9.9. Sequences with ﬁve ﬂaps",
+   "9.10. Sequences with six ﬂaps",
+   "9.11. Sequences with seven ﬂaps. There is none.",
+   "9.12. Sequences with eight ﬂaps",
+   "11.1. 3D octominoid shapes. The name of the executable is rubiksmagic. If",
+   "11.2. Planar face-up shapes"
+  ],
+  "ignored_title_predictions": null
+ }
+}

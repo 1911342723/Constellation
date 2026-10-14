@@ -1,0 +1,226 @@
+{
+ "doc": "1603.08572",
+ "system": "docling",
+ "metrics": {
+  "gt": 23,
+  "pred": 24,
+  "tp": 19,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.52,
+  "unmatched_gt": [
+   "optimal control paper",
+   "ume constraint",
+   "equations",
+   "2-D example"
+  ],
+  "unmatched_pred": [
+   "A robust and efficient adaptive multigrid solver for the optimal control of phas",
+   "Algorithm 1 Adaptive-α",
+   "end if",
+   "else",
+   "end if"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 51.65650829999868
+ },
+ "predictions": [
+  {
+   "text": "A robust and efficient adaptive multigrid solver for the optimal control of phase field formulations of geometric evolution laws",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Optimal control of a forced Allen-Cahn equation with volume constraint",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Numerical solution methods",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Adaptive iterative update for the optimal control",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Space-time discretizations of the forward Allen-Cahn and adjoint equations",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Adaptive-α",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "end if",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "else",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "end if",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Techniques for improving algorithm efficiency",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Numerical experiments",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 A 2-D benchmark example",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Convergence tests for the benchmark 2-D example",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 The multigrid performance on the benchmark 2-D example",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4 Adaptive-α algorithm with the benchmark 2-D example",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.5 Two-grid solution strategy with dynamic AMR on the benchmark 2-D example",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.6 3-D example",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.7 Irregular shapes",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Data Management",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.012620900000911206,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 24,
+  "tp": 19,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.52,
+  "unmatched_gt": [
+   "optimal control paper",
+   "ume constraint",
+   "equations",
+   "2-D example"
+  ],
+  "unmatched_pred": [
+   "A robust and efficient adaptive multigrid solver for the optimal control of phas",
+   "Algorithm 1 Adaptive-α",
+   "end if",
+   "else",
+   "end if"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 16,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "optimal control paper",
+   "ume constraint",
+   "equations",
+   "2-D example"
+  ],
+  "unmatched_pred": [
+   "A robust and efficient adaptive multigrid solver for the optimal control of phas",
+   "Algorithm 1 Adaptive-α",
+   "end if",
+   "else",
+   "end if"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,212 @@
+{
+ "doc": "1807.01857",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 10,
+  "fp": 7,
+  "fn": 9,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.19999999999999996,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": [
+   "1 Solutions found within ﬁrst 10 results.",
+   "2 Average rank for solutions within ﬁrst 10 results.",
+   "3 Solutions found within ﬁrst 20 results.",
+   "4 Average rank for solutions within ﬁrst 20 results.",
+   "1 Avg. no",
+   "2 Avg. no",
+   "3 Percentage of agreement between solutions"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 102,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "An IDE-Based Context-Aware Meta Search Engine",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proposed Metrics",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Result Scores Calculation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. EXPERIMENTAL RESULTS AND VALIDATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Results",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "1 Solutions found within ﬁrst 10 results.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Average rank for solutions within ﬁrst 10 results.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Solutions found within ﬁrst 20 results.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Average rank for solutions within ﬁrst 20 results.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Avg. no",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Avg. no",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Percentage of agreement between solutions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RELATED WORKS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION AND FUTURE WORKS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.263130800001818,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 10,
+  "fp": 8,
+  "fn": 9,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.15000000000000002,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": [
+   "An IDE-Based Context-Aware Meta Search Engine",
+   "1 Solutions found within ﬁrst 10 results.",
+   "2 Average rank for solutions within ﬁrst 10 results.",
+   "3 Solutions found within ﬁrst 20 results.",
+   "4 Average rank for solutions within ﬁrst 20 results.",
+   "1 Avg. no",
+   "2 Avg. no",
+   "3 Percentage of agreement between solutions"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 9,
+  "fp": 7,
+  "fn": 9,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.1578947368421053,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": [
+   "1 Solutions found within ﬁrst 10 results.",
+   "2 Average rank for solutions within ﬁrst 10 results.",
+   "3 Solutions found within ﬁrst 20 results.",
+   "4 Average rank for solutions within ﬁrst 20 results.",
+   "1 Avg. no",
+   "2 Avg. no",
+   "3 Percentage of agreement between solutions"
+  ],
+  "ignored_title_predictions": null
+ }
+}

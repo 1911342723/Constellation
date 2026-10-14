@@ -1,0 +1,140 @@
+{
+ "doc": "1807.05812",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes",
+   "A c kn o w l ed g m e nt s",
+   "A u t h or c o n t r ib u t i o n s",
+   "Da t a a cc e s si b i l i t y",
+   "R e fer e n c e s"
+  ],
+  "unmatched_pred": [
+   "3.1 Challenge outcomes"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Datasets",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Baseline classifiers",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 The public challenge",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4 Evaluation",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.5 Further analysis via PolandNFC dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Challenge outcomes",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Error analysis",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3 Further analysis via PolandNFC dataset results",
+   "page": 11,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Discussion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.07236129999728291,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes",
+   "A c kn o w l ed g m e nt s",
+   "A u t h or c o n t r ib u t i o n s",
+   "Da t a a cc e s si b i l i t y",
+   "R e fer e n c e s"
+  ],
+  "unmatched_pred": [
+   "3.1 Challenge outcomes"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes",
+   "A u t h or c o n t r ib u t i o n s",
+   "Da t a a cc e s si b i l i t y"
+  ],
+  "unmatched_pred": [
+   "3.1 Challenge outcomes"
+  ],
+  "ignored_title_predictions": null
+ }
+}

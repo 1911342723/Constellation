@@ -1,0 +1,211 @@
+{
+ "doc": "1712.07437",
+ "system": "outline",
+ "metrics": {
+  "gt": 26,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 7,
+  "level_correct": 9,
+  "parent_correct": 14,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract",
+   "Equations for finding orthogonal parameters (Huzurbazar, 1956)",
+   "Acknowledgements",
+   "1. Datasets",
+   "2. Extra formulas",
+   "2.3 Derivatives of the log L(y | f , ν) and W",
+   "References"
+  ],
+  "unmatched_pred": [
+   "A Datasets",
+   "B Extra formulas",
+   "B.3 Derivatives of the logL(`39`42`\"613A``45`47`\"603Ay|`39`42`\"613A``45`47`\"603A"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Aspects of orthogonal parametrization for statistical models",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Gaussian process regression with the heteroscedastic Student-t model",
+   "page": 7,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3.1 Student-t model and basic properties",
+   "page": 7,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Gaussian process regression in the location and scale parameter",
+   "page": 7,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "4 Approximate inference with the Laplace method",
+   "page": 8,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "4.1 Laplace approximation",
+   "page": 9,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "4.2 Laplace-Fisher approximation",
+   "page": 9,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "4.3 Prediction of future outcomes with the Laplace approximation",
+   "page": 9,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "5 On the computational implementation",
+   "page": 10,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "5.1 Natural gradient for finding the mode",
+   "page": 11,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "5.2 Approximate marginal likelihood and parameter adaptation",
+   "page": 12,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "6 Experiments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Priors for the GP hyperparameters and degrees-of-freedom parameter",
+   "page": 14,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.2 Simulated data with simple regressions",
+   "page": 15,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.3 Predictive performance on real datasets",
+   "page": 17,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7 Concluding remarks and discussion",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Datasets",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Extra formulas",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B.1 The elements of the matrix `39`42`\"613A``45`47`\"603AW",
+   "page": 25,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "B.2 The elements of the Fisher information matrix E`39`42`\"613A``45`47`\"603Abold0mu mumu YYYYYY|`39`42`\"613A``45`47`\"603Af, `39`42`\"613A``45`47`\"603Abold0mu mumu [`39`42`\"613A``45`47`\"603AW]",
+   "page": 26,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "B.3 Derivatives of the logL(`39`42`\"613A``45`47`\"603Ay|`39`42`\"613A``45`47`\"603Af, ) and W",
+   "page": 26,
+   "level": 2,
+   "parent": 18
+  }
+ ],
+ "seconds": 0.09792929999821354,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 7,
+  "level_correct": 9,
+  "parent_correct": 14,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract",
+   "Equations for finding orthogonal parameters (Huzurbazar, 1956)",
+   "Acknowledgements",
+   "1. Datasets",
+   "2. Extra formulas",
+   "2.3 Derivatives of the log L(y | f , ν) and W",
+   "References"
+  ],
+  "unmatched_pred": [
+   "A Datasets",
+   "B Extra formulas",
+   "B.3 Derivatives of the logL(`39`42`\"613A``45`47`\"603Ay|`39`42`\"613A``45`47`\"603A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 14,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Equations for finding orthogonal parameters (Huzurbazar, 1956)",
+   "1. Datasets",
+   "2. Extra formulas",
+   "2.3 Derivatives of the log L(y | f , ν) and W"
+  ],
+  "unmatched_pred": [
+   "A Datasets",
+   "B Extra formulas",
+   "B.3 Derivatives of the logL(`39`42`\"613A``45`47`\"603Ay|`39`42`\"613A``45`47`\"603A"
+  ],
+  "ignored_title_predictions": null
+ }
+}

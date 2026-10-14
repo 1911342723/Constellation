@@ -1,0 +1,209 @@
+{
+ "doc": "1804.02858",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 26,
+  "pred": 26,
+  "tp": 26,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1423,
+  "layout_marked": 27,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8643047468666732,
+  "inserted_word_share": 0.30930599369085177
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Index Terms",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Related Work",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Contribution",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Organization",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. BS and UE Locations",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Blocking",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Beamforming",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Path Loss and Fading",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Cell Association",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "III. SINR COVERAGE PROBABILITY",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Approximating PHP by baseline PPP",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Incorporating serving hole",
+   "page": 10,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "C. Incorporating nearest non-serving LOS and NLOS holes",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Incorporating all non-serving holes",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NUMERICAL RESULTS",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proof of Lemma 2",
+   "page": 21,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "B. Proof of Theorem 1",
+   "page": 22,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "C. Proof of Theorem 2",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Proof of Theorem 3",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Proof of Theorem 4",
+   "page": 27,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "REFERENCES",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.595229499995185,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 26,
+  "tp": 26,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

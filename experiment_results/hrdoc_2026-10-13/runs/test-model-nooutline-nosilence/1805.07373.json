@@ -1,0 +1,199 @@
+{
+ "doc": "1805.07373",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 17,
+  "pred": 21,
+  "tp": 17,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 )xj, and cj = (1 − β",
+   "2 xj.",
+   "2 ∥a − b∥), where",
+   "2 )b and cb = β"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 510,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18856,
+   "completion_tokens": 714,
+   "total_tokens": 19570
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Halfspace Depth",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 β-skeleton Depth",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 )xj, and cj = (1 − β",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 xj.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Dissimilarity Measures",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Fitting Functions and Dissimilarity Measures",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Dissimilarity Measures Between two Posets",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Approximation of Halfspace Depth",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Approximation of Halfspace Depth and Fitting Function",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.2 Approximation of Halfspace Depth and Poset Dissimilarity",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "6 Approximation of β-skeleton Depth",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Convergence of β-skeleton Depth Functions",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.2 ε−approximation of Planar β-skeleton Depth",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "2 ∥a − b∥), where",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 )b and cb = β",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Experimental Results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Acknowledgment",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Appendix",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.481128899999021,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 21,
+  "tp": 17,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 )xj, and cj = (1 − β",
+   "2 xj.",
+   "2 ∥a − b∥), where",
+   "2 )b and cb = β"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 13,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 )xj, and cj = (1 − β",
+   "2 xj.",
+   "2 ∥a − b∥), where",
+   "2 )b and cb = β"
+  ],
+  "ignored_title_predictions": null
+ }
+}

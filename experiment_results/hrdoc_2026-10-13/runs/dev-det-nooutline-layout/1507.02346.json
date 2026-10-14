@@ -1,0 +1,254 @@
+{
+ "doc": "1507.02346",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 27,
+  "pred": 28,
+  "tp": 23,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.6896551724137931,
+  "unmatched_gt": [
+   "Maturity Classification",
+   "Graders",
+   "Classification and Its Performance",
+   "Its Performance"
+  ],
+  "unmatched_pred": [
+   "1. Time and motion study to measure and",
+   "2. Utilization of newer, faster and higher res-",
+   "3. Minimizing the image features used as",
+   "4. Utilization and comparison of various tech-",
+   "5. Development, implementation, evaluation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 24,
+  "tp": 19,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.64,
+  "unmatched_gt": [
+   "Maturity Classification",
+   "Graders",
+   "Classification and Its Performance",
+   "Its Performance"
+  ],
+  "unmatched_pred": [
+   "1. Time and motion study to measure and",
+   "2. Utilization of newer, faster and higher res-",
+   "3. Minimizing the image features used as",
+   "4. Utilization and comparison of various tech-",
+   "5. Development, implementation, evaluation"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 160,
+  "layout_marked": 23,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9761624979016283,
+  "inserted_word_share": 0.6847042238247574
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. REVIEW OF LITERATURE",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Current State-of-the-art in Tomato",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Current State-of-the-art in Egg Grading",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. SCIENTIFIC FRAMEWORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Artiﬁcial Neural Networks",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Artiﬁcial Chemistry Optimization",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. OBJECTIVES",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. METHODOLOGY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Materials",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2 Measuring the Performance of Human",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.3 Image Acquisition",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.4 Processing Images for Inputs to ANN",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.5 ANN Optimization and Training",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6. RESULTS AND DISCUSSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Performance of Human Graders",
+   "page": 4,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.2 Optimized ANN for Tomato Maturity",
+   "page": 4,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.3 Optimized ANN for Egg Grading and",
+   "page": 4,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7. CONCLUSION AND EXTENSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Time and motion study to measure and",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Utilization of newer, faster and higher res-",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Minimizing the image features used as",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Utilization and comparison of various tech-",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Development, implementation, evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.3122574999943026,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 28,
+  "tp": 23,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.6896551724137931,
+  "unmatched_gt": [
+   "Maturity Classification",
+   "Graders",
+   "Classification and Its Performance",
+   "Its Performance"
+  ],
+  "unmatched_pred": [
+   "1. Time and motion study to measure and",
+   "2. Utilization of newer, faster and higher res-",
+   "3. Minimizing the image features used as",
+   "4. Utilization and comparison of various tech-",
+   "5. Development, implementation, evaluation"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,222 @@
+{
+ "doc": "1806.10756",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "B. Interference Model",
+   "C. Convergence of the Proposed Algorithm"
+  ],
+  "unmatched_pred": [
+   "0 a  l",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 838,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14134,
+   "completion_tokens": 717,
+   "total_tokens": 14851
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Robust Fuzzy-Learning For Partially Overlapping",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Channels Allocation In UAV Communication",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Network Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Problem Formulation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. FUZZY PAYOFFS GAME FOR POCS ALLOCATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Game Theory",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "0 a  l",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Fuzzy Set Theory",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Fuzzy Payoffs Game",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Analysis of Fuzzy Nash Equilibrium",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. GLOBAL OPTIMIZATION IN DYNAMIC UAV",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "COMMUNICATION NETWORKS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Fuzzy-Learning Algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "B. Priority Vector",
+   "page": 7,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "V. SIMULATION RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Mesh UAV Network Model",
+   "page": 9,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "B. Convergence Performance",
+   "page": 9,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "C. System Performance",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.630062299998826,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 24,
+  "tp": 19,
+  "fp": 5,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.48,
+  "unmatched_gt": [
+   "B. Interference Model",
+   "C. Convergence of the Proposed Algorithm"
+  ],
+  "unmatched_pred": [
+   "Robust Fuzzy-Learning For Partially Overlapping",
+   "Channels Allocation In UAV Communication",
+   "Networks",
+   "0 a  l",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 13,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "B. Interference Model",
+   "C. Convergence of the Proposed Algorithm"
+  ],
+  "unmatched_pred": [
+   "0 a  l"
+  ],
+  "ignored_title_predictions": null
+ }
+}

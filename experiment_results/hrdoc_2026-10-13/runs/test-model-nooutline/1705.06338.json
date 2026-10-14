@@ -1,0 +1,154 @@
+{
+ "doc": "1705.06338",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 147,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4884,
+   "completion_tokens": 601,
+   "total_tokens": 5485
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Exponential family embeddings",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Similar and co-occuring products",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Recommendation engine",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Visualisation of product embedding and context",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Sent2Vec model and combined model",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Application of product embedding",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Trip Embedding",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 Trip analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7.2 Trip Proﬁling",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "8 Customer Embedding",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 Customer analysis",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "8.2 Customer Proﬁling",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "9 Schematic representation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Conclusion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.452675699998508,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

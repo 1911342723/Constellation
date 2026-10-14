@@ -1,0 +1,219 @@
+{
+ "doc": "1511.06656",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 5,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.23809523809523814,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "A Study of Age and Gender seen through Mobile",
+   "TUKEY HSD FOR THE VARIABLE log10(in-time-total + 1)",
+   "3 end",
+   "12 end",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 388,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10044,
+   "completion_tokens": 670,
+   "total_tokens": 10714
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A Study of Age and Gender seen through Mobile",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Phone Usage Patterns in Mexico",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. DATASET DESCRIPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. OBSERVATIONAL STUDY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Characterization Variables",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Data Preprocessing",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Insights on Key Features from PCA",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Observed Gender Differences",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Observed Age Differences",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "TUKEY HSD FOR THE VARIABLE log10(in-time-total + 1)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Links between Age Groups",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "IV. AGE AND GENDER PREDICTION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Population Pyramid Scaling (PPS)",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3 end",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "12 end",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Gender Prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "C. Age Prediction using Node Attributes",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Summary of Results",
+   "page": 6,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "V. CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.561734599999909,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 15,
+  "fp": 6,
+  "fn": 5,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.2272727272727273,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "A Study of Age and Gender seen through Mobile",
+   "Phone Usage Patterns in Mexico",
+   "TUKEY HSD FOR THE VARIABLE log10(in-time-total + 1)",
+   "3 end",
+   "12 end",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 15,
+  "fp": 4,
+  "fn": 4,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "A Study of Age and Gender seen through Mobile",
+   "TUKEY HSD FOR THE VARIABLE log10(in-time-total + 1)",
+   "3 end",
+   "12 end"
+  ],
+  "ignored_title_predictions": null
+ }
+}

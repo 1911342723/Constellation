@@ -1,0 +1,116 @@
+{
+ "doc": "1701.00938",
+ "system": "docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4.2 Temporal correlation"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 7.772831099999166
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. DATACOLLECTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Missing measurements on RIPE Atlas",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. MISSINGAT FIRSTGLANCE",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CROSSWITHCONNECTION EVENTS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Overlap with connected period",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Temporal correlation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.00948489999427693,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Missing measurements on RIPE Atlas",
+   "4.2 Temporal correlation"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4.2 Temporal correlation"
+  ],
+  "ignored_title_predictions": null
+ }
+}

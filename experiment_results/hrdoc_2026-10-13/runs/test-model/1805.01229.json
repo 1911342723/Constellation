@@ -1,0 +1,124 @@
+{
+ "doc": "1805.01229",
+ "system": "model",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1555,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 2,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 2,
+   "prompt_tokens": 7714,
+   "completion_tokens": 481,
+   "total_tokens": 8195
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction and modelling considerations",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Set of governing equations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Weak formulation for the multidomain problem",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 A ﬁnite element method and its splitting scheme",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Nonlinear, partitioned Galerkin formulation",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Adaptive timestep scheme",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Algorithmic details",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Numerical tests",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Concluding remarks",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 27.33199550000063,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

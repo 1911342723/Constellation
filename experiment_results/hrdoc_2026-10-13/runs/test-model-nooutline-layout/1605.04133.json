@@ -1,0 +1,146 @@
+{
+ "doc": "1605.04133",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 220,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4269,
+   "completion_tokens": 552,
+   "total_tokens": 4821
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9162719891745602,
+  "inserted_word_share": 0.9553936100131752
+ },
+ "predictions": [
+  {
+   "text": "Fragmentation of magnetism in artiﬁcial kagome dipolar spin ice",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESULTS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sample fabrication.",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Thermal annealing protocol.",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Estimation of an eﬀective temperature.",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Monte Carlo simulations.",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Dipolar hamiltonian.",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Ab initio coding of emergence.",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AUTHOR CONTRIBUTIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ADDITIONAL INFORMATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "COMPETING FINANCIAL INTERESTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.753913099993952,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

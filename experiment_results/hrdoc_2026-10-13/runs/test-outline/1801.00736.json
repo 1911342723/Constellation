@@ -1,0 +1,102 @@
+{
+ "doc": "1801.00736",
+ "system": "outline",
+ "metrics": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgement",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The procedure",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Numerical results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Real data application",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Energy Market Demand",
+   "page": 16,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Energy Price",
+   "page": 18,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04612730000008014,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgement",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

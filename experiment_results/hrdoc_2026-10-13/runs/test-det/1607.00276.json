@@ -1,0 +1,211 @@
+{
+ "doc": "1607.00276",
+ "system": "det",
+ "metrics": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 23,
+  "parent_correct": 18,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Evaluation of the Computing Framework"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 92,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The 1000 Genomes Project",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Data",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Processing Large Data Sets",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENTAL FRAMEWORK AND METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Openstack",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Apache Hadoop",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. SAMtools",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V. EXPERIMENTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Methods",
+   "page": 1,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VI. RESULTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Sample Size per Population Group",
+   "page": 2,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "D. Frequency of Structural Variation per Population Group",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Frequency of Structural Variation per Population Group",
+   "page": 2,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "E. Frequency of Structural Variation per Population Super-",
+   "page": 2,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "C. Frequency of Structural Variation per Population Super-",
+   "page": 2,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "F. Location of Structural Variation in the Reference Genome",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "G. Average Length of Alignment per Population",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VII. DISCUSSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Analysis of Structural Variation",
+   "page": 3,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "VIII. CONCLUSIONS AND FUTURE WORK",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 799.5096076000009,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 23,
+  "parent_correct": 18,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Evaluation of the Computing Framework"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 22,
+  "parent_correct": 17,
+  "teds": 0.76,
+  "unmatched_gt": [
+   "B. Evaluation of the Computing Framework"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

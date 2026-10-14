@@ -1,0 +1,174 @@
+{
+ "doc": "1705.10588",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9785,
+   "completion_tokens": 9292
+  },
+  "elapsed_llm_seconds": 39.274134200000844,
+  "content_preservation": 0.9940159574468085,
+  "inserted_word_share": 0.0013360053440213404,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "An Overview of Recent Progress in Laser Wakefield Acceleration Experiments",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Overall trends in laser wakefield acceleration experiments",
+    1,
+    1
+   ],
+   [
+    "2.1 Accelerator length and operating plasma density",
+    1,
+    2
+   ],
+   [
+    "2.2 Laser spot size and matched guiding",
+    4,
+    2
+   ],
+   [
+    "2.3 To guide or not to guide?",
+    6,
+    2
+   ],
+   [
+    "3 Future directions",
+    8,
+    1
+   ],
+   [
+    "References",
+    9,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "An Overview of Recent Progress in Laser Wakefield Acceleration Experiments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Overall trends in laser wakefield acceleration experiments",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Accelerator length and operating plasma density",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Laser spot size and matched guiding",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 To guide or not to guide?",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Future directions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 39.39313659999971,
+ "metrics_raw": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "An Overview of Recent Progress in Laser Wakefield Acceleration Experiments"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "An Overview of Recent Progress in Laser Wakefield Acceleration Experiments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "doc": "1607.02892",
+ "system": "det",
+ "metrics": {
+  "gt": 8,
+  "pred": 3,
+  "tp": 1,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "MODEL",
+   "FLOW AROUND DIMERS",
+   "DIFFUSION EFFECTS",
+   "LARGER COLONIES",
+   "THECATE CELLS",
+   "CONCLUSIONS",
+   "APPENDIX: NUMERICAL METHOD"
+  ],
+  "unmatched_pred": [
+   "2 Im[Y l",
+   "2 Re[Y l"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 537,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Im[Y l",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Re[Y l",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.512134299999161,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 3,
+  "tp": 1,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "MODEL",
+   "FLOW AROUND DIMERS",
+   "DIFFUSION EFFECTS",
+   "LARGER COLONIES",
+   "THECATE CELLS",
+   "CONCLUSIONS",
+   "APPENDIX: NUMERICAL METHOD"
+  ],
+  "unmatched_pred": [
+   "2 Im[Y l",
+   "2 Re[Y l"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 3,
+  "tp": 1,
+  "fp": 2,
+  "fn": 6,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "MODEL",
+   "FLOW AROUND DIMERS",
+   "DIFFUSION EFFECTS",
+   "LARGER COLONIES",
+   "THECATE CELLS",
+   "CONCLUSIONS"
+  ],
+  "unmatched_pred": [
+   "2 Im[Y l",
+   "2 Re[Y l"
+  ],
+  "ignored_title_predictions": null
+ }
+}

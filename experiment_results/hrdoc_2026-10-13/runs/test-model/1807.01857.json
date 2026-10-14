@@ -1,0 +1,148 @@
+{
+ "doc": "1807.01857",
+ "system": "model",
+ "metrics": {
+  "gt": 19,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.55,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 102,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4212,
+   "completion_tokens": 464,
+   "total_tokens": 4676
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proposed Metrics",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Result Scores Calculation",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. EXPERIMENTAL RESULTS AND VALIDATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Results",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "V. RELATED WORKS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION AND FUTURE WORKS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.760615099999995,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.55,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [
+   "1) Search Engine Weight Based Score (Ssew ):",
+   "2) Title Matching Score (Stitle ):",
+   "3) Stack Trace Matching Score (Sst)",
+   "4) Source Code Context Matching Score (Scc ):",
+   "5) StackOverflow Vote Score (Sso ):",
+   "6) Top Ten Score (Stt):",
+   "7) Page Rank Score (Spr ):",
+   "8) Search Traffic Rank Score (Sstr ):",
+   "B. Validation of the Proposed Approach by User Study"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

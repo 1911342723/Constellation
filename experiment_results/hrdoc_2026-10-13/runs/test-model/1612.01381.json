@@ -1,0 +1,125 @@
+{
+ "doc": "1612.01381",
+ "system": "model",
+ "metrics": {
+  "gt": 5,
+  "pred": 9,
+  "tp": 5,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "Acknowledgments",
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 309,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13083,
+   "completion_tokens": 343,
+   "total_tokens": 13426
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. EXPERIMENTAL DETAILS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. STATISTICAL ANALYSIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ENERGETICS OF SRTIO3(001) AND DYSCO3(110) SURFACES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 K. Morito and T",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "J. Ravichandran, R. Ramesh, J. E",
+   "page": 14,
+   "level": 2,
+   "parent": 7
+  }
+ ],
+ "seconds": 12.595855999999912,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 9,
+  "tp": 5,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "Acknowledgments",
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ],
+  "ignored_title_predictions": null
+ }
+}

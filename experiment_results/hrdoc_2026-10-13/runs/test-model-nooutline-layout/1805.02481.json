@@ -1,0 +1,170 @@
+{
+ "doc": "1805.02481",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 280,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10248,
+   "completion_tokens": 711,
+   "total_tokens": 10959
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9480326651818857,
+  "inserted_word_share": 0.9472858617131062
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Categorical Reparameterization",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Straight-Through Gumbel-Softmax",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Mixture of Experts GAN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Proposed Network Architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2 Gating Networks",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3 Load-Balancing Regularization",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.4 Total Loss",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.5 Discussions",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5 Experiment Details",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiment Environments",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 Experimental Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Evaluation on Specialization",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6.2 Quantitative analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.831937499999185,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

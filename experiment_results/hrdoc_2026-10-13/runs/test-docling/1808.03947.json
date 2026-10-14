@@ -1,0 +1,207 @@
+{
+ "doc": "1808.03947",
+ "system": "docling",
+ "metrics": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.375,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 Sample data using Lemma 1",
+   "Algorithm 3 SM-MH Algorithm"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 63.26579489999858
+ },
+ "predictions": [
+  {
+   "text": "An Asymptotically Efficient Metropolis-Hastings Sampler for Bayesian Inference in Large-Scale Educational Measurement",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 A Lemma",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 About the Algorithm",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Simplest Case",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Sample data using Lemma 1",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 The General Case",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.1 The Sum-Matched Approximate Bayes Algorithm:",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 3 SM-MH Algorithm",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Simulation Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Computational Complexity",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Autocorrelation and Convergence",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Efficiency of the SM-AB Algorithm when n Increases",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Convergence",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Convergence Rate",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Discussion",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Appendix",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 The Acceptance Probability Function for the MH Algorithm",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.2 R Code",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.2.1 Quickselect",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.2.2 The SM-MH Algorithm",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.2.3 A Gibbs Sampler for the 2PL",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01226219999807654,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 21,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "An Asymptotically Efficient Metropolis-Hastings Sampler for Bayesian Inference i",
+   "Algorithm 1 Sample data using Lemma 1",
+   "Algorithm 3 SM-MH Algorithm"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 8,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Sample data using Lemma 1",
+   "Algorithm 3 SM-MH Algorithm"
+  ],
+  "ignored_title_predictions": null
+ }
+}

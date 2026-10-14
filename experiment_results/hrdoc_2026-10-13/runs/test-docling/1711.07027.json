@@ -1,0 +1,144 @@
+{
+ "doc": "1711.07027",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4375,
+  "unmatched_gt": [
+   "Abstract",
+   "1. Introduction",
+   "2. Related Work"
+  ],
+  "unmatched_pred": [
+   "3.2.2 SPGAN"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 29.771125700000994
+ },
+ "predictions": [
+  {
+   "text": "3. Proposed Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Baseline Overview",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. SPGAN: Approach Details",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.1 CycleGANRevisit",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.2 SPGAN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3. Feature Learning",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Experiment",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Datasets",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. Implementation Details",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3. Evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4. Comparison with State-of-the-art Methods",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.009360699994431343,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4375,
+  "unmatched_gt": [
+   "Abstract",
+   "1. Introduction",
+   "2. Related Work"
+  ],
+  "unmatched_pred": [
+   "3.2.2 SPGAN"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [
+   "1. Introduction",
+   "2. Related Work"
+  ],
+  "unmatched_pred": [
+   "3.2.2 SPGAN"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "doc": "1612.02675",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract. 3D imaging modalities are becoming increasingly popular"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 177,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3922,
+   "completion_tokens": 327,
+   "total_tokens": 4249
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9962390305056414,
+   "in_order": 0.9803593815294609,
+   "inserted": 0.01365328920148945
+  },
+  "export_markdown": "# Domain knowledge assisted cyst segmentation in OCT retinal images\n\n*Karthik Gopinath and Jayanthi Sivaswamy*\n\nDomain knowledge assisted cyst segmentation in\n\nOCT retinal images\n\nKarthik Gopinath and Jayanthi Sivaswamy\n\nRIAG, India.\n\narXiv:1612.02675v1 [cs.CV] 8 Dec 2016\n\n## Abstract. 3D imaging modalities are becoming increasingly popular\n\nand relevant in retinal imaging owing to their eﬀectiveness in highlight-\n\ning structures in sub-retinal layers. OCT is one such modality which\n\nhas great importance in the context of analysis of cystoid structures\n\nin subretinal layers. Signal to noise ratio(SNR) of the images obtained\n\nfrom OCT is less and hence automated and accurate determination of\n\ncystoid structures from OCT is a challenging task. We propose an auto-\n\nmated method for detecting/segmenting cysts in 3D OCT volumes. The\n\nproposed method is biologically inspired and fast aided by the domain-\n\nknowledge about the cystoid structures. An ensemble learning method-\n\nRandom forests is learnt for classiﬁcation of detected region into cyst\n\nregion. The method achieves detection and segmentation in a uniﬁed set-\n\nting. We believe the proposed approach with further improvements can\n\nbe a promising starting point for more robust approach. This method\n\nis validated against the training set achieves a mean dice coeﬃcient of\n\n0.3893 with a standard deviation of 0.2987\n\n## 1 Introduction\n\nOptical coherence tomography (OCT) is a non-invasive imaging modality that captures 3D projections of the retinal layers using low-coherence light waves [2]. In assessing retinal diseases, OCT is a handy tool. It has a potential to provide 3D information and hence analyze subretinal layers which are not captured by more conventional techniques such as color fundus imaging. Early versions of OCT were of limited use owing to low image quality and acquisition time. Fourier transformation of the optical spectrum of the low-coherence interferometry refers to Spectral-domain OCT (SD-OCT) or Fourier-domain OCT. SD-OCT is less noisy and signiﬁcantly faster than the previous technology. The increased speed and number of scans renders greater image detail and clarity [3]. The higher SNR of SD-OCT allows assessment of smaller pathological changes. SD-OCT is becoming one of the most important ancillary test for the diagnosis of sight degrading diseases today. 3D cross sectional volumetric images of the retina and the sub-retinal layers are imaged from SD-OCT to detect pathologies such as cysts in addition to retinal pathologies. Cystoid macular edema (CME) [4] [5] represents a common pathological appearance in retina and co-occurs in a variety of pathological conditions such as intra ocular inﬂammation, central or branch retinal vein occlusion [6], diabetic\n\nretinopathy [7] and most commonly following cataract extraction [8] . CME appearing in one eye, increases the likelihood of similar appearance in the second eye. CME causes, multiple cyst-like (cystoid) regions ﬁlled with ﬂuid appearing in macula. Cysts cause retinal swelling or edema. The areas of retina in which the cells are displaced are cysts. CME leads to many complications such as loss of vision. Persistent CME for more than 6 to 9 months leads to chronic macular changes, with permanent impairment of central vision. While automated detection of CME in SD-OCT images is relevant for early diagnosis and prevention of vision-loss, this task is nontrivial and challenging. SD-OCT images often suﬀer from noise, apart from the demarcation between subretinal layers not being very clear. While long and high power exposure to LASER can alleviate some of these diﬃculties, patient health and other medical considerations often impose some necessary bounds on such approaches. Thus automated CME detection from noisy SD-OCT data is a challenging and relevant\n\nproblem in retinal image analysis\n\nThis work proposes a biologically inspired and simple methodology for an automatic segmentation of candidate cyst regions, in SD-OCT retinal images. This paper is organized as follows: in Section 2 the methodology for automatic cyst detection is exposed. Section 3 shows the results obtained with this technique and in Section 4 conclusions and future lines of work.\n\n## 2 Methodology\n\nThe detection or segmentation of cyst candidate regions is a complex task. Our method to accomplish this task is composed of diﬀerent stages (Fig. 1) a preprocessing stage: to perform size normalizations of individual slices, A total variance denoising, enhancement using center surround; a candidate selection phase: segmentation of ILM and RPE layers to reduce the search region, MSER features for region selection; ﬁnally, false positive rejection stage.\n\nFig. 1. Outline of the proposed method\n\n| Canidate<br>Pre Processing<br>seletion | False<br>positive<br>rejection |  |\n| --- | --- | --- |\n|  |  |  |\n\nInput\n\nCyst regions\n\n### 2.1 Preprocessing\n\nThe training data has 15 SD-OCT volumes from 4 diﬀerent scanners. The number of slices across the training set diﬀer from 49 to 200. The size of each slice is neither constant for an individual scanner nor across scanners. For further\n\nprocessing, the size of the image is standardised for all volumes. All the scanned volumes are resized to a 512X256 pixels. SD-OCT images are degraded by the speckle noise. Speckle noise is signal dependent and the pattern of the speckle depends on the structure of the imaging tissue.The speckle noise is a multiplicative noise and can be modelled using Rayleigh distribution. Speckle corrupted SD-OCT images has a have high total variation i.e. the integral of the absolute gradient of these images is high. We use total variational denoising [9] technique which has advantages over the traditional denoising methods such as linear smoothing and median ﬁltering. The Total Variational approach will reduce the texture content resulting in a smooth piecewise constant images preserving the edges [10] [11] [12]. Center-surround diﬀerence is a biologically inspired technique of ﬁnding local extrema in images [13]. As a saliency mechanism, its eﬀectiveness has been demonstrated in a variety of applications. Since cyst region candidates are locally dark, we use center-surround diﬀerence in a multi-scale setting to detect the locally minimum regions as cyst candidates.\n\n### 2.2 Candidate selection\n\nSelection of region of interest is a vital task as it helps in reducing the search region for identifying cysts and computation time. Region of interest for cyst detection task are the retinal layers between Internal Limiting Membrane (ILM) and Retinal pigment epithelium (RPE). Areas like vitreous cavity and area below choroid layers are not of interests in detection of cyst regions.Various segmentation algorithms have been proposed for segmentaion of retinal layers. Methods like pixel intensity variation based ILM and RPE segmentation[14], active contour with a two-step kernel-based optimization scheme [15], complex diﬀusion ﬁltering with combined structure tensor replacing thresholding [16]. In this work we use a conceptually simpler, yet accurate, graph theory based segmentation approach [17]. Candidate regions are selected using Maximally stable extremal regions(MSER). This feature computation gives a set of stable extremal region in an image. This feature is used to detect the multi-scale objects without any smoothing involved. Both ﬁne and large structure can be detected using this feature.\n\n### 2.3 False positive rejection\n\nThe regions picked from the MSER features contain both cyst and non cyst regions. A bounding box around the candidate region is taken as the input for feature extraction. A local descriptor based on the texture of pattern [18] is calculated for the patch. This feature is extracted for all detected regions and a random forest with 50 trees is trained for the classiﬁcation task. The detected cyst regions is considered as the segmentation result and the performance of the system is evaluated.\n\n## 3 Experimental Results and Discussion\n\nThe performance of our method is evaluated using OPTIMA Cyst Segmentation Challenge MICCAI 2015 training dataset. The dataset includes 15 volumes of SD-OCT scans from 4 diﬀerent scanners containing a wide variety of retinal\n\ncysts. The details of the dataset is shown in Table 1\n\nTable 1. Dataset used\n\nSpectralis\n\nCirrus\n\nTopcon\n\nNidek\n\nTotal\n\nScanner\n\n4\n\n4\n\n4\n\n3\n\n15\n\nTraining\n\nSegmentation results are quantitatively measured using Dice coeﬃcient (DC) deﬁned below.\n\nDice coefficient = 2 |Detected ∩ GT |\n\n(1)\n\n|Detected| + |GT |\n\nThe maximum possible value for DC is 1(indicating a perfect match between the result and Ground Truth). Validation on the training set is performed using a leave-one-out cross validation approach. The mean and standard deviation for all the volumes with ground truth taken as union of Graders 1 and 2 is mentioned in Table 2 below.\n\nTable 2. Dice coeﬃcient with GT as union of two graders\n\nSpectralis\n\nCirrus\n\nTopcon\n\nNidek\n\nDice coeﬃcient\n\n0.3024\n\n0.3728\n\n0.3736\n\n0.4613\n\nMean\n\n0.8596\n\n0.9246\n\n0.8638\n\n0.8367\n\nMaximum\n\n0.3436\n\n0.2510\n\n0.2849\n\n0.2823\n\nStandard deviation\n\nThe DC is zero for a slice when no cyst region is detected. The mean DC for a volume is lowered when there are few slices with zero cyst detection. The mean DC values for the given volumes across 3 scanners is tabulated in Table 3.\n\nTable 3. Dice coeﬃcient excluding zero DC slices\n\nSpectralis\n\nCirrus\n\nTopcon\n\nNidek\n\nDice coeﬃcient\n\n0.6652\n\n0.5606\n\n0.5357\n\n0.5957\n\nMean\n\n0.8596\n\n0.9246\n\n0.8638\n\n0.8367\n\nMaximum\n\n0.1195\n\n0.1851\n\n0.1754\n\n0.1496\n\nStandard deviation\n\nThe analysis is discussed module-wise. Table 4 indicates the percentage of small (<200 pixels), medium (200 to 2000 pixels) and large(>2000 pixels) sized cysts detected. The SNR was observed to vary across the four scanners. Detection fails due to noise, largely for small sized-cysts and since they constitute a large proportion of the cysts the eﬀect is an deterioration the net DC value. Speciﬁcally, the MSER feature is unable to detect many small cyst regions due to the presence of noise.\n\nTable 4. Detection of cysts based on size from MSER features\n\nNo. Cyst Present\n\nPercent detected correctly\n\nSize of cysts\n\n2514\n\n61.76\n\nSmall\n\n2109\n\n80.02\n\nMedium\n\n243\n\n88.04\n\nLarge\n\nAlong with the cyst regions, there are a lot of non-cyst regions picked up by the candidate selection stage. These constitute false positives. The supervised classiﬁer will aid in reducing these false positives. The random forest ensemble classiﬁer performance with respect to cysts of diﬀerent sizes is listed below in Table 5. It is apparent that the detection is once again worst for small-sized cysts compared to medium and large ones due to the aggressive rejection by the random forest stage.\n\nTable 5. Detection of cysts after random forest based on size\n\nPercent detected correctly\n\nSize of cysts\n\n27.83\n\nSmall\n\n51.18\n\nMedium\n\n76.10\n\nLarge\n\n## 4 Conclusion\n\nThis paper presented a method to detect and segment the retinal cysts in a SD-OCT volume. The failure in detection of small cyst regions (indistinguishable from noise) is a major contributor to poor performance. Other contribution is not having an explicit segmentation stage. The MSER regions are often only partially overlapping with true cyst regions which leads to a lowering of DC value of even true detections. This was found to be the case in medium-sized cysts. Based on the above observations, future investigations can adopt diﬀerent detection strategies depending on the size of the cysts in the SD-OCT volumes\n\nto improve the results. An advanced denoising algorithm might also help in segmenting small sized regions. Inclusion of a ﬁnal segmentation stage (post rejection) will also aid in enhancing the performance.\n\n## References\n\n1. Joshi, G.D., Sivaswamy, J., Krishnadas, S.: Optic disk and cup segmentation from\n\nmonocular color retinal images for glaucoma assessment. Medical Imaging, IEEE\n\nTransactions on 30(6) (2011) 1192–1205\n\n2. Costa, R.A., Skaf, M., Melo, L.A., Calucci, D., Cardillo, J.A., Castro, J.C., Huang,\n\nD., Wojtkowski, M.: Retinal assessment using optical coherence tomography. Progress in retinal and eye research 25(3) (2006) 325–353\n\n3. Schuman, J.S.: Spectral domain optical coherence tomography for glaucoma (an\n\naos thesis). Transactions of the American Ophthalmological Society 106 (2008)\n\n426\n\n4. Rotsos, T.G., Moschos, M.M.: Cystoid macular edema. Clinical ophthalmology\n\n(Auckland, NZ) 2(4) (2008) 919\n\n5. Scholl, S., Kirchhof, J., Augustin, A.J.: Pathophysiology of macular edema. Oph-\n\nthalmologica 224(Suppl. 1) (2010) 8–15\n\n6. Hayreh, S.S., et al.: Retinal vein occlusion. Indian journal of ophthalmology 42(3)\n\n(1994) 109\n\n7. Browning, D.J., Glassman, A.R., Aiello, L.P., Bressler, N.M., Bressler, S.B., Danis,\n\nR.P., Davis, M.D., Ferris, F.L., Huang, S.S., Kaiser, P.K., et al.: Optical coherence tomography measurements and analysis methods in optical coherence tomography studies of diabetic macular edema. Ophthalmology 115(8) (2008) 1366–1371\n\n8. Gass, J., Norton, E.: Follow-up study of cystoid macular edema following cataract\n\nextraction. Transactions-American Academy of Ophthalmology and Otolaryngology. American Academy of Ophthalmology and Otolaryngology 73(4) (1969) 665\n\n9. Boyd, S., Vandenberghe, L.: Convex optimization. Cambridge university press\n\n(2004)\n\n10. Yang, R., Yin, L., Gabbouj, M., Astola, J., Neuvo, Y.: Optimal weighted median\n\nﬁltering under structural constraints. Signal Processing, IEEE Transactions on\n\n43(3) (1995) 591–604\n\n11. Hamza, A.B., Luque-Escamilla, P.L., Mart´ınez-Aroza, J., Rom´an-Rold´an, R.: Re-\n\nmoving noise and preserving details with relaxed median ﬁlters. Journal of Math-\n\nematical Imaging and Vision 11(2) (1999) 161–177\n\n12. Buades, A., Coll, B., Morel, J.M.: A review of image denoising algorithms, with a\n\nnew one. Multiscale Modeling & Simulation 4(2) (2005) 490–530\n\n13. Itti, L., Koch, C., Niebur, E.: A model of saliency-based visual attention for rapid\n\nscene analysis. IEEE Transactions on Pattern Analysis & Machine Intelligence\n\n(11) (1998) 1254–1259\n\n14. Fabritius, T., Makita, S., Miura, M., Myllyl¨a, R., Yasuno, Y.: Automated seg-\n\nmentation of the macula by optical coherence tomography. Optics express 17(18)\n\n(2009) 15659–15669\n\n15. Garvin, M.K., Abr`amoﬀ, M.D., Kardon, R., Russell, S.R., Wu, X., Sonka, M.:\n\nIntraretinal layer segmentation of macular optical coherence tomography images using optimal 3-d graph search. Medical Imaging, IEEE Transactions on 27(10)\n\n(2008) 1495–1505\n\n16. Cabrera Fern´andez, D., Salinas, H.M., Puliaﬁto, C.A.: Automated detection of\n\nretinal layer structures on optical coherence tomography images. Optics Express\n\n13(25) (2005) 10200–10216\n\n17. Chiu, S.J., Li, X.T., Nicholas, P., Toth, C.A., Izatt, J.A., Farsiu, S.: Automatic\n\nsegmentation of seven retinal layers in sdoct images congruent with expert manual\n\nsegmentation. Optics express 18(18) (2010) 19413–19428\n\n18. Medathati, N., Sivaswamy, J.: Local descriptor based on texture of projections.\n\nIn: Proceedings of the Seventh Indian Conference on Computer Vision, Graphics\n\nand Image Processing, ACM (2010) 398–404\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract. 3D imaging modalities are becoming increasingly popular",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methodology",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Preprocessing",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Candidate selection",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 False positive rejection",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Experimental Results and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.389932999998564,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract. 3D imaging modalities are becoming increasingly popular"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

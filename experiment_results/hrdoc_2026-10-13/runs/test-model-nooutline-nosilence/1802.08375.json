@@ -1,0 +1,259 @@
+{
+ "doc": "1802.08375",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 21,
+  "pred": 29,
+  "tp": 21,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Rustem Takhanov",
+   "Tying weights in NLM: Reusing embeddings",
+   "Subword-based word embeddings: One of the",
+   "Reusing word embeddings: Another recent tech-",
+   "Subword-based embedding models: We experi-",
+   "Syllabiﬁcation and morphological segmenta-",
+   "Conjecture. Let Ein",
+   "3.2 Data-S"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 503,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13595,
+   "completion_tokens": 741,
+   "total_tokens": 14336
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Rustem Takhanov",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Tying weights in NLM: Reusing embeddings",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Recurrent Neural Language Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Subword-based word embeddings: One of the",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Reusing word embeddings: Another recent tech-",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Reusing Weights",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experimental Setup",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Subword-based embedding models: We experi-",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Syllabiﬁcation and morphological segmenta-",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "6 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 CharCNN is biased towards surface form",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.2 Tying weights bottom-up",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Conjecture. Let Ein",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.3 Difference between input and output",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "embeddings",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.4 CharCNN generalizes better than",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "MorphSum",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.5 Performance on non-English Data",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.6 Replacing LSTM with AWD-LSTM",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Optimization",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Data-S",
+   "page": 10,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "B Non-English corpora statistics and",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "model sizes",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.276738399999886,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 29,
+  "tp": 21,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Rustem Takhanov",
+   "Tying weights in NLM: Reusing embeddings",
+   "Subword-based word embeddings: One of the",
+   "Reusing word embeddings: Another recent tech-",
+   "Subword-based embedding models: We experi-",
+   "Syllabiﬁcation and morphological segmenta-",
+   "Conjecture. Let Ein",
+   "3.2 Data-S"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 26,
+  "tp": 18,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Rustem Takhanov",
+   "Tying weights in NLM: Reusing embeddings",
+   "Subword-based word embeddings: One of the",
+   "Reusing word embeddings: Another recent tech-",
+   "Subword-based embedding models: We experi-",
+   "Syllabiﬁcation and morphological segmenta-",
+   "Conjecture. Let Ein",
+   "3.2 Data-S"
+  ],
+  "ignored_title_predictions": null
+ }
+}

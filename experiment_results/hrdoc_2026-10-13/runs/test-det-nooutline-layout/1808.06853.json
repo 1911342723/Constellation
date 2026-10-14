@@ -1,0 +1,143 @@
+{
+ "doc": "1808.06853",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 104,
+  "layout_marked": 16,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9331797235023042,
+  "inserted_word_share": 0.9781812304708545
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 System Architecture of PAR4SEM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The Backend Component",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.1.1 Paraphrasing Resources",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1.2 Adaptive Machine Learning",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1.3 Backend Technologies",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Frontend Components",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 UI Components for Paraphrasing",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "2.2.2 Frontend Technologies",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "2.3 RESTful API Component",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3.1 Installation and Deployment",
+   "page": 4,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3 Use-case – Adaptive Text",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.4564898000026005,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

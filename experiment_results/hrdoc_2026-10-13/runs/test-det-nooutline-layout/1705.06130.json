@@ -1,0 +1,152 @@
+{
+ "doc": "1705.06130",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "C. Algorithm",
+   "2) Solar power curve:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "C. Algorithm",
+   "2) Solar power curve:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 633,
+  "layout_marked": 16,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9237635953211574,
+  "inserted_word_share": 0.5241291823035044
+ },
+ "predictions": [
+  {
+   "text": "Stability and Performance of Coalitions of",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. GENERATING REALISTIC PROSUMER PATTERNS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NOTATIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. UTILITY FUNCTION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. COALITION FORMATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Representing the correlation structure",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Cliques",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "VII. RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Algorithms",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Net production series",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  }
+ ],
+ "seconds": 6.576909099996556,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "C. Algorithm",
+   "2) Solar power curve:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

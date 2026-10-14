@@ -1,0 +1,198 @@
+{
+ "doc": "1804.07329",
+ "system": "docling",
+ "metrics": {
+  "gt": 24,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Eye Movements in Reading",
+   "TOEFL"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 35.68533919999754
+ },
+ "predictions": [
+  {
+   "text": "Assessing Language Proficiency from Eye Movements in Reading",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Experimental Setup",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Procedure and ReadingMaterials",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Experimental Regimes",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Standardized English Tests",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.4 Data Split",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Eye Movement Features",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Type-Level Features",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Word Property Coefficients (WP-Coefficients)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Syntactic Clusters (S-Clusters)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Token-Level Features",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Transitions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Words in Fixed Context (WFC)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 English Proficiency Scoring Based on Eye Movements in Reading",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Correlation withMET and TOEFL",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Predicting Performance onMET and TOEFL",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 RelatedWork",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion and Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.02453110000351444,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.56,
+  "unmatched_gt": [
+   "Eye Movements in Reading",
+   "TOEFL"
+  ],
+  "unmatched_pred": [
+   "Assessing Language Proficiency from Eye Movements in Reading"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Eye Movements in Reading",
+   "TOEFL"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,214 @@
+{
+ "doc": "1505.07717",
+ "system": "outline",
+ "metrics": {
+  "gt": 27,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8928571428571429,
+  "unmatched_gt": [
+   "OUT LINE A N D CO N TRIBUT I O NS",
+   "N O TAT ION",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Coupled decompositions: a Bayesian approach",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Flexible coupling models",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Joint Gaussian modeling",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-B Hybrid Gaussian coupling",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-C Non Gaussian conditional coupling",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV Algorithms for coupled tensor decompositions with flexible couplings",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Hybrid Gaussian modeling and alternating least squares (ALS)",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV-B Coupled decompositions of large data sets",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV-C Multiplicative updates for non Gaussian coupling of positive variables",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V Bayesian and hybrid Cramér-Rao bounds",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-A Introduction",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V-B Bayesian Cramér-Rao bound",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V-C Hybrid Cramér-Rao bound",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VI Simulations",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A Similar factors",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VI-B Shared component",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VI-C Compressed coupled CP",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VI-D Gamma coupling of positive variables",
+   "page": 10,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VI-E Different sampling rates",
+   "page": 10,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VII Conclusions",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A: Warm start and cold start",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B: Gradient matrices for the MU algorithm",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C: SNR for some coupling scenarios",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.10239910000018426,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8928571428571429,
+  "unmatched_gt": [
+   "OUT LINE A N D CO N TRIBUT I O NS",
+   "N O TAT ION",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.8148148148148149,
+  "unmatched_gt": [
+   "OUT LINE A N D CO N TRIBUT I O NS",
+   "N O TAT ION",
+   "A WA R M S TART A ND C O LD S TA RT",
+   "B GRAD I ENT M AT RI CE S FOR THE MU A LGO R I THM",
+   "C SN R FO R S OM E COU P LING SC ENARIO S"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

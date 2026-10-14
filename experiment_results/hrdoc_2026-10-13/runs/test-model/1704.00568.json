@@ -1,0 +1,166 @@
+{
+ "doc": "1704.00568",
+ "system": "model",
+ "metrics": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "j=1 and {χj}n′",
+   "Model",
+   "Total-Variation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 396,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4711,
+   "completion_tokens": 478,
+   "total_tokens": 5189
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Level-set methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "j=1 and {χj}n′",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.0.1 Example",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.0.2 Example",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1 Approximation to Heaviside function",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Joint reconstruction algorithm",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Numerical Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Regularization parameter selection",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Benchmark test",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 Limited-angle test",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Conclusions and Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Model",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Total-Variation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.621447499997885,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "j=1 and {χj}n′",
+   "Model",
+   "Total-Variation"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "j=1 and {χj}n′",
+   "Model",
+   "Total-Variation"
+  ],
+  "ignored_title_predictions": null
+ }
+}

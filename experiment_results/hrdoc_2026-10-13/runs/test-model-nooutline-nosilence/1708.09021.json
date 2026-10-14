@@ -1,0 +1,155 @@
+{
+ "doc": "1708.09021",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Connectedness Constraint for Learning Sparse"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 263,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4140,
+   "completion_tokens": 470,
+   "total_tokens": 4610
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A Connectedness Constraint for Learning Sparse",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Graphs",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Preliminaries and notations",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Problem statement",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "II. PRESERVING THE CONNECTEDNESS OF GRAPHS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. APPLICATIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The consensus problem",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Signal processing on graphs",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. NUMERICAL SIMULATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experiments using synthetic data",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Experiments using real data",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.43621979999807,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Connectedness Constraint for Learning Sparse",
+   "Graphs"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Connectedness Constraint for Learning Sparse"
+  ],
+  "ignored_title_predictions": null
+ }
+}

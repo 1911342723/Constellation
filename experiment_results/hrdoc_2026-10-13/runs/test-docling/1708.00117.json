@@ -1,0 +1,174 @@
+{
+ "doc": "1708.00117",
+ "system": "docling",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5789473684210527,
+  "unmatched_gt": [
+   "straints"
+  ],
+  "unmatched_pred": [
+   "8. REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 29.814623800000845
+ },
+ "predictions": [
+  {
+   "text": "Compiling Deep Learning Models for Custom Hardware Accelerators",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Categories and Subject Descriptors",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BACKGROUNDANDRELATEDWORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. SNOWFLAKEHARDWAREOVERVIEW",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Control pipeline",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CUSTOM INSTRUCTION SET",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. METHODOLOGY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Model parsing",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Instruction generation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Instruction deployment",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Generated instructions",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.2 Loop rearrangement for bandwidth constraints",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.3 Communication load balance",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01842919999762671,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.55,
+  "unmatched_gt": [
+   "straints"
+  ],
+  "unmatched_pred": [
+   "Compiling Deep Learning Models for Custom Hardware Accelerators",
+   "8. REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "straints"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

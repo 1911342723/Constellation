@@ -1,0 +1,177 @@
+{
+ "doc": "1604.05221",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9523809523809523,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Keywords"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 280,
+  "layout_marked": 21,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9773358678169323,
+  "inserted_word_share": 0.9447566781274795
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Preface",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Fixed-ﬁeld alternating-gradient accelerators",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 A historical perspective",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 The original or ‘scaling’ FFAG",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 The non-scaling FFAG",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Linear non-scaling FFAG",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 The EMMA non-scaling FFAG",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 FFAGs for hadron therapy",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 The KEK 150 MeV FFAG",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 The RACCAM project",
+   "page": 9,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Linear non-scaling FFAG designs",
+   "page": 9,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4 PAMELA",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.5 NORMA",
+   "page": 12,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.6 Arbitrary-edge-angle non-scaling FFAG designs",
+   "page": 13,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 FFAG gantry designs",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Summary",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.563500899996143,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9523809523809523,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Keywords"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

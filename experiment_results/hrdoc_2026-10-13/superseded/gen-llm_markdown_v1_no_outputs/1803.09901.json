@@ -1,0 +1,237 @@
+{
+ "doc": "1803.09901",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "4.1 Word Representations",
+   "4.2 Disease Diagnosis Sequence Modeling",
+   "4.3 SNOMED CT edge prediction"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 6264,
+   "completion_tokens": 5664
+  },
+  "elapsed_llm_seconds": 25.877581400000054,
+  "content_preservation": 0.9496134364169555,
+  "inserted_word_share": 0.025977577249111317,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Mittens: An Extension of GloVe for Learning Domain-Specialized Representations",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Mittens",
+    0,
+    2
+   ],
+   [
+    "2.1 Vectorizing GloVe",
+    0,
+    3
+   ],
+   [
+    "2.2 The Mittens Objective Function",
+    1,
+    3
+   ],
+   [
+    "2.3 Notes on Mittens Representations",
+    1,
+    3
+   ],
+   [
+    "3 Sentiment Experiments",
+    2,
+    2
+   ],
+   [
+    "3.1 Word Representations",
+    2,
+    3
+   ],
+   [
+    "3.2 IMDB Sentiment Classification",
+    2,
+    3
+   ],
+   [
+    "4 Clinical Text Experiments",
+    3,
+    2
+   ],
+   [
+    "5 Conclusion",
+    4,
+    2
+   ],
+   [
+    "6 Acknowledgements",
+    4,
+    2
+   ],
+   [
+    "References",
+    5,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Mittens",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Vectorizing GloVe",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 The Mittens Objective Function",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Notes on Mittens Representations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Sentiment Experiments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Word Representations",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 IMDB Sentiment Classification",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Clinical Text Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 26.00236180000138,
+ "metrics_raw": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "4.1 Word Representations",
+   "4.2 Disease Diagnosis Sequence Modeling",
+   "4.3 SNOMED CT edge prediction"
+  ],
+  "unmatched_pred": [
+   "Mittens: An Extension of GloVe for Learning Domain-Specialized Representations"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "4.1 Word Representations",
+   "4.2 Disease Diagnosis Sequence Modeling",
+   "4.3 SNOMED CT edge prediction"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "4.1 Word Representations",
+   "4.2 Disease Diagnosis Sequence Modeling",
+   "4.3 SNOMED CT edge prediction"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

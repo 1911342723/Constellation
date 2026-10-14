@@ -1,0 +1,175 @@
+{
+ "doc": "1808.00278",
+ "system": "model",
+ "metrics": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7222222222222222,
+  "unmatched_gt": [
+   "Initialization."
+  ],
+  "unmatched_pred": [
+   "– Approximation to the derivative of the sign function with re-",
+   "– Magnitude-aware gradient with respect to weights. As the gradient"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 505,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10394,
+   "completion_tokens": 584,
+   "total_tokens": 10978
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "– Approximation to the derivative of the sign function with re-",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "– Magnitude-aware gradient with respect to weights. As the gradient",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Related Work",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Standard 1-bit CNNs and Its Representational Capability",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Bi-Real Net Model and Its Representational Capability",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Training Bi-Real Net",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Approximation to the derivative of the sign function with respect to",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Magnitude-aware gradient with respect to weights. Here we present how",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Experiments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dataset and Implementation Details",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Ablation Study",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Accuracy Comparison With State-of-The-Art",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.4 Eﬃciency and Memory Usage Analysis",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.247268000002805,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7222222222222222,
+  "unmatched_gt": [
+   "Initialization."
+  ],
+  "unmatched_pred": [
+   "– Approximation to the derivative of the sign function with re-",
+   "– Magnitude-aware gradient with respect to weights. As the gradient"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [
+   "Initialization."
+  ],
+  "unmatched_pred": [
+   "– Approximation to the derivative of the sign function with re-",
+   "– Magnitude-aware gradient with respect to weights. As the gradient"
+  ],
+  "ignored_title_predictions": null
+ }
+}

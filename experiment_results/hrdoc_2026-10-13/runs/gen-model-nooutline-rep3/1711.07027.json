@@ -1,0 +1,205 @@
+{
+ "doc": "1711.07027",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 21,
+  "tp": 15,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "• Source-target image translation. Using a generative",
+   "3.2.2 SPGAN",
+   "Similarity preserving loss function. We utilize the con-",
+   "The effectiveness of the “learning via translation”",
+   "Comparison of different feature learning methods. In",
+   "Sensitivity of SPGAN to key parameters. The margin"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 613,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14901,
+   "completion_tokens": 640,
+   "total_tokens": 15541
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Proposed Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Baseline Overview",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "• Source-target image translation. Using a generative",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3.2. SPGAN: Approach Details",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 CycleGAN Revisit",
+   "page": 2,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.2.2 SPGAN",
+   "page": 3,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "Similarity preserving loss function. We utilize the con-",
+   "page": 3,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.3. Feature Learning",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Experiment",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2. Implementation Details",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.3. Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "The effectiveness of the “learning via translation”",
+   "page": 5,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "Comparison of different feature learning methods. In",
+   "page": 6,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "Sensitivity of SPGAN to key parameters. The margin",
+   "page": 6,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "4.4. Comparison with State-of-the-art Methods",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.11072989999957,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 21,
+  "tp": 15,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "• Source-target image translation. Using a generative",
+   "3.2.2 SPGAN",
+   "Similarity preserving loss function. We utilize the con-",
+   "The effectiveness of the “learning via translation”",
+   "Comparison of different feature learning methods. In",
+   "Sensitivity of SPGAN to key parameters. The margin"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 19,
+  "tp": 13,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "• Source-target image translation. Using a generative",
+   "3.2.2 SPGAN",
+   "Similarity preserving loss function. We utilize the con-",
+   "The effectiveness of the “learning via translation”",
+   "Comparison of different feature learning methods. In",
+   "Sensitivity of SPGAN to key parameters. The margin"
+  ],
+  "ignored_title_predictions": null
+ }
+}

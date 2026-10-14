@@ -1,0 +1,141 @@
+{
+ "doc": "1512.05906",
+ "system": "docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "parameters"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 13.950418299999
+ },
+ "predictions": [
+  {
+   "text": "Diffusive nature of thermal transport in stanene",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Lattice thermal conductivity",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Relaxation rates",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Phonon-phonon scattering",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Phonon-boundary scattering",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Details of first-principles calculations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS AND DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Phonon dispersions",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Phonon group velocities and Gr¨uneisen parameters",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Lattice thermal conductivity",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.016462400002637878,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "parameters"
+  ],
+  "unmatched_pred": [
+   "Diffusive nature of thermal transport in stanene"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "parameters"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

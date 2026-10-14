@@ -1,0 +1,410 @@
+{
+ "doc": "1803.01834",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 15,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [
+   "2. Local Representation Alignment"
+  ],
+  "unmatched_pred": [
+   "2. Local Representation Alignment",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 24605,
+   "completion_tokens": 19037
+  },
+  "elapsed_llm_seconds": 83.75722300000052,
+  "content_preservation": 0.8365288927220859,
+  "inserted_word_share": 0.0201274479328567,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Conducting Credit Assignment by Aligning Local Distributed Representations",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1. Introduction",
+    0,
+    2
+   ],
+   [
+    "2. Local Representation Alignment",
+    0,
+    2
+   ],
+   [
+    "2.1 Notation",
+    0,
+    3
+   ],
+   [
+    "2.2 Setting the targets.",
+    0,
+    3
+   ],
+   [
+    "2.3 Divide and Conquer: The Computation Subgraph",
+    0,
+    3
+   ],
+   [
+    "2.3.1 Instantiation: The Differentiable Multilayer Perceptron",
+    0,
+    4
+   ],
+   [
+    "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+    0,
+    4
+   ],
+   [
+    "2.4 Overcoming Poor Initializations",
+    0,
+    3
+   ],
+   [
+    "2.5 Overcoming Exploding and Vanishing Gradients",
+    0,
+    3
+   ],
+   [
+    "3. Experimental Results",
+    0,
+    2
+   ],
+   [
+    "3.1 Effect of Manifold-Walking",
+    0,
+    3
+   ],
+   [
+    "3.2 Robustness to Initialization",
+    0,
+    3
+   ],
+   [
+    "3.3 Training from Null Initialization",
+    0,
+    3
+   ],
+   [
+    "3.4 Stochastic Networks",
+    0,
+    3
+   ],
+   [
+    "3.5 Feature Extraction versus Optimization",
+    0,
+    3
+   ],
+   [
+    "4. Related Work",
+    0,
+    2
+   ],
+   [
+    "5. Conclusion & Future Work",
+    0,
+    2
+   ],
+   [
+    "Acknowledgments",
+    0,
+    2
+   ],
+   [
+    "Appendix A.",
+    0,
+    2
+   ],
+   [
+    "Appendix B.",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Local Representation Alignment",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Notation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Setting the targets.",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Divide and Conquer: The Computation Subgraph",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3.1 Instantiation: The Differentiable Multilayer Perceptron",
+   "page": 7,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "page": 8,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.4 Overcoming Poor Initializations",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5 Overcoming Exploding and Vanishing Gradients",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Experimental Results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Effect of Manifold-Walking",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Robustness to Initialization",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Training from Null Initialization",
+   "page": 16,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.4 Stochastic Networks",
+   "page": 18,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.5 Feature Extraction versus Optimization",
+   "page": 21,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4. Related Work",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion & Future Work",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A.",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B.",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 84.2491050000026,
+ "metrics_raw": {
+  "gt": 21,
+  "pred": 23,
+  "tp": 2,
+  "fp": 21,
+  "fn": 19,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.125,
+  "unmatched_gt": [
+   "2. Local Representation Alignment",
+   "2.1 Notation",
+   "2.2 Setting the targets.",
+   "2.3 Divide and Conquer: The Computation Subgraph",
+   "2.3.1 Instantiation: The Differentiable Multilayer Perceptron",
+   "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "2.4 Overcoming Poor Initializations",
+   "2.5 Overcoming Explo ding and Vanishing Gradients",
+   "3. Exp erimental Results",
+   "3.1 Effect of Manifold-Walking",
+   "3.2 Robustness to Initialization",
+   "3.3 Training from Null Initialization",
+   "3.4 Stochastic Networks",
+   "3.5 Feature Extraction versus Optimization",
+   "4. Related Work",
+   "5. Conclusion & Future Work",
+   "Appendix A.",
+   "Appendix B.",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Conducting Credit Assignment by Aligning Local Distributed Representations",
+   "2. Local Representation Alignment",
+   "2.1 Notation",
+   "2.2 Setting the targets.",
+   "2.3 Divide and Conquer: The Computation Subgraph",
+   "2.3.1 Instantiation: The Differentiable Multilayer Perceptron",
+   "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "2.4 Overcoming Poor Initializations",
+   "2.5 Overcoming Exploding and Vanishing Gradients",
+   "3. Experimental Results",
+   "3.1 Effect of Manifold-Walking",
+   "3.2 Robustness to Initialization",
+   "3.3 Training from Null Initialization",
+   "3.4 Stochastic Networks",
+   "3.5 Feature Extraction versus Optimization",
+   "4. Related Work",
+   "5. Conclusion & Future Work",
+   "Acknowledgments",
+   "Appendix A.",
+   "Appendix B.",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 2,
+  "fp": 20,
+  "fn": 19,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.13043478260869568,
+  "unmatched_gt": [
+   "2. Local Representation Alignment",
+   "2.1 Notation",
+   "2.2 Setting the targets.",
+   "2.3 Divide and Conquer: The Computation Subgraph",
+   "2.3.1 Instantiation: The Differentiable Multilayer Perceptron",
+   "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "2.4 Overcoming Poor Initializations",
+   "2.5 Overcoming Explo ding and Vanishing Gradients",
+   "3. Exp erimental Results",
+   "3.1 Effect of Manifold-Walking",
+   "3.2 Robustness to Initialization",
+   "3.3 Training from Null Initialization",
+   "3.4 Stochastic Networks",
+   "3.5 Feature Extraction versus Optimization",
+   "4. Related Work",
+   "5. Conclusion & Future Work",
+   "Appendix A.",
+   "Appendix B.",
+   "References"
+  ],
+  "unmatched_pred": [
+   "2. Local Representation Alignment",
+   "2.1 Notation",
+   "2.2 Setting the targets.",
+   "2.3 Divide and Conquer: The Computation Subgraph",
+   "2.3.1 Instantiation: The Differentiable Multilayer Perceptron",
+   "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "2.4 Overcoming Poor Initializations",
+   "2.5 Overcoming Exploding and Vanishing Gradients",
+   "3. Experimental Results",
+   "3.1 Effect of Manifold-Walking",
+   "3.2 Robustness to Initialization",
+   "3.3 Training from Null Initialization",
+   "3.4 Stochastic Networks",
+   "3.5 Feature Extraction versus Optimization",
+   "4. Related Work",
+   "5. Conclusion & Future Work",
+   "Acknowledgments",
+   "Appendix A.",
+   "Appendix B.",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 11,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [
+   "2. Local Representation Alignment"
+  ],
+  "unmatched_pred": [
+   "2. Local Representation Alignment"
+  ],
+  "ignored_title_predictions": null
+ }
+}

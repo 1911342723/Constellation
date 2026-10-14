@@ -1,0 +1,164 @@
+{
+ "doc": "1510.01218",
+ "system": "docling",
+ "metrics": {
+  "gt": 17,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 8,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "2.1. Exp erimental set-up and notation. The column reactors used in",
+   "2.3. Evaluating effect of biofilm growth without simulations. Some",
+   "4.4.1. Time-discretized coupled (H-BN) model. We set T0 = 0, Ωs(T0 ) = Ωr",
+   "4.4.3. Implementing the inequality constraint. The main challenge of the",
+   "5.1. Simulation results: biomass growth and flow patterns. For all",
+   "5.2. Effect of flow rates and biomass advection parameter ν1 . Now",
+   "5.4. Further discussion of simulation results. The simulations and the",
+   "7.2. Computations with varying flow rates. In addition to conductiv-"
+  ],
+  "unmatched_pred": [
+   "Keywords:",
+   "REFERENCES",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 110.04631549999976
+ },
+ "predictions": [
+  {
+   "text": "BIOFILM GROWTH IN POROUS MEDIA: EXPERIMENTS, COMPUTATIONAL MODELING AT THE PORESCALE, AND UPSCALING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Flow: experiments, imaging, simulations, and upscaling",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Flow simulations and comparison with experiment",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Biomass-nutrient model coupled to hydrodynamics",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Numerical simulations of (H-BN) model",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusions",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments.",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Anisotropic conductivities and at large flow rates",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1. Computations of full tensor on cropped rectangular domains.",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 31,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.007048799998301547,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 9,
+  "fp": 4,
+  "fn": 8,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.2777777777777778,
+  "unmatched_gt": [
+   "2.1. Exp erimental set-up and notation. The column reactors used in",
+   "2.3. Evaluating effect of biofilm growth without simulations. Some",
+   "4.4.1. Time-discretized coupled (H-BN) model. We set T0 = 0, Ωs(T0 ) = Ωr",
+   "4.4.3. Implementing the inequality constraint. The main challenge of the",
+   "5.1. Simulation results: biomass growth and flow patterns. For all",
+   "5.2. Effect of flow rates and biomass advection parameter ν1 . Now",
+   "5.4. Further discussion of simulation results. The simulations and the",
+   "7.2. Computations with varying flow rates. In addition to conductiv-"
+  ],
+  "unmatched_pred": [
+   "BIOFILM GROWTH IN POROUS MEDIA: EXPERIMENTS, COMPUTATIONAL MODELING AT THE PORES",
+   "Keywords:",
+   "REFERENCES",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [
+   "2.1. Exp erimental set-up and notation. The column reactors used in",
+   "2.3. Evaluating effect of biofilm growth without simulations. Some",
+   "4.4.1. Time-discretized coupled (H-BN) model. We set T0 = 0, Ωs(T0 ) = Ωr",
+   "4.4.3. Implementing the inequality constraint. The main challenge of the",
+   "5.1. Simulation results: biomass growth and flow patterns. For all",
+   "5.2. Effect of flow rates and biomass advection parameter ν1 . Now",
+   "5.4. Further discussion of simulation results. The simulations and the",
+   "7. Anisotropic conductivities and at large flow rates",
+   "7.2. Computations with varying flow rates. In addition to conductiv-"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

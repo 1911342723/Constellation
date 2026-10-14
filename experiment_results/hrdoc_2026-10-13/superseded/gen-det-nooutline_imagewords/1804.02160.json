@@ -1,0 +1,225 @@
+{
+ "doc": "1804.02160",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 17,
+  "pred": 26,
+  "tp": 15,
+  "fp": 11,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.4814814814814815,
+  "unmatched_gt": [
+   "A Example of execution of the whole algorithm",
+   "B Pseudocode"
+  ],
+  "unmatched_pred": [
+   "2. Otherwise, if i = m, the function returns ⊤.",
+   "3. Otherwise, the function calculates nnew",
+   "1. A contains all the edges in S.",
+   "2. A does not contain any edge e in E \\ S such that e has at least one vertex in",
+   "3. Using TS±, we construct the ZDD ZS↑, where S↑ is the set of partitions each o",
+   "3 foreach x ∈{u, v} do",
+   "17 foreach x ∈{u, v} do",
+   "26 if i = m then",
+   "28 return n′",
+   "2 for x ∈ X do",
+   "5 return n′′"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 24,
+  "tp": 13,
+  "fp": 11,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.48,
+  "unmatched_gt": [
+   "A Example of execution of the whole algorithm",
+   "B Pseudocode"
+  ],
+  "unmatched_pred": [
+   "2. Otherwise, if i = m, the function returns ⊤.",
+   "3. Otherwise, the function calculates nnew",
+   "1. A contains all the edges in S.",
+   "2. A does not contain any edge e in E \\ S such that e has at least one vertex in",
+   "3. Using TS±, we construct the ZDD ZS↑, where S↑ is the set of partitions each o",
+   "3 foreach x ∈{u, v} do",
+   "17 foreach x ∈{u, v} do",
+   "26 if i = m then",
+   "28 return n′",
+   "2 for x ∈ X do",
+   "5 return n′′"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 385,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8974766992498295,
+  "inserted_word_share": 0.11884834281888179
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Notation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Zero-suppressed binary decision diagram",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Ternary decision diagram",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Frontier-based search",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2. Otherwise, if i = m, the function returns ⊤.",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Otherwise, the function calculates nnew",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Algorithms",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Overview of the proposed algorithms",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "1. A contains all the edges in S.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. A does not contain any edge e in E \\ S such that e has at least one vertex in dom(S).",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Using TS±, we construct the ZDD ZS↑, where S↑ is the set of partitions each of which contains",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Constructing ZS",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "3.3 Constructing TS±",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "3.4 Constructing ZS↑",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4 Experimental results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 foreach x ∈{u, v} do",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "17 foreach x ∈{u, v} do",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "26 if i = m then",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "28 return n′",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 for x ∈ X do",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 return n′′",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.231300800005556
+}

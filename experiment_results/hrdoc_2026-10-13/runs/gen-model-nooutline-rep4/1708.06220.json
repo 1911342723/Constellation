@@ -1,0 +1,131 @@
+{
+ "doc": "1708.06220",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 661,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 5051,
+   "completion_tokens": 470,
+   "total_tokens": 5521
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9951974386339381,
+   "in_order": 0.8204375667022412,
+   "inserted": 0.009032943676939409
+  },
+  "export_markdown": "# Models of compact stars on paraboloidal spacetime satisfying Karmarkar condition\n\n*D. M. Pandya, V. O. Thomas*\n\n## Models of compact stars on paraboloidal spacetime\n\nsatisfying Karmarkar condition\n\nD. M. Pandya • V. O. Thomas\n\narXiv:1708.06220v1 [physics.gen-ph] 3 Aug 2017\n\nAbstract A new exact solution of Einstein’s ﬁeld equations on the background of paraboloidal spacetime using Karmarkar condition is reported. The physical acceptability conditions of the model are investigated and found that the model is compatible with a number of compact star candidates like Her X-1, LMC X-4, EXO 1785-248, PSR J1903+327, Vela X-1 and PSR J1614-2230. A noteworthy feature of the model is that it is geometrically signiﬁcant and simple in form.\n\nKeywords General relativity; Exact solutions; Relativistic compact stars, Karmarkar condition,\n\nAnisotropy\n\n## 1 Introduction\n\nEver since Schwarzschild obtained exact solution of EFEs, a wide variety of exact solutions with physical signiﬁcance and devoid of any physical signiﬁcance were given by a number of researchers. The analysis of solutions for physical signiﬁcance revealed that out of 127 exact solutions, only 16 could withstand the elementary test for physical acceptability of the solutions (Delgaty and Lake (1998)). By the discovery of superdense stars like neutron stars and pulsars a new interest has emerged among researchers for developing mathematical models of such distributions. It has been suggested, theoretically, by Ruderman (1972) and Canuto (1974) that, stars, whose density in the range greater than 1015gm/cm3 may develop pressure\n\nD. M. Pandya\n\nDepartment of Mathematics, Pandit Deendayal Petroleum Uni-\n\nversity, Raisan, Gandhinagar 382 007, India\n\nV. O. Thomas\n\nDepartment of Mathematics, Faculty of Science, The Maharaja Sayajirao University of Baroda, Vadodara 390 002, India\n\nanisotropy within it. Bowers and Liang (1974) has discussed diverse reasons for the occurrence of anisotropy inside the star. They have shown that anisotropy can aﬀect the maximum equilibrium mass and surface redshift of the distribution. Since then, a number of anisotropic models of superdense stars have been developed and investigated (Maharaj and Marteens (1989); Gokhroo and Mehra (1994); Patel and Mehta (1995); Tikekar and Thomas (1998, 1999, 2005); Thomas et al (2005); Thomas and Ratanpal (2007)). Impacts of anisotropy on the stability of a stellar conﬁguration have been studied by Dev and Gleiser (2002, 2003, 2004). Sharma and Maharaj (2007) and Thirukkanesh and Maharaj (2008) have obtained analytic solutions of compact anisotropic stars by assuming a linear equation of state(EOS). To solve the Einstein-Maxwell system, Komathiraj and Maharaj (2007) have used a linear equation of state. By assuming a linear EOS, Sunzu et al (2014) have reported solutions for a charged anisotropic quark star. Feroze and Siddiqui (2011) and Maharaj and Takisa (2012) have used a quadratic-type EOS for obtaining solutions of anisotropic distributions. Varela et al (2010) have analyzed charged anisotropic conﬁgurations admitting a linear as well as non-linear equations of state. For a star composed of quark matter in the MIT bag model, Paul et al (2011) have shown how anisotropy could eﬀect the value of the Bag constant. For a speciﬁc polytropic index, exact solutions to Einstein’s ﬁeld equations for an anisotropic sphere admitting a polytropic EOS have been obtained by Thirukkanesh and Ragel (2012). Maharaj and Takisa (2013b) have used the same type of EOS to develop an analytical model describing a charged anisotropic sphere. Bhar (2015a,b) and Singh and Pant (2015) have shown that pressure anisotropy leads to arbitrarily large red-shifts. There has been a renewed interest among re-\n\n2\n\nsearchers to develop spacetime metrics of stellar objects of embedding class one type spacetimes (Karmarkar (1948)). Solutions representing superdense stars of embedding class one which are compatible with observational data of pulsars have been given by Bhar et al (2016); Singh and Pant (2016); Singh et al (2017,b,c). In this paper we have obtained solutions of EFEs satisfying Karmarkar condition on a paraboloidal spacetime compatible with observational data of a number of compact star candidates like Her X-1, LMC X-4, EXO 1785-248, PSR J1903+327, Vela X-1 and PSR J1614-2230. The paper has been organized follows: In section 2, the paraboloidal spacetime metric has been discussed. Section 3 refers to the ﬁeld equations and Karmarkar condition for a static spherically symmetric anisotropic ﬂuid sphere. In section 4 we have solved the relevant ﬁeld equations. In section 5, we have obtained the constants of integration A and B using the boundary conditions and displayed the explicit expressions for density ρ, radial pressure pr and anisotropy ∆. All the physical acceptability conditions have been extensively discussed in section 6. The expressions for the variation\n\nof physical parameters ( dρ\n\ndr, dpr\n\ndr , dp⊥\n\ndr , dpr\n\ndρ , dp⊥\n\ndr , d∆\n\ndρ , d∆\n\ndρ )\n\nis shown in section 7. In section 8, we have discussed the physical viability of the model using graphical method for the compact stars like Her X-1, LMC X-4, EXO 1785-248, PSR J1903+327, Vela X-1 and PSR J1614-2230. In section 9, we have concluded by pointing out the main results of our model.\n\n## 2 The Paraboloidal Spacetime Metric\n\nThe cartesian equation\n\nx2 + y2 + z2 = 2ωR\n\n(1)\n\nrepresents a 3-paraboloid immersed in a 4-dimensional Euclidean Space. Here x = const, y = const and z = const represent three-paraboloids while ω = const are\n\nspheres. Under the parametrization\n\nx = r sinθ cosφ, y = r sinθ cosφ, z = r cosθ,\n\nω = r2\n\n2R,\n\n(2)\n\nthe Euclidean metric\n\ndσ2 = dx2 + dy2 + dz2 + dω2\n\n(3)\n\nbecomes\n\ndσ2 = \u00121 + r2\n\n\u0013dr2 + r2dθ2 + r2sin2θ dφ2,\n\n(4)\n\nR2\n\nwhere R is a geometric parameter. We shall consider the spacetime metric\n\nds2 = eν(r)dt2 − eλdr2 − r2dθ2 − r2sin2θ dφ2\n\n(5a)\n\nwith eλ = \u00121 + r2\n\n\u0013\n\n(5b)\n\nR2\n\nfor describing the interior of anisotropic ﬂuid distribution. A detailed study of the metric (5) has been done\n\nby Jotania and Tikekar (2006)\n\n## 3 The Field Equations and Karmarkar\n\nCondition\n\nThe energy-momentum tensor for anisotropic matter\n\ndistribution is taken as\n\nT j\n\ni = (ρ + pr)ujui − p⊥δj\n\ni + (pr − p⊥)ηjηi\n\n(6)\n\nwhere ui denotes the four-velocity and ηi is a space like vector orthogonal to ui satisfying the conditions\n\nujui = 1, ηjηi = −1 and ujηi = 0.\n\n(7)\n\nρ, pr, p⊥ denotes the proper density, the radial pressure and the transverse pressure, respectively. The Einstein’s ﬁeld equations for the metric (5a) with energy-momentum tensor (6) are equivalent to the fol-\n\nlowing set of three equations\n\n+ 1 − e−λ\n\n8πρ = e−λλ′\n\n,\n\n(8)\n\nr2\n\nr\n\n+ e−λ − 1\n\n8πpr = e−λν′\n\n,\n\n(9)\n\nr2\n\nr\n\n+ ν′ − λ′\n\n8πp⊥ = e−λ \u0012ν′′\n\n2 + ν′2\n\n4 − ν′λ′\n\n\u0013.\n\n(10)\n\n4\n\n2r\n\nEquations (8) – (10) consist of a system of three equations in ﬁve unknowns (λ, ν, ρ, pr, p⊥). One of the variables λ is known from (5b). Once we know the value of ν, the values of ρ, pr, p⊥ can be obtained from equations (8), (9) and (10). The spacetime metric (5a) is of class one type if it satisﬁes the Karmarkar condition (Karmarkar 1948) given\n\nby\n\nR1414R2323 = R1212R3434 + R1224R1334\n\n(11)\n\n3\n\nwith R2323 ̸= 0 where components of Riemann curva-\n\nture tensor are given by\n\nR2323 = r2sin2θ \u00021 − e−λ\u0003,\n\nR1212 = 1\n\n2λ′r,\n\nR1334 = R1224 sin2θ = 0,\n\nR1414 = −eν \u0014ν′′\n\n2 + ν′2\n\n4λ′ν′\u0015,\n\n4 − 1\n\nR2424 = −1\n\n4ν′reν−λ,\n\nR3434 = sin2θR2424.\n\nThe Karmarkar condition (11) leads to the diﬀerential\n\nequation\n\n2ν′′\n\nν′ + ν′ = λ′eλ\n\n(12)\n\neλ − 1\n\nUsing the expression of eλ given in (5b), equation (12)\n\nbecomes\n\n2ν′′\n\nν′ + ν′ = 2\n\n(13)\n\nr\n\nwhich gives a closed form solution\n\n\u00132 .\n\neν = \u0012A + B r2\n\n(14)\n\nR2\n\nThe explicit form of the spacetime metric is\n\n\u00132 dt2 − \u00121 + r2\n\nds2 = \u0012A + B r2\n\n\u0013dr2 − r2dθ2\n\nR2\n\nR2\n\n−r2sin2θ dφ2, (15)\n\nwhere A and B are constants of integration which are to be determined using appropriate boundary conditions.\n\n## 4 Solution of Field Equations\n\nThe ﬁeld equations (8) – (10) can now be solved by using the values of λ and ν given by equations (5b) and (14). The expressions for ρ, pr and p⊥ and the anisotropy factor ∆(= pr − p⊥) are given, respectively,\n\nby\n\n3 + r2\n\nR2\n\n8πρ =\n\nR2\u00012 ,\n\n(16)\n\nR2 \u00001 + r2\n\nB \u00104 − r2\n\nR2\u0011 − A\n\nR2\u0001,\n\n(17)\n\n8πpr =\n\nR2 \u0000A + B r2\n\nR2\u0001 \u00001 + r2\n\nB \u00104 + r2\n\nR2\u0011 − A\n\nR2\u00012 ,\n\n(18)\n\n8πp⊥ =\n\nR2\u0001 \u00001 + r2\n\nR2 \u0000A + B r2\n\nand\n\nr2\n\nR2 hB \u00102 − r2\n\nR2\u0011 − Ai\n\n(19)\n\n8π∆=\n\nR2\u00012\n\nR2 \u0000A + B r2\n\nR2\u0001 \u00001 + r2\n\nThe anisotropy ∆vanishes at r = 0, which is a required condition.\n\n## 5 Boundary Conditions\n\nThe interior spacetime metric (5) should match continuously with the Schwarzschild exterior metric\n\n\u0013dt2 − 1\n\nds2 = \u00121 − 2M\n\ndr2 − r2dθ2\n\n1 − 2M\n\nr\n\nr\n\n−r2sin2θ dφ2,\n\n(20)\n\nacross the boundary r = a. This gives\n\n1\n\n1 − 2M\n\n=\n\n(21)\n\n1 + a2\n\na\n\nR2\n\ndetermining the values of the geometric parameter R in\n\nterms of a and M by the relation\n\nR = ar\n\na\n\n2M − 1.\n\n(22)\n\nThe total mass enclosed within the radius a is given by\n\na3\n\nR2\n\n(23)\n\nM =\n\n2\u00001 + a2\n\nR2\u0001\n\nEquating the coeﬃcients of dt2, we get\n\n\u00132 = 1\n\n= \u0012A + B r2\n\n1 − 2M\n\n(24)\n\n1 + a2\n\nR2\n\na\n\nR2\n\nwhich gives\n\nA + B a2\n\n1\n\nR2 =\n\n(25)\n\nq\n\n1 + a2\n\nR2\n\nThe second boundary condition is given by pr(r = a) =\n\n0. This leads to\n\n−A + B \u00124 − a2\n\n\u0013 = 0.\n\n(26)\n\nR2\n\n4\n\nEquations (25) and (26) determine the values of A and\n\nB in the form\n\n4 − a2\n\nR2\n\nA =\n\n,\n\n(27)\n\n4q\n\n1 + a2\n\nR2\n\n1\n\n.\n\n(28)\n\nB =\n\n4q\n\n1 + a2\n\nR2\n\nUsing (27) and (28) we rewrite equations (17) – (19) as\n\na2\n\nR2 − r2\n\nR2\n\n8πpr =\n\nR2\u0001,\n\n(29)\n\nR2 \u00004 + r2\n\nR2 − a2\n\nR2\u0001 \u00001 + r2\n\nR2 + r2\n\na2\n\nR2\n\nR2\u00012 ,\n\n(30)\n\n8πp⊥ =\n\nR2 − a2\n\nR2\u0001 \u00001 + r2\n\nR2 \u00004 + r2\n\nr2\n\nR2 \u0010 a2\n\nR2 − r2\n\nR2 − 2\u0011\n\n8π∆=\n\nR2\u00012 .\n\n(31)\n\nR2 \u00004 + r2\n\nR2 − a2\n\nR2\u0001 \u00001 + r2\n\n## 6 Physical Acceptability Conditions\n\nA physically acceptable anisotropic stellar model must satisfy the following conditions (Kuchowicz (1972); Buchdahl (1979); Murad and Fatema (2015); Knutsen (1987)):\n\n(a). Regularity conditions\n\n(i) The metric potentials eλ > 0, eν > 0, for 0 ≤ r ≤ a.\n\n(ii) ρ(r) ≥ 0, pr(r) ≥ 0, p⊥(r) ≥ 0 for 0 ≤ r ≤ a.\n\n(iii) pr(r = a) = 0.\n\n(b). Causality conditions\n\n(i) 0 ≤ dpr\n\ndρ ≤ 1, for 0 ≤ r ≤ a.\n\n(ii) 0 ≤ dp⊥\n\ndρ ≤ 1, for 0 ≤ r ≤ a.\n\n(c). Energy conditions\n\n(i) ρ − pr − 2p⊥ ≥ 0 (strong energy condition),\n\n(ii) ρ ≥ pr, ρ ≥ p⊥ (weak energy conditions)\n\n(d). Monotone decrease of physical parameters\n\ndr ≤ 0, dpr\n\n(i) dρ\n\ndρ ≤ 0 for o ≤ r ≤ a,\n\ndr \u0010dpr\n\ndρ \u0011 ≤ 0, for 0 ≤ r ≤ a,\n\n(ii) d\n\ndr \u0010pr\n\nρ \u0011 ≤ 0 for 0 ≤ r ≤ a.\n\n(iii) d\n\n(e). Pressure anisotropy\n\n∆(r = 0) = 0.\n\n(f). Mass-radius relation\n\nAccording to Buchdahl (1979), the allowable mass\n\nradius relation must satisfy the inequality M\n\nR ≤ 4\n\n9.\n\n(g). Redshift\n\nThe redshift z = e− ν\n\n2 − 1 must be a decreasing\n\nfunction of r and ﬁnite for 0 ≤ r ≤ a.\n\n(h). Stability condition\n\nThe relativistic adiabatic index Γ = ρ+pr\n\ndpr\n\ndρ ≥ 4\n\npr\n\n3\n\nfor 0 ≤ r ≤ R.\n\n## 7 Variation of Physical Parameters\n\nThe variation of density ρ with respect to the radial\n\nvariable r is given by\n\n\u00105 + r2\n\nR2\u0011\n\ndr = − 2\n\nR2 · r\n\n8π dρ\n\n(32)\n\nR2\u00013\n\nR2\n\n\u00001 + r2\n\nSince dρ\n\ndr < 0, for 0 < r ≤ a, the density distribution decreases radially outward. The gradient of radial pressure, transverse pressure and the anisotropy variable have the following expressions\n\n4\u00101 + r2\n\nR2\u0011 \u00104 + r2\n\nR2\u0011 + \u0010 a2\n\nR2 − r2\n\nR2 − a2\n\nR2\u0011\n\n8π dpr\n\ndr = − 2r\n\n(33)\n\nR2\u00012 \u00001 + r2\n\nR2\u00012\n\nR4\n\n\u00004 + r2\n\nR2 − a2\n\nh4\u00101 − r2\n\nR2\u0011 − 2 a2\n\nR2 \u00105 + r2\n\nR2\u0011 + 2\u0010 a4\n\nR4 − r4\n\nR4\u0011i\n\ndr = 2r\n\n8π dp⊥\n\n(34)\n\nR2\u00012 \u00001 + r2\n\nR2\u00013\n\nR4\n\n\u00004 + r2\n\nR2 − a2\n\n8π d∆\n\ndr = 2r\n\n1\n\nR2\u00013 ×\n\nR4 ×\n\nR2\u00012 \u00001 + r2\n\nR2 − a2\n\n\u00004 + r2\n\n\u0013 \u0012 a2\n\n\u001a\u00124 + r2\n\nR2 − a2\n\nR2 − 2r2\n\nR2 − r4\n\nR4 − 2\u0013\n\nR2\n\n\u0013 \u0012 a2\n\n\u00121 + r2\n\nR2 − r2\n\n− r2\n\nR2 − 2\u0013\u001b\n\n(35)\n\nR2\n\nR2\n\nIt can be seen from equation (33) that 8π dpr\n\ndr < 0 for\n\na2\n\nR2 < 4. This indicates that radial pressure is a decreasing function of r. However due to the complexity of expressions in the right hand side of equations (34) and (35), it is diﬃcult to obtain the sign of the terms in their right hand side. However it can be seen from equations (30) and (31) that p⊥ and ∆are also decreasing functions of r.\n\n5\n\nThe sequence of the radial and transverse speed of\n\nsound, υ2\n\nr and υ2\n\n⊥, are given by\n\n\u00101 + r2\n\nR2\u0011\n\nr = dpr\n\nυ2\n\ndρ =\n\nR2\u0001 ×\n\nR2\u00012 \u00005 + r2\n\n\u00004 + r2\n\nR2 − a2\n\n\u0013 + \u0012 a2\n\n\u0013 \u00124 + r2\n\nR2 − r2\n\nR2 − a2\n\n\u00144\u00121 + r2\n\n\u0013\u0015 (36)\n\nR2\n\nR2\n\nR2\n\nR2\u0011 − 2 a2\n\nR2 \u00105 + r2\n\n4\u00101 − r2\n\nR2\u0011 + 2\u0010 a4\n\nR4 − r4\n\nR4\u0011\n\nυ2\n\n⊥ = −\n\n(37)\n\nR2\u00012 \u00005 + r2\n\nR2 − a2\n\n\u00004 + r2\n\nR2\u0001\n\nd∆\n\n1\n\ndρ = −\n\nR2\u0001 ×\n\nR2\u00012 \u00005 + r2\n\n\u00004 + r2\n\nR2 − a2\n\n\u0013 \u0012 a2\n\nR2 − a2\n\nR2 − 2 r2\n\nR2 − r4\n\n\u0014\u00124 + r2\n\nR4 − 2\u0013\n\nR2\n\n\u0013 \u0012 a2\n\n\u00121 + r2\n\n− r2\n\nR2 − r2\n\nR2 − 2\u0013\u0015\n\n(38)\n\nR2\n\nR2\n\n## 8 Physical analysis\n\nIn order to examine the compatibility of the model with observational data, we have considered compact stars Her X-1, LMC X-4, EXO 1785-248, PSR J1903+327, Vela X-1 and PSR J1614-2230 whose mass and size are known (Gangopadhyay et al 2013). By taking the mass M and radius a, the value of the geometric parameter R is found from equations (22). In Fig.1 we have shown\n\nTable 1 The compactness u = M\n\na of diﬀerent stars are\n\nshown in the following table.\n\na\n\nR\n\nStar\n\nM\n\ncompactness\n\n(M⊙) (km)\n\n(km)\n\ncan be seen that both pr and p⊥ decreases radially outward and they increase with compactness. In Fig.4, we have shown the variation of anisotropy against radial directions. Its value is zero at the centre and |∆| increases radially outward. The anisotropy is negative throughout the distribution. Further, the numerical value of anisotropy is more for stars with more compactness. The velocity of sound in the radial direction υ2\n\nr and\n\ntransverse direction υ2\n\n⊥ are shown in Figs.5 and 6 re-\n\nspectively. From both ﬁgures it can be noticed that\n\n0 < dpr\n\ndρ < 1, and 0 < dp⊥\n\ndρ < 1. Further these velocities\n\nare more in magnitude in more compact stars. Fig.7 shows that the strong energy condition satis-ﬁes for all stars throughout the distribution. The variation of adiabatic index is displayed in Fig.8.\n\nIts value is greater than 4\n\n3 throughout and the star with\n\nless compactness accommodate more Γ value. It can be noticed that as compactness increases, the value of Γ decreases. This indicates that the star become less stable due to the increase in compactness. In Fig.9 we have shown the variation of redshift z in the radial direction. Stars with more compactness shows more redshift. That is while Her X-1 shows minimum redshift while PSR J1614-2230 shows max redshift among all the compact star candidates.\n\n## 9 Discussion\n\nWe have studied the compatibility of the model developed using Karmakar condition in the background of paraboloidal spacetime for compact stars like Her X-1, LMC X-4, EXO 1785-248, PSR J1903+327, Vela X-1 and PSR J1614-2230. It is found that our model satisfy the elementary physical requirements for representing a superdense compact star through graphical method. It is found that the model developed can accommodate\n\nHer X-1\n\n0.85\n\n8.1\n\n12.096\n\n0.1548\n\nLMC X-4\n\n1.04\n\n8.301 10.8412\n\n0.1848\n\nEXO 1785-248\n\n1.3\n\n10\n\n10.1182\n\n0.1917\n\nρ (MeV Fm-3)\n\nPSR J1903+327 1.667 9.438\n\n9.048\n\n0.2605\n\nVela X-1\n\n1.77\n\n9.56\n\n8.71\n\n0.2731\n\nHer X-1\n\nVela X-1\n\n1400\n\nPSR J1614-2230\n\n1.97\n\n9.69\n\n7.91\n\n0.2999\n\nLMC X-4\n\nPSR J1614-2230\n\nEXO 1785-248\n\n1200\n\nPSR J1903+327\n\nthe variations of density against the radius. It can be seen that the density accommodated by a star increases as the compactness increases. Her X-1 accommodates minimum density whose compactness is minimum while PSR J1614-2230 has maximum density for which compactness is maximum among all compact star candidates studied. The variation of radial pressure pr and transverse pressure p⊥ are shown in Figs.2 and 3 respectively. It\n\n1000\n\n800\n\n600\n\n400\n\nr(km)\n\n2\n\n4\n\n6\n\n8\n\nFig. 1 Density proﬁle\n\n6\n\npr (MeV Fm-3)\n\n300\n\nHer X-1\n\nVela X-1\n\nLMC X-4\n\nPSR J1614-2230\n\n250\n\nEXO 1785-248\n\nPSR J1903+327\n\n200\n\n150\n\n100\n\n50\n\n2\n\n4\n\n6\n\n8\n\nFig. 2 Radial pressure proﬁle\n\np⟂ (MeV Fm-3)\n\n300\n\nHer X-1\n\nVela X-1\n\nLMC X-4\n\nPSR J1614-2230\n\n250\n\nEXO 1785-248\n\nPSR J1903+327\n\n200\n\n150\n\n100\n\n50\n\n2\n\n4\n\n6\n\nFig. 3 Transverse pressure proﬁle\n\ndpr\n\ndρ\n\n0.25\n\nHer X-1\n\nVela X-1\n\nLMC X-4\n\nPSR J1614-2230\n\nEXO 1785-248\n\nPSR J1903+327\n\n0.20\n\n0.15\n\nr(km)\n\n0.10\n\nr(km)\n\n2\n\n4\n\n6\n\n8\n\nFig. 5 Radial sound speed proﬁle\n\ndp⟂\n\ndρ\n\n0.20\n\nHer X-1\n\nVela X-1\n\nLMC X-4\n\nPSR J1614-2230\n\nEXO 1785-248\n\n0.15\n\nPSR J1903+327\n\n0.10\n\n0.05\n\nr(km)\n\n8\n\nr(km)\n\n2\n\n4\n\n6\n\n8\n\nFig. 6 Transverse sound speed proﬁle\n\nS (MeV Fm-3)\n\nρ-pr-2p⟂(MeV Fm-3)\n\nr(km)\n\n2\n\n4\n\n6\n\n8\n\n700\n\nHer X-1\n\nVela X-1\n\nLMC X-4\n\nPSR J1614-2230\n\n-10\n\nEXO 1785-248\n\n600\n\nPSR J1903+327\n\n-20\n\nHer X-1\n\nLMC X-4\n\n500\n\nEXO 1785-248\n\n-30\n\nPSR J1903+327\n\nVela X-1\n\n400\n\n-40\n\nPSR J1614-2230\n\n-50\n\nFig. 4 Anisotropy proﬁle\n\n300\n\nr(km)\n\n2\n\n4\n\n6\n\n8\n\nFig. 7 Strong energy condition proﬁle\n\n7\n\nΓ\n\nHer X-1\n\n6\n\nLMC X-4\n\n5\n\nEXO 1785-248\n\nPSR J1903+327\n\n4\n\nVela X-1\n\nPSR J1614-2230\n\n3\n\n2\n\n2\n\n4\n\n6\n\n8\n\nFig. 8 Adiabatic index proﬁle.\n\nz\n\n1.6\n\nHer X-1\n\nVela X-1\n\nLMC X-4\n\nPSR J1614-2230\n\n1.4\n\nEXO 1785-248\n\nPSR J1903+327\n\n1.2\n\n1.0\n\n0.8\n\n0.6\n\n0.4\n\nr(km)\n\n2\n\n4\n\n6\n\n8\n\nFig. 9 Redshift proﬁle.\n\nthe mass and radius of many of the compact star candidates given by Gangopadhyay et al (2013). It is found that stars whose compactness is more accommodate more density, pressure and ∆. The redshift increase with compactness while the value of Γ decreases with compactness showing that the stability decreases with increase in compactness. A pertinent feature of the model is that the exact solution obtained is simple in nature which is seldom found in many solutions. Though we have displayed here the physical analysis, only for few compact star models, it can be applied to a larger class of known pulsars. The model possesses a deﬁnite background spacetime geometry, namely paraboloidal geometry, and the expression involved in the solution are simple in nature.\n\nr(km)\n\n8\n\n## References\n\nDelgaty M. S. R. and Lake K., Comput. Phys. Commun. 115 (1998) 395; doi: http://dx.doi.org/10.1016/s0010-4655(98)00130-1. Ruderman R., Astro. Astrophys. 10 (1972) 427. Canuto V., Annu. Rev. Astron. Astrophys. 12 (1974) 167. Bowers R. and Liang E., Astrophys. J. 188 (1974) 657. Maharaj S. D. and Marteens R., Gen. Relativ. Grav. 21 (1989) 899. Gokhroo M. K. and Mehra A. L., Gen. Rel. Grav 26 (1994) 75. Patel L. K. and Mehta N. P., J. Indian Math. Soc. 61 (1995) 95. Tikekar R. and Thomas V. O., Pramana- j. of phys. 50 (1998) 95. Tikekar R. and Thomas V. O., Pramana-j. of phys. 52 (1999) 237. Tikekar R. and Thomas V. O., Pramana- j. of phys. 64 (2005) 5. Thomas V. O., Ratanpal B. S. and Vinodkumar P. C., Int. J. Mod. Phys. D 14 (2005) 85. Thomas V. O. and Ratanpal B. S., Int. J. Mod. Phys. D 16 (2007) 9. Dev K. and Gleiser M., Gen. Relativ. Grav. 34 (2002) 1793. Dev K. and Gleiser M., Gen. Rel. Grav. 35 (2003) 1435. Dev K. and Gleiser M., Int. J. Mod. Phys. D 13 (2004) 1389. Sharma R. and Maharaj S. D., Mon. Not. R. Astron. Soc. 375 (2007) 1265. Thirukkanesh S. and Maharaj S. D., Class. Quantum Grav. 25 (2008) 235001. Komathiraj K. and Maharaj S. D., Intenational Journal of Modern Physics D 16 (2007) 1803. Sunzu J. M., Maharaj S. D., Ray S., Astrophys. Space Sci. 352 (2014) 719. Feroze T. and Siddiqui A. A., Gen. Relativ. Grav. 43 (2011) 1025. Maharaj S. D. and Takisa P. M., Gen. Relativ. Grav. 44 (2012) 1419. Varela V., Rahaman F., Ray S., Chakraborty K. and Kalam M., Phys. Rev. D 82 (2010) 044052. Paul B. C., Chattopadhyay P. K., Karmakar S. and Tikekar R., Mod. Phys. Lett. A 26 (2011) 575. Thirukkanesh S., Ragel F. S., Pramana J. Phys. 78 (2012) 687. Maharaj S. D. and Takisa P. M., Gen. Relativ. Grav. 45 (2013b) 1951. Bhar P., Astrophys. Space Sci. 356 (2015) 309. Bhar P., Eur. Phys. J. C 75 (2015) 123. Singh K. N. and Pant N., Astrophys. Space Sci. 358 (2015) 44. Karmarkar K. R., Proc. Indian Acad. Sci. 27 (1948) 56. Bhar P., Maurya S. K. Gupta Y. K. and Tuhina M., Eur. Phys. J. A 52 (2016) 312. Singh Ksh. Newton and Pant Niraj, Astrophys. Space Sci. 361 (2016) 177. Singh Ksh. Newton, Murad M. H. and Pant Niraj, Eur. Phys. J. A 53 (2017) 21. Singh Ksh. Newton, Pant Niraj and Govender M., Chinese Physics C 41 No. 1 (2017) 015103.\n\nSingh Ksh. Newton, Pant Niraj and Govender M., Eur. Phys. J. C 77 (2017) 100. Jotania K. and Tikekar R., Int. J. Mod. Phys. D 15 No. 8 (2006) 1175. Gangopadhyay T., Ray S., Li X-D., Dey J. and Dey M., Mon. Not. R. Astron. Soc. 431 (2013) 3216. Buchdahl H. A., Acta Phys. Pol. 10 (1979) 673. Kuchowicz B., Phys. Lett. A 38 (1972) 369.doi:10.1016/03759601(72)90164-8. Murad M. H. and Fatema S., Eur. Phys. J. C 75 (2015) 533. Knutsen H., Astrophys. Space Sci. 149 (1987) 38.\n\nThis manuscript was prepared with the AAS LATEX macros v5.2.\n"
+ },
+ "predictions": [
+  {
+   "text": "Models of compact stars on paraboloidal spacetime",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Paraboloidal Spacetime Metric",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 The Field Equations and Karmarkar",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Solution of Field Equations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Boundary Conditions",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Physical Acceptability Conditions",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Variation of Physical Parameters",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Physical analysis",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Discussion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.461320899994462,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

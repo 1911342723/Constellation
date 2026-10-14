@@ -1,0 +1,163 @@
+{
+ "doc": "1803.05266",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5724,
+   "completion_tokens": 5191
+  },
+  "elapsed_llm_seconds": 22.916846900003293,
+  "content_preservation": 0.9654614139233675,
+  "inserted_word_share": 0.009961261759822926,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "On the Applicability of Registration Uncertainty",
+    0,
+    1
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 The Ambiguity of Registration Uncertainty",
+    2,
+    1
+   ],
+   [
+    "2.1 The DPR Set Up",
+    2,
+    2
+   ],
+   [
+    "2.2 Transformation Uncertainty and Label Uncertainty",
+    2,
+    2
+   ],
+   [
+    "3 Credibility of Label Distribution",
+    5,
+    1
+   ],
+   [
+    "4 Discussion",
+    7,
+    1
+   ],
+   [
+    "References",
+    7,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "On the Applicability of Registration Uncertainty",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Ambiguity of Registration Uncertainty",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The DPR Set Up",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Transformation Uncertainty and Label Uncertainty",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Credibility of Label Distribution",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 22.975744100000156,
+ "metrics_raw": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On the Applicability of Registration Uncertainty"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On the Applicability of Registration Uncertainty"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

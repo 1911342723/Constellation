@@ -1,0 +1,83 @@
+{
+ "doc": "1508.01453",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 2,
+  "pred": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supplemental Materials"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 2,
+  "pred": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supplemental Materials"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 267,
+  "layout_marked": 4,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9405144694533762,
+  "inserted_word_share": 0.9812121490181684
+ },
+ "predictions": [
+  {
+   "text": "Asymptotic Green’s function for the stochastic reproduction of competing variants via",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supplemental Materials",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "GREEN’S FUNCTION UNDER WEAK SELECTION",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "SUPPLEMENTARY FIGURES",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  }
+ ],
+ "seconds": 7.855481500002497,
+ "metrics_v1": {
+  "gt": 2,
+  "pred": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supplemental Materials"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

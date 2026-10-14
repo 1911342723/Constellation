@@ -1,0 +1,203 @@
+{
+ "doc": "1807.05812",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 16,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes"
+  ],
+  "unmatched_pred": [
+   "O R I G I N A L A R T I C L E",
+   "Dan Stowell1 | Mike Wood2 | Hanna Pamuła3 |",
+   "3.1 | Challenge outcomes",
+   "1. Machine learning methods, primarily deep learning, are able to achieve very h",
+   "2. However, thereremainsasigniﬁcantgapbetweenperformanceinmatchedconditionsandin"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 18,
+  "tp": 13,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes"
+  ],
+  "unmatched_pred": [
+   "O R I G I N A L A R T I C L E",
+   "Dan Stowell1 | Mike Wood2 | Hanna Pamuła3 |",
+   "3.1 | Challenge outcomes",
+   "1. Machine learning methods, primarily deep learning, are able to achieve very h",
+   "2. However, thereremainsasigniﬁcantgapbetweenperformanceinmatchedconditionsandin"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 323,
+  "layout_marked": 21,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9595877955142453,
+  "inserted_word_share": 0.4775577557755776
+ },
+ "predictions": [
+  {
+   "text": "O R I G I N A L A R T I C L E",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Automatic acoustic detection of birds through",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Dan Stowell1 | Mike Wood2 | Hanna Pamuła3 |",
+   "page": 0,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "1 | INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 | MATERIALS AND METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 | Datasets",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 | Baseline classiﬁers",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3 | The public challenge",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4 | Evaluation",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.5 | Further analysis via PolandNFC dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 | RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 | Challenge outcomes",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 | Error analysis",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 | Further analysis via PolandNFC dataset results",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4 | DISCUSSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Machine learning methods, primarily deep learning, are able to achieve very high recognition rates on remote moni-",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. However, thereremainsasigniﬁcantgapbetweenperformanceinmatchedconditionsandinmismatchedconditions.",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AC K N O W L E D G M E N T S",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AU T H O R C O N T R I B U T I O N S",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DATA AC C E S S I B I L I T Y",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RE F E R E N C E S",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.373655399998825,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes"
+  ],
+  "unmatched_pred": [
+   "O R I G I N A L A R T I C L E",
+   "Dan Stowell1 | Mike Wood2 | Hanna Pamuła3 |",
+   "3.1 | Challenge outcomes",
+   "1. Machine learning methods, primarily deep learning, are able to achieve very h",
+   "2. However, thereremainsasigniﬁcantgapbetweenperformanceinmatchedconditionsandin"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

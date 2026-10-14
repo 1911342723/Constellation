@@ -1,0 +1,141 @@
+{
+ "doc": "1608.02800",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract. Developments in the context of Open, Big, and Linked Data"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 97,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4780,
+   "completion_tokens": 539,
+   "total_tokens": 5319
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "LITMUS: An Open Extensible Framework for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract. Developments in the context of Open, Big, and Linked Data",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Objectives, Challenges and Outcomes",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Focus of the LITMUS framework",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Challenges to be addressed",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Outcomes of LITMUS",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4 Target audience",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 The Litmus Framework",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Architecture Overview",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.791418000000704,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "LITMUS: An Open Extensible Framework for",
+   "Abstract. Developments in the context of Open, Big, and Linked Data"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

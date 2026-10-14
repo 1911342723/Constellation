@@ -1,0 +1,154 @@
+{
+ "doc": "1509.06542",
+ "system": "model",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "1) Stability Analysis of AROLC:",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 487,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17433,
+   "completion_tokens": 583,
+   "total_tokens": 18016
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Background and Motivation",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Notations",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "D. Organization",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II. CONTROLLER DESIGN",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Problem Formulation and Objective Deﬁnition",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Adaptive Robust Outer Loop Controller",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "1) Stability Analysis of AROLC:",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "III. APPLICATION: NONHOLONOMIC WMR",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Results and Comparison",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.414351100000204,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "1) Stability Analysis of AROLC:",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1) Stability Analysis of AROLC:"
+  ],
+  "ignored_title_predictions": null
+ }
+}

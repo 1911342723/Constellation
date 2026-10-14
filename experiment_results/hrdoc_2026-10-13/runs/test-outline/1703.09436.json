@@ -1,0 +1,124 @@
+{
+ "doc": "1703.09436",
+ "system": "outline",
+ "metrics": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "I. IN TROD UC¸ ˜A O",
+   "B. M´etodos de Classificac¸ ˜ao",
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [
+   "I Introdução",
+   "II-B Métodos de Classificação"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introdução",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Fundamentos Básicos",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Extração de Características das Imagens",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Métodos de Classificação",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Avaliação de Classificadores para Segmentação de Imagens",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV Avaliação Experimental",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Considerações Finais",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Agradecimentos",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03440260000206763,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "I. IN TROD UC¸ ˜A O",
+   "B. M´etodos de Classificac¸ ˜ao",
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [
+   "I Introdução",
+   "II-B Métodos de Classificação"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "I. IN TROD UC¸ ˜A O",
+   "B. M´etodos de Classificac¸ ˜ao",
+   "S EG M EN TA C¸ ˜AO DE IMAG EN S",
+   "Ap ˆendice A"
+  ],
+  "unmatched_pred": [
+   "I Introdução",
+   "II-B Métodos de Classificação"
+  ],
+  "ignored_title_predictions": null
+ }
+}

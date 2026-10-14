@@ -1,0 +1,216 @@
+{
+ "doc": "1710.05481",
+ "system": "model",
+ "metrics": {
+  "gt": 15,
+  "pred": 20,
+  "tp": 12,
+  "fp": 8,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5238095238095238,
+  "unmatched_gt": [
+   "Abstract",
+   "IMMd",
+   "Part 1: IMMd has high rank"
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas",
+   "5: end for",
+   "7: if i ̸∈ A then",
+   "11: else",
+   "13: end if",
+   "14: end for",
+   "Variable coloring, t-product polynomials and imbalance. We start with some nota-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 777,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 23370,
+   "completion_tokens": 600,
+   "total_tokens": 23970
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Depth-reduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Separations from general formulas",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Basic setup",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Multilinear formulas and circuits",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Lower bounds for multilinear formulas and circuits computing",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Proof of Theorem 10",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Step1 – The product lemma",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Step 2 – Rank measure and the hard polynomial",
+   "page": 11,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5: end for",
+   "page": 12,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "7: if i ̸∈ A then",
+   "page": 12,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "11: else",
+   "page": 12,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "13: end if",
+   "page": 12,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "14: end for",
+   "page": 12,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "4.1 Proof of Lemma 18",
+   "page": 13,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Part 2: t-product polynomials have low rank",
+   "page": 14,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "Variable coloring, t-product polynomials and imbalance. We start with some nota-",
+   "page": 14,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "Part 3: r-simple polynomials have low rank.",
+   "page": 15,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.706778399999166,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 20,
+  "tp": 12,
+  "fp": 8,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5238095238095238,
+  "unmatched_gt": [
+   "Abstract",
+   "IMMd",
+   "Part 1: IMMd has high rank"
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas",
+   "5: end for",
+   "7: if i ̸∈ A then",
+   "11: else",
+   "13: end if",
+   "14: end for",
+   "Variable coloring, t-product polynomials and imbalance. We start with some nota-"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 19,
+  "tp": 11,
+  "fp": 8,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "IMMd",
+   "Part 1: IMMd has high rank"
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas",
+   "5: end for",
+   "7: if i ̸∈ A then",
+   "11: else",
+   "13: end if",
+   "14: end for",
+   "Variable coloring, t-product polynomials and imbalance. We start with some nota-"
+  ],
+  "ignored_title_predictions": null
+ }
+}

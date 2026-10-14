@@ -1,0 +1,229 @@
+{
+ "doc": "1806.01899",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 29,
+  "pred": 27,
+  "tp": 27,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 27,
+  "parent_correct": 27,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [
+   "5.4 Robustness in the presence of outliers",
+   "6 Summary and discussion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 511,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13572,
+   "completion_tokens": 1078,
+   "total_tokens": 14650
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Models and software",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Step I: skeleton identiﬁcation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Step II: edge orientation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Hypothesis testing for marginal and conditional independence",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Pearson and robust correlation",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5 Metrics for inference accuracy",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.6 Simulating continuous and discrete data",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.7 The LOND method for online FDR control",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Main functions of the MRPC package",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Causal graph inference",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Simulation",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Visualization",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.4 Assessment of inferred graphs",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4 Illustrations",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Continuous data with and without genetic information",
+   "page": 7,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2 Discrete data with and without genetic information",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.3 Simulation and performance assessment",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.4 Visualizing a complex graph",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5 Key improvements over existing methods",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Online FDR control",
+   "page": 9,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "5.2 V-structure identiﬁcation",
+   "page": 10,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "5.3 Node-ordering independence",
+   "page": 10,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "Computational details",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.163370500002202,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 27,
+  "tp": 27,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 27,
+  "parent_correct": 27,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [
+   "5.4 Robustness in the presence of outliers",
+   "6 Summary and discussion"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9259259259259259,
+  "unmatched_gt": [
+   "5.4 Robustness in the presence of outliers",
+   "6 Summary and discussion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

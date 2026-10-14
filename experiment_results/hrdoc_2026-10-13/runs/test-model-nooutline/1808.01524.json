@@ -1,0 +1,175 @@
+{
+ "doc": "1808.01524",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 22,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "Variational Autoencoder",
+   "Conditional generative model",
+   "MMD",
+   "Contrastive loss",
+   "Classification",
+   "Analyzing disentanglement"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 202,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4375,
+   "completion_tokens": 423,
+   "total_tokens": 4798
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Works",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Background",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MMD",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discriminative regularization",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Training architecture",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "The Data",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Experimental setup",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.513549899998907,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "Variational Autoencoder",
+   "Conditional generative model",
+   "MMD",
+   "Contrastive loss",
+   "Classification",
+   "Analyzing disentanglement"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Variational Autoencoder",
+   "Conditional generative model",
+   "MMD",
+   "Contrastive loss",
+   "Classification",
+   "Analyzing disentanglement"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

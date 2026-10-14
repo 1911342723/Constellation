@@ -1,0 +1,120 @@
+{
+ "doc": "1509.08457",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "STREAM"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "STREAM"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 391,
+  "layout_marked": 9,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4388,
+   "completion_tokens": 330,
+   "total_tokens": 4718
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9527076696888017,
+  "inserted_word_share": 0.6918443370056273
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 EXTERNAL FIELD DOMINANCE IN",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 EXTERNAL FIELD DOMINANCE IN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 APPLICATION TO THE SAGITTARIUS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.515354000002844,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "STREAM"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

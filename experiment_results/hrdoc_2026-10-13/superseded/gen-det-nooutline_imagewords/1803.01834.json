@@ -1,0 +1,219 @@
+{
+ "doc": "1803.01834",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 21,
+  "pred": 26,
+  "tp": 18,
+  "fp": 8,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.6296296296296297,
+  "unmatched_gt": [
+   "3.4 Stochastic Networks",
+   "3.5 Feature Extraction versus Optimization",
+   "Appendix A."
+  ],
+  "unmatched_pred": [
+   "1. We will refer to back-propagation of errors also as “backprop” and “back-prop",
+   "6. Note that the signum is speciﬁcally deﬁned as",
+   "6. We see, ﬁrst and foremost, that the model learned with LRA-fdbk has acquired ",
+   "7. When the softmax is used at the output layer in purely diﬀerentiable systems,",
+   "1) seek better representations of data, 2) minimize the mismatch between the mod",
+   "8. A lower-level feature detector might be able to ﬁnd diﬀerent aspects of struc",
+   "Acknowledgments",
+   "9. Note that this action is the same as unrolling a mathematical recurrence rela"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 22,
+  "tp": 15,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6086956521739131,
+  "unmatched_gt": [
+   "3.4 Stochastic Networks",
+   "3.5 Feature Extraction versus Optimization"
+  ],
+  "unmatched_pred": [
+   "1. We will refer to back-propagation of errors also as “backprop” and “back-prop",
+   "6. Note that the signum is speciﬁcally deﬁned as",
+   "6. We see, ﬁrst and foremost, that the model learned with LRA-fdbk has acquired ",
+   "7. When the softmax is used at the output layer in purely diﬀerentiable systems,",
+   "1) seek better representations of data, 2) minimize the mismatch between the mod",
+   "8. A lower-level feature detector might be able to ﬁnd diﬀerent aspects of struc",
+   "9. Note that this action is the same as unrolling a mathematical recurrence rela"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1160,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9367080209646388,
+  "inserted_word_share": 0.15379083008690442
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. We will refer to back-propagation of errors also as “backprop” and “back-propagation” throughout.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Local Representation Alignment",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Notation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Setting the targets.",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Divide and Conquer",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3.1 Instantiation",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "page": 8,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.4 Overcoming Poor Initializations",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.5 Overcoming Exploding and Vanishing Gradients",
+   "page": 9,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. Experimental Results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Eﬀect of Manifold-Walking",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.2 Robustness to Initialization",
+   "page": 12,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.3 Training from Null Initialization",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6. Note that the signum is speciﬁcally deﬁned as",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. We see, ﬁrst and foremost, that the model learned with LRA-fdbk has acquired distributed",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. When the softmax is used at the output layer in purely diﬀerentiable systems, one takes advantage of the",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Related Work",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1) seek better representations of data, 2) minimize the mismatch between the model state",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. A lower-level feature detector might be able to ﬁnd diﬀerent aspects of structure in its input since",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion & Future Work",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B.",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. Note that this action is the same as unrolling a mathematical recurrence relation, since the hidden state",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 32.73915909999778
+}

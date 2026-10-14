@@ -1,0 +1,118 @@
+{
+ "doc": "1612.08642",
+ "system": "outline",
+ "metrics": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "AC KNOWL EDG MEN T",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II HMM Approach",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Bayesian Nonparametric HMM Approach",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A The HDP-HMM and the Sticky HDP-HMM",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV Description of Experiments and Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Problem and Data Set Description",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV-B Artifact Reduction",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV-C Spatial Filter",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV-D Spectral Power Estimation",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "V Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.035342400002264185,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "AC KNOWL EDG MEN T",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

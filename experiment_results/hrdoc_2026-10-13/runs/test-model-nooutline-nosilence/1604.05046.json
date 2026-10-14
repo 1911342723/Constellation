@@ -1,0 +1,216 @@
+{
+ "doc": "1604.05046",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 14,
+  "pred": 20,
+  "tp": 11,
+  "fp": 9,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [
+   "I. EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "I I. EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMA-",
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "2 ∂ξ2h + U(ξ)h = −βh, where U(ξ) = −q2ς2",
+   "2 \u0013\u0015exp\u0014ip",
+   "2 \u0013 + inλ1τ",
+   "ACKNOWLEDGMENTS",
+   "Appendix A",
+   "MENTS",
+   "Appendix B",
+   "PROXIMATIONS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 889,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 15518,
+   "completion_tokens": 777,
+   "total_tokens": 16295
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NONLINEAR ENVELOPE EQUATIONS AND GIANT KERR EFFECT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TRAPPING OF WEAK SIGNAL PULSES BY SOLITON",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ultraslow and matched group velocities",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. One weak signal pulse trapped by probe soliton",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2 ∂ξ2h + U(ξ)h = −βh, where U(ξ) = −q2ς2",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Multiple signal pulses trapped by the probe soliton pulse",
+   "page": 11,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. TRAJECTORY CONTROL OF TRAPPED SIGNAL PULSE AND SOLITON",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. SG deﬂection of trapped signal pulse and soliton",
+   "page": 12,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2 \u0013\u0015exp\u0014ip",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 \u0013 + inλ1τ",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Trajectory control by using a time-dependent SG gradient magnetic ﬁeld",
+   "page": 14,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI. SUMMARY",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROXIMATIONS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.127466699999786,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 20,
+  "tp": 11,
+  "fp": 9,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [
+   "I. EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "I I. EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMA-",
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "2 ∂ξ2h + U(ξ)h = −βh, where U(ξ) = −q2ς2",
+   "2 \u0013\u0015exp\u0014ip",
+   "2 \u0013 + inλ1τ",
+   "ACKNOWLEDGMENTS",
+   "Appendix A",
+   "MENTS",
+   "Appendix B",
+   "PROXIMATIONS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 11,
+  "fp": 5,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.4117647058823529,
+  "unmatched_gt": [
+   "I. EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "I I. EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMA-",
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "2 ∂ξ2h + U(ξ)h = −βh, where U(ξ) = −q2ς2",
+   "2 \u0013\u0015exp\u0014ip",
+   "2 \u0013 + inλ1τ",
+   "MENTS",
+   "PROXIMATIONS"
+  ],
+  "ignored_title_predictions": null
+ }
+}

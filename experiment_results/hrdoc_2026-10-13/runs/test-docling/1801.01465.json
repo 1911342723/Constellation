@@ -1,0 +1,135 @@
+{
+ "doc": "1801.01465",
+ "system": "docling",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 50.650817499998084
+ },
+ "predictions": [
+  {
+   "text": "Quantum Image Processing and Its Application to Edge Detection: Theory and Experiment",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. FRAMEWORKOF QUANTUM IMAGE PROCESSING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Quantum image representation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Quantum image transforms",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Experimental demonstrations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. QUANTUMEDGE DETECTIONALGORITHM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A: COMPARISON OF QIMRS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B: QUANTUM WAVELET TRANSFORM",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C: IMAGE SPATIAL FILTERING",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX D: DETECTING SYMMETRY BY QIMP",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX E: VARIANT OF QHED ALGORITHM",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.010287099998095073,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Quantum Image Processing and Its Application to Edge Detection: Theory and Exper"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

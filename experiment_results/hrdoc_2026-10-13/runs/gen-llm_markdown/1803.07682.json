@@ -1,0 +1,192 @@
+{
+ "doc": "1803.07682",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "2 Method"
+  ],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "2 Method"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 3,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "2 Method"
+  ],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "2 Method"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+    0,
+    1
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Method",
+    2,
+    1
+   ],
+   [
+    "2.1 The role of US-to-US registration",
+    2,
+    2
+   ],
+   [
+    "2.2 Feature-based registration strategy",
+    2,
+    2
+   ],
+   [
+    "2.3 GP kernel estimation",
+    4,
+    2
+   ],
+   [
+    "3 Experiments",
+    6,
+    1
+   ],
+   [
+    "4 Conclusion",
+    7,
+    1
+   ],
+   [
+    "References",
+    7,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5294,
+   "completion_tokens": 4879
+  },
+  "elapsed_llm_seconds": 20.472437299999,
+  "word_preservation": {
+   "recall": 0.9958859829562151,
+   "in_order": 0.9958859829562151,
+   "inserted": 0.00352837400764483
+  },
+  "output_markdown": "<<page 1>>\n# A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation\n\nJie Luo1,2, Matt Toews3, Ines Machado1, Sarah Frisken1, Miaomiao Zhang4, Frank Preiswerk1, Alireza Sedghi1, Hongyi Ding5, Steve Pieper1, Polina Golland6, Alexandra Golby1, Masashi Sugiyama7,2 and William M. Wells III1,6\n\n1Brigham and Women’s Hospital, Harvard Medical School, USA\n2Graduate School of Frontier Sciences, The University of Tokyo, Japan\n3Ecole de Technologie Superieure, Canada\n4Computer Science and Engineering Department, Lehigh University, USA\n5Department of Computer Science, The University of Tokyo, Japan\n6Computer Science and Artificial Intelligence Laboratory, MIT, USA\n7Center for Advanced Intelligence Project, RIKEN, Japan\njluo5@bwh.harvard.edu\n\nAbstract. A reliable Ultrasound (US)-to-US registration method to compensate for brain shift would substantially improve Image-Guided Neurological Surgery. Developing such a registration method is very challenging, due to factors such as missing correspondence in images, the complexity of brain pathology and the demand for fast computation. We propose a novel feature-driven active framework. Here, landmarks and their displacement are first estimated from a pair of US images using corresponding local image features. Subsequently, a Gaussian Process (GP) model is used to interpolate a dense deformation field from the sparse landmarks. Kernels of the GP are estimated by using variograms and a discrete grid search method. If necessary, the user can actively add new landmarks based on the image context and visualization of the uncertainty measure provided by the GP to further improve the result. We retrospectively demonstrate our registration framework as a robust and accurate brain shift compensation solution on clinical data acquired during neurosurgery.\n\nKeywords: Brain shift, Feature-based registration, Gaussian process, Variograms, Uncertainty, Active registration\n\n# 1 Introduction\n\nSurgical resection is the initial treatment for nearly all brain tumors. The achieved extent-of-resection is strongly correlated with prognosis and is the single greatest modifiable determinant of survival. Brain tumors are intimately involved in surrounding functioning brain tissue, aggressive resection must be balanced against the risk of causing new neurological deficits.\n\nDuring neurosurgery, Image-Guided Neurosurgical Systems (IGNSs) provide a patient-to-image mapping that relates the preoperative image data to an intraoperative patient coordinate system, allowing surgeons to infer the locations of\narXiv:1803.07682v1  [cs.CV]  20 Mar 2018\n\n<<page 2>>\n2\nJ.Luo et al.\n\ntheir surgical instruments relative to preoperative image data and helping them to optimize the extent of resection while avoiding damage to critical structures.\n\nCommercial IGNSs assume a rigid registration between preoperative imaging and patient coordinates. However, intraoperative deformation of the brain, which is also known as brain shift, invalidates this assumption. Since brain shift progresses during surgery, the rigid patient-to-image mapping of IGNS becomes less and less accurate. Consequently, most surgeons only use IGNS to make a surgical plan but justifiably do not trust it throughout the course of an operation [1,2].\n\nRelated Work As one of the most important error sources in IGNS, intraoperative brain shift must be compensated in order to increase the accuracy of neurosurgery. Registration between the Intraoperative MRI (iMRI) image, which provides clinicians with an updated view of anatomy during surgery, and preoperative MRI (preMRI) image (preop-to-intraop registration) has been a successful strategy for brain shift compensation [3,4,5,6,7]. However, iMRI acquisition is disruptive, expensive and time consuming, making this technology unavailable for most clinical centers worldwide. More recently, 3D intraoperative Ultrasound (iUS) appears to be a promising replacement for iMRI. Although some progress has been made by previous work on preMRI-to-iUS registration [8,9,10,11,12,13,14], yet there are still no clinically accepted solutions and no commercial neuro-navigation systems that provide brain shift compensation. This is because of three reasons: 1) Most non-rigid registration methods can not handle artifacts and missing structures in iUS; 2) The multi-modality of preMRI-to-iUS registration makes the already difficult problem even more challenging; 3) A few methods [15] can achieve a reasonable alignment, yet they take around 50 minutes for an US pair and are too slow to be clinically applicable.\n\nAnother shortcoming of existing brain shift compensation approaches is the lack of an uncertainty measure. Brain shift is a complex spatiotemporal phenomenon, and given the state of registration technology, and the importance of the result, it seems reasonable to expect, e.g., error bars that indicate the confidence level in the estimated deformation. In fact, registration uncertainty can actually helps surgeons make more informed decisions. If a surgeon must decide whether to continue resection near a critical structure, it is vital that they know how far the instrument is predicted to be from the structure and how likely the prediction is to be accurate. Moreover, if a large registration error at location A and small error at location B are observed in the vicinity of surgical field, without knowledge of registration uncertainty, the surgeon would probably assume a large error everywhere and thus ignore the registration altogether. If only s/he knows that A lies in an area of high uncertainty while B lies in an area of low uncertainty, s/he would have greater confidence in the registration at B and other locations of low uncertainty.\n\nIn this paper, we propose a novel feature-driven active framework for brain shift compensation. Here, landmarks and their displacement are first estimated from a pair of US images using corresponding local image features. Subsequently,\n\n<<page 3>>\nA Feature-Driven Active Framework for US-based Brain Shift Compensation\n3\n\na Gaussian Process (GP) model [18] is used to interpolate a dense deformation field from the sparse landmarks. Kernels of the GP are estimated by using variograms and a discrete grid search method. If necessary, for areas that are difficult to align, the user can actively add new landmarks based on the image context and visualization of the uncertainty measure provided by the GP to further improve the registration accuracy.\n\nContributions and novelties of our work can be summarized as follows:\n\n1. The proposed feature-based registration is robust for aligning iUS image pairs with missing correspondence and is fast.\n2. We explore applying a GP model and variograms for image registration.\n3. Registration uncertainty in transformation parameters can be naturally obtained from the GP model.\n4. To the best of our knowledge, the proposed active registration strategy is the first method to actively combine user expertise in brain shift compensation.\n5. We retrospectively demonstrate the efficacy of our method on clinical data acquired during neurosurgery.\n\n# 2 Method\n\n## 2.1 The role of US-to-US registration\n\nIn order to alleviate the difficulty of preop-to-intraop registration, instead of directly aligning iMRI and iUS images, we choose an iterative compensation approach which is similar to the work in [16].\n\nAs shown in Fig.1. acquisition processes for pre-duraUS (preUS) and post-resectionUS (postUS) take place before opening the dura and after tumor resection, respectively. Since most brain-shift occurs after taking the preUS, a rigid multi-modal registration may be suffice to achieve a good alignment T rigid between preMRI and preUS [13]. Next, we register the preUS to postUS using the proposed feature-driven active framework to acquire a deformable mapping Tdeform. After propagating Trigid and Tdeform to the preMRI, surgeons may use it as an updated view of anatomy to compensate for brain shift during the surgery.\n\nFig. 1. Pipeline of the US-based brain shift compensation.\n\n## 2.2 Feature-based registration strategy\n\nBecause of tumor resection, compensating for brain shift requires non-rigid registration algorithms capable of aligning structures in one image that have no correspondences in the other image. In this situation, many image registration\n\n<<page 4>>\n4\nJ.Luo et al.\n\nFig. 2. Pipeline of the feature-based active preduraUS-to-postUS registration.\n\nmethods that take into account the intensity pattern of the entire image will become trapped in incorrect local minima.\n\nWe therefore pursue a Feature-Based Registration (FBR) strategy due to its robustness in registering images with missing correspondence [17]. FBR mainly consists of 3 steps: feature-extraction, feature-matching and dense deformation field estimation. An optional “active registration” step can be added depends on the quality of FBR.\n\nFeature extraction and matching As illustrated in Fig.2(a)(b), distinctive local image features are automatically extracted and identified as key-points on preUS and postUS images. A matcher searches for a corresponding postUS key-point for each key-point on the preUS image [17].\n\nFrom a matched key-point pair, let xi be the coordinates of the predUS key-point and xpost\ni\nbe the coordinate of its postUS counterpart. Here, we first use all matched PreUS key-points as landmarks, and perform a land-mark based preUS-to-postUS affine registration to obtain a rough alignment. xpost\ni\nbecomes xaffinei after the affine registration. The displacement vector, which indicates the movement of landmark xi due to the brain shift process, can be calculated as\nd(xi) = xaffinei\ni\n−xi. where d = [dx, dy, dz].\n\nDense deformation field The goal of this step is to obtain a dense deformation field from a set of N sparse landmark and their displacements D = {(xi, di), i = 1 : N}, where di = d(xi) is modeled as a observation of displacements.\n\nIn the GP model, let d(x) be the displacement vector for the voxel at location x. thus it has a prior distribution as d(x) ∼GP(m(x), k(x, x′)), where m(x) is the mean function, which usually is set to 0, and the GP kernel k(x, x′) represent the spatial correlation of displacement vectors.\n\nBy the model assumption, all displacement vectors follow a joint Gaussian distribution p(d | X) = N(d | µ, K), where Kij = k(x, x′) and µ = (m(x1), ..., m(xN)). As a result, the displacement vectors d for known land-\n\n<<page 5>>\nA Feature-Driven Active Framework for US-based Brain Shift Compensation\n5\n\nmarks and N∗unknown displacement vectors d∗at location X∗, which we want to predict, have the following relationship:\n\n(1)\n\nIn Equation (1), K = k(X, X) is the N × N matrix, K∗= k(X, X∗) is the N × N∗matrix, and K∗∗= k(X∗, X∗) is the N∗× N∗matrix. The mean µ∗= [µ∗x, µ∗y, µ∗z] represents values of voxel-wise displacement vectors and can be estimated from the posterior Gaussian distribution p(d∗| X∗, X, d) = N(d∗| µ∗, Σ∗) as\n\nµ∗= µ(X∗) + KT\n∗K−1(d −µ(X)).\n(2)\n\nGiven µ(X) = µ(X∗) = 0, we can obtain the dense deformation field for the preUS image by assigning µ∗x,µ∗y,µ∗z to dx, dy and dz, respectively.\n\nActive registration Automatic approaches may have difficulty in the preop-to-intraop image registration, especially for areas near the tumor resection site. Another advantage of the GP framework is the possibility of incorporate user expertise to further improve the registration result.\n\nFrom Equation (1), we can also compute the covariance matrix of the posterior Gaussian p(d∗| X∗, X, d) as\n\nΣ∗= K∗∗−KT\n∗K−1K∗.\n(3)\n\nEntries on the diagonal of Σ∗are the marginal variances of predicted values. They can be used as an uncertainty measure to indicates the confidence in the estimated transformation parameters.\n\nIf users are not satisfied by the FBR alignment result, they could manually, guided by the image context and visualization of registration uncertainty, add new corresponding pairs of key-points to drive the GP towards better results.\n\n## 2.3 GP kernel estimation\n\nThe performance of GP registration depends exclusively on the suitability of the chosen kernels and its parameters. In this study, we explore two schemes for the kernel estimation: Variograms and discrete grid search.\n\nVariograms While being used extensively in geostatistics to characterize the spatial dependence of a stochastic process [19], variograms have not yet received much attention in the medical imaging field. Although GP regression for medical image registration, and variograms, were described in [20], neither quantitative results, nor estimation of the posterior uncertainty were provided.\n\nIn the GP registration context, d(x) is modelled as a random quantity, variograms can measure the extent of pairwise spatial correlation between displacement vectors with respect to their distance, and in advance give insight into choosing the suitable GP kernel.\n\n<<page 6>>\n6\nJ.Luo et al.\n\nFig. 3. (a)\n\r\rdx(x2) −dx(x1)\n\r\r and h; (b) Empirical variogram cloud; (c) Variogram\ncloud divided into bins with their means marked as blue.\n\nIn practice, we estimate the empirical variogram of landmarks’ displacement vectors as\n\nˆγ(h ± δ) :=\n1\n2|N(h ± δ)|\nX\n(i,j)∈N(h±δ)\n\r\rd(xi) −d(xj)\n\r\r2 .\n(4)\n\nFor the norm term\n\r\rd(xi) −d(xj)\n\r\r, we compute its 3 components dx dy dz\nand construct 3 variograms, respectively. As shown in Fig.3(a), for displacement vectors d(x1) and d(x2),\n\r\rdx(x2) −dx(x1)\n\r\r is the vector difference with respect\nto the x axis, etc. h represents the distance between two displacement vectors.\n\nTo construct an empirical variogram, the first step is to make a variogram cloud by plotting\n\r\rd(x2) −d(x1)\n\r\r2 and hij for all displacement pairs. Next, we\nintroduce a variable δ, and divide the variogram cloud into bins with a bin width setting to 2δ. Lastly, the mean of each bin is calculated and further plotted with the mean distance of that bin to form an empirical variogram. Fig.4(a) shows an empirical variogram of a real US image pair that has 71 landmarks.\n\nThe empirical variogram only consists of value differences at a finite set of discrete distances, whereas the GP kernels are continuous for all h. Therefore, the next step is to fit a smooth curve to the empirical values and derive the kernel function from that fitted curve.\n\nFig. 4. (a) X-axis empirical variogram of a US images pair;(b) Sill, range and nugget; (c) Fitting a continuous model to an empirical variogram.\n\nFig.4(b) is an example of a fitted curve. The curve is commonly describe by the following characteristics:\n\nNugget\nThe non-zero value at h = 0.\nSill\nThe value at which the curve reaches its maximum.\n\n<<page 7>>\nA Feature-Driven Active Framework for US-based Brain Shift Compensation\n7\n\nRange\nThe value of distance h where the sill is reached.\nConventionally, displacement vectors that are separated by distances further than the range are considered uncorrelated [19].\n\nIn general, the curve must have a mathematical expression that can describe the variances of a random process. Practically, the choice is limited to a few options, such as exponential and Gaussian models. For instance, the Gaussian variogram function is\n\nγ(h) = c0 + c{1 −exp(−h2\na )}.\n(5)\n\nIn equation (5), c0 is the nugget, c = Sill −c0, and a is the model parameter. This function asymptotically approaches its sill, and has an effective range as r′ = √3a.\n\nFitting a model to an empirical variogram is implemented in most geostatistis software. A popular choice is choosing several models that appear to have the right shape and use the one with smallest weighted squared error [19].\n\nDiscrete grid search The variogram scheme often requires many landmarks to work well [19]. For US pairs that have fewer landmarks, we predefine some kernel functions, and use cross validation in a discrete search for the model parameters.\n\n# 3 Experiments\n\nThe experimental dataset consists of 6 preUS and postUS image pairs that were acquired on a BK Ultrasound 3000 system (BK Medical, Analogic Corporations, Peabody, USA) that is directly connected to the Brainlab VectorVision Sky neuronavigaton system (Brainlab, Munich, Germany) during surgery.\n\nWe use the mean euclidean distance between the predicted and ground truth of landmarks’ coordinates, measured in mm, for the registration evaluation. Compared methods include: affine, thin-plate kernel FBR, variograms FBR and gaussian kernel FBR. For US pairs that have less than 50 landmarks, we use leave-one-out cross validation, otherwise 5-fold cross validation. All of compared methods can be finished within 10 minutes.\n\nTable 1. Registration evaluation results (in mm)\n\nLandmarks Before Reg.\nAffine\nThin-plate Variograms GaussianK\nPatient 1\n123\n5.56±1.05 2.99±1.21 1.79±0.70 2.11±0.74\n1.75±0.68\nPatient 2\n71\n3.35±1.22 2.08±1.13 2.06±1.18 2.06±1.12\n1.97±1.05\nPatient 3\n49\n2.48±1.56 1.93±1.75 1.25±1.95\nn/a\n1.23±1.77\nPatient 4\n12\n4.40±1.79 3.06±2.35 1.45±1.99\nn/a\n1.42±2.04\nPatient 5\n64\n2.91±1.33 1.86±1.24 1.29±1.17\nn/a\n1.33±1.40\nPatient 6\n98\n3.29±1.09 2.12±1.16 2.02±1.21 2.05±1.40\n1.96±1.38\n\nIn addition, we demonstrate the preliminary result of active registration. As shown in Fig.5, (a) is the registered source preUS image, (b) is the target postUS image. Noticing that the FBR does not well align the tumor boundary due to lacking of landmarks. In the active registration step, a user manually added 3 new key-point pairs based on the image context and a color mapping of registration uncertainty. By visual inspection, we can see the alignment of tumor boundary substantially improved.\n\n<<page 8>>\n8\nJ.Luo et al.\n\nFig. 5. (a) FR result of the preUS image; (b) PostUS image; (c) Overlaying the visualization of uncertainty on the preUS image;(d) Improved registration result.\n\n# 4 Conclusion\n\nWe proposed a novel feature-based active registration framework to compensate for the brain shift. We believe this framework has the potential to be eventually applied in the operating room. Future work includes exploring non-isotropic variograms and other advanced schemes for GP kernel estimation. Implementing our framework into clinical software, such as 3D slicer, is also of interest.\n\n# References\n\n1. Gerard, I.J., et al.: Brain shift in neuronavigation of brain tumors: A review. Med. Image Anal. 35, 403-420 (2017)\n2. Bayer S., et al.: Intraoperative imageing modalities amd compensation for brain shift in tumor resection surgery, Int J Biomed Imag (2017)\n3. Hata, N., et al.: A volumetric optical flow method for measurement of brain deformation from intraoperative magnetic resonance images. MICCAI’99\n4. Soza, G.,et al.: Non-rigid registration with use of hardware-based 3D Bezier functions. In MICCAI’02\n5. Clatz, O., et al.: Robust nonrigid registration to capture brain shift from intraoperative MRI, IEEE. TMI. 24(11), 1417 1427 (2005).\n6. Vigneron, L. M.,et al.: Serial FEM/XFEM-based update of preoperative brain images using intraoperative MRI. Int J Biomed Imag (2012)\n7. Drakopoulos, F., et al.: Toward a real time multi-tissue adaptive physics-based non-rigid registration framework for brain tumor resection. Front. in Neuroinfo. (2014)\n8. Gobbi, D.G.,et al.: Ultrasound/MRI overlay with image warping for neurosurgery. MICCAI’00\n9. Arbel, T.,et al: Automatic non-linear MRI-ultrasound registration for the correction of intra-operative brain deformations. Computer Aided Surgery (2004)\n10. Pennec, X.,et al.: Tracking brain deformations in time sequences of 3D US images. Pattern Recognition Letters, (2003)\n11. Letteboer M.M.,et al.: Non-rigid registration of 3D ultrasound images of brain tumours acquired during neurosurgery, MICCAI’03\n12. Reinertsen,et.al.: Vessel driven correction of brain shift. In: MICCAI’04\n13. Fuerst, B.,et al.: Automatic ultrasound-MRI registration for neurosurgery using 2D and 3D LC2 metric. Med. Image Anal. 18(8) 1312-1319 (2014)\n14. Rivaz, H., Collins, D. L.: Deformable registration of preoperative MR, pre-resection ultrasound, and post-resection ultrasound images of neurosurgery. IJCARS (2015)\n\n<<page 9>>\nA Feature-Driven Active Framework for US-based Brain Shift Compensation\n9\n\n15. Ou, et al.: DRAMMS: Deformable registration via attribute matching and mutual-saliency weighting. Med. Image Anal. vol.15, 622-639 (2011)\n16. Riva M.,et al: 3D intra-op US and MR image guidance: pursuing an ultrasound-based management of brainshift to enhance neuronavigation, IJCARS (2017)\n17. Toews M, Wells W (2013) Efficient and robust model-to-image alignment using 3D scale-invariant features, Med Image Anal, Vol 17, 271-282\n18. Rasmussen C.E. and Williams, C.: Gaussian Processes for Machine Learning, the MIT press, USA (2006)\n19. Cressie NAC.: Statistics for spatial data, p900. Wiley, USA (1991)\n20. Ruiz-Alzola J, et al.: Geostatistical Medical Image Registration. MICCAI’03",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Method",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The role of US-to-US registration",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Feature-based registration strategy",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 GP kernel estimation",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.506253599996853,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "2 Method"
+  ],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "2 Method"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation"
+  ]
+ }
+}

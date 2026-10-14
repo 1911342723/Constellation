@@ -1,0 +1,146 @@
+{
+ "doc": "1509.00488",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 684,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14590,
+   "completion_tokens": 598,
+   "total_tokens": 15188
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Pre-Fixed Absences and Pre-Scheduling",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 General Lower Bounds (pre-scheduling)",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 General Upper Bounds (pre-scheduling)",
+   "page": 7,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Bipartite Tournaments (pre-scheduling)",
+   "page": 8,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4 Complete Tournaments (pre-scheduling)",
+   "page": 9,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Unannounced Absences and On-Line Scheduling",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 General Lower Bounds (on-line scheduling)",
+   "page": 14,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 General Upper Bounds (on-line scheduling)",
+   "page": 15,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 Bipartite Tournaments (on-line scheduling)",
+   "page": 16,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Complete Tournaments (on-line scheduling)",
+   "page": 17,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Comparison",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Concluding Remarks",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.81490770000164,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

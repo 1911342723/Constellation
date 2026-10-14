@@ -1,0 +1,149 @@
+{
+ "doc": "1808.02694",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 770,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13429,
+   "completion_tokens": 585,
+   "total_tokens": 14014
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PARAXIAL PROPAGATION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. ANALYSIS OF THE LAGRANGIAN DENSITY OF THE PARAXIAL",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TIME HARMONIC SOLUTIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXAMPLES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Generic traveling wave towards +z",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Paraxial plane waves",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Green’s function of the time harmonic paraxial wave equation",
+   "page": 11,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "D. Fundamental Gaussian beam",
+   "page": 14,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. The connection of energy density ﬂow and momentum with raytracing",
+   "page": 20,
+   "level": 2,
+   "parent": 11
+  }
+ ],
+ "seconds": 45.161747399997694,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [
+   "Appendix A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

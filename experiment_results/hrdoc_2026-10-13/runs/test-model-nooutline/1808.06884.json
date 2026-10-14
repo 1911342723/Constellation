@@ -1,0 +1,196 @@
+{
+ "doc": "1808.06884",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 378,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17761,
+   "completion_tokens": 958,
+   "total_tokens": 18719
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Student diﬃculties in understanding condi-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Visual representations of conditional proba-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Tree diagrams",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Other visual representations",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 Tomlinson-Quinn graphical model",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2.2 Roullete-wheel diagrams",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2.3 Iconic diagrams",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Turtleback diagrams",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 The lung disease and smoking example",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.5 Diﬃculty with the Venn diagram",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Semantic equivalence of the turtleback and",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Case studies",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 The lung disease and smoking example",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.2 The History and War example",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.3 The lucky draw example",
+   "page": 13,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.4 An urn model example",
+   "page": 14,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6 Empirical data",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Potential research questions",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusions",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.90786350000053,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

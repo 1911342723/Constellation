@@ -1,0 +1,159 @@
+{
+ "doc": "1710.03202",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 16,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Mesh-adaptive simulations of horizontal-axis turbine arrays using the actuator line method",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Model implementation",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2.1 Unsteady RANS formulation of the governing equations",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Numerical implementation and mesh optimization",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "3 Turbine parametrisation",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "4 Model validation",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "4.1 Mesh convergence study",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Wind Tunnel Tests",
+   "page": 5,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "5 The Lillgrund offshore wind farm",
+   "page": 7,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "5.1 Parametrisation of the wind farm",
+   "page": 7,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "5.2 Mesh strategies",
+   "page": 8,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "5.3 Simulation setup",
+   "page": 10,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "5.4 Computational efficiency",
+   "page": 11,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "6 Discussion",
+   "page": 15,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 15,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.07202509999842732,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 8,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Mesh-adaptive simulations of horizontal-axis turbine arrays using the actuator l",
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

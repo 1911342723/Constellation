@@ -1,0 +1,125 @@
+{
+ "doc": "1705.10588",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "S.P.D. Mangles",
+   "Keywords"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "S.P.D. Mangles"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 35.69042669999908
+ },
+ "predictions": [
+  {
+   "text": "An Overview of Recent Progress in Laser Wakefield Acceleration Experiments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S.P.D. Mangles",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Overall trends in laser wakefield acceleration experiments",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Accelerator length and operating plasma density",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Laser spot size and matched guiding",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 To guide or not to guide?",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Future directions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.005343600001651794,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "S.P.D. Mangles",
+   "Keywords"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

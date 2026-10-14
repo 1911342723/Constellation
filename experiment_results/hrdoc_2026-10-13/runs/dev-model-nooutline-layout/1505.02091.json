@@ -1,0 +1,161 @@
+{
+ "doc": "1505.02091",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 7,
+  "pred": 13,
+  "tp": 7,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Weihrauch reducibility",
+   "2.2. Randomness",
+   "4.1. Complex oscillations",
+   "4.2. Law of the iterated logarithm",
+   "4.3. Birkhoﬀ’s theorem",
+   "4.4. Random harmonic series. The harmonic series P"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 11,
+  "tp": 5,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Weihrauch reducibility",
+   "2.2. Randomness",
+   "4.1. Complex oscillations",
+   "4.2. Law of the iterated logarithm",
+   "4.3. Birkhoﬀ’s theorem",
+   "4.4. Random harmonic series. The harmonic series P"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 500,
+  "layout_marked": 11,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17538,
+   "completion_tokens": 617,
+   "total_tokens": 18155
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9802312569936591,
+  "inserted_word_share": 0.018914883026381335
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Weihrauch reducibility",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2. Randomness",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. The Weihrauch degree",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Examples of Weihrauch-complete layerwise computable operations",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Complex oscillations",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2. Law of the iterated logarithm",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3. Birkhoﬀ’s theorem",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.4. Random harmonic series. The harmonic series P",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5. Hitting time",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.382208499999251,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 13,
+  "tp": 7,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Weihrauch reducibility",
+   "2.2. Randomness",
+   "4.1. Complex oscillations",
+   "4.2. Law of the iterated logarithm",
+   "4.3. Birkhoﬀ’s theorem",
+   "4.4. Random harmonic series. The harmonic series P"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "doc": "1804.08256",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 89,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4473,
+   "completion_tokens": 546,
+   "total_tokens": 5019
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.981128074639525,
+  "inserted_word_share": 0.8360150269350723
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. METHOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Stacked networks for image parsing",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Skip connections for ﬁne-grained parsing",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Training with coarse-to-ﬁne supervision",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. EXPERIMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Experimental settings",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. The effectiveness of proposed method",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3. Compared with state-of-the-art",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4. The generalization of proposed stacking strategies",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.4685834999982035,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

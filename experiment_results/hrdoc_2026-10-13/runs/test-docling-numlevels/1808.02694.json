@@ -1,0 +1,142 @@
+{
+ "doc": "1808.02694",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "EQUATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 62.9430554999999
+ },
+ "predictions": [
+  {
+   "text": "Energy flow and momentum under paraxial regime",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PARAXIAL PROPAGATION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. ANALYSIS OF THE LAGRANGIAN DENSITY OF THE PARAXIAL EQUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TIME HARMONIC SOLUTIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXAMPLES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Generic traveling wave towards +z",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Paraxial plane waves",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Green's function of the time harmonic paraxial wave equation",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Fundamental Gaussian beam",
+   "page": 14,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A: Summary of results for the d'Alembert equation",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. The connection of energy density flow and momentum with raytracing techniques",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.006884599999466445,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "EQUATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

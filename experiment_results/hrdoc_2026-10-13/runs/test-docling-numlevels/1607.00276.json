@@ -1,0 +1,210 @@
+{
+ "doc": "1607.00276",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 26,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Frequency of Structural Variation per Population Group",
+   "C. Frequency of Structural Variation per Population Super- group",
+   "E. Frequency of Structural Variation per Population Super- group and Gender",
+   "V II. D ISC US S ION"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 18,
+  "parent_correct": 16,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "B. Frequency of Structural Variation per Population Group",
+   "C. Frequency of Structural Variation per Population Super- group",
+   "E. Frequency of Structural Variation per Population Super- group and Gender",
+   "V II. D ISC US S ION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 18.052274200003012
+ },
+ "predictions": [
+  {
+   "text": "Analysis of Chromosome 20 - A Study",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The 1000 Genomes Project",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Data",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Processing Large Data Sets",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENTAL FRAMEWORK AND METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Openstack",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Apache Hadoop",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. SAMtools",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXPERIMENTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Methods",
+   "page": 1,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "VI. RESULTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Sample Size per Population Group",
+   "page": 2,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Frequency of Structural Variation per Population Group",
+   "page": 2,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "F. Location of Structural Variation in the Reference Genome per Population Group",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "G. Average Length of Alignment per Population",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "A. Analysis of Structural Variation",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Evaluation of the Computing Framework",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "VIII. CONCLUSIONS AND FUTURE WORK",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.05410629999823868,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Frequency of Structural Variation per Population Group",
+   "C. Frequency of Structural Variation per Population Super- group",
+   "E. Frequency of Structural Variation per Population Super- group and Gender",
+   "V II. D ISC US S ION"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

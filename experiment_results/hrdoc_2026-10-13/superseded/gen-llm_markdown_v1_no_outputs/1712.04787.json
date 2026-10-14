@@ -1,0 +1,251 @@
+{
+ "doc": "1712.04787",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "4. Voice Building"
+  ],
+  "unmatched_pred": [
+   "4. Voice Building"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 6602,
+   "completion_tokens": 6052
+  },
+  "elapsed_llm_seconds": 28.95372259999931,
+  "content_preservation": 0.9367732558139535,
+  "inserted_word_share": 0.03925465838509312,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Creating New Language and Voice Components for the Updated MaryTTS Text-to-Speech Synthesis Platform",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1. Introduction",
+    0,
+    2
+   ],
+   [
+    "2. Background",
+    0,
+    2
+   ],
+   [
+    "3. New Language Support",
+    0,
+    2
+   ],
+   [
+    "4. Voice Building",
+    2,
+    2
+   ],
+   [
+    "4.1. Data Preparation",
+    2,
+    3
+   ],
+   [
+    "4.2. Feature Extraction",
+    2,
+    3
+   ],
+   [
+    "4.3. Model Building",
+    2,
+    3
+   ],
+   [
+    "4.3.1. Unit Selection",
+    3,
+    4
+   ],
+   [
+    "4.3.2. Statistical Parametric Synthesis",
+    3,
+    4
+   ],
+   [
+    "4.4. New Conﬁguration Mechanism",
+    3,
+    3
+   ],
+   [
+    "5. Global Project Management",
+    3,
+    2
+   ],
+   [
+    "6. Conclusion",
+    3,
+    2
+   ],
+   [
+    "7. Acknowledgements",
+    4,
+    2
+   ],
+   [
+    "8. Bibliographical References",
+    4,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Background",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. New Language Support",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Voice Building",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Data Preparation",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2. Feature Extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3. Model Building",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3.1. Unit Selection",
+   "page": 2,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4.3.2. Statistical Parametric Synthesis",
+   "page": 2,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4.4. New Conﬁguration Mechanism",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5. Global Project Management",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Bibliographical References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.098935599999095,
+ "metrics_raw": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Creating New Language and Voice Components for the Updated MaryTTS Text-to-Speec"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "4. Voice Building"
+  ],
+  "unmatched_pred": [
+   "4. Voice Building"
+  ],
+  "ignored_title_predictions": null
+ }
+}

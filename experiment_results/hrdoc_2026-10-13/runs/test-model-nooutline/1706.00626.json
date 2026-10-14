@@ -1,0 +1,130 @@
+{
+ "doc": "1706.00626",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 742,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 29236,
+   "completion_tokens": 635,
+   "total_tokens": 29871
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Simulation without an embedded copy of Z",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Encoding an effectively closed dynamical system using Toeplitz conﬁgurations",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Finding a grid in H1 ×H2",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 Proof of Theorem 3.1",
+   "page": 12,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Consequences and remarks",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 The case of effectively closed expansive actions",
+   "page": 16,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Strongly aperiodic SFTs in triple direct products",
+   "page": 18,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Strongly aperiodic SFTs in branch groups",
+   "page": 20,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.699160699998174,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

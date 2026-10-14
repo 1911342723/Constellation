@@ -1,0 +1,192 @@
+{
+ "doc": "1603.07427",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "Proof of Theorem 1"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "Proof of Theorem 1"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 45.80178479999813
+ },
+ "predictions": [
+  {
+   "text": "Penalized Weighted Least Squares for Outlier Detection and Robust Regression",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The PenalizedWeighted Least Squares",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 A Bayesian understanding of the PWLS",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 In connection withM-estimation",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 The adaptive PWLS",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Implementation and Tuning",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Algorithms",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Tuning parameter selection",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Extension of the PWLS to Heterogeneous Models",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Numerical Results",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Simulation studies",
+   "page": 13,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2 Real data applications",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2.1 Coleman Data",
+   "page": 16,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "5.2.2 Salinity Data",
+   "page": 20,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "5.2.3 Real Estate Data",
+   "page": 20,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "6 Discussion",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof of Theorem 1",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.009588399996573571,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "Proof of Theorem 1"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

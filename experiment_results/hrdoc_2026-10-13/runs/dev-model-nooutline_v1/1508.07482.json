@@ -1,0 +1,142 @@
+{
+ "doc": "1508.07482",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 155,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10714,
+   "completion_tokens": 547,
+   "total_tokens": 11261
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. State of the art",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Research questions and objectives",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Research methodology",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Experiments setup",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Data acquisition",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "6. Data analysis",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Anomaly detection approaches",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.2 Local Outlier factor (LOF)",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7. Experiments results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Proposed method for malware detection",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. Conclusions and further work",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.371299700000236,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

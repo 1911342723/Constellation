@@ -1,0 +1,212 @@
+{
+ "doc": "1804.02858",
+ "system": "outline",
+ "metrics": {
+  "gt": 26,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8518518518518519,
+  "unmatched_gt": [
+   "Abstract",
+   "Index Terms",
+   "B. Blocking",
+   "C. Beamforming"
+  ],
+  "unmatched_pred": [
+   "II-B Blocking",
+   "II-C Beamforming"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I-A Related Work",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-B Contribution",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-C Organization",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II System Model",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A BS and UE Locations",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-B Blocking",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-C Beamforming",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-D Path Loss and Fading",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-E Cell Association",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III SINR Coverage Probability",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Approximating PHP by baseline PPP",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "III-B Incorporating serving hole",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "III-C Incorporating nearest non-serving LOS and NLOS holes",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "III-D Incorporating all non-serving holes",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "IV Numerical Results",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Conclusion",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proof of Lemma 2",
+   "page": 21,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "B Proof of Theorem 1",
+   "page": 22,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "C Proof of Theorem 2",
+   "page": 23,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "D Proof of Theorem 3",
+   "page": 26,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "E Proof of Theorem 4",
+   "page": 27,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "References",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.05060260000027483,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8518518518518519,
+  "unmatched_gt": [
+   "Abstract",
+   "Index Terms",
+   "B. Blocking",
+   "C. Beamforming"
+  ],
+  "unmatched_pred": [
+   "II-B Blocking",
+   "II-C Beamforming"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [
+   "B. Blocking",
+   "C. Beamforming"
+  ],
+  "unmatched_pred": [
+   "II-B Blocking",
+   "II-C Beamforming"
+  ],
+  "ignored_title_predictions": null
+ }
+}

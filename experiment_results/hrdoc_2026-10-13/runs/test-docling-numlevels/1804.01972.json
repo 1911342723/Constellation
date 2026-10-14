@@ -1,0 +1,183 @@
+{
+ "doc": "1804.01972",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 16,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "4.3 Access Counters"
+  ],
+  "unmatched_pred": [
+   "A Survey of Miss-Ratio Curve Construction Techniques",
+   "3.4 Access Counters",
+   "� How to extend these models to non-LRU caches?"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 9,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "4.3 Access Counters"
+  ],
+  "unmatched_pred": [
+   "A Survey of Miss-Ratio Curve Construction Techniques",
+   "3.4 Access Counters",
+   "� How to extend these models to non-LRU caches?"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 21.712492400001793
+ },
+ "predictions": [
+  {
+   "text": "A Survey of Miss-Ratio Curve Construction Techniques",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Definitions",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 TAXONOMY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Taxonomy of MRC Constructions",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 STACKDISTANCE ALGORITHMS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Mattson's Stack Distance Algorithm",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Tree",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 Buckets",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Access Counters",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 REUSE TIME ALGORITHMS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Reuse Time",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2 Histogram",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.3 Access Counters",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5 OPEN PROBLEMS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "� How to extend these models to non-LRU caches?",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.015735699998913333,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 16,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "4.3 Access Counters"
+  ],
+  "unmatched_pred": [
+   "A Survey of Miss-Ratio Curve Construction Techniques",
+   "3.4 Access Counters",
+   "� How to extend these models to non-LRU caches?"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

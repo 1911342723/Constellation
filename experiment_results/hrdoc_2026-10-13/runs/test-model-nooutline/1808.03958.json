@@ -1,0 +1,149 @@
+{
+ "doc": "1808.03958",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.4375,
+  "unmatched_gt": [
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 509,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10370,
+   "completion_tokens": 510,
+   "total_tokens": 10880
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ganglion cell model",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Spike-triggered analysis",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Subunit ﬁlters revealed by STNMF",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Classiﬁcation of spikes by STNMF",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Neuronal circuit at single cell level",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. System identiﬁcation of neural network",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 82.41981010000018,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.4375,
+  "unmatched_gt": [
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "C. Spike-triggered non-negative matrix factorization analysis",
+   "B. Subunit connection weight revealed by STNMF",
+   "D. Application of STNMF to real retinal data",
+   "B. Classifying spikes of postsynaptic neurons"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

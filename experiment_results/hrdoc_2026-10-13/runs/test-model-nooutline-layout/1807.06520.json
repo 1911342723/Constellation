@@ -1,0 +1,126 @@
+{
+ "doc": "1807.06520",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 517,
+  "layout_marked": 11,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4421,
+   "completion_tokens": 438,
+   "total_tokens": 4859
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9456537003229883,
+  "inserted_word_share": 0.05141569235103538
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. STATISTICAL SPECTROSCOPY OF THE NUCLEAR SYSTEM",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The Single Particle Partition Function",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. The Nuclear Partition function and Observable Calculations",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. RESULTS AND DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The Model Space Eﬀect",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. The Pairing Eﬀect",
+   "page": 16,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. CONCLUSIONS AND OUTLOOK",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.212536300001375,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,456 @@
+{
+ "doc": "1612.07034",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9615384615384616,
+  "unmatched_gt": [
+   "5.3. Data."
+  ],
+  "unmatched_pred": [
+   "5.3. Data"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 16951,
+   "completion_tokens": 15403
+  },
+  "elapsed_llm_seconds": 66.0023798000002,
+  "content_preservation": 0.9323772438028303,
+  "inserted_word_share": 0.03764336829722581,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "BAYESIAN NON-CENTRAL CHI REGRESSION FOR NEUROIMAGING",
+    0,
+    1
+   ],
+   [
+    "1. INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "1.1. Rician models in fMRI",
+    0,
+    2
+   ],
+   [
+    "1.2. Rician models in DTI",
+    0,
+    2
+   ],
+   [
+    "1.3. Non-central chi regression",
+    0,
+    2
+   ],
+   [
+    "1.4. Application to more advanced diffusion models",
+    0,
+    2
+   ],
+   [
+    "2. HETEROSCEDASTIC RICIAN AND NC-χ REGRESSION",
+    0,
+    1
+   ],
+   [
+    "2.1. Rician regression",
+    0,
+    2
+   ],
+   [
+    "2.2. NC-χ regression",
+    0,
+    2
+   ],
+   [
+    "3. BAYESIAN INFERENCE",
+    0,
+    1
+   ],
+   [
+    "3.1. Posterior distribution and posterior probability maps",
+    0,
+    2
+   ],
+   [
+    "3.2. Prior distribution",
+    0,
+    2
+   ],
+   [
+    "3.3. Variable selection",
+    0,
+    2
+   ],
+   [
+    "3.4. Markov Chain Monte Carlo algorithm",
+    0,
+    2
+   ],
+   [
+    "4. ACTIVITY LOCALIZATION IN FMRI DATA",
+    0,
+    1
+   ],
+   [
+    "5. ESTIMATING FRACTIONAL ANISOTROPY AND MEAN DIFFUSIVITY IN DWI DATA",
+    0,
+    1
+   ],
+   [
+    "5.1. Diffusion weighted imaging",
+    0,
+    2
+   ],
+   [
+    "5.2. The diffusion tensor model",
+    0,
+    2
+   ],
+   [
+    "5.3. Data",
+    0,
+    2
+   ],
+   [
+    "5.4. Comparisons between the Rician and Gaussian DTI models",
+    0,
+    2
+   ],
+   [
+    "6. DISCUSSION",
+    0,
+    1
+   ],
+   [
+    "ACKNOWLEDGEMENT",
+    0,
+    1
+   ],
+   [
+    "APPENDIX A. GRADIENTS AND HESSIANS",
+    0,
+    1
+   ],
+   [
+    "A.1. Derivatives w.r.t. to µ:",
+    0,
+    2
+   ],
+   [
+    "A.2. Derivatives w.r.t. to φ:",
+    0,
+    2
+   ],
+   [
+    "REFERENCES",
+    0,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "BAYESIAN NON-CENTRAL CHI REGRESSION FOR NEUROIMAGING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Rician models in fMRI",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2. Rician models in DTI",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3. Non-central chi regression",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.4. Application to more advanced diffusion models",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2. HETEROSCEDASTIC RICIAN AND NC-χ REGRESSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Rician regression",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.2. NC-χ regression",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3. BAYESIAN INFERENCE",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Posterior distribution and posterior probability maps",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2. Prior distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.3. Variable selection",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.4. Markov Chain Monte Carlo algorithm",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4. ACTIVITY LOCALIZATION IN FMRI DATA",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. ESTIMATING FRACTIONAL ANISOTROPY AND MEAN DIFFUSIVITY IN DWI DATA",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Diffusion weighted imaging",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.2. The diffusion tensor model",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.3. Data",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.4. Comparisons between the Rician and Gaussian DTI models",
+   "page": 12,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "6. DISCUSSION",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A. GRADIENTS AND HESSIANS",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1. Derivatives w.r.t. to µ:",
+   "page": 23,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "A.2. Derivatives w.r.t. to φ:",
+   "page": 23,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "REFERENCES",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 66.1876379000023,
+ "metrics_raw": {
+  "gt": 25,
+  "pred": 26,
+  "tp": 4,
+  "fp": 22,
+  "fn": 21,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.18518518518518523,
+  "unmatched_gt": [
+   "1.4. Application to more advanced diffusion models.",
+   "2. HE T E ROS CED A S T IC R IC IA N AND N C-χ R E G RESSI ON",
+   "2.1. Rician regression.",
+   "2.2. NC- χ regression.",
+   "3. BAYE SI A N I NF E RE N CE",
+   "3.1. Posterior distribution and posterior probability maps.",
+   "3.2. Prior distribution.",
+   "3.3. Variable selection.",
+   "3.4. Markov Chain Monte Carlo algorithm.",
+   "4. A C T I V ITY LO CA LI ZAT IO N I N F MR I DATA",
+   "5. ES TI M ATI N G F RA CTI O N AL AN ISO T RO PY A N D MEA N DI FFUS I V ITY I ",
+   "5.1. Diffusion weighted imaging.",
+   "5.2. The diffusion tensor model.",
+   "5.3. Data.",
+   "5.4. Comparisons between the Rician and Gaussian DTI models.",
+   "6. D IS CU S S IO N",
+   "A CKNOW L ED G E M E NT",
+   "7. GRA DI ENTS AND H E S S IA NS",
+   "7.1. Derivatives w.r.t. to µ:",
+   "7.2. Derivatives w.r.t. to ϕ:",
+   "R E FE RENC E S"
+  ],
+  "unmatched_pred": [
+   "BAYESIAN NON-CENTRAL CHI REGRESSION FOR NEUROIMAGING",
+   "1.4. Application to more advanced diffusion models",
+   "2. HETEROSCEDASTIC RICIAN AND NC-χ REGRESSION",
+   "2.1. Rician regression",
+   "2.2. NC-χ regression",
+   "3. BAYESIAN INFERENCE",
+   "3.1. Posterior distribution and posterior probability maps",
+   "3.2. Prior distribution",
+   "3.3. Variable selection",
+   "3.4. Markov Chain Monte Carlo algorithm",
+   "4. ACTIVITY LOCALIZATION IN FMRI DATA",
+   "5. ESTIMATING FRACTIONAL ANISOTROPY AND MEAN DIFFUSIVITY IN DWI DATA",
+   "5.1. Diffusion weighted imaging",
+   "5.2. The diffusion tensor model",
+   "5.3. Data",
+   "5.4. Comparisons between the Rician and Gaussian DTI models",
+   "6. DISCUSSION",
+   "ACKNOWLEDGEMENT",
+   "APPENDIX A. GRADIENTS AND HESSIANS",
+   "A.1. Derivatives w.r.t. to µ:",
+   "A.2. Derivatives w.r.t. to φ:",
+   "REFERENCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 26,
+  "tp": 4,
+  "fp": 22,
+  "fn": 21,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.18518518518518523,
+  "unmatched_gt": [
+   "1.4. Application to more advanced diffusion models.",
+   "2. HE T E ROS CED A S T IC R IC IA N AND N C-χ R E G RESSI ON",
+   "2.1. Rician regression.",
+   "2.2. NC- χ regression.",
+   "3. BAYE SI A N I NF E RE N CE",
+   "3.1. Posterior distribution and posterior probability maps.",
+   "3.2. Prior distribution.",
+   "3.3. Variable selection.",
+   "3.4. Markov Chain Monte Carlo algorithm.",
+   "4. A C T I V ITY LO CA LI ZAT IO N I N F MR I DATA",
+   "5. ES TI M ATI N G F RA CTI O N AL AN ISO T RO PY A N D MEA N DI FFUS I V ITY I ",
+   "5.1. Diffusion weighted imaging.",
+   "5.2. The diffusion tensor model.",
+   "5.3. Data.",
+   "5.4. Comparisons between the Rician and Gaussian DTI models.",
+   "6. D IS CU S S IO N",
+   "A CKNOW L ED G E M E NT",
+   "7. GRA DI ENTS AND H E S S IA NS",
+   "7.1. Derivatives w.r.t. to µ:",
+   "7.2. Derivatives w.r.t. to ϕ:",
+   "R E FE RENC E S"
+  ],
+  "unmatched_pred": [
+   "BAYESIAN NON-CENTRAL CHI REGRESSION FOR NEUROIMAGING",
+   "1.4. Application to more advanced diffusion models",
+   "2. HETEROSCEDASTIC RICIAN AND NC-χ REGRESSION",
+   "2.1. Rician regression",
+   "2.2. NC-χ regression",
+   "3. BAYESIAN INFERENCE",
+   "3.1. Posterior distribution and posterior probability maps",
+   "3.2. Prior distribution",
+   "3.3. Variable selection",
+   "3.4. Markov Chain Monte Carlo algorithm",
+   "4. ACTIVITY LOCALIZATION IN FMRI DATA",
+   "5. ESTIMATING FRACTIONAL ANISOTROPY AND MEAN DIFFUSIVITY IN DWI DATA",
+   "5.1. Diffusion weighted imaging",
+   "5.2. The diffusion tensor model",
+   "5.3. Data",
+   "5.4. Comparisons between the Rician and Gaussian DTI models",
+   "6. DISCUSSION",
+   "ACKNOWLEDGEMENT",
+   "APPENDIX A. GRADIENTS AND HESSIANS",
+   "A.1. Derivatives w.r.t. to µ:",
+   "A.2. Derivatives w.r.t. to φ:",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "5.3. Data.",
+   "7. GRA DI ENTS AND H E S S IA NS"
+  ],
+  "unmatched_pred": [
+   "5.3. Data"
+  ],
+  "ignored_title_predictions": null
+ }
+}

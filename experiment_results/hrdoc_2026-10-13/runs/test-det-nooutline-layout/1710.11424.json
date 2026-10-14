@@ -1,0 +1,197 @@
+{
+ "doc": "1710.11424",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 23,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Observable Domains",
+   "1 . 2.3 . MI N ECR AF T",
+   "3.2. Atari 2600 games"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6190476190476191,
+  "unmatched_gt": [
+   "Observable Domains",
+   "1 . 2.3 . MI N ECR AF T",
+   "3.2. Atari 2600 games"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 639,
+  "layout_marked": 31,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9007349135700238,
+  "inserted_word_share": 0.3565037343784663
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Advantage-based Regret Minimization",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Counterfactual Regret Minimization (CFR)",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. CFR+",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3. From CFR and CFR+ to ARM",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4. ARM vs",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.5. Comparing ARM with Other Methods in Partially",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Learning First-person 3D Navigation",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2. Learning with Partially Observed Objects",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5. Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1. Experimental Details",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.1. Hyperparameters",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.2. Environment and Task Details",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A2. Off-policy ARM via Importance",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A3. Additional Experiments",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A3.1. Recurrence in Doom MyWayHome",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.7644093000053545,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Observable Domains",
+   "1 . 2.3 . MI N ECR AF T",
+   "3.2. Atari 2600 games"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,319 @@
+{
+ "doc": "1511.07373",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 19,
+  "pred": 35,
+  "tp": 19,
+  "fp": 16,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.5277777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Robustness assumption*: A plausibility space",
+   "Monotonicity assumption*: The domain of plau-",
+   "avoidance",
+   "Reﬁnability.",
+   "Uniform partition assumption[15]: For every",
+   "Standard events and precise measurements",
+   "Embeddability assumption[49]: Inference should",
+   "Reﬁnability assumption*[4]: In a plausibility",
+   "Closedness assumption*[5]: The functions F, S",
+   "Deﬁnition 1 A proper plausibility space is a",
+   "S(⊥) = ⊤. A proper ordered plausibility space",
+   "extended robust probability.",
+   "Real valued assumption: Assume (with, e.g, Cox)",
+   "Archimedean assumption: Fine[17] assumes that",
+   "Separability assumption: Arnborg and Sj¨odin[5]",
+   "robustness"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 335,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17452,
+   "completion_tokens": 740,
+   "total_tokens": 18192
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Symbols and Plausibilities.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Robustness assumption*: A plausibility space",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Monotonicity assumption*: The domain of plau-",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Coherence, or Dutch Book",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "avoidance",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Embeddability, Denseness,",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Reﬁnability.",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Uniform partition assumption[15]: For every",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Standard events and precise measurements",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Embeddability assumption[49]: Inference should",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Reﬁnability assumption*[4]: In a plausibility",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Closedness assumption*[5]: The functions F, S",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Deﬁnition 1 A proper plausibility space is a",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "S(⊥) = ⊤. A proper ordered plausibility space",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Common sense assumptions entail",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "extended robust probability.",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Pragmatics",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Extended Probability",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Real valued assumption: Assume (with, e.g, Cox)",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Archimedean assumption: Fine[17] assumes that",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Separability assumption: Arnborg and Sj¨odin[5]",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "7 Summary and Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Retrospect",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 Countable additivity",
+   "page": 9,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "8.2 Partially ordered domains and",
+   "page": 10,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "robustness",
+   "page": 10,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "8.2.1 Representing rings as subdirect sums",
+   "page": 10,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "8.2.2 Robustness examples",
+   "page": 11,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "8.3 Philosophy",
+   "page": 12,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "A Proof of Theorem 1",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Proof of Theorem 2",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.608021500000177,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 35,
+  "tp": 19,
+  "fp": 16,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.5277777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Robustness assumption*: A plausibility space",
+   "Monotonicity assumption*: The domain of plau-",
+   "avoidance",
+   "Reﬁnability.",
+   "Uniform partition assumption[15]: For every",
+   "Standard events and precise measurements",
+   "Embeddability assumption[49]: Inference should",
+   "Reﬁnability assumption*[4]: In a plausibility",
+   "Closedness assumption*[5]: The functions F, S",
+   "Deﬁnition 1 A proper plausibility space is a",
+   "S(⊥) = ⊤. A proper ordered plausibility space",
+   "extended robust probability.",
+   "Real valued assumption: Assume (with, e.g, Cox)",
+   "Archimedean assumption: Fine[17] assumes that",
+   "Separability assumption: Arnborg and Sj¨odin[5]",
+   "robustness"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 32,
+  "tp": 16,
+  "fp": 16,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 14,
+  "teds": 0.48484848484848486,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Robustness assumption*: A plausibility space",
+   "Monotonicity assumption*: The domain of plau-",
+   "avoidance",
+   "Reﬁnability.",
+   "Uniform partition assumption[15]: For every",
+   "Standard events and precise measurements",
+   "Embeddability assumption[49]: Inference should",
+   "Reﬁnability assumption*[4]: In a plausibility",
+   "Closedness assumption*[5]: The functions F, S",
+   "Deﬁnition 1 A proper plausibility space is a",
+   "S(⊥) = ⊤. A proper ordered plausibility space",
+   "extended robust probability.",
+   "Real valued assumption: Assume (with, e.g, Cox)",
+   "Archimedean assumption: Fine[17] assumes that",
+   "Separability assumption: Arnborg and Sj¨odin[5]",
+   "robustness"
+  ],
+  "ignored_title_predictions": null
+ }
+}

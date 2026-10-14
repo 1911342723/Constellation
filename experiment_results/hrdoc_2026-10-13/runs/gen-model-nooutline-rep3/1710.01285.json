@@ -1,0 +1,154 @@
+{
+ "doc": "1710.01285",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 769,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13685,
+   "completion_tokens": 694,
+   "total_tokens": 14379
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Sequences of Estimators",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 An Eﬃcient Family of Priors",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Applications in Online Testing",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 m-Sample Tests of a Binomial Outcome",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.1.1 Risk Ratio",
+   "page": 9,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "5.1.2 Odds Ratio",
+   "page": 9,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "5.1.3 Diﬀerence in Proportions",
+   "page": 10,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "5.2 m-Sample Tests of a Numeric Outcome",
+   "page": 10,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.2.1 Diﬀerence in Means",
+   "page": 11,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "5.3 Non-parametric Superiority",
+   "page": 12,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5.3.1 Extending the Test to Sequential Data",
+   "page": 13,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "6 Discussion",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.301568699997006,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

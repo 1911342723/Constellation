@@ -1,0 +1,217 @@
+{
+ "doc": "1710.11283",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 17,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "SUMMARY",
+   "3.2 CCA Factor Model"
+  ],
+  "unmatched_pred": [
+   "2. rank(B1) = r; rank(B2) = m − r",
+   "4. Var(ut) ≡ Ωuu is a diagonal matrix",
+   "1 are spanned by the columns of B1, that is, B∗",
+   "2.446 Table 9",
+   "residuals, across loan term types"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 1697,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "MACROECONOMICS AND FINTECH: UNCOVERING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "LATENT MACROECONOMIC EFFECTS ON PEER-TO-PEER",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "LENDING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Literature Review",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Basic Model",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2. rank(B1) = r; rank(B2) = m − r",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Var(ut) ≡ Ωuu is a diagonal matrix",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 are spanned by the columns of B1, that is, B∗",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Data",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 P2P Credit Spreads",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Macroeconomic Variables",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Multiple Regressions",
+   "page": 8,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.2 Canonical Correlation Analysis",
+   "page": 9,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.3 CCA Factor Regressions",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.446 Table 9",
+   "page": 17,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "residuals, across loan term types",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.400472199999058,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 23,
+  "tp": 15,
+  "fp": 8,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "SUMMARY",
+   "3.2 CCA Factor Model"
+  ],
+  "unmatched_pred": [
+   "MACROECONOMICS AND FINTECH: UNCOVERING",
+   "LATENT MACROECONOMIC EFFECTS ON PEER-TO-PEER",
+   "LENDING",
+   "2. rank(B1) = r; rank(B2) = m − r",
+   "4. Var(ut) ≡ Ωuu is a diagonal matrix",
+   "1 are spanned by the columns of B1, that is, B∗",
+   "2.446 Table 9",
+   "residuals, across loan term types"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 17,
+  "tp": 12,
+  "fp": 5,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [
+   "SUMMARY",
+   "3.2 CCA Factor Model"
+  ],
+  "unmatched_pred": [
+   "2. rank(B1) = r; rank(B2) = m − r",
+   "4. Var(ut) ≡ Ωuu is a diagonal matrix",
+   "1 are spanned by the columns of B1, that is, B∗",
+   "2.446 Table 9",
+   "residuals, across loan term types"
+  ],
+  "ignored_title_predictions": null
+ }
+}

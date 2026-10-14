@@ -1,0 +1,87 @@
+{
+ "doc": "1508.01453",
+ "system": "det",
+ "metrics": {
+  "gt": 2,
+  "pred": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supplemental Materials"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 267,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Asymptotic Green’s function for the stochastic reproduction of competing variants via",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fisher’s angular transformation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supplemental Materials",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "GREEN’S FUNCTION UNDER WEAK SELECTION",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "SUPPLEMENTARY FIGURES",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  }
+ ],
+ "seconds": 11.717358999998396,
+ "metrics_v1": {
+  "gt": 2,
+  "pred": 5,
+  "tp": 2,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Asymptotic Green’s function for the stochastic reproduction of competing variant",
+   "Fisher’s angular transformation",
+   "Supplemental Materials"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 2,
+  "pred": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supplemental Materials"
+  ],
+  "ignored_title_predictions": null
+ }
+}

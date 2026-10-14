@@ -1,0 +1,241 @@
+{
+ "doc": "1602.04286",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 16,
+  "pred": 24,
+  "tp": 16,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.52,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RˆxRT = (Rx)∧, R(x × y) = Rx × Ry",
+   "APPENDIX",
+   "0 ≤ cos θ − rT RT v",
+   "2 \u0000GRT",
+   "dt(B) = rT \u0010ˆΩRT \u0011v",
+   "4 \u0010tr",
+   "a = rT RrI, b = RT vrT , c = RT ˆvRrvT Rˆr",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 773,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 20098,
+   "completion_tokens": 711,
+   "total_tokens": 20809
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Geometric Adaptive Control of Attitude Dynamics on SO(3)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "with State Inequality Constraints",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Attitude Dynamics",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "RˆxRT = (Rx)∧, R(x × y) = Rx × Ry",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. State Inequality Constraint",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III. ATTITUDE CONTROL ON SO(3) WITH INEQUALITY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CONSTRAINTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Attitude Control without Disturbance",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Adaptive Control",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. NUMERICAL EXAMPLES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXPERIMENT ON HEXROTOR UAV",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proof of Proposition 1",
+   "page": 6,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "0 ≤ cos θ − rT RT v",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 \u0000GRT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Proof of Proposition 2",
+   "page": 6,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "dt(B) = rT \u0010ˆΩRT \u0011v",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Proof of Proposition 3",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Proof of Proposition 4",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 \u0010tr",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "a = rT RrI, b = RT vrT , c = RT ˆvRrvT Rˆr",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Proof of Proposition 5",
+   "page": 8,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.843422900001315,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 26,
+  "tp": 16,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.4814814814814815,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Geometric Adaptive Control of Attitude Dynamics on SO(3)",
+   "with State Inequality Constraints",
+   "RˆxRT = (Rx)∧, R(x × y) = Rx × Ry",
+   "APPENDIX",
+   "0 ≤ cos θ − rT RT v",
+   "2 \u0000GRT",
+   "dt(B) = rT \u0010ˆΩRT \u0011v",
+   "4 \u0010tr",
+   "a = rT RrI, b = RT vrT , c = RT ˆvRrvT Rˆr",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RˆxRT = (Rx)∧, R(x × y) = Rx × Ry",
+   "0 ≤ cos θ − rT RT v",
+   "2 \u0000GRT",
+   "dt(B) = rT \u0010ˆΩRT \u0011v",
+   "4 \u0010tr",
+   "a = rT RrI, b = RT vrT , c = RT ˆvRrvT Rˆr"
+  ],
+  "ignored_title_predictions": null
+ }
+}

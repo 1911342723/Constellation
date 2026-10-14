@@ -1,0 +1,223 @@
+{
+ "doc": "1706.00626",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 12,
+  "pred": 22,
+  "tp": 12,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Geometric Simulation Theorem on Direct",
+   "Products of Finitely Generated Groups",
+   "Sebastián Barbieri∗",
+   "1 code respectively x and y, we will forcefully have that y = T s1(x).",
+   "2. We deﬁne F2 as the set of patterns p = (p1, p2) which have support supp(p) = ",
+   "3. We deﬁne F3 as the set of patterns p = (p1, p2) which have support supp(p) = ",
+   "2. Hi is normal in G and has ﬁnite index.",
+   "4. Conjugation by elements of g transitively permutes the factors in the above p",
+   "5. ki properly divides ki+1 and each of the factors L( j)",
+   "2 and as ki properly divides ki+1 we have that k2 ≥ 4. Applying The-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 742,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 29236,
+   "completion_tokens": 623,
+   "total_tokens": 29859
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A Geometric Simulation Theorem on Direct",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Products of Finitely Generated Groups",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sebastián Barbieri∗",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Simulation without an embedded copy of Z",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Encoding an effectively closed dynamical system using Toeplitz conﬁgurations",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Finding a grid in H1 ×H2",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Proof of Theorem 3.1",
+   "page": 12,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "1 code respectively x and y, we will forcefully have that y = T s1(x).",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. We deﬁne F2 as the set of patterns p = (p1, p2) which have support supp(p) = {(1G,1H1,1H2),(s,1H1,1H2)}",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. We deﬁne F3 as the set of patterns p = (p1, p2) which have support supp(p) = {(1G,1H1,1H2),(s−1,1H1,1H2)}",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Consequences and remarks",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 The case of effectively closed expansive actions",
+   "page": 16,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Strongly aperiodic SFTs in triple direct products",
+   "page": 18,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Strongly aperiodic SFTs in branch groups",
+   "page": 20,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "2. Hi is normal in G and has ﬁnite index.",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Conjugation by elements of g transitively permutes the factors in the above product decomposition.",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. ki properly divides ki+1 and each of the factors L( j)",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 and as ki properly divides ki+1 we have that k2 ≥ 4. Applying The-",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.30924479999885,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 22,
+  "tp": 12,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Geometric Simulation Theorem on Direct",
+   "Products of Finitely Generated Groups",
+   "Sebastián Barbieri∗",
+   "1 code respectively x and y, we will forcefully have that y = T s1(x).",
+   "2. We deﬁne F2 as the set of patterns p = (p1, p2) which have support supp(p) = ",
+   "3. We deﬁne F3 as the set of patterns p = (p1, p2) which have support supp(p) = ",
+   "2. Hi is normal in G and has ﬁnite index.",
+   "4. Conjugation by elements of g transitively permutes the factors in the above p",
+   "5. ki properly divides ki+1 and each of the factors L( j)",
+   "2 and as ki properly divides ki+1 we have that k2 ≥ 4. Applying The-"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 20,
+  "tp": 10,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5238095238095238,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Geometric Simulation Theorem on Direct",
+   "Products of Finitely Generated Groups",
+   "Sebastián Barbieri∗",
+   "1 code respectively x and y, we will forcefully have that y = T s1(x).",
+   "2. We deﬁne F2 as the set of patterns p = (p1, p2) which have support supp(p) = ",
+   "3. We deﬁne F3 as the set of patterns p = (p1, p2) which have support supp(p) = ",
+   "2. Hi is normal in G and has ﬁnite index.",
+   "4. Conjugation by elements of g transitively permutes the factors in the above p",
+   "5. ki properly divides ki+1 and each of the factors L( j)",
+   "2 and as ki properly divides ki+1 we have that k2 ≥ 4. Applying The-"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,217 @@
+{
+ "doc": "1806.09905",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 4,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [
+   "Networks",
+   "4.3.1 Raw Audio from Existing Melodies",
+   "4.3.2 Raw Audio From Unique LSTM Generations",
+   "4.3.3 Editing Existing Raw Audio"
+  ],
+  "unmatched_pred": [
+   "1 http://www.ﬂow-machines.com/",
+   "2 https://www.ampermusic.com/",
+   "3 https://www.jukedeck.com/",
+   "4 https",
+   "5 http://abcnotation.com",
+   "8 https://www.mturk.com/mturk/"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 129,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 http://www.ﬂow-machines.com/",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 https://www.ampermusic.com/",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 https://www.jukedeck.com/",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Raw Audio Models",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Symbolic Audio Models",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 https",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 http://abcnotation.com",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. ARCHITECTURE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Unique Symbolic Melody Generation with LSTM",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Local Conditioning with Raw Audio Models",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Hyperparameter Tuning",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4. EMPIRICAL EVALUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Training Datasets and Loss Analysis",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.2 Unconditioned Music Generation with WaveNet",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.3 Structure in Raw Audio Generations",
+   "page": 4,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5. CONCLUSIONS AND FUTURE WORK",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 https://www.mturk.com/mturk/",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. ACKNOWLEDGEMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.138235899998108,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 4,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [
+   "Networks",
+   "4.3.1 Raw Audio from Existing Melodies",
+   "4.3.2 Raw Audio From Unique LSTM Generations",
+   "4.3.3 Editing Existing Raw Audio"
+  ],
+  "unmatched_pred": [
+   "1 http://www.ﬂow-machines.com/",
+   "2 https://www.ampermusic.com/",
+   "3 https://www.jukedeck.com/",
+   "4 https",
+   "5 http://abcnotation.com",
+   "8 https://www.mturk.com/mturk/"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 13,
+  "fp": 6,
+  "fn": 4,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Networks",
+   "4.3.1 Raw Audio from Existing Melodies",
+   "4.3.2 Raw Audio From Unique LSTM Generations",
+   "4.3.3 Editing Existing Raw Audio"
+  ],
+  "unmatched_pred": [
+   "1 http://www.ﬂow-machines.com/",
+   "2 https://www.ampermusic.com/",
+   "3 https://www.jukedeck.com/",
+   "4 https",
+   "5 http://abcnotation.com",
+   "8 https://www.mturk.com/mturk/"
+  ],
+  "ignored_title_predictions": null
+ }
+}

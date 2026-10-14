@@ -1,0 +1,333 @@
+{
+ "doc": "1710.10663",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 13,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Deﬁnitions",
+   "Duality",
+   "Mean radii of random bit strings",
+   "Mean radii in large codes"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 17917,
+   "completion_tokens": 17045
+  },
+  "elapsed_llm_seconds": 81.65667670000039,
+  "content_preservation": 0.9796480188771999,
+  "inserted_word_share": 0.0007020359041219892,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "List-decodable zero-rate codes",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "1.1 Our results (binary alphabet)",
+    0,
+    2
+   ],
+   [
+    "2 Overview of the proof of Theorem 2",
+    0,
+    1
+   ],
+   [
+    "3 Mean radii",
+    0,
+    1
+   ],
+   [
+    "Deﬁnitions",
+    0,
+    2
+   ],
+   [
+    "Duality",
+    0,
+    2
+   ],
+   [
+    "4 Averaging",
+    0,
+    1
+   ],
+   [
+    "Mean radii of random bit strings",
+    0,
+    2
+   ],
+   [
+    "Mean radii in large codes",
+    0,
+    2
+   ],
+   [
+    "5 Abundance of random-like L-tuples",
+    0,
+    1
+   ],
+   [
+    "6 Proof of Theorem 2",
+    0,
+    1
+   ],
+   [
+    "7 Proof of Theorem 1",
+    0,
+    1
+   ],
+   [
+    "8 Proof of Theorem 3",
+    0,
+    1
+   ],
+   [
+    "9 Spherical codes in the Hilbert space",
+    0,
+    1
+   ],
+   [
+    "10 Remarks and open problems",
+    0,
+    1
+   ],
+   [
+    "References",
+    0,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "List-decodable zero-rate codes",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Our results (binary alphabet)",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2 Overview of the proof of Theorem 2",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Mean radii",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Deﬁnitions",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Duality",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Averaging",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Mean radii of random bit strings",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Mean radii in large codes",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Abundance of random-like L-tuples",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Proof of Theorem 2",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Proof of Theorem 1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Proof of Theorem 3",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Spherical codes in the Hilbert space",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Remarks and open problems",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 81.86801859999832,
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 18,
+  "tp": 3,
+  "fp": 15,
+  "fn": 10,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.21052631578947367,
+  "unmatched_gt": [
+   "2 Overview of the pro of of Theorem 2",
+   "3 Mean radii",
+   "4 Averaging",
+   "5 Abundance of random-like L-tuples",
+   "6 Pro of of Theorem 2",
+   "7 Pro of of Theorem 1",
+   "8 Pro of of Theorem 3",
+   "9 Spherical codes in the Hilb ert space",
+   "10 Remarks and open problems",
+   "References"
+  ],
+  "unmatched_pred": [
+   "List-decodable zero-rate codes",
+   "2 Overview of the proof of Theorem 2",
+   "3 Mean radii",
+   "Deﬁnitions",
+   "Duality",
+   "4 Averaging",
+   "Mean radii of random bit strings",
+   "Mean radii in large codes",
+   "5 Abundance of random-like L-tuples",
+   "6 Proof of Theorem 2",
+   "7 Proof of Theorem 1",
+   "8 Proof of Theorem 3",
+   "9 Spherical codes in the Hilbert space",
+   "10 Remarks and open problems",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 18,
+  "tp": 3,
+  "fp": 15,
+  "fn": 10,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.21052631578947367,
+  "unmatched_gt": [
+   "2 Overview of the pro of of Theorem 2",
+   "3 Mean radii",
+   "4 Averaging",
+   "5 Abundance of random-like L-tuples",
+   "6 Pro of of Theorem 2",
+   "7 Pro of of Theorem 1",
+   "8 Pro of of Theorem 3",
+   "9 Spherical codes in the Hilb ert space",
+   "10 Remarks and open problems",
+   "References"
+  ],
+  "unmatched_pred": [
+   "List-decodable zero-rate codes",
+   "2 Overview of the proof of Theorem 2",
+   "3 Mean radii",
+   "Deﬁnitions",
+   "Duality",
+   "4 Averaging",
+   "Mean radii of random bit strings",
+   "Mean radii in large codes",
+   "5 Abundance of random-like L-tuples",
+   "6 Proof of Theorem 2",
+   "7 Proof of Theorem 1",
+   "8 Proof of Theorem 3",
+   "9 Spherical codes in the Hilbert space",
+   "10 Remarks and open problems",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Deﬁnitions",
+   "Duality",
+   "Mean radii of random bit strings",
+   "Mean radii in large codes"
+  ],
+  "ignored_title_predictions": null
+ }
+}

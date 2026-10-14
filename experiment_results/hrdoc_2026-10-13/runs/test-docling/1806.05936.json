@@ -1,0 +1,117 @@
+{
+ "doc": "1806.05936",
+ "system": "docling",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 79.59643549999964
+ },
+ "predictions": [
+  {
+   "text": "Optimal bounds for single-source Kolmogorov extractors",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Kolmogorov Complexity",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Characterization of EXT",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Translating the problem: hypergraphs",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 The positive case: random hypergraphs",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 The negative case: β ≥ kα/(1 + (k -1)α)",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Characterization of EXT p",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Going beyond constant-size advice",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0040507000012439676,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Optimal bounds for single-source Kolmogorov extractors"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

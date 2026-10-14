@@ -1,0 +1,157 @@
+{
+ "doc": "1605.01465",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 ˜u1(s, ·) − ˜u2(s, ·) Hds,",
+   "0 ˜u1(s, ·) − ˜u2(s, ·) Hds with L := 2 ˜CCLip."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 903,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 9,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 9,
+   "prompt_tokens": 35243,
+   "completion_tokens": 648,
+   "total_tokens": 35891
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Filter Description",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 PDE Based Image Filtering",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Parameter Selection",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 Response function F",
+   "page": 8,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Tensor ˜H0",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Relaxation time τ",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 The regular case σ > 0",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 ˜u1(s, ·) − ˜u2(s, ·) Hds,",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 ˜u1(s, ·) − ˜u2(s, ·) Hds with L := 2 ˜CCLip.",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Limiting case σ = 0",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Maximal L2-Regularity for Non-Autonomous Forms",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.72028290000162,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 ˜u1(s, ·) − ˜u2(s, ·) Hds,",
+   "0 ˜u1(s, ·) − ˜u2(s, ·) Hds with L := 2 ˜CCLip."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 ˜u1(s, ·) − ˜u2(s, ·) Hds,",
+   "0 ˜u1(s, ·) − ˜u2(s, ·) Hds with L := 2 ˜CCLip."
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "doc": "1706.05655",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 629,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18326,
+   "completion_tokens": 743,
+   "total_tokens": 19069
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preferential placement",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Deﬁnition",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Tree-based interpretation",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Analysis of preferential placement",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Experimental setup",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Clustering structure depending on Ξ",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 The distribution of cluster sizes",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3.1 Theoretical analysis",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.3.2 Empirical analysis.",
+   "page": 7,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.3.3 Inﬂuence of parameters",
+   "page": 10,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.4 Scatter of conﬁgurations",
+   "page": 11,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Graph models",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Possible deﬁnitions",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.2 Case study",
+   "page": 14,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5 Conclusion and future work",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof of Theorem 1",
+   "page": 21,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "Proof of Lemma 1",
+   "page": 24,
+   "level": 2,
+   "parent": 19
+  }
+ ],
+ "seconds": 29.887959699997737,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

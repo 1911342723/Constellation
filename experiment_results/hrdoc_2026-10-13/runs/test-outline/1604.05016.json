@@ -1,0 +1,128 @@
+{
+ "doc": "1604.05016",
+ "system": "outline",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "A. BEGe Detectors",
+   "C. LAr Instrumentation",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "III-A BEGe Detectors",
+   "III-C LAr Instrumentation",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II The Gerda Experiment",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Phase I Results",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Upgrade to Phase II",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A BEGe Detectors",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III-B Detector Assembly and Read-Out Electronics",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III-C LAr Instrumentation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV Start of Phase II Data Taking",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.024933299999247538,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "A. BEGe Detectors",
+   "C. LAr Instrumentation",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "III-A BEGe Detectors",
+   "III-C LAr Instrumentation",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "A. BEGe Detectors",
+   "C. LAr Instrumentation"
+  ],
+  "unmatched_pred": [
+   "III-A BEGe Detectors",
+   "III-C LAr Instrumentation"
+  ],
+  "ignored_title_predictions": null
+ }
+}

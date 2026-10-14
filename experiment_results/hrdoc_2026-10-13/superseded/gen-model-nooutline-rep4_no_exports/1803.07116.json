@@ -1,0 +1,155 @@
+{
+ "doc": "1803.07116",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 School of Electronics and Computer Science, University of Southampton, UK",
+   "2 Laboratoire Hubert Curien, CNRS, UJM-Saint-´Etienne, Universit´e de Lyon, Fran",
+   "Generalisation Across Domains. To investi-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 School of Electronics and Computer Science, University of Southampton, UK",
+   "2 Laboratoire Hubert Curien, CNRS, UJM-Saint-´Etienne, Universit´e de Lyon, Fran",
+   "Generalisation Across Domains. To investi-"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 157,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10344,
+   "completion_tokens": 529,
+   "total_tokens": 10873
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9368544600938967,
+   "in_order": 0.8767605633802817,
+   "inserted": 0.059613572101790746
+  }
+ },
+ "predictions": [
+  {
+   "text": "1 School of Electronics and Computer Science, University of Southampton, UK",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Laboratoire Hubert Curien, CNRS, UJM-Saint-´Etienne, Universit´e de Lyon, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Encoding the Triples",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Decoding the Summary",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Copy Actions",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4 Implementation and Training Details",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 Dataset",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Baselines",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Results and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Generalisation Across Domains. To investi-",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.582270400002017
+}

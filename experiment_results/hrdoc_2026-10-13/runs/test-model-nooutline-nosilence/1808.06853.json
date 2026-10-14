@@ -1,0 +1,169 @@
+{
+ "doc": "1808.06853",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Distributional Thesaurus – JoBimText: We use",
+   "Simpliﬁcation using Crowdsourcing"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 104,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4697,
+   "completion_tokens": 600,
+   "total_tokens": 5297
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 System Architecture of PAR4SEM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The Backend Component",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.1.1 Paraphrasing Resources",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Distributional Thesaurus – JoBimText: We use",
+   "page": 2,
+   "level": 4,
+   "parent": 4
+  },
+  {
+   "text": "2.1.2 Adaptive Machine Learning",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1.3 Backend Technologies",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Frontend Components",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 UI Components for Paraphrasing",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "2.2.2 Frontend Technologies",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "2.3 RESTful API Component",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3.1 Installation and Deployment",
+   "page": 4,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "3 Use-case – Adaptive Text",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Simpliﬁcation using Crowdsourcing",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.048945700000331,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Distributional Thesaurus – JoBimText: We use",
+   "Simpliﬁcation using Crowdsourcing"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Distributional Thesaurus – JoBimText: We use",
+   "Simpliﬁcation using Crowdsourcing"
+  ],
+  "ignored_title_predictions": null
+ }
+}

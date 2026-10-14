@@ -1,0 +1,128 @@
+{
+ "doc": "1710.05149",
+ "system": "det",
+ "metrics": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "Y. Pan, Z. Yang and M",
+   "M. Based on (14), (17) is simpliﬁed to"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 746,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Y. Pan, Z. Yang and M",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. POWER CONTROL AND CHANNEL ASSIGNMENT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Power Control for CUs",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "M. Based on (14), (17) is simpliﬁed to",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. D2D Power Control and Channel Assignment",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. SIMULATION RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.386741599999368,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "Y. Pan, Z. Yang and M",
+   "M. Based on (14), (17) is simpliﬁed to"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Y. Pan, Z. Yang and M",
+   "M. Based on (14), (17) is simpliﬁed to"
+  ],
+  "ignored_title_predictions": null
+ }
+}

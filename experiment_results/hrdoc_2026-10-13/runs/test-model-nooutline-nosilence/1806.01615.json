@@ -1,0 +1,208 @@
+{
+ "doc": "1806.01615",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 25,
+  "parent_correct": 25,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1498,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 29880,
+   "completion_tokens": 1072,
+   "total_tokens": 30952
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The architecture of merlin",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 merlin syntax",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.1.1 Element types",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1.2 Utility functions",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1.3 merlin postestimation",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "3 Examples",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Linear mixed eﬀects regression",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 User-deﬁned model",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3 Survival/time-to-event analysis",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3.1 Weibull proportional hazards model",
+   "page": 10,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.2 Spline-based survival model",
+   "page": 10,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.3 Assess proportional-hazards",
+   "page": 11,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.4 Add a non-linear eﬀect",
+   "page": 12,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.5 Delayed entry/left-truncation",
+   "page": 13,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.4 Competing risks",
+   "page": 14,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.5 A multiple-outcome/multivariate model",
+   "page": 15,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.6 A ﬁnal model",
+   "page": 19,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Discussion",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 The curse of generality",
+   "page": 21,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "4.2 Shell commands",
+   "page": 21,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "4.3 Concluding remarks",
+   "page": 21,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "About the author",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.419512399999803,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 25,
+  "parent_correct": 25,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

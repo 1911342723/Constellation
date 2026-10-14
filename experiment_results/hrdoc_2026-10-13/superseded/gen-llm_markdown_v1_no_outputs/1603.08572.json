@@ -1,0 +1,357 @@
+{
+ "doc": "1603.08572",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 23,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "ume constraint",
+   "equations",
+   "2-D example"
+  ],
+  "unmatched_pred": [
+   "A robust and eﬃcient adaptive multigrid solver for the optimal control of phase ",
+   "Algorithm 1 Adaptive-α"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 17130,
+   "completion_tokens": 16215
+  },
+  "elapsed_llm_seconds": 71.99392770000122,
+  "content_preservation": 0.9453452359263983,
+  "inserted_word_share": 0.0466654418519199,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "optimal control paper",
+    0,
+    1
+   ],
+   [
+    "A robust and eﬃcient adaptive multigrid solver for the optimal control of phase ﬁeld formulations of geometric evolution laws",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    1,
+    1
+   ],
+   [
+    "2 Optimal control of a forced Allen-Cahn equation with volume constraint",
+    1,
+    1
+   ],
+   [
+    "3 Numerical solution methods",
+    1,
+    1
+   ],
+   [
+    "3.1 Adaptive iterative update for the optimal control",
+    1,
+    2
+   ],
+   [
+    "3.2 Space-time discretizations of the forward Allen-Cahn and adjoint equations",
+    1,
+    2
+   ],
+   [
+    "Algorithm 1 Adaptive-α",
+    7,
+    2
+   ],
+   [
+    "3.3 Techniques for improving algorithm eﬃciency",
+    9,
+    2
+   ],
+   [
+    "4 Numerical experiments",
+    12,
+    1
+   ],
+   [
+    "4.1 A 2-D benchmark example",
+    12,
+    2
+   ],
+   [
+    "4.2 Convergence tests for the benchmark 2-D example",
+    14,
+    2
+   ],
+   [
+    "4.3 The multigrid performance on the benchmark 2-D example",
+    16,
+    2
+   ],
+   [
+    "4.4 Adaptive-α algorithm with the benchmark 2-D example",
+    17,
+    2
+   ],
+   [
+    "4.5 Two-grid solution strategy with dynamic AMR on the benchmark 2-D example",
+    19,
+    2
+   ],
+   [
+    "4.6 3-D example",
+    21,
+    2
+   ],
+   [
+    "4.7 Irregular shapes",
+    22,
+    2
+   ],
+   [
+    "5 Conclusion",
+    25,
+    1
+   ],
+   [
+    "Data Management",
+    28,
+    2
+   ],
+   [
+    "Acknowledgements",
+    28,
+    2
+   ],
+   [
+    "References",
+    28,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "optimal control paper",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A robust and eﬃcient adaptive multigrid solver for the optimal control of phase ﬁeld formulations of geometric evolution laws",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Optimal control of a forced Allen-Cahn equation with volume constraint",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Numerical solution methods",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Adaptive iterative update for the optimal control",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Space-time discretizations of the forward Allen-Cahn and adjoint equations",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Algorithm 1 Adaptive-α",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Techniques for improving algorithm eﬃciency",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Numerical experiments",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 A 2-D benchmark example",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Convergence tests for the benchmark 2-D example",
+   "page": 14,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 The multigrid performance on the benchmark 2-D example",
+   "page": 16,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.4 Adaptive-α algorithm with the benchmark 2-D example",
+   "page": 17,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.5 Two-grid solution strategy with dynamic AMR on the benchmark 2-D example",
+   "page": 19,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.6 3-D example",
+   "page": 21,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.7 Irregular shapes",
+   "page": 22,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Data Management",
+   "page": 28,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 28,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "References",
+   "page": 28,
+   "level": 2,
+   "parent": 18
+  }
+ ],
+ "seconds": 72.47125280000182,
+ "metrics_raw": {
+  "gt": 23,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 7,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "2 Optimal control of a forced Allen-Cahn equation with vol-",
+   "ume constraint",
+   "3 Numerical solution methods",
+   "3.1 Adaptive iterative update for the optimal control",
+   "3.2 Space-time discretizations of the forward Allen-Cahn and adjoint",
+   "equations",
+   "2-D example"
+  ],
+  "unmatched_pred": [
+   "A robust and eﬃcient adaptive multigrid solver for the optimal control of phase ",
+   "2 Optimal control of a forced Allen-Cahn equation with volume constraint",
+   "3 Numerical solution methods",
+   "3.1 Adaptive iterative update for the optimal control",
+   "3.2 Space-time discretizations of the forward Allen-Cahn and adjoint equations",
+   "Algorithm 1 Adaptive-α"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 7,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "2 Optimal control of a forced Allen-Cahn equation with vol-",
+   "ume constraint",
+   "3 Numerical solution methods",
+   "3.1 Adaptive iterative update for the optimal control",
+   "3.2 Space-time discretizations of the forward Allen-Cahn and adjoint",
+   "equations",
+   "2-D example"
+  ],
+  "unmatched_pred": [
+   "A robust and eﬃcient adaptive multigrid solver for the optimal control of phase ",
+   "2 Optimal control of a forced Allen-Cahn equation with volume constraint",
+   "3 Numerical solution methods",
+   "3.1 Adaptive iterative update for the optimal control",
+   "3.2 Space-time discretizations of the forward Allen-Cahn and adjoint equations",
+   "Algorithm 1 Adaptive-α"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [
+   "ume constraint",
+   "equations",
+   "2-D example"
+  ],
+  "unmatched_pred": [
+   "A robust and eﬃcient adaptive multigrid solver for the optimal control of phase ",
+   "Algorithm 1 Adaptive-α"
+  ],
+  "ignored_title_predictions": null
+ }
+}

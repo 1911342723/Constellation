@@ -1,0 +1,81 @@
+{
+ "doc": "1604.07649",
+ "system": "docling",
+ "metrics": {
+  "gt": 6,
+  "pred": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 16.67618599999696
+ },
+ "predictions": [
+  {
+   "text": "Critical fluctuations of the electrical activity of the heart: Shortcomings of models of excitability and interpretation.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.002183800002967473,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion"
+  ],
+  "unmatched_pred": [
+   "Critical fluctuations of the electrical activity of the heart: Shortcomings of m"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "Introduction.",
+   "Measurements.",
+   "Gap junctions.",
+   "Discussion.",
+   "Conclusion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

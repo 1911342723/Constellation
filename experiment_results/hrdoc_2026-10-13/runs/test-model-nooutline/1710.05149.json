@@ -1,0 +1,114 @@
+{
+ "doc": "1710.05149",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Index Terms",
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 746,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3798,
+   "completion_tokens": 340,
+   "total_tokens": 4138
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. POWER CONTROL AND CHANNEL ASSIGNMENT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Power Control for CUs",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. SIMULATION RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.756086999997933,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Index Terms",
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "B. D2D Power Control and Channel Assignment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

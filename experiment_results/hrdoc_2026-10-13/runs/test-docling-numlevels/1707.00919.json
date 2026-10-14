@@ -1,0 +1,160 @@
+{
+ "doc": "1707.00919",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Massively parallel multicanonical simulations",
+   "Abstract",
+   "PROGRAM SUMMARY",
+   "Appendix A. Measures of Convergence"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Massively parallel multicanonical simulations",
+   "PROGRAM SUMMARY"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 37.0271010999968
+ },
+ "predictions": [
+  {
+   "text": "Massively parallel multicanonical simulations",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROGRAM SUMMARY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Parallel Multicanonical Algorithm",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Multicanonical sampling",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2. Parallel multicanonical sampling",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3. Implementation on GPU",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3. Performance",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Hardware performance",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2. Software performance",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3. Verification of physical results",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4. Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Measures of Convergence",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.008098599995719269,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Massively parallel multicanonical simulations",
+   "Abstract",
+   "PROGRAM SUMMARY",
+   "Appendix A. Measures of Convergence"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,342 @@
+{
+ "doc": "1704.07982",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "Cases",
+   "9.3 Results",
+   "10.2 Analysis"
+  ],
+  "unmatched_pred": [
+   "7.0.3 Results",
+   "10.2 Analysis",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 17669,
+   "completion_tokens": 17561
+  },
+  "elapsed_llm_seconds": 78.79032039999947,
+  "content_preservation": 0.997589716122121,
+  "inserted_word_share": 0.0,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Exact Algorithms via Multivariate Subroutines",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Preliminaries",
+    2,
+    2
+   ],
+   [
+    "3 Results",
+    3,
+    2
+   ],
+   [
+    "4 Random Sampling and Multivariate Subroutines",
+    3,
+    2
+   ],
+   [
+    "5 Derandomization",
+    5,
+    2
+   ],
+   [
+    "6 Enumeration",
+    6,
+    2
+   ],
+   [
+    "7 Feedback Vertex Set",
+    7,
+    2
+   ],
+   [
+    "7.0.1 Measure",
+    7,
+    3
+   ],
+   [
+    "7.0.2 Algorithm",
+    8,
+    3
+   ],
+   [
+    "7.0.3 Results",
+    9,
+    3
+   ],
+   [
+    "8 Minimal Vertex Covers",
+    10,
+    2
+   ],
+   [
+    "9 Minimal Feedback Vertex Sets",
+    10,
+    2
+   ],
+   [
+    "9.1 Measure",
+    10,
+    3
+   ],
+   [
+    "9.2 Algorithm",
+    11,
+    3
+   ],
+   [
+    "9.3 Results",
+    16,
+    3
+   ],
+   [
+    "10 Minimal Hitting Sets",
+    16,
+    2
+   ],
+   [
+    "10.1 Measure",
+    16,
+    3
+   ],
+   [
+    "10.2 Analysis",
+    17,
+    3
+   ],
+   [
+    "11 Conclusion",
+    17,
+    2
+   ],
+   [
+    "Acknowledgments",
+    17,
+    2
+   ],
+   [
+    "References",
+    18,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Random Sampling and Multivariate Subroutines",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Derandomization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Enumeration",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Feedback Vertex Set",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.0.1 Measure",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7.0.2 Algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7.0.3 Results",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "8 Minimal Vertex Covers",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Minimal Feedback Vertex Sets",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1 Measure",
+   "page": 10,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "9.2 Algorithm",
+   "page": 10,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "9.3 Results",
+   "page": 11,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "10 Minimal Hitting Sets",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10.1 Measure",
+   "page": 16,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "10.2 Analysis",
+   "page": 16,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "11 Conclusion",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 79.08061240000097,
+ "metrics_raw": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 8,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "Exact Algorithms via Multivariate Subroutines",
+   "Acknowledgments"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 17,
+  "parent_correct": 16,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [
+   "Cases",
+   "9.3 Results",
+   "10.2 Analysis"
+  ],
+  "unmatched_pred": [
+   "7.0.3 Results",
+   "10.2 Analysis"
+  ],
+  "ignored_title_predictions": null
+ }
+}

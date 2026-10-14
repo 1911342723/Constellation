@@ -1,0 +1,207 @@
+{
+ "doc": "1710.07004",
+ "system": "docling",
+ "metrics": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 86.85352419999981
+ },
+ "predictions": [
+  {
+   "text": "Modal Regression using Kernel Density Estimation: a Review",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Modal Regression",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Estimating Uni-modal Regression",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Estimating Multi-modal Regression",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Uni-modal versus Multi-modal Regression",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Consistency of Modal Regression",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Uni-Modal Regression",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Multi-Modal Regression",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Bandwidth Selection",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Plug-in Estimate",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Adapting from Conditional Density Estimation",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2.1 CV-SIMEX method",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2.2 Modal CV-criteria",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 Prediction Band Approach",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Computational Methods",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 EM Algorithm",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Meanshift Algorithm",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Available Softwares",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Similar Approaches to Modal Regression",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Mixture of Regression",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.2 Regression Quantization",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Discussion",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01575359999696957,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 26,
+  "tp": 25,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5185185185185186,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Modal Regression using Kernel Density Estimation: a Review"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4782608695652174,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

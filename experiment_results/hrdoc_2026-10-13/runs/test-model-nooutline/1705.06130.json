@@ -1,0 +1,154 @@
+{
+ "doc": "1705.06130",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [
+   "2) Solar power curve:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 633,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10910,
+   "completion_tokens": 601,
+   "total_tokens": 11511
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. GENERATING REALISTIC PROSUMER PATTERNS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NOTATIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. UTILITY FUNCTION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. COALITION FORMATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Representing the correlation structure",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Algorithm",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Cliques",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "VII. RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Algorithms",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Net production series",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  }
+ ],
+ "seconds": 13.652488399999129,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [
+   "2) Solar power curve:"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "2) Solar power curve:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

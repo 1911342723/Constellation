@@ -1,0 +1,80 @@
+{
+ "doc": "1706.04737",
+ "system": "outline",
+ "metrics": {
+  "gt": 8,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Method",
+   "2.1 A new fully convolutional network",
+   "2.2 Uncertainty estimation and similarity estimation",
+   "2.3 Annotation suggestion",
+   "3 Experiments and Results",
+   "4 Conclusions",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Suggestive Annotation: A Deep Active Learning Framework for Biomedical Image Segmentation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.036758199999894714,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Method",
+   "2.1 A new fully convolutional network",
+   "2.2 Uncertainty estimation and similarity estimation",
+   "2.3 Annotation suggestion",
+   "3 Experiments and Results",
+   "4 Conclusions",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Suggestive Annotation: A Deep Active Learning Framework for Biomedical Image Seg"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.125,
+  "unmatched_gt": [
+   "1 Introduction",
+   "2 Method",
+   "2.1 A new fully convolutional network",
+   "2.2 Uncertainty estimation and similarity estimation",
+   "2.3 Annotation suggestion",
+   "3 Experiments and Results",
+   "4 Conclusions"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

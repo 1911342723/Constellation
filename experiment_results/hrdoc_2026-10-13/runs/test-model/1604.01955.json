@@ -1,0 +1,155 @@
+{
+ "doc": "1604.01955",
+ "system": "model",
+ "metrics": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 12,
+  "parent_correct": 7,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "ITORING SYSTEM",
+   "TION",
+   "gration",
+   "TION OBSERVATION"
+  ],
+  "unmatched_pred": [
+   "Keywords"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 280,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4646,
+   "completion_tokens": 571,
+   "total_tokens": 5217
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. HOW DIDI’SDATABUILTTOTHEMON-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Remove noises",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Model training",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 AP print conformity checking algorithm",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. MULTI-SCALEMIGRATIONOBSERVA-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Inter-provincial and Intra-provincial mi-",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Intra-city level migration",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. CONSECUTIVE PERIODICAL MIGRA-",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSIONS AND FUTURE WORK",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.707789500000217,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 12,
+  "parent_correct": 7,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "ITORING SYSTEM",
+   "TION",
+   "gration",
+   "TION OBSERVATION"
+  ],
+  "unmatched_pred": [
+   "Keywords"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 10,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "ITORING SYSTEM",
+   "TION",
+   "gration",
+   "TION OBSERVATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

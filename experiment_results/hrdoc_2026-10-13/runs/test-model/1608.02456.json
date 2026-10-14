@@ -1,0 +1,339 @@
+{
+ "doc": "1608.02456",
+ "system": "model",
+ "metrics": {
+  "gt": 24,
+  "pred": 38,
+  "tp": 23,
+  "fp": 15,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 19,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "6 Beam loss mitigation"
+  ],
+  "unmatched_pred": [
+   "Keywords",
+   "Beam loss mechanism",
+   "Possible for",
+   "Possible for",
+   "H+ beam",
+   "H− beam",
+   "Beam loss",
+   "mechanism",
+   "SNS",
+   "J-PARC",
+   "ISIS",
+   "LANSCE",
+   "6 Beam loss mitigation",
+   "Cause of beam loss",
+   "Mitigation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 339,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13900,
+   "completion_tokens": 985,
+   "total_tokens": 14885
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Why accelerate H− beams?",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Beam loss mechanism",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Possible for",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Possible for",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "H+ beam",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "H− beam",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Beam loss mechanisms",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Residual gas stripping",
+   "page": 1,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.1.1 Gas stripping example",
+   "page": 2,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.2 H+ capture and acceleration",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.3 Intra-beam stripping",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.4 Magnetic ﬁeld stripping",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.5 Black-body radiation",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Beam loss",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "mechanism",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "SNS",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "J-PARC",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "ISIS",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "LANSCE",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Beam loss in both H+ and H− linacs",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Beam loss due to halo/tails",
+   "page": 11,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "4.2 Beam loss due to RF turn on/turn off transients",
+   "page": 12,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "4.3 Beam loss due to dark current",
+   "page": 12,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "4.4 Occasional beam loss",
+   "page": 13,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "5 Errant beam capture at SNS",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Beam loss mitigation",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Cause of beam loss",
+   "page": 17,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "Mitigation",
+   "page": 17,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "6.1 Low-energy scraping",
+   "page": 17,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "6.2 Beam loss reduction by increasing the H− beam size",
+   "page": 17,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "6.3 Matching",
+   "page": 18,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "6.4 Beam loss reduction by magnet and RF phase adjustments",
+   "page": 20,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "7 Summary",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.348750500001188,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 38,
+  "tp": 23,
+  "fp": 15,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 19,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "6 Beam loss mitigation"
+  ],
+  "unmatched_pred": [
+   "Keywords",
+   "Beam loss mechanism",
+   "Possible for",
+   "Possible for",
+   "H+ beam",
+   "H− beam",
+   "Beam loss",
+   "mechanism",
+   "SNS",
+   "J-PARC",
+   "ISIS",
+   "LANSCE",
+   "6 Beam loss mitigation",
+   "Cause of beam loss",
+   "Mitigation"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 34,
+  "tp": 20,
+  "fp": 14,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 16,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "6 Beam loss mitigation"
+  ],
+  "unmatched_pred": [
+   "Beam loss mechanism",
+   "Possible for",
+   "Possible for",
+   "H+ beam",
+   "H− beam",
+   "Beam loss",
+   "mechanism",
+   "SNS",
+   "J-PARC",
+   "ISIS",
+   "LANSCE",
+   "6 Beam loss mitigation",
+   "Cause of beam loss",
+   "Mitigation"
+  ],
+  "ignored_title_predictions": null
+ }
+}

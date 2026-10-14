@@ -1,0 +1,170 @@
+{
+ "doc": "1807.05812",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes"
+  ],
+  "unmatched_pred": [
+   "3.1 | Challenge outcomes"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes"
+  ],
+  "unmatched_pred": [
+   "3.1 | Challenge outcomes"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 323,
+  "layout_marked": 21,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 15283,
+   "completion_tokens": 653,
+   "total_tokens": 15936
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9595877955142453,
+  "inserted_word_share": 0.4775577557755776
+ },
+ "predictions": [
+  {
+   "text": "1 | INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 | MATERIALS AND METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 | Datasets",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 | Baseline classiﬁers",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 | The public challenge",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4 | Evaluation",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.5 | Further analysis via PolandNFC dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 | RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 | Challenge outcomes",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 | Error analysis",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3 | Further analysis via PolandNFC dataset results",
+   "page": 11,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 | DISCUSSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AC K N O W L E D G M E N T S",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AU T H O R C O N T R I B U T I O N S",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DATA AC C E S S I B I L I T Y",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RE F E R E N C E S",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.697765099997923,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [
+   "3.1 | Challenge outcomes"
+  ],
+  "unmatched_pred": [
+   "3.1 | Challenge outcomes"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

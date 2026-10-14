@@ -1,0 +1,387 @@
+{
+ "doc": "1808.05481",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 40,
+  "tp": 15,
+  "fp": 25,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 10,
+  "teds": 0.31707317073170727,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "Lemma 4.7. If s →∞",
+   "Lemma 4.8. If t1 →∞",
+   "Lemma 4.9. If t1 →∞",
+   "Proof. Suppose s is not in rnf, i.e., s ≡⊥ or s ≡ s1s2 with s1 →∗",
+   "β⊥R-calculus in turn implies conﬂuence of →∞",
+   "5.1. Properties of ∼U",
+   "Lemma 5.3. If t →∞",
+   "Proof. By coinduction. If s ≡ a then t →∗",
+   "Lemma 5.11. If s →∗",
+   "Corollary 5.12. If t1 ⇒⊥U t2 →∗",
+   "Corollary 5.15. If t ∈U and t →∞",
+   "Corollary 5.16. If s ∈U and t →∞",
+   "Lemma 5.17. If t →∞",
+   "Corollary 5.18. If t →∞",
+   "Proof. By Lemma 5.14 we have t →∞",
+   "Lemma 5.21. If t →∞",
+   "Proof. If the weak head redex in t is contracted in t →∞",
+   "Lemma 5.22. If t →∞",
+   "Lemma 5.23. If t →∗",
+   "Lemma 5.25. If t →∞",
+   "Theorem 5.32. If t →∞",
+   "Proof. By coinduction. If s ≡⊥ then t′ ∈U. By Corollary 5.16 also t ∈U. Hence",
+   "Lemma 5.45. If t →∞",
+   "Proof. Suppose t has a rnf. Then by Lemma 5.22 there is t′ in rnf with t →∗",
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1374,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 9,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 9,
+   "prompt_tokens": 37845,
+   "completion_tokens": 910,
+   "total_tokens": 38755
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Related work",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. Infinite terms and corecursion",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Coinduction",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Definitions and basic properties",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 4.7. If s →∞",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 4.8. If t1 →∞",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 4.9. If t1 →∞",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. Suppose s is not in rnf, i.e., s ≡⊥ or s ≡ s1s2 with s1 →∗",
+   "page": 14,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5. Confluence and normalisation of B¨ohm reductions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "β⊥R-calculus in turn implies conﬂuence of →∞",
+   "page": 15,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.1. Properties of ∼U",
+   "page": 15,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Lemma 5.3. If t →∞",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. By coinduction. If s ≡ a then t →∗",
+   "page": 16,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.2. Properties of parallel ⊥U-reduction",
+   "page": 16,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Lemma 5.11. If s →∗",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Corollary 5.12. If t1 ⇒⊥U t2 →∗",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Corollary 5.15. If t ∈U and t →∞",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Corollary 5.16. If s ∈U and t →∞",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.17. If t →∞",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Corollary 5.18. If t →∞",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. By Lemma 5.14 we have t →∞",
+   "page": 17,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "Lemma 5.21. If t →∞",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. If the weak head redex in t is contracted in t →∞",
+   "page": 18,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "Lemma 5.22. If t →∞",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.23. If t →∗",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 5.25. If t →∞",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.4. Inﬁnitary NU-reduction. In the λ∞",
+   "page": 19,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "Theorem 5.32. If t →∞",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. By coinduction. If s ≡⊥ then t′ ∈U. By Corollary 5.16 also t ∈U. Hence",
+   "page": 20,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "5.5. Conﬂuence and normalisation",
+   "page": 20,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "5.6. Root-active terms are strongly meaningless.",
+   "page": 20,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "Lemma 5.45. If t →∞",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. Suppose t has a rnf. Then by Lemma 5.22 there is t′ in rnf with t →∗",
+   "page": 21,
+   "level": 2,
+   "parent": 32
+  },
+  {
+   "text": "5.7. Conﬂuence modulo equivalence of meaningless terms. From conﬂuence of the",
+   "page": 22,
+   "level": 2,
+   "parent": 32
+  },
+  {
+   "text": "6. Strongly convergent reductions",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. The formalisation",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Conclusions",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 23.375977700001386,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 40,
+  "tp": 15,
+  "fp": 25,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 10,
+  "teds": 0.31707317073170727,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "Lemma 4.7. If s →∞",
+   "Lemma 4.8. If t1 →∞",
+   "Lemma 4.9. If t1 →∞",
+   "Proof. Suppose s is not in rnf, i.e., s ≡⊥ or s ≡ s1s2 with s1 →∗",
+   "β⊥R-calculus in turn implies conﬂuence of →∞",
+   "5.1. Properties of ∼U",
+   "Lemma 5.3. If t →∞",
+   "Proof. By coinduction. If s ≡ a then t →∗",
+   "Lemma 5.11. If s →∗",
+   "Corollary 5.12. If t1 ⇒⊥U t2 →∗",
+   "Corollary 5.15. If t ∈U and t →∞",
+   "Corollary 5.16. If s ∈U and t →∞",
+   "Lemma 5.17. If t →∞",
+   "Corollary 5.18. If t →∞",
+   "Proof. By Lemma 5.14 we have t →∞",
+   "Lemma 5.21. If t →∞",
+   "Proof. If the weak head redex in t is contracted in t →∞",
+   "Lemma 5.22. If t →∞",
+   "Lemma 5.23. If t →∗",
+   "Lemma 5.25. If t →∞",
+   "Theorem 5.32. If t →∞",
+   "Proof. By coinduction. If s ≡⊥ then t′ ∈U. By Corollary 5.16 also t ∈U. Hence",
+   "Lemma 5.45. If t →∞",
+   "Proof. Suppose t has a rnf. Then by Lemma 5.22 there is t′ in rnf with t →∗",
+   "Appendix A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 38,
+  "tp": 14,
+  "fp": 24,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 9,
+  "teds": 0.28205128205128205,
+  "unmatched_gt": [
+   "Definition 2.1.",
+   "5.3. Weak head reduction.",
+   "9. A set of meaningless terms not satisfying the expansion axiom"
+  ],
+  "unmatched_pred": [
+   "Lemma 4.7. If s →∞",
+   "Lemma 4.8. If t1 →∞",
+   "Lemma 4.9. If t1 →∞",
+   "Proof. Suppose s is not in rnf, i.e., s ≡⊥ or s ≡ s1s2 with s1 →∗",
+   "β⊥R-calculus in turn implies conﬂuence of →∞",
+   "5.1. Properties of ∼U",
+   "Lemma 5.3. If t →∞",
+   "Proof. By coinduction. If s ≡ a then t →∗",
+   "Lemma 5.11. If s →∗",
+   "Corollary 5.12. If t1 ⇒⊥U t2 →∗",
+   "Corollary 5.15. If t ∈U and t →∞",
+   "Corollary 5.16. If s ∈U and t →∞",
+   "Lemma 5.17. If t →∞",
+   "Corollary 5.18. If t →∞",
+   "Proof. By Lemma 5.14 we have t →∞",
+   "Lemma 5.21. If t →∞",
+   "Proof. If the weak head redex in t is contracted in t →∞",
+   "Lemma 5.22. If t →∞",
+   "Lemma 5.23. If t →∗",
+   "Lemma 5.25. If t →∞",
+   "Theorem 5.32. If t →∞",
+   "Proof. By coinduction. If s ≡⊥ then t′ ∈U. By Corollary 5.16 also t ∈U. Hence",
+   "Lemma 5.45. If t →∞",
+   "Proof. Suppose t has a rnf. Then by Lemma 5.22 there is t′ in rnf with t →∗"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "doc": "1705.09677",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 786,
+  "layout_marked": 27,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8941190010357923,
+  "inserted_word_share": 0.11926085477836978
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 ESP-design",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Problem formulation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Continuous relaxation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Algorithms and analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Sampling from the continuous relaxation",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Greedy approach",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Computational considerations",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Further Implications",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experimental results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Synthetic experiments: optimization comparison",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6.2 Real data",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "7 Conclusion and future work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Geodesic convexity",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Proof of Lemma 3.3",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 Proof of Corollary 3.4",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Bounding the support of the continuous relaxation",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C Greedy algorithm details",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D Obtaining the dual formulation",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E Additional synthetic experimental results",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.124132899996766,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

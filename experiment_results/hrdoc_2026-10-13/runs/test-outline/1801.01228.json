@@ -1,0 +1,202 @@
+{
+ "doc": "1801.01228",
+ "system": "outline",
+ "metrics": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 11,
+  "fp": 7,
+  "fn": 8,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Actions",
+   "C. Observations",
+   "D. Belief",
+   "A. Heuristic Policy",
+   "B. Random policy",
+   "C. Experimental Setup",
+   "AC K NO WLE DGME N T"
+  ],
+  "unmatched_pred": [
+   "II-B Actions",
+   "II-C Observations",
+   "II-D Belief",
+   "III-A Heuristic Policy",
+   "III-B Random policy",
+   "III-C Experimental Setup",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Our POMDP Formulation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Reduced State Space",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Actions",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-C Observations",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-D Belief",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-E Transition Function",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-F Reward Function and Discount Factor",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Experiments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Heuristic Policy",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-B Random policy",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-C Experimental Setup",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-D Drone Implementation",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Comparison of POMDP to heuristic and random policy",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "IV-B Sample POMDP policy run in simulation and on drone",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "V Conclusions and Future Work",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.08618660000138334,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 11,
+  "fp": 7,
+  "fn": 8,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Actions",
+   "C. Observations",
+   "D. Belief",
+   "A. Heuristic Policy",
+   "B. Random policy",
+   "C. Experimental Setup",
+   "AC K NO WLE DGME N T"
+  ],
+  "unmatched_pred": [
+   "II-B Actions",
+   "II-C Observations",
+   "II-D Belief",
+   "III-A Heuristic Policy",
+   "III-B Random policy",
+   "III-C Experimental Setup",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 11,
+  "fp": 6,
+  "fn": 6,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "B. Actions",
+   "C. Observations",
+   "D. Belief",
+   "A. Heuristic Policy",
+   "B. Random policy",
+   "C. Experimental Setup"
+  ],
+  "unmatched_pred": [
+   "II-B Actions",
+   "II-C Observations",
+   "II-D Belief",
+   "III-A Heuristic Policy",
+   "III-B Random policy",
+   "III-C Experimental Setup"
+  ],
+  "ignored_title_predictions": null
+ }
+}

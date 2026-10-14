@@ -1,0 +1,194 @@
+{
+ "doc": "1606.00037",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Analog Devices Lyric Labs, Cambridge, MA, USA",
+   "2 LTCI, CNRS, T´el´ecom ParisTech, Universit´e Paris-Saclay, Paris, France",
+   "3 CIRMMT, McGill University, Montr´eal, Canada",
+   "5 In turn, this would increase the dimensionality of the data.",
+   "6 Cf. [20] for a more thorough treatment"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 17,
+  "tp": 12,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7222222222222222,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Analog Devices Lyric Labs, Cambridge, MA, USA",
+   "2 LTCI, CNRS, T´el´ecom ParisTech, Universit´e Paris-Saclay, Paris, France",
+   "3 CIRMMT, McGill University, Montr´eal, Canada",
+   "5 In turn, this would increase the dimensionality of the data.",
+   "6 Cf. [20] for a more thorough treatment"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 445,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9949321266968326,
+   "in_order": 0.9380995475113122,
+   "inserted": 0.007403394727338419
+  },
+  "export_markdown": "NONNEGATIVE TENSOR FACTORIZATION WITH FREQUENCY\n\nMODULATION CUES FOR BLIND AUDIO SOURCE SEPARATION\n\nElliot Creager1,3\n\nNoah D. Stein1\n\nRoland Badeau2,3\n\nPhilippe Depalle3\n\n# 1 Analog Devices Lyric Labs, Cambridge, MA, USA\n\n# 2 LTCI, CNRS, T´el´ecom ParisTech, Universit´e Paris-Saclay, Paris, France\n\n# 3 CIRMMT, McGill University, Montr´eal, Canada\n\nelliot.creager@analog.com, noah.stein@analog.com,\n\nroland.badeau@telecom-paristech.fr, depalle@music.mcgill.ca\n\n# ABSTRACT\n\nWe present Vibrato Nonnegative Tensor Factorization, an\n\narXiv:1606.00037v1 [cs.SD] 31 May 2016\n\nalgorithm for single-channel unsupervised audio source separation with an application to separating instrumental or vocal sources with nonstationary pitch from music recordings. Our approach extends Nonnegative Matrix Factorization for audio modeling by including local estimates of frequency modulation as cues in the separation. This permits the modeling and unsupervised separation of vibrato or glissando musical sources, which is not possible with the basic matrix factorization formulation. The algorithm factorizes a sparse nonnegative tensor comprising the audio spectrogram and local frequencyslope-to-frequency ratios, which are estimated at each time-frequency bin using the Distributed Derivative Method. The use of local frequency modulations as separation cues is motivated by the principle of common fate partial grouping from Auditory Scene Analysis, which hypothesizes that each latent source in a mixture is characterized perceptually by coherent frequency and amplitude modulations shared by its component partials. We derive multiplicative factor updates by Minorization-Maximization, which guarantees convergence to a local optimum by iteration. We then compare our method to the baseline on two separation tasks: one considers synthetic vibrato notes, while the other considers vibrato string instrument recordings.\n\n# 1. INTRODUCTION\n\nNonnegative matrix factorization (NMF) [11] is a popular method for the analysis of audio spectrograms [16], especially for audio source separation [17]. NMF models the observed spectrogram as a weighted sum of rank-1 latent components, each of which factorizes as the outer product of a pair of vectors representing the constituent\n\nc⃝ Elliot Creager, Noah D. Stein, Roland Badeau, Philippe\n\nDepalle. Licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0). Attribution: Elliot Creager, Noah D. Stein, Roland Badeau, Philippe Depalle. “Nonnegative tensor factorization with frequency modulation cues for blind audio source separation”, 17th International Society for Music Information Retrieval Conference, 2016.\n\nfrequencies and onset regions for some signiﬁcant component in the mixture, e.g. a musical note. Equivalently, the entire spectrogram matrix approximately factorizes as a matrix of spectral templates times a matrix of temporal activations, typically such that the approximate factors have many fewer elements than the full observation. While NMF can be used for supervised source separation tasks with a straightforward extension of the signal model [19], this necessitates pre-training NMF representations for each source of interest. The use of modulation cues in source separation is popular in the Computational Auditory Scene Analysis (CASA) [26] literature, which, unlike NMF, typically relies on partial tracking. E.g., [25] isolates individual partials by frequency warping and ﬁltering, while [12] groups partials via correlations in amplitude modulations. [2], which more closely resembles our work in the sense of being data-driven, factorizes a tensor encoding amplitude modulations for speech separation. Our approach is inspired by [20] and [21], which present a Nonnegative Tensor Factorization (NTF) incorporating direction-of-arrival (DOA) estimates in an unsupervised speech source separation task. Whereas use of DOA information in that work necessitates multimicrophone data, we address the single-channel case by incorporating the local frequency modulation (FM) cues at each time-frequency bin. These cues are combined with the spectrogram as a sparse observation tensor, which we factorize in a probabilistic framework. The modulation cues are adopted structurally by way of an NTF where each source in the mixture is modeled via an NMF factor and a time-varying FM factor.\n\n# 2. BACKGROUND\n\n## 2.1 Nonnegative matrix factorization\n\nWe now summarize NMF within a probabilistic framework. We consider the normalized Short-Time Fourier Transform (STFT) magnitudes (i.e., spectrogram) of the input signal as an observed discrete probability distribution of energy over the time-frequency plane, i.e.,\n\npobs(f, t) ≜ P |X(f, t)|\n\n(1)\n\nν,τ |X(ν, τ)|,\n\nF\n\nF\n\nF\n\nZ\n\nS\n\nZ\n\nT\n\nZ\n\nS\n\nT\n\n(a) Basic NMF (Section 2.1)\n\nT\n\nR\n\n(b) NMF for source separation (Section 2.2)\n\n(c) Vibrato NTF (Section 3.3)\n\nFigure 1: Graphical models for the factorizations in this paper. In each case the input data are a distribution over the observed (shaded) variables, while the model approximates the observation by a joint distribution over observed and latent (unshaded) variables that factorizes as speciﬁed. F, T, Z, S, and R respectively represent the discrete frequencies, hops, components, sources, and frequency modulations over which the data is distributed.\n\n∀f ∈{1, ..., F}, t ∈{1, ..., T}, where X is the input\n\nSTFT and (f, t) indexes the time-frequency plane. NMF seeks an approximation q to observed distribution pobs that is a valid distribution over the time-frequency plane and\n\nfactorizes as\n\nq(f, t) = X\n\nq(f|z)q(t|z)q(z) = X\n\nq(f|z)q(z, t). (2)\n\nz\n\nz\n\nFigure 1(a) shows the graphical model for a joint distribution with this factorization. We have introduced z ∈{1, ..., Z} as a latent vari-\n\nable that indexes components in the mixture, typically with Z chosen to yield an overall data reduction, i.e., FZ + ZT ≪ FT. For a ﬁxed z0, q(f|z0) is a vec-\n\ntor interpreted as the spectral template of the z0-th component, i.e., the distribution over frequency bins of energy belonging to that component. Likewise, q(z0, t) is interpreted as a vector of temporal activations of the z0-th component, i.e., it speciﬁes at what time indices the z0-th component is prominent in the observed mixture. Indeed, (2) can be implemented as a matrix multiplication, with the usual nonnegativity constraint on the factors satisﬁed implicitly, since q is a valid probability distribution. The optimization problem is typically formalized as minimizing the Kullback-Leibler (KL) divergence between the observation and approximation, or equivalently as maximizing the cross entropy between the two distributions:\n\nX\n\npobs(f, t) log q(f, t)\n\nmaximize\n\nq\n\nf,t\n\n(3)\n\nsubject to q(f, t) = X\n\nq(f|z)q(z, t).\n\nz\n\nWhile the non-convexity of this problem prohibits a globally optimal solution in reasonable time, a locally optimal solution can be found by multiplicative updates to the factors, which were ﬁrst presented in [10]. We refer to this algorithm as KL-NMF, but note its equivalence to Probabilistic Latent Component Analysis (PLCA) [18], as well as a strong connection to topic modeling of counts data.\n\n## 2.2 NMF for source separation\n\nNMF can be leveraged as a source model within a source separation task, such that the observed mixture is modeled as a sum of sources, each of which is modeled by NMF. Whereas the latent variable z in NMF indexes latent components belonging to a source, we now introduce an additional latent variable s ∈{1, .., S}, which indexes latent\n\nsources within the mixture. The resulting joint distribution over observed and latent variables is expressed as\n\n(4)\n\nq(f, t, s, z) = q(s)q(f|s, z)q(z, t|s).\n\nThus the approximation to pobs(f, t) is the marginal distri-\n\nbution\n\nq(f, t) = X\n\nq(s)q(f, t|s)\n\ns\n\n(5)\n\n= X\n\nq(s)X\n\nq(f|s, z)q(z, t|s),\n\ns\n\nz\n\nwhere q(s0) and q(f, t|s0) represent the mixing coefﬁcient\n\nand NMF source model for the s0-th source in the mixture, respectively. Figure 1(b) shows the graphical model. Given a suitable approximation q, we estimate the latent sources in the mixture via Wiener ﬁltering, i.e.,\n\n(6)\n\nXs(f, t) = X(f, t)q(s|f, t),\n\nwhere the Wiener gains q(s|f, t) are given by the condi-\n\ntional probabilities 1 of the latent sources given the ap-\n\nproximating joint distribution\n\n= P\n\nP z q(s)q(f|s, z)q(z, t|s)\n\nq(s|f, t) = q(f, t, s)\n\nz,s′ q(s′)q(f|s′, z)q(z, t|s′).\n\nq(f, t)\n\n(7)\n\nThe estimated sources can then be reconstructed in the time-domain via the inverse STFT. We seek a q that both approximates pobs and yields source estimates q(f, t|s) close to the true sources. In a\n\nsupervised setting, the spectral templates for each source model can be ﬁxed by using basic NMF on some characteristic training examples in isolation. When the appropriate training data is unavailable, the basic NMF can\n\n1 A convenient result of the Wiener ﬁlter gains being conditional distributions over sources is that the mixture energy is conserved by the source\n\nestimates in the sense that Ps Xs(f, t) = X(f, t) ∀ f, t.\n\nbe extended by introducing priors on the factors or otherwise adding structure to the observation model to encourage, e.g., smoothness in the activations [24] or harmonicity in the spectral templates [3], which hopefully in turn improves the source estimates. By contrast, our approach exploits local FM cues directly in the factorization, yielding an observation model for latent sources consistent with the sorts of pitch modulations expected in musical sounds.\n\n## 2.3 Coherent frequency modulation\n\nWe now introduce frequency-slope-to-frequency ratios (FSFR) as local signal parameters under an additive sinusoidal model that are useful as grouping cues for the separation of sources with coherent FM, e.g. in the vibrato or glissando effects. In continuous time, the additive sinusoidal model expresses the s-th source as a sum of component partials, 2 each parameterized by an instantaneous frequency and amplitude, i.e.,\n\nAp(τ) cos\u0012θp(τ0) + Z τ\n\nωp(u)du\u0013 (8)\n\nP\n\nX\n\nxs(τ) =\n\nτ0\n\np=1\n\nwhere p is the partial index, and θp(τ0), Ap(τ) and ωp(τ) specify the initial phase, instantaneous amplitude, and instantaneous frequency of the p-th partial.\n\nWe now consider a source under coherent FM, i.e.,\n\nωp(τ) ≜ (1 + κs(τ))ωp(τ0) ∀ p\n\n(9)\n\nfor some modulation function κs with κs(τ0) = 0. E.g., κs resembles a slowly-varying sinusoid during frequency vibrato, or a gradual ramp function during glissando. The\n\nFSFR are then expressed as\n\nυp(τ) ≜ ω′\n\nκ′\n\np(τ)\n\ns(τ)\n\n(10)\n\nωp(τ) =\n\n1 + κs(τ).\n\nNote that {υp(τ)} are time-varying but independent of the\n\npartial index p for a given source index s. In other words, the instantaneous FSFR is common to all partials belonging to the same source and can be used as a grouping cue in unsupervised source separation [7].\n\n## 2.4 Distributed Derivative Method\n\nWe now summarize the Distributed Derivative Method (DDM) [4, 8] for signal parameter estimation, which we use to estimate the FSFR at each time-frequency bin. DDM estimates the parameters of a monochrome analytic signal under a Q-th order generalized sinusoid model, 3 which is\n\n2 We do not assume any special structure in the partial frequencies, e.g., harmonicity. 3 It is natural to specify the signal locally (near some time-frequency bin) as a generalized sinusoid even while the global model remains additive sinusoidal. In particular, the notion of a time-frequency-localized signal follows from the ﬁlterbank summation interpretation of the STFT, and corresponds to the heterodyned and shifted input, prior to low-pass ﬁltering by the window and downsampling in time [1]. In a slight abuse of notation, we later absorb the time-frequency indices as parameters in the analysis atom, i.e., we switch to the overlap-add interpretation of the STFT without warning.\n\nexpressed as\n\nx(τ) = exp\u0012X\n\nηqτ q\u0013,\n\nQ\n\n(11)\n\nq=0\n\nwhere η ∈ CQ+1 is the vector of signal parameters, whose\n\nreal and imaginary parts specify the log amplitude law and phase law, 4 respectively. In this work, we specify (11) as a constant amplitude signal with linear frequency modulation, i.e., η ∈ C3 with ℜ(ηi) = 0 ∀ i. The signal pa-\n\nrameters ℑ(η1) and ℑ(η2) then specify (within multiplica-\n\ntive constants) the instantaneous frequency and frequency slope, respectively. The parameters of interest can be estimated by considering the inner product of the signal with a family of differentiable analysis atoms of ﬁnite time-frequency support. In particular, the continuous-time STFT can be expressed\n\nby inner product as\n\nX(f, t) ≜ ⟨x(τ), φ(τ; f, t)⟩ = Z +∞\n\nx(τ)φ(τ; f, t)∗dτ,\n\nτ=−∞\n\n(12)\n\nwhere X(f, t) is the STFT, x(τ) is the input signal, and\n\nφ(τ; f, t) is a heterodyned window function from some differentiable family (e.g. Hann), parameterized by its localization (f, t) in the time-frequency plane. The signal parameters are solutions to equations of the form\n\nQ\n\nX\n\n⟨x(τ), φ′(τ; f, t)⟩ = −\n\nηq⟨qτ q−1x(τ), φ(τ; f, t)⟩,\n\nq=1\n\n(13)\n\nwhich is linear in {ηq} for q > 0, and permits an STFT-\n\nlike computation of both inner products. The right-hand side of (13) is derived from the left-hand side using integration by parts, exploiting the ﬁnite support of φ(τ; f, t), and substituting in the signal derivative x′(τ) from (11). To estimate the signal parameters at a particular (f0, t0), we construct a system of linear equations by evaluating (13) for each φ(τ; f, t) in a set of nearby atoms Φ, then solve for η in a least-squares sense. We typically use atoms in neighboring frequency bins at the same time step, i.e.,\n\nΦ = {φ(τ; t0, f0 − L−1\n\n2 ), ..., φ(τ; t0, f0 + L−1\n\n2 )} for\n\nsome odd L. While DDM is an unbiased estimator of the signal parameters in continuous time, we must implement a discrete-time approximation on a computer. This introduces a small bias that can be ignored in practice since the STFT window is typically longer than a few samples [4].\n\n# 3. PROPOSED METHOD\n\n## 3.1 Motivation\n\nThe NMF signal model is not sufﬁciently expressive to compactly represent a large class of musical sounds, namely those characterized by slow frequency modulations, e.g., in the vibrato effect. In particular, it speci-ﬁes a single ﬁxed spectral template per latent component\n\n4 The frequency law is trivially computed from the phase law.\n\npobs(f, t)\n\nquant(υ(f, t); R)\n\n250\n\n250\n\n![image]()\n\n![image]()\n\n0.00056\n\n20\n\n15\n\n200\n\n200\n\n0.00048\n\n10\n\n0.00040\n\n5\n\n150\n\n150\n\n0.00032\n\n0\n\nf\n\nf\n\n−5\n\n100\n\n100\n\n0.00024\n\n−10\n\n0.00016\n\n−15\n\n50\n\n50\n\n0.00008\n\n−20\n\n−25\n\n0.00000\n\n0\n\n0\n\n0\n\n50\n\n100 150 200 250 300\n\n0\n\n50\n\n100 150 200 250 300\n\nt\n\nt\n\n(a) Spectrogram\n\n(b) Discretized FSFR\n\nFigure 2: Unfolding the nonzero elements in the observation tensor for a synthetic vibrato square wave note (G5). The hop index t spans 2 seconds of the input audio, while the bin index f spans half the sampling rate, 0–22.05 kHz.\n\nand thus requires a large number of components to model sounds with nonstationary pitch. From a separation perspective, as the number of latent components grows, so grows the need for a comprehensive model that can correctly group components belonging to the same source. To this end, we appeal to the perceptual theory of Auditory Scene Analysis [5], which postulates the importance of shared frequency or amplitude modulations among partials as a perceptual cue in their grouping [6, 14]. In this work we focus on FM, although in principle our approach could be extended to include amplitude modulations. 5 We now propose an extension to KL-NMF that leverages this socalled common fate principle and is suitable for the analysis of vibrato signals.\n\n## 3.2 Compiling the observations as a tensor\n\nDDM yields the local estimates of frequency and frequency slope for each time-frequency bin, from which the FSFR are trivially computed. We deﬁne the (sparse) obser-\n\nvation tensor pobs(f, t, r) ∈ RF ×T ×R\n\nas an assignment of\n\n≥0\n\nthe normalized spectrogram into one of R discrete bins for each (f, t) according the local FSFR estimate, i.e.,\n\n(0\n\npobs(f, t)\n\nif quant(υ(f, t); R) = r\n\npobs(f, t, r) ≜\n\nelse,\n\n(14)\n\nwhere pobs(f, t) is the normalized spectrogram as in (1) and υ are the FSFR as in (10), which are quantized by quant(·; R), possibly after clipping to some reasonable\n\nrange of values. Figure 2 shows the spectrogram and FSFR for a synthetic vibrato square wave.\n\n## 3.3 Vibrato NTF\n\nAs with NMF, we seek a joint distribution q with a particular factorized form, whose marginal maximizes cross entropy against the observed data. We propose an observa-\n\ntion model of the form\n\nq(f, t, r) = X\n\nq(s)q(r|t, s)X\n\nq(f|s, z)q(z, t|s) (15)\n\ns\n\nz\n\n# 5 In turn, this would increase the dimensionality of the data.\n\nwhere q(s) represents the mixing, q(r|t, s) repre-\n\nsents the common time-varying FSFR per source, and\n\nP\n\nz q(f|s, z)q(z, t|s) represents the NMF source model.\n\nFigure 1(c) shows the graphical model of the joint distribution. Thus, given pobs we seek an approximation q that\n\nfactorizes as in (15) and maximizes\n\nα(q) ≜ X\n\npobs(f, t, r) log q(f, t, r)\n\nf,t,r\n\n(16)\n\n= X\n\npobs(f, t, r) logX\n\nq(f, t, r, z, s).\n\nz,s\n\nf,t,r\n\nThe sum in the argument to the log makes this difﬁcult to solve outright, so we ﬁnd a local optimum by iterative Minorization-Maximization (MM) [9] instead. That is, given q(i), our model at the current (i-th) iteration, we pick a better q(i+1) by (a) ﬁnding a concave minorizing function β(q; q(i)) such that β(q; q(i)) ≤ α(q) ∀ q and\n\nβ(q(i); q(i)) = α(q(i)), and (b) maximizing β(q; q(i)) with respect to q. In particular, β(q; q(i)) is derived 6 by applying Jensen’s inequality to (16), and is expressed as\n\nβ(q; q(i)) ≜ X\n\npobs(f, t, r)q(i)(z, s|f, t, r) log q(f, t, r, z, s)\n\nq(i)(z, s|f, t, r) ,\n\nf,t,r,z,s\n\n(17)\n\nwhere q(i)(z, s|f, t, r) is the approximate posterior over la-\n\ntent variables given the model at the i-th iteration 7 , com-\n\nputed as\n\nq(i)(z, s, f, t, r)\n\nq(i)(z, s|f, t, r) = P\n\nz′,s′ q(i)(z′, s′, f, t, r). (18)\n\nFor\n\nnotational\n\nconvenience\n\nwe\n\ndeﬁne\n\npobs(f, t, r)q(i)(z, s|f, t, r) and\n\n≜\n\nρ(f, t, r, z, s)\n\ndiscarding the denominator in the log of (17) (constant w.r.t. q), equivalently write the optimization over the\n\nminorizing function as\n\nX\n\nρ(f, t, r, z, s) log q(s)q(f|z, s)q(z, t|s)q(r|t, s).\n\nmax\n\nq\n\nf,t,r,z,s\n\n(19)\n\n# 6 Cf. [20] for a more thorough treatment\n\n7 Note that the MM iteration speciﬁes an expectation-maximization.\n\npobs(f, t)\n\nq(r|t, s = 1)\n\n250\n\n![image]()\n\n![image]()\n\n0.00056\n\n0.9\n\n20\n\n0.8\n\n200\n\n0.00048\n\n0.7\n\n10\n\n0.00040\n\n0.6\n\n150\n\n0.00032\n\n0\n\n0.5\n\nf\n\nr\n\n0.4\n\n100\n\n0.00024\n\n−10\n\n0.3\n\n0.00016\n\n0.2\n\n50\n\n0.00008\n\n−20\n\n0.1\n\n0.00000\n\n0.0\n\n0\n\n0\n\n50\n\n100 150 200 250 300\n\n0\n\n50\n\n100 150 200 250 300\n\nt\n\nt\n\n(a) Spectrogram\n\n(b) VibNTF FM model\n\npobs(f, t)\n\nq(r|t, s = 1)\n\n250\n\n![image]()\n\n![image]()\n\n0.0008\n\n0.9\n\n20\n\n0.8\n\n0.0007\n\n200\n\n0.7\n\n0.0006\n\n10\n\n0.6\n\n150\n\n0.0005\n\n0.5\n\n0\n\nf\n\nr\n\n0.0004\n\n0.4\n\n100\n\n0.0003\n\n−10\n\n0.3\n\n0.0002\n\n0.2\n\n50\n\n0.0001\n\n−20\n\n0.1\n\n0.0000\n\n0.0\n\n0\n\n0\n\n50\n\n100 150 200 250 300\n\n0\n\n50\n\n100 150 200 250 300\n\nt\n\nt\n\n(c) Spectrogram\n\n(d) VibNTF FM model\n\nFigure 3: For single-note analyses, VibNTF encodes the time-varying pitch modulation. The top row shows a synthetic vibrato square wave note (G5), while the bottom row shows a real recording of a violin vibrato note (B♭6). We plot r in the\n\n2 ] in ﬁgures 3(b) and 3(d) to clarify that the index r represents a zero-mean quantity (the FSFR).\n\nrange [−R\n\n2 , R\n\nWe now alternatively update each factor by separating the argument in the log in (19) as a sum of logs, each term of which can be optimized by applying Gibb’s inequality [13]. That is, given the current model, the optimal choice for some factor of q(i+1) is the marginal of ρ over the corresponding variables. E.g.,\n\nP\n\nf,t,r,z ρ(f, t, r, z, s)\n\nq(i+1)(s) ←\n\n(20a)\n\nP\n\nf,t,r,z,s′ ρ(f, t, r, z, s′).\n\nLikewise, the remaining factor updates are expressed as\n\nP\n\nt,r ρ(f, t, r, z, s)\n\nq(i+1)(f|z, s) ←\n\n(20b)\n\nP\n\nf ′,t,r ρ(f ′, t, r, z, s);\n\nPf,r ρ(f, t, r, z, s)\n\nq(i+1)(z, t|s) ←\n\n(20c)\n\nPf,t′,r,z′ ρ(f, t′, r, z′, s);\n\nP\n\nf,z ρ(f, t, r, z, s)\n\nq(i+1)(r|t, s) ←\n\n(20d)\n\nPf,r′,z ρ(f, t, r′, z, s).\n\nSince ρ is expressed as a product of the current factors and observed data, the factor updates can be implemented efﬁ-ciently by using matrix multiplications to sum across inner dimensions as necessary. The theory guarantees convergence 8 to a local minimum [9], although in practice we\n\n8 For guaranteed convergence, ρ must be recomputed after each factor update, rather than once per iteration as the notation suggests. However, in practice we observe convergence without the recomputation.\n\nstop the algorithm after some ﬁxed number of iterations. The algorithm is initialized by choosing factors of q(0) as random valid conditional probabilities. Figure 3 visualizes the FM factor q(r|t, s) estimated by\n\nthe proposed algorithm for single note analyses (S = 1) of both synthetic and real data.\n\n# 4. EVALUATION\n\nWe present a comparison of our proposed method with the baseline KL-NMF (which our method extends) in a blind source separation task examining mixtures of two single-note recordings. We use the BSS EVAL criteria [23] to evaluate separation performance, which necessitates the use of artiﬁcial mixtures. We report the source-to-distortion ratio (SDR), source-to-interference ratio (SIR), and source-to-artifact ratio (SAR), each in dB. Each experiment comprises 500 separations, with the sources in each trial chosen as speciﬁed below and mixed at 0 dB with a total mixture duration of 2 seconds at 44.1 kHz sampling rate. We report the average metrics across all sources and trials. To use KL-NMF for blind source separation, we must specify Z = 2, i.e., each mixture component considered as a source. This baseline should be relatively easy to beat, since empirically KL-NMF does a poor job of modeling vibrato signals when Z is small.\n\nBSS EVAL in dB\n\nAlgorithm\n\nSDR\n\nSIR\n\nSAR\n\n(A) Synthetic data\n\n2-part KL-NMF -1.5 ± 0.1 0.1 ± 0.2 6.9 ± 0.2\n\nVibrato NTF\n\n14.6 ± 1.0 17.0 ± 1.2 23.6 ± 0.7\n\n(B) Real data\n\n2-part KL-NMF 2.8 ± 0.4 8.0 ± 2.1 9.2 ± 0.2\n\nVibrato NTF\n\n5.8 ± 0.5 9.7 ± 2.2 17.7 ± 0.5\n\nTable 1: Mean and 95% conﬁdence intervals of the BSS EVAL metrics for 500 unsupervised separations of two-source mixtures. Experiment A considers synthetic vibrato square waves, while experiment B considers singlenote vibrato string instrument recordings.\n\nFor Vibrato NTF, we specify S = 2 and Z = 3, i.e., for each of the two sources we learn spectral templates and temporal activations for three components. E.g., considering a sinusoidal vibrato, the components could model the source during the crest, midpoint, and trough of the pitch modulation. We estimate the signal parameters at a particular (f0, t0) using DDM with a family of L = 5 analysis atoms (heterodyned Hann functions) in the same hop index and nearby frequency bins. In order to avoid the inﬂuence of noisy FSFR estimates in the factorization, we apply some mild post-processing prior to quantization. Speciﬁ-cally, we implicitly discard FSFR at (f, t) with pobs(f, t) below the 10th percentile, or outside a reasonable range of ±4 times the sampling rate by setting them to the data\n\nmedian. The FSFR are then quantized evenly across their range into R = 50 discrete values. For both algorithms, the STFT in (1) is speciﬁed by a 1024-length (23 msec) Discrete Fourier Transform using a Hann window with 75% overlap between successive frames. Thus, F = 513, corresponding to the nonredundant frequency bins, and T = 346, the number of hops required to cover the mixture duration. Both algorithms are initialized randomly and run for 100 iterations. Experiment A examines synthetic data, where the sources are square waves with frequency vibrato, whose signal parameters are generated at random. The fundamental frequency corresponds to a note value selected uniformly at random from the three-octave range [A3, G♯5]. The number of partials is chosen uniformly at random from the range [10, 30], and subsequently reduced as necessary to avoid aliasing. The vibrato modulation function, i.e., κs in (9), is a sinusoid with depth chosen uniformly at random in the range of [5%, 20%] of the fundamental and rate chosen log-uniformly at random from the range [0.5, 10] Hz. Experiment B examines real data, where the sources are single-note recordings from the McGill University Master Samples (MUMS) [15], which contains over 6000 singlenote and single-phrase recordings of classical and popular instruments. We focus our evaluation on string instruments, which exhibit strong frequency modulation in their vibrato effect [22]. The MUMS subset of string instrument notes with vibrato comprises a total of 250 unique\n\nrecordings of violin, viola, cello, and double bass. The sources are chosen randomly from this subset and trimmed or padded to 2 seconds as necessary. Results for both experiments are provided in table 1. Experiment A shows a dramatic win for Vibrato NTF over the baseline. We see some variability in the results, which reﬂects an optimization over a cost surface with many local optima. With random initialization, Vibrato NTF works either very well or very poorly, so robustness could be improved by a more careful initialization, or alternatively by regularizing the factorization in such a way as to avoid suboptimal solutions. In experiment B, we see that moving from synthetic to real data degrades the performance of our proposed method, although we still beat the baseline by a modest margin. Interestingly, the baseline performs better on real data than synthetic, likely because the pitch variations are less pronounced so KL-NMF fails less frequently. Moreover, the pitch modulations in real data are more complex than in the synthetic case (compare ﬁgures 3(b) and 3(d)), and may require more components (larger Z) to be properly modeled. Vibrato NTF as proposed tends to decrease in performance as Z increases, so additional work is required to improve robustness for the analysis of real data. We hypothesize that an extension enforcing temporal continuity in the FM factor, which should be smooth and monotonic per-source, would enhance the grouping of components, permitting a larger Z in practice.\n\n# 5. CONCLUSION\n\nWe proposed Vibrato NTF, a novel blind source separation algorithm that extends NMF by leveraging local estimates of frequency modulation as grouping cues directly in the factorization. Experimental results using synthetic data showed a substantial improvement over the baseline, and validated the FSFR as useful grouping cues in a source separation task. In the experiment with real recordings, our method provided a more modest improvement. With regards to the analysis of real data, we believe the incorporation of sensible priors on the factors would improve the separation performance, while careful initalization would improve the robustness. Further work could include tailoring the proposed method to the analysis of polyphonic sounds, or sounds with mild or no frequency modulation. Additionally, an extension including coherent amplitude modulations as a grouping cue is possible within the proposed tensor factorization framework.\n\n# 6. ACKNOWLEDGEMENTS\n\nThe research leading to this paper was partially supported by the French National Research Agency (ANR) as a part of the EDISON 3D project (ANR- 13-CORD-0008-02), and by the Canadian National Science and Engineering Research Council (NSERC). Additional support was provided by the Analog Garage, the emerging business accelerator at Analog Devices, Inc.\n\n# 7. REFERENCES\n\n[1] J. Allen and L. Rabiner. A uniﬁed approach to shorttime Fourier analysis and synthesis. Proceedings of the IEEE, 65:1558–64, 1977.\n\n[2] T. Barker and T. Virtanen. Non-negative tensor factorization of modulation spectrograms for monaural sound separation. In Proceedings of the 2013 Interspeech Conference, pages 827–31, Lyon, France, 2013.\n\n[3] N. Bertin, R. Badeau, and E. Vincent. Enforcing harmonicity and smoothness in Bayesian non-negative matrix factorization applied to polyphonic music transcription. IEEE Transactions on Audio, Speech, and Language Processing, 18(3):538–49, 2010.\n\n[4] M. Betser. Sinusoidal polyphonic parameter estimation using the distribution derivative. IEEE Transactions on Signal Processing, 57(12):4633–45, 2009.\n\n[5] A. Bregman. Auditory Scene Analysis: The Perceptual Organization of Sound. The MIT Press, Cambridge, MA, 1990.\n\n[6] J. M. Chowning. Computer synthesis of the singing voice. In Sound Generation in Winds, Strings, Computers, pages 4–13. Kungl. Musikaliska Akademien, Stokholm, Sweden, 1980.\n\n[7] E. Creager. Musical source separation by coherent frequency modulation cues. Master’s thesis, McGill University, 2015.\n\n[8] B. Hamilton and P. Depalle. A uniﬁed view of nonstationary sinusoidal parameter estimation methods using signal derivatives. In Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), pages 369–72, Kyoto, Japan, 2012.\n\n[9] D. Hunter and K. Lange. A tutorial on MM algorithms. The American Statistician, 58(1):30–7, 2004.\n\n[10] D. Lee, M. Hill, and H. Seung. Algorithms for nonnegative matrix factorization. Advances in Neural Information Processing Systems, 13:556–62, 2001.\n\n[11] D. Lee and H. Seung. Learning the parts of objects by non-negative matrix factorization. Nature, 401:788– 91, 1999.\n\n[12] Y. Li, J. Woodruff, and D.Wang. Monaural musical sound separation based on pitch and common amplitude modulation. IEEE Transactions on Audio, Speech, and Language Processing, 17(7):1361–71, 2009.\n\n[13] D. MacKay. Information Theory, Inference, and Learning Algorithms. Cambridge University Press, Cambridge, UK, 2005.\n\n[14] S. McAdams. Segregation of concurrent sounds I: Effects of frequency modulation coherence. Journal of the Acoustic Society of America, 86(6):2148–59, 1989.\n\n[15] F. Opolko and J. Wapnick. McGill University master samples [Compact Disks], 1987.\n\n[16] P. Smaragdis and J. Brown. Non-negative matrix factorization for polyphonic music transcription. In Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, pages 177–80, New Paltz, NY, 2003.\n\n[17] P. Smaragdis, C. F´evotte, G. Mysore, N. Mohammadia, and M. Hoffman. Static and dynamic source separation using nonnegative factorizations: A uniﬁed view. IEEE Signal Processing Magazine, 31(3):66–74, 2014.\n\n[18] P. Smaragdis, B. Raj, and M. Shashanka. A probabilistic latent variable model for acoustic modeling. In Proceedings of the NIPS Workshop of Advances in Models for Acoustic Processing, Vancouver, Canada, 2006.\n\n[19] P. Smaragdis, B. Raj, and M. Shashanka. Supervised and semi-supervised separation of sounds singlechannel mixtures. Independent Component Analysis and Signal Separation, (Lecture Notes in Computer Science, 4666):414–21, 2007.\n\n[20] N. Stein. Nonnegative tensor factorization for directional unsupervised audio source separation. arXiv preprint, http://arxiv.org/abs/1411.5010, 2015.\n\n[21] J. Traa, P. Smaragdis, N. Stein, and D. Wingate. Directional NMF for joint source localization and separation. In Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, New Paltz, NY, 2015.\n\n[22] V. Verfaille, C. Guastavino, and P. Depalle. Perceptual evaluation of vibrato models. In Proceedings of the Conference on Interdisciplinary Musicology, Montreal, Canada, 2005.\n\n[23] E. Vincent, R. Gribonval, and C. F´evotte. Performance measurements in blind audio source separation. IEEE Transactions on Audio, Speech, and Language Processing, 14(4):1462–9, 2006.\n\n[24] T. Virtanen. Monaural sound source separation by nonnegative matrix factorization with temporal continuity and sparseness criteria. IEEE Transactions on Audio, Speech, and Language Processing, 15(3):1066– 74, 2007.\n\n[25] A. Wang. Instantaneous and frequency-warped techniques for source separation and signal parameterization. In Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, pages 47–50, New Paltz, NY, 1995.\n\n[26] D. Wang and G. Brown. Computational Auditory Scene Analysis: Principles, Algorithms, and Applications. Wiley Interscience, Hoboken, NJ, 2006.\n"
+ },
+ "predictions": [
+  {
+   "text": "1 Analog Devices Lyric Labs, Cambridge, MA, USA",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 LTCI, CNRS, T´el´ecom ParisTech, Universit´e Paris-Saclay, Paris, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 CIRMMT, McGill University, Montr´eal, Canada",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BACKGROUND",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Nonnegative matrix factorization",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 NMF for source separation",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Coherent frequency modulation",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.4 Distributed Derivative Method",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3. PROPOSED METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Motivation",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Compiling the observations as a tensor",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Vibrato NTF",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 In turn, this would increase the dimensionality of the data.",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Cf. [20] for a more thorough treatment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. EVALUATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. ACKNOWLEDGEMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.705731399997603,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Analog Devices Lyric Labs, Cambridge, MA, USA",
+   "2 LTCI, CNRS, T´el´ecom ParisTech, Universit´e Paris-Saclay, Paris, France",
+   "3 CIRMMT, McGill University, Montr´eal, Canada",
+   "5 In turn, this would increase the dimensionality of the data.",
+   "6 Cf. [20] for a more thorough treatment"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

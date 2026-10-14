@@ -1,0 +1,195 @@
+{
+ "doc": "1612.06422",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Key Points:"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Key Points:"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 29.415989200002514
+ },
+ "predictions": [
+  {
+   "text": "Key Points:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Multivariate quadrature for representing cloud condensation nuclei activity of aerosol populations",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Constructing sparse and continuous representations from distribution moments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Computing CCN activity for benchmark populations",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Constructing quadratures from moments of n(Ddry, κ)",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Reconstructing n(sc) from quadrature",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4 Evaluating error inNCCN(s)/N",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 Moment constraints for aerosol simulations",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Moments of n(sc) for reconstructing distributions",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2 Moments of n(Ddry, κ) for constructing bivariate quadrature",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Sparse approximation for efficient and accurate aerosol representation",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussion and Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendices",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Benchmark Populations from Particle-Resolved Model",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Critical supersaturation for CCN activation",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C Modified Moments from Legendre Polynomials",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D Distributional Entropy",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E Linear Program to Compute Quadrature Approximation and CCN bounds",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F Genetic Algorithm to Optimize Constraints",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03033299999515293,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Key Points:"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

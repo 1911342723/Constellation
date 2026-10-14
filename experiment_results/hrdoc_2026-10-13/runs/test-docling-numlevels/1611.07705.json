@@ -1,0 +1,198 @@
+{
+ "doc": "1611.07705",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 24,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.92,
+  "unmatched_gt": [
+   "contact line for a dry surface",
+   "cussion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "contact line for a dry surface",
+   "cussion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 27.557923199998186
+ },
+ "predictions": [
+  {
+   "text": "Coffee-stain growth dynamics on dry and wet surfaces",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Drop shape",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Diffusion-limited evaporation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2.1 Theoretical background",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.2.2 Dry configuration",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.2.3 Wet configuration",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Convective evaporation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Evaporation of dilute colloidal drops",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4.1 Hydrodynamics",
+   "page": 5,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "2.4.2 Uniform evaporation for a wet surface",
+   "page": 5,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "2.4.3 Evaporation with flux singularity at the contact line for a dry surface",
+   "page": 6,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "2.4.4 Typical flow fields",
+   "page": 6,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "2.5 Particle transport",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Materials and methods",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "3.2 Experimental observations and discussion",
+   "page": 9,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Appendix",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.021924999993643723,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.92,
+  "unmatched_gt": [
+   "contact line for a dry surface",
+   "cussion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,271 @@
+{
+ "doc": "1807.02255",
+ "system": "outline",
+ "metrics": {
+  "gt": 27,
+  "pred": 32,
+  "tp": 25,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 25,
+  "parent_correct": 17,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "B. Proposed Metrics"
+  ],
+  "unmatched_pred": [
+   "III-A2 Plugin Working Modes",
+   "III-A3 Corpus Development",
+   "III-B Proposed Metrics",
+   "IV-D1 Mean Precision (MP)",
+   "IV-D2 Mean First False-Positive Position (MFFP)",
+   "IV-D3 Mean Reciprocal Rank (MRR)",
+   "IV-D4 Recall (R)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Background ",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Cosine Similarity",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Degree of Interest",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Proposed Approach for IDE-Based Context-Aware Web Search ",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Proposed Model for IDE-Based Search",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III-A1 Web Service Provider and Client Plugin",
+   "page": 1,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "III-A2 Plugin Working Modes",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "III-A3 Corpus Development",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "III-B Proposed Metrics",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III-B1 Search Engine Confidence Score (Ssec)",
+   "page": 2,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-B2 Content Matching Score (Scms)",
+   "page": 3,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-B3 Stack Trace Matching Score (Sstm)",
+   "page": 3,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-B4 Source Code Context Matching Score (Sccx)",
+   "page": 3,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-B5 StackOverflow Vote Score (Sso)",
+   "page": 4,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-B6 Search Traffic Rank Score (Sstr)",
+   "page": 4,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-C Result Scores Calculation",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV Experiment Design, Results and Validation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Dataset preparation",
+   "page": 5,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "IV-B Investigation with Eclipse IDE",
+   "page": 5,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "IV-C Search Query Formulation",
+   "page": 5,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "IV-D Performance Metrics",
+   "page": 5,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "IV-D1 Mean Precision (MP)",
+   "page": 5,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "IV-D2 Mean First False-Positive Position (MFFP)",
+   "page": 6,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "IV-D3 Mean Reciprocal Rank (MRR)",
+   "page": 6,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "IV-D4 Recall (R)",
+   "page": 6,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "IV-E Experimental Results on Proposed Approach",
+   "page": 6,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "IV-F Experiments with Existing Approaches",
+   "page": 6,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "IV-G Experiments with Existing Search Engines",
+   "page": 7,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "V Threats to Validity",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Related Works",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII Conclusion and Future Works",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.1695596999998088,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 32,
+  "tp": 25,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 25,
+  "parent_correct": 17,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "B. Proposed Metrics"
+  ],
+  "unmatched_pred": [
+   "III-A2 Plugin Working Modes",
+   "III-A3 Corpus Development",
+   "III-B Proposed Metrics",
+   "IV-D1 Mean Precision (MP)",
+   "IV-D2 Mean First False-Positive Position (MFFP)",
+   "IV-D3 Mean Reciprocal Rank (MRR)",
+   "IV-D4 Recall (R)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 32,
+  "tp": 25,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 25,
+  "parent_correct": 17,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "CON TEX T-AWARE W EB SE AR C H",
+   "B. Proposed Metrics"
+  ],
+  "unmatched_pred": [
+   "III-A2 Plugin Working Modes",
+   "III-A3 Corpus Development",
+   "III-B Proposed Metrics",
+   "IV-D1 Mean Precision (MP)",
+   "IV-D2 Mean First False-Positive Position (MFFP)",
+   "IV-D3 Mean Reciprocal Rank (MRR)",
+   "IV-D4 Recall (R)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

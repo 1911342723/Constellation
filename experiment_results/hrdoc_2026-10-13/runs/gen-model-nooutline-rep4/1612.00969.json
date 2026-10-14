@@ -1,0 +1,218 @@
+{
+ "doc": "1612.00969",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.7916666666666666,
+  "unmatched_gt": [
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "2. Rule based Extraction Features: We add a feature in-",
+   "2. Rule based Extraction Features: We add a feature indi-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 16,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "2. Rule based Extraction Features: We add a feature in-",
+   "2. Rule based Extraction Features: We add a feature indi-"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 212,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4552,
+   "completion_tokens": 394,
+   "total_tokens": 4946
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9980233602875113,
+   "in_order": 0.9865229110512129,
+   "inserted": 0.006795422031473541
+  },
+  "export_markdown": "# Unit Dependency Graph and its Application to Arithmetic Word Problem Solving\n\n*Subhro Roy and Dan Roth*\n\nUnit Dependency Graph and its Application to Arithmetic Word Problem Solving\n\nSubhro Roy and Dan Roth\n\nUniversity of Illinois, Urbana Champaign\n\n{sroy9, danr}@illinois.edu\n\narXiv:1612.00969v1 [cs.CL] 3 Dec 2016\n\n## Abstract\n\nMath word problems provide a natural abstraction to a range of natural language understanding problems that involve reasoning about quantities, such as interpreting election results, news about casualties, and the ﬁnancial section of a newspaper. Units associated with the quantities often provide information that is essential to support this reasoning. This paper proposes a principled way to capture and reason about units and shows how it can beneﬁt an arithmetic word problem solver. This paper presents the concept of Unit Dependency Graphs (UDGs), which provides a compact representation of the dependencies between units of numbers mentioned in a given problem. Inducing the UDG alleviates the brittleness of the unit extraction system and allows for a natural way to leverage domain knowledge about unit compatibility, for word problem solving. We introduce a decomposed model for inducing UDGs with minimal additional annotations, and use it to augment the expressions used in the arithmetic word problem solver of (Roy and Roth 2015) via a constrained inference framework. We show that introduction of UDGs reduces the error of the solver by over 10%, surpassing all existing systems for solving arithmetic word problems. In addition, it also makes the system more robust to adaptation to new vocabulary and equation forms .\n\n## 1 Introduction\n\nUnderstanding election results, sport commentaries and ﬁ-nancial news, all require reasoning with respect to quantities. Math word problems provide a natural abstraction to these quantitative reasoning problems. As a result, there has a been a growing interest in developing methods which automatically solve math word problems (Koncel-Kedziorski et al. 2015; Kushman et al. 2014; Roy and Roth 2015; Mitra and Baral 2016). Units associated with numbers or the question often provide essential information to support the reasoning required in math word problems. Consider the arithmetic word problem in Example 1. The units of “66” and “10” are both “ﬂowers”, which indicate they can be added or subtracted. Although unit of “8” is also “ﬂower”, it is associated with a rate, indicating the number of ﬂowers in each bouquet. As a result, “8” effectively has unit “ﬂowers per bouquet”. Detecting such rate units help understand that “8” will more\n\nCopyright c⃝ 2017, Association for the Advancement of Artiﬁcial\n\nIntelligence (www.aaai.org). All rights reserved.\n\nExample 1\n\nIsabel picked 66 ﬂowers for her friends wedding. She\n\nwas making bouquets with 8 ﬂowers in each one. If 10\n\nof the ﬂowers wilted before the wedding, how many\n\nbouquets could she still make?\n\nlikely be multiplied or divided to arrive at the solution. Finally, the question asks for the number of “bouquets”, indicating “8” will likely be divided, and not multiplied. Knowing such interactions could help understand the situation and perform better quantitative reasoning. In addition, given that unit extraction is a noisy process, this can make it more robust via global reasoning. In this paper, we introduce the concept of unit dependency graph (UDG) for math word problems, to represent the relationships among the units of different numbers, and the question being asked. We also introduce a strategy to extract annotations for unit dependency graphs, with minimal additional annotations. In particular, we use the answers to math problems, along with the rate annotations for a few selected problems, to generate complete annotations for unit dependency graphs. Finally, we develop a decomposed model to predict UDG given an input math word problem. We augment the arithmetic word problem solver of (Roy and Roth 2015) to predict a unit dependency graph, along with the solution expression of the input arithmetic word problem. Forcing the solver to respect the dependencies of the unit dependency graph enables us to improve unit extractions, as well as leverage the domain knowledge about unit dependencies in math reasoning. The introduction of unit dependency graphs reduced the error of the solver by over 10%, while also making it more robust to reduction in lexical and template overlap of the dataset.\n\n## 2 Unit Dependency Graph\n\nWe ﬁrst introduce the idea of a generalized rate, and its unit representation. We deﬁne rate to be any quantity which is some measure corresponding to one unit of some other quantity. This includes explicit rates like “40 miles per hour”, as well as implicit rates like the one in “Each student has 3 books”. Consequently, units for rate quantities take the form “A per B”, where A and B refer to different entities. We refer to A as Num Unit (short for Numerator Unit), and B as Den\n\n| Mention | Num Unit | Den Unit |\n| --- | --- | --- |\n| 40 miles per hour | mile | hour |\n| Each student has 3 books. | book | student |\n\nTable 1: Units of rate quantities\n\nUnit (short for denominator unit). Table 1 shows examples of Num and Den Units for various rate mentions. A unit dependency graph (UDG) of a math word problem is a graph representing the relations among quantity units and the question asked. Fig. 1 shows an example of a math word problem and its unit dependency graph. For each quantity mentioned in the problem, there exists a vertex in the unit dependency graph. In addition, there is also a vertex representing the question asked. Therefore, if a math problem mentions n quantities, its unit dependency graph will have n + 1 vertices. In the example in Fig 1, there is one vertex corresponding to each of the quantities 66, 8 and 10, and one vertex representing the question part “how many bouquets could she still make ?”. A vertex representing a number, is labeled RATE, if the corresponding quantity describes a rate relationship (according to the aforementioned deﬁnition). In ﬁg 1, “8” is labeled as a RATE since it indicates the number of ﬂowers in each bouquet. Similarly, a vertex corresponding to the question is marked RATE if the question asks for a rate. Edges of a UDG can be directed as well as undirected. Each undirected edge has the label SAME UNIT, indicating that the connected vertices have the same unit. Each directed edge going from vertex u to vertex v can have one of the following labels:\n\n1. NUM UNIT : Valid only for directed edges with source\n\nvertex u labeled as RATE, indicates that Num Unit of u matches the unit of the destination vertex v.\n\n2. DEN UNIT : Valid only for directed edges with source\n\nvertex labeled as RATE, indicates that Den Unit of source vertex u matches the unit of the destination vertex v. If no edge exists between a pair of vertices, they have unrelated units. Several dependencies exist between the vertex and edge labels of the unit dependency graph of a problem, and its solution expression. Sec 4 discusses these dependencies and how they can be leveraged to improve math problem solving.\n\n## 3 Learning to Predict UDGs\n\nPredicting UDG for a math word problem is essentially a structured prediction problem. However, since we have limited training data, we develop a decomposed model to predict parts of the structure independently, and then perform joint inference to enforce coherent predictions. This has been shown to be an effective method for structured prediction in the presence of limited data (Punyakanok et al. 2005; Sutton and McCallum 2007). Empirically, we found our decomposed model to be superior to jointly trained alternatives (see Section 5). Our decomposed model for UDG prediction uses the following two classiﬁers.\n\n1. Vertex Classiﬁer : This is a binary classiﬁer, which takes\n\na vertex of the UDG as input, and decides whether it denotes a rate.\n\n2. Edge Classiﬁer : This is a multiclass classiﬁer, which\n\ntakes as input a pair of nodes of the UDG, and predicts the properties of the edge connecting those nodes. Finally, a constrained inference module combines the output of the two classiﬁers to construct a UDG. We provide details of the components in the following subsections.\n\n### Vertex Classiﬁer\n\nIn order to detect rate quantities, we train a binary classiﬁer. Given problem text P and a vertex v of the UDG, the classiﬁer predicts whether v represents a rate. It predicts one of two labels - RATE or NOT RATE. The vertex v is either a quantity mentioned in P, or the question of P. The features used for the classiﬁcation are as follows :\n\n1. Context Features: We add unigrams, bigrams, part of\n\nspeech tags, and their conjunctions from the neighborhood of v.\n\n## 2. Rule based Extraction Features: We add a feature in-\n\ndicating whether a rule based approach can detect v as a rate.\n\n### Edge Classiﬁer\n\nWe train a multiclass classiﬁer to determine the properties of the edges of the UDG. Given problem text P and a pair of vertices vi and vj (i < j), the classiﬁer predicts one of the six labels :\n\n1. SAME UNIT : Indicates that vi and vj should be con-\n\nnected by an undirected edge labeled SAME UNIT.\n\n2. NO RELATION : Indicates no edge exists between vi and\n\nvj.\n\n3. RATE→\n\nNum : Indicates that vi is a rate, and the Num Unit of vi matches the unit of vj.\n\n4. RATE←\n\nNum : Indicates that vj is a rate, and the Num Unit of vj matches the unit of vi.\n\n5. We similarly deﬁne RATE→\n\nDen and RATE←\n\nDen.\n\nThe features used for the classiﬁcation are :\n\n1. Context Features: For each vertex v in the query, we add\n\nthe context features described for Vertex classiﬁer.\n\n## 2. Rule based Extraction Features: We add a feature indi-\n\ncating whether each of the queried vertices is detected as a rate by the rule based system. In addition, we also add features denoting whether there are common tokens in the units of vi and vj.\n\n### Constrained Inference\n\nOur constrained inference module takes the scores of the Vertex and Edge classiﬁers, and combines them to ﬁnd the most probable unit dependency graph for a problem. We deﬁne VERTEX(v, l) to be the score predicted by the Vertex classiﬁer for labeling vertex v of a UDG with label l, where l ∈{RATE, NOT RATE}. Similarly, we deﬁne\n\n| Problem | Unit Dependency Graph | Expression Tree of Solution |\n| --- | --- | --- |\n| Isabel picked 66 flowers for her friends<br>wedding. She was making bouquets<br>with 8 flowers in each one. If 10 of the<br>flowers wilted before the wedding, how<br>many bouquets could she still make? | Rate<br>8<br>Num Unit Num Unit<br>Den Unit<br>66 how many bouquets 10<br>Same Unit | ÷<br>− 8<br>66 10 |\n\nFigure 1: An arithmetic word problem, its UDG, and a tree representation of the solution (66 − 10)/8. Several dependencies exist between\n\nthe UDG and the ﬁnal solution of a problem. Here, “66” and “10” are connected via SAME UNIT edge, hence they can be added or subtracted, “8” is connected by DEN UNIT to the question, indicating that some expression will be divided by “8” to get the answer’s unit.\n\nEDGE(vi, vj, l) to be the score predicted by the Edge classi-ﬁer for the assignment of label l to the edge between vi and vj. Here the label l is one of the six labels deﬁned for the edge classiﬁer. Let G be a UDG with vertex set V . We deﬁne the score for G as follows:\n\nX\n\nSCORE(G) =\n\nVERTEX(v, RATE)+\n\nv∈V\n\nLABEL(G,v)=RATE\n\nλ × X\n\nEDGE(vi, vj, LABEL(G, vi, vj))\n\nvi,vj∈V,i<j\n\nwhere λ is a scaling factor, and LABEL maps labels of the UDG, to the labels of the corresponding classiﬁers. LABEL(G, v) maps to RATE, if v is a rate, otherwise it maps to NOT RATE. Similarly, if no edge exists between vi and vj, LABEL(G, vi, vj) maps to NO RELATION, if Num Unit of vi matches the unit of vj, LABEL(G, vi, vj) maps to\n\nRATE→\n\nNum, and so on. Finally, the inference problem has the following form:\n\narg G∈GRAPHS SCORE(G)\n\nmax\n\nwhere GRAPHS is the set of all valid unit dependency graphs for the input problem.\n\n## 4 Joint Inference With An Arithmetic Solver\n\nIn this section, we describe our joint inference procedure to predict both a UDG and the solution of an input arithmetic word problem. Our model is built on the arithmetic word problem solver of (Roy and Roth 2015), and we brieﬂy describe it in the following sections. We ﬁrst describe the concept of expression trees, and next describe the solver, which leverages expression tree representation of the solutions.\n\n### Monotonic Expression Tree\n\nAn expression tree is a binary tree representation of a mathematical expression, where leaves represent numbers, and all non-leaf nodes represent operations. Fig 1 shows an example of an arithmetic word problem and the expression tree of the solution mathematical expression. A monotonic expression tree is a normalized expression tree representation\n\nfor math expressions, which restricts the order of combination of addition and subtraction nodes, and multiplication and division nodes. The expression tree in Fig 1 is monotonic.\n\n### Arithmetic Word Problem Solver\n\nWe now describe the solver pipeline of (Roy and Roth 2015). Given a problem P with quantities q1, q2, . . . , qn, the solver uses the following two classiﬁers.\n\n1. Irrelevance Classiﬁer : Given as input, problem P and\n\nquantity qi mentioned in P, the classiﬁer decides whether qi is irrelevant for the solution. The score of this classiﬁer is denoted as IRR(q).\n\n2. LCA Operation Classsiﬁer : Given as input, problem\n\nP and a pair of quantities qi and qj (i < j), the classi-ﬁer predicts the operation at the lowest common ancestor (LCA) node of qi and qj, in the solution expression tree of problem P. The set of possible operations are +, −,\n\n−r, ×, ÷ and ÷r (the subscript r indicates reverse order).\n\nConsidering only monotonic expression trees for the solution makes this operation unique for any pair of quantities. The score of this classiﬁer for operation o is denoted as LCA(qi, qj, o). The above classiﬁers are used to gather irrelevance scores for each number, and LCA operation scores for each pair of numbers. Finally, constrained inference procedure combines these scores to generate the solution expression tree. Let I(T) be the set of all quantities in P which are not\n\nused in expression tree T, and λIRR be a scaling parameter. The score SCORE(T) of an expression tree T is deﬁned as:\n\nSCORE(T) = λIRR X\n\nIRR(q)+\n\nq∈I(T )\n\nX\n\nLCA(qi, qj, ⊙LCA(qi, qj, T))\n\nqi,qj /∈I(T )\n\nwhere ⊙LCA(qi, qj, T) denotes the operation at the lowest\n\ncommon ancestor node of qi and qj in monotonic expression tree T. Let TREES be the set of valid expressions that can be\n\nformed using the quantities in a problem P, and also give positive solutions. The inference algorithm now becomes:\n\nT ∈TREES SCORE(T)\n\narg max\n\n### Joint Inference\n\nWe combine the scoring functions of UDG prediction and the ones from the solver of (Roy and Roth 2015), so that we can jointly predict the UDG and the solution of the problem. For an input arithmetic word problem P, we score tuples (G, T) (where G is a candidate UDG for P, and T is a candidate solution expression tree of P) as follows :\n\nSCORE(G, T) = λIRR X\n\nIRR(q)+\n\nq∈I(T )\n\nX\n\nLCA(qi, qj, ⊙LCA(qi, qj, T))+\n\nqi,qj /∈I(T )\n\nX\n\nVERTEX(v, RATE)+\n\nλVERTEX\n\nv∈V\n\nLABEL(G,v)=RATE\n\nλEDGE X\n\nEDGE(vi, vj, LABEL(G, vi, vj))\n\nvi,vj∈V,i<j\n\nwhere λIRR, λVERTEX and λEDGE are scaling parameters. This is simply a scaled addition of the scores for UDG prediction and solution expression generation. Finally, the infer-\n\nence problem is\n\narg (G,T )∈TUPLES SCORE(G, T)\n\nmax\n\nwhere TUPLES is the set of all tuples (G, T), such that G ∈\n\nGRAPHS, T ∈ TREES, and G is a consistent UDG for the\n\nsolution tree T.\n\n### Consistent Rate Unit Graphs\n\nWe have a set of conditions to check whether G is a consistent UDG for monotonic tree T. Most of these conditions are expressed in terms of PATH(T, vi, vj), which takes as input a pair of vertices vi, vj of the UDG G, and a monotonic expression tree T, and returns the following.\n\n1. If both vi and vj are numbers, and their corresponding\n\nleaf nodes in T are ni and nj respectively, then it returns the nodes in the path connecting ni and nj in T.\n\n2. If only vi denotes a number (implying vj represents the\n\nquestion), the function returns the nodes in the path from ni to the root of T, where ni is the corresponding leaf node for vi. For the unit dependency graph and solution tree T of Fig 1, PATH(T, 66, 8) is {−, ÷}, whereas PATH(T, 8, question) is\n\n{÷}. Finally, the conditions for consistency between a UDG\n\nG and an expression tree T are as follows:\n\n1. If vi is the only vertex labeled RATE and it is the question,\n\nthere should not exist a path from some leaf n to the root of T which has only addition, subtraction nodes. If that exists, it implies n can be added or subtracted to get the answer, that is, the corresponding vertex for n in G has same unit as the question, and should have been labeled\n\nRATE.\n\n2. If vi is labeled RATE and the question is not, the path\n\nfrom ni (corresponding leaf node for vi) to the root of T cannot have only addition, subtraction nodes. Otherwise, the question will have same rate units as vi.\n\n3. We also check whether the edge labels are consistent with\n\nthe vertex labels using Algorithm 1, which computes edge labels of UDGs, given the expression tree T, and vertex labels. It uses heuristics like if a rate r is being multiplied by a non-rate number n, the Den Unit of r should match the unit of n, etc.\n\nAlgorithm 1 EDGELABEL\n\nInput: Monotonic expression tree T, vertex pairs vi, vj, and their\n\ncorresponding vertex labels\n\nOutput: Label of edge between vi and vj\n\n1: path ← PATH(T, vi, vj)\n\n2: CountMulDiv ← Number of Multiplication and Division\n\nnodes in path\n\n3: if vi and vj have same vertex label, and CountMulDiv = 0\n\nthen\n\n4: return SAME UNIT\n\n5: end if\n\n6: if vi and vj have different vertex labels, and CountMulDiv =\n\n1 then\n\n8: if path contains × and vi is RATE then\n\n7:\n\nreturn RATE→\n\nDen\n\n9: end if\n\n11: if path contains × and vj is RATE then\n\n10:\n\nreturn RATE←\n\nDen\n\n12: end if\n\n14: if path contains ÷ and vi is RATE then\n\n13:\n\nreturn RATE→\n\nNum\n\n15: end if\n\n17: if path contains ÷r and vj is RATE then\n\n16:\n\nreturn RATE←\n\nNum\n\n18: end if\n\n19: end if\n\n20: return Cannot determine edge label\n\nThese consistency conditions prevent the inference procedure from considering any inconsistent tuples. They help the solver to get rid of erroneous solutions which involve operations inconsistent with all high scoring UDGs. Finally, in order to ﬁnd the highest scoring consistent tuple, we have to enumerate the members of TUPLES, and score them. The size of TUPLES however is exponential in the number of quantities in the problem. As a result, we perform beam search to get the highest scoring tuple. We ﬁrst enumerate the members of TREES, and next for each member of TREES, we enumerate consistent UDGs.\n\n## 5 Experiments\n\nDataset\n\nExisting evaluation of arithmetic word problem solvers has several drawbacks. The evaluation of (Roy and Roth 2015) was done separately on different types of arithmetic problems. This does not capture how well the systems can distinguish between these different problem types. Datasets released by (Roy and Roth 2015) and (Koncel-Kedziorski et\n\nal. 2015) mention irrelevant quantities in words, and only the relevant quantities are mentioned in digits. This removes the challenge of detecting extraneous quantities. In order to address the aforementioned issues, we pooled arithmetic word problems from all available datasets (Hosseini et al. 2014; Roy and Roth 2015; Koncel-Kedziorski et al. 2015), and normalized all mentions of quantities to digits. We next prune problems such that there do not exist a problem pair with over 80% match of unigrams and bigrams. The threshold of 80% was decided manually by determining that problems with around 80% overlap are sufﬁciently different. We ﬁnally ended up with 831 problems. We refer to this dataset as AllArith. We also create subsets of AllArith using the MAWPS system (Koncel-Kedziorski et al. 2016). MAWPS can generate subsets of word problems based on lexical and template overlap. Lexical overlap is a measure of reuse of lexemes among problems in a dataset. High lexeme reuse allows for spurious associations between the problem text and a correct solution (Koncel-Kedziorski et al. 2015). Evaluating on low lexical overlap subset of the dataset can show the robustness of solvers to lack of spurious associations. Template overlap is a measure of reuse of similar equation templates across the dataset. Several systems focus on solving problems under the assumption that similar equation templates have been seen at training time. Evaluating on low template overlap subset can show the reliance of systems on the reuse of equation templates. We create two subsets of 415 problems each - one with low lexical overlap called AllArithLex, and one with low template overlap called AllArithTmpl. We report random 5-fold cross validation results on all these datasets. For each fold, we choose 20% of the training data as development set, and tune the scaling parameters on this set. Once the parameters are set, we retrain all the models on the entire training data. We use a beam size of 200 in all our experiments.\n\n### Data Acquisition\n\nIn order to learn the classiﬁers for predicting vertex and edge labels for UDGs, we need annotated data. However, gathering vertex and edge labels for UDGs of problems, can be expensive. In this section, we show that vertex labels for a subset of problems, along with annotations for solution expressions, can be sufﬁcient to gather high quality annotations for vertex and edge labels of UDGs. Given an arithmetic word problem P, annotated with the monotonic expression tree T of the solution expression, we try to acquire annotations for the UDG of P. First, we try to determine the labels for the vertices, and next the edges of the graph. We check if T has any multiplication or division node. If no such node is present, we know that all the numbers in the leaves of T have been combined via addition or subtraction, and hence, none of them describes a rate in terms of the units of other numbers. This determines that none of T’s leaves is a rate, and also, the question does not ask for a rate. If a multiplication or division node is present in T, we gather annotations for the numbers in the leaves of T as well as the question of P. Annotators were asked to mark whether each\n\n|  | AllArith | AllArithLex | AllArithTmpl |\n| --- | --- | --- | --- |\n| DECOMPOSE<br>- constraints | 73.6<br>70.9 | 67.7<br>62.9 | 68.7<br>65.5 |\n| JOINT | 72.9 | 66.7 | 68.4 |\n\nTable 3: Performance in predicting UDGs\n\nnumber represents a rate relationship, and whether the question in P asks for a rate. This process determines the labels for the vertices of the UDG. Two annotators performed these annotations, with an agreement of 0.94(kappa). Once we have the labels for the vertices of the UDG, we try to infer the labels for the edges using Algorithm 1. When the algorithm is unable to infer the label for a particular edge, we heuristically label that edge to be NO RELATION. The above process allowed us to extract high quality annotations for UDGs with minimal manual annotations. In particular, we only had to annotate vertex labels for 300 problems, out of the 831 problems in AllArith. Obviously some of the extracted NO RELATION edge labels are noisy; this can be remedied by collecting annotations for these cases. However, in this work, we did not use any manual annotations for edge labels.\n\n### UDG Prediction\n\nTable 2 shows the performance of the classiﬁers and the contribution of each feature type. The results indicate that rule-based techniques are not sufﬁcient for robust extraction, there is a need to take context into account. Table 3 shows the performance of our decomposed model (DECOMPOSE) in correctly predicting UDGs, as well as the contribution of constraints in the inference procedure. Having explicit constraints for the graph structure provides 3-5% improvement in correct UDG prediction. We also compare against a jointly trained model (JOINT), which learns to predict all vertex and edge labels together. Note that JOINT also uses the same set of constraints as DECOMPOSE in the inference procedure, to ensure it only predicts valid unit dependency graphs. We found that JOINT does not outperform DECOMPOSE, while taking signiﬁ-cantly more time to train. The worse performance of joint learning is due to: (1) search space being too large for the joint model to do well given our relatively small dataset size, and (2) our independent classiﬁers being good enough, thus supporting better joint inference. This tradeoff is strongly supported in the literature (Punyakanok et al. 2005; Sutton and McCallum 2007). Note, that all these evaluations are based on noisy edges annotations. This was done to reduce further annotation effort. Also, less than 15% of labels were noisy (indicated by fraction of NO RELATION labels), which makes this evaluation reasonable.\n\n### Solving Arithmetic Word Problems\n\nHere we evaluate the accuracy of our system in correctly solving arithmetic word problems. We refer to our system as UNITDEP. We compare against the following systems:\n\n| Features | Vertex Classifier |  |  | Edge Classifier |  |  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  | AllArith | AllArithLex | AllArithTmpl | AllArith | AllArithLex | AllArithTmpl |\n| All features | 96.7 | 96.2 | 97.5 | 87.1 | 84.3 | 86.6 |\n| No rule based features | 93.2 | 92.5 | 92.6 | 79.3 | 75.4 | 78.0 |\n| No context features | 95.1 | 94.1 | 95.3 | 78.6 | 70.3 | 75.5 |\n\nTable 2: Performance of system components for predicting vertex and edge labels for unit dependency graphs\n\n| System | AllArith | AllArithLex | AllArithTmpl |\n| --- | --- | --- | --- |\n| TEMPLATE | 73.7 | 65.5 | 71.3 |\n| SINGLEEQ | 60.4 | 51.5 | 51.0 |\n| LCA++ | 79.4 | 63.6 | 74.7 |\n| UNITDEP | 81.7 | 68.9 | 79.5 |\n| λ = 0<br>VERTEX | 80.3 | 67.2 | 77.1 |\n| λ = 0<br>EDGE | 79.9 | 64.1 | 75.7 |\n\nTable 4: Performance in solving arithmetic word problems\n\n1. LCA++ : System of (Roy and Roth 2015) with feature\n\nset augmented by neighborhood features, and with only positive answer constraint. We found that augmenting the released feature set with context features, and removing the integral answer constraint, were helpful. Our system UNITDEP also uses the augmented feature set for Relevance and LCA operation classiﬁers, and only positive constraint for ﬁnal solution value.\n\n2. TEMPLATE : Template based algebra word problem\n\nsolver of (Kushman et al. 2014).\n\n3. SINGLEEQ : Single equation word problem solver of\n\n(Koncel-Kedziorski et al. 2015). In order to quantify the gains due to vertex and edge information of UDGs, we also run two variants of UNITDEP - one with λVERTEX = 0, and one with λEDGE = 0. Table 4 shows the performance of these systems on AllArith, AllArithLex and AllArithTmpl. UNITDEP outperforms all other systems across all datasets. Setting either λVERTEX = 0 or λEDGE = 0 leads to a drop in performance, indicating that both vertex and edge information of UDGs assist in math problem solving. Note that setting both λVERTEX and λEDGE to 0, is equivalent to LCA++. SINGLEEQ performs worse than other systems, since it does not handle irrelevant quantities in a problem. In general, reduction of lexical overlap adversely affects the performance of most systems. The reduction of template overlap does not affect performance as much. This is due to the limited number of equation templates found in arithmetic problems. Introduction of UDGs make the system more robust to reduction of both lexical and template overlap. In particular, they provide an absolute improvement of 5% in both AllArithLex and allArithTmpl datasets (indicated by difference of LCA++ and UNITDEP results). For the sake of completeness, we also ran our system on the previously used datasets, achieving 1% and 4% absolute improvements over LCA++, in the Illinois dataset (Roy, Vieira, and Roth 2015) and the Commoncore dataset (Roy and Roth 2015) respectively.\n\n### Discussion\n\nMost of gains of UNITDEP over LCA++ came from problems where LCA++ was predicting an operation or an expression that was inconsistent with the units. A small gain (10%) also comes from problems where UDGs help detect certain irrelevant quantities, which LCA++ cannot recognize. Table 5 lists some of the examples which UNITDEP gets correct but LCA++ does not. Most of the mistakes of UNITDEP were due to extraneous quantity detection (around 50%). This was followed by errors due to the lack of math understanding (around 23%). This includes comparison questions like “How many more pennies does John have?”.\n\n## 6 Related Work\n\nThere has been a recent interest in automatically solving math word problems. (Hosseini et al. 2014; Mitra and Baral 2016) focus on addition-subtraction problems, (Roy, Vieira, and Roth 2015) look at single operation problems, (Roy and Roth 2015) as well as our work look at arithmetic problems with each number in question used at most once in the answer, (Koncel-Kedziorski et al. 2015) focus on single equation problems, and ﬁnally (Kushman et al. 2014) focus on algebra word problems. None of them explicitly model the relations between rates, units and the question asked. In contrast, we model these relations via unit dependency graphs. Learning to predict these graphs enables us to gain robustness over rule-based extractions. Other than those related to math word problems, there has been some work in extracting units and rates of quantities (Roy, Vieira, and Roth 2015; Kuehne 2004a; Kuehne 2004b). All of them employ rule based systems to extract units, rates and their relations.\n\n## 7 Conclusion\n\nIn this paper, we introduced the concept of unit dependency graphs, to model the dependencies among units of numbers mentioned in a math word problem, and the question asked. The dependencies of UDGs help improve performance of an existing arithmetic word problem solver, while also making it more robust to low lexical and template overlap of the dataset. We believe a similar strategy can be used to incorporate various kinds of domain knowledge in math word problem solving. Our future directions will revolve around this, particularly to incorporate knowledge of entities, transfers and math concepts. Code and dataset are available at http://cogcomp.cs.illinois.edu/page/publication view/804.\n\n| Problem | LCA++ | UNITDEP |\n| --- | --- | --- |\n| At lunch a waiter had 10 customers and 5 of them didn’t leave a tip. If he got<br>$3.0 each from the ones who did tip, how much money did he earn? | 10.0-(5.0/3.0) | 3.0*(10.0-5.0) |\n| The schools debate team had 26 boys and 46 girls on it. If they were split into<br>groups of 9, how many groups could they make? | 9*(26+46) | (26+46)/9 |\n| Melanie picked 7 plums and 4 oranges from the orchard . She gave 3 plums to<br>Sam . How many plums does she have now ? | (7+4)-3 | (7-3) |\n| Isabellas hair is 18.0 inches long. By the end of the year her hair is 24.0 inches<br>long. How much hair did she grow? | (18.0*24.0) | (24.0-18.0) |\n\nTable 5: Examples of problems which UNITDEP gets correct, but LCA++ does not.\n\n## Acknowledgements\n\nThis work is funded by DARPA under agreement number FA8750-13-2-0008, and a grant from the Allen Institute for Artiﬁcial Intelligence (allenai.org).\n\n## References\n\n[Hosseini et al. 2014] Hosseini, M. J.; Hajishirzi, H.; Etzioni, O.; and Kushman, N. 2014. Learning to solve arithmetic word problems with verb categorization. In EMNLP. [Koncel-Kedziorski et al. 2015] Koncel-Kedziorski, R.; Hajishirzi, H.; Sabharwal, A.; Etzioni, O.; and Ang, S. 2015. Parsing Algebraic Word Problems into Equations. TACL. [Koncel-Kedziorski et al. 2016] Koncel-Kedziorski, R.; Roy, S.; Amini, A.; Kushman, N.; and Hajishirzi, H. 2016. Mawps: A math word problem repository. In NAACL. [Kuehne 2004a] Kuehne, S. 2004a. On the representation of physical quantities in natural language text. In Proceedings of Twenty-sixth Annual Meeting of the Cognitive Science Society.\n\n[Kuehne 2004b] Kuehne, S. 2004b. Understanding natural language descriptions of physical phenomena. Ph.D. Dissertation, Northwestern University, Evanston, Illinois. [Kushman et al. 2014] Kushman, N.; Zettlemoyer, L.; Barzilay, R.; and Artzi, Y. 2014. Learning to automatically solve algebra word problems. In ACL. [Mitra and Baral 2016] Mitra, A., and Baral, C. 2016. Learning to use formulas to solve simple arithmetic problems. In ACL. [Punyakanok et al. 2005] Punyakanok, V.; Roth, D.; Yih, W.; and Zimak, D. 2005. Learning and inference over constrained output. In Proc. of the International Joint Conference on Artiﬁcial Intelligence (IJCAI), 1124–1129. [Roy and Roth 2015] Roy, S., and Roth, D. 2015. Solving general arithmetic word problems. In Proc. of the Conference on Empirical Methods in Natural Language Processing (EMNLP). [Roy, Vieira, and Roth 2015] Roy, S.; Vieira, T.; and Roth, D. 2015. Reasoning about quantities in natural language. Transactions of the Association for Computational Linguistics 3. [Sutton and McCallum 2007] Sutton, C., and McCallum, A. 2007. Piecewise pseudolikelihood for efﬁcient training of conditional random ﬁelds. In Ghahramani, Z., ed., Proceed-\n\nings of the International Conference on Machine Learning (ICML), 863–870. Omnipress.\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Unit Dependency Graph",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Learning to Predict UDGs",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Vertex Classiﬁer",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2. Rule based Extraction Features: We add a feature in-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Edge Classiﬁer",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2. Rule based Extraction Features: We add a feature indi-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Constrained Inference",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Joint Inference With An Arithmetic Solver",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Monotonic Expression Tree",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Arithmetic Word Problem Solver",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Joint Inference",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Consistent Rate Unit Graphs",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Data Acquisition",
+   "page": 4,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "UDG Prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "Solving Arithmetic Word Problems",
+   "page": 4,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "Discussion",
+   "page": 5,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "6 Related Work",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.624590100000205,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.7916666666666666,
+  "unmatched_gt": [
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "2. Rule based Extraction Features: We add a feature in-",
+   "2. Rule based Extraction Features: We add a feature indi-"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "doc": "1806.08600",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 124,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4553,
+   "completion_tokens": 383,
+   "total_tokens": 4936
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9997089639115251,
+   "in_order": 0.9915599534342259,
+   "inserted": 0.005788712011577379
+  },
+  "export_markdown": "# KINSHIPGAN: SYNTHESIZING OF KINSHIP FACES FROM FAMILY PHOTOS BY REGULARIZING A DEEP FACE NETWORK\n\n*Savas Ozkan, Akin Ozkan*\n\nKINSHIPGAN: SYNTHESIZING OF KINSHIP FACES FROM FAMILY PHOTOS BY\n\nREGULARIZING A DEEP FACE NETWORK\n\nSavas Ozkan1, Akin Ozkan2\n\n1. Middle East Technical University, Department of Electrical/Electronics Engineering, Ankara, Turkey\n\n2. Atilim University, Department of Electrical/Electronics Engineering, Ankara, Turkey\n\narXiv:1806.08600v2 [cs.CV] 17 Jul 2018\n\n## ABSTRACT\n\nIn this paper, we propose a kinship generator network that can synthesize a possible child face by analyzing his/her parent’s photo. For this purpose, we focus on to handle the scarcity of kinship datasets throughout the paper by proposing novel solutions in particular. To extract robust features, we integrate a pre-trained face model to the kinship face generator. Moreover, the generator network is regularized with an additional face dataset and adversarial loss to decrease the overﬁtting of the limited samples. Lastly, we adapt cycle-domain transformation to attain a more stable results. Experiments are conducted on Families in the Wild (FIW) dataset. The experimental results show that the contributions presented in the paper provide important performance improvements compared to the baseline architecture and our proposed method yields promising perceptual results. Index Terms— Kinship Synthesis, Fully Convolutional Networks, Generative Adversarial Network\n\n## 1. INTRODUCTION\n\nA human brain can verify kinship from photos by analyzing the disriminative patterns of facial parts. This feature is a strong evidence that how brain fascinatingly complex it is. Recently, an immense number of methods have been proposed to achieve kinship veriﬁcation by computers, since learning-based deep models have shown impressive powers to extract these latent patterns automatically from faces [22, 18, 8]. In particular, these methods outperform the performance achieved by humans for various identiﬁcation problem [17, 22]. Ultimately, the outputs of the models can be used for the identiﬁcation of missing people, child/parent search as well as tracking some statistics for recommendation services. However, looking the problem in reverse, more intuitively, guessing possible child faces by analyzing their parent photos, is not quite motivated as the original problem in literature (i.e., recognition and veriﬁcation). To the best of our knowledge, there is also a limited interest to tackle the problem [10], even if there are several promising methods to synthesize human faces from large-data collections based on generative deep models [12, 23, 3].\n\nIn general, the objective of this problem (i.e. ,synthesizing kinship face) is that for the given input of a parent photo (either mother or father), a method synthesizes the most probable faces of a child by exploiting latent facial features exhibited on the parents’ faces. However, the robustness of the models, especially for deep models, strongly depends on the number of training samples and the diversity of the datasets. Moreover, currently available datasets for kinship veriﬁcation are quite small and models should be regularized based on this limitation so as to achieve perceptually satisfying results. In this paper, we propose a fully convolutional network (FCN) which transforms a parent face in a latent space with the responses of encoder layers and iteratively decodes these responses to reconstruct a possible kinship face. For this purpose, we present three novel contributions to the standard FCN for kinship face synthesis: 1) We use a pre-trained network for the encoder layers which is optimized for face recognition on a large-scale dataset. Eventually, this allows us to extract more robust hidden features even if limited numbers of faces are modeled for face synthesis. 2) Although use of the encoder layers provides several advantages such as sparsity for person identiﬁcation, decoder layers can easily overﬁt to the training data due to the large dimensionality of the hidden features. At the end, it hardens the problem to generalize an optimum solution for diverse face scenarios. Hence, we leverage adversarial loss with large-scale unsupervised data to mitigate the overﬁtting with its generalization capability.\n\n3) Lastly, we employ cycle-domain transformation [28] (i.e.,\n\ntransforming from parent-to-child as well as child-to-parent) which leads to more stable results. The paper is organized as follows. First, we review the literature on face synthesis and kinship veriﬁcation, since these steps are two major basis of our problem. Later, the details of the proposed method are presented for kinship synthesis. Lastly, experimental results are reported and we explain the ﬁnal remarks of the paper.\n\n## 2. RELATED WORK\n\nIn this section, face synthesis and kinship veriﬁcation are reviewed in detail, since these are two critical ingredients for an effective kinship synthesis.\n\nFace Synthesis: The early studies on face synthesis are initially presented for hallucinating faces from low-resolution images to infer their high-frequency details [2, 19]. In these works, common characteristics of faces such as eyes, mount and symmetry are particularly enhanced. However, their main limitation is that the solution strictly relies on data (i.e no generalization capacity) and natural image manifold learning (i.e., memorizing) can be stuck to the case that it only transforms image patches from low-resolutions to higher ones by taking averages of all possible solutions at the end. Similarly, autoencoder-based (AE) methods have the similar drawbacks for the solution. [10] aims to generate kinship faces by promoting facial dynamics (i.e., expression) along with visual appearances based on AE, thus it is able to transfer personal expressions to prospective children. Variational autoencoder (VAE) [16] is a probabilistic way of synthesizing images by computing random latent variables according to the input at the encoder layers. Thus, this practically improves the generalization of the models and attains diverse results for various image synthesis problems as well as faces. However, it still lacks to reach the complexity of the problems (i.e., it underestimates the problem with the ﬁxed sized parameters, i.e., mean and variance values). At the end, overly-smoothed results are obtained. Recently, generative adversarial networks (GAN) [12, 23, 3] yield perceptually impressive results for image generation. In particular, face synthesis can be achieved in an unsupervised manner by incorporating various poses, expressions, genders, skin colors, and hair types. Moreover, it allows users to transform images to different domains by simply conditioning the solution [14, 5]. The superiority of GAN over VAE/AE is explained in [9] which remarks that GAN preserves the ﬁne-detail solution about the problem, while VAE/AE approximates it roughly. Kinship Veriﬁcation: Kinship veriﬁcation/recognition is initially based hand-crafted shallow facial features by incorporating skin color and/or higher-order gradient patterns exhibited from facial photos [25, 26]. Moreover, use of videos instead of single images is explored [6] and the authors assert that it can be useful to verify faces with spatio-temporal appearances, implicitly facial expressions. Recently, deep models attain state-of-the-art performance for the problem [27, 18, 8, 21]. In general, their solutions are based on transferring the trainable parameters from an available face model and ﬁnetuning with kinship data due to the scarcity of samples. Lastly, feature space is frequently learned with a triplet loss similar to face recognition problem [22].\n\n## 3. KINSHIP FACE SYNTHESIS\n\nFor a given parent photo x ∈ R128×128×3 (i.e., after face\n\ndetector1), our objective is to synthesis a child face y ∈\n\n1Dlib library is used for face detection. http://dlib.net/\n\n![image]()\n\nFig. 1. The ﬂow of the proposed method.\n\nR128×128×3 by exploiting the responses of a Generator network Gc(.) that consists of fully convolutional encoder and decoder layers. To ﬂexibly deﬁne different genders for prospective child faces (i.e male or female), y is conditioned at the decoder layer by a label c formulated as ˆy = Gc(x, c). This condition is also boosted by an auxiliary classiﬁer as in [5] for more stable results. Generator Network: Generator network G consists of fully convolution layers and it is an AE architecture. It aims to extract representative latent abstracts from an input image and to generate a face based on these latent abstracts. To increase to information ﬂow from the encoder to decoder layers, we employ skip-connections as in [13]. Practically, these connections improve the perceptual quality and stability of the generated faces. Furthermore, we follow the similar observations about the architecture that are presented in [23] for generative network (i.e., normalization layer with leaky-ReLU activation). In addition, the target face is conditioned by label c at the decoder layers which enables us to deﬁne the gender of the generated kinship face based on this label as either male or female. However, for better perceptual distinction, we add a penalty term to the loss function which will be explained in the following section in detail. Loss Functions: For parameter optimization, ﬁrst, we adapt the assumption of matching high-level activations of a pretrained network between the original and generated faces instead of pixel differences [11, 7] (i.e., renowned as content loss). Ultimately, this loss allows us to preserve latent content which can be exhibited from faces (i.e., it enables to transfer high-level distinct facial features from larger receptive ﬁelds than individual pixels). In addition, it provides robustness to some cases which contain not perfectly registered faces and/or severe pose variations. You can ﬁnd further discussions about the assumption in [4]. The layer activations φl(.)(l = 4, 5) of VGGFace-16 [22] (i.e., conv4 3 and conv5 3) are used and the loss between a\n\ntraining pair (x, y) is minimized as:\n\ncon = X\n\nLC\n\n(1)\n\n||φl(y) − φl(Gc(x, c))||1.\n\nl\n\nNote that by incorporating only higher layer activations in the loss function, we opt to preserve global facial part similarities than ﬁne-details by which synthesis of ﬁne-details is quite difﬁcult by just analyzing images as expected (i.e., some peripheral dependencies). Moreover, we introduce an auxiliary classiﬁer to condition the gender of faces. This network Dcls categories an input face based on a softmax cross-entropy loss as male or female and it propagates the error to the network for Generative and Discriminative layers:\n\nLD\n\n(2)\n\naux = −log(Dcls(c|y)).\n\nLG\n\n(3)\n\naux = −log(Dcls(y|c)).\n\nFace Encoder Layers: As mentioned, the main drawback of synthesizing a kinship face is that there is a limited number of training samples compared to the other facial problems/datasets in literature [18, 8]. Moreover, learning methods need sufﬁciently large and diverse samples to obtain reliable models. Eventually, these issues weaken the generalization power of the methods by overﬁtting to the limited samples. Therefore, instead of creating a model from scratch for encoder layer, we replace the layer parameters of the encoder network with a pre-trained model (i.e., VGGFace-16). Note that this model is learned on a large and diverse face dataset [22]. Practically, it enables to extract more discriminative and latent features about faces. Also, it adds robustness against noise and pose variations. Lastly, these parameters are not ﬁnetuned during the learning stage. Remark that use of a pre-trained model has another advantage that the generated kinship faces can automatically transfer the facial expressions of parents from photos. Thus, there is no need to utilize a different loss function or conditional labels for the network (Please see the experimental results). Adversarial Loss: The Generator network computes largedimensional hidden abstracts about data. Furthermore, the total number of operations is multiplied when skip-connections are utilized. However, even if rich representations are extracted, the sparsity of the abstracts disturbs the stability and convergence of the parameters to an optimum solution for small image sets. [1] explain that mapping large dimensionality to a lower space, in other words, willingly degrading the sparsity with a reduction method (i.e., PCA etc.), can deﬁ-nitely improve the performance of deep convolution methods for various transfer learning problems. Based on this observation, we improve the generalization capacity and stability of the Generator network with adversarial network scheme trained on a different and larger face\n\ndataset. Thus, GAN replaces the reduction method and it acts like a degradation function to obtain indistinguishable faces. For this purpose, we employ energy-based Wasserstein GAN objective [3] on a sample xcp drawn from a different face set (i.e., CelebA dataset [20]) which is formally deﬁned as:\n\nLD\n\n(4)\n\ngan = Dgan(xcp) − kt.Dgan(Gc(xcp, c)),\n\nLG\n\n(5)\n\ngan = Dgan(Gc(xcp, c)).\n\nwhere super-scripts of the losses indicate which parameter sets are updated (Generator (G) or Discriminator (D)). Moreover, Dgan (i.e., discriminator) is structured as an autoencoder network and the reconstruction-based loss is utilized. Lastly, kt is a trainable parameter and γ of [3] is set to 0.7 to diversify the generated faces. Note that the network is updated by considering content loss and generative loss simultaneously at the end. Cycle-Consistency: Lastly, we employ a cycle-domain transformation as in [28] to achieve more stable results. By this way, a consistent facial transformation can be obtained by linking the generated kinship face by his/her parent face. For parameter optimization, we add an additional cost term similar to Eq. 1:\n\ncon = X\n\nLP\n\n(6)\n\n||φl(x) − φl(Gp(Gc(x, c)))||1.\n\nl\n\nGp(.) has shared encoder parameters with Gc(.) while different decoder parameters. Full Method: Finally, the overall ﬂow of the proposed method is illustrated in Fig. 1. Furthermore, the full objective functions for Generative LG and Discriminative LD\n\nlayers are written respectively as:\n\ngan + λauxLD\n\nLD = λganLD\n\n(7)\n\naux,\n\ncon + LG\n\ngan + λauxLG\n\ncon + λpLP\n\nLG = λcLC\n\n(8)\n\naux.\n\nwhere λgan, λc, λp and λaux control the inﬂuences of the loss functions. Empirically, they are set to 10, 0.1, 0.001 and\n\n0.1 by taking the parameter overﬁtting into account for small\n\ndatasets.\n\n## 4. EXPERIMENTS\n\nDatasets: For kinship synthesis, we use the dataset released for Large-Scale Kinship Recognition Data Challenge and it is called as Families in the Wild (FIW) [24]. This dataset comprises approximately 600K face pairs from 300 families in the training set. Since the labels of test set are not available, we use the validation set (randomly select 20K) to evaluate the performance of the proposed method. Moreover, we use only father-son, father-daughter, mother-son and mother-daughter\n\n![image]()\n\nFig. 2. Several visual outputs of the proposed method for father-daughter, father-son, mother-daughter and mother-son. You\n\ncan also ﬁnd the opposite gender of the results.\n\nrelations. In addition, we utilize CelebA dataset [20] to regularize the network which contains 200K celebrity images with 40 different attributes. Note that we exploit only gender attribute of faces in this paper (i.e., male or female). To evaluate the performance, we use NN search accuracy along with the qualitative results which calculates the total number of correct face ids at the top-100 of ranked lists for given synthesis faces to the system. Additionally, fc6 layer activations of VGGFace-16 are used to represent the faces and cosine distance is computed. Implementation Details: The parameters are optimized by Adam optimizer [15] and learning rate is ﬁxed to 0.0001. Moreover, batch size and iteration numbers are set to 32 and 100K respectively. All codes are implemented on TensorFlow deep learning framework.\n\n### 4.1. Experimental Results\n\nTable 1 shows the retrieval accuracy of kinship faces generated by our method on real validation face dataset. Even if the methods do not obtain signiﬁcant performance for the retrieval (which is not main scope of the method), it can clearly\n\nModel\n\nTop-100 Accuracy\n\nKinshipGAN (w\\o Deep Face)\n\n0.048\n\nKinshipGAN (λc = 1.0)\n\n0.063\n\n0.107\n\nKinshipGAN (λc = 0.1)\n\nTable 1. Top-100 retrieval accuracy of kinship faces generated by the proposed method in FIW validation dataset.\n\nillustrate the effects of the contributions presented in this paper to the kinship face synthesis. In particular, use of a pretrained face model for the encoder part introduces a noticeable distinguishable power to the model. Furthermore, setting λc coefﬁcient to higher values (e.g., 1.0) which determines the inﬂuence of face similarities, can adversely affect the performance and perceptually worse results can be obtained. Fig. 2 illustrates the output of the proposed method for father-daughter, father-son, mother-daughter and mother-son relations (You can ﬁnd additional results on Appendix). Furthermore, the opposite of the gender for each face is also given. From these results, the proposed method yields perceptually promising results on kinship face synthesis. Particularly, the method can preserve the facial expression, pose etc. exhibited from parent photos by the cycle-domain transformation and the pre-trained network.\n\n## 5. CONCLUSION\n\nIn this paper, we propose a kinship face generator network that can yield promising results under the scarcity of kinship samples. Throughout the paper, we propose three main contributions. First, in order to extract robust facial features, we exploit a pre-trained deep face model in the network. Later, adversarial scheme is used to improve the generalization capacity of the network and to prevent the overﬁtting. Lastly, cycle-domain transformation approach is utilized to provide consistency between parent-to-child translation. The experimental results show that the proposed method achieves promising perceptual results.\n\n## 6. REFERENCES\n\n[1] A. Babenko and V. Lempitsky, “Aggregating local deep features for image retrieval.” IEEE ICCV, 2015.\n\n[2] S. Baker and T. Kanade, “Hallucinating faces.” IEEE FG, 2000.\n\n[3] D. Berthelot, T. Schumm, and L. Metz, “Began: Boundary equilibrium generative adversarial networks.” arXiv preprint arXiv:1703.1071, 2017.\n\n[4] Q. Chen and V. Koltun, “Photographic image synthesis with cascaded reﬁnement networks.” IEEE ICCV, 2017.\n\n[5] Y. Choi, M. Choi, M. Kim, J.-W. Ha, S. Kim, and J. Choo, “Stargan: Uniﬁed generative adversarial networks for multi-domain image-to-image translation.” arXiv preprint arXiv:1711.09020, 2017.\n\n[6] H. Dibeklioglu, A. A. Salah, and T. Gevers, “Like father, like son: Facial expression dynamics for kinship veriﬁcation.” 2013.\n\n[7] A. Dosovitskiy and T. Brox, “Generating images with perceptual similarity metrics based on deep networks.” NIPS, 2016.\n\n[8] Q. Duan and L. Zhang, “Kinship veriﬁcation with deep convolutional neural networks.” ACM MM Workshops, 2017.\n\n[9] V. Dumoulin, I. Belghazi, B. Poole, O. Mastropietro, A. Lamb, M. Arjovsky, and A. Courville, “Adversarially learned inference.” arXiv preprint arXiv:1606.00704, 2016.\n\n[10] I. O. Ertugrul and H. Dibeklioglu, “What will your future child look like? modeling and synthesis of hereditary patterns of facial dynamics.” IEEE FG, 2017.\n\n[11] L. A. Gatys, A. S. Ecker, and M. Bethge, “Image style transfer using convolutional neural networks.” IEEE CVPR, 2016.\n\n[12] I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville, and Y. Bengio, “Generative adversarial nets.” NIPS, 2014.\n\n[13] K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition.” 2016.\n\n[14] P. Isola, J.-Y. Zhu, T. Zhou, and A. A. Efros, “Imageto-image translation with conditional adversarial networks.” IEEE ICCV, 2017.\n\n[15] D. Kingma and J. Ba, “Adam: A method for stochastic optimization.” arXiv preprint, 2014.\n\n[16] D. P. Kingma and M. Welling, “Began: Boundary equilibrium generative adversarial networks.” arXiv preprint arXiv:1312.6114, 2013.\n\n[17] A. Krizhevsky, I. Sutskever, and G. E. Hinton, “Imagenet classiﬁcation with deep convolutional neural networks.” 2012.\n\n[18] Y. Li, J. Zeng, J. Zhang, A. Dai, M. Kan, S. Shan, and X. Chen, “Kinnet: Fine-to-coarse deep metric learning for kinship veriﬁcation.” ACM MM Workshops, 2017.\n\n[19] C. Liu, H.-Y. Shum, and C.-S. Zhang, “A two-step approach to hallucinating faces: global parametric model and local nonparametric model.” IEEE CVPR, 2001.\n\n[20] Z. Liu, P. Luo, X. Wang, and X. Tang, “Deep learning face attributes in the wild.” IEEE ICCV, 2015.\n\n[21] J. Lu, J. Hu, and Y.-P. Tan, “Discriminative deep metric learning for face and kinship veriﬁcation.” 2017.\n\n[22] O. M. Parkhi, A. Vedaldi, and A. Zisserman, “Deep face recognition.” 2015.\n\n[23] A. Radford, L. Metz, and S. Chintala, “Unsupervised representation learning with deep convolutional generative adversarial networks.” arXiv preprint arXiv:1511.06434, 2015.\n\n[24] J. P. Robinson, M. Shao, Y. Wu, H. Liu, T. Gillis, and Y. Fu, “Visual kinship recognition of families in the wild,” TPAMI, 2018.\n\n[25] X. Wang and C. Kambhamettu, “Leveraging appearance and geometry for kinship veriﬁcation.” 2014.\n\n[26] H. Yan, J. Lu, W. Deng, and X. Zhou, “Discriminative multimetric learning for kinship veriﬁcation.” 2014.\n\n[27] K. Zhang, Y. Huang, C. Song, H. Wu, and L. Wang, “Kinship veriﬁcation with deep convolutional neural networks.” BMVC, 2015.\n\n[28] J.-Y. Zhu, T. Park, P. Isola, and A. A. Efros, “Unpaired image-to-image translation using cycle-consistent adversarial networks.” IEEE ICCV, 2017.\n\n## Appendix\n\n## Additional Qualitative Results\n\n![image]()\n\nFig. 3. Additional results for father-son.\n\n![image]()\n\nFig. 4. Additional results for father-daughter .\n\n![image]()\n\nFig. 5. Additional results for mother-son.\n\n![image]()\n\nFig. 6. Additional results for mother-daughter.\n"
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RELATED WORK",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. KINSHIP FACE SYNTHESIS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. EXPERIMENTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Experimental Results",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Additional Qualitative Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.998904500003846,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

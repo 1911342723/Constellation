@@ -1,0 +1,251 @@
+{
+ "doc": "1609.09840",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 28,
+  "pred": 20,
+  "tp": 14,
+  "fp": 6,
+  "fn": 14,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.3448275862068966,
+  "unmatched_gt": [
+   "2.1. ∆-universality",
+   "2.2. Strong universality",
+   "2.3. Composition and concatenation of families",
+   "3.1. Component-wise regularity",
+   "3.2. K -regularity",
+   "6.1. Scalar product computation",
+   "6.2. Efficient modulo reduction",
+   "8.1. Variable-length results on recent Intel processors",
+   "8.2. Multiplatform performance testing",
+   "A. PLATFORMS USED",
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators",
+   "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS"
+  ],
+  "unmatched_pred": [
+   "32 bits",
+   "64 bits",
+   "1. The hash functions used in the C++ standard (std) library.",
+   "2. The hash functions used in the Boost library, a widely used C++ library.",
+   "4. VHASH [8, 30] (see Appendix F), one of the fastest hash families on 64-bit pr",
+   "5. SipHash [36]"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 932,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10500,
+   "completion_tokens": 775,
+   "total_tokens": 11275
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Regular and almost universal hashing: an efﬁcient implementation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RANDOM HASHING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. REGULARITY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. A TREE-BASED CONSTRUCTION FOR UNIVERSALITY AND REGULARITY",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. UNIVERSALITY AND REGULARITY WITH PM+",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. AN EFFICIENT IMPLEMENTATION OF PM+",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "32 bits",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "64 bits",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. ACHIEVING THE AVALANCHE EFFECT",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. EXPERIMENTS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. The hash functions used in the C++ standard (std) library.",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. The hash functions used in the Boost library, a widely used C++ library.",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. VHASH [8, 30] (see Appendix F), one of the fastest hash families on 64-bit processors.",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. SipHash [36]",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. CONCLUSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. ACKNOWLEDGEMENTS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS (ASSEMBLER)",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS USING INTEL",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. NON-REGULARITY OF THE VHASH FAMILY",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.785678799999005,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 21,
+  "tp": 14,
+  "fp": 7,
+  "fn": 14,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.31034482758620685,
+  "unmatched_gt": [
+   "2.1. ∆-universality",
+   "2.2. Strong universality",
+   "2.3. Composition and concatenation of families",
+   "3.1. Component-wise regularity",
+   "3.2. K -regularity",
+   "6.1. Scalar product computation",
+   "6.2. Efficient modulo reduction",
+   "8.1. Variable-length results on recent Intel processors",
+   "8.2. Multiplatform performance testing",
+   "A. PLATFORMS USED",
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators",
+   "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS"
+  ],
+  "unmatched_pred": [
+   "Regular and almost universal hashing: an efﬁcient implementation",
+   "32 bits",
+   "64 bits",
+   "1. The hash functions used in the C++ standard (std) library.",
+   "2. The hash functions used in the Boost library, a widely used C++ library.",
+   "4. VHASH [8, 30] (see Appendix F), one of the fastest hash families on 64-bit pr",
+   "5. SipHash [36]"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 18,
+  "tp": 12,
+  "fp": 6,
+  "fn": 14,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.37037037037037035,
+  "unmatched_gt": [
+   "2.1. ∆-universality",
+   "2.2. Strong universality",
+   "2.3. Composition and concatenation of families",
+   "3.1. Component-wise regularity",
+   "3.2. K -regularity",
+   "6.1. Scalar product computation",
+   "6.2. Efficient modulo reduction",
+   "8.1. Variable-length results on recent Intel processors",
+   "8.2. Multiplatform performance testing",
+   "A. PLATFORMS USED",
+   "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86 AND X64 PROCES",
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators",
+   "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS"
+  ],
+  "unmatched_pred": [
+   "32 bits",
+   "64 bits",
+   "1. The hash functions used in the C++ standard (std) library.",
+   "2. The hash functions used in the Boost library, a widely used C++ library.",
+   "4. VHASH [8, 30] (see Appendix F), one of the fastest hash families on 64-bit pr",
+   "5. SipHash [36]"
+  ],
+  "ignored_title_predictions": null
+ }
+}

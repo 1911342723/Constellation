@@ -1,0 +1,166 @@
+{
+ "doc": "1712.05693",
+ "system": "outline",
+ "metrics": {
+  "gt": 14,
+  "pred": 18,
+  "tp": 14,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 9,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics",
+   "Abstract",
+   " Acknowledgments",
+   " References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "A novel framework to analyze complex network dynamics",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I Introduction",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Theory for stable network dynamics with linear feedback",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A Dynamic communicability as a measure of interactions across time",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "B Definition of flow to quantify the propagation of fluctuating inputs via the network connectivity",
+   "page": 7,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "C Definition of diversity D and spectral properties of the flow",
+   "page": 9,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III Benchmark of communicability and flow using synthetic networks",
+   "page": 10,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A Communicability and flow capture the properties of the network interactions and inputs",
+   "page": 10,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "B Interplay between local connectivity, long-range connectivity and inputs in ring lattices",
+   "page": 12,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "C Community merging in hierarchical networks",
+   "page": 12,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "D Multiple timescales and path selection in globally balanced excitatory-inhibitory network",
+   "page": 15,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "IV Discussion",
+   "page": 16,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 17,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "V Annex",
+   "page": 17,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A Communicability for static graph",
+   "page": 17,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "B Exponential of graph Laplacian to describe multiscale structure",
+   "page": 17,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": " References",
+   "page": 18,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.05591970000023139,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 18,
+  "tp": 14,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 9,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics",
+   "Abstract",
+   " Acknowledgments",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 9,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics"
+  ],
+  "ignored_title_predictions": null
+ }
+}

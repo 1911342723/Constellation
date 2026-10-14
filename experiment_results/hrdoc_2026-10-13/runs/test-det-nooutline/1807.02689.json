@@ -1,0 +1,194 @@
+{
+ "doc": "1807.02689",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 28,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 18,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.24137931034482762,
+  "unmatched_gt": [
+   "I I I. C2 T C P ’ S A L GORIT HM",
+   "A. The Good and The Bad Conditions",
+   "B. Main Logic",
+   "C. Why It Works",
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "V. RE L AT E D W O R K",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "1 Function pkts acked() // process a new received Ack",
+   "18 CubicNReno"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 792,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Cellular Controlled Delay TCP (C2TCP)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATIONS AND DESIGN DECISIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Function pkts acked() // process a new received Ack",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EVALUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Comparison with End-to-End Schemes",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Fairness",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "18 CubicNReno",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Loss Resiliency",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Impact of Target and Interval",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.808920499999658,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 18,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.2068965517241379,
+  "unmatched_gt": [
+   "I I I. C2 T C P ’ S A L GORIT HM",
+   "A. The Good and The Bad Conditions",
+   "B. Main Logic",
+   "C. Why It Works",
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "V. RE L AT E D W O R K",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "Cellular Controlled Delay TCP (C2TCP)",
+   "1 Function pkts acked() // process a new received Ack",
+   "18 CubicNReno"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 18,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.2142857142857143,
+  "unmatched_gt": [
+   "I I I. C2 T C P ’ S A L GORIT HM",
+   "A. The Good and The Bad Conditions",
+   "B. Main Logic",
+   "C. Why It Works",
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "V. RE L AT E D W O R K",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "1 Function pkts acked() // process a new received Ack",
+   "18 CubicNReno"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,227 @@
+{
+ "doc": "1805.09887",
+ "system": "docling",
+ "metrics": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 23,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5185185185185186,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 Algorithm SPA-ST-super",
+   "Lemma 11. A super-stable matching M in I corresponds to a feasible solution S to"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 84.43208319999758
+ },
+ "predictions": [
+  {
+   "text": "Super-stability in the Student-Project Allocation Problem with Ties⋆ ⋆⋆",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminary definitions and results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Formal definition of SPA-S",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Ties in the preference lists",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Cloning from spa-st to hrt does not work in general",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 An algorithm for SPA-ST under super-stability",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Definitions relating to the algorithm",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Description of the algorithm",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Algorithm SPA-ST-super",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Example algorithm execution",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Correctness of Algorithm SPA-ST-super",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5 Properties of super-stable matchings in spa-st",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Empirical Evaluation",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Experimental Setup",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussions and Concluding Remarks",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A An IP model for super-stability in SPA-ST",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Introduction",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 Constraints",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.3 Variables",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.4 Objective function",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.5 Correctness of the IP model",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 11. A super-stable matching M in I corresponds to a feasible solution S to J.",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.015504800001508556,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 26,
+  "tp": 23,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4814814814814815,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "Super-stability in the Student-Project Allocation Problem with Ties⋆ ⋆⋆",
+   "Algorithm 1 Algorithm SPA-ST-super",
+   "Lemma 11. A super-stable matching M in I corresponds to a feasible solution S to"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 5,
+  "parent_correct": 10,
+  "teds": 0.5416666666666667,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 Algorithm SPA-ST-super",
+   "Lemma 11. A super-stable matching M in I corresponds to a feasible solution S to"
+  ],
+  "ignored_title_predictions": null
+ }
+}

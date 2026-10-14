@@ -1,0 +1,185 @@
+{
+ "doc": "1808.01104",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Multinomial Mixture Kernel For Abundance Maps",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "S. Ozkan and G.B",
+   "Methods",
+   "Pre-Normalization (ours) 51.79 48.42"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 498,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4436,
+   "completion_tokens": 476,
+   "total_tokens": 4912
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Improved Deep Spectral Convolution Network For",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hyperspectral Unmixing With Multinomial Mixture",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Kernel and Endmember Uncertainty",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Ozkan and G.B",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "II. IMPROVED DEEP SPECTRAL CONVOLUTION NETWORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Pre-Normalization (ours) 51.79 48.42",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Parameter Learning",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Spectral Variability Assumption",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Implementation Details",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Synthetic Dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Urban Dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "C. Jasper Dataset",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DISCUSSION AND CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.63855070000136,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 17,
+  "tp": 11,
+  "fp": 6,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Multinomial Mixture Kernel For Abundance Maps",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "Improved Deep Spectral Convolution Network For",
+   "Hyperspectral Unmixing With Multinomial Mixture",
+   "Kernel and Endmember Uncertainty",
+   "S. Ozkan and G.B",
+   "Methods",
+   "Pre-Normalization (ours) 51.79 48.42"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "A. Multinomial Mixture Kernel For Abundance Maps"
+  ],
+  "unmatched_pred": [
+   "S. Ozkan and G.B",
+   "Methods",
+   "Pre-Normalization (ours) 51.79 48.42"
+  ],
+  "ignored_title_predictions": null
+ }
+}

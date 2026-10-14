@@ -1,0 +1,170 @@
+{
+ "doc": "1707.09850",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [
+   "5. Summary, Conclusion and Futher work"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "5. Summary, Conclusion and Futher work"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 135,
+  "layout_marked": 25,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10062,
+   "completion_tokens": 649,
+   "total_tokens": 10711
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9892867211728221,
+  "inserted_word_share": 0.014325842696629176
+ },
+ "predictions": [
+  {
+   "text": "CODE-RADE - Community Infrastructure for the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. The paradox of plentiful computing",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2. Barriers to Entry",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2. CODE-RADE Design and Philosophy",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. CODE-RADE Design Hypotheses",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3. CODE-RADE in detail",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Actors",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. Platform",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. CODE-RADE is cross-platform",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2. CODE-RADE is atomic",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3. CODE-RADE is community-based",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4. CODE-RADE is Automated",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.5. CODE-RADE for Physics",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.875680899996951,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.9444444444444444,
+  "unmatched_gt": [
+   "5. Summary, Conclusion and Futher work"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

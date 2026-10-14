@@ -1,0 +1,175 @@
+{
+ "doc": "1709.04453",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "Algorithm 1 priority reordering",
+   "ACKNOWLEDGEMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 priority reordering"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 35.852197699998214
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Visualization of Big Spatial Data using Coresets for Kernel Density Estimates",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 CORESETS CONSTRUCTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Coreset method",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Pre-ordering points",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Algorithm 1 priority reordering",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Comparing Coresets with Random Sampling",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3.1 Datasets",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.3.2 Visual Demonstration on Data",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4 AVOIDING ERROR WHEN THRESHOLDING ISO-LEVELS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 SYSTEM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Interactive De-noising",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.2 Implementation",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 DISCUSSION AND LIMITATIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.015180599999439437,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "Algorithm 1 priority reordering",
+   "ACKNOWLEDGEMENTS"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

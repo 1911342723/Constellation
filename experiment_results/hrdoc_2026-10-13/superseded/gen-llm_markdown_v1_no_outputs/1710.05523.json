@@ -1,0 +1,92 @@
+{
+ "doc": "1710.05523",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 1,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 3624,
+   "completion_tokens": 3429
+  },
+  "elapsed_llm_seconds": 17.860471199997846,
+  "content_preservation": 0.9913710450623202,
+  "inserted_word_share": 0.004333172845450206,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "An open window to neutrino mass hierarchy at maximal Dirac CP violation",
+    0,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "An open window to neutrino mass hierarchy at maximal Dirac CP violation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.901926499998808,
+ "metrics_raw": {
+  "gt": 1,
+  "pred": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "An open window to neutrino mass hierarchy at maximal Dirac CP violation"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 1,
+  "pred": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Acknowledgement"
+  ],
+  "unmatched_pred": [
+   "An open window to neutrino mass hierarchy at maximal Dirac CP violation"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 0,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

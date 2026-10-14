@@ -1,0 +1,129 @@
+{
+ "doc": "1801.02460",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "A DE RI VATI O N O F T H E I S R S G N M O DE L"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "A DE RI VATI O N O F T H E I S R S G N M O DE L"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 464,
+  "layout_marked": 11,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9285636264336428,
+  "inserted_word_share": 0.08285683460999027
+ },
+ "predictions": [
+  {
+   "text": "The Gaussian Noise Model in the Presence of",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THE ISRS GN MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The nonlinear interference power",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Inter-channel stimulated Raman scattering",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. NUMERICAL VALIDATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. C+L BAND TRANSMISSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.317880299997341,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "A DE RI VATI O N O F T H E I S R S G N M O DE L"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

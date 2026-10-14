@@ -1,0 +1,143 @@
+{
+ "doc": "1706.07156",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.46153846153846156,
+  "unmatched_gt": [
+   "A. Impact of time-frequency representation",
+   "B. Effect of CNN architecture and filter size",
+   "AC K NOWL E DGM EN T",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [
+   "3) CNN models"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 195,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Comparison of Time-Frequency Representations for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Environmental Sound Classiﬁcation using",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Convolutional Neural Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. EXPERIMENTAL METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Datasets",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Pre-processing",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Network Architecture and Evaluation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3) CNN models",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Wideband vs Narrowband",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.031271500000003,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 8,
+  "fp": 4,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.23076923076923073,
+  "unmatched_gt": [
+   "A. Impact of time-frequency representation",
+   "B. Effect of CNN architecture and filter size",
+   "AC K NOWL E DGM EN T",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [
+   "Comparison of Time-Frequency Representations for",
+   "Environmental Sound Classiﬁcation using",
+   "Convolutional Neural Networks",
+   "3) CNN models"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "A. Impact of time-frequency representation",
+   "B. Effect of CNN architecture and filter size"
+  ],
+  "unmatched_pred": [
+   "3) CNN models"
+  ],
+  "ignored_title_predictions": null
+ }
+}

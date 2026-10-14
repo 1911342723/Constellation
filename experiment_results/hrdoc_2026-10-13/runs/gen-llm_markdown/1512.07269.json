@@ -1,0 +1,244 @@
+{
+ "doc": "1512.07269",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "3.2 Shape functions for Yr Λ0"
+  ],
+  "unmatched_pred": [
+   "3 Shape Functions"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 7,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "3.2 Shape functions for Yr Λ0"
+  ],
+  "unmatched_pred": [
+   "3 Shape Functions"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Serendipity and Tensor Product Affine Pyramid Finite Elements",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Background and Notation",
+    1,
+    1
+   ],
+   [
+    "3 Shape Functions",
+    4,
+    1
+   ],
+   [
+    "3.1 Shape functions for Y−r Λ0",
+    4,
+    2
+   ],
+   [
+    "3.2 Shape functions for YrΛ0",
+    5,
+    2
+   ],
+   [
+    "3.3 The “lowest order bubble function” on K∞and ˆK",
+    5,
+    2
+   ],
+   [
+    "4 Degrees of Freedom",
+    6,
+    1
+   ],
+   [
+    "5 Unisolvence and H1-conformity",
+    7,
+    1
+   ],
+   [
+    "6 Polynomial reproduction and error analysis",
+    10,
+    1
+   ],
+   [
+    "7 Dimension optimality and conclusions",
+    10,
+    1
+   ],
+   [
+    "References",
+    12,
+    2
+   ],
+   [
+    "A Additional background on finite element exterior calculus",
+    14,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 12311,
+   "completion_tokens": 11502
+  },
+  "elapsed_llm_seconds": 46.598162900001626,
+  "word_preservation": {
+   "recall": 0.9990175438596491,
+   "in_order": 0.9990175438596491,
+   "inserted": 0.0015429934072099805
+  },
+  "output_markdown": "# Serendipity and Tensor Product Affine Pyramid Finite Elements\n\nAndrew Gillette∗\n\nJuly 11, 2021\n\n## Abstract\n\nUsing the language of finite element exterior calculus, we define two families of H1-conforming finite element spaces over pyramids with a parallelogram base. The first family has matching polynomial traces with tensor product elements on the base while the second has matching polynomial traces with serendipity elements on the base. The second family is new to the literature and provides a robust approach for linking between Lagrange elements on tetrahedra and serendipity elements on affinely-mapped cubes while preserving continuity and approximation properties. We define shape functions and degrees of freedom for each family and prove unisolvence and polynomial reproduction results.\n\n# 1 Introduction\n\nThe pyramid geometry, known to all as one of the wonders of the ancient world, has proven to be an essential shape in the modern world of finite element modeling. Three-dimensional geometries for studies of physical phenomena are typically built using meshes of either tetrahedral or hexahedral elements. Tetrahedral elements allow great flexibility in representing intricate geometrical features, but the computational cost per element can become excessive if high order methods are required. Hexahedral elements have easily exploitable computational advantages due to their tensor-product structure, however, this structure also limits their ability to mesh arbitrary geometries. A best-of-both-worlds approach, which has been pursued with increasing interest in recent years [1, 7, 9, 11, 12, 13, 14, 15, 20, 25, 26, 29], uses hybrid meshes of tetrahedra, hexahedra, and pyramid geometries to balance computational efficiency with geometric flexibility.\n\nIn this paper, we use the language of finite element exterior calculus [4, 5] to characterize two families of H1-conforming finite element spaces over pyramids with a parallelogram base, one that is already known and a second that is new. The first family, denoted Y−r Λ0, can be used to link H1-conforming tensor product finite elements of order r with H1-conforming tetrahedral finite elements of order r (i.e., with Lagrange elements). The description and analysis of this family is greatly influenced by the work of Nigam and Philips [25, 26], which in turn builds on a great deal of prior mathematical and engineering work regarding pyramid finite elements.\n\nThe second family, denoted YrΛ0, is new to the literature. It can be used to link H1-conforming serendipity finite elements of order r on parallelpipeds with H1-conforming tetrahedral finite elements of order r. The definition makes use of the notion of the superlinear degree of a polynomial, as defined by Arnold and Awanou [2]. We show that\n\ndim YrΛ0 = 1/6(r3 + 6r2 + 23r) ≤ 1/6(2r3 + 9r2 + 13r + 6) = dim Y−r Λ0,\n\n∗Department of Mathematics, University of Arizona, Tucson, AZ, USA 85721. agillette@math.arizona.edu\n\n1\n\narXiv:1512.07269v2 [math.NA] 9 Sep 2016\n\n<<page 2>>\nFigure 1: Degrees of freedom for Y−r Λ0 (top row) and YrΛ0 (bottom row) for r = 2, 3, 4, 5. Each dot corresponds to a degree of freedom associated to the vertex, edge, face or interior where it is located. See Section 7 and Figure 2 for more on the interior degrees of freedom.\n\nwhich becomes a strict inequality for any r > 1. Since serendipity elements provide a significant reduction in the number of degrees of freedom compared to tensor product elements, even for small r values, the YrΛ0 family is poised to be a practical tool in the ongoing effort to minimize computational expense for problems on domains in R3.\n\nTriangular prisms, sometimes called “wedge” elements, can also aid in bridging between tetrahedral and hexahedral meshes. While helpful in specific meshing contexts, prisms have limited usefulness in a general context, due to the fact that their triangular faces occur on opposite sides of the geometry. The faces of the pyramid are cleanly divided between the single quadrilateral base and the four triangular facets, making bridge-building between hexahedral and tetrahedral elements straightforward. An additional consideration is the need to map physical mesh elements to reference elements via affine maps. Any pyramid with a parallelogram base and apex not in the plane of the base can be mapped affinely back to a square-based reference pyramid. Prisms, on the other hand, have three quadrilateral faces and thus require more constraints on when they can be mapped affinely to a reference element.\n\nThe outline of the remainder of this paper is as follows. In Section 2, we fix notation and explain prior work in this area. Then, for each family, we present shape functions (Section 3), define degrees of freedom (Section 4), and prove results about unisolvence (Section 5) and polynomial reproduction (Section 6). We conclude in Section 7 with a discussion of dimension optimality.\n\n# 2 Background and Notation\n\n**Finite element exterior calculus for simplices and cubes.** Finite element exterior calculus [4, 5] is a mathematical framework based on differential topology that describes and classifies many kinds of finite element methods in a unified fashion. Appendix A provides an introduction to some of the key ideas from finite element exterior calculus that are relevant to this work. The\n\n<<page 3>>\nPeriodic Table of the Finite Elements [6], viewable online at femtable.org, highlights many of the essential findings of the theory in visual form.\n\nOn a tetrahedron ∆3, the table identifies two families of elements, denoted P−r Λk(∆3) and PrΛk(∆3). In the scalar-valued case of interest here, the differential form order k is 0, and PrΛ0(∆3) is just the set of scalar-valued polynomials on ∆3 of degree at most r. The spaces P−r Λk(∆3) are formally distinct from the PrΛk(∆3) spaces. However, in the k = 0 and k = 3 cases we have the identities P−r Λ0(∆3) = PrΛ0(∆3) and P−r Λ3(∆3) = Pr−1Λ3(∆3). We use both notations intentionally throughout the paper, as extensions of this work to higher k values will require the distinction between these two families on simplices.\n\nOn a cube □3, the table identifies two families of elements, denoted Q−r Λk(□3) and SrΛk(□3). The Q−r Λ0(□3) family is the standard scalar-valued, tensor product element of order r, which has a total of (r + 1)3 degrees of freedom. The restriction of Q−r Λ0(□3) to a face □2 gives Q−r Λ0(□2), i.e. the tensor product element of order r, which has (r + 1)2 degrees of freedom. The SrΛ0(□3) family is the ‘serendipity’ family of finite elements, known for some time in the mathematical and engineering literature [10, 17, 21, 24, 27, 28], but generalized and characterized in a classical finite element setting only recently by Arnold and Awanou [2]. We present their definitions next.\n\n**Serendipity elements and superlinear degree.** Given a multi-index α ∈Nn, the degree of the monomial xα = Qn i=1 xαi i is deg(xα) = Pn i=1 αi. The superlinear degree of xα, a term introduced in [2], is\n\nsldeg(xα) := X αi̸=1 αi.\n\nWe note that sldeg(xα) ≤deg(xα), with equality only when xα has no variables that appear linearly. The superlinear degree of a polynomial is the maximum of the superlinear degree of its monomials. On an n-dimensional cube □n, the scalar-valued serendipity space is defined by\n\nSrΛ0(□n) := span { xα : sldeg(xα) ≤r } . (1)\n\nIn particular, note that for r > 0, a basis for the the space SrΛ0(□2) is given by the set of monomials {xayb} with 0 ≤a + b ≤r or (a, b) ∈{(1, r), (r, 1)}. The degrees of freedom for SrΛ0(□n) are associated to its d-dimensional sub-faces □d for d = 0, . . . , n, and are given by\n\nu 7−→ Z □d uq, ∀q ∈Pr−2d(□d), (2)\n\nwhere Pr−2d(□d) denotes polynomials on □d of degree at most r −2d. Arnold and Awanou proved in [2] that the degrees of freedom from (2) are unisolvent for (1). Formally, (2) means\n\nu 7−→ Z □d (tr□du) ∧q, ∀q ∈Pr−2dΛd(□d), (3)\n\nwhere tr□du denotes the trace of u on □d, and Pr−2dΛd(□d) is the space of polynomial differential d-forms on □d with coefficents in Pr−2d. Additional background on traces and differential forms is given in Appendix A.\n\n**Pyramid finite elements.** The use of pyramid geometries in finite element methodologies began to gain attention with the work of Bedrosian [8], Zgainski et al [30], and Coulomb et al [18] in the context of computational electromagnetics. These and other early works focus primarily on questions related to implementation - an excellent summary is given in [9]. More recently, Bergot,\n\n3\n\n<<page 4>>\nCohen, and Durufl´e [9] carried out a careful analysis of basis construction, interpolation error, and quadrature formulae for nodal pyramid elements of any polynomial order, including physical elements that are non-affine maps of a reference element. Nigam and Phillips [25, 26] allow only affinely-mapped reference elements, but provide compatibility, approximation, and stability results for H1–, H(curl)–, and H(div)–conforming pyramid elements in the context of exact sequences of finite element spaces. Fuentes et al [20] provide an implementation framework for the Nigam and Phillips elements as part of a complete hp-finite element package for “hex-dominant” meshes [7]. Chan and Warburton have recently developed Berstein–B´ezier style basis functions [14] and orthogonal bases [15] for the pyramid, as well as quadrature schemes [12], trace inequalities [13], and implementations in discontinuous Galerkin settings (with additional collaborators) [11]. A recent paper by by Ainsworth, Davydov and Schumaker [1] also looks at finite elements for tetrahedra-hexahedra-pyramid (THP) meshes with a view toward spline theory applications.\n\nA classical finite element treatment of pyramid elements, meaning a triple of the form {geometry, shape functions, degrees of freedom}, has been rather elusive, the clearest examples appearing only recently in [9, 25, 26]. This is due in part to the fact that there are simple examples of low-degree polynomial traces on the faces of a pyramid that cannot be represented by a polynomial function satisfying the requisite inter-element compatibility criteria; a proof and discussion of this issue is given in the introduction of [25]. Proving that a space of rational functions is unisolvent for a set of degrees of freedom on the pyramid is sometimes handled indirectly by showing, for instance, that a Vandermonde matrix is invertible [9, 12]. A classical approach to proving unisolvency, given in [25] and [26], presents degrees of freedom associated to the interior of a pyramid Ωas\n\nu 7−→ Z Ω ∇u · ∇q dV,\n\nwhere q belongs to the span of a set of rational bubble functions that are not explicitly stated. Here, we present degrees of freedom associated to the interior of the pyramid that do not require a derivative on the input u and generalize in a simple and obvious way to the new space YrΛ0.\n\nPyramid elements that link tetrahedral and serendipity elements for order r > 2 have not been considered previously, to the best of our knowledge. Liu et al [22, 23] have defined sets of functions that might be used for the r = 2 cases, however, the piecewise definition of these functions makes them computationally expensive and unlikely to generalize to r > 2.\n\n**Reference geometries and mappings.** We adopt the geometry conventions from Nigam and Phillips [26, Section 3.2], as restated here. The infinite pyramid element is\n\nK∞:= { (x, y, z) ∈R3 ∪∞: 0 ≤x, y ≤1, 0 ≤z ≤∞}.\n\nFormally, all points of the form (x, y, ∞) are identified as a single point of K∞. The reference pyramid element is\n\nˆK := { (ξ, η, ζ) ∈R3 : 0 ≤ξ, η, ζ, ξ ≤1 −ζ, η ≤1 −ζ }.\n\nThus, the four triangular faces of ˆK are given by imposing one of the following additional constraints: ξ = 0, η = 0, ξ = 1 −ζ, or η = 1 −ζ. The square base of ˆK is given by imposing ζ = 0. Define φ : K∞→ˆK by\n\nφ(x, y, z) =    \u0012 x 1 + z , y 1 + z , z 1 + z \u0013 , 0 ≤z < ∞ (0, 0, 1), z = ∞ (4)\n\n4\n\n<<page 5>>\nNote that φ suffices as a bijective change of coordinates between (x, y, z) on K∞and (ξ, η, ζ) on ˆK. In particular, we have that\n\nxayb (1 + z)c = ξaηb(1 −ζ)c−a−b. (5)\n\nGiven u : ˆK →R, let φ∗u denote the pullback of u to K∞by φ, that is:\n\nφ∗u : K∞→R where (φ∗u)(x, y, z) := u(φ(x, y, z)).\n\nSince φ is a rational function in each coordinate, the pullback φ∗u of a polynomial function u is, in general, a rational function.\n\nAn affine map of ˆK will take the square base of ˆK to a parallelogram embedded in R3. Conversely, if K ⊂R3 is a pyramid embedded in R3 with a parallelogram base, then there is an affine map that takes ˆK to K. The set of pyramids that are affine maps of ˆK are called affine pyramids by Nigam and Phillips [26] and we use the same terminology here.\n\n# 3 Shape Functions\n\n## 3.1 Shape functions for Y−r Λ0\n\nWe now define spaces of rational shape functions on the infinite pyramid K∞for the first family of pyramid finite elements, Y−r Λ0. The construction here is exactly the same as Nigam and Phillips [26, Section 4.1] and most of the notation is the same, with the notable difference that we use r instead of k to indicate polynomial degree. Define\n\nQ[r,r] r := span \u001a xayb (1 + z)c : 0 ≤a, b ≤c ≤r \u001b . (6)\n\nWe can decompose the space according to exponent of (1 + z) in the denominator. This yields\n\nQ[r,r] r = r M j=0 Qj,j,0 j (7)\n\nwhere\n\nQj,j,0 j := span \u001a xayb (1 + z)j : 0 ≤a, b ≤j \u001b . (8)\n\nHence we have the dimension count:\n\ndim Q[r,r] r = r X j=0 dim Q−j Λ0(I2) = 1 6(2r3 + 9r2 + 13r + 6). (9)\n\nWe define a set of shape functions on ˆK by1\n\nφ \u0010 Q[r,r] r \u0011 = n u : ˆK →R : φ∗u ∈Q[r,r] r o . (10)\n\nSince φ is an isomorphism, dim φ \u0010 Q[r,r] r \u0011 = dim Q[r,r] r .\n\n1A more precise notation for these spaces is (φ−1)∗\u0010 Q[r,r] r \u0011 , as they are the set of pullbacks of Q[r,r] r functions by φ−1; such notation is used by Nigam and Phillips. We have used a simpler notation here only for the ease of reading.\n\n5\n\n<<page 6>>\n## 3.2 Shape functions for YrΛ0\n\nWe now define spaces of rational shape functions on the infinite pyramid K∞for the second family of pyramid finite elements, YrΛ0. These spaces are new to the literature, to the best of our knowledge, and fit naturally into the framework already developed. The following definition was inspired from two key ideas: the decomposition of the shape function space Q[r,r] r in terms of tensor product degrees of the numerator and the use of superlinear degree as a means of characterizing shape functions for serendipity spaces. Define\n\nS[r,r] r := span \u001a xayb (1 + z)c : 0 ≤a, b ≤c ≤r, sldeg(xayb) ≤c \u001b . (11)\n\nWe can decompose the space according to exponent of (1 + z) in the denominator. This yields\n\nS[r,r] r = r M j=0 Sj,j,0 j (12)\n\nwhere\n\nSj,j,0 j := span \u001a xayb (1 + z)j : 0 ≤a, b ≤j, sldeg(xayb) ≤j \u001b . (13)\n\nObserve that for j > 0, the constraint that sldeg(xayb) ≤j implies that either deg(xayb) ≤j or xayb ∈{xyj, xjy}. Thus, if j ̸= 0, we have\n\ndim Sj,j,0 j := dim SjΛ0(I2) = dim PjΛ0(I2) + 2 = \u00122 + j j \u0013 + 2,\n\nwhich follows from, e.g. [2, Equation (2.1)]. Since dim S0,0,0 0 = 1, we have the dimension count:\n\ndim S[r,r] r = 1 + r X j=1 dim SjΛ0(I2) = 1 6(r3 + 6r2 + 23r). (14)\n\nWe define a set of shape functions on ˆK by\n\nφ \u0010 S[r,r] r \u0011 = n u : ˆK →R : φ∗u ∈S[r,r] r o . (15)\n\nSince φ is an isomorphism, dim φ \u0010 S[r,r] r \u0011 = dim S[r,r] r .\n\n## 3.3 The “lowest order bubble function” on K∞and ˆK\n\nA key function of interest to our subsequent analysis is b : K∞→R given by\n\nb(x, y, z) := x(1 −x)y(1 −y)z (1 + z)3 . (16)\n\nThe numerator of b indicates that it vanishes on the five ‘faces’ of K∞while the denominator indicates that b(x, y, z) →0 as z →∞. Hence, b vanishes on ∂K∞. We can write\n\nb(x, y, z) = x(1 −x)y(1 −y) (1 + z)2 −x(1 −x)y(1 −y) (1 + z)3 ∈Q[3,3] 3 .\n\n6\n\n<<page 7>>\nWe call b the “lowest order bubble function” on K∞as the space Q[r,r] r does not contain any functions that vanish identically on ∂K∞if r < 3. Changing coordinates by φ gives\n\nb(ξ, η, ζ) = ξηζ(ξ + ζ −1)(η + ζ −1) (ζ −1)2 ∈φ \u0010 Q[3,3] 3 \u0011 .\n\nNote also that b ∈S[5,5] 5 and that the space S[r,r] r does not contain any functions that vanish identically on ∂K∞if r < 5.\n\n# 4 Degrees of Freedom\n\nWe now state all the degrees of freedom precisely in a classical finite element sense and count them. Degrees of freedom for a function u : ˆK →R are defined in terms of its trace on vertices, edges, triangular faces, parallelogram face, and the interior of ˆK, integrated against functions from index spaces denoted Pv, Pe, P△, P □, R int, respectively. The index spaces are defined in Table 1. Since we are describing degrees of freedom for spaces of 0-forms, the index space associated to a d-dimensional object is a space of differential d-forms; this point is discussed further in Appendix A. The spaces R int are differential 3-forms with rational functions as coefficients while all the other spaces have polynomial coefficients.\n\nTo each vertex v of the pyramid, associate the evaluation degree of freedom\n\nu 7−→u(v). (17)\n\nTo each edge e of the pyramid, associate\n\nu 7−→ Z e (tre u) q, q ∈Pe. (18)\n\nTo each triangular face △of the pyramid, associate\n\nu 7−→ Z △ (tr△u) q, q ∈P△. (19)\n\nTo the parallelogram face □of the pyramid, associate\n\nu 7−→ Z □ (tr□u) q, q ∈P □. (20)\n\nTo the three-dimensional interior int of the pyramid, associate\n\nu 7−→ Z int (trint u) q, q ∈R int. (21)\n\nNote that P−r Λn(Rn) = Pr−1Λn(Rn), meaning the spaces for Pv, Pe and P△are the same for both families. On the parallelogram face □2, we recognize Q−r−1Λ2(□2) as the indexing space for Q−r Λ0(□2), as expected for the Y−r Λ0 family. Likewise, for the parallelogram face in the YrΛ0 family, we apply the identity P−r−3Λ2(□2) = Pr−4Λ2(□2) and recover the index space for SrΛ0(□2). For the spaces Rint, the notation means\n\nφ \u0010 b · Q[r−3,r−3] r−3 \u0011 Λ3(int) := span n u dV : φ∗u = bq with q ∈Q[r−3,r−3] r−3 o ,\n\nwhere dV is the volume 3-form dξdηdζ on ˆK. The meaning of Rint in the YrΛ0 case is analogous.\n\n7\n\n<<page 8>>\nPv Pe P△ P □ R int Y−r Λ0 R Pr−2Λ1(e) Pr−3Λ2(△) Q−r−1Λ2(□) φ \u0010 b · Q[r−3,r−3] r−3 \u0011 Λ3(int) YrΛ0 R P−r−1Λ1(e) P−r−2Λ2(△) P−r−3Λ2(□) φ \u0010 b · S[r−5,r−5] r−5 \u0011 Λ3(int) Table 1: Index spaces for the degrees of freedom for the two pyramid families.\n\nTable 1 can be used to compute dim Y−r Λ0 and dim YrΛ0 as follows. We compute the dimension of each entry in Table 1, weight by the number of times each kind of geometrical object appears in the pyramid, and then sum. This gives\n\ndim Y−r Λ0 = 5 + 8 \f\f Pr−2Λ1(e) \f\f + 4 \f\f Pr−3Λ2(△) \f\f + \f\fQ−r−1Λ2(□) \f\f + \f\f\fQ[r−3,r−3] r−3 \f\f\f = 5 + 8(r −1) + 2(r −2)(r −1) + (r −1)2 + (2r −3)(r −2)(r −1) 6 = 1 6(2r3 + 9r2 + 13r + 6). (22)\n\ndim YrΛ0 = 5 + 8 \f\fP−r−1Λ1(e) \f\f + 4 \f\fP−r−2Λ2(△) \f\f + \f\fPr−4Λ2(□) \f\f + \f\f\fS[r−5,r−5] r−5 \f\f\f = 5 + 8(r −1) + 2(r −2)(r −1) + (r −3)(r −2) 2 + (r −4)(r −3)(r −2) 6 = 1 6(r3 + 6r2 + 23r). (23)\n\nComparing (22) to (9) and (23) to (14), we see that\n\ndim Y−r Λ0 = dim Q[r,r] r and dim YrΛ0 = dim S[r,r] r . (24)\n\nThe degrees of freedom are associated to portions of the pyramid geometry according to their definition in (17)-(21). We visualize this association for Y−r Λ0 and YrΛ0 for r = 2, 3, 4, 5 in Figure 1.\n\n# 5 Unisolvence and H1-conformity\n\nWe now prove that the degrees of freedom for Y−r Λ0 and YrΛ0 are unisolvent for φ \u0010 Q[r,r] r \u0011 and φ \u0010 S[r,r] r \u0011 , respectively. As part of the proof, we show that given u : ˆK →R in one of the shape function spaces, the trace of u on each boundary face of the pyramid is a bivariate polynomial. Moreover, these polynomials have total degree at most r on triangular facets, degree at most r in each variable on the parallelogram face for Y−r Λ0, and superlinear degree at most r on the parallelogram face for YrΛ0. As a consequence, both Y−r Λ0 and YrΛ0 are guaranteed to be H1-conforming when linked with tetrahedral and hexahedral elements of the corresponding types.\n\n8\n\n<<page 9>>\n**Theorem 1 (Unisolvence).** By employing the definitions from Table 1:\n\ni. The degrees of freedom for Y−r Λ0 are unisolvent for φ \u0010 Q[r,r] r \u0011 ;\n\nii. The degrees of freedom for YrΛ0 are unisolvent for φ \u0010 S[r,r] r \u0011 .\n\n*Proof.* We prove i. first. Since φ is a bijection, it follows from (24) that dim Y−r Λ0 = dim φ \u0010 Q[r,r] r \u0011 . Let u ∈φ \u0010 Q[r,r] r \u0011 and suppose that all the quantities in (17)-(21) vanish, using the definitions from the top row of Table 1. It suffices to show that u vanishes. Using (6) and (5), we have that\n\nu ∈span n ξaηb(1 −ζ)c−a−b : 0 ≤a, b ≤c ≤r o .\n\nFirst we show that u vanishes on each face. On the quadrilateral face □, we have ζ = 0, so that\n\ntr□u ∈span n ξaηb : 0 ≤a, b ≤r o = Q−r Λ0(□). (25)\n\nThe degrees of freedom associated to □and its edges and vertices are unisolvent for Q−r Λ0(□), so u vanishes on □. For the triangular face with ξ = 0, call it △1, we have\n\ntr△1u ∈span n ηb(1 −ζ)c−b : 0 ≤b ≤c ≤r o = P−r Λ0(△1). (26)\n\nThe degrees of freedom associated to △1 and its edges and vertices are unisolvent for P−r Λ0(△1), so u vanishes on △1. The other triangular faces follow similarly. For instance, on the triangular face with ξ = 1 −ζ, call it △2, we have\n\ntr△2u ∈span n ξc−bηb : 0 ≤b ≤c ≤r o = P−r Λ0(△2). (27)\n\nThus, it remains to show that if u vanishes on □and on △1 −△4 then u ≡0. Now, since u vanishes on ∂ˆK, we have a function φ∗u ∈Q[r,r] r that vanishes on ∂K∞. Write\n\nφ∗u = r X i=0 pi(x, y) (1 + z)i (28)\n\nfor some pi, polynomials in x and y, with pi ∈Q−i Λ0(R2). Since φ∗u is a polynomial in x and y, that vanishes on {x = 0}, {x = 1}, {y = 0}, and {y = 1}, we can factor x(1 −x)y(1 −y) out of the expression (28). This forces p0 = p1 = 0 in (28) as x(1 −x)y(1 −y) ∈Q−2 Λ0(R2) will not factor out of any function in Q[0,0] 0 or Q[1,1] 1 . Thus, we can write\n\nφ∗u = x(1 −x)y(1 −y) (1 + z)2 r−2 X i=0 pi(x, y) (1 + z)i (29)\n\nfor some pi, polynomials in x and y, with pi ∈Q−i Λ0(R2). Observe that no non-zero element of Q[0,0] 0 vanishes on {z = 0}, however\n\nz 1 + z = 1 − 1 1 + z ∈Q[1,1] 1 (30)\n\n9\n\n<<page 10>>\ndoes vanish on {z = 0}. Further, an element of Q[r,r] r will vanish on {z = 0} if and only if it is divisible by z 1+z, meaning we can write\n\nφ∗u = x(1 −x)y(1 −y)z (1 + z)3 r−3 X i=0 ˆpi(x, y) (1 + z)i (31)\n\nfor some ˆpi, polynomials in x and y, with ˆpi ∈Q−i Λ0(R2). Hence, u ∈φ \u0010 b · Q[r−3,r−3] r−3 \u0011 and we may take q = udV in (21) to get\n\nZ ˆ K u2dV = 0.\n\nThus, u = 0.\n\nThe proof of ii. is similar. Since φ is a bijection, it follows from (24) that dim YrΛ0 = dim φ \u0010 S[r,r] r \u0011 . Let u ∈φ \u0010 S[r,r] r \u0011 and suppose that all the quantities in (17)-(21) vanish, using the definitions from the bottom row of Table 1. Using (11) and (5), we have that\n\nu ∈span n ξaηb(1 −ζ)c−a−b : 0 ≤a, b ≤c ≤r, sldeg(ξaηb) ≤c o . (32)\n\nFirst we show that u vanishes on each face. On the quadrilateral face □, we have ζ = 0, so that\n\ntr□u ∈span n ξaηb : sldeg(ξaηb) ≤r o = SrΛ0(□). (33)\n\nNote that since r ≥1, the constraint sldeg(ξaηb) ≤r ensures that 0 ≤a, b ≤r. The degrees of freedom associated to □and its edges and vertices are unisolvent for S−r Λ0(□) (see [2] for a proof) so u vanishes on □. For the triangular face with ξ = 0, call it △1, take a = 0 in (32), giving 2\n\ntr△1u ∈span n ηb(1 −ζ)c−b : 0 ≤b ≤c ≤r o = PrΛ0(△1). (34)\n\nThe degrees of freedom associated to △1 and its edges and vertices are unisolvent for PrΛ0(△1), so u vanishes on △1. The other triangular faces follow similarly. Thus, it remains to show that if u vanishes on □and on △1 −△4 then u ≡0. Now, since u vanishes on ∂ˆK, we have a function φ∗u ∈S[r,r] r that vanishes on ∂K∞. As in the proof of part i., x(1 −x)y(1 −y) must factor out of φ∗u, and we note that r = 4 is the smallest value of r for which x(1 −x)y(1 −y) ∈SrΛ0(R2). Thus, we can write\n\nφ∗u = x(1 −x)y(1 −y) (1 + z)4 r−4 X i=0 pi(x, y) (1 + z)i (35)\n\nfor some pi, polynomials in x and y, with pi ∈S−i Λ0(R2), interpreting S−0 Λ0(R2) as R. Recalling (30), an element of S[r,r] r will vanish on {z = 0} if and only if it is divisible by z 1+z. Thus,\n\nφ∗u = x(1 −x)y(1 −y)z (1 + z)5 r−5 X i=0 ˆpi(x, y) (1 + z)i (36)\n\nfor some ˆpi, polynomials in x and y, with ˆpi ∈S−i Λ0(R2). Hence, u ∈φ \u0010 b · S[r−5,r−5] r−5 \u0011 . Therefore, we may again take q = udV in (21) so that u2dV has integral 0 over ˆK and thus u = 0.\n\n2Recall that PrΛ0 = P−r Λ0; see the beginning of Section 2 for a comment on this.\n\n10\n\n<<page 11>>\n# 6 Polynomial reproduction and error analysis\n\n**Theorem 2 (Polynomial reproduction).** Let Pr(R3) denote polynomials of degree at most r in three variables. We have:\n\ni. Pr(R3) ⊂φ \u0010 Q[r,r] r \u0011 ,\n\nii. Pr(R3) ⊂φ \u0010 S[r,r] r \u0011 .\n\n*Proof.* Let p(ξ, η, ζ) ∈Pr(R3). Expand p in powers of ξ, η, and (1 −ζ); this does not change the degree of p nor its degree with respect to any variable. Without loss of generality, assume that this expansion yields a single monomial, i.e. p = ξaηb(1 −ζ)c with 0 ≤a, b ≤a + b + c ≤r. From (5),\n\nφ∗p = xayb (1 + z)a+b+c ∈Q[r,r] r .\n\nWe have established that p is a real-valued function on ˆK whose pullback, φ∗p, is in Q[r,r] r . By the definition of φ \u0010 Q[r,r] r \u0011 in (10), we have p ∈φ \u0010 Q[r,r] r \u0011 . Further, sldeg(ξaηb) ≤deg(ξaηb) = a + b ≤ a + b + c ≤r, so p ∈φ \u0010 S[r,r] r \u0011 .\n\nIn regards to a priori error estimates, it was shown by Arnold, Boffi, and Bonizzoni [3] that SrΛ0 elements on n-dimensional cubes have a standard O(hr) convergence rate when all physical mesh elements are affine maps of the reference element. Similarly, Nigam and Phillips [26] and Bergot, Cohen, and Durufl´e [9] provide standard O(hr) convergence estimates over the space of affine pyramids (recall the discussion at the end of Section 2) for their respective elements. Since the shape functions for YrΛ0 contain all the degree r polynomials, as was just shown in Theorem 2, an O(hr) estimate should hold for these elements over any mesh involving affine pyramids linked to SrΛ0 elements on affinely mapped hexahedra. A formal study of such estimates is a topic for future work.\n\n# 7 Dimension optimality and conclusions\n\nWe compare the dimensions of YrΛ0 and Y−r Λ0 to other order r pyramid elements in the literature, as summarized in Table 2. In [25], Nigam and Phillips defined a set of shape functions, denoted U(0),r, which has dimension r3 + 3r + 1. Fuentes et al implemented the U(0),r shape functions, as described in [20]. In [9], Bergot, Cohen, and Durufl´e defined a space of rational functions that they denote ˆPr, which has dimension (r +1)(r +2)(2r +3)/6, the same as dim Y−r Λ0. In [26], Nigam and Phillips defined a reduced space, denoted R(0) r , which is a subset of U(0),r, uses the Q[r,r] r notation, and also has dimension equal to dim Y−r Λ0. Thus, there is likely very little practical distinction among R(0) r , ˆPr, and Y−r Λ0.\n\nThe space YrΛ0 is clearly distinct and of smaller dimension than any other order r pyramid elements in the literature. It cannot “replace” any of these elements, however, as it is has degrees of freedom that match SrΛ0 on a parallelogram face, not Q−r Λ0. Accordingly, the YrΛ0 element is not only useful but required to create a conforming finite element method on hybrid meshes that employ serendipity elements on hexahedra.\n\nIn addition, the dimension of YrΛ0 agrees with the “expected” minimal dimension of a conforming finite element space on pyramids. In [16], we discuss minimal compatible finite element\n\n11\n\n<<page 12>>\nr 1 2 3 4 5 6 7 stated formula reference dim YrΛ0 5 13 25 42 65 95 133 (r3 + 6r2 + 23r)/6 dim Y−r Λ0 5 14 30 55 91 140 204 (2r3 + 9r2 + 13r + 6)/6 dim ˆPr, dim R(0) r 5 14 30 55 91 140 204 (r +1)(r +2)(2r +3)/6 [9, 26] dim U(0),r 5 15 37 77 141 235 365 r3 + 3r + 1 [25, 20] Table 2: Comparison of dimension counts for various pyramid elements in the literature.\n\nFigure 2: Degrees of freedom associated to the interior of the pyramid for Y−5 Λ0, Y−6 Λ0, Y5Λ0, and Y6Λ0 (left to right). Note that there are no interior degrees of freedom for YrΛ0 when r < 5.\n\nsystems and state a criterion (Corollary 3.2) for computing the smallest possible dimension among all conforming finite element spaces that contain a desired set of functions, typically polynomials of degree at most r. We show that the PrΛ0 (= P−r Λ0) spaces have this property on tetrahedra and the SrΛ0 spaces have this property on n-cubes3. Thus, it is expected that a minimal dimension element on a pyramid should correspond to SrΛ0 on its parallelogram face.\n\nThe key question thus becomes the number of degrees of freedom that should be associated to the interior of ˆK. For this, we note that the dimension of Rint for YrΛ0 is\n\ndim φ \u0010 b · S[r−5,r−5] r−5 \u0011 Λ3( ˆK) = \u0012r −2 3 \u0013 = dim Pr−5Λ3( ˆK).\n\nWe can map Pr−5Λ3( ˆK) bijectively to PrΛ0 0( ˆK), the space of polynomials that vanish on the boundary of ˆK, by the map\n\np dV 7−→p ξηζ(ξ + ζ −1)(η + ζ −1),\n\nsince ξηζ(ξ + ζ −1)(η + ζ −1) is a degree 5 polynomial that vanishes on ∂ˆK. Thus, Pr−5Λ3( ˆK) has a natural correspondence with the space of bubble functions of degree at most r on pyramids. Moreover, the growing field of virtual element methods, a distinct but related approach to the definition of finite element type methods on meshes with mixed mesh geometries, also assigns at least \u0000r−2 3 \u0001 degrees of freedom to the interior of a pyramid geometry [19]. Therefore, it seems unlikely that the dimension of YrΛ0 could be reduced further without some loss to numerical accuracy or polynomial approximation order.\n\n3The claim about the minimality of SrΛ0(□n) assumes that the remaining spaces in an exact sequence starting with SrΛ0(□n) have decreasing polynomial approximation power.\n\n12\n\n<<page 13>>\n**Conclusions and future work.** In this work, we have used tools from finite element exterior calculus to define and analyze pyramidal finite elements that are affinely mapped from a reference geometry. In particular, the use of superlinear degree in the description of serendipity elements was essential to the definition of the new serendipity-linking family, YrΛ0. A number of topics related to the YrΛ0 family remain open for exploration, including the definition of local basis functions, efficient implementaion schemes, and integration with existing finite element solvers. In light of the significant current interest in pyramid elements, progress in these areas is likely to occur very rapidly.\n\n**Acknowledgements.** This research was supported in part by NSF Award 1522289.\n\n## References\n\n[1] M. Ainsworth, O. Davydov, and L. Schumaker. Bernstein–B´ezier finite elements on tetrahedral–hexahedral–pyramidal partitions. Computer Methods in Applied Mechanics and Engineering, 304:140–170, 2016.\n\n[2] D. Arnold and G. Awanou. The serendipity family of finite elements. Foundations of Computational Mathematics, 11(3):337–344, 2011.\n\n[3] D. Arnold, D. Boffi, and F. Bonizzoni. Finite element differential forms on curvilinear cubic meshes and their approximation properties. Numerische Mathematik, pages 1–20, 2014.\n\n[4] D. Arnold, R. Falk, and R. Winther. Finite element exterior calculus, homological techniques, and applications. Acta Numerica, pages 1–155, 2006.\n\n[5] D. Arnold, R. Falk, and R. Winther. Finite element exterior calculus: from Hodge theory to numerical stability. Bulletin of the American Mathematical Society, 47(2):281–354, 2010.\n\n[6] D. Arnold and A. Logg. Periodic table of the finite elements. SIAM News, 47(9), 2014. femtable.org.\n\n[7] T. C. Baudouin, J.-F. Remacle, E. Marchandise, F. Henrotte, and C. Geuzaine. A frontal approach to hex-dominant mesh generation. Advanced Modeling and Simulation in Engineering Sciences, 1(1):1–30, 2014.\n\n[8] G. Bedrosian. Shape functions and integration formulas for three-dimensional finite element analysis. International journal for numerical methods in engineering, 35(1):95–108, 1992.\n\n[9] M. Bergot, G. Cohen, and M. Durufl´e. Higher-order finite elements for hybrid meshes using new nodal pyramidal elements. Journal of Scientific Computing, 42(3):345–381, 2010.\n\n[10] S. Brenner and L. Scott. The Mathematical Theory of Finite Element Methods. Springer-Verlag, New York, 2002.\n\n[11] J. Chan, Z. Wang, A. Modave, J.-F. Remacle, and T. Warburton. GPU-accelerated discontinuous Galerkin methods on hybrid meshes. Journal of Computational Physics, 318:142–168, 2016.\n\n[12] J. Chan and T. Warburton. A comparison of high order interpolation nodes for the pyramid. SIAM Journal on Scientific Computing, 37(5):A2151–A2170, 2015.\n\n13\n\n<<page 14>>\n[13] J. Chan and T. Warburton. hp-finite element trace inequalities for the pyramid. Computers & Mathematics with Applications, 69(6):510–517, 2015.\n\n[14] J. Chan and T. Warburton. A short note on a Bernstein–B´ezier basis for the pyramid. arXiv:1508.05609, 2015.\n\n[15] J. Chan and T. Warburton. Orthogonal bases for vertex-mapped pyramids. SIAM Journal on Scientific Computing, 38(2):A1146–A1170, 2016.\n\n[16] S. Christiansen and A. Gillette. Constructions of some minimal finite element systems. ESAIM: Mathematical Modelling and Numerical Analysis, 50(3):833–850, 2016.\n\n[17] P. Ciarlet. The Finite Element Method for Elliptic Problems, volume 40 of Classics in Applied Mathematics. SIAM, Philadelphia, PA, second edition, 2002.\n\n[18] J.-L. Coulomb, F.-X. Zgainski, and Y. Mar´echal. A pyramidal element to link hexahedral, prismatic and tetrahedral edge finite elements. IEEE Trans. Magnetics, 33(2):1362–1365, 1997.\n\n[19] L. B. Da Veiga, F. Brezzi, L. Marini, and A. Russo. Serendipity nodal VEM spaces. Computers & Fluids, in press, 2016.\n\n[20] F. Fuentes, B. Keith, L. Demkowicz, and S. Nagaraj. Orientation embedded high order shape functions for the exact sequence elements of all shapes. Computers and Mathematics with Applications, 70(4):353 – 458, 2015.\n\n[21] T. Hughes. The finite element method. Prentice Hall Inc., Englewood Cliffs, NJ, 1987.\n\n[22] L. Liu, K. B. Davies, M. Krezek, and L. Guan. On higher order pyramidal finite elements. Advances in Applied Mathematics and Mechanics, 3(2):131–140, 2011.\n\n[23] L. Liu, K. B. Davies, K. Yuan, and M. Kˇr´ıˇzek. On symmetric pyramidal finite elements. Dynamics of Continuous Discrete and Impulsive Systems Series B, 11:213–228, 2004.\n\n[24] J. Mandel. Iterative solvers by substructuring for the p-version finite element method. Computer Methods in Applied Mechanics and Engineering, 80(1-3):117–128, 1990.\n\n[25] N. Nigam and J. Phillips. High-order conforming finite elements on pyramids. IMA Journal of Numerical Analysis, 32(2):448–483, 2012.\n\n[26] N. Nigam and J. Phillips. Numerical integration for high order pyramidal finite elements. ESAIM: Mathematical Modelling and Numerical Analysis, 46(2):239–263, 2012.\n\n[27] G. Strang and G. Fix. An analysis of the finite element method. Prentice-Hall Inc., Englewood Cliffs, N. J., 1973.\n\n[28] B. Szab´o and I. Babuˇska. Finite element analysis. Wiley-Interscience, 1991.\n\n[29] F. Witherden and P. Vincent. On the identification of symmetric quadrature rules for finite element methods. Computers & Mathematics with Applications, 69(10):1232–1241, 2015.\n\n[30] F.-X. Zgainski, J.-L. Coulomb, Y. Mar´echal, F. Claeyssen, and X. Brunotte. A new family of finite elements: the pyramidal elements. IEEE Trans. Magnetics, 32(3):1393–1396, 1996.\n\n14\n\n<<page 15>>\n# A Additional background on finite element exterior calculus\n\nFinite element exterior calculus uses tools from differential geometry and topology to define, classify, and analyze families of finite elements. The scope of the theory is quite broad so we focus here only on those aspects that are immediately relevant to H1-conforming finite element methods on pyramid geometries.\n\n**Polynomial differential 0-forms and n-forms.** Let Ωn ⊂Rn, n ≥1, be an n-dimensional geometrical object in a finite element mesh. The space PrΛ0(Ωn) is defined to be the space of polynomials in n-variables of degree at most r. The index ‘0’ indicates that the elements of the space are differential 0-forms, i.e. scalar-valued functions. Let dV := dx1 · · · dxn denote the volume form on Ωn, e.g. dV = dxdy on a domain in R2 and dV = dxdydz on a domain in R3. The space PrΛn(Ωn) is then defined by\n\nPrΛn(Ωn) := \b qdV : q ∈PrΛ0(Ωn) \t\n.\n\nThe subtle but essential perspective of differential geometry is that a polynomial p ∈PrΛ0(Ωn) cannot be integrated on Ωn since it does not have the volume form attached. On the other hand, a differential n-form qdV ∈PrΛn(Ωn) can be integrated over Ωn, according to standard multivariate calculus techniques. While seemingly pedantic, this perspective is ingrained even in first semester calculus where students can lose points for forgetting to write ‘dx’ at the end of an integrand. Spaces of differential k-forms for integers k with 0 < k < n require some more mathematical machinery to define, but are not needed in this work; definitions can be found in [4, 5] or any textbook on differential geometry.\n\n**Trace operator.** The trace operator associated to a subset f ⊂Ωn is a function trf : PrΛ0(Ωn) → PrΛ0(f). The value of trfp is defined to be the pullback of p via the inclusion map f ,→Ωn, which can be interpreted as the restriction of p to the domain f. The trace operator is used to prove that a finite element family is H1-conforming as follows. If two elements Ωn and Ω′ n meet along an (n −1) dimensional face f in a mesh, H1-conformity requires that trfPrΛ0(Ωn) = trfPrΛ0(Ω′ n). For instance, let Ωn = △2 and Ω′ n = △′ 2, where △2, △′ 2 are two triangles meeting along an edge e in a mesh. Since restricting a polynomial from a plane to a line decreases its degree by 1, we have trfPrΛ0(△2) = Pr−1Λ0(e) = trfPrΛ0(△′ 2). Additional details on trace operators in the context of pyramid finite elements can be found in [25, 26].\n\n**Degrees of freedom.** Given a space of shape functions on Ωn, degrees of freedom in a classical finite element sense are a set of functionals on Ωn that take the shape functions as inputs. Here, our shape functions are spaces of 0-forms and our degrees of freedom require integration over d-dimensional portions of the pyramid geometry, for d = 0, 1, 2, 3. Accordingly, each degree of freedom requires the input u to be restricted to a differential 0-form on the d-dimensional geometry portion, via an appropriate trace operator, and then multiplied by a differential d-form. In general, a space of differential k-forms used as shape functions is indexed by a space of differential d −k forms on a d-dimensional geometry and multiplication is generalized for k > 0 via the wedge product.\n\n15",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Serendipity and Tensor Product Affine Pyramid Finite Elements",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Notation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Shape Functions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Shape functions for Y−r Λ0",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Shape functions for YrΛ0",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 The “lowest order bubble function” on K∞and ˆK",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Degrees of Freedom",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Unisolvence and H1-conformity",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Polynomial reproduction and error analysis",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Dimension optimality and conclusions",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "A Additional background on finite element exterior calculus",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 46.719381599999906,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "3.2 Shape functions for Yr Λ0"
+  ],
+  "unmatched_pred": [
+   "3 Shape Functions"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Serendipity and Tensor Product Affine Pyramid Finite Elements"
+  ]
+ }
+}

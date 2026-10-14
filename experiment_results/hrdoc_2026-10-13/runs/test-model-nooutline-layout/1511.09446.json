@@ -1,0 +1,190 @@
+{
+ "doc": "1511.09446",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 16,
+  "tp": 9,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [
+   "Definition 1. ψ : A(S 1g ) → F S2g is given by col lapsing a neighborhood",
+   "Definition 2. ψZ : AC (S 1g ) → Z2g is given as ψ for arcs. For curves,"
+  ],
+  "unmatched_pred": [
+   "1.2. Acknowledgments",
+   "1.3. Retraction",
+   "2.1. Coloring of Curves",
+   "2.3. Perturbed Geodesics",
+   "3.1. Preliminaries",
+   "4.1. Preliminaries",
+   "4.2. Alterations"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 14,
+  "tp": 8,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "Definition 1. ψ : A(S 1g ) → F S2g is given by col lapsing a neighborhood",
+   "Definition 2. ψZ : AC (S 1g ) → Z2g is given as ψ for arcs. For curves,"
+  ],
+  "unmatched_pred": [
+   "1.3. Retraction",
+   "2.1. Coloring of Curves",
+   "2.3. Perturbed Geodesics",
+   "3.1. Preliminaries",
+   "4.1. Preliminaries",
+   "4.2. Alterations"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 556,
+  "layout_marked": 8,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14203,
+   "completion_tokens": 737,
+   "total_tokens": 14940
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.981557088554132,
+  "inserted_word_share": 0.564032016008004
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Splitting Complexes",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2. Acknowledgments",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.3. Retraction",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. Arcs",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Coloring of Curves",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2. Relative Order.",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3. Perturbed Geodesics",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4. Proof of Lemmas 9 & 10.",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3. Free Splittings",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Preliminaries",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2. Proof of Main Result",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4. Cyclic Splittings",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Preliminaries",
+   "page": 12,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2. Alterations",
+   "page": 13,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.2202003999991575,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 16,
+  "tp": 9,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [
+   "Definition 1. ψ : A(S 1g ) → F S2g is given by col lapsing a neighborhood",
+   "Definition 2. ψZ : AC (S 1g ) → Z2g is given as ψ for arcs. For curves,"
+  ],
+  "unmatched_pred": [
+   "1.2. Acknowledgments",
+   "1.3. Retraction",
+   "2.1. Coloring of Curves",
+   "2.3. Perturbed Geodesics",
+   "3.1. Preliminaries",
+   "4.1. Preliminaries",
+   "4.2. Alterations"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "doc": "1808.02694",
+ "system": "outline",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "EQUATION"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   " References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Energy flow and momentum under paraxial regime",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I Introduction",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Paraxial propagation",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III Analysis of the Lagrangian density of the paraxial equation",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "IV Time harmonic solutions",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "V Examples",
+   "page": 9,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A Generic traveling wave towards +z",
+   "page": 9,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "B Paraxial plane waves",
+   "page": 9,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "C Green's function of the time harmonic paraxial wave equation",
+   "page": 11,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "D Fundamental Gaussian beam",
+   "page": 14,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "VI Conclusions",
+   "page": 18,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 19,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A Summary of results for the d'Alembert equation",
+   "page": 19,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 The connection of energy density flow and momentum with raytracing techniques",
+   "page": 20,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": " References",
+   "page": 21,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.04359409999960917,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "EQUATION"
+  ],
+  "unmatched_pred": [
+   "Energy flow and momentum under paraxial regime",
+   "Abstract",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "EQUATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

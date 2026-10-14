@@ -1,0 +1,100 @@
+{
+ "doc": "1705.01272",
+ "system": "det",
+ "metrics": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1.1. Almost disjoint polygons",
+   "1.2. Non-heavily intersecting polygons"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 116,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Almost disjoint polygons",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2. Non-heavily intersecting polygons",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. Proof of Proposition 2",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Proof of Theorem 5",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Open problems",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.9302540000026056,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1.1. Almost disjoint polygons",
+   "1.2. Non-heavily intersecting polygons"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 6,
+  "tp": 4,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1.1. Almost disjoint polygons",
+   "1.2. Non-heavily intersecting polygons"
+  ],
+  "ignored_title_predictions": null
+ }
+}

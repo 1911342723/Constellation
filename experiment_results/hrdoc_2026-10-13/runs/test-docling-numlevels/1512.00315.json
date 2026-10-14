@@ -1,0 +1,151 @@
+{
+ "doc": "1512.00315",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 8.725464700000884
+ },
+ "predictions": [
+  {
+   "text": "Highly Scalable Tensor Factorization for Prediction of Drug-Protein Interaction Type",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Side Information",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II. STATISTICAL MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. General Setup",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Scale Invariant Prior on the Link Matrix",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. GIBBS SAMPLER",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Noise Injection Sampler for the Link Matrix",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. EXPERIMENTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Results",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01861619999544928,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,505 @@
+{
+ "doc": "1806.07406",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.8275862068965517,
+  "unmatched_gt": [
+   "3.1.3 Numb er of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "3.1.3 Number of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 17286,
+   "completion_tokens": 16263
+  },
+  "elapsed_llm_seconds": 72.53438610000012,
+  "content_preservation": 0.9517381656804734,
+  "inserted_word_share": 0.04295277054667157,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Contrastive Hebbian Learning with Random Feedback Weights",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Materials and Methods",
+    0,
+    2
+   ],
+   [
+    "2.1 Contrastive Hebbian Learning",
+    0,
+    3
+   ],
+   [
+    "2.2 Random Contrastive Hebbian Learning",
+    0,
+    3
+   ],
+   [
+    "3 Results",
+    0,
+    2
+   ],
+   [
+    "3.1 Bars and Stripes Classification",
+    0,
+    3
+   ],
+   [
+    "3.1.1 Feedback Gain",
+    0,
+    4
+   ],
+   [
+    "3.1.2 Learning Rate",
+    0,
+    4
+   ],
+   [
+    "3.1.3 Number of Layers",
+    0,
+    4
+   ],
+   [
+    "3.1.4 Feedback Random Matrix",
+    0,
+    4
+   ],
+   [
+    "3.2 Exclusive Or (XOR)",
+    0,
+    3
+   ],
+   [
+    "3.3 Handwritten Digit and Letter Classification",
+    0,
+    3
+   ],
+   [
+    "3.4 Autoencoder",
+    0,
+    3
+   ],
+   [
+    "4 Discussion",
+    0,
+    2
+   ],
+   [
+    "Author Contributions",
+    0,
+    2
+   ],
+   [
+    "Acknowledgments",
+    0,
+    2
+   ],
+   [
+    "5 Appendix",
+    0,
+    2
+   ],
+   [
+    "5.1 Λϵ-pseudospectra",
+    0,
+    3
+   ],
+   [
+    "5.2 Error and Accuracy Table",
+    0,
+    3
+   ],
+   [
+    "5.3 Abbreviations and Notation Tables",
+    0,
+    3
+   ],
+   [
+    "5.4 Simulation and Platform Details",
+    0,
+    3
+   ],
+   [
+    "5.5 Simulation Parameters",
+    0,
+    3
+   ],
+   [
+    "Supplementary Information",
+    0,
+    2
+   ],
+   [
+    "Backpropagation and Feedback Alignment on XOR",
+    0,
+    3
+   ],
+   [
+    "Backpropagation and Feedback Alignment on MNIST",
+    0,
+    3
+   ],
+   [
+    "Backpropagation and Feedback Alignment on eMNIST",
+    0,
+    3
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Contrastive Hebbian Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Random Contrastive Hebbian Learning",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Bars and Stripes Classification",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.1.1 Feedback Gain",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.2 Learning Rate",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.3 Number of Layers",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.4 Feedback Random Matrix",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Exclusive Or (XOR)",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Handwritten Digit and Letter Classification",
+   "page": 10,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 Autoencoder",
+   "page": 12,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Author Contributions",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Appendix",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Λϵ-pseudospectra",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.2 Error and Accuracy Table",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.3 Abbreviations and Notation Tables",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.4 Simulation and Platform Details",
+   "page": 17,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "5.5 Simulation Parameters",
+   "page": 17,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "Supplementary Information",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on XOR",
+   "page": 17,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on MNIST",
+   "page": 19,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "Backpropagation and Feedback Alignment on eMNIST",
+   "page": 19,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 72.82295050000175,
+ "metrics_raw": {
+  "gt": 28,
+  "pred": 29,
+  "tp": 3,
+  "fp": 26,
+  "fn": 25,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.09999999999999998,
+  "unmatched_gt": [
+   "2.1 Contrastive Hebbian Learning",
+   "2.2 Random Contrastive Hebbian Learning",
+   "3 Results",
+   "3.1 Bars and Stripes Classification",
+   "3.1.1 Feedback Gain",
+   "3.1.2 Learning Rate",
+   "3.1.3 Numb er of Layers",
+   "3.1.4 Feedback Random Matrix",
+   "3.2 Exclusive Or (XOR)",
+   "3.3 Handwritten Digit and Letter Classification",
+   "3.4 Autoenco der",
+   "4 Discussion",
+   "Author Contributions",
+   "Acknowledgments",
+   "5 Appendix",
+   "5.1 Λϵ-pseudospectra",
+   "5.2 Error and Accuracy Table",
+   "5.3 Abbreviations and Notation Tables",
+   "5.4 Simulation and Platform Details",
+   "5.5 Simulation Parameters",
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Contrastive Hebbian Learning with Random Feedback Weights",
+   "2.1 Contrastive Hebbian Learning",
+   "2.2 Random Contrastive Hebbian Learning",
+   "3 Results",
+   "3.1 Bars and Stripes Classification",
+   "3.1.1 Feedback Gain",
+   "3.1.2 Learning Rate",
+   "3.1.3 Number of Layers",
+   "3.1.4 Feedback Random Matrix",
+   "3.2 Exclusive Or (XOR)",
+   "3.3 Handwritten Digit and Letter Classification",
+   "3.4 Autoencoder",
+   "4 Discussion",
+   "Author Contributions",
+   "Acknowledgments",
+   "5 Appendix",
+   "5.1 Λϵ-pseudospectra",
+   "5.2 Error and Accuracy Table",
+   "5.3 Abbreviations and Notation Tables",
+   "5.4 Simulation and Platform Details",
+   "5.5 Simulation Parameters",
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 3,
+  "fp": 25,
+  "fn": 25,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.10344827586206895,
+  "unmatched_gt": [
+   "2.1 Contrastive Hebbian Learning",
+   "2.2 Random Contrastive Hebbian Learning",
+   "3 Results",
+   "3.1 Bars and Stripes Classification",
+   "3.1.1 Feedback Gain",
+   "3.1.2 Learning Rate",
+   "3.1.3 Numb er of Layers",
+   "3.1.4 Feedback Random Matrix",
+   "3.2 Exclusive Or (XOR)",
+   "3.3 Handwritten Digit and Letter Classification",
+   "3.4 Autoenco der",
+   "4 Discussion",
+   "Author Contributions",
+   "Acknowledgments",
+   "5 Appendix",
+   "5.1 Λϵ-pseudospectra",
+   "5.2 Error and Accuracy Table",
+   "5.3 Abbreviations and Notation Tables",
+   "5.4 Simulation and Platform Details",
+   "5.5 Simulation Parameters",
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST",
+   "References"
+  ],
+  "unmatched_pred": [
+   "2.1 Contrastive Hebbian Learning",
+   "2.2 Random Contrastive Hebbian Learning",
+   "3 Results",
+   "3.1 Bars and Stripes Classification",
+   "3.1.1 Feedback Gain",
+   "3.1.2 Learning Rate",
+   "3.1.3 Number of Layers",
+   "3.1.4 Feedback Random Matrix",
+   "3.2 Exclusive Or (XOR)",
+   "3.3 Handwritten Digit and Letter Classification",
+   "3.4 Autoencoder",
+   "4 Discussion",
+   "Author Contributions",
+   "Acknowledgments",
+   "5 Appendix",
+   "5.1 Λϵ-pseudospectra",
+   "5.2 Error and Accuracy Table",
+   "5.3 Abbreviations and Notation Tables",
+   "5.4 Simulation and Platform Details",
+   "5.5 Simulation Parameters",
+   "Supplementary Information",
+   "Backpropagation and Feedback Alignment on XOR",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 21,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "3.1.3 Numb er of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "unmatched_pred": [
+   "3.1.3 Number of Layers",
+   "Backpropagation and Feedback Alignment on MNIST",
+   "Backpropagation and Feedback Alignment on eMNIST"
+  ],
+  "ignored_title_predictions": null
+ }
+}

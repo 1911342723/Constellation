@@ -1,0 +1,146 @@
+{
+ "doc": "1512.02594",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 382,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4710,
+   "completion_tokens": 611,
+   "total_tokens": 5321
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9484806629834254,
+  "inserted_word_share": 0.20280938007894123
+ },
+ "predictions": [
+  {
+   "text": "Suporte `a Mobilidade em Redes Mesh Sem Fio: estrat´egias",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduc¸˜ao",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Estrat´egias de Roteamento em Redes Mesh Sem Fio",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. OLSR",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. B.A.T.M.A.N.",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. OpenWiMesh",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Trabalhos relacionados",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Cen´ario de Avaliac¸˜ao",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Modelos de Mobilidade",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2. Modelos de Tr´afego",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3. Ambiente de Avaliac¸˜ao",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5. An´alise dos Resultados",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclus˜oes e Trabalhos Futuros",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Referˆencias",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.835110799998802,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

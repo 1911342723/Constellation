@@ -1,0 +1,143 @@
+{
+ "doc": "1707.00919",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 6,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.3076923076923077,
+  "unmatched_gt": [
+   "2.1. Multicanonical sampling",
+   "2.2. Parallel multicanonical sampling",
+   "2.3. Implementation on GPU",
+   "3.1. Hardware performance",
+   "3.2. Software performance",
+   "3.3. Verification of physical results"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "PROGRAM SUMMARY",
+   "Appendix A. Measures of Convergence"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 350,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4227,
+   "completion_tokens": 360,
+   "total_tokens": 4587
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROGRAM SUMMARY",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Parallel Multicanonical Algorithm",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Performance",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Measures of Convergence",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.78925530000197,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 6,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.3076923076923077,
+  "unmatched_gt": [
+   "2.1. Multicanonical sampling",
+   "2.2. Parallel multicanonical sampling",
+   "2.3. Implementation on GPU",
+   "3.1. Hardware performance",
+   "3.2. Software performance",
+   "3.3. Verification of physical results"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "PROGRAM SUMMARY",
+   "Appendix A. Measures of Convergence"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 5,
+  "tp": 4,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.36363636363636365,
+  "unmatched_gt": [
+   "2.1. Multicanonical sampling",
+   "2.2. Parallel multicanonical sampling",
+   "2.3. Implementation on GPU",
+   "3.1. Hardware performance",
+   "3.2. Software performance",
+   "3.3. Verification of physical results"
+  ],
+  "unmatched_pred": [
+   "PROGRAM SUMMARY"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "doc": "1808.07042",
+ "system": "docling",
+ "metrics": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 28,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6551724137931034,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 48.090293699999165
+ },
+ "predictions": [
+  {
+   "text": "CoQA: A Conversational Question Answering Challenge",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Task Definition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Dataset Collection",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Collection Interface",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Passage Selection",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 CollectingMultiple Answers",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Dataset Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Comparison with SQuAD 2.0",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Linguistic Phenomena",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 Analysis of Free-formAnswers",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4 Conversation Flow",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Models",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Conversational Models",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Reading ComprehensionModels",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 ACombinedModel",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Evaluation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 EvaluationMetric",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.2 Experimental Setup",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.3 Results and Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Related work",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusions",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Worker Selection",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Annotation Interface",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Additional Examples",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.023762700002407655,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 29,
+  "tp": 28,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "CoQA: A Conversational Question Answering Challenge"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 11,
+  "teds": 0.6799999999999999,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "doc": "1807.03265",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1124,
+  "layout_marked": 19,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8842219280298471,
+  "inserted_word_share": 0.12400143078573989
+ },
+ "predictions": [
+  {
+   "text": "Eﬃcient convergence through adaptive learning in",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 EM for a Simpliﬁed Autoregressive Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Batch Expectation Maximization",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Online Expectation Maximization",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Introspective Online Expectation Maximization",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 EM Simulations in the Full Autoregressive Model",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 EM Simulations in a Two-Dimensional AR Model",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Stochastic volatility model",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "SUPPLEMENTAL MATERIALS",
+   "page": 14,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "7 Supplemental text",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 Fixed-lag technique",
+   "page": 14,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.2 Weighted regression",
+   "page": 15,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.3 Pseudo-independent parameter updates",
+   "page": 16,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.4 Notation reference",
+   "page": 18,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7.5 Supplementary ﬁgures",
+   "page": 18,
+   "level": 2,
+   "parent": 12
+  }
+ ],
+ "seconds": 5.320983099998557,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

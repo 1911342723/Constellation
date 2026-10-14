@@ -1,0 +1,331 @@
+{
+ "doc": "1806.05873",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 8,
+  "pred": 17,
+  "tp": 7,
+  "fp": 10,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "Plasmonics, metasurfaces, optical magnetic mo de, perfect absorption"
+  ],
+  "unmatched_pred": [
+   "Theory",
+   "Methods",
+   "Synthesis of Nanocrystal Building Blocks",
+   "Preparation of Metal-Semiconductor Substrates",
+   "Fabricated of Plasmene Sheets",
+   "Characterization",
+   "Optical Measurements",
+   "Numerical Simulations",
+   "Acknowledgements",
+   "Competing financial interests"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7533,
+   "completion_tokens": 6895
+  },
+  "elapsed_llm_seconds": 32.56484169999749,
+  "content_preservation": 0.9355191256830601,
+  "inserted_word_share": 0.05372540349325672,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Near-Perfect Absorption of Light by Plasmene Sheets",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "Keywords",
+    0,
+    2
+   ],
+   [
+    "Introduction",
+    0,
+    2
+   ],
+   [
+    "Results and Discussion",
+    0,
+    2
+   ],
+   [
+    "Theory",
+    0,
+    2
+   ],
+   [
+    "Conclusion",
+    0,
+    2
+   ],
+   [
+    "Methods",
+    0,
+    2
+   ],
+   [
+    "Methods",
+    0,
+    3
+   ],
+   [
+    "Synthesis of Nanocrystal Building Blocks",
+    0,
+    3
+   ],
+   [
+    "Preparation of Metal-Semiconductor Substrates",
+    0,
+    3
+   ],
+   [
+    "Fabricated of Plasmene Sheets",
+    0,
+    3
+   ],
+   [
+    "Characterization",
+    0,
+    3
+   ],
+   [
+    "Optical Measurements",
+    0,
+    3
+   ],
+   [
+    "Numerical Simulations",
+    0,
+    3
+   ],
+   [
+    "Acknowledgements",
+    0,
+    2
+   ],
+   [
+    "Competing financial interests",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Theory",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methods",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methods",
+   "page": 10,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Synthesis of Nanocrystal Building Blocks",
+   "page": 11,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Preparation of Metal-Semiconductor Substrates",
+   "page": 11,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Fabricated of Plasmene Sheets",
+   "page": 12,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Characterization",
+   "page": 12,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Optical Measurements",
+   "page": 12,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Numerical Simulations",
+   "page": 13,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Competing financial interests",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 32.70357479999802,
+ "metrics_raw": {
+  "gt": 8,
+  "pred": 18,
+  "tp": 3,
+  "fp": 15,
+  "fn": 5,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.1578947368421053,
+  "unmatched_gt": [
+   "Plasmonics, metasurfaces, optical magnetic mo de, perfect absorption",
+   "Results and Discussion",
+   "Conclusion",
+   "Methods",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Near-Perfect Absorption of Light by Plasmene Sheets",
+   "Results and Discussion",
+   "Theory",
+   "Conclusion",
+   "Methods",
+   "Methods",
+   "Synthesis of Nanocrystal Building Blocks",
+   "Preparation of Metal-Semiconductor Substrates",
+   "Fabricated of Plasmene Sheets",
+   "Characterization",
+   "Optical Measurements",
+   "Numerical Simulations",
+   "Acknowledgements",
+   "Competing financial interests",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 17,
+  "tp": 3,
+  "fp": 14,
+  "fn": 5,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "Plasmonics, metasurfaces, optical magnetic mo de, perfect absorption",
+   "Results and Discussion",
+   "Conclusion",
+   "Methods",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Results and Discussion",
+   "Theory",
+   "Conclusion",
+   "Methods",
+   "Methods",
+   "Synthesis of Nanocrystal Building Blocks",
+   "Preparation of Metal-Semiconductor Substrates",
+   "Fabricated of Plasmene Sheets",
+   "Characterization",
+   "Optical Measurements",
+   "Numerical Simulations",
+   "Acknowledgements",
+   "Competing financial interests",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 13,
+  "tp": 4,
+  "fp": 9,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "Plasmonics, metasurfaces, optical magnetic mo de, perfect absorption"
+  ],
+  "unmatched_pred": [
+   "Theory",
+   "Methods",
+   "Synthesis of Nanocrystal Building Blocks",
+   "Preparation of Metal-Semiconductor Substrates",
+   "Fabricated of Plasmene Sheets",
+   "Characterization",
+   "Optical Measurements",
+   "Numerical Simulations",
+   "Competing financial interests"
+  ],
+  "ignored_title_predictions": null
+ }
+}

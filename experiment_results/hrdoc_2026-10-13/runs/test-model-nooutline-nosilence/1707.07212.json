@@ -1,0 +1,196 @@
+{
+ "doc": "1707.07212",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Target and opponent contexts. For every TAR-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 387,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 12905,
+   "completion_tokens": 743,
+   "total_tokens": 13648
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Measuring the Veridicality of Users’",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Predictions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Mechanical Turk Annotation",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Veridicality Classiﬁer",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3 Features",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Target and opponent contexts. For every TAR-",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4 Evaluation",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.5 Performance on held-out event types",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.6 Error Analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Forecasting Contest Outcomes",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Prediction",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Sentiment Baseline",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Frequency Baseline",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.4 Results",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.5 Surprise Outcomes",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.6 Assessing the Reliability of Accounts",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.2440674999998,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Target and opponent contexts. For every TAR-"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.95,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Target and opponent contexts. For every TAR-"
+  ],
+  "ignored_title_predictions": null
+ }
+}

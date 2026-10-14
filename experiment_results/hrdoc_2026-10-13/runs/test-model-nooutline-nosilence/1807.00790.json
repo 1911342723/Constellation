@@ -1,0 +1,208 @@
+{
+ "doc": "1807.00790",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 29,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 13,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "2.1.2 Pitch-Class Spectra",
+   "2.2.1 Spectral Distance",
+   "2.2.2 Harmonicity",
+   "2.2.3 Roughness",
+   "2.2.4 Voice-Leading Distance",
+   "2.2.5 Summary",
+   "2.3.1 Overview",
+   "2.3.3 Estimation",
+   "2.3.4 Feature Importance",
+   "2.3.5 Related Work",
+   "3.1.1 Importance by Feature",
+   "3.1.2 Importance by Corpus",
+   "3.1.3 Signs of Weights"
+  ],
+  "unmatched_pred": [
+   "1 Related concepts include tonalness [27], toneness [15], fusion [14, 36], compl"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 306,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10096,
+   "completion_tokens": 748,
+   "total_tokens": 10844
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Related concepts include tonalness [27], toneness [15], fusion [14, 36], complex sonorousness [29], and multiplicity [29].",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Representations",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Features",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Statistical Model",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Corpora",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.5 Efﬁciency",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.6 Numeric Integration",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.7 Software",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Corpus level",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.2 Composition Level",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.534935800002131,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 13,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "2.1.2 Pitch-Class Spectra",
+   "2.2.1 Spectral Distance",
+   "2.2.2 Harmonicity",
+   "2.2.3 Roughness",
+   "2.2.4 Voice-Leading Distance",
+   "2.2.5 Summary",
+   "2.3.1 Overview",
+   "2.3.3 Estimation",
+   "2.3.4 Feature Importance",
+   "2.3.5 Related Work",
+   "3.1.1 Importance by Feature",
+   "3.1.2 Importance by Corpus",
+   "3.1.3 Signs of Weights"
+  ],
+  "unmatched_pred": [
+   "1 Related concepts include tonalness [27], toneness [15], fusion [14, 36], compl"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 13,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.4814814814814815,
+  "unmatched_gt": [
+   "2.1.2 Pitch-Class Spectra",
+   "2.2.1 Spectral Distance",
+   "2.2.2 Harmonicity",
+   "2.2.3 Roughness",
+   "2.2.4 Voice-Leading Distance",
+   "2.2.5 Summary",
+   "2.3.1 Overview",
+   "2.3.3 Estimation",
+   "2.3.4 Feature Importance",
+   "2.3.5 Related Work",
+   "3.1.1 Importance by Feature",
+   "3.1.2 Importance by Corpus",
+   "3.1.3 Signs of Weights"
+  ],
+  "unmatched_pred": [
+   "1 Related concepts include tonalness [27], toneness [15], fusion [14, 36], compl"
+  ],
+  "ignored_title_predictions": null
+ }
+}

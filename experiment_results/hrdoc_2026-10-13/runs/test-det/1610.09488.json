@@ -1,0 +1,133 @@
+{
+ "doc": "1610.09488",
+ "system": "det",
+ "metrics": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Resumen"
+  ],
+  "unmatched_pred": [
+   "0 \u0012VS(t)K1(t)n",
+   "0 \u0012VS(t)K1(t)n",
+   "1 N − Vmm"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 297,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 General features",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Existence of positive periodic solutions",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 A priori bounds",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Degree computation",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "0 \u0012VS(t)K1(t)n",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 \u0012VS(t)K1(t)n",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 N − Vmm",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.263396600003034,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Resumen"
+  ],
+  "unmatched_pred": [
+   "0 \u0012VS(t)K1(t)n",
+   "0 \u0012VS(t)K1(t)n",
+   "1 N − Vmm"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Resumen"
+  ],
+  "unmatched_pred": [
+   "0 \u0012VS(t)K1(t)n",
+   "0 \u0012VS(t)K1(t)n",
+   "1 N − Vmm"
+  ],
+  "ignored_title_predictions": null
+ }
+}

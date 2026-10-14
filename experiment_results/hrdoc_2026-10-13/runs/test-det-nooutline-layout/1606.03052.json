@@ -1,0 +1,146 @@
+{
+ "doc": "1606.03052",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "Teaching Venues",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "ADVANCED TOPICS",
+   "Epi-Fluorescence Path"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "Teaching Venues",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "ADVANCED TOPICS",
+   "Epi-Fluorescence Path"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 375,
+  "layout_marked": 20,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9408939423642423,
+  "inserted_word_share": 0.8946276455607272
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Undergraduate Optics Course",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Graduate Laboratory Modules",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Scope of the Project",
+   "page": 2,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "EXPERIMENTAL EQUIPMENT",
+   "page": 2,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "Components",
+   "page": 2,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "Condenser",
+   "page": 3,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "Imaging Path",
+   "page": 5,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "EXPERIMENTAL RESULTS",
+   "page": 5,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "Measuring Magniﬁcation",
+   "page": 5,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "Measuring Resolution",
+   "page": 7,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "Super-Resolution",
+   "page": 8,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "SUMMARY",
+   "page": 10,
+   "level": 3,
+   "parent": 2
+  }
+ ],
+ "seconds": 9.209735100004764,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "Teaching Venues",
+   "Undergraduate Advanced Laboratory Course for Physics Majors",
+   "ADVANCED TOPICS",
+   "Epi-Fluorescence Path"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

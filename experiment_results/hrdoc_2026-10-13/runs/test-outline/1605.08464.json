@@ -1,0 +1,162 @@
+{
+ "doc": "1605.08464",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "C. Classifier",
+   "AC KNOWL EDGMEN T"
+  ],
+  "unmatched_pred": [
+   "IV-C Classifier"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Dataset Generation using a Density Function",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV Algorithm",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Additive white gaussian noise in synthetic depth data",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV-B Feature Selection",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV-C Classifier",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV-D Conditional Random Fields",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "V Implementation Details",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Experimental Evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A Data Collection",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VI-B Noise Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VI-C Feature Response Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VI-D Comparison of Models",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VI-E Demonstration",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VII Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.06712890000198968,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "C. Classifier",
+   "AC KNOWL EDGMEN T"
+  ],
+  "unmatched_pred": [
+   "IV-C Classifier"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [
+   "C. Classifier"
+  ],
+  "unmatched_pred": [
+   "IV-C Classifier"
+  ],
+  "ignored_title_predictions": null
+ }
+}

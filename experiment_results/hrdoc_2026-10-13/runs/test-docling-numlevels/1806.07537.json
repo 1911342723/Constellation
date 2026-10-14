@@ -1,0 +1,249 @@
+{
+ "doc": "1806.07537",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 31,
+  "pred": 30,
+  "tp": 30,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 29,
+  "parent_correct": 28,
+  "teds": 0.84375,
+  "unmatched_gt": [
+   "For protein representation,"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 2
+ },
+ "metrics_generic": {
+  "gt": 28,
+  "pred": 27,
+  "tp": 27,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 26,
+  "parent_correct": 25,
+  "teds": 0.8275862068965517,
+  "unmatched_gt": [
+   "For protein representation,"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 40.89735719999953
+ },
+ "predictions": [
+  {
+   "text": "Structural Bioinformatics",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DeepAffinity: Interpretable Deep Learning of Compound-Protein Affinity through Unified Recurrent and Convolutional Neural Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Data",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Input data representation",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2.1 Compound data representation",
+   "page": 1,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.2.2 Protein data representation",
+   "page": 2,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "2.3 RNN for unsupervised pre-training",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4 Unified RNN-CNN for supervised learning",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.5 Attention mechanisms in unified RNN-CNN",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3 Results and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Compound and protein representations",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.2 Compound-protein affinity prediction",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.2.1 Comparing novel representations to baseline ones",
+   "page": 3,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "3.2.2 Comparing shallow and deep models",
+   "page": 4,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "3.2.3 Comparing attention mechanisms in prediction",
+   "page": 4,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "3.2.4 Deep transfer learning for new classes of protein targets",
+   "page": 4,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "3.3 Predicting target selectivity of drugs",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.3.1 Factor Xa versus Thrombin",
+   "page": 4,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "3.3.2 Cyclooxygenase (COX) protein family",
+   "page": 4,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "3.3.3 Protein-tyrosine phosphatase (PTP) family",
+   "page": 5,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "3.4 Explaining target selectivity of drugs",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.4.1 How do the compound-protein pairs interact?",
+   "page": 6,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "3.4.2 How are targets selectively interacted?",
+   "page": 6,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "4 Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Protein representations using amino acid sequences",
+   "page": 7,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "4.2 Unified RNN/GCNN-CNN for protein SPS strings and compound graphs",
+   "page": 7,
+   "level": 2,
+   "parent": 26
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.07980140000290703,
+ "metrics_v1": {
+  "gt": 31,
+  "pred": 30,
+  "tp": 30,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 29,
+  "parent_correct": 28,
+  "teds": 0.84375,
+  "unmatched_gt": [
+   "For protein representation,"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 2
+ }
+}

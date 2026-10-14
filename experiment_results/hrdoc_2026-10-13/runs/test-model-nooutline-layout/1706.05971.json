@@ -1,0 +1,131 @@
+{
+ "doc": "1706.05971",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 5,
+  "pred": 9,
+  "tp": 5,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Twisted spinors",
+   "3.1. The Thirring Model",
+   "4.1. Conserved Energies",
+   "4.2. An existence result via energy methods"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 8,
+  "tp": 4,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Twisted spinors",
+   "3.1. The Thirring Model",
+   "4.1. Conserved Energies",
+   "4.2. An existence result via energy methods"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1356,
+  "layout_marked": 6,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 12,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 12,
+   "prompt_tokens": 45944,
+   "completion_tokens": 628,
+   "total_tokens": 46572
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9412963322336503,
+  "inserted_word_share": 0.05678172095284395
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction and results",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Linear Dirac equations in two-dimensional Minkowski space",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Twisted spinors",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Nonlinear Dirac equations in two-dimensional Minkowski space",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. The Thirring Model",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Dirac-wave maps from two-dimensional Minkowski space",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Conserved Energies",
+   "page": 12,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2. An existence result via energy methods",
+   "page": 14,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "References",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.579250499999034,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 9,
+  "tp": 5,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Twisted spinors",
+   "3.1. The Thirring Model",
+   "4.1. Conserved Energies",
+   "4.2. An existence result via energy methods"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

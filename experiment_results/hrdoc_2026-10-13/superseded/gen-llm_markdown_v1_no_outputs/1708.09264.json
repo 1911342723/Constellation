@@ -1,0 +1,355 @@
+{
+ "doc": "1708.09264",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 13,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "2 The Chemical Master Equation",
+   "5 Examples"
+  ],
+  "unmatched_pred": [
+   "2 The Chemical Master Equation",
+   "5 Examples"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 18691,
+   "completion_tokens": 16078
+  },
+  "elapsed_llm_seconds": 71.87045759999819,
+  "content_preservation": 0.9494079655543596,
+  "inserted_word_share": 0.01028614176173559,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Stochasticity or Noise in Biochemical Reactions∗",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 The Chemical Master Equation",
+    0,
+    2
+   ],
+   [
+    "3 Analyzing Population Statistics with FSP Approaches.",
+    0,
+    2
+   ],
+   [
+    "3.1 Notation for the FSP",
+    0,
+    3
+   ],
+   [
+    "3.2 Properties of The Finite State Projection",
+    0,
+    3
+   ],
+   [
+    "3.3 The FSP Algorithm.",
+    0,
+    3
+   ],
+   [
+    "3.3.1 Initialization of the FSP",
+    0,
+    4
+   ],
+   [
+    "3.4 Further reductions to the Finite State Projection",
+    0,
+    3
+   ],
+   [
+    "4 Comparing CME models to single-cell data",
+    0,
+    2
+   ],
+   [
+    "5 Examples",
+    0,
+    2
+   ],
+   [
+    "5.1 Toggle Model",
+    0,
+    3
+   ],
+   [
+    "5.2 Matching stochastic models to small RNA measurements in bacteria",
+    0,
+    3
+   ],
+   [
+    "5.3 Matching stochastic models stress response regulation in yeast",
+    0,
+    3
+   ],
+   [
+    "6 Summary",
+    0,
+    2
+   ],
+   [
+    "Acknowledgments",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ],
+   [
+    "Supplemental Exercises",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Chemical Master Equation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Analyzing Population Statistics with FSP Approaches.",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Notation for the FSP",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Properties of The Finite State Projection",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 The FSP Algorithm.",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3.1 Initialization of the FSP",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Further reductions to the Finite State Projection",
+   "page": 9,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Comparing CME models to single-cell data",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Examples",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Toggle Model",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2 Matching stochastic models to small RNA measurements in bacteria",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.3 Matching stochastic models stress response regulation in yeast",
+   "page": 14,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6 Summary",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supplemental Exercises",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 72.13301579999825,
+ "metrics_raw": {
+  "gt": 18,
+  "pred": 19,
+  "tp": 2,
+  "fp": 17,
+  "fn": 16,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.15000000000000002,
+  "unmatched_gt": [
+   "2 The Chemical Master Equation",
+   "3 Analyzing Population Statistics with FSP Approaches.",
+   "3.1 Notation for the FSP",
+   "3.2 Properties of The Finite State Pro jection",
+   "3.3 The FSP Algorithm.",
+   "3.3.1 Initialization of the FSP",
+   "3.4 Further reductions to the Finite State Pro jection",
+   "4 Comparing CME mo dels to single-cell data",
+   "5 Examples",
+   "5.1 Toggle Model",
+   "5.2 Matching stochastic models to small RNA measurements in bacteria",
+   "5.3 Matching stochastic models stress response regulation in yeast",
+   "6 Summary",
+   "Acknowledgments",
+   "References",
+   "Supplemental Exercises"
+  ],
+  "unmatched_pred": [
+   "Stochasticity or Noise in Biochemical Reactions∗",
+   "2 The Chemical Master Equation",
+   "3 Analyzing Population Statistics with FSP Approaches.",
+   "3.1 Notation for the FSP",
+   "3.2 Properties of The Finite State Projection",
+   "3.3 The FSP Algorithm.",
+   "3.3.1 Initialization of the FSP",
+   "3.4 Further reductions to the Finite State Projection",
+   "4 Comparing CME models to single-cell data",
+   "5 Examples",
+   "5.1 Toggle Model",
+   "5.2 Matching stochastic models to small RNA measurements in bacteria",
+   "5.3 Matching stochastic models stress response regulation in yeast",
+   "6 Summary",
+   "Acknowledgments",
+   "References",
+   "Supplemental Exercises"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 2,
+  "fp": 16,
+  "fn": 16,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.1578947368421053,
+  "unmatched_gt": [
+   "2 The Chemical Master Equation",
+   "3 Analyzing Population Statistics with FSP Approaches.",
+   "3.1 Notation for the FSP",
+   "3.2 Properties of The Finite State Pro jection",
+   "3.3 The FSP Algorithm.",
+   "3.3.1 Initialization of the FSP",
+   "3.4 Further reductions to the Finite State Pro jection",
+   "4 Comparing CME mo dels to single-cell data",
+   "5 Examples",
+   "5.1 Toggle Model",
+   "5.2 Matching stochastic models to small RNA measurements in bacteria",
+   "5.3 Matching stochastic models stress response regulation in yeast",
+   "6 Summary",
+   "Acknowledgments",
+   "References",
+   "Supplemental Exercises"
+  ],
+  "unmatched_pred": [
+   "2 The Chemical Master Equation",
+   "3 Analyzing Population Statistics with FSP Approaches.",
+   "3.1 Notation for the FSP",
+   "3.2 Properties of The Finite State Projection",
+   "3.3 The FSP Algorithm.",
+   "3.3.1 Initialization of the FSP",
+   "3.4 Further reductions to the Finite State Projection",
+   "4 Comparing CME models to single-cell data",
+   "5 Examples",
+   "5.1 Toggle Model",
+   "5.2 Matching stochastic models to small RNA measurements in bacteria",
+   "5.3 Matching stochastic models stress response regulation in yeast",
+   "6 Summary",
+   "Acknowledgments",
+   "References",
+   "Supplemental Exercises"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "2 The Chemical Master Equation",
+   "5 Examples"
+  ],
+  "unmatched_pred": [
+   "2 The Chemical Master Equation",
+   "5 Examples"
+  ],
+  "ignored_title_predictions": null
+ }
+}

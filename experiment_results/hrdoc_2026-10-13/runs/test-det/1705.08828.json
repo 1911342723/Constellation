@@ -1,0 +1,175 @@
+{
+ "doc": "1705.08828",
+ "system": "det",
+ "metrics": {
+  "gt": 10,
+  "pred": 17,
+  "tp": 10,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "276 rue du Mont Blanc",
+   "74540 Saint-F´elix, France",
+   "Laurent Besacier",
+   "Fr´ed´eric Agn`es",
+   "276 rue du Mont Blanc",
+   "74540 Saint-F´elix, France",
+   "Similarity Performances"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 223,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "276 rue du Mont Blanc",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "74540 Saint-F´elix, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Laurent Besacier",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fr´ed´eric Agn`es",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "276 rue du Mont Blanc",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "74540 Saint-F´elix, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Dataset",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Overview of State-of-the-Art Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Evaluation Protocol",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Investigation of Cross-Language",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Similarity Performances",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Across Language Pairs",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.2 Detailed Analysis for English-French",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.3805544000024383,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 17,
+  "tp": 10,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "276 rue du Mont Blanc",
+   "74540 Saint-F´elix, France",
+   "Laurent Besacier",
+   "Fr´ed´eric Agn`es",
+   "276 rue du Mont Blanc",
+   "74540 Saint-F´elix, France",
+   "Similarity Performances"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 15,
+  "tp": 8,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 6,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "276 rue du Mont Blanc",
+   "74540 Saint-F´elix, France",
+   "Laurent Besacier",
+   "Fr´ed´eric Agn`es",
+   "276 rue du Mont Blanc",
+   "74540 Saint-F´elix, France",
+   "Similarity Performances"
+  ],
+  "ignored_title_predictions": null
+ }
+}

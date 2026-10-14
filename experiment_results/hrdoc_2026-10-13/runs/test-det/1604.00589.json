@@ -1,0 +1,275 @@
+{
+ "doc": "1604.00589",
+ "system": "det",
+ "metrics": {
+  "gt": 24,
+  "pred": 25,
+  "tp": 15,
+  "fp": 10,
+  "fn": 9,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.3076923076923077,
+  "unmatched_gt": [
+   "Abstract.",
+   "3.2 Communication Requirements of Application Categories for VANETs",
+   "4.2 Description of the Extensions of the Message Header of the RAdNet",
+   "4.4 RAdNet-VE and Access Technologies",
+   "Scenario 1: Coop eration between vehicles and semaphore signals",
+   "Scenario 2: Co operation between vehicles",
+   "Network Parameters",
+   "Data Naming and Interests",
+   "Traffic Settings"
+  ],
+  "unmatched_pred": [
+   "1 Laborat´orio de Arquitetura de Computadores e Microeletrˆonica",
+   "2 Laborat´orio de Computa¸c˜ao Paralela e Sistemas M´oveis",
+   "3 N´ucleo de Sistemas Complexos – IFF-BJI/IFF – Bom Jesus do Itabapoana, Brazil",
+   "1 if msgj.ID ∈ idT ablei[msgj.srcP rfx] then",
+   "3 else",
+   "22 end",
+   "1 if msgj.ID ∈ idT ablei[msgj.srcP rfx] then",
+   "3 else",
+   "50 end",
+   "3. msgj has not moved the maximum number of hops."
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 324,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "RAdNet-VE: An Interest-Centric Mobile Ad Hoc Network for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Vehicular Environments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Laborat´orio de Arquitetura de Computadores e Microeletrˆonica",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Laborat´orio de Computa¸c˜ao Paralela e Sistemas M´oveis",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 N´ucleo de Sistemas Complexos – IFF-BJI/IFF – Bom Jesus do Itabapoana, Brazil",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Works",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Background",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Interest-Centric Mobile Ad Hoc Network",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "1 if msgj.ID ∈ idT ablei[msgj.srcP rfx] then",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 else",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "22 end",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Interest-Centric Vehicular Ad Hoc Network",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Addressing the Communication Requirements of Application Categories for VANETs",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Design of the RAdNet-VE Communication Protocol",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "1 if msgj.ID ∈ idT ablei[msgj.srcP rfx] then",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 else",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "50 end",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. msgj has not moved the maximum number of hops.",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Use Scenarios",
+   "page": 12,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "5.2 Simulation Settings",
+   "page": 13,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6 Analysis of Results",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Discussion",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusions",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.3779792000023,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 27,
+  "tp": 15,
+  "fp": 12,
+  "fn": 9,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "Abstract.",
+   "3.2 Communication Requirements of Application Categories for VANETs",
+   "4.2 Description of the Extensions of the Message Header of the RAdNet",
+   "4.4 RAdNet-VE and Access Technologies",
+   "Scenario 1: Coop eration between vehicles and semaphore signals",
+   "Scenario 2: Co operation between vehicles",
+   "Network Parameters",
+   "Data Naming and Interests",
+   "Traffic Settings"
+  ],
+  "unmatched_pred": [
+   "RAdNet-VE: An Interest-Centric Mobile Ad Hoc Network for",
+   "Vehicular Environments",
+   "1 Laborat´orio de Arquitetura de Computadores e Microeletrˆonica",
+   "2 Laborat´orio de Computa¸c˜ao Paralela e Sistemas M´oveis",
+   "3 N´ucleo de Sistemas Complexos – IFF-BJI/IFF – Bom Jesus do Itabapoana, Brazil",
+   "1 if msgj.ID ∈ idT ablei[msgj.srcP rfx] then",
+   "3 else",
+   "22 end",
+   "1 if msgj.ID ∈ idT ablei[msgj.srcP rfx] then",
+   "3 else",
+   "50 end",
+   "3. msgj has not moved the maximum number of hops."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 23,
+  "tp": 13,
+  "fp": 10,
+  "fn": 8,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "3.2 Communication Requirements of Application Categories for VANETs",
+   "4.2 Description of the Extensions of the Message Header of the RAdNet",
+   "4.4 RAdNet-VE and Access Technologies",
+   "Scenario 1: Coop eration between vehicles and semaphore signals",
+   "Scenario 2: Co operation between vehicles",
+   "Network Parameters",
+   "Data Naming and Interests",
+   "Traffic Settings"
+  ],
+  "unmatched_pred": [
+   "1 Laborat´orio de Arquitetura de Computadores e Microeletrˆonica",
+   "2 Laborat´orio de Computa¸c˜ao Paralela e Sistemas M´oveis",
+   "3 N´ucleo de Sistemas Complexos – IFF-BJI/IFF – Bom Jesus do Itabapoana, Brazil",
+   "1 if msgj.ID ∈ idT ablei[msgj.srcP rfx] then",
+   "3 else",
+   "22 end",
+   "1 if msgj.ID ∈ idT ablei[msgj.srcP rfx] then",
+   "3 else",
+   "50 end",
+   "3. msgj has not moved the maximum number of hops."
+  ],
+  "ignored_title_predictions": null
+ }
+}

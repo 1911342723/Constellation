@@ -1,0 +1,209 @@
+{
+ "doc": "1808.03947",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 21,
+  "teds": 0.84,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "5.1 where we plotted several chains produced by the SM-AB algorithm.",
+   "MH Algorithm"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "5.1 where we plotted several chains produced by the SM-AB algorithm.",
+   "MH Algorithm"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 599,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9905352986811482,
+   "in_order": 0.9514352211016291,
+   "inserted": 0.006535947712418277
+  },
+  "export_markdown": "An Asymptotically Eﬃcient\n\nMetropolis-Hastings Sampler for\n\nBayesian Inference in Large-Scale\n\nEducational Measurement\n\narXiv:1808.03947v1 [stat.CO] 12 Aug 2018\n\nTimo Bechger1, Gunter Maris2, and Maarten Marsman3\n\n1Cito\n\n2ACTNext by ACT\n\n3University of Amsterdam\n\n# Abstract\n\nThis paper discusses a Metropolis-Hastings algorithm devel-\n\noped by Marsman, Maris, Bechger, and Glas (2015). The algo-\n\nrithm is derived from ﬁrst principles, and it is proven that the\n\nalgorithm becomes more eﬃcient with more data and meets the\n\ngrowing demands of large scale educational measurement.\n\nAcknowledgment: This article was partly written when the ﬁrst two authors where visiting the catholic university of Santiago in Chile. We wish to thank Ernesto San Martin for his hospitality.\n\n# 1 Introduction\n\nBayesian inference in educational measurement often demands that we sample from posterior distributions of the form:\n\nn\n\nY\n\nFi(η)xi (1 − Fi(η))1−xi f(η),\n\nf(η|x) ∝ f(η, x) =\n\n(1)\n\ni=1\n\nwhere x is a vector of binary observations, f(η) is a prior density, and1\n\nexp(aiη + bi)\n\nFi(η) = P(Xi = 1|η, ai, bi) =\n\n(2)\n\n1 + exp(aiη + bi)\n\nis a logistic cumulative distribution function (cdf) with location −bia−1\n\ni\n\nand (positive) scale parameter a−1\n\ni such that the posterior depends on\n\n1We suppress dependence on parameters when there is no risk of confusion.\n\n1\n\nthe observations only via Pn\n\ni=1 aixi (Dawid, 1979). This is the problem\n\nthis article is about.\n\nNote that the same problem is encountered in\n\nthe Bayesian analysis of (dynamic) logistic regression models, negativebinomial regression models, auto-logistic models (e.g., Besag, 1975), and the logistic stick-breaking representations of multinomial distributions (e.g., Linderman, Johnson, & Adams, 2015). The problem is ubiquitous in Bayesian item response theory (IRT) modeling and must be considered, for instance, when η represents student ability in a two-parameter logistic (2PL) model (Birnbaum, 1968, p. 400) and we wish to produce so-called plausible values; i.e., sample from the posterior of ability (Mislevy, 1991; Marsman, Maris, Bechger, & Glas, 2016). In fact, any full-conditional posterior distribution of the 2PL (e.g., the posterior of the item parameters given ability) is of the same form (see Appendix). The same is true for multi-dimensional IRT models. Thus, if we solve the problem, we can start building Gibbs samplers for most, if not all, IRT models used in practice. A solution was presented by Marsman et al. (2015) in a paper on Bayesian inference for the Ising network model 2 (Lenz, 1920; Ising, 1925) and their sampling algorithm is the topic of the present paper. Our goal is to prove that the eﬃciency of the algorithm improves when the number of observations n becomes large. This property makes the algorithm particularly suited for large scale applications in educational measurement. Where Marsman et al. (2015) state their algorithm in just a few phrases we will make an eﬀort to explain how and why its works. For ease of presentation, we choose the familiar context of plausible values. We then discuss the eﬃciency of the algorithm with large samples and end with a discussion.\n\n# 2 A Lemma\n\nThe following innocuous lemma is the basis for the algorithm.\n\nLemma 1. Consider a set of n + 1 independent random variables Zr each with a potentially unique distribution function Fr(z) = P(Zr ≤ z),\n\n2The Ising model originates in statistical physics and is popular for image analysis (e.g Marin & Robert, 2014, 8.2.3). It is gaining popularity as a model for network psychometrics; see Epskamp, Maris, Waldorp, and Borsboom (In press) and Marsman, Borsboom, et al. (2016). A general and fundamental discussion of the relation between the Ising model and IRT can be found in Kruis and Maris (2016).\n\n2\n\nwhere r = 0, . . . , n. Deﬁne, for r ̸= j, the random indicator variables\n\n(1\n\nif Zr ≤ Zj\n\nYrj = (Zr ≤ Zj) =\n\n.\n\n0\n\notherwise\n\nThen, for j ∈{0, . . . , n},\n\nfj(zj, yj) = Y\n\nFr(zj)yrj(1 − Fr(zj))1−yrjfj(zj)\n\nr̸=j\n\nwhere yj = (yrj)r̸=j.\n\nProof. Trivial\n\nThe next sections will explain the signiﬁcance of Lemma 1 and, to this aim, its notation will be used throughout the text. Observe that the joint distribution fj(zj, yj) in the lemma is of the same form as the posterior distribution in Equation 1. For our present purpose, we choose F0 to be the prior distribution, and assume that Fi, for i > 0, is logistic so that f0(η, x) corresponds to the target posterior f(η, x); deﬁned by Equations 1 and 2. The random variables Z0, . . . , Zn will be called auxiliary variables. The letters i, j and r are reserved for indexes with i running from one to n and j and r from zero to n. We use the original indexes when we refer to entries of yj. For example, the second entry of y2 = (y02, y12, y32, . . . , yn2) will be written as y12. This makes it easy to remember that y12 = (z1 ≤ z2).\n\n# 3 About the Algorithm\n\nWe explain how the algorithm is used to generate plausible values starting with the simple case where all items in the test are equivalent (Rasch) items and the item response functions (IRF), Fi(η), are standard logistic cdfs. The problem is then the following: A student produces an item response pattern x and our aim is to sample from the posterior of ability:\n\nf(η|x) ∝ Y\n\nexp(xiη)\n\n1 + exp(η)f(η)\n\ni\n\nexp(x+η)\n\n=\n\n[1 + exp(η)]nf(η),\n\nwhere we assume a standard logistic prior f(η). Note that, even in this simple case, the posterior is not a known distribution and the problem\n\n3\n\nis not trivial and many have therefore turned to normal-ogive models.\n\n## 3.1 The Simplest Case\n\nA posterior f(η|y) can be deﬁned as the collection of values of η that generate the observations y (cf. Rubin, 1984, section 3.1). This powerful idea implies that we can sample from the posterior if we can simulate data (e.g., Marsman, Maris, Bechger, & Glas, 2017). In IRT, simulating data is simple and entails sampling from the joint distribution f(η, x) = P(x|η)f(η) by ﬁrst drawing an ability η∗ from f(η) and then responses\n\ny from P(x|η∗). On this occasion we are not interested in the data but\n\nin the ability that generated the data. To wit, if an ability η∗ generates a response pattern y, it is a plausible value for a student with y+ correct responses. Unfortunately, it is likely that y+ ̸= x+ and we generate a plausible\n\nvalue for the wrong student. A solution is to simulate a number of response patterns and keep the ability that generated a response pattern whose sum equals x+. To this eﬀect, we use Lemma 1 which provides the following algorithm to simulate n + 1 response patterns from one sample of auxiliary variables:\n\nAlgorithm 1 Sample data using Lemma 1\n\nfor r = 0 to n do\n\nSample: zr ∼ Fr(z)\n\nfor j = 0 to n do\n\nfor r ̸= j do\n\nProduce an item response: yrj = (zr ≤ zj)\n\nAlgorithm 1 implements the method of composition (Tanner, 1996) as we described it earlier. That is, we draw a sample z0, . . . , zn of auxiliary variables each of which is then called on to be the ability and used to generate item responses. We illustrate this with a small example. Example 1 (Toy Example). For example, if we sample z2 ≤ z1 ≤ z3 ≤\n\nz0 we generate four response patterns:\n\ny2 = (0, 0, 0) and y+2 = 0\n\ny1 = (0, 1, 0) and y+1 = 1\n\ny3 = (0, 1, 1) and y+3 = 2\n\ny0 = (1, 1, 1) and y+0 = 3\n\n4\n\nNote that, obviously, we do not generate each of the 23 = 8 possible response pattern but we do generate each possible score.\n\nFinally, we observe that we can actually get our plausible value without calculating the response patterns. The sum y+j is, by deﬁnition, the number of values smaller than zj. This means that each generated response pattern has a diﬀerent sum and there is always one whose sum corresponds to x+. Noting that this response pattern is generated by the (x+ + 1)th smallest of the auxiliary variables we ﬁnd the following procedure to generate a plausible value for the student with a test-score x+:\n\nAlgorithm 2 SM-AB Algorithm\n\nfor r = 0 to n do\n\nSample: zr ∼ Fr(z)\n\nSelect the (x+ + 1)th smallest of the zr\n\nNote that this algorithm is simple and computationally cheap. Only a partial sort is required to ﬁnd the (x+ + 1)th smallest of set of numbers and computation time is of order n. For later reference, we call Algorithm 2 the Sum-Matched Approximate Bayes (SM-AB) algorithm: The name will be explained in the next section.\n\n## 3.2 The General Case\n\nIn practice, the items will diﬀer in diﬃculty and/or discrimination and we now consider what happens when the items follow a 2PL. This means that the item response functions are logistic as in Equation 2 with ai > 0 the discrimination and bi the easiness parameter of item i.\n\n### 3.2.1 The Sum-Matched Approximate Bayes Algorithm:\n\nFormally, Algorithm 2 draws a value η∗ from a proposal, fj(η|y), such that y+ = x+. A sample of auxiliary variables determines which proposal is selected. This means that the proposal is random and the algorithm produces an independent sample from a mixture of proposals as illustrated with the following example.\n\nExample 2 (Toy Example Cont.). Suppose that x+ = 1 and we select z1 which is drawn from a proposal f1(η|y1 = (0, 1, 0)) = f1(η|x+). If we repeat this a number of times we might:\n\n5\n\nso that η∗ is: drawn from proposal:\n\nz3 ≤ z0 ≤ z1 ≤ z2\n\nf0(η|yj = (0, 0, 1))\n\nz0\n\nz2 ≤ z1 ≤ z0 ≤ z3\n\nf1(η|yj = (0, 1, 0))\n\nz1\n\n⇒\n\nz0 ≤ z2 ≤ z1 ≤ z3\n\nf2(η|yj = (1, 0, 0))\n\nz2\n\n...\n\n...\n\n...\n\nNote that each sample of auxiliary variables generates a unique response pattern and each of these is a random permutation of the observed response pattern x.\n\nIf the auxiliary variables are identically distributed, all proposals are the same and we always sample from the target posterior. This is no longer true when the prior is not standard logistic and/or the items are not equivalent. Speciﬁcally, if j ̸= 0, η∗ is drawn from:\n\nfj(η|yj) ∝ Y\n\nFr(η)yrj(1 − Fr(η))1−yrjfj(η)\n\nr̸=j\n\n= F0(η)y0j(1 − F0(η))1−y0j Y\n\nFi(η)yij(1 − Fi(η))1−yij!\n\nfj(η)\n\ni̸=j\n\n⇓ rearranging\n\nY\n\nFi(η)yij[1 − Fi(η)]1−yij!\n\nF0(η)y0j(1 − F0(η))1−y0j\n\n=\n\ni<j\n\nFi(η)yij(1 − Fi(η))1−yij!\n\nY\n\nfj(η)\n\ni>j\n\nwhere y+j = x+. We see that the prior trades places with the IRF of the jth item so that, once more, we sample a plausible value for the wrong student; that is, a student who scored x+ correct answers on a (slightly) diﬀerent test. If, for instance, f0 is a normal prior, we would sample from a posterior where the prior is logistic and the jth item is a normal-ogive item (Lord & Novick, 1968, pp. 365-366). A further complication is added when the items diﬀer in discrimination and the sum is no longer suﬃcient. Even if j = 0 we would not sample from the correct posterior\n\nunless the weighted sums match; i.e., P\n\ni aiyi0 = P\n\ni aixi.\n\nIt follows that in any realistic situation, η∗ is most likely drawn from a proposal that approximates the target posterior. The name we gave to Algorithm 2 is intended to emphasize that each approximate proposal is\n\n6\n\n“matched” to the target posterior on the sum; i.e., the number of correct answers.\n\n![image]()\n\nFigure 1: We use the SM-AB algorithm to produce plausible values for 100, 000 (diﬀerent) students each answering to 50 diﬀerent 2PL items. The left panel shows starting values. The right panel shows the true abilities against the values produced by the SM-AB algorithm.\n\n### 3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:\n\nThe SM-AB algorithm produces an independent sample from an approximate posterior and although experience suggests that it works quite well (see Figure 1), it is not exact. As a remedy, Marsman et al. (2015) add a Metropolis-Hastings step (Metropolis, Rosenbluth, Rosenbluth, & Teller, 1953; Hastings, 1970) and construct a dependent sample from the target posterior. This gives us the Sum-Matched Metropolis-Hastings (SM-MH) algorithm:\n\n7\n\nAlgorithm 3 SM-MH Algorithm\n\nGiven η(t):\n\n1. Draw an ability η∗ and a response pattern yj from fj(η∗, yj)\n\n2. Take\n\nη(t+1) = \u001aη∗ with probablity π(η(t) → η∗) = min {1, α}\n\nη(t) otherwise\n\nwhere\n\nα = f0(η∗, x)fj(η(t), yj)\n\nf0(η(t), x)fj(η∗, yj)\n\nThe MH algorithm produces a sample from a Markov chain. The acceptance probability function π(η(t) → η∗) is chosen such that the following detailed balance condition holds:\n\nπ(η(t) → η∗)f0(η(t), x)fj(η∗, yj) = π(η∗ → η(t))f0(η∗, x)fj(η(t), yj) and the chain converges to the target posterior f0(η|x) for any initial\n\nvalue η(0). This means that the SM-MH algorithm produces a sequence of values such that, as t increases, the distribution of these values more closely approximates the target posterior. Note that the MH algorithm works with any proposal even if it is random (Tierney, 1994). After some algebra, detailed in the Appendix, we ﬁnd that the acceptance ratio α can be written as:\n\n(Aj exph(η(t+1) − η(t))\u0010P\n\ni̸=j aiyij\u0011iif j ̸= 0\n\ni̸=j aixi − P\n\nα =\n\ni aiyij)\u0003if j = 0 (3)\n\nexp\u0002(η(t+1) − η(t)) (P\n\ni aixi − P\n\nwith, for j ̸= 0,\n\nAj =e(xj−1)[aj(η(t+1)−η(t))]1 + eajη(t+1)+bj\n\n1 + eajη(t)+bj\n\ny0j(η(t))[1 − F0(η(t))]1−y0j\n\nf0(η(t+1))\n\nF0\n\ny0j(η(t+1))[1 − F0(η(t+1))]1−y0j .\n\nf0(η(t))\n\nF0\n\nNote that the MH step adds little computational complexity and the expressions remain simple for large values of n.\n\n8\n\nThe acceptance ratio indicates how probable the new value η∗ is with respect to the current value, according to the target posterior. If j = 0, it depends only on the diﬀerence between the weighted sums of the generated and the observed response pattern. If j ̸= 0, it also accounts for the fact that item j has traded places with the prior.\n\nExample 3. If, for example, we have Rasch items and assume a logistic\n\nprior\n\n1 + exp(η(0) + b0)\n\nα = 1 + exp(η∗ + bj)\n\n1 + exp(η∗ + b0) ,\n\n1 + exp(η(0) + bj)\n\nfor any j ∈{0, . . . , n}, so that we always accept if j = 0. If all items are equivalent, we accept regardless of j and the MH algorithm reduces to the SM-AB algorithm.\n\n# 4 Simulation Experiments\n\nIn this section, we present some simulation results to evaluate the computational burden and the auto-correlation in samples produced by the SM-MH algorithm. We use the R-code given in the Appendix on a ASUS R301L laptop with an Intel i5 CPU with a clock speed of 2.2 GHz and\n\n3.8 gigabytes of memory running Ubuntu.\n\n0.005\n\n0.15\n\n0.004\n\n0.10\n\nseconds/iteration\n\nseconds/iteration\n\n0.003\n\n0.002\n\n0.05\n\n0.001\n\n10000 20000 30000 40000 50000\n\n10000 20000 30000 40000 50000\n\nn\n\nn\n\nFigure 2: Number of observations (n) versus average time per iteration (in seconds) for the GNU R implementation (left panel) and a C implementation (right panel).\n\n9\n\n1.0\n\n1.0\n\n0.8\n\n0.8\n\n0.6\n\n0.6\n\ncorrelation\n\ncorrelation\n\n0.4\n\n0.4\n\n0.2\n\n0.2\n\n0.0\n\n0.0\n\n−0.2\n\n−0.2\n\n0\n\n10\n\n20\n\n30\n\n40\n\n50\n\n0\n\n10\n\n20\n\n30\n\n40\n\n50\n\nlag\n\nlag\n\n(b) ai ∼U(0.1, 2.1).\n\n(a) All ai = 1\n\nFigure 3: Autocorrelations. n = 50, bi ∼U(−1, 2).\n\n## 4.1 Computational Complexity\n\nThe complexity of the algorithm is determined by the generation and sorting of the auxiliary variables. As mentioned above, ﬁnding the (x++ 1)th smallest value of a set of numbers does not require a full sort. In fact, it can be done in linear time using the quickselect algorithm (Hoare, 1961) which means that computation time increases linearly with n as illustrated3 in Figure 2. Note that loops are time-consuming when performed in R. Especially when n is large, signiﬁcant computational advantages can be obtained by coding (parts of) the algorithm in a compiled language (e.g., C, C++, Fortran, Pascal). Comparing, for example, the right with the left-hand panel in Figure 2 shows that a C implementation is about thirty times faster.\n\n## 4.2 Autocorrelation and Convergence\n\nIf we accept all proposed values in the ﬁrst two iterations, convergence is almost immediate (see Figure 1). After these ﬁrst iterations, acceptance rates remain high. Figure 3 gives an impression of typical autocorrelations with n = 50 observations. The left panel shows that, when the items are Rasch items, the SM-MH algorithm comes close to generat-\n\n3For each value of n we simulate a thousand response patterns assuming a 2PL. For each pattern one iteration is performed. We take the average of the computing times.\n\n10\n\n1.0\n\n1.0\n\n0.8\n\n0.8\n\n0.6\n\n0.6\n\ncorrelation\n\ncorrelation\n\n0.4\n\n0.4\n\n0.2\n\n0.2\n\n0.0\n\n0.0\n\n−0.2\n\n−0.2\n\n0\n\n10\n\n20\n\n30\n\n40\n\n50\n\n0\n\n10\n\n20\n\n30\n\n40\n\n50\n\nlag\n\nlag\n\n(b) ai ∼U(0.1, 2.1).\n\n(a) All ai = 1\n\nFigure 4: Autocorrelations. n = 5000, bi ∼U(−1, 2).\n\ning an independent and identically distributed sample, with virtually no autocorrelation whatsoever. The right panel shows that autocorrelations are higher when items diﬀer in discrimination. Even then, Figure 4 suggests that autocorrelations vanish when n increases and acceptance probabilities go to one. It is the burden of the next sections to prove that this is indeed the case.\n\n# 5 Eﬃciency of the SM-AB Algorithm when n In-\n\ncreases\n\nIn this section, we will prove that, as n increases, the SM-AB algorithm will increasingly produce proposals that are accepted in the MH step. The SM-AB and the SM-MH will become equal and the cost of producing a sample of n observations from the posterior approximates that of generating a sample of n observations under the posited model; i.e., one response pattern4. We ﬁrst demonstrate that the proposal value converges to the true value. We then demonstrate that acceptance rates in the SM-MH algorithm will increase in proportion to the square root of n.\n\n4If we use simulation we would on average need to generate n Pn(X+=x+)\n\n1−Pn(X+=x+) re-\n\nsponse patterns, a number that would increase rapidly if n →∞ and Pn(X+ = x+)\n\ndecreases to zero.\n\n11\n\n## 5.1 Convergence\n\nHere is a second lemma that proves that the proposal value from the SM-AB algorithm will converge (strongly) to the true value of η.\n\nLemma 2. Consider a set of n+1 independent random variables Z∗\n\n0, . . . , Z∗\n\nn.\n\nDeﬁne a second, set of n + 1 random variables Z0, . . . , Zn such that\n\nZr ∼ Z∗\n\nr, for all r ∈{0, . . . , n}. Then,\n\na.s.\n\n→ Z∗\n\nZ[(n+1)pn]\n\n0,\n\nn+1 Pn\n\n0) = 1\n\nwhere pn = Z∗n (Z∗\n\nr=0(Z∗\n\nr ≤ Z∗\n\n0) and Z[p] denotes the pth\n\norder statistic of the Zi; i.e., the [p]th smallest with [p] the integer part of p.\n\nProof. Deﬁne the random function Z∗n(t) (and similarly Zn(t)) to be\n\nn\n\n1 X\n\n(Z∗\n\nZ∗n(t) =\n\ni ≤ t)\n\nn + 1\n\ni=0\n\nsuch that (Z∗n(t) ≤ p) corresponds to (Z∗\n\n[(n+1)p] ≥ t). We ﬁnd the diﬀer-\n\nence between the random functions Zn(t) and Z∗n(t) to be characterized by a simple random walk:\n\nn\n\n1 X\n\ni=0(Zi ≤ t) − (Z∗\n\nZn(t) − Z∗n(t) =\n\ni ≤ t)\n\nn + 1\n\n1\n\n=\n\nn + 1∆Nn(t),\n\n(4)\n\nwhere Nn = Pn\n\ni=0(Zi ≤ t) ̸= (Z∗\n\ni ≤ t) →∞. ∆N(t) is a simple random\n\nwalk since Z∗\n\ni ∼ Zi and Z∗\n\ni ⊥⊥Zi implies\n\np(Zi ≤ t|(Zi ≤ t) ̸= (Z∗\n\ni ≤ t)) = 1/2.\n\nSince p − (n + 1)−1∆Nn(t) a.s.\n\n→ p,\n\n(Zn(t) ≤ p) = (Z∗n(t) ≤ p − (n + 1)−1∆Nn(t)) a.s.\n\n→ (Z∗n(t) ≤ p)\n\nso that\n\na.s.\n\n→ Z∗\n\nZ[(n+1)p] ≥ t\n\n[(n+1)p] ≥ t.\n\n12\n\nSince\n\nZ∗\n\n0 )] = Z∗\n\n0.\n\n[(n+1)Z∗n(Z∗\n\nThe result follows.\n\nAlthough Lemma 2 is admittedly technical, it has a simple interpretation. To wit, “nature” uses Algorithm 1 and samples z∗\n\n0 = η from a\n\ndistribution f0(z∗\n\n0), and n item responses xi = (z∗\n\ni ≤ z∗\n\n0). The SM-AB\n\nalgorithm imitates nature. It samples a second set of n + 1 independent\n\nvariables Zr such that Zr ∼ Z∗\n\nr and oﬀers the (x+ + 1)th order statistic\n\nas a proposal value. Lemma 2 states that this proposal value will be arbitrary close to η for large n. A numerical illustration is shown in Figure\n\n## 5.1 where we plotted several chains produced by the SM-AB algorithm.\n\n![image]()\n\nFigure 5: Consider a person with ability η = −0.21 that answers n\n\n(diﬀerent) 2PL items. We used the SM-AB algorithm a number of times to estimate η for every n based on all previous responses (solid lines). Hoeﬀding’s inequality implies the 95% conﬁdence bounds (dotted lines)\n\nFigure 5.1 also provides conﬁdence bounds and an interval which contains 95% of the chains we might generate. The key observation is that the conﬁdence interval decreases with the square root of n. How the conﬁdence bounds were derived will be explained in the following paragraph.\n\n13\n\n![image]()\n\nFigure 6: The mean response of the same person used to make Figure 5.1 is plotted for diﬀerent values of n (solid line) together with its expected value (dashed line) and 95% conﬁdence intervals as implied by Hoeﬀdings inequality (dotted lines).\n\n## 5.2 Convergence Rate\n\nThe conﬁdence bounds in Figure 5.1 are implied by the classical Hoeﬀding inequality (Hoeﬀding, 1963). Hoeﬀding’s inequality, in its simplest form, deals with n independent but not necessarily identically distributed random variables X1, . . . , Xn that are all deﬁned on the unit interval. Hoeﬀding’s inequality puts a bound on the diﬀerence between\n\nn Pn\n\nthe mean value of these variables X = 1\n\ni=1 Xi and its expected value\n\nE(X):\n\nP(|X − E(X)| ≥ ε) ≤ 2 exp\u0000−2nε2\u0001,\n\n(5)\n\nfor an arbitrary positive real number ε. As a simple illustration consider n copies of a Bernoulli random variable Xi ∈{0, 1} with success\n\nprobability p. The expected value of the mean of these random variables\n\nE(X|p) = p, and (5) implies that\n\nP(p − ε ≤ X ≤ p + ε) ≥ 1 − 2 exp\u0000−2nε2\u0001,\n\n(6)\n\nfor all positive real numbers ε. In other words, the probability that X lies in an arbitrary small interval around its expected value goes to one\n\nif n goes to inﬁnity. Or, if we ﬁx n and deﬁne α = 2 exp\u0000−2nε2\u0001, X\n\n14\n\ncan be found with probability 1 − α in an interval of width 2q\n\nlog (2/α)\n\n2n\n\naround its mean. If we have a test taker with ability η that answers a set of n 2PL items, the mean of the response X has expected value\n\nn\n\nX\n\nexp(aiη + bi)\n\nE(X|η, a, b) =\n\n1 + exp(aiη + bi).\n\n(7)\n\ni=1\n\nFigure 5.1 shows an example where we plotted the mean together with the 95% conﬁdence interval (i.e., α = 0.05) around its expected value for diﬀerent values of n. Note that the width of the conﬁdence interval decreases in proportion to the square root of n; e.g., multiplying n by four halves the interval.\n\n![image]()\n\nFigure 7: The estimated ability ˆη for the same person and items used to produce Figure 5.1 is plotted for diﬀerent values of n (solid line) and 95% conﬁdence intervals as implied by Hoeﬀdings inequality (dotted lines). The dashed horizontal line shows the true ability.\n\nHoeﬀding’s inequality, together with the monotonicity of E(X|η, a, b) as a function of η, implies that an estimator ˆη obtained by solving\n\nE(X|ˆη, a, b) = X\n\n(8)\n\nconverges to the true value of η if n goes to inﬁnity. This is illustrated in Figure 5.2 in which the same person, items and responses are used as in Figure 5.1. The conﬁdence bounds are obtained by inverting\n\n15\n\nE(X|η, a, b) as function of η and evaluating the resulting function in the\n\nbounds implied by Hoeﬀding’s inequality5. As with the mean, the width of the conﬁdence interval decreases in proportion to the square root of n. We can estimate η using a generated response pattern instead of the observed one. To this aim, we determine ˆˆη by solving Ej(Y |ˆˆη, a, b) = Y , where Y = X, and Ej() denotes the expected value of the mean under the proposal. While Ej() is a monotone function of η, it is not equal to the one under the model (7) because, if j ̸= 0, one item response function is replaced by the prior cdf. It will be clear, however, that the diﬀerence becomes negligible as n goes to inﬁnity so that ˆˆη converges to ˆη and the conﬁdence bounds apply to both estimators. Thus, the conﬁdence bounds in Figure 5.1 are based on Hoeﬀding’s inequality, and 95% of the realizations of the SM-AB algorithm stay withing these bounds and are ever closer to the true value of η as n increases.\n\n# 6 Discussion\n\nWe have discussed a MH algorithm proposed by Marsman et al. (2015) and have proven that it becomes more eﬃcient when more data becomes available and scales-up to handle large problems. Marsman et al. (2015) introduce their algorithm is a few phrases and present no derivation. We have found that the complete formal underpinning for the algorithm is provided by two lemmas. It is worth noting that these lemmas are valid for any distribution of the auxiliary variables which implies that the SM-algorithms can be used, and with minimal changes, for any IRT model where the item response functions are distribution functions as in a normal-ogive model. Lemma 2, is of independent interest because it implies that ability can be estimated consistently from the number-correct score under any monotone IRT model. That the algorithm becomes better with more data is an important property that, to the best of our knowledge, is not shared by any of the existing samplers; e.g., Patz and Junker (1999), or Maris and Maris (2002). The most widely used MCMC algorithm in educational measurement is probably the data-augmentation (DA) Gibbs sampler proposed by Albert (1992); see also Albert and Chib (1993) and Polson, Scott, and Windle (2013). Compared to the SM-algorithms, the DA Gibbs sampler\n\n5Inverting was done using the method of false-position\n\n16\n\nhas two important disadvantages. First, it is restricted to normal-ogive models and forces the user to adopt normal priors. Second, DA causes auto-correlation and this auto-correlation will not diminish as more data are observed. Especially with large datasets6, good starting values are essential for the algorithm to reach the posterior support whereas the SM-AB algorithm takes us there in a few iteration. In closing, we will sketch a possible extension for future research. That is, we adapt the sampler for models where response patterns are restricted to lie in a subset S. To this eﬀect, we adapt the MH step, as it stands, and multiply α in (3) by:\n\nZS(η∗)Z(η′)\n\nZS(η′)Z(η∗),\n\n(9)\n\nwhere Z(η) = Q\n\ni(1+eaiη+bi) is the normalizing constant in the proposal,\n\nand ZS(η) is the normalizing constant when y ∈ S. This extension of the algorithm is useful because would allow us to handle multi-stage designs and/or polytomous item responses.\n\n6Albert (page 259) notes that the choice of initial values does not seem crucial. In 1992 he obviously did not have the opportunity to try large examples.\n\n17\n\n# References\n\nAlbert, J. (1992). Bayesian estimation of normal ogive item response curves using Gibbs sampling. Journal of Educational Statistics, 17(3), 251–269. Albert, J., & Chib, S. (1993). Bayesian analysis of binary and polytomous response data. Journal of the American Statistical Association, 88(422), 669–679. Besag, J. (1975). Statistical analysis of non-lattice data. The Statistician, 24(3), 179–195. Birnbaum, A. (1968). Some latent trait models and their use in inferring an examinee’s ability. In F. Lord & M. Novick (Eds.), Statistical theories of mental test scores (pp. 395–479). Reading, MA: Addison-Wesley. Dawid, A. (1979). Conditional independence in statistical theory. Journal of the Royal Statistical Society, Series B (Methodological), 41(1), 1–31. Eddelbuettel, D., & Francois, R. (2011). Rcpp: Seamless R and C++ integration. Journal of Statistical Software, 40(8), 1–18. Epskamp, S., Maris, G., Waldorp, L., & Borsboom, D. (In press). Network psychometrics. In P. Irwing, D. Hughes, & T. Booth (Eds.), Handbook of psychometrics. New-York: Wiley. Hastings, W. (1970). Monte Carlo sampling methods using Markov chains and their applications. Biometrika, 57(1), 97–109.\n\nHoare, C. (1961). Algorithm 65: Find. Communications of the ACM , 4(7), 321–322. Hoeﬀding, W. (1963). Probability inequalities for sums of bounded random variables. Journal of the American Statistical Association, 58(301), 13–30. Ising, E. (1925). Beitrag zur theorie des ferromegnetismus. Zeitschrift f¨ur Physik, 31(1), 253–258. Kruis, J., & Maris, G. (2016). Three representations of the Ising model. Scientiﬁc Reports, 6(34175). Lenz, W. (1920). Beitr¨age zum verstandnis der magnetischen eigenschaften in festen korpern. Physikalische Zeitschrift, 21, 613–615. Linderman, S., Johnson, M., & Adams, R. (2015). Dependent multinomial models made easy: Stick-breaking with the Polya-Gamma augmentation. In C. Cortes, N. Lawrence, D. Lee, M. Sugiyama, & R. Garnett (Eds.), Advances in neural information processing\n\n18\n\nsystems 28 (pp. 3456–3464). Curran Associates, Inc.\n\nLord, F., & Novick, M. (1968). Statistical theories of mental test scores. Reading, MA: Addison-Wesley.\n\nMarin, J.-M., & Robert, C. (2014). Bayesian essentials with R. New-York: Spinger. Maris, G., & Maris, E. (2002). A MCMC-method for models with continuous latent responses. Psychometrika, 67(3), 335–350. Marsman, M., Borsboom, D., Kruis, J., Epskamp, S., van Bork, R., Waldorp, L., . . . Maris, G. (2016). An introduction to network psychometrics: Relating Ising network models to item response theory models. Manuscript submitted for publication. Marsman, M., Maris, G., Bechger, T., & Glas, C. (2015). Bayesian inference for low-rank Ising networks. Scientiﬁc Reports, 5(9050), 1–7. Marsman, M., Maris, G., Bechger, T., & Glas, C. (2017). Turning simulation into estimation: Generalized exchange algorithms for exponential family models. PLoS One, 12(1), 1–15. Marsman, M., Maris, G., Bechger, T. M., & Glas, C. A. W. (2016). What can we learn from plausible values? Psychometrika, 81(2), 274–289. Metropolis, N., Rosenbluth, A., Rosenbluth, M., & Teller, A. (1953). Equation of state calculations by fast computing machines. The Journal of Chemical Physics, 21(6), 1087–1092. Mislevy, R. (1991). Randomization-based inference about latent variables from complex samples. Psychometrika, 56(2), 177–196. Patz, R., & Junker, B. (1999). A straightforward approach to Markov Chain Monte Carlo methods for item response models. Journal of Educational and Behavioral Statistics, 24(2), 146–178. Polson, N. G., Scott, J. G., & Windle, J. (2013). Bayesian Inference for Logistic Models Using Polya-Gamma Latent Variables. Journal of the American Statistical Association, 108, 1339–1349. R Core Team. (2016). R: A language and environment for statistical computing [Computer software manual]. Vienna, Austria. Re-\n\ntrieved from https://www.R-project.org/\n\nRubin, D. (1984). Bayesianly justiﬁable and relevant frequency calculations for the applied statistician. Annals of Statistics, 12, 1151–1172.\n\nTanner, M. (1996). Tools for statistical inference (Third ed.). New york:\n\n19\n\nSpringer-Verlag.\n\nTierney, L. (1994). Markov chains for exploring posterior distributions.\n\nThe Annals of Statistics, 22(4), 1701–1762.\n\n20\n\n# 7 Appendix\n\n## 7.1 The Acceptance Probability Function for the\n\n# MH Algorithm\n\nLetη′ denote the current parameter value, η∗ the proposal value so that\n\nα = f0(η∗, x)fj(η′, y)\n\nf0(η′, x)fj(η∗, y).\n\nWe now ﬁnd the expression for α when the Fi, for i = 1, . . . , n are logistic as in (2). The case for j = 0 is relatively simple and we focus on deriving expressions for the case where j ̸= 0.\n\nFirst, ignoring terms unrelated to η, we ﬁnd that\n\n\n\n\n\n Q\n\nexi(aiη+bi)\n\nxj\n\n Fj (η)[1 − Fj(η)]1−xj\n\nf0(η)\n\nf0(η, x)\n\ni̸=j\n\nDi\n\nfj(η, y) =\n\nQ\n\ny0j(η)[1 − F0(η)]1−y0j fj(η)\n\neyij(aiη+bi)\n\nF0\n\ni̸=j\n\nDi\n\nxj\n\n= eη(Pi̸=j aixi−Pi̸=j aiyij)Fj (η)[1 − Fj(η)]1−xj\n\nf0(η)\n\ny0j(η)[1 − F0(η)]1−y0j\n\nfj(η)\n\nF0\n\nwhere Di(η) = 1 + exp(aiη + bi). We will simplify this further. Since j ̸= 0,\n\neajη+bj\n\nj(η), aj > 0.\n\nfj(η) =\n\na−1\n\nj D2\n\nIt follows that:\n\nxj\n\na−1\n\nFj (η)[1 − Fj(η)]1−xj\n\nj D2\n\n= exj(ajη+bj)\n\nj(η)\n\neajη+bj\n\nfj(η)\n\nDj(η)\n\n= e(xj−1)(ajη+bj)a−1\n\nj Dj(η)\n\nHence, we ﬁnd that:\n\nα = f0(η∗, x)\n\nfj(η′, y)\n\nfj(η∗, y) f0(η′, x)\n\n= eη∗(Pi̸=j aixi−Pi̸=j aiyij)e(xj−1)(ajη∗+bj)a−1\n\nj Dj(η∗)\n\nj Dj(η′) × R\n\neη′(Pi̸=j aixi−Pi̸=j aiyij)e(xj−1)(ajη′+bj)a−1\n\n= e(η∗−η′)(Pi̸=j aixi−Pi̸=j aiyij)e(xj−1)[aj(η∗−η′)]Dj(η∗)\n\nDj(η′) × R\n\n21\n\nwhere the rest-term R\n\ny0j(η′)[1 − F0(η′)]1−y0j\n\nf0(η∗)\n\nF0\n\nR =\n\ny0j\n\nf0(η′)\n\nF0 (η∗)[1 − F0(η∗)]1−y0j\n\ny0j(η′)[1 − F0(η′)]1−y0j\n\n= f0(η∗)\n\nF0\n\ny0j(η∗)[1 − F0(η∗)]1−y0j\n\nf0(η′)\n\nF0\n\nHow complex the rest-term is depends on the prior. If the prior is logistic with parameters a0 and b0,\n\nR = e(η∗−η′)a0(1−y0j) D0(η′)\n\nD0(η∗)\n\nLet ∆= (η∗ − η′). It follows that, for j ̸= 0, and with a logistic prior:\n\nα = e∆(Pi̸=j aixi−Pi̸=j aiyij)e(xj−1)[aj∆]e∆a0(1−y0j)Dj(η∗)\n\nD0(η′)\n\nDj(η′)\n\nD0(η∗)\n\n= e∆(Pi aixi−Pr̸=j ajyrj)e∆(a0−aj)Dj(η∗)\n\nD0(η′)\n\nDj(η′)\n\nD0(η∗)\n\nwhere r runs from 0 to n. Thus, if the items are Rasch items and the prior is logistic with scaling parameter a0 = 1 and mean b0 we ﬁnd that\n\n1 + exp(η′ + b0)\n\nαj = 1 + exp(η∗ + bj)\n\n1 + exp(η′ + bj)\n\n1 + exp(η∗ + b0)\n\nfor any j ∈{0, 1, . . . , n} given that the sum-scores are matched.\n\n## 7.2 R Code\n\nAs a courtesy to the reader we provide a minimal set of R-scripts (R Core Team, 2016) that read as pseudo-code for readers who program in other languages.\n\n### 7.2.1 Quickselect\n\nAt the time of writing, the quickselect algorithm is not yet implemented in R. A C++ implementation can be made available via the Rcpppackage (Eddelbuettel & Francois, 2011).\n\n#include <algorithm>\n\n#include <functional>\n\n#include <Rcpp.h>\n\n22\n\nusing namespace Rcpp;\n\n// [[Rcpp::plugins(cpp11)]]\n\n// [[Rcpp::export]]\n\nList qselect(NumericVector x, int k)\n\n{\n\ndouble out; int iout; IntegerVector ivec(x.size()); for (int i=0;i<ivec.size();i++) { ivec[i]=i;} std::nth_element(ivec.begin(),ivec.begin()+k-1,ivec.end()\n\n,[&](int i1, int i2) { return x[i1] < x[i2]; });\n\niout=ivec[k-1]; out=x[iout]; return List::create(Named(\"value\", out),\n\nNamed(\"index\", iout+1));\n\n}\n\nNote that the output is a list with the k-th smallest element and its original index; one-based for use in R.\n\n### 7.2.2 The SM-MH Algorithm\n\nThe following is a straightforward implementation assuming a normal prior and index n + 1.\n\nAB<-function(x,a,b,mu,sigma)\n\n{\n\nn=length(x)\n\nz=rlogis(n,location=-b/a,scale=1/a)\n\nz=c(z,rnorm(1,mean=mu,sd=sigma))\n\nreturn(qselect(z,sum(x)+1))\n\n}\n\nMH<-function(x,a,b,current,mu,sigma)\n\n{\n\nn=length(x)\n\nz=rlogis(n,location=-b/a,scale=1/a)\n\nz=c(z,rnorm(1,mean=mu,sd=sigma))\n\nabc=qselect(z,sum(x)+1)\n\nj=abc$index\n\n23\n\ny=sapply(z[-j],function(x) 1*(x<=z[j]))\n\nif (j<(n+1))\n\n{\n\nc_1=(x[j]-1)*a[j]*(z[j]-current)\n\nc_2=log(1+exp(a[j]*z[j]+b[j]))\n\nc_3=log(1+exp(a[j]*current+b[j]))\n\nc_4=dnorm(z[j], mean=mu,sd=sigma,log = TRUE) c_5=dnorm(current,mean=mu,sd=sigma,log = TRUE) c_6=pnorm(current,mean=mu,sd=sigma,lower.tail=y[n],log.\n\np = TRUE)\n\nc_7=pnorm(z[j],mean=mu,sd=sigma,lower.tail=y[n],log.p =\n\nTRUE)\n\nlogA=c_1+c_2-c_3+c_4-c_5+c_6-c_7\n\nlogalpha=logA+sum(a[-j]*(x[-j]-y[-n]))*(z[j]-current)\n\n}else\n\n{\n\nlogalpha=sum(a*(x-y))*(z[j]-current)\n\n}\n\nnew=current\n\nif (log(runif(1,0,1))<=logalpha) new=z[j]\n\nreturn(new)\n\n}\n\n### 7.2.3 A Gibbs Sampler for the 2PL\n\nLet np be the number of persons, and nI the number of items. The following script performs one iteration of a Gibbs sampler for the 2PL.\n\n## MStep\n\ntheta=sapply(1:nP,function(p) MH(x[p,],alpha,delta,theta[p\n\n],mu.th,sigma.th))\n\ndelta=sapply(1:nI,function(i) MH(x[,i],rep(1,m),alpha[i]*\n\ntheta,delta[i],0,2))\n\nalpha=sapply(1:nI,function(i) MH(x[,i],theta,rep(delta[i],\n\nm),alpha[i],mu.al,sigma.al)\n\n## identify\n\ns=sum(delta)/sum(alpha)\n\nm=1/sd(theta)\n\ndelta = delta-s*alpha\n\n24\n\ntheta=m*(theta+s)\n\nalpha=alpha/m\n\n## sample hyperparameters\n\nmu.th = rnorm(1,mean(theta),sigma.th/sqrt(nP)) mu.al = rnorm(1,mean(alpha),sigma.al/sqrt(nI))\n\n25\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 A Lemma",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 About the Algorithm",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Simplest Case",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 The General Case",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 The Sum-Matched Approximate Bayes Algorithm:",
+   "page": 4,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:",
+   "page": 6,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "4 Simulation Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Computational Complexity",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Autocorrelation and Convergence",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Eﬃciency of the SM-AB Algorithm when n In-",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Convergence",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.1 where we plotted several chains produced by the SM-AB algorithm.",
+   "page": 12,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2 Convergence Rate",
+   "page": 13,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 Discussion",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Appendix",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 The Acceptance Probability Function for the",
+   "page": 20,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "MH Algorithm",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.2 R Code",
+   "page": 21,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "7.2.1 Quickselect",
+   "page": 21,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "7.2.2 The SM-MH Algorithm",
+   "page": 22,
+   "level": 3,
+   "parent": 20
+  },
+  {
+   "text": "7.2.3 A Gibbs Sampler for the 2PL",
+   "page": 23,
+   "level": 3,
+   "parent": 20
+  }
+ ],
+ "seconds": 4.710581799998181,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 21,
+  "teds": 0.84,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "5.1 where we plotted several chains produced by the SM-AB algorithm.",
+   "MH Algorithm"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

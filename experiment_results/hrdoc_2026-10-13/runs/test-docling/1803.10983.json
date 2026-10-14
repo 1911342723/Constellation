@@ -1,0 +1,128 @@
+{
+ "doc": "1803.10983",
+ "system": "docling",
+ "metrics": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract."
+  ],
+  "unmatched_pred": [
+   "A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs",
+   "MaxCut(G, X)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 39.030631400004495
+ },
+ "predictions": [
+  {
+   "text": "A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Max-Cut for embedded 1-planar graphs",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Removing the crossings",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 The Max-Cut Algorithm",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MaxCut(G, X)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Correctness",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Running time",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion and open problems",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.004427100000611972,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract."
+  ],
+  "unmatched_pred": [
+   "A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs",
+   "MaxCut(G, X)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Fixed-Parameter Algorithm for the Max-Cut Problem on Embedded 1-Planar Graphs",
+   "MaxCut(G, X)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

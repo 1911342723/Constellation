@@ -1,0 +1,143 @@
+{
+ "doc": "1808.02541",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "A. Terminology",
+   "Area clustering:",
+   "Cluster limit:",
+   "Test Data:",
+   "Measurement Metrics:",
+   "Results:",
+   "AC K NO WLE DGME N T"
+  ],
+  "unmatched_pred": [
+   "III-A Terminology",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Statement of the Problem",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Terminology",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV Coverage with Route Clustering (CRC)",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Coverage with Area Clustering (CAC)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Experimental Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A Statistical Analysis",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "VI-B Experimental Validation in different environments",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "VII Discussion and Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.043914800000493415,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "A. Terminology",
+   "Area clustering:",
+   "Cluster limit:",
+   "Test Data:",
+   "Measurement Metrics:",
+   "Results:",
+   "AC K NO WLE DGME N T"
+  ],
+  "unmatched_pred": [
+   "III-A Terminology",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "A. Terminology",
+   "Area clustering:",
+   "Cluster limit:",
+   "Test Data:",
+   "Measurement Metrics:",
+   "Results:"
+  ],
+  "unmatched_pred": [
+   "III-A Terminology"
+  ],
+  "ignored_title_predictions": null
+ }
+}

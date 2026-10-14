@@ -1,0 +1,144 @@
+{
+ "doc": "1703.00856",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "Keywords—IEEEtran, journal, LATEX, paper, template.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 41,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3807,
+   "completion_tokens": 485,
+   "total_tokens": 4292
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Araguaia Medical Vision Lab at ISIC 2017 Skin",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lesion Classiﬁcation Challenge",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords—IEEEtran, journal, LATEX, paper, template.",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "I. MOTIVATION AND OVERVIEW",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. IMAGE PRE-PROCESSING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NETWORK TRAINING AND EVALUATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Seborrheic Keratosis Task",
+   "page": 0,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Melanoma Task",
+   "page": 0,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "0.00001 over 30 epochs, best result was at epoch 15.",
+   "page": 0,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.734239699999307,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 12,
+  "tp": 7,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Araguaia Medical Vision Lab at ISIC 2017 Skin",
+   "Lesion Classiﬁcation Challenge",
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "Keywords—IEEEtran, journal, LATEX, paper, template.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "Keywords—IEEEtran, journal, LATEX, paper, template.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ],
+  "ignored_title_predictions": null
+ }
+}

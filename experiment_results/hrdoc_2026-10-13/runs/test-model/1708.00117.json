@@ -1,0 +1,176 @@
+{
+ "doc": "1708.00117",
+ "system": "model",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [
+   "straints"
+  ],
+  "unmatched_pred": [
+   "8. REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 307,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13537,
+   "completion_tokens": 664,
+   "total_tokens": 14201
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Categories and Subject Descriptors",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BACKGROUND AND RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. SNOWFLAKE HARDWARE OVERVIEW",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Control pipeline",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4. CUSTOM INSTRUCTION SET",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. METHODOLOGY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Model parsing",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5.2 Instruction generation",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5.3 Instruction deployment",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6. RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Generated instructions",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.2 Loop rearrangement for bandwidth con-",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.3 Communication load balance",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.714198099998612,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [
+   "straints"
+  ],
+  "unmatched_pred": [
+   "8. REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [
+   "straints"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

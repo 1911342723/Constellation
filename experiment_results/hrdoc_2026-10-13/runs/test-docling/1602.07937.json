@@ -1,0 +1,93 @@
+{
+ "doc": "1602.07937",
+ "system": "docling",
+ "metrics": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 20.926990600000863
+ },
+ "predictions": [
+  {
+   "text": "Controlled uniform coating from the interplay of Marangoni flows and surface-adsorbed macromolecules",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supporting Information",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S1. Whisky manufacturing procedures",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S2. Experimental details",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S3. Measurement of physical properties",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S4. Estimation of Marangoni effect",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S5. Image analysis and post processing",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0033451999988756143,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Controlled uniform coating from the interplay of Marangoni flows and surface-ads"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

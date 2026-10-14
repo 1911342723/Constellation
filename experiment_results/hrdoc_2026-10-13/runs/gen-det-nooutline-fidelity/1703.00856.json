@@ -1,0 +1,131 @@
+{
+ "doc": "1703.00856",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ],
+  "ignored_title_predictions": 2
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 41,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9988452655889145,
+   "in_order": 0.9792147806004619,
+   "inserted": 0.0023068050749711633
+  },
+  "export_markdown": "# Araguaia Medical Vision Lab at ISIC 2017 Skin\n\n# Lesion Classiﬁcation Challenge\n\nRafael Teixeira Sousa\n\nUniversidade Federal\n\nde Mato Grosso\n\nEmail: rafaelsousa@ufmt.br\n\narXiv:1703.00856v1 [cs.CV] 2 Mar 2017\n\nAbstract—This paper describes the participation of Araguaia Medical Vision Lab at the International Skin Imaging Collaboration 2017 Skin Lesion Challenge. We describe the use of deep convolutional neural networks in attempt to classify images of Melanoma and Seborrheic Keratosis lesions. With use of ﬁnetuned GoogleNet and AlexNet we attained results of 0.950 and\n\n# 0.846 AUC on Seborrheic Keratosis and Melanoma respectively.\n\nKeywords—IEEEtran, journal, LATEX, paper, template.\n\n# I. MOTIVATION AND OVERVIEW\n\nThis paper is a small overview of Araguaia Medical Vision Lab (AMVL) at the International Skin Imaging Collaboration (ISIC) 2017 challenge, more speciﬁcally the skin lesion classiﬁcation task. Our main objective is to perform an automatic classiﬁcation of skin lesions on two main tasks, the Melanoma and Seborrheic Keratosis recognition, using the image dataset available by ISIC, which was already diagnosed by specialists and used as ground truth. The algorithm proposed a combination of deep convolutional neural networks (CNN), GoogleNet[1] and AlexNet[2], ﬁne-tuned [3] with augmented skin lesion images. The next sessions will describe how was the training and evaluation process.\n\n# II. IMAGE PRE-PROCESSING\n\nThe original dataset is composed by 2000 images, with 374 samples of Melanoma and 254 samples of Seborrheic Keratosis, the other 1372 are deﬁned as Nevus. The images have different sizes from 1022 x 767 to 6748 x 4499.\n\nThe ﬁrst step was split a validation set with around 20% of images from each class to evaluate the neural network performance during the training stage.\n\nAll train dataset pass through a pre-process ﬁlter which applied random shear, zoom, and vertical and horizontal shift and ﬂip. This step was necessary to increase the dataset size (around 5 times), make it less unbalanced and improve the neural network accuracy.\n\n# III. NETWORK TRAINING AND EVALUATION\n\nTo perform all the training and evaluation we used Nvidia Digits interface running with Caffe [4].\n\nLarissa Vasconcellos de Moraes\n\nUniversidade Federal\n\nde Mato Grosso\n\n## A. Seborrheic Keratosis Task\n\nOn Seborrheic classiﬁcation task we got the best result resizing all training images to 350 x 350 without losing proportions and training an AlexNet pre-trained on ImageNet classiﬁcation task dataset by the Berkeley Vision and Learning Center (ref). The network was trained over 30 epochs with a Stochastic Gradient Descent (SGD) using three stages, ﬁrst 10 epochs with learning rate of 0.001, than 10 epochs with 0.0001,\n\nand 10 more with 0.00001. The top accuracy on validation set\n\nwas 98.2%, with 97.73% on Seborrheic class and 98.28% on non-Seborrheic. On validation dataset from ISIC the network we got 89.3% accuracy and 0.950 of Area under Roc Curve\n\n(AUC), with sensibility of 0.786 and speciﬁcity of 0.935.\n\n## B. Melanoma Task\n\nOn Melanoma task we got our best result doing an average between three networks, GoogleNet 256, GoogleNet 224 and AlexNet 224, where all was pre-trained on ImageNet classiﬁ-cation dataset.\n\nGoogleNet 256 was retrained over 72 epochs with 256 x 256 resized images with random crop to 224 x 224, which is the network standard size, the learning was with SGD and three learning rate steps 0.001, 0.0001, 0.00001, the best result was got with the last epoch.\n\nGoogleNet 224 was retrained over 50 epochs with images resized to 224 x 224 without the random crop with SGD and learning steps of 0.005, 0.0025, 0.00125, 0.000625 and\n\n0.0003125. Best result was at epoch 15\n\nAlexNet 224 was retrained over 30 epochs with 224 x 224 images, SGD and three learning rate steps 0.001, 0.0001,\n\n## 0.00001 over 30 epochs, best result was at epoch 15.\n\nThe result was obtained by the arithmetic mean between the three networks softmax output, making it more balanced between classes. On validation dataset from ISIC the network we got 84.7% accuracy and 0.846 of AUC, with sensibility of\n\n0.633 and speciﬁcity of 0.900.\n\n# IV. CONCLUSION\n\nThe CNNs got great results on both tasks, but seem to lack on sensibility, probably because the unbalanced dataset with few positive images, making it harder to generalize the visual features of lesions.\n\n# REFERENCES\n\n[1] C. Szegedy, W. Liu, Y. Jia, P. Sermanet, S. E. Reed, D. Anguelov, D. Erhan, V. Vanhoucke, and A. Rabinovich, “Going deeper with convolutions,” CoRR, vol. abs/1409.4842, 2014. [Online]. Available:\n\nhttp://arxiv.org/abs/1409.4842\n\n[2] A. Krizhevsky, I. Sutskever, and G. E. Hinton, “Imagenet classiﬁcation with deep convolutional neural networks,” in Advances in neural information processing systems, 2012, pp. 1097–1105. [3] C.-K. Shie, C.-H. Chuang, C.-N. Chou, M.-H. Wu, and E. Y. Chang, “Transfer representation learning for medical image analysis,” in Engineering in Medicine and Biology Society (EMBC), 2015 37th Annual International Conference of the IEEE. IEEE, 2015, pp. 711–714. [4] Y. Jia, E. Shelhamer, J. Donahue, S. Karayev, J. Long, R. Girshick, S. Guadarrama, and T. Darrell, “Caffe: Convolutional architecture for fast feature embedding,” arXiv preprint arXiv:1408.5093, 2014.\n"
+ },
+ "predictions": [
+  {
+   "text": "Araguaia Medical Vision Lab at ISIC 2017 Skin",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lesion Classiﬁcation Challenge",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. MOTIVATION AND OVERVIEW",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. IMAGE PRE-PROCESSING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NETWORK TRAINING AND EVALUATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Seborrheic Keratosis Task",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Melanoma Task",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "0.00001 over 30 epochs, best result was at epoch 15.",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.1399031000037212,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.846 AUC on Seborrheic Keratosis and Melanoma respectively.",
+   "0.00001 over 30 epochs, best result was at epoch 15."
+  ],
+  "ignored_title_predictions": 2
+ }
+}

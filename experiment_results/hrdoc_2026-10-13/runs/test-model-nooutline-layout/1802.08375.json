@@ -1,0 +1,182 @@
+{
+ "doc": "1802.08375",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 21,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum",
+   "model sizes"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8421052631578947,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum",
+   "model sizes"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 503,
+  "layout_marked": 23,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13303,
+   "completion_tokens": 687,
+   "total_tokens": 13990
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9030716723549488,
+  "inserted_word_share": 0.09259259259259256
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Recurrent Neural Language Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Reusing Weights",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experimental Setup",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 CharCNN is biased towards surface form",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "6.2 Tying weights bottom-up",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "6.3 Difference between input and output",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "6.4 CharCNN generalizes better than",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "6.5 Performance on non-English Data",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "6.6 Replacing LSTM with AWD-LSTM",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Optimization",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Non-English corpora statistics and",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.86286950000067,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum",
+   "model sizes"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

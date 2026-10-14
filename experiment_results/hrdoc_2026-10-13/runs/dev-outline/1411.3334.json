@@ -1,0 +1,181 @@
+{
+ "doc": "1411.3334",
+ "system": "outline",
+ "metrics": {
+  "gt": 17,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 17,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   " Acknowledgments",
+   " References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Sparse Quantum Codes from Quantum Circuits",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Background and Related Work",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A Quantum Subsystem Codes",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "B Sparse Quantum Codes and Related Work",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III Constructing the Codes",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A The Base Code and Error-Detecting Circuits",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "B Localized codes",
+   "page": 5,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "IV Code Properties",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A The circuit-code isomorphism",
+   "page": 7,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "B Characterizing the logical and stabilizer groups",
+   "page": 8,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "1 Spackling",
+   "page": 8,
+   "level": 4,
+   "parent": 11
+  },
+  {
+   "text": "2 Proving the isomorphism",
+   "page": 9,
+   "level": 4,
+   "parent": 11
+  },
+  {
+   "text": "C Distance",
+   "page": 15,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "V Fault-tolerant gadgets",
+   "page": 17,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VI Sparse quantum codes with improved distance and rate",
+   "page": 21,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VII Making Sparse Codes Local",
+   "page": 22,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VIII Discussion",
+   "page": 24,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 25,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " References",
+   "page": 25,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.040940999999293126,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 21,
+  "tp": 17,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 9,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Sparse Quantum Codes from Quantum Circuits",
+   "Abstract",
+   " Acknowledgments",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

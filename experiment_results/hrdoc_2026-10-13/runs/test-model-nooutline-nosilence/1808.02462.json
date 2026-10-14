@@ -1,0 +1,278 @@
+{
+ "doc": "1808.02462",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 33,
+  "pred": 30,
+  "tp": 28,
+  "fp": 2,
+  "fn": 5,
+  "level_correct": 28,
+  "parent_correct": 27,
+  "teds": 0.7352941176470589,
+  "unmatched_gt": [
+   "B. Atmospheric Turbulence Effects Mitigation",
+   "3) Modal Diversity:",
+   "C. Machine Learning-Based OAM Recovery Approach",
+   "E. Underwater Turbulence Effects Mitigation",
+   "G. Optimized RF Transceiver/Receiver Design"
+  ],
+  "unmatched_pred": [
+   "28 GHz, was presented in [185]",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 453,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 23290,
+   "completion_tokens": 1087,
+   "total_tokens": 24377
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Communicating Using Spatial Mode Multiplexing:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Potentials, Challenges and Perspectives",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. OAM Mode Generation and Detection",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. OAM Deployment",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Related Reviews",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "II. OAM POTENTIALS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Free Space Optical Communication",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Optical Fiber Communication",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Underwater Communication",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "D. Wireless Indoor Connections",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "E. On-chip Photonic Circuits",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "F. Optical Switching and Routing",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "G. Radio Frequency Communication",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "28 GHz, was presented in [185]",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "H. Acoustic Communication",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "III. OAM CHALLENGES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Free Space Propagation Effects",
+   "page": 9,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "B. Fiber Propagation Effects",
+   "page": 10,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "C. Underwater Propagation Effects",
+   "page": 11,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "D. Inter-modal Crosstalk",
+   "page": 12,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "E. RF Challenges",
+   "page": 12,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "IV. OAM PERSPECTIVES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Towards a Complete Mode Set",
+   "page": 13,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "D. Beam Tracking",
+   "page": 16,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "F. OAM Maintaining Fibers",
+   "page": 16,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "V. OPEN PROBLEMS AND FUTURE RESEARCH DIRECTIONS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACRONYMS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 37.31401669999832,
+ "metrics_v1": {
+  "gt": 33,
+  "pred": 32,
+  "tp": 28,
+  "fp": 4,
+  "fn": 5,
+  "level_correct": 28,
+  "parent_correct": 27,
+  "teds": 0.6764705882352942,
+  "unmatched_gt": [
+   "B. Atmospheric Turbulence Effects Mitigation",
+   "3) Modal Diversity:",
+   "C. Machine Learning-Based OAM Recovery Approach",
+   "E. Underwater Turbulence Effects Mitigation",
+   "G. Optimized RF Transceiver/Receiver Design"
+  ],
+  "unmatched_pred": [
+   "Communicating Using Spatial Mode Multiplexing:",
+   "Potentials, Challenges and Perspectives",
+   "28 GHz, was presented in [185]",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 32,
+  "pred": 28,
+  "tp": 27,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 27,
+  "parent_correct": 26,
+  "teds": 0.7575757575757576,
+  "unmatched_gt": [
+   "B. Atmospheric Turbulence Effects Mitigation",
+   "3) Modal Diversity:",
+   "C. Machine Learning-Based OAM Recovery Approach",
+   "E. Underwater Turbulence Effects Mitigation",
+   "G. Optimized RF Transceiver/Receiver Design"
+  ],
+  "unmatched_pred": [
+   "28 GHz, was presented in [185]"
+  ],
+  "ignored_title_predictions": null
+ }
+}

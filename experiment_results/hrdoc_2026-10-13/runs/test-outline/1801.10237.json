@@ -1,0 +1,113 @@
+{
+ "doc": "1801.10237",
+ "system": "outline",
+ "metrics": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   " Acknowledgments",
+   " References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Magnetic phase diagram of the quantum spin chain compound SrCo2V2O8: a single-crystal neutron diffraction study",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I Introduction",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Experimental methods",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III Néel order and magnetic-field-induced order-disorder transition above 2.0 K",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "IV Magnetic-field-induced phase transitions below 2.0 K",
+   "page": 8,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "V Discussion",
+   "page": 11,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "VI Summary",
+   "page": 13,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 14,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " References",
+   "page": 14,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.06582140000318759,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Magnetic phase diagram of the quantum spin chain compound SrCo2V2O8: a single-cr",
+   " Acknowledgments",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

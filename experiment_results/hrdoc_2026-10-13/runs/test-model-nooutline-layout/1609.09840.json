@@ -1,0 +1,239 @@
+{
+ "doc": "1609.09840",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 28,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.896551724137931,
+  "unmatched_gt": [
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators"
+  ],
+  "unmatched_pred": [
+   "SUMMARY"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators"
+  ],
+  "unmatched_pred": [
+   "SUMMARY"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 932,
+  "layout_marked": 40,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14890,
+   "completion_tokens": 1312,
+   "total_tokens": 16202
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.971450946888794,
+  "inserted_word_share": 0.018627733026467252
+ },
+ "predictions": [
+  {
+   "text": "SUMMARY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RANDOM HASHING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. ∆-universality",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Strong universality",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Composition and concatenation of families",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. REGULARITY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Component-wise regularity",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. K-regularity",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. A TREE-BASED CONSTRUCTION FOR UNIVERSALITY AND REGULARITY",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. UNIVERSALITY AND REGULARITY WITH PM+",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. AN EFFICIENT IMPLEMENTATION OF PM+",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Scalar product computation",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6.2. Efﬁcient modulo reduction",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "7. ACHIEVING THE AVALANCHE EFFECT",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. EXPERIMENTS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1. Variable-length results on recent Intel processors",
+   "page": 14,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "8.2. Multiplatform performance testing",
+   "page": 14,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "9. CONCLUSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. ACKNOWLEDGEMENTS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. PLATFORMS USED",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. OPTIMIZATION TECHNIQUES FOR CALCULATING SCALAR PRODUCTS ON X86",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. CODE SAMPLE TO SUM 64-BIT PRODUCTS OF 32-BIT INTEGERS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS (ASSEMBLER)",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. CODE SAMPLE TO SUM 128-BIT PRODUCTS OF 64-BIT INTEGERS USING INTEL",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. NON-REGULARITY OF THE VHASH FAMILY",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.83479190000071,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.896551724137931,
+  "unmatched_gt": [
+   "B.1. Vectorizing the Computation of the Scalar Product",
+   "B.2. Faster sums using two sets of accumulators"
+  ],
+  "unmatched_pred": [
+   "SUMMARY"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

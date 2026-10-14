@@ -1,0 +1,166 @@
+{
+ "doc": "1807.02098",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Training Module Execution",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Training Module Execution"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 169,
+  "layout_marked": 17,
+  "content_preservation": 1.0,
+  "word_preservation": 0.987842370039128,
+  "inserted_word_share": 0.8836206186924812
+ },
+ "predictions": [
+  {
+   "text": "MAT-CNN-SOPC: Motionless Analysis of Trafﬁc",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SYSTEM AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Dataset",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Problem Deﬁnition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. PROPOSED METHODOLOGY: MAT-CNN-SOPC",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1: Training Module Execution",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Employed CNN Models",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Classiﬁcation Results",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.570148299993889,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1: Training Module Execution",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

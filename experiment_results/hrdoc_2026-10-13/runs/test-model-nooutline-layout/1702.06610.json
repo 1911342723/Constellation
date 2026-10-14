@@ -1,0 +1,143 @@
+{
+ "doc": "1702.06610",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "Can AR game data be used in digital disaster response?",
+   "Do AR games create new barriers in disaster manage- ment?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "Can AR game data be used in digital disaster response?",
+   "Do AR games create new barriers in disaster manage- ment?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 118,
+  "layout_marked": 16,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4006,
+   "completion_tokens": 459,
+   "total_tokens": 4465
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9757665677546983,
+  "inserted_word_share": 0.03990267639902678
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESEARCH METHOD AND SETTING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Case study setup",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Wellington: Disaster prone capital city",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Pok´emon Go: A location-based augmented reality game",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Investigated documents and material",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "MAPPING LOCATION-BASED AR GAMEPLAY MECHA-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Towards socio-technical emergency response augmentation?",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.180715800001053,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "Can AR game data be used in digital disaster response?",
+   "Do AR games create new barriers in disaster manage- ment?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

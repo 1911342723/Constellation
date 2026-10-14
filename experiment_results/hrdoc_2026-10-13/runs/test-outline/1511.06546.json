@@ -1,0 +1,178 @@
+{
+ "doc": "1511.06546",
+ "system": "outline",
+ "metrics": {
+  "gt": 25,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "Abstract",
+   "extraction",
+   "ing data",
+   "Acknowledgements",
+   "Funding",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Step 1: Reference strain selection and core genome extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Step 2: Strain abundance estimation",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Abundance estimation model in detail",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4 Generation of data for validation experiments",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Clustering and selection of strains",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Identification of Staphylococcus strains from sequencing data",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 Estimation in the presence contaminant species",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Estimation in the presence of unknown strain clusters",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.5 Estimation without clustering",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.6 Analysis of clinical samples",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.7 Runtime",
+   "page": 9,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Interpretation of proportions and benchmarking",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.2 Applicability to different bacterial species",
+   "page": 10,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.3 Relationship to transcript-level RNA-seq analysis",
+   "page": 11,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.045117199999367585,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "Abstract",
+   "extraction",
+   "ing data",
+   "Acknowledgements",
+   "Funding",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8695652173913043,
+  "unmatched_gt": [
+   "extraction",
+   "ing data",
+   "Funding"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

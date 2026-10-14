@@ -1,0 +1,109 @@
+{
+ "doc": "1705.10588",
+ "system": "det",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "2.3 To guide or not to guide?"
+  ],
+  "unmatched_pred": [
+   "32 c2 a2"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 333,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Overall trends in laser wakeﬁeld acceleration experiments",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Accelerator length and operating plasma density",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Laser spot size and matched guiding",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "32 c2 a2",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Future directions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.267380699999194,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "2.3 To guide or not to guide?"
+  ],
+  "unmatched_pred": [
+   "32 c2 a2"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "2.3 To guide or not to guide?"
+  ],
+  "unmatched_pred": [
+   "32 c2 a2"
+  ],
+  "ignored_title_predictions": null
+ }
+}

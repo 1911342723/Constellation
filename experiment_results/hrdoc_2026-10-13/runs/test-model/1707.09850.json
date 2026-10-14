@@ -1,0 +1,208 @@
+{
+ "doc": "1707.09850",
+ "system": "model",
+ "metrics": {
+  "gt": 17,
+  "pred": 15,
+  "tp": 7,
+  "fp": 8,
+  "fn": 10,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "1.1. The paradox of plentiful computing",
+   "1.2. Barriers to Entry",
+   "2.1. CODE-RADE Design Hypotheses",
+   "3.1. Actors",
+   "3.2. Platform",
+   "4.1. CODE-RADE is cross-platform",
+   "4.2. CODE-RADE is atomic",
+   "4.3. CODE-RADE is community-based",
+   "4.4. CODE-RADE is Automated",
+   "4.5. CODE-RADE for Physics"
+  ],
+  "unmatched_pred": [
+   "Sean Murray",
+   "Hypothesis 1: Every researcher is an application",
+   "Hypothesis 2: No software is an island",
+   "Hypothesis 3: All applications need an environment",
+   "Hypothesis 4: There is more than one environment",
+   "Hypothesis 5: Solutions Decay",
+   "Hypothesis 6: Humans need not apply4",
+   "Hypothesis 7: This is not hard"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 135,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3941,
+   "completion_tokens": 315,
+   "total_tokens": 4256
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Sean Murray",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. CODE-RADE Design and Philosophy",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 1: Every researcher is an application",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 2: No software is an island",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 3: All applications need an environment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 4: There is more than one environment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 5: Solutions Decay",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 6: Humans need not apply4",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 7: This is not hard",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. CODE-RADE in detail",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Summary, Conclusion and Futher work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.804345900000044,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 15,
+  "tp": 7,
+  "fp": 8,
+  "fn": 10,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "1.1. The paradox of plentiful computing",
+   "1.2. Barriers to Entry",
+   "2.1. CODE-RADE Design Hypotheses",
+   "3.1. Actors",
+   "3.2. Platform",
+   "4.1. CODE-RADE is cross-platform",
+   "4.2. CODE-RADE is atomic",
+   "4.3. CODE-RADE is community-based",
+   "4.4. CODE-RADE is Automated",
+   "4.5. CODE-RADE for Physics"
+  ],
+  "unmatched_pred": [
+   "Sean Murray",
+   "Hypothesis 1: Every researcher is an application",
+   "Hypothesis 2: No software is an island",
+   "Hypothesis 3: All applications need an environment",
+   "Hypothesis 4: There is more than one environment",
+   "Hypothesis 5: Solutions Decay",
+   "Hypothesis 6: Humans need not apply4",
+   "Hypothesis 7: This is not hard"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 5,
+  "fp": 8,
+  "fn": 10,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.0625,
+  "unmatched_gt": [
+   "1.1. The paradox of plentiful computing",
+   "1.2. Barriers to Entry",
+   "2.1. CODE-RADE Design Hypotheses",
+   "3.1. Actors",
+   "3.2. Platform",
+   "4.1. CODE-RADE is cross-platform",
+   "4.2. CODE-RADE is atomic",
+   "4.3. CODE-RADE is community-based",
+   "4.4. CODE-RADE is Automated",
+   "4.5. CODE-RADE for Physics"
+  ],
+  "unmatched_pred": [
+   "Sean Murray",
+   "Hypothesis 1: Every researcher is an application",
+   "Hypothesis 2: No software is an island",
+   "Hypothesis 3: All applications need an environment",
+   "Hypothesis 4: There is more than one environment",
+   "Hypothesis 5: Solutions Decay",
+   "Hypothesis 6: Humans need not apply4",
+   "Hypothesis 7: This is not hard"
+  ],
+  "ignored_title_predictions": null
+ }
+}

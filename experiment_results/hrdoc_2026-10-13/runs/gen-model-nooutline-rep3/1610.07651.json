@@ -1,0 +1,165 @@
+{
+ "doc": "1610.07651",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 21,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [
+   "5. CRSS SUBMISSIONS",
+   "6. PERFORMANCE OF CRSS SUB-SYSTEMS ON SRE 2016 DEV DATA",
+   "7. COMPUTATIONAL RESOURCES",
+   "7.1. CPU cluster",
+   "7.2. GPU machines",
+   "7.3. CPU execution time",
+   "8. ACKNOWLEDGEMENT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 224,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 5128,
+   "completion_tokens": 672,
+   "total_tokens": 5800
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. CRSS BASELINES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. CRSS1: UBM i-Vector",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. CRSS2: SWB DNN i-Vector",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. CRSS3: UBM i-Vector",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. CRSS4",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. CORE COMPONENTS IN SYSTEM DEVELOPMENT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Speaker clustering of unlabeled data",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2. Discriminant analysis via support vectors (SVDA)",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3. Unlabeled data PLDA",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.4. Calibration and fusion",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. CRSS SUB-SYSTEMS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.2983211999999185,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [
+   "5. CRSS SUBMISSIONS",
+   "6. PERFORMANCE OF CRSS SUB-SYSTEMS ON SRE 2016 DEV DATA",
+   "7. COMPUTATIONAL RESOURCES",
+   "7.1. CPU cluster",
+   "7.2. GPU machines",
+   "7.3. CPU execution time",
+   "8. ACKNOWLEDGEMENT"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6842105263157895,
+  "unmatched_gt": [
+   "5. CRSS SUBMISSIONS",
+   "6. PERFORMANCE OF CRSS SUB-SYSTEMS ON SRE 2016 DEV DATA",
+   "7. COMPUTATIONAL RESOURCES",
+   "7.1. CPU cluster",
+   "7.2. GPU machines",
+   "7.3. CPU execution time"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

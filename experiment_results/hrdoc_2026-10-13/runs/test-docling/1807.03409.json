@@ -1,0 +1,194 @@
+{
+ "doc": "1807.03409",
+ "system": "docling",
+ "metrics": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5217391304347826,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Marion Police Department have arrested TARGET , 20 , of Marion , in connection w"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 30.105197200002294
+ },
+ "predictions": [
+  {
+   "text": "Who is Killed by Police: Introducing Supervised Attention for Hierarchical LSTMs",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RelatedWork",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Hierarchical LSTMs",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Embedding",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Attention",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Supervised Attention",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Generating Intuitive Attention Weights",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Selecting Important Words",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Marion Police Department have arrested TARGET , 20 , of Marion , in connection with the fatal hit.",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Baselines",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Training",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets and Parameters",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Evaluating the Models",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 Comparing to the State of the Art",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4 Analysis",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "The Effect of Supervised Attention",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Semantical vs. Syntactical Guidance",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01518489999580197,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Who is Killed by Police: Introducing Supervised Attention for Hierarchical LSTMs",
+   "Marion Police Department have arrested TARGET , 20 , of Marion , in connection w"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.47619047619047616,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Marion Police Department have arrested TARGET , 20 , of Marion , in connection w"
+  ],
+  "ignored_title_predictions": null
+ }
+}

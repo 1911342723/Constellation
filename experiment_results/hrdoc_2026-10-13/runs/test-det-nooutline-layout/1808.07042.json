@@ -1,0 +1,221 @@
+{
+ "doc": "1808.07042",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 28,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 24,
+  "parent_correct": 27,
+  "teds": 0.9310344827586207,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 24,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 671,
+  "layout_marked": 29,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8778244172546218,
+  "inserted_word_share": 0.7613103766482916
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Task Deﬁnition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Dataset Collection",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Collection Interface",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Passage Selection",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Collecting Multiple Answers",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Dataset Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Comparison with SQuAD 2.0",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Linguistic Phenomena",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Analysis of Free-form Answers",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.4 Conversation Flow",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Models",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Conversational Models",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.2 Reading Comprehension Models",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.3 A Combined Model",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 Evaluation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Evaluation Metric",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.2 Experimental Setup",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.3 Results and Discussion",
+   "page": 9,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7 Related work",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusions",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 15,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "Worker Selection",
+   "page": 15,
+   "level": 3,
+   "parent": 24
+  },
+  {
+   "text": "Annotation Interface",
+   "page": 15,
+   "level": 3,
+   "parent": 24
+  },
+  {
+   "text": "Additional Examples",
+   "page": 15,
+   "level": 3,
+   "parent": 24
+  }
+ ],
+ "seconds": 7.096402300005138,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 28,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 24,
+  "parent_correct": 27,
+  "teds": 0.9310344827586207,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

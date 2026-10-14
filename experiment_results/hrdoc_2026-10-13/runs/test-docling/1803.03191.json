@@ -1,0 +1,229 @@
+{
+ "doc": "1803.03191",
+ "system": "docling",
+ "metrics": {
+  "gt": 28,
+  "pred": 29,
+  "tp": 28,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.43333333333333335,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Bayesian and Machine Learning approach to estimating Influence Model parameter"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 48.67539010000473
+ },
+ "predictions": [
+  {
+   "text": "A Bayesian and Machine Learning approach to estimating Influence Model parameters for IM-RO",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RelatedWork",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Influence Model for IM-RO",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Graph Influence Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Negative Influence Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Bayesian Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1.1 The Bayesian Hierarchical Model",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1.2 MCMCmethod",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Machine Learning Algorithms",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2.1 Naive Bayes",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2.2 Decision Trees",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2.3 RandomForests",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiments for the GIMand NIM",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1.1 Dataset Description",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1.2 Sensitivity analysis of the GIMand NIM",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Estimation of a",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2.1 Microblog Dataset for Bayesian Analysis",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2.2 Results for Bayesian Analysis",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Estimation of p0",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3.1 Dataset Description",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3.2 Performance Measure",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.4 Results for Machine Learning Algorithms",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.5 Cross Validation",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.02586460000020452,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 29,
+  "tp": 28,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.43333333333333335,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Bayesian and Machine Learning approach to estimating Influence Model parameter"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.3928571428571429,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Bayesian and Machine Learning approach to estimating Influence Model parameter"
+  ],
+  "ignored_title_predictions": null
+ }
+}

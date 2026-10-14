@@ -1,0 +1,151 @@
+{
+ "doc": "1604.02832",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "Abstract—",
+   "CO MM U NICAT ION",
+   "SEN S I NG"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 604,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 21251,
+   "completion_tokens": 550,
+   "total_tokens": 21801
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PRELIMINARIES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Algebraic Graph Theory",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Stochastic Matrix",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. SELF-TRIGGERED CONTROL WITH QUANTIZED",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Centralized Triggering",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Distributed Triggering",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV. SELF-TRIGGERED CONTROL WITH QUANTIZED",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Centralized Triggering",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Distributed Triggering",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. SIMULATIONS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.530351800000062,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "Abstract—",
+   "CO MM U NICAT ION",
+   "SEN S I NG"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 8,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "CO MM U NICAT ION",
+   "SEN S I NG"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

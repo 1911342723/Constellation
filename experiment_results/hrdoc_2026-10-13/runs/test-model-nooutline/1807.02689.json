@@ -1,0 +1,211 @@
+{
+ "doc": "1807.02689",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 28,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 13,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.4137931034482759,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "/* setting ssthresh using default TCP",
+   "in congestion avoidance phase"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 792,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 16341,
+   "completion_tokens": 594,
+   "total_tokens": 16935
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATIONS AND DESIGN DECISIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. C2TCP’S ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The Good and The Bad Conditions",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Main Logic",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "/* setting ssthresh using default TCP",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "in congestion avoidance phase",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Why It Works",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. EVALUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Comparison with End-to-End Schemes",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. Fairness",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "D. Loss Resiliency",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "E. Impact of Target and Interval",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. RELATED WORK",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.739895799997612,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 13,
+  "level_correct": 15,
+  "parent_correct": 14,
+  "teds": 0.4137931034482759,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "/* setting ssthresh using default TCP",
+   "in congestion avoidance phase"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 13,
+  "level_correct": 14,
+  "parent_correct": 13,
+  "teds": 0.3928571428571429,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "/* setting ssthresh using default TCP",
+   "in congestion avoidance phase"
+  ],
+  "ignored_title_predictions": null
+ }
+}

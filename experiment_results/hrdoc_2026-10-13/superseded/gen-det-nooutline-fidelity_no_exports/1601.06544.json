@@ -1,0 +1,133 @@
+{
+ "doc": "1601.06544",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 for all i, j = {1, . . . , M}",
+   "2 \u00121 − tanh 2x1 − x2 − 0.25",
+   "References"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 for all i, j = {1, . . . , M}",
+   "2 \u00121 − tanh 2x1 − x2 − 0.25"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1319,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9785006282283959,
+   "in_order": 0.9279631439341058,
+   "inserted": 0.011006067447438928
+  }
+ },
+ "predictions": [
+  {
+   "text": "Goal-oriented a posteriori error control",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "for nonstationary convection-dominated",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "transport problems",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem formulation and stabilized discretization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. A dual weighted residual approach for stabilized ﬁnite",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "element methods",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Practical Aspects",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 for all i, j = {1, . . . , M}",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Numerical studies",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 \u00121 − tanh 2x1 − x2 − 0.25",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Summary",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Appendix",
+   "page": 32,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.080025499999465
+}

@@ -1,0 +1,169 @@
+{
+ "doc": "1705.03162",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 62.912819000001036
+ },
+ "predictions": [
+  {
+   "text": "Accelerating solutions of one-dimensional unsteady PDEs with GPU-based swept time-space decomposition",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. GPU architecture and memory",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Methodology",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Experimental method",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2. First-order domain of dependence",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3. Higher-order domain of dependence",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5. Implementation",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Swept rule variants",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.2. Test cases",
+   "page": 12,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "6. Results and discussion",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Conclusions",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Availability of materials",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B. Heat equation",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C. Kuramoto-Sivashinsky equation",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix D. Euler equations (Sod shock tube)",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.011563600004592445,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

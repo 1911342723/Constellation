@@ -1,0 +1,131 @@
+{
+ "doc": "1705.01908",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 179,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9756375227686703,
+  "inserted_word_share": 0.9780682673163441
+ },
+ "predictions": [
+  {
+   "text": "Auto-painter: Cartoon Image Generation from",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Network Structure",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Loss Function",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Experimental Studies",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Evaluation Metrics",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Experimental Results",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.4 Color Controlled Sketch Synthesis",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.337666700004775,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "doc": "1710.05523",
+ "system": "model",
+ "metrics": {
+  "gt": 1,
+  "pred": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 170,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3451,
+   "completion_tokens": 63,
+   "total_tokens": 3514
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Acknowledgement",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.5498413999994227,
+ "metrics_v1": {
+  "gt": 1,
+  "pred": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 0,
+  "pred": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

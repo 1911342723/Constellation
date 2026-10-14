@@ -1,0 +1,181 @@
+{
+ "doc": "1510.05653",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 11,
+  "pred": 17,
+  "tp": 11,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 max",
+   "3 \u0000p cos(2δ) + sin2 δ\u0001. Employing the semidef-",
+   "CD) is both nec-",
+   "2 max",
+   "1 ≤ rank(X)∥X∥2",
+   "1 ≤ rank(Eu)∥Eu∥2"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 822,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 24245,
+   "completion_tokens": 534,
+   "total_tokens": 24779
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "2 max",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 \u0000p cos(2δ) + sin2 δ\u0001. Employing the semidef-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CD) is both nec-",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "SUPPLEMENTARY MATERIAL",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Quantum states and operations",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Semideﬁnite Programming",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Semideﬁnite programs for the diamond distance",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Dephasing and calibration errors for a single qubit",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Thermal relaxation of a single qubit",
+   "page": 9,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Incoherent leakage errors",
+   "page": 10,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Coherent leakage errors",
+   "page": 11,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Unitary errors",
+   "page": 12,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2 max",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "The unitarity and average error rate for two-qubit processes",
+   "page": 14,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "The unitarity as a witness for unfavorable scaling",
+   "page": 14,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "1 ≤ rank(X)∥X∥2",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 ≤ rank(Eu)∥Eu∥2",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 31.346209700001054,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 17,
+  "tp": 11,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 max",
+   "3 \u0000p cos(2δ) + sin2 δ\u0001. Employing the semidef-",
+   "CD) is both nec-",
+   "2 max",
+   "1 ≤ rank(X)∥X∥2",
+   "1 ≤ rank(Eu)∥Eu∥2"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 17,
+  "tp": 11,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 max",
+   "3 \u0000p cos(2δ) + sin2 δ\u0001. Employing the semidef-",
+   "CD) is both nec-",
+   "2 max",
+   "1 ≤ rank(X)∥X∥2",
+   "1 ≤ rank(Eu)∥Eu∥2"
+  ],
+  "ignored_title_predictions": null
+ }
+}

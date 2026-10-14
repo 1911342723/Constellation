@@ -1,0 +1,129 @@
+{
+ "doc": "1505.02091",
+ "system": "docling-numlevels",
+ "derived_from": "dev-docling",
+ "metrics": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Lemma 2.3. The following are Weihrauch equivalent:",
+   "Corollary 3.4. LAY × LAY ≡W LAY and LAY ⋆ LAY ≡W LAY.",
+   "Proposition 3.11. Kol ≡W CN × dMLR"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 8,
+  "tp": 5,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Lemma 2.3. The following are Weihrauch equivalent:",
+   "Corollary 3.4. LAY × LAY ≡W LAY and LAY ⋆ LAY ≡W LAY.",
+   "Proposition 3.11. Kol ≡W CN × dMLR"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 35.9149118000023
+ },
+ "predictions": [
+  {
+   "text": "WEIHRAUCH-COMPLETENESS FOR LAYERWISE COMPUTABILITY",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 2.3. The following are Weihrauch equivalent:",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The Weihrauch degree",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Corollary 3.4. LAY × LAY ≡W LAY and LAY ⋆ LAY ≡W LAY.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proposition 3.11. Kol ≡W CN × dMLR",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Examples of Weihrauch-complete layerwise computable operations",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Hitting time",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.010439800000312971,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Lemma 2.3. The following are Weihrauch equivalent:",
+   "Corollary 3.4. LAY × LAY ≡W LAY and LAY ⋆ LAY ≡W LAY.",
+   "Proposition 3.11. Kol ≡W CN × dMLR"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "doc": "1703.04824",
+ "system": "det",
+ "metrics": {
+  "gt": 28,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 22,
+  "parent_correct": 20,
+  "teds": 0.6896551724137931,
+  "unmatched_gt": [
+   "B. So – what should the ground truth be?",
+   "C. Notation reconstruction and final representation",
+   "1) Computing agreement:",
+   "2) Agreement results:",
+   "A. What can we do with MUSCIMA++?",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "4 hours."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 408,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION: WHAT DATASET?",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Contributions and outline",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. GROUND TRUTH OF MUSICAL SYMBOLS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Interfaces in the OMR pipeline",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. CHOICE OF DATA",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Notation complexity",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Image quality",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Topological consistency",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV. EXISTING DATASETS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Staff removal",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Symbol classiﬁcation and localization",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. THE MUSCIMA++ DATASET",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Designated test sets",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. MUSCIMA++ ground truth",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "C. Available tools",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "D. Annotation process",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4 hours.",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Inter-annotator agreement",
+   "page": 11,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "F. Known limitations",
+   "page": 12,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Future work",
+   "page": 13,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "C. Final remarks",
+   "page": 13,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.685480500000267,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 22,
+  "parent_correct": 20,
+  "teds": 0.6896551724137931,
+  "unmatched_gt": [
+   "B. So – what should the ground truth be?",
+   "C. Notation reconstruction and final representation",
+   "1) Computing agreement:",
+   "2) Agreement results:",
+   "A. What can we do with MUSCIMA++?",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "4 hours."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [
+   "B. So – what should the ground truth be?",
+   "C. Notation reconstruction and final representation",
+   "1) Computing agreement:",
+   "2) Agreement results:",
+   "A. What can we do with MUSCIMA++?"
+  ],
+  "unmatched_pred": [
+   "4 hours."
+  ],
+  "ignored_title_predictions": null
+ }
+}

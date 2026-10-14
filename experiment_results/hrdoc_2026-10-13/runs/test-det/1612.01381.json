@@ -1,0 +1,143 @@
+{
+ "doc": "1612.01381",
+ "system": "det",
+ "metrics": {
+  "gt": 5,
+  "pred": 12,
+  "tp": 5,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.46153846153846156,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "2 describes mass",
+   "4 describes mass",
+   "Acknowledgments",
+   "1 R. S. Beach, J. A. Borchers, A. Matheny, R. W",
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 309,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. EXPERIMENTAL DETAILS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 describes mass",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 describes mass",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. STATISTICAL ANALYSIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ENERGETICS OF SRTIO3(001) AND DYSCO3(110) SURFACES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 R. S. Beach, J. A. Borchers, A. Matheny, R. W",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 K. Morito and T",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "J. Ravichandran, R. Ramesh, J. E",
+   "page": 14,
+   "level": 2,
+   "parent": 10
+  }
+ ],
+ "seconds": 3.682239000001573,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 12,
+  "tp": 5,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.46153846153846156,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "2 describes mass",
+   "4 describes mass",
+   "Acknowledgments",
+   "1 R. S. Beach, J. A. Borchers, A. Matheny, R. W",
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 10,
+  "tp": 5,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 describes mass",
+   "4 describes mass",
+   "1 R. S. Beach, J. A. Borchers, A. Matheny, R. W",
+   "7 K. Morito and T",
+   "J. Ravichandran, R. Ramesh, J. E"
+  ],
+  "ignored_title_predictions": null
+ }
+}

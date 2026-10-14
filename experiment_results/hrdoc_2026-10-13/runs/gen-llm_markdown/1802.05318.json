@@ -1,0 +1,191 @@
+{
+ "doc": "1802.05318",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "NONLINEAR SHAPE REGRESSION FOR FILTERING SEGMENTATION RESULTS FROM CALCIUM IMAGING",
+    0,
+    1
+   ],
+   [
+    "ABSTRACT",
+    0,
+    2
+   ],
+   [
+    "1. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "2. SHAPE FILTER",
+    0,
+    2
+   ],
+   [
+    "2.1. Data preparation and shape representation",
+    0,
+    3
+   ],
+   [
+    "2.2. Weighted smoothed nonlinear regression",
+    0,
+    3
+   ],
+   [
+    "2.3. Local weight selections",
+    0,
+    3
+   ],
+   [
+    "3. EXPERIMENTAL RESULTS",
+    0,
+    2
+   ],
+   [
+    "4. CONCLUSION",
+    0,
+    2
+   ],
+   [
+    "5. REFERENCES",
+    0,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5950,
+   "completion_tokens": 5323
+  },
+  "elapsed_llm_seconds": 22.602100500000233,
+  "word_preservation": {
+   "recall": 0.9639765428651215,
+   "in_order": 0.9145490086567998,
+   "inserted": 0.005760368663594417
+  },
+  "output_markdown": "# NONLINEAR SHAPE REGRESSION FOR FILTERING SEGMENTATION RESULTS FROM CALCIUM IMAGING\n\nJie Wang†, Zhongxiao Fu‡, Nasrin Sadeghzadehyazdi†, Jonathan Kipnis‡and Scott T. Acton†\n\n†Department of Electrical & Computer Engineering and ‡Department of Neuroscience,\nUniversity of Virginia, Charlottesville, VA 22904, USA\n\n## ABSTRACT\n\nA shape ﬁlter is presented to repair segmentation results obtained in calcium imaging of neurons in vivo. This post-segmentation algorithm can automatically smooth the shapes obtained from a preliminary segmentation, while precluding the cases where two neurons are counted as one combined component. The shape ﬁlter is realized using a square-root velocity to project the shapes on a shape manifold in which distances between shapes are based on elastic changes. Two data-driven weighting methods are proposed to achieve a trade-off between shape smoothness and consistency with the data. Intuitive comparisons of proposed methods via projection onto Cartesian maps demonstrate the smoothing ability of the shape ﬁlter. Quantitative measures also prove the superiority of our methods over models that do not employ any weighting criterion.\n\n**Index Terms**— Calcium imaging, shape analysis, weighted regression, cell segmentation\n\n## 1. INTRODUCTION\n\nThe mammalian brain is a complex system, mainly due to the large number of neurons that form complicated interconnected networks. Human brains contain almost 100 billion neurons, and mouse brains have about 75 million neurons [1]. Each of the neurons can receive thousands of inputs and can innervate thousands of downstream neurons. Since brain functions require coordinated activation of large groups of neurons across different brain regions, recording and understanding neural activity at circuit level are fundamental for understanding brain cognitive functions.\n\nIn the 1950s, Hubel and Wiesel discovered links between visual stimuli and neurons in the visual cortex using implanted electrodes that monitor single cells. The current revolution in calcium imaging is accommodating such observation of neural function for a multitude of neurons without invasive electrodes. Calcium imaging with ﬂuorescent proteins provides a convenient optical way to record large neuron populations with precision down to the single action potential level [2].\n\nWith progress from two parallel areas, calcium sensitive ﬂuorescent protein engineering [2, 3] and calcium imaging techniques [4, 5, 6], in vivo calcium imaging has become a standard method to investigate neural circuit mechanisms underlying cognitive behaviors. However, new calcium imaging methods, in contrast to previous sparse neuron and short-term imaging recordings, generate a huge volume of data with hundreds and thousands of neurons resulting from several hours of recording. To analyze these large datasets, high throughput automated image analysis methods, such as advanced image segmentation techniques, are required to not only be able to identify single neurons, but also to detect single calcium events.\n\nOver the years, researchers have explored numerous image segmentation techniques for the analysis of biomedical images. Existing segmentation techniques [7] such as thresholding, edge detection, active contours [8, 9] and morphological methods [10, 11] are still limited to single-neuron analysis. Recently, efforts in the image analysis research community have attempted to avoid the identiﬁcation of multiple components as a single component by using graph cut method [12] and an iterative local level set evolution [13]. Both approaches allow identiﬁcation of individual cells; however, the seeded segmentation strategy in both methods is challenging in our datasets given noisy signals from non-activated neurons. Also, the in vivo videos increase the difﬁculty of locating seeds in individual cells. There are also some post-segmentation algorithms that attempt to isolate connected components, including the watershed transform [14] and concavity identiﬁcation [15]. The former algorithm fails in the inhomogeneity present in our datasets, while the latter method suffers from the rough boundaries extracted from preliminary segmentation.\n\nIn this paper, we explore a novel perspective, a post-segmentation shape ﬁlter, to transform the preliminary segmentation produced on a temporal sequence of shapes. It provides a smooth shape evolution path targeting on single neuron activity along time by ﬁltering out the unnecessary and incomplete segments and smoothing the boundaries of preliminary results. To realize this method, a modiﬁed smooth nonlinear regression (spline) of shapes on a Riemannian manifold is proposed based on the shape space introduced in [16]. Although several works [17, 18, 19, 20] proposed smooth splines for regression on a manifold by evaluating polynomial energy-minimization functions, they are not able to automatically detect and exclude the non-smooth shapes while preserving the structure of the target object. [21, 22] use deep learning on shape regression for face alignment. These methods are not able to split connected components and are not suitable for a limited dataset.\n\n## 2. SHAPE FILTER\n\nDue to the limitations of the segmentation methods, some of the results show separate cells as one single connected component. In this paper, we propose a novel method to automatically ﬁlter out such outliers and then provide a smooth segmentation of the cell of interest from the rest of the connected component. We design a shape ﬁlter that generates a smooth path on a manifold to represent shape evolution through time. Fig. 1 shows the ﬂow chart of the shape ﬁlter framework. In the following sections, we present a detailed description of a locally weighted shape smooth regression method that provides a smooth segmentation based on the shape evolution path ﬁtted to the data.\n\n### 2.1. Data preparation and shape representation\n\nAs shown in Fig. 1, the input of the shape ﬁlter is the preliminary result after any segmentation. Each time, only one neuron is chosen to be analyzed. Then, the shape information is extracted and represented by equidistant points located on the boundary of the segmented body in the Cartesian coordinates (see Fig. 1C). We use the square-root velocity (SRV) representation of the shapes [23, 16] in order to compare the shapes extracted from the time-indexed segmented data. Under the SRV representation, each shape is deﬁned on a Riemannian manifold M with locally assembled SRV Euclidean coordinates q, deﬁned as follows:\n\nq(s) = ˙β(s) / √|| ˙β(s)||   (1)\n\nwhere β(s) represents the shape, which is a closed curve parameterized by equal distant arclength s ∈[0, 2π]. ˙β(s) shows the gradient of this curve and ||·|| denotes the Euclidean norm. Suppose α : R →M is the geodesic path between two arbitrary shapes on the deﬁned manifold. Then, the difference of two shapes can be evaluated using the geodesic distance between the two SRV-transformed shapes:\n\ndg = ∫₀¹ √⟨˙α(t), ˙α(t)⟩ dt   (2)\n\nwhere α(0) and α(1) represent the initial and ﬁnal positions of the path respectively. ˙α(t) shows the gradient of this geodesic path. When dt is inﬁnitesimally small, the geodesic distance is approximately the integral length of the gradient magnitudes.\n\n### 2.2. Weighted smoothed nonlinear regression\n\nAfter transforming the shape data into the SRV representation, an optimization problem is solved to ﬁlter out the extra components (outliers) in the preliminary result by interpolating the likely smooth shapes along the time-indexed calcium ﬁring path. At the same time, the ﬁltered path can also smooth the boundary of segmentation results by imposing several constraints.\n\nWe use φ : R →M to denote the original evolution path and γ : R →M to represent the ﬁltered new path on the manifold. Both of these two paths are approximately differentiable and have the geodesic distance deﬁned as aforementioned. Then, γ is estimated by optimizing the following regression problem, which is modiﬁed from De Boor’s approach [24] by proposing automatic outlier detectors (w) on the space of a shape manifold:\n\nmin_γ ρ ∑_{t=start}^{end} w(t)|φ(t) −γ(t)|²  (data term) + (1 −ρ) ∫ |D²γ(t)|  (smoothness term)   (3)\n\nThis modiﬁed shape regression model aims to ﬁnd a desired minimizer γ that balances the trade-off between approaching the original data and smoothing the ﬁltered path (using MATLAB function csaps). In equation (3), t is time index for each shape, which is also used in the following sections in this paper. D²γ(t) is the second derivative of path γ, which characterizes the changes of shapes along the ﬁtted path. ρ ∈[0, 1] is the smoothing parameter that reﬂects the emphasis on data or smoothness. Note that, when ρ is close to 1, γ becomes the spline of the input data φ; and when ρ becomes small, γ will be smoother with fewer shape changes along time in terms of SRV transformed shape representation. w(t) is the set of local weights used to estimate the outliers automatically, which will be explained in details in section 2.3.\n\n### 2.3. Local weight selections\n\nTo detect clutter found in the segmentation of the calcium images, we propose a locally weighted shape regression strategy. Four weight selection methods are discussed in this section, where the third and the fourth are the proposed local weights for the shape ﬁlter.\n\n(1) Unity weighting: w1 = 1 is a column vector with all the values equal to 1, which tends to no preference in the weighting of segments.\n\n(2) Piecewise constant weighting: The second weighting scheme is given by w2(t), which is a step function (Fig. 2(i)).\n\nw2(t) = { C, if not outliers; 0, otherwise }   (4)\n\nAny constant C can be chosen based on the desire. For those outliers, which need additional steps (out of the main regression problem) to identify, original data will be ignored with data term equals to zero.\n\n(3) Bi3 local shape weighting: Inspired by tricube kernel model and robust local regression model in [25], Bi3 local shape weight is deﬁned as:\n\nw3(t) = A ∗(1 −( r(t) / (median(r(t)) + τ) )³)³   (5)\n\nwhere\n\nr(t) = dg(δ(t), φ(t))   (6)\n\nσr = (1/N) ∑_{t=1}^{N} (|r(t) −median(r(t))|)   (7)\n\nτ = σr + (σr −min(r(t)))   (8)\n\nwhere r(t) is the residual geodesic distance from the true data to a ﬁtted smooth spline δ : R →M with a small weight for the data term in equation (3). σr speciﬁes the mean deviation of residuals from δ. median(r(t)) is treated as mean shape in the sequence instead of the traditional mean because the outliers will affect this value. τ is the tolerance for residual deviations. τ will automatically assign a negative feedback to data term when the data is far larger than tolerance from the smoothed spline δ. The formula to calculate this value is inspired by the skew measure in statistical analysis. A is a constant that can amplify the proportion of the data term. The cubic weight is capable of yielding wider range for data when the base of inner cube is closer to zero [25], which increases the acceptance of shapes that is similar to the mean shape.\n\n(4) Modiﬁed shape Gaussian (sGaussian) weighting: The Gaussian model is also a popular weighting selection in local regression problems, such as in [26]. To adapt the framework of Gaussian weighting to shapes, the weighting may be computed using:\n\nw4(t) = (1 / √(2πσ²)) exp(−d²g(φ(t), qmedian) / (2σ²))   (9)\n\nwhere\n\nσ² = (1/N) ∑_{t=1}^{N} (dg(φ(t), qmedian))²   (10)\n\nHere, qmedian represents the Euclidean median shape along the input path α with N shapes in the SRV representation. Moreover, Euclidean distance in the normal Gaussian cases is replaced by the geodesic distance. The weighting response according to a sample input datum is shown in Fig. 2(iii).\n\n(i) Piecewise Constant\n(ii) Bi3 local\n(iii) sGaussian\n\nFig. 2: Three weighting responses of a sample input. All of them can modify weights based on the local shape information. However, (i) needs additional analysis to detect the outliers; (ii) and (iii) are instantaneous and automatic data-driven weightings.\n\n## 3. EXPERIMENTAL RESULTS\n\nThe analysis and comparison of the methods examined here are performed on 10 videos with 0.065 s time sampling. Each frame in the videos has 512 × 512 resolution with 0.9 µm × 0.9 µm pixels. Activated neurons observed by calcium imaging have diameters that vary from 10 µm to 20 µm. For experimental data, we focused on 20 regions of interest with 10 to 40 frames per sample, where neighboring neurons are activated at the same time. In these cases, separating different neurons to individual components is a challenging task. We used basic thresholding and morphological methods to produce the preliminary segmentation results. Then, we compared the experimental results on these datasets using unity weighting, Bi3 local shape weighting and modiﬁed shape Gaussian weighting quantitatively and qualitatively.\n\nWe evaluate the performance of these three weights using the Dice coefﬁcient and normalized mean squared error. Table. 1 shows the mean scores of 20 experiments. The Dice coefﬁcient (Dice ∈[0, 1]) compares the similarity between two sets: the ground truth segments Sg and the ﬁltered segments Sf. They are both 3D volumes with packed 2D time-indexed results. Dice is calculated by 2|Sg∩Sf| / (|Sg|+|Sf|), where | · | denotes the cardinality of the corresponding set. The mean squared error (MSE = (1/Z) ∥Sg −Sf∥²₂) measures the average squared errors between ground truth and test data. The MSE is normalized by the total number of pixels (Z) of all the frames. By comparing Dice and MSE factors, we demonstrate the superiority of Bi3 local and sGaussian over the unity weighting model.\n\nTable 1: Comparison of different weights.\n\n| | Bi3 local | sGaussian | Unity |\n|---|---|---|---|\n| Dice | 0.918 | 0.915 | 0.802 |\n| MSE | 0.016 | 0.010 | 0.226 |\n\nMore intuitively, Fig. 3 visualizes the comparison of the paths before shape ﬁlter and after shape ﬁlters in Cartesian coordinates. These results show that the application of shape ﬁlter is twofold: 1) smoothing the non-smooth boundaries of preliminary results; 2) ﬁltering out the extra neuron from the single neuron segmentation path by substituting a new ”reasonable” shape. This ﬁgure also compares the ﬁltered shapes with different weights graphically. Fig. 3 shows the comparison between data and smoothness oriented results based on the choice of ρ in equation (3). To precisely verify the inﬂuence of ρ on ﬁltered path, we utilized the isomap dimensionality reduction method [27] to project the high dimensional path on the Riemannian manifold to trajectories on a 2D Cartesian map as shown in Fig. 4. When ρ is near 0, the projected trajectories become smoother and denser. In this case, using shape ﬁlter can result into a smooth shape regression on the manifold.\n\nOverall, the proposed algorithm is computationally efﬁcient. The major time consumption is the local weighting calculation with roughly O(2nt) computation complexity (n: number of sampling points; t: number of time-indexed data). The performance of shape ﬁlter will degrade if the quantity of input shapes is not sufﬁcient to generate the path on the manifold that predicts the evolution of activated neurons.\n\nData oriented\nSmoothness oriented\n\nFig. 3: Comparison of data and smoothness oriented results. In each section: 1st row: input path; 2nd row: ﬁltered path using unity weight; 3rd row: ﬁltered path using Bi3 local; 4th row: ﬁltered path using sGaussian. The ﬁrst column shows data oriented results with larger ρ values and the second column shows smoothness oriented results with smaller ρ.\n\nFig. 4: Two-dimensional visualization of the path in shape space using isomap [27] dimensionality reduction to project the path of shapes after shape ﬁlter on the Riemannian manifold. From left to right columns: the values for ρ are 0.01, 0.2, 0.4, 0.6, 0.8 ,1. Top row: isomaps for using Bi3 local; bottom row: isomaps for using sGaussian. The markers on the spline shows the indices of time. Note that the scales for of each diagram from left to right is getting larger.\n\n## 4. CONCLUSION\n\nThe proposed SRV-based manifold shape ﬁlter provides a powerful theoretical basis for repairing time sequences of shapes obtained in calcium imaging of neurons. The method is agnostic to the initial segmentation even for the images depicting overlapping neurons. The experimental results demonstrate that the proposed weighting methods outperform the method with equal weights. Our shape ﬁlter is effective in detecting improper segmentation and addressing the splitting problem.\n\n## 5. REFERENCES\n\n[1] F. AC. Azevedo, L. RB. Carvalho, L. T. Grinberg, et al., “Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain,” Journal of Comparative Neurology, vol. 513, no. 5, pp. 532–541, 2009.\n\n[2] T. Chen, T. J. Wardill, Y. Sun, et al., “Ultrasensitive ﬂuorescent proteins for imaging neuronal activity,” Nature, vol. 499, no. 7458, pp. 295, 2013.\n\n[3] H. Dana, B. Mohar, Y. Sun, et al., “Sensitive red protein calcium indicators for imaging neural activity,” Elife, vol. 5, 2016.\n\n[4] K. K. Ghosh, L. D. Burns, E. D. Cocker, et al., “Miniaturized integration of a ﬂuorescence microscope,” Nature methods, vol. 8, no. 10, pp. 871, 2011.\n\n[5] M. B. Ahrens, M. B. Orger, D. N. Robson, J. M. Li, and P. J. Keller, “Whole-brain functional imaging at cellular resolution using light-sheet microscopy,” Nature methods, vol. 10, no. 5, pp. 413, 2013.\n\n[6] W. Zong, R. Wu, M. Li, et al., “Fast high-resolution miniature two-photon microscopy for brain imaging in freely behaving mice,” Nature methods, vol. 14, no. 7, pp. 713, 2017.\n\n[7] S. T. Acton and N. Ray, “Biomedical image analysis: Segmentation,” Synthesis Lectures on Image, Video, and Multimedia Processing, vol. 4, no. 1, pp. 1–108, 2009.\n\n[8] A-R. Mansouri, D. P. Mukherjee, and S. T. Acton, “Constraining active contour evolution via lie groups of transformation,” IEEE Transactions on Image Processing, vol. 13, no. 6, pp. 853–863, 2004.\n\n[9] S. Mukherjee and S. T. Acton, “Region based segmentation in presence of intensity inhomogeneity using legendre polynomials,” IEEE Signal Processing Letters, vol. 22, no. 3, pp. 298–302, 2015.\n\n[10] S. T. Acton and D. P. Mukherjee, “Area operators for edge detection,” Pattern Recognition Letters, vol. 21, no. 8, pp. 771–777, 2000.\n\n[11] J. H. Bosworth and S. T. Acton, “Morphological scale-space in image processing,” Digital Signal Processing, vol. 13, no. 2, pp. 338–367, 2003.\n\n[12] A. Browet, C. De Vleeschouwer, L. Jacques, N. Mathiah, B. Saykali, and I. Migeotte, “Cell segmentation with random ferns and graph-cuts,” in IEEE Conf. ICIP, 2016, pp. 4145–4149.\n\n[13] J. Wang, R. Sarkar, A. Aziz, A. Vaccari, A. Gahlmann, and S. T. Acton, “Bact-3d: A level set segmentation approach for dense multi-layered 3d bacterial bioﬁlms,” in IEEE Conf. ICIP, 2017.\n\n[14] H. Yang and N. Ahuja, “Automatic segmentation of granular objects in images: Combining local density clustering and gradient-barrier watershed,” Pattern recognition, vol. 47, no. 6, pp. 2266–2279, 2014.\n\n[15] H. Kong, M. Gurcan, and K. Belkacem-Boussaid, “Partitioning histopathological images: an integrated framework for supervised color-texture segmentation and cell splitting,” IEEE transactions on medical imaging, vol. 30, no. 9, pp. 1661–1677, 2011.\n\n[16] A. Srivastava, E. Klassen, S. H. Joshi, and I. H. Jermyn, “Shape analysis of elastic curves in euclidean spaces,” IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 33, no. 7, pp. 1415–1428, 2011.\n\n[17] M. Baust, L. Demaret, M. Storath, N. Navab, and A. Weinmann, “Total variation regularization of shape signals.,” in IEEE Conf. CVPR, 2015, pp. 2075–2083.\n\n[18] J. Su, I. L. Dryden, E. Klassen, H. Le, and A. Srivastava, “Fitting smoothing splines to time-indexed, noisy points on nonlinear manifolds,” Image and Vision Computing, vol. 30, no. 6-7, pp. 428–442, 2012.\n\n[19] J. Hinkle, P. T. Fletcher, and S. Joshi, “Intrinsic polynomials for regression on riemannian manifolds,” Journal of Mathematical Imaging and Vision, vol. 50, no. 1-2, pp. 32–52, 2014.\n\n[20] L. K¨uhnel and S. Sommer, “Stochastic development regression on non-linear manifolds,” in IEEE Conf. IPML, 2017, pp. 53–64.\n\n[21] H. Liu, J. Lu, J. Feng, and J. Zhou, “Learning deep sharable and structural detectors for face alignment,” IEEE Transactions on Image Processing, vol. 26, no. 4, pp. 1666–1678, 2017.\n\n[22] X. Cao, Y. Wei, F. Wen, and J. Sun, “Face alignment by explicit shape regression,” in 2012 IEEE Conference on Computer Vision and Pattern Recognition, 2012, pp. 2887–2894.\n\n[23] S. H. Joshi, E. Klassen, A. Srivastava, and I. H. Jermyn, “A novel representation for riemannian analysis of elastic curves in rn,” in IEEE Conf. CVPR, 2007, pp. 1–7.\n\n[24] C. De Boor, “A practical guide to splines, revised edition, vol. 27 of applied mathematical sciences,” Mechanical Sciences, year, 2001.\n\n[25] N. S. Altman, “An introduction to kernel and nearest-neighbor nonparametric regression,” The American Statistician, vol. 46, no. 3, pp. 175–185, 1992.\n\n[26] C. Loader, Local regression and likelihood, Springer Science & Business Media, 2006.\n\n[27] J. B. Tenenbaum, V. De Silva, and J. C. Langford, “A global geometric framework for nonlinear dimensionality reduction,” Science, vol. 290, no. 5500, pp. 2319–2323, 2000.\n\n[28] J. Wang, Z. Fu, N. Sadeghzadehyazdi, J. Kipnis and S. T. Scott, “Nonlinear shape regression for ﬁltering segmentation results from calcium imaging,” preprint, arXiv:1802.05318 [eess.IV].",
+  "verbatim_heading_share": 1.1111111111111112
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. SHAPE FILTER",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Data preparation and shape representation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Weighted smoothed nonlinear regression",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. Local weight selections",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. EXPERIMENTAL RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 22.661679999997432,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 5,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 0,
+  "parent_correct": 2,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "2.3. Local weight selections",
+   "3. EXPERIMENTAL RESULTS",
+   "4. CONCLUSION",
+   "5. REFERENCES"
+  ],
+  "unmatched_pred": [
+   "NONLINEAR SHAPE REGRESSION FOR FILTERING SEGMENTATION RESULTS FROM CALCIUM IMAGI",
+   "2.3. Local weight selections",
+   "3. EXPERIMENTAL RESULTS",
+   "4. CONCLUSION",
+   "5. REFERENCES"
+  ]
+ }
+}

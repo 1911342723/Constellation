@@ -1,0 +1,251 @@
+{
+ "doc": "1702.05447",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 16,
+  "pred": 25,
+  "tp": 16,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6538461538461539,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Radu Curticapeana, Holger Dellb, and Marc Rothb,c",
+   "January 18, 2018∗",
+   "1. Add a fresh vertex wi to Ωbip.",
+   "1. Create independent sets a1, . .",
+   "2 ⌋ then 2(r − k) < 2r − (m + 1).",
+   "2 ⌋ and pairwise distinct and large enough r0, . . . , r⌊ m+1",
+   "1. Insert a vertex 0 that is adjacent to all vertices of L(G).",
+   "2. Add r special vertices 1, . .",
+   "References"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 977,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 9,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 9,
+   "prompt_tokens": 34994,
+   "completion_tokens": 855,
+   "total_tokens": 35849
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Counting edge-injective homomorphisms and",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "matchings on restricted graph classes",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Radu Curticapeana, Holger Dellb, and Marc Rothb,c",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "January 18, 2018∗",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Counting matchings in restricted graph classes",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "1.1.1 Restricted bipartite graphs of high girth",
+   "page": 1,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "1.1.2 Line graphs",
+   "page": 2,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "1.1.3 Perfect matchings in line graphs",
+   "page": 3,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "1.2 Counting edge-injective homomorphisms",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Matchings in restricted bipartite graphs",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Colorful Holant problems",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.2 k-Matchings in bipartite graphs",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "1. Add a fresh vertex wi to Ωbip.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Create independent sets a1, . .",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Matchings in line graphs",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 ⌋ then 2(r − k) < 2r − (m + 1).",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 ⌋ and pairwise distinct and large enough r0, . . . , r⌊ m+1",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Insert a vertex 0 that is adjacent to all vertices of L(G).",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Add r special vertices 1, . .",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Perfect matchings in line graphs of bipartite graphs",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Edge-injective homomorphisms",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Polynomial-time algorithm for bounded weak vertex-cover number",
+   "page": 17,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "6.2 Hardness for hereditary graph classes",
+   "page": 22,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "6.3 Hardness for cycles and paths",
+   "page": 27,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "References",
+   "page": 31,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.036055000000488,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 27,
+  "tp": 16,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6071428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Counting edge-injective homomorphisms and",
+   "matchings on restricted graph classes",
+   "Radu Curticapeana, Holger Dellb, and Marc Rothb,c",
+   "January 18, 2018∗",
+   "1. Add a fresh vertex wi to Ωbip.",
+   "1. Create independent sets a1, . .",
+   "2 ⌋ then 2(r − k) < 2r − (m + 1).",
+   "2 ⌋ and pairwise distinct and large enough r0, . . . , r⌊ m+1",
+   "1. Insert a vertex 0 that is adjacent to all vertices of L(G).",
+   "2. Add r special vertices 1, . .",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 24,
+  "tp": 16,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.6799999999999999,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Radu Curticapeana, Holger Dellb, and Marc Rothb,c",
+   "January 18, 2018∗",
+   "1. Add a fresh vertex wi to Ωbip.",
+   "1. Create independent sets a1, . .",
+   "2 ⌋ then 2(r − k) < 2r − (m + 1).",
+   "2 ⌋ and pairwise distinct and large enough r0, . . . , r⌊ m+1",
+   "1. Insert a vertex 0 that is adjacent to all vertices of L(G).",
+   "2. Add r special vertices 1, . ."
+  ],
+  "ignored_title_predictions": null
+ }
+}

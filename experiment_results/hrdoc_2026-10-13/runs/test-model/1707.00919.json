@@ -1,0 +1,158 @@
+{
+ "doc": "1707.00919",
+ "system": "model",
+ "metrics": {
+  "gt": 12,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "PROGRAM SUMMARY",
+   "Appendix A. Measures of Convergence"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 350,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10027,
+   "completion_tokens": 584,
+   "total_tokens": 10611
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROGRAM SUMMARY",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Parallel Multicanonical Algorithm",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Multicanonical sampling",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2. Parallel multicanonical sampling",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3. Implementation on GPU",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. Performance",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Hardware performance",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2. Software performance",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3. Veriﬁcation of physical results",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Measures of Convergence",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.097769600000902,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "PROGRAM SUMMARY",
+   "Appendix A. Measures of Convergence"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "PROGRAM SUMMARY"
+  ],
+  "ignored_title_predictions": null
+ }
+}

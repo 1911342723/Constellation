@@ -1,0 +1,164 @@
+{
+ "doc": "1606.03052",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 375,
+  "layout_marked": 20,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10046,
+   "completion_tokens": 629,
+   "total_tokens": 10675
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9408939423642423,
+  "inserted_word_share": 0.8946473060924347
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Teaching Venues",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Undergraduate Optics Course",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Undergraduate Advanced Laboratory Course for Physics",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Graduate Laboratory Modules",
+   "page": 1,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "Scope of the Project",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "EXPERIMENTAL EQUIPMENT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Components",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Condenser",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Imaging Path",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "EXPERIMENTAL RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Measuring Magniﬁcation",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Measuring Resolution",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "ADVANCED TOPICS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Epi-Fluorescence Path",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "Super-Resolution",
+   "page": 8,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "SUMMARY",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.54421800000273,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

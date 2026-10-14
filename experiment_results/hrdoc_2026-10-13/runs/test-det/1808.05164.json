@@ -1,0 +1,223 @@
+{
+ "doc": "1808.05164",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 20,
+  "tp": 11,
+  "fp": 9,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Generate the Most Likely Localized Trajectory for a Drifter",
+   "V I . C O NC LU SI O N A ND F UTU R E WORK"
+  ],
+  "unmatched_pred": [
+   "2 G. M. Reis and L",
+   "3 R. N",
+   "9 S ← STRONGLYCONNECTEDCOMPONENT(G)",
+   "10 C ← TRANSITIVECLOSURE(G)",
+   "11 B ← FINDPERSISTENTGROUPS(S, C)",
+   "14 T ← FINDTRANSIENTGROUPS(B, M, C)",
+   "15 P ← TRANSITIONMATRIX(S, C, r)",
+   "19 return B, T , ˜x",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 153,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "An Underactuated Vehicle Localization Method in",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Marine Environments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 G. M. Reis and L",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 R. N",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. MODEL AND PROBLEM DEFINITION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Model Deﬁnition",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Problem Formulation",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Acquisition",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Create the Water Flow Pattern",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Long-Term Water Flow Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 S ← STRONGLYCONNECTEDCOMPONENT(G)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 C ← TRANSITIVECLOSURE(G)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 B ← FINDPERSISTENTGROUPS(S, C)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "14 T ← FINDTRANSIENTGROUPS(B, M, C)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "15 P ← TRANSITIONMATRIX(S, C, r)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "19 return B, T , ˜x",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. SIMULATION RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.030548299997463,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 22,
+  "tp": 11,
+  "fp": 11,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.3913043478260869,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Generate the Most Likely Localized Trajectory for a Drifter",
+   "V I . C O NC LU SI O N A ND F UTU R E WORK"
+  ],
+  "unmatched_pred": [
+   "An Underactuated Vehicle Localization Method in",
+   "Marine Environments",
+   "2 G. M. Reis and L",
+   "3 R. N",
+   "9 S ← STRONGLYCONNECTEDCOMPONENT(G)",
+   "10 C ← TRANSITIVECLOSURE(G)",
+   "11 B ← FINDPERSISTENTGROUPS(S, C)",
+   "14 T ← FINDTRANSIENTGROUPS(B, M, C)",
+   "15 P ← TRANSITIONMATRIX(S, C, r)",
+   "19 return B, T , ˜x",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 18,
+  "tp": 10,
+  "fp": 8,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.42105263157894735,
+  "unmatched_gt": [
+   "D. Generate the Most Likely Localized Trajectory for a Drifter",
+   "V I . C O NC LU SI O N A ND F UTU R E WORK"
+  ],
+  "unmatched_pred": [
+   "2 G. M. Reis and L",
+   "3 R. N",
+   "9 S ← STRONGLYCONNECTEDCOMPONENT(G)",
+   "10 C ← TRANSITIVECLOSURE(G)",
+   "11 B ← FINDPERSISTENTGROUPS(S, C)",
+   "14 T ← FINDTRANSIENTGROUPS(B, M, C)",
+   "15 P ← TRANSITIONMATRIX(S, C, r)",
+   "19 return B, T , ˜x"
+  ],
+  "ignored_title_predictions": null
+ }
+}

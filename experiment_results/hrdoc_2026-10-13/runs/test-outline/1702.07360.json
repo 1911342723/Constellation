@@ -1,0 +1,246 @@
+{
+ "doc": "1702.07360",
+ "system": "outline",
+ "metrics": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 10,
+  "fp": 11,
+  "fn": 12,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.4782608695652174,
+  "unmatched_gt": [
+   "B. Model",
+   "A. Motivation",
+   "B. The Hashing Layer",
+   "1) Supervised Case:",
+   "2) Semi-Supervised Learning:",
+   "3) Unsupervised Case:",
+   "C. Training",
+   "2) Regularization Techniques:",
+   "D. Toy Dataset",
+   "1) Two-moon Dataset:",
+   "2) Two-circle Dataset:",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [
+   "II-B Model",
+   "III-A Motivation",
+   "III-B The Hashing Layer",
+   "III-B1 Supervised Case",
+   "III-B2 Semi-Supervised Learning",
+   "III-B3 Unsupervised Case",
+   "III-C Training",
+   "III-C2 Regularization Techniques",
+   "III-D Toy Dataset",
+   "III-D1 Two-moon Dataset",
+   "III-D2 Two-circle Dataset"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction and Decision Tree Review",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I-A Motivations",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-B Univariate and Oblique Decision Trees",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Neural Decision Trees",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Locality Sensitive Hashing",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "II-B Model",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "II-C Local and Global Loss",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III Hashing Neural Network",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Motivation",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III-B The Hashing Layer",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III-B1 Supervised Case",
+   "page": 3,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-B2 Semi-Supervised Learning",
+   "page": 4,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-B3 Unsupervised Case",
+   "page": 4,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-C Training",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III-C1 Iterative Optimization Schemes",
+   "page": 5,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "III-C2 Regularization Techniques",
+   "page": 5,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "III-D Toy Dataset",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III-D1 Two-moon Dataset",
+   "page": 6,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "III-D2 Two-circle Dataset",
+   "page": 6,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "IV Future Work",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.08171740000034333,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 10,
+  "fp": 11,
+  "fn": 12,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.4782608695652174,
+  "unmatched_gt": [
+   "B. Model",
+   "A. Motivation",
+   "B. The Hashing Layer",
+   "1) Supervised Case:",
+   "2) Semi-Supervised Learning:",
+   "3) Unsupervised Case:",
+   "C. Training",
+   "2) Regularization Techniques:",
+   "D. Toy Dataset",
+   "1) Two-moon Dataset:",
+   "2) Two-circle Dataset:",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [
+   "II-B Model",
+   "III-A Motivation",
+   "III-B The Hashing Layer",
+   "III-B1 Supervised Case",
+   "III-B2 Semi-Supervised Learning",
+   "III-B3 Unsupervised Case",
+   "III-C Training",
+   "III-C2 Regularization Techniques",
+   "III-D Toy Dataset",
+   "III-D1 Two-moon Dataset",
+   "III-D2 Two-circle Dataset"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 10,
+  "fp": 11,
+  "fn": 11,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "B. Model",
+   "A. Motivation",
+   "B. The Hashing Layer",
+   "1) Supervised Case:",
+   "2) Semi-Supervised Learning:",
+   "3) Unsupervised Case:",
+   "C. Training",
+   "2) Regularization Techniques:",
+   "D. Toy Dataset",
+   "1) Two-moon Dataset:",
+   "2) Two-circle Dataset:"
+  ],
+  "unmatched_pred": [
+   "II-B Model",
+   "III-A Motivation",
+   "III-B The Hashing Layer",
+   "III-B1 Supervised Case",
+   "III-B2 Semi-Supervised Learning",
+   "III-B3 Unsupervised Case",
+   "III-C Training",
+   "III-C2 Regularization Techniques",
+   "III-D Toy Dataset",
+   "III-D1 Two-moon Dataset",
+   "III-D2 Two-circle Dataset"
+  ],
+  "ignored_title_predictions": null
+ }
+}

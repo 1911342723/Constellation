@@ -1,0 +1,163 @@
+{
+ "doc": "1801.00736",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 11,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3. Compute the residuals of the current model: ˆε = Y − ˆY.",
+   "5. Update the sets M and S",
+   "9. END",
+   "500 repetitions."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 400,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13068,
+   "completion_tokens": 417,
+   "total_tokens": 13485
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The procedure",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Compute the residuals of the current model: ˆε = Y − ˆY.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Update the sets M and S",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. END",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Numerical results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "500 repetitions.",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Real data application",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Energy Market Demand",
+   "page": 16,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Energy Price",
+   "page": 18,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 45.98321559999749,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3. Compute the residuals of the current model: ˆε = Y − ˆY.",
+   "5. Update the sets M and S",
+   "9. END",
+   "500 repetitions."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 12,
+  "tp": 8,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3. Compute the residuals of the current model: ˆε = Y − ˆY.",
+   "5. Update the sets M and S",
+   "9. END",
+   "500 repetitions."
+  ],
+  "ignored_title_predictions": null
+ }
+}

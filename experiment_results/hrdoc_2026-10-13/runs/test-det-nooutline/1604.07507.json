@@ -1,0 +1,150 @@
+{
+ "doc": "1604.07507",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.3571428571428571,
+  "unmatched_gt": [
+   "3.1. Architecture",
+   "3.2. Loss Function",
+   "3.3. Two-stage Training",
+   "5.1. Overal l Results",
+   "5.2. Attribute Based Comparison",
+   "5.3. Speed Analysis"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "H. Li et al. [17]",
+   "L. Wang et al. [24]",
+   "GTX 770 Matlab 1.3"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 319,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. YCNN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Visual Tracking via YCNN",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "H. Li et al. [17]",
+   "page": 11,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "L. Wang et al. [24]",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "GTX 770 Matlab 1.3",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.7650734999988344,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.3571428571428571,
+  "unmatched_gt": [
+   "3.1. Architecture",
+   "3.2. Loss Function",
+   "3.3. Two-stage Training",
+   "5.1. Overal l Results",
+   "5.2. Attribute Based Comparison",
+   "5.3. Speed Analysis"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "H. Li et al. [17]",
+   "L. Wang et al. [24]",
+   "GTX 770 Matlab 1.3"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 6,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.3846153846153846,
+  "unmatched_gt": [
+   "3.1. Architecture",
+   "3.2. Loss Function",
+   "3.3. Two-stage Training",
+   "5.1. Overal l Results",
+   "5.2. Attribute Based Comparison",
+   "5.3. Speed Analysis"
+  ],
+  "unmatched_pred": [
+   "H. Li et al. [17]",
+   "L. Wang et al. [24]",
+   "GTX 770 Matlab 1.3"
+  ],
+  "ignored_title_predictions": null
+ }
+}

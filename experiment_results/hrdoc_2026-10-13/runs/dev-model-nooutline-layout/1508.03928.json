@@ -1,0 +1,168 @@
+{
+ "doc": "1508.03928",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "TABLE I"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "TABLE I"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 462,
+  "layout_marked": 16,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10143,
+   "completion_tokens": 663,
+   "total_tokens": 10806
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9264981949458484,
+  "inserted_word_share": 0.9704744067040032
+ },
+ "predictions": [
+  {
+   "text": "LCNN: Low-level Feature Embedded CNN for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORKS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. CNN BASED SALIENCY DETECTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Network architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Network training",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. CNN for Saliency detection",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. LCNN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Exploring low-level features",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. LCNN for saliency detection",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Setup",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Ablation studies",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C. Performance comparison",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.379004000002169,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "TABLE I"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

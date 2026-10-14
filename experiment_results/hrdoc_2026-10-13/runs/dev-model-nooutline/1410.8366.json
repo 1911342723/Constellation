@@ -1,0 +1,152 @@
+{
+ "doc": "1410.8366",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 9,
+  "pred": 13,
+  "tp": 8,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1051,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13811,
+   "completion_tokens": 540,
+   "total_tokens": 14351
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. OPTIMUM ASYMPTOTIC MULTIUSER EFFICIENCY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The optimum asymptotic multiuser efﬁciency for i.i.d. binary antipodal random spreading",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. The optimum asymptotic multiuser efﬁciency for i.i.d. Gaussian spreading",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. RANDOM DETECTING MATRICES",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX D",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 31.40917350000018,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 13,
+  "tp": 8,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,320 @@
+{
+ "doc": "1804.02858",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 26,
+  "pred": 33,
+  "tp": 18,
+  "fp": 15,
+  "fn": 8,
+  "level_correct": 15,
+  "parent_correct": 9,
+  "teds": 0.2941176470588235,
+  "unmatched_gt": [
+   "Index Terms",
+   "C. Incorporating nearest non-serving LOS and NLOS holes",
+   "D. Incorporating all non-serving holes",
+   "I V. NU M ERIC A L R E S ULTS",
+   "V. CO NCL USI ON",
+   "AP P EN DIX",
+   "C. Proof of Theorem 2",
+   "D. Proof of Theorem 3"
+  ],
+  "unmatched_pred": [
+   "1 }\\BSk,0",
+   "0 exp(−µs",
+   "0 exp(−µs",
+   "0 Z D",
+   "0 exp(−µs",
+   "0 exp(−µs",
+   "0 rdr",
+   "0 Pr(SINR > τk | T = k, S = s, rk = x) × f(rk = x | T = k, S = s)dx",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "2 ∩Γc}\\BSk,0",
+   "1 }\\BSk,0"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1423,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Related Work",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Contribution",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Organization",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. BS and UE Locations",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Blocking",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Beamforming",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Path Loss and Fading",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Cell Association",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "III. SINR COVERAGE PROBABILITY",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 }\\BSk,0",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Approximating PHP by baseline PPP",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "0 exp(−µs",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Incorporating serving hole",
+   "page": 10,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "0 exp(−µs",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 Z D",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 exp(−µs",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 exp(−µs",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 rdr",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proof of Lemma 2",
+   "page": 21,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "B. Proof of Theorem 1",
+   "page": 22,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "0 Pr(SINR > τk | T = k, S = s, rk = x) × f(rk = x | T = k, S = s)dx",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 }\\BSk,0",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 }\\BSk,0",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 }\\BSk,0",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 }\\BSk,0",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 }\\BSk,0",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Proof of Theorem 4",
+   "page": 27,
+   "level": 2,
+   "parent": 28
+  },
+  {
+   "text": "2 ∩Γc}\\BSk,0",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 }\\BSk,0",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.7374716000013,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 33,
+  "tp": 18,
+  "fp": 15,
+  "fn": 8,
+  "level_correct": 15,
+  "parent_correct": 9,
+  "teds": 0.2941176470588235,
+  "unmatched_gt": [
+   "Index Terms",
+   "C. Incorporating nearest non-serving LOS and NLOS holes",
+   "D. Incorporating all non-serving holes",
+   "I V. NU M ERIC A L R E S ULTS",
+   "V. CO NCL USI ON",
+   "AP P EN DIX",
+   "C. Proof of Theorem 2",
+   "D. Proof of Theorem 3"
+  ],
+  "unmatched_pred": [
+   "1 }\\BSk,0",
+   "0 exp(−µs",
+   "0 exp(−µs",
+   "0 Z D",
+   "0 exp(−µs",
+   "0 exp(−µs",
+   "0 rdr",
+   "0 Pr(SINR > τk | T = k, S = s, rk = x) × f(rk = x | T = k, S = s)dx",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "2 ∩Γc}\\BSk,0",
+   "1 }\\BSk,0"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 31,
+  "tp": 16,
+  "fp": 15,
+  "fn": 6,
+  "level_correct": 13,
+  "parent_correct": 7,
+  "teds": 0.3125,
+  "unmatched_gt": [
+   "C. Incorporating nearest non-serving LOS and NLOS holes",
+   "D. Incorporating all non-serving holes",
+   "I V. NU M ERIC A L R E S ULTS",
+   "V. CO NCL USI ON",
+   "C. Proof of Theorem 2",
+   "D. Proof of Theorem 3"
+  ],
+  "unmatched_pred": [
+   "1 }\\BSk,0",
+   "0 exp(−µs",
+   "0 exp(−µs",
+   "0 Z D",
+   "0 exp(−µs",
+   "0 exp(−µs",
+   "0 rdr",
+   "0 Pr(SINR > τk | T = k, S = s, rk = x) × f(rk = x | T = k, S = s)dx",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "1 }\\BSk,0",
+   "2 ∩Γc}\\BSk,0",
+   "1 }\\BSk,0"
+  ],
+  "ignored_title_predictions": null
+ }
+}

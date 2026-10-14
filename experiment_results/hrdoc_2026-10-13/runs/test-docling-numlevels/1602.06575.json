@@ -1,0 +1,170 @@
+{
+ "doc": "1602.06575",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "D. Marian and X. Oriols",
+   "N. Zangh`ı"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "1. Displacement current on a large surface"
+  ],
+  "unmatched_pred": [
+   "D. Marian and X. Oriols",
+   "N. Zangh`ı"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 29.094665700002224
+ },
+ "predictions": [
+  {
+   "text": "On the noise induced by the measurement of the THz electrical current in quantum devices",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Marian and X. Oriols",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "N. Zangh`ı",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. THz current without modeling the measurement apparatus",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "1.2. THz current modeling the measurement apparatus with operators",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "1.3. THz current modeling the measurement apparatus with quantum trajectories",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2. Model development",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. How to calculate the output results",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "2.2. System-Probe interaction",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3. Does it exist an unavoidable source of noise due to the measurement of the THz current?",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Numerical results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Additional source of noise",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2. Weak measurement",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5. Conclusions and Discussions",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Displacement current on a large surface",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01197350000438746,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "D. Marian and X. Oriols",
+   "N. Zangh`ı"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

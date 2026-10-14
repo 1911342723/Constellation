@@ -1,0 +1,192 @@
+{
+ "doc": "1604.05016",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 17,
+  "tp": 9,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [
+   "B. Detector Assembly and Read-Out Electronics"
+  ],
+  "unmatched_pred": [
+   "Fig. 1 Section of the GERDA experiment",
+   "immersed into the cryostat",
+   "Fig. 4 Schematic drawing of a BEGe detector",
+   "Phase II",
+   "Fig. 10 FWHM at 2614.5 keV for three calibration runs during the",
+   "cusp sides (in blue)",
+   "Fig. 12 Background spectrum of beginning of Phase II",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 233,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4199,
+   "completion_tokens": 363,
+   "total_tokens": 4562
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fig. 1 Section of the GERDA experiment",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THE GERDA EXPERIMENT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Phase I Results",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. UPGRADE TO PHASE II",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "immersed into the cryostat",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fig. 4 Schematic drawing of a BEGe detector",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. BEGe Detectors",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Phase II",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. LAr Instrumentation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. START OF PHASE II DATA TAKING",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fig. 10 FWHM at 2614.5 keV for three calibration runs during the",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "cusp sides (in blue)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Fig. 12 Background spectrum of beginning of Phase II",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.934748800002126,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 17,
+  "tp": 9,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 7,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [
+   "B. Detector Assembly and Read-Out Electronics"
+  ],
+  "unmatched_pred": [
+   "Fig. 1 Section of the GERDA experiment",
+   "immersed into the cryostat",
+   "Fig. 4 Schematic drawing of a BEGe detector",
+   "Phase II",
+   "Fig. 10 FWHM at 2614.5 keV for three calibration runs during the",
+   "cusp sides (in blue)",
+   "Fig. 12 Background spectrum of beginning of Phase II",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 15,
+  "tp": 8,
+  "fp": 7,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.4375,
+  "unmatched_gt": [
+   "B. Detector Assembly and Read-Out Electronics"
+  ],
+  "unmatched_pred": [
+   "Fig. 1 Section of the GERDA experiment",
+   "immersed into the cryostat",
+   "Fig. 4 Schematic drawing of a BEGe detector",
+   "Phase II",
+   "Fig. 10 FWHM at 2614.5 keV for three calibration runs during the",
+   "cusp sides (in blue)",
+   "Fig. 12 Background spectrum of beginning of Phase II"
+  ],
+  "ignored_title_predictions": null
+ }
+}

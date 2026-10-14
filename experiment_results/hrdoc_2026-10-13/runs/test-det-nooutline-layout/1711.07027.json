@@ -1,0 +1,151 @@
+{
+ "doc": "1711.07027",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "Abstract",
+   "2. Related Work"
+  ],
+  "unmatched_pred": [
+   "3.2.2 SPGAN"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "2. Related Work"
+  ],
+  "unmatched_pred": [
+   "3.2.2 SPGAN"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 613,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8602807382375878,
+  "inserted_word_share": 0.7146613786265466
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Proposed Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Baseline Overview",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3.2. SPGAN: Approach Details",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3.2.1 CycleGAN Revisit",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "3.2.2 SPGAN",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "3.3. Feature Learning",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "4. Experiment",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2. Implementation Details",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3. Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.4. Comparison with State-of-the-art Methods",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.740175299994007,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "Abstract",
+   "2. Related Work"
+  ],
+  "unmatched_pred": [
+   "3.2.2 SPGAN"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

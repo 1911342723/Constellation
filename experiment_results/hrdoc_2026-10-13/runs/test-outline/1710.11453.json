@@ -1,0 +1,169 @@
+{
+ "doc": "1710.11453",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [
+   "A. States",
+   "D. Cost function",
+   "(CMDP)",
+   "B. Uniformization",
+   "C. Lagrangian Approach"
+  ],
+  "unmatched_pred": [
+   "II-A States",
+   "II-D Cost function",
+   "III-B Uniformization",
+   "III-C Lagrangian Approach"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II System Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A States",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Decision epochs and Actions",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-C Transition probabilities",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-D Cost function",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Problem Formulation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Formulation as Constrained Markov Decision Process (CMDP)",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-B Uniformization",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-C Lagrangian Approach",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV Numerical Results and Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Optimal policy structure",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "IV-B Parameter variation",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.045272100000147475,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 5,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [
+   "A. States",
+   "D. Cost function",
+   "(CMDP)",
+   "B. Uniformization",
+   "C. Lagrangian Approach"
+  ],
+  "unmatched_pred": [
+   "II-A States",
+   "II-D Cost function",
+   "III-B Uniformization",
+   "III-C Lagrangian Approach"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 10,
+  "fp": 4,
+  "fn": 5,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "A. States",
+   "D. Cost function",
+   "(CMDP)",
+   "B. Uniformization",
+   "C. Lagrangian Approach"
+  ],
+  "unmatched_pred": [
+   "II-A States",
+   "II-D Cost function",
+   "III-B Uniformization",
+   "III-C Lagrangian Approach"
+  ],
+  "ignored_title_predictions": null
+ }
+}

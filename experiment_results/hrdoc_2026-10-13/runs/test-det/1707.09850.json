@@ -1,0 +1,186 @@
+{
+ "doc": "1707.09850",
+ "system": "det",
+ "metrics": {
+  "gt": 17,
+  "pred": 12,
+  "tp": 7,
+  "fp": 5,
+  "fn": 10,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.2777777777777778,
+  "unmatched_gt": [
+   "1.1. The paradox of plentiful computing",
+   "1.2. Barriers to Entry",
+   "2.1. CODE-RADE Design Hypotheses",
+   "3.1. Actors",
+   "3.2. Platform",
+   "4.1. CODE-RADE is cross-platform",
+   "4.2. CODE-RADE is atomic",
+   "4.3. CODE-RADE is community-based",
+   "4.4. CODE-RADE is Automated",
+   "4.5. CODE-RADE for Physics"
+  ],
+  "unmatched_pred": [
+   "1 Meiring Naude Road",
+   "1 See ”http",
+   "1 Execute any internal functional tests that the application may contain.",
+   "1 Clean the build and prepare for recompilation using the deploy environment",
+   "5 This can be determined more accurately using the cvmfs client tools, but this "
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 135,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "CODE-RADE - Community Infrastructure for the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Delivery of Physics Applications",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Meiring Naude Road",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. CODE-RADE Design and Philosophy",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 See ”http",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. CODE-RADE in detail",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Execute any internal functional tests that the application may contain.",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Clean the build and prepare for recompilation using the deploy environment",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 This can be determined more accurately using the cvmfs client tools, but this may not be intuitive to users.",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Summary, Conclusion and Futher work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.4314167999982601,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 14,
+  "tp": 7,
+  "fp": 7,
+  "fn": 10,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "1.1. The paradox of plentiful computing",
+   "1.2. Barriers to Entry",
+   "2.1. CODE-RADE Design Hypotheses",
+   "3.1. Actors",
+   "3.2. Platform",
+   "4.1. CODE-RADE is cross-platform",
+   "4.2. CODE-RADE is atomic",
+   "4.3. CODE-RADE is community-based",
+   "4.4. CODE-RADE is Automated",
+   "4.5. CODE-RADE for Physics"
+  ],
+  "unmatched_pred": [
+   "CODE-RADE - Community Infrastructure for the",
+   "Delivery of Physics Applications",
+   "1 Meiring Naude Road",
+   "1 See ”http",
+   "1 Execute any internal functional tests that the application may contain.",
+   "1 Clean the build and prepare for recompilation using the deploy environment",
+   "5 This can be determined more accurately using the cvmfs client tools, but this "
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 10,
+  "tp": 5,
+  "fp": 5,
+  "fn": 10,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.1875,
+  "unmatched_gt": [
+   "1.1. The paradox of plentiful computing",
+   "1.2. Barriers to Entry",
+   "2.1. CODE-RADE Design Hypotheses",
+   "3.1. Actors",
+   "3.2. Platform",
+   "4.1. CODE-RADE is cross-platform",
+   "4.2. CODE-RADE is atomic",
+   "4.3. CODE-RADE is community-based",
+   "4.4. CODE-RADE is Automated",
+   "4.5. CODE-RADE for Physics"
+  ],
+  "unmatched_pred": [
+   "1 Meiring Naude Road",
+   "1 See ”http",
+   "1 Execute any internal functional tests that the application may contain.",
+   "1 Clean the build and prepare for recompilation using the deploy environment",
+   "5 This can be determined more accurately using the cvmfs client tools, but this "
+  ],
+  "ignored_title_predictions": null
+ }
+}

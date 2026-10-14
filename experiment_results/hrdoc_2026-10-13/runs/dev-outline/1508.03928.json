@@ -1,0 +1,159 @@
+{
+ "doc": "1508.03928",
+ "system": "outline",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "TABLE I",
+   "B. Network training",
+   "A. Setup"
+  ],
+  "unmatched_pred": [
+   "III-B Network training",
+   "V-A Setup",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Related Works",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III CNN based Saliency Detection",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Network architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-B Network training",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-C CNN for Saliency detection",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV LCNN: Low-level Feature Embedded CNN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Exploring low-level features",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV-B LCNN for saliency detection",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V Experimental Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-A Setup",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V-B Ablation studies",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V-C Performance comparison",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VI Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.048400399999081856,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "TABLE I",
+   "B. Network training",
+   "A. Setup"
+  ],
+  "unmatched_pred": [
+   "III-B Network training",
+   "V-A Setup",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "TABLE I",
+   "B. Network training",
+   "A. Setup"
+  ],
+  "unmatched_pred": [
+   "III-B Network training",
+   "V-A Setup"
+  ],
+  "ignored_title_predictions": null
+ }
+}

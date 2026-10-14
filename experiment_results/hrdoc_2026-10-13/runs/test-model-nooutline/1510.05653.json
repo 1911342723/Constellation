@@ -1,0 +1,136 @@
+{
+ "doc": "1510.05653",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 max"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 822,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 24245,
+   "completion_tokens": 534,
+   "total_tokens": 24779
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "2 max",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "SUPPLEMENTARY MATERIAL",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Quantum states and operations",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Semideﬁnite Programming",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Semideﬁnite programs for the diamond distance",
+   "page": 8,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Dephasing and calibration errors for a single qubit",
+   "page": 8,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Thermal relaxation of a single qubit",
+   "page": 9,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Incoherent leakage errors",
+   "page": 10,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Coherent leakage errors",
+   "page": 11,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "Unitary errors",
+   "page": 12,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "The unitarity and average error rate for two-qubit processes",
+   "page": 14,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "The unitarity as a witness for unfavorable scaling",
+   "page": 14,
+   "level": 2,
+   "parent": 1
+  }
+ ],
+ "seconds": 53.72359460000007,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 max"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 max"
+  ],
+  "ignored_title_predictions": null
+ }
+}

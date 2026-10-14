@@ -1,0 +1,130 @@
+{
+ "doc": "1801.04242",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Model Constants and Functions",
+   "Exemplar y MPSoC Component Models",
+   "ACKNOWLEDGMENT"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 263,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 THE COREVA-MPSOC PROJECT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Hardware Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Programming Infrastructure",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 RELATED WORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 ENERGY ESTIMATION METHODOLOGIES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 ENERGY MODELING FRAMEWORK",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 VALIDATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.76687529999981,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Model Constants and Functions",
+   "Exemplar y MPSoC Component Models",
+   "ACKNOWLEDGMENT"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "Model Constants and Functions",
+   "Exemplar y MPSoC Component Models"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

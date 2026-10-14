@@ -1,0 +1,183 @@
+{
+ "doc": "1610.07651",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 8.995902800001204
+ },
+ "predictions": [
+  {
+   "text": "UTD-CRSS SYSTEMS FOR 2016 NIST SPEAKER RECOGNITION EVALUATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. CRSS BASELINES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. CRSS1: UBM i-Vector",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2. CRSS2: SWBDNN i-Vector",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3. CRSS3: UBM i-Vector",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4. CRSS4: Fisher English DNN i-Vector",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. CORE COMPONENTS IN SYSTEMDEVELOPMENT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Speaker clustering of unlabeled data",
+   "page": 1,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2. Discriminant analysis via support vectors (SVDA)",
+   "page": 1,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3. Unlabeled data PLDA",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.4. Calibration and fusion",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4. CRSS SUB-SYSTEMS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CRSS SUBMISSIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. PERFORMANCEOF CRSS SUB-SYSTEMSON SRE 2016 DEV DATA",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. COMPUTATIONALRESOURCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1. CPU cluster",
+   "page": 3,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7.2. GPUmachines",
+   "page": 3,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7.3. CPU execution time",
+   "page": 3,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "8. ACKNOWLEDGEMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04021120000106748,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

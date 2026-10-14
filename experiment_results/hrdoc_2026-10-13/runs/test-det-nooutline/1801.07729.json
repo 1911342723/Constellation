@@ -1,0 +1,184 @@
+{
+ "doc": "1801.07729",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 9,
+  "level_correct": 9,
+  "parent_correct": 6,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification",
+   "Effect of adding layers with reduced dimensionality:",
+   "Few Factors Explain the Characteristics of Styles:",
+   "Smooth Temporal Evolution of Style:",
+   "Interpretation of the Modes of Variations - Relation to W ¨olfflin’s Pairs:",
+   "Discovering Limitations of W ¨olfflin’s Concepts:",
+   "Identification of Representative Artists:",
+   "Interpretations of the Activation Manifold and Understanding Influences:"
+  ],
+  "unmatched_pred": [
+   "1 Department of Computer Science, Rutgers University, NJ, USA",
+   "2 Department of Art History, College of Charleston, SC, USA",
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 630,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Department of Computer Science, Rutgers University, NJ, USA",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Department of Art History, College of Charleston, SC, USA",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methodology",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Main Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Detailed Methodology",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Challenges with Art Style Classiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.2 Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.3 Studied Deep Learning Models:",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.4 Increasing the interpretability of the representation",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3 Quantitative Comparative Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Shape of Art History",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions and Discussion",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 23.33923180000056,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 15,
+  "tp": 11,
+  "fp": 4,
+  "fn": 9,
+  "level_correct": 9,
+  "parent_correct": 6,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification",
+   "Effect of adding layers with reduced dimensionality:",
+   "Few Factors Explain the Characteristics of Styles:",
+   "Smooth Temporal Evolution of Style:",
+   "Interpretation of the Modes of Variations - Relation to W ¨olfflin’s Pairs:",
+   "Discovering Limitations of W ¨olfflin’s Concepts:",
+   "Identification of Representative Artists:",
+   "Interpretations of the Activation Manifold and Understanding Influences:"
+  ],
+  "unmatched_pred": [
+   "1 Department of Computer Science, Rutgers University, NJ, USA",
+   "2 Department of Art History, College of Charleston, SC, USA",
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 13,
+  "tp": 9,
+  "fp": 4,
+  "fn": 9,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.3157894736842105,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification",
+   "Effect of adding layers with reduced dimensionality:",
+   "Few Factors Explain the Characteristics of Styles:",
+   "Smooth Temporal Evolution of Style:",
+   "Interpretation of the Modes of Variations - Relation to W ¨olfflin’s Pairs:",
+   "Discovering Limitations of W ¨olfflin’s Concepts:",
+   "Identification of Representative Artists:",
+   "Interpretations of the Activation Manifold and Understanding Influences:"
+  ],
+  "unmatched_pred": [
+   "1 Department of Computer Science, Rutgers University, NJ, USA",
+   "2 Department of Art History, College of Charleston, SC, USA",
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ],
+  "ignored_title_predictions": null
+ }
+}

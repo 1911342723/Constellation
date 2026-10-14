@@ -1,0 +1,95 @@
+{
+ "doc": "1808.04965",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A bilinear Bogolyubov-Ruzsa lemma with"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 5,
+  "tp": 4,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A bilinear Bogolyubov-Ruzsa lemma with"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 616,
+  "layout_marked": 6,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9464227905471027,
+  "inserted_word_share": 0.05235008103727712
+ },
+ "predictions": [
+  {
+   "text": "A bilinear Bogolyubov-Ruzsa lemma with",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 A robust analog of Theorem 1.3",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Proof of Theorem 1.3",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Proof of Theorem 1.5",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.6467751000018325,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A bilinear Bogolyubov-Ruzsa lemma with"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

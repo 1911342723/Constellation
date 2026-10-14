@@ -1,0 +1,130 @@
+{
+ "doc": "1503.05697",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 5,
+  "teds": 0.30000000000000004,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [
+   "0. According to Eq",
+   "J. Heinzen, Phys. Rev. A 54, R4649(R) (1996).",
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 466,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Maximal quantum Fisher information for general su(2) parametrization processes",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MAXIMAL QUANTUM FISHER",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. APPLICATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Time-independent Hamiltonians",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "0. According to Eq",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Time-dependent Hamiltonian",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. DISCUSSION AND CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "J. Heinzen, Phys. Rev. A 54, R4649(R) (1996).",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.745506399998703,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 5,
+  "teds": 0.2727272727272727,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [
+   "Maximal quantum Fisher information for general su(2) parametrization processes",
+   "0. According to Eq",
+   "J. Heinzen, Phys. Rev. A 54, R4649(R) (1996).",
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 5,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [
+   "0. According to Eq",
+   "J. Heinzen, Phys. Rev. A 54, R4649(R) (1996)."
+  ],
+  "ignored_title_predictions": null
+ }
+}

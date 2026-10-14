@@ -1,0 +1,369 @@
+{
+ "doc": "1807.08233",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 27,
+  "pred": 38,
+  "tp": 22,
+  "fp": 16,
+  "fn": 5,
+  "level_correct": 22,
+  "parent_correct": 17,
+  "teds": 0.3589743589743589,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "8 Ultrasonic Sensor - HC-SR04",
+   "1 Wide Angle Fish-Eye Pi Camera Camera",
+   "14 HITEC HS-645MG",
+   "Surya Dantuluri",
+   "22 and 23 where the heatmap focuses interest on the track, not the lines themsel",
+   "Item",
+   "ECX 1/10 Chassis",
+   "Laptop",
+   "Raspberry Pi 3",
+   "Arduino UNO R3",
+   "3D Printed Parts",
+   "Sensors",
+   "Portable Power Bank",
+   "5 Batteries and Charger",
+   "ESC(s)",
+   "PCA 9685"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 301,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10595,
+   "completion_tokens": 793,
+   "total_tokens": 11388
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Rapid Autonomous Car Control based on Spatial",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "and Temporal Visual Cues",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PLATFORM DESIGN",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Platform Overview",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Sensor Network",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "8 Ultrasonic Sensor - HC-SR04",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Vision Network",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "1 Wide Angle Fish-Eye Pi Camera Camera",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Engine Network",
+   "page": 1,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "E. More Electro-Mechanical Engineering",
+   "page": 1,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "14 HITEC HS-645MG",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Vehicle Body",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "III. HARDWARE SYSTEMS DESIGN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Processor Framework",
+   "page": 2,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Electrical Sub-systems",
+   "page": 2,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "IV. PERCEPTION AND CONTROL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Software Architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "B. Perception and Planning",
+   "page": 3,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "C. Trajectory and Velocity Control",
+   "page": 3,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "V. VEHICLE BEHAVIOR",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Line Detection",
+   "page": 5,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "B. Target Region using Lines",
+   "page": 5,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "A. Appendix",
+   "page": 6,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "C. Target Region Without using Lines",
+   "page": 6,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "Surya Dantuluri",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "22 and 23 where the heatmap focuses interest on the track, not the lines themselves.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Item",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ECX 1/10 Chassis",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Laptop",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Raspberry Pi 3",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Arduino UNO R3",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3D Printed Parts",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sensors",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Portable Power Bank",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Batteries and Charger",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ESC(s)",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PCA 9685",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 29.265320200000133,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 40,
+  "tp": 22,
+  "fp": 18,
+  "fn": 5,
+  "level_correct": 22,
+  "parent_correct": 17,
+  "teds": 0.3414634146341463,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "Rapid Autonomous Car Control based on Spatial",
+   "and Temporal Visual Cues",
+   "8 Ultrasonic Sensor - HC-SR04",
+   "1 Wide Angle Fish-Eye Pi Camera Camera",
+   "14 HITEC HS-645MG",
+   "Surya Dantuluri",
+   "22 and 23 where the heatmap focuses interest on the track, not the lines themsel",
+   "Item",
+   "ECX 1/10 Chassis",
+   "Laptop",
+   "Raspberry Pi 3",
+   "Arduino UNO R3",
+   "3D Printed Parts",
+   "Sensors",
+   "Portable Power Bank",
+   "5 Batteries and Charger",
+   "ESC(s)",
+   "PCA 9685"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 25,
+  "pred": 36,
+  "tp": 20,
+  "fp": 16,
+  "fn": 5,
+  "level_correct": 20,
+  "parent_correct": 16,
+  "teds": 0.3783783783783784,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "8 Ultrasonic Sensor - HC-SR04",
+   "1 Wide Angle Fish-Eye Pi Camera Camera",
+   "14 HITEC HS-645MG",
+   "Surya Dantuluri",
+   "22 and 23 where the heatmap focuses interest on the track, not the lines themsel",
+   "Item",
+   "ECX 1/10 Chassis",
+   "Laptop",
+   "Raspberry Pi 3",
+   "Arduino UNO R3",
+   "3D Printed Parts",
+   "Sensors",
+   "Portable Power Bank",
+   "5 Batteries and Charger",
+   "ESC(s)",
+   "PCA 9685"
+  ],
+  "ignored_title_predictions": null
+ }
+}

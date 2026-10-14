@@ -1,0 +1,166 @@
+{
+ "doc": "1807.04488",
+ "system": "model",
+ "metrics": {
+  "gt": 19,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.85,
+  "unmatched_gt": [
+   "B. Source Token Selection for Query Reformulation",
+   "F. Suggestion of the Best Query Reformulation",
+   "B. Corpus Indexing & Source Code Search"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 342,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13300,
+   "completion_tokens": 535,
+   "total_tokens": 13835
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. ACER",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Pseudo-relevance Feedback",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Source Code Preprocessing",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "D. Source Term Graph Development",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "E. CodeRank Calculation",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. EXPERIMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Dataset",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Performance Metrics",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "D. Evaluation of ACER and CodeRank",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "E. Comparison with Existing Approaches",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. THREATS TO VALIDITY",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RELATED WORK",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION & FUTURE WORK",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 24.099778400002833,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.85,
+  "unmatched_gt": [
+   "B. Source Token Selection for Query Reformulation",
+   "F. Suggestion of the Best Query Reformulation",
+   "B. Corpus Indexing & Source Code Search"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "B. Source Token Selection for Query Reformulation",
+   "F. Suggestion of the Best Query Reformulation",
+   "B. Corpus Indexing & Source Code Search"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "doc": "1807.03409",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 21,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [
+   "Embedding",
+   "Attention",
+   "Generating Intuitive Attention Weights",
+   "Selecting Important Words",
+   "Baselines",
+   "The Effect of Supervised Attention",
+   "Semantical vs. Syntactical Guidance"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 183,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Hierarchical LSTMs",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Supervised Attention",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Training",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets and Parameters",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Evaluating the Models",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Comparing to the State of the Art",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.4 Analysis",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.437233599997853,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [
+   "Embedding",
+   "Attention",
+   "Generating Intuitive Attention Weights",
+   "Selecting Important Words",
+   "Baselines",
+   "The Effect of Supervised Attention",
+   "Semantical vs. Syntactical Guidance"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.65,
+  "unmatched_gt": [
+   "Embedding",
+   "Attention",
+   "Generating Intuitive Attention Weights",
+   "Selecting Important Words",
+   "Baselines",
+   "The Effect of Supervised Attention",
+   "Semantical vs. Syntactical Guidance"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

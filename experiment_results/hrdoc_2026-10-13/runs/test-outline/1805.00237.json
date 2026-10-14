@@ -1,0 +1,134 @@
+{
+ "doc": "1805.00237",
+ "system": "outline",
+ "metrics": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "ABSTRACT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": " 1. MOTIVATION – FROM PREVIOUS WORKS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " 2. ARCHITECTURES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " 3. METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Features: randomly weighted CNNs",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Classifiers: SVM and ELM",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 Datasets: music and acoustic events",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4 Reproducing former results to discuss our method",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": " 4. Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 GTZAN: music genre recognition",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Extended Ballroom: rhythm/tempo classification",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Urban Sounds 8K: acoustic event detection",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": " 5. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " 6. ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " 7. References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.10081829999762704,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "ABSTRACT"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

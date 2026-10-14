@@ -1,0 +1,261 @@
+{
+ "doc": "1807.08233",
+ "system": "outline",
+ "metrics": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 19,
+  "fp": 8,
+  "fn": 8,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "F. Vehicle Body",
+   "A. Processor Framework",
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:",
+   "A. Appendix"
+  ],
+  "unmatched_pred": [
+   "II-F Vehicle Body",
+   "III-A Processor Framework",
+   "IV-A1 Drive Loop",
+   "IV-B1 Object Detection",
+   "IV-B2 Path Planning",
+   "IV-C1 Steering Control",
+   "IV-C2 Throttle Control",
+   "VI-A Appendix"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Platform Design",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Platform Overview",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Sensor Network",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-C Vision Network",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-D Engine Network",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-E More Electro-Mechanical Engineering",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-F Vehicle Body",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Hardware Systems Design",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Processor Framework",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-B Electrical Sub-systems",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV Perception And Control",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Software Architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "IV-A1 Drive Loop",
+   "page": 3,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "IV-B Perception and Planning",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "IV-B1 Object Detection",
+   "page": 3,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "IV-B2 Path Planning",
+   "page": 3,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "IV-C Trajectory and Velocity Control",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "IV-C1 Steering Control",
+   "page": 3,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "IV-C2 Throttle Control",
+   "page": 4,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "V Vehicle Behavior",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-A Line Detection",
+   "page": 5,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "V-B Target Region using Lines",
+   "page": 5,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "V-C Target Region Without using Lines",
+   "page": 6,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "VI Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A Appendix",
+   "page": 6,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.27161599999817554,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 19,
+  "fp": 8,
+  "fn": 8,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "F. Vehicle Body",
+   "A. Processor Framework",
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:",
+   "A. Appendix"
+  ],
+  "unmatched_pred": [
+   "II-F Vehicle Body",
+   "III-A Processor Framework",
+   "IV-A1 Drive Loop",
+   "IV-B1 Object Detection",
+   "IV-B2 Path Planning",
+   "IV-C1 Steering Control",
+   "IV-C2 Throttle Control",
+   "VI-A Appendix"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 25,
+  "pred": 26,
+  "tp": 18,
+  "fp": 8,
+  "fn": 7,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [
+   "F. Vehicle Body",
+   "A. Processor Framework",
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "II-F Vehicle Body",
+   "III-A Processor Framework",
+   "IV-A1 Drive Loop",
+   "IV-B1 Object Detection",
+   "IV-B2 Path Planning",
+   "IV-C1 Steering Control",
+   "IV-C2 Throttle Control",
+   "VI-A Appendix"
+  ],
+  "ignored_title_predictions": null
+ }
+}

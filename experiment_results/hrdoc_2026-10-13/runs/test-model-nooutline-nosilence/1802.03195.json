@@ -1,0 +1,186 @@
+{
+ "doc": "1802.03195",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [
+   "ity",
+   "C. Asymmetric Nature of the Extreme Eigenvalues",
+   "A. Symmetric RIC Based Sparse Recovery"
+  ],
+  "unmatched_pred": [
+   "2 are shown in Fig. 6"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 889,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13899,
+   "completion_tokens": 699,
+   "total_tokens": 14598
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Limits on Sparse Data Acquisition: RIC Analysis of",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Finite Gaussian Matrices",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MATHEMATICAL BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EIGENVALUES STATISTICS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Eigenvalues Statistics Based on the Concentration Inequal-",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Exact Eigenvalues Statistics",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV. SYMMETRIC AND ASYMMETRIC RICS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. RIP Analysis for Gaussian Matrices",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Asymmetric RIP Analysis for Gaussian Matrices s(A) be the LRIC as deﬁned in (20). The CDF of the",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. CONDITIONS FOR PERFECT RECOVERY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Symmetric RIC Based Sparse Recovery",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VI. ROBUST RECOVERY OF COMPRESSIBLE SIGNALS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. TRACY-WIDOM BASED RIC ANALYSIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. NUMERICAL RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 are shown in Fig. 6",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IX. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.92659470000217,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6842105263157895,
+  "unmatched_gt": [
+   "ity",
+   "C. Asymmetric Nature of the Extreme Eigenvalues",
+   "A. Symmetric RIC Based Sparse Recovery"
+  ],
+  "unmatched_pred": [
+   "Limits on Sparse Data Acquisition: RIC Analysis of",
+   "Finite Gaussian Matrices",
+   "2 are shown in Fig. 6"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "ity",
+   "C. Asymmetric Nature of the Extreme Eigenvalues",
+   "A. Symmetric RIC Based Sparse Recovery"
+  ],
+  "unmatched_pred": [
+   "2 are shown in Fig. 6"
+  ],
+  "ignored_title_predictions": null
+ }
+}

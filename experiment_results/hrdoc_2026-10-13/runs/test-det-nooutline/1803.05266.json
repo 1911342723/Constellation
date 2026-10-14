@@ -1,0 +1,173 @@
+{
+ "doc": "1803.05266",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 15,
+  "tp": 7,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Brigham and Women’s Hospital, Harvard Medical School, USA 2 Graduate School of",
+   "3 School of Computing, Queens University, Canada",
+   "7 Ecole de Technologie Superieure, Canada",
+   "8 Center for Advanced Intelligence Project, RIKEN, Japan",
+   "J. Luo et al.",
+   "J. Luo et al.",
+   "J. Luo et al.",
+   "J. Luo et al."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 142,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "On the Applicability of Registration Uncertainty",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Brigham and Women’s Hospital, Harvard Medical School, USA 2 Graduate School of Frontier Sciences, The University of Tokyo, Japan",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 School of Computing, Queens University, Canada",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Ecole de Technologie Superieure, Canada",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Center for Advanced Intelligence Project, RIKEN, Japan",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "J. Luo et al.",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2 The Ambiguity of Registration Uncertainty",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The DPR Set Up",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "2.2 Transformation Uncertainty and Label Uncertainty",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "J. Luo et al.",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "J. Luo et al.",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3 Credibility of Label Distribution",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "J. Luo et al.",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4 Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.5295499000021664,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 16,
+  "tp": 7,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On the Applicability of Registration Uncertainty",
+   "1 Brigham and Women’s Hospital, Harvard Medical School, USA 2 Graduate School of",
+   "3 School of Computing, Queens University, Canada",
+   "7 Ecole de Technologie Superieure, Canada",
+   "8 Center for Advanced Intelligence Project, RIKEN, Japan",
+   "J. Luo et al.",
+   "J. Luo et al.",
+   "J. Luo et al.",
+   "J. Luo et al."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 14,
+  "tp": 6,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Brigham and Women’s Hospital, Harvard Medical School, USA 2 Graduate School of",
+   "3 School of Computing, Queens University, Canada",
+   "7 Ecole de Technologie Superieure, Canada",
+   "8 Center for Advanced Intelligence Project, RIKEN, Japan",
+   "J. Luo et al.",
+   "J. Luo et al.",
+   "J. Luo et al.",
+   "J. Luo et al."
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "doc": "1807.02098",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "10 Where each image is reﬂected horizontally",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 169,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SYSTEM AND PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Dataset",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Problem Deﬁnition",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. PROPOSED METHODOLOGY: MAT-CNN-SOPC",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Employed CNN Models",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Classiﬁcation Results",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "10 Where each image is reﬂected horizontally",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.743659900002967,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "10 Where each image is reﬂected horizontally",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "A. Hardware Infrastructure & Software Infrastructure",
+   "Observation:"
+  ],
+  "unmatched_pred": [
+   "10 Where each image is reﬂected horizontally"
+  ],
+  "ignored_title_predictions": null
+ }
+}

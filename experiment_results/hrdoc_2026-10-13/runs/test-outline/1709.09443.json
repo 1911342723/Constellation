@@ -1,0 +1,166 @@
+{
+ "doc": "1709.09443",
+ "system": "outline",
+ "metrics": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 A Corpus of Word-Level Prosody Features in Child-directed Speech",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Word-level text-audio alignment of English CHILDES data",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Prosodic Feature extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Evaluation",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Experiment 1: Prosodic Features as Predictors of Age of Acquisition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Experiments and Results",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.1.1 Exploratory Egemaps Feature Analysis",
+   "page": 3,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.1.2 Egemaps Feature Selection",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Discussion",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Experiment 2: Enriching Language Models with Prosody Features",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Factored Language Models",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.1.1 Representation of Prosody Features",
+   "page": 5,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.2 Experiments and Results",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Discussion",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Experiment 3: Language-model Representations as Predictors of Age of Acquisition",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiments and Results",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.2 Discussion",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0967045000033977,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

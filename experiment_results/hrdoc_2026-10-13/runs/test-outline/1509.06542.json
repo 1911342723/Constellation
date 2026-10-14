@@ -1,0 +1,147 @@
+{
+ "doc": "1509.06542",
+ "system": "outline",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract",
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "II-A1 Predictive Controller (Ref:31-Ref:32)",
+   "II-B1 Stability Analysis of AROLC",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I-A Background and Motivation",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-B Contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-C Notations",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-D Organization",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II Controller Design",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Problem Formulation and Objective Definition",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "II-A1 Predictive Controller (Ref:31-Ref:32)",
+   "page": 2,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "II-B Adaptive Robust Outer Loop Controller",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "II-B1 Stability Analysis of AROLC",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "III Application: Nonholonomic WMR",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Experimental Results and Comparison",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "IV Conclusion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04114610000033281,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract",
+   "Index Terms"
+  ],
+  "unmatched_pred": [
+   "II-A1 Predictive Controller (Ref:31-Ref:32)",
+   "II-B1 Stability Analysis of AROLC",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "II-A1 Predictive Controller (Ref:31-Ref:32)",
+   "II-B1 Stability Analysis of AROLC"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "doc": "1705.10880",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "A. Web Single Sign-On & Identity Providers",
+   "C. OPAL-based Data Sharing Federation",
+   "B. The UMA Model for Consent Management"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "A. Web Single Sign-On & Identity Providers",
+   "C. OPAL-based Data Sharing Federation",
+   "B. The UMA Model for Consent Management"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 349,
+  "layout_marked": 18,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13094,
+   "completion_tokens": 622,
+   "total_tokens": 13716
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9392258531291451,
+  "inserted_word_share": 0.052087136424485814
+ },
+ "predictions": [
+  {
+   "text": "Open Algorithms for Identity Federation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. IDENTITY FEDERATION AND ATTRIBUTE SHARING:",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Identity Federation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. OPEN ALGORITHMS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. OPAL Principles",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. OPAL Query-Response Model",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV. OPAL FOR IDENTITY FEDERATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. TRUST FRAMEWORK FOR OPAL FEDERATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONSENT MANAGEMENT IN OPAL",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Consent to Execute an Algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VII. FUTURE DIRECTIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSIONS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.972160499994061,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "A. Web Single Sign-On & Identity Providers",
+   "C. OPAL-based Data Sharing Federation",
+   "B. The UMA Model for Consent Management"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

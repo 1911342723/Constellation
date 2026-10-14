@@ -1,0 +1,167 @@
+{
+ "doc": "1707.09638",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 9,
+  "pred": 14,
+  "tp": 9,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 bfi′",
+   "2 bfi′",
+   "2 in the Dynkin diagram of bg are not connected), so both ev",
+   "1 \u0013, and bC =",
+   "W. Let L = (Li)i∈i denote the Lusztig data for an element in"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 1176,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 8,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 8,
+   "prompt_tokens": 31329,
+   "completion_tokens": 457,
+   "total_tokens": 31786
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Virtual Crystals and Nakajima Monomials",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Crystals and Nakajima monomials",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Virtual crystals",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 bfi′",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 bfi′",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 in the Dynkin diagram of bg are not connected), so both ev",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 The virtualization map",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 \u0013, and bC =",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Virtualization of Kirillov–Reshetikhin crystals",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Monomials to PBW data in type An",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Open problems",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "W. Let L = (Li)i∈i denote the Lusztig data for an element in",
+   "page": 13,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.804199499998504,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 15,
+  "tp": 9,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Virtual Crystals and Nakajima Monomials",
+   "1 bfi′",
+   "2 bfi′",
+   "2 in the Dynkin diagram of bg are not connected), so both ev",
+   "1 \u0013, and bC =",
+   "W. Let L = (Li)i∈i denote the Lusztig data for an element in"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 12,
+  "tp": 7,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 bfi′",
+   "2 bfi′",
+   "2 in the Dynkin diagram of bg are not connected), so both ev",
+   "1 \u0013, and bC =",
+   "W. Let L = (Li)i∈i denote the Lusztig data for an element in"
+  ],
+  "ignored_title_predictions": null
+ }
+}

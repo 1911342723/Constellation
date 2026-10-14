@@ -1,0 +1,72 @@
+{
+ "doc": "1709.00172",
+ "system": "outline",
+ "metrics": {
+  "gt": 6,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Supplementary materials",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Experiments",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2 Effective capillary peeling",
+   "page": 7,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.03350010000212933,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 3,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

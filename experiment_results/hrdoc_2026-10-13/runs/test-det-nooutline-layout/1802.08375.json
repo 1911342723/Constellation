@@ -1,0 +1,185 @@
+{
+ "doc": "1802.08375",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum",
+   "model sizes"
+  ],
+  "unmatched_pred": [
+   "Rustem Takhanov"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum",
+   "model sizes"
+  ],
+  "unmatched_pred": [
+   "Rustem Takhanov"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 503,
+  "layout_marked": 23,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9030716723549488,
+  "inserted_word_share": 0.09259259259259256
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Rustem Takhanov",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Recurrent Neural Language Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Reusing Weights",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experimental Setup",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 CharCNN is biased towards surface form",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.2 Tying weights bottom-up",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.3 Difference between input and output",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.4 CharCNN generalizes better than",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.5 Performance on non-English Data",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.6 Replacing LSTM with AWD-LSTM",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Optimization",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Non-English corpora statistics and",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.459043399998336,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum",
+   "model sizes"
+  ],
+  "unmatched_pred": [
+   "Rustem Takhanov"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

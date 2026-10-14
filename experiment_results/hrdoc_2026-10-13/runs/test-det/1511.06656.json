@@ -1,0 +1,185 @@
+{
+ "doc": "1511.06656",
+ "system": "det",
+ "metrics": {
+  "gt": 20,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 5,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.5238095238095238,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "3 end",
+   "12 end",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 388,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. DATASET DESCRIPTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. OBSERVATIONAL STUDY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Characterization Variables",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Data Preprocessing",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Insights on Key Features from PCA",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "D. Observed Gender Differences",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "E. Observed Age Differences",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "F. Links between Age Groups",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. AGE AND GENDER PREDICTION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Population Pyramid Scaling (PPS)",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3 end",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "12 end",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Gender Prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "C. Age Prediction using Node Attributes",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "F. Summary of Results",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "V. CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.841022699998575,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 5,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.5238095238095238,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "3 end",
+   "12 end",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "D. Age Prediction using Network Topology",
+   "1) Communication Network Structure: We briefly describe",
+   "2) Reaction-Diffusion Algorithm: In our dataset, we have",
+   "E. Enriching the Graph Algorithm with Node Attributes"
+  ],
+  "unmatched_pred": [
+   "3 end",
+   "12 end"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "doc": "1808.06638",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9523809523809523,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Fixed Eﬀects"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 743,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13521,
+   "completion_tokens": 786,
+   "total_tokens": 14307
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Deﬁnition and Decomposition of the HSIC",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Estimators of HSIC",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Fixed Eﬀects",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.1 Random Eﬀects",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Maximization of HSIC Estimators",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3.1 Fixed Eﬀects",
+   "page": 4,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "2.3.2 Random Eﬀects",
+   "page": 4,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3 Application",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Simulation Speciﬁcation",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Model Comparison",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Application to the Michigan Intern Health Study",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Supplementary Materials",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Proof of Theorem 1",
+   "page": 12,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.2 Proof of Theorem 2",
+   "page": 13,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.3 Proof of Theorem 3",
+   "page": 14,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.765668100000767,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 20,
+  "tp": 19,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9523809523809523,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Fixed Eﬀects"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Fixed Eﬀects"
+  ],
+  "ignored_title_predictions": null
+ }
+}

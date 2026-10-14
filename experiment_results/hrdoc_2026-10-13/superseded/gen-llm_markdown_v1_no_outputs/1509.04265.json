@@ -1,0 +1,376 @@
+{
+ "doc": "1509.04265",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9269,
+   "completion_tokens": 7142
+  },
+  "elapsed_llm_seconds": 33.04145689999859,
+  "content_preservation": 0.8909662475181999,
+  "inserted_word_share": 0.005172732311102934,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Double Relief with progressive weighting function",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Overview",
+    0,
+    1
+   ],
+   [
+    "2 Relief",
+    0,
+    1
+   ],
+   [
+    "2.1 Extensions of Relief",
+    0,
+    2
+   ],
+   [
+    "3 Double Relief",
+    0,
+    1
+   ],
+   [
+    "3.1 Progressively weighted double Relief",
+    0,
+    2
+   ],
+   [
+    "4 Experimental design",
+    0,
+    1
+   ],
+   [
+    "4.1 Objective",
+    0,
+    2
+   ],
+   [
+    "4.2 Factors",
+    0,
+    2
+   ],
+   [
+    "4.3 Design",
+    0,
+    2
+   ],
+   [
+    "4.4 Problems",
+    0,
+    2
+   ],
+   [
+    "4.4.1 RDG1NamedContinuous",
+    0,
+    3
+   ],
+   [
+    "4.4.2 RandomRBFRandRed1",
+    0,
+    3
+   ],
+   [
+    "4.4.3 NonMonotonic",
+    0,
+    3
+   ],
+   [
+    "4.4.4 MajorityN",
+    0,
+    3
+   ],
+   [
+    "4.4.5 ModuloP",
+    0,
+    3
+   ],
+   [
+    "4.4.6 RDG1NamedCategoric",
+    0,
+    3
+   ],
+   [
+    "5 Results",
+    0,
+    1
+   ],
+   [
+    "6 Conclusions",
+    0,
+    1
+   ],
+   [
+    "References",
+    0,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Double Relief with progressive weighting function",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Overview",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Relief",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Extensions of Relief",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Double Relief",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Progressively weighted double Relief",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Experimental design",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Objective",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Factors",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Design",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.4 Problems",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.4.1 RDG1NamedContinuous",
+   "page": 10,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.4.2 RandomRBFRandRed1",
+   "page": 11,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.4.3 NonMonotonic",
+   "page": 12,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.4.4 MajorityN",
+   "page": 12,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.4.5 ModuloP",
+   "page": 12,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4.4.6 RDG1NamedCategoric",
+   "page": 12,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "5 Results",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 39.21494310000344,
+ "metrics_raw": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 3,
+  "fp": 18,
+  "fn": 17,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.18181818181818177,
+  "unmatched_gt": [
+   "2.1 Extensions of Relief",
+   "3 Double Relief",
+   "3.1 Progressively weighted double Relief",
+   "4 Exp erimental design",
+   "4.1 Ob jective",
+   "4.2 Factors",
+   "4.3 Design",
+   "4.4 Problems",
+   "4.4.1 RDG1NamedContinuous",
+   "4.4.2 RandomRBFRandRed1",
+   "4.4.3 NonMonotonic",
+   "4.4.4 MajorityN",
+   "4.4.5 ModuloP",
+   "4.4.6 RDG1NamedCategoric",
+   "5 Results",
+   "6 Conclusions",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Double Relief with progressive weighting function",
+   "2.1 Extensions of Relief",
+   "3 Double Relief",
+   "3.1 Progressively weighted double Relief",
+   "4 Experimental design",
+   "4.1 Objective",
+   "4.2 Factors",
+   "4.3 Design",
+   "4.4 Problems",
+   "4.4.1 RDG1NamedContinuous",
+   "4.4.2 RandomRBFRandRed1",
+   "4.4.3 NonMonotonic",
+   "4.4.4 MajorityN",
+   "4.4.5 ModuloP",
+   "4.4.6 RDG1NamedCategoric",
+   "5 Results",
+   "6 Conclusions",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 21,
+  "tp": 3,
+  "fp": 18,
+  "fn": 17,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.18181818181818177,
+  "unmatched_gt": [
+   "2.1 Extensions of Relief",
+   "3 Double Relief",
+   "3.1 Progressively weighted double Relief",
+   "4 Exp erimental design",
+   "4.1 Ob jective",
+   "4.2 Factors",
+   "4.3 Design",
+   "4.4 Problems",
+   "4.4.1 RDG1NamedContinuous",
+   "4.4.2 RandomRBFRandRed1",
+   "4.4.3 NonMonotonic",
+   "4.4.4 MajorityN",
+   "4.4.5 ModuloP",
+   "4.4.6 RDG1NamedCategoric",
+   "5 Results",
+   "6 Conclusions",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Double Relief with progressive weighting function",
+   "2.1 Extensions of Relief",
+   "3 Double Relief",
+   "3.1 Progressively weighted double Relief",
+   "4 Experimental design",
+   "4.1 Objective",
+   "4.2 Factors",
+   "4.3 Design",
+   "4.4 Problems",
+   "4.4.1 RDG1NamedContinuous",
+   "4.4.2 RandomRBFRandRed1",
+   "4.4.3 NonMonotonic",
+   "4.4.4 MajorityN",
+   "4.4.5 ModuloP",
+   "4.4.6 RDG1NamedCategoric",
+   "5 Results",
+   "6 Conclusions",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

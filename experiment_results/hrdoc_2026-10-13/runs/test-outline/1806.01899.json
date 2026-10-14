@@ -1,0 +1,217 @@
+{
+ "doc": "1806.01899",
+ "system": "outline",
+ "metrics": {
+  "gt": 29,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "Abstract",
+   "5.4 Robustness in the presence of outliers",
+   "Computational details",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [
+   "5.4 Robustness in the presence of outliers"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction: Causal graph inference in R",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Models and software",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Step I: skeleton identification",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Step II: edge orientation",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Hypothesis testing for marginal and conditional independence",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4 Pearson and robust correlation",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.5 Metrics for inference accuracy",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.6 Simulating continuous and discrete data",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.7 The LOND method for online FDR control",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Main functions of the MRPC package",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Causal graph inference",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.2 Simulation",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.3 Visualization",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.4 Assessment of inferred graphs",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Illustrations",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Continuous data with and without genetic information",
+   "page": 7,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.2 Discrete data with and without genetic information",
+   "page": 8,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.3 Simulation and performance assessment",
+   "page": 8,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.4 Visualizing a complex graph",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5 Key improvements over existing methods",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Online FDR control",
+   "page": 9,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "5.2 V-structure identification",
+   "page": 10,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "5.3 Node-ordering independence",
+   "page": 10,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "5.4 Robustness in the presence of outliers",
+   "page": 11,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6 Summary and discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.16972660000101314,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "Abstract",
+   "5.4 Robustness in the presence of outliers",
+   "Computational details",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [
+   "5.4 Robustness in the presence of outliers"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9259259259259259,
+  "unmatched_gt": [
+   "5.4 Robustness in the presence of outliers",
+   "Computational details"
+  ],
+  "unmatched_pred": [
+   "5.4 Robustness in the presence of outliers"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "doc": "1504.08093",
+ "system": "outline",
+ "metrics": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "SUPERGRAVITY"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   " References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Can Higgs Inflation be Saved with High-scale Supersymmetry ?",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " I. Introduction ",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " II. RGE for H Below Scale MP/",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " III. Embedding Higgs Inflation into Supergravity",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " IV. Constraints on SUSY mass spectrum",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " V. Discussion and Summary",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " acknowledgments",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " References",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.013288900001498405,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "SUPERGRAVITY"
+  ],
+  "unmatched_pred": [
+   "Can Higgs Inflation be Saved with High-scale Supersymmetry ?",
+   "Abstract",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "SUPERGRAVITY"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,217 @@
+{
+ "doc": "1803.04102",
+ "system": "outline",
+ "metrics": {
+  "gt": 23,
+  "pred": 24,
+  "tp": 20,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Threat Model",
+   "A. Formal Verification"
+  ],
+  "unmatched_pred": [
+   "II-B Threat Model",
+   "II-B1 Potential Adversaries",
+   "II-B2 Hardware Trojan Structure",
+   "III-A Formal Verification"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Preliminaries and Definitions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A SoC Design Flow",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Threat Model",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B1 Potential Adversaries",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "II-B2 Hardware Trojan Structure",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III Previous Works and Their Limitations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Formal Verification",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-B GLIFT-based Trojan Detection",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-C Jasper Security Path Verification",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-D Trojan Detection by Signal Sensitivity Tracing",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV Trojan Detection through IFS Verification",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Confidentiality Verification",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "IV-B Integrity Verification",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "IV-C Trigger Condition Extraction",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "V Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-A Experimental Setup",
+   "page": 7,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "V-B Confidentiality Verification",
+   "page": 7,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "V-C Integrity Verification",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "V-D Comparison",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "VI Limitations of Proposed Approach",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII Conclusion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII Acknowledgment",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.11328270000012708,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 24,
+  "tp": 20,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Threat Model",
+   "A. Formal Verification"
+  ],
+  "unmatched_pred": [
+   "II-B Threat Model",
+   "II-B1 Potential Adversaries",
+   "II-B2 Hardware Trojan Structure",
+   "III-A Formal Verification"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 18,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "B. Threat Model",
+   "A. Formal Verification",
+   "V III . AC K NO W L EDG MEN T"
+  ],
+  "unmatched_pred": [
+   "II-B Threat Model",
+   "II-B1 Potential Adversaries",
+   "II-B2 Hardware Trojan Structure",
+   "III-A Formal Verification"
+  ],
+  "ignored_title_predictions": null
+ }
+}

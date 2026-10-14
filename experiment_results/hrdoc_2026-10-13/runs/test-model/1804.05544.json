@@ -1,0 +1,150 @@
+{
+ "doc": "1804.05544",
+ "system": "model",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 329,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10079,
+   "completion_tokens": 627,
+   "total_tokens": 10706
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Building robust prediction models for defective",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Problem Deﬁnition",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Artiﬁcial Neural Networks",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dropout",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Data Augmentation",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Methodology",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Dataset",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6 Experimental Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Input drop",
+   "page": 9,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "6.2 Input noise",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "7 Conclusions and Future works",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.657281399999192,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Building robust prediction models for defective"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

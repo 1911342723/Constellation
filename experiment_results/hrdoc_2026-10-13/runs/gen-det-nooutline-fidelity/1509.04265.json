@@ -1,0 +1,206 @@
+{
+ "doc": "1509.04265",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "4.2 Factors"
+  ],
+  "unmatched_pred": [
+   "2. for i := 1 to m do begin",
+   "2. for i := 1 to m do begin",
+   "1 w dt"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 16,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [
+   "4.2 Factors"
+  ],
+  "unmatched_pred": [
+   "2. for i := 1 to m do begin",
+   "2. for i := 1 to m do begin",
+   "1 w dt"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 537,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9823773898586866,
+   "in_order": 0.9334995843724023,
+   "inserted": 0.03368765331152901
+  },
+  "export_markdown": "Double Relief with progressive weighting\n\nfunction\n\narXiv:1509.04265v2 [cs.LG] 16 Sep 2015\n\nGabriel Prat Masramon and Lluís A. Belanche Muñoz\n\nFaculty of Computer Science\n\nPolytechnical University of Catalonia\n\nBarcelona, Spain\n\n{gprat,belanche}@lsi.upc.edu\n\n15th June 2006\n\n# Abstract\n\nFeature weighting algorithms try to solve a problem of great importance nowadays in machine learning: The search of a relevance measure for the features of a given domain. This relevance is primarily used for feature selection as feature weighting can be seen as a generalization of it, but it is also useful to better understand a problem’s domain or to guide an inductor in its learning process. Relief family of algorithms are proven to be very eﬀective in this task. On previous work, a new extension was proposed that aimed for improving the algorithm’s performance and it was shown that in certain cases it improved the weights’ estimation accuracy. However, it also seemed to be sensible to some characteristics of the data. An improvement of that previously presented extension is presented in this work that aims to make it more robust to problem speciﬁc characteristics. An experimental design is proposed to test its performance. Results of the tests prove that it indeed increase the robustness of the previously proposed extension.\n\n# 1 Overview\n\nFeature selection is undoubtedly one of the most important problems in machine learning, pattern recognition and information retrieval, among others. A feature selection algorithm is a computational solution that is motivated by a certain deﬁnition of relevance. However, the relevance of a feature may have several deﬁnitions depending on the objective that is looked after. On the other hand, feature weighting algorithms try to estimate relevance (in the form of weights to the features) rather than binarily deciding whether a feature is either relevant or not. This is a much harder problem, but also a more ﬂexible framework from an inductive learning perspective. This kind of\n\n1\n\nalgorithms are confronted with the down-weighting of irrelevant features, the up-weighting of relevant ones and the problem of relevance assignment when redundancy is an issue. In this work we review Relief, one of the most popular feature weighting algorithms. Original Relief and some of its variants are presented on section 2 drawing heavily on own earlier material. Next, we revisit a \"double\" or feedback extension of the algorithm, that was ﬁrstly introduced in an own previous work, that takes its own estimations into account in order to improve general performance. Finally a new version of the algorithm is presented on section 3 that uses its own estimations in a progressive manner, it initially behaves like the traditional algorithm and gradually increases the importance of its estimates to behave at the end as the \"double\" version. An experimental design is presenten in secion 4 to test the performance of the original algorithm versus the two proposed ones. Finally some results and conclusions are presented.\n\n# 2 Relief\n\nRelief is a feature weighting algorithm that doesn’t share one common characteristic of the feature selection and weighting methods. Most of them treat features individually assuming conditional independence of features upon the class. In the other hand, Relief takes all other features in care when evaluating a speciﬁc feature. Another interesting characteristic of Relief is that it is aware of contextual information being able to detect local correlations of feature values and their ability to discriminate from an instance of a diﬀerent class. The main idea behind Relief is to assign large weights to features that contribute in separating near instances of diﬀerent class and joining near instances belonging to the same class. The word \"near\" in the previous sentence is of crucial importance since we mentioned that one of the main diﬀerences between Relief and the other cited methods is the ability to take local context into account. Relief does not reward features that separate (join) instances of diﬀerent (same) classes in general but features that do so for near instances. In Fig. 1 we can see the original algorithm presented by Kira and Rendell in [Kira and Rendell, 1992]. We maintained the original notation that slightly diﬀers from the used above as now features (attributes) are labeled A. There we can see that in the aim of detecting whether the feature is useful to discriminate near instances it selects two nearest neighbors of the current instance Ri. One from the same class H called the nearest hit and one from the diﬀerent class M (the original Relief algorithm only dealt with two class problems) called the nearest miss. With these two nearest neighbors it increases the weight ofthe feature if it has the same value for both Ri and H and decreases it otherwise. The opposite occurs with the nearest miss, Relief increases the weight of a feature if it has opposite values for Ri and M and decreases it otherwise. One of the central parts of Relief is the diﬀerence function diﬀ which is also\n\n2\n\nInput: for each training instance a vector of feature values and the class value Output: the vector W of estimations of the qualities of features\n\n1. set all weights W[A] := 0.0;\n\n# 2. for i := 1 to m do begin\n\n3.\n\nrandomly select an instance Ri;\n\n4.\n\nﬁnd nearest hit H and nearest miss M;\n\n5.\n\nfor A := 1 to a do\n\n6.\n\nW[A] := W[A] − diﬀ(A, Ri, H)/m + diﬀ(A, Ri, M)/m\n\n7. end;\n\nFigure 1: Pseudo code of the original Relief algorithm\n\nused to compute the distance between instances as shown in Eq. 2.1.\n\nδ(I1, I2) = X\n\n(2.1)\n\ndiﬀ(Ai, I1, I2)\n\ni\n\nThe original deﬁnition of diﬀ was an heterogeneous distance metric composed of the overlap metric in Eq. 2.2 for nominal features and the normalized Euclidean distance in Eq. 2.3 for linear features, which [Wilson and Martinez, 1997] called HEOM.\n\nif value(A, I1) = value(A, I2)\n\ndiﬀ(A, I1, I2) = { 0\n\n(2.2)\n\n1 otherwise\n\ndiﬀ(A, I1, I2) = |value(A, I1) − value(A, I2)|\n\n(2.3)\n\nmax(A) − min(A)\n\nThe diﬀerence normalization with m guarantees that the weight range is [-1,1]. In fact the algorithm tries to approximate a probability diﬀerence in Eq. 2.5.\n\nW[A] ≈P(diﬀerent value of A|nearest instance from diﬀerent class)− (2.4)\n\nP(diﬀerent value of A|nearest instance from same class)\n\n(2.5)\n\nWe can see that for a set of instances I having a set of features F this algorithm\n\nhas cost O(m×|I|×|F|) as it has to loop over m instances. For each instance in\n\nthe main loop it has to compute its distance from all other instances so we have O(m × |I|) times the complexity of calculating DRelief and we can easily see\n\nfrom Eq. 2.1 that its complexity is O(|F|), so we have our complexity: O(m ×\n\n|I| × |F|). As m is a user deﬁned parameter we can in some measure control\n\nthe cost of Relief algorithm having a tradeoﬀbetween accuracy of estimation (for large m) and low complexity of the algorithm (for small m). However m can never be greater than |I|.\n\n3\n\n## 2.1 Extensions of Relief\n\nThe ﬁrst modiﬁcation proposed to the algorithm is to make it deterministic by changing the outer loop through m randomly chosen instances for a loop over all instances. This obviously increases the algorithms computation cost which becomes O(|I|2 × |F|) but makes experiments with small datasets more\n\nreproducible. Kononenko uses this simpliﬁed version of the algorithm in its paper [Kononenko, 1994] to test his new extensions to the original Relief. This version is also used by other authors [Kohavi and John, 1997] and its given the name Relieved with the ﬁnal d for \"deterministic\". We can ﬁnd some extensions to the original Relief algorithm proposed in [Kononenko, 1994] in order to overcome some of its limitations: It couldn’t deal with incomplete datasets, it was very sensible to noisy data and it could only deal with multi-class problems by splitting the problem into series of 2-class problems. To able Relief to deal with incomplete datasets, i.e. that contained missing values, a modiﬁcation of the diﬀ function is needed. The new function must be capable of calculating the diﬀerence between a value of a feature and a missing value and between two missing values in addition to the calculation of diﬀerence between two known values. Kononenko proposed various modiﬁcations of this function in its paper and found one that performed better than the others it was the one in a version of Relief he called RELIEF-D (not to be confused with Releaved mentioned above). The diﬀerence function used by RELIEF-D can be seen in Eq. 2.6.\n\n\n\nif I1 is missing\n\n1 − P(value(A, I2)|class(I1))\n\n\n\ndiﬀ(A, I1, I2) =\n\na∈A[P(a|class(I1)) × P(a|class(I2))] if both missing\n\n1 − P\n\n\n\n(2.6)\n\nNow we will focus on giving Relief greater robustness against noise. This robustness can be achieved by increasing the number of nearest hits and misses to look at. This mitigates the eﬀect of choosing a neighbor that would not have been the nearest without the eﬀect of noise. The new algorithm has a new user deﬁned parameter k that controls the number of nearest neighbors to use. In choosing k there is a tradeoﬀbetween locality and noise robustness. [Kononenko, 1994] states that 10 is a good choice for most purposes. The last limitation was that the algorithm was only designed for 2-class problems. The straightforward extension to multi-class problems would be to take as the near miss the nearest neighbor belonging to a diﬀerent class. This variant of Relief is the so-called Relief-E by Kononenko. But later on he proposes another variant which gave better results: This was to take the nearest neighbor (or the k nearest) from each class and average their contribution so as to keep the contributions of hits and misses symmetric and between the interval [0,1]. That gives the Relief-F (ReliefF from now on) algorithm seen in Fig. 2. Relation to impurity functions, in speciﬁc with Gini-index gain can be seen in [Robnik-Šikonja and Kononenko, 2003] when developing the probability difference in Eq. 2.5 in the case that the algorithm uses a large number of nearest\n\n4\n\nInput: for each training instance a vector of feature values and the class value Output: the vector W of estimations of the qualities of features\n\n1. set all weights W[A] := 0.0;\n\n# 2. for i := 1 to m do begin\n\n3.\n\nrandomly select an instance Ri;\n\n4.\n\nﬁnd k nearest hits Hj;\n\n5.\n\nfor each class C ̸= class(Ri) do\n\n6.\n\nﬁnd k nearest misses Mj(C);\n\n7.\n\nfor A := 1 to a do\n\nW[A] := W[A] − kP\n\n8.\n\nj=1diﬀ(A, Ri, Hj)/(m · k)+\n\n\"\n\n#\n\nkP\n\nP (C)\n\n9.\n\n/(m · k);\n\nP\n\ndiﬀ(A, Ri, Mj(C))\n\n1−P (class(Ri))\n\nj=1\n\nC̸=class(Ri)\n\n10. end;\n\nFigure 2: Pseudo code of the ReliefF algorithm\n\n5\n\nneighbors (i.e., when the selected instance could be anyone from the set of instances). This version of the algorithm is called myopic ReliefF as it loses its context of locality property. Rewriting Eq. 2.5 by removing the neighboring condition and by applying Bayes’ rule, we obtain Eq. 2.7.\n\nW ′[A] = Psamecl|eqvalPeqval\n\n− (1 − Psamecl|eqval)Peqval\n\n(2.7)\n\nPsamecl\n\n1 − Psamecl\n\nFor sampling with replacement we obtain we have:\n\nPeqval = X\n\nP(c)2\n\nc∈C\n\nP(c|x)2!\n\nP(x)2\n\nPx∈X P(x)2 × X\n\nPsamecl|eqval = X\n\nc∈C\n\nx∈X\n\nNow we can rewrite Eq. 2.7 to obtain the myopic Relief weight estimation:\n\nW ′[A] = Peqval × GG′(X)\n\n(2.8)\n\nPsamecl1 − Psamecl\n\nWhere GG′(A) is a modiﬁed Gini-index gain of attribute A as seen in Eq. 2.9.\n\nP(c|x)2!\n\nP(x)2\n\nPx∈X P(x)2 × X\n\n− X\n\nGG′(X) = X\n\nP(c)2\n\n(2.9)\n\nc∈C\n\nc∈C\n\nx∈X\n\nAs we can see the diﬀerence in this modiﬁed version from its original Gini-index gain is that Gini-index gain used a factor:\n\nP(x)\n\nPx∈X P(x) = P(x)\n\nwhile myopic ReliefF uses:\n\nP(x)2\n\nPx∈X P(x)2\n\nSo we can see how this myopic ReliefF in Eq. 2.8 holds some kind of normalization for multi-valued attributes when using the factor Peqval. This solves the bias of impurity functions towards attributes with multiple values. Anther improvement compared with Gini-index is that Gini-index gain values decrease when the number of classes increase. The denominator of Eq. 2.8 avoids this strange behavior.\n\n# 3 Double Relief\n\nWhen more and more irrelevant features are added to a dataset the distance calculation of Relief degrades its performance as instances may be considered neighbors when in fact they are far from each other if we compute its distance\n\n6\n\nonly with the relevant features. In such cases the algorithm may lose its context of locality and in the end it may fail to recognize relevant features. The diﬀ(Ai, I1, I2) function calculates the diﬀerence between the values of the feature Ai for two instances I1 and I2. Sum of diﬀerences over all features is used to determine the distance between two instances in the nearest hit and miss calculation (see Eq. 2.1). As seen in the k-nearest neighbors classiﬁcation algorithm (kNN) many weighting schemes which assign diﬀerent weights to the features in the calculation of the distance between instances (see Eq. 3.1).\n\na\n\nX\n\n(3.1)\n\nδ′(I1, I2) =\n\nw(Ai) diﬀ(Ai, I1, I2)\n\ni=1\n\nIn the same way that in [Wettschereck et al., 1997] Relief’s estimates of features’ quality have been used successfully as weights for the distance calculation of kNN we could use their estimation in the previous iteration to compute the distance between instances while searching the nearest hits and misses. We will refer to this version of ReliefF as double ReliefF or in short dReliefF.\n\n## 3.1 Progressively weighted double Relief\n\nThe problem using the weights estimates could be that in early iterations these estimations could be too biased to the ﬁrst instances and could be far from the optimal weights. So, for small t, W[Ai] is very diﬀerent from W[Ai]t. What we want is to begin the distance calculation without using the weight estimates and then, as Relief’s weight estimates become more accurate (because more instances have been taken into account), increase the importance of these weights in the distance calculation. Lets have a distance calculation like the one in Eq. 3.2.\n\na\n\nX\n\n(3.2)\n\nf(W(Ai)t, t) diﬀ(Ai, I1, I2)\n\nδ(I1, I2) =\n\ni=1\n\nWe would like a function f : R × (0, ∞) → R such that:\n\n• f(w, t) is increasing with respect to t\n\n• is continuous\n\n• f(w, 0) = 1\n\n• f(w, ∞) = w\n\nOne such function could be the one in Eq. 3.3. And we will refer to the version of ReliefF using this distance equation as progressively weighted double relief or in short pdReliefF.\n\nf(w, t) = (w−1)c(t)\n\n(3.3)\n\nc(t)+s + 1\n\n7\n\nWhere s is a control parameter that determines the steepness and ﬁnal value of the curve described by f (see Fig. 3) and c(t) is a function of the iteration number (e.g. c(t) = t). Another desirable property for our function would be that it always gives the same results regardless of the number of iterations. In other words, if m is the total number of iterations, we would like f(w, m) to be the same value whatever the value of m. To achieve that we must make c(t) depend also on the total number of iterations m so as to decrement the steepness of the function as the number of total iterations increases. A posible deﬁnition of c(t) is shown in Eq. 3.4.\n\nc (t) = (t/m)a\n\n(3.4)\n\nIn Fig. 4 we can see how f varies the inﬂuence of diﬀerent weights (even a non realistic one that is greater than 1) as iterations go on. We can see that with high values of s the function converges in the ﬁrst few iterations and then it stabilizes its value near w and for low values of s it’s value remains near 1 till the end. To choose a value we can compute the area left over and below the function. We can see the normal ReliefF as a particular case where f(w, t) = 1 having maximum area and dReliefF as another particular case with f(w, t) = w having minimum area. We want to choose the parameters to be in between the two. Speciﬁcally we could choose the parameters so as to leave 1/3 of the area below the function. For doing this we have to solve Eq. 3.5\n\nR m\n\n1 f(w, t) dt − R m\n\n1 w dt\n\n= 1\n\n(3.5)\n\nR m\n\n1 1 dt − R m\n\n3\n\n# 1 w dt\n\nA possible combination of parameters that solves the equation are: a = 2 and s = 0.0633657 ≃ 0.06. Graphicly it can be seen in Fig. 4 that those values\n\nmake weights’ ponderations stay near 1 for half of the iterations and then takes values near the weights’ values. This value has been chosen in our experiments.\n\n# 4 Experimental design\n\n## 4.1 Objective\n\nThe above sections present three algorithms:\n\nReliefF The algorithm presented by Kononenko in [Kononenko, 1994]\n\ndReliefF The above algorithm using it’s own partial weigts to ponderate at-\n\ntributes in distance calculation\n\npdReliefF The above using a function to progressively increment the weights\n\nponderation eﬀect in distance calculation\n\nThe objective of the experiments which will be presented is to compare performance of the three algorithms related to the factor of irrelevant attributes. The\n\n8\n\n2\n\ns=0.01\n\ns=0.06\n\ns=0.1\n\ns=0.5\n\ns=1\n\n1.5\n\nf(w,t)\n\n1\n\n0.5\n\n0\n\n0\n\n2\n\n4\n\n6\n\n8\n\n10\n\nt\n\nFigure 3: Plot of function f for 10 instances with w = 0.5 and c (t) = (t/m)2\n\n5\n\nw=-1\n\nw=0\n\nw=0.5\n\nw=1.5\n\n4\n\n3\n\nf(w,t)\n\n2\n\n1\n\n0\n\n-1\n\n0\n\n2\n\n4\n\n6\n\n8\n\n10\n\nt\n\nFigure 4: Plot of function f for 10 instances with s = 0.06 and c (t) = (t/m)2\n\n9\n\n| hypothesis is t | hat the | performance | of the non-modified | algorithm | will be more |\n| --- | --- | --- | --- | --- | --- |\n| affected by the | numbe | r of irrelevant | attributes increase | due to their | influence in |\n| distance calcul | ation. |  |  |  |  |\n|  |  |  |  |  |  |\n| 4.2 Facto | rs |  |  |  |  |\n|  |  |  |  |  |  |\n| As stated befo | re the | key factor of | the experiments is | the ratio | of irrelevant |\n| attributes, but | there a | re some nuisa | nce factors which h | ave effect o | n the experi- |\n| ments’ results. | The fa | ctors consider | ed in the experimen | ts are: |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n| Problem<br>• | to solve |  |  |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n| Numeric<br>• | vs. cat | egoric attribut | es |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n| Number<br>• | of relev | ant attributes |  |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n| Number<br>• | of irrele | vant attribute | s |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n| Data ran<br>• | domiza | tion |  |  |  |\n|  |  |  |  |  |  |\n|  |  |  |  |  |  |\n| The main facto | r that | will impact on | performance results | will be the | problem we |\n| want to solve a | nd in a | ddition will b | e the most difficult | to reduce. | In order to |\n| eliminate it’s i | nfluence | , all the possi | ble problems would | have to be | tried which |\n| is obviously im | possible | . Another fac | tor that can clearly | impact on | performance |\n| is the type of t | he attri | butes as Relief | has an heterogeneo | us function | for distance |\n| calculation wh | ich dep | ends on wheth | er the attributes a | re numeric | or categoric. |\n| So, to reduce t | he effect | of these two | factors the same exp | eriments w | ill be run on |\n| six different pr | oblems, | three with n | umeric attributes a | nd three w | ith categoric |\n| ones. All the p | roblems | tested will be | artificial to have su | fficient kno | wledge about |\n| the data not to | make | performance o | f the weighting dep | endent on | performance |\n| of a classifier. |  |  |  |  |  |\n| Ranges for | each fa | ctor have to | be chosen. There | has to be | at least one |\n| relevant attribu | te and | one irrelevant | one in order to chec | k whether t | he algorithm |\n| seems capable | of disti | nguishing the | m, so both of them | will start | at 1 in our |\n| experiments. T | he num | ber of irreleva | nt attributes will d | epend on th | e number of |\n| relevant ones i | n order | to test with t | he same percentage | of irreleva | nt attributes |\n| for each numbe | r of rel | evant attribut | es. A good choice c | ould be to | have at most |\n| twice the numb | er of ir | relevant attri | butes as the number | relevant o | nes. |\n| The upper | bound | for the numbe | r of relevant attrib | utes will de | pend on the |\n| number of inst | ances t | hat are to be g | enerated. It is inte | resting to t | est the algo- |\n| rithms with a | wide ra | nge of attribu | tes to instances rat | ios. We ma | y arbitrarily |\n| set number of | instanc | es generated | to 100. With that | number of | instances, it |\n| would be inter | esting t | o have at mos | t 150 features for t | he ratio of | attributes to |\n| instances not t | o get to | o low. If we | want total features | to keep bel | ow 150 with |\n| a number of irr | elevant | attributes of | twice the number o | f relevant o | nes, we have |\n| to set upper bo | und to | the number o | f relevant attribute | s to 50. |  |\n| Finally 10 | differen | t sets of data | will be generated f | or each co | mbination of |\n| other factors t | o reduc | e the possible | effect of randomly | generating | a pathologic |\n| set of data. |  |  |  |  |  |\n\n10\n\n## 4.3 Design\n\nHere we have to decide which of all the possible combinations of factors will be tried in the experiments. The better way to reduce or eliminate the contribution to experimental error of each of the factors would be to treat them as blocking factors. That is to create homogeneous blocks in which the factors are kept constant while the target factor takes all its possible values. When blocking is not possible because of limited resources a random subset of each block can be run. With the ranges described above, there are a total of 3 × I × N × (N − 1)\n\ndiﬀerent factor combinations for each problem as seen on Eq. 4.1, where N is the number of relevant attributes and I the number of iterations (i.e. random dataset generations) for each combination of relevant and irrelevant attribute numbers.\n\n\n\n\n\nN\n\n X\n\n(4.1)\n\n2imp\n\n × Iiterations × 3algorithms = 3 × I × N × (N − 1)\n\nimp=1\n\nThat gives a total number of 76,500 diﬀerent combinations for each problem. With that number of combinations all combinations can be run. So the experimental design will be a full blocking design as shown on Fig. 5 in an algorithmic way.\n\n1. for each problem in problems do begin\n\n2.\n\nfor impAtts := 1 to 50 do begin\n\n3.\n\nfor irrAtts := 1 to impAtts ∗ 2 do begin\n\n4.\n\nfor iteration := 1 to 10 do begin\n\n5.\n\nexecute problem with each algorithm;\n\n6. end;\n\nFigure 5: Pseudo code of the experimental design\n\n## 4.4 Problems\n\n### 4.4.1 RDG1NamedContinuous\n\nA data generator that produces data randomly with numeric attributes by producing a decision list. The decision list consists of rules. The rules have the form\n\ncx := Vn\n\n1 t, where t is an inequality term (i.e. x < y or x ≥ y) between some\n\nattribute and a random value. For each rule, the number n will be a random\n\n11\n\nnumber in the range [1..10]. An example set of rules can be seen on Eq. 4.2.\n\nRULE 0: c0 := a1 < 0.986 ∧ a0 >= 0.65\n\nRULE 1: c1 := a1 < 0.95 ∧ a2 < 0.129\n\n(4.2)\n\nRULE 2: c2 := a1 >= 0.562\n\nInstances are generated randomly one by one. The class will be determined by the ﬁrst rule that is true for the current instance. If decision list fails to classify the current instance, a new rule according to this current instance is generated and added to the decision list. Irrelevant attributes are generated randomly in the range [0, 1].\n\n### 4.4.2 RandomRBFRandRed1\n\nRadial basis functions (RBF) are functions which characteristic feature is that their response decreases (or increases) monotonically with distance from a central point. There are diﬀerent formulas to describe the speciﬁc shape of the function and they usually have parameters to control the center and the distance scale. In this particular case, the function f(x) used is the Gaussian which is described by Eq. 4.3 and can be seen on Fig. 6. Its parameters are its mean µ and its standard deviation σ. A Gaussian RBF monotonically decreases with distance from the center.\n\n!\n\n−(x − µ)2\n\n1\n\n(4.3)\n\nσ√\n\nf(x) =\n\n2π exp\n\n2σ2\n\n0.4\n\n0.3\n\n0.2\n\nf(x)\n\n0.1\n\n0.0\n\n−4\n\n−2\n\n0\n\n2\n\n4\n\nx\n\nFigure 6: Plot of function f(x) with µ = 0 and σ = 1\n\nRandomRBF data is generated by ﬁrst creating a random set of centers for each class. Each center is randomly assigned a weight, a central point per attribute, and a standard deviation. To generate new instances, a center is chosen at random taking the weights of each center into consideration. Attribute\n\n12\n\nvalues are randomly generated and oﬀset from the center, where the overall vector has been scaled so that its length equals a value sampled randomly from the Gaussian distribution of the center. The particular center chosen determines the class of the instance. RandomRBF data contains only numeric attributes as it is non-trivial to include nominal values. Irrelevant attributes are generated following the same Gaussian distribution for some random centers and standard deviation.\n\n### 4.4.3 NonMonotonic\n\nLet ra be a random value in the range [0..1] to act as a ponderator for the attribute a. Now, for each instance i generate a random value ri in the rage [0..N], where N is the number of important attributes. The value ai of the attribute a for instance i will be the one in Eq. 4.4.\n\nra × ri if i mod 2 ̸= 0\n\n(4.4)\n\nai = { ra × √\n\nri if i mod 2 = 0\n\nThe class for instance i will be the integer part of ri. Irrelevant attributes are created randomly following a uniform distribution in the range [0, 1].\n\n### 4.4.4 MajorityN\n\nCreates n binary attributes and i irrelevant attributes. The class attribute is 1 when the instance has a majority of 1s in the relevant attributes and 0 otherwise.\n\n### 4.4.5 ModuloP\n\nEach Modulo-p problem is described by a set |R| = n of relevant attributes and\n\ni irrelevant attributes, both with integer values in the range [0, p). The class c can be deﬁned as in Eq. 4.5.\n\nc = X\n\n(4.5)\n\nr mod p\n\nr∈R\n\n### 4.4.6 RDG1NamedCategoric\n\nThe same data generator as for RDG1NamedContinuous but this time generating boolean attributes instead of numeric ones so now the rules are boolean predicates.\n\n# 5 Results\n\nIn this section the results of the above described experiments are presented. Six plots are presented in Fig. 7. To clearly understand what the axes represent some notation has to be introduced. Let R = r1, r2, . . . , rn be the set relevant\n\nattributes and I = i1, i2, . . . , im the set of irrelevant ones having |R| = n and\n\n13\n\n|I| = m. And let w(a) be the weight assigned by the algorithm to attribute a.\n\nNow, the x-axis represents the total number of attributes (m + n) and the yaxis the separability s (i.e. the maximum weight assigned to a relevant attribute minus the maximum weight assigned to an irrelevant one). Formulas are shown in Eq. 5.1.\n\nx-axis: m + n\n\n(5.1)\n\ny-axis: s = \u0012ar∈R w(ar)\n\n\u0013 − \u0012max\n\nai∈I w(ai)\u0013\n\nmax\n\nNow, in order to accentuate the global diﬀerences between the three algorithms six more plots are presented with the accumulated results for the y-axis. Fig. 8 shows these results. Now the x-axis keeps the same deﬁnition as before while the y-axis is the accumulated value of the separability, so now the formula for the y-axis value at point xn is the one in Eq. 5.2 knowing that si is the separability deﬁned in Eq. 5.1 at point xi.\n\nn\n\nX\n\ny-axis:\n\n(5.2)\n\nsi\n\ni=0\n\nFor this new axis deﬁnition, the slope of the function indicates positive or negative separability. If function descends at some point then separability was negative, on the other hand if function is ascending at this point then separability was positive. The steepness of the slope indicates the magnitude of the separability (either if it was positive or negative). And ﬁnally the separation between the curves for each algorithm tells about the accumulated diﬀerence of separabilities. If at the end one algorithm is above another it shows that the accumulated (and so the mean) separability is greater for this particular algorithm so one can conclude that in average this algorithm outperforms the other.\n\n# 6 Conclusions\n\nBy looking at the results above, it can be seen that none of the three algorithms is clearly better than another for the chosen set of problems. Looking at the ﬁrst set of plots having separability is in the x-axis, we can see that the curves for three algorithms are almost the same, only when there are few attributes dReliefF seems to have diﬀerent behavior. An anomaly is the problem of the random RBFs, there dReliefF is clearly worse. In fatct, except for the majority problem dReliefF is always the worse algorithm and even there it is non-signiﬁcantly better. A diﬀerence between dReliefF and the other two algorithms is that it uses the calculated weights as distance ponderations starting at the ﬁrst iteration of the algorithm. That certainly may cause ReliefF to get stuck into a local minimum found in those ﬁrst iterations because the distance function that is using does not take into account some of the relevant variables. In a section above where pdReliefF\n\n14\n\n0.4\n\n0.3\n\n0.2\n\nsep\n\n0.1\n\n0.0\n\n−0.1\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(a) RDG1NamedContinuous\n\n0.04\n\n0.02\n\nsep\n\n0.00\n\n−0.02\n\n−0.04\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(c) NonMonotonic\n\n1.0\n\n0.8\n\n0.6\n\nsep\n\n0.4\n\n0.2\n\n0.0\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\n−0.2\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(e) ModuloP\n\n0.01\n\n0.00\n\n−0.01\n\nsep\n\n−0.02\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\n−0.03\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(b) RandomRBFRandRed\n\n1.0\n\n0.8\n\n0.6\n\nsep\n\n0.4\n\n0.2\n\n0.0\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\n−0.2\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(d) MajorityN\n\n1.0\n\n0.8\n\n0.6\n\nsep\n\n0.4\n\n0.2\n\n0.0\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\n−0.2\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(f) RDG1NamedCategorical\n\nFigure 7: Separability versus total number of attributes for the three algorithms.\n\n15\n\n0\n\n−5\n\nsep\n\n−10\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\n−15\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(a) RDG1NamedContinuous\n\n3.0\n\n2.5\n\n2.0\n\n1.5\n\nsep\n\n1.0\n\n0.5\n\n0.0\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(c) NonMonotonic\n\n0\n\n−5\n\nsep\n\n−10\n\n−15\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(e) ModuloP\n\n0.0\n\n−0.5\n\n−1.0\n\nsep\n\n−1.5\n\n−2.0\n\n−2.5\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(b) RandomRBFRandRed\n\n0\n\nsep\n\n−5\n\n−10\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(d) MajorityN\n\n0\n\n−5\n\nsep\n\n−10\n\n−15\n\nDISTANCE_TYPE_DOUBLE\n\nDISTANCE_TYPE_INC_DOUBLE\n\nDISTANCE_TYPE_SIMPLE\n\n0\n\n50\n\n100\n\n150\n\natts\n\n(f) RDG1NamedCategorical\n\nFigure 8: Accumulated separability versus total number of attributes for the\n\nthree algorithms.\n\n16\n\nis introduced, we stated the hypothesis that using the weights estimates since the ﬁrst iteration may cause decrease performance due to the fact that these estimations may be too biased to the ﬁrst instances and, so, may be far from the optimal weights. Now the results help support this hypothesis. That could also explain why dReliefF’s behavior is diﬀerent from the others when few attributes are evaluated as opposed as when more attributes are present. When there are few attributes to calculate distance with, making a mistake on choosing their ponderations makes big changes in the results, so problems with few attributes are more sensible to wrong distance calculations and cause dReliefF to either have much higher or lower performance depending on how close are the early weights to the real optimal weights. If the ﬁrst instances seen by the algorithm are not representative of the whole set, for example because they share some common characteristic that is rare among other instances, then the weights used will be biased; on the other hand if these ﬁrst instances give more accurate weight approximates, then is possible that dReliefF’s worked better than the rest. There is also another characteristic of the results to be pointed out. In the second set of plots where diﬀerences among the algorithms stand out clearer, one can see diﬀerences between the behavior of the normal version of the algorithm as opposed to the modiﬁed ones. In these plots, two parallel curves for the separability of two algorithms, indicate that their performance evolves in the same way, meanwhile divergent curves indicate that the performance of one of them increases (decreases) more than the other. Having this in mind the results show that for the two ﬁrst problems with numeric attributes the performance of dReliefF decreases very quick, normal ReliefF is the best of the three and pdReliefF is close to it though its performance also decreases faster than normal ReliefF’s. Results for NonMonotonic are not clear as separability for that particular problem keeps very high for any number of attributes and the three algorithms perform almost identical. Some modiﬁcations could be applied to the generation of the problem to make it more diﬃcult for ReliefF to discriminate attributes’ relevance (e.g. adding more noise to the relevant ones) and compare the performance degradation for the three algorithms. The odd thing is that on the contrary of what happens with numeric problems, when we move onto the categoric ones we can see that now the algorithm which suﬀers the least performance decrease is dReliefF followed by pdReliefF. So the ﬁnal conclusion looking at these experimental results must be that although the performance of the three algorithms is frequently almost the same, the new algorithm pdReliefF introduced seems to be always in the middle of the other two quite stick to the better of the two while the other two are better or worse depending on the problem type, maybe depending on whether attributes are numeric or categoric. And also that dReliefF is very sensible to early errors on weight approximation of ReliefF so it must be used carefully. As future work, more problems could be tested and speciﬁc experiments should be conducted to get deeper in the hypothesis that the diﬀerent versions of ReliefF perform diﬀerent on problems with numeric or categoric attributes. Also some tests on real data should be done using diﬀerent classiﬁers to contrast\n\n17\n\nthem to the results on artiﬁcially generated ones.\n\n# References\n\n[Kira and Rendell, 1992] Kira, K. and Rendell, L. A. (1992). The feature selection problem: Traditional methods and a new algorithm. In AAAI, pages 129–134, Cambridge, MA, USA. AAAI Press and MIT Press.\n\n[Kohavi and John, 1997] Kohavi, R. and John, G. H. (1997). Wrappers for feature subset selection. Artif. Intell., 97(1-2):273–324.\n\n[Kononenko, 1994] Kononenko, I. (1994). Estimating attributes: Analysis and extensions of relief. In Bergadano, F. and Raedt, L. D., editors, ECML, volume 784 of Lecture Notes in Computer Science, pages 171–182. Springer.\n\n[Robnik-Šikonja and Kononenko, 2003] Robnik-Šikonja, M. and Kononenko, I. (2003). Theoretical and empirical analysis of relieﬀand rrelieﬀ. Machine Learning, 53(1-2):23–69.\n\n[Wettschereck et al., 1997] Wettschereck, D., Aha, D. W., and Mohri, T. (1997). A review and empirical evaluation of feature weighting methods for a class of lazy learning algorithms. Artif. Intell. Rev., 11(1-5):273–314.\n\n[Wilson and Martinez, 1997] Wilson, D. R. and Martinez, T. R. (1997). Improved heterogeneous distance functions. J. Artif. Intell. Res. (JAIR), 6:1– 34.\n\n18\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Overview",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Relief",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. for i := 1 to m do begin",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Extensions of Relief",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2. for i := 1 to m do begin",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Double Relief",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Progressively weighted double Relief",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "1 w dt",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experimental design",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Objective",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Design",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4 Problems",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4.1 RDG1NamedContinuous",
+   "page": 10,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.2 RandomRBFRandRed1",
+   "page": 11,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.3 NonMonotonic",
+   "page": 12,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.4 MajorityN",
+   "page": 12,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.5 ModuloP",
+   "page": 12,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.6 RDG1NamedCategoric",
+   "page": 12,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "5 Results",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.362481399999524,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "4.2 Factors"
+  ],
+  "unmatched_pred": [
+   "2. for i := 1 to m do begin",
+   "2. for i := 1 to m do begin",
+   "1 w dt"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

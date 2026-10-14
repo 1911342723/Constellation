@@ -1,0 +1,159 @@
+{
+ "doc": "1706.07034",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 6,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.25,
+  "unmatched_gt": [
+   "2.2. Tagged-branched chain [21, 9].",
+   "3.1. Definition of the estimator.",
+   "3.3. Selection rule.",
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "Algorithm 10.",
+   "6. Acknowledgement",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 117.60528340000019
+ },
+ "predictions": [
+  {
+   "text": "LOCAL BANDWIDTH SELECTION FOR KERNEL DENSITY ESTIMATION IN BIFURCATING MARKOV CHAIN MODEL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Definitions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Bifurcating Markov chain [21].",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Estimation of the stationary distribution ν",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Bias-variance decomposition. We consider a pointwise quadratic risk",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 10.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Simulations",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Bifurcating autoregressive processes.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. Estimation of splitting rate in a growth-fragmentation model.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Proofs",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Acknowledgement",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.008523099997546524,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 9,
+  "fp": 4,
+  "fn": 6,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.1875,
+  "unmatched_gt": [
+   "2.2. Tagged-branched chain [21, 9].",
+   "3.1. Definition of the estimator.",
+   "3.3. Selection rule.",
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "LOCAL BANDWIDTH SELECTION FOR KERNEL DENSITY ESTIMATION IN BIFURCATING MARKOV CH",
+   "Algorithm 10.",
+   "6. Acknowledgement",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.375,
+  "unmatched_gt": [
+   "2.2. Tagged-branched chain [21, 9].",
+   "3.1. Definition of the estimator.",
+   "3.3. Selection rule.",
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "Algorithm 10."
+  ],
+  "ignored_title_predictions": null
+ }
+}

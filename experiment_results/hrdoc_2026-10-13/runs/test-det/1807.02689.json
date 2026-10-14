@@ -1,0 +1,193 @@
+{
+ "doc": "1807.02689",
+ "system": "det",
+ "metrics": {
+  "gt": 28,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 13,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.4137931034482759,
+  "unmatched_gt": [
+   "B. Main Logic",
+   "C. Why It Works",
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "18 CubicNReno"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 792,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATIONS AND DESIGN DECISIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. C2TCP’S ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The Good and The Bad Conditions",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4) Isolation of per user queues in cellular networks:",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "5) What if C2TCP shares a queue with other ﬂows:",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "IV. EVALUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Comparison with End-to-End Schemes",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Fairness",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "18 CubicNReno",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Loss Resiliency",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "E. Impact of Target and Interval",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. RELATED WORK",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.211959899999783,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 13,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.4137931034482759,
+  "unmatched_gt": [
+   "B. Main Logic",
+   "C. Why It Works",
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "18 CubicNReno"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 13,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.3928571428571429,
+  "unmatched_gt": [
+   "B. Main Logic",
+   "C. Why It Works",
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "18 CubicNReno"
+  ],
+  "ignored_title_predictions": null
+ }
+}

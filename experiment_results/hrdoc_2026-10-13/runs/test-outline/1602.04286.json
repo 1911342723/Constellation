@@ -1,0 +1,197 @@
+{
+ "doc": "1602.04286",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 9,
+  "fp": 8,
+  "fn": 7,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "CO N S TRAIN TS",
+   "B. Adaptive Control",
+   "A. Proof of Proposition 1",
+   "B. Proof of Proposition 2",
+   "C. Proof of Proposition 3",
+   "D. Proof of Proposition 4",
+   "E. Proof of Proposition 5"
+  ],
+  "unmatched_pred": [
+   "III-B Adaptive Control",
+   "Appendix",
+   "A Proof of prop:configerror",
+   "B Proof of prop:errordyn",
+   "C Proof of prop:attcontrol",
+   "D Proof of prop:eRdotbound",
+   "E Proof of prop:adaptivecontrol",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Problem Formulation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Attitude Dynamics",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B State Inequality Constraint",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Attitude Control on SO(3) with Inequality Constraints",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Attitude Control without Disturbance",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III-B Adaptive Control",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV Numerical Examples",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Experiment on Hexrotor UAV",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proof of prop:configerror",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B Proof of prop:errordyn",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C Proof of prop:attcontrol",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "D Proof of prop:eRdotbound",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "E Proof of prop:adaptivecontrol",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0501462000029278,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 9,
+  "fp": 8,
+  "fn": 7,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.38888888888888884,
+  "unmatched_gt": [
+   "CO N S TRAIN TS",
+   "B. Adaptive Control",
+   "A. Proof of Proposition 1",
+   "B. Proof of Proposition 2",
+   "C. Proof of Proposition 3",
+   "D. Proof of Proposition 4",
+   "E. Proof of Proposition 5"
+  ],
+  "unmatched_pred": [
+   "III-B Adaptive Control",
+   "Appendix",
+   "A Proof of prop:configerror",
+   "B Proof of prop:errordyn",
+   "C Proof of prop:attcontrol",
+   "D Proof of prop:eRdotbound",
+   "E Proof of prop:adaptivecontrol",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 9,
+  "fp": 6,
+  "fn": 7,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.4117647058823529,
+  "unmatched_gt": [
+   "CO N S TRAIN TS",
+   "B. Adaptive Control",
+   "A. Proof of Proposition 1",
+   "B. Proof of Proposition 2",
+   "C. Proof of Proposition 3",
+   "D. Proof of Proposition 4",
+   "E. Proof of Proposition 5"
+  ],
+  "unmatched_pred": [
+   "III-B Adaptive Control",
+   "A Proof of prop:configerror",
+   "B Proof of prop:errordyn",
+   "C Proof of prop:attcontrol",
+   "D Proof of prop:eRdotbound",
+   "E Proof of prop:adaptivecontrol"
+  ],
+  "ignored_title_predictions": null
+ }
+}

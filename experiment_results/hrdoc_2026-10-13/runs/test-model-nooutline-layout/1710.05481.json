@@ -1,0 +1,152 @@
+{
+ "doc": "1710.05481",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "IMMd"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "IMMd"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 777,
+  "layout_marked": 15,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 22714,
+   "completion_tokens": 649,
+   "total_tokens": 23363
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9645923696556608,
+  "inserted_word_share": 0.032925097621583244
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Basic setup",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Multilinear formulas and circuits",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Lower bounds for multilinear formulas and circuits computing",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Proof of Theorem 10",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Step1 – The product lemma",
+   "page": 9,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Step 2 – Rank measure and the hard polynomial",
+   "page": 11,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.1 Proof of Lemma 18",
+   "page": 13,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Part 1: IMMd has high rank",
+   "page": 13,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "Part 2: t-product polynomials have low rank",
+   "page": 14,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "Part 3: r-simple polynomials have low rank.",
+   "page": 15,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.304799300000013,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "IMMd"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "doc": "1603.09416",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "55 radio sources observed in more than 1000 sessions."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 178,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3798,
+   "completion_tokens": 278,
+   "total_tokens": 4076
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Galactic Aberration",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Rotation, Primordial Gravitational Waves, and Anisotropic Ex-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "pansion of the Universe",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Observations and results",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "55 radio sources observed in more than 1000 sessions.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Acknowledgment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.341172100001131,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "55 radio sources observed in more than 1000 sessions."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "55 radio sources observed in more than 1000 sessions."
+  ],
+  "ignored_title_predictions": null
+ }
+}

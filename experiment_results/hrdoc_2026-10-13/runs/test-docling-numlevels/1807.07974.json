@@ -1,0 +1,237 @@
+{
+ "doc": "1807.07974",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 25,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 25,
+  "parent_correct": 16,
+  "teds": 0.7586206896551724,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "physically realistic setups.",
+   "end if",
+   "2. ˜G is performed."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 26,
+  "tp": 23,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 14,
+  "teds": 0.7407407407407407,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "physically realistic setups.",
+   "end if",
+   "2. ˜G is performed."
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 62.81915880000088
+ },
+ "predictions": [
+  {
+   "text": "Heat-Bath Algorithmic Cooling with optimal thermalization strategies",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "physically realistic setups.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Results and discussion",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 A general cooling theorem",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1.2 The qubit case",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1.3 Robustness to imperfections",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1.4 An experimental proposal",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2 Methods",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 β-permutations and the thermal polytope",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "2.2 Proof of properties of β-permutations",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "2.2.1 Proof of claim 1",
+   "page": 8,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "end if",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2.2 Proof of claim 2",
+   "page": 11,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "2.2.3 Proof of claim 3",
+   "page": 11,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "2.3 Proof of Lemma 1: optimal unitary control",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "2.4 Proof of Theorem 1",
+   "page": 13,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "2.5 A qudit protocol with β-swaps and no ancillas",
+   "page": 14,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "2. ˜G is performed.",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.6 Proof of trivial Markovian cooling for d = 2",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "2.7 Proof of Theorem 2",
+   "page": 15,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "2.8 Robustness of Theorem 2 to anharmonicity",
+   "page": 16,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "2.9 Proof of Theorem 3 and its extension to thermal operations",
+   "page": 16,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "2.9.1 Preliminaries",
+   "page": 16,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "2.9.2 Proof of an extended version of Theorem 3",
+   "page": 17,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "3 Experimental proposal",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Bounds on the achievable cooling in the Jaynes-Cummings model",
+   "page": 20,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "3.2 Jaynes-Cummings model without refreshing the thermal mode",
+   "page": 21,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.018710500000452157,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 25,
+  "parent_correct": 16,
+  "teds": 0.7586206896551724,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "physically realistic setups.",
+   "end if",
+   "2. ˜G is performed."
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,271 @@
+{
+ "doc": "1708.02709",
+ "system": "det",
+ "metrics": {
+  "gt": 36,
+  "pred": 35,
+  "tp": 34,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 34,
+  "parent_correct": 34,
+  "teds": 0.9189189189189189,
+  "unmatched_gt": [
+   "Index Terms",
+   "A. Basic CNN"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 556,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. DISTRIBUTED REPRESENTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Word Embeddings",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Word2vec",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Character Embeddings",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "D. Contextualized Word Embeddings",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. CONVOLUTIONAL NEURAL NETWORKS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Applications",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "IV. RECURRENT NEURAL NETWORKS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Need for Recurrent Networks",
+   "page": 9,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. RNN models",
+   "page": 10,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Applications",
+   "page": 11,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "D. Attention Mechanism",
+   "page": 13,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "E. Parallelized Attention: The Transformer",
+   "page": 14,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. RECURSIVE NEURAL NETWORKS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Basic model",
+   "page": 16,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "B. Applications",
+   "page": 16,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "VI. DEEP REINFORCED MODELS AND DEEP UNSUPERVISED LEARNING",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Reinforcement learning for sequence generation",
+   "page": 16,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "B. Unsupervised sentence representation learning",
+   "page": 18,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "C. Deep generative models",
+   "page": 18,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "VII. MEMORY-AUGMENTED NETWORKS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. PERFORMANCE OF DIFFERENT MODELS ON DIFFERENT NLP TASKS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. POS tagging",
+   "page": 20,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "B. Parsing",
+   "page": 20,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "C. Named-Entity Recognition",
+   "page": 21,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "D. Semantic Role Labeling",
+   "page": 21,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "E. Sentiment Classiﬁcation",
+   "page": 22,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "F. Machine Translation",
+   "page": 22,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "G. Question answering",
+   "page": 22,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "H. Dialogue Systems",
+   "page": 23,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "I. Contextual Embeddings",
+   "page": 23,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "IX. CONCLUSION",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.695049999998446,
+ "metrics_v1": {
+  "gt": 36,
+  "pred": 35,
+  "tp": 34,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 34,
+  "parent_correct": 34,
+  "teds": 0.9189189189189189,
+  "unmatched_gt": [
+   "Index Terms",
+   "A. Basic CNN"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 34,
+  "pred": 33,
+  "tp": 33,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 33,
+  "parent_correct": 33,
+  "teds": 0.9714285714285714,
+  "unmatched_gt": [
+   "A. Basic CNN"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "doc": "1807.06789",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "A. Related Work on UAV-based Vehicle Detection",
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 129,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED APPROACH",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Collection",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Training Process",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. CNN Models",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Application Level Optimizations",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. EVALUATION AND EXPERIMENTAL RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. DroNet on UAV Platform",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. CONCLUSION & FUTURE WORK",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.509968399997888,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "A. Related Work on UAV-based Vehicle Detection",
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "A. Related Work on UAV-based Vehicle Detection",
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

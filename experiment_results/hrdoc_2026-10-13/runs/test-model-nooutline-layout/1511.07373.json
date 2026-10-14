@@ -1,0 +1,176 @@
+{
+ "doc": "1511.07373",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 335,
+  "layout_marked": 22,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 17152,
+   "completion_tokens": 768,
+   "total_tokens": 17920
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9493227819205601,
+  "inserted_word_share": 0.02933167353925159
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Symbols and Plausibilities.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Coherence, or Dutch Book",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Embeddability, Denseness,",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Common sense assumptions entail",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Pragmatics",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Extended Probability",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "7 Summary and Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Retrospect",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 Countable additivity",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "8.2 Partially ordered domains and",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "8.2.1 Representing rings as subdirect sums",
+   "page": 10,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "8.2.2 Robustness examples",
+   "page": 11,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "8.3 Philosophy",
+   "page": 12,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "A Proof of Theorem 1",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Proof of Theorem 2",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.12362690000009,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

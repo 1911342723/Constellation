@@ -1,0 +1,130 @@
+{
+ "doc": "1412.7854",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "2. Related Work",
+   "3. Our Approach",
+   "3.1. Input Data"
+  ],
+  "unmatched_pred": [
+   "3. Occlusion handling"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 140,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3913,
+   "completion_tokens": 290,
+   "total_tokens": 4203
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Occlusion handling",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Part Maps",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3. Deformation Layer",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4. Classiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4. Experimental Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.53932679999707,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "2. Related Work",
+   "3. Our Approach",
+   "3.1. Input Data"
+  ],
+  "unmatched_pred": [
+   "3. Occlusion handling"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 3,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "2. Related Work",
+   "3. Our Approach",
+   "3.1. Input Data"
+  ],
+  "unmatched_pred": [
+   "3. Occlusion handling"
+  ],
+  "ignored_title_predictions": null
+ }
+}

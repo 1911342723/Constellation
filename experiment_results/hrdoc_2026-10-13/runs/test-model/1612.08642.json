@@ -1,0 +1,211 @@
+{
+ "doc": "1612.08642",
+ "system": "model",
+ "metrics": {
+  "gt": 13,
+  "pred": 20,
+  "tp": 12,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM"
+  ],
+  "unmatched_pred": [
+   "ht|ht−1 ∼ πht−1",
+   "xt|ht ∼ F(θht)",
+   "(a) Class one: Left hand",
+   "(b) Class two: right hand",
+   "βkδ(θ − θk)",
+   "πj ∼ DP \u0012α + κ, αβ + κδj",
+   "Subject Chin HMM-FP HMM-CV HDP-HMM",
+   "κ = C × Pcc − 1"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 176,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3980,
+   "completion_tokens": 430,
+   "total_tokens": 4410
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. HMM APPROACH",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ht|ht−1 ∼ πht−1",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "xt|ht ∼ F(θht)",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. BAYESIAN NONPARAMETRIC HMM APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(a) Class one: Left hand",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Class two: right hand",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "βkδ(θ − θk)",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "πj ∼ DP \u0012α + κ, αβ + κδj",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. DESCRIPTION OF EXPERIMENTS AND METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Problem and Data Set Description",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Artifact Reduction",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Spatial Filter",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "D. Spectral Power Estimation",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Subject Chin HMM-FP HMM-CV HDP-HMM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "κ = C × Pcc − 1",
+   "page": 4,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.82283539999844,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 20,
+  "tp": 12,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM"
+  ],
+  "unmatched_pred": [
+   "ht|ht−1 ∼ πht−1",
+   "xt|ht ∼ F(θht)",
+   "(a) Class one: Left hand",
+   "(b) Class two: right hand",
+   "βkδ(θ − θk)",
+   "πj ∼ DP \u0012α + κ, αβ + κδj",
+   "Subject Chin HMM-FP HMM-CV HDP-HMM",
+   "κ = C × Pcc − 1"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 18,
+  "tp": 10,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM"
+  ],
+  "unmatched_pred": [
+   "ht|ht−1 ∼ πht−1",
+   "xt|ht ∼ F(θht)",
+   "(a) Class one: Left hand",
+   "(b) Class two: right hand",
+   "βkδ(θ − θk)",
+   "πj ∼ DP \u0012α + κ, αβ + κδj",
+   "Subject Chin HMM-FP HMM-CV HDP-HMM",
+   "κ = C × Pcc − 1"
+  ],
+  "ignored_title_predictions": null
+ }
+}

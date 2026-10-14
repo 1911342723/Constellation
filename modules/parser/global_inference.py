@@ -567,9 +567,9 @@ class GlobalHeadingInference:
         ):
             # A reader that was shown the candidate and did not mark it has
             # voted NONE.  Apply that observation in odds space, symmetric to
-            # the positive-vote update in _emission: strong deterministic
-            # evidence (outline destination, explicit style) still survives a
-            # single silence, a borderline proposal does not.
+            # the positive-vote update in _emission: a site with two independent
+            # structural cues (e.g. style plus numbering) survives a single
+            # silence; a single cue, even an outline destination, does not.
             activation = _sigmoid(
                 _logit(activation)
                 + math.log(self.parser_config.llm_silence_likelihood_ratio)

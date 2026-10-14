@@ -1,0 +1,259 @@
+{
+ "doc": "1808.03958",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 17519,
+   "completion_tokens": 14661
+  },
+  "elapsed_llm_seconds": 67.68408920000002,
+  "content_preservation": 0.9196287703016242,
+  "inserted_word_share": 0.006616541353383409,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Neural System Identification with Spike-triggered Non-negative Matrix Factorization",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "II. METHODS",
+    1,
+    2
+   ],
+   [
+    "A. Ganglion cell model",
+    1,
+    3
+   ],
+   [
+    "B. Spike-triggered analysis",
+    1,
+    3
+   ],
+   [
+    "C. Spike-triggered non-negative matrix factorization analysis",
+    2,
+    3
+   ],
+   [
+    "III. RESULTS",
+    2,
+    2
+   ],
+   [
+    "A. Subunit filters revealed by STNMF",
+    2,
+    3
+   ],
+   [
+    "B. Subunit connection weight revealed by STNMF",
+    4,
+    3
+   ],
+   [
+    "C. Classification of spikes by STNMF",
+    4,
+    3
+   ],
+   [
+    "D. Application of STNMF to real retinal data",
+    5,
+    3
+   ],
+   [
+    "IV. DISCUSSION",
+    8,
+    2
+   ],
+   [
+    "A. Neuronal circuit at single cell level",
+    8,
+    3
+   ],
+   [
+    "B. Classifying spikes of postsynaptic neurons",
+    8,
+    3
+   ],
+   [
+    "C. System identification of neural network",
+    9,
+    3
+   ],
+   [
+    "ACKNOWLEDGMENT",
+    9,
+    2
+   ],
+   [
+    "REFERENCES",
+    9,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ganglion cell model",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Spike-triggered analysis",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Spike-triggered non-negative matrix factorization analysis",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Subunit filters revealed by STNMF",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Subunit connection weight revealed by STNMF",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Classification of spikes by STNMF",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "D. Application of STNMF to real retinal data",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Neuronal circuit at single cell level",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Classifying spikes of postsynaptic neurons",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C. System identification of neural network",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 68.190215300001,
+ "metrics_raw": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 10,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Neural System Identification with Spike-triggered Non-negative Matrix Factorizat",
+   "REFERENCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

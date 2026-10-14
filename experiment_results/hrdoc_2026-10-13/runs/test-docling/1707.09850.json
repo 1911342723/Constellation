@@ -1,0 +1,239 @@
+{
+ "doc": "1707.09850",
+ "system": "docling",
+ "metrics": {
+  "gt": 17,
+  "pred": 24,
+  "tp": 15,
+  "fp": 9,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.31999999999999995,
+  "unmatched_gt": [
+   "2. CODE-RADE Design and Philosophy",
+   "5. Summary, Conclusion and Futher work"
+  ],
+  "unmatched_pred": [
+   "Bruce Becker",
+   "Sean Murray",
+   "Hypothesis 1: Every researcher is an application",
+   "Hypothesis 2: No software is an island",
+   "Hypothesis 3: All applications need an environment",
+   "Hypothesis 4: There is more than one environment",
+   "Hypothesis 5: Solutions Decay",
+   "Hypothesis 6: Humans need not apply4",
+   "Hypothesis 7: This is not hard"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 28.903421300001355
+ },
+ "predictions": [
+  {
+   "text": "CODE-RADE - Community Infrastructure for the Delivery of Physics Applications",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Bruce Becker",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sean Murray",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. The paradox of plentiful computing",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.2. Barriers to Entry",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. CODE-RADE Design Hypotheses",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 1: Every researcher is an application",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 2: No software is an island",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 3: All applications need an environment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 4: There is more than one environment",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 5: Solutions Decay",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 6: Humans need not apply4",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hypothesis 7: This is not hard",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. CODE-RADE in detail",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Actors",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Platform",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. CODE-RADE is cross-platform",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. CODE-RADE is atomic",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3. CODE-RADE is community-based",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4. CODE-RADE is Automated",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.5. CODE-RADE for Physics",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.019775500004470814,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 25,
+  "tp": 15,
+  "fp": 10,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.3076923076923077,
+  "unmatched_gt": [
+   "2. CODE-RADE Design and Philosophy",
+   "5. Summary, Conclusion and Futher work"
+  ],
+  "unmatched_pred": [
+   "CODE-RADE - Community Infrastructure for the Delivery of Physics Applications",
+   "Bruce Becker",
+   "Sean Murray",
+   "Hypothesis 1: Every researcher is an application",
+   "Hypothesis 2: No software is an island",
+   "Hypothesis 3: All applications need an environment",
+   "Hypothesis 4: There is more than one environment",
+   "Hypothesis 5: Solutions Decay",
+   "Hypothesis 6: Humans need not apply4",
+   "Hypothesis 7: This is not hard"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 22,
+  "tp": 13,
+  "fp": 9,
+  "fn": 2,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.26086956521739135,
+  "unmatched_gt": [
+   "2. CODE-RADE Design and Philosophy",
+   "5. Summary, Conclusion and Futher work"
+  ],
+  "unmatched_pred": [
+   "Bruce Becker",
+   "Sean Murray",
+   "Hypothesis 1: Every researcher is an application",
+   "Hypothesis 2: No software is an island",
+   "Hypothesis 3: All applications need an environment",
+   "Hypothesis 4: There is more than one environment",
+   "Hypothesis 5: Solutions Decay",
+   "Hypothesis 6: Humans need not apply4",
+   "Hypothesis 7: This is not hard"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,223 @@
+{
+ "doc": "1611.02007",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 28,
+  "pred": 26,
+  "tp": 26,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 23,
+  "parent_correct": 20,
+  "teds": 0.7241379310344828,
+  "unmatched_gt": [
+   "4. Topic ranking.",
+   "5. Keyphrase selection."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 363,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13546,
+   "completion_tokens": 877,
+   "total_tokens": 14423
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Keyphrase extraction",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Keyphrase assignment",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Co-ranking for Keyphrase Annotation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 TopicRank",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "1. Keyphrase candidate selection.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Topical clustering",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Graph construction",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Uniﬁed graph construction",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.3 Graph-based co-ranking",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3.4 Keyphrase annotation",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Experimental Setup",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.2 Document preprocessing",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.3 Baselines",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4.4 TopicCoRank setting",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5 Experimental Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Macro-averages results",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "5.2 Precision/recall curves",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "5.3 Extraction vs. assignment",
+   "page": 7,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "5.4 Qualitative example",
+   "page": 8,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.195989100000588,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 26,
+  "tp": 26,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 23,
+  "parent_correct": 20,
+  "teds": 0.7241379310344828,
+  "unmatched_gt": [
+   "4. Topic ranking.",
+   "5. Keyphrase selection."
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 25,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 17,
+  "teds": 0.6923076923076923,
+  "unmatched_gt": [
+   "4. Topic ranking.",
+   "5. Keyphrase selection."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

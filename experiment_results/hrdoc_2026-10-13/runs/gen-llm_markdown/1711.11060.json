@@ -1,0 +1,210 @@
+{
+ "doc": "1711.11060",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 16,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4117647058823529,
+  "unmatched_gt": [
+   "Acknowledgement.",
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3.",
+   "References"
+  ],
+  "unmatched_pred": [
+   "A ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3."
+  ],
+  "unmatched_pred": [
+   "A ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "A ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS",
+    0,
+    1
+   ],
+   [
+    "1. introduction",
+    0,
+    1
+   ],
+   [
+    "2. Technical version of the main theorems",
+    1,
+    1
+   ],
+   [
+    "3. Robust results in the abelian group setting",
+    3,
+    1
+   ],
+   [
+    "4. Proof of Propositions 2.2 and 2.3",
+    5,
+    1
+   ],
+   [
+    "5. Robust results with other assumptions",
+    8,
+    1
+   ],
+   [
+    "6. Proof of Theorem 1.3",
+    9,
+    1
+   ],
+   [
+    "7. A continuous analogue of Theorem 1.3",
+    12,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 13569,
+   "completion_tokens": 13143
+  },
+  "elapsed_llm_seconds": 53.689118499998585,
+  "word_preservation": {
+   "recall": 0.9986872812135356,
+   "in_order": 0.9986872812135356,
+   "inserted": 0.00029201343261786583
+  },
+  "output_markdown": "# A ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS\n\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nAbstract. We prove a robust version of Freiman’s 3k −4 theorem on the restricted sumset A+Γ B, which applies when the doubling constant is at most\n3+\n√\n5\n2\nin general and at most 3 in the special case when\nA = −B. As applications, we derive robust results with other types of assumptions on popular sums, and structure theorems for sets satisfying almost equalities in discrete and continuous versions of the Riesz-Sobolev inequality.\n\n# 1. introduction\n\nFor two sets A, B ⊂Z, the complete sumset A + B is deﬁned by\nA + B := {a + b: a ∈A, b ∈B}.\nWe have the trivial lower bound |A + B| ≥|A| + |B| −1, and the equality holds if and only if A, B are arithmetic progressions with the same common diﬀerence. Freiman’s 3k −4 theorem goes a step further, and states that if |A| = |B| = k and |A+B| ≤3k−4, then A, B must have diameters bounded by |A + B| −k + 1; i.e., there exist arithmetic progressions P, Q with the same common diﬀerence and sizes at most |A + B| −k + 1, such that A ⊂P and B ⊂Q.\n\nIn this paper we aim at proving a robust version of Freiman’s 3k −4 theorem. For a subset Γ ⊂A × B, the restricted sumset A +Γ B is deﬁned by\nA +Γ B = {a + b: (a, b) ∈Γ}.\nWe are mainly concerned with situations when Γ is almost all of A×B. The advantage of considering a robust version is to relax the rigid conditions and keep the important feature. See [14] and [13] for more work in this ﬂavor.\n\nTheorem 1.1. Let ε > 0. Let A, B ⊂Z be subsets with |A| = |B| = n ≥ max{3, 2ε−1/2}, and let Γ ⊂A × B be a subset with |Γ| ≥(1 −ε)n2. If |A +Γ B| < (1 + θ −11ε1/2)n where θ = √5+1/2, then there are arithmetic progressions P, Q with the same common diﬀerence and sizes at most |A +Γ B| −(1−5ε1/2)n, such that |A ∩P| ≥(1−ε1/2)n and |B ∩Q| ≥(1−ε1/2)n.\n\nOur primary focus is on the upper bound for |A +Γ B| in the assumption. While one naturally expects Theorem 1.1 to hold with 1 + θ replaced by 3, we are only able to prove this expected result in the special case when B = −A.\n\nX.S. was supported by a Glasstone Research Fellowship.\nM.W.X. was supported by a London Mathematics Society Undergraduate Research Bursary and the Mathematical Institute at University of Oxford.\n\n1\n\n<<page 2>>\n2\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nTheorem 1.2. Let ε > 0. Let A ⊂Z be a subset with |A| = n ≥ max{3, 2ε−1/2}, and let Γ ⊂A × A be a subset with |Γ| ≥(1 −ε)n2. If |A −Γ A| < (3 −11ε1/2)n, then there exists an arithmetic progression with length at most |A −Γ A| −(1 −5ε1/2)n such that |A ∩P| ≥(1 −ε1/2)n.\n\nAs an application to Theorem 1.1, we prove a structure theorem for sets A with the quantity\nC(A) := #{(a, a′) ∈A × A : a + a′ ∈A} / |A|2\nbeing close to its maximum value 3/4 + o(1). The fact that C(A) is maximized when A is a symmetric interval around the origin can be proved by a simple combinatorial argument; see [5, Proposition 2.1]. The following result asserts that if C(A) is close to 3/4, then A must be close to a symmetric arithmetic progression around the origin.\n\nTheorem 1.3. Let ε ∈(0, 2−50). Let A ⊂Z be a subset with |A| = n ≥ ε−1 and C(A) ≥3/4 −ε. Then there exists an arithmetic progression P containing 0 and centered at 0 such that |P| ≤(1+ 280ε1/4)n and |P ∩A| ≥ (1 −10ε1/4)n.\n\nWe deduce Theorems 1.1 and 1.2 in Section 2 from two technical propositions, Proposition 2.2 and Proposition 2.3. In Section 3, we develop robust analgoues of Kneser’s theorem in abelian groups, which are used in Section 4 to deduce the technical propositions. In Section 5, we relate our main result with similar types of results in the literature [10–12]. Section 6 contains the deduction of Theorem 1.3 from Theorem 1.1, and ﬁnally in Section 7 we deduce a continuous version of Theorem 1.1, which is a special case of previous works on near equality in the Riesz-Sobolev inequality [1–4].\n\nAcknowledgement. We thank Ben Green for drawing our attention to the reference [7].\n\n# 2. Technical version of the main theorems\n\nBefore stating the technical versions of our main theorems, we need the following deﬁnition which also appeared in [6].\n\nDeﬁnition 2.1. Let A, B be two ﬁnite sets (in an ambient abelian group G), and let Γ ⊂A×B. We say that A+Γ B is (K, s)-regular if the following two conditions hold:\n(1) for each a ∈A there are at most s values of b ∈B with (a, b) /∈Γ, and similarly for each b ∈B there are at most s values of a ∈A with (a, b) /∈Γ;\n(2) if rA+B(x) ≥K, then x ∈A +Γ B.\nHere rA+B(x) denotes the number of ways to write x = a + b with a ∈A and b ∈B.\n\nProposition 2.2. Let ℓbe a positive integer and let A, B ⊂{0, 1, · · · , ℓ} be subsets with size |A| = |B| = n ≥3. Assume that 0, ℓ∈A, 0 ∈B and\n\n<<page 3>>\nA ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS\n3\n\ngcd(A∪B) = 1. Let Γ ⊂A×B be a subset such that A+ΓB is (K, s)-regular for some K ≥2 and s ≥0. Then\n|A +Γ B| ≥\n(\nℓ+ n −2s\nif ℓ< 2n −2K −2,\n(θ + 1)n −4s −2K −θ\nif ℓ≥2n −2K −2,\nwhere θ = 1+ √5/2.\n\nIn the special case when A = B, this becomes [6, Theorem 1]. In fact, our proof will follow arguments from [6] with modiﬁcations to accommodate the asymmetric nature of our result. While Proposition 2.2 is the technical version of Theorem 1.1, the following proposition corresponds to Theorem 1.2.\n\nProposition 2.3. Let ℓbe a positive integer and let A ⊂{0, 1, · · · , ℓ} be a subset with size |A| = n. Assume that 0, ℓ∈A and gcd(A) = 1. Let Γ ⊂A × A be a subset such that A −Γ A is (K, s)-regular for some K ≥2 and s ≥0. Then\n|A −Γ A| ≥\n(\nℓ+ n −2s\nif ℓ< 2n −2K −2,\n3n −4s −2K −2\nif ℓ≥2n −2K −2.\n\nThe reason that we are able to get a better result in the case when A = −B stems from a special combinatorial argument (see Proposition 3.2 below) that is not available in the general setting.\n\nWe will prove Propositions 2.2 and 2.3 in Section 4, after developing the essential ingredient in Section 3 about restricted sumsets in abelian groups. In the remainder of this section, we deduce Theorems 1.1 and 1.2 from Propositions 2.2 and 2.3, respectively.\n\nProof of Theorem 1.1 assuming Proposition 2.2. Since |Γ| ≥(1 −ε)n2, for every a ∈A outside an exceptional set of size at most ε1/2n, we have (a, b) ∈ Γ for all but at most ε1/2n values of B. Thus we can ﬁnd A′ ⊂A and B′ ⊂B such that |A′| = |B′| ≥(1 −ε1/2)n and for any a′ ∈A′ we have\n#{b′ ∈B′ : (a′, b′) /∈Γ} ≤ε1/2n.\nLet Γ∗= (A′ × B′) ∩Γ. Set s = ε1/2n and K = ε1/2n, and take\nΓ′ = Γ∗∪{(a′, b′) ∈A′ × B′ : rA′+B′(a′ + b′) ≥K}.\nThen by construction A′+Γ′ B′ is (K, s)-regular. After translating and dilat-ing appropriately so that the smallest elements in A′ and B′ are both 0 and gcd(A′ ∪B′) = 1, let ℓbe the largest element in A′ ∪B′. By Proposition 2.2 we have\n|A′ +Γ′ B′| ≥\n(\nℓ+ |A′| −2s\nif ℓ< 2|A′| −2K −2,\n(θ + 1)|A′| −4s −2K −θ\nif ℓ≥2|A′| −2K −2.\nSince |A′| ≥(1 −ε1/2)n and n ≥2ε−1/2, the inequalities above lead to\n|A′ +Γ′ B′| ≥min(ℓ+ (1 −3ε1/2)n, (θ + 1 −10ε1/2)n).\nNext we claim that\n|A +Γ B| ≥|A′ +Γ′ B′| −ε1/2n.\n\n<<page 4>>\n4\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nTo see this, note that A′ +Γ∗B′ ⊂A +Γ B, and that if x ∈(A′ +Γ′ B′) \\ (A′ +Γ∗B′) then rA′+B′(x) ≥K by the deﬁnition of Γ′, so that the number of such x is at most\n|(A′ × B′) \\ Γ∗| / K ≤|(A × B) \\ Γ| / K ≤ε1/2n.\nIt follows that\n|A +Γ B| ≥min(ℓ+ (1 −4ε1/2)n, (θ + 1 −11ε1/2)n).\nBy our assumption on the size of A +Γ B, we must have\n|A +Γ B| ≥ℓ+ (1 −4ε1/2)n.\nSetting P and Q to be suitably translated and dilated copies of the interval {0, 1, 2, · · · , ℓ} (so that A′ ⊂P and B′ ⊂Q), we see that they have lengths\nℓ+ 1 ≤|A +Γ B| −(1 −5ε1/2)n,\nand moreover |A ∩P| ≥|A′| ≥(1 −ε1/2)n and similarly |B ∩Q| ≥|B′| ≥ (1 −ε1/2)n. This completes the proof.\n□\n\nProof of Theorem 1.2 assuming Proposition 2.3. The proof of Theorem 1.2 is almost the same as the proof of Theorem 1.1. The only diﬀerence is that we apply Proposition 2.3 intead of Proposition 2.2 in the ﬁnal step to complete our proof.\n□\n\n# 3. Robust results in the abelian group setting\n\nIn this section we prove robust analogues of Kneser’s theorem in abelian groups. Our ﬁrst result is an extension of [6, Theorem 2] to two distinct sets A, B.\n\nProposition 3.1. Let G be an abelian group and let A, B ⊂G be subsets with n = |A| ≤|B|. Let Γ ⊂A × B be a subset such that A +Γ B is (K, s)-regular for some K, s ≥0. Suppose that A +Γ B ̸= A + B. Then\n|A +Γ B| > θn −K −2s,\nwhere θ = 1+ √5/2.\n\nProof. For the purpose of contradiction, assume that |A+ΓB| ≤θn−K−2s. The proof is split into the following four steps.\n\nStep 1. By the pigeonhole principle, there exists σ ∈G such that\nrA+B(σ) ≥ |Γ| / |A +Γ B| > (n2 −ns) / (θn −K −2s) ≥n(n −s) / (θ(n −s)) = (θ −1)n.\nFrom now on ﬁx such σ.\n\n<<page 5>>\nA ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS\n5\n\nStep 2. We show that rA−A(c) ≥(2 −θ)n + K for each c ∈B −B. Take c = b′ −b ∈B −B for some b, b′ ∈A. Since A +Γ B is (K, s)-regular, we have\n|(A + b)\\(A +Γ B)| ≤s,\n|(A + b′)\\(A +Γ B)| ≤s.\nIt follows that\n|(A + b) ∪(A + b′)| ≤|A +Γ B| + 2s ≤θn −K,\nand thus\n|(A + b) ∩(A + b′)| ≥2|A| −θn + K = (2 −θ)n + K.\nNote that each element in the intersection (A + b) ∩(A + b′) is of the form a + b = a′ + b′ for some a, a′ ∈A, and this leads to a representation\nc = b′ −b = a −a′.\nHence rA−A(c) ≥(2 −θ)n + K as desired. Similarly one can also show that rB−B(d) ≥2|B| −θn + K for each d ∈A −A.\n\nStep 3. We claim that for the above ﬁxed σ and each c ∈B −B, there are at least K triples (b, a, a′) ∈B × A × A such that c = a′ −a and σ = a + b. To see this, note that the number of (a, a′) ∈A×A with c = a′−a is at least (2 −θ)n + K by Step 2, and the number of (a, b) ∈A × B with σ = a + b is at least (θ −1)n by Step 1. Hence the number of such triples (b, a, a′) is at least\n(2 −θ)n + K + (θ −1)n −|A| ≥K,\nas claimed. For any such triple we have c + σ = a′ + b ∈A + B, and thus from the (K, s)-regularity assumption we deduce that c + σ ∈A +Γ B. This shows that B −B + σ ⊂A +Γ B. Similarly, for each d ∈A −A the number of triples (b, b′, a) ∈B × B × A with d = b′ −b and σ = a + b is at least\n2|B| −θn + K + (θ −1)n −|B| ≥K,\nshowing that A −A + σ ⊂A +Γ B as well. Hence\n|(A −A) ∪(B −B)| ≤|A +Γ B|.\n(3.1)\n\nStep 4. Finally, we show that (3.1) is impossible. Since A+ΓB ̸= A+B, we may ﬁnd a ∈A and b ∈B such that a+b /∈A+Γ B. Thus rA+B(a+b) < K, which implies that\n|(−a + A) ∩(b −B)| < K.\nTherefore,\n|(A −A) ∪(B −B)| ≥|(−a + A) ∪(b −B)| > 2n −K\n> θn −K −2s ≥|A +Γ B|.\nThis contradicts (3.1) and the proof is completed.\n□\n\nMotivated by arguments from [7, Section 4], we can obtain a better bound in the special case when B = −A.\n\nProposition 3.2. Let G be an abelian group and let A ⊂G be a subset with |A| = n. Let Γ ⊂A × A be a subset such that A −Γ A is (K, s)-regular for some K, s ≥0. Suppose that A −Γ A ̸= A −A. Then\n|A −Γ A| > 2n −K −2s.\n\n<<page 6>>\n6\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nProof. Since A −Γ A ̸= A −A, there exists (a, −a′) ∈A × −A such that a −a′ /∈A −Γ A. This implies that rA−A(a −a′) < K by the deﬁnition of (K, s)-regular. Let N(a) be the set of neighbours of a in Γ:\nN(a) = {na ∈−A: (a, na) ∈Γ},\nand deﬁne N(a′) similarly. Since\n|(a + N(a)) ∩(a′ + N(a′)| ≤rA−A(a −a′) < K,\nit follows that\n|(a + N(a)) ∪(a′ + N(a′))| > |N(a)| + |N(a′)| −K ≥2n −2s −K.\nThe proof is completed by noting that (a+N(a))∪(a′−N(a′)) ⊂A−ΓA.\n□\n\n# 4. Proof of Propositions 2.2 and 2.3\n\nIn this section we prove Propositions 2.2 and 2.3. The proofs roughly follow Lev and Smeliansky’s proof [8] of Freiman’s 3k−4 theorem by reducing modulo ℓand applying Kenser’s theorem in Z/ℓZ, with a signiﬁcant amount of work devoted to analyzing the stabilizer H from Kneser’s theorem.\n\nProof of Proposition 2.2. Let eA, eB ⊂Z/ℓZ be the images of A, B modulo ℓ, respectively, so that | eA| = n −1 and | eB| ≥n −1. Let eΓ ⊂eA × eB be the image of Γ modulo ℓ. The (K, s)-regularity of A +Γ B implies that eA +eΓ eB is (2K, s)-regular:\n(1) for any ea ∈eA there are at most s values of eb ∈eB such that (ea,eb) /∈eΓ, and similarly for any eb ∈eB there are at most s values of ea ∈eA such that (ea,eb) /∈eΓ;\n(2) if r e A+ e B(ex) ≥2K, then ex ∈eA +eΓ eB.\nIndeed, (1) holds because each bad pair (a, b) /∈Γ reduces to at most one bad pair (ea,eb) /∈eΓ. To show (2), take ex /∈eA +eΓ eB, so that any pre-image of ex is not in A +Γ B. If ex = 0, then\nr e A+eΓ e B(0) ≤rA+ΓB(0) + rA+ΓB(ℓ) + rA+ΓB(2ℓ) ≤1 + (K −1) + 1 < 2K,\nsince K ≥2. If ex ̸= 0, then it has two possible pre-images x, x + ℓand thus\nr e A+eΓ e B(ex) ≤rA+ΓB(x) + rA+ΓB(x + ℓ) < K + K = 2K.\nThis proves the (2K, s)-regularity of eA +eΓ eB.\n\nNote that if (0, b) and (ℓ, b) both lie in Γ for some b ∈B, then both 0 + b and ℓ+ b lie in A +Γ B, but they reduce to the same element modulo ℓand are thus counted only once in eA +eΓ eB. Since there are at least n −2s values of such b ∈B, we conclude that\n|A +Γ B| ≥| eA +eΓ eB| + n −2s.\n(4.1)\nIf ℓ< 2n −2K −2, then ℓ+ 2K < 2n −2 ≤| eA| + | eB|. It follows that\n| eA ∩(x −eB)| ≥| eA| + | eB| −ℓ> 2K\nfor any x ∈Z/ℓZ, and hence r e A+ e B(x) > 2K for any x. Since eA +eΓ eB is (2K, s)-regular, we have eA +eΓ eB = Z/ℓZ, and by (4.1) we have |A +Γ B| ≥ ℓ+ n −2s, as desired.\n\n<<page 7>>\nA ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS\n7\n\nIf ℓ≥2n−2K−2 and eA+eΓ eB ̸= eA+ eB, then we may apply Proposition 3.1 to get\n| eA +eΓ eB| > θ(n −1) −2K −2s.\nThus by (4.1) we get the desired bound\n|A +Γ B| ≥(θ + 1)n −2K −4s −θ.\nIt remains to consider the case when ℓ≥2n−2K −2 and eA+eΓ eB = eA+ eB. We may assume that\n| eA + eB| = | eA +eΓ eB| ≤2n −2s −4,\n(4.2)\nsince otherwise the conclusion follows from (4.1). Let H = H( eA+ eB) be the period of eA + eB, so that eA + eB + H = eA + eB. By Kneser’s theorem applied to eA + eB, we have\n| eA + eB| ≥| eA + H| + | eB + H| −|H|.\n(4.3)\nTo count the number of elements x ∈A +Γ B, we divide into three cases according to whether ex, the projection of x modulo ℓ, lies in eB, ( eB +H)\\ eB, or ( eA + eB) \\ ( eB + H). Note that eB + H ⊂eA + eB since eA + eB + H = eA + eB and 0 ∈eA. Note also that if eA ⊂H then one only needs to consider the ﬁrst two cases as the third set is empty.\n\nCase 1. First we claim that\n#{x ∈A +Γ B : ex ∈eB} ≥2n −2s −1.\nWrite B = {b1, b2, · · · , bn} where 0 = b1 < b2 < · · · < bn ≤ℓ. Since 0, ℓ∈A, the following 2n −1 sums all lie in A + B:\n0 + b1, 0 + b2, · · · , 0 + bn, ℓ+ b2, ℓ+ b3, · · · , ℓ+ bn.\nMoreover, at most 2s of them do not belong to A+ΓB, and the claim follows.\n\nCase 2. We claim that\n#{x ∈A +Γ B : ex ∈( eB + H) \\ eB} ≥|( eB + H)\\ eB| = | eB + H| −| eB|.\nIndeed, since ( eB + H)\\ eB ⊂eA + eB = eA +eΓ eB, every ex ∈( eB + H)\\ eB has a pre-image in A +Γ B.\n\nWe may now conclude the proof when eA ⊂H. If H = Z/ℓZ, then from (4.3) it follows that | eA +eΓ eB| = | eA + eB| ≥ℓ. Hence by (4.1), we have\n|A +Γ B| ≥ℓ+ n −2s ≥3n −2K −2s −2 > (θ + 1)n −4s −2K −θ,\nas desired. If H ⊊Z/ℓZ, then eB + H must contain at least two cosets of H, since otherwise eB is contained in a single coset of H, contradicting the assumptions that 0 ∈eB and gcd(A ∪B) = 1. Hence | eB + H| ≥2|H| ≥ 2| eA| = 2n −2. Combining the bounds from Cases 1 and 2, we have\n|A +Γ B| ≥2n −2s −1 + | eB + H| −| eB| ≥2n −2s −1 + (2n −2) −n\n> (θ + 1)n −4s −2K −θ,\nas desired. From now on assume that eA ⊊H, and we will need to consider Case 3 as well.\n\n<<page 8>>\n8\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nCase 3. Finally we prove that\n#{x ∈A +Γ B : ex ∈( eA + eB) \\ ( eB + H)} ≥2| eB| −| eB + H| −2s −1.\nSince eA + eB + H = eA + eB, the set ( eA + eB) \\ ( eB + H) is a disjoint union of N cosets of H, where\nN = (| eA + eB| −| eB + H|) / |H|.\nNote that N ≥1, since otherwise | eA + eB| = | eB + H|, and by (4.3) we get | eA + H| ≤|H|, contradicting the assumption that eA ⊊H. Fix a coset ea + eb + H in ( eA + eB) \\ ( eB + H), and let us count the quantity\nM := #{x ∈A +Γ B : ex ∈ea + eb + H}.\nDeﬁne A′ to be the set of those elements in A whose projections modulo ℓ lie in the coset ea+H, and similarly deﬁne B′ to be the set of those elements in B whose projections modulo ℓlie in eb + H. Since any sum in A′ +Γ B′ projects to an element in the desired coset ea + eb + H, we have\nM ≥|A′ +Γ B′| ≥|A′| + |B′| −2s −1,\n(4.4)\nwhere the second inequality follows by writing\nA′ = {x1 < x2 < · · · < x|A′|},\nB′ = {y1 < y2 < · · · < y|B′|},\nand noting that among the |A′| + |B′| −1 distinct sums\nx1 + y1, x1 + y2, · · · , x1 + y|B′|, x2 + y|B′|, · · · , x|A′| + y|B′|,\nat most 2s of them do not lie in A′ +Γ B′.\nLet eA′ be the image of A′ after modulo ℓ; i.e. eA′ = eA ∩(ea + H). Since (ea + H) \\ eA = (ea + H) \\ eA′ is contained in ( eA + H) \\ eA, we have\n| eA + H| −| eA| ≥|ea + H| −| eA′| ≥|H| −|A′|.\nIt follows that\n|A′| ≥|H| + | eA| −| eA + H|,\nand similarly,\n|B′| ≥|H| + | eB| −| eB + H|.\nCombining the two bounds above with (4.4) and (4.3), we obtain\nM ≥2|H| + | eA| + | eB| −| eA + H| −| eB + H| −2s −1\n≥|H| + | eA| + | eB| −| eA + eB| −2s −1.\nCall the lower bound above M0 so that M ≥M0. In particular, we have M0 ≥|H| + 1 by (4.2). We conclude that the total number of x ∈A +Γ B counted in this case is at least M0N, and\nM0N = N|H| + N(M0 −|H|) ≥N|H| + M0 −|H|\n= | eA + eB| −| eB + H| + (|H| + | eA| + | eB| −| eA + eB| −2s −1) −|H|\n= | eA| + | eB| −| eB + H| −2s −1.\n\n<<page 9>>\nA ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS\n9\n\nCombining Cases 1, 2, and 3 together we get the desired bound\n|A +Γ B| ≥(2n −2s −1) + (| eB + H| −| eA|) + (| eA| + | eB| −| eB + H| −2s −1)\n≥3n −4s −3.\nThis completes the proof.\n□\n\nProof of Proposition 2.3. One can follow the proof of Proposition 2.2 above, taking B = ℓ−A and using Proposition 3.2 instead of Proposition 3.1.\n□\n\n# 5. Robust results with other assumptions\n\nOur main theorem deals with the restricted sumset A +Γ B, where Γ consists of almost all of the pairs from A × B. One may consider other robust versions of the sumset A + B. In this section we deduce two such variants, and compare them with existing results in the literature.\n\nCorollary 5.1. Let A and B be two sets of integers both with size n ≥3. Let 0 < δ < √5−1/2. Assume that\nX\nx\nmin(1A ∗1B(x), t) ≤(2 + δ)nt,\n1 ≤t ≤2−10  √5−1/2 −δ 2 n.\nThen there are arithmetic progressions P, Q with the same common diﬀerence and sizes at most (1+δ)n+10t1/2n1/2, such that |A∩P| ≥n−2t1/2n1/2 and |B ∩Q| ≥n −2t1/2n1/2.\n\nThe assumption here is motivated by Pollard’s theorem which states that\nX\nx\nmin(1A ∗1B(x), t) ≥t(2n −t)\nfor any 0 ≤t ≤n. In the case when A = B, this should be compared with [11, Theorem 1.1], where the assumptions on δ and t are:\n0 < δ < 1/4,\nt ≤1/5  1/4 −δ  n.\nThus Corollary 5.1 extends the range of δ, at the cost of requiring t to be a much smaller constant times n.\n\nProof. Let Γ be the set of pairs (a, b) ∈A × B with rA+B(a + b) ≥t. Then\nX\nx\nmin(1A∗1B(x), t) =\nX\nx∈A+ΓB\nt+\nX\nx/∈A+ΓB\n1A∗1B(x) = t|A+ΓB|+|(A×B)\\Γ|.\nBy assumption the quantity above is bounded by (2 + δ)nt. Thus it follows that\n|A +Γ B| ≤(2 + δ)n\nand\n|(A × B) \\ Γ| ≤(2 + δ)nt ≤3nt.\nWe will apply Theorem 1.1 with ε = 3t/n. The upper bound on t implies that\n2 + δ ≤1 + θ −11ε1/2,\n\n<<page 10>>\n10\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nwhere θ = √5+1/2, so that the assumption of Theorem 1.1 is satisﬁed. Thus there are arithmetic progressions P, Q with the same common diﬀerence and sizes at most\n|A +Γ B| −(1 −5(3t/n)1/2)n ≤(1 + δ)n + 10t1/2n1/2,\nsuch that\n|A ∩P| ≥(1 −(3t/n)1/2)n ≥n −2t1/2n1/2,\n|B ∩Q| ≥n −2t1/2n1/2.\nThis completes the proof.\n□\n\nThe second corollary deals with popular sums; see [10, Lemma 3.4] and [12, Theorem 2.4].\n\nCorollary 5.2. Let A and B be two sets of integers both with size n. Let η and δ be positive numbers such that 11η1/2 + δ < √5−1/2 and n > 2η−1/2. Assume that\n#\nx ∈A + B : rA+B(x) ≥ ηn2/|A + B|\n≤(2 + δ)n.\nThen there exist arithmetic progressions P, Q with the same common diﬀerence and sizes at most (1 + δ + 5η1/2)n, such that |A ∩P| ≥(1 −η1/2)n and |B ∩Q| ≥(1 −η1/2)n.\n\nCompared with [10, Lemma 3.4] which was deduced from [6, Theorem 1], Corollary 5.2 is applicable to two distinct sets A, B and can be deduced from our Proposition 2.2.\n\nProof. In this proof, we write r(x) for rA+B(x), and let K = ηn2/|A + B|. Let Γ ⊂A × B be the set of (a, b) ∈A × B with r(a + b) ≥K. From the inequality\nn2 =\nX\nx\nr(x) =\nX\nx: r(x)<K\nr(x) +\nX\nx: r(x)≥K\nr(x) ≤K|A + B| + |Γ|,\nit follows that\n|Γ| ≥n2 −K|A + B| = (1 −η)n2.\nWe will apply Theorem 1.1 with ε = η. Since 2 + δ < 1 + θ −11η1/2 by assumption, we can apply Theorem 1.1 to conclude that there are arithmetic progressions P, Q with the same common diﬀerence and sizes at most\n(2 + δ)n −(1 −5η1/2)n ≤(1 + δ + 5η1/2)n,\nsuch that\n|A ∩P| ≥(1 −η1/2)n,\n|B ∩Q| ≥(1 −η1/2)n.\nThis completes the proof.\n□\n\n# 6. Proof of Theorem 1.3\n\nIn this section, we deduce Theorem 1.3 from Theorem 1.1. The plan is to divide A into its positive and negative parts, and apply Theorem 1.1 to each of these two parts (with appropriately chosen Γ). After that, we need to ensure that the arithmetic progressions containing these two parts can be glued together so that they contain 0 and are symmetric around 0.\n\nLemma 6.1. If A ⊂Z>0 and |A| = n, then C(A) < 1/2.\n\n<<page 11>>\nA ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS\n11\n\nProof. Write A = {a1 < a2 < a3 < · · · < an}. For each i, the sums ai + a1, · · · , ai + an are all of size greater than ai, and thus at most n −i of them can lie in A. It follows that\nC(A) ≤1/n2\nn\nX\ni=1\n(n −i) < 1/2.\n□\n\nLemma 6.2. Let ε ∈(0, 2−20). Let A ⊂Z>0 be a set of n ≥2ε−1/2 positive integers. If C(A) ≥(1 −ε)/2, then there is an arithmetic progression P containing 0 with size at most (1+ 45ε1/2)n such that |A ∩P| ≥(1−ε1/2)n.\n\nProof. Let Γ ⊂A × A be the subset deﬁned by\nΓ = {(a, a′) ∈A × A: |a −a′| ∈A}.\nSince C(A) ≥(1 −ε)/2, the number of pairs (a, a′) ∈A × A with a −a′ ∈A is at least (1 −ε)n2/2, and by symmetry there are also at least (1 −ε)n2/2 pairs (a, a′) ∈A × A with a′ −a ∈A. It follows that |Γ| ≥(1−ε)n2. By the construction of Γ we have\n|A −Γ A| ≤2n.\nSince ε < 2−20, we have 2n ≤(1 + θ −11ε1/2)n, where θ = √5+1/2. Thus by Theorem 1.1, there is an arithmetic progression P with\n|P| ≤|A −Γ A| −(1 −5ε1/2)n ≤(1 + 5ε1/2)n,\nsuch that |A ∩P| ≥(1 −ε1/2)n. It remains to show that P can be extended to an arithmetic progression eP containing 0, and that | eP \\ P| is small. Note that if (a, a′) ∈Γ, then either a ∈A \\ P, or a′ ∈A \\ P, or |a −a′| ∈ A \\ P, or (a, a′, |a −a′|) ∈P × P × P. Hence\n|Γ| ≤4n|A \\ P| + #{(a, a′) ∈P × P : |a −a′| ∈P}.\nSince |Γ| ≥(1 −ε)n2 and |A \\ P| ≤ε1/2n, we have\n#{(a, a′) ∈P × P : |a −a′| ∈P} ≥(1 −5ε1/2)n2.\nIt follows that the elements of P must be in the residue class 0 (mod d), where d is the common diﬀerence of P, since otherwise (P −P) ∩P = ∅. Furthermore, from |P| ≤(1 + 5ε1/2)n we get\n#{(a, a′) ∈P × P : |a −a′| /∈P} ≤|P|2 −(1 −5ε1/2)n2 ≤40ε1/2n|P|.\nLet md be the smallest element in P, so that P can be extended to an arithmetic progression eP containing 0, with | eP| = |P| + m. Then\n#{(a, a′) ∈P × P : |a −a′| /∈P} ≥#{(a, a′) ∈P × P : |a −a′| < md}\n≥min (m, |P|) |P|.\nCombining the upper and lower bounds above, we get m ≤40ε1/2n, and hence\n| eP| = |P| + m ≤(1 + 5ε1/2)n + 40ε1/2n ≤(1 + 45ε1/2)n.\nThe proof is completed by replacing P by eP.\n□\n\n<<page 12>>\n12\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nLemma 6.3. Let P1, P2 be arithmetic progressions of the form\nP1 = {0, d1, 2d1, · · · , (ℓ1 −1)d1},\nP2 = {−(ℓ2 −1)d2, · · · , −2d2, −d2, 0}.\nIf d1 ̸= d2, then the number of pairs (a1, a2) ∈P1 ×P2 with a1 +a2 /∈P1 ∪P2 is at least\n1/4 min(ℓ2\n1, ℓ2\n2) −1/2(ℓ1 −ℓ2)2 −ℓ1 −ℓ2.\n\nProof. By dividing all elements in P1 and P2 by (d1, d2), we may assume that (d1, d2) = 1. Consider the number of pairs (a1, a2) ∈P1 × P2 with a1 + a2 ∈ P1. This is the same as the number of solutions to x1d1 −x2d2 = y1d1, where 0 ≤x1, y1 < ℓ1 and 0 ≤x2 < ℓ2. We must have x1 ≡y1 (mod d2). Since x1 −y1 must also be non-negative, the number of such solutions is at most\nℓ1−1\nX\ny1=0\nℓ1 −1 −y\nd2\n+ 1\n≤ℓ1(ℓ1 −1)/2d2\n+ ℓ1.\nSimilarly, the number of pairs (a1, a2) ∈P1 ×P2 with a1 +a2 ∈P2 is at most ℓ2(ℓ2 −1)/(2d1) + ℓ2. It follows that the number of pairs (a1, a2) ∈P1 × P2 with a1 + a2 /∈P1 ∪P2 is at least\nℓ1ℓ2 −ℓ1(ℓ1 −1)/2d2\n−ℓ2(ℓ2 −1)/2d1\n−ℓ1 −ℓ2.\nThe conclusion follows by noting that at least one of d1, d2 is at least 2.\n□\n\nProof of Theorem 1.3. Let A1 and A2 be the set of all positive and negative elements in A, respectively. Let n1 = |A1| and n2 = |A2|. Then n1 + n2 ≥ n −1. Let Xi (i ∈{1, 2}) be the number of pairs (a, a′) ∈Ai × Ai with a + a′ /∈Ai. By Lemma 6.1 applied to A1 and A2, we have Xi ≥1/2n2\ni . On the other hand, by assumption we have\nX1 + X2 ≤\n 1/4 + ε  n2.\nIt follows that\n 1/4 + ε  n2 ≥1/2(n2\n1 + n2\n2) ≥1/4(n −1)2 + 1/4(n1 −n2)2,\nwhich implies that\n(n1 −n2)2 ≤4εn2 + 2n ≤6εn2\nsince n ≥ε−1. Hence |n1 −n2| ≤3ε1/2n, and thus both n1 and n2 lie in the range [n/2 −2ε1/2n, n/2 + 2ε1/2n]. Furthermore, we have\nX1 ≤\n 1/4 + ε  n2 −X2 ≤\n1/4 + ε  n2 −1/2n2\n2\n≤\n 1/4 + ε  n2 −1/2\nn/2 −2ε1/2n\n2\n≤\n1/8 + 2ε1/2 n2\n≤\n1/2 + 16ε1/2 n2\n1,\nand similarly we have\nX2 ≤\n1/2 + 16ε1/2 n2\n2.\nSince ε < 2−50, we may apply Lemma 6.2 to A1 and −A2 to ﬁnd arithmetic progressions P1, P2 containing 0, such that\n|Pi| ≤(1 + 270ε1/4)ni,\n|Ai ∩Pi| ≥(1 −6ε1/4)ni.\n\n<<page 13>>\nA ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS\n13\n\nLet d1, d2 be the common diﬀerences of P1, P2, respectively. Consider\nT = {(a1, a2) ∈A1 × A2 : a1 + a2 /∈A}\nand\nT ′ = {(a1, a2) ∈P1 × P2 : a1 + a2 /∈P1 ∪P2}.\nIf (a1, a2) ∈T ′, then either (a1, a2) ∈T, or a1 ∈P1 \\ A1, or a2 ∈P2 \\ A2, or a1 + a2 ∈A \\ (P1 ∪P2).\n|T ′| ≤|T| + |P1 \\ A1||P2| + |P2 \\ A2||P1| + |A \\ (P1 ∪P2)| min(|P1|, |P2|)\n≤|T| + 276ε1/4n1 · 2n2 + 276ε1/4n2 · 2n1 + 6ε1/4n · 2 min(n1, n2)\n≤|T| + 282ε1/4n2.\nFrom the assumption C(A) ≥3/4 −ε and the facts that C(A1) ≤1/2 and C(A2) ≤1/2, it follows that\n|T| ≤\n 1/4 + ε  n2 −1/2n2\n1 −1/2n2\n2 ≤εn2 + n/2 ≤2εn2.\nHence |T ′| ≤284ε1/4n2. On the other hand, if d1 ̸= d2 then we can apply Lemma 6.3 to get\n|T ′| ≥1/4 min(|P1|2, |P2|2) −1/2(|P1| −|P2|)2 −|P1| −|P2|.\nUsing the bounds\n|Pi| ≤(1 + 270ε1/4)ni ≤1/2(1 + 280ε1/4)n ≤n\nand\n|Pi| ≥(1 −6ε1/4)ni ≥1/2(1 −10ε1/4)n ≥1/3n,\nwe conclude that\n|T ′| ≥1/36n2 −1/2(290ε1/4n)2 −2n ≥1/40n2.\nThis is a contradiction to the previously obtained upper bound |T ′| ≤ 284ε1/4n2, and hence we must have d1 = d2. The conclusion follows by taking P to be the union P1 ∪P2, so that\n|P| ≤2 max(|P1|, |P2|) ≤2(1 + 270ε1/4) max(n1, n2) ≤(1 + 280ε1/4)n\nand\n|A ∩P| = |A1 ∩P1| + |A2 ∩P2| ≥(1 −6ε1/4)(n1 + n2) ≥(1 −10ε1/4)n.\n□\n\n# 7. A continuous analogue of Theorem 1.3\n\nFor a measurable set A ⊂R with ﬁnite Lebesgue measure λ(A), we study the following quantity related to C(A):\n⟨1A ∗1A, 1A⟩=\nZ\nR\nZ\nR\n1A(y)1A(x −y)1A(x)dxdy.\n\nTheorem 7.1 ( Riesz-Sobolev Inequality). Let f, g, h be three nonnegative functions on Rn. Then with\nI(f, g, h) =\nZ\nRn\nZ\nRn f(y)g(x −y)h(x)dxdy,\nwe have I(f, g, h) ≤I(f ∗, g∗, h∗), where f ∗, g∗, h∗are the corresponding symmetric - decreasing rearangement of functions f, g, h.\n\n<<page 14>>\n14\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nOne can ﬁnd the proof in [9, Chapter 3]. To apply the Riez- Sobolev inequality, we notice that A∗, the symmetric rearangement of the set A in our case is I ⊂R, the interval centered at the origin with λ(I) = λ(A). Thus,\n⟨1A ∗1A, 1A⟩≤⟨1I ∗1I, 1I⟩= 3/4λ(A)2.\n(7.1)\nUsing Theorem 1.3, we may deduce the following structure theorem for sets A when the inequality (7.1) is almost sharp.\n\nCorollary 7.2. Let A ⊂R be a measurable set with ﬁnite Lebesgue measure, and let ε ∈(0, 2−100). Assume that\n⟨1A ∗1A, 1A⟩≥(1 −ε)⟨1I ∗1I, 1I⟩,\nwhere I ⊂R is the interval centered at the origin with λ(I) = λ(A). Then there exists an interval J ⊂R centred at the origin such that λ(J) ≤(1 + 561ε1/4)λ(A) and λ(A ∩J) ≥(1 −21ε1/4)λ(A).\n\nA more general result concerning ⟨1A ∗1B, 1C⟩for A, B, C ⊂R was established in [1,2], and even more generally in [3,4] for A, B, C ⊂Rd.\n\nProof. We construct the following discrete version A ⊂Z of A in the following standard way (c.f. [1, Section 6]). Let η, δ > 0 be suﬃciently small in terms of ε and λ(A). For each n ∈Z, let In be the interval (ηn, η(n + 1)). Let\nA = {n ∈Z: λ(A ∩In) ≥(1 −δ)λ(In)}.\nLet eA = ∪n∈AIn, so that λ( eA) = η|A|. By the Lebesgue diﬀerentiation theorem, we have |A△eA| →0 as max(η, δ) →0. Thus by taking η, δ small enough, we may assume that\nη−1  1 − ε/100  λ(A) ≤|A| ≤η−1  1 + ε/100  λ(A),\nand that\n⟨1 e A ∗1 e A, 1 e A⟩≥⟨1A ∗1A, 1A⟩−1/100ελ(A)2 ≥\n3/4 −4ε/5 λ(A)2.\nNow we connect ⟨1 e A ∗1 e A, 1 e A⟩with C(A). Note that\n⟨1 e A ∗1 e A, 1 e A⟩=\nX\na,b,c∈A\n⟨1Ia ∗1Ib, 1Ic⟩.\nThe summand above is nonzero only when a + b = c or a + b = c + 1, in which case it has value η2/2. Hence\n⟨1 e A ∗1 e A, 1 e A⟩= 1/2η2\nX\na,b,c∈A\n1a+b=c +\nX\na,b,c∈A\n1a+b=c+1\n.\nIt follows that\nX\na,b,c∈A\n1a+b=c +\nX\na,b,c∈A\n1a+b=c+1 ≥2η−2  3/4 −4ε/5  λ(A)2 ≥\n3/2 −8ε/5 |A|2.\nThe ﬁrst sum above is the number of summing triples in A, and the second sum above is the number of summing triples in A −1 = {n −1: n ∈A}. Both of these two sums are bounded above by 3/4|A|2 +O(|A|), and thus they are also both bounded below by\n3/2 −8ε/5 |A|2 −3/4|A|2 −O(|A|) ≥\n3/4 −2ε |A|2.\n\n<<page 15>>\nA ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS\n15\n\nHence C(A) ≥3/4 −2ε and C(A −1) ≥3/4 −2ε. By Theorem 1.3, there exist arithmetic progressions P, P ′ centred at the origin such that\n|P| ≤(1 + 560ε1/4)|A|,\n|P ∩A| ≥(1 −20ε1/4)|A|,\nand\n|P ′| ≤(1 + 560ε1/4)|A|,\n|P ′ ∩(A −1)| ≥(1 −20ε1/4)|A|.\nSince\n|P ∩(P ′ + 1)| ≥|P ∩A| −|A \\ (P ′ + 1)|\n≥(1 −20ε1/4)|A| −20ε1/4|A| ≥0.99|A| ≥0.9|P|,\nthe common diﬀerence of P and P ′ must be 1. Let J be the smallest interval centred at the origin containing In for all n ∈P, so that\nλ(J) ≤η(|P| + 1) ≤(1 + 560ε1/4)η|A| + η ≤(1 + 561ε1/4)λ(A).\nMoreover, we have\nλ(A ∩J) ≥\nX\nn∈A∩P\nλ(A ∩In).\nEach summand above is at least (1 −δ)λ(In) = (1 −δ)η by the deﬁnition of A. Hence\nλ(A ∩J) ≥(1 −δ)η|A ∩P| ≥(1 −δ)(1 −20ε1/4)η|A| ≥(1 −21ε1/4)λ(A).\nThis completes the proof.\n□\n\nReferences\n\n[1] M. Christ. An approximate inverse Riesz-Sobolev inequality. arXiv:1112.3715.\n[2] M. Christ. Near equality in the Riesz-Sobolev inequality. arXiv:1309.5856.\n[3] M. Christ. Near equality in the Riesz-Sobolev inequality in higher dimensions. arXiv:1506.00157.\n[4] M. Christ. A sharpened Riesz-Sobolev inequality. arXiv:1706.02007.\n[5] P. Diaconis, X. Shao, and K. Soundararajan. Carries, group theory, and additive combinatorics. Amer. Math. Monthly, 121(8):674–688, 2014.\n[6] V. F. Lev. Restricted set addition in groups. III. Integer sumsets with generic restrictions. Period. Math. Hungar., 42(1-2):89–98, 2001.\n[7] V. F. Lev, T. Luczak, and T. Schoen. Sum-free sets in abelian groups. Israel J. Math., 125:347–367, 2001.\n[8] V. F. Lev and P. Y. Smeliansky. On addition of two distinct sets of integers. Acta Arith., 70(1):85–91, 1995.\n[9] Elliott H. Lieb and Michael Loss. Analysis, volume 14 of Graduate Studies in Mathematics. American Mathematical Society, Providence, RI, 1997.\n[10] K. Matom¨aki. Real zeros of holomorphic Hecke cusp forms and sieving short intervals. J. Eur. Math. Soc. (JEMS), 18(1):123–146, 2016.\n[11] P. Mazur. A structure theorem for sets of small popular doubling. Acta Arith., 171(3):221–239, 2015.\n[12] X. Shao. An L-function-free proof of Vinogradov’s three primes theorem. Forum Math. Sigma, 2:e27, 26, 2014.\n[13] X. Shao. On an almost all version of the Balog-Szemer´edi-Gowers theorem. Discrete Anal., pages Paper No. 12, 18, 2019.\n[14] T. Tao. An inverse theorem for an inequality of Kneser. Proc. Steklov Inst. Math., 303(1):193–219, 2018. Published in Russian in Tr. Mat. Inst. Steklova 303 (2018), 209–238.\n\n<<page 16>>\n16\nXUANCHENG SHAO AND MAX WENQIANG XU\n\nDepartment of Mathematics, University of Kentucky, Lexington, KY, 40506, USA\nE-mail address: xuancheng.shao@uky.edu\nDepartment of Mathematics, University College London, Gower Street, London, WC1E 6BT, United Kingdom\nE-mail address: wenqiang.xu@ucl.ac.uk",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Technical version of the main theorems",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Robust results in the abelian group setting",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Proof of Propositions 2.2 and 2.3",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Robust results with other assumptions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Proof of Theorem 1.3",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. A continuous analogue of Theorem 1.3",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 53.767674399998214,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4117647058823529,
+  "unmatched_gt": [
+   "Acknowledgement.",
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3.",
+   "References"
+  ],
+  "unmatched_pred": [
+   "A ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 16,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 9,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4117647058823529,
+  "unmatched_gt": [
+   "Acknowledgement.",
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3.",
+   "References"
+  ],
+  "unmatched_pred": [
+   "A ROBUST VERSION OF FREIMAN’S 3k −4 THEOREM AND APPLICATIONS"
+  ]
+ }
+}

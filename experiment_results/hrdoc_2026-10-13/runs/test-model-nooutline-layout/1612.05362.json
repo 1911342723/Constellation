@@ -1,0 +1,140 @@
+{
+ "doc": "1612.05362",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 237,
+  "layout_marked": 15,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4649,
+   "completion_tokens": 486,
+   "total_tokens": 5135
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9686742118027486,
+  "inserted_word_share": 0.7024829298572315
+ },
+ "predictions": [
+  {
+   "text": "Medical Image Synthesis with Context-Aware",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Proposed Generative Adversarial Networks",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Auto-Context Model (ACM) for Reﬁnement",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Datasets",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experimental Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Impact of Proposed GAN model",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Impact of Auto-Context Reﬁnement",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Experimental Results for Brain Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.4 Experimental Results for Pelvic Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.394310600000608,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

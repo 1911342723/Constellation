@@ -1,0 +1,156 @@
+{
+ "doc": "1807.10049",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "ABSTRACT",
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": [
+   "8 November 2021",
+   "4 A. J. Leonard, S. J. Mumford, V. Fedun, R. Erd´elyi"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 690,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "8 November 2021",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 BACKGROUND ATMOSPHERE AND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 SIMULATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Velocity vector decomposition",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Velocity and ﬂux calculation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Flux surface displacement",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 A. J. Leonard, S. J. Mumford, V. Fedun, R. Erd´elyi",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 SIMULATION RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Wave mode identiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Velocity components",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 Flux contribution",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1234.2392680000012,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "ABSTRACT",
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": [
+   "8 November 2021",
+   "4 A. J. Leonard, S. J. Mumford, V. Fedun, R. Erd´elyi"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "PHOTOSPHERIC DRIVERS"
+  ],
+  "unmatched_pred": [
+   "8 November 2021",
+   "4 A. J. Leonard, S. J. Mumford, V. Fedun, R. Erd´elyi"
+  ],
+  "ignored_title_predictions": null
+ }
+}

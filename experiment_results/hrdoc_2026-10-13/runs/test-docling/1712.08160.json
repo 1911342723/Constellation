@@ -1,0 +1,160 @@
+{
+ "doc": "1712.08160",
+ "system": "docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "SO U R CE CO D E"
+  ],
+  "unmatched_pred": [
+   "Hybrid of Static Features and LSTM Activations:",
+   "APPENDIX"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 31.68628190000163
+ },
+ "predictions": [
+  {
+   "text": "Combining Static and Dynamic Features for Multivariate Sequence Classification",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PRELIMINARIES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Stand-alone Models on Unimodal Data",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Stand-alone Models on Bimodal Data",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Multiple Models on Bimodal Data",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Hybrid of Static Features and LSTM Activations:",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EVALUATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Pipeline",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Datasets",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.007584800005133729,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "SO U R CE CO D E"
+  ],
+  "unmatched_pred": [
+   "Combining Static and Dynamic Features for Multivariate Sequence Classification",
+   "Hybrid of Static Features and LSTM Activations:",
+   "APPENDIX"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [
+   "SO U R CE CO D E"
+  ],
+  "unmatched_pred": [
+   "Hybrid of Static Features and LSTM Activations:"
+  ],
+  "ignored_title_predictions": null
+ }
+}

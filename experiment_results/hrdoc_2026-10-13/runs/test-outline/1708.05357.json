@@ -1,0 +1,198 @@
+{
+ "doc": "1708.05357",
+ "system": "outline",
+ "metrics": {
+  "gt": 27,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8928571428571429,
+  "unmatched_gt": [
+   "Abstract",
+   "References",
+   "Appendix"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Learning Problem",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Approximate Block Coordinate Descent",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Algorithm Description",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Convergence Analysis",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 Gap-Selection Scheme",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Heterogeneous Training",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 DuHL: A Duality Gap-Based Heterogeneous Learning Scheme",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Experimental Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Algorithm Behavior",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5.2 Reference Schemes",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5.3 Performance Analysis of DUHL",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proofs",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Key Lemma",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "A.2 Proof Theorem ??",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "A.3 Proof Theorem ??",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B  Coordinate Descent",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C Local Subproblem",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.1 Examples",
+   "page": 15,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "D Generalization of TPA-SCD",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D.1 Elastic Net",
+   "page": 16,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "D.2 L2-regularized SVM",
+   "page": 16,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "E Duality Gap",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.06698120000146446,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.8928571428571429,
+  "unmatched_gt": [
+   "Abstract",
+   "References",
+   "Appendix"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

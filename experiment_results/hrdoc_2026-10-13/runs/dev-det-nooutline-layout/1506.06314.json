@@ -1,0 +1,95 @@
+{
+ "doc": "1506.06314",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 6,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "collisions"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "collisions"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 72,
+  "layout_marked": 6,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9951436665317686,
+  "inserted_word_share": 0.8586375395228514
+ },
+ "predictions": [
+  {
+   "text": "Jet measurements in polarized p+p collisions at",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Inclusive jet cross section in 200 GeV p+p collisions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Inclusive jet longitudinal double spin asymmetries ALL in 200/510 GeV p+p",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Summary and Outlook",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.2846664000026067,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "collisions"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

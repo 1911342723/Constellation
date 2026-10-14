@@ -1,0 +1,149 @@
+{
+ "doc": "1702.03407",
+ "system": "det",
+ "metrics": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 12,
+  "parent_correct": 10,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract—",
+   "C. Summary",
+   "C. Results for Predicting Dice’s Similarity Coefficients",
+   "E. Results for Predicting Different Segmentation Metrics",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "V. Valindria, W. Bai, K. Kamnitsas, D"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 435,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. Valindria, W. Bai, K. Kamnitsas, D",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Related Work",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II. REVERSE CLASSIFICATION ACCURACY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Learning Reverse Classiﬁers",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Predicting Segmentation Accuracy",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III. EXPERIMENTAL VALIDATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setting",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Quantifying Prediction Accuracy",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "D. Detecting Segmentation Failure",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "IV. DISCUSSION AND CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.952187800001411,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 12,
+  "parent_correct": 10,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract—",
+   "C. Summary",
+   "C. Results for Predicting Dice’s Similarity Coefficients",
+   "E. Results for Predicting Different Segmentation Metrics",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "V. Valindria, W. Bai, K. Kamnitsas, D"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "C. Summary",
+   "C. Results for Predicting Dice’s Similarity Coefficients",
+   "E. Results for Predicting Different Segmentation Metrics"
+  ],
+  "unmatched_pred": [
+   "V. Valindria, W. Bai, K. Kamnitsas, D"
+  ],
+  "ignored_title_predictions": null
+ }
+}

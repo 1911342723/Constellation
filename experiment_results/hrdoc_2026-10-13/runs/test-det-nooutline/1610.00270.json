@@ -1,0 +1,231 @@
+{
+ "doc": "1610.00270",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 22,
+  "tp": 9,
+  "fp": 13,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 7,
+  "teds": 0.30434782608695654,
+  "unmatched_gt": [
+   "pre-trained classifiers",
+   "Appendix"
+  ],
+  "unmatched_pred": [
+   "1 Logistics Engineering, Jacobs University,",
+   "2 Computer Engineering, Konya Food and Agriculture University,",
+   "3 Electrical Engineering, Bas¸kent University,",
+   "1 SVM Support Vector Machines",
+   "1 ∑(wr − bwr)2",
+   "3. Applying ensemble on real-world data (i.e.",
+   "8 construct S as diagonal O(ml)",
+   "9 vB",
+   "10 SH",
+   "10 X⊺X",
+   "11 X⊺y",
+   "12 solve Mw = b",
+   "13 w = max(w,0)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 961,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Logistics Engineering, Jacobs University,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Computer Engineering, Konya Food and Agriculture University,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Electrical Engineering, Bas¸kent University,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Related works: ensembles that combine",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "1 SVM Support Vector Machines",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Sparsity-driven weighted ensemble classiﬁer",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 ∑(wr − bwr)2",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Experimental results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Applying ensemble on real-world data (i.e.",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Experimental results: sparsity",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2. Computational Complexity Analysis",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "8 construct S as diagonal O(ml)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 vB",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 SH",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 X⊺X",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 X⊺y",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "12 solve Mw = b",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "13 w = max(w,0)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Conclusion",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.850865899999917,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 22,
+  "tp": 9,
+  "fp": 13,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 7,
+  "teds": 0.30434782608695654,
+  "unmatched_gt": [
+   "pre-trained classifiers",
+   "Appendix"
+  ],
+  "unmatched_pred": [
+   "1 Logistics Engineering, Jacobs University,",
+   "2 Computer Engineering, Konya Food and Agriculture University,",
+   "3 Electrical Engineering, Bas¸kent University,",
+   "1 SVM Support Vector Machines",
+   "1 ∑(wr − bwr)2",
+   "3. Applying ensemble on real-world data (i.e.",
+   "8 construct S as diagonal O(ml)",
+   "9 vB",
+   "10 SH",
+   "10 X⊺X",
+   "11 X⊺y",
+   "12 solve Mw = b",
+   "13 w = max(w,0)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 20,
+  "tp": 7,
+  "fp": 13,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 5,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "pre-trained classifiers"
+  ],
+  "unmatched_pred": [
+   "1 Logistics Engineering, Jacobs University,",
+   "2 Computer Engineering, Konya Food and Agriculture University,",
+   "3 Electrical Engineering, Bas¸kent University,",
+   "1 SVM Support Vector Machines",
+   "1 ∑(wr − bwr)2",
+   "3. Applying ensemble on real-world data (i.e.",
+   "8 construct S as diagonal O(ml)",
+   "9 vB",
+   "10 SH",
+   "10 X⊺X",
+   "11 X⊺y",
+   "12 solve Mw = b",
+   "13 w = max(w,0)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

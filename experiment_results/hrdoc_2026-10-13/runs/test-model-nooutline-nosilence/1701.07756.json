@@ -1,0 +1,246 @@
+{
+ "doc": "1701.07756",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 15,
+  "pred": 24,
+  "tp": 15,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.64,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 LARODEC, ISG Tunis, Université de Tunis",
+   "2 IRISA, Université de Rennes I",
+   "3 LARODEC, IHEC Carthage, Université de Carthage",
+   "4 Centre d’Etude et de Recherche des Télécommunications",
+   "S. Jendoubi et al.",
+   "6 We call propagation level the number of links between the source of the messag",
+   "S. Jendoubi et al.",
+   "7 Directed Acyclic Graph",
+   "S. Jendoubi et al."
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 195,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4978,
+   "completion_tokens": 544,
+   "total_tokens": 5522
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Dynamic time warping distance for message",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "propagation classiﬁcation in Twitter",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 LARODEC, ISG Tunis, Université de Tunis",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 IRISA, Université de Rennes I",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 LARODEC, IHEC Carthage, Université de Carthage",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Centre d’Etude et de Recherche des Télécommunications",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Jendoubi et al.",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2 Related works",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Content based approaches",
+   "page": 1,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2.2 Propagation based approaches",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6 We call propagation level the number of links between the source of the message and the target node.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Jendoubi et al.",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3 Background",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Theory of belief functions",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "3.2 k Nearest Neighbors",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4 Proposed dynamic time warping distance for",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "propagation networks similarity",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Directed Acyclic Graph",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S. Jendoubi et al.",
+   "page": 5,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "5 Experiments and results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiments conﬁguration",
+   "page": 6,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "5.2 Experiments evaluation",
+   "page": 7,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Acknowledgement",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.679065800002718,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 26,
+  "tp": 15,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.5925925925925926,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Dynamic time warping distance for message",
+   "propagation classiﬁcation in Twitter",
+   "1 LARODEC, ISG Tunis, Université de Tunis",
+   "2 IRISA, Université de Rennes I",
+   "3 LARODEC, IHEC Carthage, Université de Carthage",
+   "4 Centre d’Etude et de Recherche des Télécommunications",
+   "S. Jendoubi et al.",
+   "6 We call propagation level the number of links between the source of the messag",
+   "S. Jendoubi et al.",
+   "7 Directed Acyclic Graph",
+   "S. Jendoubi et al."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 22,
+  "tp": 13,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.6086956521739131,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 LARODEC, ISG Tunis, Université de Tunis",
+   "2 IRISA, Université de Rennes I",
+   "3 LARODEC, IHEC Carthage, Université de Carthage",
+   "4 Centre d’Etude et de Recherche des Télécommunications",
+   "S. Jendoubi et al.",
+   "6 We call propagation level the number of links between the source of the messag",
+   "S. Jendoubi et al.",
+   "7 Directed Acyclic Graph",
+   "S. Jendoubi et al."
+  ],
+  "ignored_title_predictions": null
+ }
+}

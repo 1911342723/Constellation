@@ -1,0 +1,92 @@
+{
+ "doc": "1610.09488",
+ "system": "outline",
+ "metrics": {
+  "gt": 9,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Abstract",
+   "Resumen",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 General features",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Existence of positive periodic solutions",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 A priori bounds",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Degree computation",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  }
+ ],
+ "seconds": 0.024028200001339428,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Abstract",
+   "Resumen",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "Resumen"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

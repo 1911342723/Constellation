@@ -1,0 +1,143 @@
+{
+ "doc": "1807.06789",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "A. Related Work on UAV-based Vehicle Detection",
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6428571428571428,
+  "unmatched_gt": [
+   "A. Related Work on UAV-based Vehicle Detection",
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 129,
+  "layout_marked": 14,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9879965080750764,
+  "inserted_word_share": 0.9578605404499716
+ },
+ "predictions": [
+  {
+   "text": "DroNet: Efﬁcient Convolutional Neural Network",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED APPROACH",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Collection",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Training Process",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. CNN Models",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Application Level Optimizations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EVALUATION AND EXPERIMENTAL RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. DroNet on UAV Platform",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. CONCLUSION & FUTURE WORK",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.339384400002018,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "A. Related Work on UAV-based Vehicle Detection",
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

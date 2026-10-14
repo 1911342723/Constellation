@@ -1,0 +1,163 @@
+{
+ "doc": "1704.03189",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 18472,
+   "completion_tokens": 18101
+  },
+  "elapsed_llm_seconds": 79.7366077000006,
+  "content_preservation": 0.9989802161941669,
+  "inserted_word_share": 0.0005101520253035785,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "RECOVERING THE STRUCTURE OF RANDOM LINEAR GRAPHS",
+    0,
+    1
+   ],
+   [
+    "1. Introduction",
+    0,
+    1
+   ],
+   [
+    "2. Problem statement and main results",
+    2,
+    1
+   ],
+   [
+    "3. The eigenvalues of the model matrix",
+    6,
+    1
+   ],
+   [
+    "4. The eigenvectors of the random graph",
+    9,
+    1
+   ],
+   [
+    "5. Bounding the number of misplaced vertices",
+    13,
+    1
+   ],
+   [
+    "6. Final remarks",
+    20,
+    1
+   ],
+   [
+    "References",
+    20,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "RECOVERING THE STRUCTURE OF RANDOM LINEAR GRAPHS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem statement and main results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The eigenvalues of the model matrix",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. The eigenvectors of the random graph",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Bounding the number of misplaced vertices",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Final remarks",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 79.8467782000007,
+ "metrics_raw": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RECOVERING THE STRUCTURE OF RANDOM LINEAR GRAPHS"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RECOVERING THE STRUCTURE OF RANDOM LINEAR GRAPHS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

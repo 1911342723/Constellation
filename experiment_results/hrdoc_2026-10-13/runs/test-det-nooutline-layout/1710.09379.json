@@ -1,0 +1,306 @@
+{
+ "doc": "1710.09379",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 36,
+  "pred": 37,
+  "tp": 32,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 29,
+  "parent_correct": 22,
+  "teds": 0.7631578947368421,
+  "unmatched_gt": [
+   "6.1 The generalised hyperbolic distribution",
+   "6.3.3 Redshift evolution",
+   "6.3.4 DM vs galaxies",
+   "ACKNOWLEDGEMENTS"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "2 J. Kuruvilla and C. Porciani",
+   "6.1.4 The generalised hyperbolic distribution",
+   "6.3.4 DM vs galaxies",
+   "ACKNOWLEDGEMENTS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 34,
+  "pred": 33,
+  "tp": 30,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 27,
+  "parent_correct": 20,
+  "teds": 0.7714285714285715,
+  "unmatched_gt": [
+   "6.1 The generalised hyperbolic distribution",
+   "6.3.3 Redshift evolution",
+   "6.3.4 DM vs galaxies",
+   "1 REVERSED PAIRS"
+  ],
+  "unmatched_pred": [
+   "2 J. Kuruvilla and C. Porciani",
+   "6.1.4 The generalised hyperbolic distribution",
+   "6.3.4 DM vs galaxies"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1264,
+  "layout_marked": 39,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8870459446010948,
+  "inserted_word_share": 0.10613404646498414
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 J. Kuruvilla and C. Porciani",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 N-BODY SIMULATIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 REDSHIFT-SPACE DISTORTIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 THE STREAMING MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Ordered and unordered pairs",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2 The streaming model for ordered pairs",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2.1 Symmetry under particle exchange",
+   "page": 5,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4.3 The streaming model for unordered pairs",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.4 Applications of the streaming model",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.4.1 Pairwise velocities",
+   "page": 5,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "4.4.2 Some historical remarks",
+   "page": 6,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "4.4.3 Limitations of the Gaussian approximation",
+   "page": 7,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "5 STATISTICS OF PAIRWISE VELOCITIES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Cumulants",
+   "page": 8,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5.2 Radial, transverse and los pairwise velocities",
+   "page": 8,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5.2.1 DM particles",
+   "page": 8,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "5.2.2 DM haloes and pairwise velocity bias",
+   "page": 8,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "5.3 Dissecting the pairwise-velocity distribution",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "6 A NEW FITTING FUNCTION",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 The generalised hyperbolic distribution",
+   "page": 12,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "6.1.1 The inverse Gaussian distribution",
+   "page": 12,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "6.1.2 Generalised inverse Gaussian distribution",
+   "page": 12,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "6.1.3 Normal variance-mean mixtures",
+   "page": 12,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "6.1.4 The generalised hyperbolic distribution",
+   "page": 13,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "6.2 Application to pairwise velocities",
+   "page": 14,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "6.2.1 DM particles",
+   "page": 14,
+   "level": 3,
+   "parent": 26
+  },
+  {
+   "text": "6.2.2 DM haloes",
+   "page": 15,
+   "level": 3,
+   "parent": 26
+  },
+  {
+   "text": "6.3 Discussion",
+   "page": 15,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "6.3.1 Comparison with previous work",
+   "page": 15,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "6.3.2 Cosmology dependence",
+   "page": 16,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "6.3.4 DM vs galaxies",
+   "page": 18,
+   "level": 3,
+   "parent": 29
+  },
+  {
+   "text": "7 SUMMARY",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A: REVERSED PAIRS",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.64424140000483,
+ "metrics_v1": {
+  "gt": 36,
+  "pred": 37,
+  "tp": 32,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 29,
+  "parent_correct": 22,
+  "teds": 0.7631578947368421,
+  "unmatched_gt": [
+   "6.1 The generalised hyperbolic distribution",
+   "6.3.3 Redshift evolution",
+   "6.3.4 DM vs galaxies",
+   "ACKNOWLEDGEMENTS"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "2 J. Kuruvilla and C. Porciani",
+   "6.1.4 The generalised hyperbolic distribution",
+   "6.3.4 DM vs galaxies",
+   "ACKNOWLEDGEMENTS"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,290 @@
+{
+ "doc": "1704.07982",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 22,
+  "pred": 35,
+  "tp": 20,
+  "fp": 15,
+  "fn": 2,
+  "level_correct": 18,
+  "parent_correct": 17,
+  "teds": 0.4722222222222222,
+  "unmatched_gt": [
+   "7.0.3 Results",
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "2. Run Algorithm B on the instance (I, X ∪ Y, k′ − t) and return the answer.",
+   "1. Construct a (n, k, t)-set inclusion family C using Theorem 6 from [5]. Loop o",
+   "Lemma 11. [10] Let A be an algorithm for a problem P, B be an algorithm for a cl",
+   "1. If G consists of j ≥ 2 connected components G1, G2, ..., Gj, then the algorit",
+   "3. If F = ∅ and ∆(G) ≥ 2 then the algorithm chooses a vertex t ∈ G of degree at ",
+   "4. If F contains no active vertex then choose an arbitrary vertex t ∈ F as an ac",
+   "6. If there is v ∈ N(t) with gd(v) ≤ 1 then add v to F.",
+   "7. If there is v ∈ N(t) with gd(v) ≥ 4 then either add v to F or remove v from G",
+   "8. If there is v ∈ N(t) with gd(v) = 2 then denote its generalized neighbors by ",
+   "3 · 2β(n−3)+γ(k−2) ≤ 2βn+γk−(3β+2γ)+log2 3 ≤ 2βn+γk",
+   "1. If k < 0 then f(G, F, k) = 0.",
+   "2. If k = 0 then f(G, F, k) = 1 if G = F otherwise f(G, F, k) = 0.",
+   "4. Vt\\F = N(t). By Proposition 2",
+   "wβ ≤ α1 + 2(wβ − α2) and wβ ≤ α2 + (wβ − α2)",
+   "4 this results in a O(1"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 33,
+  "tp": 18,
+  "fp": 15,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 15,
+  "teds": 0.4411764705882353,
+  "unmatched_gt": [
+   "7.0.3 Results",
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "2. Run Algorithm B on the instance (I, X ∪ Y, k′ − t) and return the answer.",
+   "1. Construct a (n, k, t)-set inclusion family C using Theorem 6 from [5]. Loop o",
+   "Lemma 11. [10] Let A be an algorithm for a problem P, B be an algorithm for a cl",
+   "1. If G consists of j ≥ 2 connected components G1, G2, ..., Gj, then the algorit",
+   "3. If F = ∅ and ∆(G) ≥ 2 then the algorithm chooses a vertex t ∈ G of degree at ",
+   "4. If F contains no active vertex then choose an arbitrary vertex t ∈ F as an ac",
+   "6. If there is v ∈ N(t) with gd(v) ≤ 1 then add v to F.",
+   "7. If there is v ∈ N(t) with gd(v) ≥ 4 then either add v to F or remove v from G",
+   "8. If there is v ∈ N(t) with gd(v) = 2 then denote its generalized neighbors by ",
+   "3 · 2β(n−3)+γ(k−2) ≤ 2βn+γk−(3β+2γ)+log2 3 ≤ 2βn+γk",
+   "1. If k < 0 then f(G, F, k) = 0.",
+   "2. If k = 0 then f(G, F, k) = 1 if G = F otherwise f(G, F, k) = 0.",
+   "4. Vt\\F = N(t). By Proposition 2",
+   "wβ ≤ α1 + 2(wβ − α2) and wβ ≤ α2 + (wβ − α2)",
+   "4 this results in a O(1"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 628,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9982146045349045,
+   "in_order": 0.9760757007677201,
+   "inserted": 0.00071492403932083
+  }
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Random Sampling and Multivariate Subroutines",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Run Algorithm B on the instance (I, X ∪ Y, k′ − t) and return the answer.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Derandomization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Enumeration",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Construct a (n, k, t)-set inclusion family C using Theorem 6 from [5]. Loop over X ∈C.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Feedback Vertex Set",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 11. [10] Let A be an algorithm for a problem P, B be an algorithm for a class C of instances of P, c ≥ 0 and r > 1 be constants, and µ(·), µB(·), η(·) be measures for P, such that for any input instance I from C, µB(·) ≤ µ(I), and for any input instance I, A either solves P on I ∈ C by invoking B with running time O(η(I)c+1rµB(I)), or reduces I to k instances I1, ..., Ik, solves these recursively, and combines their solutions to solve I, using time O(η(I)c) for the reduction and combination steps (but not the recursive solves),",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "7.0.1 Measure",
+   "page": 7,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "7.0.2 Algorithm",
+   "page": 8,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "1. If G consists of j ≥ 2 connected components G1, G2, ..., Gj, then the algorithm is called on",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. If F = ∅ and ∆(G) ≥ 2 then the algorithm chooses a vertex t ∈ G of degree at least 2. Then",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. If F contains no active vertex then choose an arbitrary vertex t ∈ F as an active vertex.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. If there is v ∈ N(t) with gd(v) ≤ 1 then add v to F.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. If there is v ∈ N(t) with gd(v) ≥ 4 then either add v to F or remove v from G.",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. If there is v ∈ N(t) with gd(v) = 2 then denote its generalized neighbors by u1 and u2.",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Minimal Vertex Covers",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 · 2β(n−3)+γ(k−2) ≤ 2βn+γk−(3β+2γ)+log2 3 ≤ 2βn+γk",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Minimal Feedback Vertex Sets",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1 Measure",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "9.2 Algorithm",
+   "page": 11,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "1. If k < 0 then f(G, F, k) = 0.",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. If k = 0 then f(G, F, k) = 1 if G = F otherwise f(G, F, k) = 0.",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Vt\\F = N(t). By Proposition 2",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "wβ ≤ α1 + 2(wβ − α2) and wβ ≤ α2 + (wβ − α2)",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.3 Results",
+   "page": 16,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "4 this results in a O(1",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 Minimal Hitting Sets",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10.1 Measure",
+   "page": 16,
+   "level": 2,
+   "parent": 30
+  },
+  {
+   "text": "10.2 Analysis",
+   "page": 17,
+   "level": 2,
+   "parent": 30
+  },
+  {
+   "text": "11 Conclusion",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.0365219000013894
+}

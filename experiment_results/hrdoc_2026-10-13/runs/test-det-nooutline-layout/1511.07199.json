@@ -1,0 +1,159 @@
+{
+ "doc": "1511.07199",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 8,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "DIFFUSIVITIES",
+   "IONIZATION CHEMISTRY",
+   "Abundance"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 7,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "DIFFUSIVITIES",
+   "IONIZATION CHEMISTRY",
+   "Abundance"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 906,
+  "layout_marked": 14,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8972412318220702,
+  "inserted_word_share": 0.09472434998381707
+ },
+ "predictions": [
+  {
+   "text": "ON THE GRAIN-MODIFIED MAGNETIC DIFFUSIVITIES IN PROTOPLANETARY DISKS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. A SIMPLIFIED MODEL FOR GRAIN-MODIFIED",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Asymptotic Relations",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2. Representative Cases",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3. APPLICATION TO PROTOPLANETARY DISKS:",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Threshold Field Strength in PPDs",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2. An Empirical Criterion on Grain Size and",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3. Diﬀusivities in the Outer Disk",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4. MHD SIMULATIONS OF THE INNER PPD",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Simulation Setup and Parameters",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2. Simulation Results",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5. SUMMARY AND DISCUSSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.618602499998815,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 8,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "DIFFUSIVITIES",
+   "IONIZATION CHEMISTRY",
+   "Abundance"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

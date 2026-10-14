@@ -1,0 +1,141 @@
+{
+ "doc": "1607.02970",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Abstract."
+  ],
+  "unmatched_pred": [
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 8,
+  "tp": 4,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 301,
+  "layout_marked": 11,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10194,
+   "completion_tokens": 478,
+   "total_tokens": 10672
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9945382323733863,
+  "inserted_word_share": 0.008252186829509789
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Sequential procedures and functionals",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The main Theorem",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Theorem and Key Lemma",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2. Matching paths",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3. Projections and preservation",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4. Proof of the Key Lemma",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4. Conclusions and discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.777468799999042,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "Abstract."
+  ],
+  "unmatched_pred": [
+   "3.1. Theorem and Key Lemma",
+   "3.2. Matching paths",
+   "3.3. Projections and preservation",
+   "3.4. Proof of the Key Lemma"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

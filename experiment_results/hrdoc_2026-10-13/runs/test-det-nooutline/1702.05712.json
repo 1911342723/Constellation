@@ -1,0 +1,120 @@
+{
+ "doc": "1702.05712",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract.",
+   "4.1. Generation of the events",
+   "4.2. Evaluation of function over the events"
+  ],
+  "unmatched_pred": [
+   "1 https"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 138,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 https",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Phase space Monte Carlo",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Implementation highlights",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. A worked example",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Performance",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Summary",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Acknowledgments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.5028079000003345,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract.",
+   "4.1. Generation of the events",
+   "4.2. Evaluation of function over the events"
+  ],
+  "unmatched_pred": [
+   "1 https"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "4.1. Generation of the events",
+   "4.2. Evaluation of function over the events"
+  ],
+  "unmatched_pred": [
+   "1 https"
+  ],
+  "ignored_title_predictions": null
+ }
+}

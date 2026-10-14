@@ -1,0 +1,294 @@
+{
+ "doc": "1804.05956",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 28,
+  "tp": 8,
+  "fp": 20,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.31034482758620685,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "7. mid = ⌊ low+high",
+   "2. mid = ⌊ low+high",
+   "1. Use binary search on 1, 2, . . . ,√",
+   "2. Sort X in non-increasing order",
+   "i. Return staircase matrix of M with smallest element as xi",
+   "i. Return staircase matrix of M with all elements greater than xj",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. totalElementsLeft = totalElementsLeft - αi",
+   "iii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "i. totalElementsLeft = totalElementsLeft - βj",
+   "ii. Return staircase matrix of M with all element greater than xj and",
+   "i. Return staircase matrix of M with all element greater than xj",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "i. totalElementsLeft = totalElementsLeft - βj",
+   "ii. Return staircase matrix of M with all element greater than xj and",
+   "i. Return staircase matrix of M with smallest element as xi",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. totalElementsLeft = totalElementsLeft - αi",
+   "iii. FIND INDEX(M ′, totalElementsLeft, p)"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 400,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "k-Maximum Subarrays for Small k:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Divide-and-Conquer made simpler",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Previous Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Linear time divide-and-conquer maximum subarray",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. mid = ⌊ low+high",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 k-maximum subarrays by divide and conquer",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. mid = ⌊ low+high",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 An improved algorithm for k-maximum subarrays",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Use binary search on 1, 2, . . . ,√",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Sort X in non-increasing order",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Return staircase matrix of M with smallest element as xi",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Return staircase matrix of M with all elements greater than xj",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ii. totalElementsLeft = totalElementsLeft - αi",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "iii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. totalElementsLeft = totalElementsLeft - βj",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ii. Return staircase matrix of M with all element greater than xj and",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Return staircase matrix of M with all element greater than xj",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. totalElementsLeft = totalElementsLeft - βj",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ii. Return staircase matrix of M with all element greater than xj and",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Return staircase matrix of M with smallest element as xi",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ii. totalElementsLeft = totalElementsLeft - αi",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "iii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Implementation and Experiments",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.35695389999819,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 30,
+  "tp": 8,
+  "fp": 22,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.29032258064516125,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "k-Maximum Subarrays for Small k:",
+   "Divide-and-Conquer made simpler",
+   "7. mid = ⌊ low+high",
+   "2. mid = ⌊ low+high",
+   "1. Use binary search on 1, 2, . . . ,√",
+   "2. Sort X in non-increasing order",
+   "i. Return staircase matrix of M with smallest element as xi",
+   "i. Return staircase matrix of M with all elements greater than xj",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. totalElementsLeft = totalElementsLeft - αi",
+   "iii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "i. totalElementsLeft = totalElementsLeft - βj",
+   "ii. Return staircase matrix of M with all element greater than xj and",
+   "i. Return staircase matrix of M with all element greater than xj",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "i. totalElementsLeft = totalElementsLeft - βj",
+   "ii. Return staircase matrix of M with all element greater than xj and",
+   "i. Return staircase matrix of M with smallest element as xi",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. totalElementsLeft = totalElementsLeft - αi",
+   "iii. FIND INDEX(M ′, totalElementsLeft, p)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 27,
+  "tp": 7,
+  "fp": 20,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "7. mid = ⌊ low+high",
+   "2. mid = ⌊ low+high",
+   "1. Use binary search on 1, 2, . . . ,√",
+   "2. Sort X in non-increasing order",
+   "i. Return staircase matrix of M with smallest element as xi",
+   "i. Return staircase matrix of M with all elements greater than xj",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. totalElementsLeft = totalElementsLeft - αi",
+   "iii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "i. totalElementsLeft = totalElementsLeft - βj",
+   "ii. Return staircase matrix of M with all element greater than xj and",
+   "i. Return staircase matrix of M with all element greater than xj",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. FIND INDEX(M ′, totalElementsLeft, p)",
+   "i. totalElementsLeft = totalElementsLeft - βj",
+   "ii. Return staircase matrix of M with all element greater than xj and",
+   "i. Return staircase matrix of M with smallest element as xi",
+   "i. Let M ′ be the staircase matrix obtained by removing all elements",
+   "ii. totalElementsLeft = totalElementsLeft - αi",
+   "iii. FIND INDEX(M ′, totalElementsLeft, p)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "doc": "1808.05164",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 14,
+  "pred": 21,
+  "tp": 12,
+  "fp": 9,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Generate the Most Likely Localized Trajectory for a Drifter"
+  ],
+  "unmatched_pred": [
+   "2 G. M. Reis and L",
+   "3 R. N",
+   "9 S ← STRONGLYCONNECTEDCOMPONENT(G)",
+   "10 C ← TRANSITIVECLOSURE(G)",
+   "11 B ← FINDPERSISTENTGROUPS(S, C)",
+   "14 T ← FINDTRANSIENTGROUPS(B, M, C)",
+   "15 P ← TRANSITIONMATRIX(S, C, r)",
+   "19 return B, T , ˜x",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 153,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10201,
+   "completion_tokens": 529,
+   "total_tokens": 10730
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "An Underactuated Vehicle Localization Method in",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Marine Environments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 G. M. Reis and L",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 R. N",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. MODEL AND PROBLEM DEFINITION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Model Deﬁnition",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Problem Formulation",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Acquisition",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Create the Water Flow Pattern",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Long-Term Water Flow Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 S ← STRONGLYCONNECTEDCOMPONENT(G)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 C ← TRANSITIVECLOSURE(G)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 B ← FINDPERSISTENTGROUPS(S, C)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "14 T ← FINDTRANSIENTGROUPS(B, M, C)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "15 P ← TRANSITIONMATRIX(S, C, r)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "19 return B, T , ˜x",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. SIMULATION RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.992153099999996,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 23,
+  "tp": 12,
+  "fp": 11,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.45833333333333337,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Generate the Most Likely Localized Trajectory for a Drifter"
+  ],
+  "unmatched_pred": [
+   "An Underactuated Vehicle Localization Method in",
+   "Marine Environments",
+   "2 G. M. Reis and L",
+   "3 R. N",
+   "9 S ← STRONGLYCONNECTEDCOMPONENT(G)",
+   "10 C ← TRANSITIVECLOSURE(G)",
+   "11 B ← FINDPERSISTENTGROUPS(S, C)",
+   "14 T ← FINDTRANSIENTGROUPS(B, M, C)",
+   "15 P ← TRANSITIONMATRIX(S, C, r)",
+   "19 return B, T , ˜x",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 19,
+  "tp": 11,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "D. Generate the Most Likely Localized Trajectory for a Drifter"
+  ],
+  "unmatched_pred": [
+   "2 G. M. Reis and L",
+   "3 R. N",
+   "9 S ← STRONGLYCONNECTEDCOMPONENT(G)",
+   "10 C ← TRANSITIVECLOSURE(G)",
+   "11 B ← FINDPERSISTENTGROUPS(S, C)",
+   "14 T ← FINDTRANSIENTGROUPS(B, M, C)",
+   "15 P ← TRANSITIONMATRIX(S, C, r)",
+   "19 return B, T , ˜x"
+  ],
+  "ignored_title_predictions": null
+ }
+}

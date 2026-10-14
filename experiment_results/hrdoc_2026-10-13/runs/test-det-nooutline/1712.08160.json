@@ -1,0 +1,147 @@
+{
+ "doc": "1712.08160",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "A. Stand-alone Models on Unimodal Data",
+   "SO U R CE CO D E"
+  ],
+  "unmatched_pred": [
+   "APPENDIX"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 270,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Combining Static and Dynamic Features for Multivariate Sequence Classiﬁcation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PRELIMINARIES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Stand-alone Models on Bimodal Data",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Multiple Models on Bimodal Data",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EVALUATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Pipeline",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Datasets",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.285792999999103,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "A. Stand-alone Models on Unimodal Data",
+   "SO U R CE CO D E"
+  ],
+  "unmatched_pred": [
+   "Combining Static and Dynamic Features for Multivariate Sequence Classiﬁcation",
+   "APPENDIX"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [
+   "A. Stand-alone Models on Unimodal Data",
+   "SO U R CE CO D E"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

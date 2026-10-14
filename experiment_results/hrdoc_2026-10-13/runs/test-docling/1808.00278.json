@@ -1,0 +1,147 @@
+{
+ "doc": "1808.00278",
+ "system": "docling",
+ "metrics": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "Approximation to the derivative of the sign function with respect to activations",
+   "Magnitude-aware gradient with respect to weights.",
+   "Initialization."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 43.60989210000116
+ },
+ "predictions": [
+  {
+   "text": "Bi-Real Net: Enhancing the Performance of 1-bit CNNs With Improved Representational Capability and Advanced Training Algorithm",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Standard 1-bit CNNs and Its Representational Capability",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Bi-Real Net Model and Its Representational Capability",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Training Bi-Real Net",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dataset and Implementation Details",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Ablation Study",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 Accuracy Comparison With State-of-The-Art",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4 Efficiency and Memory Usage Analysis",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.007602800003951415,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "Approximation to the derivative of the sign function with respect to activations",
+   "Magnitude-aware gradient with respect to weights.",
+   "Initialization."
+  ],
+  "unmatched_pred": [
+   "Bi-Real Net: Enhancing the Performance of 1-bit CNNs With Improved Representatio"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "Approximation to the derivative of the sign function with respect to activations",
+   "Magnitude-aware gradient with respect to weights.",
+   "Initialization."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

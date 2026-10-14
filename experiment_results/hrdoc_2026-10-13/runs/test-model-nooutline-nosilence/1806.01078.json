@@ -1,0 +1,137 @@
+{
+ "doc": "1806.01078",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 7,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Bulletin of Mathematical Biology manuscript No.",
+   "Pedro Mendes",
+   "P. Mendes"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 144,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3481,
+   "completion_tokens": 292,
+   "total_tokens": 3773
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Bulletin of Mathematical Biology manuscript No.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Reproducible research using biomodels",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Pedro Mendes",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "P. Mendes",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2 Which reproducibility?",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Biomodels",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Publication of electronic materials",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Some recommendations",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.032852600001206,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Bulletin of Mathematical Biology manuscript No.",
+   "Reproducible research using biomodels",
+   "Pedro Mendes",
+   "P. Mendes"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Bulletin of Mathematical Biology manuscript No.",
+   "Pedro Mendes",
+   "P. Mendes"
+  ],
+  "ignored_title_predictions": null
+ }
+}

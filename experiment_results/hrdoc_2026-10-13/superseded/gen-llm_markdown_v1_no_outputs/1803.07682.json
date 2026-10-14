@@ -1,0 +1,198 @@
+{
+ "doc": "1803.07682",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "2 Method"
+  ],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "Abstract",
+   "2 Method"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 5294,
+   "completion_tokens": 4895
+  },
+  "elapsed_llm_seconds": 23.559535099997447,
+  "content_preservation": 0.9808027923211169,
+  "inserted_word_share": 0.00852690385180832,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Method",
+    2,
+    1
+   ],
+   [
+    "2.1 The role of US-to-US registration",
+    2,
+    2
+   ],
+   [
+    "2.2 Feature-based registration strategy",
+    2,
+    2
+   ],
+   [
+    "2.3 GP kernel estimation",
+    4,
+    2
+   ],
+   [
+    "3 Experiments",
+    6,
+    1
+   ],
+   [
+    "4 Conclusion",
+    7,
+    1
+   ],
+   [
+    "References",
+    7,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Method",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The role of US-to-US registration",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Feature-based registration strategy",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 GP kernel estimation",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 23.636579599999095,
+ "metrics_raw": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "Abstract"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 3,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "2 Method"
+  ],
+  "unmatched_pred": [
+   "A Feature-Driven Active Framework for Ultrasound-Based Brain Shift Compensation",
+   "2 Method"
+  ],
+  "ignored_title_predictions": null
+ }
+}

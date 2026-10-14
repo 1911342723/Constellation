@@ -1,0 +1,202 @@
+{
+ "doc": "1804.03511",
+ "system": "model",
+ "metrics": {
+  "gt": 28,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.6896551724137931,
+  "unmatched_gt": [
+   "B. Contributions",
+   "C. Paper Organization",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 974,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10303,
+   "completion_tokens": 762,
+   "total_tokens": 11065
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Related Work",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Channel Model",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Energy Harvesting Model",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Relay Power Model",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. PROBLEM FORMULATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Rate Expression",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Optimization Problem",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Utility Selection",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. JOINT-OPTIMIZATION SOLUTION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Geometric Programming Method for PS Ratios and Relays’",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Selected Relays Optimization",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V. SIMULATION RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Simulation Parameters",
+   "page": 8,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. System Performance",
+   "page": 8,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "C. Convergence Speed",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 20.691219600001205,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.6896551724137931,
+  "unmatched_gt": [
+   "B. Contributions",
+   "C. Paper Organization",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.6785714285714286,
+  "unmatched_gt": [
+   "B. Contributions",
+   "C. Paper Organization",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

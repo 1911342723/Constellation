@@ -1,0 +1,182 @@
+{
+ "doc": "1602.04286",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 8,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [
+   "CO N S TRAIN TS"
+  ],
+  "unmatched_pred": [
+   "APPENDIX",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 8,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "CO N S TRAIN TS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 773,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 15070,
+   "completion_tokens": 693,
+   "total_tokens": 15763
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9311813186813187,
+  "inserted_word_share": 0.5921915418396198
+ },
+ "predictions": [
+  {
+   "text": "Geometric Adaptive Control of Attitude Dynamics on SO(3)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Attitude Dynamics",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. State Inequality Constraint",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. ATTITUDE CONTROL ON SO(3) WITH INEQUALITY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Attitude Control without Disturbance",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Adaptive Control",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. NUMERICAL EXAMPLES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXPERIMENT ON HEXROTOR UAV",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proof of Proposition 1",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Proof of Proposition 2",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "C. Proof of Proposition 3",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Proof of Proposition 4",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Proof of Proposition 5",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.067122300002666,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 8,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [
+   "CO N S TRAIN TS"
+  ],
+  "unmatched_pred": [
+   "APPENDIX",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

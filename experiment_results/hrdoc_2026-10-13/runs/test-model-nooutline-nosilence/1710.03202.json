@@ -1,0 +1,263 @@
+{
+ "doc": "1710.03202",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 16,
+  "pred": 28,
+  "tp": 16,
+  "fp": 12,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 12,
+  "teds": 0.3793103448275862,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "2 u′ · u′",
+   "3 kρI + µT",
+   "appendix of (10) and the references therein.",
+   "2 ρπR2U2∞",
+   "2 ρπR2U3∞",
+   "CD",
+   "10 km",
+   "10 km",
+   "4 km",
+   "pre-reﬁned",
+   "6.5 km"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 632,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18569,
+   "completion_tokens": 671,
+   "total_tokens": 19240
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 MODEL IMPLEMENTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Unsteady RANS formulation of the governing equations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2 u′ · u′",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 kρI + µT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "appendix of (10) and the references therein.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Numerical implementation and mesh optimization",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3 TURBINE PARAMETRISATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 MODEL VALIDATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Mesh convergence study",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2 ρπR2U2∞",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 ρπR2U3∞",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CD",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Wind Tunnel Tests",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5 THE LILLGRUND OFFSHORE WIND FARM",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Parametrisation of the wind farm",
+   "page": 7,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.2 Mesh strategies",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "10 km",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 km",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 km",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "pre-reﬁned",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.5 km",
+   "page": 9,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "5.3 Simulation setup",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "5.4 Computational efﬁciency",
+   "page": 11,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "6 DISCUSSION",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 34.512321000001975,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 28,
+  "tp": 16,
+  "fp": 12,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 12,
+  "teds": 0.3793103448275862,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   "2 u′ · u′",
+   "3 kρI + µT",
+   "appendix of (10) and the references therein.",
+   "2 ρπR2U2∞",
+   "2 ρπR2U3∞",
+   "CD",
+   "10 km",
+   "10 km",
+   "4 km",
+   "pre-reﬁned",
+   "6.5 km"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 24,
+  "tp": 14,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.36,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 u′ · u′",
+   "3 kρI + µT",
+   "2 ρπR2U2∞",
+   "2 ρπR2U3∞",
+   "CD",
+   "10 km",
+   "10 km",
+   "4 km",
+   "pre-reﬁned",
+   "6.5 km"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "doc": "1807.04819",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 561,
+  "layout_marked": 12,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9418891170431212,
+  "inserted_word_share": 0.057723911257189786
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. 3GPP MODE-4",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Stage 1: Power Sensing",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Stage 2",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Stage 3: Subchannel Selection",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.4595273999948404,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Index Terms"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

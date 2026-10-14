@@ -1,0 +1,136 @@
+{
+ "doc": "1604.03635",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 17,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Recurrent Neural Networks",
+   "Bayesian Filtering",
+   "Preliminaries and Notation",
+   "Multi-Target Tracking with RNNs",
+   "Target Motion",
+   "Initiation and Termination",
+   "Data Association with LSTMs",
+   "Training Data",
+   "Implementation Details"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 366,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 5076,
+   "completion_tokens": 307,
+   "total_tokens": 5383
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Our Approach",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.589757099998678,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Recurrent Neural Networks",
+   "Bayesian Filtering",
+   "Preliminaries and Notation",
+   "Multi-Target Tracking with RNNs",
+   "Target Motion",
+   "Initiation and Termination",
+   "Data Association with LSTMs",
+   "Training Data",
+   "Implementation Details"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4375,
+  "unmatched_gt": [
+   "Recurrent Neural Networks",
+   "Bayesian Filtering",
+   "Preliminaries and Notation",
+   "Multi-Target Tracking with RNNs",
+   "Target Motion",
+   "Initiation and Termination",
+   "Data Association with LSTMs",
+   "Training Data",
+   "Implementation Details"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

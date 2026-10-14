@@ -1,0 +1,127 @@
+{
+ "doc": "1607.02892",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 Im[Y l",
+   "2 Re[Y l"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 537,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4156,
+   "completion_tokens": 316,
+   "total_tokens": 4472
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "FLOW AROUND DIMERS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DIFFUSION EFFECTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "LARGER COLONIES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "THECATE CELLS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX: NUMERICAL METHOD",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Im[Y l",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Re[Y l",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.570095299997774,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 Im[Y l",
+   "2 Re[Y l"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 Im[Y l",
+   "2 Re[Y l"
+  ],
+  "ignored_title_predictions": null
+ }
+}

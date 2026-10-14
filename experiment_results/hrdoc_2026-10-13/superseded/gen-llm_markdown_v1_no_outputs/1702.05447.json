@@ -1,0 +1,284 @@
+{
+ "doc": "1702.05447",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 16,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "6 Edge-injective homomorphisms"
+  ],
+  "unmatched_pred": [
+   "6 Edge-injective homomorphisms",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 30029,
+   "completion_tokens": 29463
+  },
+  "elapsed_llm_seconds": 365.1062622999998,
+  "content_preservation": 0.9319168977968496,
+  "inserted_word_share": 0.07754467754467753,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Counting edge-injective homomorphisms and matchings on restricted graph classes",
+    0,
+    1
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "1.1 Counting matchings in restricted graph classes",
+    1,
+    2
+   ],
+   [
+    "1.1.1 Restricted bipartite graphs of high girth",
+    1,
+    3
+   ],
+   [
+    "1.1.2 Line graphs",
+    2,
+    3
+   ],
+   [
+    "1.1.3 Perfect matchings in line graphs",
+    3,
+    3
+   ],
+   [
+    "1.2 Counting edge-injective homomorphisms",
+    3,
+    2
+   ],
+   [
+    "2 Preliminaries",
+    4,
+    1
+   ],
+   [
+    "3 Matchings in restricted bipartite graphs",
+    5,
+    1
+   ],
+   [
+    "3.1 Colorful Holant problems",
+    5,
+    2
+   ],
+   [
+    "3.2 k-Matchings in bipartite graphs",
+    8,
+    2
+   ],
+   [
+    "4 Matchings in line graphs",
+    10,
+    1
+   ],
+   [
+    "5 Perfect matchings in line graphs of bipartite graphs",
+    14,
+    1
+   ],
+   [
+    "6 Edge-injective homomorphisms",
+    17,
+    1
+   ],
+   [
+    "6.1 Polynomial-time algorithm for bounded weak vertex-cover number",
+    17,
+    2
+   ],
+   [
+    "6.2 Hardness for hereditary graph classes",
+    22,
+    2
+   ],
+   [
+    "6.3 Hardness for cycles and paths",
+    27,
+    2
+   ],
+   [
+    "References",
+    31,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Counting edge-injective homomorphisms and matchings on restricted graph classes",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Counting matchings in restricted graph classes",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.1.1 Restricted bipartite graphs of high girth",
+   "page": 1,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "1.1.2 Line graphs",
+   "page": 1,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "1.1.3 Perfect matchings in line graphs",
+   "page": 3,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "1.2 Counting edge-injective homomorphisms",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Matchings in restricted bipartite graphs",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Colorful Holant problems",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 k-Matchings in bipartite graphs",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 Matchings in line graphs",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Perfect matchings in line graphs of bipartite graphs",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Edge-injective homomorphisms",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Polynomial-time algorithm for bounded weak vertex-cover number",
+   "page": 17,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6.2 Hardness for hereditary graph classes",
+   "page": 22,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6.3 Hardness for cycles and paths",
+   "page": 27,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "References",
+   "page": 31,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 365.3828175000017,
+ "metrics_raw": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Counting edge-injective homomorphisms and matchings on restricted graph classes",
+   "References"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Counting edge-injective homomorphisms and matchings on restricted graph classes",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [
+   "6 Edge-injective homomorphisms"
+  ],
+  "unmatched_pred": [
+   "6 Edge-injective homomorphisms"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "doc": "1802.07890",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS",
+   "C. Schat, L. Da Rold, and A. Szynkman, J"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "C. Schat, L. Da Rold, and A. Szynkman, J"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1163,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14006,
+   "completion_tokens": 889,
+   "total_tokens": 14895
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9602494688506613,
+  "inserted_word_share": 0.034123810836895085
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MAXWELL ELECTRODYNAMICS MODIFIED BY HIGHER-DERIVATIVE TERMS: SOME",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPAGATOR OF THE DIMENSION-6 GENERALIZED PODOLSKY THEORY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Dispersion relations",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Analysis of some sectors of the theory",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1. Isotropic trace sector",
+   "page": 7,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2. Complete isotropic sector",
+   "page": 8,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3. Timelike isotropic sector",
+   "page": 8,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "4. Parity-even anisotropic sector (with θ = 0)",
+   "page": 9,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "5. Parity-odd anisotropic sector (with θ = 0)",
+   "page": 12,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "C. Unitarity analysis",
+   "page": 13,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. GENERALIZED MODEL INVOLVING ANISOTROPIC PODOLSKY AND LEE-WICK TERMS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Dispersion relations",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "1. Timelike isotropic sector (with θ ̸= 0)",
+   "page": 16,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "2. Parity-even anisotropic sector (with θ ̸= 0)",
+   "page": 18,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "V. CONNECTION TO NONMINIMAL SME",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION AND REMARKS",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Schat, L. Da Rold, and A. Szynkman, J",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.557365399996343,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS",
+   "C. Schat, L. Da Rold, and A. Szynkman, J"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

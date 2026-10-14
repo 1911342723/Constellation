@@ -1,0 +1,229 @@
+{
+ "doc": "1808.03947",
+ "system": "model",
+ "metrics": {
+  "gt": 22,
+  "pred": 26,
+  "tp": 22,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8518518518518519,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "for r = 0 to n do",
+   "for j = 0 to n do",
+   "for r ̸= j do",
+   "for r = 0 to n do"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 599,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13463,
+   "completion_tokens": 915,
+   "total_tokens": 14378
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 A Lemma",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 About the Algorithm",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Simplest Case",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "for r = 0 to n do",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "for j = 0 to n do",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "for r ̸= j do",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "for r = 0 to n do",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3.2 The General Case",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2.1 The Sum-Matched Approximate Bayes Algorithm:",
+   "page": 4,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "3.2.2 The Sum-Matched Metropolis-Hastings Algorithm:",
+   "page": 6,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "4 Simulation Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Computational Complexity",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Autocorrelation and Convergence",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Eﬃciency of the SM-AB Algorithm when n In-",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Convergence",
+   "page": 11,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.2 Convergence Rate",
+   "page": 13,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "6 Discussion",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Appendix",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 The Acceptance Probability Function for the",
+   "page": 20,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "7.2 R Code",
+   "page": 21,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "7.2.1 Quickselect",
+   "page": 21,
+   "level": 3,
+   "parent": 22
+  },
+  {
+   "text": "7.2.2 The SM-MH Algorithm",
+   "page": 22,
+   "level": 3,
+   "parent": 22
+  },
+  {
+   "text": "7.2.3 A Gibbs Sampler for the 2PL",
+   "page": 23,
+   "level": 3,
+   "parent": 22
+  }
+ ],
+ "seconds": 14.400136199998087,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 26,
+  "tp": 22,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.8518518518518519,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "for r = 0 to n do",
+   "for j = 0 to n do",
+   "for r ̸= j do",
+   "for r = 0 to n do"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 23,
+  "tp": 19,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "for r = 0 to n do",
+   "for j = 0 to n do",
+   "for r ̸= j do",
+   "for r = 0 to n do"
+  ],
+  "ignored_title_predictions": null
+ }
+}

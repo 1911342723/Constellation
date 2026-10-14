@@ -1,0 +1,114 @@
+{
+ "doc": "1511.09446",
+ "system": "docling",
+ "metrics": {
+  "gt": 11,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "1.1. Splitting Complexes. A splitting, T , of Fn is a simplicial tree",
+   "Definition 1. ψ : A(S 1g ) → F S2g is given by col lapsing a neighborhood",
+   "Definition 2. ψZ : AC (S 1g ) → Z2g is given as ψ for arcs. For curves,",
+   "3.2. Proof of Main Result."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 27.22115979999944
+ },
+ "predictions": [
+  {
+   "text": "SPLITTINGS OF FREE GROUPS FROM ARCS AND CURVES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Arcs",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2. Relative Order.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.4. Proof of Lemmas 9 & 10.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Free Splittings",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Cyclic Splittings",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.003265400002419483,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "1.1. Splitting Complexes. A splitting, T , of Fn is a simplicial tree",
+   "Definition 1. ψ : A(S 1g ) → F S2g is given by col lapsing a neighborhood",
+   "Definition 2. ψZ : AC (S 1g ) → Z2g is given as ψ for arcs. For curves,",
+   "3.2. Proof of Main Result."
+  ],
+  "unmatched_pred": [
+   "SPLITTINGS OF FREE GROUPS FROM ARCS AND CURVES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "1.1. Splitting Complexes. A splitting, T , of Fn is a simplicial tree",
+   "Definition 1. ψ : A(S 1g ) → F S2g is given by col lapsing a neighborhood",
+   "Definition 2. ψZ : AC (S 1g ) → Z2g is given as ψ for arcs. For curves,",
+   "3.2. Proof of Main Result."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

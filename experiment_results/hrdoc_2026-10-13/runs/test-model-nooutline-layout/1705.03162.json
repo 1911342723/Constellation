@@ -1,0 +1,174 @@
+{
+ "doc": "1705.03162",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 727,
+  "layout_marked": 19,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10333,
+   "completion_tokens": 741,
+   "total_tokens": 11074
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.935968606431853,
+  "inserted_word_share": 0.06034399923128664
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. GPU architecture and memory",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Methodology",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Experimental method",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2. First-order domain of dependence",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3. Higher-order domain of dependence",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5. Implementation",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Swept rule variants",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5.2. Test cases",
+   "page": 12,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6. Results and discussion",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Conclusions",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B. Heat equation",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix D",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.575482599997486,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

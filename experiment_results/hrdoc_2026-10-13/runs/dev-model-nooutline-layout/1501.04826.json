@@ -1,0 +1,239 @@
+{
+ "doc": "1501.04826",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 21,
+  "tp": 9,
+  "fp": 12,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "3.3. Characterization in the presence of classic implications. Thus, we move on ",
+   "Proposition 6.2.",
+   "Proof."
+  ],
+  "unmatched_pred": [
+   "2.1. Classical implications and closure spaces",
+   "2.2. Partial implications",
+   "2.3. Linear programs",
+   "3.1. Up to two premises",
+   "3.2. Entailment in terms of linear programming",
+   "3.4. Properties of the LP characterization",
+   "4.1. Empty antecedent in the conclusion",
+   "4.2. Low thresholds",
+   "5.1. Enforcing homogeneity",
+   "5.2. Main result for high threshold",
+   "6.1. Characterization for all thresholds",
+   "6.2. An interesting example"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 20,
+  "tp": 8,
+  "fp": 12,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [
+   "3.3. Characterization in the presence of classic implications. Thus, we move on ",
+   "Proposition 6.2.",
+   "Proof."
+  ],
+  "unmatched_pred": [
+   "2.1. Classical implications and closure spaces",
+   "2.2. Partial implications",
+   "2.3. Linear programs",
+   "3.1. Up to two premises",
+   "3.2. Entailment in terms of linear programming",
+   "3.4. Properties of the LP characterization",
+   "4.1. Empty antecedent in the conclusion",
+   "4.2. Low thresholds",
+   "5.1. Enforcing homogeneity",
+   "5.2. Main result for high threshold",
+   "6.1. Characterization for all thresholds",
+   "6.2. An interesting example"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1102,
+  "layout_marked": 10,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 22656,
+   "completion_tokens": 1012,
+   "total_tokens": 23668
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9720124129047368,
+  "inserted_word_share": 0.024044679600235153
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Preliminaries and notation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Classical implications and closure spaces",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2. Partial implications",
+   "page": 7,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3. Linear programs",
+   "page": 9,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Previous work and some related facts",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Up to two premises",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2. Entailment in terms of linear programming",
+   "page": 11,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4. Properties of the LP characterization",
+   "page": 16,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4. Low thresholds",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Empty antecedent in the conclusion",
+   "page": 17,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2. Low thresholds",
+   "page": 18,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5. High thresholds",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Enforcing homogeneity",
+   "page": 19,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.2. Main result for high threshold",
+   "page": 20,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.3. Enforcing homogeneity",
+   "page": 21,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6. Intervening thresholds",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Characterization for all thresholds",
+   "page": 24,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.2. An interesting example",
+   "page": 25,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7. Closing remarks",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.92950670000573,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 21,
+  "tp": 9,
+  "fp": 12,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "3.3. Characterization in the presence of classic implications. Thus, we move on ",
+   "Proposition 6.2.",
+   "Proof."
+  ],
+  "unmatched_pred": [
+   "2.1. Classical implications and closure spaces",
+   "2.2. Partial implications",
+   "2.3. Linear programs",
+   "3.1. Up to two premises",
+   "3.2. Entailment in terms of linear programming",
+   "3.4. Properties of the LP characterization",
+   "4.1. Empty antecedent in the conclusion",
+   "4.2. Low thresholds",
+   "5.1. Enforcing homogeneity",
+   "5.2. Main result for high threshold",
+   "6.1. Characterization for all thresholds",
+   "6.2. An interesting example"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

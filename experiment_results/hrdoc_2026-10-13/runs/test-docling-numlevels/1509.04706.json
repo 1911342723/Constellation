@@ -1,0 +1,170 @@
+{
+ "doc": "1509.04706",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 13,
+  "teds": 0.7222222222222222,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Lagged Diffusivity Fixed Point Method for Regularized LS",
+   "Algorithm 2 Splitting algorithm for regularized Poisson term",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Lagged Diffusivity Fixed Point Method for Regularized LS",
+   "Algorithm 2 Splitting algorithm for regularized Poisson term"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 95.25177429999894
+ },
+ "predictions": [
+  {
+   "text": "Direct high-order edge-preserving regularization for tomographic image reconstruction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Image reconstruction problem",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. Regularization",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. A note on the regularization error",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. Edge-preserving piecewise-smooth regularization",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5. Regularized reconstruction with LS data fidelity term",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Algorithm 1 Lagged Diffusivity Fixed Point Method for Regularized LS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.6. Regularized reconstruction with Poisson data fidelity term",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Algorithm 2 Splitting algorithm for regularized Poisson term",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Numerical Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. CT reconstruction",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.2. ET reconstruction",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4. Discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.008512399996106979,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 13,
+  "teds": 0.7222222222222222,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Lagged Diffusivity Fixed Point Method for Regularized LS",
+   "Algorithm 2 Splitting algorithm for regularized Poisson term",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

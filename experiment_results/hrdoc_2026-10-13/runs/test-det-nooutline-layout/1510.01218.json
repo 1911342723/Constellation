@@ -1,0 +1,257 @@
+{
+ "doc": "1510.01218",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 24,
+  "tp": 12,
+  "fp": 12,
+  "fn": 5,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "2.3. Evaluating effect of biofilm growth without simulations. Some",
+   "5.2. Effect of flow rates and biomass advection parameter ν1 . Now",
+   "5.4. Further discussion of simulation results. The simulations and the",
+   "7. Anisotropic conductivities and at large flow rates",
+   "7.2. Computations with varying flow rates. In addition to conductiv-"
+  ],
+  "unmatched_pred": [
+   "1 : ωijk ∈ Ωr (rock (glass beads)) .",
+   "3.1. Porescale ﬂow model and upscaling",
+   "3.2. Upscaling ﬂow results",
+   "4.1. Process description",
+   "4.2. Bioﬁlm models in literature",
+   "4.3. Biomass evolution and (BN) model",
+   "4.4. Numerical model",
+   "4.4.2. Finite volume/CCFD discretization",
+   "5.3. Cumulative values",
+   "Appendix A",
+   "REFERENCES",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 20,
+  "tp": 11,
+  "fp": 9,
+  "fn": 5,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [
+   "2.3. Evaluating effect of biofilm growth without simulations. Some",
+   "5.2. Effect of flow rates and biomass advection parameter ν1 . Now",
+   "5.4. Further discussion of simulation results. The simulations and the",
+   "7. Anisotropic conductivities and at large flow rates",
+   "7.2. Computations with varying flow rates. In addition to conductiv-"
+  ],
+  "unmatched_pred": [
+   "1 : ωijk ∈ Ωr (rock (glass beads)) .",
+   "3.1. Porescale ﬂow model and upscaling",
+   "3.2. Upscaling ﬂow results",
+   "4.1. Process description",
+   "4.2. Bioﬁlm models in literature",
+   "4.3. Biomass evolution and (BN) model",
+   "4.4. Numerical model",
+   "4.4.2. Finite volume/CCFD discretization",
+   "5.3. Cumulative values"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 700,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9663363553306628,
+  "inserted_word_share": 0.8419431225141963
+ },
+ "predictions": [
+  {
+   "text": "BIOFILM GROWTH IN POROUS MEDIA: EXPERIMENTS, COMPUTATIONAL MODELING AT THE PORESCALE,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Flow",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Experimental set-up and notation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1 : ωijk ∈ Ωr (rock (glass beads)) .",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Flow simulations and comparison with experiment",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Porescale ﬂow model and upscaling",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2. Upscaling ﬂow results",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4. Biomass-nutrient model coupled to hydrodynamics",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Process description",
+   "page": 12,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2. Bioﬁlm models in literature",
+   "page": 13,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3. Biomass evolution and (BN) model",
+   "page": 14,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.4. Numerical model",
+   "page": 16,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.4.1. Time-discretized coupled (H-BN) model",
+   "page": 17,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.2. Finite volume/CCFD discretization",
+   "page": 17,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.4.3. Implementing the inequality constraint",
+   "page": 18,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "5. Numerical simulations of (H-BN) model",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Simulation results",
+   "page": 21,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5.3. Cumulative values",
+   "page": 25,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6. Conclusions",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments.",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1. Computations of full tensor on cropped rectangular domains.",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 30,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 31,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.186899699998321,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 24,
+  "tp": 12,
+  "fp": 12,
+  "fn": 5,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "2.3. Evaluating effect of biofilm growth without simulations. Some",
+   "5.2. Effect of flow rates and biomass advection parameter ν1 . Now",
+   "5.4. Further discussion of simulation results. The simulations and the",
+   "7. Anisotropic conductivities and at large flow rates",
+   "7.2. Computations with varying flow rates. In addition to conductiv-"
+  ],
+  "unmatched_pred": [
+   "1 : ωijk ∈ Ωr (rock (glass beads)) .",
+   "3.1. Porescale ﬂow model and upscaling",
+   "3.2. Upscaling ﬂow results",
+   "4.1. Process description",
+   "4.2. Bioﬁlm models in literature",
+   "4.3. Biomass evolution and (BN) model",
+   "4.4. Numerical model",
+   "4.4.2. Finite volume/CCFD discretization",
+   "5.3. Cumulative values",
+   "Appendix A",
+   "REFERENCES",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

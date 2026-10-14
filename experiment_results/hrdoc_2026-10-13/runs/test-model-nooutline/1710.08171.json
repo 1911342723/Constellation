@@ -1,0 +1,119 @@
+{
+ "doc": "1710.08171",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 11,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Fitting the model",
+   "Data.",
+   "Results."
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 180,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 12839,
+   "completion_tokens": 277,
+   "total_tokens": 13116
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Model 1: estimating the SNARC eﬀect",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Model 2: estimating the numerical distance eﬀect",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Comparing the model to the classical approach",
+   "page": 7,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.097823200001585,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Fitting the model",
+   "Data.",
+   "Results."
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 1,
+  "parent_correct": 4,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "Fitting the model",
+   "Data.",
+   "Results.",
+   "Fitting the model",
+   "Data.",
+   "Results."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

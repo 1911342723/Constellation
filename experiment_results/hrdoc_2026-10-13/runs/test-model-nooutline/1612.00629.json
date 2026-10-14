@@ -1,0 +1,144 @@
+{
+ "doc": "1612.00629",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 7,
+  "fp": 3,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "FUNCTIONS",
+   "I. EFFECTIVE DETECTOR EFFICIENCY"
+  ],
+  "unmatched_pred": [
+   "Acknowledgments",
+   "Appendix A",
+   "M. Kamp, S. H¨oﬂing, and H. Deng, Light"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 463,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 5109,
+   "completion_tokens": 457,
+   "total_tokens": 5566
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Steady-state generation of negative-Wigner-function light using feedback",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PROPOSED EXPERIMENTAL SYSTEM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Nonlinear cavity with feedback",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Master equation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. TIME EVOLUTION OF WIGNER",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NEGATIVITY OF WIGNER FUNCTION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. SUMMARY AND CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "M. Kamp, S. H¨oﬂing, and H. Deng, Light",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 33.880718099997466,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 7,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "FUNCTIONS",
+   "I. EFFECTIVE DETECTOR EFFICIENCY"
+  ],
+  "unmatched_pred": [
+   "Steady-state generation of negative-Wigner-function light using feedback",
+   "Acknowledgments",
+   "Appendix A",
+   "M. Kamp, S. H¨oﬂing, and H. Deng, Light"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "FUNCTIONS",
+   "I. EFFECTIVE DETECTOR EFFICIENCY"
+  ],
+  "unmatched_pred": [
+   "M. Kamp, S. H¨oﬂing, and H. Deng, Light"
+  ],
+  "ignored_title_predictions": null
+ }
+}

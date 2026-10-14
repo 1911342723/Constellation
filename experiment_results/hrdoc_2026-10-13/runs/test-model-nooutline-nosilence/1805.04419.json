@@ -1,0 +1,217 @@
+{
+ "doc": "1805.04419",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "forcement Learning",
+   "D. Intrinsic and Extrinsic Reward Functions",
+   "C. Multiple Goals in a Four-rooms Domain",
+   "D. Montezuma’s Revenge game in ATARI 2600"
+  ],
+  "unmatched_pred": [
+   "PARTIALLY OBSERVABLE SEMI-MARKOV DECISION",
+   "PROCESS"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 1009,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13929,
+   "completion_tokens": 644,
+   "total_tokens": 14573
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Deep Hierarchical Reinforcement Learning",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm in Partially Observable Markov Decision",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Processes)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Markov Decision Process",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Semi-Markov Decision Process for Hierarchical Reinforce-",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Partially observable Markov Decision Process in Rein-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Deep Reinforcement Learning",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. HIERARCHICAL DEEP RECURRENT Q-LEARNING IN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PARTIALLY OBSERVABLE SEMI-MARKOV DECISION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROCESS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Learning Model",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Minibatch sampling strategy",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "C. Subgoal Deﬁnition",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Learning Algorithm",
+   "page": 6,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "IV. EXPERIMENTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Implementation Details",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "B. Multiple Goals in a Gridworld",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 108.22983789999853,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 17,
+  "fp": 5,
+  "fn": 4,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.34782608695652173,
+  "unmatched_gt": [
+   "forcement Learning",
+   "D. Intrinsic and Extrinsic Reward Functions",
+   "C. Multiple Goals in a Four-rooms Domain",
+   "D. Montezuma’s Revenge game in ATARI 2600"
+  ],
+  "unmatched_pred": [
+   "Deep Hierarchical Reinforcement Learning",
+   "Algorithm in Partially Observable Markov Decision",
+   "Processes)",
+   "PARTIALLY OBSERVABLE SEMI-MARKOV DECISION",
+   "PROCESS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 12,
+  "parent_correct": 9,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "forcement Learning",
+   "D. Intrinsic and Extrinsic Reward Functions",
+   "C. Multiple Goals in a Four-rooms Domain",
+   "D. Montezuma’s Revenge game in ATARI 2600"
+  ],
+  "unmatched_pred": [
+   "PARTIALLY OBSERVABLE SEMI-MARKOV DECISION",
+   "PROCESS"
+  ],
+  "ignored_title_predictions": null
+ }
+}

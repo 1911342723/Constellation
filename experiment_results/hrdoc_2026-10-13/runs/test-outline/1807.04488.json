@@ -1,0 +1,164 @@
+{
+ "doc": "1807.04488",
+ "system": "outline",
+ "metrics": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "C. Performance Metrics",
+   "ACKNOWL EDG EM ENT",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [
+   "III-C Performance Metrics"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II ACER: Automatic Query Reformulation using CodeRank and Document Structures",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Pseudo-relevance Feedback",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Source Token Selection for Query Reformulation",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-C Source Code Preprocessing",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-D Source Term Graph Development",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-E CodeRank Calculation",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-F Suggestion of the Best Query Reformulation",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Experiment",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Experimental Dataset",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-B Corpus Indexing & Source Code Search",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-C Performance Metrics",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-D Evaluation of ACER and CodeRank",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "III-E Comparison with Existing Approaches",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV Threats to Validity",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Related Work",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Conclusion & Future Work",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.08527780000076746,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "C. Performance Metrics",
+   "ACKNOWL EDG EM ENT",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [
+   "III-C Performance Metrics"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "C. Performance Metrics"
+  ],
+  "unmatched_pred": [
+   "III-C Performance Metrics"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "doc": "1805.12462",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 23,
+  "pred": 25,
+  "tp": 23,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Eitan Richardson",
+   "Yair Weiss"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8260869565217391,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Eitan Richardson",
+   "Yair Weiss"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 68.47517280000102
+ },
+ "predictions": [
+  {
+   "text": "On GANs and GMMs",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Eitan Richardson",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Yair Weiss",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 ANew EvaluationMethod",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Full Image GaussianMixture Model",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Avoiding Inversion of Large Matrices",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Generating Sharp Images with GMMs",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Pairing GMMwith a Conditional GAN",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.2 Adversarial GMMTraining",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Technical Details",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 NDB EvaluationMethod",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 MFA Training",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.3 MFA Inference - Image Reconstruction",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.4 Measuring Sharpness",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Interpretation of the NDB Bins",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C Additional NDB Results",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D Additional MFA Samples",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E Internal Representation of the MFAModel",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F MFARepresentation Quality vs Number of Components",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "G Pairing GMMwith a Conditional GAN",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.016177199999219738,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 25,
+  "tp": 23,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Eitan Richardson",
+   "Yair Weiss"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

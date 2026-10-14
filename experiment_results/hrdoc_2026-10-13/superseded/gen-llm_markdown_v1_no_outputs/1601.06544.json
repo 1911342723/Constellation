@@ -1,0 +1,203 @@
+{
+ "doc": "1601.06544",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "element methods"
+  ],
+  "unmatched_pred": [
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 24595,
+   "completion_tokens": 23050
+  },
+  "elapsed_llm_seconds": 99.37249860000156,
+  "content_preservation": 0.9850621248080413,
+  "inserted_word_share": 0.005707038681039944,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Goal-oriented a posteriori error control for nonstationary convection-dominated transport problems",
+    0,
+    1
+   ],
+   [
+    "1. Introduction",
+    0,
+    2
+   ],
+   [
+    "2. Problem formulation and stabilized discretization",
+    0,
+    2
+   ],
+   [
+    "3. A dual weighted residual approach for stabilized finite element methods",
+    0,
+    2
+   ],
+   [
+    "4. Practical Aspects",
+    0,
+    2
+   ],
+   [
+    "5. Numerical studies",
+    0,
+    2
+   ],
+   [
+    "6. Summary",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ],
+   [
+    "A. Appendix",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem formulation and stabilized discretization",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. A dual weighted residual approach for stabilized finite element methods",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Practical Aspects",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Numerical studies",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Summary",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Appendix",
+   "page": 32,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 99.59357960000125,
+ "metrics_raw": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 1,
+  "fp": 8,
+  "fn": 7,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.19999999999999996,
+  "unmatched_gt": [
+   "2. Problem formulation and stabilized discretization",
+   "3. A dual weighted residual approach for stabilized finite",
+   "element methods",
+   "4. Practical Aspects",
+   "5. Numerical studies",
+   "6. Summary",
+   "A. Appendix"
+  ],
+  "unmatched_pred": [
+   "Goal-oriented a posteriori error control for nonstationary convection-dominated ",
+   "2. Problem formulation and stabilized discretization",
+   "3. A dual weighted residual approach for stabilized finite element methods",
+   "4. Practical Aspects",
+   "5. Numerical studies",
+   "6. Summary",
+   "References",
+   "A. Appendix"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 1,
+  "fp": 7,
+  "fn": 7,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.2222222222222222,
+  "unmatched_gt": [
+   "2. Problem formulation and stabilized discretization",
+   "3. A dual weighted residual approach for stabilized finite",
+   "element methods",
+   "4. Practical Aspects",
+   "5. Numerical studies",
+   "6. Summary",
+   "A. Appendix"
+  ],
+  "unmatched_pred": [
+   "2. Problem formulation and stabilized discretization",
+   "3. A dual weighted residual approach for stabilized finite element methods",
+   "4. Practical Aspects",
+   "5. Numerical studies",
+   "6. Summary",
+   "References",
+   "A. Appendix"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "element methods"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

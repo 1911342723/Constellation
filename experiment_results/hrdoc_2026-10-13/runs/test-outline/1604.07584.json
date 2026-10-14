@@ -1,0 +1,126 @@
+{
+ "doc": "1604.07584",
+ "system": "outline",
+ "metrics": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Cosmic Rays",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Acceleration of cosmic rays",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Propagation of extragalactic cosmic rays",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Energy losses of protons",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.2 Energy losses of nuclei",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "5 Cosmic ray observations at the highest energies: Hybrid instruments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Flux measurements",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Correlation with astrophysical objects",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Mass composition estimate: the biggest challenge",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8.1 Signatures of Extensive Air Showers",
+   "page": 13,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "8.2 Measurement of mass sensitive observables",
+   "page": 15,
+   "level": 2,
+   "parent": 9
+  }
+ ],
+ "seconds": 0.03568759999689064,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "Abstract",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

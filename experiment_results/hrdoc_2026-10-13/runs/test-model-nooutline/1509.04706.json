@@ -1,0 +1,131 @@
+{
+ "doc": "1509.04706",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "2.1. Image reconstruction problem",
+   "2.2. Regularization",
+   "2.3. A note on the regularization error",
+   "2.4. Edge-preserving piecewise-smooth regularization",
+   "2.5. Regularized reconstruction with LS data fidelity term",
+   "2.6. Regularized reconstruction with Poisson data fidelity term",
+   "3.1. CT reconstruction",
+   "3.2. ET reconstruction"
+  ],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 516,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4296,
+   "completion_tokens": 311,
+   "total_tokens": 4607
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Numerical Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 27.535050099999353,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "2.1. Image reconstruction problem",
+   "2.2. Regularization",
+   "2.3. A note on the regularization error",
+   "2.4. Edge-preserving piecewise-smooth regularization",
+   "2.5. Regularized reconstruction with LS data fidelity term",
+   "2.6. Regularized reconstruction with Poisson data fidelity term",
+   "3.1. CT reconstruction",
+   "3.2. ET reconstruction"
+  ],
+  "unmatched_pred": [
+   "Acknowledgments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [
+   "2.1. Image reconstruction problem",
+   "2.2. Regularization",
+   "2.3. A note on the regularization error",
+   "2.4. Edge-preserving piecewise-smooth regularization",
+   "2.5. Regularized reconstruction with LS data fidelity term",
+   "2.6. Regularized reconstruction with Poisson data fidelity term",
+   "3.1. CT reconstruction",
+   "3.2. ET reconstruction"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

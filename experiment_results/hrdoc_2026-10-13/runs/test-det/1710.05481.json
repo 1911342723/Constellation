@@ -1,0 +1,208 @@
+{
+ "doc": "1710.05481",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 18,
+  "tp": 9,
+  "fp": 9,
+  "fn": 6,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.26315789473684215,
+  "unmatched_gt": [
+   "IMMd",
+   "Step1 – The pro duct lemma",
+   "Step 2 – Rank measure and the hard p olynomial",
+   "Part 1: IMMd has high rank",
+   "Part 2: t-product polynomials have low rank",
+   "Part 3: r -simple polynomials have low rank."
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas",
+   "1. For any gate Φ in C, Supp(Φ) ⊆ Vars(Φ).",
+   "2. If Φ is an sum gate, with children Ψ1, Ψ2, .",
+   "3. If Φ is a product gate, with children Ψ1, Ψ2,",
+   "1. The rank of M(Y,Z)(g) is equal to its maximum possible value (i.e. min{2|Y |,",
+   "2. Distinct variables in X cannot be mapped to the same variable in Y ∪ Z.",
+   "1. rank(M(Y,Z)(IMMd|ρ)) = 2m with probability 1.",
+   "Proof of Theorem 10 assuming Lemma 18. Assume that IMMd is computed by a syntact"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 777,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Depth-reduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Separations from general formulas",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Basic setup",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Multilinear formulas and circuits",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "1. For any gate Φ in C, Supp(Φ) ⊆ Vars(Φ).",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. If Φ is an sum gate, with children Ψ1, Ψ2, .",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. If Φ is a product gate, with children Ψ1, Ψ2,",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Lower bounds for multilinear formulas and circuits computing",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Proof of Theorem 10",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. The rank of M(Y,Z)(g) is equal to its maximum possible value (i.e. min{2|Y |, 2|Z|}) with",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Distinct variables in X cannot be mapped to the same variable in Y ∪ Z.",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. rank(M(Y,Z)(IMMd|ρ)) = 2m with probability 1.",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof of Theorem 10 assuming Lemma 18. Assume that IMMd is computed by a syntactic mulitlinear (ΣΠ)∆Σ formula F of size at most s. By Lemma 15, we get that f can be expressed as a sum of at most 2s many summands, say f1, f2, . . . , fs and g1, g2, . . . , gs, where",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Proof of Lemma 18",
+   "page": 13,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.0833313000002818,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 18,
+  "tp": 9,
+  "fp": 9,
+  "fn": 6,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.26315789473684215,
+  "unmatched_gt": [
+   "IMMd",
+   "Step1 – The pro duct lemma",
+   "Step 2 – Rank measure and the hard p olynomial",
+   "Part 1: IMMd has high rank",
+   "Part 2: t-product polynomials have low rank",
+   "Part 3: r -simple polynomials have low rank."
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas",
+   "1. For any gate Φ in C, Supp(Φ) ⊆ Vars(Φ).",
+   "2. If Φ is an sum gate, with children Ψ1, Ψ2, .",
+   "3. If Φ is a product gate, with children Ψ1, Ψ2,",
+   "1. The rank of M(Y,Z)(g) is equal to its maximum possible value (i.e. min{2|Y |,",
+   "2. Distinct variables in X cannot be mapped to the same variable in Y ∪ Z.",
+   "1. rank(M(Y,Z)(IMMd|ρ)) = 2m with probability 1.",
+   "Proof of Theorem 10 assuming Lemma 18. Assume that IMMd is computed by a syntact"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 7,
+  "fp": 9,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 6,
+  "teds": 0.17647058823529416,
+  "unmatched_gt": [
+   "IMMd",
+   "Step1 – The pro duct lemma",
+   "Step 2 – Rank measure and the hard p olynomial",
+   "Part 1: IMMd has high rank",
+   "Part 2: t-product polynomials have low rank",
+   "Part 3: r -simple polynomials have low rank."
+  ],
+  "unmatched_pred": [
+   "1. Depth-reduction",
+   "2. Separations from general formulas",
+   "1. For any gate Φ in C, Supp(Φ) ⊆ Vars(Φ).",
+   "2. If Φ is an sum gate, with children Ψ1, Ψ2, .",
+   "3. If Φ is a product gate, with children Ψ1, Ψ2,",
+   "1. The rank of M(Y,Z)(g) is equal to its maximum possible value (i.e. min{2|Y |,",
+   "2. Distinct variables in X cannot be mapped to the same variable in Y ∪ Z.",
+   "1. rank(M(Y,Z)(IMMd|ρ)) = 2m with probability 1.",
+   "Proof of Theorem 10 assuming Lemma 18. Assume that IMMd is computed by a syntact"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,212 @@
+{
+ "doc": "1602.05603",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 25,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 22,
+  "parent_correct": 21,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 19,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 852,
+  "layout_marked": 25,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10721,
+   "completion_tokens": 993,
+   "total_tokens": 11714
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.8957340178462291,
+  "inserted_word_share": 0.9420702303593733
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. A POSSIBLE IMPLEMENTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NUMERICAL SOLUTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Two photon generation: scattering and",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Characterization for the two-photon output",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "V. ANALYTICAL THEORY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EFFICIENCY",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Input-output ﬁelds calculations",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "2. Linear Response theory (LRT)",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3. Practical calculation",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "a. Retarded perturbation",
+   "page": 7,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "b. AC-driving",
+   "page": 8,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4. Final formula",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "c. The relation",
+   "page": 8,
+   "level": 3,
+   "parent": 16
+  },
+  {
+   "text": "5. Transmission calculation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Leakage",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B: Eﬃciency calculations",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C: Numerical simulations",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Matrix Product States",
+   "page": 9,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "2. Simulated model, input state and parameters",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  }
+ ],
+ "seconds": 17.144470100000035,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 22,
+  "parent_correct": 21,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "artifact_id": "data-docx-deterministic-2026-10-03",
+  "domain": "docx:deterministic",
+  "parser_config": {
+    "enable_speculative_execution": true,
+    "speculative_boundary_tolerance": 1,
+    "enable_heading_candidates": true,
+    "enable_anchor_downgrade": true,
+    "strict_first_routing": true,
+    "hierarchy_beam_width": 32,
+    "hierarchy_relation_weight": 2.8,
+    "escape_vote_max_text_len": 140,
+    "escape_vote_max_words": 12,
+    "escape_vote_title_similarity": 0.5,
+    "llm_silence_likelihood_ratio": 0.12,
+    "downgrade_max_text_len": 300,
+    "downgrade_candidate_proximity": 2,
+    "downgrade_title_similarity": 0.5,
+    "max_inflight_requests_per_document": 8,
+    "max_inflight_requests_global": 32,
+    "window_request_timeout": 0.0
+  },
+  "pipeline_fingerprint": "8f9b7a2b59bea88c1b229843463b448446e678c9fa1b51b4f674c4541f7ab355",
+  "train_documents": [
+    "cjk_paper__bold_everything",
+    "cjk_paper__clean",
+    "cjk_paper__flat_style",
+    "cjk_paper__font_inverted",
+    "cjk_paper__numbering_shift",
+    "cjk_paper__over_styled",
+    "cjk_paper__style_shift",
+    "cjk_paper__styled_labels",
+    "report__bold_everything",
+    "report__clean",
+    "report__flat_style",
+    "report__font_inverted",
+    "report__numbering_shift",
+    "report__over_styled",
+    "report__style_shift",
+    "report__styled_labels"
+  ],
+  "validation_documents": [
+    "deep__bold_everything",
+    "deep__clean",
+    "deep__flat_style",
+    "deep__font_inverted",
+    "deep__numbering_shift",
+    "deep__over_styled",
+    "deep__style_shift",
+    "deep__styled_labels"
+  ],
+  "channels": {
+    "heading": {
+      "upper_bounds": [
+        0.002446939748855792,
+        0.007364799157565161,
+        0.008808798977641197,
+        0.2810792278058516,
+        0.6256,
+        0.68425,
+        0.7658440588878193,
+        0.9404086462763298,
+        0.9724532593700069,
+        0.9729646976879344
+      ],
+      "probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "level": {
+      "upper_bounds": [
+        0.826955862284414,
+        0.8343022486090571,
+        0.8457158910976328,
+        0.8674378408176628,
+        0.8738143629925885,
+        0.9225298196614272,
+        0.9446757396081374,
+        0.973389550660468,
+        0.9733895506604681,
+        0.9936424220122656,
+        0.9940125378484412,
+        0.9965860857864918,
+        0.9967971474313914,
+        0.9982823706991604,
+        0.9983887308730406,
+        0.9987803177418317,
+        0.9993870166361545,
+        0.9995040601751484,
+        0.9997508422190727
+      ],
+      "probabilities": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "validation": {
+    "heading": {
+      "samples": 157,
+      "ece_before": 0.1156926161361069,
+      "ece_after": 0.0,
+      "brier_before": 0.02808270273787046,
+      "brier_after": 0.0
+    },
+    "level": {
+      "samples": 120,
+      "ece_before": 0.0784536778878432,
+      "ece_after": 0.0,
+      "brier_before": 0.01430418350409605,
+      "brier_after": 0.0
+    }
+  }
+}

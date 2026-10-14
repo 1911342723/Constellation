@@ -1,0 +1,120 @@
+{
+ "doc": "1712.04953",
+ "system": "outline",
+ "metrics": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "ABSTRACT",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Observations and Data Reduction",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Line-strength measurements",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Derived ages and metallicities",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Elemental abundance ratios",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Discussion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Na abundances",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Abundance ratios and the formation of dEs",
+   "page": 10,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Ca abundances",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0430785000025935,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "ABSTRACT",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,193 @@
+{
+ "doc": "1802.08375",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum"
+  ],
+  "unmatched_pred": [
+   "Rustem Takhanov",
+   "3.2 Data-S"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 503,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Rustem Takhanov",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Recurrent Neural Language Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Reusing Weights",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experimental Setup",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 CharCNN is biased towards surface form",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.2 Tying weights bottom-up",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.3 Difference between input and output",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.4 CharCNN generalizes better than",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.5 Performance on non-English Data",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6.6 Replacing LSTM with AWD-LSTM",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Optimization",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Data-S",
+   "page": 10,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "B Non-English corpora statistics and",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "model sizes",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.466471899999306,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum"
+  ],
+  "unmatched_pred": [
+   "Rustem Takhanov",
+   "3.2 Data-S"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [
+   "embeddings",
+   "MorphSum"
+  ],
+  "unmatched_pred": [
+   "Rustem Takhanov",
+   "3.2 Data-S"
+  ],
+  "ignored_title_predictions": null
+ }
+}

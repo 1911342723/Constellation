@@ -1,0 +1,211 @@
+{
+ "doc": "1706.06480",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.92,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Actual Class Labels",
+   "Predicted Class Labels"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 429,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13188,
+   "completion_tokens": 902,
+   "total_tokens": 14090
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Works",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Review of recent Deep Learning techniques in computer vision",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Fully Convolutional Neural Networks (FCNNs)",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Methods",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Object-based Classiﬁcation of Microstructures with CNNs",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2 Segmentation-based Classiﬁcation of Microstructures with FCNNs",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3 Implementation Details",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3.1 Training object-based CNN:",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4.3.2 Using pre-trained extracted features (DeCAFs):",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4.3.3 Training MVFCNN:",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4.3.4 Class Balancing and Data Augmentation",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "5 Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Dataset",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.2 Task Deﬁnition and Metrics",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.3 Evaluation",
+   "page": 8,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "Actual Class Labels",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "Predicted Class Labels",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6 Discussion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Acknowledgements",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Additional information",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 22.485459499999706,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.92,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Actual Class Labels",
+   "Predicted Class Labels"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Actual Class Labels",
+   "Predicted Class Labels"
+  ],
+  "ignored_title_predictions": null
+ }
+}

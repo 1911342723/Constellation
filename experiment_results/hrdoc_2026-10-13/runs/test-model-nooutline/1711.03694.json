@@ -1,0 +1,169 @@
+{
+ "doc": "1711.03694",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Weighted Pixel-wise Cross-entropy Loss. In the curriculum",
+   "end for",
+   "end for",
+   "end for"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 169,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4455,
+   "completion_tokens": 516,
+   "total_tokens": 4971
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RELATED WORK",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. PROPOSED DOMAIN ADAPTATION NETWORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Fully Convolutional Tri-branch Network Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. Encoding Explicit Spatial Information",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3. Assigning Pseudo Labels to Target Images",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4. Loss Function",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Weighted Pixel-wise Cross-entropy Loss. In the curriculum",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5. Training Procedure",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "end for",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "end for",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "end for",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. EXPERIMENTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.958790799999406,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Weighted Pixel-wise Cross-entropy Loss. In the curriculum",
+   "end for",
+   "end for",
+   "end for"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 14,
+  "tp": 10,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Weighted Pixel-wise Cross-entropy Loss. In the curriculum",
+   "end for",
+   "end for",
+   "end for"
+  ],
+  "ignored_title_predictions": null
+ }
+}

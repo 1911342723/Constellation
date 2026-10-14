@@ -1,0 +1,190 @@
+{
+ "doc": "1803.09206",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 17,
+  "teds": 0.8695652173913043,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "6. Car Type",
+   "2. Each gridpoint holds the vehicle type that is there. In models where there ar"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 155,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Review of Existing Traﬃc Models",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2 Description of Traﬃc Assessment",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3 Congestion",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3.1 Velocity, Density, and Flow",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2 Design",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Car Type",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Each gridpoint holds the vehicle type that is there. In models where there are no trucks,",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Universal Assumptions",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2.2 Universal Variables",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "2.3 Preliminary Models",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3 Important Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Fundamental Diagrams",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.2 Discussion of Jams",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.3 Queuing Eﬀects",
+   "page": 13,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Safety",
+   "page": 14,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4.2 Strength of Models",
+   "page": 14,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4.3 Future work",
+   "page": 14,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.3980265999998664,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 17,
+  "teds": 0.8695652173913043,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "6. Car Type",
+   "2. Each gridpoint holds the vehicle type that is there. In models where there ar"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 14,
+  "teds": 0.85,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "6. Car Type",
+   "2. Each gridpoint holds the vehicle type that is there. In models where there ar"
+  ],
+  "ignored_title_predictions": null
+ }
+}

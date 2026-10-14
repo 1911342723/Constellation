@@ -1,0 +1,219 @@
+{
+ "doc": "1803.09932",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 27,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 27,
+  "parent_correct": 27,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 26,
+  "tp": 26,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 37.9216782999938
+ },
+ "predictions": [
+  {
+   "text": "Image Semantic Transformation: Faster, Lighter and Stronger",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Understanding images on latent space in GANs",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Semantic transformations",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 FaceNet",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Image-Semantic-Transformation-Reconstruction-Circle",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 FaceNet",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 BEGAN",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 The Mapping",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Euclidean Latent Space",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Evaluating Euclidean latent space",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Proof of space's smooth and connectivity",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2 Average image",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.3 Arithimetic calculation",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5 Experiment Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 FaceNet and BEGAN",
+   "page": 7,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.2 Mapping from FaceNet to BEGAN",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.3 Training classifiers in Euclidean latent space",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.4 Semantic Transformation",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5.5 Empirical Thinking",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "6 Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Time and space complexity",
+   "page": 9,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "6.2 Our Model's simplicity",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "6.3 Beyond Face dataset",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "7 Conclusion and Future Work",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Appendix For Semantic Transformations",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.030418300004384946,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 27,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 27,
+  "parent_correct": 27,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

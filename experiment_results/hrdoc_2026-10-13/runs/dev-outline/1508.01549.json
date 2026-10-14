@@ -1,0 +1,244 @@
+{
+ "doc": "1508.01549",
+ "system": "outline",
+ "metrics": {
+  "gt": 27,
+  "pred": 29,
+  "tp": 25,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 25,
+  "parent_correct": 18,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "MARG I N CL A SS I FIE R",
+   "WITH M EAN -S HIFT"
+  ],
+  "unmatched_pred": [
+   "Biographies",
+   "Uday Kamath",
+   "Carlotta Domeniconi",
+   "Kenneth A. De Jong"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 The PSBML Algorithm",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Initialization",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Node behavior at each epoch",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 Grid behavior at each epoch",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4 Iterative process",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Theoretical Analysis: PSBML is a Large Margin Classifier",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Distribution of a node at time t = 1",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Distribution of the Grid at time t = 1",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Final Distribution of the Grid",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Empirical Analysis of PSBML and GMM with Mean-shift",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 A Non-linearly Separable Dataset",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2 Weight Distribution Changes",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.3 Linearly Separable Bivariate Gaussians",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.4 Hard Instances and Support Vectors",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 Experimental Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Parameter Sensitivity Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.2 Meta-learning Experiments",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.3 Scalability Experiments",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.3.1 Real-world Dataset",
+   "page": 8,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "6.4 Comparison against AdaBoost and Impact of Noise",
+   "page": 10,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Software and Data",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Biographies",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Uday Kamath",
+   "page": 11,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "Carlotta Domeniconi",
+   "page": 12,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "Kenneth A. De Jong",
+   "page": 12,
+   "level": 2,
+   "parent": 25
+  }
+ ],
+ "seconds": 0.1373048999994353,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 29,
+  "tp": 25,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 25,
+  "parent_correct": 18,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "MARG I N CL A SS I FIE R",
+   "WITH M EAN -S HIFT"
+  ],
+  "unmatched_pred": [
+   "Biographies",
+   "Uday Kamath",
+   "Carlotta Domeniconi",
+   "Kenneth A. De Jong"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 28,
+  "tp": 24,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 24,
+  "parent_correct": 17,
+  "teds": 0.7241379310344828,
+  "unmatched_gt": [
+   "MARG I N CL A SS I FIE R",
+   "WITH M EAN -S HIFT"
+  ],
+  "unmatched_pred": [
+   "Biographies",
+   "Uday Kamath",
+   "Carlotta Domeniconi",
+   "Kenneth A. De Jong"
+  ],
+  "ignored_title_predictions": null
+ }
+}

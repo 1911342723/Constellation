@@ -1,0 +1,238 @@
+{
+ "doc": "1803.10983",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 23,
+  "tp": 10,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Fixed-Parameter Algorithm for the Max-Cut",
+   "crossing number k of the given embedding. A graph is called 1-planar if it",
+   "can be drawn in the plane with at most one crossing per edge. Our algo-",
+   "using edge removal and node contraction. The Max-Cut problem is",
+   "then solved on the planar graphs using established polynomial-time al-",
+   "gorithms. We show that a maximum cut in the given 1-planar graph can",
+   "be derived from the solutions for the planar graphs. Our algorithm com-",
+   "putes a maximum cut in an embedded 1-planar graph with n nodes and",
+   "Keywords: maximum cut, ﬁxed-parameter tractable, 1-planar graphs",
+   "5: S1 ← MaxCut(G/wy, Update(X, w, y))",
+   "6: S2 ← MaxCut(G/yz, Update(X, y, z))",
+   "7: S3 ← MaxCut(G − ewz, X \\ {χ})",
+   "8: G1 ← G/wy, G2 ← G/yz, G3 ← G − ewz"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 323,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4197,
+   "completion_tokens": 522,
+   "total_tokens": 4719
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A Fixed-Parameter Algorithm for the Max-Cut",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract. We propose a ﬁxed-parameter tractable algorithm for the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "crossing number k of the given embedding. A graph is called 1-planar if it",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "can be drawn in the plane with at most one crossing per edge. Our algo-",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "using edge removal and node contraction. The Max-Cut problem is",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "then solved on the planar graphs using established polynomial-time al-",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "gorithms. We show that a maximum cut in the given 1-planar graph can",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "be derived from the solutions for the planar graphs. Our algorithm com-",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "putes a maximum cut in an embedded 1-planar graph with n nodes and",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords: maximum cut, ﬁxed-parameter tractable, 1-planar graphs",
+   "page": 0,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Max-Cut for embedded 1-planar graphs",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Removing the crossings",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.2 The Max-Cut Algorithm",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5: S1 ← MaxCut(G/wy, Update(X, w, y))",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6: S2 ← MaxCut(G/yz, Update(X, y, z))",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7: S3 ← MaxCut(G − ewz, X \\ {χ})",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8: G1 ← G/wy, G2 ← G/yz, G3 ← G − ewz",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Correctness",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "3.4 Running time",
+   "page": 8,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "4 Conclusion and open problems",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.0452569000008225,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 23,
+  "tp": 10,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Fixed-Parameter Algorithm for the Max-Cut",
+   "crossing number k of the given embedding. A graph is called 1-planar if it",
+   "can be drawn in the plane with at most one crossing per edge. Our algo-",
+   "using edge removal and node contraction. The Max-Cut problem is",
+   "then solved on the planar graphs using established polynomial-time al-",
+   "gorithms. We show that a maximum cut in the given 1-planar graph can",
+   "be derived from the solutions for the planar graphs. Our algorithm com-",
+   "putes a maximum cut in an embedded 1-planar graph with n nodes and",
+   "Keywords: maximum cut, ﬁxed-parameter tractable, 1-planar graphs",
+   "5: S1 ← MaxCut(G/wy, Update(X, w, y))",
+   "6: S2 ← MaxCut(G/yz, Update(X, y, z))",
+   "7: S3 ← MaxCut(G − ewz, X \\ {χ})",
+   "8: G1 ← G/wy, G2 ← G/yz, G3 ← G − ewz"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 21,
+  "tp": 8,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 6,
+  "teds": 0.31818181818181823,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Fixed-Parameter Algorithm for the Max-Cut",
+   "crossing number k of the given embedding. A graph is called 1-planar if it",
+   "can be drawn in the plane with at most one crossing per edge. Our algo-",
+   "using edge removal and node contraction. The Max-Cut problem is",
+   "then solved on the planar graphs using established polynomial-time al-",
+   "gorithms. We show that a maximum cut in the given 1-planar graph can",
+   "be derived from the solutions for the planar graphs. Our algorithm com-",
+   "putes a maximum cut in an embedded 1-planar graph with n nodes and",
+   "Keywords: maximum cut, ﬁxed-parameter tractable, 1-planar graphs",
+   "5: S1 ← MaxCut(G/wy, Update(X, w, y))",
+   "6: S2 ← MaxCut(G/yz, Update(X, y, z))",
+   "7: S3 ← MaxCut(G − ewz, X \\ {χ})",
+   "8: G1 ← G/wy, G2 ← G/yz, G3 ← G − ewz"
+  ],
+  "ignored_title_predictions": null
+ }
+}

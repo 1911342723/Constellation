@@ -1,0 +1,152 @@
+{
+ "doc": "1704.00568",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "j=1 and {χj}n′"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "j=1 and {χj}n′"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 396,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4598,
+   "completion_tokens": 496,
+   "total_tokens": 5094
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9511474664848898,
+  "inserted_word_share": 0.8959094865100087
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Level-set methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "j=1 and {χj}n′",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.0.1 Example",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.0.2 Example",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.1 Approximation to Heaviside function",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Joint reconstruction algorithm",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Numerical Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Regularization parameter selection",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Benchmark test",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 Limited-angle test",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 Conclusions and Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.54757840000093,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "j=1 and {χj}n′"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

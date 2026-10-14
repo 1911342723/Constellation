@@ -1,0 +1,320 @@
+{
+ "doc": "1612.00969",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 17,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 8565,
+   "completion_tokens": 7917
+  },
+  "elapsed_llm_seconds": 35.02014849999978,
+  "content_preservation": 0.9564527503526093,
+  "inserted_word_share": 0.02375382400575854,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Unit Dependency Graph and its Application to Arithmetic Word Problem Solving",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "2 Unit Dependency Graph",
+    0,
+    2
+   ],
+   [
+    "3 Learning to Predict UDGs",
+    1,
+    2
+   ],
+   [
+    "Vertex Classifier",
+    1,
+    3
+   ],
+   [
+    "Edge Classifier",
+    1,
+    3
+   ],
+   [
+    "Constrained Inference",
+    1,
+    3
+   ],
+   [
+    "4 Joint Inference With An Arithmetic Solver",
+    2,
+    2
+   ],
+   [
+    "Monotonic Expression Tree",
+    2,
+    3
+   ],
+   [
+    "Arithmetic Word Problem Solver",
+    2,
+    3
+   ],
+   [
+    "Joint Inference",
+    3,
+    3
+   ],
+   [
+    "Consistent Rate Unit Graphs",
+    3,
+    3
+   ],
+   [
+    "5 Experiments",
+    3,
+    2
+   ],
+   [
+    "Dataset",
+    3,
+    3
+   ],
+   [
+    "Data Acquisition",
+    4,
+    3
+   ],
+   [
+    "UDG Prediction",
+    4,
+    3
+   ],
+   [
+    "Solving Arithmetic Word Problems",
+    4,
+    3
+   ],
+   [
+    "Discussion",
+    5,
+    3
+   ],
+   [
+    "6 Related Work",
+    5,
+    2
+   ],
+   [
+    "7 Conclusion",
+    5,
+    2
+   ],
+   [
+    "Acknowledgements",
+    6,
+    2
+   ],
+   [
+    "References",
+    6,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Unit Dependency Graph",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Learning to Predict UDGs",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Vertex Classifier",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Edge Classifier",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Constrained Inference",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Joint Inference With An Arithmetic Solver",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Monotonic Expression Tree",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Arithmetic Word Problem Solver",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Joint Inference",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Consistent Rate Unit Graphs",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Dataset",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Data Acquisition",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "UDG Prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Solving Arithmetic Word Problems",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Discussion",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 Related Work",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 35.14218429999892,
+ "metrics_raw": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 12,
+  "teds": 0.9583333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Unit Dependency Graph and its Application to Arithmetic Word Problem Solving"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 14,
+  "teds": 0.9,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

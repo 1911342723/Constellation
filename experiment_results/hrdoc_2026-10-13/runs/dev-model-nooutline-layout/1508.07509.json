@@ -1,0 +1,188 @@
+{
+ "doc": "1508.07509",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 392,
+  "layout_marked": 22,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14413,
+   "completion_tokens": 742,
+   "total_tokens": 15155
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9762550881953868,
+  "inserted_word_share": 0.9150316322226908
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Data",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Statistical model",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Data model",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Spatial process models",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Prior Distributions",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 Latent Variable Model",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.5 Model for township data",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.6 Computation",
+   "page": 9,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Model comparison",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Design",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Results",
+   "page": 12,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Data product",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Discussion",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Author contributions",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Appendix",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 MCMC details",
+   "page": 21,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "7.2 Estimating θp(s) via Monte Carlo integration",
+   "page": 22,
+   "level": 2,
+   "parent": 18
+  }
+ ],
+ "seconds": 18.722909600001003,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

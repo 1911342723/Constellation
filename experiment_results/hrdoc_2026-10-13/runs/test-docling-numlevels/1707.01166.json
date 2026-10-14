@@ -1,0 +1,201 @@
+{
+ "doc": "1707.01166",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 19,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Xu Liu",
+   "Shunsuke Kamijo",
+   "Algorithm 1 Inference Algorithm 1"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 19,
+  "tp": 16,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 15,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Xu Liu",
+   "Shunsuke Kamijo",
+   "Algorithm 1 Inference Algorithm 1"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 50.69670709999991
+ },
+ "predictions": [
+  {
+   "text": "Unsupervised Submodular Rank Aggregation on Score-based Permutations",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Xu Liu",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Shunsuke Kamijo",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The Definition of the LB Divergence",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 The LB divergence for the NDCG loss function",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 The Unsupervised Learning Frameworks",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Linear Structured Framework",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Algorithm 1 Inference Algorithm 1",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 The Nested Structured Framework",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4 Applications",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Information Retrieval",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Combining Distributed Neural Networks",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Influencers in Social Networks",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.4 Distributed Automatic Speech Recognition",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusions and FutureWork",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Appendix",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Proof for the Corollary 5",
+   "page": 12,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.2 Proof for equation (9)",
+   "page": 12,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "6.3 The NDCG results in Figure 1",
+   "page": 12,
+   "level": 2,
+   "parent": 19
+  }
+ ],
+ "seconds": 0.01694560000032652,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Xu Liu",
+   "Shunsuke Kamijo",
+   "Algorithm 1 Inference Algorithm 1"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

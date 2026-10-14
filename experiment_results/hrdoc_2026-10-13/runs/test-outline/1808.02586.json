@@ -1,0 +1,191 @@
+{
+ "doc": "1808.02586",
+ "system": "outline",
+ "metrics": {
+  "gt": 29,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Abstract",
+   "Neural Posterior Approximator",
+   "Neural Prior Model",
+   "Text similarity critic",
+   "Domain critic",
+   "Acknowledgements",
+   "References",
+   "Appendix A. Experimental Setups",
+   "Appendix B. Generated Utterances"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Variational Domain-Adaptation Neural Language Generator",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Variational Neural Encoder",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Variational Neural Inferer",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 Variational Neural Decoder",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4 Critics",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Training Domain Adaptation Model",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Training Critics",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Training Variational Generator",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Adversarial Training",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Results and Analysis",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Integrating Variational Inference",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.2 Ablation Studies",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.3 Distance of Dataset Pairs",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.4 Adaptation vs. All Training Scenario",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.5 Unsupervised Domain Adaptation",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6.6 Comparison on Generated Outputs",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7 Conclusion and Future Work",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0883265999982541,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Abstract",
+   "Neural Posterior Approximator",
+   "Neural Prior Model",
+   "Text similarity critic",
+   "Domain critic",
+   "Acknowledgements",
+   "References",
+   "Appendix A. Experimental Setups",
+   "Appendix B. Generated Utterances"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.84,
+  "unmatched_gt": [
+   "Neural Posterior Approximator",
+   "Neural Prior Model",
+   "Text similarity critic",
+   "Domain critic"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

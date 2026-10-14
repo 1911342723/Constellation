@@ -1,0 +1,194 @@
+{
+ "doc": "1803.04102",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 23,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Trojan Detection by Signal Sensitivity Tracing"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "D. Trojan Detection by Signal Sensitivity Tracing",
+   "V III . AC K NO W L EDG MEN T"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 239,
+  "layout_marked": 24,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9864790791156587,
+  "inserted_word_share": 0.7002803452965831
+ },
+ "predictions": [
+  {
+   "text": "Hardware Trojan Detection through Information Flow",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PRELIMINARIES AND DEFINITIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. SoC Design Flow",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Threat Model",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. PREVIOUS WORKS AND THEIR LIMITATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Formal Veriﬁcation",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. GLIFT-based Trojan Detection",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Jasper Security Path Veriﬁcation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TROJAN DETECTION THROUGH IFS VERIFICATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Conﬁdentiality Veriﬁcation",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Integrity Veriﬁcation",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Trigger Condition Extraction",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Conﬁdentiality Veriﬁcation",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "C. Integrity Veriﬁcation",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Comparison",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. LIMITATIONS OF PROPOSED APPROACH",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. ACKNOWLEDGMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.5924952999994275,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Abstract—",
+   "D. Trojan Detection by Signal Sensitivity Tracing"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

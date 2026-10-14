@@ -1,0 +1,124 @@
+{
+ "doc": "1508.07482",
+ "system": "outline",
+ "metrics": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 State of the art",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Research questions and objectives",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Research methodology",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments setup",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Data acquisition",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "6 Data analysis",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Anomaly detection approaches",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "6.2 Local Outlier factor (LOF)",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "7 Experiments results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Proposed method for malware detection",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Conclusions and further work",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.035461299998132745,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

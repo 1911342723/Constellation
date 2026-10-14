@@ -1,0 +1,127 @@
+{
+ "doc": "1801.04242",
+ "system": "outline",
+ "metrics": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Model Constants and Functions",
+   "Exemplar y MPSoC Component Models",
+   "ACKNOWLEDGMENT"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The CoreVA-MPSoC Project",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Hardware Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Programming Infrastructure",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Energy Estimation Methodologies",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Energy Modeling Framework",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Validation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0340926999997464,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Model Constants and Functions",
+   "Exemplar y MPSoC Component Models",
+   "ACKNOWLEDGMENT"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "Model Constants and Functions",
+   "Exemplar y MPSoC Component Models"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,934 @@
+{
+ "doc": "1605.02951",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 12,
+  "pred": 101,
+  "tp": 12,
+  "fp": 89,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.12745098039215685,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 \u0012 mij",
+   "oomf",
+   "hoes",
+   "actually",
+   "tryna",
+   "bout",
+   "seriously",
+   "somebody",
+   "lmao",
+   "lilyall",
+   "guys",
+   "niggas",
+   "nigga",
+   "ima",
+   "ain",
+   "great",
+   "pretty",
+   "ever",
+   "hoe",
+   "makes",
+   "tho",
+   "little",
+   "best",
+   "smh",
+   "wit",
+   "awesome",
+   "aint",
+   "madeverybody",
+   "everyone",
+   "everything",
+   "bar",
+   "grill",
+   "pic",
+   "00am",
+   "something",
+   "ousted",
+   "starbucks",
+   "others",
+   "nws",
+   "coffee",
+   "better",
+   "warning",
+   "dinner",
+   "gym",
+   "issued",
+   "center",
+   "mayor",
+   "park",
+   "weather",
+   "club",
+   "advisory",
+   "anything",
+   "great",
+   "hate",
+   "gonna",
+   "check",
+   "someone",
+   "app",
+   "anymore",
+   "news trip",
+   "looking",
+   "shut",
+   "text",
+   "okay",
+   "local",
+   "mood illannoying",
+   "honestly",
+   "dad",
+   "annoying",
+   "pants",
+   "gracias",
+   "hockey",
+   "paper",
+   "loved",
+   "amazing",
+   "snow",
+   "crap",
+   "summer",
+   "sweet",
+   "bed",
+   "mexican",
+   "shitty",
+   "nap yet",
+   "holyhours",
+   "bueno",
+   "heart",
+   "winter",
+   "0.87 Population of one race - percent Black or African American alone (2010)",
+   "0.77 Owner-occupied housing units, African American householder, per population "
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 13140,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 25204,
+   "completion_tokens": 498,
+   "total_tokens": 25702
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Twitter dataset",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Latent Semantic Indexing and Robust Principal Component Analysis",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Demographic data",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Boolean relationship detection",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2 \u0012 mij",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Discussion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Data availability statement",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "oomf",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "hoes",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "actually",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "tryna",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "bout",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "seriously",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "somebody",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "lmao",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "lilyall",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "guys",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "niggas",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "nigga",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ima",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ain",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "great",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "pretty",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ever",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "hoe",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "makes",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "tho",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "little",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "best",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "smh",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "wit",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "awesome",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "aint",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "madeverybody",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "everyone",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "everything",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "bar",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "grill",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "pic",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "00am",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "something",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ousted",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "starbucks",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "others",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "nws",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "coffee",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "better",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "warning",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "dinner",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "gym",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "issued",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "center",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "mayor",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "park",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "weather",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "club",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "advisory",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "anything",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "great",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "hate",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "gonna",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "check",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "someone",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "app",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "anymore",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "news trip",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "looking",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "shut",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "text",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "okay",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "local",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "mood illannoying",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "honestly",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "dad",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "annoying",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "pants",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "gracias",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "hockey",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "paper",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "loved",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "amazing",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "snow",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "crap",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "summer",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "sweet",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "bed",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "mexican",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "shitty",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "nap yet",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "holyhours",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "bueno",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "heart",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "winter",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0.87 Population of one race - percent Black or African American alone (2010)",
+   "page": 14,
+   "level": 2,
+   "parent": 98
+  },
+  {
+   "text": "0.77 Owner-occupied housing units, African American householder, per population (2010)",
+   "page": 14,
+   "level": 2,
+   "parent": 98
+  }
+ ],
+ "seconds": 1555.7424563999994,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 101,
+  "tp": 12,
+  "fp": 89,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.12745098039215685,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 \u0012 mij",
+   "oomf",
+   "hoes",
+   "actually",
+   "tryna",
+   "bout",
+   "seriously",
+   "somebody",
+   "lmao",
+   "lilyall",
+   "guys",
+   "niggas",
+   "nigga",
+   "ima",
+   "ain",
+   "great",
+   "pretty",
+   "ever",
+   "hoe",
+   "makes",
+   "tho",
+   "little",
+   "best",
+   "smh",
+   "wit",
+   "awesome",
+   "aint",
+   "madeverybody",
+   "everyone",
+   "everything",
+   "bar",
+   "grill",
+   "pic",
+   "00am",
+   "something",
+   "ousted",
+   "starbucks",
+   "others",
+   "nws",
+   "coffee",
+   "better",
+   "warning",
+   "dinner",
+   "gym",
+   "issued",
+   "center",
+   "mayor",
+   "park",
+   "weather",
+   "club",
+   "advisory",
+   "anything",
+   "great",
+   "hate",
+   "gonna",
+   "check",
+   "someone",
+   "app",
+   "anymore",
+   "news trip",
+   "looking",
+   "shut",
+   "text",
+   "okay",
+   "local",
+   "mood illannoying",
+   "honestly",
+   "dad",
+   "annoying",
+   "pants",
+   "gracias",
+   "hockey",
+   "paper",
+   "loved",
+   "amazing",
+   "snow",
+   "crap",
+   "summer",
+   "sweet",
+   "bed",
+   "mexican",
+   "shitty",
+   "nap yet",
+   "holyhours",
+   "bueno",
+   "heart",
+   "winter",
+   "0.87 Population of one race - percent Black or African American alone (2010)",
+   "0.77 Owner-occupied housing units, African American householder, per population "
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 98,
+  "tp": 9,
+  "fp": 89,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.101010101010101,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 \u0012 mij",
+   "oomf",
+   "hoes",
+   "actually",
+   "tryna",
+   "bout",
+   "seriously",
+   "somebody",
+   "lmao",
+   "lilyall",
+   "guys",
+   "niggas",
+   "nigga",
+   "ima",
+   "ain",
+   "great",
+   "pretty",
+   "ever",
+   "hoe",
+   "makes",
+   "tho",
+   "little",
+   "best",
+   "smh",
+   "wit",
+   "awesome",
+   "aint",
+   "madeverybody",
+   "everyone",
+   "everything",
+   "bar",
+   "grill",
+   "pic",
+   "00am",
+   "something",
+   "ousted",
+   "starbucks",
+   "others",
+   "nws",
+   "coffee",
+   "better",
+   "warning",
+   "dinner",
+   "gym",
+   "issued",
+   "center",
+   "mayor",
+   "park",
+   "weather",
+   "club",
+   "advisory",
+   "anything",
+   "great",
+   "hate",
+   "gonna",
+   "check",
+   "someone",
+   "app",
+   "anymore",
+   "news trip",
+   "looking",
+   "shut",
+   "text",
+   "okay",
+   "local",
+   "mood illannoying",
+   "honestly",
+   "dad",
+   "annoying",
+   "pants",
+   "gracias",
+   "hockey",
+   "paper",
+   "loved",
+   "amazing",
+   "snow",
+   "crap",
+   "summer",
+   "sweet",
+   "bed",
+   "mexican",
+   "shitty",
+   "nap yet",
+   "holyhours",
+   "bueno",
+   "heart",
+   "winter",
+   "0.87 Population of one race - percent Black or African American alone (2010)",
+   "0.77 Owner-occupied housing units, African American householder, per population "
+  ],
+  "ignored_title_predictions": null
+ }
+}

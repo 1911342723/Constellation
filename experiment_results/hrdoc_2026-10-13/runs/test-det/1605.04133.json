@@ -1,0 +1,135 @@
+{
+ "doc": "1605.04133",
+ "system": "det",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 220,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Fragmentation of magnetism in artiﬁcial kagome dipolar spin ice",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESULTS",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "METHODS",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Sample fabrication.",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Thermal annealing protocol.",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Estimation of an eﬀective temperature.",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Monte Carlo simulations.",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Dipolar hamiltonian.",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "Ab initio coding of emergence.",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "AUTHOR CONTRIBUTIONS",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "ADDITIONAL INFORMATION",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "COMPETING FINANCIAL INTERESTS",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 12.200246700002026,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Fragmentation of magnetism in artiﬁcial kagome dipolar spin ice"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 12,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

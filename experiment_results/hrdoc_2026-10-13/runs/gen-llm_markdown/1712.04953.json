@@ -1,0 +1,281 @@
+{
+ "doc": "1712.04953",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [
+   "4.1 Na abundances"
+  ],
+  "unmatched_pred": [
+   "4.1 Na abundances"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "4.1 Na abundances",
+   "1 CA ABUNDANCES"
+  ],
+  "unmatched_pred": [
+   "4.1 Na abundances"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Abundance ratios in dwarf elliptical galaxies",
+    0,
+    1
+   ],
+   [
+    "ABSTRACT",
+    0,
+    2
+   ],
+   [
+    "1 INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "2 OBSERVATIONS AND DATA REDUCTION",
+    0,
+    1
+   ],
+   [
+    "2.1 Line-strength measurements",
+    0,
+    2
+   ],
+   [
+    "3 RESULTS",
+    0,
+    1
+   ],
+   [
+    "3.1 Derived ages and metallicities",
+    0,
+    2
+   ],
+   [
+    "3.2 Elemental abundance ratios",
+    0,
+    2
+   ],
+   [
+    "4 DISCUSSION",
+    0,
+    1
+   ],
+   [
+    "4.1 Na abundances",
+    0,
+    2
+   ],
+   [
+    "4.2 Abundance ratios and the formation of dEs",
+    0,
+    2
+   ],
+   [
+    "5 CONCLUSIONS",
+    0,
+    1
+   ],
+   [
+    "ACKNOWLEDGEMENTS",
+    0,
+    1
+   ],
+   [
+    "REFERENCES",
+    0,
+    1
+   ],
+   [
+    "APPENDIX A: CA ABUNDANCES",
+    0,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 21032,
+   "completion_tokens": 13456
+  },
+  "elapsed_llm_seconds": 54.241952099997434,
+  "word_preservation": {
+   "recall": 0.7394861868731304,
+   "in_order": 0.7384304064754531,
+   "inserted": 0.0016629053331749244
+  },
+  "output_markdown": "# Abundance ratios in dwarf elliptical galaxies\n\nMNRAS 000, 1–14 (2017)\nPreprint 19 December 2017\nCompiled using MNRAS LATEX style file v3.0\n\n¸S. ¸Sen1,2⋆, R. F. Peletier1, A. Boselli3, M. den Brok4, J. Falc´on-Barroso5,6,\nG. Hensler7, J. Janz8,9,16, E. Laurikainen9, T. Lisker10, J. J. Mentz1,11, S. Paudel12,\nH. Salo9, A. Sybilska13, E. Toloba14, G. van de Ven15, A. Vazdekis5,6 and C. Yesilyaprak2\n\n1Kapteyn Astronomical Institute, University of Groningen, P. O. Box 800, 9700 AV Groningen, Netherlands\n2Dept. of Astronomy and Astrophysics, Faculty of Science, Atat¨urk University, 25030, Erzurum, Turkey\n3Aix Marseille Universit´e, CNRS, LAM (Laboratoire d’Astrophysique de Marseille), UMR 7326, 13388 Marseille, France\n4Institute for Astronomy, ETH Zurich, Wolfgang-Pauli-Strasse 27, 8093 Zurich, Switzerland\n5Instituto de Astrof´ısica de Canarias,Calle V´ıa L´actea s/n, E-38200 La Laguna, Tenerife, Spain\n6Departamento de Astrof´ısica, Universidad de La Laguna, E-38205 La Laguna, Tenerife, Spain\n7Department of Astrophysics, University of Vienna, T¨urkenschanzstrasse 17, 1180 Vienna, Austria\n8Centre for Astrophysics and Supercomputing, Swinburne University, Hawthorn, VIC 3122, Australia\n9Astronomy Research Unit, University of Oulu, FI-90014, Finland\n10Astronomisches Rechen-Institut, Zentrum f¨ur Astronomie der Universit¨at Heidelberg, M¨onchhofstraße 12-14,69120 Heidelberg, Germany\n11Center for Space Research, North-west University, Potchefstroom 2520, South Africa\n12Department of Astronomy & Center for Galaxy Evolution Research, Yonsei University, Seoul 03722, Republic of Korea\n13European Southern Observatory, Karl-Schwarzschild-Strasse 2, 85748 Garching bei M¨unchen, Germany\n14University of the Paciﬁc, Department of Physics, 3601 Paciﬁc Avenue, Stockton, CA 95211, USA\n15Max-Planck-Institut f¨ur Astronomie, K¨onigsstuhl 17, 69117 Heidelberg, Germany\n16Finnish Centre of Astronomy with ESO (FINCA), University of Turku, V¨ais¨al¨antie 20, 21500 Piikki¨o, Finland\n\nAccepted XXX. Received YYY; in original form ZZZ\n\n## ABSTRACT\n\nWe determine abundance ratios of 37 dwarf ellipticals (dEs) in the nearby Virgo cluster. This sample is representative of the early-type population of galaxies in the absolute magnitude range -19.0 < Mr < -16.0. We analyze their absorption line-strength indices by means of index-index diagrams and scaling relations and use the stellar population models to interpret them. We present ages, metallicities and abundance ratios obtained from these dEs within an aperture size of Re/8. We calculate [Na/Fe] from NaD, [Ca/Fe] from Ca4227 and [Mg/Fe] from Mgb. We find that [Na/Fe] is under-abundant with respect to solar while [Mg/Fe] is around solar. This is exactly opposite to what is found for giant ellipticals, but follows the trend with metallicity found previously for the Fornax dwarf NGC 1396. We discuss possible formation scenarios that can result in such elemental abundance patterns and we speculate that dEs have disk-like SFH favouring them to originate from late-type dwarfs or small spirals. Na-yields appear to be very metal-dependent, in agreement with studies of giant ellipticals, probably due to the large dependence on the neutron-excess in stars. We conclude that dEs have undergone a considerable amount of chemical evolution, they are therefore not uniformly old, but have extended SFH, similar to many of the Local Group galaxies.\n\nKey words:\ngalaxies: dwarf elliptical - galaxies: evolution - galaxies: individual (Virgo) - galaxies: abundances ratios - galaxies: stellar populations\n\n⋆E-mail: s.sen@rug.nl\n\n# 1 INTRODUCTION\n\nEarly-type dwarf galaxies (dEs) play a key role in understanding galaxy cluster evolution. dEs16, the low luminosity (MB > -18) and low surface brightness (µB > 22 mag arcsec−2) population of the Early Type Galaxy (ETGs) class are found in high-density environments and are very rare in isolation (Gavazzi et al. 2010; Geha et al. 2012; Blanton et al. 2005). dEs are found abundantly in groups and clusters of galaxies where they dominate in numbers (Binggeli et al. 1988).\n\nThe Lambda cold dark matter (CDM) hierarchical merging scenario predicts that CDM haloes are formed because of gravitational instabilities and evolve hierarchically via mergers (White & Rees 1978; Frenk et al. 1988; White & Frenk 1991; Lacey & Cole 1993; Cole et al. 2000). These models predict that dwarf-size dark matter haloes form first and then merge forming more massive haloes.\n\nThe class of dEs contains objects covering a wide range of internal properties, with sometimes rather complicated structures. Taking advantage of deep photometric studies, we know that several of them contain substructures such as disks, sprial arms and irregular features (e.g. Jerjen et al. 2000; Barazza et al. 2002; Geha et al. 2003; Graham & Guzm´an 2003; De Rijcke et al. 2003; Lisker et al. 2006a; Ferrarese et al. 2006; Janz et al. 2012, 2014). Apart from this, dEs also show a complicated variety of internal kinematics and dynamics. dEs with similar photometric properties can have different stellar populations (Michielsen et al. 2008; Paudel et al. 2010; Koleva et al. 2009, 2011; Ry´s et al. 2015) and different rotation speeds (Pedraz et al. 2002; Simien & Prugniel 2002; Geha et al. 2002, 2003; van Zee et al. 2004; Chilingarian 2009; Toloba et al. 2009, 2011, 2014b, 2015; Koleva et al. 2009, 2011; Ry´s et al. 2013, 2014). Kormendy (1985) suggested that they developed their spheroidal non-star forming appearance, that is probably highly flattened (Lisker et al. 2006a, 2007), during a transformation from a late-type galaxy that fell into a cluster; it is thought that this transformation is induced by the environment because the morphology-density relation largely depends on the environment (e.g. Boselli & Gavazzi 2014).\n\nProcesses for that transformation include ram-pressure stripping (Gunn & Gott 1972; Lin & Faber 1983) and galaxy harassment(Moore et al. 1998). Ram-pressure stripping should be able to remove the galaxy’s remaining gas from the system on short time scales, so that star formation stops quickly. The effect of ram pressure stripping depends strongly on the density of the environment and it is expected that their angular momentum and structure should be preserved (Ry´s et al. 2014) while galaxy harassment by tidal interactions between a galaxy and the potential of the cluster can heat up the object, increasing the velocity dispersion, slow its rotation down and remove stellar mass so that disks are transformed into more spheroidal objects (Moore et al. 1998). In this case, a galaxy can lose some of its intrinsic angular momentum. For a more detailed review on these effects, see Boselli & Gavazzi (2006, 2014).\n\nHow exactly ram pressure stripping and harassment transform objects is still rather unclear. Ry´s et al. (2013) concluded that a transformation mechanism should be able to not only lower the angular momentum but also increase the stellar concentration of dEs compared to their presumed progenitors. Toloba et al. (2015) show that even a combination of these two mechanisms can not easily remove all of the angular momentum, something which is needed to explain some observations. Since ram pressure stripping is happening on short timescales, it might be a standard mechanism to transform late type star-forming galaxies into dwarf early-type galaxies. After being in the cluster for a long time, the galaxy goes through its center several times, during which it can heat up, lose stellar rotation and also lose its disky structure. Since fast rotators in the outer parts of the cluster are rotating faster than the fast rotators found in the inner part of the cluster (Toloba et al. 2014a, here after T14), Springel et al. (2005) suggested that clusters were formed by the accretion of small groups of galaxies. According to this scenario, the properties of slow and non-rotating dEs in the center of the cluster can be explained as well as the existence of kinematically decoupled cores observed in some of the SMAKCED (Stellar content, MAss and Kinematics of Cluster Early-type Dwarfs) dEs (Toloba et al. 2014b) Therefore, galaxy clusters, as a place with many dwarf ellipticals with a range of environmental properties, are excellent places to study the evolution and formation of the dEs.\n\nNot only can be used the morphology, or their kinematics, to study the evolution of galaxies: more detailed information can be obtained by studying the stellar populations, since the distribution of ages, metallicities and abundance ratios provide important information that can be used to study the evolutionary history of galaxies since chemical abundances of the gas are locked into the stars when they form. This information can be obtained via two general techniques. The first is by studying ages and abundances from observations of individual stars, which can be done for nearby galaxies where individual stars can be resolved. The second is by studying the integrated light from more distant galaxies to derive star formation histories and abundance distributions. This second technique is the only one currently available for galaxies at the distance of the Virgo cluster (16.5 Mpc, Mei et al. 2007).\n\nA non-trivial problem when analyzing the spectra of galaxies is the degeneracy between age and metallicity. One can break the age-metallicity degeneracy using a wide wavelength baseline, a combination of line indices, and accurate data. These then are compared to evolutionary stellar population models (e.g., Vazdekis 1999; Bruzual & Charlot 2003; Thomas et al. 2003; Maraston 2005; Schiavon 2007; Maraston et al. 2009; Vazdekis et al. 2010; Conroy & van Dokkum 2012). By comparing model predictions with observational galaxy parameters age and metallicity distributions of the stars in that galaxy can be obtained. One can compare observations with models of a single age and metallicity, obtaining SSP-equivalent parameters. More complicated approaches, (e.g. STECKMAP (Ocvirk et al. 2006), STARLIGHT (Cid Fernandes et al. 2005)) provide full star formation histories. A problem still remains the unicity of the solutions. As a rule of thumb one can say that the larger the wavelength range is, the more unique the solution.\n\nStellar population studies show that dEs have on average a lower metal content than giant ellipticals, as expected from the metallicity-luminosity relation (Michielsen et al. 2008; Skillman et al. 1989; Sybilska et al. 2017). Their ages are somewhat younger on average. However, recent studies show that the stellar populations of dEs show indications of both young and old ages and a range in gradients (e.g. Koleva et al. 2009, 2011; den Brok et al. 2011; Ry´s et al. 2015). Studies about detailed abundance ratios in dEs are scarce. Gorgas et al. (1997); Michielsen et al. (2008) and Sybilska et al. (2017) show that [Mg/Fe] is similar to solar, lower than what is found in giant ellipticals. [Mg/Fe] can, however provide important information about the formation of a galaxy. Individual galaxy abundances are the result of chemical evolution, involving element enrichment in stars, supernova explosions and galactic winds from e.g. AGB stars. As a result, the measurement of abundances of many elements can give us a very detailed picture of the formation and evolution of a galaxy (see e.g. Tolstoy et al. 2009 for Local group galaxies). We often call this way of studying galaxies galactic archaeology.\n\nMeasured abundances of various elements allow us in principle to understand which enrichment processes have been dominant at different epochs of galaxy formation because of their different nucleosynthetic origin. It is thought that a group of lighter elements, the so called α-elements, such as O and Mg, are produced by type II supernovae, supernovae originated from massive stars, which therefore occur on short timescales (Worthey, Faber & Gonzalez 1992). Most of the Fe, on the other hand, is predominantly produced by a different group of supernovae, those of type Ia, which occur on a much longer timescale. As a result, elemental ratios of [α/Fe] give us information about the relative contribution from the two types of supernovae at a given time, i.e., about the timescale of star formation. The observed correlation of [α/Fe] abundance ratio and galaxy mass is an indication of the downsizing (Vazdekis, Trujillo & Yamada 2004; Nelan et al. 2005; Thomas et al. 2005). For dEs, Gorgas et al. (1997), measured that Virgo dEs are consistent with solar [α/Fe] abundance ratio and showed that star formation must have happened on longer time scales in these systems. Several works confirmed these results and found that dEs have younger ages and lower metallicities than normal Es (Geha et al. 2003; van Zee et al. 2004). Interpretation of abundance ratios of other elements is more complicated, and has been limited mostly to the Local Group. They are also used to obtain a more detailed picture and information on the IMF and SFH (McWilliam 1997). In dEs, at the moment, very little information is available on abundance ratios of elements (apart from Mg and Fe), mainly because of the lack of high S/N spectra, but also because of the lack of methods to analyse them. Since this has changed in recent years, we have been able to start a program to obtain and analyze abundance ratios in dwarf ellipticals. The results on the pilot galaxy NGC 1396 are presented in Mentz et al. (2016). In the current paper a sample of 37 galaxies from the SMAKCED sample is analyzed.\n\nTo determine the abundance ratios from integrated spectra, we use the hybrid model calibration by Conroy, Graves & van Dokkum (2014)(CvD hereafter). They calculate spectra using standard stellar population models with solar abundance ratios, which are modified by using theoretical responses of spectra to abundance ratio variations, following a method developed by Walcher et al. (2009). Here, we will study the abundance ratios of a few elements in dwarf ellipticals, obtaining data which allow us to compare the formation history of dEs with those of giant ellipticals, the Milky Way, and other galaxies of the Local Group. We will focus on the Na doublet absorption features in the optical wavelength range at 5890 and 5896 ˚A (NaD hereafter) and the Ca4227 line-strength indices, to study the abundances of Na and Ca, as well as the better studied Mg. Although interpreting the observational results is at present extremely difficult, already many conclusions can be derived by comparing them to other types of galaxies.\n\nThis work is part of the SMAKCED project, aimed at studying the nature of dEs in the Virgo Cluster. More details about the galaxies discussed here, and their properties, can be found in the other SMAKCED papers (Janz et al. 2012, 2014; Toloba et al. 2014b,a, 2015). In Toloba et al. (2014a) a description is given of the spectroscopic part of the survey, while the H-band photometry is described in Janz et al. (2014). In Toloba et al. (2014a), kinematics of two dEs are presented that show kinematically decoupled cores. In Toloba et al. (2015) the stellar kinematics of dEs is presented as a function of projected distance to the center of the Virgo cluster.\n\nThe Virgo cluster is an ideal laboratory to study dEs because it contains hundreds of them, is close enough to resolve their detailed structure, and is a dynamically young cluster that is still evolving today (Binggeli et al. 1993; Boselli et al. 2014). In this paper we focus on the abundance ratio distribution of dEs and compare them with other types of galaxies.\n\nThis paper is organized as follows. In Section 2, we present the general properties of our samples, the observations, and the main data reduction steps. We describe the measurements of age-sensitive and metallicity-sensitive Lick indices. In Section 3, we derive the ages and metallicity based on the Lick indices and the abundance ratios. In Section 4, our results are summarized and discussed. In Section 5, conclusions are given.\n\n# 2 OBSERVATIONS AND DATA REDUCTION\n\nOur sample consists of 37 galaxies, the full spectroscopic sample of the SMAKCED project. For each of them, we obtained data suitable for a detailed stellar population study, with relatively high spectral resolution and high signal-to-noise (S/N) ratio. Two galaxies in the sample (VCC1684, VCC2083) were not included, since no ages could be determined because of lack of observed Balmer lines. The spectroscopic data were obtained at three different telescopes. Twenty six dEs were observed at the 4.2m WHT telescope using the double-arm ISIS spectrograph, of which the blue-arm covered the wavelength range 4200 - 5000 ˚A and the red-arm covered the wavelength range 5500 - 6700 ˚A . Ten dEs were observed at the 2.5m INT telescope using the IDS spectrograph covering the wavelength range 4600 - 5600 ˚A , while the remaining three dEs were observed at the 8m VLT telescope using the FORS2 spectrograph that covers the wavelength range 4500 - 5600 ˚A .\n\nTable 1 summarizes the main properties of these 37 dEs (see also T14).\n\nThe data were reduced following the standard procedure for long-slit spectra using the package REDUCEME (Cardiel 1999). Details on sample selection, observations and data reduction are presented in T14.\n\n## 2.1 Line-strength measurements\n\nObserved spectral data can be studied either by fitting the full spectrum or by focusing on selected line indices. In this work we study selected line indices. We measured Lick indices (Worthey et al. 1994) in the LIS-5 ˚A flux calibrated system (Vazdekis et al. 2010). The new Line Index System (LIS) has numerous advantages over the Lick system. It is defined at three different resolutions, namely 5.0 ˚A, 8.4 ˚A, and 14.0 ˚A. As such, it is particularly useful for analyzing small galaxies and globular clusters. As the resolution of the Lick/IDS library (FWHM ∼8-11 ˚A) is much lower than what is available with our high resolution spectra, we broadened the spectra to the LIS-5 ˚A system. The LIS-5 ˚A system choice expresses a factor of 2 improvement in resolution over Lick/IDS system. Also, the fact that the LIS system is flux calibrated, makes it easier to reproduce data from other authors.\n\nThe spectra were broadened to the LIS-5 ˚A system taking into account the velocity dispersion of the spectra. This ensures that every galaxy spectrum has the same spectral resolution, which is important and necessary to compare them with each other.\n\nWe measured a total of 23 Lick indices (Faber et al. 1985; Gorgas et al. 1993; Worthey et al. 1994, Worthey & Ottaviani 1997). In this paper we use HγF, Hβ, Fe4383, Fe4531, Fe5270, Fe5335, Fe5406, Fe5709, Mgb, Ca4227 and NaD. The summary of the indices used are tabulated Table 2. However, because of the different wavelength range covered by our spectra, not all lines are used for all galaxies. Galaxies observed at the VLT do not cover the HγF, Fe4383 and NaD lines. Also, in some spectra which are obtained by WHT, Hβ is located at the end of the spectrum, and since the spectra suffer from vignetting there, we could not determine this index here. In Table 3 and Table 4, we show the line-strength index measurements for each galaxy used.\n\n# 3 RESULTS\n\n## 3.1 Derived ages and metallicities\n\nLuminosity-weighted ages and metallicities are estimated using age-sensitive (Hβ and HγF) and metallicity-sensitive (Fe4383, Fe4531, Fe5270, Fe5335, Fe5406, Fe5709 and Mgb) Lick spectral indices (Worthey 1994) measured in the LIS-5 ˚A system (Vazdekis et al. 2010). For this we used an MCMC (Markov Chain Monte Carlo) code to derive the age and metallicity of the best fitting MILES single stellar population model.\n\nWe estimate the best luminosity weighted age and metallicity from all available index-index combinations by effectively computing the ”distance” from our measured indices to all predicted values on the model grids, and finding the age and metallicity combination with the minimum total distance. The age and metallicity values for each index-index diagram and associated uncertainties were derived using 1000 MCMC iteration of the fit. To reduce the effects of the grid discretization, the two relevant parameters (e.g. age and metallicity) were interpolated. Uncertainties were calculated by performing Monte Carlo simulations, making use of the observational error in each index. In Table 5 we list the best fitting parameters for ages and metallicities that are determined using combinations of all age sensitive lines and all metal indicators.\n\nFigure 1 shows index-index plots where we have restricted the age to the interval 1.0 - 14.0 Gyr, and the metallicity range from -1.76 to 0.26, which includes the range covered by the galaxies in our sample. We use the solar-scaled theoretical isochrones in the model grids from Vazdekis et al. (2010) in Figure 1.\n\n## 3.2 Elemental abundance ratios\n\nTo calculate the abundance ratios [E/Fe] from the indices we first calculate age and metallicity as described above, assuming that the galaxies can be represented by an SSP model. We then measure the difference between the observed index related to the element E and the index value expected from stellar population models for the age and metallicity that we measure for the galaxy, and divide this difference by the sensitivity of the index to variations in [E/Fe] (equation 1). For Na (NaD) and Mg (Mgb) we use the Na-MILES model of (La Barbera et al. 2017) based on Teramo isochrones, with variable Mg and Na abundance ratios, and with a (standard) bimodal IMF with Γb=1.3. Unfortunately, Mgb was measured only in a few galaxies, those observed with the VLT and the INT. For Ca, we do the same using the Ca4227 index. The problem here is that for this element no stellar population models are available. The only available model, by CvD, has solar metallicity, and a fixed, old, age of 13.5 Gyr, which is different from the ages and metallicities of the objects we discuss here. In this paper we will use this latter model, but move the analysis and discussion to Appendix A, since we do not know how appropriate this is.\n\nSo, for element E based on index i the elemental abundance ratios were calculated using\n\n[Ei/Fe] = iobserved −imodel\n∆imodel\n∆[Ei/F e]model\n.\n(1)\n\nwhere, iobserved is the value of the index measured from the observations, imodel is the index expected from the model and Ei is the elemental abundance.\n\nIn Table 5, we provide the elemental abundances for each galaxy determined according to the procedure described above. The spectral range covered allowed the measurement of [Ca/Fe] and [Na/Fe] for most galaxies that are observed by WHT, and [Mg/Fe] for some that are observed by INT and VLT. We do not have galaxies for which all three abundance ratios have been measured.\n\nTo establish the reliability of these abundance ratios, we made a comparison of the sensitivity of ∆NaD to variations in [Na/Fe] and ∆Mgb to variations in [Mg/Fe] between the SSP models of CvD and MILES. For a meaningful comparison, we have computed some additional α enhancement SSP models for a total metallicity of [M/H]=0.3 (for [Fe/H] 0.0, from equation 4 of Vazdekis et al. 2012). For the Na comparison, a Na-MILES model (La Barbera et al. 2017) is computed for the same age and metallicity as CvD.\n\nWe find that the Na-MILES model give a slightly larger sensitivity for Na than the one of CvD and that we get similar results from both CvD and MILES for Mgb. Note, however, that the sensitivities vary considerably when going to lower ages and metallicities.\n\nWe report the values of the ∆NaD and ∆Mgb variations as a function of these elemental abundance ratios for models with different ages and metallicities in Table 6. When we compare the sensitivities at the same age, we find that the NaD sensitivity generally increases with metallicity, while the one for Mgb generally decreases. When one increases the age, both sensitivities tend to increase.\n\n# 4 DISCUSSION\n\nWe present ages, metallicities and abundance ratios obtained for 37 dEs within an aperture size of Re/8. This aperture size is commonly used in conventional long-slit studies. The radius has been chosen to provide a measure of the stellar populations in the central regions of these galaxies, in a region with a constant relative size. Following the classification of Lisker et al. (2006a,b, 2007) using high-pass filtered Sloan Digital Sky Survey (SDSS; Adelman-McCarthy et al. 2006), 36 of the galaxies of our sample are classified as nucleated. VCC0021 and VCC1431 are galaxies with large blue core. All the analysis comes from the central regions, in which the nuclear cluster’s light is contributing significantly. The resulting abundance ratios can thus provide insight about the luminosity-weighted stellar population in this region. Although we could have tried to derive two-burst or more complicated Star Formation Histories, it would have been very hard with the current low-resolution data to be able to distinguish between a one- or two-burst solution (see e.g. Ry´s et al. 2015; Mentz et al. 2016). For that reason, we postpone this to a future paper, in which we analyze spectra at a spectral resolution of R=5000 using the SAMI instrument at the AAT.\n\nOne of the main results of this paper is the unusual behaviour of the Na abundances in dEs, when compared with massive ellipticals and Local Group dwarfs. For a sample of quiescent dwarfs with effective velocity dispersion in the range 20 - 55 km s−1 and with absolute r-band magnitude ranging from -19 to -16, we find that our sample of dEs is underabundant in Na when compared to the solar neighbourhood (Figure 4). At the same time, the Mg abundances are around solar. In the following, we try to argue what this means for the evolution of dwarf ellipticals, based on what we know from theory, and observations of individual stars in the Milky Way and the Local Group, and integrated abundance ratios in giant elliptical galaxies. For dwarf ellipticals, such an analysis using integrated light has not been done before, although several papers have tried to derive abundance ratios in giant ellipticals (e.g. Worthey 1998; Thomas et al. 2010; Worthey et al. 2011; Conroy et al. 2014; Spiniello et al. 2014; Smith et al. 2015; Yamada et al. 2006).\n\nIn this paper we are analyzing light elements. It is our current belief that in the most-studied environments the relative abundance [X/Fe] of an element X at low [Fe/ H] represents the abundance ratio from only those sources of material processed through the nucleosynthesis channels that were active at very early times, i.e. SNII from core collapse of massive stars, events characteristic of the earliest epochs of star formation (Cohen & Huang 2009). After these early times, [X/Fe] is modified by other sources, such as SNIa, SNII, AGB stars, novae, etc., and also by the accretion of primordial material and of galactic winds. This gives a knee-like pattern in the relation between [X/Fe] and [Fe/ H], of which the position of the bend is determined by the delay time between the core collapse SNII and the other processes. This delay depends on various parameters (IMF, star formation efficiency, the rate of mass loss in stars, and the rate of accretion of primordial gas consisting mostly of H), as well as on the element production yields (e.g. Greggio et al. 2008). These processes lead to the characteristic knee in the Milky Way, where low metallicity halo stars generally have [Mg/Fe] values around 0.4, a value reached by SNII enrichment only, going down to solar mass disk stars, with [Mg/Fe] values around solar, an equilibrium values reached when all processes have contributed. From these solar abundance ratios in the disk of our Milky Way, one can then conclude that star formation has been taken place on long timescales compared to the halo.\n\nWe will now have a more detailed look at the individual abundance ratios.\n\n## 4.1 Na abundances\n\nNa is believed to be made in the interiors of massive stars and to depend on the neutron excess, which in turn depends on the initial heavy element abundance in the star. Na thus has both a primary and a secondary nucleosynthesis channel (Arnett 1971; Clayton 2003). Ni is assumed to originate predominantly from SNe Ia. However, the production of Ni might also be linked to the production of Na in SNe II (Thielemann et al. 1990; Timmes et al. 1995). The amount of Na produced is controlled by the neutron excess, where 23Na is the only stable neutron rich isotope produced in significant quantity during the C and O burning stage. The production of Ni depends on the neutron excess and the neutron excess will depend primarily on the amount of 23Na previously produced. Hence, a Na-Ni correlation is expected when the chemical enrichment is dominated by SNe II. The advent of the SNe Ia explosions can break (or flatten) this relationship, as Ni is produced without Na in the standard model of SN Ia (e.g., Iwamoto et al. 1999). Since the neutron excess is strongly metallicity-dependent, this could explain the low [Na/Fe] that are being found for the Fornax dwarf (Letarte et al. 2010). At the same time, it would explain the high values in giant ellipticals (see later).\n\nIt is important to mention is that the abundance ratios found here are very different from those in other stellar systems, most massive Galactic globular clusters, and giant elliptical galaxies. In most massive globular clusters a strong Na-O anticorrelation is observed in the RGB stars (Kraft 1994, and see reviews of Carretta 2016; Gratton et al. 2001). For these stars, Oxygen is depleted, and Na enhanced, just like N. Since this effect is not see in the interior of the presently observed GC low mass stars, it is thought that this is a second generation enrichment effect from massive stars, who have enhanced their Na-abundance during C-burning through the NeNa cycle (Langer et al. 1993). It is thought that second generation (SG) stars are formed by nuclear ejecta processed in the most massive first generation (FG) stars, diluted with different amounts of unprocessed gas, generating a number of anticorrelations, including the one of Na and O. This process, as far as we know, does not take place in the halo of our Milky Way, and in field stars of local group galaxies. In this paper we see that this is also not the case in field stars of dwarf ellipticals in nearby galaxy clusters.\n\nFour strong Na absorption features can be found in the optical and NIR wavelength range: NaD (5890 and 5896 ˚A), NaI 0.82 (8183 and 8195 ˚A), NaI1.14 (11400 ˚A) and NaI2.21 (22100 ˚A). The equivalent widths(EWs) of NaD were studied first by O’Connell (1976) and Peterson (1976), where they reported that NaD was much stronger than expected from Ca and Fe indices in giant early-type galaxies. Spiniello et al. (2015) reported that the NaD feature is very sensitive to [Na/Fe] variations, while the NaI index seems to depend mainly on the IMF (e.g. Vazdekis et al. 2012). La Barbera et al. (2017) perform detailed fits to all 4 Na-lines in a number of giant ellipticals, and find that both [Na/Fe] needs to be considerably larger than solar, and the IMF-slope needs to be dwarf-enhanced (Smith et al. 2015). For dwarf ellipticals, however, there are no indications that the IMF-slope is different from our Galaxy (Mentz et al. 2016). Here, we find the behaviour that [Na/Fe] is lower than solar, opposite to the behavior in giant ellipticals.\n\nRemarkable is the strong trend between [Na/Fe] and [Fe/H], already mentioned by Mentz et al. (2016) when joining the Fornax dwarf with our dwarf ellipticals and the giant ellipticals. For [Fe/H] values of ∼-0.8 very low [Na/Fe] values are obtained of ∼-0.6 - -0.8 in the Fornax dwarf. This contrasts with the high, positive [Na/Fe] values that are found in giant ellipticals. Such a strong correlation is what you could expect if the Na-abundance depends strongly on the neutron excess, or equivalently, the metallicity.\n\n## 4.2 Abundance ratios and the formation of dEs\n\nIn this paper we find [Mg/Fe] values that are very close to solar (the mean value of the [Mg/Fe] is 0.07), or slightly larger. [Na/Fe] is (the mean value of the [Na/Fe] is -0.25), however, considerably lower than solar.\n\nWhen comparing to stellar populations that show similar abundance patterns, there are not many, but one could consider the younger, and more metal-rich stellar populations in the center of the Fornax Dwarf galaxy, published by Letarte et al. (2010). The majority of those stars are 1-4 Gyr old, and have unusually low [Mg/Fe], [Ca/Fe] and [Na/Fe] compared to the Milky Way stellar populations at the same [Fe/H], and are therefore at the end of their chemical evolution. The difficulty is that, although [Mg/Fe] is approximately solar for these stars, [Ca/Fe] lies considerably below this value. Letarte et al. (2010) hypothesize that this means that a large fraction of Ca and Ti is produced in processes that do not produce much Mg, such in SNe Ia. In this way, the low [Ca/Fe] and [Ti/Fe] could be a consequence of the low-metallicity of their progenitors compared to the Milky Way. At the same time, [Na/Fe] is found to be rather low (between -0.9 and -0.4), but correlating strongly with [Ni/Fe] (Nissen & Schuster 1997, 2009).\n\nFor the dwarf ellipticals in Virgo analyzed in this paper, we conclude, analogous to Letarte et al. (2010) that the low [Mg/Fe] values (w.r.t. the thick disk of the Milky Way and giant ellipticals) show that the galaxies have undergone a considerable amount of chemical evolution. This means that the galaxies are not uniformly old, but have extended star formation histories, similar to many of the Local Group galaxies. [Na/Fe] is lower than solar, but still higher than in the Fornax dwarf. This is expectable, since the metallicities of the dwarf ellipticals in Virgo are a bit larger, resulting in a larger neutron excess and higher Na-abundances.\n\nFor dEs we find that (a) [Mg/Fe] ∼0 and (b) [Na/Fe] < 0. Result (a) implies that star formation is slow, like in the Milky Way disk. Result (b) is consistent with the same formation mechanism. Just like the stars of Letarte et al. (2010) in the center of the Fornax dwarf galaxy, the stars in the dEs have undergone a considerable amount of enrichment and have an extended star formation history. The dependence of [Na/Fe] on the neutron-excess causes [Na/Fe] to be below 0, since for the Virgo dwarfs [Fe/H] is lower than solar (∼-0.5). The extended star formation history then could also cause considerable Ca-enrichment, leading for the dwarf ellipticals to larger [Ca/Fe] values, since they accrete material from the metal-rich cluster environment, rather than the Fornax dwarf, which accretes more pristine gas in the Local Group, which causes lower [Ca/Fe] ratios. An important clue might be strong correlation between [Na/Fe] and [Fe/H], when one considers Local Group dwarf galaxies like Fornax and the LMC, dwarf elliptical galaxies, the disk of the Milky Way, and the centers of giant elliptical galaxies. All this could be due to Na-yields that depend strongly on metallicity. The abundance of sodium influences the electron pressure so that the strength of many other features are affected. For example, Conroy & van Dokkum (2012) show that for massive galaxies an increase in the sodium abundance causes a decrease in the abundance of CaII, which causes a decrease in the EW of CaT. Increasing the sodium abundance can mimic the effects of a more bottom-heavy IMF. For dwarfs, however, we see a different behavior comparing Ca and Na, although there is no evidence that the IMF is responsible here. And also, for the LMC both [Na/Fe] and [Ca/Fe] have the same sign, implying that another parameter has to responsible for the difference between LMC and the dEs, presumably the star formation history. However, with this considerable (∼0.2) difference in [Ca/Fe] between the LMC and the dEs, it is not so obvious that objects like the LMC should be the progenitors of dEs, unless Ca-enrichment by SN Ia in the cluster environment was particularly effective.\n\nWhat is clear is that the abundance ratio pattern in dwarf ellipticals is very different from that in massive Galactic globular clusters, which show enhanced [Na/Fe], a strong Na-O anticorrelation etc. in many stars. It is of course still possible that a fraction of the stars displays these effects, but that fraction is so small that it cannot be detected in integrated light. This difference probably indicates that star formation timescales in dwarf ellipticals are long, on the order of Gyrs, since these globular clusters must have been formed on very small timescales, with their ages being so large (Gratton et al. 2001).\n\n# 5 CONCLUSIONS\n\n• In this paper, we determine abundance ratios of a sample 37 dEs in the Virgo cluster as a part of the SMAKCED project. This sample is representative of the analysis of the kinematic properties (Toloba et al. 2014a) and also all morphological sub-classes found by Lisker et al. (2006a,b, 2007).\n\n• We use optical spectroscopy to measure a total of 23 Lick indices in the LIS-5 ˚A flux calibrated system and apply the MILES models to interpret them. We derive new age and metallicity estimates for these galaxies. Taking advantage of high resolution spectral data we are able to calculate the abundance ratios of Na and Mg using the models of MILES.\n\n• We find the unusual behaviour that [Na/Fe] is underabundant w.r.t. solar. This is opposite to what is found in massive giant elliptical galaxies. We also find that dEs fall on a relatively tight relation between [Na/Fe] and [Fe/H], which we recently presented in Mentz et al. (2016), including Local Group dwarf galaxies, the Milky Way and giant elliptical galaxies. From our results, we try to sketch a possible scenario for the evolution of dEs in the Virgo cluster. We find that dEs show disk-like star formation histories favouring them to originate from star forming spirals or dwarfs.\n\n• Na-yields appear to be very metal-dependent, in agreement with studies of giant ellipticals, probably due to the large dependence on the neutron-excess in stars.\n\n• We conclude that dEs have undergone a considerable amount of chemical evolution, they are therefore not uniformly old, but have extended star formation histories, similar to many of the Local Group galaxies.\n\n# ACKNOWLEDGEMENTS\n\nWe thank an anonymous referee for his critical comments, helping to improve the paper. We also thank to F. La Barbera for kindly providing the new models. The research was supported by The Scientific and Technological Research Council of Turkey (TUBITAK) under project number 1059B141401204 and 1649B031406124. RFP, AV and JF-B acknowledge support from grant AYA2016-77237-C3-1-P from the Spanish Ministry of Economy and Competitiveness (MINECO). Paudel acknowledges the support by Samsung Science & Technology Foundation under Project Number SSTF-BA1501-0.\n\n# REFERENCES\n\nAdelman-McCarthy J. K., et al., 2006, ApJS, 162, 38\nArnett W. D., 1971, ApJ, 166, 153\nBarazza F. D., Binggeli B., Jerjen H., 2002, A&A, 391, 823\nBinggeli B., Sandage A., Tammann G. A., 1988, ARA&A, 26, 509\nBinggeli B., Popescu C. C., Tammann G. A., 1993, A&AS, 98, 275\nBlanton M. R., Eisenstein D., Hogg D. W., Schlegel D. J., Brinkmann J., 2005, ApJ, 629, 143\nBoselli A., Gavazzi G., 2006, PASP, 118, 517\nBoselli A., Gavazzi G., 2014, A&ARv, 22, 74\nBoselli A., et al., 2014, A&A, 570, A69\nBruzual G., Charlot S., 2003, MNRAS, 344, 1000\nCardiel N., 1999, PhD thesis, , Universidad Complutense de Madrid, Spain, (1999)\nCarretta E., 2016, preprint, (arXiv:1611.04728)\nCenarro A. J., Gorgas J., Vazdekis A., Cardiel N., Peletier R. F., 2003, MNRAS, 339, L12\nChilingarian I. V., 2009, MNRAS, 394, 1229\nCid Fernandes R., Mateus A., Sodr´e L., Stasi´nska G., Gomes J. M., 2005, MNRAS, 358, 363\nClayton D. D., 2003, Ap&SS, 285, 353\nCohen J. G., Huang W., 2009, ApJ, 701, 1053\nCole S., Lacey C. G., Baugh C. M., Frenk C. S., 2000, MNRAS, 319, 168\nConroy C., van Dokkum P., 2012, ApJ, 747, 69\nConroy C., Graves G. J., van Dokkum P. G., 2014, ApJ, 780, 33\nDe Rijcke S., Dejonghe H., Zeilinger W. W., Hau G. K. T., 2003, A&A, 400, 119\nFaber S. M., Friel E. D., Burstein D., Gaskell C. M., 1985, ApJS, 57, 711\nFerrarese L., et al., 2006, ApJS, 164, 334\nFrenk C. S., White S. D., Davis M., Efstathiou G., 1988, ApJ, 327, 507\nGavazzi G., Fumagalli M., Cucciati O., Boselli A., 2010, A&A, 517, A73\nGeha M., Guhathakurta P., van der Marel R. P., 2002, AJ, 124, 3073\nGeha M., Guhathakurta P., van der Marel R. P., 2003, AJ, 126, 1794\nGeha M., Blanton M. R., Yan R., Tinker J. L., 2012, ApJ, 757, 85\nGorgas J., Faber S. M., Burstein D., Gonzalez J. J., Courteau S., Prosser C., 1993, ApJS, 86, 153\nGorgas J., Pedraz S., Guzm´an R., Cardiel N., Gonz´alez J. J., 1997, ApJ, 481, L19\nGraham A. W., Guzm´an R., 2003, AJ, 125, 2936\nGratton R. G., et al., 2001, A&A, 369, 87\nGreggio L., Renzini A., Daddi E., 2008, MNRAS, 388, 829\nGunn J. E., Gott III J. R., 1972, ApJ, 176, 1\nIwamoto K., Brachwitz F., Nomoto K., Kishimoto N., Umeda H., Hix W. R., Thielemann F.-K., 1999, ApJS, 125, 439\nJanz J., Lisker T., 2008, ApJ, 689, L25\nJanz J., Lisker T., 2009, ApJ, 696, L102\nJanz J., et al., 2012, ApJ, 745, L24\nJanz J., et al., 2014, ApJ, 786, 105\nJerjen H., Kalnajs A., Binggeli B., 2000, A&A, 358, 845\nKoleva M., de Rijcke S., Prugniel P., Zeilinger W. W., Michielsen D., 2009, MNRAS, 396, 2133\nKoleva M., Prugniel P., de Rijcke S., Zeilinger W. W., 2011, MNRAS, 417, 1643\nKormendy J., 1985, ApJ, 295, 73\nKraft R. P., 1994, PASP, 106, 553\nLa Barbera F., Vazdekis A., Ferreras I., Pasquali A., Allende Prieto C., R¨ock B., Aguado D. S., Peletier R. F., 2017, MNRAS, 464, 3597\nLacey C., Cole S., 1993, ASP Conf. Ser., 51, 192\nLanger G. E., Hoffman R., Sneden C., 1993, PASP, 105, 301\nLetarte B., et al., 2010, A&A, 523, A17\nLin D. N. C., Faber S. M., 1983, ApJ, 266, L21\nLisker T., Grebel E. K., Binggeli B., 2006a, AJ, 132, 497\nLisker T., Glatt K., Westera P., Grebel E. K., 2006b, AJ, 132, 2432\nLisker T., Grebel E. K., Binggeli B., Glatt K., 2007, ApJ, 660, 1186\nMaraston C., 2005, MNRAS, 362, 799\nMaraston C., Nieves Colmen´arez L., Bender R., Thomas D., 2009, A&A, 493, 425\nMcWilliam A., 1997, ARA&A, 35, 503\nMei S., et al., 2007, ApJ, 655, 144\nMentz J. J., et al., 2016, MNRAS, 463, 2819\nMichielsen D., De Rijcke S., Dejonghe H., Zeilinger W. W., Hau G. K. T., 2003, ApJ, 597, L21\nMichielsen D., et al., 2008, MNRAS, 385, 1374\nMoore B., Lake G., Katz N., 1998, ApJ, 495, 139\nNelan J. E., Smith R. J., Hudson M. J., Wegner G. A., Lucey J. R., Moore S. A. W., Quinney S. J., Suntzeff N. B., 2005, ApJ, 632, 137\nNissen P. E., Schuster W. J., 1997, A&A, 326, 751\nNissen P. E., Schuster W. J., 2009, in Andersen J., Nordstr¨oara m B., Bland-Hawthorn J., eds, IAU Symposium Vol. 254, The Galaxy Disk in Cosmological Context. pp 103–108 (arXiv:0807.3831), doi:10.1017/S1743921308027452\nO’Connell R. W., 1976, ApJ, 206, 370\nOcvirk P., Pichon C., Lan¸con A., Thi´ebaut E., 2006, MNRAS, 365, 46\nPaudel S., Lisker T., Kuntschner H., Grebel E. K., Glatt K., 2010, MNRAS, 405, 800\nPedraz S., Gorgas J., Cardiel N., S´anchez-Bl´azquez P., Guzm´an R., 2002, MNRAS, 332, L59\nPeterson R. C., 1976, ApJ, 210, L123\nProchaska L. C., Rose J. A., Schiavon R. P., 2005, AJ, 130, 2666\nRy´s A., Falc´on-Barroso J., van de Ven G., 2013, MNRAS, 428, 2980\nRy´s A., van de Ven G., Falc´on-Barroso J., 2014, MNRAS, 439, 284\nRy´s A., Koleva M., Falc´on-Barroso J., Vazdekis A., Lisker T., Peletier R., van de Ven G., 2015, MNRAS, 452, 1888\nSaglia R. P., Maraston C., Thomas D., Bender R., Colless M., 2002, ApJ, 579, L13\nSchiavon R. P., 2007, ApJS, 171, 146\nShetrone M., Venn K. A., Tolstoy E., Primas F., Hill V., Kaufer A., 2003, AJ, 125, 684\nSimien F., Prugniel P., 2002, A&A, 384, 371\nSkillman E. D., Kennicutt R. C., Hodge P. W., 1989, ApJ, 347, 875\nSmith R. J., Alton P., Lucey J. R., Conroy C., Carter D., 2015, MNRAS, 454, L71\nSpiniello C., Trager S., Koopmans L. V. E., Conroy C., 2014, MNRAS, 438, 1483\nSpiniello C., Trager S. C., Koopmans L. V. E., 2015, ApJ, 803, 87\nSpringel V., et al., 2005, Nature, 435, 629\nSybilska A., et al., 2017, MNRAS, 470, 815\nThielemann F.-K., Hashimoto M.-A., Nomoto K., 1990, ApJ, 349, 222\nThomas D., Maraston C., Bender R., 2003, MNRAS, 343, 279\nThomas D., Maraston C., Bender R., Mendes de Oliveira C., 2005, ApJ, 621, 673\nThomas D., Maraston C., Schawinski K., Sarzi M., Silk J., 2010, MNRAS, 404, 1775\nTimmes F. X., Woosley S. E., Weaver T. A., 1995, ApJS, 98, 617\nToloba E., et al., 2009, ApJ, 707, L17\nToloba E., Boselli A., Cenarro A. J., Peletier R. F., Gorgas J., Gil de Paz A., Mu˜noz-Mateos J. C., 2011, A&A, 526, A114\nToloba E., et al., 2014a, ApJS, 215, 17\nToloba E., et al., 2014b, ApJ, 783, 120\nToloba E., et al., 2015, ApJ, 799, 172\nTolstoy E., Hill V., Tosi M., 2009, ARA&A, 47, 371\nTravaglio C., Hillebrandt W., Reinecke M., Thielemann F.-K., 2004, A&A, 425, 1029\nVazdekis A., 1999, ApJ, 513, 224\nVazdekis A., Peletier R. F., Beckman J. E., Casuso E., 1997, ApJS, 111, 203\nVazdekis A., Trujillo I., Yamada Y., 2004, ApJ, 601, L33\nVazdekis A., S´anchez-Bl´azquez P., Falc´on-Barroso J., Cenarro A. J., Beasley M. A., Cardiel N., Gorgas J., Peletier R. F., 2010, MNRAS, 404, 1639\nVazdekis A., Ricciardelli E., Cenarro A. J., Rivero-Gonz´alez J. G., D´ıaz-Garc´ıa L. A., Falc´on-Barroso J., 2012, MNRAS, 424, 157\nWalcher C. J., Coelho P., Gallazzi A., Charlot S., 2009, MNRAS, 398, L44\nWhite S. D., Frenk C. S., 1991, ApJ, 379, 52\nWhite S. D., Rees M. J., 1978, MNRAS, 183, 341\nWorthey G., 1994, ApJS, 95, 107\nWorthey G., 1998, PASP, 110, 888\nWorthey G., Ottaviani D. L., 1997, ApJS, 111, 377\nWorthey G., Faber S. M., Gonzalez J. J., 1992, ApJ, 398, 69\nWorthey G., Faber S. M., Gonzalez J. J., Burstein D., 1994, ApJS, 94, 687\nWorthey G., Ingermann B. A., Serven J., 2011, ApJ, 729, 148\nYamada Y., Arimoto N., Vazdekis A., Peletier R. F., 2006, ApJ, 637, 200\nden Brok M., et al., 2011, MNRAS, 414, 3052\nvan Zee L., Barton E. J., Skillman E. D., 2004, AJ, 128, 2797\n\n# APPENDIX A: CA ABUNDANCES\n\nGiven the fact that the conversion between Ca4227 and [Ca/Fe] is more uncertain than the ones beween NaD and [Na/Fe] and between Mgb and [Mg/Fe], we have put the discussion of the Ca abundances in the appendix.\n\nFor our dEs sample, the measured Ca4227 values are slightly higher than the model predictions for solar-abundance models (Fig. 3), implying that Ca is slightly overabundant in dEs. One might get a very rough idea about the values of [Ca/Fe] when using the only available models, those by CvD for old ages and solar metallicities, to convert Ca4227 to [Ca/Fe]. Although we know that these models are inaccurate, since they must depend on age and metallicity (see the MILES ones), they can serve here to give a crude idea. Using this calibration, Figure A1 shows that [Ca/Fe] is a bit larger than in the Milky Way disk, but lower than in the thick disk and halo. An interpretation of these high values could that SN Ia’s are partially responsible for the Ca-enrichment (see Travaglio et al. 2004 and above).\n\nPrevious abundance measurements of Ca (Michielsen et al. 2003) in dEs show two groups: the ones with CaT* ∼ 7˚A , higher than expected for solar abundance ratio models, and a sample of 3 objects with CaT* ∼5˚A . Such lower values could be obtained by having a range in ages, while including some very young objects. The higher values of 7˚A , however, can only be explained by [Ca/Fe] values that are somewhat larger than solar, consistent with this paper. Our results are also consistent with the line strengths in the Fornax cluster dwarf NGC 1396 (Mentz et al. 2016). Such high [Ca/Fe] values are not seen in giant ellipticals, where the CaT* index is lower than expected from stellar population models with solar abundance ratios (Saglia et al. 2002; Cenarro et al. 2003). While the latter can be explained by a bottom-heavy IMF, a much easier and more natural explanation would be in [Ca/Fe] < 0 for such galaxies (Cenarro et al. 2003, see also Conroy & van Dokkum 2012). For dEs the CaT* values are so high that IMF-slopes steeper than Salpeter are excluded (Mentz et al. 2016), so solar or supersolar [Ca/Fe] values are unavoidable. Note, however, the difference between the dEs and the LMC, which has much lower [Ca/Fe] values, but a similar metallicity. We argue that the difference is due to the enrichment by SN type Ia and different star formation histories.\n\nProchaska, Rose & Schiavon (2005) suggested that a CN band might be affecting the Ca4227 index in giant ellipticals, but since dEs do not show strong CN bands, the Ca abundance can be measured reliably from the Ca4227 index (Vazdekis et al. 1997).\n\nThis paper has been typeset from a TEX/LATEX file prepared by the author.\n\nMNRAS 000, 1–14 (2017)",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abundance ratios in dwarf elliptical galaxies",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 OBSERVATIONS AND DATA REDUCTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Line-strength measurements",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Derived ages and metallicities",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Elemental abundance ratios",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 DISCUSSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Na abundances",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Abundance ratios and the formation of dEs",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A: CA ABUNDANCES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 54.37436020000314,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [
+   "4.1 Na abundances"
+  ],
+  "unmatched_pred": [
+   "4.1 Na abundances"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 2,
+  "fp": 13,
+  "fn": 12,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.1875,
+  "unmatched_gt": [
+   "2 OBSERVATIONS AND DATA REDUCTION",
+   "2.1 Line-strength measurements",
+   "3 RESULTS",
+   "3.1 Derived ages and metallicities",
+   "3.2 Elemental abundance ratios",
+   "4 DISCUSSION",
+   "4.1 Na abundances",
+   "4.2 Abundance ratios and the formation of dEs",
+   "5 CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES",
+   "1 CA ABUNDANCES"
+  ],
+  "unmatched_pred": [
+   "Abundance ratios in dwarf elliptical galaxies",
+   "2 OBSERVATIONS AND DATA REDUCTION",
+   "2.1 Line-strength measurements",
+   "3 RESULTS",
+   "3.1 Derived ages and metallicities",
+   "3.2 Elemental abundance ratios",
+   "4 DISCUSSION",
+   "4.1 Na abundances",
+   "4.2 Abundance ratios and the formation of dEs",
+   "5 CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES",
+   "APPENDIX A: CA ABUNDANCES"
+  ]
+ }
+}

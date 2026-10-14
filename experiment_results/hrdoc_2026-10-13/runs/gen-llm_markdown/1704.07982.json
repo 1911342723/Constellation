@@ -1,0 +1,630 @@
+{
+ "doc": "1704.07982",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 22,
+  "pred": 41,
+  "tp": 21,
+  "fp": 20,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 1,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "7.0.1",
+   "7.0.2",
+   "7.0.3",
+   "8",
+   "9",
+   "9.1",
+   "9.2",
+   "9.3",
+   "10",
+   "10.1",
+   "10.2",
+   "11",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 38,
+  "tp": 19,
+  "fp": 19,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.4871794871794872,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "7.0.1",
+   "7.0.2",
+   "7.0.3",
+   "8",
+   "9",
+   "9.1",
+   "9.2",
+   "9.3",
+   "10",
+   "10.1",
+   "10.2",
+   "11"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Exact Algorithms via Multivariate Subroutines",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1",
+    0,
+    1
+   ],
+   [
+    "Introduction",
+    0,
+    2
+   ],
+   [
+    "2",
+    2,
+    1
+   ],
+   [
+    "Preliminaries",
+    2,
+    2
+   ],
+   [
+    "3",
+    3,
+    1
+   ],
+   [
+    "Results",
+    3,
+    2
+   ],
+   [
+    "4",
+    3,
+    1
+   ],
+   [
+    "Random Sampling and Multivariate Subroutines",
+    3,
+    2
+   ],
+   [
+    "5",
+    5,
+    1
+   ],
+   [
+    "Derandomization",
+    5,
+    2
+   ],
+   [
+    "6",
+    6,
+    1
+   ],
+   [
+    "Enumeration",
+    6,
+    2
+   ],
+   [
+    "7",
+    7,
+    1
+   ],
+   [
+    "Feedback Vertex Set",
+    7,
+    2
+   ],
+   [
+    "7.0.1",
+    7,
+    3
+   ],
+   [
+    "Measure",
+    7,
+    4
+   ],
+   [
+    "7.0.2",
+    8,
+    3
+   ],
+   [
+    "Algorithm",
+    8,
+    4
+   ],
+   [
+    "7.0.3",
+    9,
+    3
+   ],
+   [
+    "Results",
+    9,
+    4
+   ],
+   [
+    "8",
+    10,
+    1
+   ],
+   [
+    "Minimal Vertex Covers",
+    10,
+    2
+   ],
+   [
+    "9",
+    10,
+    1
+   ],
+   [
+    "Minimal Feedback Vertex Sets",
+    10,
+    2
+   ],
+   [
+    "9.1",
+    10,
+    3
+   ],
+   [
+    "Measure",
+    10,
+    4
+   ],
+   [
+    "9.2",
+    11,
+    3
+   ],
+   [
+    "Algorithm",
+    11,
+    4
+   ],
+   [
+    "9.3",
+    16,
+    3
+   ],
+   [
+    "Results",
+    16,
+    4
+   ],
+   [
+    "10",
+    16,
+    1
+   ],
+   [
+    "Minimal Hitting Sets",
+    16,
+    2
+   ],
+   [
+    "10.1",
+    16,
+    3
+   ],
+   [
+    "Measure",
+    16,
+    4
+   ],
+   [
+    "10.2",
+    17,
+    3
+   ],
+   [
+    "Analysis",
+    17,
+    4
+   ],
+   [
+    "11",
+    17,
+    1
+   ],
+   [
+    "Conclusion",
+    17,
+    2
+   ],
+   [
+    "Acknowledgments",
+    17,
+    2
+   ],
+   [
+    "References",
+    18,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 17669,
+   "completion_tokens": 17601
+  },
+  "elapsed_llm_seconds": 70.73317170000519,
+  "word_preservation": {
+   "recall": 0.9966937717808954,
+   "in_order": 0.9966044142614601,
+   "inserted": 0.0018791946308724938
+  },
+  "output_markdown": "# Exact Algorithms via Multivariate Subroutines\n\nSerge Gaspers1,2 and Edward J. Lee1,2\n1UNSW Australia, Sydney, Australia., sergeg@cse.unsw.edu.au,\ne.lee@unsw.edu.au\n2Data61, CSIRO, Sydney, Australia\n\n## Abstract\n\nWe consider the family of Φ-Subset problems, where the input consists of an instance I\nof size N over a universe UI of size n and the task is to check whether the universe contains\na subset with property Φ (e.g., Φ could be the property of being a feedback vertex set for\nthe input graph of size at most k). Our main tool is a simple randomized algorithm which\nsolves Φ-Subset in time (1 + b −1\nc)nN O(1), provided that there is an algorithm for the Φ-\nExtension problem with running time bn−|X|ckN O(1). Here, the input for Φ-Extension is\nan instance I of size N over a universe UI of size n, a subset X ⊆UI, and an integer k,\nand the task is to check whether there is a set Y with X ⊆Y ⊆UI and |Y \\ X| ≤k with\nproperty Φ. We also derandomize this algorithm at the cost of increasing the running time\nby a subexponential factor in n, and we adapt it to the enumeration setting where we need to\nenumerate all subsets of the universe with property Φ. This generalizes the results of Fomin\net al. [STOC 2016] who proved them for the case b = 1. As case studies, we use these results\nto design faster deterministic algorithms for\n\n• checking whether a graph has a feedback vertex set of size at most k,\n• enumerating all minimal feedback vertex sets,\n• enumerating all minimal vertex covers of size at most k, and\n• enumerating all minimal 3-hitting sets.\n\nWe obtain these results by deriving new bn−|X|ckN O(1)-time algorithms for the corresponding\nΦ-Extension problems (or the enumeration variant). In some cases, this is done by simply\nadapting the analysis of an existing algorithm, in other cases it is done by designing a new\nalgorithm.\n\nOur analyses are based on Measure and Conquer, but the value to minimize,\n1 + b −1\nc, is unconventional and leads to non-convex optimization problems in the analysis.\n\n# 1\n## Introduction\n\nIn exponential-time algorithmics [8], the aim is to design algorithms for NP-hard problems with\nthe natural objective to minimize their running times. In this paper, we consider a broad class of\nsubset problems, where for an input instance I on a universe UI, the question is whether there is\na subset S of the universe satisfying certain properties. For example, in the Feedback Vertex\nSet problem, the input instance consists of a graph G = (V, E) and an integer k, the universe is\nthe vertex set and the property to be satisﬁed by a subset S is the conjunction of “|S| ≤k” and\n“G −S is acyclic”.\n\nMore formally, and using deﬁnitions from [5], an implicit set system is a function Φ that takes\nas input a string I ∈{0, 1}∗and outputs a set system (UI, FI), where UI is a universe and FI is\na collection of subsets of UI. The string I is referred to as an instance and we denote by |UI| = n\nthe size of the universe and by |I| = N the size of the instance. We assume that N ≥n. The\nimplicit set system Φ is polynomial time computable if (a) there exists a polynomial time algorithm\nthat given I produces UI, and (b) there exists a polynomial time algorithm that given I, UI and\na subset S of UI determines whether S ∈FI. All implicit set systems discussed in this paper are\npolynomial time computable.\n\n<<page 2>>\nΦ-Subset\nInput:\nAn instance I\nOutput:\nA set S ∈FI if one exists.\n\nΦ-Extension\nInput:\nAn instance I, a set X ⊆UI, and an integer k.\nQuestion:\nDoes there exists a subset S ⊆(UI \\ X) such that S ∪X ∈FI and |S| ≤k?\n\nIn recent work, Fomin et al. [5] showed that ckN O(1) time algorithms (c ∈O(1)) for Φ-Ex-\ntension lead to competitive exponential-time algorithms for many Φ-Subset problems.\nThe\nmain tool was a simple randomized algorithm which solves Φ-Subset in time (2 −1\nc)nN O(1) if\nthere is an algorithm that solves Φ-Extension in time ckN O(1). A derandomization was also\ngiven, turning the randomized algorithm into a deterministic one at the cost of a 2o(n) factor in\nthe running time. The method was also adapted to enumeration algorithms and combinatorial\nupper bounds. This framework, together with a large body of work in parameterized algorithmics\n[3], where ckN O(1) time algorithms are readily available for many subset problems, led to faster\nalgorithms for around 30 decision and enumeration problems.\n\nIn this paper, we extend the results of Fomin et al. [5] and show that a bn−|X|ckN O(1) time\nalgorithms (b, c ∈O(1)) for Φ-Extension lead to randomized (1 + b −1\nc)nN O(1) time algorithms\nfor Φ-Subset. Our result can be similarly derandomized and adapted to the enumeration setting.\nObserve that for b = 1, the results of [5] coincide with ours, but that ours have the potential to\nbe more broadly applicable and to lead to faster running times. The main point is that if we use\na ckN O(1) time algorithm as a subroutine to design an algorithm exponential in n, we might as\nwell allow a small exponential factor in n in the running time of the subroutine.\n\nSimilar as in [5], the Φ-Extension problem can often be solved by preprocessing the elements\nin X in a simple way and then using an algorithm for a subset problem. In the case of Feedback\nVertex Set, the vertices in X can simply be deleted from the input graph. Whereas the literature\nis rich with ckN O(1) time algorithms for subset problems, algorithms with running times of the\nform bnckN O(1) with b > 1 are much less common.1 One issue is that there is, in general, no\nobviously best trade-oﬀbetween the values of b and c for such algorithms. However, the present\nframework gives us a precise objective: we should aim for values of b and c that minimize the base\nof the exponent, (1 + b −1\nc).\n\nOur applications consist of three case studies centered around some of the most fundamental\nproblems considered in [5], feedback vertex sets and hitting sets. For the ﬁrst case study, we\nconsidered the Feedback Vertex Set problem: given a graph G and an integer k, does G have\na feedback vertex set of size at most k? For this problem, we re-analyze the running time of the\nalgorithm from [6]. In [6, 10], the algorithm was analyzed using Measure and Conquer: using a\nmeasure that is upper bounded by αn and aiming for a running time of 2αnnO(1) the analysis\nof the branching cases led to constraints lower bounding the measure and the objective was to\nminimize α subject to these constraints. In our new analysis, we add an additive term wk ·k to the\nmeasure and adapt the constraints accordingly. If all constraints are satisﬁed, we obtain a running\ntime of 2αn+wkknO(1). Our framework naturally leads us to minimize 2α −2−wk. This approach\nleads to a O(1.5422n · 1.2041k) time algorithm, which, combined with our framework gives a\ndeterministic O(1.7117n) time algorithm for Feedback Vertex Set. This improves on previous\nresults giving O(1.8899n) [13], O(1.7548n) [6], O(1.7356n) [14], O(1.7347n) [9], and O(1.7216n)\n[5] time algorithms for the problem. We note that adapting the analysis of other existing exact\nand parameterized algorithms did not give faster running times. Also, if we allow randomization,\nthe O(1.6667n) time algorithm by [5] (which can also be achieved using our framework) remains\nfastest.\n\nOur second case study is more involved. Simply using an existing algorithm and adapting\nthe measure was not suﬃcient to improve upon the best known enumeration algorithms (and\ncombinatorial upper bounds) for minimal feedback vertex sets. Here, the task is, given a graph\nG, to output each feedback vertex set that is not contained in any other feedback vertex set. We\n1One notable exception is by Eppstein [4], who showed that all maximal independent sets of size at most k in a\ngraph on n vertices can be enumerated in time (4/3)n(81/64)knO(1).\n\n<<page 3>>\ndesign a new algorithm for enumerating all minimal feedback vertex sets. We also need a new\ncombinatorial upper bound for the number of minimal vertex covers of size at most k to handle one\nspecial case in the enumeration of minimal feedback vertex sets.2 We obtain a O(1.7183n·1.1552k)\ntime algorithm for enumerating all minimal feedback vertex sets. Our framework thus leads to a\nrunning time of O(1.8527n), improving on the previous best bound of O(1.8638n) [6]. The current\nbest lower bound for the number of minimal feedback vertex sets is O(1.5926n) [6]. We would like\nto highlight that the enumeration of minimal feedback vertex sets is completely out of scope for\nthe more restricted framework of [5]: the number of minimal feedback vertex sets of size at most\nk cannot be upper bounded by cknO(1), as evidenced by a disjoint union of k cycles of length n/k.\n\nOur last case study gives a new algorithm for enumerating all minimal 3-hitting sets, also\nknown as minimal transversals of rank-3 hypergraphs. These are minimal sets S of vertices of a\nhypergraph where each hyperedge has size at most 3 such that every hyperedge contains at least\none vertex of S. We re-analyze an existing algorithm [2] for this enumeration problem, adapting\nthe measure in a similar way as in the ﬁrst case study, and we obtain a multivariate running time\nof O(1.5135n · 1.1754k), leading to an O(1.6627n) time enumeration algorithm. This breaks the\nnatural time bound of O(1.6667n) of the previously fastest algorithm [5]. The current best lower\nbound gives an inﬁnite family of rank-3 hypergraphs with Ω(1.5848n) minimal transversals [2].\n\n# 2\n## Preliminaries\n\nLet G = (V, E) be a graph with a set of vertices V and a set of edges E ⊆{uv : u, v ∈V }. The\ndegree d(u) of a vertex u is the number of neighbors of u in G. The degree of a graph ∆(G) is the\nmaximum d(u) across all u ∈V . A graph G′ = (V ′, E′) is a subgraph of G if V ′ ⊆V and E′ ⊆E\nand G′ is an induced subgraph of G if, in addition, G has no edge uv with u, v ∈V ′ but uv /∈E′.\nIn this case, we also denote G′ by G[V ′]. A forest is an acyclic graph. A subset F ⊆V is acyclic\nif G[F] is a forest. An acyclic subset F ⊆V is maximal in G if it is not a subset of any other\nacyclic subset. For an acyclic subset F ⊆V , we denote the set of maximal acyclic supersets of F\nas MG(F) and the set of maximum (i.e., largest) acyclic supersets of F as M∗\nG(F).\n\nLet T be a subgraph of G. Deﬁne Id(T, t) as an operation on G which contracts all edges of\nT into one vertex t, removing induced loops. This may create multiedges in G. Deﬁne Id∗(T, t)\nas the operation Id(T, t) followed by removing all vertices connected to t by multiedges. A non-\ntrivial component of a graph G is a connected component on at least two vertices. The following\npropositions from [6] will be useful.\n\nProposition 2.1. [6] Let G = (V, E) be a graph, F ⊆V be an acyclic subset of vertices and T\nbe a non-trivial component of G[F]. Denote by G′ the graph obtained from G by the operation\nId∗(T, t) and let F ′ = F ∪{t}\\T . Then for X′ = X ∪{t}\\T where X, X′ ⊆V\n\n• X ∈MG(F) if and only if X′ ∈MG′(F ′), and\n• X ∈M∗\nG(F) if and only if X′ ∈M∗\nG′(F ′).\n\nUsing operation Id∗on each non-trivial component of G[F], results in an independent set F ′.\n\nProposition 2.2. [6] Let G = (V, E) be a graph and F be an independent set in G such that\nV \\F = N(t) for some t ∈F. Consider the graph G′ = G[N(t)] and for every pair of vertices\nu, v ∈N(t) having a common neighbor in F\\{t} add an edge uv to G′. Denote the obtained graph\nby H and let I ⊆N(t). Then F ∪I ∈MG(F) if and only if I is a maximal independent set in H\n. In particular, F ∪I ∈M∗\nG(F) if and only if I is a maximum independent set in H.\n\nFor an acyclic subset F, a so-called active vertex t ∈F and a neighbor v ∈N(t) \\ F, we\nwill now deﬁne the concept of generalized neighbors of v, as well as their generalized neighbors.\nDenote by K the set of vertices of F adjacent to v other than t. Let G′ be the graph obtained\nafter the operation Id(K ∪{v}, u). A vertex w ∈V (G′)\\{t} is a generalized neighbor of v in G\n2Previous work [1, 4] along these lines focused on small maximal independent sets in the context of graph coloring,\nwhose bounds were insuﬃcient for our purposes. Here, we need better bounds on large maximal independent sets\nor small minimal vertex covers.\n\n<<page 4>>\nif w is a neighbor of u in G′. Denote by gd(v) the generalized degree of v which is its number of\ngeneralized neighbors. For a given generalized neighbor x of v, denote by K′ the set of vertices\nin F adjacent to x. Denote G′′ as the graph obtained after the operation Id(K′ ∪{x}, u′). A\ngeneralized neighbor of x is any vertex y ∈V (G′′)\\{v} which is adjacent to u′ in G′′. Also use the\nnotation gd(x) to represent the generalized degree of x, which is a very similar notion to that of\ngd(v). Lastly, all randomized algorithms in this paper are Monte Carlo algorithms with one-sided\nerror. On No-instances they always return No, and on Yes-instances they return Yes (or output\na certiﬁcate) with probability > 1\n2.\n\n# 3\n## Results\n\nOur ﬁrst main result gives exponential-time randomized algorithms for Φ-Subset based on single-\nexponential multivariate algorithms for Φ-Extension with parameter k.\n\nTheorem 1. If there is an algorithm for Φ-Extension with running time bn−|X|ckN O(1) then\nthere is a randomized algorithm for Φ-Subset with running time (1 + b −1\nc)nN O(1).\n\nThe next main result derandomizes the algorithm of Theorem 1 at a cost of a subexponential\nfactor in n in the running time.\n\nTheorem 2. If there is an algorithm for Φ-Extension with running time bn−|X|ckN O(1) then\nthere is an algorithm for Φ-Subset with running time (1 + b −1\nc)n+o(n)N O(1).\n\nWe require the following notion of (b,c)-uniform to describe our enumeration algorithms. Let\nc, b ≥1 be real valued constants and Φ be an implicit set system. Then Φ is (b,c)-uniform if\nfor every instance I, set X ⊆UI, and integer k ≤n −|X|, the cardinality of the collection\nFk\nI,X = {S ⊆UI\\X : |S| = k and S ∪X ∈FI} is at most bn−|X|cknO(1). Then the following\ntheorem provides new combinatorial bounds for collections generated by (b, c)-uniform implicit set\nsystems.\n\nTheorem 3. Let c, b ≥1 and Φ be an implicit set system. If Φ is (b, c)-uniform then |FI| ≤\n\u00001 + b −1\nc\n\u0001n nO(1) for every instance I.\n\nWe say that an implicit set system is eﬃciently (b, c)-uniform if there exists an algorithm that given\nI, X and k enumerates all elements of Fk\nX,I in time bn−|X|ckN O(1). In this case, we enumerate FI\nin the same time, up to a subexponential factor in n.\n\nTheorem 4. Let c, b ≥1 and Φ be an implicit set system. If Φ is eﬃciently (b, c)-uniform then\nthere is an algorithm that given as input I enumerates FI in time\n\u00001 + b −1\nc\n\u0001n+o(n) N O(1).\n\n# 4\n## Random Sampling and Multivariate Subroutines\n\nIn this section, we prove Theorem 1. To do this, we ﬁrst need the following lemmas.\n\nLemma 5. If b, c ≥1 then\nb · c\n1\nbc ≤1 + b −1\nc\n\nProof. As both sides of the inequality are positive, it suﬃces to show that log(bc\n1\nbc ) ≤log(1 +\nb −1/c). So we let y = log(1 + b −1/c) −log b −1\nbc log c and prove that y ≥0 for all b, c ≥1.\nWhen c = 1 we have that y = 0 for all b. We will show that for any ﬁxed b ≥1 we have that\ny ≥0 by showing that y increases with c ≥1. For ﬁxed b, the partial derivative with respect to c\nis ∂y\n∂c = (bc+c−1) log c−c+1\nbc2(bc+c−1)\n. When c = 1 then for all b, ∂y\n∂c = 0. As the denominator is positive for\nb, c ≥1 it is suﬃcient to show that the numerator z = (bc + c −1) log c −c + 1 is non-negative. To\nshow that z ≥0, we consider the partial derivative again with respect to c: ∂z\n∂c = (b+1) log c+b−1\nc\nFor b, c ≥1, we have that b −1\nc ≥0 and (b + 1) log(c) ≥0. Since ∂z\n∂c ≥0, we conclude that z is\nincreasing and non-negative which implies y is also increasing and non-negative, for all b, c ≥1.\nThis proves the lemma.\n\n<<page 5>>\nThe proof of the next lemma follows the proof of Lemma 2.2 from [5], who proved it for b = 1.\n\nLemma 6. Let b, c ≥1, n and k ≤n be non-negative integers. Then, there exists t ≥0 such that\n\u0000n\nt\n\u0001\n\u0000k\nt\n\u0001bn−tck−t =\n\u0012\n1 + b −1\nc\n\u0013n\nnO(1)\n\nProof. We consider two cases. First suppose k ≤n\nbc. Then for t = 0 the LHS (left-hand side) is\nat most bnck ≤bnc\nn\nbc ≤(1 + b −1/c)n by Lemma 5. Now if k > n\nbc then we rewrite the LHS as\n\u0000n\nt\n\u0001\n\u0000k\nt\n\u0001bn−tck−t =\n\u0000n\nk\n\u0001\nbn−k\n\u0000n−t\nk−t\n\u0001 \u0000 1\nbc\n\u0001k−t\n\nLet us lower bound the denominator. For any x ≥0 and an integer m ≥0,\nX\ni≥0\n\u0012m + i\ni\n\u0013\nxi =\nX\ni≥0\n\u0012m + i\nm\n\u0013\nxi =\n1\n(1 −x)m+1 ,\n(1)\n\nby a known generating function. For m = n −k and x =\n1\nbc, the summand at i = k −t equals the\ndenominator\n\u0000n−t\nk−t\n\u0001 \u0000 1\nbc\n\u0001k−t. Since n\nk < bc we have that m+k\nk\n< 1\nx and the terms of this sum decay\nexponentially for i > k. Thus, the maximum term (m+i)(m+i−1)...(m+1)\ni(i−1)...1\nxi for this sum occurs for\ni ≤k, and its value is Ω\n\u0010\u0010\n1\n1−x\n\u0011m\u0011\nup to a lower order factor of O(k). So by the binomial theorem\nthe expression is at most\n\u0012n\nk\n\u0013\nbn−k(1 −x)n−knO(1) =\n\u0012\n1 + b −1\nc\n\u0013n\nnO(1)\n\nSpeciﬁcally, the maximum term for Equation (1) occurs when m+i\ni\n= 1\nx, that is when n−t\nk−t = cb,\nand therefore, t = cbk−n\ncb−1 .\n\nLemma 7. If there exist constants b, c ≥1 and an algorithm for Φ-Extension with running\ntime bn−|X|ckN O(1) then there exists a randomized algorithm for Φ-Extension with running\ntime\n\u00001 + b −1\nc\n\u0001n−|X| N O(1)\n\nProof. Our proof is similar to Lemma 2.1 in [5]. Let B be an algorithm for Φ-Extension with\nrunning time bn−|X|ckN O(1). We now present a randomized algorithm A, for the same problem\nfor an input instance (I, X, k′) with k′ ≤k.\n\n1. Choose an integer t ≤k′ depending on b, c, n, k′ and |X|, the choice of which will be discussed\nlater. Then select a random subset Y of UI\\X of size t.\n2. Run Algorithm B on the instance (I, X ∪Y, k′ −t) and return the answer.\n\nAlgorithm A has a running time upper bounded by bn−|X|−tck′−tN O(1). Algorithm A returns yes\nfor (I, X, k′) when B returns yes for (I, X ∪Y, k′−t). In this case there exists a set S ⊆UI\\(X ∪Y )\nof size at most k′ −t ≤k −t such that S ∪X ∪Y ∈FI. This, Y ∪S witnesses that (I, X, k) is\nindeed a yes-instance.\n\nNext we lower bound the probability that A returns yes if there exists a set S ⊆UI\\X of size\nexactly k′ such that X ∪S ∈FI. The algorithm A picks a set Y of size t at random from UI\\X.\nThere are\n\u0000n−|X|\nt\n\u0001\npossible choices for Y . If A picks one of the\n\u0000k′\nt\n\u0001\nsubsets of S as Y then A\nreturns yes. Thus, given that there exists a set S ⊆UI\\X of size k′ such that X ∪S ∈FI, we\nhave that\nPr[A returns yes] ≥Pr[Y ⊆S] =\n\u0012k′\nt\n\u0013\n/\n\u0012n −|X|\nt\n\u0013\n\nLet p(k′) =\n\u0000k′\nt\n\u0001\n/\n\u0000n−|X|\nt\n\u0001\n. For each k′ ∈{0, ..., k}, our main algorithm runs A independently\n1\np(k′)\ntimes with parameter k′. The algorithm returns yes if any of the runs of A return yes. If (I, X, k′)\nis a yes-instance, then the main algorithm returns yes with probability at least\nmin\nk′≤k\nn\n1 −(1 −p(k′))\n1\np(k′)\no\n≥1 −1\ne > 1\n2.\n\n<<page 6>>\nNext we upper bound the running time of the main algorithm, which is\nX\nk′≤k\n1\np(k′)bn−|X|−tck′−tN O(1) ≤max\nk′≤k\n\u0000n−|X|\nt\n\u0001\n\u0000k′\nt\n\u0001\nbn−|X|−tck′−tN O(1)\n(2)\n≤\nmax\nk′≤n−|X|\n\u0000n−|X|\nt\n\u0001\n\u0000k\nt\n\u0001\nbn−|X|−tck−tN O(1).\n(3)\n\nThe choice of t in algorithm A is chosen to minimize the value of (\nn−|X|\nt\n)\n(k\nt)\nbn−|X|−tck−t. For ﬁxed\nn and |X| the running time of the algorithm is upper bounded by\nmax\n0≤k≤n−|X|\n(\nmin\n0≤t≤k\n(\u0000n−|X|\nt\n\u0001\n\u0000k\nt\n\u0001\nbn−|X|−tck−tN O(1)\n))\n(4)\n\nBy application of Lemma 6 we choose t = cbk−(n−|X|)\ncb−1\nto obtain the upper bound\n\u0012\n1 + b −1\nc\n\u0013n−|X|\n(n −|X|)O(1),\n\nwhich, combined with n < N, completes the proof.\n\nRunning algorithm A with X = ∅and for each value of k ∈{0, ...., n} results in an algorithm for\nΦ-Subset with running time\n\u00001 + b −1\nc\n\u0001n N O(1), proving Theorem 1.\n\n# 5\n## Derandomization\n\nIn this section we prove Theorem 2, by derandomizing the algorithm in Theorem 1.\n\nTheorem 2. If there is an algorithm for Φ-Extension with running time bn−|X|ckN O(1) then\nthere is an algorithm for Φ-Subset with running time (1 + b −1\nc)n+o(n)N O(1).\n\nGiven a set U and an integer q ≤|U| let\n\u0000U\nq\n\u0001\nrepresent the set of sets which contain q elements\nof U. From [5] we deﬁne a pseudo-random object, the set-inclusion-family, as well as an almost\noptimal sub-exponential construction of these objects.\n\nDeﬁnition 8. Let U be a universe of size n and let 0 ≤q ≤p ≤n. A family C ⊆\n\u0000U\nq\n\u0001\nis an\n(n, p, q)-set-inclusion family, if for every set S ∈\n\u0000U\np\n\u0001\n, there is a set Y ∈C such that Y ⊆S.\n\nLet κ(n, p, q) =\n\u0000n\nq\n\u0001\n/\n\u0000p\nq\n\u0001\n. We also make use of the following theorem.\n\nTheorem 9 ([5]). There is an algorithm that given n, p and q outputs an (n, p, q)-set-inclusion-\nfamily C of size at most κ(n, p, q) · 2o(n) in time κ(n, p, q) · 2o(n).\n\nWe are now ready to prove Lemma 10, by a very similar proof to Lemma 7.\n\nLemma 10. If there exists constants b, c ≥1 and an algorithm for Φ-Extension with running\ntime bn−|X|ckN O(1) then there exists a deterministic algorithm for Φ-Extension with running\ntime\n\u00001 + b −1\nc\n\u0001n−|X| · 2o(n) · N O(1).\n\nProof. Let B be an algorithm for Φ-Extension with running time bn−|X|ckN O(1). We can then\nadapt Algorithm A from the proof of Lemma 7. Let A′ be a new algorithm which has an input\ninstance (I, X, k′) with k′ ≤k. Choose t = cbk′−(n−|X|)\ncb−1 .\n\n1. Compute an (n −|X|, k′, t)-set-inclusion-family C using the algorithm from Theorem 9 of\nsize at most κ(n −|X|, k′, t) · 2o(n), in κ(n −|X|, k′, t) · 2o(n) time.\n\n<<page 7>>\n2. For each set Y in the set-inclusion-family C run algorithm B on the instance (I, X ∪Y, k′ −t)\nand return Yes of at least one returns Yes and No otherwise.\n\nThe running time of A′ is upper bounded by κ(n −|X|, k′, t) · 2o(n) · bn−|X|−tck′−tN O(1), a term\nencountered in Equation 2 with a new subexponential factor in n,\nmax\nk′≤k\n\u0000n−|X|\nt\n\u0001\n\u0000k′\nt\n\u0001\n· bn−|X|−tck′−tN O(1) · 2o(n).\n\nFrom here the proof follows that of Lemma 7.\n\nThe proof of Theorem 2 follows by inclusion of the factor 2o(n).\n\n# 6\n## Enumeration\n\nWe now proceed to prove Theorem 3, and 4 on combinatorial upper bounds and enumeration\nalgorithms. Consider the following random process.\n\n1. Choose an integer t based on b, c, n and k, then randomly sample a subset X of size t from\nUI.\n2. Uniformly at random pick a set S from Fk−t\nI,X , and output W = X ∪S. In the special case\nwhere Fk−t\nI,X is empty output the empty set.\n\nTheorem 3. Let c, b ≥1 and Φ be an implicit set system. If Φ is (b, c)-uniform then |FI| ≤\n\u00001 + b −1\nc\n\u0001n nO(1) for every instance I.\n\nProof. Let I be an instance, k ≤n. We will prove that the number of sets in FI of size exactly\nk is upper bounded by |FI| ≤\n\u00001 + b −1\nc\n\u0001n nO(1), where k is chosen arbitrarily. We follow the\nrandom process described above, which picks a set W of size k from FI.\n\nFor each set Z ∈FI of size exactly k, let EZ denote the event that the set W output in step\n2 is equal to Z. We then have the following lower bound on the probability of the event EZ:\nPr[EZ] = Pr[X ⊆Z ∧S = Z\\X]\n= Pr[X ⊆Z] × Pr[S = Z\\Z|X ⊆Z]\n=\n\u0000k\nt\n\u0001\n\u0000n\nt\n\u0001 ·\n1\n\f\f\fFk−t\nI,X\n\f\f\f\n\nSince Φ is (b, c)-uniform then\n\f\f\fFk−t\nI,X\n\f\f\f ≤bn−|X|cknO(1) and X is selected such that |X| = t, this\nresults in the lower bound\nPr[EZ] ≥\n\u0000k\nt\n\u0001\n\u0000n\nt\n\u0001b−(n−t)c−(k−t)n−O(1).\n\nA choice of t is made to minimize the lower bound, and this choice is given by Lemma 6 which\nstates that for every k ≤n there exists a t ≤k such that we obtain a new lower bound\nPr[EZ] ≥\n\u0012\n1 + b −1\nc\n\u0013−n\n· nO(1)\n\nfor every Z ∈FI of size k. For every individual set Z ∈FI, the event EZ occurs disjointly, and\nwe have that P\nZ∈FI,|Z|=k Pr[EZ] ≤1. This fact with the lower bound of Pr[EZ] implies an upper\nbound on the number of sets in FI of (1 + b −1\nc)nnO(1), completing the proof.\n\nTheorem 4. Let c, b ≥1 and Φ be an implicit set system. If Φ is eﬃciently (b, c)-uniform then\nthere is an algorithm that given as input I enumerates FI in time\n\u00001 + b −1\nc\n\u0001n+o(n) N O(1).\n\n<<page 8>>\nProof. We alter the random process used to prove Theorem 3 to a deterministic one:\n\n1. Construct a (n, k, t)-set inclusion family C using Theorem 6 from [5]. Loop over X ∈C.\n2. For each X ∈C, loop over all sets S ∈Fk−t\nI,X .\n\nThen we output W = X ∪S from these two loops. Looping over C instead of random sampling\nfor X incurs a 2o(n) overhead in the running time. As Φ is eﬃciently (b, c)-uniform, the inner loop\nrequires (1 + b −1\nc)nN O(1) time. In order to avoid enumerating duplicates, we save the sets which\nhave been output in a trie and check ﬁrst in linear time if a set has already been output. The\nproduct of the running times for these two nested loops results in the running time claimed by the\ntheorem statement.\n\n# 7\n## Feedback Vertex Set\n\nFirst we describe the extension variant of Feedback Vertex Set\n\nFeedback Vertex Set Extension\nInput:\nA graph G = (V, E), vertex subset X ⊆V and an integer k\nQuestion:\nDoes there exist subset S ⊆V \\X such that S ∪X is a FVS and |S| ≤k?\n\nInstead of directly ﬁnding the feedback vertex set in a graph, we present algorithm mif(G, F, k)\n[6] which computes for a given graph G and an acylic set F the maximum size of an induced forest\nF ′ containing F with |F ′| ≥n −k. This means that G −F is a minimal feedback vertex set of\nsize at most k. This algorithm can easily be turned into an algorithm computing at least one such\nset.\n\nDuring the execution of mif one vertex t ∈F is called an active vertex. Algorithm mif then\nbranches on a chosen neighbor of t. Let v ∈N(t). Let k be the set of all vertices of F\\{t} that\nare adjacent to v and parameter k which represents a bound on the size of the feedback vertex\nset.\n\nAs well as describing the algorithm we simultaneously perform the running time analysis which\nuses the Measure and Conquer framework and Lemma 11 at its core.\n\nLemma 11. [10] Let A be an algorithm for a problem P, B be an algorithm for a class C of\ninstances of P, c ≥0 and r > 1 be constants, and µ(·), µB(·), η(·) be measures for P, such that\nfor any input instance I from C, µB(·) ≤µ(I), and for any input instance I, A either solves\nP on I ∈C by invoking B with running time O(η(I)c+1rµB(I)), or reduces I to k instances\nI1, ..., Ik, solves these recursively, and combines their solutions to solve I, using time O(η(I)c) for\nthe reduction and combination steps (but not the recursive solves),\n(∀i)\nη(Ii) ≤η(I) −1,\nand\nk\nX\ni=1\nrµ(Ii) ≤rµ(I).\n(5)\n\nThen A solves any instance I in time O(η(I)c+1rµ(I)).\n\nBranching constraints of the form Pj\ni=1 2−δi ≤1 are given as branching vectors (δ1, ..., δj).\n\n### 7.0.1\n#### Measure\n\nTo upper bound the exponential time complexity of the algorithm mif we use the measure\nµ = |N(t)\\F|w1 + |V \\(F ∪N(t))|w2 + k · wk.\n\nIn other words, each vertex in F has weight 0, each vertex in N(t) has weight w1, each other\nvertex has weight w2 and each unit of budget for the feedback vertex set has weight wk, in the\nmeasure with an active vertex t.\n\n<<page 9>>\n### 7.0.2\n#### Algorithm\n\nThe description of mif consists of a sequence of cases and subcases. The ﬁrst case which applies\nis used, and inside a given case the hypotheses of all previous cases are assumed to be false.\nPreprocessing procedures come before main procedures.\n\nPreprocessing\n\n1. If G consists of j ≥2 connected components G1, G2, ..., Gj, then the algorithm is called on\neach component. For Fi = Gi ∩F for all i ∈{1, 2, ..., j} and Pj\ni=1 ki ≤k then\nmif(G, F, k) =\nj\nX\ni=1\nmif(Gi, Fi, ki)\n\n2. If F is not independent, then apply operation Id∗(T, vT ) on an arbitrary non-trivial compo-\nnent T of F. If T contains the active vertex then vT becomes active. Let G′ be the resulting\ngraph and let F ′ be the set of vertices of G′ obtained from F. Then\nmif(G, F, k) = mif(G′, F ′, k) + |T | −1\n\nMain Procedures\n\n1. If k < 0 then\nmif(G, F, k) = 0.\n\n2. If F = ∅and ∆(G) ≤1 then MG(F) = {V } and\nmif(G, F, k) = |V |.\n\n3. If F = ∅and ∆(G) ≥2 then the algorithm chooses a vertex t ∈G of degree at least 2. Then\nt is either contained in a maximum induced forest or not. The algorithm branches on two\nsubproblems and returns the maximum:\nmif(G, F, k) = max{mif(G, F ∪{t}, k), mif(G\\{t}, F, k −1)}.\n\nThe ﬁrst branch reduces the weight of t to zero, as it is in F, and at least 2 neighbors have a\nreduced degree from w2 to w1. In the second branch we remove t from the graph, meaning\nit will be in the feedback vertex set. We thus also gain a reduction of wk in the measure.\nHence this rule induces the branching constraint\n(w2 + 2(w2 −w1), w2 + wk).\n\n4. If F contains no active vertex then choose an arbitrary vertex t ∈F as an active vertex.\nDenote the active vertex by t from now on.\n\n5. If V \\F = N(t) then the algorithm constructs the graph H from Proposition 2.2 and com-\nputes a maximum independent set I in G of maximum size n −k. Then\nmif(G, F, k) = |F| + |I|.\n\n6. If there is v ∈N(t) with gd(v) ≤1 then add v to F.\nmif(G, F, k) = mif(G, F ∪{v}, k).\n\n<<page 10>>\n7. If there is v ∈N(t) with gd(v) ≥4 then either add v to F or remove v from G.\nmif(G, F, k) = max{mif(G, F ∪{v}, k), mif(G\\{v}, F, k −1)}.\n\nThe ﬁrst case adds v to F reducing the measure by w1, and a minimum of 4(w2 −w1) for\neach of the generalized neighbors. The other case removes v this decreasing the measure by\nwk. Hence this rule induces the branching constraint\n(w1 + 4(w2 −w1), w1 + wk).\n\n8. If there is v ∈N(t) with gd(v) = 2 then denote its generalized neighbors by u1 and u2.\nEither add v to F or remove v from G but add u1 and u2 to F. If adding u1 and u2 to F\ninduces a cycle, we just ignore the last branch.\nmif(G, F, k) = max{mif(G, F ∪{v}, k), mif(G\\{v}, F ∪{u1, u2}, k −1)}.\n\nLet i ∈{0, 1, 2} be the number of vertices adjacent to v with weight w2. The ﬁrst case\nadds v to F, and hence all i w2-weight neighbors of v reduce to w1, and the other 2 −i\nvertices of weight w1 induce a cycle, hence we remove them from G and reduce the measure\nby (2 −i)wk. The second case removes v and adds both u1 and u2 to F. This causes a\nreduction of iw2 for the relevant vertices and (2 −i)w1 for the other vertices, and a single\nwk reduction due to the removal of v. This rule induces the branching constraint\n(w1 + i(w2 −w1) + (2 −i)w1 + (2 −i)wk, w1 + iw2 + (2 −i)w1 + wk).\n\n9. If all vertices in N(t) have exactly three generalized neighbors then at least one of these\nvertices must have a generalized neighbor outside N(t), since the graph is connected and the\ncondition of the case Main 6 does not hold. Denote such a vertex by v and its generalized\nneighbors by u1, u2 and u3 in such a way that u1 ̸∈N(t). Then we either add v to F; or\nremove v from G but add u1 to F; or remove v and u1 from G and add u2 and u3 to F.\nSimilar to the previous case, if adding u2 and u3 to F induces a cycle, we just ignore the\nlast branch.\nmif(G, F) = max{mif(G, F ∪{v}, k), mif(G\\{v}, F ∪{u1}, k −1),\nmif(G\\{v, u1}, F ∪{u2, u3}, k −2)}.\n\nLet i ∈{1, 2, 3} be the number of vertices adjacent to v with weight w2. The ﬁrst and\nlast cases are analogous to the analysis done in Main 8. The second case removes v from\nthe forest hence adding it to the minimum feedback vertex set and reducing the measure\nby w1 + wk. A reduction of w2 is gained by adding u1 to F. Then this rule induces the\nbranching constraint\n(w1 + i(w2 −w1) + (3 −i)w1 + (3 −i)wk, w1 + w2 + wk, w1 + iw2 + (3 −i)w1 + 2wk).\n\n### 7.0.3\n#### Results\n\nTheorem 12. Let G be a graph on n vertices. Then a minimal feedback vertex set in G can be\nfound in time O(1.7117n).\n\nProof. Using the algorithm above along with the measure µ, the following values of weights can\nbe shown to satisfy all the branching vector constraints generated above.\nw1 = 0.2775\nw2 = 0.6250\nwk = 0.2680\n\nThese weights result in an upper bound for the running time of mif as O(1.5422n · 1.2041k) for\ncomputing a maximally induced forest of size a least n −k, and hence we have the running time\nfor Feedback Vertex Set Extension of O(1.5422n−|X| · 1.2041k). By Theorem 2 this results\nin a O(1.7117n) algorithm for computing a minimal feedback vertex set.\n\n<<page 11>>\n# 8\n## Minimal Vertex Covers\n\nTheorem 13. Let γ be a constant with 0.169925 ≈2 log2 3 −3 ≤γ ≤1. For every n ≥k ≥0,\nand every graph G on n vertices, the number of minimal vertex covers of size at most k of G is\nat most 2βn+γk, where β = (1 −γ)/2.\n\nProof. The proof is by induction on n. For the base case, a graph on at most one vertex has one\nminimal vertex cover – the empty set – and 2βn+γk ≥1 since βn + γk ≥0.\n\nSuppose the statement holds for graphs with fewer than n vertices. We will repeatedly use\nthe observation that for every vertex v, no minimal vertex cover of G contains N[v]. Let v be a\nvertex of minimum degree in G.\n\nIf v has degree 0, then no minimal vertex cover contains v. Thus, G has as many minimal\nvertex covers as G −v. The number of minimal vertex covers of G is therefore upper bounded by\n2β(n−1)+γk ≤2βn+γk.\n\nIf v has degree 1, then every minimal vertex cover either excludes v but includes its neighbor\nu, or it includes v but excludes u. The number of minimal vertex covers of G is therefore upper\nbounded by\n2 · 2β(n−2)+γ(k−1) ≤2βn+γk−(2β+γ)+1 = 2βn+γk\nsince 2β + γ = 1.\n\nIf v has degree 2, then every minimal vertex cover excludes a vertex among N[v], but includes\nits neighbors who all have degree at least 2. The number of minimal vertex covers of G is therefore\nupper bounded by\n3 · 2β(n−3)+γ(k−2) ≤2βn+γk−(3β+2γ)+log2 3 ≤2βn+γk\nsince 3β + 2γ = 3+γ\n2\n≥log2 3.\n\nIf v has degree at least 3, every minimal vertex cover includes v or excludes v but includes all\nits neighbors. The number of minimal vertex covers of G is therefore upper bounded by\n2β(n−1)+γ(k−1) + 2β(n−4)+γ(k−3) ≤2βn+γk · (2−β−γ + 2−4β−3γ)\n= 2βn+γk · (2−1+γ\n2\n+ 2−2−γ) ≤2βn+γk\nsince 2−1+γ\n2\n+ 2−2−γ ≤0.89.\n\nThe upper bound of Theorem 13 is tight for every γ within the constraints of the theorem, as\nshown by 1-regular graphs with k = n/2. For γ = 2 log2 3 −3, the disjoint union of triangles also\nmatches the upper bound for k = 2n/3.\n\nWe note that the proof of Theorem 13 can easily be turned into an algorithm enumerating\nall minimal vertex covers of G in time 2βn+γknO(1). Alternatively, a polynomial-delay algorithm,\nsuch as the one by [12], could be used for the enumeration.\n\n# 9\n## Minimal Feedback Vertex Sets\n\nIn this section, we apply our framework to enumerating all minimal feedback vertex sets of an\nundirected graph on n vertices. We will modify the algorithm from [6], and conduct a multivariate\nbranching analysis. When combined with Theorem 4 we obtain an algorithm for enumerating all\nminimal feedback vertex sets in time O(1.8527n).\n\n### 9.1\n#### Measure\n\nFollowing [6], we show that for any acyclic subset F of G = (V, E), |MG(∅)| ≤O(1.8527n). We\nassume F is independent by Proposition 2.1. For a graph G, an independent set F, and an active\nvertex t ∈F, we use the measure:\nµ(G, F, t) = |A|α1 + |N(t)\\(F ∪A)|α2 + |V \\(F ∪N(t))|wβ + k · wk\n\n<<page 12>>\nwhere the set A ⊆N(t)\\F consists of vertices which have generalized degree at least 3. We apply\npositive weights α1, α2 and wβ to the three sets deﬁned, with 0 ≤α1 ≤α2 ≤wβ. A weight of wk\nis applied to the each vertex in the feedback vertex set.\n\n### 9.2\n#### Algorithm\n\nSimilar to Feedback Vertex Set in Subsection 7, we perform an algorithm description and a\nrunning time analysis using a Measure and Conquer framework simultaneously.\n\nLet f(G, F, k) = |MG(F)| be the number of maximal induced forests containing F of size at\nleast n −k. Let f(µ, k) be a maximum f(G, F, k) among all four-tuples (G, F, t, k) of measure at\nmost µ.\n\nFor the algorithm denote t ∈F to be the active vertex. If F ̸= ∅contains no active vertex then\nwe choose an arbitrary vertex as active, reducing the measure.\n\nCases\n\n1. If k < 0 then f(G, F, k) = 0.\n\n2. If k = 0 then f(G, F, k) = 1 if G = F otherwise f(G, F, k) = 0.\n\n3. F = ∅. If ∆(G) ≤1 then MG(F) = {V } so f(G, F, k) = 1. Otherwise choose an active\nvertex t ∈V of degree at least 2. Every maximal forest either contains t or does not, meaning\nthat the number of maximal forests is\nf(G, {t}, k) + f(G\\{t}, ∅, k −1)\nwhich results in the branching vector\n(wβ + 2(wβ −α2), wβ + wk).\n\nFrom now on, denote t ∈F as the active vertex.\nLet Gt = (Vt, Et) be the connected\ncomponent of G which contains t.\n\n4. Vt\\F = N(t). By Proposition 2.2, f(µ, k) is equal to the number of maximal independent\nsets in the graph H of size at least n −k. By Theorem 13, we have an upper bound on the\nnumber of minimal vertex covers of size at most k giving us an upper bound also on the\nmaximal independent sets of size at least n −k. We ensure that this computation is not\nworse than that of enumerating feedback vertex sets.\nf(µ, k) ≤2βn+γk ≤2µ\nfor 2 log2 3 −3 ≤γ ≤1 and β = (1 −γ)/2.\n\n5. gd(v) = 0. In this case every forest X ∈MG(F) contains v thus\nf(G, F, k) = f(G, F ∪{c}, k)\nwhich does not induce a branching vector.\n\nFrom this point on, pick a vertex v ∈N(t). If there is no such vertex then t is no longer an\nactive vertex and if F ̸= ∅then we choose an arbitrary vertex in F as active.\n\n6. gd(v) = 1. In this case every forest X ∈MG(F) either contains v or does not contain v\nand contains its generalized neighbor u. This means that the number of maximal induced\nforests is at most\nf(G, F ∪{v}, k) + f(G\\{v}, F ∪{u}, k −1).\n\nIf we have that u ∈N(t), in the worst case we have the branching vector\n(α2 + (α1 + wk), α2 + α1 + wk)\notherwise if u ̸∈N(t) we have the branching vector\n(α2 + (wβ −α2), α2 + wβ + wk).\n\n<<page 13>>\n7. gd(v) = 2. Denote the generalized neighbors of v by u1 and u2, and assume that u1 ̸∈N(t).\nIf u2 ∈N(t) and v belongs to a maximal induced forest X then u2 does not belong to X.\nThen every forest X from MG(F) satisﬁes one of the following conditions:\n\n• either X contains v, but not u2,\n• or X does not contain v, and contains u1,\n• or X does not contain v and u1 but contains u2.\n\nSo the number of maximal forests is at most\nf(G\\{u2}, F ∪{v}, k) + f(G\\{v}, F ∪{u1}, k −1) + f(G\\{v, u1}, F ∪{u2}, k −2).\n\nIn the worst case, where u2 has weight α1, then this results in the branching vector\n(α2 + (wβ −α2) + α1 + wk, α2 + wβ + wk, α2 + wβ + α1 + 2wk).\n\nHowever, if u1, u2 ̸∈N(t), assume gd(u1) ≤gd(u2). If not, swap u1 and u2. We consider new\nsubcases and rules based on d(u1), the generalized degree of the vertex, and the structure\nof the local graph near the vertex u1. If gd(u1) = 2, let x1 and x2 be the two generalized\nneighbors of u1.\n\nThe weights of v, u1, u2 are α2, wβ, wβ respectively. We also note that when v is selected, u1\nand u2, if not removed from the graph or already considered in the branching analysis, will\nresult in a reduction in measure of at least (wβ −α2) for each of u1 and u2. The branching\nanalysis below has diﬀerent weights for x1 and x2 depending on the subcase of the algorithm\nwhich is applied.\n\n(a) gd(u1) = 0. Since every maximal forest X ∈MG(F) will contain u1, then f(G, F, k) =\nf(G, F ∪{u1}, k). This does not induce a branching vector.\n\n(b) gd(u1) = 1. Let the generalized neighbor of u1 be x. Then every forest X from MG(F)\nsatisﬁes one of the following conditions:\n\n• either X contains v;\n• or X does not contain v but contains u1;\n• or X does not contain v and u1 but contains u2 and x\n\nwhich means the number of maximal induced forests is at most\nf(G, F ∪{v}, k) + f(G\\{v}, F ∪{u1}, k −1) + f(G\\{v, u1}, F ∪{u2, x}, k −2)\nwhich with worst case weights will induce the branching vector\n(α2 + 2(wβ −α2), α2 + wβ + wk, α2 + 2wβ + 2wk + α1).\n\n(c) gd(u1) = 2, x1 ∈N(t) and x1 is generalized neighbor of u1 and u2. If swapping x1\nand x2 results in this case occurring, then do so. Then every forest X from MG(F)\nsatisﬁes one of the following conditions:\n\n• either X contains v and x1, but does not contain u1 and u2;\n• or X contains v and not x1;\n• orX does not contain v and contains u1;\n• orX does not contain v and u1 but contains u2.\n\nThis means that the number of maximal induced forests is at most\nf(G\\{u1, u2}, F ∪{v, x1}, k −2)+f(G\\{x1}, F ∪{v}, k −1)+\nf(G\\{v}, F ∪{u1}, k −1)+f(G\\{v, u1}, F ∪{u2}, k −2).\n\nSince it is possible that x1 has weight α1 then in the worst case then this results in the\nbranching vector\n(α2 + α1 + 2wβ + 2wk, α2 + 2(wβ −α2) + α1 + wk, α2 + wβ + wk, α2 + 2wβ + 2wk).\n\n<<page 14>>\n(d) gd(u1) = 2, x1 ∈N(t) and x2 ∈N(t). hen every forest X from MG(F) satisﬁes one of\nthe following conditions:\n\n• either X contains v and u1, but does not contain x1 and x2;\n• or X contains v and not u1;\n• or X does not contain v and contains u1;\n• or X does not contain v and u1 but contains u2.\n\nThis means that the number of maximal induced forests is at most\nf(G\\{x1, x2}, F ∪{v, u1}, k −2)+f(G\\{u1}, F ∪{v}, k −1)+\nf(G\\{v}, F ∪{u1}, k −1)+f(G\\{v, u1}, F ∪{u2}, k −2).\n\nIn the worst case we have x1, x2 obtaining a weight of α1, the branching vector is\n(α2+wβ +2α1+2wk+(wβ−α2), α2+wβ+wk+(wβ−α2), α2+wβ +wk, α2+2wβ+2wk).\n\n(e) gd(u1) = 2, and previous subcases do not apply. At least one of x1 and x2 has weight\nwβ otherwise we would be in case (d). Let x1 have weight wβ, and if not we can swap\nx1 and x2. Then every forest X from MG(F) satisﬁes one of the following conditions:\n\n• either X contains v;\n• or X does not contain v and contains u1;\n• or X does not contain v and u1 but contains u2 and x1;\n• or X does not contain v, u1 and x1 but contains u2 and x2.\n\nThe number of maximal induced forests is thus at most\nf(G, F ∪{v}, k) + f(G\\{v}, F ∪{u1}, k −1)+\nf(G\\{v, u1}, F ∪{u2, x1}, k −2) + f(G\\{v, u1, x1}, F ∪{u2, x2}, k −3).\n\nWe now consider the weight of x2, which is only ever selected into the forest. If x2 is\nof weight wβ the measure reduces by wβ. If x2 is of weight α2 since x2 doesn’t have\nboth u1 and u2 as generalized neighbors due to case (c), in the worst case when x2 is\nselected we also obtain a (wβ −α2) reduction. If x2 is of weight α1, we now have at\nleast 2 unaccounted generalized neighbors which obtain a 2(wβ −α2) reduction.\n\nWe induce the following constraints to simplify the analysis so that in the worst case,\nwe obtain a reduction of wβ whenever x2 is selected\nwβ ≤α1 + 2(wβ −α2) and wβ ≤α2 + (wβ −α2)\nwhich results in the branching vector\n(α2 + 2(wβ −α2), α2 + wβ + wk, α2 + 3wβ + 2wk, α2 + 4wβ + 3wk).\n\n(f) gd(u1) ≥3. This means that gd(u2) ≥3 as well. hen every forest X from MG(F)\nsatisﬁes one of the following conditions:\n\n• either X contains v;\n• or X does not contain v and contains u1;\n• or X does not contain v and u1 but contains u2.\n\nThis means the number of maximal induced forests is at most\nf(G, F ∪{v}, k) + f(G\\{v}, F ∪{u1}, k −1) + f(G\\{v, u1}, F ∪{u2}, k −2).\n\nSince both u1 and u2 are generalized neighbors of v with gd ≥3 meaning they both\nobtain a weight of α1 when v is selected into the forest X. This establishes the branching\nvector\n(α2 + 2(wβ −α1), α2 + wβ + wk, α2 + 2wβ + 2wk).\n\n<<page 15>>\n8. gd(v) = 3. Denote the generalized neighbors of v by u1, u2 and u3 according to the rule that\nuj ̸∈N(t) and uk ∈N(t) if and only if j < k.\n\nLet i be the number of generalized neighbors of v that are not adjacent to t. For i = 1, 2 we\nhave that every forest X from MG(F) satisﬁes one of the following conditions:\n\n• either X contains v;\n• or X does not contain v\n\nmeaning the number of maximal induced forests is at most\nf(G, F ∪{v}, k) + f(G\\{v}, F, k −1).\n\nEach of the 3 −i generalized neighbors which are a neighbor of t induces a cycle when v is\nselected so we instead remove the vertex. This results in the branching vector\n(α1 + i(wβ −α2) + (3 −i)(α2 + wk), α1 + wk).\n\nWhen i = 3 we take care of each case separately depending on the generalized degree of u1\nand the structure of its neighbors. Let gd(u1) ≤gd(u2) ≤gd(u3). If gd(u2) = 2 then let x1\nand x2 be the two generalized neighbors.\n\n(a) gd(u1) = 0.\nEvery maximal forest X ∈MG(F) will contain u1, so f(G, F, k) =\nf(G, F ∪{u1}, k). This doesn’t induce a branching vector.\n\n(b) gd(u1) = 1. Let x be the generalized neighbor of u1. Then every forest X from MG(F)\nsatisﬁes one fo the following conditions:\n\n• either X contains v;\n• or X does not contain v but contains u1;\n• or X does not contain v and u1 but contains x.\n\nThis means the number of maximal induced forests is at most\nf(G, F ∪{v}, k) + f(G\\{v}, F ∪{u1}, k −1) + f(G\\{v, u1}, F ∪{x}, k −2).\n\nSince x has weight at least α1, then this will induce the following branching vector\n(α1 + 3(wβ −α2), α1 + wβ + wk, 2α1 + wβ + 2wk).\n\n(c) gd(u1) = 2, x1 ∈N(t) and x1 is also a generalized neighbor of either u2 or u3 (or both).\nWe then have that every forest X from MG(F) satisﬁes one of the following conditions:\n\n• either X contains v and x1 but does not contain u1 and either u2 or u3 (or both);\n• or X contains v and does not contain x1;\n• or X does not contain v.\n\nThis means the number of maximal induced forests is at most\nf(G\\{u1, u2}, F ∪{v, x1}, k −2) + f(G\\{x1}, F ∪{v}, k −1) + f(G\\{v}, F, k −1).\n\nSince x1 is a neighbor of t, and was chosen instead of v, then this means that t has\nweight α1, and has 3 generalized neighbors, two of which are u1 and either u2 or\nu3.\n\nIf at least three generalized neighbors of x1 is u1, u2 and u3 we have a more\ndesirable branching, hence we assume that at most 2 generalized neighbors of v are\nalso generalized neighbors of x1. But since at least 1 generalized neighbor of x1 is not a\ngeneralized neighbor of v, then we gain at least a wβ −α2 reduction when x1 is chosen\ninto the forest X.\n\nThis case results in the branching vector\n(α1 + (α1 + (wβ −α2)) + 2(wβ + wk), α1 + α1 + 3(wβ −α2) + wk, α1 + wk)\n\n<<page 16>>\n(d) gd(u1) = 2, and x1 ∈N(t) and x2 ∈N(t). We note that due to previous cases, x1 and\nx2 are only generalized neighbors of u1 and not u2 or u3. Then every forest X from\nMG(F) satisﬁes one of the following conditions:\n\n• either X contains v and u1 but not x1 and x2;\n• or X contains v but not u1;\n• or X does not contain v.\n\nThis means the number of maximal induced forests is at most\nf(G\\{x1, x2}, F ∪{v, u1}, k −2) + f(G\\{u1}, F ∪{v}, k −1) + f(G\\{v}, F, k −1).\n\nIn the ﬁrst case, selecting v of weight α1 also reduces the measure by 2(wβ −α2), one\nfor each of u2 and u3. Selection of u1 reduces the measure by α2 and removing x1 and\nx2 results in a reduction of at least 2(α1 + wk). The second case also selects v, but\nremoves u1 for a measure decrease of wβ + wk. The third case just removes v, for a\ntotal decrease of α1 + wk. which results in the branching vector\n(α1 + 2(wβ −α2) + wβ + 2(α1 + wk), α1 + 2(wβ −α2) + wβ + wk, α1 + wk).\n\n(e) gd(u1) = 2, and previous subcases don’t apply. At least one of x1 and x2 has weight\nwβ otherwise we would be in case (b). Let x1 has weight wβ. Then every forest X from\nMG(F) satisﬁes one of the following conditions:\n\n• either X contains v;\n• or X does not contain v but contains u1;\n• or X does not contain v and u1 but contains u2 and x1;\n• or X does not contain v, u1 and x1 but contains u2 and x2;\n• or X does not contain v, u1 and u2 but contains u3 and x1;\n• or X does not contain v, u1, u2 and x1 but contains u3 and x2.\n\nNow we consider the weight of x2, which is only ever selected into the forest. In these\ncases, if x2 has weight wβ we simply reduce the measure by wβ. Now x2 cannot has\nweight α1 since case 6 did not occur. So if x2 is of weight α1, it has at least 3 generalized\nneighbors of which only 1 is u1 and u2 and u3, are not generalized neighbors of x2. This\nmeans that when x1 is selected into the forest X we have another 2 (wβ −α2) reductions\nin the worst case.\n\nTo simplify our analysis into a single branching vector, we enforce that the wβ weight\nreduction is the worst case\nwβ ≤α1 + 2(wβ −α2).\n\nThis eﬀectively means that if vertex x2 is ever selected, then in the worst case there is\na reduction of measure of at least wβ. We thus obtain the branching vector\n(α1 + 3(wβ −α2), α1 + wβ + wk, α1 + 3wβ + 2wk,\nα1 + 4wβ + 3wk, α1 + 4wβ + 3wk, α1 + 5wβ + 4wk).\n\n(f) gd(u1) ≥3. Every forest X from MG(F) satisﬁes one of the following conditions\n\n• either X contains v\n• or X does not contain v.\n\nThis means the number of maximal induced forests is at most\nf(G, F ∪{v}, k) + f(G\\{v}, F, k −1).\n\nSince all of ui for i = 1, 2, 3 have at least 3 generalized neighbors, then we obtain the\nbranching vector\n(α1 + 3(wβ −α1), α1 + wk).\n\n<<page 17>>\n9. gd(v) ≥4. Every forest X from MG(F) either contains v or doesn’t contain v. Hence the\nnumber of forests is upper bounded by\nf(G, F ∪{v}, k) + f(G\\{v}, F, k −1)\nwhich results in the branching vector\n(α1 + 4(wβ −α2), α1 + wk).\n\n### 9.3\n#### Results\n\nTheorem 14. For a graph G with n vertices, all minimal feedback vertex sets can be enumerated\nin time O(1.8527n).\n\nProof. We evaluate the running time of the proposed algorithm above using the stated measure\nµ. It can be shown that the weights\nα1 = 0.4506859777,\nα2 = 0.4233244855,\nwβ = 0.7809613776,\nwk = 0.2081356098,\nsatisfy all stated branching factors and constraints necessary. The number of maximal induced\nforests containing F of size at least n −k is upper bounded by\nf(µ, k) ≤2wβ · 2wk ≤1.7183n1.1552k\n\nThis results in a O(1.7183n1.1552k) algorithm for enumerating the maximal induced forests of size\nat least n −k, and also enumerating minimal feedback vertex sets of size k. Consider now the\nenumeration of the collection\nFk\nI,X = {S ⊆V \\X : |S| = k and S ∪X is a minimal FVS}.\n\nBy running the new algorithm just described on the subgraph G[V \\X] that remains after removing\nthe vertices of X, we enumerate all minimal feedback vertex sets of size k in time 1.7183n·1.1552k·\nN O(1).\nFor every minimal feedback vertex set S that was just enumerated, we can check in\npolynomial time if S ∪X is also a minimal feedback vertex set. This means that the collection\nFk\nI,X can thus also be enumerated in time 1.7183n−|X| · 1.1552k · N O(1). Combined with Theorem\n4 this results in a O(1.8527n) deterministic algorithm for the number of minimal feedback vertex\nsets in a graph G.\n\n# 10\n## Minimal Hitting Sets\n\nBased on [2] we once again apply a multivariate analysis to enumerating all minimal hitting sets\non a hypergraph of rank 3.\n\n### 10.1\n#### Measure\n\nWe conduct a new analysis using the algorithm described in [2], by ﬁrst deriving a similar measure.\nLet H be a hypergraph of rank 3 and k be an upper bound on the size of the hitting set S ⊆V .\nDenote by ni the number of vertices of degree i ∈N and mi the number of hyperedges of size\ni ∈{0, ..., 3}. Also denote m≤i := Pi\nj=0 mj. Then a measure for H and a given k is\nµ(H, k) = Ψ(m≤2) +\n∞\nX\ni=0\nwini + wk · k\nwhere Ψ : N →R≥0 is a non-increasing non-negative function independent of n, and ωi are\nnon-negative reals. Clearly µ(H, k) ≥0.\n\nWe make the same simplifying assumptions as [2] which provides the constraints\nωi := ω5,\nΨ(i) := 0\nfor each i ≥6\n(6)\n∆ωi := ωi −ωi−1,\n∆Ψ(i) := Ψ(i) −Ψ(i −1)\nfor each i ≥1\n(7)\n0 ≤δωi+1 ≤∆ωi,\nand 0 ≥∆Ψ(i + 1) ≥∆Ψ(i)\nfor each i ≥1\n(8)\n\n<<page 18>>\nFurther branching rules will add constraints on the measure. Denote T (µ) := 2µ as an upper\nbound on the number of leaves of the search tree modelling the recursive algorithm for all H with\nµ(H) ≤µ.\n\n### 10.2\n#### Analysis\n\nTheorem 15. For a hypergraph H with n vertices and rank 3, all minimal hitting sets can be\nenumerated in time O(1.6627n).\n\nProof. We follow the algorithm and rules from [2], but adding an additional weight wk to the\ndecrease in measure every time a vertex is to be selected into S, the partial hitting set for the\nhypergraph H. This is applied across all cases and constraints as outlined in the algorithm. All\nconstraints are satisﬁed with the given weights for the measure µ.\n\ni\nωi\nΨ(i)\n0\n0\n0.597858842\n1\n0.506736167\n0.396229959\n2\n0.582087585\n0.238416719\n3\n0.595274776\n0.094238670\n4\n0.597858842\n0.030265172\n5\n0.597858842\n0.004148530\n6\n0.597858842\n0\nwk = 0.2330535427\n\nThe number of leaves in the search tree is upper bounded T (µ) ≤2w6·n+wk·k. These weights result\nin a multivariate running time of O(1.5135n ·1.1754k) for enumerating minimal hitting sets of size\nat most k in rank 3 hypergraphs. Then the collection\nFk\nI,X = {S ⊆V \\X : |S| = k and S ∪X is a minimal 3-HS}\ncan be enumerated in time 1.5135n−|X| · 1.1754k · N O(1). Combined with Theorem 4 this results\nin an algorithm for enumerating minimal hitting sets in rank 3 hypergraphs in O(1.6627n).\n\n# 11\n## Conclusion\n\nThe main contribution of this paper is a framework allowing us to turn many bnckN O(1) time\nalgorithms for subset and subset enumeration problems into (1 + b −1\nc)nN O(1) time algorithms,\ngeneralizing a recent framework of Fomin et al. [5].\n\nThe main complications in using the framework are, ﬁrstly, that new algorithms or running-\ntime analyses are often needed, and, secondly, that such analyses need solutions to non-convex\nprograms in the Measure and Conquer framework. In the usual Measure and Conquer analyses\n[7],the objective is to upper bound a single variable (α) which upper bounds the exponential part\nof the running time (2αn) subject to convex constraints. Thus, it is suﬃcient to solve a convex\noptimization problem to minimize the running time [10, 11] resulting from the constraints derived\nfrom the analysis. Here, the objective function (2α −2−wk) is non-convex. While experimenting\nwith a range of solvers, either guaranteeing to ﬁnd a global optimum (slow and used for optimality\nchecks) or only a local optimum (faster and used mainly in the course of the algorithm design), we\nexperienced on one hand that the local optima found by solvers are often the global optimum, but\non the other hand that weakening non-tight constraints can sometimes lead to a better globally\noptimum solution.\n\n## Acknowledgments\n\nWe thank Daniel Lokshtanov, Fedor V. Fomin, and Saket Saurabh for\ndiscussions inspiring some of this work. Serge Gaspers is the recipient of an Australian Research\nCouncil (ARC) Future Fellowship (FT140100048) and acknowledges support under the ARC’s\nDiscovery Projects funding scheme (DP150101134).\n\n<<page 19>>\n## References\n\n[1] Jesper Makholm Byskov. Enumerating maximal independent sets with applications to graph\ncolouring. Oper. Res. Lett., 32(6):547–556, 2004.\n\n[2] Manfred Cochefert, Jean-Fran¸cois Couturier, Serge Gaspers, and Dieter Kratsch. Faster algo-\nrithms to enumerate hypergraph transversals. In Latin American Symposium on Theoretical\nInformatics, pages 306–318. Springer, 2016.\n\n[3] Rodney G Downey and Michael R Fellows. Fundamentals of parameterized complexity, vol-\nume 4. Springer, 2013.\n\n[4] David Eppstein. Small maximal independent sets and faster exact graph coloring. J. Graph\nAlgorithms Appl., 7(2):131–140, 2003.\n\n[5] Fedor V Fomin, Serge Gaspers, Daniel Lokshtanov, and Saket Saurabh. Exact algorithms\nvia monotone local search. In Proceedings of the 48th Annual ACM SIGACT Symposium on\nTheory of Computing (STOC 2016), pages 764–775. ACM, 2016.\n\n[6] Fedor V Fomin, Serge Gaspers, Artem V Pyatkin, and Igor Razgon. On the minimum feedback\nvertex set problem: Exact and enumeration algorithms. Algorithmica, 52(2):293–307, 2008.\n\n[7] Fedor V. Fomin, Fabrizio Grandoni, and Dieter Kratsch. A measure & conquer approach for\nthe analysis of exact algorithms. Journal of the ACM, 56(5), 2009.\n\n[8] Fedor V. Fomin and Dieter Kratsch. Exact Exponential Algorithms. Springer, 2010. An\nEATCS Series: Texts in Theoretical Computer Science.\n\n[9] Fedor V Fomin, Ioan Todinca, and Yngve Villanger. Large induced subgraphs via triangula-\ntions and cmso. SIAM Journal on Computing, 44(1):54–87, 2015.\n\n[10] Serge Gaspers. Exponential Time Algorithms - Structures, Measures, and Bounds. VDM,\n2010.\n\n[11] Serge Gaspers and Gregory B. Sorkin. A universally fastest algorithm for Max 2-Sat, Max\n2-CSP, and everything in between. Journal of Computer and System Sciences, 78(1):305–335,\n2012.\n\n[12] David S. Johnson, Christos H. Papadimitriou, and Mihalis Yannakakis. On generating all\nmaximal independent sets. Inf. Process. Lett., 27(3):119–123, 1988.\n\n[13] Igor Razgon. Exact computation of maximum induced forest. In Scandinavian Workshop on\nAlgorithm Theory, pages 160–171. Springer, 2006.\n\n[14] Mingyu Xiao and Hiroshi Nagamochi. Exact algorithms for maximum independent set. In\nInternational Symposium on Algorithms and Computation, pages 328–338. Springer, 2013.",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Exact Algorithms via Multivariate Subroutines",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Preliminaries",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Random Sampling and Multivariate Subroutines",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Derandomization",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Enumeration",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "7",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Feedback Vertex Set",
+   "page": 7,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "7.0.1",
+   "page": 7,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "Measure",
+   "page": 7,
+   "level": 4,
+   "parent": 16
+  },
+  {
+   "text": "7.0.2",
+   "page": 8,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "Algorithm",
+   "page": 8,
+   "level": 4,
+   "parent": 18
+  },
+  {
+   "text": "7.0.3",
+   "page": 9,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "Results",
+   "page": 9,
+   "level": 4,
+   "parent": 20
+  },
+  {
+   "text": "8",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Minimal Vertex Covers",
+   "page": 10,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "9",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Minimal Feedback Vertex Sets",
+   "page": 10,
+   "level": 2,
+   "parent": 24
+  },
+  {
+   "text": "9.1",
+   "page": 10,
+   "level": 3,
+   "parent": 25
+  },
+  {
+   "text": "Measure",
+   "page": 10,
+   "level": 4,
+   "parent": 26
+  },
+  {
+   "text": "9.2",
+   "page": 10,
+   "level": 3,
+   "parent": 25
+  },
+  {
+   "text": "Algorithm",
+   "page": 10,
+   "level": 4,
+   "parent": 28
+  },
+  {
+   "text": "9.3",
+   "page": 16,
+   "level": 3,
+   "parent": 25
+  },
+  {
+   "text": "Results",
+   "page": 16,
+   "level": 4,
+   "parent": 30
+  },
+  {
+   "text": "10",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Minimal Hitting Sets",
+   "page": 16,
+   "level": 2,
+   "parent": 32
+  },
+  {
+   "text": "10.1",
+   "page": 16,
+   "level": 3,
+   "parent": 33
+  },
+  {
+   "text": "Measure",
+   "page": 16,
+   "level": 4,
+   "parent": 34
+  },
+  {
+   "text": "10.2",
+   "page": 17,
+   "level": 3,
+   "parent": 33
+  },
+  {
+   "text": "Analysis",
+   "page": 17,
+   "level": 4,
+   "parent": 36
+  },
+  {
+   "text": "11",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusion",
+   "page": 17,
+   "level": 2,
+   "parent": 38
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 17,
+   "level": 2,
+   "parent": 38
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 2,
+   "parent": 38
+  }
+ ],
+ "seconds": 70.87027240000316,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 41,
+  "tp": 21,
+  "fp": 20,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 1,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "7.0.1",
+   "7.0.2",
+   "7.0.3",
+   "8",
+   "9",
+   "9.1",
+   "9.2",
+   "9.3",
+   "10",
+   "10.1",
+   "10.2",
+   "11",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 22,
+  "pred": 42,
+  "tp": 21,
+  "fp": 21,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.4883720930232558,
+  "unmatched_gt": [
+   "Cases"
+  ],
+  "unmatched_pred": [
+   "Exact Algorithms via Multivariate Subroutines",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "7.0.1",
+   "7.0.2",
+   "7.0.3",
+   "8",
+   "9",
+   "9.1",
+   "9.2",
+   "9.3",
+   "10",
+   "10.1",
+   "10.2",
+   "11",
+   "Acknowledgments"
+  ]
+ }
+}

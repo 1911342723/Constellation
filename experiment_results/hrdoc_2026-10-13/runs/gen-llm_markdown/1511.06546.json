@@ -1,0 +1,396 @@
+{
+ "doc": "1511.06546",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 25,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 21,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "extraction",
+   "ing data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8260869565217391,
+  "unmatched_gt": [
+   "extraction",
+   "ing data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Bayesian identification of bacterial strains from sequencing data",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    1
+   ],
+   [
+    "2 Materials and methods",
+    0,
+    1
+   ],
+   [
+    "2.1 Step 1: Reference strain selection and core genome extraction",
+    0,
+    2
+   ],
+   [
+    "2.2 Step 2: Strain abundance estimation",
+    0,
+    2
+   ],
+   [
+    "2.3 Abundance estimation model in detail",
+    0,
+    2
+   ],
+   [
+    "2.4 Generation of data for validation experiments",
+    0,
+    2
+   ],
+   [
+    "3 Results",
+    0,
+    1
+   ],
+   [
+    "3.1 Clustering and selection of strains",
+    0,
+    2
+   ],
+   [
+    "3.2 Identification of Staphylococcus strains from sequencing data",
+    0,
+    2
+   ],
+   [
+    "3.3 Estimation in the presence contaminant species",
+    0,
+    2
+   ],
+   [
+    "3.4 Estimation in the presence of unknown strain clusters",
+    0,
+    2
+   ],
+   [
+    "3.5 Estimation without clustering",
+    0,
+    2
+   ],
+   [
+    "3.6 Analysis of clinical samples",
+    0,
+    2
+   ],
+   [
+    "3.7 Runtime",
+    0,
+    2
+   ],
+   [
+    "4 Discussion",
+    0,
+    1
+   ],
+   [
+    "4.1 Interpretation of proportions and benchmarking",
+    0,
+    2
+   ],
+   [
+    "4.2 Applicability to different bacterial species",
+    0,
+    2
+   ],
+   [
+    "4.3 Relationship to transcript-level RNA-seq analysis",
+    0,
+    2
+   ],
+   [
+    "5 Conclusion",
+    0,
+    1
+   ],
+   [
+    "Acknowledgements",
+    0,
+    1
+   ],
+   [
+    "Funding",
+    0,
+    1
+   ],
+   [
+    "References",
+    0,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9754,
+   "completion_tokens": 8968
+  },
+  "elapsed_llm_seconds": 35.99565640000219,
+  "word_preservation": {
+   "recall": 0.9941294867494129,
+   "in_order": 0.9775243206977524,
+   "inserted": 0.003363040188330224
+  },
+  "output_markdown": "# Bayesian identification of bacterial strains from sequencing data\n\nAravind Sankar1, Brandon Malone1, Sion Bayliss2, Ben Pascoe3, Guillaume M´eric3, Matthew D. Hitchings3, Samuel K. Sheppard3, Edward J. Feil2, Jukka Corander4, and Antti Honkela1\n\n1Helsinki Institute for Information Technology HIIT, Department of Computer Science, University of Helsinki, Helsinki, Finland\n2Department of Biology and Biochemistry, University of Bath, United Kingdom\n3Institute of Life Sciences, College of Medicine, Swansea University, United Kingdom\n4Helsinki Institute for Information Technology HIIT, Department of Mathematics and Statistics, University of Helsinki, Helsinki, Finland\n\n## Abstract\n\nRapidly assaying the diversity of a bacterial species present in a sample obtained from a hospital patient or an evironmental source has become possible after recent technological advances in DNA sequencing. For several applications it is important to accurately identify the presence and estimate relative abundances of the target organisms from short sequence reads obtained from a sample. This task is particularly challenging when the set of interest includes very closely related organisms, such as different strains of pathogenic bacteria, which can vary considerably in terms of virulence, resistance and spread. Using advanced Bayesian statistical modelling and computation techniques we introduce a novel pipeline for bacterial identification that is shown to outperform the currently leading pipeline for this purpose. Our approach enables fast and accurate sequence-based identification of bacterial strains while using only modest computational resources. Hence it provides a useful tool for a wide spectrum of applications, including rapid clinical diagnostics to distinguish among closely related strains causing nosocomial infections. The software implementation is available at https://github.com/PROBIC/BIB.\n\n# 1 Introduction\n\nDifferent strains of pathogenic bacteria are known to often vary in terms of virulence, resistance and geographical spread (M´eric et al., 2015). Rapid and inexpensive sequence-based identification of the strain(s) colonising a patient would be highly desirable. Previous research shows that patients can often host several strains of specific Staphylococcus species (Ueta et al., 2007). The current approach is to isolate single colonies assuming that the sample is homogeneous. Here we consider an approach which allows a robust test of this assumption, and additionally, if there is diversity, an efficient means to compare similarities between whole host populations present in different individuals. Since single random colonies might be misleading, it is beneficial to allow for a more flexible approach where pooled colony data can be directly utlized.\n\nWith the growing tendency to routinely sequence samples from infected patients in the hospital environment, the identification would be additionally advantageous for pathogen surveillance and monitoring purposes without necessitating the use of extensive computational resources for de novo genome assembly. Moreover, samples with mixed presence of several strains are problematic for assembly-based analyses, which calls for alternative approaches.\n\nThe identification of bacteria from sequencing data has been widely considered in metagenomic community profiling (Segata et al., 2013; Franzosa et al., 2015). As our primary identification and estimation focus is at a much higher level of resolution than in typical metagenomics studies, whole genome or whole metagenome shotgun sequencing data is by definition a necessity for a successful implementation of a platform for this purpose. Typical metagenomic approaches for such data are based on defining a set of markers for each clade of interest (Segata et al., 2012; Sunagawa et al., 2013). However, these methods are typically not sensitive enough to identify the pathogens responsible for infections in sufficient detail. Eyre et al. (2013) present a method for detecting mixed infections but the method assumes there are at most two strains in each sample, which may not hold, in particular if a sample has become contaminated at any phase of the preparation and sequencing process. A Bayesian statistical method capable of using all the sequencing data was recently introduced (Francis et al., 2013; Hong et al., 2014), but also its practical performance may not be appropriate as suggested by our experiments.\n\nThe computational problem in bacterial strain identification is analogous to the widely studied transcript isoform expression estimation in RNA-sequencing (RNA-seq) data analysis, which both aim at identifying and quantifying the abundance of several closely related sequences from short read data. In both cases a significant fraction of reads will align perfectly to multiple sequences of interest. Several probabilistic models have been proposed for solving this problem (Xing et al., 2006; Jiang and Wong, 2009). Based on its success in recent assessments of methods for this problem (SEQC/MAQC-III Consortium, 2014; Kanitz et al., 2015), we use the BitSeq (Glaus et al., 2012; Hensman et al., 2015) method to obtain a fast and accurate solution to this problem in our Bayesian Identification of Bacteria (BIB) pipeline for bacterial strain identification from unassembled sequence reads.\n\nIn this paper we focus on Staphylococcus aureus and S. epidermidis, which represent two of the most widespread causes of nosocomial infections and impose considerable burden on the public health system worldwide (Harris et al., 2010; M´eric et al., 2015). Using a diverse collection of strains from these two species as a model system, we demonstrate that clinically relevant, fast and highly accurate identification of the strains colonising a patient is possible in less than 10 minutes on a standard single CPU desktop computer. Our BIB pipeline improves significantly upon the state-of-the-art approach for sequence based identification of bacteria.\n\n# 2 Materials and methods\n\nOur pipeline is built by a combination of the following two central ideas:\n\n1. defining core genomes of the target set of strains by excluding more variable regions to strengthen the analysis, and\n2. using a fast fully probabilistic method to estimate the relative frequencies of the target strains in a sample.\n\nThese ideas translate to two analysis steps:\n\nStep 1 Cluster the strains, perform multiple sequence alignment to find the strain-specific common core genome and construct an index for read alignment.\n\nStep 2 Align the reads to the reference core genomes allowing multiple matches and use a probabilistic method to estimate the strain abundances using the alignments.\n\nStep 1 only needs to be done once for each collection of reference sequences while Step 2 needs to be performed for every sample. The two steps will be detailed further below, followed by description of the synthetic data generation process and characterisation of the real data which are used for empirical evaluation and comparison against the leading alternative identification method.\n\n## 2.1 Step 1: Reference strain selection and core genome extraction\n\nWe demonstrate our pipeline on a collection of 30 S. aureus and 3 S. epiderimdis strains whose phylogenetic tree is illustrated in Fig. 1. The tree was constructed using UPGMA method with p-distance in the MEGA6 software (Tamura et al., 2013). The tree displays a natural partition with 13 S. aureus strain clusters, each of which corresponds to an already established clonal complex (Feil and Enright, 2004), while each S. epidermidis strain forms a cluster of its own, representing the three previously identified main complexes within the species (M´eric et al., 2015). The strains selected to represent each cluster are in bold in Fig. 1.\n\nMicrobial genomes are often highly dynamic and susceptible to horizontal gene transfer and translocation of genomic regions (Gogarten et al., 2002; Lawrence, 2002). As a consequence, mobile elements may confuse genome-based identification of strains. In order to avoid issues with misalignment of reads and incorrect abundance estimates, we discard the non-core parts of the reference genomes and use only core alignment, i.e. part of the genome shared by all strains of a species, as a basis for the analysis.\n\nA multiple sequence alignment for the 16 cluster prototype bacterial strains shown in bold in Fig. 1 was obtained using progressiveMauve (Darling et al., 2010). The accessory genome regions were detected and discarded using the standard settings, resulting in an ungapped core alignment which was used to represent the genomic variation in the target set of strains. These ungapped sequences are used to construct an index for read alignment.\n\n## 2.2 Step 2: Strain abundance estimation\n\nThe gapless core genomes extracted as described above were considered as the reference sequences in the BitSeq (Glaus et al., 2012; Hensman et al., 2015) method to estimate the relative proportion of each strain in our reference collection in a sample. We used Bowtie 2 (Langmead and Salzberg, 2012) to align the reads to the reference sequences allowing for multiple matches. We then used estimateVBExpression from BitSeq to estimate the relative proportions of each of the strains in the sequenced samples. Our full method pipeline is referred to as Bayesian Identification of Bacteria (BIB) in the remainder of the article.\n\n## 2.3 Abundance estimation model in detail\n\nThe statistical model for strain abundance estimation was based on a statistical model of sequencing data as a mixture of reads from a set of known reference sequences (Xing et al., 2006; Li et al., 2010). The relative proportions of the sequences are the unknown parameters θ. In our case the references were the core genomes of randomly selected representatives of each cluster. Reads not mapping to the core genomes were ignored.\n\nAfter introducing indicator variables In defining the sequence of origin of each read rn, the likelihood of a read rn (single or paired-end) p(rn|In = m) is defined in Eq. (1) of Glaus et al. (2012) and depends on the mismatches in the alignment as well as the length of the reference sequence. The position model was not used in BIB because it would be difficult to estimate with almost no unique alignments. We used a conjugate Dirichlet(α, . . . , α) prior over θ with α = 1. Smaller α would mean weaker regularisation, but α ≥1 is needed for log-concavity of the model which aids convergence.\n\nWe used fast collapsed variational inference to optimise an approximate posterior distribution over In after marginalising out θ (Hensman et al., 2012, 2015). The posterior distribution over the unknown proportions θ was obtained from these as in Hensman et al. (2015).\n\n## 2.4 Generation of data for validation experiments\n\nFor the primary set of experiments, each sample was created by randomly mixing the reads from a number of real single strain sequencing data sets described in Table 1 using fixed proportions. These data are obtained independently of the reference sequences used in the model and represent realistic sequencing data obtained from other strains in the same clusters. The data are available for download on Figshare1.\n\nTable 1: Sequencing data sets used to generate the mixed samples.\n\n| Species | Strain | Accession | Cluster |\n| --- | --- | --- | --- |\n| S. aureus | ST5 | ERR107800 | 5 |\n| S. aureus | ST8 | ERR107802 | 1 |\n| S. aureus | ST30 | ERR107794 | 11 |\n| S. epidermidis | TAW60 | dryad.85495 (M´eric et al., 2015) | 14 |\n| S. epidermidis | CV28 | dryad.85494 (M´eric et al., 2015) | 15 |\n| S. epidermidis | 1290N | dryad.85493 (M´eric et al., 2015) | 16 |\n| Bacillus subtilis |  | DRR008449 (Shiwa et al., 2013) | - |\n\nTo test more thoroughly the effect of dropped clusters in the presence of a more diverse representation of different strains, we additionally simulated reads using MetaSim (Richter et al., 2008).\n\n# 3 Results\n\nWe tested the BIB pipeline on several DNA sequencing data sets from Staphylococcus strains. We used two different types of data sets:\n\n1. data sets with artificial mixtures of genuine reads from single strain sequencing experiments, and\n2. synthetic data sets generated using MetaSim.\n\nWe report the results from our pipeline and compare against Pathoscope 2 (Francis et al., 2013; Hong et al., 2014) as well as naive estimation from strain frequencies among uniquely mapping reads. To ensure that the other methods can fully utilise the same information about the strains, we used the same read alignments as input to all methods, essentially only replacing the final abundance estimation step in our pipeline.\n\n## 3.1 Clustering and selection of strains\n\nThe strains used in the experiment and their phylogenetic relationships are illustrated in Fig. 1. The phylogenetic tree illustrates the clonal complex (CC) structure of the S. aureus population (Feil and Enright, 2004), where members of the same complex are highly similar and interchangeable in terms of strain identification (M´eric et al., 2015). Choosing one representative for each CC corresponds to the clustering illustrated in Fig. 1.\n\n1http://dx.doi.org/10.6084/m9.figshare.1617539\n\n0.02\nNewman\nJH9\nED98\nSS388_CV28\nVC40\nSa_04_02981\nMW2\nSa_11819_97\nECT-R_2\nUSA300_TCH1516\nNCTC8325\nTCH60\nHO5096\nJKD6008\nN315\nMRSA252\nM013\nCOL\nLGA251\nSS364_TAW60\nMu50\nJKD6159\nJH1\nTW20\nUSA300_FPR3757\nSa_71193\nST398\nED133\nMSSA476\nRF122\nSS402_1290N\nT0131\nMu3\ncluster\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n0.002\nVC40\nTCH60\nMSSA476\nRF122\nLGA251\nN315\nHO5096\nM013\nMRSA252\nNCTC8325\nSa_11819_97\nMu50\nT0131\nJH9\nJKD6159\nECT-R_2\nJH1\nJKD6008\nMW2\nST398\nTW20\nMu3\nSa_71193\nUSA300_FPR3757\nUSA300_TCH1516\nED98\nED133\nSa_04_02981\nNewman\nCOL\nFigure 1: Phylogenetic tree of the investigated Staphylococcus strains. Inset: Enlarged view of the S. aureus branch illustrating the clustering of the strains within clonal complexes. The scale measures base-level sequence dissimilarity, showing that the S. aureus clusters differ by approximately 2-10 substitutions every 1 kb while strains within each cluster differ by less than 1 substitution every 5 kb.\n\n## 3.2 Identification of Staphylococcus strains from sequencing data\n\nWe generated 30 synthetic mixtures of sequencing reads from different strains of Staphylococcus species as described and analysed these data sets using BIB. As a benchmark, we also tested the same identification and quantification using Pathoscope instead of BitSeq. Each analysed data set contained a mixture of 2-6 Staphylococcus strains. The number of reads varied between 1–3 million.\n\nStrain level identification is very difficult, as typically only around 0.1 − −0.2% of the reads map uniquely to the core genome. Full genome alignments produce more unique hits, but given the volatility of the accessory genome these are also likely to be more misleading.\n\nThe absolute errors in the abundance estimation in the experiments are illustrated in Fig. 2. We split our analysis to two cases: strains not present in the samples (true negatives) and strains that are present (true positives). All methods are reliable in identifying true negatives. For true positives, BIB consistently provides very accurate quantification (absolute errors mean ± standard deviation 0.014 ± 0.023) while Pathoscope and the naive unique mapping read analysis are significantly less accurate (Pathoscope absolute errors 0.11 ± 0.11, unique reads 0.14±0.12). BIB quantification results remain accurate all the way down to the least abundant strains which had only 3 % abundance in our data. A scatter-plot in Fig. 3 comparing the errors of BitSeq and Pathoscope by each experiment shows that BIB is essentially always more accurate than Pathoscope (p < 10−16; Wilcoxon signed rank test) and often by a wide margin.\n\nG\nG\nG\nGG\nG\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\nBIB\nPathoscope\nUnique\nBIB\nPathoscope\nUnique reads\nTrue positives\nMethod used\nAbsolute error\nG\nG\nGGGGG\nG\nG\nG\nG\nG\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\nBIB\nPathoscope\nUnique\nBIB\nPathoscope\nUnique reads\nTrue negatives\nMethod used\nAbsolute error\nFigure 2: Magnitudes of errors in proportion estimates of BIB, Pathoscope and naive estimation among uniquely mapping reads (Unique) in strains really present in the experiment (true positives; left) and those not present in the experiment (true negatives; right). The “Unique” method is implemented by simply computing the frequencies of different strain clusters among unique alignments. Lower values indicate better results.\n\n## 3.3 Estimation in the presence contaminant species\n\nThe alignment of reads to reference genomes makes BIB highly robust to contamination by unrelated species. We tested this by generating 10 of the samples with 3–30 % contamination from Bacillus subtilis subsp. subtilis str. 168. Full details of the experiments are given in Supplementary File 1. After filtering the non-aligning reads, which include most of the Bacillus reads, the estimation accuracy on Staphylococcus proportions is almost as good as with the uncontaminated samples, as illustrated in Fig. 4. The corresponding median errors are 0.002 for the uncontaminated samples and 0.01 for the contaminated samples, respectively. Addition of the contaminant reads is visible as a drop in the total rate of aligned reads, but given the significant and variable number of unmappable reads originating from the auxiliary genome the mapping rate is at best an unreliable measure of the contamination level.\n\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\nGG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nError in Pathoscope\nError in BIB\nG\nST5\nST8\nST30\nTAW60\nCV28\n1290N\nFigure 3: Scatter plot comparing the estimation errors of BIB and Pathoscope on true positives. Points below the diagonal are cases where BIB is more accurate while point above the diagonal are cases where Pathoscope is more accurate.\n\nGGG\nG\nG\nG\nG\nG\nGG\nGG\nBacillus contaminated\nUncontaminated\n0.05\n0.10\n0.15\nType of experiment\nError in prediction\nError in prediction with and without contaminants\nFigure 4: Comparison of errors in estimation of Staphylococcus proportions with and without Bacillus contamination. Errors on contaminated samples are slightly higher, but overall still very low.\n\n## 3.4 Estimation in the presence of unknown strain clusters\n\nWhen the reads of unknown origin stem from a species or strain related closely enough to allow for the reads aligning well to those included in the index, they tend to be assigned to the closest included reference strains. This is illustrated by two examples in Fig. 5. In the first example dropping Cluster 1 from the index causes the reads to get assigned to Cluster 2 which is in the evolutionary sense closest to Cluster 1 in the phylogenetic tree in Fig. 1. In the second example, dropping Cluster 13, results in the reads getting split more evenly among the available alternatives because the branch to Cluster 13 splits off from the rest very early.\n\n2\n4\n6\n8\n10\n12\n14\n16\n0.0\n0.3\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nCluster Number\nProportion\nActual Value\nObtained Value\nCluster 1 dropped − Strain present in experiment\n2\n4\n6\n8\n10\n12\n14\n16\n0.00\n0.20\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nCluster Number\nError\nDifference between Actual and Obtained value\n2\n4\n6\n8\n10\n12\n14\n16\n0.0\n0.3\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nCluster Number\nProportion\nActual Value\nObtained Value\nCluster 13 dropped − Strain present in experiment\n2\n4\n6\n8\n10\n12\n14\n16\n0.0\n0.3\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nCluster Number\nError\nDifference in actual and obtained value\nFigure 5: Two examples of error spectra when some strain clusters present in a sample are not included in the index. The plots show the profile of true and estimated proportions as well as the errors in the estimation. The lines will always show a bump at the dropped cluster index because they cannot be estimated.\n\n## 3.5 Estimation without clustering\n\nClustering of very similar strains when defining the reference set is an essential part of BIB. Fig. 6 shows a typical example of the consequences of excluding the clustering step. As seen, the contribution of a single cluster representative truly present in a sample tends to get split up between all strains representing the same cluster in the reference set as they are too similar to be differentiated. Furthermore, the method is unable to separate strains 1-9 belonging to Clusters 1 and 2, even though the two were usually properly separated in the experiments with clustering of the reference strains. This is most likely because the difference of using 6 or 9 strains to represent the data is not as substantial as the difference between 1 or 2 strain clusters where the clearly simpler model is able to drive the other coefficient to zero. It is likely that no statistical method would be able to truthfully resolve origins of reads when the sources are too similar to each other. Hence, it is of importance to ensure biological meaningfulness of the reference set of strains prior to the assignment analysis.\n\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nG\nStrain Number\nProportion\nActual Value\nObtained Value\nFigure 6: An example of error profile in strain abundance estimation without clustering. The vertical dotted lines indicate the borders between different clusters.\n\n## 3.6 Analysis of clinical samples\n\nTo illustrate the practical applicability of BIB we tested it on S. aureus short read data generated at the Wellcome Trust Sanger Institute as part of a Europe-wide surveillance project (“Genetic diversity in Staphylococcus aureus (European collection)” study), with kind permission from Matthew Holden. Initial analysis of these data revealed they were of poor quality, probably resulting from contamination, and for this reason they have not previously been published. All isolates were recovered from cases of invasive S. aureus disease. The estimated abundance profiles of selected samples are shown in Fig. 7. In top two isolates (ERR038357 and ERR038367) a single cluster is robustly identified (> 95% share for the dominant strain, all other shares < 1%) indicating that the level of contamination in these samples is low. In contrast, isolates ERR033658 and ERR033686 (rows 3 and 4) show clearer evidence of mixed clusters due to contamination. We also note that the cluster profiles are similar within these two samples, which is consistent with a single source of contamination for both runs. Isolate ERR038366 (bottom row) represents a completely failed sample, possibly caused by problems with sequence barcoding.\n\n## 3.7 Runtime\n\nFor a new sample, the pipeline requires running programs for read alignment (Bowtie 2) and abundance estimation (BitSeq being the core part of BIB). The time required by these two steps is approximately equal. A typical analysis of 1 M reads takes approximately 10 min on a single CPU desktop computer representing a standard level of hardware.\n\n# 4 Discussion\n\n## 4.1 Interpretation of proportions and benchmarking\n\nOur pipeline can estimate strain abundances as proportions of the sequencing reads. These would be expected to be related to the proportions of DNA from the different strains. Depending on the relative lengths of different genomes, this may deviate slightly from cell counts between species, but should be consistent within a species because we only consider the shared core genome of equal length. This kind of minor variations should not affect any practical applications.\n\nERR038366\nERR033686\nERR033658\nERR038367\nERR038357\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nFigure 7: Estimated cluster abundance profiles from diverse clinical samples. The two top rows represent clean samples where one cluster clearly dominates. Rows 3 and 4 represent contaminated samples where the true cluster can still be fairly reliably identified. The bottom row shows a completely failed sample, possibly due to problems with sequence barcoding.\n\nOur empirical evaluation is based solely on synthetic mixtures of sequencing reads from different single strain sequencing experiments. Such mixtures are necessary to enable accurate benchmarking of the methods. Because we use actual reads from various experiments they will not perfectly match the reference and thus represent a much more realistic test than synthetic reads generated from references. Experiments based on laboratory derived mixed cultures would add significant extra uncertainty because it is difficult to accurately control the strain proportions during the cultivation process.\n\n## 4.2 Applicability to different bacterial species\n\nThe main assumption behind our BIB method is that each putative biologically meaningful source is adequately represented by a single core genome sequence to which the reads can be mapped. As illustrated in this paper, this works with high fidelity for species like S. aureus whose population structure has clear well-separated lineages (M´eric et al., 2015). Preliminary experiments suggest the method may not work as well for species experiencing more frequent recombination. Extension of the work to such species is an important avenue of future work. The current state-of-the-art probabilistic identification method Pathoscope 2 (Francis et al., 2013; Hong et al., 2014) is essentially based on a similar assumption and is expected to be similarly vulnerable to strong deviations from the assumption. However, our experiments demonstrated that BIB delivers a considerably higher level of estimation accuracy without requiring more extensive computational resources.\n\nAs illustrated in the results of Fig. 6, clustering the strains is essential for accurate identification results. It is not surprising that distinguishing among multiple highly related strains is infeasible, however, it is more striking that clustering also aids identification of read origin between the more separated sources. We suspect this may be due to the prior used in the Bayesian model, but further work is needed to properly understand the phenomenon.\n\nIn transcript-level RNA-seq analysis clustering of similar transcripts has been suggested for improving the accuracy by Turro et al. (2014). Unlike our off-line clustering, their algorithm is run on-line together with the inference separately for every sample. Our approach can easily incorporate additional expert knowledge and guarantee consistent clustering making interpretation of the results more straightforward. This approach is expected to work especially well for any species that has a clear subpopulation boundaries, since every potentially mixed sample will correspondingly have a clearly delineable structure among its reads, apart from those representing contamination which can be efficiently filtered out by our pipeline.\n\n## 4.3 Relationship to transcript-level RNA-seq analysis\n\nThe underlying statistical problem in bacterial strain identification is the same as that underlying most transcript-level RNA-seq expression estimation methods: how to estimate the probability of a read originating from a given reference sequence. There exist a number of methods solving the same problem there including RSEM (Li et al., 2010; Li and Dewey, 2011), Cufflinks (Trapnell et al., 2010), Miso (Katz et al., 2010), BitSeq (Glaus et al., 2012; Hensman et al., 2015), TIGAR (Nariai et al., 2013, 2014), eXpress (Roberts and Pachter, 2013), Sailfish (Patro et al., 2014) and many others. These are all based on different inference methods applied to the same probabilistic model first proposed in (Xing et al., 2006). This is also essentially the same as the model used by Pathoscope (Francis et al., 2013; Hong et al., 2014). There are also a number of other RNA-seq analysis methods based on other models. We have chosen to use the fast variational Bayes (VB) version of BitSeq (Hensman et al., 2015) as core ingredient in BIB because it provides very high accuracy while being reasonably fast according to recent broad assessments (SEQC/MAQC-III Consortium, 2014; Kanitz et al., 2015).\n\n# 5 Conclusion\n\nIn this paper we have presented the BIB pipeline for probabilistic identification and quantification of relative abundance of bacterial strains in mixed samples from unassembled sequence data. The pipeline is based on alignment of reads to representative core genomes followed by deconvolution of multi-mapping reads using BitSeq, a method previously proposed for RNA-seq analysis. Our BIB pipeline can rapidly and reliably estimate the proportions of the reference strains with the typical deviance of at most a few percent units, using approximately 1 M sequencing reads. BIB improves significantly upon the accuracy of both naive analysis as well as previous state-of-the-art method in strain identification. Application of BIB to analyse clinical samples suggests it has significant potential both in strain identification as well as flagging problematic, such as contaminated, samples.\n\n# Acknowledgements\n\nSome of the data used in this study were provided by the Microorganism group at the Wellcome Trust Sanger Institute and can be obtained from the European Nucleotide Archive.\n\n# Funding\n\nThis work was supported by the Academy of Finland [259440 to A.H., 251170 to J.C.]; the European Research Council [239784 to J.C.]; and the Medical Research Council [MR/L015080/1 to S.K.S.].\n\n# References\n\nA. E. Darling, B. Mau, and N. T. Perna. progressiveMauve: multiple genome alignment with gene gain, loss and rearrangement. PLoS One, 5(6):e11147, 2010.\n\nD. W. Eyre, M. L. Cule, D. Griffiths, D. W. Crook, T. E. A. Peto, A. S. Walker, and D. J. Wilson. Detection of mixed infection from bacterial whole genome sequence data allows assessment of its role in Clostridium difficile transmission. PLoS Comput Biol, 9(5):e1003059, 2013.\n\nE. J. Feil and M. C. Enright. Analyses of clonality and the evolution of bacterial pathogens. Curr Opin Microbiol, 7(3):308–313, Jun 2004.\n\nO. E. Francis, M. Bendall, S. Manimaran, C. Hong, N. L. Clement, E. Castro-Nallar, Q. Snell, G. B. Schaalje, M. J. Clement, K. A. Crandall, and W. E. Johnson. Pathoscope: species identification and strain attribution with unassembled sequencing data. Genome Res, 23(10):1721–1729, Oct 2013.\n\nE. A. Franzosa, T. Hsu, A. Sirota-Madi, A. Shafquat, G. Abu-Ali, X. C. Morgan, and C. Huttenhower. Sequencing and beyond: integrating molecular ’omics’ for microbial community profiling. Nat Rev Microbiol, 13(6):360–372, Jun 2015.\n\nP. Glaus, A. Honkela, and M. Rattray. Identifying differentially expressed transcripts from RNA-seq data with biological variation. Bioinformatics, 28(13):1721–1728, 2012.\n\nJ. P. Gogarten, W. F. Doolittle, and J. G. Lawrence. Prokaryotic evolution in light of gene transfer. Mol Biol Evol, 19(12):2226–2238, Dec 2002.\n\nS. Harris, E. Feil, M. Holden, M. Quail, E. Nickerson, N. Chantratita, S. Gardete, A. Tavares, N. Day, J. Lindsay, J. Edgeworth, H. de Lencastre, J. Parkhill, S. Peacock, and S. Bentley. Evolution of MRSA during hospital transmission and intercontinental spread. Science, (327):469–474, 2010.\n\nJ. Hensman, M. Rattray, and N. D. Lawrence. Fast variational inference in the conjugate exponential family. In Advances in Neural Information Processing Systems (NIPS), 2012.\n\nJ. Hensman, P. Papastamoulis, P. Glaus, A. Honkela, and M. Rattray. Fast and accurate approximate inference of transcript expression from RNA-seq data. Bioinformatics, 31(24):3881–3889, Dec 2015.\n\nC. Hong, S. Manimaran, Y. Shen, J. F. Perez-Rogers, A. L. Byrd, E. Castro-Nallar, K. A. Crandall, and W. E. Johnson. PathoScope 2.0: a complete computational framework for strain identification in environmental or clinical sequencing samples. Microbiome, 2:33, 2014.\n\nH. Jiang and W. H. Wong. Statistical inferences for isoform expression in RNA-Seq. Bioinformatics, 25(8):1026–1032, Apr 2009.\n\nA. Kanitz, F. Gypas, A. J. Gruber, A. R. Gruber, G. Martin, and M. Zavolan. Comparative assessment of methods for the computational inference of transcript isoform abundance from RNA-seq data. Genome Biol, 16:150, 2015.\n\nY. Katz, E. T. Wang, E. M. Airoldi, and C. B. Burge. Analysis and design of RNA sequencing experiments for identifying isoform regulation. Nat Methods, 7(12):1009–1015, Dec 2010.\n\nB. Langmead and S. L. Salzberg. Fast gapped-read alignment with Bowtie 2. Nat Methods, 9(4):357–359, Apr 2012.\n\nJ. G. Lawrence. Gene transfer in bacteria: speciation without species? Theor Popul Biol, 61(4):449–460, Jun 2002.\n\nB. Li and C. N. Dewey. RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome. BMC Bioinformatics, 12:323, 2011.\n\nB. Li, V. Ruotti, R. M. Stewart, J. A. Thomson, and C. N. Dewey. RNA-Seq gene expression estimation with read mapping uncertainty. Bioinformatics, 26(4):493–500, 2010.\n\nG. M´eric, M. Miragaia, M. de Been, K. Yahara, B. Pascoe, L. Mageiros, J. Mikhail, L. G. Harris, T. S. Wilkinson, J. Rolo, S. Lamble, J. E. Bray, K. A. Jolley, W. P. Hanage, R. Bowden, M. C. J. Maiden, D. Mack, H. de Lencastre, E. J. Feil, J. Corander, and S. K. Sheppard. Ecological overlap and horizontal gene transfer in Staphylococcus aureus and Staphylococcus epidermidis. Genome Biol Evol, 7(5):1313–1328, May 2015.\n\nN. Nariai, O. Hirose, K. Kojima, and M. Nagasaki. TIGAR: transcript isoform abundance estimation method with gapped alignment of RNA-Seq data by variational Bayesian inference. Bioinformatics, 18(29):2292–2299, 2013.\n\nN. Nariai, K. Kojima, T. Mimori, Y. Sato, Y. Kawai, Y. Yamaguchi-Kabata, and M. Nagasaki. TIGAR2: sensitive and accurate estimation of transcript isoform expression with longer RNA-Seq reads. BMC Genomics, 15 Suppl 10:S5, 2014.\n\nR. Patro, S. M. Mount, and C. Kingsford. Sailfish enables alignment-free isoform quantification from RNA-seq reads using lightweight algorithms. Nature biotechnology, 32(5):462–464, 2014.\n\nD. C. Richter, F. Ott, A. F. Auch, R. Schmid, and D. H. Huson. MetaSim: a sequencing simulator for genomics and metagenomics. PLoS One, 3(10):e3373, 2008.\n\nA. Roberts and L. Pachter. Streaming fragment assignment for real-time analysis of sequencing experiments. Nature methods, 10(1):71–73, 2013.\n\nN. Segata, L. Waldron, A. Ballarini, V. Narasimhan, O. Jousson, and C. Huttenhower. Metagenomic microbial community profiling using unique clade-specific marker genes. Nat Methods, 9(8):811–814, Aug 2012.\n\nN. Segata, D. Boernigen, T. L. Tickle, X. C. Morgan, W. S. Garrett, and C. Huttenhower. Computational meta’omics for microbial community studies. Mol Syst Biol, 9:666, 2013.\n\nSEQC/MAQC-III Consortium. A comprehensive assessment of RNA-seq accuracy, reproducibility and information content by the Sequencing Quality Control Consortium. Nat Biotechnol, 32(9):903–914, Sep 2014.\n\nY. Shiwa, T. Matsumoto, and H. Yoshikawa. Identification of laboratory-specific variations of Bacillus subtilis strains used in Japan. Biosci Biotechnol Biochem, 77(10):2073–2076, 2013.\n\nS. Sunagawa, D. R. Mende, G. Zeller, F. Izquierdo-Carrasco, S. A. Berger, J. R. Kultima, L. P. Coelho, M. Arumugam, J. Tap, H. B. Nielsen, S. Rasmussen, S. Brunak, O. Pedersen, F. Guarner, W. M. de Vos, J. Wang, J. Li, J. Dor´e, S. D. Ehrlich, A. Stamatakis, and P. Bork. Metagenomic species profiling using universal phylogenetic marker genes. Nat Methods, 10(12):1196–1199, Dec 2013.\n\nK. Tamura, G. Stecher, D. Peterson, A. Filipski, and S. Kumar. MEGA6: Molecular Evolutionary Genetics Analysis version 6.0. Mol Biol Evol, 30(12):2725–2729, Dec 2013.\n\nC. Trapnell, B. A. Williams, G. Pertea, A. Mortazavi, G. Kwan, M. J. van Baren, S. L. Salzberg, B. J. Wold, and L. Pachter. Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation. Nature Biotechnology, 28(5):516–520, May 2010.\n\nE. Turro, W. J. Astle, and S. Tavar´e. Flexible analysis of RNA-seq data using mixed effects models. Bioinformatics, 30(2):180–188, Jan 2014.\n\nM. Ueta, T. Iida, M. Sakamoto, C. Sotozono, J. Takahashi, K. Kojima, K. Okada, X. Chen, S. Kinoshita, and T. Honda. Polyclonality of Staphylococcus epidermidis residing on the healthy ocular surface. J Med Microbiol, 56(Pt 1):77–82, Jan 2007.\n\nY. Xing, T. Yu, Y. N. Wu, M. Roy, J. Kim, and C. Lee. An expectation-maximization algorithm for probabilistic reconstructions of full-length isoforms from splice graphs. Nucleic Acids Res, 34(10):3150–3160, 2006.",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Bayesian identification of bacterial strains from sequencing data",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Step 1: Reference strain selection and core genome extraction",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Step 2: Strain abundance estimation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Abundance estimation model in detail",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Generation of data for validation experiments",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Clustering and selection of strains",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 Identification of Staphylococcus strains from sequencing data",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3 Estimation in the presence contaminant species",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.4 Estimation in the presence of unknown strain clusters",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.5 Estimation without clustering",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.6 Analysis of clinical samples",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.7 Runtime",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Interpretation of proportions and benchmarking",
+   "page": 9,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4.2 Applicability to different bacterial species",
+   "page": 10,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4.3 Relationship to transcript-level RNA-seq analysis",
+   "page": 11,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Funding",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 36.20081329999812,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 23,
+  "tp": 23,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 20,
+  "parent_correct": 21,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "extraction",
+   "ing data"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 25,
+  "pred": 24,
+  "tp": 2,
+  "fp": 22,
+  "fn": 23,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.038461538461538436,
+  "unmatched_gt": [
+   "2 Materials and methods",
+   "2.1 Step 1: Reference strain selection and core genome",
+   "extraction",
+   "2.2 Step 2: Strain abundance estimation",
+   "2.3 Abundance estimation mo del in detail",
+   "2.4 Generation of data for validation experiments",
+   "3 Results",
+   "3.1 Clustering and selection of strains",
+   "3.2 Identification of Staphylococcus strains from sequenc-",
+   "ing data",
+   "3.3 Estimation in the presence contaminant sp ecies",
+   "3.4 Estimation in the presence of unknown strain clusters",
+   "3.5 Estimation without clustering",
+   "3.6 Analysis of clinical samples",
+   "3.7 Runtime",
+   "4 Discussion",
+   "4.1 Interpretation of proportions and benchmarking",
+   "4.2 Applicability to different bacterial sp ecies",
+   "4.3 Relationship to transcript-level RNA-seq analysis",
+   "5 Conclusion",
+   "Acknowledgements",
+   "Funding",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Bayesian identification of bacterial strains from sequencing data",
+   "2 Materials and methods",
+   "2.1 Step 1: Reference strain selection and core genome extraction",
+   "2.2 Step 2: Strain abundance estimation",
+   "2.3 Abundance estimation model in detail",
+   "2.4 Generation of data for validation experiments",
+   "3 Results",
+   "3.1 Clustering and selection of strains",
+   "3.2 Identification of Staphylococcus strains from sequencing data",
+   "3.3 Estimation in the presence contaminant species",
+   "3.4 Estimation in the presence of unknown strain clusters",
+   "3.5 Estimation without clustering",
+   "3.6 Analysis of clinical samples",
+   "3.7 Runtime",
+   "4 Discussion",
+   "4.1 Interpretation of proportions and benchmarking",
+   "4.2 Applicability to different bacterial species",
+   "4.3 Relationship to transcript-level RNA-seq analysis",
+   "5 Conclusion",
+   "Acknowledgements",
+   "Funding",
+   "References"
+  ]
+ }
+}

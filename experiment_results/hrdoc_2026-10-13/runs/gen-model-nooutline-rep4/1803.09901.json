@@ -1,0 +1,161 @@
+{
+ "doc": "1803.09901",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 327,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10099,
+   "completion_tokens": 642,
+   "total_tokens": 10741
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9945235487404163,
+   "in_order": 0.8691128148959474,
+   "inserted": 0.014382632293080011
+  },
+  "export_markdown": "# Mittens: An Extension of GloVe for Learning Domain-Specialized Representations\n\n*Nicholas Dingwall, Christopher Potts*\n\nMittens: An Extension of GloVe for Learning Domain-Specialized\n\nRepresentations\n\nNicholas Dingwall\n\nRoam Analytics\n\nnick@roamanalytics.com\n\n## Abstract\n\nWe present a simple extension of the GloVe\n\nrepresentation learning model that begins with\n\narXiv:1803.09901v1 [cs.CL] 27 Mar 2018\n\ngeneral-purpose representations and updates\n\nthem based on data from a specialized domain.\n\nWe show that the resulting representations can\n\nlead to faster learning and better results on a\n\nvariety of tasks.\n\n## 1 Introduction\n\nMany NLP tasks have beneﬁtted from the public availability of general-purpose vector representations of words trained on enormous datasets, such as those released by the GloVe (Pennington et al., 2014) and fastText (Bojanowski et al., 2016) teams. These representations, when used as model inputs, have been shown to lead to faster learning and better results in a wide variety of settings (Erhan et al., 2009, 2010; Cases et al., 2017). However, many domains require more specialized representations but lack sufﬁcient data to train them from scratch. We address this problem with a simple extension of the GloVe model (Pennington et al., 2014) that synthesizes general-purpose representations with specialized data sets. The guiding idea comes from the retroﬁtting work of Faruqui et al. (2015), which updates a space of existing representations with new information from a knowledge graph while also staying faithful to the original space (see also Yu and Dredze 2014; Mrkˇsi´c et al. 2016; Pilehvar and Collier 2016). We show that the GloVe objective is amenable to a similar retroﬁtting extension. We call the resulting model ‘Mittens’, evoking the idea that it is ‘GloVe with a warm start’ or a ‘warmer GloVe’. Our hypothesis is that Mittens representations synthesize the specialized data and the generalpurpose pretrained representations in a way that gives us the best of both. To test this, we conducted a diverse set of experiments. In the ﬁrst, we\n\nChristopher Potts\n\nStanford University and Roam Analytics\n\ncgpotts@stanford.edu\n\nlearn GloVe and Mittens representations on IMDB movie reviews and test them on separate IMDB reviews using simple classiﬁers. In the second, we learn our representations from clinical text and apply them to a sequence labeling task using recurrent neural networks, and to edge detection using simple classiﬁers. These experiments support our hypothesis about Mittens representations and help identify where they are most useful.\n\n## 2 Mittens\n\nThis section deﬁnes the Mittens objective. We ﬁrst vectorize GloVe to help reveal why it can be extended into a retroﬁtting model.\n\n### 2.1 Vectorizing GloVe\n\nFor a word i from vocabulary V occurring in the context of word j, GloVe learns representations wi and ewj whose inner product approximates\n\nthe logarithm of the probability of the words’ cooccurrence. Bias terms bi and ˜bj absorb the overall occurrences of i and j. A weighting function f is applied to emphasize word pairs that occur frequently and reduce the impact of noisy, low frequency pairs. This results in the objective\n\nf (Xij)\u0010w⊤\n\ni ewj + bi + ˜bj − log Xij\u00112\n\nV\n\nX\n\nJ =\n\ni,j=1\n\nwhere Xij is the co-occurrence of i and j. Since log Xij is only deﬁned for Xij > 0, the sum excludes zero-count word pairs. As a result, existing implementations of GloVe use an inner loop to compute this cost and associated derivatives. However, since f(0) = 0, the second bracket is irrelevant whenever Xij = 0, and so replacing\n\nlog Xij with\n\n(k,\n\nfor Xij = 0\n\ng(Xij) =\n\notherwise\n\nlog(Xij),\n\nImplementation\n\n5K\n\nNon-vectorized TensorFlow\n\nVocabulary size\n\nCPU\n\nGPU\n\n10K\n\n20K\n\n5K 10K\n\n20K\n\n13.56 55.51 226.41\n\n14.02 63.80 252.65\n\nVectorized Numpy\n\n−\n\n−\n\n−\n\n1.48 7.35 50.03\n\nVectorized TensorFlow\n\n0.27 0.95\n\n3.68\n\n1.19 5.00 28.69\n\nOfﬁcial GloVe\n\n−\n\n−\n\n−\n\n3.50\n\n0.66 1.24\n\nTable 1: Speed comparisons. The values are seconds per iteration, averaged over 10 iterations each on 5 simulated corpora that produced count matrices with about 10% non-zero cells. Only the training step for each model is timed. The CPU experiments were done on a machine with a 3.1 GHz Intel Core i7 chip and 16 GB of memory, and the GPU experiments were done on machine with a 16 GB NVIDIA Tesla V100 GPU and 61 GB of memory. Dashes mark tests that aren’t applicable because the implementation\n\ndoesn’t perform GPU computations.\n\n(for any k) does not affect the objective and reveals that the cost function can be readily vectorized as\n\nJ = f(X)M⊤M\n\nwhere M = W ⊤f\n\nW + b1⊤ + 1˜b⊤ − g(X). W\n\nand f\n\nW are matrices whose columns comprise the word and context embedding vectors, and g is applied elementwise. Because f(Xij) is a factor of all terms of the derivatives, the gradients are identical to the original GloVe implementation too. To assess the practical value of vectorizing GloVe, we implemented the model1 in pure Python/Numpy (van der Walt et al., 2011) and in TensorFlow (Abadi et al., 2015), and we compared these implementations to a non-vectorized Tensor-Flow implementation and to the ofﬁcial GloVe C implementation (Pennington et al., 2014).2 The results of these tests are in tab. 1. Though the C implementation is the fastest (and scales to massive vocabularies), our vectorized TensorFlow implementation is a strong second-place ﬁnisher, especially where GPU computations are possible.\n\n### 2.2 The Mittens Objective Function\n\nThis vectorized implementation makes it apparent that we can extend GloVe into a retroﬁtting model by adding a term to the objective that penalizes the squared euclidean distance from the learned embedding bwi = wi + ewi to an existing one, ri:\n\nJMittens = J + µX\n\ni∈R ∥bwi − ri∥2.\n\n1https://github.com/roamanalytics/mittens\n\n2We also considered a non-vectorized Numpy implementation, but it was too slow to be included in our tests (a single iteration with a 5K vocabulary took 2 hrs 38 mins).\n\nHere, R contains the subset of words in the new vocabulary for which prior embeddings are available (i.e., R = V ∩ V ′ where V ′ is the vocabulary\n\nused to generate the prior embeddings), and µ is a non-negative real-valued weight. When µ = 0 or R is empty (i.e., there is no original embedding), the objective reduces to GloVe’s. As in retroﬁtting, this objective encodes two opposing pressures: the GloVe objective (left term), which favors changing representations, and the distance measure (right term), which favors remaining true to the original inputs. We can control this trade off by decreasing or increasing µ. In our experiments, we always begin with 50-dimensional ‘Wikipedia 2014 + Gigaword 5’ GloVe representations3 – henceforth ‘External GloVe’ – but the model is compatible with any kind of “warm start”.\n\n### 2.3 Notes on Mittens Representations\n\nGloVe’s objective is that the log probability of words i and j co-occurring be proportional to the dot product of their learned vectors. One might worry that Mittens distorts this, thereby diminishing the effectiveness of GloVe. To assess this, we simulated 500-dimensional square count matrices and original embeddings for 50% of the words. Then we ran Mittens with a range of values of µ. The results for ﬁve trials are summarized in ﬁg. 1: for reasonable values of µ, the desired correlation remains high (ﬁg. 1a), even as vectors with initial embeddings stay close to those inputs, as desired (ﬁg. 1b).\n\n3http://nlp.stanford.edu/data/glove.6B.zip\n\n0.0\n\n0.001\n\n0.1\n\nµ\n\n0.5\n\n1.0\n\n5.0\n\n10.0\n\n0.0\n\n0.1\n\n0.2\n\n0.3\n\n0.4\n\nMean Pearson ρ\n\n(a) Correlations between the dot product of pairs of learned vectors and their log probabilities.\n\npretrained initialization\n\nrandom initialization\n\n0.0\n\n0.001\n\n0.1\n\nµ\n\n0.5\n\n1.0\n\n5.0\n\n10.0\n\n0.0\n\n0.5\n\n1.0\n\n1.5\n\n2.0\n\n2.5\n\n3.0\n\nMean distance from initialization\n\n(b) Distances between initial and learned embeddings, for words with and without pretrained initializations. As µ gets larger, the pressure to stay close to the original increases.\n\nFigure 1: Simulations assessing Mittens’ faithfulness to the original GloVe objective and to its input embeddings. µ = 0 is regular GloVe.\n\n## 3 Sentiment Experiments\n\nFor our sentiment experiments, we train our representations on the unlabeled part of the IMDB review dataset released by Maas et al. (2011). This simulates a common use-case: Mittens should enable us to achieve specialized representations for these reviews while beneﬁting from the large datasets used to train External GloVe.\n\n### 3.1 Word Representations\n\nAll our representations begin from a common count matrix obtained by tokenizing the unlabeled movie reviews in a way that splits out punctuation, downcases words unless they are written in all uppercase, and preserves emoticons and other common social media mark-up. We say word i co-occurs with word j if i is within 10 words to\n\nRepresentations Accuracy\n\n95% CI\n\nRandom\n\n62.00 [61.28, 62.53]\n\nExternal GloVe\n\n−\n\n72.19\n\nIMDB GloVE\n\n76.38 [75.76, 76.72]\n\nMittens\n\n77.39 [77.23, 77.50]\n\nTable 2: IMDB test-set classiﬁcation results. A difference of 1% corresponds to 250 examples. For all but ‘External GloVE’, we report means (with bootstrapped conﬁdence intervals) over ﬁve runs of creating the embeddings and cross-validating the classiﬁer’s hyperparameters, mainly to help verify that the differences do not derive from variation in the representation learning phase.\n\nthe left or right of j, with the counts weighted by 1/d where d is the distance in words from j. Only words with at least 300 tokens are included in the matrix, yielding a vocabulary of 3,133 words. For regular GloVe representations derived from the IMDB data – ‘IMDB GloVE’ – we train 50-dimensional representations and use the default parameters from Pennington et al. 2014: α = 0.75, xmax = 100, and a learning rate of\n\n0.05. We optimize with AdaGrad (Duchi et al.,\n\n2011), also as in the original paper, training for 50K epochs. For Mittens, we begin with External GloVe. The few words in the IMDB vocabulary that are not in this GloVe vocabulary receive random initializations with a standard deviation that matches that of the GloVe representations. Informed by our simulations, we train representations with the Mittens weight µ = 0.1. The GloVe hyperparameters and optimization settings are as above. Extending the correlation analysis of ﬁg. 1a to these real examples, we ﬁnd that the GloVe representations generally have Pearson’s ρ ≈ 0.37, Mittens ρ ≈\n\n0.47. We speculate that the improved correlation\n\nis due to the low-variance external GloVe embedding smoothing out noise from our co-occurrence matrix.\n\n### 3.2 IMDB Sentiment Classiﬁcation\n\nThe labeled part of the IMDB sentiment dataset deﬁnes a positive/negative classiﬁcation problem with 25K labeled reviews for training and 25K for testing. We represent each review by the elementwise sum of the representation of each word in the review, and train a random forest model (Ho,\n\n1. No/O eye/R pain/R or/O eye/R discharge/R ./O\n\n2. Asymptomatic/D bacteriuria/D ,/O could/O be/O neurogenic/C bladder/C disorder/C ./O\n\n3. Small/C embolism/C in/C either/C lung/C cannot/O be/O excluded/O ./O\n\n(a) Short disease diagnosis labeled examples. ‘O’: ‘Other’; ‘D’: ‘Positive Diagnosis’; ‘C’: ‘Concern’; ‘R’: ‘Ruled Out’.\n\nTable 3: Disease diagnosis examples.\n\nConcern\n\nOther\n\nPositive\n\n0.900\n\n0.6\n\n0.875\n\n0.4\n\n0.4\n\nF1\n\nF1\n\nF1\n\n0.850\n\n0.2\n\n0.2\n\n0.825\n\n0.0\n\n0.800\n\n0.0\n\n2500 5000 7500 10000\n\n2500 5000 7500 10000\n\n2500 5000 7500 10000\n\nEpochs\n\nEpochs\n\nEpochs\n\nRuled Out\n\nMacro-Averaged\n\n0.6\n\nMittens\n\n0.6\n\nClinical text GloVe\n\n0.4\n\nExternal GloVe\n\nF1\n\nF1\n\n0.4\n\nRandom\n\n0.2\n\n0.0\n\n0.2\n\n2500 5000 7500 10000\n\n2500 5000 7500 10000\n\nEpochs\n\nEpochs\n\nFigure 2: Disease diagnosis test-set accuracy as a function of training epoch, with bootstrapped conﬁ-dence intervals. Mitten learns fastest for all categories.\n\n1995; Breiman, 2001) on these representations. The rationale behind this experimental set-up is that it fairly directly evaluates the vectors themselves; whereas the neural networks we evaluate next can update the representations, this model relies heavily on their initial values. Via cross-validation on the training data, we optimize the number of trees, the number of features at each split, and the maximum depth of each tree. To help factor out variation in the representation learning step (Reimers and Gurevych, 2017), we report the average accuracies over ﬁve separate complete experimental runs. Our results are given in tab. 2. Mittens outperforms External GloVe and IMDB GloVe, indicating that it effectively combines complementary information from both.\n\n## 4 Clinical Text Experiments\n\nOur clinical text experiments begin with 100K clinical notes (transcriptions of the reports healthcare providers create summarizing their interactions with patients during appointments) from\n\nReal Health Data.4 These notes are divided into informal segments that loosely follow the ‘SOAP’ convention for such reporting (Subjective, Objective, Assessment, Plan). The sample has 1.3 million such segments, and these segments provide our notion of ‘document’.\n\n### 4.1 Word Representations\n\nThe count matrix is created from the clinical text using the speciﬁcations described in sec. 3.1, but with the count threshold set to 500 to speed up optimization. The ﬁnal matrix has a 6,519-word vocabulary. We train Mittens and GloVe as in sec. 3.1. The correlations in the sense of ﬁg. 1a are ρ ≈ 0.51 for both GloVe and Mittens.\n\n### 4.2 Disease Diagnosis Sequence Modeling\n\nHere we use a recurrent neural network (RNN) to evaluate our representations. We sampled 3,206 sentences from clinical texts (disjoint from the data used to learn word representations) containing disease mentions, and labeled these mentions\n\n4http://www.realhealthdata.com\n\nSubgraph Nodes\n\nEdges\n\nRepresentations disorder procedure ﬁnding organism substance\n\ndisorder 72, 551 408, 411\n\nRandom\n\n56.05\n\n55.97 75.14\n\n68.15\n\n64.72\n\nprocedure 53, 616 264, 000\n\nExternal GloVe\n\n69.31\n\n65.89 80.72\n\n74.12\n\n77.58\n\nﬁnding 35, 544\n\nClinical text GloVe\n\n76, 563\n\n66.19\n\n64.96 79.18\n\n73.42\n\n73.37\n\norganism 33, 721\n\nMittens\n\n41, 090\n\n67.59\n\n66.59 80.74\n\n74.53\n\n76.51\n\nsubstance 26, 207 46, 333\n\n(b) Mean macro-F1 by subgraph (averages from 10 random train/test splits). Italics mark systems for which p ≥ 0.05 in a comparison with the top system numerically, according\n\n(a) Subgraph sizes.\n\nto a Wilcoxon signed-rank test.\n\nTable 4: SNOMED subgraphs and results. For the ‘disorder’ graph (the largest), a difference of 0.1% corresponds to 408 examples. For the ‘substance’ graph (the smallest), it corresponds to 46 examples.\n\nas ‘Positive diagnosis’, ‘Concern’, ‘Ruled Out’, or\n\ncatenation of these two node representations. To\n\n‘Other’. Tab. 3a provides some examples. We\n\nhelp assess whether the input representations truly\n\ntreat this as a sequence labeling problem, using\n\ngeneralize to new cases, we ensure that the sets\n\n‘Other’ for all unlabeled tokens. Our RNN has\n\nof nodes seen in training and testing are disjoint\n\na single 50-dimensional hidden layer with LSTM\n\n(which entails that the edge sets are disjoint as\n\ncells (Hochreiter and Schmidhuber, 1997), and the\n\nwell), and we train on just 50% of the nodes. We\n\nreport the results of ten random train/test splits.\n\ninputs are updated during training.\n\nFig. 2 summarizes the results of these exper-\n\nThe large scale of these problems prohibits the\n\niments based on 10 random train/test with 30%\n\nlarge hyperparameter search described in sec. 3.2,\n\nof the sentences allocated for testing. Since the\n\nso we used the best settings from those experi-\n\ninputs can be updated, we expect all the initial-\n\nments (500 trees per forest, square root of the total\n\nization schemes to converge to approximately the\n\nfeatures at each split, no depth restrictions).\n\nsame performance eventually (though this seems\n\nOur results are summarized in tab. 4b. Though\n\nnot to be the case in practical terms for Random or\n\nthe differences are small numerically, they are\n\nExternal GloVE). However, Mittens learns fastest\n\nmeaningful because of the large size of the graphs\n\nfor all categories, reinforcing the notion that Mit-\n\n(tab. 4a). Overall, these results suggest that\n\ntens is a sensible default choice to leverage both\n\nMittens is at its best where there is a highly-\n\ndomain-speciﬁc and large-scale data.\n\nspecialized dataset for learning representations,\n\nbut that it is a safe choice even when seeking to\n\n### 4.3 SNOMED CT edge prediction\n\ntransfer the representations to a new domain.\n\nFinally, we wished to see if Mittens representa-\n\n## 5 Conclusion\n\ntions would generalize beyond the speciﬁc dataset\n\nthey were trained on. SNOMED CT is a pub-\n\nWe introduced a simple retroﬁtting-like extension\n\nlic, widely-used graph of healthcare concepts and\n\nto the original GloVe model and showed that the\n\ntheir relationships (Spackman et al., 1997). It\n\nresulting representations were effective in a num-\n\ncontains 327K nodes, classiﬁed into 169 semantic\n\nber of tasks and models, provided a substantial\n\ntypes, and 3.8M edges. Our clinical notes are more\n\n(unsupervised) dataset in the same domain is avail-\n\ncolloquial than SNOMED’s node names and cover\n\nable to tune the representations. The most natural\n\nonly some of its semantic spaces, but the Mittens\n\nnext step would be to study similar extensions of\n\nrepresentations should still be useful here.\n\nother representation-learning models.\n\nFor our experiments, we chose the ﬁve largest\n\nsemantic types; tab. 4a lists these subgraphs along\n\n## 6 Acknowledgements\n\nwith their sizes. Our task is edge prediction: given\n\na pair of nodes in a subgraph, the models predict\n\nWe thank Real Health Data for providing our clin-\n\nwhether there should be an edge between them.\n\nical texts, Ben Bernstein, Andrew Maas, Devini\n\nWe sample 50% of the non-existent edges to cre-\n\nSenaratna, and Kevin Reschke for valuable com-\n\nate a balanced problem. Each node is represented\n\nments and discussion, and Grady Simon for mak-\n\nby the sum of the vectors for the words in its pri-\n\ning his Tensorﬂow implementation of GloVe avail-\n\nmary name, and the classiﬁer is trained on the con-\n\nable (Simon, 2017).\n\n## References\n\nMart´ın Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen, Craig Citro, Greg S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard, Yangqing Jia Jozefowicz, Rafal, Lukasz Kaiser, Manjunath Kudlur, Josh Levenberg, Dandelion Man´e, Rajat Monga, Sherry Moore, Derek Murray, Chris Olah, Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal Talwar, Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Vi´egas, Oriol Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and Zheng Xiaoqiang. 2015. TensorFlow: Large-scale machine learning on heterogeneous systems.\n\nPiotr Bojanowski, Edouard Grave, Armand Joulin, and Tomas Mikolov. 2016. Enriching word vectors with subword information. ArXiv:1607.04606.\n\nLeo Breiman. 2001. Random forests. Machine learning, 45(1):5–32.\n\nIgnacio Cases, Minh-Thang Luong, and Christopher Potts. 2017. On the effective use of pretraining for natural language inference. ArXiv:1710.02076.\n\nJohn Duchi, Elad Hazan, and Yoram Singer. 2011. Adaptive subgradient methods for online learning and stochastic optimization. Journal of Machine Learning Research, pages 2121–2159.\n\nDumitru Erhan, Yoshua Bengio, Aaron Courville, Pierre-Antoine Manzagol, Pascal Vincent, and Samy Bengio. 2010. Why does unsupervised pre-training help deep learning? The Journal of Machine Learning Research, 11:625–660.\n\nDumitru Erhan, Pierre-Antoine Manzagol, Yoshua Bengio, Samy Bengio, and Pascal Vincent. 2009. The difﬁculty of training deep architectures and the effect of unsupervised pre-training. In International Conference on Artiﬁcial Intelligence and Statistics, pages 153–160.\n\nManaal Faruqui, Jesse Dodge, Sujay Kumar Jauhar, Chris Dyer, Eduard Hovy, and Noah A. Smith. 2015. Retroﬁtting word vectors to semantic lexicons. In Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 1606–1615, Stroudsburg, PA. Association for Computational Linguistics.\n\nTin Kam Ho. 1995. Random decision forests. In Proceedings of the Third International Conference on Document Analysis and Recognition, volume 1, pages 278–282. IEEE.\n\nSepp Hochreiter and J¨urgen Schmidhuber. 1997. Long short-term memory. Neural Computation, 9(8):1735–1780.\n\nAndrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, and Christopher Potts. 2011. Learning word vectors for sentiment analysis. In Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics, pages 142– 150, Portland, Oregon. Association for Computational Linguistics. Nikola Mrkˇsi´c, Diarmuid ´O S´eaghdha, Blaise Thomson, Milica Gaˇsi´c, Lina M. Rojas-Barahona, Pei-Hao Su, David Vandyke, Tsung-Hsien Wen, and Steve Young. 2016. Counter-ﬁtting word vectors to linguistic constraints. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 142–148. Association for Computational Linguistics.\n\nJeffrey Pennington, Richard Socher, and Christopher D. Manning. 2014. GloVe: Global vectors for word representation. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 1532–1543, Doha, Qatar. Association for Computational Linguistics.\n\nMohammad Taher Pilehvar and Nigel Collier. 2016. Improved semantic representation for domainspeciﬁc entities. In Proceedings of the 15th Workshop on Biomedical Natural Language Processing, pages 12–16. Association for Computational Linguistics.\n\nNils Reimers and Iryna Gurevych. 2017. Reporting score distributions makes a difference: Performance study of LSTM-networks for sequence tagging. arXiv:1707.09861.\n\nGrady Simon. 2017. An implementation of GloVe in TensorFlow.\n\nKent A Spackman, Keith E Campbell, and Roger A Cˆot´e. 1997. SNOMED RT: A reference terminology for health care. In Proceedings of the AMIA Annual Fall Symposium, page 640. American Medical Informatics Association.\n\nSt´efan van der Walt, S. Chris Colbert, and Ga¨el Varoquaux. 2011. The NumPy array: A structure for efﬁ-cient numerical computation. Computing in Science and Engineering, 13:22–30.\n\nMo Yu and Mark Dredze. 2014. Improving lexical embeddings with semantic knowledge. In Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers), pages 545–550. Association for Computational Linguistics.\n"
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Mittens",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Vectorizing GloVe",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 The Mittens Objective Function",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Notes on Mittens Representations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Sentiment Experiments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Word Representations",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 IMDB Sentiment Classiﬁcation",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Clinical Text Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Word Representations",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Disease Diagnosis Sequence Modeling",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 SNOMED CT edge prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Acknowledgements",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.581192500001634,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

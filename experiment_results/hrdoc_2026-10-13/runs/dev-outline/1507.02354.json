@@ -1,0 +1,129 @@
+{
+ "doc": "1507.02354",
+ "system": "outline",
+ "metrics": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "DISTRIBUTION",
+   "4.3 Constrain the circumburst medium before the deceleration phase",
+   "References"
+  ],
+  "unmatched_pred": [
+   "4.3 Constrain the circumburst medium before the deceleration phase "
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 High-Energy Observation and data reduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 TNT observations",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Multi-band afterglows in temporal and spectral energy distribution",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Analysis and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Estimate the redshift ",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Test with the standard forward shock model",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.3 Constrain the circumburst medium before the deceleration phase ",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.4 No any signatures of reverse shock and long lasting central engine activity",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.5 Onset process and constrain of initial Lorentz factor ",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Summary",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.03673730000082287,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [
+   "DISTRIBUTION",
+   "4.3 Constrain the circumburst medium before the deceleration phase",
+   "References"
+  ],
+  "unmatched_pred": [
+   "4.3 Constrain the circumburst medium before the deceleration phase "
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "DISTRIBUTION",
+   "4.3 Constrain the circumburst medium before the deceleration phase"
+  ],
+  "unmatched_pred": [
+   "4.3 Constrain the circumburst medium before the deceleration phase "
+  ],
+  "ignored_title_predictions": null
+ }
+}

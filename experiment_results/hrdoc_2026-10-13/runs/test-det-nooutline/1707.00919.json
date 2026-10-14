@@ -1,0 +1,112 @@
+{
+ "doc": "1707.00919",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.3846153846153846,
+  "unmatched_gt": [
+   "2.1. Multicanonical sampling",
+   "2.2. Parallel multicanonical sampling",
+   "2.3. Implementation on GPU",
+   "3.1. Hardware performance",
+   "3.2. Software performance",
+   "3.3. Verification of physical results",
+   "Acknowledgments"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 350,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Parallel Multicanonical Algorithm",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Performance",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.48221790000025,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 7,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.3846153846153846,
+  "unmatched_gt": [
+   "2.1. Multicanonical sampling",
+   "2.2. Parallel multicanonical sampling",
+   "2.3. Implementation on GPU",
+   "3.1. Hardware performance",
+   "3.2. Software performance",
+   "3.3. Verification of physical results",
+   "Acknowledgments"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "2.1. Multicanonical sampling",
+   "2.2. Parallel multicanonical sampling",
+   "2.3. Implementation on GPU",
+   "3.1. Hardware performance",
+   "3.2. Software performance",
+   "3.3. Verification of physical results"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

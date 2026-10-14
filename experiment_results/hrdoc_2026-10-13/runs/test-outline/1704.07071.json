@@ -1,0 +1,152 @@
+{
+ "doc": "1704.07071",
+ "system": "outline",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Zero-Multipole Summation Method",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.1.1 Formula",
+   "page": 3,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "2.1.2 Accuracy",
+   "page": 4,
+   "level": 3,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Smooth Particle Mesh Ewald Method",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2.1 Formula",
+   "page": 5,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.2.2 Computational Cost",
+   "page": 6,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Implementation and Optimization of the ZMM",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4 Optimization of the SPME",
+   "page": 8,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.5 Materials",
+   "page": 9,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.6 Accuracy measurement",
+   "page": 9,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.7 Performance Measurement",
+   "page": 11,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Results and Discussion for the Performance",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Acknowledgement",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix  A Verlet Buffer Distances",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.06635240000105114,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9473684210526316,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,257 @@
+{
+ "doc": "1708.05357",
+ "system": "docling",
+ "metrics": {
+  "gt": 27,
+  "pred": 31,
+  "tp": 27,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Thomas Parnell",
+   "Algorithm 1 Approximate Block CD",
+   "Algorithm 2 DUHL",
+   "Algorithm 3 Coordinate Descent"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 59.321559899999556
+ },
+ "predictions": [
+  {
+   "text": "Efficient Use of Limited-Memory Accelerators for Linear Learning on Heterogeneous Systems",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Thomas Parnell",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Learning Problem",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Approximate Block Coordinate Descent",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 AlgorithmDescription",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Approximate Block CD",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 2 DUHL",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Convergence Analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Gap-Selection Scheme",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Heterogeneous Training",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 DUHL: ADuality Gap-Based Heterogeneous Learning Scheme",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experimental Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 AlgorithmBehavior",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Reference Schemes",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Performance Analysis of DUHL",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proofs",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Key Lemma",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 Proof Theorem 1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.3 Proof Theorem 2",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Coordinate Descent",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 3 Coordinate Descent",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C Local Subproblem",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C.1 Examples",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D Generalization of TPA-SCD",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D.1 Elastic Net",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D.2 L2-regularized SVM",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E Duality Gap",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.018213000003015622,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 32,
+  "tp": 27,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.48484848484848486,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Efficient Use of Limited-Memory Accelerators for Linear Learning on Heterogeneou",
+   "Thomas Parnell",
+   "Algorithm 1 Approximate Block CD",
+   "Algorithm 2 DUHL",
+   "Algorithm 3 Coordinate Descent"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 28,
+  "tp": 24,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.4482758620689655,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Thomas Parnell",
+   "Algorithm 1 Approximate Block CD",
+   "Algorithm 2 DUHL",
+   "Algorithm 3 Coordinate Descent"
+  ],
+  "ignored_title_predictions": null
+ }
+}

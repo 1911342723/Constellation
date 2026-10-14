@@ -1,0 +1,121 @@
+{
+ "doc": "1805.00438",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [
+   "2.1. Data Structure",
+   "2.2. Job Execution Sequence",
+   "2.3. Read-Only Mode",
+   "2.4. Application Programming Interfaces",
+   "3.1. Instal lation",
+   "3.2. Registering Hosts and Simulators"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 134,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "An open-source job management framework for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "parameter-space exploration: OACIS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Overview",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Getting Started with OACIS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.6730757000004814,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 6,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.3846153846153846,
+  "unmatched_gt": [
+   "2.1. Data Structure",
+   "2.2. Job Execution Sequence",
+   "2.3. Read-Only Mode",
+   "2.4. Application Programming Interfaces",
+   "3.1. Instal lation",
+   "3.2. Registering Hosts and Simulators"
+  ],
+  "unmatched_pred": [
+   "An open-source job management framework for",
+   "parameter-space exploration: OACIS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "2.1. Data Structure",
+   "2.2. Job Execution Sequence",
+   "2.3. Read-Only Mode",
+   "2.4. Application Programming Interfaces",
+   "3.1. Instal lation",
+   "3.2. Registering Hosts and Simulators"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

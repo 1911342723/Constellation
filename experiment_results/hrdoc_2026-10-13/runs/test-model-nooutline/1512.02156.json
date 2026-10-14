@@ -1,0 +1,137 @@
+{
+ "doc": "1512.02156",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "Optical Lattice Standards",
+   "Statistical stability of the system"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 374,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14348,
+   "completion_tokens": 302,
+   "total_tokens": 14650
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Stabilized ﬁbre optic link and UTC(AOS)",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Accuracy budget",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AUTHOR CONTRIBUTIONS STATEMENT",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "COMPETING FINANCIAL INTERESTS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.87260360000073,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "Optical Lattice Standards",
+   "Statistical stability of the system"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Optical Lattice Standards",
+   "Statistical stability of the system"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

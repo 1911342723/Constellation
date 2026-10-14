@@ -1,0 +1,109 @@
+{
+ "doc": "1604.05016",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 8,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "B. Detector Assembly and Read-Out Electronics",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "B. Detector Assembly and Read-Out Electronics"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 233,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9982555604012211,
+   "in_order": 0.9282599215002181,
+   "inserted": 0.0019620667102681066
+  }
+ },
+ "predictions": [
+  {
+   "text": "Status Report of the GERDA Phase II Startup",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THE GERDA EXPERIMENT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Phase I Results",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. UPGRADE TO PHASE II",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. BEGe Detectors",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. LAr Instrumentation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. START OF PHASE II DATA TAKING",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.70249530000001
+}

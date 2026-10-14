@@ -1,0 +1,160 @@
+{
+ "doc": "1603.08572",
+ "system": "outline",
+ "metrics": {
+  "gt": 23,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "optimal control paper",
+   "Abstract",
+   "ume constraint",
+   "equations",
+   "2-D example",
+   "Data Management",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Optimal control of a forced Allen-Cahn equation with volume constraint",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Numerical solution methods",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Adaptive iterative update for the optimal control",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Space-time discretizations of the forward Allen-Cahn and adjoint equations",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 Techniques for improving algorithm efficiency",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Numerical experiments",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 A 2-D benchmark example",
+   "page": 12,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Convergence tests for the benchmark 2-D example",
+   "page": 14,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 The multigrid performance on the benchmark 2-D example",
+   "page": 16,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.4 Adaptive- algorithm with the benchmark 2-D example",
+   "page": 17,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.5 Two-grid solution strategy with dynamic AMR on the benchmark 2-D example",
+   "page": 19,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.6 3-D example",
+   "page": 21,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.7 Irregular shapes",
+   "page": 22,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.05802330000005895,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "optimal control paper",
+   "Abstract",
+   "ume constraint",
+   "equations",
+   "2-D example",
+   "Data Management",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [
+   "optimal control paper",
+   "ume constraint",
+   "equations",
+   "2-D example",
+   "Data Management"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

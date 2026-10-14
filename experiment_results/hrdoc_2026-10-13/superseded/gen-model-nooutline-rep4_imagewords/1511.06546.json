@@ -1,0 +1,188 @@
+{
+ "doc": "1511.06546",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 25,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [
+   "extraction",
+   "ing data",
+   "Funding"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8695652173913043,
+  "unmatched_gt": [
+   "extraction",
+   "ing data",
+   "Funding"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 421,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 22121,
+   "completion_tokens": 952,
+   "total_tokens": 23073
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9274086378737542,
+  "inserted_word_share": 0.06545028456645463
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Step 1",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Step 2",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Abundance estimation model in detail",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Generation of data for validation experiments",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Clustering and selection of strains",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Identiﬁcation of Staphylococcus strains from sequenc-",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3 Estimation in the presence contaminant species",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.4 Estimation in the presence of unknown strain clusters",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.5 Estimation without clustering",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.6 Analysis of clinical samples",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.7 Runtime",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Interpretation of proportions and benchmarking",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2 Applicability to diﬀerent bacterial species",
+   "page": 10,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.3 Relationship to transcript-level RNA-seq analysis",
+   "page": 11,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.754315999998653
+}

@@ -1,0 +1,98 @@
+{
+ "doc": "1806.08600",
+ "system": "outline",
+ "metrics": {
+  "gt": 10,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "ABSTRACT",
+   "Appendix",
+   "Additional Qualitative Results"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1  Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2  Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3  Kinship Face Synthesis",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4  Experiments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1  Experimental Results",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "5  Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6  References",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0715254000024288,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "ABSTRACT",
+   "Appendix",
+   "Additional Qualitative Results"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "Additional Qualitative Results"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

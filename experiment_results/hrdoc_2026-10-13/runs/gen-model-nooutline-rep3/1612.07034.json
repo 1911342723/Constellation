@@ -1,0 +1,210 @@
+{
+ "doc": "1612.07034",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 575,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13472,
+   "completion_tokens": 1286,
+   "total_tokens": 14758
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Rician models in fMRI",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2. Rician models in DTI",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.3. Non-central chi regression",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.4. Application to more advanced diffusion models. We have here focused on the rather",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. HETEROSCEDASTIC RICIAN AND NC-χ REGRESSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Rician regression",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2. NC-χ regression",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3. BAYESIAN INFERENCE",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Posterior distribution and posterior probability maps. The aim of a Bayesian analysis",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2. Prior distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3. Variable selection",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.4. Markov Chain Monte Carlo algorithm",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4. ACTIVITY LOCALIZATION IN FMRI DATA",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. ESTIMATING FRACTIONAL ANISOTROPY AND MEAN DIFFUSIVITY IN DWI DATA",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Diffusion weighted imaging",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5.2. The diffusion tensor model",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5.3. Data",
+   "page": 11,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5.4. Comparisons between the Rician and Gaussian DTI models. We compare the Rician",
+   "page": 12,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "6. DISCUSSION",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A. GRADIENTS AND HESSIANS",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1. Derivatives w.r.t. to µ:",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2. Derivatives w.r.t. to φ:",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.47297880000042,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9583333333333334,
+  "unmatched_gt": [
+   "7. GRA DI ENTS AND H E S S IA NS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

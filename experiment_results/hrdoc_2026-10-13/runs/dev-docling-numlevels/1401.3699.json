@@ -1,0 +1,177 @@
+{
+ "doc": "1401.3699",
+ "system": "docling-numlevels",
+ "derived_from": "dev-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "4.1. Behaviour of the ribb on at a flap tile. It is not obvious how the ribbon"
+  ],
+  "unmatched_pred": [
+   "MAURIZIO PAOLINI",
+   "Theorem 5.1. Any constructible configuration of the puzzle necessarily satisfies",
+   "6.5. Examples of configurations with nonzero linking number. Due to Theorem 6.1 "
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "4.1. Behaviour of the ribb on at a flap tile. It is not obvious how the ribbon"
+  ],
+  "unmatched_pred": [
+   "MAURIZIO PAOLINI",
+   "Theorem 5.1. Any constructible configuration of the puzzle necessarily satisfies",
+   "6.5. Examples of configurations with nonzero linking number. Due to Theorem 6.1 "
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 228.88962299999912
+ },
+ "predictions": [
+  {
+   "text": "EXPLORING THE \"RUBIK'S MAGIC\" UNIVERSE",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "MAURIZIO PAOLINI",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. The puzzle",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Local constraints",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. The ribbon trick",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Metric invariant",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Theorem 5.1. Any constructible configuration of the puzzle necessarily satisfies ∆ = 0.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Topological invariant",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.4. Linking number of constructible configurations.",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6.5. Examples of configurations with nonzero linking number. Due to Theorem 6.1 such configurations of the puzzle cannot be constructed.",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "7. Octominoid configurations",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Planar face-up configurations",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. Configurations with vanishing invariants",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.4. The five sequences with two flaps separated by one tile.",
+   "page": 18,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "10. Unclassified configurations",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11. The software codes",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.030387499999051215,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "4.1. Behaviour of the ribb on at a flap tile. It is not obvious how the ribbon"
+  ],
+  "unmatched_pred": [
+   "MAURIZIO PAOLINI",
+   "Theorem 5.1. Any constructible configuration of the puzzle necessarily satisfies",
+   "6.5. Examples of configurations with nonzero linking number. Due to Theorem 6.1 "
+  ],
+  "ignored_title_predictions": 1
+ }
+}

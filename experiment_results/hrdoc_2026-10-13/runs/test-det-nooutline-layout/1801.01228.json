@@ -1,0 +1,180 @@
+{
+ "doc": "1801.01228",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Comparison of POMDP to heuristic and random policy",
+   "B. Sample POMDP policy run in simulation and on drone"
+  ],
+  "unmatched_pred": [
+   "A Decision-theoretic Approach to Detection-based Target Search with a",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 9,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "A. Comparison of POMDP to heuristic and random policy",
+   "B. Sample POMDP policy run in simulation and on drone"
+  ],
+  "unmatched_pred": [
+   "A Decision-theoretic Approach to Detection-based Target Search with a"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 165,
+  "layout_marked": 20,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9865235267245317,
+  "inserted_word_share": 0.9682171740586205
+ },
+ "predictions": [
+  {
+   "text": "A Decision-theoretic Approach to Detection-based Target Search with a",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. OUR POMDP FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Reduced State Space",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Actions",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Observations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Belief",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Transition Function",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "F. Reward Function and Discount Factor",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Heuristic Policy",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Random policy",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Experimental Setup",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Drone Implementation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSIONS AND FUTURE WORK",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.808406600001035,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Abstract—",
+   "A. Comparison of POMDP to heuristic and random policy",
+   "B. Sample POMDP policy run in simulation and on drone"
+  ],
+  "unmatched_pred": [
+   "A Decision-theoretic Approach to Detection-based Target Search with a",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

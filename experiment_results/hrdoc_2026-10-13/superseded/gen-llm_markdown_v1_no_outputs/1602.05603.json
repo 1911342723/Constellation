@@ -1,0 +1,358 @@
+{
+ "doc": "1602.05603",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 25,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9615384615384616,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 15352,
+   "completion_tokens": 15286
+  },
+  "elapsed_llm_seconds": 70.29896000000008,
+  "content_preservation": 1.0,
+  "inserted_word_share": 0.0,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Full two-photon downconversion of just a single photon",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "II. MODEL",
+    1,
+    1
+   ],
+   [
+    "III. A POSSIBLE IMPLEMENTATION",
+    1,
+    1
+   ],
+   [
+    "IV. NUMERICAL SOLUTION",
+    2,
+    1
+   ],
+   [
+    "A. Two photon generation: scattering and dynamics",
+    2,
+    2
+   ],
+   [
+    "B. Characterization for the two-photon output",
+    2,
+    2
+   ],
+   [
+    "V. ANALYTICAL THEORY",
+    4,
+    1
+   ],
+   [
+    "VI. EFFICIENCY",
+    5,
+    1
+   ],
+   [
+    "VII. CONCLUSIONS",
+    6,
+    1
+   ],
+   [
+    "ACKNOWLEDGMENTS",
+    6,
+    1
+   ],
+   [
+    "Appendix A: One photon scattering, input-output and Linear Response Theory",
+    6,
+    1
+   ],
+   [
+    "1. Input-output ﬁelds calculations",
+    6,
+    2
+   ],
+   [
+    "2. Linear Response theory (LRT)",
+    7,
+    2
+   ],
+   [
+    "3. Practical calculation",
+    7,
+    2
+   ],
+   [
+    "a. Retarded perturbation",
+    7,
+    3
+   ],
+   [
+    "b. AC-driving",
+    8,
+    3
+   ],
+   [
+    "c. The relation",
+    8,
+    3
+   ],
+   [
+    "4. Final formula",
+    8,
+    2
+   ],
+   [
+    "5. Transmission calculation",
+    8,
+    2
+   ],
+   [
+    "6. Leakage",
+    8,
+    2
+   ],
+   [
+    "Appendix B: Eﬃciency calculations",
+    9,
+    1
+   ],
+   [
+    "Appendix C: Numerical simulations",
+    9,
+    1
+   ],
+   [
+    "1. Matrix Product States",
+    9,
+    2
+   ],
+   [
+    "2. Simulated model, input state and parameters used",
+    10,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Full two-photon downconversion of just a single photon",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. A POSSIBLE IMPLEMENTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NUMERICAL SOLUTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Two photon generation: scattering and dynamics",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Characterization for the two-photon output",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "V. ANALYTICAL THEORY",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EFFICIENCY",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A: One photon scattering, input-output and Linear Response Theory",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Input-output ﬁelds calculations",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "2. Linear Response theory (LRT)",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3. Practical calculation",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "a. Retarded perturbation",
+   "page": 7,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "b. AC-driving",
+   "page": 8,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "c. The relation",
+   "page": 8,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "4. Final formula",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5. Transmission calculation",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6. Leakage",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Appendix B: Eﬃciency calculations",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix C: Numerical simulations",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Matrix Product States",
+   "page": 9,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "2. Simulated model, input state and parameters used",
+   "page": 10,
+   "level": 2,
+   "parent": 22
+  }
+ ],
+ "seconds": 70.5297212000005,
+ "metrics_raw": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [
+   "Full two-photon downconversion of just a single photon"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [
+   "Full two-photon downconversion of just a single photon"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.9545454545454546,
+  "unmatched_gt": [
+   "used"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

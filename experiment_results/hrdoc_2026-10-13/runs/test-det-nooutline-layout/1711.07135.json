@@ -1,0 +1,155 @@
+{
+ "doc": "1711.07135",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 390,
+  "layout_marked": 21,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9877017678708686,
+  "inserted_word_share": 0.01255122950819676
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Distributed Computing and Topological Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Immediate snapshot in the read-write model",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Simplicial complexes and subdivisions",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Distributed task and asynchronous computability",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Immediate Snapshot as Iterated Subdivision Using Schlegel",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Schlegel diagram and subdivision",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 The immediate snapshot protocol with oblivious scan",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 The Generic Protocol for Solving Tasks and Its Optimiza-",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 A generic protocol via iterated immediate snapshot",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Protocol optimization for reduced memory access",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusion and Future Work",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A A Quick Look at Partial Evaluation",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.34059569999954,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

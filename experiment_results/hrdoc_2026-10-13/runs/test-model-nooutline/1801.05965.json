@@ -1,0 +1,178 @@
+{
+ "doc": "1801.05965",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 6,
+  "pred": 15,
+  "tp": 6,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1.1. Qualitative CSPs",
+   "1.2. The Nelson-Oppen Criterion",
+   "1.3. Results",
+   "1.4. Outline of the article",
+   "T1 ∪ T2 ∪{∃x(O(x) ∧ P(x))} and T1 ∪ T2 ∪{∃y(O(y) ∧ Q(y))}",
+   "Proof. Let θ be a cross prevention formula of B1. Deﬁne",
+   "f(t(y1), t(y′",
+   "c1 a1 b1 r1",
+   "2)) in"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 635,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 26331,
+   "completion_tokens": 522,
+   "total_tokens": 26853
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Qualitative CSPs",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2. The Nelson-Oppen Criterion",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.3. Results",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.4. Outline of the article",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. Generic Combinations",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "T1 ∪ T2 ∪{∃x(O(x) ∧ P(x))} and T1 ∪ T2 ∪{∃y(O(y) ∧ Q(y))}",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. On the Necessity of the Nelson-Oppen Conditions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. Let θ be a cross prevention formula of B1. Deﬁne",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "f(t(y1), t(y′",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "c1 a1 b1 r1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2)) in",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Examples",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Difficulties for a General Complexity Classification",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.769260900000518,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 15,
+  "tp": 6,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1.1. Qualitative CSPs",
+   "1.2. The Nelson-Oppen Criterion",
+   "1.3. Results",
+   "1.4. Outline of the article",
+   "T1 ∪ T2 ∪{∃x(O(x) ∧ P(x))} and T1 ∪ T2 ∪{∃y(O(y) ∧ Q(y))}",
+   "Proof. Let θ be a cross prevention formula of B1. Deﬁne",
+   "f(t(y1), t(y′",
+   "c1 a1 b1 r1",
+   "2)) in"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 14,
+  "tp": 5,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.4,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1.1. Qualitative CSPs",
+   "1.2. The Nelson-Oppen Criterion",
+   "1.3. Results",
+   "1.4. Outline of the article",
+   "T1 ∪ T2 ∪{∃x(O(x) ∧ P(x))} and T1 ∪ T2 ∪{∃y(O(y) ∧ Q(y))}",
+   "Proof. Let θ be a cross prevention formula of B1. Deﬁne",
+   "f(t(y1), t(y′",
+   "c1 a1 b1 r1",
+   "2)) in"
+  ],
+  "ignored_title_predictions": null
+ }
+}

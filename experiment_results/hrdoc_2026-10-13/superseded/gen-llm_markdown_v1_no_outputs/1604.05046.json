@@ -1,0 +1,268 @@
+{
+ "doc": "1604.05046",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 14054,
+   "completion_tokens": 13053
+  },
+  "elapsed_llm_seconds": 56.40196790000118,
+  "content_preservation": 0.9926075268817204,
+  "inserted_word_share": 0.0018921475875117721,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Trapping of Weak Signal Pulses by Soliton and Trajectory Control in a Coherent Atomic Gas",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "I. INTRODUCTION",
+    1,
+    1
+   ],
+   [
+    "II. MODEL",
+    2,
+    1
+   ],
+   [
+    "III. NONLINEAR ENVELOPE EQUATIONS AND GIANT KERR EFFECT",
+    4,
+    1
+   ],
+   [
+    "IV. TRAPPING OF WEAK SIGNAL PULSES BY SOLITON",
+    8,
+    1
+   ],
+   [
+    "A. Ultraslow and matched group velocities",
+    8,
+    2
+   ],
+   [
+    "B. One weak signal pulse trapped by probe soliton",
+    9,
+    2
+   ],
+   [
+    "C. Multiple signal pulses trapped by the probe soliton pulse",
+    11,
+    2
+   ],
+   [
+    "V. TRAJECTORY CONTROL OF TRAPPED SIGNAL PULSE AND SOLITON",
+    12,
+    1
+   ],
+   [
+    "A. SG deflection of trapped signal pulse and soliton",
+    12,
+    2
+   ],
+   [
+    "B. Trajectory control by using a time-dependent SG gradient magnetic field",
+    14,
+    2
+   ],
+   [
+    "VI. SUMMARY",
+    17,
+    1
+   ],
+   [
+    "ACKNOWLEDGMENTS",
+    18,
+    1
+   ],
+   [
+    "Appendix A: EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+    18,
+    1
+   ],
+   [
+    "Appendix B: EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMATIONS",
+    19,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Trapping of Weak Signal Pulses by Soliton and Trajectory Control in a Coherent Atomic Gas",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NONLINEAR ENVELOPE EQUATIONS AND GIANT KERR EFFECT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TRAPPING OF WEAK SIGNAL PULSES BY SOLITON",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ultraslow and matched group velocities",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. One weak signal pulse trapped by probe soliton",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Multiple signal pulses trapped by the probe soliton pulse",
+   "page": 11,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "V. TRAJECTORY CONTROL OF TRAPPED SIGNAL PULSE AND SOLITON",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. SG deflection of trapped signal pulse and soliton",
+   "page": 12,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Trajectory control by using a time-dependent SG gradient magnetic field",
+   "page": 14,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VI. SUMMARY",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A: EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B: EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMATIONS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 56.616376500001934,
+ "metrics_raw": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Trapping of Weak Signal Pulses by Soliton and Trajectory Control in a Coherent A",
+   "Abstract",
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Trapping of Weak Signal Pulses by Soliton and Trajectory Control in a Coherent A",
+   "Abstract",
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "I. EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "I I. EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMA-",
+   "TIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

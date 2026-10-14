@@ -1,0 +1,164 @@
+{
+ "doc": "1606.00037",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8421052631578947,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Analog Devices Lyric Labs, Cambridge, MA, USA",
+   "2 LTCI, CNRS, T´el´ecom ParisTech, Universit´e Paris-Saclay, Paris, France",
+   "3 CIRMMT, McGill University, Montr´eal, Canada"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Analog Devices Lyric Labs, Cambridge, MA, USA",
+   "2 LTCI, CNRS, T´el´ecom ParisTech, Universit´e Paris-Saclay, Paris, France",
+   "3 CIRMMT, McGill University, Montr´eal, Canada"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 445,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10576,
+   "completion_tokens": 647,
+   "total_tokens": 11223
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.8963876651982379,
+  "inserted_word_share": 0.6458507379560011
+ },
+ "predictions": [
+  {
+   "text": "1 Analog Devices Lyric Labs, Cambridge, MA, USA",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 LTCI, CNRS, T´el´ecom ParisTech, Universit´e Paris-Saclay, Paris, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 CIRMMT, McGill University, Montr´eal, Canada",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BACKGROUND",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Nonnegative matrix factorization",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 NMF for source separation",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Coherent frequency modulation",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.4 Distributed Derivative Method",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3. PROPOSED METHOD",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Motivation",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Compiling the observations as a tensor",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Vibrato NTF",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4. EVALUATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. ACKNOWLEDGEMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.547084600002563
+}

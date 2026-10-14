@@ -1,0 +1,139 @@
+{
+ "doc": "1806.05936",
+ "system": "det",
+ "metrics": {
+  "gt": 10,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Enumerate dom(Γi)∩Ai−1 until we see at least |Ai−1|/2 elements being enumerat",
+   "2. Let Φi be the (total) restriction of Γi to these ≥|Ai−1|/2 elements of Ai−1.",
+   "5. If i < k, increase i by 1 and start the loop again."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 852,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Kolmogorov Complexity",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Characterization of EXT",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Translating the problem: hypergraphs",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 The positive case: random hypergraphs",
+   "page": 10,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 The negative case: β ≥ kα/(1 + (k − 1)α)",
+   "page": 12,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Characterization of EXTp",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Enumerate dom(Γi)∩Ai−1 until we see at least |Ai−1|/2 elements being enumerated.",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Let Φi be the (total) restriction of Γi to these ≥|Ai−1|/2 elements of Ai−1.",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. If i < k, increase i by 1 and start the loop again.",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Going beyond constant-size advice",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.187478799998644,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Enumerate dom(Γi)∩Ai−1 until we see at least |Ai−1|/2 elements being enumerat",
+   "2. Let Φi be the (total) restriction of Γi to these ≥|Ai−1|/2 elements of Ai−1.",
+   "5. If i < k, increase i by 1 and start the loop again."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 11,
+  "tp": 8,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Enumerate dom(Γi)∩Ai−1 until we see at least |Ai−1|/2 elements being enumerat",
+   "2. Let Φi be the (total) restriction of Γi to these ≥|Ai−1|/2 elements of Ai−1.",
+   "5. If i < k, increase i by 1 and start the loop again."
+  ],
+  "ignored_title_predictions": null
+ }
+}

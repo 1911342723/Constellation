@@ -1,0 +1,126 @@
+{
+ "doc": "1704.07490",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Context Aware and Video-Based Risk Descriptor",
+   "d) Adding Temporal Continuity and Feature Selection:"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Context Aware and Video-Based Risk Descriptor",
+   "d) Adding Temporal Continuity and Feature Selection:"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 176,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 2,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 2,
+   "prompt_tokens": 7430,
+   "completion_tokens": 547,
+   "total_tokens": 7977
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9803436605050768,
+  "inserted_word_share": 0.8522319238693221
+ },
+ "predictions": [
+  {
+   "text": "A Context Aware and Video-Based Risk Descriptor",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. BIKE MONITOR APP",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. IMAGE-BASED RISK ASSESSMENT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. BEHAVIOR ANALYSIS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "d) Adding Temporal Continuity and Feature Selection:",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EXPERIMENTAL RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Image-based risk assessment",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Behavior Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.692099300002155
+}

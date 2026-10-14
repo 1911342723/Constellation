@@ -1,0 +1,299 @@
+{
+ "doc": "1712.04953",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [
+   "4.1 Na abundances"
+  ],
+  "unmatched_pred": [
+   "4.1 Na abundances"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 21032,
+   "completion_tokens": 13456
+  },
+  "elapsed_llm_seconds": 59.65394460000243,
+  "content_preservation": 0.7171988892745574,
+  "inserted_word_share": 0.018175338560228127,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Abundance ratios in dwarf elliptical galaxies",
+    0,
+    1
+   ],
+   [
+    "ABSTRACT",
+    0,
+    2
+   ],
+   [
+    "1 INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "2 OBSERVATIONS AND DATA REDUCTION",
+    0,
+    1
+   ],
+   [
+    "2.1 Line-strength measurements",
+    0,
+    2
+   ],
+   [
+    "3 RESULTS",
+    0,
+    1
+   ],
+   [
+    "3.1 Derived ages and metallicities",
+    0,
+    2
+   ],
+   [
+    "3.2 Elemental abundance ratios",
+    0,
+    2
+   ],
+   [
+    "4 DISCUSSION",
+    0,
+    1
+   ],
+   [
+    "4.1 Na abundances",
+    0,
+    2
+   ],
+   [
+    "4.2 Abundance ratios and the formation of dEs",
+    0,
+    2
+   ],
+   [
+    "5 CONCLUSIONS",
+    0,
+    1
+   ],
+   [
+    "ACKNOWLEDGEMENTS",
+    0,
+    1
+   ],
+   [
+    "REFERENCES",
+    0,
+    1
+   ],
+   [
+    "APPENDIX A: CA ABUNDANCES",
+    0,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abundance ratios in dwarf elliptical galaxies",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 OBSERVATIONS AND DATA REDUCTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Line-strength measurements",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Derived ages and metallicities",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Elemental abundance ratios",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 DISCUSSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Na abundances",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Abundance ratios and the formation of dEs",
+   "page": 10,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "5 CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A: CA ABUNDANCES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 59.84346409999853,
+ "metrics_raw": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 2,
+  "fp": 13,
+  "fn": 12,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.1875,
+  "unmatched_gt": [
+   "2 OBSERVATIONS AND DATA REDUCTION",
+   "2.1 Line-strength measurements",
+   "3 RESULTS",
+   "3.1 Derived ages and metallicities",
+   "3.2 Elemental abundance ratios",
+   "4 DISCUSSION",
+   "4.1 Na abundances",
+   "4.2 Abundance ratios and the formation of dEs",
+   "5 CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES",
+   "1 CA ABUNDANCES"
+  ],
+  "unmatched_pred": [
+   "Abundance ratios in dwarf elliptical galaxies",
+   "2 OBSERVATIONS AND DATA REDUCTION",
+   "2.1 Line-strength measurements",
+   "3 RESULTS",
+   "3.1 Derived ages and metallicities",
+   "3.2 Elemental abundance ratios",
+   "4 DISCUSSION",
+   "4.1 Na abundances",
+   "4.2 Abundance ratios and the formation of dEs",
+   "5 CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES",
+   "APPENDIX A: CA ABUNDANCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 2,
+  "fp": 13,
+  "fn": 12,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.1875,
+  "unmatched_gt": [
+   "2 OBSERVATIONS AND DATA REDUCTION",
+   "2.1 Line-strength measurements",
+   "3 RESULTS",
+   "3.1 Derived ages and metallicities",
+   "3.2 Elemental abundance ratios",
+   "4 DISCUSSION",
+   "4.1 Na abundances",
+   "4.2 Abundance ratios and the formation of dEs",
+   "5 CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES",
+   "1 CA ABUNDANCES"
+  ],
+  "unmatched_pred": [
+   "Abundance ratios in dwarf elliptical galaxies",
+   "2 OBSERVATIONS AND DATA REDUCTION",
+   "2.1 Line-strength measurements",
+   "3 RESULTS",
+   "3.1 Derived ages and metallicities",
+   "3.2 Elemental abundance ratios",
+   "4 DISCUSSION",
+   "4.1 Na abundances",
+   "4.2 Abundance ratios and the formation of dEs",
+   "5 CONCLUSIONS",
+   "ACKNOWLEDGEMENTS",
+   "REFERENCES",
+   "APPENDIX A: CA ABUNDANCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "4.1 Na abundances",
+   "1 CA ABUNDANCES"
+  ],
+  "unmatched_pred": [
+   "4.1 Na abundances"
+  ],
+  "ignored_title_predictions": null
+ }
+}

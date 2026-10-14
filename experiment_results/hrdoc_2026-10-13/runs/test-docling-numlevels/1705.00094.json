@@ -1,0 +1,144 @@
+{
+ "doc": "1705.00094",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "Dilemma game",
+   "Biased Environment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 9,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Dilemma game",
+   "Biased Environment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 49.36762969999836
+ },
+ "predictions": [
+  {
+   "text": "The Impact of Coevolution and Abstention on the Emergence of Cooperation ⋆",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Methodology",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 The Benefits of Coevolution and Abstention",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Presence of Abstainers in the Coevolutionary Model",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Inspecting the Coevolutionary Environment",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Exploring the Coevolutionary Optional Prisoner's Dilemma game",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Investigating the properties of ∆ and δ",
+   "page": 9,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5.2 Varying the Number of States",
+   "page": 10,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5.3 Investigating the Relationship between ∆/δ, b and l",
+   "page": 11,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "6 Investigating the Robustness of Cooperation in a Biased Environment",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusions and Future Work",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.008800499999779277,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 10,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "Dilemma game",
+   "Biased Environment"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

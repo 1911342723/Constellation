@@ -1,0 +1,690 @@
+{
+ "protocol": "Seeded random sample (seed 20261014) of 100 of the 780 false positives of model-nooutline on the complete test split (all 454 documents). Each item was judged from the predicted line, its neighbouring source lines with typography, and nearby reference sections; when the title could appear elsewhere, the full reference was checked. genuine_heading: a section title in the document that the reference omits (incl. Abstract/Acknowledgments/References/Appendix and run-in numbered subsections); split_or_version_text: the line belongs to a referenced section whose title was split across lines or whose page/wording differs in the fetched arXiv version; error: not a section title. Unnumbered bold paragraph labels and theorem/proof labels are counted as errors. AI-assisted judgement, pending author review; the reference itself was not changed. Supersedes an earlier sample drawn before 91 failed documents were re-run (24 items carried over unchanged).",
+ "summary": {
+  "verdicts": {
+   "genuine_heading": 25,
+   "error": 70,
+   "split_or_version_text": 5
+  },
+  "error_kinds": {
+   "title_page_or_running_header": 6,
+   "run_in_label_or_list_item": 18,
+   "figure_or_table_text": 18,
+   "reference_entry": 4,
+   "formula_or_algorithm_line": 21,
+   "body_text_line": 3
+  }
+ },
+ "items": [
+  {
+   "doc": "1509.08457",
+   "pred_index": 0,
+   "title": "ABSTRACT",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1509.08842",
+   "pred_index": 0,
+   "title": "Automatically",
+   "verdict": "error",
+   "error_kind": "title_page_or_running_header"
+  },
+  {
+   "doc": "1510.01218",
+   "pred_index": 11,
+   "title": "4.3. Biomass evolution and (BN) model",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1510.01218",
+   "pred_index": 25,
+   "title": "REFERENCES",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1510.06794",
+   "pred_index": 3,
+   "title": "Acknowledgments",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1510.08972",
+   "pred_index": 4,
+   "title": "2.3. Recording tableaux",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1510.08972",
+   "pred_index": 10,
+   "title": "Example 3.3. We have",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1511.06656",
+   "pred_index": 16,
+   "title": "REFERENCES",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1511.07373",
+   "pred_index": 10,
+   "title": "Reﬁnability assumption*[4]: In a plausibility",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1603.00232",
+   "pred_index": 11,
+   "title": "Value",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1603.00232",
+   "pred_index": 15,
+   "title": "Parameter",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1603.00232",
+   "pred_index": 19,
+   "title": "60 m nchannels",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1604.05016",
+   "pred_index": 1,
+   "title": "Fig. 1 Section of the GERDA experiment",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1605.05157",
+   "pred_index": 2,
+   "title": "77 Rue des Chantiers, 78000, Versailles, France",
+   "verdict": "error",
+   "error_kind": "title_page_or_running_header"
+  },
+  {
+   "doc": "1605.06132",
+   "pred_index": 2,
+   "title": "1. The ﬁrst-step of the method.",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1606.00785",
+   "pred_index": 21,
+   "title": "Op. 142 No. 3",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1608.02456",
+   "pred_index": 8,
+   "title": "H− beam",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1608.02456",
+   "pred_index": 17,
+   "title": "mechanism",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1608.02456",
+   "pred_index": 28,
+   "title": "6 Beam loss mitigation",
+   "verdict": "split_or_version_text"
+  },
+  {
+   "doc": "1608.02456",
+   "pred_index": 30,
+   "title": "Mitigation",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1608.02800",
+   "pred_index": 1,
+   "title": "Abstract. Developments in the context of Open, Big, and Linked Data",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1609.03570",
+   "pred_index": 14,
+   "title": "Appendix A",
+   "verdict": "split_or_version_text"
+  },
+  {
+   "doc": "1612.00969",
+   "pred_index": 7,
+   "title": "2. Rule based Extraction Features: We add a feature indi-",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1612.01381",
+   "pred_index": 8,
+   "title": "J. Ravichandran, R. Ramesh, J. E",
+   "verdict": "error",
+   "error_kind": "reference_entry"
+  },
+  {
+   "doc": "1612.04140",
+   "pred_index": 0,
+   "title": "A microscopically derived formula for alpha-decay",
+   "verdict": "error",
+   "error_kind": "title_page_or_running_header"
+  },
+  {
+   "doc": "1702.00304",
+   "pred_index": 6,
+   "title": "µ (sol([q]∼",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1702.00304",
+   "pred_index": 17,
+   "title": "2: ∼M ← ComputeCoarsestCongruence(M, Q × Q)",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1703.04824",
+   "pred_index": 3,
+   "title": "(d) Reprintable output: same music expressed differently",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1703.04824",
+   "pred_index": 22,
+   "title": "(c) Writer 22: Disjoint primitives and deformed noteheads. Some",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1703.10299",
+   "pred_index": 1,
+   "title": "XXXXXX Vol. xx, No. x (2017) xxxxxx",
+   "verdict": "error",
+   "error_kind": "title_page_or_running_header"
+  },
+  {
+   "doc": "1704.00568",
+   "pred_index": 15,
+   "title": "Total-Variation",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1704.01924",
+   "pred_index": 26,
+   "title": "APPENDIX A",
+   "verdict": "split_or_version_text"
+  },
+  {
+   "doc": "1704.07490",
+   "pred_index": 5,
+   "title": "d) Adding Temporal Continuity and Feature Selection:",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1705.05287",
+   "pred_index": 0,
+   "title": "Understanding Information Transmission in Complex Networks",
+   "verdict": "error",
+   "error_kind": "title_page_or_running_header"
+  },
+  {
+   "doc": "1705.08550",
+   "pred_index": 0,
+   "title": "Abstract. Mammogram classiﬁcation is directly related to computer-aided di-",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1705.08550",
+   "pred_index": 1,
+   "title": "volutional features for natural image analysis and multi-instance learning (MIL)",
+   "verdict": "error",
+   "error_kind": "body_text_line"
+  },
+  {
+   "doc": "1705.09677",
+   "pred_index": 2,
+   "title": "Contributions",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1705.09677",
+   "pred_index": 10,
+   "title": "return S",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1705.09677",
+   "pred_index": 13,
+   "title": "return S",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1706.04737",
+   "pred_index": 1,
+   "title": "Challenges from the perspective of active learning. It needs to exploit",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1706.05077",
+   "pred_index": 2,
+   "title": "Short duration enrollment and test utterances: This hap-",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1706.05971",
+   "pred_index": 1,
+   "title": "1.1. Spin geometry in two-dimensional Minkowski space. First, let us ﬁx the notations",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1706.06480",
+   "pred_index": 17,
+   "title": "Actual Class Labels",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1707.04207",
+   "pred_index": 0,
+   "title": "Abstract. This work looks in depth at several studies that have at-",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1707.09850",
+   "pred_index": 1,
+   "title": "Sean Murray",
+   "verdict": "error",
+   "error_kind": "title_page_or_running_header"
+  },
+  {
+   "doc": "1707.09850",
+   "pred_index": 4,
+   "title": "Hypothesis 1: Every researcher is an application",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1708.00961",
+   "pred_index": 11,
+   "title": "minG maxG LWGAN(G, D)",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1708.00961",
+   "pred_index": 26,
+   "title": "(a) VGG Map of Full Dose Image",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1709.08958",
+   "pred_index": 3,
+   "title": "1.3. Sketch of proof",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1709.08958",
+   "pred_index": 14,
+   "title": "3.1.2. Characterization of simple geodesics",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1709.08958",
+   "pred_index": 16,
+   "title": "4.1. The Fenchel-Nielsen twist",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1710.03202",
+   "pred_index": 0,
+   "title": "Abstract",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1710.05481",
+   "pred_index": 1,
+   "title": "1. Depth-reduction",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1710.05481",
+   "pred_index": 13,
+   "title": "11: else",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1710.05481",
+   "pred_index": 15,
+   "title": "14: end for",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1710.05481",
+   "pred_index": 18,
+   "title": "Variable coloring, t-product polynomials and imbalance. We start with some nota-",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1711.07027",
+   "pred_index": 17,
+   "title": "Sensitivity of SPGAN to key parameters. The margin",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1712.03829",
+   "pred_index": 29,
+   "title": "sti ▷ ∆i ⊢ t : σi)i∈I",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1712.04313",
+   "pred_index": 15,
+   "title": "long. Finally, boundary precision, recall, and F-score are",
+   "verdict": "error",
+   "error_kind": "body_text_line"
+  },
+  {
+   "doc": "1801.01228",
+   "pred_index": 16,
+   "title": "(e) Step 5",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1801.05965",
+   "pred_index": 1,
+   "title": "1.1. Qualitative CSPs",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1801.05965",
+   "pred_index": 3,
+   "title": "1.3. Results",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1801.10237",
+   "pred_index": 9,
+   "title": "23 S. Kimura, T. Takeuchi, K. Okunishi, M",
+   "verdict": "error",
+   "error_kind": "reference_entry"
+  },
+  {
+   "doc": "1802.08375",
+   "pred_index": 3,
+   "title": "Tying weights in NLM: Reusing embeddings",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1802.08375",
+   "pred_index": 14,
+   "title": "Conjecture. Let Ein",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1803.00686",
+   "pred_index": 12,
+   "title": "(b) Medium details",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1803.01834",
+   "pred_index": 7,
+   "title": "for ℓ = 1 to n do",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.01834",
+   "pred_index": 8,
+   "title": "end for",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.01834",
+   "pred_index": 9,
+   "title": "∂Wℓ , c1), ∇bℓ ← Normalize( ∂Lℓ(zℓ,yℓ",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.01834",
+   "pred_index": 12,
+   "title": "end if",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.01834",
+   "pred_index": 18,
+   "title": "sign(h) = sign(tanh(h))",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.01834",
+   "pred_index": 31,
+   "title": "k=1 exp(zi",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.01834",
+   "pred_index": 43,
+   "title": "∂Wℓ , c1), ∇bℓ ← Normalize( ∂Lℓ(zℓ,yℓ",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.01834",
+   "pred_index": 47,
+   "title": "t ))(z1",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.07733",
+   "pred_index": 9,
+   "title": "5.3 Solv",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1803.07733",
+   "pred_index": 10,
+   "title": "5.5 SL(2, R)",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1803.07733",
+   "pred_index": 11,
+   "title": "5.8 R × S2 and R × H2",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1803.10136",
+   "pred_index": 9,
+   "title": "end if",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1803.10136",
+   "pred_index": 16,
+   "title": "2.2.3 Organization of the Audio Samples",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1803.10983",
+   "pred_index": 17,
+   "title": "8: G1 ← G/wy, G2 ← G/yz, G3 ← G − ewz",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1804.03787",
+   "pred_index": 16,
+   "title": "19: end for",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1805.03610",
+   "pred_index": 12,
+   "title": "S. Corbel, J. Rodriguez, A. Loh, S",
+   "verdict": "error",
+   "error_kind": "reference_entry"
+  },
+  {
+   "doc": "1805.04419",
+   "pred_index": 7,
+   "title": "PROCESS",
+   "verdict": "split_or_version_text"
+  },
+  {
+   "doc": "1805.06084",
+   "pred_index": 18,
+   "title": "3 SIMULATING HOUGAARD RANDOM VARIABLES",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1805.06084",
+   "pred_index": 23,
+   "title": "6.2 Computation time",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1806.05266",
+   "pred_index": 0,
+   "title": "Abstract",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1806.05942",
+   "pred_index": 6,
+   "title": "else",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1806.07317",
+   "pred_index": 16,
+   "title": "Appendix B",
+   "verdict": "split_or_version_text"
+  },
+  {
+   "doc": "1806.07406",
+   "pred_index": 5,
+   "title": "else",
+   "verdict": "error",
+   "error_kind": "formula_or_algorithm_line"
+  },
+  {
+   "doc": "1807.02098",
+   "pred_index": 11,
+   "title": "(a) Result: Validation Accuracy & Loss of VGG16 in G1.i Test",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1807.05019",
+   "pred_index": 19,
+   "title": "conﬁg.7 ↑ ↓ ↑ ↓",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1807.08233",
+   "pred_index": 24,
+   "title": "Raspberry Pi 3",
+   "verdict": "error",
+   "error_kind": "figure_or_table_text"
+  },
+  {
+   "doc": "1808.01970",
+   "pred_index": 3,
+   "title": "3.1. Almost conjugacy",
+   "verdict": "genuine_heading"
+  },
+  {
+   "doc": "1808.04352",
+   "pred_index": 20,
+   "title": "patterns failed the Turing test, whereas Blob, Lazy class and Spaghetti Code",
+   "verdict": "error",
+   "error_kind": "body_text_line"
+  },
+  {
+   "doc": "1808.05481",
+   "pred_index": 7,
+   "title": "Lemma 4.9. If t1 →∞",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1808.05481",
+   "pred_index": 13,
+   "title": "Proof. By coinduction. If s ≡ a then t →∗",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1808.05481",
+   "pred_index": 21,
+   "title": "Proof. By Lemma 5.14 we have t →∞",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1808.05481",
+   "pred_index": 22,
+   "title": "Lemma 5.21. If t →∞",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1808.05611",
+   "pred_index": 12,
+   "title": "Construction of the Training Set Despite its",
+   "verdict": "error",
+   "error_kind": "run_in_label_or_list_item"
+  },
+  {
+   "doc": "1808.07823",
+   "pred_index": 11,
+   "title": "15. Ronneberger, O., Fischer, P., Brox, T.",
+   "verdict": "error",
+   "error_kind": "reference_entry"
+  }
+ ]
+}

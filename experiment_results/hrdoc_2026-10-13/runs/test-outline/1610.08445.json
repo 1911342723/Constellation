@@ -1,0 +1,166 @@
+{
+ "doc": "1610.08445",
+ "system": "outline",
+ "metrics": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Notation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Converting Inference for SRL Models into WFOMC",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Calculating the WFOMC of a Theory",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3 Domain-Liftability",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 The Domain Recursion Rule",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Domain Recursion Makes More Theories Domain-Liftable",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 S2FO2 and S2RU: New Domain-Liftable Classes",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experiments and Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Proofs of the Theorems, Propositions, and Lemmas",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1 Proof of Proposition ??",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9.2 Proof of Proposition ??",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9.3 Proof of Proposition ??",
+   "page": 10,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9.4 Proof of Theorem ??",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9.5 Proof of Lemma ??",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9.6 Proof of Lemma ??",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "9.7 Proof of Proposition ??",
+   "page": 20,
+   "level": 2,
+   "parent": 11
+  }
+ ],
+ "seconds": 0.07723059999989346,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "Abstract",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

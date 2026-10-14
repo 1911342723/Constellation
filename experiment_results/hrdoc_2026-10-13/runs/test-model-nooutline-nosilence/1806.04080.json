@@ -1,0 +1,307 @@
+{
+ "doc": "1806.04080",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 18,
+  "pred": 31,
+  "tp": 18,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 12,
+  "teds": 0.40625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Oded Regev∗",
+   "Amnon Ta-Shma†",
+   "Ishay Haviv",
+   "ACM Classiﬁcation: F.1.3",
+   "AMS Classiﬁcation: 03D15, 68Q17",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "5. Edge consistency clauses: For each edge e(i)",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "j is True, then w(i)",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 516,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18126,
+   "completion_tokens": 773,
+   "total_tokens": 18899
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "On the Hardness of Satisﬁability with",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Bounded Occurrences in the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Polynomial-Time Hierarchy",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Oded Regev∗",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Amnon Ta-Shma†",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Ishay Haviv",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "ACM Classiﬁcation: F.1.3",
+   "page": 0,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "AMS Classiﬁcation: 03D15, 68Q17",
+   "page": 0,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Π2 satisﬁability problem",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "2.2 Expanders and superconcentrators",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Hardness of approximation for ∀∃-3-SAT-B",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Step 1",
+   "page": 4,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "3.1.1 The reduction",
+   "page": 5,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "5. Edge consistency clauses: For each edge e(i)",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "j is True, then w(i)",
+   "page": 7,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "3.1.2 Completeness",
+   "page": 7,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "3.1.3 Soundness",
+   "page": 7,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Step 2",
+   "page": 9,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "3.3 Step 3",
+   "page": 9,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "4 On the number of occurrences",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Extension to higher levels of the hierarchy",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Step 1",
+   "page": 11,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "5.2 Step 2",
+   "page": 12,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Step 3",
+   "page": 13,
+   "level": 2,
+   "parent": 30
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.789410100001987,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 34,
+  "tp": 18,
+  "fp": 16,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 12,
+  "teds": 0.37142857142857144,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On the Hardness of Satisﬁability with",
+   "Bounded Occurrences in the",
+   "Polynomial-Time Hierarchy",
+   "Oded Regev∗",
+   "Amnon Ta-Shma†",
+   "Ishay Haviv",
+   "ACM Classiﬁcation: F.1.3",
+   "AMS Classiﬁcation: 03D15, 68Q17",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "5. Edge consistency clauses: For each edge e(i)",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "j is True, then w(i)",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 29,
+  "tp": 16,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 11,
+  "teds": 0.3666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Oded Regev∗",
+   "Amnon Ta-Shma†",
+   "Ishay Haviv",
+   "ACM Classiﬁcation: F.1.3",
+   "AMS Classiﬁcation: 03D15, 68Q17",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "5. Edge consistency clauses: For each edge e(i)",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "j is True, then w(i)",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA",
+   "I. HAVIV, O. REGEV, AND A. TA-SHMA"
+  ],
+  "ignored_title_predictions": null
+ }
+}

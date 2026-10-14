@@ -1,0 +1,211 @@
+{
+ "doc": "1502.00973",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.92,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Proof of Theorem 2",
+   "B.1 Proof of Theorem 3"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 823,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 19304,
+   "completion_tokens": 992,
+   "total_tokens": 20296
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Main contributions",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.2 Relation to existing weighted FDR procedures",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1.3 Organization of article",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 A weighted FDR procedure for discrete paradigm",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Multiple testing Poisson means or Binomial means",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Rationale for the weighted FDR procedure",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 A new grouping algorithm",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.4 The weighted FDR procedure and its conservativeness",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Simulation study",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Simulation design under independence",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2 Simulation design under dependence",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3 Simulation results",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4 Two applications to multiple testing with discrete data",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Application to drug safety study",
+   "page": 17,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.2 Application to methylation study",
+   "page": 18,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5 Discussion",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conﬂict of interest",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proof of Theorem 2",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B wFDR procedure with plug-in estimator of oracle weights",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B.1 Proof of Theorem 3",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 36.26543980000133,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 22,
+  "parent_correct": 22,
+  "teds": 0.92,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Proof of Theorem 2",
+   "B.1 Proof of Theorem 3"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Proof of Theorem 2",
+   "B.1 Proof of Theorem 3"
+  ],
+  "ignored_title_predictions": null
+ }
+}

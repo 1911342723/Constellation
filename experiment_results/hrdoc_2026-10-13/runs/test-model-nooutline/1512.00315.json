@@ -1,0 +1,146 @@
+{
+ "doc": "1512.00315",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "A. Noise Injection Sampler for the Link Matrix",
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 149,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4099,
+   "completion_tokens": 395,
+   "total_tokens": 4494
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Side Information",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. STATISTICAL MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. General Setup",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. GIBBS SAMPLER",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Results",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.801633900002344,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "A. Noise Injection Sampler for the Link Matrix",
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "A. Noise Injection Sampler for the Link Matrix",
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "doc": "1806.06017",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 300,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Our contribution",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2 Related work",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Learning homonymous author bibliographies",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Metadata curation at dblp",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 A gold-data set for homonym detection",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Vectorization of author bibliographies",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Classiﬁer setup",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Evaluation",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Implementation",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 Quality measures",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.3 Results",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.9517739999973855,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

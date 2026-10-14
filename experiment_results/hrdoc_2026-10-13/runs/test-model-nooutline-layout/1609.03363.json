@@ -1,0 +1,206 @@
+{
+ "doc": "1609.03363",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.6956521739130435,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Digital-domain Atomic Function Computation (D-AFC)"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.7619047619047619,
+  "unmatched_gt": [
+   "B. Digital-domain Atomic Function Computation (D-AFC)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 658,
+  "layout_marked": 23,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14028,
+   "completion_tokens": 925,
+   "total_tokens": 14953
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.964772869478163,
+  "inserted_word_share": 0.3709868233182393
+ },
+ "predictions": [
+  {
+   "text": "CONDENSE: A Reconﬁgurable Knowledge",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND PRELIMINARIES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The 3GPP MTC Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Software Deﬁned Networking (SDN) and Network Function",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Notational preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. CONDENSE ARCHITECTURE: IOT/CLOUD",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. CONDENSE Architecture: Modules and Layers",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. CONDENSE Architecture",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. ATOMIC FUNCTION COMPUTATION LAYER",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Analog-domain Atomic Function Computation (A-AFC)",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. NETWORK FUNCTION COMPUTATION LAYER",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Theoretical Aspects of NFC Layer",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Implementation Aspects of NFC Layer",
+   "page": 8,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "VI. APPLICATION LAYER",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data recovery through network coding",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "B. Statistical estimation and learning",
+   "page": 10,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "C. Neural networks",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. OTHER IMPLEMENTATION ASPECTS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSIONS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 15.316084400001273,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.6956521739130435,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Digital-domain Atomic Function Computation (D-AFC)"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

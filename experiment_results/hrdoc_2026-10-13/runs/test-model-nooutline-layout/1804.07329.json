@@ -1,0 +1,203 @@
+{
+ "doc": "1804.07329",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 24,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 22,
+  "parent_correct": 20,
+  "teds": 0.84,
+  "unmatched_gt": [
+   "Eye Movements in Reading",
+   "TOEFL"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [
+   "Eye Movements in Reading",
+   "TOEFL"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 218,
+  "layout_marked": 24,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14144,
+   "completion_tokens": 861,
+   "total_tokens": 15005
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9237478897017445,
+  "inserted_word_share": 0.21195391262602015
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Experimental Setup",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Procedure and Reading Materials",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Experimental Regimes",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Standardized English Tests",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Data Split",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Eye Movement Features",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Type-Level Features",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Word Property Coefﬁcients (WP-Coefﬁcients)",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "Syntactic Clusters (S-Clusters)",
+   "page": 3,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.2 Token-Level Features",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "Transitions",
+   "page": 4,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "Words in Fixed Context (WFC)",
+   "page": 4,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "4 English Proﬁciency Scoring Based on",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Correlation with MET and TOEFL",
+   "page": 4,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "5 Predicting Performance on MET and",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results",
+   "page": 6,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6 Related Work",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion and Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.280200699999114,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 22,
+  "tp": 22,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 22,
+  "parent_correct": 20,
+  "teds": 0.84,
+  "unmatched_gt": [
+   "Eye Movements in Reading",
+   "TOEFL"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

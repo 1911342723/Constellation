@@ -1,0 +1,272 @@
+{
+ "doc": "1604.05046",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "I. EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "I I. EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMA-",
+   "TIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Trapping of Weak Signal Pulses by Soliton and Trajectory Control in a Coherent Atomic Gas",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "I. INTRODUCTION",
+    1,
+    1
+   ],
+   [
+    "II. MODEL",
+    2,
+    1
+   ],
+   [
+    "III. NONLINEAR ENVELOPE EQUATIONS AND GIANT KERR EFFECT",
+    4,
+    1
+   ],
+   [
+    "IV. TRAPPING OF WEAK SIGNAL PULSES BY SOLITON",
+    8,
+    1
+   ],
+   [
+    "A. Ultraslow and matched group velocities",
+    8,
+    2
+   ],
+   [
+    "B. One weak signal pulse trapped by probe soliton",
+    9,
+    2
+   ],
+   [
+    "C. Multiple signal pulses trapped by the probe soliton pulse",
+    11,
+    2
+   ],
+   [
+    "V. TRAJECTORY CONTROL OF TRAPPED SIGNAL PULSE AND SOLITON",
+    12,
+    1
+   ],
+   [
+    "A. SG deflection of trapped signal pulse and soliton",
+    12,
+    2
+   ],
+   [
+    "B. Trajectory control by using a time-dependent SG gradient magnetic field",
+    14,
+    2
+   ],
+   [
+    "VI. SUMMARY",
+    17,
+    1
+   ],
+   [
+    "ACKNOWLEDGMENTS",
+    18,
+    1
+   ],
+   [
+    "Appendix A: EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+    18,
+    1
+   ],
+   [
+    "Appendix B: EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMATIONS",
+    19,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 14054,
+   "completion_tokens": 13048
+  },
+  "elapsed_llm_seconds": 51.034924599996884,
+  "word_preservation": {
+   "recall": 0.9955561540533262,
+   "in_order": 0.9955561540533262,
+   "inserted": 0.0008109203946479182
+  },
+  "output_markdown": "# Trapping of Weak Signal Pulses by Soliton and Trajectory Control in a Coherent Atomic Gas\n\nZhiming Chen and Guoxiang Huang∗\n\nState Key Laboratory of Precision Spectroscopy and Department of Physics, East China Normal University, Shanghai 200062, China\n\n(Dated: October 26, 2018)\n\n## Abstract\n\nWe propose a method for trapping weak signal pulses by soliton and realizing its trajectory control via electromagnetically induced transparency (EIT). The system we consider is a cold, coherent atomic gas with a tripod or multipod level configuration. We show that, due to the giant enhancement of Kerr nonlinearity contributed by EIT, several weak signal pulses can be effectively trapped by a soliton and cotravel stably with ultraslow propagating velocity. Furthermore, we demonstrate that the trajectories of the soliton and the trapped signal pulses can be manipulated by using a Stern-Gerlach gradient magnetic field. As a result, the soliton and the trapped signal pulses display a Stern-Gerlach deflection and both of them can bypass an obstacle together. The results predicted here may be used to design all-optical switching at very low light level.\n\nPACS numbers: 42.65.Tg, 05.45.Yv\n\n∗Email: gxhuang@phy.ecnu.edu.cn\n\n<<page 2>>\n# I. INTRODUCTION\n\nIn recent years, the technique of trapping material (or massive) particles by light has been successfully developed and widely used in many research fields [1–3]. Because there is no interaction between photons in vacuum, for trapping light by light one must resort to optical media. The principle of trapping light by light is that a light beam acting on an optical medium induces a change of refractive index, which may provide an attractive potential to trap another light beam [4].\n\nRecently, much attention has been paid to the study on soliton-radiation trapping (SRT), in which a localized nonlinear optical beam, i.e., optical soliton, traps a weak optical beam through cross-phase modulation (CPM) effect. SRT can also occur for optical pulses if the condition of group-velocity matching between soliton and weak pulse is fulfilled [5–8]. The most typical example of the SRT occurs in optical fibers. The recent development of highly nonlinear fibers has led to the observation of many nonlinear optical effects such as the Raman-induced frequency shifts and supercontinuum generation [4, 9]. These nonlinear phenomena have many new applications in fields as diverse as high-precision metrology and optical coherence tomography. When an optical soliton is launched in a nonlinear fiber, it may emit a dispersive wave, called nonsolitonic or Cherenkov radiation, with propagation constant (or phase velocity) matched with that of the soliton. If the group velocities of both the soliton and the nonsolitonic radiation are close, the phenomenon of SRT appears, which has promising applications for realizing, e.g., different types of optical switching and supercontinuum generation [4, 6–9].\n\nThere is much research on SRT in various physical settings [6–14]. In a recent work, Saleh and Biancalana [15] proposed a technique for obtaining an optical pulse trapping (similar to SRT) in which a soliton traps a small-amplitude optical pulse in a symmetric hollow-core photonic crystal fiber filled with a noble gas. However, up to now all works on optical pulse trapping mentioned above utilized passive optical media, in which far-off resonance excitation schemes are employed for avoiding significant optical absorption. To obtain optical pulse trapping in passive media, very high light-intensity and ultrashort laser pulses are required to obtain nonlinearity strong enough to balance the dispersion and/or diffraction effects; furthermore, an active control on the property of optical pulse trapping is not easy to realize in passive media because of the absence of energy-level structure and selection rules that can be used and manipulated.\n\n<<page 3>>\nIn this article, we propose a mechanism for trapping weak signal pulses by soliton and realize its trajectory control via electromagnetically induced transparency (EIT), a typical quantum interference effect occurring in resonant multilevel systems [16]. The system we consider is a cold, coherent atomic gas with a tripod or multipod level configuration. By means of EIT, not only the optical absorption can be largely suppressed but also an enhanced Kerr nonlinearity can be obtained. We show that several weak signal pulses can be easily trapped by a soliton and stably cotravel with an ultraslow propagating velocity. Furthermore, we demonstrate that the trajectories of the soliton and the trapped signal pulses can be steered by using a Stern-Gerlach (SG) gradient magnetic field, a technique used recently for linear optical beams [17–19] and light bullets [20, 21]. As a result, the soliton and the trapped signal pulses display a SG deflection and both of them can bypass an obstacle together. The results predicted here may have potential applications for optical information processing, such as for the design of all-optical switching at very low light level.\n\nThe article is arranged as follows. In Sec. II, the theoretical model under study is described. In Sec. III, the nonlinear envelope equations governing the evolution of the probe and signal pulses are derived. The trapping of weak signal pulses by soliton and its SG deflection are investigated in detail in Sec. IV and Sec. V, respectively. Finally, in Sec. VI a summary of our main results is given.\n\n# II. MODEL\n\nWe consider a lifetime-broadened atomic gas with a tripod-type level configuration, interacting resonantly with three laser fields, i.e., pulsed probe (with half Rabi frequency Ωp), pulsed signal (with half Rabi frequency Ωs), and continuous-wave control (with half Rabi frequency Ωc) fields. The probe field has center frequency ωp/(2π) and couples with the |1⟩↔|4⟩ transition, the signal field has the center frequency ωs/(2π) and couples with the |2⟩↔|4⟩ transition, and the control field has the center frequency ωc/(2π) and couples with the |3⟩↔|4⟩ transition, respectively [Fig. 1(a) ]. We assume atoms are cooled to an ultralow temperature so that their center-of-mass motion is negligible.\n\nFor simplicity, we assume that all the laser fields propagate nearly along z direction [22]. Thus the electric field vector in the system reads E = P l=p,s,c elElei(klz−ωlt)+c.c., where el (El)\n\n<<page 4>>\nFIG. 1. (Color online) (a) Tripod-type atomic level diagram and excitation scheme. ∆2 and ∆3 are two-photon detunings and ∆4 is one-photon detuning. Ωp, Ωs, and Ωc are half Rabi frequencies of the probe, signal, and control fields, respectively. (b) Possible experimental arrangement of beam geometry. The probe, signal, and control fields propagate nearly along the z direction [22]. A Stern-Gerlach magnetic field is applied along the z direction with its gradient along the x direction. The region in the closed dashed line indicates the ultracold atomic gas.\n\nis the unit polarization vector (envelope) of the lth polarization component. Additionally, we assume a SG gradient magnetic field,\n\nB(x, t) = ezBx, (1)\n\nis applied to the system, where ez is the unit vector in the z-direction and B characterizes the transverse gradient. Due to the presence of the SG gradient magnetic field, the Zeeman level shift ∆Ej,Zeeman = µBgj Fmj FBx for the level Ej occurs. Here µB, gj F, and mj F are Bohr magneton, gyromagnetic factor, and magnetic quantum number of the level |j⟩, respectively. The propose of introducing the SG gradient magnetic field is to produce an external force in transverse (i.e. x, y) directions so that the traveling trajectory of the probe and signal optical pulses can be manipulated, as will be shown below.\n\nUnder electric-dipole and rotating-wave approximations, the Hamiltonian of the system in the interaction picture reads\n\nˆHint =− 4 X j=1 ℏ∆j|j⟩⟨j| −ℏ[Ωp|4⟩⟨1| + Ωs|4⟩⟨2| + Ωc|4⟩⟨3| + H.c.] , (2)\n\nwith ∆1 = 0, Ωp = (ep · p14)Ep/ℏ, Ωs = (es · p24)Es/ℏ, and Ωc = (ec · p34)Ec/ℏ. Here pjl is the electric-dipole matrix element related to the states |j⟩and |l⟩.\n\n<<page 5>>\nThe equation of motion for density matrix σ in the interaction picture is [23]\n\n∂σ ∂t = −i ℏ[ ˆHint, σ] −Γσ, (3)\n\nwhere Γ is a relaxation matrix. The explicit expression for density-matrix elements σjl is given in Appendix A.\n\nThe equation of motion for probe-field and signal-field Rabi frequencies Ωp and Ωs can be captured by the Maxwell equation ∇2E −(1/c2)∂2E/∂t2 = [1/(ǫ0c2)]∂2P/∂t2, where P = NaTr(pρ) with Na the atomic concentration and ρ the density matrix in the Schr¨odinger picture. Under slowly varying envelope approximation, the equations of motion for Ωp and Ωs read [24]\n\ni  ∂ ∂z + 1 c ∂ ∂t  Ωp + c 2ωp ∂2 ∂x2 Ωp + κ14σ41 = 0, (4a)\n\ni  ∂ ∂z + 1 c ∂ ∂t  Ωs + c 2ωs ∂2 ∂x2Ωs + κ24σ42 = 0, (4b)\n\nwhere κ14 = Naωp|p14 · ep|2/(2ǫ0cℏ) and κ24 = Naωs|p24 · es|2/(2ǫ0cℏ), with c the light speed in vacuum. Note that we have assumed Rx ≪Ry, where Rx and Ry are respectively the transverse radii of the probe and signal pulses, and hence the diffraction in the y direction (i.e., ∂Ωp,s/∂y2) is negligible. Additionally, we have assumed the control field is strong enough so that Ωc can be regarded as a constant during the evolution of the probe and signal pulses.\n\nThe model given above can be easily realized by selecting realistic physical systems. One of them is the ultracold 87Rb atomic gas with the energy levels selected as |1⟩= |52S1/2, F = 1, mF = −1⟩(gF = −1/2), |2⟩= |52S1/2, F = 1, mF = 0⟩(gF = −1/2), |3⟩= |52S1/2, F = 2, mF = 0⟩(gF = 1/2), and |4⟩= |52P1/2, F = 2, mF = 0⟩(gF = 1/6) [25]. The decay rates are given by Γ2 ≃Γ3 ≃1 kHz and Γ4 = 5.75 MHz. If the atomic concentration Na is taken to be 3.67 × 1010 cm−3, we have κ14 ≈κ24 ≈1.0 × 109 cm−1s−1. These system parameters will be used in the following calculations.\n\n# III. NONLINEAR ENVELOPE EQUATIONS AND GIANT KERR EFFECT\n\nWe first use the standard method of multiple scales [24] to derive nonlinear envelope equations of the probe and signal pulses based on the Maxwell-Bloch Eqs. (3) and (4). To this end, we take the asymptotic expansion σjl = σ(0) jl +ǫσ(1) jl +ǫ2σ(2) jl +· · · , djl = d(0) jl +ǫd(1) jl +ǫ2d(2) jl\n\n<<page 6>>\n(j, l = 1, 2, 3, 4), Ωp = ǫΩ(1) p + ǫ2Ω(2) p + ǫ3Ω(3) p + · · · , and Ωs = ǫ2Ω(2) s + ǫ3Ω(3) s + · · · . Here σ(0) jj is the initial population distribution prepared in the state |j⟩, which is assumed as 1/2 (j = 1, 2) for simplicity; ǫ is a dimensionless small parameter characterizing the typical amplitude of the probe pulse. All the quantities on the right-hand side of the expansion are considered as functions of the multiscale variables x1 = ǫx, zα = ǫαz (α = 0, 2, 3), and tα = ǫαt (α = 0, 2). Additionally, the SG gradient magnetic field (1) is assumed to be of the order of ǫ2. Thus we have d(0) jl = δj −δl + iγjl, d(1) jl = 0, and d(2) jl = −µjlBx1. Note that because we are looking for trapping of weak signal pulse by a soliton, i.e., the order of magnitude of Ωs is lower than that of Ωp, the expansion of Ωp (Ωs) is assumed to start from the order of ǫ (ǫ2).\n\nSubstituting the expansion into Maxwell-Bloch Eqs. (3), and (4) and comparing the coefficients of ǫα (α = 1, 2, 3, . . .), we obtain a set of linear but inhomogeneous equations which can be solved order by order. At the first order (α = 1), we obtain Ω(1) p = F1eiθp with θp = Kp(ω)z0 −ωt0 [26] and F1, a yet to be determined envelope function. The linear dispersion relation Kp(ω) is given by\n\nKp(ω) = ω c + κ14 (ω + d(0) 31 )σ(0) 11 |Ωc|2 −(ω + d(0) 31 )(ω + d(0) 41 ) . (5)\n\nShown in Fig. 2(a) and Fig. 2(b) are, respectively, the imaginary part Im(Kp) and real part Re(Kp) of Kp as functions of ω. The dashed and solid lines in the figure correspond to the presence (Ωc = 1.0 × 107 s−1) and the absence (Ωc = 0) of the control field, respectively. We see that when Ωc = 0 the probe pulse suffers a large absorption around ω = 0 [the solid line in Fig. 2(a) ]. Nevertheless, when Ωc ̸= 0 a transparency window is opened in Im(Kp) [the dashed line in Fig. 2(a) ], and hence the probe pulse can propagate in the resonant atomic system with negligible absorption, a basic character of EIT. On the other hand, when the EIT occurs the slope of Re(Kp) is drastically changed and steepened [see the dashed line in Fig. 2(b) ], which results in a significant reduction of the group velocity of the probe and signal pulses. All these important characters are due to the quantum interference effect induced by the control field.\n\nAt the second order (α = 2) we obtain Ω(2) s = F2eiθs, where θs = Ks(ω)z0 −ωt0 with F2 the envelope function yet to be determined and\n\nKs(ω) = ω c + κ24 (ω + d(0) 32 )σ(0) 22 |Ωc|2 −(ω + d(0) 32 )(ω + d(0) 42 ) , (6)\n\n<<page 7>>\nFIG. 2. (Color online) Linear dispersion relation of the probe field. (a) Im(Kp) and (b) Re(Kp) as functions of ω. The dashed and solid lines correspond to the presence (Ωc = 1.0 × 107 s−1) and the absence (Ωc = 0) of the control field, respectively.\n\nwhich is the linear dispersion relation of the signal pulse. Note that the property of Ks(ω) is similar to Kp(ω), i.e. it has an EIT transparency window in the imaginary part Im(Ks) for Ωc ̸= 0 .\n\nAt the third order (α = 3), a solvability condition yields the equation for F1:\n\ni  ∂ ∂z2 + 1 Vg1 ∂ ∂t2  F1 + c 2ωp ∂2 ∂x2 1 F1 −W11|F1|2F1e−2¯a1z2 + M1Bx1F1 = 0, (7)\n\nwhere ¯a1 = ǫ−2Im(Kp0), W11 is a nonlinear coefficient related to the Kerr effect describing the self-phase modulation of the probe pulse, and the term related to M1 denotes the contribution by the SG gradient magnetic field.\n\nAt the fourth order (α = 4), we obtain the equation for F2:\n\ni  ∂ ∂z2 + 1 Vg2 ∂ ∂t2  F2 + c 2ωs ∂2 ∂x2 1 F2 −W21|F1|2F2e−2¯a1z2 + M2Bx1F2 = 0, (8)\n\nwhere W21 is the nonlinear coefficient related to the cross-phase modulation (CPM) contributed by the probe field and the term related to M2 comes from the SG gradient magnetic field.\n\nEquations (7) and (8) can be written as\n\ni  ∂ ∂z + 1 Vgp ∂ ∂t  U1 + c 2ωp ∂2U1 ∂x2 −W11|U1|2U1 + M1BxU1 = 0 (9)\n\ni  ∂ ∂z + 1 Vgs ∂ ∂t  U2 + c 2ωs ∂2U2 ∂x2 −W21|U1|2U2 + M2BxU2 = 0 (10)\n\n<<page 8>>\n(j = 1, 2). The detailed expressions of W11, W21, M1, M2, and each-order approximation solutions in the asymptotic are presented in Appendix B.\n\nWe now estimate the self- and cross-Kerr susceptibilities based on the formulas of W11 and W21 given by Eqs. (B5) and (B10). We obtain\n\nχ(3) pp = 2c ωp |p14|2 ℏ2 W11, (11a)\n\nχ(3) sp = 2c ωs |p14|2 ℏ2 W21. (11b)\n\nUsing the system parameters given at the end of the last section and choosing Ωc = 3.0×107 s−1, δ2 = 1.0 × 104 s−1, δ3 = 1.0 × 105 s−1, and δ4 = 1.6 × 107 s−1, we obtain χ(3) pp ≈ (4.95 + 0.89i) × 10−4 cm2V−2 and χ(3) sp ≈(4.94 + 0.89i) × 10−4 cm2V−2. We see that there are two features for χ(3) pp and χ(3) ps . First, their imaginary parts are much less than the real parts, contributed by the EIT effect. Second, their real parts have the order of magnitude 10−4 cm2V−2, which is 1011 times larger than the third-order susceptibilities for conventional nonlinear optical media [27]. The physical reason for the enhancement of the Kerr nonlinearity in the present system is originated from the fact that the system is highly resonant and works under the EIT condition.\n\nFor convenience, we convert Eq. (9) into the dimensionless form\n\ni  ∂ ∂s + 1 λj ∂ ∂τ  uj + 1 2 ∂2 ∂ξ2uj −wj1|u1|2uj + Mjξuj = −iAjuj (12)\n\n(j = 1, 2), with u1(2) = (Ωp(s)/U0) exp[−iRe(Kp(s)0)z], s = z/LDiﬀ, τ = t/τ0, ξ = x/Rx, λj = Vgjτ0/LDiﬀ, wj1 = Wj1/|W11|, Mj = MjLDiﬀRxB, and A1(2) = Im[Kp(s)0]LDiﬀ. Here LDiﬀ= ωpR2 x/c, τ0, and U0 are typical diffraction length, pulse duration, and Rabi frequency of the probe pulse, respectively.\n\nNote that for simplicity the group-velocity dispersion (i.e., the term proportional to ∂2uj/∂τ 2) in Eq. (12) has not been neglected. Such approximation is valid for large τ0, in which case the dispersion length of the system is much larger than the diffraction and nonlinearity lengths, as shown in the following section.\n\n<<page 9>>\n# IV. TRAPPING OF WEAK SIGNAL PULSES BY SOLITON\n\n## A. Ultraslow and matched group velocities\n\nBecause the system under study is a lifetime broadened one, the coefficients in Eq. (12) are complex, which means that exact and stable nonlinear localized solutions do not exist generally. However, under the EIT condition the imaginary parts of these coefficients can be made much smaller than their real parts. Thus it is possible to obtain shape-preserving nonlinear localized solutions that can propagate to a rather long distance without significant distortion, as shown below.\n\nFollowing Ref. [19] we consider the solution with the form\n\nuj(τ, ξ, s) = gj(τ, s)vj(τ, ξ), (13)\n\nwith gj(τ, s) =  1/ 4p 2πρ2 0  exp[−(s−λjτ)2/(4ρ2 0)] =  1/ 4p 2πρ2 0  exp[−(z−Vgjt)2/(4ρ2 0L2 Diﬀ)] (j = 1, 2), where ρ0 is a free real parameter. After integrating over the variable s, Eq. (12) becomes\n\n i λp ∂ ∂τ + 1 2 ∂2 ∂ξ2  u1 − 1 2√πρ0 w11|u1|2u1 + M1ξu1 = 0, (14)\n\n i λs ∂ ∂τ + 1 2 ∂2 ∂ξ2  u2 − 1 2√πρ0 w21|u1|2u2 + M2ξu2 = 0, (15)\n\n(j = 1, 2). By taking realistic physical parameters U0 = 7.75 × 106 s−1, τ0 = 2.75 × 10−7 s, and Rx = 25 µm and the other parameters the same as those given in the above two sections, we obtain λ1 ≈λ2 = 1.0, w11 ≈w21 = −1.0 −0.18i, M1 = (2.45 + i0.0016) × 104 mG−1cm−1, and M2 ≈0 due to the selected energy-level structure (see the end of Sec. II). We see that the imaginary parts of the coefficients in Eq. (12) are indeed much smaller than their corresponding real parts. Based on these parameters, we obtain LDiﬀ= 0.49 cm, which is approximately equal to LNonl(≡1/U2 0|W11|; typical nonlinearity length). However, the typical linear absorption length LAj = 1/Im(Kp(s)0) is around 1738.4 cm and the typical dispersion length LDispj = τ 2 0 /Re(Kp(s)2) [Kp(s)2 ≡∂2Kp(s)/∂ω2], is estimated to be 3.76 cm, both of them are much larger than LDiﬀand LNonl. Based on the results, we thus have the group-velocity dispersion ratios dj = LDiﬀ/LDispj ≈0.13 and the absorption coefficients Aj = LDiﬀ/LAj ≈0.00028, which show the significance of the various typical interaction lengths relative to the diffraction effect. Therefore, the corresponding terms in Eq. (12) can be indeed negligible.\n\n<<page 10>>\nWith the above parameters we obtain the group velocities of the probe and signal pulses\n\n˜Vg1 = Re ∂Kp ∂ω −1 = 5.978 × 10−5 c, (16a)\n\n˜Vg2 = Re ∂Ks ∂ω −1 = 5.980 × 10−5 c, (16b)\n\nrespectively. We see the following: (i) both the group velocities are ultraslow (i.e., much smaller than c); (ii) both of them have nearly the same value (i.e., matched each other). Note that the ultraslow and matched group velocities are very important for long interaction time between the probe and signal pulses and hence for an efficient CPM, which is essential for realizing the trapping of weak signal pulses by soliton.\n\n## B. One weak signal pulse trapped by probe soliton\n\nWe now study the trapping of the weak signal pulse by a probe soliton without the SG magnetic field (i.e., B = 0 and hence Mj = 0). In this case, Eq. (14) is simplified as\n\n i λ1 ∂ ∂τ + 1 2 ∂2 ∂ξ2  v1 − 1 2√πρ0 w11|v1|2v1 = 0, (17a)\n\n i λ2 ∂ ∂τ + 1 2 ∂2 ∂ξ2  v2 − 1 2√πρ0 w21|v1|2v2 = 0. (17b)\n\nHere v1 (v2) is related to the probe (signal) field.\n\nNote that (17a) is a nonlinear Schr¨odinger (NLS) equation, whose solution is well known. The single-soliton solution reads\n\nu1(τ, ξ) = ς1sech( p 2q1ς1ξ/2) exp(iς2 1q1λpτ/4), (18)\n\nwhere q1 = −w11/(√πρ0), and ς1, p, and n are free parameters. The solution of Eq. (17b) depends on the solution of Eq. (17a) because v1 plays a role of “external potential” in Eq. (17b). Thus one expects that a trapping of v2 can be realized by the probe soliton given by v1. Since the free parameter p is trivial by the Galilean invariance of Eq. (17), we discuss only the case of p = 0 below.\n\nBased on the form of the soliton solution (18), the analytical solution for v2 can be easily obtained [15]. We assume the solution of Eq. (17b) has the form v2(τ, ξ) = ς2h(ξ) exp(iβλ2τ), where ς2 and β are the amplitude and propagation constants. Substituting this form into\n\n<<page 11>>\nEq. (17b), we obtain −1 2 ∂2 ∂ξ2h + U(ξ)h = −βh, where U(ξ) = −q2ς2 1sech2  √2q1ς1ξ/2  with q2 = −w21/(2√πρ0). Here U(ξ) represents the potential well, h(ξ) is the eigenfunction, and −β is the corresponding eigenvalue that represents a discrete energy level. The fundamental (even) mode solution is given by h0(ξ) = sechn0(aξ), with a = √2q1ς1/2, β = q1ς2 1n2 0/4, and n0 = (−q1 + p q2 1 + 16q1q2)/2q1. The first-order (odd) mode solution reads h1(ξ) = sechn1(aξ) tanh(aξ), with β = q1ς2 1n2 1/4 and n1 = n0 −1. One can find two localized modes for this system analytically. Note that ς2 can be taken as an arbitrary value as long as ς2 ≪ς1 for either the fundamental or the first-order mode. The parameters q1 and q2 which affect an eigenfunction are determined by system parameters.\n\nFor simplicity, we consider only the even mode (i.e. bright soliton) of v2. Shown in Fig. 3(a) is the propagation of the signal pulse when the probe field is absent (i.e., v1 = 0). In this case, no trapping of the signal pulse happens and the signal pulse spreads rapidly (i.e., unstable) during propagation. Figure 3(b) shows the case when the probe pulse with the form of soliton (18) is present, with ς1 = 1.2. The initial condition of the signal pulse is assumed to have the form v2 = ς2sech(ς1ξ) with ς2 = 0.2. We see that a trapping of the signal pulse occurs. In this situation, the probe soliton contributes a CPM effect (and thus a trapping potential) to the signal pulse. As a result, the spreading of the signal pulse is arrested and both the probe and the signal pulses propagate together stably along the line x = 0 with the same velocity. The green dashed line in the panel (b) is the propagating path of the probe soliton calculated theoretically. Note that the bright light spots from the bottom in the figure to the top represent |Ωp/U0| (the probe field) and |Ωs/U0| (the signal field) for the pulses propagating to z = 2LDiﬀ, z = 4LDiﬀ, z = 6LDiﬀ, and z = 8LDiﬀ, respectively. Note that for a better visualization the intensity of the signal pulse plotted in Fig. 3 has been amplified four times, and the central positions of the probe soliton and the signal pulses have been separated a small distance artificially (the same treatment is also used in Fig. 4 and Fig. 5).\n\nThe trapping phenomenon predicted above can be used to design an all-optical switcher. The principle is the following. Assume the signal pulse passes through the medium with only a diffraction effect; then it detrimentally expands in the x direction when the probe soliton is absent, which corresponds to the switch-off of the switcher; see Fig. 3(a). When the probe soliton is present, the signal pulse is trapped by the probe soliton and propagates along a trajectory without distortion, as shown in Fig. 3(b), which corresponds to the switch-on of\n\n<<page 12>>\nFIG. 3. (Color online) Trapping of weak signal pulses by probe soliton pulse. (a) The spreading of the signal pulse when the probe field is absent. (b) The signal pulse is trapped by the probe soliton pulse. The probe and signal pulses propagate together stably along the line x = 0. The green dashed line in the panel is the central position of the probe soliton pulse calculated theoretically. (c) Two signal pulses (i.e., the signal pulse 1 and the signal pulse 2) trapped by the probe soliton pulse. The spots from bottom to top in all the panels of the figure represent |Ωp/U0| and |Ωs/U0| for the pulses propagating to z = 2LDiﬀ, z = 4LDiﬀ, z = 6LDiﬀ, and z = 8LDiﬀ, respectively.\n\nthe switcher.\n\n## C. Multiple signal pulses trapped by the probe soliton pulse\n\nThe above theory can be generalized to the case of multiple signal pulses trapped by a probe soliton pulse, which can be obtained by considering a (N + 1)-pod system with level diagram and excitation scheme the same as Fig. 1(a), but with one probe pulse and N −1 signal pulses. Similar to that done in Sec. IV A, we can obtain the following coupled\n\n<<page 13>>\nenvelope equations\n\ni  ∂ ∂z2 + 1 Vgj ∂ ∂t2  Fj + c 2ωpj ∂2 ∂x2 1 Fj −Wj1|F1|2Fj = 0 (19)\n\n(j = 1, 2, . . . , N). Here, Fj is the envelope of the jth pulse; Wj1 are coefficients of self-phase (for j=1) and cross-phase (for j ̸=1) modulations, which are enhanced by the EIT effect induced by the control field. Explicit expressions of these coefficients are lengthy and omitted here. When deriving Eq. (19), the SG gradient magnetic field is not included. Note that due to the symmetry of the system, the group velocities Vgj (j = 1, 2, · · · , N) of all pulses are ultraslow and nearly matched.\n\nWe can study the solutions of Eq. (19) and discuss the trapping phenomenon in such (N + 1)-pod system based on the approach given in the last section. For simplicity, here we consider the case N = 3. A general consideration for N > 3 can be done in a similar way. Shown in Fig. 3(c) is the result for N = 3 by numerical simulation, where two signal pulses (i.e. the signal pulse 1 and the signal pulse 2) are trapped by a one probe soliton. We see that all the pulses propagate with the same velocity, and keep their profiles unchanged. Such phenomenon of multiple weak pulses trapping by a soliton pulse can also be employed to design all-optical switching.\n\n# V. TRAJECTORY CONTROL OF TRAPPED SIGNAL PULSE AND SOLITON\n\n## A. SG deflection of trapped signal pulse and soliton\n\nWe now turn to explore the possibility of trajectory control of the trapped signal pulse and soliton by means of an external field. We consider the tripod atomic system interacted by a SG gradient magnetic field (Fig. 1). For clearness, we write the two components of Eq. (14) explicitly:\n\n i λ1 ∂ ∂τ + 1 2 ∂2 ∂ξ2  v1 − 1 2√πρ0 w11|v1|2v1 + M1ξv1 = 0, (20a)\n\n i λ2 ∂ ∂τ + 1 2 ∂2 ∂ξ2  v2 − 1 2√πρ0 w21|v1|2v2 + M2ξv2 = 0. (20b)\n\nEquation (20a) is a NLS equation with an external potential proportional to ξ, which can be solved exactly by using the transformation [20, 21, 28]\n\nτ ′ = τ, ξ′ = ξ −M1λ2 1τ 2/2, (21)\n\n<<page 14>>\nand v1 = φ1 exp [iM1λ1τ(ξ −M1λ2 1τ 2/6)]. Under such transformation, Eq. (20a) is converted to the “free” NLS equation:\n\n i λ1 ∂ ∂τ ′ + 1 2 ∂2 ∂ξ′2  φ1 − 1 2√πρ0 w11|φ1|2φ1 = 0. (22)\n\nHowever, under the above transformation, Eq. (20b) is transferred into another but complicated form, which is omitted here for saving space.\n\nThe single-soliton solution of φ1 is given by\n\nφ1(ξ′, τ ′) = ς1sech  √2q1 2 ς1  ξ′ −pλ1τ 2   exp  ip 2  ξ′ −pλ1τ 2  + inλ1τ 2  , (23)\n\nwhere q1 = −w11/(√πρ0), and ς1, p, and n are constants. We see that the probe soliton (23) moves along a parabolic trajectory because ξ′ is proportional to τ 2. Since the analytical solution of v2 is not available, we resort to numerical calculation. We expect that v2 will be trapped by the soliton v1 because v1 contributes a trapping potential to v2.\n\nShown in Fig. 4 is the numerical result of the probe and signal pulses moving in the x-z plane based on Eq. (12). Since the free parameter p is trivial by Galilean invariance of the system, we take p = 0 in the simulation. Figure 4(a) [Fig. 4(b) ] shows the propagation of the probe soliton and the signal pulse for B = 4.5 mG/cm (B = 7.2 mG/cm). We see that the signal pulse is not only trapped by the probe soliton, but also undergoes a SG deflection as does the probe soliton. Both the signal pulse and the soliton propagate stably along a parabolic trajectory bent to positive x direction. In the panels, the bright light spots from bottom to top represent |Ωp/U0| and |Ωs/U0| for the pulses propagating to z = 2LDiﬀ, z = 4LDiﬀ, z = 6LDiﬀ, and z = 8LDiﬀ, respectively. The green dashed line is the theoretical result of the trajectory of the probe soliton. Physically, the trapping of the signal pulse is due to the CPM by the probe soliton, whereas the SG deflection of both the signal pulse and the probe soliton is contributed by the SG gradient magnetic field. Figure 4(c) [Fig. 4(d) ] shows the propagation of the probe soliton in a three-dimensional view corresponding to Fig. 4(a) [Fig. 4(b) ], respectively. We see that the probe soliton radiates small-amplitude continuous waves when propagating to a large distance. Obviously, the trajectory of the trapped signal pulse and soliton can be manipulated by manipulating the SG gradient magnetic field. Such manipulation is useful for optical information processing, e.g., for the control of the behavior of all-optical switching.\n\n<<page 15>>\nFIG. 4. (Color online) Stern-Gerlach deflection of the trapped signal pulse and soliton. (a) Traveling trajectory of the probe soliton pulse and the trapped signal pulse for SG magnetic field gradient B = 4.5 mG/cm. (b) The same as (a) but with B = 7.2 mG/cm. In all panels, the bright light spots from bottom to top represent |Ωp/U0| and |Ωs/U0| for the pulses propagating to z = 2LDiﬀ, z = 4LDiﬀ, z = 6LDiﬀ, and z = 8LDiﬀ, respectively; the green dashed line is the theoretical result of the trajectory of the central position of the probe soliton pulse. Panels (c) and (d) show the propagation of the probe soliton in a three-dimensional view.\n\n## B. Trajectory control by using a time-dependent SG gradient magnetic field\n\nIn the above calculation, the magnetic field B is taken to be static. We now consider what will happen when a time-dependent SG gradient magnetic field is applied. In this case, the parameter B in Eq. (1) is replaced by Bf(t). Then Eqs. (20a) and (20b) become\n\n i λ1 ∂ ∂τ + 1 2 ∂2 ∂ξ2  v1 − 1 2√πρ0 w11|v1|2v1 + M1f(τ)ξv1 = 0, (24a)\n\n i λ2 ∂ ∂τ + 1 2 ∂2 ∂ξ2  v2 − 1 2√πρ0 w21|v1|2v2 + M2f(τ)ξv2 = 0. (24b)\n\n<<page 16>>\nBy using the transformation\n\nτ ′ = τ, ξ′ = ξ + η(τ ′), (25a)\n\nv1(ξ, τ) = ψ1(ξ′, τ ′) exp {i[α(τ ′)ξ′ −β(τ ′)]}, (25b)\n\nwhere α = λ1M1 R f(τ ′)dτ ′, η = −λ1 R αdτ ′, and β = λ1 R [M1f(τ ′)η −α2/2]dτ ′, Eq. (24a) becomes the NLS equation without external potential,\n\n i λ1 ∂ ∂τ ′ + 1 2 ∂2 ∂ξ′2  ψ1 − 1 2√πρ0 w11|ψ1|2ψ1 = 0, (26)\n\nwith the single soliton solution given by\n\nψ1(ξ′, τ ′) = ς1sech  √2q1 2 ς1  ξ′ −pλ1τ 2   exp  ip 2  ξ′ −pλ1τ 2  + inλ1τ 2  , (27)\n\nwhere q1 = −w11/(√πρ0), and ς1, p, and n are free constants. We see that the probe pulse is still a bright soliton with the trajectory depending on the form of f(τ). To show the evolution of the corresponding trapping phenomenon, we consider the following two simple cases:\n\n(i) The sinusoidally oscillating external force with the form\n\nf(τ) = A cos(Cτ) (28)\n\nis added to the system, where A and C are free parameters. In this situation, the solution (27) with p = 0 reads\n\nψ1(ξ, τ) = ς1sech  √2q 2 ς1  ξ + λ2 1M1A C2 cos(Cτ) + η0   exp  inλ1τ 2  , (29)\n\nwhere η0 = −λ2 1M1A/C2. Shown in Fig. 5(a) is the numerical result of the trajectories of the probe and signal pulses in the x-z plane. We see that due to the CPM effect the probe soliton can trap the signal pulse and both of their trajectories oscillate sinusoidally. The bright light spots from bottom to top indicate |Ωp/U0| and |Ωs/U0| for the pulses propagating to z = 0, 2LDiﬀ, 4LDiﬀ, 6LDiﬀ, 8LDiﬀ, 10LDiﬀ, 12LDiﬀ, 14LDiﬀ, and 16LDiﬀ, respectively. The green dashed line is the theoretical result of the central position of the probe soliton, which reads z = (Vgτ0/C) arccos[−(x + η0Rx)C2/(AM1Rxλ2 1)]. In the simulation, we have taken B = 13.5 mG/cm, A = 2, C = 0.8, ς1 = 2.4 (the amplitude of the probe soliton), and ς2 = 0.4 (the amplitude of signal pulse). Figure 5(b) gives the corresponding three-dimensional diagram, which shows that there are some small radiations appearing on the tail of the soliton when the probe soliton propagates to a large distance.\n\n<<page 17>>\nFIG. 5. (Color online) Trajectory control of the trapped signal pulse and soliton via time-dependent SG magnetic field. (a) The trajectory of the trapped signal pulse and soliton oscillates sinusoidally in the x-z plane. The green dashed line is the theoretical result of the central position of the probe soliton pulse. Corresponding three-dimensional diagram is given in panel (b). (c) The trapped signal pulse and soliton bypasses an obstacle, where the black circle represents the obstacle. Corresponding three-dimensional diagram is given in panel (d). In the panels (a) and (c), the bright light spots from bottom to top indicate |Ωp/U0| and |Ωs/U0| when the pulses propagate to z = 0, 2LDiﬀ, 4LDiﬀ, 6LDiﬀ, 8LDiﬀ, 10LDiﬀ, 12LDiﬀ, 14LDiﬀ, and 16LDiﬀ, respectively.\n\n(ii) The tangent-type external force with the form\n\nf(τ) = tanh[2(τ −τ1)] (30)\n\nis applied to the system, where τ1 is the time at which the SG gradient magnetic field changes its sign.\n\nEquations (24a) and (24b) are solved numerically with τ1 = 4, with the result shown in Fig. 5(c). We see that the probe soliton can still trap the signal pulse and, interestingly, both of them travel together along a Λ-shaped path and hence can bypass an obstacle (indicated by the black circle in the figure). Illustrated in Fig. 5(d) is the propagation of the probe\n\n<<page 18>>\nsoliton bypassing an obstacle in a three-dimensional view, which shows that there are also some small radiations during the propagation of the soliton.\n\nThe above trajectory control technique of the trapping phenomenon can also be generalized to the (N + 1)-pod system, where the probe soliton can trap N −1 signal pulses (Sec. IV C). In a similar way, we can use time-dependent SG gradient magnetic fields to guide the probe soliton and the N −1 trapped signal pulses, and make all of them oscillate or bypass an obstacle together.\n\nFinally, we make an estimation on Pprobe (the power of the probe soliton) and Psignal (the power of the signal pulse). Using Poynting’s vector [24], it is easy to obtain\n\nPprobe ≈1.6 × 10−8W, (31a)\n\nPsignal ≈4.9 × 10−10W, (31b)\n\nboth of which are at ultraweak light level. This is very different from conventional optical media, such as glass-based optical fibers, where picosecond or femtosecond laser pulses are usually needed to reach a high power to bring out a sufficiently nonlinear effect needed for the formation of an optical soliton [6–9, 15].\n\n# VI. SUMMARY\n\nIn this article, we have proposed a mechanism for trapping weak signal pulses by using a probe soliton and realizing its trajectory control via EIT. By means of the EIT, not only the optical absorption can be largely suppressed but also the enhanced Kerr effect can be obtained. We have shown that several weak signal pulses can be easily trapped by a probe soliton and stably cotravel with ultraslow propagating velocity. Furthermore, we have demonstrated that the trajectories of the probe soliton and the trapped signal pulses can be steered by using a SG gradient magnetic field. As a result, the probe soliton and the trapped signal pulses display a SG deflection and both of them can bypass an obstacle together. The results predicted here may be useful for light information processing, such as for the design of all-optical switching at very low light level.\n\n<<page 19>>\n# ACKNOWLEDGMENTS\n\nThis work was supported by NSF-China under Grants No. 10874043 and and No. 11174080.\n\n# Appendix A: EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS\n\nExplicit expressions of the equations of motion for the density matrix elements σjl are\n\ni ∂ ∂tσ11 −iΓ13σ33 −iΓ14σ44 + Ω∗ pσ41 −Ωpσ∗ 41 = 0, (A1a)\n\ni ∂ ∂tσ22 −iΓ23σ33 −iΓ24σ44 + Ω∗ sσ42 −Ωsσ∗ 42 = 0, (A1b)\n\ni  ∂ ∂t + Γ3  σ33 −iΓ34σ44 + Ω∗ cσ43 −Ωcσ∗ 43 = 0, (A1c)\n\ni  ∂ ∂t + Γ4  σ44 + Ωpσ∗ 41 + Ωsσ∗ 42 + Ωcσ∗ 43 −Ω∗ pσ41 −Ω∗ sσ42 −Ω∗ cσ43 = 0, (A1d)\n\n i ∂ ∂t + d21  σ21 + Ω∗ sσ41 −Ωpσ∗ 42 = 0, (A1e)\n\n i ∂ ∂t + d31  σ31 + Ω∗ cσ41 −Ωpσ∗ 43 = 0, (A1f)\n\n i ∂ ∂t + d32  σ32 + Ω∗ cσ42 −Ωsσ∗ 43 = 0, (A1g)\n\n i ∂ ∂t + d41  σ41 + Ωp(σ11 −σ44) + Ωsσ21 + Ωcσ31 = 0, (A1h)\n\n i ∂ ∂t + d42  σ42 + Ωs(σ22 −σ44) + Ωpσ∗ 21 + Ωcσ32 = 0, (A1i)\n\n i ∂ ∂t + d43  σ43 + Ωc(σ33 −σ44) + Ωpσ∗ 31 + Ωsσ∗ 32 = 0, (A1j)\n\nwhere djl = ∆j −∆l + iγjl, ∆2 = δ2 −µ21Bx, ∆3 = δ3 −µ31Bx, and ∆4 = δ4 −µ41Bx, with µjl = µB(gj Fmj F −gl Fml F). Here we have defined δ2 = ωp −ωs −ω21, δ3 = ωp −ωc −ω31, and δ4 = ωp −ω41, with ωjl = (Ej −El)/ℏand Ej the eigenenergy of the state |j⟩. Dephasing rates are defined as γjl = (Γj + Γl)/2 + γcol jl , with Γj = P Ei<Ej Γij denoting the spontaneous emission rate from the state |j⟩to all lower-energy states |i⟩and γcol jl denoting the dephasing rate reflecting the loss of phase coherence between |j⟩and |l⟩, as might occur with elastic collisions.\n\n<<page 20>>\n# Appendix B: EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMATIONS\n\n(i) First-order approximation:\n\nΩ(1) p = F1eiθp, (B1a)\n\nσ(1) 31 = −Ω∗ cσ(0) 11 D1 F1eiθp, (B1b)\n\nσ(1) 41 = (ω + d(0) 31 )σ(0) 11 D1 F1eiθp, (B1c)\n\nwhere D1 = |Ωc|2 −(ω + d(0) 31 )(ω + d(0) 41 ).\n\n(ii) Second-order approximation:\n\nΩ(2) s = F2eiθs, (B2a)\n\nσ(2) 32 = −Ω∗ cσ(0) 22 D2 F2eiθs, (B2b)\n\nσ(2) 42 = (ω + d(0) 32 )σ(0) 22 D2 F2eiθs, (B2c)\n\nσ(2) jj = a(2) jj |F1|2e−2¯a1z2 (j = 1 −−4), (B2d)\n\nσ(2) 43 = a(2) 43 |F1|2e−2¯a1z2, (B2e)\n\nwith D2 = |Ωc|2 −(ω + d(0) 32 )(ω + d(0) 42 ) and\n\na(2) 11 = a(2) 22 = (Γ24 −Γ23)σ(0) 11 i2(Γ13Γ24 −Γ23Γ14)   ω + d∗(0) 31 D∗ 1 −ω + d(0) 31 D1 ! , (B3a)\n\na(2) 33 = − Γ24σ(0) 11 i(Γ13Γ24 −Γ23Γ14)   ω + d∗(0) 31 D∗ 1 −ω + d(0) 31 D1 ! , (B3b)\n\na(2) 44 = Γ23σ(0) 11 i(Γ13Γ24 −Γ23Γ14)   ω + d∗(0) 31 D∗ 1 −ω + d(0) 31 D1 ! , (B3c)\n\na(2) 43 = Ωcσ(0) 11 ω + d(0) 43 \" 1 D∗ 1 + Γ24 + Γ23 i(Γ13Γ24 −Γ23Γ14)   ω + d∗(0) 31 D∗ 1 −ω + d(0) 31 D1 !# . (B3d)\n\n(iii) Third-order approximation: The solvability condition of F1 requires\n\ni  ∂ ∂z2 + 1 Vg1 ∂ ∂t2  F1 + c 2ωp ∂2 ∂x2 1 F1 −W11|F1|2F1e−2¯a1z2 + M1Bx1F1 = 0, (B4)\n\nwith\n\nW11 = −κ14 Ωca∗(2) 43 + (ω + d31)(a(2) 11 −a(2) 44 ) |Ωc|2 −(ω + d(0) 31 )(ω + d(0) 41 ) , (B5)\n\n<<page 21>>\nM1 = −κ14 (ω + d(0) 31 )2µ41 + |Ωc|2µ31 2D2 1 . (B6)\n\nThe third-order approximation solution reads\n\nσ(3) 21 = a(3) 21 F1F ∗ 2 ei(θp−θs), (B7)\n\nwith\n\na(3) 21 = 1 ω + d(0) 21  ω + d∗(0) 32 D∗ 2 σ(0) 22 −ω + d(0) 31 D1 σ(0) 11 ! . (B8)\n\n(iv) Fourth-order approximation: The solvability condition for F2 requires\n\ni  ∂ ∂z2 + 1 Vg2 ∂ ∂t2  F2 + c 2ωs ∂2 ∂x2 1 F2 −W21|F1|2F2e−2¯a1z2 + M2Bx1F2 = 0, (B9)\n\nwith\n\nW21 = −κ24 Ωca∗(2) 43 + (ω + d32)(a(2) 22 −a(2) 44 + a∗(3) 21 ) |Ωc|2 −(ω + d(0) 32 )(ω + d(0) 42 ) , (B10)\n\nM2 = −κ24 (ω + d(0) 32 )2µ42 + |Ωc|2µ32 2D2 2 . (B11)\n\n[1] H. J. Metcalf and P. van der Stratan, Laser Cooling and Trapping (Springer, New York, 1999).\n\n[2] K. Dholakia and P. Zem´anek, Rev. Mod. Phys. 82, 1767 (2010).\n\n[3] M. Woerdemann, Structured Light Fields: Applications in Optical Trapping, Manipulation, and Organisation (Springer, Heidelberg, 2012).\n\n[4] G. P. Agrawal, Nonlinear Fiber Optics, 4th ed. (Academic Press, San Diego, 2007).\n\n[5] A. Hasegawa, Opt. Lett. 5, 416 (1980).\n\n[6] N. Nishizawa and T. Goto, Opt. Lett. 27, 152 (2002); Opt. Express 10, 1151 (2002); Opt. Express 11, 359 (2003).\n\n[7] A. V. Gorbach and D. V. Skryabin, Nat. Photon. 1, 653, (2007).\n\n[8] D. V. Skryabin and A. V. Gorbach, Rev. Mod. Phys. 82, 1287 (2010).\n\n[9] J. M. Dudley, G. Genty, and S. Coen, Rev. Mod. Phys. 78, 1135 (2006).\n\n[10] A.V. Gorbach and D.V. Skryabin, Opt. Express 15, 14560 (2007).\n\n[11] A. V. Gorbach and D. V. Skryabin, Phys. Rev. A 76, 053803 (2007).\n\n[12] H. Liu, Y. Dai, C. Xu, J. Wu, K. Xu, Y. Li, X. Hong, and J. Lin, Opt. Lett. 35, 4042 (2010).\n\n<<page 22>>\n[13] J. S´anchez-Curto, P. Chamorro-Posada, and G. S. McDonald, Opt. Lett. 36, 3605 (2011).\n\n[14] S. Batz and U. Peschel, Phys. Rev. Lett. 110, 193901 (2013).\n\n[15] M. F. Saleh and F. Biancalana, Phys. Rev A 87, 043807 (2013).\n\n[16] M. Fleischhauer, A. Imamoˇglu, and J. P. Marangos, Rev. Mod. Phys. 77, 633 (2005).\n\n[17] L. Karpa and M. Weitz, Nat. Phys. 2, 332 (2006).\n\n[18] D. L. Zhou, L. Zhou, R. Q. Wang, S. Yi,and C. P. Sun, Phys. Rev. A 76, 055801 (2007).\n\n[19] Y. Guo, L. Zhou, L.-M. Kuang, and C. P. Sun, Phys. Rev. A 78, 013833 (2008).\n\n[20] C. Hang and G. Huang, Phys. Rev. A 86, 043809 (2012).\n\n[21] Z. M. Chen and G. Huang, J. Opt. Soc. Am. B 30, 2248 (2013).\n\n[22] Experimentally, for the convenience of detection the probe and the signal fields are usually arranged to have very small angles with respect to the propagating direction (i.e., the z axis).\n\n[23] R. W. Boyd, Nonlinear Optics, 3rd ed. (Academic, Elsevier, 2008).\n\n[24] G. Huang, L. Deng, and M. G. Payne, Phys. Rev. E 72, 016617 (2005).\n\n[25] D. A. Steck, “Rubidium 87 D Line Data,” http://steck.us/alkalidata/.\n\n[26] The frequency and wave number of the probe field are given by ωp + ω and kp + Kp(ω), respectively. Thus ω = 0 corresponds to the center frequency of the probe field.\n\n[27] S. Saltiel, S. Tanev, and A. D. Boardman, Opt. Lett. 22, 148 (1997).\n\n[28] H.-H. Chen and C.-S. Liu, Phys. Rev. Lett. 37, 693 (1976).",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Trapping of Weak Signal Pulses by Soliton and Trajectory Control in a Coherent Atomic Gas",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NONLINEAR ENVELOPE EQUATIONS AND GIANT KERR EFFECT",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TRAPPING OF WEAK SIGNAL PULSES BY SOLITON",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Ultraslow and matched group velocities",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. One weak signal pulse trapped by probe soliton",
+   "page": 9,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Multiple signal pulses trapped by the probe soliton pulse",
+   "page": 11,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "V. TRAJECTORY CONTROL OF TRAPPED SIGNAL PULSE AND SOLITON",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. SG deflection of trapped signal pulse and soliton",
+   "page": 12,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Trajectory control by using a time-dependent SG gradient magnetic field",
+   "page": 14,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "VI. SUMMARY",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A: EQUATIONS OF MOTION FOR THE DENSITY-MATRIX ELEMENTS",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B: EXPRESSIONS OF THE SOLUTIONS IN EACH-ORDER APPROXIMATIONS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 51.191566800000146,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "TIONS"
+  ],
+  "unmatched_pred": [
+   "Trapping of Weak Signal Pulses by Soliton and Trajectory Control in a Coherent A",
+   "Abstract",
+   "ACKNOWLEDGMENTS"
+  ]
+ }
+}

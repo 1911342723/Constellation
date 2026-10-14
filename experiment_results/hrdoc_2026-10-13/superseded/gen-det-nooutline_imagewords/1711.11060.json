@@ -1,0 +1,122 @@
+{
+ "doc": "1711.11060",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 8,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4117647058823529,
+  "unmatched_gt": [
+   "Acknowledgement.",
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3."
+  ],
+  "unmatched_pred": [
+   "5 in general and at most 3 in the special case when",
+   "A. Hence"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "Step 1.",
+   "Step 2",
+   "Step 3.",
+   "Step 4.",
+   "Case 1.",
+   "Case 2.",
+   "Case 3."
+  ],
+  "unmatched_pred": [
+   "5 in general and at most 3 in the special case when",
+   "A. Hence"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 614,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9589400116482236,
+  "inserted_word_share": 0.0403613580067026
+ },
+ "predictions": [
+  {
+   "text": "5 in general and at most 3 in the special case when",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Technical version of the main theorems",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Robust results in the abelian group setting",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Proof of Propositions 2.2 and 2.3",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Robust results with other assumptions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Proof of Theorem 1.3",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. A continuous analogue of Theorem 1.3",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Hence",
+   "page": 14,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.639408300005016
+}

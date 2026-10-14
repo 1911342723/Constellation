@@ -1,0 +1,215 @@
+{
+ "doc": "1803.04102",
+ "system": "docling",
+ "metrics": {
+  "gt": 23,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.56,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 Confidentiality Verification",
+   "Algorithm 2 Algorithm for Integrity Verification"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 35.73057819999667
+ },
+ "predictions": [
+  {
+   "text": "Hardware Trojan Detection through Information Flow Security Verification",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PRELIMINARIES AND DEFINITIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. SoC Design Flow",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Threat Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PREVIOUS WORKS AND THEIR LIMITATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Formal Verification",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. GLIFT-based Trojan Detection",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Jasper Security Path Verification",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Trojan Detection by Signal Sensitivity Tracing",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. TROJAN DETECTION THROUGH IFS VERIFICATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Confidentiality Verification",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Confidentiality Verification",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 2 Algorithm for Integrity Verification",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Integrity Verification",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Trigger Condition Extraction",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Setup",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Confidentiality Verification",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Integrity Verification",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Comparison",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. LIMITATIONS OF PROPOSED APPROACH",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. ACKNOWLEDGMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.025543900002958253,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 25,
+  "tp": 22,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5769230769230769,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "Hardware Trojan Detection through Information Flow Security Verification",
+   "Algorithm 1 Confidentiality Verification",
+   "Algorithm 2 Algorithm for Integrity Verification"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 22,
+  "tp": 20,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5217391304347826,
+  "unmatched_gt": [
+   "V III . AC K NO W L EDG MEN T"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 Confidentiality Verification",
+   "Algorithm 2 Algorithm for Integrity Verification"
+  ],
+  "ignored_title_predictions": null
+ }
+}

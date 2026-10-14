@@ -1,0 +1,237 @@
+{
+ "doc": "1804.03511",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 28,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 9,
+  "level_correct": 19,
+  "parent_correct": 16,
+  "teds": 0.5862068965517242,
+  "unmatched_gt": [
+   "B. Contributions",
+   "C. Paper Organization",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": [
+   "2 and S1 and S2 are two ends of the diameter as shown in Fig. 1. In Table I, we ",
+   "0 otherwise. \u0010V (t)"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 974,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10341,
+   "completion_tokens": 758,
+   "total_tokens": 11099
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Optimization of a Power Splitting Protocol for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Two-Way Multiple Energy Harvesting Relay System",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Related Work",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 and S1 and S2 are two ends of the diameter as shown in Fig. 1. In Table I, we summarize the notations used in this paper.",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Channel Model",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Energy Harvesting Model",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Relay Power Model",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III. PROBLEM FORMULATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Rate Expression",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Optimization Problem",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Utility Selection",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "IV. JOINT-OPTIMIZATION SOLUTION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Geometric Programming Method for PS Ratios and Relays’",
+   "page": 5,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Selected Relays Optimization",
+   "page": 7,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "0 otherwise. \u0010V (t)",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. SIMULATION RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Simulation Parameters",
+   "page": 8,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "B. System Performance",
+   "page": 8,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "C. Convergence Speed",
+   "page": 10,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.624975900002028,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 23,
+  "tp": 19,
+  "fp": 4,
+  "fn": 9,
+  "level_correct": 19,
+  "parent_correct": 16,
+  "teds": 0.5172413793103448,
+  "unmatched_gt": [
+   "B. Contributions",
+   "C. Paper Organization",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": [
+   "Optimization of a Power Splitting Protocol for",
+   "Two-Way Multiple Energy Harvesting Relay System",
+   "2 and S1 and S2 are two ends of the diameter as shown in Fig. 1. In Table I, we ",
+   "0 otherwise. \u0010V (t)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 20,
+  "tp": 18,
+  "fp": 2,
+  "fn": 9,
+  "level_correct": 18,
+  "parent_correct": 15,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "B. Contributions",
+   "C. Paper Organization",
+   "1) Max Sum Utility:",
+   "2) Max Min Utility:",
+   "1) Introduction to Geometric Programming:",
+   "2) Approximations:",
+   "3) GP Standard Form:",
+   "1) Binary Particle Swarm Optimization:",
+   "2) Branch-and-Bound Method:"
+  ],
+  "unmatched_pred": [
+   "2 and S1 and S2 are two ends of the diameter as shown in Fig. 1. In Table I, we ",
+   "0 otherwise. \u0010V (t)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

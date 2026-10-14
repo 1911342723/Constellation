@@ -1,0 +1,247 @@
+{
+ "doc": "1803.01834",
+ "system": "docling",
+ "metrics": {
+  "gt": 21,
+  "pred": 28,
+  "tp": 21,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5517241379310345,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Alexander G. Ororbia",
+   "Daniel Kifer",
+   "C. Lee Giles",
+   "Editor:",
+   "Algorithm 1 The LRA Algorithm applied to differentiable, feedforward neural arch",
+   "Acknowledgments",
+   "Algorithm 2 LRA-fdbk applied to an MLP with non-differentiable components."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 130.9477859000035
+ },
+ "predictions": [
+  {
+   "text": "Conducting Credit Assignment by Aligning Local Distributed Representations",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Alexander G. Ororbia",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Daniel Kifer",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Lee Giles",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Editor:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Local Representation Alignment",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Notation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Setting the targets.",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Divide and Conquer: The Computation Subgraph",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 The LRA Algorithm applied to differentiable, feedforward neural architectures.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3.1 Instantiation: The Differentiable Multilayer Perceptron",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.4 Overcoming Poor Initializations",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.5 Overcoming Exploding and Vanishing Gradients",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Experimental Results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Effect of Manifold-Walking",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Robustness to Initialization",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Training from Null Initialization",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Stochastic Networks",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5 Feature Extraction versus Optimization",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Related Work",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion & Future Work",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A.",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 2 LRA-fdbk applied to an MLP with non-differentiable components.",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B.",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.014551400003256276,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 29,
+  "tp": 21,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Conducting Credit Assignment by Aligning Local Distributed Representations",
+   "Alexander G. Ororbia",
+   "Daniel Kifer",
+   "C. Lee Giles",
+   "Editor:",
+   "Algorithm 1 The LRA Algorithm applied to differentiable, feedforward neural arch",
+   "Acknowledgments",
+   "Algorithm 2 LRA-fdbk applied to an MLP with non-differentiable components."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 23,
+  "tp": 17,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Alexander G. Ororbia",
+   "Daniel Kifer",
+   "C. Lee Giles",
+   "Editor:",
+   "Algorithm 1 The LRA Algorithm applied to differentiable, feedforward neural arch",
+   "Algorithm 2 LRA-fdbk applied to an MLP with non-differentiable components."
+  ],
+  "ignored_title_predictions": null
+ }
+}

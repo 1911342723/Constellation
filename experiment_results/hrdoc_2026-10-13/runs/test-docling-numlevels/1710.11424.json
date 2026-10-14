@@ -1,0 +1,270 @@
+{
+ "doc": "1710.11424",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 23,
+  "pred": 30,
+  "tp": 22,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 15,
+  "teds": 0.4516129032258065,
+  "unmatched_gt": [
+   "Observable Domains"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+",
+   "Algorithm 1 Advantage-based regret minimization (ARM).",
+   "A1.1.1. ARM",
+   "A1.1.2. A2C",
+   "A1.1.3. DQN",
+   "A1.1.4. TRPO",
+   "A1.2.1. ATARI",
+   "A1.2.2. DOOM"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 27,
+  "tp": 19,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.3928571428571429,
+  "unmatched_gt": [
+   "Observable Domains"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+",
+   "Algorithm 1 Advantage-based regret minimization (ARM).",
+   "A1.1.1. ARM",
+   "A1.1.2. A2C",
+   "A1.1.3. DQN",
+   "A1.1.4. TRPO",
+   "A1.2.1. ATARI",
+   "A1.2.2. DOOM"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 42.600570899998274
+ },
+ "predictions": [
+  {
+   "text": "Regret Minimization for Partially Observable Deep Reinforcement Learning",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Advantage-based Regret Minimization",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Counterfactual Regret Minimization (CFR)",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2. CFR+",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3. From CFR and CFR+ to ARM",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Algorithm 1 Advantage-based regret minimization (ARM).",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4. ARM vs. Existing Policy Gradient Methods",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.5. Comparing ARM with Other Methods in Partially Observable Domains",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4. Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Learning First-person 3D Navigation",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2. Learning with Partially Observed Objects",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5. Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1. Experimental Details",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.1. Hyperparameters",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.1.1. ARM",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.1.2. A2C",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.1.3. DQN",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.1.4. TRPO",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.2. Environment and Task Details",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.2.1. ATARI",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.2.2. DOOM",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.2.3. MINECRAFT",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A2. Off-policy ARM via Importance Sampling",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A3. Additional Experiments",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A3.1. Recurrence in Doom MyWayHome",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A3.2. Atari 2600 games",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.022938399997656234,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 30,
+  "tp": 22,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 15,
+  "teds": 0.4516129032258065,
+  "unmatched_gt": [
+   "Observable Domains"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+",
+   "Algorithm 1 Advantage-based regret minimization (ARM).",
+   "A1.1.1. ARM",
+   "A1.1.2. A2C",
+   "A1.1.3. DQN",
+   "A1.1.4. TRPO",
+   "A1.2.1. ATARI",
+   "A1.2.2. DOOM"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

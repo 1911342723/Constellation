@@ -1,0 +1,198 @@
+{
+ "doc": "1706.10170",
+ "system": "model",
+ "metrics": {
+  "gt": 23,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Electron-phonon interactions",
+   "UNITARY TIME EVOLUTION",
+   "DISSIPATIVE TIME EVOLUTION",
+   "photoemission",
+   "I. NUMERICAL SOLUTION OF THE MASTER",
+   "EQUATION"
+  ],
+  "unmatched_pred": [
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 837,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14851,
+   "completion_tokens": 813,
+   "total_tokens": 15664
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Tracing the nonequilibrium topological state of Chern insulators",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MODEL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Quench dynamics",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Electron-phonon coupling",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Equations of motion in the presence of",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. OBSERVABLES IN EQUILIBRIUM",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Circular asymmetry",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Time-resolved Hall eﬀect",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. TRACING THE QUENCH DYNAMICS –",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Time-dependent Hall eﬀect",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Steady-state conductance",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Transient circular asymmetry",
+   "page": 7,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "V. TRACING THE QUENCH DYNAMICS –",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Transient dynamics probed by time-resolved",
+   "page": 9,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Transient circular asymmetry",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 33.95871360000092,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.45833333333333337,
+  "unmatched_gt": [
+   "Electron-phonon interactions",
+   "UNITARY TIME EVOLUTION",
+   "DISSIPATIVE TIME EVOLUTION",
+   "photoemission",
+   "I. NUMERICAL SOLUTION OF THE MASTER",
+   "EQUATION"
+  ],
+  "unmatched_pred": [
+   "Tracing the nonequilibrium topological state of Chern insulators",
+   "Appendix A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.4782608695652174,
+  "unmatched_gt": [
+   "Electron-phonon interactions",
+   "UNITARY TIME EVOLUTION",
+   "DISSIPATIVE TIME EVOLUTION",
+   "photoemission",
+   "I. NUMERICAL SOLUTION OF THE MASTER",
+   "EQUATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

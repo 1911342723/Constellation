@@ -1,0 +1,292 @@
+{
+ "doc": "1706.08137",
+ "system": "docling",
+ "metrics": {
+  "gt": 34,
+  "pred": 38,
+  "tp": 34,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5897435897435898,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Contemporary Overview of Probabilistic Latent Variable Models",
+   "Rick Farouni",
+   "Editor:",
+   "Farouni"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 186.83291559999998
+ },
+ "predictions": [
+  {
+   "text": "A Contemporary Overview of Probabilistic Latent Variable Models",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Rick Farouni",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Editor:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Basic Definitions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 What is a Probability Model?",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 What is a Statistical Model?",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 What is a Bayesian Model?",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The Probabilistic Approach to Latent Variable Models",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Probabilistic Modeling Approach",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1.1 Recording Measurements in Space and Time",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1.2 The Grouping Structure of the Data",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 What is a Latent Variable?",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 What is a Probabilistic Latent Variable Model?",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Implicit Vs Explicit Models",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5 Deep Vs Shallow Models",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Brief History of Latent Variable Models",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Summary of Key Developments",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 The Statistical Myth of Measuring Hypothetical Constructs",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 The First Latent Variable Model",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4 Latent Variable Models in Machine Learning",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Constructing Probabilistic Latent Variable Models",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Spatiotemporal Models",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Multivariate Models",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2.1 Normal Linear Models",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Reduced Rank Regression (RRR)",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.4 Principle Component Analysis (PCA)",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.5 Factor Analysis (FA)",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.6 Independent Component Analysis (ICA)",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.7 Canonical Correlation Analysis (CCA)",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.8 Inter-Battery Factor Analysis (IBFA)",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.9 Multi-Battery Factor Analysis (MBFA)",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.10 Group Factor Analysis (GFA)",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.11 Structural Equation Models (SEM)",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.12 Deep Latent Gaussian Models (DLGM)",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Farouni",
+   "page": 31,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.048248600003717,
+ "metrics_v1": {
+  "gt": 34,
+  "pred": 38,
+  "tp": 34,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5897435897435898,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Contemporary Overview of Probabilistic Latent Variable Models",
+   "Rick Farouni",
+   "Editor:",
+   "Farouni"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 32,
+  "pred": 36,
+  "tp": 32,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5675675675675675,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A Contemporary Overview of Probabilistic Latent Variable Models",
+   "Rick Farouni",
+   "Editor:",
+   "Farouni"
+  ],
+  "ignored_title_predictions": null
+ }
+}

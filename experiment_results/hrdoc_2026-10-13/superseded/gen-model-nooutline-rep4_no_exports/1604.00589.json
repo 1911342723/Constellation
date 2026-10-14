@@ -1,0 +1,168 @@
+{
+ "doc": "1604.00589",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 24,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.72,
+  "unmatched_gt": [
+   "Abstract.",
+   "4.2 Description of the Extensions of the Message Header of the RAdNet",
+   "Scenario 1: Coop eration between vehicles and semaphore signals",
+   "Scenario 2: Co operation between vehicles",
+   "Network Parameters",
+   "Data Naming and Interests",
+   "Traffic Settings"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "4.2 Description of the Extensions of the Message Header of the RAdNet",
+   "Scenario 1: Coop eration between vehicles and semaphore signals",
+   "Scenario 2: Co operation between vehicles",
+   "Network Parameters",
+   "Data Naming and Interests",
+   "Traffic Settings"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 324,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14178,
+   "completion_tokens": 646,
+   "total_tokens": 14824
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9821946503383822,
+   "in_order": 0.9729294231388979,
+   "inserted": 0.03712187031040204
+  }
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Works",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Background",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Interest-Centric Mobile Ad Hoc Network",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Communication Requirements of Application Categories for VANETs",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Interest-Centric Vehicular Ad Hoc Network",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Addressing the Communication Requirements of Application Categories for VANETs",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3 Design of the RAdNet-VE Communication Protocol",
+   "page": 8,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.4 RAdNet-VE and Access Technologies",
+   "page": 11,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5 Experiments",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Use Scenarios",
+   "page": 12,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5.2 Simulation Settings",
+   "page": 13,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "6 Analysis of Results",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Discussion",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusions",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.85683330000029
+}

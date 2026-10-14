@@ -1,0 +1,124 @@
+{
+ "doc": "1705.01908",
+ "system": "outline",
+ "metrics": {
+  "gt": 12,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Auto-painter: Cartoon Image Generation from Sketch by Using Conditional Generative Adversarial Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "3 Method",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "3.1 Network Structure",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Loss Function",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "4 Experimental Studies",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 4,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Evaluation Metrics",
+   "page": 5,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Experimental Results",
+   "page": 6,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "4.4 Color Controlled Sketch Synthesis",
+   "page": 7,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 8,
+   "level": 2,
+   "parent": 0
+  }
+ ],
+ "seconds": 0.030514099998981692,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Auto-painter: Cartoon Image Generation from Sketch by Using Conditional Generati"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

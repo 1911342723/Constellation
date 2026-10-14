@@ -1,0 +1,179 @@
+{
+ "doc": "1707.07212",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 21,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 14,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "Predictions"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 11,
+  "teds": 0.8947368421052632,
+  "unmatched_gt": [
+   "Predictions"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 387,
+  "layout_marked": 22,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8989755713159968,
+  "inserted_word_share": 0.5708051166290444
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Measuring the Veridicality of Users’",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Mechanical Turk Annotation",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Veridicality Classiﬁer",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Features",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 Evaluation",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.5 Performance on held-out event types",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.6 Error Analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Forecasting Contest Outcomes",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Prediction",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Sentiment Baseline",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Frequency Baseline",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.4 Results",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.5 Surprise Outcomes",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.6 Assessing the Reliability of Accounts",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.217467499998747,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 14,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "Predictions"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "doc": "1806.03236",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.7857142857142857,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 69,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4552,
+   "completion_tokens": 566,
+   "total_tokens": 5118
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Simulating Vehicle Movement and Multi-Hop",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Connectivity from Basic Safety Messages",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORKS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. BSM Data Analysis",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Multi-Hop Partitioning Algorithm",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. APPLICATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Concept and Purpose",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Usage",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. PERFORMANCE ANALYSIS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Process",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Results and Conclusions",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Limitations",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.668418100001873,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6875,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Simulating Vehicle Movement and Multi-Hop",
+   "Connectivity from Basic Safety Messages",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

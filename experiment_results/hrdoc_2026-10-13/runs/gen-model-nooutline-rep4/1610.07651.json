@@ -1,0 +1,172 @@
+{
+ "doc": "1610.07651",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 21,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [
+   "5. CRSS SUBMISSIONS",
+   "6. PERFORMANCE OF CRSS SUB-SYSTEMS ON SRE 2016 DEV DATA",
+   "7. COMPUTATIONAL RESOURCES",
+   "7.1. CPU cluster",
+   "7.2. GPU machines",
+   "7.3. CPU execution time",
+   "8. ACKNOWLEDGEMENT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6842105263157895,
+  "unmatched_gt": [
+   "5. CRSS SUBMISSIONS",
+   "6. PERFORMANCE OF CRSS SUB-SYSTEMS ON SRE 2016 DEV DATA",
+   "7. COMPUTATIONAL RESOURCES",
+   "7.1. CPU cluster",
+   "7.2. GPU machines",
+   "7.3. CPU execution time"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 224,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 5128,
+   "completion_tokens": 691,
+   "total_tokens": 5819
+  },
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9472876151484135,
+   "in_order": 0.8746161719549642,
+   "inserted": 0.11095100864553309
+  },
+  "export_markdown": "# UTD-CRSS SYSTEMS FOR 2016 NIST SPEAKER RECOGNITION EVALUATION\n\n*Chunlei Zhang, Fahimeh Bahmaninezhad, Sh...[省略29字]...vid Shokouhi, John H.L. Hansen*\n\nUTD-CRSS SYSTEMS FOR 2016 NIST SPEAKER RECOGNITION EVALUATION\n\nChunlei Zhang, Fahimeh Bahmaninezhad, Shivesh Ranjan, Chengzhu Yu, Navid Shokouhi, John H.L. Hansen\n\nCenter for Robust Speech Systems (CRSS), Erik Jonsson School of Engineering,\n\nUniversity of Texas at Dallas, Richardson, Texas, U.S.A.\n\n{chunlei.zhang,fahimeh.bahmaninezhad,john.hansen}@utdallas.edu\n\narXiv:1610.07651v1 [cs.CL] 24 Oct 2016\n\n## ABSTRACT\n\nThis document brieﬂy describes the systems submitted by the Center for Robust Speech Systems (CRSS) from The University of Texas at Dallas (UTD) to the 2016 National Institute of Standards and Technology (NIST) Speaker Recognition Evaluation (SRE). We developed several UBM and DNN i-Vector based speaker recognition systems with different data sets and feature representations. Given that the emphasis of the NIST SRE 2016 is on language mismatch between training and enrollment/test data, so-called domain mismatch, in our system development we focused on: (1) using unlabeled indomain data for centralizing data to alleviate the domain mismatch problem, (2) ﬁnding the best data set for training LDA/PLDA, (3) using newly proposed dimension reduction technique incorporating unlabeled in-domain data before PLDA training, (4) unsupervised speaker clustering of unlabeled data and using them alone or with previous SREs for PLDA training, (5) score calibration using only unlabeled data and combination of unlabeled and development (Dev) data as separate experiments.\n\n## 1. INTRODUCTION\n\nThe main task for NIST’s speaker recognition evaluations is speaker detection, i.e., to determine whether a speciﬁed target speaker is speaking during a given segment of speech or not. Compared with previous SRE challenges, there are some differences: (1) target speaker data will not be distributed in advance like in SRE12, (2) ﬁxed condition is introduced, (3) more duration variability is introduced in the test data, (4) language mismatch between training (mainly English) and enrollment/test (non-English) data. All these new traits make this SRE very challenging, especially with limited labeled data in the ﬁxed condition [1]. This report introduces how CRSS systems address the problem. The whole report is organized as follows: Sec.2 describes several baseline systems focusing on the front-end level overview, including both data sets and feature representations, Sec.3 introduces several core techniques that we used in SRE16, including speaker clustering for unlabeled training data, discriminant analysis via support vectors (SVDA) to reduce dimension and compensate domain mismatch, unlabeled data PLDA, calibration and fusion strategies etc. Sec.4 and Sec.5 details the conﬁguration of every CRSS sub-system and the formation of CRSS ﬁnal Eval submissions to NIST. Sec.6 shows the CRSS sub-system performance on Dev data. We also brieﬂy introduce the CPU/GPU hardware systems that we used for NIST SRE 2016 in Sec.7.\n\n## 2. CRSS BASELINES\n\nWe developed 4 baseline systems in this SRE, all of them are i-Vector based systems but with different acoustic modeling, i.e., UBM or different DNN models [2, 3]. For back-end, we mainly use LDA/SVDA to reduce the dimension of i-Vectors and PLDA to calculate likelihood scores. Table 1 summarized the number of speakers, speech segments used for training UBM, total variability matrix (TV), LDA/SVDA and PLDA models as well as the statistics for the Dev set provided by NIST for the system development purposes.\n\n### 2.1. CRSS1: UBM i-Vector\n\nThis system is mainly modiﬁed version of Kaldi (sre10/v1). 60 di-mensional feature vectors for each frame is adopted here including 20 dimensional MFCC features appended with ∆+ ∆∆. Unvoiced parts of the utterances are removed with energy based voice activity detection (VAD). For training 2048-mixture UBM and total variability (TV) matrix, SRE2004, 2005, 2006, 2008, telephone data of SRE 2010, Switchboard II phase 2,3 and Switchboard Cellular Part1 and Part2 (SWB) and Fisher English are used. Next, 600 dimensional i-Vectors are extracted and their dimensions are reduced to 580 with LDA. For training LDA/PLDA, only SRE 04-08 are used; in addition, speakers who have less than 4 utterances is ﬁltered out. Also, unsupervised speaker clustering is performed (see Sec. 3.1 for the details of speaker clustering), 75 speaker clusters for unlabeled minor data and 300 for unlabeled major data are generated. These clustered in-domain data are used separately to train PLDA and also for calibration. Before PLDA scoring, mean subtraction is also applied. For SRE16 development (Dev) trials, the mean i-Vector is generated using only unlabeled minor data, while for SRE16 evaluation (Eval), the mean is from unlabeled major data.\n\n### 2.2. CRSS2: SWB DNN i-Vector\n\nWe developed a DNN i-Vector system based on Kaldi (swbd/s5 & sre10/v2). The DNN acoustic model is used to generate the soft alignments for i-Vector extraction. The DNN architecture has 6 fully connected hidden layers with 1024 nodes for each layer. Crossentropy objective function is employed to estimate posterior probabilities of 3178 senones. The ASR corpus which we used for training DNN acoustic model is Switchboard. 11-frame context of 39 dimensional (∆+ ∆∆ ) MFCC feature is projected into 40 dimensional using fMLLR transform for each utterance, which relies on a GMM-HMM decoding alignment. The reason we apply fMLLR feature here is that, by speaker normalization, we expect to acquire more accurate phonetic alignment in the following TV matrix training, see more details in [3]. After\n\nTable 1. Statistics of training data used for modeling DNN, UBM, TV, LDA/SVDA/PLDA, and also Dev set enrollment and trials data.\n\nSub-system\n\nDNN\n\nUBM/TV\n\nLDA/SVDA/PLDA\n\nEnrollment\n\nTrials\n\nSpkrs\n\nSegments\n\nSpkrs\n\nSegments\n\nSpkrs\n\nSegments\n\nSpkrs\n\nSegments\n\nTarget\n\nnonTarget\n\nCRSS1\n\n-\n\n-\n\n38110\n\n89860\n\n2921\n\n37037\n\nCRSS2\n\n4878\n\n4878\n\n5767\n\n57517\n\n2921\n\n37037\n\n80\n\n120\n\n4828\n\n19312\n\nCRSS3\n\n-\n\n-\n\n5756\n\n57273\n\n3794\n\n36410\n\nCRSS4\n\n1239\n\n1239\n\n5756\n\n57273\n\n3794\n\n36410\n\ni-Vector extraction, we apply similar strategies for back-end such as LDA and PLDA, brieﬂy described in the above section (as CRSS1).\n\n### 2.3. CRSS3: UBM i-Vector\n\nAn alternative UBM i-Vector system also adopted from Kaldi (sre10/v1). In this system, feature vectors contain 20 MFCCs appended with (∆+ ∆∆) coefﬁcients. The window length and shift size are 25-ms and 10-ms, respectively. In addition, we did cepstral mean normalization using 3-sec sliding window. Next, non-speech frames are discarded using energy-based voice activity detection. 2048-mixture full covariance UBM and total variability matrix have been trained using data collected from SRE2004, 2005, 2006, 2008 and Switchboard II phase 2,3 and Switchboard Cellular Part1 and Part2. At the back-end, after extracting i-Vectors, the global mean calculated from minor and major unlabeled data is subtracted from all i-Vectors. Next, i-Vectors are length-normalized and their dimension are reduced from 600 to 400 using LDA/SVDA. In some developed systems based on CRSS3 conﬁguration, we used both LDA and SVDA; more speciﬁcally, ﬁrst SVDA reduces the dimension from 600 to 500 and then LDA is used to reduce the dimension to 400. Again, i-Vectors are length-normalized. Finally, trial-based mean subtraction is used (the participant i-Vectors in a trial are averaged and the value is subtracted from both i-Vectors) and scores are calculated using PLDA. The front end is trained with SWB and SRE04-08; however, the back-end only uses SRE04-08 and unlabeled training data. For back-end, mostly MSR [4] toolkit has been adopted.\n\n### 2.4. CRSS4\n\nFisher English DNN i-Vector\n\nThe last baseline is a DNN i-Vector system using Kaldi (sre10/v2) that is based on the multisplice time delay DNN (TDNN) [5]. TDNN is trained with only a small portion of Fisher English data (1239 utterances). The feature vectors contain 40 dimensional f-bank features. TDNN has six layers; the hidden layers have an input dimension of 350 and an output dimension 3500. The softmax output layer computes posteriors for 3859 triphone states. More details on the TDNN structure and training procedure are provided in [5]. After TDNN training, 20 MFCCs appended with (∆+ ∆∆) coefﬁcients (overall 60 MFCCs) are employed for training TV matrix. Next, 600-dim i-Vectors are extracted. After i-Vector extraction, we apply similar strategies for backend such as LDA/SVDA and PLDA, brieﬂy described in the above section (as CRSS3).\n\n## 3. CORE COMPONENTS IN SYSTEM DEVELOPMENT\n\nIn the ﬁxed condition of SRE 2016, we have a huge amount of outof-domain data, i.e., previous SREs, SWB, Fisher English etc. Only a small in-domain data is available (without speaker labels), which\n\nmake existing techniques very difﬁcult to work with this so-called domain mismatch. In SRE 2016, NIST provided unlabeled training data, which contains two subsets, i.e., unlabeled minor and unlabeled major. The unlabeled minor data set has 200 utterances, while the major set contains 2272 utterances. The minor set has two languages for the purpose of system development, while the major set contains two different languages corresponding to the ﬁnal evaluation. In order to address this problem, several techniques are proposed in this evaluation.\n\n### 3.1. Speaker clustering of unlabeled data\n\nFor compensating the domain mismatch, the use of unlabeled data becomes very important. There are several stages where we can use the unlabeled data, such as, LDA/PLDA training and calibration. First, it is very intuitive to do a speaker clustering of the unlabeled data, and then generate an “estimated” speaker label for each utterance, similar with the method that we used in 2015 NIST LRE i-Vector challenge[6]. With these labels, we incorporate the in-domain information from unlabeled data to train LDA and PLDA. In fact, in the experiment, this simple operation improved the LDA/PLDA baseline performance for development set. In practice, we train a gender identiﬁcation using previous SRE data before speaker clustering, and then apply a simple K-means algorithm over gender dependent subsets, ﬁnally, we pool these two subsets together. In the experiment, we found this can provide more accurate speaker clustering and more beneﬁts to the following LDA and PLDA training.\n\n### 3.2. Discriminant analysis via support vectors (SVDA)\n\nDiscriminant analysis via support vectors (SVDA) is a variation of LDA that only uses support vectors to calculate the between and within class covariance matrices. In contrast to LDA, SVDA captures the boundary of classes, and performs well for small sample size problem (i.e. when the dimensionality is greater than sample size). The idea of using support vectors with discriminant analysis has been previously introduced in [7] which made signiﬁcant improvement over LDA. In addition, the effectiveness of SVDA in i-Vector/PLDA speaker recognition for NIST SRE2010 is studied in [8] previously for both long and short duration test utterances. More speciﬁcally, LDA deﬁnes speaker classes separation criterion in direction A as,\n\nλ = AT SbA\n\n(1)\n\nAT SwA,\n\nwhere Sb and Sw are between class and within class covariance matrices. In traditional LDA every sample of all classes participate in calculating these covariance matrices; however, for SVDA only support vectors are used. The between class covariance matrix in SVDA is deﬁned as,\n\nTable 2. Description of the CRSS sub-systems. Speaker clustering means using the unlabeled data to do clustering and using estimated labels for LDA/PLDA training. The systems that have SVDA, for training SVDA they use LDA data in addition to Minor and Major data. For sub-systems 3 and 4, for Dev set Minor data are used for training PLDA; however, for Eval set Major data are used.\n\nSub\n\nSpeaker\n\nLDA/SVDA data\n\nPLDA data\n\ni-Vector\n\nSVDA\n\nLDA\n\nFiltering\n\nsystem\n\nClustering\n\n1\n\nCRSS 4\n\nSRE 04-08\n\nSRE 04-08\n\n✕\n\n✓\n\n✕\n\n✕\n\n2\n\nCRSS 4\n\nSRE 04-08/ + Minor, Major\n\nSRE 04-08\n\n✓\n\n✓\n\n✕\n\n✕\n\n3\n\nCRSS 2\n\nSRE 04-08, Minor, Major\n\nSRE 04-08, Minor or Major\n\n✕\n\n✓\n\n✓\n\n✓\n\n4\n\nCRSS 1\n\nSRE 04-08, Minor, Major\n\nSRE 04-08, Minor or Major\n\n✕\n\n✓\n\n✓\n\n✓\n\n5\n\nCRSS 3\n\nSRE 04-08\n\nSRE 04-08\n\n✕\n\n✓\n\n✕\n\n✕\n\n6\n\nCRSS 3\n\nSRE 04-08/+ Minor, Major\n\nSRE 04-08\n\n✓\n\n✓\n\n✕\n\n✕\n\n7\n\nCRSS 3\n\nSRE 04-08/+ Minor, Major\n\nSRE 04-08\n\n✓\n\n✕\n\n✕\n\n✕\n\nSb = X\n\nwc1c2wT\n\n(2)\n\nc1c2.\n\n1≤c1≤c2≤C\n\nWhere wc1c2 is the optimal direction to separate two classes c1\n\nand c2 by a linear SVM (for calculating wc1c2 only support vectors of the two classes c1 and c2 are participating). If we deﬁne ˆ\n\nX =\n\nN] to contain all support vectors and ˆ\n\nN to be their total\n\n[ˆx1, ˆx2, ..., ˆx ˆ\n\nnumber; then, the within class covariance matrix for SVDA will be formulated as,\n\nC\n\nX\n\nX\n\n(ˆxi − ˆµc)(ˆxi − ˆµc)T ,\n\n(3)\n\nSw =\n\nc=1\n\ni∈ˆIc\n\nthe index for support vectors in class c and their mean are represented by ˆIc and ˆµc, respectively. Finally, similar to LDA, the optimum transformation ˆA will contain the k eigenvectors corresponding to\n\nthe k largest eigenvalues of S−1\n\nw Sb. More details on the advantages\n\nand properties of SVDA are provided in [8]. Two strategies can be adopted here for training linear SVM in SVDA framework: 1) one-versus-one and 2) one-versus-rest. We used the second approach as it can use minor and major unlabeled data optimally. More speciﬁcally, for training the SVM classiﬁer to separate one class against data from the rest classes, minor and major unlabeled data are added to the rest class. Therefore, the class labels are not needed here.\n\n### 3.3. Unlabeled data PLDA\n\nTo fully explore the information from the in-domain unlabeled data, we did an interesting experiment, which uses only the in-domain unlabeled data to train PLDA (however, SRE04-08 are used for training LDA). To do that, we use the “estimated” labels from speaker clustering. Surprisingly, PLDA with only 75 estimated speakers for 200 minor language i-Vectors achieved 20.5% EER on Dev experiment (using i-Vectors for CRSS1 baseline), which is not so bad. However, if we add more data (i.e., 75 + 300 estimated speakers from 2472 i-Vectors in minor and major languages) for PLDA training, the performance degraded from 20.5% to 26.3%. This observation suggests that out-of-domain language data is not helpful to train a discriminative classiﬁer, because in the view of Dev enrollment/test data, the major language data is also out-of-domain. We argue that even for data-driven algorithm such as PLDA, choosing a proper data set to train the classiﬁer is still essential. Motivated by this, we believe the use of unlabeled data in the SRE 2016 evaluation will be more beneﬁcial. Compared with only 200 minor language utterances, major language set has 2272 utterances. Although the speaker label is not given, we say the estimated\n\nlabel is still useful, and could probably perform better than 20.5% EER in the Eval set.\n\n### 3.4. Calibration and fusion\n\nThe CRSS calibration and fusion system is mainly based on the BOSARIS toolkit [9]. The PAV algorithm is used to create calibration transformation matrix. We used two data sets for calibration. The ﬁrst one is Dev data, we use all the Dev trials information that NIST provided for system development to train the calibration system. Again, because in this SRE, the Dev and evaluation set have totally different languages, it’s not guaranteed that the calibration will work well for the ﬁnal Eval set. For this consideration, we created a new trial list to calibrate evaluation scores, and we used unlabeled data with estimated speaker labels. We believe the score distribution of unlabeled data will be closer to that of evaluation. After calibration, we fused our sub-systems for ﬁnal submission. For system fusion, we employed a simple linear fusion system using logistic regression.\n\n## 4. CRSS SUB-SYSTEMS\n\nWe developed 7 sub-systems from 4 CRSS baselines that used SREs to train SVDA, LDA and PLDA. Also, as described above, we developed 4 sub-systems with just unlabeled data PLDA idea. The details of each system about data and techniques they used are listed in Table 2 and Table 3. More speciﬁcally, sub-systems 8, 9, 10, 11 are respectively share the same conﬁguration as sub-systems 3, 4, 6, 2; however, only unlabeled data are used to train PLDA.\n\nTable 3. Description of CRSS sub-systems using just unlabeled data to train PLDA.\n\nSub-system\n\ni-Vector\n\nSVDA\n\nLDA\n\n8\n\nCRSS 1\n\n✕\n\n✓\n\n9\n\nCRSS 2\n\n✕\n\n✓\n\n10\n\nCRSS 3\n\n✓\n\n✓\n\n11\n\nCRSS 4\n\n✓\n\n✓\n\nTable 4. CRSS submission for NIST SRE2016.\n\nSubmission\n\nsub-systems\n\nCalibration Data\n\nFusion\n\nPrimary\n\n1-7\n\nDev+Unlabeled\n\nLR\n\nContrastive1\n\n1-7\n\nDev\n\nLR\n\nContrastive2\n\n1-11\n\nDev+Unlabeled\n\nLR\n\n| Table 5. Calculated | scores | for th | e single systems. W | ith usin | g | different | data for calib | ration just th | e value | of act-C | primary will be | changed. |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| These scores are ca | lculated | using | NIST scoring soft | ware for | t | he Dev se | t, the equaliz | ed and unequ | alized | scores ar | e separated wit | h – in the |\n| table. |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Sub | E | ER/mi | n-Cprimary |  |  |  | act | -Cprimary |  |  |  |  |\n| system |  |  | Ca | librate | Wi | th Dev | Calibrate With | Unlabeled | Calibrat | e With De | v+Unlabeled |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| 1 | 17.14 | /0.768 | – 18.64/0.779 | 0.768 – | 0. | 779 | 0.881 – | 0.891 |  | 0.812 – 0 | .822 |  |\n| 2 | 17.11 | /0.755 | – 18.87/0.757 | 0.768 – | 0. | 769 | 0.794 – | 0.8 |  | 0.777 – 0 | .775 |  |\n| 3 | 17.84 | /0.754 | – 18.41/0.734 | 0.754 – | 0. | 734 | 0.834 – | 0.826 |  | 0.788 – 0 | .766 |  |\n| 4 | 17.17 | /0.719 | – 17.50/0.694 | 0.722 – | 0. | 694 | 0.820 – | 0.813 |  | 0.769 – 0 | .747 |  |\n| 5 | 15.59 | /0.701 | – 16.08/0.671 | 0.709 – | 0. | 671 | 0.813 – | 0.813 |  | 0.747 – 0 | .726 |  |\n| 6 | 15.58 | /0.679 | – 15.95/0.629 | 0.688 – | 0. | 629 | 0.744 – | 0.735 |  | 0.694 – 0 | .647 |  |\n| 7 | 15.53 | /0.685 | – 16.63/0.658 | 0.686 – | 0. | 658 | 0.775 – | 0.769 |  | 0.697 – 0 | .672 |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  | 5. CR | SS SU | BMISSIONS |  |  |  |  | 7. COMPU | TATIO | NAL RE | SOURCES |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  | 7.1. CPU cl | uster |  |  |  |  |\n| The final submissio | ns of CR | SS is | the fusion of severa | l sub-sy | s | tems. |  |  |  |  |  |  |\n| In the final submiss | ion, we | tried | different system co | mbinati | o | ns as | The speaker | recognition | syste | m was i | mplemented on | our in- |\n| well as different cali | bration | strateg | ies. We submit a 1- | 7 sub-s | ys | tems | house high- | performance | Dell c | omputing | cluster, runni | ng Rocks |\n| fusion with Dev+un | labeled | data f | or calibration as ou | r prima | ry | sub- | 6.0 (Mamba) | Linux distrib | ution. | The clust | er comprises of | eight 6C |\n| mission. To test our | hypoth | esis th | at unlabeled PLDA | idea wi | ll | ben- | Intel Xeon 2 | .67 GHz CPU | s, four | 10C Inte | l Xeon 2.40 G | Hz CPUs, |\n| efit for the Eval set, | we sub | mitted | this as a contrasti | ve subm | is | sion. | and 18 quad | -core Intel X | eon 2.3 | 3 GHz C | PUs, yielding | a total of |\n| All these combinati | ons mak | e our | final submissions to | SRE 20 | 1 | 6. | 408 processo | rs. The total | amou | nt of inte | rnal RAM on t | he cluster |\n|  |  |  |  |  |  |  | exceeds 1 TB | . All our dat | a includ | ing audio | files, features, | statistics, |\n|  |  |  |  |  |  |  | etc. are store | d on a 30 TB | Dell Po | werVault | MD1000 direc | t attached |\n|  |  |  |  |  |  |  | storage. |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| 6. PERFORMAN | CE OF | CRSS | SUB-SYSTEMS | ON SR | E | 2016 |  |  |  |  |  |  |\n|  |  | DEV | DATA |  |  |  | 7.2. GPU m | achines |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  | For DNN tr | aining on S | WB da | ta, GeFo | rce GTX TITA | N Black |\n| Tables 5, 6, and 7 | shows | the e | qual error rate (EE | R), mi | ni | mum | graphic card | is used, 614 | 4 MB R | am. For | DNN training | on Fisher |\n| Cprimary(min-Cpri | mary) a | nd actu | al Cprimary (act-C | primary | ) | costs | English, we | used a 12 GB | Tesla K | 40. |  |  |\n| for single systems a | nd fusio | n syst | ems using NIST sco | ring so | ft | ware. |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| These results are ev | aluated | on Dev | set. |  |  |  | 7.3. CPU ex | ecution time |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  | We tested th | e systems sco | ring pr | ocess usin | g one CPU of | 2.67 GHz |\n|  |  |  |  |  |  |  | clock speed a | nd 32 GB RA | M. We | selected | a 3 minute utte | rance (ex- |\n| Table 6. EER, min- | Cprimar | y and | act-Cprimary costs | for sing | l | e sys- |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| tems that only use u | nlabele | d data | for training PLDA | . NIST s | c | oring | act duration | of 181.45 sec | onds) a | nd calcul | ated the time r | equired to |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| software is used to | calculat | e the s | cores for Dev set. | The eq | ua | lized | perform feat | ure extraction | (20 di | mensiona | l MFCC), voic | e activity |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| and unequalized sc | ores are | separ | ated with – in the | table. | Fo | r the | detection (K | aldi SRE10/v | 1 defau | lt), extrac | tion of zero an | d first or- |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| calibration Dev + u | nlabele | d data | are used. |  |  |  | der statistics | and the 600 d | imensio | nal i-Vec | tor. The time re | quired for |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  | this chain of | processes is f | or the s | elected ut | terance is 37.58 | s. This is |\n| Sub | EER/m | in-Cp | rimary act-Cp | rimary |  |  | computed by | averaging th | e elaps | ed time o | btained from t | hree inde- |\n| system |  |  |  |  |  |  | pendent runs | . Scoring an u | tteranc | e using ou | r PLDA model | takes less |\n| 8 2 | 9.48/0.9 | 01 – 2 | 6.84/0.9 0.917 – | 0.914 |  |  | than 0.1 seco | nds on avera | ge. For | training t | he models, it d | epends on |\n| 9 29 | .72/0.89 | 8 – 26 | .15/0.908 0.92 – | 0.933 |  |  | how many en | rollment utte | rances | are provi | ded. Since the | UBM and |\n| 10 26 | .48/0.94 | 3 – 24 | .96/0.954 0.956 | – 0.96 |  |  | TV matrices | are trained o | ff-line, | speaker | enrollment req | uires only |\n| 11 26 | .76/0.95 | 7 – 26 | .45/0.968 0.986 – | 0.989 |  |  | to extract th | e correspondi | ng i-Ve | ctors, th | us the time req | uired will |\n|  |  |  |  |  |  |  | be a multiple | of the numb | er of en | rollment | utterances prov | ided for a |\n|  |  |  |  |  |  |  | speaker. |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  | 8. ACK | NOW | LEDGE | MENT |  |\n| Table 7. Fusion s | cores c | alculat | ed on Dev set with | NIST s | c | oring |  |  |  |  |  |  |\n| software. The equal | ized an | d uneq | ualized scores are | separate | d | with | We would li | ke to thank | Dr. Ko | ng Aik L | ee for providin | g the un- |\n| – in the table. |  |  |  |  |  |  | labeled trial | list, organizi | ng I4U | meeting | s, and other I | 4U group |\n| Submission | EER | /minC | primary act- | Cprimar | y |  | members sha | ring many id | eas and | insights | during I4U mee | tings. We |\n|  |  |  |  |  |  |  | would like to | thank Qian | Zhang, | Abhinav | Misra, Dr. Finn | ian Kelly |\n| Primary | 14.24/0 | .590 – | 14.98/0.561 0.6 | 12 – 0.5 | 8 |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Contrastive1 | 13.81/0 | .585 – | 14.66/0.554 0.5 | 89 – 0.5 | 6 |  | and other CR | SS colleague | s for th | eir many | insights and he | lpful dis- |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Contrastive2 | 14.27/0 | .592 – | 15.04/0.562 0.61 | 8 – 0.58 | 9 |  | cussions in t | he developme | nt of th | e systems | . We would lik | e to thank |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  | Dr. Gang Li | u (CRSS gra | duate) f | rom Alib | aba Group for | providing |\n|  |  |  |  |  |  |  | the fusion sy | stem. |  |  |  |  |\n\n## 9. REFERENCES\n\n[1] “NIST 2016 speaker recognition evaluation plan,” https://www.nist.gov/sites/default/ﬁles/documents/itl/iad/mig/SRE16\n\nEval\n\nPlan\n\nV1-0.pdf,\n\n2016. [2] Y. Lei, N. Scheffer, L. Ferrer, and M. McLaren, “A novel scheme for speaker recognition using a phonetically-aware deep neural network,” in 2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2014, pp. 1695– 1699. [3] S. O. Sadjadi, S. Ganapathy, and J. Pelecanos, “The ibm 2016 speaker recognition system,” arXiv preprint arXiv:1602.07291, 2016. [4] S. O. Sadjadi, M. Slaney, and L. Heck, “Msr identity toolbox v1. 0: A matlab toolbox for speaker-recognition research,” Speech and Language Processing Technical Committee Newsletter, vol. 1, no. 4, 2013. [5] D. Snyder, D. Garcia-Romero, and D. Povey, “Time delay deep neural network-based universal background models for speaker recognition,” in 2015 IEEE Workshop on Automatic Speech Recognition and Understanding (ASRU). IEEE, 2015, pp. 92– 97. [6] C. Yu, C. Zhang, S. Ranjan, Q. Zhang, A. Misra, F. Kelly, and J. H.L. Hansen, “Utd-crss system for the nist 2015 language recognition i-vector machine learning challenge,” in 2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2016, pp. 5835–5839. [7] S. Gu, Y. Tan, and X. He, “Discriminant analysis via support vectors,” Neurocomputing, vol. 73, no. 10, pp. 1669–1675, 2010. [8] F. Bahmaninezhad and J. H.L. Hanesn, “i-vector/PLDA speaker recognition using support vectors with discriminant analysis,” in (submitted to) IEEE ICASSP, 2017. [9] N. Br¨ummer and E. de Villiers, “The bosaris toolkit: Theory, algorithms and code for surviving the new dcf,” arXiv preprint arXiv:1304.2865, 2013.\n"
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. CRSS BASELINES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. CRSS1: UBM i-Vector",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2. CRSS2: SWB DNN i-Vector",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3. CRSS3: UBM i-Vector",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4. CRSS4",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. CORE COMPONENTS IN SYSTEM DEVELOPMENT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Speaker clustering of unlabeled data",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2. Discriminant analysis via support vectors (SVDA)",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3. Unlabeled data PLDA",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.4. Calibration and fusion",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. CRSS SUB-SYSTEMS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.796158600001945,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 7,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6818181818181819,
+  "unmatched_gt": [
+   "5. CRSS SUBMISSIONS",
+   "6. PERFORMANCE OF CRSS SUB-SYSTEMS ON SRE 2016 DEV DATA",
+   "7. COMPUTATIONAL RESOURCES",
+   "7.1. CPU cluster",
+   "7.2. GPU machines",
+   "7.3. CPU execution time",
+   "8. ACKNOWLEDGEMENT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "doc": "1804.07329",
+ "system": "det",
+ "metrics": {
+  "gt": 24,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.76,
+  "unmatched_gt": [
+   "Word Property Coefficients (WP-Coefficients)",
+   "Syntactic Clusters (S-Clusters)",
+   "Transitions",
+   "Words in Fixed Context (WFC)",
+   "TOEFL",
+   "Results"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 218,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Experimental Setup",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Procedure and Reading Materials",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Experimental Regimes",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Standardized English Tests",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Data Split",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Eye Movement Features",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Type-Level Features",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Token-Level Features",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 English Proﬁciency Scoring Based on",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Eye Movements in Reading",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Correlation with MET and TOEFL",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5 Predicting Performance on MET and",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Related Work",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion and Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.430195000000822,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.76,
+  "unmatched_gt": [
+   "Word Property Coefficients (WP-Coefficients)",
+   "Syntactic Clusters (S-Clusters)",
+   "Transitions",
+   "Words in Fixed Context (WFC)",
+   "TOEFL",
+   "Results"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 6,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "Word Property Coefficients (WP-Coefficients)",
+   "Syntactic Clusters (S-Clusters)",
+   "Transitions",
+   "Words in Fixed Context (WFC)",
+   "TOEFL",
+   "Results"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,232 @@
+{
+ "doc": "1804.07878",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 23,
+  "pred": 25,
+  "tp": 21,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [
+   "Languages have varying closeness to each",
+   "Multi-source multi-target translation im-",
+   "proves greatly from single-source single-tar-",
+   "33.8% of the translations require minor cor-"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 193,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13725,
+   "completion_tokens": 850,
+   "total_tokens": 14575
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Multilingual Attentional NMT",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Sub-word Level NMT",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Lexiconized NMT",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Translation System",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Baseline Translation System",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Proposed Extensions",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2.1 Language Families and Cross-lingual",
+   "page": 2,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.2.2 Ablation Study on Target Training data",
+   "page": 2,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.2.3 Order-preserving Lexiconized NMT",
+   "page": 2,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Data and Training Parameters",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Family labels and Intra-family &",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Languages have varying closeness to each",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Multi-source multi-target translation im-",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "proves greatly from single-source single-tar-",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Ablation Study on Target Training Data",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.4 Order-preserving Lexiconized NMT",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "33.8% of the translations require minor cor-",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusion and Future Directions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A Supplemental Materials",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.918003400001908,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 25,
+  "tp": 21,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [
+   "Languages have varying closeness to each",
+   "Multi-source multi-target translation im-",
+   "proves greatly from single-source single-tar-",
+   "33.8% of the translations require minor cor-"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 17,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.7727272727272727,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [
+   "Languages have varying closeness to each",
+   "Multi-source multi-target translation im-",
+   "proves greatly from single-source single-tar-",
+   "33.8% of the translations require minor cor-"
+  ],
+  "ignored_title_predictions": null
+ }
+}

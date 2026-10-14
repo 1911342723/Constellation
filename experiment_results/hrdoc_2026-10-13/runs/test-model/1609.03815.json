@@ -1,0 +1,148 @@
+{
+ "doc": "1609.03815",
+ "system": "model",
+ "metrics": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 527,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4591,
+   "completion_tokens": 489,
+   "total_tokens": 5080
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. A Uniﬁed Framework for Gender-Aware Age Estimation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. EXPERIMENT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Datasets",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Experimental Setup",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Age Estimation With Race Variation",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "D. Age Estimation Without Race Variation",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "E. Reasonableness of Near-Orthogonality Penalty Across Hu-",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.866226599999209,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "(GenAge)",
+   "B. Exemplification of the GenAge Framework",
+   "man Gender and Age Semantic Spaces"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

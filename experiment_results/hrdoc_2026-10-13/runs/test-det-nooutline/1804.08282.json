@@ -1,0 +1,124 @@
+{
+ "doc": "1804.08282",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Algorithm Evaluation",
+   "V. CO N C LUSIO N S",
+   "AC K NOWLE DGM ENT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 438,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "On the Design of an Intelligent Speed Advisory System for Cyclists",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SYSTEM MODEL AND ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Model Assumptions",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Problem Statement",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Mathematical Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Optimisation and Algorithm",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Construction of Risk Functions",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  }
+ ],
+ "seconds": 8.72289979999914,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "Abstract—",
+   "B. Algorithm Evaluation",
+   "V. CO N C LUSIO N S",
+   "AC K NOWLE DGM ENT"
+  ],
+  "unmatched_pred": [
+   "On the Design of an Intelligent Speed Advisory System for Cyclists"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "B. Algorithm Evaluation",
+   "V. CO N C LUSIO N S"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

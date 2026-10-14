@@ -1,0 +1,234 @@
+{
+ "doc": "1511.09446",
+ "system": "model",
+ "metrics": {
+  "gt": 11,
+  "pred": 23,
+  "tp": 11,
+  "fp": 12,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Theorem A. A(S1",
+   "Theorem B′. AC(S1",
+   "Theorem B′′. AC(S1",
+   "1.2. Acknowledgments",
+   "1.3. Retraction",
+   "2.1. Coloring of Curves",
+   "2.3. Perturbed Geodesics",
+   "3.1. Preliminaries",
+   "Theorem A. A(S1",
+   "4.1. Preliminaries",
+   "4.2. Alterations",
+   "Theorem B. AC(S1"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 556,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14114,
+   "completion_tokens": 772,
+   "total_tokens": 14886
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1. Splitting Complexes",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Deﬁnition 1. ψ : A(S1",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Deﬁnition 2. ψZ : AC(S1",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Theorem A. A(S1",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Theorem B′. AC(S1",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Theorem B′′. AC(S1",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.2. Acknowledgments",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "1.3. Retraction",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2. Arcs",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Coloring of Curves",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2.2. Relative Order.",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2.3. Perturbed Geodesics",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "2.4. Proof of Lemmas 9 & 10.",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "3. Free Splittings",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Preliminaries",
+   "page": 8,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "3.2. Proof of Main Result",
+   "page": 10,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "Theorem A. A(S1",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Cyclic Splittings",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Preliminaries",
+   "page": 12,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "4.2. Alterations",
+   "page": 13,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Theorem B. AC(S1",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.945637599998008,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 23,
+  "tp": 11,
+  "fp": 12,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Theorem A. A(S1",
+   "Theorem B′. AC(S1",
+   "Theorem B′′. AC(S1",
+   "1.2. Acknowledgments",
+   "1.3. Retraction",
+   "2.1. Coloring of Curves",
+   "2.3. Perturbed Geodesics",
+   "3.1. Preliminaries",
+   "Theorem A. A(S1",
+   "4.1. Preliminaries",
+   "4.2. Alterations",
+   "Theorem B. AC(S1"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 21,
+  "tp": 10,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.31818181818181823,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Theorem A. A(S1",
+   "Theorem B′. AC(S1",
+   "Theorem B′′. AC(S1",
+   "1.3. Retraction",
+   "2.1. Coloring of Curves",
+   "2.3. Perturbed Geodesics",
+   "3.1. Preliminaries",
+   "Theorem A. A(S1",
+   "4.1. Preliminaries",
+   "4.2. Alterations",
+   "Theorem B. AC(S1"
+  ],
+  "ignored_title_predictions": null
+ }
+}

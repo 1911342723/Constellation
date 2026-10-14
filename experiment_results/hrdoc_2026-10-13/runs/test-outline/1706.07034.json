@@ -1,0 +1,158 @@
+{
+ "doc": "1706.07034",
+ "system": "outline",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "3.4. Estimation of the constant appearing in the variance",
+   "6. Acknowledgement",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Definitions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Bifurcating Markov chain Guyon",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2. Tagged-branched chain Guyon, BO16",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Estimation of the stationary distribution ",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Definition of the estimator",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2. Bias-variance decomposition",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.3. Selection rule",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.4. Estimation of the constant appearing in the variance",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4. Simulations",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Bifurcating autoregressive processes",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2. Estimation of splitting rate in a growth-fragmentation model",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5. Proofs",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Acknowledgement",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04458379999778117,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 12,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "3.4. Estimation of the constant appearing in the variance",
+   "6. Acknowledgement",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "1. Initialization : set",
+   "2. While s ≤ smax",
+   "3. Return (cid:98)hjjump+1."
+  ],
+  "unmatched_pred": [
+   "3.4. Estimation of the constant appearing in the variance"
+  ],
+  "ignored_title_predictions": null
+ }
+}

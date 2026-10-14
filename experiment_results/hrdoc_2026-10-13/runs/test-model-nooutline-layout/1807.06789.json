@@ -1,0 +1,155 @@
+{
+ "doc": "1807.06789",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 129,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4325,
+   "completion_tokens": 587,
+   "total_tokens": 4912
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9879965080750764,
+  "inserted_word_share": 0.9578703445195154
+ },
+ "predictions": [
+  {
+   "text": "DroNet: Efﬁcient Convolutional Neural Network",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Related Work on UAV-based Vehicle Detection Object detection aims to ﬁnd instances of objects from known classes in an image. This task typically yields the location and scale of the object in terms of a bounding box together with a probability on its class. UAV object detection has been extensively studied in the literature and traditional techniques utilize background subtraction [2] to perform trafﬁc estimation from static UAVs, or use Haar Cascade classiﬁers to detect vehicles [3]. The latest state-of-the-art techniques rely on deep convolutional neural networks (CNNs) [4]. For example a CNN is utilized in [5] as a classiﬁer to detect vehicles in grayscale images. However, such approaches need to process thousands of search windows and are thus inefﬁcient for UAV platforms with limited hardware capabilities that need to operate near real-time. A more recent example is shown in [6] where the authors utilize a deep learning framework that performs scene analysis of aerial images to ﬁrst segment the image into various regions, and then extract the regions that correspond to vehicles and classify them into subcategories. The proposed network involves stacked deep neural networks for encoding and decoding the input image into segments and runs off-line on an NVIDIA Tesla GPU, which makes it unsuitable for a lightweight and low power UAVs. Contrary to existing work, in this work we target on-board processing on a UAV platform which may not be equipped with such high-end hardware. To this end, we propose a lightweight CNN architecture capable of running efﬁciently on embedded processors. Recent advances in object detection frameworks utilize deep learning and cast detection as a regression problem where the goal is to predict the location of bounding boxes in the image. Nevertheless, such techniques have not yet been exploited in UAV applications. In this work, we employ such techniques and tailor a single-shot CNN, that is trained on image data speciﬁcally for top-view vehicle detection, and is optimized to run on an embedded platform on-board a UAV. The next section outlines the basic principles of convolutional and single-shot detectors. B. Convolutional Neural Network Detectors Convolutional neural networks (CNNs) are biologically inspired hierarchical models that can be trained to perform a variety of detection, recognition and segmentation tasks [6]. CNNs are neural network architectures composed of multiple layers, with higher layers built on top of lower ones and capturing more abstract representations of the input data. The structure of a CNN typically comprises a feature extractor stage followed by a classiﬁer. In the last decade, a lot of",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. PROPOSED APPROACH",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Collection",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Training Process",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. CNN Models",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Application Level Optimizations",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EVALUATION AND EXPERIMENTAL RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. DroNet on UAV Platform",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. CONCLUSION & FUTURE WORK",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.3286397999982,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "B. Convolutional Neural Network Detectors",
+   "A. Parameter Space Exploration on CPU Platform"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

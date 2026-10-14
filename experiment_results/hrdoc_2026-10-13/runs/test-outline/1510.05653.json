@@ -1,0 +1,137 @@
+{
+ "doc": "1510.05653",
+ "system": "outline",
+ "metrics": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Abstract",
+   " References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "Comparing Experiments to the Fault-Tolerance Threshold",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " References",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Supplementary material",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": " Quantum states and operations",
+   "page": 5,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " Semidefinite Programming",
+   "page": 6,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " Semidefinite programs for the diamond distance",
+   "page": 8,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " Dephasing and calibration errors for a single qubit",
+   "page": 8,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " Thermal relaxation of a single qubit",
+   "page": 9,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " Incoherent leakage errors",
+   "page": 10,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " Coherent leakage errors",
+   "page": 11,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " Unitary errors",
+   "page": 12,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " The unitarity and average error rate for two-qubit processes",
+   "page": 14,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": " The unitarity as a witness for unfavorable scaling",
+   "page": 14,
+   "level": 3,
+   "parent": 3
+  }
+ ],
+ "seconds": 0.01362900000094669,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 14,
+  "tp": 11,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 10,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Comparing Experiments to the Fault-Tolerance Threshold",
+   "Abstract",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

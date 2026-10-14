@@ -1,0 +1,159 @@
+{
+ "doc": "1512.00315",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 149,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4053,
+   "completion_tokens": 602,
+   "total_tokens": 4655
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9505917159763314,
+  "inserted_word_share": 0.05970149253731338
+ },
+ "predictions": [
+  {
+   "text": "Highly Scalable Tensor Factorization for Prediction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Side Information",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II. STATISTICAL MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. General Setup",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. GIBBS SAMPLER",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Noise Injection Sampler for the Link Matrix The conditional posterior of βc, used for Gibbs sampler, combines (4) and (5). Due to scale invariance of (5) we get",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. EXPERIMENTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Results",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.730125599999155,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "2) Latent dimensions capturing the difference term: We",
+   "3) Prediction of dominant interaction types for proteins: We",
+   "4) Prediction of compound-protein interaction types: In this"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

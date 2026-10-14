@@ -1,0 +1,165 @@
+{
+ "doc": "1805.02481",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 27.700429799999256
+ },
+ "predictions": [
+  {
+   "text": "MEGAN: Mixture of Experts of Generative Adversarial Networks for Multimodal Image Generation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RelatedWork",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Categorical Reparameterization",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Straight-Through Gumbel-Softmax",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Mixture of Experts GAN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Proposed Network Architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Gating Networks",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Load-Balancing Regularization",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.4 Total Loss",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.5 Discussions",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Experiment Details",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiment Environments",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 Experimental Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Evaluation on Specialization",
+   "page": 4,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "6.2 Quantitative analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.02193239999905927,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

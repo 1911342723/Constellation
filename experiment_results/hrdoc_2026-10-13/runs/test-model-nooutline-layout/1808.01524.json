@@ -1,0 +1,194 @@
+{
+ "doc": "1808.01524",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [
+   "Conditional generative model"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.95,
+  "unmatched_gt": [
+   "Conditional generative model"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 202,
+  "layout_marked": 26,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10522,
+   "completion_tokens": 724,
+   "total_tokens": 11246
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9395168102720054,
+  "inserted_word_share": 0.7708032807154928
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Works",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Background",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Variational Autoencoder",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "MMD",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discriminative regularization",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "MMD",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "Contrastive loss",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "Training architecture",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "The Data",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Experimental setup",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Results",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Classiﬁcation",
+   "page": 4,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "Analyzing disentanglement",
+   "page": 5,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.784929599998577,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9565217391304348,
+  "unmatched_gt": [
+   "Conditional generative model"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

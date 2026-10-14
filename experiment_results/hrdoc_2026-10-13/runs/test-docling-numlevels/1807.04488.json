@@ -1,0 +1,192 @@
+{
+ "doc": "1807.04488",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 12,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2 getQRCandidate: Get a candidate reformulation",
+   "COMPARISON OF QUERY EFFECTIVENESS WITH EXISTING TECHNIQUES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 19,
+  "tp": 17,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 10,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2 getQRCandidate: Get a candidate reformulation",
+   "COMPARISON OF QUERY EFFECTIVENESS WITH EXISTING TECHNIQUES"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 36.50641790000009
+ },
+ "predictions": [
+  {
+   "text": "Improved Query Reformulation for Concept Location using CodeRank and Document Structures",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. ACER: AUTOMATIC QUERY REFORMULATION USING CODERANK AND DOCUMENT STRUCTURES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Pseudo-relevance Feedback",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Source Token Selection for Query Reformulation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Source Code Preprocessing",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Source Term Graph Development",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "E. CodeRank Calculation",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "F. Suggestion of the Best Query Reformulation",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Algorithm 2 getQRCandidate: Get a candidate reformulation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EXPERIMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Dataset",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Corpus Indexing & Source Code Search",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C. Performance Metrics",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Evaluation of ACER and CodeRank",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "COMPARISON OF QUERY EFFECTIVENESS WITH EXISTING TECHNIQUES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Comparison with Existing Approaches",
+   "page": 8,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "IV. THREATS TO VALIDITY",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RELATED WORK",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION & FUTURE WORK",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01973780000116676,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 12,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 2 getQRCandidate: Get a candidate reformulation",
+   "COMPARISON OF QUERY EFFECTIVENESS WITH EXISTING TECHNIQUES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

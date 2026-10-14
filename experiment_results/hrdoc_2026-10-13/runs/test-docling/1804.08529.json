@@ -1,0 +1,209 @@
+{
+ "doc": "1804.08529",
+ "system": "docling",
+ "metrics": {
+  "gt": 22,
+  "pred": 24,
+  "tp": 22,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Auburn University",
+   "CONFIGURATION"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 51.25642670000161
+ },
+ "predictions": [
+  {
+   "text": "VectorDefense: Vectorization as a Defense to Adversarial Examples",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Auburn University",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Adversarial Attacks and Defenses",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Attacks",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2. Defenses",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Methods",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. The Potrace Algorithm",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Vectorization as a Defense",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Experiments & Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Experiment setup",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2. VectorDefense in a Gray-Box Setting",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3. Gray-Box: Budget-Aware Attack Algorithms",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4. White-Box: Bypassing Input Transformations",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.5. Hand-designed vs. Learned Prior",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Discussion and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supplementary materials for:",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VectorDefense: Vectorization as a Defense to Adversarial Examples",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S6. Tracing color images",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S7. Experimental Setup",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S8. Additional results by VectorDefense",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "CONFIGURATION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01952480000181822,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 25,
+  "tp": 22,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5769230769230769,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "VectorDefense: Vectorization as a Defense to Adversarial Examples",
+   "Auburn University",
+   "CONFIGURATION"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Auburn University",
+   "CONFIGURATION"
+  ],
+  "ignored_title_predictions": null
+ }
+}

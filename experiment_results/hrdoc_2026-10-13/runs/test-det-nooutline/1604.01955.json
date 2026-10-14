@@ -1,0 +1,174 @@
+{
+ "doc": "1604.01955",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 16,
+  "pred": 19,
+  "tp": 16,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 13,
+  "teds": 0.55,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Keywords",
+   "1 There for 4 types of property: 0-oﬃce building 1-",
+   "2 The ratio is deﬁned as"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 280,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Keywords",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. HOW DIDI’SDATABUILTTOTHEMON-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ITORING SYSTEM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Remove noises",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2 Model training",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "1 There for 4 types of property: 0-oﬃce building 1-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The ratio is deﬁned as",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 AP print conformity checking algorithm",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3. MULTI-SCALEMIGRATIONOBSERVA-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "TION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Inter-provincial and Intra-provincial mi-",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "gration",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Intra-city level migration",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4. CONSECUTIVE PERIODICAL MIGRA-",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "TION OBSERVATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. CONCLUSIONS AND FUTURE WORK",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.066641699999309,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 19,
+  "tp": 16,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 13,
+  "teds": 0.55,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Keywords",
+   "1 There for 4 types of property: 0-oﬃce building 1-",
+   "2 The ratio is deﬁned as"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 11,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 There for 4 types of property: 0-oﬃce building 1-",
+   "2 The ratio is deﬁned as"
+  ],
+  "ignored_title_predictions": null
+ }
+}

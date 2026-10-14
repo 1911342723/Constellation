@@ -1,0 +1,220 @@
+{
+ "doc": "1505.02091",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 7,
+  "pred": 20,
+  "tp": 7,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Weihrauch reducibility",
+   "2.2. Randomness",
+   "Proof. As dMLR is computable, we ﬁnd dMLR ×CN ≤W CN. That CN ≰W dMLR ×CN follows",
+   "4.1. Complex oscillations",
+   "4.2. Law of the iterated logarithm",
+   "4.3. Birkhoﬀ’s theorem",
+   "π1(Si(p))",
+   "π1(Si(uv))",
+   "4.4. Random harmonic series. The harmonic series P",
+   ": MLR → R\u0011 ≡W LAY",
+   "p 7→ X",
+   "(−1)p(n)an",
+   "A. PAULY, W. FOUCH´E, AND G. DAVIE"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 500,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 21027,
+   "completion_tokens": 743,
+   "total_tokens": 21770
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Weihrauch reducibility",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2. Randomness",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. The Weihrauch degree",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof. As dMLR is computable, we ﬁnd dMLR ×CN ≤W CN. That CN ≰W dMLR ×CN follows",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4. Examples of Weihrauch-complete layerwise computable operations",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Complex oscillations",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2. Law of the iterated logarithm",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3. Birkhoﬀ’s theorem",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "π1(Si(p))",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "π1(Si(uv))",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4. Random harmonic series. The harmonic series P",
+   "page": 9,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": ": MLR → R\u0011 ≡W LAY",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "p 7→ X",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(−1)p(n)an",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Hitting time",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. PAULY, W. FOUCH´E, AND G. DAVIE",
+   "page": 11,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.32377909999923,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 20,
+  "tp": 7,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.38095238095238093,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Weihrauch reducibility",
+   "2.2. Randomness",
+   "Proof. As dMLR is computable, we ﬁnd dMLR ×CN ≤W CN. That CN ≰W dMLR ×CN follows",
+   "4.1. Complex oscillations",
+   "4.2. Law of the iterated logarithm",
+   "4.3. Birkhoﬀ’s theorem",
+   "π1(Si(p))",
+   "π1(Si(uv))",
+   "4.4. Random harmonic series. The harmonic series P",
+   ": MLR → R\u0011 ≡W LAY",
+   "p 7→ X",
+   "(−1)p(n)an",
+   "A. PAULY, W. FOUCH´E, AND G. DAVIE"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 18,
+  "tp": 5,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.3157894736842105,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.1. Weihrauch reducibility",
+   "2.2. Randomness",
+   "Proof. As dMLR is computable, we ﬁnd dMLR ×CN ≤W CN. That CN ≰W dMLR ×CN follows",
+   "4.1. Complex oscillations",
+   "4.2. Law of the iterated logarithm",
+   "4.3. Birkhoﬀ’s theorem",
+   "π1(Si(p))",
+   "π1(Si(uv))",
+   "4.4. Random harmonic series. The harmonic series P",
+   ": MLR → R\u0011 ≡W LAY",
+   "p 7→ X",
+   "(−1)p(n)an",
+   "A. PAULY, W. FOUCH´E, AND G. DAVIE"
+  ],
+  "ignored_title_predictions": null
+ }
+}

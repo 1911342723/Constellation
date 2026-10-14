@@ -1,0 +1,131 @@
+{
+ "doc": "1804.08282",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Abstract—",
+   "AC K NOWLE DGM ENT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 438,
+  "layout_marked": 15,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9529775463716238,
+  "inserted_word_share": 0.38502729945401093
+ },
+ "predictions": [
+  {
+   "text": "On the Design of an Intelligent Speed Advisory System for Cyclists",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. SYSTEM MODEL AND ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Model Assumptions",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Problem Statement",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Mathematical Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Optimisation and Algorithm",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Construction of Risk Functions",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Algorithm Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.20980349999445,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Abstract—",
+   "AC K NOWLE DGM ENT"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

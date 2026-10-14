@@ -1,0 +1,275 @@
+{
+ "doc": "1801.01465",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "III. QUANTUM EDGE DETECTION ALGORITHM"
+  ],
+  "unmatched_pred": [
+   "III. QUANTUM EDGE DETECTION ALGORITHM"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 19451,
+   "completion_tokens": 15919
+  },
+  "elapsed_llm_seconds": 71.03939790000004,
+  "content_preservation": 0.8424572465845037,
+  "inserted_word_share": 0.019677598665925555,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Quantum Image Processing and Its Application to Edge Detection: Theory and Experiment",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "II. FRAMEWORK OF QUANTUM IMAGE PROCESSING",
+    0,
+    1
+   ],
+   [
+    "A. Quantum image representation",
+    0,
+    2
+   ],
+   [
+    "B. Quantum image transforms",
+    0,
+    2
+   ],
+   [
+    "C. Experimental demonstrations",
+    0,
+    2
+   ],
+   [
+    "III. QUANTUM EDGE DETECTION ALGORITHM",
+    0,
+    1
+   ],
+   [
+    "IV. CONCLUSION",
+    0,
+    1
+   ],
+   [
+    "ACKNOWLEDGMENTS",
+    0,
+    1
+   ],
+   [
+    "APPENDIX A: COMPARISON OF QIMRS",
+    0,
+    1
+   ],
+   [
+    "APPENDIX B: QUANTUM WAVELET TRANSFORM",
+    0,
+    1
+   ],
+   [
+    "APPENDIX C: IMAGE SPATIAL FILTERING",
+    0,
+    1
+   ],
+   [
+    "APPENDIX D: DETECTING SYMMETRY BY QIMP",
+    0,
+    1
+   ],
+   [
+    "APPENDIX E: VARIANT OF QHED ALGORITHM",
+    0,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Quantum Image Processing and Its Application to Edge Detection: Theory and Experiment",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. FRAMEWORK OF QUANTUM IMAGE PROCESSING",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Quantum image representation",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Quantum image transforms",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Experimental demonstrations",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. QUANTUM EDGE DETECTION ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A: COMPARISON OF QIMRS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B: QUANTUM WAVELET TRANSFORM",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C: IMAGE SPATIAL FILTERING",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX D: DETECTING SYMMETRY BY QIMP",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX E: VARIANT OF QHED ALGORITHM",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 71.67013410000072,
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 4,
+  "fp": 10,
+  "fn": 9,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "C. Experimental demonstrations",
+   "III. QUANTUM EDGE DETECTION ALGORITHM",
+   "IV. CONCLUSION",
+   "ACKNOWLEDGMENTS",
+   "APPENDIX A: COMPARISON OF QIMRS",
+   "APPENDIX B: QUANTUM WAVELET TRANSFORM",
+   "APPENDIX C: IMAGE SPATIAL FILTERING",
+   "APPENDIX D: DETECTING SYMMETRY BY QIMP",
+   "APPENDIX E: VARIANT OF QHED ALGORITHM"
+  ],
+  "unmatched_pred": [
+   "Quantum Image Processing and Its Application to Edge Detection: Theory and Exper",
+   "C. Experimental demonstrations",
+   "III. QUANTUM EDGE DETECTION ALGORITHM",
+   "IV. CONCLUSION",
+   "ACKNOWLEDGMENTS",
+   "APPENDIX A: COMPARISON OF QIMRS",
+   "APPENDIX B: QUANTUM WAVELET TRANSFORM",
+   "APPENDIX C: IMAGE SPATIAL FILTERING",
+   "APPENDIX D: DETECTING SYMMETRY BY QIMP",
+   "APPENDIX E: VARIANT OF QHED ALGORITHM"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 4,
+  "fp": 10,
+  "fn": 9,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "C. Experimental demonstrations",
+   "III. QUANTUM EDGE DETECTION ALGORITHM",
+   "IV. CONCLUSION",
+   "ACKNOWLEDGMENTS",
+   "APPENDIX A: COMPARISON OF QIMRS",
+   "APPENDIX B: QUANTUM WAVELET TRANSFORM",
+   "APPENDIX C: IMAGE SPATIAL FILTERING",
+   "APPENDIX D: DETECTING SYMMETRY BY QIMP",
+   "APPENDIX E: VARIANT OF QHED ALGORITHM"
+  ],
+  "unmatched_pred": [
+   "Quantum Image Processing and Its Application to Edge Detection: Theory and Exper",
+   "C. Experimental demonstrations",
+   "III. QUANTUM EDGE DETECTION ALGORITHM",
+   "IV. CONCLUSION",
+   "ACKNOWLEDGMENTS",
+   "APPENDIX A: COMPARISON OF QIMRS",
+   "APPENDIX B: QUANTUM WAVELET TRANSFORM",
+   "APPENDIX C: IMAGE SPATIAL FILTERING",
+   "APPENDIX D: DETECTING SYMMETRY BY QIMP",
+   "APPENDIX E: VARIANT OF QHED ALGORITHM"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "III. QUANTUM EDGE DETECTION ALGORITHM"
+  ],
+  "unmatched_pred": [
+   "III. QUANTUM EDGE DETECTION ALGORITHM"
+  ],
+  "ignored_title_predictions": null
+ }
+}

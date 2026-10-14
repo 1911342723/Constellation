@@ -1,0 +1,211 @@
+{
+ "doc": "1502.00973",
+ "system": "docling",
+ "metrics": {
+  "gt": 22,
+  "pred": 25,
+  "tp": 22,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5769230769230769,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A weighted FDR procedure under discrete and heterogeneous null distributions",
+   "A Proof of Theorem 2",
+   "B.1 Proof of Theorem 3"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 85.57402440000078
+ },
+ "predictions": [
+  {
+   "text": "A weighted FDR procedure under discrete and heterogeneous null distributions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 Main contributions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.2 Relation to existing weighted FDR procedures",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.3 Organization of article",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 A weighted FDR procedure for discrete paradigm",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Multiple testing Poisson means or Binomial means",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Rationale for the weighted FDR procedure",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 A new grouping algorithm",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.4 The weighted FDR procedure and its conservativeness",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Simulation study",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Simulation design under independence",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Simulation design under dependence",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Simulation results",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Two applications to multiple testing with discrete data",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Application to drug safety study",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Application to methylation study",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussion",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conflict of interest",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Proof of Theorem 2",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B wFDR procedure with plug-in estimator of oracle weights",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B.1 Proof of Theorem 3",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.042869799999607494,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 25,
+  "tp": 22,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5769230769230769,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A weighted FDR procedure under discrete and heterogeneous null distributions",
+   "A Proof of Theorem 2",
+   "B.1 Proof of Theorem 3"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5217391304347826,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A weighted FDR procedure under discrete and heterogeneous null distributions",
+   "A Proof of Theorem 2",
+   "B.1 Proof of Theorem 3"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "doc": "1608.04823",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "3. AFS INSIDE AN ICME AT 4.73 AU: A TYPICAL CASE"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "LI ET AL.",
+   "3. AFS INSIDE AN ICME AT 4.73 AU: A TYPICAL CASE"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "3. AFS INSIDE AN ICME AT 4.73 AU: A TYPICAL CASE"
+  ],
+  "unmatched_pred": [
+   "LI ET AL.",
+   "3. AFS INSIDE AN ICME AT 4.73 AU: A TYPICAL CASE"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 33.883265200001915
+ },
+ "predictions": [
+  {
+   "text": "PLASMA HEATING INSIDE ICMES BY ALFV´ENIC FLUCTUATIONS DISSIPATION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "LI ET AL.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. DIAGNOSIS OF AFS WITHIN ICMES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. AFS INSIDE AN ICME AT 4.73 AU: A TYPICAL CASE",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. STATISTICAL CHARACTERISTICS OF AF INSIDE ICMES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. INDIRECT EVIDENCE OF LOCAL ICME PLASMA HEATING BY AF DISSIPATION",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. SUMMARY",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0024282000013045035,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "3. AFS INSIDE AN ICME AT 4.73 AU: A TYPICAL CASE"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "LI ET AL.",
+   "3. AFS INSIDE AN ICME AT 4.73 AU: A TYPICAL CASE"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

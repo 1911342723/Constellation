@@ -1,0 +1,184 @@
+{
+ "doc": "1807.03409",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 183,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4615,
+   "completion_tokens": 495,
+   "total_tokens": 5110
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Model",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Hierarchical LSTMs",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Embedding",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Attention",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Supervised Attention",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Generating Intuitive Attention Weights",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Selecting Important Words",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Baselines",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Training",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets and Parameters",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Evaluating the Models",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Comparing to the State of the Art",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.4 Analysis",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "The Effect of Supervised Attention",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "Semantical vs. Syntactical Guidance",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.857088799999474,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

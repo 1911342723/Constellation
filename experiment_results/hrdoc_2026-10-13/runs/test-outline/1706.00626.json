@@ -1,0 +1,122 @@
+{
+ "doc": "1706.00626",
+ "system": "outline",
+ "metrics": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "3.3 Proof of Theorem 3.1",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [
+   "3.3 Proof of simulationTHEOREM"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Simulation without an embedded copy of Z",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Encoding an effectively closed dynamical system using Toeplitz configurations",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 Finding a grid in H1 H2",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 Proof of simulationTHEOREM",
+   "page": 12,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 Consequences and remarks",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 The case of effectively closed expansive actions",
+   "page": 16,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Strongly aperiodic SFTs in triple direct products",
+   "page": 18,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Strongly aperiodic SFTs in branch groups",
+   "page": 20,
+   "level": 2,
+   "parent": 6
+  }
+ ],
+ "seconds": 0.029058600001008017,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "3.3 Proof of Theorem 3.1",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [
+   "3.3 Proof of simulationTHEOREM"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "3.3 Proof of Theorem 3.1"
+  ],
+  "unmatched_pred": [
+   "3.3 Proof of simulationTHEOREM"
+  ],
+  "ignored_title_predictions": null
+ }
+}

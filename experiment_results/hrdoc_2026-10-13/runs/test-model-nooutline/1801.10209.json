@@ -1,0 +1,141 @@
+{
+ "doc": "1801.10209",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4736842105263158,
+  "unmatched_gt": [
+   "3.1. Steps",
+   "3.2. Estimators",
+   "3.3. Statistical uncertainties",
+   "3.4. Local trace",
+   "3.5. Quantum numbers",
+   "3.6. Bath trace",
+   "4.1. Where to find the project and the code",
+   "4.2. Instal lation",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 742,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 7,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 7,
+   "prompt_tokens": 29764,
+   "completion_tokens": 474,
+   "total_tokens": 30238
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Dynamical mean ﬁeld theory (DMFT) solver",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. CT-HYB impurity solver",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Installation and community site",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Input/output",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusions",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 27.20123980000062,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 9,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4736842105263158,
+  "unmatched_gt": [
+   "3.1. Steps",
+   "3.2. Estimators",
+   "3.3. Statistical uncertainties",
+   "3.4. Local trace",
+   "3.5. Quantum numbers",
+   "3.6. Bath trace",
+   "4.1. Where to find the project and the code",
+   "4.2. Instal lation",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "3.1. Steps",
+   "3.2. Estimators",
+   "3.3. Statistical uncertainties",
+   "3.4. Local trace",
+   "3.5. Quantum numbers",
+   "3.6. Bath trace",
+   "4.1. Where to find the project and the code",
+   "4.2. Instal lation"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "doc": "1802.05233",
+ "system": "det",
+ "metrics": {
+  "gt": 6,
+  "pred": 11,
+  "tp": 6,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Cyber-Physical Systems Lab,",
+   "2 Faculty of Engineering,",
+   "1. Scarcity of the available radio bandwidth.",
+   "2. Large amount of energy is needed for radio communication.",
+   "4. Power consumption should be an essential issue of any mobile application."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 144,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Cyber-Physical Systems Lab,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Faculty of Engineering,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Non-Rigorous Computation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Communication and Networking",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Scarcity of the available radio bandwidth.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Large amount of energy is needed for radio communication.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Computing/Storage Power",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Power consumption should be an essential issue of any mobile application.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.6161099000019021,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 11,
+  "tp": 6,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Cyber-Physical Systems Lab,",
+   "2 Faculty of Engineering,",
+   "1. Scarcity of the available radio bandwidth.",
+   "2. Large amount of energy is needed for radio communication.",
+   "4. Power consumption should be an essential issue of any mobile application."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 9,
+  "tp": 4,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Cyber-Physical Systems Lab,",
+   "2 Faculty of Engineering,",
+   "1. Scarcity of the available radio bandwidth.",
+   "2. Large amount of energy is needed for radio communication.",
+   "4. Power consumption should be an essential issue of any mobile application."
+  ],
+  "ignored_title_predictions": null
+ }
+}

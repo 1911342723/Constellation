@@ -1,0 +1,116 @@
+{
+ "doc": "1808.04965",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 5,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A bilinear Bogolyubov-Ruzsa lemma with",
+   "4 ⊂ L′ so that"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 616,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 6,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 6,
+   "prompt_tokens": 21211,
+   "completion_tokens": 293,
+   "total_tokens": 21504
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A bilinear Bogolyubov-Ruzsa lemma with",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "polylogarithmic bounds",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 A robust analog of Theorem 1.3",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2 Proof of Theorem 1.3",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 ⊂ L′ so that",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Proof of Theorem 1.5",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.11754170000131,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 8,
+  "tp": 5,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A bilinear Bogolyubov-Ruzsa lemma with",
+   "polylogarithmic bounds",
+   "4 ⊂ L′ so that"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 6,
+  "tp": 4,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A bilinear Bogolyubov-Ruzsa lemma with",
+   "4 ⊂ L′ so that"
+  ],
+  "ignored_title_predictions": null
+ }
+}

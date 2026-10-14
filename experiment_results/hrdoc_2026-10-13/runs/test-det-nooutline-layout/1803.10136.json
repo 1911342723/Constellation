@@ -1,0 +1,131 @@
+{
+ "doc": "1803.10136",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 199,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9356486210418795,
+  "inserted_word_share": 0.8663749088256747
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introductions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Development of Bengali Real Number Speech Dataset",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Data Preparation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Data Organization",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 Transcripts of the Speech Samples",
+   "page": 3,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.2 Dictionary of Words to Phonemes",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.3 Organization of the Audio Samples",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Characteristics of the Data Corpus",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Two Speech Recognizers",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.0264651000034064,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8461538461538461,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2.2.3 Organization of the Audio Samples"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

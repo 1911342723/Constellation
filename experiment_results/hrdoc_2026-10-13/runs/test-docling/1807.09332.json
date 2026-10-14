@@ -1,0 +1,135 @@
+{
+ "doc": "1807.09332",
+ "system": "docling",
+ "metrics": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 Online Approximate Learning Scheme",
+   "2: repeat"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 20.389651999998023
+ },
+ "predictions": [
+  {
+   "text": "Multipath Transmission Scheduling in Millimeter Wave Cloud Radio Access Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL AND ASSUMPTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SOLVING THE OPTIMAL CONTROL POLICY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal MDP Solution",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Approximate Learning Scheme",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1 Online Approximate Learning Scheme",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2: repeat",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. NUMERICAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.008029199998418335,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "Multipath Transmission Scheduling in Millimeter Wave Cloud Radio Access Networks",
+   "Algorithm 1 Online Approximate Learning Scheme",
+   "2: repeat"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Online Approximate Learning Scheme",
+   "2: repeat"
+  ],
+  "ignored_title_predictions": null
+ }
+}

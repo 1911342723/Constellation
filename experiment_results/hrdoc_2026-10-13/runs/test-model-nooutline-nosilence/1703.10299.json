@@ -1,0 +1,208 @@
+{
+ "doc": "1703.10299",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 10,
+  "pred": 19,
+  "tp": 10,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.55,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "PNS",
+   "1 Shanghai Institute of Applied Physics, Chinese Academy of Sciences, Shanghai 2",
+   "2 University of Chinese Academy of Science, Beijing 100080, China",
+   "3 Shanghai University, School of Materials Science and Engineering, Shanghai 200",
+   "1) has been developed for the acquisition of nuclear data for the Thorium Molten",
+   "1) E-mail",
+   "331 cm",
+   "620 cm",
+   "Acknowledgements"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 293,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10683,
+   "completion_tokens": 541,
+   "total_tokens": 11224
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Measurements of the Total Cross section for Thermal Neutrons at",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PNS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Shanghai Institute of Applied Physics, Chinese Academy of Sciences, Shanghai 201800, China",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 University of Chinese Academy of Science, Beijing 100080, China",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Shanghai University, School of Materials Science and Engineering, Shanghai 200444, China",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1) has been developed for the acquisition of nuclear data for the Thorium Molten Salt Reactor (TMSR) at the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1) E-mail",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Experimental Setup",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "331 cm",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "620 cm",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Data acquisition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Simulation Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Data Analysis and Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Response of a Time-of-Flight Spectrometer by Simulation",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.2 Background",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "5.3 Total Cross Section",
+   "page": 6,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.704244900000049,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 20,
+  "tp": 10,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5238095238095238,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Measurements of the Total Cross section for Thermal Neutrons at",
+   "PNS",
+   "1 Shanghai Institute of Applied Physics, Chinese Academy of Sciences, Shanghai 2",
+   "2 University of Chinese Academy of Science, Beijing 100080, China",
+   "3 Shanghai University, School of Materials Science and Engineering, Shanghai 200",
+   "1) has been developed for the acquisition of nuclear data for the Thorium Molten",
+   "1) E-mail",
+   "331 cm",
+   "620 cm",
+   "Acknowledgements"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 17,
+  "tp": 9,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "PNS",
+   "1 Shanghai Institute of Applied Physics, Chinese Academy of Sciences, Shanghai 2",
+   "2 University of Chinese Academy of Science, Beijing 100080, China",
+   "3 Shanghai University, School of Materials Science and Engineering, Shanghai 200",
+   "1) has been developed for the acquisition of nuclear data for the Thorium Molten",
+   "1) E-mail",
+   "331 cm",
+   "620 cm"
+  ],
+  "ignored_title_predictions": null
+ }
+}

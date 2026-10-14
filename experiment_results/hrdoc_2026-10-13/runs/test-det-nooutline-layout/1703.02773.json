@@ -1,0 +1,143 @@
+{
+ "doc": "1703.02773",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 12,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 9,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 584,
+  "layout_marked": 15,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9626131444313263,
+  "inserted_word_share": 0.04611484839621727
+ },
+ "predictions": [
+  {
+   "text": "Two-Qubit Pure Entanglement as Optimal Social Welfare",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Game theory: Prelude",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Mathematical preliminaries",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Quantum game theory",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Quantum correlations as advice",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Result",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Discussions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Nash equilibrium",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Correlations (as Advice)– Local vs Nonlocal",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "2-party–2-input–2-output NS correlations",
+   "page": 10,
+   "level": 3,
+   "parent": 11
+  },
+  {
+   "text": "C Pure entanglement as quantum-sw solution",
+   "page": 11,
+   "level": 4,
+   "parent": 12
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.078269800003909,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 12,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

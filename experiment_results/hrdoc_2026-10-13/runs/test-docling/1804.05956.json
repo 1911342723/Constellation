@@ -1,0 +1,161 @@
+{
+ "doc": "1804.05956",
+ "system": "docling",
+ "metrics": {
+  "gt": 8,
+  "pred": 14,
+  "tp": 8,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1. Maximum Subarray (A, low, high)",
+   "Algorithm 2. MAX SUM CROSS (A, B)",
+   "Algorithm 3. Max-k (A, low, high)",
+   "Algorithm 4. STAIRCASE(M, m, r, p)",
+   "Algorithm 5. MAX SUM CROSS-1(M)",
+   "Algorithm 6. FIND INDEX(MS, totalElementsLeft, p)"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 47.79177830000117
+ },
+ "predictions": [
+  {
+   "text": "k-Maximum Subarrays for Small k: Divide-and-Conquer made simpler",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Previous Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Linear time divide-and-conquer maximum subarray",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1. Maximum Subarray (A, low, high)",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 k-maximum subarrays by divide and conquer",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 2. MAX SUM CROSS (A, B)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 3. Max-k (A, low, high)",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 An improved algorithm for k-maximum subarrays",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 4. STAIRCASE(M, m, r, p)",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 5. MAX SUM CROSS-1(M)",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 6. FIND INDEX(MS, totalElementsLeft, p)",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Implementation and Experiments",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.00376959999994142,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 15,
+  "tp": 8,
+  "fp": 7,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "k-Maximum Subarrays for Small k: Divide-and-Conquer made simpler",
+   "Algorithm 1. Maximum Subarray (A, low, high)",
+   "Algorithm 2. MAX SUM CROSS (A, B)",
+   "Algorithm 3. Max-k (A, low, high)",
+   "Algorithm 4. STAIRCASE(M, m, r, p)",
+   "Algorithm 5. MAX SUM CROSS-1(M)",
+   "Algorithm 6. FIND INDEX(MS, totalElementsLeft, p)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 13,
+  "tp": 7,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1. Maximum Subarray (A, low, high)",
+   "Algorithm 2. MAX SUM CROSS (A, B)",
+   "Algorithm 3. Max-k (A, low, high)",
+   "Algorithm 4. STAIRCASE(M, m, r, p)",
+   "Algorithm 5. MAX SUM CROSS-1(M)",
+   "Algorithm 6. FIND INDEX(MS, totalElementsLeft, p)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

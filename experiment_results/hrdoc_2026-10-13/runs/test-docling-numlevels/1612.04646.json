@@ -1,0 +1,214 @@
+{
+ "doc": "1612.04646",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 25,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 8,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "Numerical Example:",
+   "APPE N DIX A",
+   "G RA D IEN T DE RI VATI O N O F T H E D IFFE R E NT",
+   "D ET E R MIN I S TIC EQU I VALE NTS",
+   "Useful Lemmas",
+   "Inversion Lemma:",
+   "Some Useful Notations",
+   "Gradient of the WEV"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "GRADIENT DERIVATION OF THE DIFFERENT DETERMINISTIC EQUIVALENTS",
+   "Useful Lemmas"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 7,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6086956521739131,
+  "unmatched_gt": [
+   "Numerical Example:",
+   "G RA D IEN T DE RI VATI O N O F T H E D IFFE R E NT",
+   "D ET E R MIN I S TIC EQU I VALE NTS",
+   "Useful Lemmas",
+   "Inversion Lemma:",
+   "Some Useful Notations",
+   "Gradient of the WEV"
+  ],
+  "unmatched_pred": [
+   "GRADIENT DERIVATION OF THE DIFFERENT DETERMINISTIC EQUIVALENTS",
+   "Useful Lemmas"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 25.482330299997557
+ },
+ "predictions": [
+  {
+   "text": "Blind Measurement Selection: A Random Matrix Theory Approach",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PROBLEM FORMULATION AND RELATED WORKS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Measurement selection",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Related Works",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. BLIND MEASUREMENT SELECTION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Asymptotic analysis of the error measures",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Blind selection techniques",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Complexity Analysis",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. POTENTIAL APPLICATIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Antenna Selection for Single-cell Uplink Massive MIMO Systems",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Sensor Selection in WSN",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "GRADIENT DERIVATION OF THE DIFFERENT DETERMINISTIC EQUIVALENTS",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Useful Lemmas",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Gradient of the MSE",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Gradient of the LCE",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.015848999995796476,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 20,
+  "tp": 17,
+  "fp": 3,
+  "fn": 8,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "Numerical Example:",
+   "APPE N DIX A",
+   "G RA D IEN T DE RI VATI O N O F T H E D IFFE R E NT",
+   "D ET E R MIN I S TIC EQU I VALE NTS",
+   "Useful Lemmas",
+   "Inversion Lemma:",
+   "Some Useful Notations",
+   "Gradient of the WEV"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "GRADIENT DERIVATION OF THE DIFFERENT DETERMINISTIC EQUIVALENTS",
+   "Useful Lemmas"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

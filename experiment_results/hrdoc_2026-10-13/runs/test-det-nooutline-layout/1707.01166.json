@@ -1,0 +1,188 @@
+{
+ "doc": "1707.01166",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Input",
+   "3. Argsort RX in a decreasing order → ˆσ."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 16,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 15,
+  "teds": 0.7894736842105263,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Input",
+   "3. Argsort RX in a decreasing order → ˆσ."
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 560,
+  "layout_marked": 23,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9393848462115529,
+  "inserted_word_share": 0.8249258989989374
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 The Deﬁnition of the LB Divergence",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 The LB divergence for the NDCG loss function",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 The Unsupervised Learning Frameworks",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 The Linear Structured Framework",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "1. Input",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Argsort RX in a decreasing order → ˆσ.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 The Nested Structured Framework",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 Applications",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Information Retrieval",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 Combining Distributed Neural Networks",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 Inﬂuencers in Social Networks",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.4 Distributed Automatic Speech Recognition",
+   "page": 8,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Conclusions and Future Work",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Appendix",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Proof for the Corollary 5",
+   "page": 12,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "6.2 Proof for equation (9)",
+   "page": 12,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "6.3 The NDCG results in Figure 1",
+   "page": 12,
+   "level": 2,
+   "parent": 17
+  }
+ ],
+ "seconds": 6.2528954000008525,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 19,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 18,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Input",
+   "3. Argsort RX in a decreasing order → ˆσ."
+  ],
+  "ignored_title_predictions": 0
+ }
+}

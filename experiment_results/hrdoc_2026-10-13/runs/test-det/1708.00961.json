@@ -1,0 +1,195 @@
+{
+ "doc": "1708.00961",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 21,
+  "tp": 15,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 13,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "(a) Full Dose FBP",
+   "(d) GAN",
+   "(g) WGAN",
+   "(c) DictRecon",
+   "(f) CNN-VGG",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 424,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHODS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Noise Reduction Model",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. WGAN",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "C. Perceptual Loss",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "D. Network Structures",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "E. Other Networks",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Experimental Datasets",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Network Training",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Network Convergence",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "D. Denoising Results",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "(a) Full Dose FBP",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(d) GAN",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(g) WGAN",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(c) DictRecon",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(f) CNN-VGG",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Quantitative Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "F. VGG Feature Extractor",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "IV. DISCUSSIONS AND CONCLUSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.507836100005079,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 21,
+  "tp": 15,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 13,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "(a) Full Dose FBP",
+   "(d) GAN",
+   "(g) WGAN",
+   "(c) DictRecon",
+   "(f) CNN-VGG",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 13,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "(a) Full Dose FBP",
+   "(d) GAN",
+   "(g) WGAN",
+   "(c) DictRecon",
+   "(f) CNN-VGG"
+  ],
+  "ignored_title_predictions": null
+ }
+}

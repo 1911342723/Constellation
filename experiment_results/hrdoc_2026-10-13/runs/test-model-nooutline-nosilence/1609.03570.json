@@ -1,0 +1,195 @@
+{
+ "doc": "1609.03570",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 14,
+  "pred": 18,
+  "tp": 13,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [
+   "I. FROM H TO NE TO K AND BACK"
+  ],
+  "unmatched_pred": [
+   "1 e−ikτ ,",
+   "2 The normalisation condition (10) yields |Ak|2 −|Bk|2 = 1. Com-",
+   "0.0001 k  Mpc- 1",
+   "ACKNOWLEDGMENTS",
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 835,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13618,
+   "completion_tokens": 652,
+   "total_tokens": 14270
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Corrections to ns and nt from high scale physics",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Scalar ﬁelds in time dependent backgrounds",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Equation of motion in de Sitter space",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. The Bunch-Davies vacuum",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1 e−ikτ ,",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. α-vacua",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2 The normalisation condition (10) yields |Ak|2 −|Bk|2 = 1. Com-",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PHENOMENOLOGY",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Two-point functions and spectra",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Corrections from mixed states",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Scale dependence",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "D. Corrections from α-vacua",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "0.0001 k  Mpc- 1",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "E. Correction to the consistency relation",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.487964799998736,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 19,
+  "tp": 13,
+  "fp": 6,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "I. FROM H TO NE TO K AND BACK"
+  ],
+  "unmatched_pred": [
+   "Corrections to ns and nt from high scale physics",
+   "1 e−ikτ ,",
+   "2 The normalisation condition (10) yields |Ak|2 −|Bk|2 = 1. Com-",
+   "0.0001 k  Mpc- 1",
+   "ACKNOWLEDGMENTS",
+   "Appendix A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "I. FROM H TO NE TO K AND BACK"
+  ],
+  "unmatched_pred": [
+   "1 e−ikτ ,",
+   "2 The normalisation condition (10) yields |Ak|2 −|Bk|2 = 1. Com-",
+   "0.0001 k  Mpc- 1"
+  ],
+  "ignored_title_predictions": null
+ }
+}

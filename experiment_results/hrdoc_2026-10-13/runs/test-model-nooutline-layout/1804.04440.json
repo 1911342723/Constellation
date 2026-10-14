@@ -1,0 +1,140 @@
+{
+ "doc": "1804.04440",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 208,
+  "layout_marked": 14,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 2,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 2,
+   "prompt_tokens": 7419,
+   "completion_tokens": 480,
+   "total_tokens": 7899
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9788672865595942,
+  "inserted_word_share": 0.9275326040701894
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Loss Functions",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Cycle Consistency",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Dataset",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Implementation details",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.4 Experiments and Results",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.343001500004902,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

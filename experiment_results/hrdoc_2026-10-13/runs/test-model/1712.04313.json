@@ -1,0 +1,217 @@
+{
+ "doc": "1712.04313",
+ "system": "model",
+ "metrics": {
+  "gt": 20,
+  "pred": 24,
+  "tp": 20,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.84,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 LIG, Univ",
+   "3 Elsa Corp., Lisbon, Portugal",
+   "The ﬁrst three are token precision, recall, and F-score. To-",
+   "long. Finally, boundary precision, recall, and F-score are"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 591,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14246,
+   "completion_tokens": 860,
+   "total_tokens": 15106
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "2 LIG, Univ",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Elsa Corp., Lisbon, Portugal",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. THE CHALLENGE",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Track one: Subword modelling",
+   "page": 0,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2. Track two: Spoken term discovery",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.3. Generalization across languages",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.4. Adaptation to new speakers",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3. DATA SETS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. EVALUATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Evaluation of subword modelling",
+   "page": 1,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2. Evaluation of spoken term discovery",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2.1. Evaluation as matching system",
+   "page": 3,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.2.2. Evaluation as lexicon discovery system",
+   "page": 3,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "4.2.3. Evaluation as word segmentation system",
+   "page": 3,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "The ﬁrst three are token precision, recall, and F-score. To-",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "long. Finally, boundary precision, recall, and F-score are",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. DESCRIPTION OF SUBMITTED SYSTEMS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Track 1",
+   "page": 3,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "5.2. Track 2",
+   "page": 4,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "6. RESULTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.07993820000047,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 24,
+  "tp": 20,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.84,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 LIG, Univ",
+   "3 Elsa Corp., Lisbon, Portugal",
+   "The ﬁrst three are token precision, recall, and F-score. To-",
+   "long. Finally, boundary precision, recall, and F-score are"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 22,
+  "tp": 18,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8260869565217391,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 LIG, Univ",
+   "3 Elsa Corp., Lisbon, Portugal",
+   "The ﬁrst three are token precision, recall, and F-score. To-",
+   "long. Finally, boundary precision, recall, and F-score are"
+  ],
+  "ignored_title_predictions": null
+ }
+}

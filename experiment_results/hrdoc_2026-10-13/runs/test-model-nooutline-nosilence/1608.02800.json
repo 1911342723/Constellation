@@ -1,0 +1,239 @@
+{
+ "doc": "1608.02800",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 11,
+  "pred": 22,
+  "tp": 11,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5217391304347826,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 University of Bonn;",
+   "2 University of Leipzig;",
+   "3 Fraunhofer IAIS;",
+   "Abstract. Developments in the context of Open, Big, and Linked Data",
+   "4 With open we follow the Open Data Deﬁnition http://opendefinition.org",
+   "5 WDAqua ITN – http://wdaqua.eu",
+   "6 https",
+   "7 http://dblp.uni-trier.de/db/",
+   "9 http://wiki.dbpedia.org/",
+   "10 https://www.wikidata.org",
+   "11 Docker – https://www.docker.com/"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 97,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4780,
+   "completion_tokens": 505,
+   "total_tokens": 5285
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "LITMUS: An Open Extensible Framework for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Benchmarking RDF Data Management Solutions",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 University of Bonn;",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 University of Leipzig;",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Fraunhofer IAIS;",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract. Developments in the context of Open, Big, and Linked Data",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 With open we follow the Open Data Deﬁnition http://opendefinition.org",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 WDAqua ITN – http://wdaqua.eu",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related work",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 https",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 http://dblp.uni-trier.de/db/",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Objectives, Challenges and Outcomes",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Focus of the LITMUS framework",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.2 Challenges to be addressed",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.3 Outcomes of LITMUS",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "3.4 Target audience",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4 The Litmus Framework",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Architecture Overview",
+   "page": 5,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "9 http://wiki.dbpedia.org/",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10 https://www.wikidata.org",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 Docker – https://www.docker.com/",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.79179170000134,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 24,
+  "tp": 11,
+  "fp": 13,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.48,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "LITMUS: An Open Extensible Framework for",
+   "Benchmarking RDF Data Management Solutions",
+   "1 University of Bonn;",
+   "2 University of Leipzig;",
+   "3 Fraunhofer IAIS;",
+   "Abstract. Developments in the context of Open, Big, and Linked Data",
+   "4 With open we follow the Open Data Deﬁnition http://opendefinition.org",
+   "5 WDAqua ITN – http://wdaqua.eu",
+   "6 https",
+   "7 http://dblp.uni-trier.de/db/",
+   "9 http://wiki.dbpedia.org/",
+   "10 https://www.wikidata.org",
+   "11 Docker – https://www.docker.com/"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 20,
+  "tp": 10,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5238095238095238,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 University of Bonn;",
+   "2 University of Leipzig;",
+   "3 Fraunhofer IAIS;",
+   "4 With open we follow the Open Data Deﬁnition http://opendefinition.org",
+   "5 WDAqua ITN – http://wdaqua.eu",
+   "6 https",
+   "7 http://dblp.uni-trier.de/db/",
+   "9 http://wiki.dbpedia.org/",
+   "10 https://www.wikidata.org",
+   "11 Docker – https://www.docker.com/"
+  ],
+  "ignored_title_predictions": null
+ }
+}

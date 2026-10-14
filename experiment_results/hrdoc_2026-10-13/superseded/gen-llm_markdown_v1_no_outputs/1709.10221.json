@@ -1,0 +1,355 @@
+{
+ "doc": "1709.10221",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 12,
+  "pred": 21,
+  "tp": 12,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 12,
+  "teds": 0.5909090909090908,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "I.",
+   "II.",
+   "A.",
+   "B.",
+   "C.",
+   "D.",
+   "E.",
+   "III.",
+   "IV."
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 10353,
+   "completion_tokens": 10263
+  },
+  "elapsed_llm_seconds": 45.604853099997854,
+  "content_preservation": 0.9955645161290323,
+  "inserted_word_share": 0.0,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Υ(nS) →Bcρ, BcK∗decays with perturbative QCD approach",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "I.",
+    1,
+    1
+   ],
+   [
+    "INTRODUCTION",
+    1,
+    1
+   ],
+   [
+    "II.",
+    2,
+    1
+   ],
+   [
+    "THEORETICAL FRAMEWORK",
+    2,
+    1
+   ],
+   [
+    "A.",
+    2,
+    2
+   ],
+   [
+    "The eﬀective Hamiltonian",
+    2,
+    2
+   ],
+   [
+    "B.",
+    2,
+    2
+   ],
+   [
+    "Hadronic matrix elements",
+    2,
+    2
+   ],
+   [
+    "C.",
+    3,
+    2
+   ],
+   [
+    "Kinematic variables",
+    3,
+    2
+   ],
+   [
+    "D.",
+    4,
+    2
+   ],
+   [
+    "Wave functions",
+    4,
+    2
+   ],
+   [
+    "E.",
+    6,
+    2
+   ],
+   [
+    "Decay amplitudes",
+    6,
+    2
+   ],
+   [
+    "III.",
+    7,
+    1
+   ],
+   [
+    "NUMERICAL RESULTS AND DISCUSSION",
+    7,
+    1
+   ],
+   [
+    "IV.",
+    9,
+    1
+   ],
+   [
+    "SUMMARY",
+    9,
+    1
+   ],
+   [
+    "Acknowledgments",
+    9,
+    1
+   ],
+   [
+    "Appendix A: Building blocks of decay amplitudes",
+    10,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Υ(nS) →Bcρ, BcK∗decays with perturbative QCD approach",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "THEORETICAL FRAMEWORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "The eﬀective Hamiltonian",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B.",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Hadronic matrix elements",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C.",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Kinematic variables",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "D.",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Wave functions",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "E.",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Decay amplitudes",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "NUMERICAL RESULTS AND DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV.",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "SUMMARY",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A: Building blocks of decay amplitudes",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 45.747490100002324,
+ "metrics_raw": {
+  "gt": 12,
+  "pred": 22,
+  "tp": 12,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Υ(nS) →Bcρ, BcK∗decays with perturbative QCD approach",
+   "I.",
+   "II.",
+   "A.",
+   "B.",
+   "C.",
+   "D.",
+   "E.",
+   "III.",
+   "IV."
+  ]
+ },
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 22,
+  "tp": 12,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5652173913043479,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Υ(nS) →Bcρ, BcK∗decays with perturbative QCD approach",
+   "I.",
+   "II.",
+   "A.",
+   "B.",
+   "C.",
+   "D.",
+   "E.",
+   "III.",
+   "IV."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 18,
+  "tp": 9,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "I.",
+   "II.",
+   "A.",
+   "B.",
+   "C.",
+   "D.",
+   "E.",
+   "III.",
+   "IV."
+  ],
+  "ignored_title_predictions": null
+ }
+}

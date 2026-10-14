@@ -182,6 +182,134 @@ def score(gt: list[Section], preds: list[Pred]) -> dict:
             "unmatched_pred": [preds[i].text[:80] for i in range(len(preds)) if i not in inverse]}
 
 
+# ── scoring conventions, applied identically to every system ─────────────────
+#
+# Comp-HRDoc's TOC never contains the paper title, so a prediction on the first
+# page that reproduces the annotated title (class "title" in the line-level
+# annotation) is ignored rather than counted as a false positive. The optional
+# "generic" convention additionally removes front/back-matter titles (Abstract,
+# References, Acknowledgments, Appendix, ...) from both predictions and reference,
+# because the reference includes them only for some documents.
+
+GENERIC_TITLES = {"abstract", "references", "reference", "bibliography", "acknowledgments", "acknowledgements",
+                  "acknowledgment", "acknowledgement", "appendix", "appendices", "keywords", "indexterms"}
+
+
+def load_title(lines_dir: Path | None, doc_id: str) -> str:
+    """Normalised document title from the line-level annotation ('' if unavailable)."""
+    if lines_dir is None or not (lines_dir / f"{doc_id}.json").exists():
+        return ""
+    lines = json.loads((lines_dir / f"{doc_id}.json").read_text(encoding="utf-8"))
+    return norm(" ".join(line["text"] for line in lines if line.get("class") == "title" and line.get("page") == 0))
+
+
+def is_title(text: str, title: str) -> bool:
+    key = norm(text)
+    if len(key) < 6 or not title or _LEAD_NUMBER.match(text or ""):
+        return False  # a numbered line is a section, never the title
+    if key in title or title in key:
+        return True
+    return SequenceMatcher(None, key, title, autojunk=False).ratio() >= 0.9
+
+
+def is_generic(text: str) -> bool:
+    key = norm(_LEAD_NUMBER.sub("", (text or "").replace("**", "")))
+    full = norm(text)
+    return key in GENERIC_TITLES or full.startswith(("abstract", "appendix")) or full in GENERIC_TITLES
+
+
+def _keep(parents: list[int], keep: list[bool]) -> tuple[list[int], dict[int, int]]:
+    """New parent indices after dropping items; children move to the nearest kept ancestor."""
+    remap, new_index = {}, 0
+    for i, k in enumerate(keep):
+        if k:
+            remap[i] = new_index
+            new_index += 1
+    new_parents = []
+    for i, k in enumerate(keep):
+        if not k:
+            continue
+        p = parents[i]
+        while p != -1 and not keep[p]:
+            p = parents[p]
+        new_parents.append(remap[p] if p != -1 else -1)
+    return new_parents, remap
+
+
+def apply_conventions(gt: list[Section], preds: list[Pred], title: str,
+                      generic: bool = False) -> tuple[list[Section], list[Pred]]:
+    keep_p = [not (p.page == 0 and is_title(p.text, title)) and not (generic and is_generic(p.text)) for p in preds]
+    keep_g = [not (generic and is_generic(g.text)) for g in gt]
+    p_par, _ = _keep([p.parent for p in preds], keep_p)
+    g_par, _ = _keep([g.parent for g in gt], keep_g)
+    new_preds = [Pred(p.text, p.page, p.level, parent)
+                 for p, parent in zip([p for p, k in zip(preds, keep_p) if k], p_par)]
+    kept_gt = [g for g, k in zip(gt, keep_g) if k]
+    new_gt = [Section(i, g.text, g.page, g.level, parent) for i, (g, parent) in enumerate(zip(kept_gt, g_par))]
+    return new_gt, new_preds
+
+
+def score_document(gt: list[Section], preds: list[Pred], title: str, generic: bool = False) -> dict:
+    gt2, preds2 = apply_conventions(gt, preds, title, generic)
+    out = score(gt2, preds2)
+    out["ignored_title_predictions"] = len(preds) - len(preds2) if not generic else None
+    return out
+
+
+# ── shared text measures ─────────────────────────────────────────────────────
+
+def pdf_page_texts(pdf_bytes: bytes) -> list[str]:
+    import fitz
+    return [page.get_text() for page in fitz.open(stream=pdf_bytes, filetype="pdf")]
+
+
+_IMAGE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
+# Markup such as <br> in table cells is not text. Only known tag names, so that an
+# inequality like "x<y and z>w" in the text is never mistaken for a tag.
+_HTML_TAG = re.compile(r"</?(?:br|b|i|em|strong|u|sup|sub|span|div|p|code|table|thead|tbody|tr|td|th)\b[^<>]{0,80}/?>",
+                       re.IGNORECASE)
+_LINE_HYPHEN = re.compile(r"(\w)-[ \t]*\n[ \t]*(\w)")
+
+
+def word_preservation(source_text: str, output_text: str) -> dict[str, float]:
+    """Text preservation of an exported document against the PDF text layer.
+
+    Embedded images (Markdown image links, including base64 data) are removed
+    first; they are not text. ``recall`` is the multiset share of source words
+    present in the output, insensitive to reading order; ``in_order`` is the
+    share matched in order by a sequence matcher, which also penalises
+    reading-order differences; ``inserted`` is the share of output words that
+    do not come from the source (multiset).
+    """
+    from collections import Counter
+
+    # Join words hyphenated across a line break ("informa-\ntion"), as both
+    # systems do; otherwise correct de-hyphenation would count as lost words.
+    source_text = _LINE_HYPHEN.sub(r"\1\2", source_text)
+    source_words = re.findall(r"\w+", source_text.casefold())
+    output_words = re.findall(r"\w+", _HTML_TAG.sub(" ", _IMAGE.sub(" ", output_text)).casefold())
+    overlap = sum((Counter(source_words) & Counter(output_words)).values())
+    matcher = SequenceMatcher(None, source_words, output_words, autojunk=False)
+    in_order = sum(block.size for block in matcher.get_matching_blocks())
+    return {"recall": overlap / max(len(source_words), 1),
+            "in_order": in_order / max(len(source_words), 1),
+            "inserted": 1 - overlap / max(len(output_words), 1)}
+
+
+def locate_pages(preds: list[Pred], page_texts: list[str]) -> list[Pred]:
+    """Page of each heading from the source text: first page, not before the previous
+    heading's page, whose text contains the heading; otherwise the page the model reported."""
+    pages = [norm(t) for t in page_texts]
+    cursor = 0
+    for p in preds:
+        key = norm(_LEAD_NUMBER.sub("", p.text))[:40] or norm(p.text)[:40]
+        found = next((i for i in range(cursor, len(pages)) if key and key in pages[i]), None)
+        if found is not None:
+            p.page = found
+            cursor = found
+    return preds
+
+
 # ── version check ────────────────────────────────────────────────────────────
 
 def version_check(pdf_bytes: bytes, gt: list[Section]) -> tuple[float, int]:
@@ -243,7 +371,33 @@ def content_preservation(tree, blocks) -> float:
     return kept / max(total, 1)
 
 
-def predict_constellation(pdf_bytes: bytes, use_outline: bool, with_model: bool,
+CURRENT_DOC: str | None = None
+
+
+def mark_layout_headings(blocks, doc_id: str) -> int:
+    """Flag blocks whose text starts a heading that Docling reported on the same page."""
+    record = json.loads((DOCLING_DIR / f"{doc_id}.json").read_text(encoding="utf-8"))
+    by_page: dict[int, list[str]] = {}
+    for heading in record.get("headings", []):
+        key = norm(heading["text"])[:40]
+        if len(key) >= 3:
+            by_page.setdefault(int(heading["page"]), []).append(key)
+    marked = 0
+    for block in blocks:
+        if block.type != "text" or not block.text:
+            continue
+        meta = block.metadata if block.metadata is not None else {}
+        keys = by_page.get(int(meta.get("page", 0)) - 1, [])
+        text = norm(block.text)
+        meta["layout_checked"] = True
+        if text and any(text.startswith(k) or k.startswith(text[:40]) and len(text) >= 3 for k in keys):
+            meta["layout_heading"] = "docling"
+            marked += 1
+        block.metadata = meta
+    return marked
+
+
+def predict_constellation(pdf_bytes: bytes, use_outline: bool, with_model: bool, layout: bool = False,
                           **config_overrides) -> tuple[list[Pred], dict]:
     from modules.parser.config import ParserConfig
     from modules.parser.document_tree import DocumentTree
@@ -254,6 +408,8 @@ def predict_constellation(pdf_bytes: bytes, use_outline: bool, with_model: bool,
 
     blocks = _blocks(pdf_bytes, use_outline)
     info: dict = {"blocks": len(blocks)}
+    if layout:
+        info["layout_marked"] = mark_layout_headings(blocks, CURRENT_DOC)
     config = ParserConfig(**config_overrides)
     if with_model:
         parser = CaliperParser(parser_config=config)
@@ -270,11 +426,31 @@ def predict_constellation(pdf_bytes: bytes, use_outline: bool, with_model: bool,
         tree = DocumentTree(nodes, lossless_fallback=resolver.lossless_fallback,
                             preamble_content=CaliperParser._extract_preamble(resolver, nodes, had_anchors=False))
     info["content_preservation"] = content_preservation(tree, blocks)
+    # Same word-level measure as the generative baseline, against the PyMuPDF text.
+    markdown = tree.to_markdown()
+    info["word_preservation"] = word_preservation("\n".join(pdf_page_texts(pdf_bytes)), markdown)
+    info["export_markdown"] = _IMAGE.sub("![image]()", markdown)  # text only; recomputable offline
     return _tree_preds(tree, blocks), info
 
 
 _MD_HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
 _PAGE_MARK = re.compile(r"<<page (\d+)>>")
+
+
+def normalize_markdown_levels(preds: list[Pred]) -> list[Pred]:
+    """Undo the Markdown title convention before scoring the generative baseline.
+
+    Models often render the paper title as the only ``#`` heading and the sections
+    as ``##``. A single leading level-1 heading is treated as the document title and
+    dropped, and levels are shifted so that the shallowest remaining level is 1.
+    This only helps the baseline.
+    """
+    if len(preds) > 1 and preds[0].level == 1 and all(p.level > 1 for p in preds[1:]):
+        preds = preds[1:]
+    if not preds:
+        return preds
+    shift = min(p.level for p in preds) - 1
+    return [Pred(p.text, p.page, p.level - shift) for p in preds]
 
 
 def predict_llm_markdown(pdf_bytes: bytes) -> tuple[list[Pred], dict]:
@@ -305,18 +481,19 @@ def predict_llm_markdown(pdf_bytes: bytes) -> tuple[list[Pred], dict]:
         heading = _MD_HEADING.match(line.strip())
         if heading:
             preds.append(Pred(heading.group(2), page, len(heading.group(1))))
-    source_words = re.findall(r"\w+", _PAGE_MARK.sub(" ", source).casefold())
-    output_words = re.findall(r"\w+", _PAGE_MARK.sub(" ", output).casefold())
-    matcher = SequenceMatcher(None, source_words, output_words, autojunk=False)
-    kept = sum(block.size for block in matcher.get_matching_blocks())
+    measures = word_preservation(_PAGE_MARK.sub(" ", source), _PAGE_MARK.sub(" ", output))
     source_norm = norm(source)
     verbatim = sum(norm(p.text) in source_norm for p in preds)
+    raw = [[p.text, p.page, p.level] for p in preds]
+    # Pages come from the source text, not from the page markers the model may drop.
+    preds = locate_pages(normalize_markdown_levels(preds), [page.get_text() for page in doc])
     return parents_from_levels(preds), {
+        "raw_headings": raw,
         "model": client.model, "finish_reason": completion.choices[0].finish_reason,
         "usage": {"prompt_tokens": usage.prompt_tokens, "completion_tokens": usage.completion_tokens} if usage else None,
         "elapsed_llm_seconds": time.perf_counter() - started,
-        "content_preservation": kept / max(len(source_words), 1),
-        "inserted_word_share": 1 - kept / max(len(output_words), 1),
+        "word_preservation": measures,
+        "output_markdown": output,
         "verbatim_heading_share": verbatim / max(len(preds), 1),
     }
 
@@ -338,6 +515,8 @@ SYSTEMS = {
     "det": lambda data: predict_constellation(data, True, False),
     "det-nooutline": lambda data: predict_constellation(data, False, False),
     "model": lambda data: predict_constellation(data, True, True),
+    "det-nooutline-layout": lambda data: predict_constellation(data, False, False, layout=True),
+    "model-nooutline-layout": lambda data: predict_constellation(data, False, True, layout=True),
     "model-nooutline": lambda data: predict_constellation(data, False, True),
     # Ablation: the reader's silence on a routed candidate is ignored.
     "model-nooutline-nosilence": lambda data: predict_constellation(
@@ -382,7 +561,7 @@ def summarize(records: list[dict]) -> dict:
         pp, rr = m["tp"] / max(m["pred"], 1), m["tp"] / max(m["gt"], 1)
         return 2 * pp * rr / max(pp + rr, 1e-12)
 
-    out = {"documents": len(ok), "failed": len(records) - len(ok), **total,
+    out = {"documents": len(ok), "failed": sum("error" in r for r in records), **total,
            "micro_precision": p, "micro_recall": rcl, "micro_f1": 2 * p * rcl / max(p + rcl, 1e-12),
            "macro_f1": macro(f1), "level_accuracy": total["level_correct"] / max(total["tp"], 1),
            "parent_accuracy": total["parent_correct"] / max(total["tp"], 1), "macro_teds": macro(lambda m: m["teds"])}
@@ -411,6 +590,9 @@ def main() -> None:
     cli.add_argument("--docs", type=Path, help="JSON list of document ids (default: all admitted)")
     cli.add_argument("--shard", default="0/1", help="i/n: process every n-th admitted document")
     cli.add_argument("--docling-dir", type=Path, help="predictions from docling_predict")
+    cli.add_argument("--lines-dir", type=Path, help="Comp-HRDoc line annotations (test_eval) for the title convention")
+    cli.add_argument("--retry-errors", action="store_true",
+                     help="re-run documents whose stored record is a failure (e.g. out of memory)")
     args = cli.parse_args()
     global DOCLING_DIR
     DOCLING_DIR = args.docling_dir
@@ -430,23 +612,32 @@ def main() -> None:
     for doc_id in ids:
         target = args.output / f"{doc_id}.json"
         if target.exists():
-            continue
+            previous = json.loads(target.read_text(encoding="utf-8"))
+            if not (args.retry_errors and "error" in previous):
+                continue
         record = {"doc": doc_id, "system": args.system}
         started = time.perf_counter()
+        gt = load_gt(args.toc_dir / f"{doc_id}.json")
+        title = load_title(args.lines_dir, doc_id)
+        global CURRENT_DOC
+        CURRENT_DOC = doc_id
         try:
-            gt = load_gt(args.toc_dir / f"{doc_id}.json")
             if args.system == "docling":
                 preds, info = predict_docling(doc_id)
             else:
                 preds, info = SYSTEMS[args.system]((args.pdf_dir / f"{doc_id}.pdf").read_bytes())
-            record.update(metrics=score(gt, preds), info=info,
+            record.update(metrics=score_document(gt, preds, title),
+                          metrics_generic=score_document(gt, preds, title, generic=True), info=info,
                           predictions=[p.__dict__ for p in preds])
         except Exception as exc:  # recorded; never print upstream payloads
-            record["error"] = type(exc).__name__
+            # A failed document is scored as an empty output, never dropped.
+            record.update(error=type(exc).__name__, metrics=score_document(gt, [], title),
+                          metrics_generic=score_document(gt, [], title, generic=True), info={"failed": True},
+                          predictions=[])
         record["seconds"] = time.perf_counter() - started
         target.write_text(json.dumps(record, ensure_ascii=False, indent=1), encoding="utf-8")
         m = record.get("metrics")
-        print(f"{doc_id}: " + (f"tp={m['tp']} fp={m['fp']} fn={m['fn']} teds={m['teds']:.3f}" if m else record["error"]), flush=True)
+        print(f"{doc_id}: " + record.get("error", f"tp={m['tp']} fp={m['fp']} fn={m['fn']} teds={m['teds']:.3f}"), flush=True)
 
 
 def report(run_dirs: list[Path]) -> dict:

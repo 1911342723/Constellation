@@ -1,0 +1,263 @@
+{
+ "doc": "1709.08524",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Outline"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 5,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Outline"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Generative learning for deep networks",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "1 Introduction",
+    0,
+    2
+   ],
+   [
+    "Outline",
+    0,
+    3
+   ],
+   [
+    "2 Deep conditional independent models",
+    0,
+    2
+   ],
+   [
+    "2.1 An approximation for conditional independent models",
+    0,
+    3
+   ],
+   [
+    "2.2 Deep conditional independent models",
+    0,
+    3
+   ],
+   [
+    "2.3 Generative learning of deep networks",
+    0,
+    3
+   ],
+   [
+    "2.4 Relations to other models",
+    0,
+    3
+   ],
+   [
+    "3 Experiments",
+    0,
+    2
+   ],
+   [
+    "3.1 MNIST dense",
+    0,
+    3
+   ],
+   [
+    "3.2 MNIST CNN",
+    0,
+    3
+   ],
+   [
+    "4 Conclusions",
+    0,
+    2
+   ],
+   [
+    "Acknowledgements",
+    0,
+    2
+   ],
+   [
+    "References",
+    0,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7721,
+   "completion_tokens": 7250
+  },
+  "elapsed_llm_seconds": 30.56284450000385,
+  "word_preservation": {
+   "recall": 0.9967266775777414,
+   "in_order": 0.9967266775777414,
+   "inserted": 0.0
+  },
+  "output_markdown": "# Generative learning for deep networks\n\nBoris Flach\nflachbor@cmp.felk.cvut.cz\nAlexander Shekhovtsov\nshekhovtsov@gmail.com\nOndrej Fikar\nfikarond@fel.cvut.cz\nCzech Technical University in Prague\n\n## Abstract\n\nLearning, taking into account full distribution of the data, referred to as generative, is not feasible with deep neural networks (DNNs) because they model only the conditional distribution of the outputs given the inputs. Current solutions are either based on joint probability models facing difficult estimation problems or learn two separate networks, mapping inputs to outputs (recognition) and vice-versa (generation). We propose an intermediate approach. First, we show that forward computation in DNNs with logistic sigmoid activations corresponds to a simplified approximate Bayesian inference in a directed probabilistic multi-layer model. This connection allows to interpret DNN as a probabilistic model of the output and all hidden units given the input. Second, we propose that in order for the recognition and generation networks to be more consistent with the joint model of the data, weights of the recognition and generator network should be related by transposition. We demonstrate in a tentative experiment that such a coupled pair can be learned generatively, modelling the full distribution of the data, and has enough capacity to perform well in both recognition and generation.\n\n## 1 Introduction\n\nNeural networks with logistic sigmoid activations may look very similar to Bayesian networks of the same structure with logistic conditional distributions, aka sigmoid belief networks [11]. However, hidden units in NNs are deterministic and take on real values while hidden units in Bayesian networks are binary random variables with an associated distribution. Given enough capacity and training data, both models can estimate the posterior distribution of their output arbitrary well. Besides somewhat different modelling properties, there is a principled difference that with stochastic models it is possible to pose, at least theoretically, a number of inference and learning problems with missing data by marginalizing over latent and unobserved variables. Unfortunately, even forward inference in Bayesian networks requires methods such as sampling or optimization of a variational approximation. Likewise, in more tightly coupled graphical models such as deep Boltzmann machine (DBM) [16] or deep belief networks (DBN) [5, 9] practically all computations needed e.g. for computing marginal and posterior probabilities are not tractable in the sense that approximations typically involve sampling or optimization.\n\nIn this paper we propose stacked (deep) conditional independent model (DCIM). There are two views how the model can be defined. One, as a Bayesian network with logistic conditional distributions. The other, just assuming that conditional probabilities of a general Bayesian network factor over the parent nodes up to a normalising factor. With binary units this necessary implies that conditional probabilities are logistic. It is noteworthy that we find the same form of conditional probabilities in most of the neural probabilistic models: restricted Boltzmann machine, DBM [16], DBN [5], etc. When the units are arranged in layers, as in a typical DNN, the layered Bayesian network can be viewed as a Markov chain with a state space of all variables in a layer. In this view, all necessary assumptions can be summarized in one property, termed strong conditional independence that the forward conditional transition probabilities between the layers factorize over the dimensions of both the input and output state spaces of the transition up to a normalising factor. Making only this assumption, we show that a simple approximate Bayesian inference in DCIM recovers main constructive elements of DNNs: sigmoid and softmax activations with its real-valued variables corresponding to expectations of binary random variables. With this interpretation we can view DNN as a way of performing approximate inference very efficiently. To our knowledge, this relationship has not been established before. Under this approximation conditional likelihood learning of a DCIM is equivalent to that of DNN and can be performed by back-propagation.\n\nOur second objective is to propose an alternative, generative learning approach for DNNs. In a number of recent works [6, 13, 15, 10] and in the prior work [4, 5] a pair of deterministic recognition (encoder) and a stochastic generator (decoder) networks is trained. Let us denote x0 the input of the recognition network, to be specific, an image, and xd (random variables at layer d) the output of the recognition network, the latent state. Although the two networks often are taken to have a symmetric structure [4, 6], their parameters are decoupled. The stochastic generator network can typically only generate samples, but cannot directly evaluate its posterior distribution or the gradient thereof, requiring variational or sampling-based approximations. The methods proposed in [6, 13] assume that samples generated from the same latent state xd must fall close together in the image space. This prohibits using categorical latent spaces such as digit class in MNIST because digits of the same class naturally may look differently. Instead, a model’s own continuous latent space is used such that fixing a point in it defines both the class and the shape of the digit. Works [6, 13] are thus restricted to unsupervised learning.\n\nGiven full training data pairs of (x0, xd), the recognition network could learn a distribution p(xd | x0) and the generator network could in principle learn a distribution q(x0 | xd). With our link between DNN and DCIM, we ask the question when the two DCIMs, modelling the two conditional distributions p(x0 | xd) and q(xd | x0), are consistent, i.e., correspond to some implicitly modelled joint distribution p∗(x0,...,d) of the data and all hidden layers. It is the case when p(x1,...d | x0)/q(x0,...d−1 | xd) = A(x0)B(xd) for some functions A, B. While this cannot be strictly satisfied with our strong conditional independence assumptions, we observe that most of the terms in the ratio cancel when we set the weights of recognition network p to be transposed of those of network q. Both models therefore can be efficiently represented by one and the same DNN, share its parameters and can be learned simultaneously by using an estimator similar to pseudo-likelihood.\n\nWe further use the link between DNN and DCIM to approximately compute the posterior distribution in the generator network q(xd | xk) given a sample of an inner layer xk. The approximation is reasonable when this posterior is expected to have a single mode, such as when reconstructing an image from lower level features. We thus can fully or partially avoid sampling in the generator model.\n\nWe demonstrate in a tentative experiment that such a coupled pair can be learned simultaneously, modelling the full distribution of the data, and has enough capacity to perform well in both recognition and generation.\n\n### Outline\n\nIn Section 2.1 we consider strongly conditional independent model with two layers and derive the NN from it. This model will serve as a building block of DCIM formally introduced in Section 2.2. In Section 2.3 we consider coupled pairs of DCIMs and propose a novel approach for generative learning. In Section 2.4 we discuss more connections with related work. In Section 3 we propose our proof-of-concept experiments of generative learning using only DNN inference or sampling only a single layer.\n\n## 2 Deep conditional independent models\n\n### 2.1 An approximation for conditional independent models\n\nLet x = (x1, . . . , xn) and y = (y1, . . . , ym) be two collections of discrete random variables with a joint distribution p(x, y) = p(y | x) p(x). The conditional distribution p(y | x) is strongly conditional independent if it factors as p(y | x) =\n1\nZ(x)\nQ\ni,j gij(xi, yj). Without loss of generality, it can be written as\n\np(y | x) =\n1\nZ(x) exp\nX\ni,j\nuij(xi, yj) =\nm\nY\nj=1\np(yj | x) =\nm\nY\nj=1\n1\nZj(x) exp\nm\nX\ni=1\nuij(xi, yj).\n(1)\n\nThe functions uij are arbitrary and Zj(x) denote the corresponding normalization constants. While sampling from p(y | x) is easy, computing p(y) by marginalizing over x is not tractable even if p(x) factorizes over the components of x.\n\nWe consider the following approximation for the marginal distribution p(y):\n\np(y) ≈1\nZ exp\nX\nij\nX\nxi\np(xi)uij(xi, yj).\n(2)\n\nOne of the possible ways to derive it, is to consider Taylor expansions for moments of functions of random variables. By using a linear embedding Φ such that P\ni,j uij(xi, yj) = ⟨Φ(x, y), u⟩, where u is a vector with components ui,j(k, l), we can write p(y | x) in the form\n\np(y | x) =\nexp ⟨Φ(x, y), u⟩\nP\ny′ exp ⟨Φ(x, y′), u⟩.\n(3)\n\nThe marginal distribution p(y) is obtained from\n\nEx∼p(x)p(y | x) = Ex∼p(x)\nexp ⟨Φ(x, y), u⟩\nP\ny′ exp ⟨Φ(x, y′), u⟩.\n(4)\n\nTaking the first order Taylor expansion w.r.t. the random variable Φ(x, y) for fixed y around\n\nΦ(y) = Ex∼p(x)Φ(x, y)\n(5)\n\nand computing its expectation w.r.t. x gives (2) as the constant term, while the first order term vanishes.\n\nExample 1. Assume that random variables in the two collections x = (x1, . . . , xn) and y = (y1, . . . , ym) are {0, 1}-valued. Any function uij(xi, yj) of binary variables can be written as uij(xi, yj) = yjWjixi + bjyj + cixi + d. Terms cixi + d cancel in the normalization of p(y | x) and thus can be omitted. The approximation (2) reads then ˆp(y) = Q\nj ˆp(yj) with\n\nˆp(yj) = e(⟨wj,¯x⟩+bj)yj\ne⟨wj,¯x⟩+bj + 1,\n(6)\n\nwhere wj denotes the j-th row of the matrix W and ¯x = Ex∼p(x)x. This in turn leads to the following approximation for the expectation of y:\n\n¯yj = ˆp(yj=1) =\n1\n1 + e−⟨wj,x⟩−bj = S(⟨wj, ¯x⟩+ bj),\n(7)\n\nwhere S is the logistic (sigmoid) function.\n\nIf ±1 encoding is used instead to represent states of x and y, then the corresponding expressions read\n\nˆp(yj) = exp\nyj\nwj, ¯x\n+ bj\n2 cosh\n⟨wj, ¯x⟩+ bj\n,\n(8)\n\nand\n\n¯yj = tanh[\n\nwj, ¯x\n+ bj].\n(9)\n\nRemark 1. Let p(x, y) be a joint model such that p(y | x) is strongly conditional independent as above. Then p(x | y) is not in general conditional independent. If both conditional distributions are strongly conditional independent, then the joint model is a restricted Boltzmann machine or, what is the same, an MRF on a bipartite graph.\n\n### 2.2 Deep conditional independent models\n\nLet X =\nx0, x1, . . . , xd\nbe a sequence of collections of binary valued random variables\n\nxk =\nxk\ni = ±1\ni = 1, . . . , nk\n.\n(10)\n\nThe next observation highlights the difficulties that we run into if considering the deep Boltzmann machine model.\n\nObservation 1. Let us assume that the joint distribution p(X) is a deep Boltzmann machine, i.e. an MRF on a layered, d-partite graph. Then neither the forward conditionals p(xk | xk−1) nor the backward conditionals p(xk−1 | xk) are (conditionally) independent. This can be seen as follows. The joint distribution of such a model can be written w.l.o.g. as\n\np(X) = 1\nZ exp\nh\nd\nX\nk=0\nD\nbk, xkE\n+\nd\nX\nk=0\n\nxk, W kxk−1\ni\n(11)\n\nand it follows that\n\np(xk | xk−1) =\nF(xk)\nZ(xk−1) exp\nh D\nbk, xkE\n+\n\nxk, W kxk−1\ni\n(12)\n\nwhere F(xk) results from marginalisation over xk+1, . . . , xd and can be arbitrarily complex.\n\nWe will therefore consider a similar, but different class, for which the forward conditionals are (conditionally) independent.\n\nDefinition 1. A joint distribution p(X) for a sequence of collections of binary valued random variables (10) is a deep conditional independent model (DCIM) if it has the form\n\np(x0, . . . , xn) = p(x0)\nd\nY\nk=1\np(xk | xk−1)\n(13)\n\nand its forward conditionals p(xk | xk−1) are strongly conditional independent, i.e. have the form (1) for all k = 1, 2, . . . , d.\n\nA DCIM can be thus seen as an inhomogeneous Markov chain model with high dimensional state spaces xk ∈X k, however with an yet unspecified distribution for x0. Given such a model and a realisation of x0, the posterior conditional distribution p(xd | x0) can be computed by applying the approximation (2) recursively (see Example. 1). This leads to the recursion\n\n¯xk\ni = tanh\nwk\ni , ¯xk−1\n+ bk\ni\n, k = 1, 2 . . . , d −1,\n(14)\n\nwhere ¯xk denotes the expectation of xk w.r.t. p(xk | x0). Finally, we obtain\n\np(xd\ni | x0) = exp(xd\ni ad\ni )\n2 cosh(ad\ni ) with ad\ni =\n\nwd\ni , ¯xd−1\n+ bd\ni .\n(15)\n\nIt is obvious that the (approximate) computation of p(xd | x0) for a DCIM is exactly the forward computation for a corresponding DNN. Hence, discriminative learning of a DCIM by maximizing the conditional likelihood p(xd | x0) of training samples (xd, x0) means to learn the corresponding DNN with the same loss.\n\nWith 0-1 state variables the model is equivalent to a Bayesian network (a directed graphical model), in which the set of parents of a variable xk\nj is the preceding layer xk−1 (or its subset, depending on the structure of the weights) and the conditional distributions are of the form (1), i.e., logistic. Such networks were proposed by Neal [11] under the name sigmoid belief networks as a simpler alternative to Boltzmann machines. When we derive the model from the strong conditional independence assumption, it establishes a link to deep Boltzmann machines [16], which are graphical models factorizing over a d-partite graph.\n\n### 2.3 Generative learning of deep networks\n\nTo learn a DCIM generatively from a given i.i.d. training data T , it is necessary to specify the joint model p(x0, . . . , xd) and to choose an appropriate estimator. In theory, the DCIM model can be completed to a joint model by specifying a prior distribution p(x0) over images and then the maximum likelihood estimator can be applied. It is however not realistic to model this complex multi-modal distribution in a closed form. We propose to circumvent this problem by applying the following bidirectional conditional likelihood estimator:\n\n1\n|T |\nX\n(x0,xd)∈T\nlog pθ(xd | x0) + log pθ(x0 | xd)\n→max\nθ ,\n(16)\n\nbecause it avoids to model p(x0) and p(xd) explicitly.\n\nFrom the definition of a DCIM, and particularly from the fact that a DCIM is also a Markov chain model, follows that its reverse conditional distribution factorises similar as (13), i.e.\n\np(x0, . . . , xd−1 | xd) =\nd−1\nY\nk=0\np(xk | xk+1).\n(17)\n\nThis holds for any p(x0) completing the DCIM to a joint distribution. Unfortunately, however, the reverse conditionals p(xk | xk+1) of a DCIM are not (conditionally) independent. This follows from an argument similar to the one used in Observation 1. In order to resolve the problem, we propose to consider pairs of tightly connected DCIMs: a forward model and a reverse (i.e. backward) model\n\np(xd, . . . , x1 | x0) =\nd\nY\nk=1\np(xk | xk−1)\nand\nq(x0, . . . , xd−1 | xd) =\nd−1\nY\nk=0\nq(xk | xk+1) (18)\n\nsuch that the forward conditionals of p and the backward conditionals of q are strongly (conditional) independent. Such a pair would give rise to a single joint distribution if\n\np(xd, . . . , x1 | x0)\nq(x0, . . . , xd−1 | xd) = A(xd)\nB(x0)\n(19)\n\nholds for any realisation of X for some functions A, B. We already know that this is impossible to achieve while retaining conditional independence of both, the forward and backward conditionals. Therefore, we propose to choose the parameters for two models such that the equation is fulfilled as close as possible. Substituting (1) for the binary case in the lhs of (19), gives\n\nQd−1\nk=0 ˜Z(xk+1)\nQd\nk=1 Z(xk−1)\nexp\nhPd\nk=1\nD\nxk, W kxk−1 + bkEi\nexp\nhPd−1\nk=0 ⟨xk, V kxk+1 + ak⟩\ni\n?= A(xd)\nB(x0),\n(20)\n\nwhere Zk and ˜Zk denote the partition functions of p(xk | xk−1) and q(xk | xk+1) respectively. It is readily seen that all terms in the exponentials cancel out if (V k−1)T = W k holds for the weights and bk = ak−1 holds for the biases. The remaining, not cancelling terms in the lhs of (19) are then the partition functions of the conditional distributions.\n\nSummarising, a pair of such DCIMs share the same structure as well as their weights and biases. They are therefore represented by a single DNN and can be learned simultaneously by the estimator (16), which now reads as\n\n1\n|T |\nX\n(x0,xd)∈T\nlog pθ(xd | x0) + log qθ(x0 | xd)\n→max\nθ\n.\n(21)\n\nSince both, the forward and backward conditionals are strongly independent, approximation (2) can be applied for computing the probabilities p(xd | x0) and q(x0 | xd).\n\nRemark 2. If the model consists of one layer only (d = 1), then the pair of p(x1 | x0) and q(x0 | x1) define a single joint distribution, which is an RBM, i.e. an MRF on a bipartite graph. The estimator (16) becomes the pseudo-likelihood estimator.\n\n### 2.4 Relations to other models\n\nWe briefly discuss relations between the proposed model and other models not mentioned in the introduction.\n\nThe connection between Bayesian networks and neural networks with injected noise, used in [7, 13] is different from ours. It relates two equivalent representations of stochastic models, while we relate stochastic and deterministic models.\n\nSimilar to our work, Hinton et al. [5] uses a constraint that generator and recognition networks are related by transposition of weights in the unsupervised, layer-by-layer pre-training phase, motivated by their study of deep Boltzmann machine. For the supervised fine-tuning the two models are decoupled.\n\nThe proposed model is of course related to classical auto-encoders [14] at least technically. Our learning approach is generative, but in contrast to auto-encoders it is supervised. Moreover, the “decoding” part (the reverse model) is in our case constrained to have the same parameters as the “encoding” part (the forward model).\n\nOur model and the proposed generative learning approach are undoubtedly related to generative adversarial networks (GAN), [3],[12] proposed by Goodfellow et al. Similar to them, the reverse part of our model aims at generating data. But in contrast to them our model uses no specific “noise space” and conditions the image distribution on the class. The randomness in the generating part comes solely through the reverse Markov chain. We believe that this should suffice for modelling rich distributions in the input space. It is however to expect that the approximation (2) used for learning might impose limitations on the expressive power of this model part as compared with GANs (see experiments). Another difference is that our model is learned jointly with a “twin”, i.e. the forward part, rather than in competition with an “adversarial”.\n\n## 3 Experiments\n\n### 3.1 MNIST dense\n\nThe first experiment is a simple proof of concept. We trained a small network (three fully connected layers with 512, 512, 10 nodes) on the standard MNIST dataset [8] for both learning approaches: the discriminative and the generative one. Sigmoid activation was chosen for all but the last layer, for which we used soft-max activation, i.e. considering its nodes as categorical variable. A standard optimiser without drop-out and any other regularisers was used for searching the maximum of the objective function. Fig. 1 shows the training and validation accuracies for both approaches as functions of the iterations. It is clearly seen that the combined objective (16) of the generative learning imposes only a rather insignificant drop of the classification accuracy. Fig. 1 also shows the training and validation loss of the the backward model.\n\nTo further asses the reverse model learned by the generative approach, we sampled 10 images for each of the classes from both models. The results are shown in Fig. 2. For each sampled image we also applied the forward model to classify it. The classes with the highest probability along with values of that probability are shown on top of each sampled image. It is clearly seen that the generative learning approach has found a set of model parameters that yields simultaneously good classification accuracy and the ability to generate images of average digits. On the other hand, it is also visible from Fig. 2 that the generative model part learned only the mean shapes of the digits.\n\n0\n10\n20\n30\n40\n50\nepochs\n0.85\n0.90\n0.95\n1.00\naccuracy\ndiscriminative\ngenerative\n0\n10\n20\n30\n40\n50\nepochs\n0.22\n0.23\n0.24\n0.25\n0.26\nloss\nFigure 1: Learning simple network on MNIST. Left: accuracy for discriminative and generative learning (dashed - training, solid: validation). Right: loss of the reverse model in generative learning (dashed - training, solid: validation).\n\n0:99\n0:99\n0:99\n0:99\n0:99\n1:53\n1:93\n6:74\n1:99\n1:98\n2:99\n2:99\n2:97\n2:99\n2:99\n3:99\n3:99\n3:99\n3:99\n3:99\n4:99\n4:91\n4:99\n4:99\n4:97\n8:94\n5:99\n5:80\n5:99\n5:96\n6:99\n6:89\n6:99\n6:99\n2:94\n9:94\n7:99\n9:99\n7:99\n7:99\n8:99\n8:99\n8:99\n8:99\n7:49\n9:99\n4:99\n5:73\n9:99\n7:93\n0:99\n0:99\n0:99\n0:99\n0:99\n1:86\n1:69\n1:97\n8:65\n1:89\n2:99\n2:99\n2:98\n2:99\n2:99\n3:99\n3:99\n3:99\n3:99\n3:99\n4:99\n4:99\n4:99\n4:99\n4:99\n5:99\n5:99\n5:99\n5:99\n5:99\n6:99\n6:99\n6:99\n6:99\n6:99\n7:99\n7:99\n7:99\n7:99\n7:99\n8:99\n8:99\n8:99\n8:99\n8:99\n9:99\n9:99\n9:99\n9:99\n9:99\nFigure 2: Images sampled form the reverse model part along with their classification and probability values (see text). Each row shows images sampled from one class. Left: images obtained by recursive sampling through the net starting from the class layer till the image layer. Right: images obtained by sampling through one layer only and then recursively computing probabilities till the image layer.\n\n### 3.2 MNIST CNN\n\nThe second experiment intends to analyse the behaviour of the proposed generative learning approach for convolutional neural networks. We learned a deep CNN ( eight layers) with architecture ((3,1,32), (3,1,32), (2,2,32), (3,1,64), (3,1,64), (2,2,64), (50), (10)) on MNIST data. The components of the triplets denote the window size, stride and kernel number for convolutional layers. The singletons denote the size of dense layers. Sigmoid activation was used for all but the last layer. When using the objective (21), the net achieves 0.989 validation accuracy for the forward part and 0.23 loss for the reverse model part. We observed neither over-fitting nor “vanishing gradient” effects. We conjecture that the reverse learning task serves as a strong regulariser. The left tableaux in Fig. 3 shows images sampled from the reverse model part. Again, for better visibility, we sampled from the the distribution q(xd−1 | xd) and then recursively computed the probabilities down to the image layer by applying the approximation (2). It is clearly seen that the learned generative model part is not able to capture the multi-modal image distribution. We conjecture that one of the possible reasons is the simplicity of the approximation (2), especially when applied for learning of the reverse model part.\n\nTo analyse the problem, we considered a somewhat different learning objective for this model part\n\n1\n|T |\nX\n(x0,xd)∈T\nlog pθ(xd | x0) + log qθ(x0 | xd−1)\n→max\nθ\n.\n(22)\n\nwhere xd−1 is sampled from pθ(xd−1 | x0) for the current θ. The model learned with this objective achieved 0.990 validation accuracy and 0.14 validation loss for the reverse model part. Images sampled from this model in the same way as described above, are shown in the right tableaux of Fig. 3. It is clearly seen that this model captured modes in the image distribution, i.e. different writing styles of the digits.\n\nAll experiments presented in this paper were carried out by using Keras [2] on top of Tensorflow [1].\n\nFigure 3: Images sampled from generatively learned CNNs on MNIST data. For better visibility the images were obtained by sampling through one layer only and then recursively computing probabilities till the image layer. Left: learning method as described in Sec. 2.3. Right: alternative learning method described in Sec. 3.2.\n\n## 4 Conclusions\n\nWe proposed a class of probabilistic models that leads to a new statistical interpretation of DNNs in which all neurons of the net become random variables. In contrast to Boltzmann machines, this class allows for an efficient approximation when computing the distribution of the output variables conditioned on a realisation of the input variables. The computation itself becomes identical to the recursive forward computation for a DNN.\n\nThe second objective of the paper, to design a generative learning approach for DCIMs, has been reached only partially. The proposed approach and its variants do allow to learn the forward and backward model parts simultaneously. However, the achievable expressive power of the backward part of the model is still inferior to GANs.\n\nNotwithstanding this, we believe that the presented approach opens interesting research directions. One of them is to analyse the proposed approximation and to search for better ones, leading to new and better activation functions. Another question in that direction is a statistical interpretation of the ReLu activation as the expectation of a possibly continuous random variable.\n\nA different direction calls for generalising DCIMs by introducing interactions between neurons in layers. This would lead to deep CRFs. We envision to learn such models, at least discriminatively, by using e.g. recent results for efficient marginal approximations of log-supermodular CRF.\n\n## Acknowledgements\n\nA. Shekhovtsov was supported by Toyota Motor Europe HS, O. Fikar was supported by Czech Technical University in Prague under grant SGS17/185/OHK3/3T/13 and B. Flach was supported by Czech Science Foundation under grant 16-05872S.\n\n## References\n\n[1] Abadi, M. et al. (2015). TensorFlow: Large-scale machine learning on heterogeneous systems. Software available from tensorflow.org.\n\n[2] Chollet, F. et al. (2015). Keras. https://github.com/fchollet/keras.\n\n[3] Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A. C., and Bengio, Y. (2014). Generative adversarial nets. In Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems 2014, December 8-13 2014, Montreal, Quebec, Canada, pages 2672–2680.\n\n[4] Hinton, G. E., Dayan, P., Frey, B. J., and Neal, R. M. (1995). The wake-sleep algorithm for unsupervised neural networks. Science, 268:1158.\n\n[5] Hinton, G. E., Osindero, S., and Teh, Y. W. (2006). A fast learning algorithm for deep belief networks. Neural Computation, 18(7):1527–1554.\n\n[6] Kingma, D. P. and Welling, M. (2013). Auto-encoding variational bayes. CoRR, abs/1312.6114.\n\n[7] Kingma, D. P. and Welling, M. (2014). Efficient gradient-based inference through transformations between bayes nets and neural nets. In Proceedings of the 31st International Conference on International Conference on Machine Learning - Volume 32, ICML’14, pages II–1782–II–1790. JMLR.org.\n\n[8] LeCun, Y. and Cortes, C. (2010). MNIST handwritten digit database.\n\n[9] Lee, H., Grosse, R., Ranganath, R., and Ng, A. Y. (2009). Convolutional deep belief networks for scalable unsupervised learning of hierarchical representations. In Proceedings of the 26th Annual International Conference on Machine Learning, ICML ’09, pages 609–616, New York, NY, USA. ACM.\n\n[10] Mnih, A. and Gregor, K. (2014). Neural Variational Inference and Learning in Belief Networks. In Proceedings of the 31st International Conference on Machine Learning, Cycle 2, volume 32 of JMLR Proceedings, pages 1791–1799. JMLR.org.\n\n[11] Neal, R. M. (1992). Connectionist learning of belief networks. Artif. Intell., 56(1):71–113.\n\n[12] Radford, A., Metz, L., and Chintala, S. (2016). Unsupervised representation learning with deep convolutional generative adversarial networks. In ICLR.\n\n[13] Rezende, D. J., Mohamed, S., and Wierstra, D. (2014). Stochastic backpropagation and approximate inference in deep generative models. In Jebara, T. and Xing, E. P., editors, Proceedings of the 31st International Conference on Machine Learning (ICML-14), pages 1278–1286. JMLR Workshop and Conference Proceedings.\n\n[14] Rumelhart, D. E., Hinton, G. E., and Williams, R. J. (1986). Learning representations by back-propagating errors. Nature, 323:533–536.\n\n[15] Salakhutdinov, R. (2015). Learning deep generative models. Annual Review of Statistics and Its Application, 2:361–385.\n\n[16] Salakhutdinov, R. and Hinton, G. E. (2009). Deep Boltzmann Machines. In AISTATS, pages 448–455.",
+  "verbatim_heading_share": 1.0714285714285714
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Outline",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Deep conditional independent models",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 An approximation for conditional independent models",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Deep conditional independent models",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Generative learning of deep networks",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Relations to other models",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 MNIST dense",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 MNIST CNN",
+   "page": 6,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.619787200004794,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 7,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Outline"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 4,
+  "fp": 11,
+  "fn": 9,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.1875,
+  "unmatched_gt": [
+   "2.2 Deep conditional independent models",
+   "2.3 Generative learning of deep networks",
+   "2.4 Relations to other models",
+   "3 Experiments",
+   "3.1 MNIST dense",
+   "3.2 MNIST CNN",
+   "4 Conclusions",
+   "Acknowledgements",
+   "References"
+  ],
+  "unmatched_pred": [
+   "Generative learning for deep networks",
+   "Outline",
+   "2 Deep conditional independent models",
+   "2.3 Generative learning of deep networks",
+   "2.4 Relations to other models",
+   "3 Experiments",
+   "3.1 MNIST dense",
+   "3.2 MNIST CNN",
+   "4 Conclusions",
+   "Acknowledgements",
+   "References"
+  ]
+ }
+}

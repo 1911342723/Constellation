@@ -1,0 +1,195 @@
+{
+ "doc": "1707.07212",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 14,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "Predictions"
+  ],
+  "unmatched_pred": [
+   "Marie-Catherine de Marneffe"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 17,
+  "parent_correct": 11,
+  "teds": 0.8421052631578947,
+  "unmatched_gt": [
+   "Predictions"
+  ],
+  "unmatched_pred": [
+   "Marie-Catherine de Marneffe"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 64.74874640000053
+ },
+ "predictions": [
+  {
+   "text": "\"i have a feeling trump will win..................\": Forecasting Winners and Losers from User Predictions on Twitter",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Marie-Catherine de Marneffe",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RelatedWork",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Measuring the Veridicality of Users' Predictions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Mechanical Turk Annotation",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Veridicality Classifier",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Features",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.4 Evaluation",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.5 Performance on held-out event types",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.6 Error Analysis",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Forecasting Contest Outcomes",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Prediction",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Sentiment Baseline",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Frequency Baseline",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.4 Results",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.5 Surprise Outcomes",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.6 Assessing the Reliability of Accounts",
+   "page": 7,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.021002500005124602,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 20,
+  "parent_correct": 14,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "Predictions"
+  ],
+  "unmatched_pred": [
+   "Marie-Catherine de Marneffe"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

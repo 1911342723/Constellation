@@ -1,0 +1,169 @@
+{
+ "doc": "1806.09905",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 20,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [
+   "Networks",
+   "4.3.1 Raw Audio from Existing Melodies",
+   "4.3.2 Raw Audio From Unique LSTM Generations",
+   "4.3.3 Editing Existing Raw Audio"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 129,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10200,
+   "completion_tokens": 697,
+   "total_tokens": 10897
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. BACKGROUND",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Raw Audio Models",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Symbolic Audio Models",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. ARCHITECTURE",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Unique Symbolic Melody Generation with LSTM",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Local Conditioning with Raw Audio Models",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.3 Hyperparameter Tuning",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4. EMPIRICAL EVALUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Training Datasets and Loss Analysis",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Unconditioned Music Generation with WaveNet",
+   "page": 3,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Structure in Raw Audio Generations",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5. CONCLUSIONS AND FUTURE WORK",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. ACKNOWLEDGEMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.335972500000935,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.8095238095238095,
+  "unmatched_gt": [
+   "Networks",
+   "4.3.1 Raw Audio from Existing Melodies",
+   "4.3.2 Raw Audio From Unique LSTM Generations",
+   "4.3.3 Editing Existing Raw Audio"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "Networks",
+   "4.3.1 Raw Audio from Existing Melodies",
+   "4.3.2 Raw Audio From Unique LSTM Generations",
+   "4.3.3 Editing Existing Raw Audio"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

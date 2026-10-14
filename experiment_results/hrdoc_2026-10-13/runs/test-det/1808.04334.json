@@ -1,0 +1,133 @@
+{
+ "doc": "1808.04334",
+ "system": "det",
+ "metrics": {
+  "gt": 6,
+  "pred": 11,
+  "tp": 6,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Embeddings Simlex WS353 RG MTurk RW MEN",
+   "2. Standard Meta",
+   "3. ℓ2-AE",
+   "4. TAE",
+   "5. TAE +Y"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 133,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methodology",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Experiments",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Embeddings Simlex WS353 RG MTurk RW MEN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Standard Meta",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. ℓ2-AE",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. TAE",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. TAE +Y",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.837324399999488,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 11,
+  "tp": 6,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Embeddings Simlex WS353 RG MTurk RW MEN",
+   "2. Standard Meta",
+   "3. ℓ2-AE",
+   "4. TAE",
+   "5. TAE +Y"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 9,
+  "tp": 4,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1. Embeddings Simlex WS353 RG MTurk RW MEN",
+   "2. Standard Meta",
+   "3. ℓ2-AE",
+   "4. TAE",
+   "5. TAE +Y"
+  ],
+  "ignored_title_predictions": null
+ }
+}

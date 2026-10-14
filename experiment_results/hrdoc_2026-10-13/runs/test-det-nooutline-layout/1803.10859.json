@@ -1,0 +1,161 @@
+{
+ "doc": "1803.10859",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 431,
+  "layout_marked": 19,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8686440677966102,
+  "inserted_word_share": 0.9228439314646211
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Learning Appearance Features",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. MTMC Tracker",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Experiments",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Benchmarks",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2. Evaluation",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3. Model Training",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5. Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Impact of Learning",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2. MTMC Tracking",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.3. Impact of Loss and Hard Negative Mining",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.4. Accuracy of Tracking vs. Ranking",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.5. Weakness Analysis",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.675667600000452,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

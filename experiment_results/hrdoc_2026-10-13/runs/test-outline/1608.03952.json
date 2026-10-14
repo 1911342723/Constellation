@@ -1,0 +1,148 @@
+{
+ "doc": "1608.03952",
+ "system": "outline",
+ "metrics": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   " Acknowledgments",
+   " References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Physical and mathematical model",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Beam splitter formalism",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Density operator",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B Photon number distribution",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C Wigner function",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV Optical-channel formalism",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Density operator",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B Photon number distribution",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V Application of the evolution formulas",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Photon number distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VI Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.05981390000306419,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   " Acknowledgments",
+   " References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,404 @@
+{
+ "doc": "1808.02462",
+ "system": "outline",
+ "metrics": {
+  "gt": 33,
+  "pred": 47,
+  "tp": 28,
+  "fp": 19,
+  "fn": 5,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.6041666666666667,
+  "unmatched_gt": [
+   "E. RF Challenges",
+   "3) Modal Diversity:",
+   "D. Beam Tracking",
+   "AC K NOWL E DGM EN T",
+   "ACRONY MS"
+  ],
+  "unmatched_pred": [
+   "III-B1 Fiber Linearity",
+   "III-B2 Fiber Nonlinear Effects",
+   "III-E RF Challenges",
+   "IV-B1 Adaptive Optics",
+   "IV-B2 Coding and Equalization Techniques",
+   "IV-B3 Modal Diversity",
+   "IV-D Beam Tracking",
+   "V-1 Free space optics",
+   "V-2 Optical fibers",
+   "V-3 Underwater propagation",
+   "V-4 On-chip applications",
+   "V-5 RF",
+   "References",
+   "Biographies",
+   "Abderrahmen Trichili",
+   "Ki-Hong Park",
+   "Mourad Zghal",
+   "Boon S. Ooi",
+   "Mohamed-Slim Alouini"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I-A OAM Mode Generation and Detection",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-B OAM Deployment",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "I-C Related Reviews",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II OAM Potentials",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Free Space Optical Communication",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-B Optical Fiber Communication",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-C Underwater Communication",
+   "page": 5,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-D Wireless Indoor Connections",
+   "page": 6,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-E On-chip Photonic Circuits",
+   "page": 7,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-F Optical Switching and Routing",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-G Radio Frequency Communication",
+   "page": 8,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "II-H Acoustic Communication",
+   "page": 9,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III OAM Challenges",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Free Space Propagation Effects",
+   "page": 9,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "III-B Fiber Propagation Effects",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "III-B1 Fiber Linearity",
+   "page": 10,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "III-B2 Fiber Nonlinear Effects",
+   "page": 11,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "III-C Underwater Propagation Effects",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "III-D Inter-modal Crosstalk",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "III-E RF Challenges",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "IV OAM Perspectives",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-A Towards a Complete Mode Set",
+   "page": 13,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "IV-B Atmospheric Turbulence Effects Mitigation",
+   "page": 14,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "IV-B1 Adaptive Optics",
+   "page": 14,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "IV-B2 Coding and Equalization Techniques",
+   "page": 14,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "IV-B3 Modal Diversity",
+   "page": 15,
+   "level": 3,
+   "parent": 23
+  },
+  {
+   "text": "IV-C Machine Learning-Based OAM Recovery Approach",
+   "page": 15,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "IV-D Beam Tracking",
+   "page": 16,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "IV-E Underwater Turbulence Effects Mitigation",
+   "page": 16,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "IV-F OAM Maintaining Fibers",
+   "page": 16,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "IV-G Optimized RF Transceiver/Receiver Design",
+   "page": 16,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "V Open problems and future research directions",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V-1 Free space optics",
+   "page": 18,
+   "level": 2,
+   "parent": 32
+  },
+  {
+   "text": "V-2 Optical fibers",
+   "page": 19,
+   "level": 3,
+   "parent": 33
+  },
+  {
+   "text": "V-3 Underwater propagation",
+   "page": 19,
+   "level": 3,
+   "parent": 33
+  },
+  {
+   "text": "V-4 On-chip applications",
+   "page": 19,
+   "level": 3,
+   "parent": 33
+  },
+  {
+   "text": "V-5 RF",
+   "page": 19,
+   "level": 3,
+   "parent": 33
+  },
+  {
+   "text": "VI Discussion",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII Conclusion",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Biographies",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abderrahmen Trichili",
+   "page": 29,
+   "level": 2,
+   "parent": 41
+  },
+  {
+   "text": "Ki-Hong Park",
+   "page": 29,
+   "level": 2,
+   "parent": 41
+  },
+  {
+   "text": "Mourad Zghal",
+   "page": 29,
+   "level": 2,
+   "parent": 41
+  },
+  {
+   "text": "Boon S. Ooi",
+   "page": 29,
+   "level": 2,
+   "parent": 41
+  },
+  {
+   "text": "Mohamed-Slim Alouini",
+   "page": 29,
+   "level": 2,
+   "parent": 41
+  }
+ ],
+ "seconds": 0.14466709999760496,
+ "metrics_v1": {
+  "gt": 33,
+  "pred": 47,
+  "tp": 28,
+  "fp": 19,
+  "fn": 5,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.6041666666666667,
+  "unmatched_gt": [
+   "E. RF Challenges",
+   "3) Modal Diversity:",
+   "D. Beam Tracking",
+   "AC K NOWL E DGM EN T",
+   "ACRONY MS"
+  ],
+  "unmatched_pred": [
+   "III-B1 Fiber Linearity",
+   "III-B2 Fiber Nonlinear Effects",
+   "III-E RF Challenges",
+   "IV-B1 Adaptive Optics",
+   "IV-B2 Coding and Equalization Techniques",
+   "IV-B3 Modal Diversity",
+   "IV-D Beam Tracking",
+   "V-1 Free space optics",
+   "V-2 Optical fibers",
+   "V-3 Underwater propagation",
+   "V-4 On-chip applications",
+   "V-5 RF",
+   "References",
+   "Biographies",
+   "Abderrahmen Trichili",
+   "Ki-Hong Park",
+   "Mourad Zghal",
+   "Boon S. Ooi",
+   "Mohamed-Slim Alouini"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 32,
+  "pred": 46,
+  "tp": 28,
+  "fp": 18,
+  "fn": 4,
+  "level_correct": 28,
+  "parent_correct": 28,
+  "teds": 0.6170212765957447,
+  "unmatched_gt": [
+   "E. RF Challenges",
+   "3) Modal Diversity:",
+   "D. Beam Tracking",
+   "ACRONY MS"
+  ],
+  "unmatched_pred": [
+   "III-B1 Fiber Linearity",
+   "III-B2 Fiber Nonlinear Effects",
+   "III-E RF Challenges",
+   "IV-B1 Adaptive Optics",
+   "IV-B2 Coding and Equalization Techniques",
+   "IV-B3 Modal Diversity",
+   "IV-D Beam Tracking",
+   "V-1 Free space optics",
+   "V-2 Optical fibers",
+   "V-3 Underwater propagation",
+   "V-4 On-chip applications",
+   "V-5 RF",
+   "Biographies",
+   "Abderrahmen Trichili",
+   "Ki-Hong Park",
+   "Mourad Zghal",
+   "Boon S. Ooi",
+   "Mohamed-Slim Alouini"
+  ],
+  "ignored_title_predictions": null
+ }
+}

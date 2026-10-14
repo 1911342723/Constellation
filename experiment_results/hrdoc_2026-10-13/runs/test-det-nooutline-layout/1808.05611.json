@@ -1,0 +1,149 @@
+{
+ "doc": "1808.05611",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "based on Word Sense Disambiguation"
+  ],
+  "unmatched_pred": [
+   "1. WordNet-based synset selection (static"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [
+   "based on Word Sense Disambiguation"
+  ],
+  "unmatched_pred": [
+   "1. WordNet-based synset selection (static"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 289,
+  "layout_marked": 15,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9242245779348253,
+  "inserted_word_share": 0.787122445288479
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Learning Graph Metric Embeddings",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Computing Pairwise Similarities",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Selection of the Similarity Measures",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4.2 Pruning the Dissimilar Pairs of Nodes",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "5 Experiment 1: Intrinsic Evaluation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. WordNet-based synset selection (static",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experiment 2: Extrinsic Evaluation",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Computational Efﬁciency Evaluation",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Discussion and Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.3159374999959255,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "based on Word Sense Disambiguation"
+  ],
+  "unmatched_pred": [
+   "1. WordNet-based synset selection (static"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

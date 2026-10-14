@@ -1,0 +1,140 @@
+{
+ "doc": "1704.01960",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 13,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [
+   "2.1. IB/FE Framework",
+   "2.2. MV-LV Model Construction",
+   "2.3. Soft Tissue Mechanics",
+   "2.4. Boundary Conditions and Model Implementation",
+   "Acknowledgement",
+   "Conflict interests"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "0.8 s; Systolic phase"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 383,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13394,
+   "completion_tokens": 311,
+   "total_tokens": 13705
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Methodology",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Discussion",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0.8 s; Systolic phase",
+   "page": 20,
+   "level": 2,
+   "parent": 7
+  }
+ ],
+ "seconds": 25.279076999999234,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 6,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [
+   "2.1. IB/FE Framework",
+   "2.2. MV-LV Model Construction",
+   "2.3. Soft Tissue Mechanics",
+   "2.4. Boundary Conditions and Model Implementation",
+   "Acknowledgement",
+   "Conflict interests"
+  ],
+  "unmatched_pred": [
+   "Abstract",
+   "0.8 s; Systolic phase"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5454545454545454,
+  "unmatched_gt": [
+   "2.1. IB/FE Framework",
+   "2.2. MV-LV Model Construction",
+   "2.3. Soft Tissue Mechanics",
+   "2.4. Boundary Conditions and Model Implementation",
+   "Conflict interests"
+  ],
+  "unmatched_pred": [
+   "0.8 s; Systolic phase"
+  ],
+  "ignored_title_predictions": null
+ }
+}

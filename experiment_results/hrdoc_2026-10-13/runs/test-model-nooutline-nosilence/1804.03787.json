@@ -1,0 +1,226 @@
+{
+ "doc": "1804.03787",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 20,
+  "pred": 25,
+  "tp": 20,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.2 and 3.3",
+   "end if",
+   "end if",
+   "14: end for",
+   "19: end for"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 254,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14685,
+   "completion_tokens": 834,
+   "total_tokens": 15519
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Works",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Multi-Scale Generalized Plane Match",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 and 3.3",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.1 Robust Plane Match",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.1.1 Homography Plane Model",
+   "page": 4,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.1.2 Robust Model Estimation",
+   "page": 5,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.1.3 Plane Distortion Compensation",
+   "page": 5,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Residual Region based Model Detection",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Multi-Scale Plane Match",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3.1 Propagation of Reliable Models between Levels",
+   "page": 7,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.3.2 Match Reﬁnement for Unassigned Regions",
+   "page": 8,
+   "level": 3,
+   "parent": 10
+  },
+  {
+   "text": "3.4 Occlusion Detection and Interpolation",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "end if",
+   "page": 9,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "end if",
+   "page": 9,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "14: end for",
+   "page": 9,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "19: end for",
+   "page": 9,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "3.4.1 Filling and Occlusion Map",
+   "page": 12,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4 Experiments",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Thin Object Detection",
+   "page": 16,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "4.2 Partial Experiments on Histogram Equalized Images",
+   "page": 16,
+   "level": 2,
+   "parent": 19
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Future Work",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.932782600000792,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 25,
+  "tp": 20,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.8076923076923077,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.2 and 3.3",
+   "end if",
+   "end if",
+   "14: end for",
+   "19: end for"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 23,
+  "tp": 18,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.7916666666666666,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "3.2 and 3.3",
+   "end if",
+   "end if",
+   "14: end for",
+   "19: end for"
+  ],
+  "ignored_title_predictions": null
+ }
+}

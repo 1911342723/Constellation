@@ -1,0 +1,256 @@
+{
+ "doc": "1806.07537",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 31,
+  "pred": 31,
+  "tp": 30,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 29,
+  "parent_correct": 28,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "For protein representation,"
+  ],
+  "unmatched_pred": [
+   "Structural property sequence (SPS) representation. Although"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 528,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14319,
+   "completion_tokens": 1316,
+   "total_tokens": 15635
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Materials and Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Data",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Input data representation",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2.1 Compound data representation",
+   "page": 1,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.2.2 Protein data representation",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "Structural property sequence (SPS) representation. Although",
+   "page": 2,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.3 RNN for unsupervised pre-training",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.4 Uniﬁed RNN-CNN for supervised learning",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5 Attention mechanisms in uniﬁed RNN-CNN",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Results and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Compound and protein representations",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.2 Compound-protein afﬁnity prediction",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.2.1 Comparing novel representations to baseline ones",
+   "page": 3,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "3.2.2 Comparing shallow and deep models",
+   "page": 4,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "3.2.3 Comparing attention mechanisms in prediction",
+   "page": 4,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "3.2.4 Deep transfer learning for new classes of protein targets",
+   "page": 4,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "3.3 Predicting target selectivity of drugs",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.3.1 Factor Xa versus Thrombin",
+   "page": 4,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "3.3.2 Cyclooxygenase (COX) protein family",
+   "page": 4,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "3.3.3 Protein-tyrosine phosphatase (PTP) family",
+   "page": 5,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "3.4 Explaining target selectivity of drugs",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "3.4.1 How do the compound-protein pairs interact?",
+   "page": 6,
+   "level": 3,
+   "parent": 22
+  },
+  {
+   "text": "3.4.2 How are targets selectively interacted?",
+   "page": 6,
+   "level": 3,
+   "parent": 22
+  },
+  {
+   "text": "4 Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Protein representations using amino acid sequences",
+   "page": 7,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "4.2 Uniﬁed RNN/GCNN-CNN for protein SPS strings and",
+   "page": 7,
+   "level": 2,
+   "parent": 25
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.217104899998958,
+ "metrics_v1": {
+  "gt": 31,
+  "pred": 31,
+  "tp": 30,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 29,
+  "parent_correct": 28,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "For protein representation,"
+  ],
+  "unmatched_pred": [
+   "Structural property sequence (SPS) representation. Although"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 28,
+  "pred": 28,
+  "tp": 27,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 26,
+  "parent_correct": 25,
+  "teds": 0.7931034482758621,
+  "unmatched_gt": [
+   "For protein representation,"
+  ],
+  "unmatched_pred": [
+   "Structural property sequence (SPS) representation. Although"
+  ],
+  "ignored_title_predictions": null
+ }
+}

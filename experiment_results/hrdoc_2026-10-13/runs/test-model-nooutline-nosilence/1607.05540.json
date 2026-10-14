@@ -1,0 +1,201 @@
+{
+ "doc": "1607.05540",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 9,
+  "pred": 17,
+  "tp": 8,
+  "fp": 9,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "Michael Crosscombe",
+   "and Jonathan Lawry",
+   "Department of Engineering Mathematics,",
+   "University of Bristol,",
+   "BS8 1UB, United Kingdom",
+   "3. Inconsistency",
+   "Random Selection of Agents",
+   "PayoﬀModel",
+   "2 results in a neutral"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 244,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10558,
+   "completion_tokens": 342,
+   "total_tokens": 10900
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Exploiting Vagueness for Multi-Agent Consensus",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Michael Crosscombe",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "and Jonathan Lawry",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Department of Engineering Mathematics,",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "University of Bristol,",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "BS8 1UB, United Kingdom",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 A Three Valued Consensus Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Inconsistency",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Simulation Experiments based on",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Random Selection of Agents",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 Simulation Experiments Incorporating a",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PayoﬀModel",
+   "page": 2,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "2 results in a neutral",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusions",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.70356240000183,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 18,
+  "tp": 8,
+  "fp": 10,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4736842105263158,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "Exploiting Vagueness for Multi-Agent Consensus",
+   "Michael Crosscombe",
+   "and Jonathan Lawry",
+   "Department of Engineering Mathematics,",
+   "University of Bristol,",
+   "BS8 1UB, United Kingdom",
+   "3. Inconsistency",
+   "Random Selection of Agents",
+   "PayoﬀModel",
+   "2 results in a neutral"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 15,
+  "tp": 6,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Michael Crosscombe",
+   "and Jonathan Lawry",
+   "Department of Engineering Mathematics,",
+   "University of Bristol,",
+   "BS8 1UB, United Kingdom",
+   "3. Inconsistency",
+   "Random Selection of Agents",
+   "PayoﬀModel",
+   "2 results in a neutral"
+  ],
+  "ignored_title_predictions": null
+ }
+}

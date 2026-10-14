@@ -1,0 +1,142 @@
+{
+ "doc": "1512.00315",
+ "system": "det",
+ "metrics": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "A. Noise Injection Sampler for the Link Matrix",
+   "ACKN O W LED G M E NT"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 149,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Side Information",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. STATISTICAL MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. General Setup",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. GIBBS SAMPLER",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. EXPERIMENTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Results",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2) Latent dimensions capturing the difference term: We",
+   "page": 2,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3) Prediction of dominant interaction types for proteins: We",
+   "page": 2,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "4) Prediction of compound-protein interaction types: In this",
+   "page": 3,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.754912399999739,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8125,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "A. Noise Injection Sampler for the Link Matrix",
+   "ACKN O W LED G M E NT"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "B. Scale Invariant Prior on the Link Matrix",
+   "A. Noise Injection Sampler for the Link Matrix"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,229 @@
+{
+ "doc": "1711.10776",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 17,
+  "fp": 6,
+  "fn": 5,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm",
+   "A PROOF OF LEM M A 2",
+   "B PRO OF O F T HEO R E M 1",
+   "C PRO OF O F T HEO R E M 2"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "APPENDIX E",
+   "APPENDIX F"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm",
+   "A PROOF OF LEM M A 2",
+   "B PRO OF O F T HEO R E M 1",
+   "C PRO OF O F T HEO R E M 2"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 2089,
+  "layout_marked": 29,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8513377445339471,
+  "inserted_word_share": 0.14682139253279514
+ },
+ "predictions": [
+  {
+   "text": "Energy Efﬁcient Resource Allocation in",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM AND POWER CONSUMPTION MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. System Model",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. NOMA Strategy",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. TDMA Strategy",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. ENERGY EFFICIENT RESOURCE ALLOCATION FOR",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Conditions",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Convergence and Complexity Analysis",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ENERGY EFFICIENT RESOURCE ALLOCATION FOR",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal Conditions",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Convergence and Complexity Analysis",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. NUMERICAL RESULTS",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX D",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 3",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX E",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 4",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX F",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 6",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.547414300002856,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 17,
+  "fp": 6,
+  "fn": 5,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.41666666666666663,
+  "unmatched_gt": [
+   "B. Joint Power Control and Time Allocation Algorithm",
+   "B. Iterative Power Control and Time Allocation Algorithm",
+   "A PROOF OF LEM M A 2",
+   "B PRO OF O F T HEO R E M 1",
+   "C PRO OF O F T HEO R E M 2"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "APPENDIX E",
+   "APPENDIX F"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

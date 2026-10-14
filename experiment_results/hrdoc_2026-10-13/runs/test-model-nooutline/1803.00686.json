@@ -1,0 +1,243 @@
+{
+ "doc": "1803.00686",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 17,
+  "pred": 26,
+  "tp": 17,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.5925925925925926,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "(b) Style Image",
+   "(d) D3",
+   "(b) Medium details",
+   "(b) Style Image",
+   "(b) Style Image",
+   "(b) Style Image",
+   "(b) Bells Style",
+   "(d) Flowers Style",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 235,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4710,
+   "completion_tokens": 768,
+   "total_tokens": 5478
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Style Image",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. NEURAL STYLE TRANSFER",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Content and Style Representations",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Neural Style Transfer",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. DISTANCE TRANSFORM LOSS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Distance Transform",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Distance Transform Loss",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(d) D3",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The Inﬂuence to Neural Style Transfer",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "(b) Medium details",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. The Strength of Weighting Factor",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "C. The Emphasis of Distance Transform Image Fig",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Logo Generation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Style Image",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Style Image",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Transferring Styles to Background",
+   "page": 4,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "F. Font Generation",
+   "page": 4,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Style Image",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Bells Style",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(d) Flowers Style",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.504258099997969,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 26,
+  "tp": 17,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 11,
+  "teds": 0.5925925925925926,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "(b) Style Image",
+   "(d) D3",
+   "(b) Medium details",
+   "(b) Style Image",
+   "(b) Style Image",
+   "(b) Style Image",
+   "(b) Bells Style",
+   "(d) Flowers Style",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 24,
+  "tp": 16,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 10,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "(b) Style Image",
+   "(d) D3",
+   "(b) Medium details",
+   "(b) Style Image",
+   "(b) Style Image",
+   "(b) Style Image",
+   "(b) Bells Style",
+   "(d) Flowers Style"
+  ],
+  "ignored_title_predictions": null
+ }
+}

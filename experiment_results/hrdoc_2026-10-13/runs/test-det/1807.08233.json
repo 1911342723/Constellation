@@ -1,0 +1,247 @@
+{
+ "doc": "1807.08233",
+ "system": "det",
+ "metrics": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 22,
+  "fp": 5,
+  "fn": 5,
+  "level_correct": 22,
+  "parent_correct": 17,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "8 Ultrasonic Sensor - HC-SR04",
+   "1 Wide Angle Fish-Eye Pi Camera Camera",
+   "14 HITEC HS-645MG",
+   "22 and 23 where the heatmap focuses interest on the track, not the lines themsel",
+   "5 Batteries and Charger"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 301,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PLATFORM DESIGN",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Platform Overview",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "B. Sensor Network",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "8 Ultrasonic Sensor - HC-SR04",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Vision Network",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "1 Wide Angle Fish-Eye Pi Camera Camera",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Engine Network",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "E. More Electro-Mechanical Engineering",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "14 HITEC HS-645MG",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "F. Vehicle Body",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "III. HARDWARE SYSTEMS DESIGN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Processor Framework",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Electrical Sub-systems",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "IV. PERCEPTION AND CONTROL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Software Architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "B. Perception and Planning",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "C. Trajectory and Velocity Control",
+   "page": 3,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "V. VEHICLE BEHAVIOR",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Line Detection",
+   "page": 5,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "B. Target Region using Lines",
+   "page": 5,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "A. Appendix",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "C. Target Region Without using Lines",
+   "page": 6,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "22 and 23 where the heatmap focuses interest on the track, not the lines themselves.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Batteries and Charger",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.775407100001757,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 27,
+  "tp": 22,
+  "fp": 5,
+  "fn": 5,
+  "level_correct": 22,
+  "parent_correct": 17,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "8 Ultrasonic Sensor - HC-SR04",
+   "1 Wide Angle Fish-Eye Pi Camera Camera",
+   "14 HITEC HS-645MG",
+   "22 and 23 where the heatmap focuses interest on the track, not the lines themsel",
+   "5 Batteries and Charger"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 20,
+  "fp": 5,
+  "fn": 5,
+  "level_correct": 20,
+  "parent_correct": 16,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "8 Ultrasonic Sensor - HC-SR04",
+   "1 Wide Angle Fish-Eye Pi Camera Camera",
+   "14 HITEC HS-645MG",
+   "22 and 23 where the heatmap focuses interest on the track, not the lines themsel",
+   "5 Batteries and Charger"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "doc": "1706.06558",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 10,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.4545454545454546,
+  "unmatched_gt": [
+   "3.1 PDF of proton multiplicity distributions",
+   "3.2 PDF of anti-proton multiplicity distributions",
+   "3.3 PDF of net-proton proton multiplicity distributions",
+   "3.4 Test for the criticality of the net-proton multiplicity distributions",
+   "3.5 Estimating higher-order cumulants"
+  ],
+  "unmatched_pred": [
+   "Nirbhay Kumar Beheraa,1, Min Jung Kweon2"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 623,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4900,
+   "completion_tokens": 286,
+   "total_tokens": 5186
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Constructing probability density function of net-proton",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "multiplicity distributions using Pearson curve method",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Nirbhay Kumar Beheraa,1, Min Jung Kweon2",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Pearson curve method",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results and discussion",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Summary",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.481292700002086,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 5,
+  "fp": 3,
+  "fn": 5,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.2727272727272727,
+  "unmatched_gt": [
+   "3.1 PDF of proton multiplicity distributions",
+   "3.2 PDF of anti-proton multiplicity distributions",
+   "3.3 PDF of net-proton proton multiplicity distributions",
+   "3.4 Test for the criticality of the net-proton multiplicity distributions",
+   "3.5 Estimating higher-order cumulants"
+  ],
+  "unmatched_pred": [
+   "Constructing probability density function of net-proton",
+   "multiplicity distributions using Pearson curve method",
+   "Nirbhay Kumar Beheraa,1, Min Jung Kweon2"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 5,
+  "tp": 4,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "3.1 PDF of proton multiplicity distributions",
+   "3.2 PDF of anti-proton multiplicity distributions",
+   "3.3 PDF of net-proton proton multiplicity distributions",
+   "3.4 Test for the criticality of the net-proton multiplicity distributions",
+   "3.5 Estimating higher-order cumulants"
+  ],
+  "unmatched_pred": [
+   "Nirbhay Kumar Beheraa,1, Min Jung Kweon2"
+  ],
+  "ignored_title_predictions": null
+ }
+}

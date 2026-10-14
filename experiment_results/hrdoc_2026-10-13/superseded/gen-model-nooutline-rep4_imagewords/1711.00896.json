@@ -1,0 +1,66 @@
+{
+ "doc": "1711.00896",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 3,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 2,
+  "pred": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 469,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14274,
+   "completion_tokens": 151,
+   "total_tokens": 14425
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9341825902335457,
+  "inserted_word_share": 0.06548672566371683
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Main Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.674023799998395
+}

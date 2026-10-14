@@ -1,0 +1,131 @@
+{
+ "doc": "1804.10986",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "2.1. Boundary reduction",
+   "2.2. Galerkin discretisation",
+   "3.1. Numerical Experiments",
+   "4.1. Error Analysis of Sparse Grids",
+   "4.2. Combination Technique",
+   "4.2.1. Numerical Experiments",
+   "4.3. Adaptive Sparse Grids",
+   "4.3.1. Numerical Experiments"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 992,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18454,
+   "completion_tokens": 300,
+   "total_tokens": 18754
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Problem Formulation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Error Analysis for Full Tensor-products",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Sparse Grids",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusions",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.393246899999212,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 8,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "2.1. Boundary reduction",
+   "2.2. Galerkin discretisation",
+   "3.1. Numerical Experiments",
+   "4.1. Error Analysis of Sparse Grids",
+   "4.2. Combination Technique",
+   "4.2.1. Numerical Experiments",
+   "4.3. Adaptive Sparse Grids",
+   "4.3.1. Numerical Experiments"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [
+   "2.1. Boundary reduction",
+   "2.2. Galerkin discretisation",
+   "3.1. Numerical Experiments",
+   "4.1. Error Analysis of Sparse Grids",
+   "4.2. Combination Technique",
+   "4.2.1. Numerical Experiments",
+   "4.3. Adaptive Sparse Grids",
+   "4.3.1. Numerical Experiments"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

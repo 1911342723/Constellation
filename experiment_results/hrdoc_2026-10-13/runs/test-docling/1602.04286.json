@@ -1,0 +1,180 @@
+{
+ "doc": "1602.04286",
+ "system": "docling",
+ "metrics": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5789473684210527,
+  "unmatched_gt": [
+   "CO N S TRAIN TS"
+  ],
+  "unmatched_pred": [
+   "Proof: See Appendix C.",
+   "APPENDIX",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 17.28825819999838
+ },
+ "predictions": [
+  {
+   "text": "Geometric Adaptive Control of Attitude Dynamics on SO(3) with State Inequality Constraints",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Attitude Dynamics",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. State Inequality Constraint",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. ATTITUDE CONTROL ON SO(3) WITH INEQUALITY CONSTRAINTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Attitude Control without Disturbance",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Proof: See Appendix C.",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Adaptive Control",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NUMERICAL EXAMPLES",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. EXPERIMENT ON HEXROTOR UAV",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Proof of Proposition 1",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Proof of Proposition 2",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Proof of Proposition 3",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Proof of Proposition 4",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Proof of Proposition 5",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.014924499999324325,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 19,
+  "tp": 15,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.55,
+  "unmatched_gt": [
+   "CO N S TRAIN TS"
+  ],
+  "unmatched_pred": [
+   "Geometric Adaptive Control of Attitude Dynamics on SO(3) with State Inequality C",
+   "Proof: See Appendix C.",
+   "APPENDIX",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "CO N S TRAIN TS"
+  ],
+  "unmatched_pred": [
+   "Proof: See Appendix C."
+  ],
+  "ignored_title_predictions": null
+ }
+}

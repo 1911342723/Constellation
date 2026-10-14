@@ -1,0 +1,242 @@
+{
+ "doc": "1807.04819",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 7,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "II . 3GP P MO DE -4"
+  ],
+  "unmatched_pred": [
+   "II. 3GPP MODE-4"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 8217,
+   "completion_tokens": 6594
+  },
+  "elapsed_llm_seconds": 31.274926199999754,
+  "content_preservation": 0.8811088295687886,
+  "inserted_word_share": 0.018302447952413647,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Enhanced C-V2X Mode-4 Subchannel Selection",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "Index Terms",
+    0,
+    2
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "II. 3GPP MODE-4",
+    0,
+    2
+   ],
+   [
+    "A. Stage 1: Power Sensing",
+    0,
+    3
+   ],
+   [
+    "B. Stage 2: Subchannels Categorization",
+    0,
+    3
+   ],
+   [
+    "C. Stage 3: Subchannel Selection",
+    0,
+    3
+   ],
+   [
+    "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+    0,
+    2
+   ],
+   [
+    "IV. SIMULATIONS",
+    0,
+    2
+   ],
+   [
+    "V. CONCLUSION",
+    0,
+    2
+   ],
+   [
+    "REFERENCES",
+    0,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Index Terms",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. 3GPP MODE-4",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Stage 1: Power Sensing",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Stage 2: Subchannels Categorization",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Stage 3: Subchannel Selection",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 31.387797999999748,
+ "metrics_raw": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 3,
+  "fp": 9,
+  "fn": 8,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.3076923076923077,
+  "unmatched_gt": [
+   "II . 3GP P MO DE -4",
+   "A. Stage 1: Power Sensing",
+   "B. Stage 2: Subchannels Categorization",
+   "C. Stage 3: Subchannel Selection",
+   "I II . EX P ON EN T I AL LY-W EI GH TE D M O V I NG AV ERA G E",
+   "I V. SI M U L AT I ON S",
+   "V. CO NCL USI ON",
+   "R E F ERE NCE S"
+  ],
+  "unmatched_pred": [
+   "Enhanced C-V2X Mode-4 Subchannel Selection",
+   "II. 3GPP MODE-4",
+   "A. Stage 1: Power Sensing",
+   "B. Stage 2: Subchannels Categorization",
+   "C. Stage 3: Subchannel Selection",
+   "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+   "IV. SIMULATIONS",
+   "V. CONCLUSION",
+   "REFERENCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 3,
+  "fp": 8,
+  "fn": 8,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "II . 3GP P MO DE -4",
+   "A. Stage 1: Power Sensing",
+   "B. Stage 2: Subchannels Categorization",
+   "C. Stage 3: Subchannel Selection",
+   "I II . EX P ON EN T I AL LY-W EI GH TE D M O V I NG AV ERA G E",
+   "I V. SI M U L AT I ON S",
+   "V. CO NCL USI ON",
+   "R E F ERE NCE S"
+  ],
+  "unmatched_pred": [
+   "II. 3GPP MODE-4",
+   "A. Stage 1: Power Sensing",
+   "B. Stage 2: Subchannels Categorization",
+   "C. Stage 3: Subchannel Selection",
+   "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+   "IV. SIMULATIONS",
+   "V. CONCLUSION",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "II . 3GP P MO DE -4"
+  ],
+  "unmatched_pred": [
+   "II. 3GPP MODE-4"
+  ],
+  "ignored_title_predictions": null
+ }
+}

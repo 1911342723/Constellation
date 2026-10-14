@@ -1,0 +1,123 @@
+{
+ "doc": "1807.02326",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 4,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.375,
+  "unmatched_gt": [
+   "The Infant Health and Development Program:",
+   "Experiment 1:",
+   "Experiment 2:"
+  ],
+  "unmatched_pred": [
+   "1 Introduction",
+   "2 Preliminaries and Related Work",
+   "3 Method"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 5,
+  "pred": 5,
+  "tp": 2,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.16666666666666663,
+  "unmatched_gt": [
+   "The Infant Health and Development Program:",
+   "Experiment 1:",
+   "Experiment 2:"
+  ],
+  "unmatched_pred": [
+   "1 Introduction",
+   "2 Preliminaries and Related Work",
+   "3 Method"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 63.95198789999995
+ },
+ "predictions": [
+  {
+   "text": "Cause-Effect Deep Information Bottleneck For Systematically Missing Covariates",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries and Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Method",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0018165000001317821,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 4,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.375,
+  "unmatched_gt": [
+   "The Infant Health and Development Program:",
+   "Experiment 1:",
+   "Experiment 2:"
+  ],
+  "unmatched_pred": [
+   "1 Introduction",
+   "2 Preliminaries and Related Work",
+   "3 Method"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

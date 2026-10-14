@@ -1,0 +1,118 @@
+{
+ "doc": "1709.02307",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "GENERALIZED DISTINGUISHING PROTOCOL"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 385,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 14190,
+   "completion_tokens": 425,
+   "total_tokens": 14615
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PRELIMINARIES",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DISTINGUISHING PSEUDOMIXTURES OF",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "EXPERIMENTAL TEST",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Experimental setup",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Complete Results and Simulations",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix 1",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix 2",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.86649689999831,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.9090909090909091,
+  "unmatched_gt": [
+   "GENERALIZED DISTINGUISHING PROTOCOL"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "GENERALIZED DISTINGUISHING PROTOCOL"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

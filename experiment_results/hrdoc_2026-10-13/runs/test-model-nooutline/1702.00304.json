@@ -1,0 +1,244 @@
+{
+ "doc": "1702.00304",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 23,
+  "tp": 8,
+  "fp": 15,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "For the rest of the paper, let (S, +, ·, 0, 1) be a commutative semiﬁeld.1",
+   "otherwise",
+   "Require: dwta M = (Q, Σ, µ, F) and congruence ∼= ⊆ Q2 of M that respects F",
+   "µ (sol([q]∼",
+   "8: for all σ(q1, . . . , qk) ∈ Σ(Q) such that µ(1)(σ(q1, . . . , qk)) ∈ B do",
+   "µ (c[q′]))] yields non-zero weights h(2)",
+   "Ensure: return a minimal, equivalent dwta",
+   "2: (L, sol, λ) ← ComputeSoL(M, ∼M)",
+   "4: ≡M ← ComputeCoarsestCongruence(N, ∼M)",
+   "Let M = (Q, Σ, µ, F) be a dwta (without useless states) and λ: Q → S \\ {0}",
+   "Require: accessible dwta M = (Q, Σ, µ, F) and M′ = (Q′, Σ, µ′, F ′)",
+   "Ensure: return ‘yes’ if M and M′ are equivalent; ‘no’ otherwise",
+   "2: ∼M ← ComputeCoarsestCongruence(M, Q × Q)",
+   "4: (L, sol, λ) ← ComputeSoL(M, ∼M)",
+   "10: N′ ← Minimize(alph(pushλ′(M′)), ∼M′)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 843,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 8,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 8,
+   "prompt_tokens": 29270,
+   "completion_tokens": 397,
+   "total_tokens": 29667
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Preliminaries",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "For the rest of the paper, let (S, +, ·, 0, 1) be a commutative semiﬁeld.1",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "otherwise",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Signs of life",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Require: dwta M = (Q, Σ, µ, F) and congruence ∼= ⊆ Q2 of M that respects F",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "µ (sol([q]∼",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8: for all σ(q1, . . . , qk) ∈ Σ(Q) such that µ(1)(σ(q1, . . . , qk)) ∈ B do",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Pushing",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "µ (c[q′]))] yields non-zero weights h(2)",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Ensure: return a minimal, equivalent dwta",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2: (L, sol, λ) ← ComputeSoL(M, ∼M)",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4: ≡M ← ComputeCoarsestCongruence(N, ∼M)",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Minimization",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Let M = (Q, Σ, µ, F) be a dwta (without useless states) and λ: Q → S \\ {0}",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Require: accessible dwta M = (Q, Σ, µ, F) and M′ = (Q′, Σ, µ′, F ′)",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Ensure: return ‘yes’ if M and M′ are equivalent; ‘no’ otherwise",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2: ∼M ← ComputeCoarsestCongruence(M, Q × Q)",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4: (L, sol, λ) ← ComputeSoL(M, ∼M)",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10: N′ ← Minimize(alph(pushλ′(M′)), ∼M′)",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Testing equivalence",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.45934479999778,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 23,
+  "tp": 8,
+  "fp": 15,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "For the rest of the paper, let (S, +, ·, 0, 1) be a commutative semiﬁeld.1",
+   "otherwise",
+   "Require: dwta M = (Q, Σ, µ, F) and congruence ∼= ⊆ Q2 of M that respects F",
+   "µ (sol([q]∼",
+   "8: for all σ(q1, . . . , qk) ∈ Σ(Q) such that µ(1)(σ(q1, . . . , qk)) ∈ B do",
+   "µ (c[q′]))] yields non-zero weights h(2)",
+   "Ensure: return a minimal, equivalent dwta",
+   "2: (L, sol, λ) ← ComputeSoL(M, ∼M)",
+   "4: ≡M ← ComputeCoarsestCongruence(N, ∼M)",
+   "Let M = (Q, Σ, µ, F) be a dwta (without useless states) and λ: Q → S \\ {0}",
+   "Require: accessible dwta M = (Q, Σ, µ, F) and M′ = (Q′, Σ, µ′, F ′)",
+   "Ensure: return ‘yes’ if M and M′ are equivalent; ‘no’ otherwise",
+   "2: ∼M ← ComputeCoarsestCongruence(M, Q × Q)",
+   "4: (L, sol, λ) ← ComputeSoL(M, ∼M)",
+   "10: N′ ← Minimize(alph(pushλ′(M′)), ∼M′)"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 21,
+  "tp": 6,
+  "fp": 15,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.31818181818181823,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "For the rest of the paper, let (S, +, ·, 0, 1) be a commutative semiﬁeld.1",
+   "otherwise",
+   "Require: dwta M = (Q, Σ, µ, F) and congruence ∼= ⊆ Q2 of M that respects F",
+   "µ (sol([q]∼",
+   "8: for all σ(q1, . . . , qk) ∈ Σ(Q) such that µ(1)(σ(q1, . . . , qk)) ∈ B do",
+   "µ (c[q′]))] yields non-zero weights h(2)",
+   "Ensure: return a minimal, equivalent dwta",
+   "2: (L, sol, λ) ← ComputeSoL(M, ∼M)",
+   "4: ≡M ← ComputeCoarsestCongruence(N, ∼M)",
+   "Let M = (Q, Σ, µ, F) be a dwta (without useless states) and λ: Q → S \\ {0}",
+   "Require: accessible dwta M = (Q, Σ, µ, F) and M′ = (Q′, Σ, µ′, F ′)",
+   "Ensure: return ‘yes’ if M and M′ are equivalent; ‘no’ otherwise",
+   "2: ∼M ← ComputeCoarsestCongruence(M, Q × Q)",
+   "4: (L, sol, λ) ← ComputeSoL(M, ∼M)",
+   "10: N′ ← Minimize(alph(pushλ′(M′)), ∼M′)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

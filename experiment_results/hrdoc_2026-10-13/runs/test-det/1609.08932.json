@@ -1,0 +1,114 @@
+{
+ "doc": "1609.08932",
+ "system": "det",
+ "metrics": {
+  "gt": 6,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.7 and 1.5 a.u",
+   "0.4 a.u",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 213,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORETICAL METHOD",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Photoelectron emission from SESs",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Induced potential eﬀects",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "0.7 and 1.5 a.u",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "0.4 a.u",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. CONCLUSIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.152294399998937,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 9,
+  "tp": 6,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.7 and 1.5 a.u",
+   "0.4 a.u",
+   "Acknowledgments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0.7 and 1.5 a.u",
+   "0.4 a.u"
+  ],
+  "ignored_title_predictions": null
+ }
+}

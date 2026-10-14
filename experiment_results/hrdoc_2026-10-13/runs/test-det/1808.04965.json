@@ -1,0 +1,91 @@
+{
+ "doc": "1808.04965",
+ "system": "det",
+ "metrics": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4 ⊂ L′ so that"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 616,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 A robust analog of Theorem 1.3",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Proof of Theorem 1.3",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 ⊂ L′ so that",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Proof of Theorem 1.5",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.438261899998906,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4 ⊂ L′ so that"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 5,
+  "tp": 4,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.8333333333333334,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "4 ⊂ L′ so that"
+  ],
+  "ignored_title_predictions": null
+ }
+}

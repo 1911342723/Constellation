@@ -1,0 +1,113 @@
+{
+ "doc": "1503.05697",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 466,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4507,
+   "completion_tokens": 330,
+   "total_tokens": 4837
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MAXIMAL QUANTUM FISHER",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. APPLICATIONS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Time-independent Hamiltonians",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Time-dependent Hamiltonian",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. DISCUSSION AND CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.055540399996971,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [
+   "INFORMATION FOR A GENERAL",
+   "TIME-INDEPENDENT SU(2) HAMILTONIAN"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

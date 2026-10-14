@@ -1,0 +1,218 @@
+{
+ "doc": "1610.08445",
+ "system": "docling",
+ "metrics": {
+  "gt": 21,
+  "pred": 24,
+  "tp": 20,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6799999999999999,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "Seyed Mehran Kazemi",
+   "Angelika Kimmig",
+   "David Poole",
+   "References"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 41.404797600000165
+ },
+ "predictions": [
+  {
+   "text": "New Liftable Classes for First-Order Probabilistic Inference",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Seyed Mehran Kazemi",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Angelika Kimmig",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "David Poole",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Background and Notation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Converting Inference for SRLModels intoWFOMC",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Calculating theWFOMC of a Theory",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Domain-Liftability",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 The Domain Recursion Rule",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Domain RecursionMakes More Theories Domain-Liftable",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 S 2FO 2 and S 2RU: NewDomain-Liftable Classes",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experiments and Results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Discussion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Proofs of the Theorems, Propositions, and Lemmas",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.1 Proof of Proposition 1",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.2 Proof of Proposition 2",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.3 Proof of Proposition 3",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.4 Proof of Theorem 1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.5 Proof of Lemma 1",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.6 Proof of Lemma 2",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9.7 Proof of Proposition 4",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.017950500005099457,
+ "metrics_v1": {
+  "gt": 21,
+  "pred": 25,
+  "tp": 20,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6538461538461539,
+  "unmatched_gt": [
+   "References"
+  ],
+  "unmatched_pred": [
+   "New Liftable Classes for First-Order Probabilistic Inference",
+   "Seyed Mehran Kazemi",
+   "Angelika Kimmig",
+   "David Poole",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 22,
+  "tp": 19,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.6956521739130435,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Seyed Mehran Kazemi",
+   "Angelika Kimmig",
+   "David Poole"
+  ],
+  "ignored_title_predictions": null
+ }
+}

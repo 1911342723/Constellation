@@ -1,0 +1,136 @@
+{
+ "doc": "1512.02594",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "2.2. B.A.T.M.A.N."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 382,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 11112,
+   "completion_tokens": 595,
+   "total_tokens": 11707
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduc¸˜ao",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Estrat´egias de Roteamento em Redes Mesh Sem Fio",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. OLSR",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.3. OpenWiMesh",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Trabalhos relacionados",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Cen´ario de Avaliac¸˜ao",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Modelos de Mobilidade",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.2. Modelos de Tr´afego",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4.3. Ambiente de Avaliac¸˜ao",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "5. An´alise dos Resultados",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclus˜oes e Trabalhos Futuros",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Referˆencias",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.298511299999518,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "2.2. B.A.T.M.A.N."
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [
+   "2.2. B.A.T.M.A.N."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

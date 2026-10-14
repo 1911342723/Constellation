@@ -1,0 +1,224 @@
+{
+ "doc": "1802.02606",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 21,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 21,
+  "parent_correct": 13,
+  "teds": 0.84,
+  "unmatched_gt": [
+   "SPHEROIDAL GALAXIES",
+   "4.2 Results",
+   "1 F(J) TOTAL MASS"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "4.2 Results",
+   "APPENDIXA: F(J) TOTALMASS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 22,
+  "pred": 19,
+  "tp": 18,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 18,
+  "parent_correct": 10,
+  "teds": 0.782608695652174,
+  "unmatched_gt": [
+   "SPHEROIDAL GALAXIES",
+   "4.2 Results",
+   "1 F(J) TOTAL MASS",
+   "2 APPLICATION TO MOCK DATA"
+  ],
+  "unmatched_pred": [
+   "4.2 Results"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 74.50242530000105
+ },
+ "predictions": [
+  {
+   "text": "Action-based dynamical models of dwarf spheroidal galaxies: application to Fornax",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 TWO-COMPONENT F(J) MODELS FORDWARF SPHEROIDAL GALAXIES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Stellar component",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Dark-matter component",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.3 General properties of the models",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.4 Spherical models",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 STATISTICAL ANALYSIS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Comparison with data",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "3.2 Models and families of models",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4 APPLICATION TO FORNAX",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Data set",
+   "page": 5,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2 Results",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.2.1 Properties of the best model",
+   "page": 7,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4.2.2 Performances of other families of two-component models",
+   "page": 9,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4.2.3 Performance of one-component models",
+   "page": 10,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4.2.4 Insensitivity to the halo scale radius",
+   "page": 10,
+   "level": 3,
+   "parent": 13
+  },
+  {
+   "text": "4.3 Comparison with previous work",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "4.4 Membership",
+   "page": 13,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5 CONCLUSIONS",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIXA: F(J) TOTALMASS",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B: APPLICATION TOMOCKDATA",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.020491300005232915,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 24,
+  "tp": 21,
+  "fp": 3,
+  "fn": 3,
+  "level_correct": 21,
+  "parent_correct": 13,
+  "teds": 0.84,
+  "unmatched_gt": [
+   "SPHEROIDAL GALAXIES",
+   "4.2 Results",
+   "1 F(J) TOTAL MASS"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "4.2 Results",
+   "APPENDIXA: F(J) TOTALMASS"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "doc": "1705.01908",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 Samsung R&D Institute China Beijing"
+  ],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 179,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Auto-painter: Cartoon Image Generation from",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sketch by Using Conditional Generative",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Adversarial Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Samsung R&D Institute China Beijing",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Network Structure",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Loss Function",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Experimental Studies",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Evaluation Metrics",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Experimental Results",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4 Color Controlled Sketch Synthesis",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 9.736970500001917,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Auto-painter: Cartoon Image Generation from",
+   "Sketch by Using Conditional Generative",
+   "Adversarial Networks",
+   "2 Samsung R&D Institute China Beijing"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2 Samsung R&D Institute China Beijing"
+  ],
+  "ignored_title_predictions": null
+ }
+}

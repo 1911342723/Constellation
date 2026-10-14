@@ -1,0 +1,124 @@
+{
+ "doc": "1605.05157",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "B. Database construction and retrieval acceleration",
+   "AC KNOWL EDG MEN T"
+  ],
+  "unmatched_pred": [
+   "60 Blvd St Michel, 75006, Paris, France",
+   "77 Rue des Chantiers, 78000, Versailles, France"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.4444444444444444,
+  "unmatched_gt": [
+   "B. Database construction and retrieval acceleration"
+  ],
+  "unmatched_pred": [
+   "60 Blvd St Michel, 75006, Paris, France",
+   "77 Rue des Chantiers, 78000, Versailles, France"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 190,
+  "layout_marked": 10,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9788519637462235,
+  "inserted_word_share": 0.7897287240946653
+ },
+ "predictions": [
+  {
+   "text": "Monocular Urban Localization using Street View",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "60 Blvd St Michel, 75006, Paris, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "77 Rue des Chantiers, 78000, Versailles, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. METHOD",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data preparation and generation",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "C. Global metric localization",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EXPERIMENTAL EVALUATION AND DISCUSSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.038529400000698,
+ "metrics_v1": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "B. Database construction and retrieval acceleration",
+   "AC KNOWL EDG MEN T"
+  ],
+  "unmatched_pred": [
+   "60 Blvd St Michel, 75006, Paris, France",
+   "77 Rue des Chantiers, 78000, Versailles, France"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

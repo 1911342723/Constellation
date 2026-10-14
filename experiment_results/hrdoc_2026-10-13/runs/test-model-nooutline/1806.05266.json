@@ -1,0 +1,142 @@
+{
+ "doc": "1806.05266",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "5. Case II. Different Sample Sizes",
+   "6. Case II I. Backgrounds",
+   "7. Case IV Different Sample Sizes with backgrounds.",
+   "13. References"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 852,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4465,
+   "completion_tokens": 465,
+   "total_tokens": 4930
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Examples of null hypothesis tests using diﬀerences of two Poisson distributions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Neutrino and Antineutrino Measurements",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Case I",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Case V Unknown Oscillation Probabilities",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. Combining Diﬀerent Experiments",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. Discussion and Summary",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11. Acknowledgements",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "12. Appendix",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "13. References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.267925600001035,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "5. Case II. Different Sample Sizes",
+   "6. Case II I. Backgrounds",
+   "7. Case IV Different Sample Sizes with backgrounds.",
+   "13. References"
+  ],
+  "unmatched_pred": [
+   "Abstract"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [
+   "5. Case II. Different Sample Sizes",
+   "6. Case II I. Backgrounds",
+   "7. Case IV Different Sample Sizes with backgrounds."
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

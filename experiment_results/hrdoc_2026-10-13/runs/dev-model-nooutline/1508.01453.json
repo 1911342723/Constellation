@@ -1,0 +1,89 @@
+{
+ "doc": "1508.01453",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 2,
+  "pred": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supplemental Materials"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 267,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4481,
+   "completion_tokens": 211,
+   "total_tokens": 4692
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Asymptotic Green’s function for the stochastic reproduction of competing variants via",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supplemental Materials",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "GREEN’S FUNCTION UNDER WEAK SELECTION",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "SUPPLEMENTARY FIGURES",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  }
+ ],
+ "seconds": 13.931410000001051,
+ "metrics_v1": {
+  "gt": 2,
+  "pred": 4,
+  "tp": 2,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Asymptotic Green’s function for the stochastic reproduction of competing variant",
+   "Supplemental Materials"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 2,
+  "pred": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.75,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supplemental Materials"
+  ],
+  "ignored_title_predictions": null
+ }
+}

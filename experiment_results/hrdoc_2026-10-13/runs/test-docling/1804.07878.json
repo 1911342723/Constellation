@@ -1,0 +1,192 @@
+{
+ "doc": "1804.07878",
+ "system": "docling",
+ "metrics": {
+  "gt": 23,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 47.61057299999811
+ },
+ "predictions": [
+  {
+   "text": "Massively Parallel Cross-Lingual Learning in Low-Resource Target Language Translation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RelatedWork",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Multilingual Attentional NMT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Sub-word Level NMT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Lexiconized NMT",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Translation System",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Baseline Translation System",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Proposed Extensions",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.1 Language Families and Cross-lingual Learning",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.2 Ablation Study on Target Training data",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2.3 Order-preserving Lexiconized NMT",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Data and Training Parameters",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Family labels and Intra-family & Inter-family Effects",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 Ablation Study on Target Training Data",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.4 Order-preserving Lexiconized NMT",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusion and Future Directions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A Supplemental Materials",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.033902900002431124,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5416666666666667,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [
+   "Massively Parallel Cross-Lingual Learning in Low-Resource Target Language Transl"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

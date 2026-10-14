@@ -1,0 +1,175 @@
+{
+ "doc": "1611.07705",
+ "system": "outline",
+ "metrics": {
+  "gt": 24,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract",
+   "contact line for a dry surface",
+   "cussion",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Model",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Drop shape",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2 Diffusion-limited evaporation",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.2.1 Theoretical background",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2.2 Dry configuration",
+   "page": 2,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.2.3 Wet configuration",
+   "page": 3,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "2.3 Convective evaporation",
+   "page": 3,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4  Evaporation of dilute colloidal drops ",
+   "page": 5,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2.4.1 Hydrodynamics",
+   "page": 5,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "2.4.2 Uniform evaporation for a wet surface",
+   "page": 5,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "2.4.3 Evaporation with flux singularity at the contact line for a dry surface",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "2.4.4 Typical flow fields",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "2.5 Particle transport",
+   "page": 6,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3 Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Materials and methods",
+   "page": 8,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "3.2 Experimental observations and discussion",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4 Conclusion",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Appendix",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.09469959999842104,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 19,
+  "tp": 19,
+  "fp": 0,
+  "fn": 5,
+  "level_correct": 19,
+  "parent_correct": 19,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "Abstract",
+   "contact line for a dry surface",
+   "cussion",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 18,
+  "tp": 18,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.9047619047619048,
+  "unmatched_gt": [
+   "contact line for a dry surface",
+   "cussion"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

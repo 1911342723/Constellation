@@ -1,0 +1,158 @@
+{
+ "doc": "1705.10880",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "A. OPAL Principles",
+   "ACKN O W LED G M E NT"
+  ],
+  "unmatched_pred": [
+   "III-A OPAL Principles",
+   "References"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Identity Federation and Attribute Sharing: A Brief History",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Web Single Sign-On & Identity Providers",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Identity Federation",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "III Open Algorithms: Key Concepts & Principles",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A OPAL Principles",
+   "page": 3,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III-B OPAL Query-Response Model",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "III-C OPAL-based Data Sharing Federation",
+   "page": 4,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "IV OPAL for Identity Federation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Trust Framework for OPAL Federation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Consent Management in OPAL",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A Consent to Execute an Algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VI-B The UMA Model for Consent Management",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VII Future Directions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.07428739999886602,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "A. OPAL Principles",
+   "ACKN O W LED G M E NT"
+  ],
+  "unmatched_pred": [
+   "III-A OPAL Principles",
+   "References"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.9375,
+  "unmatched_gt": [
+   "A. OPAL Principles"
+  ],
+  "unmatched_pred": [
+   "III-A OPAL Principles"
+  ],
+  "ignored_title_predictions": null
+ }
+}

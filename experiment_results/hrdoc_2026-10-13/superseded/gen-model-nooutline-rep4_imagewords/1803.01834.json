@@ -1,0 +1,399 @@
+{
+ "doc": "1803.01834",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 21,
+  "pred": 49,
+  "tp": 21,
+  "fp": 28,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.42000000000000004,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "dWℓ",
+   "for ℓ = 1 to n do",
+   "end for",
+   "∂Wℓ , c1), ∇bℓ ← Normalize( ∂Lℓ(zℓ,yℓ",
+   "for k = 1 to K do",
+   "else if LRA-fdbk then",
+   "end if",
+   "end for",
+   "end while",
+   "EndFunction",
+   "sign(h) = sign(tanh(h))",
+   "bernoulli(h) = bernoulli∗(σ(h))",
+   "zℓ",
+   "Wij ∼ U\u0014 −√nin",
+   "internal subgraphs, LWTA-1 means tanh was used and LWTA-2 means hard-tanh",
+   "j if zi",
+   "exp(zi",
+   "k=1 exp(zi",
+   "h1 = W1x, z1 = sigm(h1)",
+   "h2 = W2S(z1), z2 = sigm(h2)",
+   "h3 = W3S(z2), z3 = softmax(h3)",
+   "Acknowledgments",
+   "for ℓ = 1 to n do",
+   "end for",
+   "∂Wℓ , c1), ∇bℓ ← Normalize( ∂Lℓ(zℓ,yℓ",
+   "end while",
+   "EndFunction",
+   "t ))(z1"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 44,
+  "tp": 17,
+  "fp": 27,
+  "fn": 0,
+  "level_correct": 17,
+  "parent_correct": 15,
+  "teds": 0.37777777777777777,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "dWℓ",
+   "for ℓ = 1 to n do",
+   "end for",
+   "∂Wℓ , c1), ∇bℓ ← Normalize( ∂Lℓ(zℓ,yℓ",
+   "for k = 1 to K do",
+   "else if LRA-fdbk then",
+   "end if",
+   "end for",
+   "end while",
+   "EndFunction",
+   "sign(h) = sign(tanh(h))",
+   "bernoulli(h) = bernoulli∗(σ(h))",
+   "zℓ",
+   "Wij ∼ U\u0014 −√nin",
+   "internal subgraphs, LWTA-1 means tanh was used and LWTA-2 means hard-tanh",
+   "j if zi",
+   "exp(zi",
+   "k=1 exp(zi",
+   "h1 = W1x, z1 = sigm(h1)",
+   "h2 = W2S(z1), z2 = sigm(h2)",
+   "h3 = W3S(z2), z3 = softmax(h3)",
+   "for ℓ = 1 to n do",
+   "end for",
+   "∂Wℓ , c1), ∇bℓ ← Normalize( ∂Lℓ(zℓ,yℓ",
+   "end while",
+   "EndFunction",
+   "t ))(z1"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 1160,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18109,
+   "completion_tokens": 917,
+   "total_tokens": 19026
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9367080209646388,
+  "inserted_word_share": 0.15379083008690442
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Local Representation Alignment",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Notation",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Setting the targets.",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "dWℓ",
+   "page": 4,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "2.3 Divide and Conquer",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "for ℓ = 1 to n do",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "end for",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "∂Wℓ , c1), ∇bℓ ← Normalize( ∂Lℓ(zℓ,yℓ",
+   "page": 6,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "for k = 1 to K do",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "else if LRA-fdbk then",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "end if",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "end for",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "end while",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "EndFunction",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3.1 Instantiation",
+   "page": 7,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "2.3.2 Handling Non-Differentiable/Stochastic Activations",
+   "page": 8,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "sign(h) = sign(tanh(h))",
+   "page": 8,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "bernoulli(h) = bernoulli∗(σ(h))",
+   "page": 8,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "zℓ",
+   "page": 8,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "2.4 Overcoming Poor Initializations",
+   "page": 8,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.5 Overcoming Exploding and Vanishing Gradients",
+   "page": 9,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3. Experimental Results",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Eﬀect of Manifold-Walking",
+   "page": 11,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "Wij ∼ U\u0014 −√nin",
+   "page": 11,
+   "level": 3,
+   "parent": 24
+  },
+  {
+   "text": "3.2 Robustness to Initialization",
+   "page": 12,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "3.3 Training from Null Initialization",
+   "page": 16,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "internal subgraphs, LWTA-1 means tanh was used and LWTA-2 means hard-tanh",
+   "page": 17,
+   "level": 3,
+   "parent": 27
+  },
+  {
+   "text": "j if zi",
+   "page": 17,
+   "level": 3,
+   "parent": 27
+  },
+  {
+   "text": "exp(zi",
+   "page": 18,
+   "level": 3,
+   "parent": 27
+  },
+  {
+   "text": "k=1 exp(zi",
+   "page": 18,
+   "level": 3,
+   "parent": 27
+  },
+  {
+   "text": "3.4 Stochastic Networks",
+   "page": 18,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "h1 = W1x, z1 = sigm(h1)",
+   "page": 20,
+   "level": 3,
+   "parent": 32
+  },
+  {
+   "text": "h2 = W2S(z1), z2 = sigm(h2)",
+   "page": 20,
+   "level": 3,
+   "parent": 32
+  },
+  {
+   "text": "h3 = W3S(z2), z3 = softmax(h3)",
+   "page": 20,
+   "level": 3,
+   "parent": 32
+  },
+  {
+   "text": "3.5 Feature Extraction versus Optimization",
+   "page": 21,
+   "level": 2,
+   "parent": 23
+  },
+  {
+   "text": "4. Related Work",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion & Future Work",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A.",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "for ℓ = 1 to n do",
+   "page": 27,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "end for",
+   "page": 27,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "∂Wℓ , c1), ∇bℓ ← Normalize( ∂Lℓ(zℓ,yℓ",
+   "page": 27,
+   "level": 3,
+   "parent": 42
+  },
+  {
+   "text": "end while",
+   "page": 27,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "EndFunction",
+   "page": 27,
+   "level": 2,
+   "parent": 40
+  },
+  {
+   "text": "Appendix B.",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "t ))(z1",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 39.309071499999845
+}

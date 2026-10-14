@@ -1,0 +1,102 @@
+{
+ "doc": "1710.11055",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "III. WHAT IS IMPRESS?"
+  ],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 90,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Using Social Network Analysis on classroom video data",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SOCIAL NETWORK ANALYSIS (SNA)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DATA COLLECTION AND CODING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. ANALYSIS AND DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS AND FUTURE WORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 6.590383500002645,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "III. WHAT IS IMPRESS?"
+  ],
+  "unmatched_pred": [
+   "Using Social Network Analysis on classroom video data",
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "III. WHAT IS IMPRESS?"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

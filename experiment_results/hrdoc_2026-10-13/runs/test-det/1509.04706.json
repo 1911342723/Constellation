@@ -1,0 +1,189 @@
+{
+ "doc": "1509.04706",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 20,
+  "tp": 14,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 The Manchester X-Ray Imaging Facility, School of Materials, The University of",
+   "2 The Manchester X-Ray Imaging Facility, Research Complex at Harwell, Didcot,",
+   "3 Visualization Group, Research Complex at Harwell, STFC, Oxfordshire, OX11",
+   "4 School of Mathematics, Alan Turing Building, The University of Manchester, M13",
+   "2 := uν./(A∗1). ∗ A∗(b./Auν); % MLEM step",
+   "Acknowledgments"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 516,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 The Manchester X-Ray Imaging Facility, School of Materials, The University of",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Manchester X-Ray Imaging Facility, Research Complex at Harwell, Didcot,",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Visualization Group, Research Complex at Harwell, STFC, Oxfordshire, OX11",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 School of Mathematics, Alan Turing Building, The University of Manchester, M13",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Method",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Image reconstruction problem",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2. Regularization",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3. A note on the regularization error",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.4. Edge-preserving piecewise-smooth regularization",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.5. Regularized reconstruction with LS data ﬁdelity term",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.6. Regularized reconstruction with Poisson data ﬁdelity term",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2 := uν./(A∗1). ∗ A∗(b./Auν); % MLEM step",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Numerical Results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. CT reconstruction",
+   "page": 8,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "3.2. ET reconstruction",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4. Discussion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusion",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 16.603193399998418,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 20,
+  "tp": 14,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 The Manchester X-Ray Imaging Facility, School of Materials, The University of",
+   "2 The Manchester X-Ray Imaging Facility, Research Complex at Harwell, Didcot,",
+   "3 Visualization Group, Research Complex at Harwell, STFC, Oxfordshire, OX11",
+   "4 School of Mathematics, Alan Turing Building, The University of Manchester, M13",
+   "2 := uν./(A∗1). ∗ A∗(b./Auν); % MLEM step",
+   "Acknowledgments"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 18,
+  "tp": 13,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 The Manchester X-Ray Imaging Facility, School of Materials, The University of",
+   "2 The Manchester X-Ray Imaging Facility, Research Complex at Harwell, Didcot,",
+   "3 Visualization Group, Research Complex at Harwell, STFC, Oxfordshire, OX11",
+   "4 School of Mathematics, Alan Turing Building, The University of Manchester, M13",
+   "2 := uν./(A∗1). ∗ A∗(b./Auν); % MLEM step"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "doc": "1803.05266",
+ "system": "det",
+ "metrics": {
+  "gt": 7,
+  "pred": 12,
+  "tp": 7,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 3,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Brigham and Women’s Hospital, Harvard Medical School, USA 2 Graduate School of",
+   "3 School of Computing, Queens University, Canada",
+   "7 Ecole de Technologie Superieure, Canada",
+   "8 Center for Advanced Intelligence Project, RIKEN, Japan",
+   "Abstract. Estimating the uncertainty in (probabilistic) image registration enabl"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 142,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "On the Applicability of Registration Uncertainty",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Brigham and Women’s Hospital, Harvard Medical School, USA 2 Graduate School of Frontier Sciences, The University of Tokyo, Japan",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 School of Computing, Queens University, Canada",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Ecole de Technologie Superieure, Canada",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8 Center for Advanced Intelligence Project, RIKEN, Japan",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract. Estimating the uncertainty in (probabilistic) image registration enables, e.g., surgeons to assess the operative risk based on the trustworthiness of the registered image data. If surgeons receive inaccurately calculated registration uncertainty and misplace unwarranted conﬁdence in the alignment solutions, severe consequences may result. For probabilistic image registration (PIR), the predominant way to quantify the registration uncertainty is using summary statistics of the distribution of transformation parameters. The majority of existing research focuses on trying out diﬀerent summary statistics as well as means to exploit them. Distinctively, in this paper, we study two rarely examined topics: (1) whether those summary statistics of the transformation distribution most informatively represent the registration uncertainty; (2) Does utilizing the registration uncertainty always be beneﬁcial. We show that there are two types of uncertainties: the transformation uncertainty, Ut, and label uncertainty Ul. The conventional way of using Ut to quantify Ul is inappropriate and can be misleading. By a real data experiment, we also share a potentially critical ﬁnding that making use of the registration uncertainty may not always be an improvement.",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2 The Ambiguity of Registration Uncertainty",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.1 The DPR Set Up",
+   "page": 2,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "2.2 Transformation Uncertainty and Label Uncertainty",
+   "page": 2,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "3 Credibility of Label Distribution",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Discussion",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 1.2084200999997847,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 13,
+  "tp": 7,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 3,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On the Applicability of Registration Uncertainty",
+   "1 Brigham and Women’s Hospital, Harvard Medical School, USA 2 Graduate School of",
+   "3 School of Computing, Queens University, Canada",
+   "7 Ecole de Technologie Superieure, Canada",
+   "8 Center for Advanced Intelligence Project, RIKEN, Japan",
+   "Abstract. Estimating the uncertainty in (probabilistic) image registration enabl"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 10,
+  "tp": 6,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 Brigham and Women’s Hospital, Harvard Medical School, USA 2 Graduate School of",
+   "3 School of Computing, Queens University, Canada",
+   "7 Ecole de Technologie Superieure, Canada",
+   "8 Center for Advanced Intelligence Project, RIKEN, Japan"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "doc": "1804.07878",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 23,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 17,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 17,
+  "parent_correct": 17,
+  "teds": 0.9,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 193,
+  "layout_marked": 22,
+  "content_preservation": 1.0,
+  "word_preservation": 0.939574546121401,
+  "inserted_word_share": 0.5331237470384546
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Multilingual Attentional NMT",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Sub-word Level NMT",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Lexiconized NMT",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Translation System",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Baseline Translation System",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Proposed Extensions",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2.1 Language Families and Cross-lingual",
+   "page": 2,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.2.2 Ablation Study on Target Training data",
+   "page": 2,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.2.3 Order-preserving Lexiconized NMT",
+   "page": 2,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4 Experiments and Results",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Data and Training Parameters",
+   "page": 3,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.2 Family labels and Intra-family &",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.3 Ablation Study on Target Training Data",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "4.4 Order-preserving Lexiconized NMT",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Conclusion and Future Directions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A Supplemental Materials",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.615930700005265,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 21,
+  "tp": 21,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "Learning",
+   "Inter-family Effects"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

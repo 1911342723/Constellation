@@ -1,0 +1,153 @@
+{
+ "doc": "1609.03570",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 9,
+  "teds": 0.4375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 8,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "I. FROM H TO NE TO K AND BACK"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 20.93028769999728
+ },
+ "predictions": [
+  {
+   "text": "Corrections to ns and nt from high scale physics",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. THEORY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Scalar fields in time dependent backgrounds",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Equation of motion in de Sitter space",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. The Bunch-Davies vacuum",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. α-vacua",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III. PHENOMENOLOGY",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Two-point functions and spectra",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Scale dependence",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Corrections from mixed states",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Corrections from α-vacua",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "E. Correction to the consistency relation",
+   "page": 6,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A: From H to Ne to k and back",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01595180000003893,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 9,
+  "teds": 0.4375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

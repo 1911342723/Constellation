@@ -1,0 +1,167 @@
+{
+ "doc": "1701.07756",
+ "system": "docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "propagation networks similarity"
+  ],
+  "unmatched_pred": [
+   "2 S. Jendoubi et al.",
+   "Algorithm 1: PrNet-DTW algorithm"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 19.51115199999913
+ },
+ "predictions": [
+  {
+   "text": "Dynamic time warping distance for message propagation classification in Twitter",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 S. Jendoubi et al.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related works",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Content based approaches",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Propagation based approaches",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Background",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Theory of belief functions",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 k Nearest Neighbors",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Proposed dynamic time warping distance for propagation networks similarity",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1: PrNet-DTW algorithm",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments and results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiments configuration",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Experiments evaluation",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Acknowledgement",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.012491099994804244,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [
+   "propagation networks similarity"
+  ],
+  "unmatched_pred": [
+   "Dynamic time warping distance for message propagation classification in Twitter",
+   "2 S. Jendoubi et al.",
+   "Algorithm 1: PrNet-DTW algorithm"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.4666666666666667,
+  "unmatched_gt": [
+   "propagation networks similarity"
+  ],
+  "unmatched_pred": [
+   "2 S. Jendoubi et al.",
+   "Algorithm 1: PrNet-DTW algorithm"
+  ],
+  "ignored_title_predictions": null
+ }
+}

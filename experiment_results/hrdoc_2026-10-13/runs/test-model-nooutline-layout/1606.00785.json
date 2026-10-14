@@ -1,0 +1,213 @@
+{
+ "doc": "1606.00785",
+ "system": "model-nooutline-layout",
+ "metrics": {
+  "gt": 27,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 10,
+  "level_correct": 17,
+  "parent_correct": 15,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "A. Encouraging Data Fidelity and Non-Negativity",
+   "C. Encouraging a Temporally Meaningful Template Order",
+   "D. Constraining the Concurrency of Templates",
+   "E. Differentiating between Estimation Noise and Note Events",
+   "F. Encouraging Meaningful Long-Term Note Activity",
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "F. Binary Markov-State and Strict Coupling Regularizer",
+   "Dataset",
+   "B. MIDI Aligned Piano Sounds (MAPS) Dataset",
+   "C. Influence of Individual Regularizers and Error Analysis"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 10,
+  "level_correct": 16,
+  "parent_correct": 14,
+  "teds": 0.5925925925925926,
+  "unmatched_gt": [
+   "A. Encouraging Data Fidelity and Non-Negativity",
+   "C. Encouraging a Temporally Meaningful Template Order",
+   "D. Constraining the Concurrency of Templates",
+   "E. Differentiating between Estimation Noise and Note Events",
+   "F. Encouraging Meaningful Long-Term Note Activity",
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "F. Binary Markov-State and Strict Coupling Regularizer",
+   "Dataset",
+   "B. MIDI Aligned Piano Sounds (MAPS) Dataset",
+   "C. Influence of Individual Regularizers and Error Analysis"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 807,
+  "layout_marked": 31,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10295,
+   "completion_tokens": 792,
+   "total_tokens": 11087
+  },
+  "content_preservation": 1.0,
+  "word_preservation": 0.9168194472737149,
+  "inserted_word_share": 0.6226277984292462
+ },
+ "predictions": [
+  {
+   "text": "Piano Transcription in the Studio Using an",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROPOSED MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Encouraging Sparsity",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. PARAMETER ESTIMATION USING THE ALTERNATING",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Consensus Form ADMM",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Linearized ADMM",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "V. MINIMIZING THE INDIVIDUAL TERMS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Kullback-Leibler Data Fidelity Term",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "B. Non-negativity Term",
+   "page": 7,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "C. LASSO and Total Diagonal Variation Terms Problem (9) in proximal form for the LASSO or ℓ1 term is",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "D. Markov-State Regularizer",
+   "page": 8,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "E. Thresholding Set Term",
+   "page": 9,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "VI. EXPERIMENTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. University of Minnesota / Native Instruments (UM-NI)",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENT",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.19397449999815,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 18,
+  "tp": 17,
+  "fp": 1,
+  "fn": 10,
+  "level_correct": 17,
+  "parent_correct": 15,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "A. Encouraging Data Fidelity and Non-Negativity",
+   "C. Encouraging a Temporally Meaningful Template Order",
+   "D. Constraining the Concurrency of Templates",
+   "E. Differentiating between Estimation Noise and Note Events",
+   "F. Encouraging Meaningful Long-Term Note Activity",
+   "D I R EC TIO N M ETH O D O F M U LT IP LIE R S",
+   "F. Binary Markov-State and Strict Coupling Regularizer",
+   "Dataset",
+   "B. MIDI Aligned Piano Sounds (MAPS) Dataset",
+   "C. Influence of Individual Regularizers and Error Analysis"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

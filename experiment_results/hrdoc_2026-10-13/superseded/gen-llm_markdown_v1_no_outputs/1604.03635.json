@@ -1,0 +1,432 @@
+{
+ "doc": "1604.03635",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 17,
+  "pred": 28,
+  "tp": 17,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.5517241379310345,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Multi-object tracking.",
+   "Deep learning.",
+   "Loss.",
+   "Loss.",
+   "Loss.",
+   "Network size.",
+   "Optimisation.",
+   "Data.",
+   "Baseline comparison.",
+   "Benchmark results.",
+   "Acknowledgments."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 10816,
+   "completion_tokens": 9824
+  },
+  "elapsed_llm_seconds": 42.110404899998684,
+  "content_preservation": 0.9444364266127868,
+  "inserted_word_share": 0.02342933890464105,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Online Multi-Target Tracking Using Recurrent Neural Networks",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "Introduction",
+    0,
+    2
+   ],
+   [
+    "Related Work",
+    1,
+    2
+   ],
+   [
+    "Multi-object tracking.",
+    1,
+    3
+   ],
+   [
+    "Deep learning.",
+    1,
+    3
+   ],
+   [
+    "Background",
+    1,
+    2
+   ],
+   [
+    "Recurrent Neural Networks",
+    1,
+    3
+   ],
+   [
+    "Bayesian Filtering",
+    2,
+    3
+   ],
+   [
+    "Our Approach",
+    2,
+    2
+   ],
+   [
+    "Preliminaries and Notation",
+    2,
+    3
+   ],
+   [
+    "Multi-Target Tracking with RNNs",
+    2,
+    3
+   ],
+   [
+    "Target Motion",
+    2,
+    3
+   ],
+   [
+    "Loss.",
+    3,
+    3
+   ],
+   [
+    "Initiation and Termination",
+    3,
+    3
+   ],
+   [
+    "Loss.",
+    4,
+    3
+   ],
+   [
+    "Data Association with LSTMs",
+    4,
+    3
+   ],
+   [
+    "Loss.",
+    4,
+    3
+   ],
+   [
+    "Training Data",
+    5,
+    2
+   ],
+   [
+    "Implementation Details",
+    5,
+    2
+   ],
+   [
+    "Network size.",
+    5,
+    3
+   ],
+   [
+    "Optimisation.",
+    5,
+    3
+   ],
+   [
+    "Data.",
+    5,
+    3
+   ],
+   [
+    "Experiments",
+    5,
+    2
+   ],
+   [
+    "Baseline comparison.",
+    6,
+    3
+   ],
+   [
+    "Benchmark results.",
+    6,
+    3
+   ],
+   [
+    "Discussion and Future Work",
+    6,
+    2
+   ],
+   [
+    "Acknowledgments.",
+    6,
+    2
+   ],
+   [
+    "References",
+    7,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Multi-object tracking.",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Deep learning.",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Recurrent Neural Networks",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Bayesian Filtering",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Our Approach",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Preliminaries and Notation",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Multi-Target Tracking with RNNs",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Target Motion",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Loss.",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Initiation and Termination",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Loss.",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Data Association with LSTMs",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Loss.",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Training Data",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Implementation Details",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Network size.",
+   "page": 5,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Optimisation.",
+   "page": 5,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Data.",
+   "page": 5,
+   "level": 2,
+   "parent": 18
+  },
+  {
+   "text": "Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Baseline comparison.",
+   "page": 6,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "Benchmark results.",
+   "page": 6,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "Discussion and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments.",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 42.238319399999455,
+ "metrics_raw": {
+  "gt": 17,
+  "pred": 29,
+  "tp": 17,
+  "fp": 12,
+  "fn": 0,
+  "level_correct": 2,
+  "parent_correct": 7,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Online Multi-Target Tracking Using Recurrent Neural Networks",
+   "Multi-object tracking.",
+   "Deep learning.",
+   "Loss.",
+   "Loss.",
+   "Loss.",
+   "Network size.",
+   "Optimisation.",
+   "Data.",
+   "Baseline comparison.",
+   "Benchmark results.",
+   "Acknowledgments."
+  ]
+ },
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 28,
+  "tp": 17,
+  "fp": 11,
+  "fn": 0,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.5517241379310345,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Multi-object tracking.",
+   "Deep learning.",
+   "Loss.",
+   "Loss.",
+   "Loss.",
+   "Network size.",
+   "Optimisation.",
+   "Data.",
+   "Baseline comparison.",
+   "Benchmark results.",
+   "Acknowledgments."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 25,
+  "tp": 15,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Multi-object tracking.",
+   "Deep learning.",
+   "Loss.",
+   "Loss.",
+   "Loss.",
+   "Network size.",
+   "Optimisation.",
+   "Data.",
+   "Baseline comparison.",
+   "Benchmark results."
+  ],
+  "ignored_title_predictions": null
+ }
+}

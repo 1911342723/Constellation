@@ -1,0 +1,168 @@
+{
+ "doc": "1701.07756",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "propagation networks similarity"
+  ],
+  "unmatched_pred": [
+   "2 S. Jendoubi et al.",
+   "Algorithm 1: PrNet-DTW algorithm"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [
+   "propagation networks similarity"
+  ],
+  "unmatched_pred": [
+   "2 S. Jendoubi et al.",
+   "Algorithm 1: PrNet-DTW algorithm"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 19.51115199999913
+ },
+ "predictions": [
+  {
+   "text": "Dynamic time warping distance for message propagation classification in Twitter",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 S. Jendoubi et al.",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related works",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Content based approaches",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Propagation based approaches",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Background",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Theory of belief functions",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 k Nearest Neighbors",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Proposed dynamic time warping distance for propagation networks similarity",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Algorithm 1: PrNet-DTW algorithm",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments and results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Experiments configuration",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "5.2 Experiments evaluation",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "6 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Acknowledgement",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.012491099994804244,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.8823529411764706,
+  "unmatched_gt": [
+   "propagation networks similarity"
+  ],
+  "unmatched_pred": [
+   "2 S. Jendoubi et al.",
+   "Algorithm 1: PrNet-DTW algorithm"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

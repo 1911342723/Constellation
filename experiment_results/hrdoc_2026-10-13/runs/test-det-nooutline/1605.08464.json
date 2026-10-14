@@ -1,0 +1,165 @@
+{
+ "doc": "1605.08464",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 18,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [
+   "A. Additive white gaussian noise in synthetic depth data",
+   "VII. CON CL US ION",
+   "AC KNOWL EDGMEN T"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 251,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Low-Cost Scene Modeling using a Density Function Improves Segmentation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Performance",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. DATASET GENERATION USING A DENSITY FUNCTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. ALGORITHM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Feature Selection",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Classiﬁer",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Conditional Random Fields",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. IMPLEMENTATION DETAILS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EXPERIMENTAL EVALUATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Collection",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Noise Evaluation",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "C. Feature Response Evaluation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Comparison of Models",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. Demonstration",
+   "page": 6,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "REFERENCES",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.999255400001857,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.42105263157894735,
+  "unmatched_gt": [
+   "A. Additive white gaussian noise in synthetic depth data",
+   "VII. CON CL US ION",
+   "AC KNOWL EDGMEN T"
+  ],
+  "unmatched_pred": [
+   "Low-Cost Scene Modeling using a Density Function Improves Segmentation",
+   "Performance"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 9,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "A. Additive white gaussian noise in synthetic depth data",
+   "VII. CON CL US ION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

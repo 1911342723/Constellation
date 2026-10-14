@@ -1,0 +1,152 @@
+{
+ "doc": "1803.09928",
+ "system": "outline",
+ "metrics": {
+  "gt": 19,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.85,
+  "unmatched_gt": [
+   "Abstract",
+   "Computing Density Entropy from Local Observation",
+   "References"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Motivating Problems (MSMPs)",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Background: Reinforcement Learning",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Q-Learning",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.2 Deep Q-Networks (DQN)",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4.3 Advantage Actor Critic (A2C)",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "5 Anonymous Multi-Agent Reinforcement Learning (AyMARL)",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Entropy based Independent Learning in AyMARL",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Density Entropy based Deep Q-Networks, DE-DQN",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "6.2 Density Entropy based A2C, DE-A2C",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "7 Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7.1 Implementation Details",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "7.2 Results",
+   "page": 6,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "8 Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9 Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.06356589999995776,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 16,
+  "tp": 16,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 16,
+  "parent_correct": 16,
+  "teds": 0.85,
+  "unmatched_gt": [
+   "Abstract",
+   "Computing Density Entropy from Local Observation",
+   "References"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.9411764705882353,
+  "unmatched_gt": [
+   "Computing Density Entropy from Local Observation"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

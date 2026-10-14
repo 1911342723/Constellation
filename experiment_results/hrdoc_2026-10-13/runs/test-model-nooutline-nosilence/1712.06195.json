@@ -1,0 +1,134 @@
+{
+ "doc": "1712.06195",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 3
+ },
+ "info": {
+  "blocks": 142,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4869,
+   "completion_tokens": 366,
+   "total_tokens": 5235
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Processing and Mechanical Property Characterization",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "of Aligned Carbon Nanotube Carbon Matrix",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Nanocomposites",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Nomenclature",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. Experimental Methods",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Nanocomposite Fabrication",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. SEM and Vickers Microhardness Testing",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III. Results and Discussion",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 18.068190699999832,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 12,
+  "tp": 9,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Processing and Mechanical Property Characterization",
+   "of Aligned Carbon Nanotube Carbon Matrix",
+   "Nanocomposites"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 7,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

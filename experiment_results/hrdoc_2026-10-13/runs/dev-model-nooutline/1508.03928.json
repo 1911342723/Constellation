@@ -1,0 +1,158 @@
+{
+ "doc": "1508.03928",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "TABLE I"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 462,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13252,
+   "completion_tokens": 619,
+   "total_tokens": 13871
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. RELATED WORKS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. CNN BASED SALIENCY DETECTION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Network architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Network training",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. CNN for Saliency detection",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. LCNN",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Exploring low-level features",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. LCNN for saliency detection",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V. EXPERIMENTAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Setup",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Ablation studies",
+   "page": 5,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Performance comparison",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 23.331637999999657,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "TABLE I"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6875,
+  "unmatched_gt": [
+   "TABLE I"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

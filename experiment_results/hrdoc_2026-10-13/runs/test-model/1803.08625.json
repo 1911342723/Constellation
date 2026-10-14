@@ -1,0 +1,325 @@
+{
+ "doc": "1803.08625",
+ "system": "model",
+ "metrics": {
+  "gt": 26,
+  "pred": 37,
+  "tp": 25,
+  "fp": 12,
+  "fn": 1,
+  "level_correct": 25,
+  "parent_correct": 24,
+  "teds": 0.6052631578947368,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [
+   "Li-C. Wang",
+   "Output: BDD dd",
+   "Output: BDD dd",
+   "Output: BDD dd",
+   "else",
+   "end",
+   "end",
+   "end",
+   "Output: BDD dd",
+   "VeSC-CoL",
+   "CART",
+   "ID3"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 441,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 15717,
+   "completion_tokens": 1116,
+   "total_tokens": 16833
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Li-C. Wang",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 VERSION SPACE LEARNING",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 VeSC-CoL OVERVIEW",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 HYPOTHESIS SPACE PARTITION",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 BDD-BASED LEARNING",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 VeSC-CoL FLOW",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.1 IDEA OF ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.3 HYPOTHESIS SUB-SPACE ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Output: BDD dd",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Output: BDD dd",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.4 POSITIVE SAMPLE SPACE ENCODING",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Output: BDD dd",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "else",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "end",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "end",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.5 NEGATIVE SAMPLE SPACE ENCODING",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "end",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.6 OBTAINING VERSION SPACE",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.6.1 Handling Non-Canonicality",
+   "page": 5,
+   "level": 3,
+   "parent": 19
+  },
+  {
+   "text": "Output: BDD dd",
+   "page": 5,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 SAT-BASED LEARNING",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 HYPOTHESIS SUB-SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "5.2 POSITIVE SAMPLE SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "5.3 NEGATIVE SAMPLE SPACE ENCODING",
+   "page": 6,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "5.4 SIZE OF VERSION SPACE",
+   "page": 6,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "6 EXPERIMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 RUNTIME COMPARISON",
+   "page": 6,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "6.2 COMPARISON WITH OTHER METHODS",
+   "page": 7,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "VeSC-CoL",
+   "page": 8,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "CART",
+   "page": 8,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "ID3",
+   "page": 8,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "6.3 COMPLEXITY ORDERING",
+   "page": 8,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "6.4 ACCURACY OF VeSC-CoL",
+   "page": 8,
+   "level": 2,
+   "parent": 27
+  },
+  {
+   "text": "7 CONCLUSION AND FUTURE WORK",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 19.080369100000098,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 37,
+  "tp": 25,
+  "fp": 12,
+  "fn": 1,
+  "level_correct": 25,
+  "parent_correct": 24,
+  "teds": 0.6052631578947368,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [
+   "Li-C. Wang",
+   "Output: BDD dd",
+   "Output: BDD dd",
+   "Output: BDD dd",
+   "else",
+   "end",
+   "end",
+   "end",
+   "Output: BDD dd",
+   "VeSC-CoL",
+   "CART",
+   "ID3"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 35,
+  "tp": 23,
+  "fp": 12,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 22,
+  "teds": 0.5833333333333333,
+  "unmatched_gt": [
+   "4.2 BASE HYPOTHESIS SPACE ENCODING"
+  ],
+  "unmatched_pred": [
+   "Li-C. Wang",
+   "Output: BDD dd",
+   "Output: BDD dd",
+   "Output: BDD dd",
+   "else",
+   "end",
+   "end",
+   "end",
+   "Output: BDD dd",
+   "VeSC-CoL",
+   "CART",
+   "ID3"
+  ],
+  "ignored_title_predictions": null
+ }
+}

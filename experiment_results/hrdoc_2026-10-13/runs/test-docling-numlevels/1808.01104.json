@@ -1,0 +1,139 @@
+{
+ "doc": "1808.01104",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 30.58966259999943
+ },
+ "predictions": [
+  {
+   "text": "Improved Deep Spectral Convolution Network For Hyperspectral Unmixing With Multinomial Mixture Kernel and Endmember Uncertainty",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. IMPROVED DEEP SPECTRAL CONVOLUTION NETWORK",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Multinomial Mixture Kernel For Abundance Maps",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Parameter Learning",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Spectral Variability Assumption",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Implementation Details",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Synthetic Dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Urban Dataset",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Jasper Dataset",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DISCUSSION AND CONCLUSION",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.0076720999932149425,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 13,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 11,
+  "parent_correct": 10,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

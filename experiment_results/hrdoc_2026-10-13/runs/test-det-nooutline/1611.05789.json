@@ -1,0 +1,153 @@
+{
+ "doc": "1611.05789",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 13,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.9333333333333333,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 IBM Research"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 93,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Applying Software Craftsmanship Practices to a Scrum",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Project: an Experience Report",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 IBM Research",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Software Craftsmanship Overview",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Background",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "2.2. Related Work",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3. Software Craftsmanship Applied to Scrum",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Target Application",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2. Well-crafted software vs Working Software",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.3. Steadily adding value vs Responding to change",
+   "page": 5,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.4. Community of professionals vs Individuals and interactions",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.5. Productive partnerships vs Customer collaboration",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4. Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Conclusions",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.424081199998909,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.8235294117647058,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Applying Software Craftsmanship Practices to a Scrum",
+   "Project: an Experience Report",
+   "1 IBM Research"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 IBM Research"
+  ],
+  "ignored_title_predictions": null
+ }
+}

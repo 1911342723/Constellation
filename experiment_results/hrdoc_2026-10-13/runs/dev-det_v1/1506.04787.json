@@ -1,0 +1,137 @@
+{
+ "doc": "1506.04787",
+ "system": "det",
+ "metrics": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "12) is closed loop stable as the Bode plot of Fig. 13 shows."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 277,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM DESIGN",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. VISION-BASED HEAD POSITION ESTIMATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SYSTEM IDENTIFICATION AND MODELING",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data Collection",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Data Pre-Processing and System Model Identiﬁcation Consider a single input, single output relationship in the",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Model Estimation",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "D. Residual Analysis",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "V. CONTROL DESIGN",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "12) is closed loop stable as the Bode plot of Fig. 13 shows.",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EXPERIMENTAL VALIDATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.818188299999747,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "12) is closed loop stable as the Bode plot of Fig. 13 shows."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "12) is closed loop stable as the Bode plot of Fig. 13 shows."
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,376 @@
+{
+ "doc": "1703.04824",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 28,
+  "pred": 26,
+  "tp": 26,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.9310344827586207,
+  "unmatched_gt": [
+   "1) Computing agreement:",
+   "2) Agreement results:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 22162,
+   "completion_tokens": 20683
+  },
+  "elapsed_llm_seconds": 95.60193979999895,
+  "content_preservation": 0.9901265470727298,
+  "inserted_word_share": 0.004961218643001919,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "In Search of a Dataset for Handwritten Optical Music Recognition: Introducing MUSCIMA++",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION: WHAT DATASET?",
+    0,
+    2
+   ],
+   [
+    "A. Contributions and outline",
+    1,
+    3
+   ],
+   [
+    "II. GROUND TRUTH OF MUSICAL SYMBOLS",
+    2,
+    2
+   ],
+   [
+    "A. Interfaces in the OMR pipeline",
+    2,
+    3
+   ],
+   [
+    "B. So – what should the ground truth be?",
+    4,
+    3
+   ],
+   [
+    "III. CHOICE OF DATA",
+    5,
+    2
+   ],
+   [
+    "A. Notation complexity",
+    5,
+    3
+   ],
+   [
+    "B. Image quality",
+    6,
+    3
+   ],
+   [
+    "C. Topological consistency",
+    6,
+    3
+   ],
+   [
+    "IV. EXISTING DATASETS",
+    6,
+    2
+   ],
+   [
+    "A. Staff removal",
+    6,
+    3
+   ],
+   [
+    "B. Symbol classiﬁcation and localization",
+    7,
+    3
+   ],
+   [
+    "C. Notation reconstruction and ﬁnal representation",
+    8,
+    3
+   ],
+   [
+    "V. THE MUSCIMA++ DATASET",
+    8,
+    2
+   ],
+   [
+    "A. Designated test sets",
+    9,
+    3
+   ],
+   [
+    "B. MUSCIMA++ ground truth",
+    9,
+    3
+   ],
+   [
+    "C. Available tools",
+    10,
+    3
+   ],
+   [
+    "D. Annotation process",
+    10,
+    3
+   ],
+   [
+    "E. Inter-annotator agreement",
+    11,
+    3
+   ],
+   [
+    "F. Known limitations",
+    12,
+    3
+   ],
+   [
+    "VI. CONCLUSION",
+    13,
+    2
+   ],
+   [
+    "A. What can we do with MUSCIMA++?",
+    13,
+    3
+   ],
+   [
+    "B. Future work",
+    13,
+    3
+   ],
+   [
+    "C. Final remarks",
+    13,
+    3
+   ],
+   [
+    "ACKNOWLEDGMENT",
+    13,
+    2
+   ],
+   [
+    "REFERENCES",
+    14,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION: WHAT DATASET?",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Contributions and outline",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. GROUND TRUTH OF MUSICAL SYMBOLS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Interfaces in the OMR pipeline",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. So – what should the ground truth be?",
+   "page": 4,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. CHOICE OF DATA",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Notation complexity",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Image quality",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Topological consistency",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "IV. EXISTING DATASETS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Staff removal",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Symbol classiﬁcation and localization",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "C. Notation reconstruction and ﬁnal representation",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. THE MUSCIMA++ DATASET",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Designated test sets",
+   "page": 9,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. MUSCIMA++ ground truth",
+   "page": 9,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "C. Available tools",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "D. Annotation process",
+   "page": 10,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "E. Inter-annotator agreement",
+   "page": 11,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "F. Known limitations",
+   "page": 12,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. What can we do with MUSCIMA++?",
+   "page": 13,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "B. Future work",
+   "page": 13,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "C. Final remarks",
+   "page": 13,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 95.80110749999949,
+ "metrics_raw": {
+  "gt": 28,
+  "pred": 27,
+  "tp": 26,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 0,
+  "parent_correct": 18,
+  "teds": 0.896551724137931,
+  "unmatched_gt": [
+   "1) Computing agreement:",
+   "2) Agreement results:"
+  ],
+  "unmatched_pred": [
+   "In Search of a Dataset for Handwritten Optical Music Recognition: Introducing MU"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 26,
+  "tp": 26,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 26,
+  "parent_correct": 26,
+  "teds": 0.9310344827586207,
+  "unmatched_gt": [
+   "1) Computing agreement:",
+   "2) Agreement results:"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 24,
+  "tp": 24,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 24,
+  "parent_correct": 24,
+  "teds": 0.9259259259259259,
+  "unmatched_gt": [
+   "1) Computing agreement:",
+   "2) Agreement results:"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

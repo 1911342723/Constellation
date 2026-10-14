@@ -1,0 +1,264 @@
+{
+ "doc": "1807.06789",
+ "system": "outline",
+ "metrics": {
+  "gt": 15,
+  "pred": 26,
+  "tp": 11,
+  "fp": 15,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.40740740740740744,
+  "unmatched_gt": [
+   "A. Data Collection",
+   "B. Training Process",
+   "C. CNN Models",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "II-B1 Region-based Detectors",
+   "II-B2 Single-Shot Detectors",
+   "III-A Data Collection",
+   "III-B Training Process",
+   "III-C CNN Models",
+   "III-C1 Number and Size of Filters",
+   "III-C2 Input Image Size",
+   "IV-1 Intersection over Union (IoU)",
+   "IV-2 Sensitivity",
+   "IV-3 Precision",
+   "IV-4 Frames-Per-Second (FPS)",
+   "IV-A1 Number and Size of Filters",
+   "IV-A2 Input Image Size",
+   "IV-B1 Odroid-XU4",
+   "IV-B2 Raspberry Pi 3 - Model B"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Background and Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II-A Related Work on UAV-based Vehicle Detection",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B Convolutional Neural Network Detectors",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II-B1 Region-based Detectors",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "II-B2 Single-Shot Detectors",
+   "page": 1,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III Proposed Approach",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Data Collection",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-B Training Process",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-C CNN Models",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "III-C1 Number and Size of Filters",
+   "page": 2,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-C2 Input Image Size",
+   "page": 2,
+   "level": 3,
+   "parent": 9
+  },
+  {
+   "text": "III-D Application Level Optimizations",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV Evaluation and Experimental Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV-1 Intersection over Union (IoU)",
+   "page": 2,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "IV-2 Sensitivity",
+   "page": 3,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "IV-3 Precision",
+   "page": 3,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "IV-4 Frames-Per-Second (FPS)",
+   "page": 3,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "IV-A Parameter Space Exploration on CPU Platform",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "IV-A1 Number and Size of Filters",
+   "page": 3,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "IV-A2 Input Image Size",
+   "page": 4,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "IV-B DroNet on UAV Platform",
+   "page": 4,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "IV-B1 Odroid-XU4",
+   "page": 5,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "IV-B2 Raspberry Pi 3 - Model B",
+   "page": 5,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "V Conclusion & Future Work",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.09307189999890397,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 26,
+  "tp": 11,
+  "fp": 15,
+  "fn": 4,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.40740740740740744,
+  "unmatched_gt": [
+   "A. Data Collection",
+   "B. Training Process",
+   "C. CNN Models",
+   "AC K NOWL E DGM EN T"
+  ],
+  "unmatched_pred": [
+   "II-B1 Region-based Detectors",
+   "II-B2 Single-Shot Detectors",
+   "III-A Data Collection",
+   "III-B Training Process",
+   "III-C CNN Models",
+   "III-C1 Number and Size of Filters",
+   "III-C2 Input Image Size",
+   "IV-1 Intersection over Union (IoU)",
+   "IV-2 Sensitivity",
+   "IV-3 Precision",
+   "IV-4 Frames-Per-Second (FPS)",
+   "IV-A1 Number and Size of Filters",
+   "IV-A2 Input Image Size",
+   "IV-B1 Odroid-XU4",
+   "IV-B2 Raspberry Pi 3 - Model B"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 25,
+  "tp": 10,
+  "fp": 15,
+  "fn": 3,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.42307692307692313,
+  "unmatched_gt": [
+   "A. Data Collection",
+   "B. Training Process",
+   "C. CNN Models"
+  ],
+  "unmatched_pred": [
+   "II-B1 Region-based Detectors",
+   "II-B2 Single-Shot Detectors",
+   "III-A Data Collection",
+   "III-B Training Process",
+   "III-C CNN Models",
+   "III-C1 Number and Size of Filters",
+   "III-C2 Input Image Size",
+   "IV-1 Intersection over Union (IoU)",
+   "IV-2 Sensitivity",
+   "IV-3 Precision",
+   "IV-4 Frames-Per-Second (FPS)",
+   "IV-A1 Number and Size of Filters",
+   "IV-A2 Input Image Size",
+   "IV-B1 Odroid-XU4",
+   "IV-B2 Raspberry Pi 3 - Model B"
+  ],
+  "ignored_title_predictions": null
+ }
+}

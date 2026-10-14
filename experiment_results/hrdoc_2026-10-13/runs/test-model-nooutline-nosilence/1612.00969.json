@@ -1,0 +1,238 @@
+{
+ "doc": "1612.00969",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 22,
+  "pred": 26,
+  "tp": 21,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "2. Rule based Extraction Features: We add a feature in-",
+   "3. RATE→",
+   "4. RATE←",
+   "2. Rule based Extraction Features: We add a feature indi-",
+   "1 then"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 212,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4552,
+   "completion_tokens": 411,
+   "total_tokens": 4963
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Unit Dependency Graph",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Learning to Predict UDGs",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Vertex Classiﬁer",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2. Rule based Extraction Features: We add a feature in-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Edge Classiﬁer",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3. RATE→",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. RATE←",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Rule based Extraction Features: We add a feature indi-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Constrained Inference",
+   "page": 1,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4 Joint Inference With An Arithmetic Solver",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Monotonic Expression Tree",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Arithmetic Word Problem Solver",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Joint Inference",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Consistent Rate Unit Graphs",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "1 then",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Data Acquisition",
+   "page": 4,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "UDG Prediction",
+   "page": 4,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "Solving Arithmetic Word Problems",
+   "page": 4,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "Discussion",
+   "page": 5,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "6 Related Work",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Conclusion",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.614474800000608,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 26,
+  "tp": 21,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.7037037037037037,
+  "unmatched_gt": [
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "2. Rule based Extraction Features: We add a feature in-",
+   "3. RATE→",
+   "4. RATE←",
+   "2. Rule based Extraction Features: We add a feature indi-",
+   "1 then"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 23,
+  "tp": 18,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 16,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "Dataset"
+  ],
+  "unmatched_pred": [
+   "2. Rule based Extraction Features: We add a feature in-",
+   "3. RATE→",
+   "4. RATE←",
+   "2. Rule based Extraction Features: We add a feature indi-",
+   "1 then"
+  ],
+  "ignored_title_predictions": null
+ }
+}

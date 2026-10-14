@@ -1,0 +1,244 @@
+{
+ "doc": "1808.02586",
+ "system": "det",
+ "metrics": {
+  "gt": 29,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Neural Posterior Approximator",
+   "Neural Prior Model",
+   "Text similarity critic",
+   "Domain critic"
+  ],
+  "unmatched_pred": [
+   "1 Pretrain G on (DS, YS) using VRALSTM;",
+   "2 while Θ has not converged do",
+   "18 end"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 502,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Variational Domain-Adaptation Neural Language Generator",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Variational Neural Encoder",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Variational Neural Inferer",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Variational Neural Decoder",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4 Critics",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 Training Domain Adaptation Model",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Training Critics",
+   "page": 4,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.2 Training Variational Generator",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "4.3 Adversarial Training",
+   "page": 5,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "1 Pretrain G on (DS, YS) using VRALSTM;",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 while Θ has not converged do",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "18 end",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Experiments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Results and Analysis",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Integrating Variational Inference",
+   "page": 6,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.2 Ablation Studies",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.3 Distance of Dataset Pairs",
+   "page": 7,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.4 Adaptation vs. All Training Scenario",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.5 Unsupervised Domain Adaptation",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.6 Comparison on Generated Outputs",
+   "page": 8,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7 Conclusion and Future Work",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Experimental Setups",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B. Generated Utterances",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.197530700002972,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 28,
+  "tp": 25,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "Neural Posterior Approximator",
+   "Neural Prior Model",
+   "Text similarity critic",
+   "Domain critic"
+  ],
+  "unmatched_pred": [
+   "1 Pretrain G on (DS, YS) using VRALSTM;",
+   "2 while Θ has not converged do",
+   "18 end"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 24,
+  "pred": 23,
+  "tp": 20,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 0.72,
+  "unmatched_gt": [
+   "Neural Posterior Approximator",
+   "Neural Prior Model",
+   "Text similarity critic",
+   "Domain critic"
+  ],
+  "unmatched_pred": [
+   "1 Pretrain G on (DS, YS) using VRALSTM;",
+   "2 while Θ has not converged do",
+   "18 end"
+  ],
+  "ignored_title_predictions": null
+ }
+}

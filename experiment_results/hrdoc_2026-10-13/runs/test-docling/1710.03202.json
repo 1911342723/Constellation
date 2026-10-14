@@ -1,0 +1,198 @@
+{
+ "doc": "1710.03202",
+ "system": "docling",
+ "metrics": {
+  "gt": 16,
+  "pred": 21,
+  "tp": 16,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RESEARCH ARTICLE",
+   "Correspondence",
+   "Funding Information",
+   "Abstract",
+   "KEYWORDS:"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 66.73502260000168
+ },
+ "predictions": [
+  {
+   "text": "RESEARCH ARTICLE",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Mesh-adaptive simulations of horizontal-axis turbine arrays using the actuator line method",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Correspondence",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Funding Information",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "KEYWORDS:",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 MODEL IMPLEMENTATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 UnsteadyRANS formulationof the governing equations",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Numerical implementation andmeshoptimization",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 TURBINEPARAMETRISATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 MODELVALIDATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Mesh convergence study",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 WindTunnel Tests",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 THE LILLGRUNDOFFSHOREWINDFARM",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Parametrisationof thewind farm",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2 Mesh strategies",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.3 Simulation setup",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.4 Computational efficiency",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 DISCUSSION",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.010630700002366211,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 22,
+  "tp": 16,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.4782608695652174,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RESEARCH ARTICLE",
+   "Mesh-adaptive simulations of horizontal-axis turbine arrays using the actuator l",
+   "Correspondence",
+   "Funding Information",
+   "Abstract",
+   "KEYWORDS:"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "RESEARCH ARTICLE",
+   "Correspondence",
+   "Funding Information"
+  ],
+  "ignored_title_predictions": null
+ }
+}

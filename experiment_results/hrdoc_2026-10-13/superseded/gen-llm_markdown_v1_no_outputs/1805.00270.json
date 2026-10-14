@@ -1,0 +1,232 @@
+{
+ "doc": "1805.00270",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9947,
+   "completion_tokens": 9396
+  },
+  "elapsed_llm_seconds": 41.40867040000012,
+  "content_preservation": 0.9618123958175481,
+  "inserted_word_share": 0.01885917452465602,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "Capturing Ambiguity in Crowdsourcing Frame Disambiguation",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "Introduction",
+    0,
+    2
+   ],
+   [
+    "Related Work",
+    0,
+    2
+   ],
+   [
+    "Crowdsourcing FrameNet",
+    0,
+    3
+   ],
+   [
+    "Disagreement and Ambiguity in Crowdsourcing",
+    1,
+    3
+   ],
+   [
+    "Crowdsourcing Setup",
+    1,
+    2
+   ],
+   [
+    "Dataset",
+    1,
+    3
+   ],
+   [
+    "Task Template",
+    2,
+    3
+   ],
+   [
+    "Disagreement Metrics",
+    2,
+    3
+   ],
+   [
+    "Crowd vs. Experts",
+    2,
+    2
+   ],
+   [
+    "Capturing Ambiguity",
+    3,
+    2
+   ],
+   [
+    "Conclusion",
+    7,
+    2
+   ],
+   [
+    "Acknowledgments",
+    7,
+    2
+   ],
+   [
+    "References",
+    7,
+    2
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Work",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Crowdsourcing FrameNet",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Disagreement and Ambiguity in Crowdsourcing",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "Crowdsourcing Setup",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Dataset",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Task Template",
+   "page": 1,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Disagreement Metrics",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "Crowd vs. Experts",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Capturing Ambiguity",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 41.57327710000027,
+ "metrics_raw": {
+  "gt": 14,
+  "pred": 15,
+  "tp": 14,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 5,
+  "teds": 0.9375,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Capturing Ambiguity in Crowdsourcing Frame Disambiguation"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,308 @@
+{
+ "doc": "1605.04133",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 13,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Ab initio coding of emergence.",
+   "Fragmentation of magnetism in the SI2 phase.",
+   "Looking for signatures of spin fragmentation.",
+   "Experimental evidence of spin fragmentation."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Ab initio coding of emergence.",
+   "Fragmentation of magnetism in the SI2 phase.",
+   "Looking for signatures of spin fragmentation.",
+   "Experimental evidence of spin fragmentation."
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "RESULTS",
+    0,
+    1
+   ],
+   [
+    "Ab initio coding of emergence.",
+    0,
+    2
+   ],
+   [
+    "Fragmentation of magnetism in the SI2 phase.",
+    0,
+    2
+   ],
+   [
+    "Looking for signatures of spin fragmentation.",
+    0,
+    2
+   ],
+   [
+    "Experimental evidence of spin fragmentation.",
+    0,
+    2
+   ],
+   [
+    "DISCUSSION",
+    0,
+    1
+   ],
+   [
+    "METHODS",
+    0,
+    1
+   ],
+   [
+    "Sample fabrication.",
+    0,
+    2
+   ],
+   [
+    "Thermal annealing protocol.",
+    0,
+    2
+   ],
+   [
+    "Estimation of an eﬀective temperature.",
+    0,
+    2
+   ],
+   [
+    "Monte Carlo simulations.",
+    0,
+    2
+   ],
+   [
+    "Dipolar hamiltonian.",
+    0,
+    2
+   ],
+   [
+    "Ab initio coding of emergence.",
+    0,
+    2
+   ],
+   [
+    "ACKNOWLEDGMENTS",
+    0,
+    1
+   ],
+   [
+    "AUTHOR CONTRIBUTIONS",
+    0,
+    1
+   ],
+   [
+    "ADDITIONAL INFORMATION",
+    0,
+    1
+   ],
+   [
+    "COMPETING FINANCIAL INTERESTS",
+    0,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 9378,
+   "completion_tokens": 9246
+  },
+  "elapsed_llm_seconds": 40.62765639999998,
+  "word_preservation": {
+   "recall": 0.9750994293619228,
+   "in_order": 0.9749265087324918,
+   "inserted": 0.04310198540641441
+  },
+  "output_markdown": "Fragmentation of magnetism in artiﬁcial kagome dipolar spin ice\nBenjamin Canals1,2, Ioan Augustin Chioar1,2, Van-Dai Nguyen1,2, Michel Hehn3, Daniel Lacour3, François\nMontaigne3, Andrea Locatelli4, Tevﬁk Onur Menteş4, Benito Santos Burgos4 & Nicolas Rougemaille1,2\n\nGeometrical frustration in magnetic materials often gives rise to exotic, low-temperature states of\nmatter, like the ones observed in spin ices. Here we report the imaging of the magnetic states of a\nthermally-active artiﬁcial magnetic ice that reveal the ﬁngerprints of a spin fragmentation process.\nThis fragmentation corresponds to a splitting of the magnetic degree of freedom into two channels\nand is evidenced in both real and reciprocal space. Furthermore, the internal organization of both\nchannels is interpreted within the framework of a hybrid spin-charge model that directly emerges\nfrom the parent spin model of the kagome dipolar spin ice. Our experimental and theoretical results\nprovide insights into the physics of frustrated magnets and deepen our understanding of emergent\nﬁelds through the use of tailor-made magnetism.\n\nFrustration refers to the inability of a complex sys-\ntem to satisfy all its constraints simultaneously [1]. Ge-\nometrical frustration arises when these constraints are\ndriven by the topology of an underlying lattice [2]. Ex-\namples of such systems can be found in a wide class of\nmagnetic materials [3] and artiﬁcial magnetic architec-\ntures [4–7] known as geometrically frustrated magnets.\nIn some cases, these systems are characterized by highly\nﬂuctuating ground state manifolds, often referred to as\nspin liquids, and can exhibit unusual magnetic excita-\ntions such as fractional quasi-particles [8].\n\nThe frustrated kagome Ising antiferromagnet is one of\nthe ﬁrst studied classical spin liquids, i.e.\na strongly\ncorrelated magnetic model exhibiting only short-range\nspin-spin correlations down to the lowest temperatures\n[9, 10]. This short-range antiferromagnetic model can be\nmapped, one to one, onto a short-range ferromagnetic\nmodel, where geometrical frustration is provided by mul-\ntiaxial Ising-like anisotropies [11]. The thermodynamics\nof both models is described by two temperature regimes:\na high-temperature paramagnet and a low-temperature\ncooperative paramagnet, in which every triangular unit\ncell of the kagome lattice obeys the so-called (kagome) ice\nrule, meaning that two spins are pointing in or out of each\ntriangle of the kagome lattice. This ice-like constraint on\na triangle is akin to the original vertex water-ice rule [12]\n(hence their name, spin ices) which lies at the heart of\nthe low-energy properties of square [13] and pyrochlore\n[14] spin ices.\n\nAdding long-range dipolar interactions to the short-\nrange frustrated multiaxial ferromagnet drastically mod-\niﬁes its low-temperature behavior [15]. The ﬁrst spin ice\nmanifold (SI1) survives over a ﬁnite temperature range\nand is then followed, at lower temperatures, by a second\nspin ice manifold (SI2), in which spin loop ﬂuctuations\ncoexist with an eﬀective magnetic charge crystal. Even-\ntually, a Néel-like ordering (Long Range Order - LRO)\noccurs at the lowest temperatures. In both the SI1 and\nSI2 phases, the kagome ice-rule is obeyed. However, the\nmagnetic charges, associated to the fractionalization of\neach spin into opposite pole pairs, are in a paramagnetic\nstate in the SI1 phase, while they crystallize in the SI2\nphase [15, 16]. Although more constrained, the SI2 phase\nremains macroscopically degenerated, as shown by its ﬁ-\nnite entropy.\n\nThe puzzling aspect of the SI2 phase is the emergence\nof the magnetic charge crystallization, which is a pri-\nori not encoded in the underlying dipolar spin ice model\n[15, 16]. Experimental evidences of charge crystallites in\nartiﬁcial kagome spin ices have been also reported [17–\n22] and interpreted with the use of a phenomenological\nspin-charge model [21]. Here, we provide a theoretical\nframework that allows us to reveal the microscopic origin\nof this emerging charge organization. Besides, in the par-\nticular case of the kagome dipolar spin ice, the formation\nof an antiferromagnetic charge crystal is a direct conse-\nquence of the recent proposal of spin fragmentation [23].\nFurthermore, by using thermally active kagome arrays of\nnanomagnets [18–22, 24, 25], we evidence experimental\nsignatures of this fragmentation of magnetism.\n\n# RESULTS\n\n## Ab initio coding of emergence.\n\nIn this section,\nwe discuss how the magnetic charge at the vertices is\nencoded into the Hamiltonian of the dipolar kagome spin\nice model and we reveal why these charges crystallize\nat low temperature. To do so, we consider the dipolar\nHamiltonian\n\nHdip = D\n2 ·\nX\n(i,j)\n[Si · Sj\nr3\nij\n−3 · (Si · rij) · (Sj · rij)\nr5\nij\n]\n(1)\n\nwhere D is the dipolar constant, rij the distance between\nsites i and j, and Si = σiei an Ising-like spin residing on\nsite i and pointing along its local anisotropy axis (see Fig-\nure 1a). Once this model is brought to low temperatures,\nice rules are unanimously fulﬁlled or, equivalently, the\ntotal magnetic charge at each vertex of the honeycomb\nlattice is ±1 (see Figure 1b). Since the vertex charges\nare deﬁned as local sum of the individual magnetic poles\nof the fractionalized spins, it is this spin/charge corre-\nspondence, together with the particular structure of the\ndipolar interactions in this lattice, which allow the rewrit-\ning of the microscopic spin model. The Hamiltonian then\nbecomes a hybrid spin-charge model with only Ising-like\nvariables,\n\nHdip = −˜J\nX\n⟨i,j⟩\nSi.Sj −˜κ\nX\n⟨u,v⟩\nQu.Qv + O\n\u0010\n1/r3\u0011\nr≥2rnn\n(2)\n\nwhere the ﬁrst term is a short-range spin ice kagome\nferromagnet (i.e.\nan Ising spin liquid), while the sec-\nond term corresponds to an antiferromagnet of magnetic\ncharges Q on an hexagonal lattice (see Methods section).\nThe remaining terms correspond to the longer-range part\nof the dipolar spin model. The sum of these last terms is,\nalgebraically speaking, absolutely convergent and they do\nnot interfere with the physics driven by the ﬁrst two con-\ntributions, except at very low temperatures where they\nlead to the Néel ordering (LRO).\n\nThis exact mapping of eq. 1 onto eq. 2 explains why\ncharge crystallization is observed in the SI2 phase. As\n\f\f\f ˜J\n\f\f\f > |˜κ|, the ﬁrst term ensures that kagome ice rules are\nfulﬁlled when the temperature is lowered, and the model\nﬂuctuates within the ﬁrst spin ice manifold, SI1.\nBe-\ncause the Ising charge-charge interaction is unfrustrated\nand is fully compatible with the SI1 constraint, it leads\nto charge crystallization when the temperature is further\nreduced, i.e. it selects a sub-manifold of the SI1 set, the\nSI2 manifold.\nWe emphasize that this exact algebraic\nmapping of the original spin model onto a hybrid spin-\ncharge Hamiltonian is one of the very few examples of ab\ninitio coding of emergence: the collective organization of\nmagnetic charges is directly related to the original micro-\nscopic spin degree of freedom.\n\n## Fragmentation of magnetism in the SI2 phase.\n\nOnce this model is brought into the SI2 phase, magnetic\ncharges at each vertex are constrained to Q = ±1. As\nnoted by Brooks-Bartlett and collaborators [23], a formal\nanalogy with electrostatics can be made and this distri-\nbution of unitary magnetic charges can be related to the\ndivergence of the local magnetization, which is propor-\ntional to the sum of the spins pointing inwards and out-\nwards of the corresponding triangle of the kagome lattice.\nThis means that\n\n∇.\n\nX\ni∈v\nSi\n\n∝Qv\n(3)\n\nwhere Si is one of the 3 spins participating to the vertex\nv and Qv the associated unitary charge. Applying a lat-\ntice Helmholtz-Hodge decomposition on the vector ﬁeld\n{P\ni∈v Si}v results in a splitting into a curl-free and a\ndivergence-free contribution,\n\nX\ni∈v\nSi = ∇(φv) + ∇× Cv\n(4)\n\nwhere φ is a scalar ﬁeld and C a vector ﬁeld. From this\ndecomposition, it is clear that only the scalar ﬁeld φ car-\nries information on the magnetic charge as\n\n∇.\n\nX\ni∈v\nSi\n\n= ∆φv ∝Qv\n(5)\n\nIt is worth noting that such decomposition is simply an\nalgebraic rewriting and can be applied to any vector ﬁeld\ndeﬁned on a lattice.\n\nThe remarkable property of this model is the decou-\npling at low temperatures of the divergence-free and\ndivergence-full channels.\nWithin the SI2 region, the\nscalar ﬁeld φ orders because of the Qu.Qv term in the\nHamiltonian, which leads to the charge crystallization.\nOn the other hand, the ﬁrst two terms of the hybrid\nspin-charge Hamiltonian do not impact the vector ﬁeld C,\nleaving it free to ﬂuctuate. This last property, associated\nto its natural divergence free nature, deﬁnes a so-called\nCoulomb phase [26]. This exotic state of matter, within\nwhich order and disorder coexist, is very unusual as both\naspects of magnetic organization are carried by the same\ndegree of freedom, hence the name fragmentation.\n\n## Looking for signatures of spin fragmentation.\n\nThis\ntheoretical framework provides insights into how ﬁnger-\nprints of this fragmentation process can potentially be\nrevealed in experiments. While Figure 2 details the\nfragmentation process in real space, a more straightforward\nway to visualize it is by plotting the magnetic structure\nfactor S(q), i.e. the Fourier transform of spin-spin cor-\nrelations. In reciprocal space, the static divergence-full\nchannel is revealed through magnetic Bragg peaks, while\nthe divergence-free channel appears as a structured dif-\nfuse signal [23].\nIt is the coexistence of both types of\nsignal which demonstrates spin fragmentation. The tem-\nperature dependence of the 2-dimensional (2D) magnetic\nstructure factor for the dipolar spin ice model has been\ncomputed using Monte Carlo simulations (see Methods\nsection) and is reported in Figure 1c along with the tem-\nperature dependence of the entropy and speciﬁc heat.\nIn the following analysis of our measurements, it is this\ncoexistence of Bragg peaks and structured diﬀuse back-\nground signal that we use to evidence the spin fragmen-\ntation process experimentally.\nNote that charge crys-\ntallization corresponds to a rather counter-intuitive phe-\nnomenon. The magnetic charge crystal is the emerging\ndescription of an antiferromagnetic all-in / all-out frag-\nmented spin ordering, as depicted in Figure 2, in a nev-\nertheless ferromagnetic spin model. Real space imaging\nof artiﬁcial spin ice systems allows direct visualization of\nthis counter-intuitive phenomenon.\n\n## Experimental evidence of spin fragmentation.\n\nEv-\nidencing the spin fragmentation process in artiﬁcial\nkagome spin ice is challenging, mainly because of the ex-\nperimental diﬃculty to bring such systems into their low-\nenergy manifolds, where collective phenomena emerge.\nIn the following, we show however that this can be done in\nthermally-active, kagome arrays of connected Gd0.3Co0.7\nnanomagnets (see Methods section, Supplementary Note\n1 and Supplementary Figure 1), which have been stud-\nied using XMCD-PEEM magnetic imaging (see Methods\nsection). A typical magnetic image is reported in Figure\n3a. Black and white contrasts allow the determination of\nthe magnetization direction within each single nanomag-\nnet. Hence, the overall spin conﬁguration of the array is\ndeduced together with the distribution of the associated\nmagnetic charges at the vertex sites.\n\nUsing the spin conﬁguration of the whole lattice ob-\ntained from our XMCD-PEEM measurements, we can\ncompute the magnetic structure factor and compare it\nto the one predicted by Monte Carlo simulations at a\nsimilar eﬀective temperature (the eﬀective temperature\nof our array is estimated by comparing the measured\nspin-spin correlation coeﬃcients to their thermodynamic\nvalues [17, 18, 27], see Methods section). The result is\nreported in Figure 4. At ﬁrst sight, there is a fairly good\nqualitative agreement between the experimental [Figure\n4a, top] and theoretical [Figure 4a, bottom] 2D maps of\nthe magnetic structure factor. The most striking feature\nof the experimental map consists in the clear ﬁngerprints\nof a spin fragmentation process which are twofold: ap-\npearance of Bragg peaks (see black circles) and a struc-\ntured diﬀuse background signal accounting for the disor-\ndered phase of the divergence-free component (see yellow\nregions in the 2D maps).\nWe emphasize again that it\nis this coexistence which demonstrates spin fragmenta-\ntion. The sole presence of charge ordering is not suﬃ-\ncient to evidence spin fragmentation, as the key aspect\nof this phenomenon is the emergent decoupling of the\ndivergence-free and divergence-full spin channels.\nFor\nexample, the LRO ground state or a saturated magnetic\nconﬁguration would directly relate charge crystallization\nto spin ordering (i.e. there is no fragmentation of mag-\nnetism through the decoupling of the two channels).\n\nThis qualitative agreement between the experimental\nand theoretical maps can be made more quantitative.\nFigure 4b provides a comparison between the experimen-\ntal and the theoretical magnetic structure factors along\na q-scan through the reciprocal space, passing through\nthe fragmentation peak [black circle in Fig. 4a]. Because\nthe experimental statistics is low, we have reported the\ntheoretical Monte Carlo signal along the q-scan with its\nstandard deviations in order to quantify the likelihood of\nthe dipolar spin ice model (DSI) to describe our measure-\nments. It appears that the DSI model captures quantita-\ntively the fragmentation process. The experimental im-\nage also displays several regions of alternating +1 and −1\nmagnetic charges, pointing to incipient charge ordered\ncrystallites. This sample has therefore not reached the\nthermodynamic SI2 phase, within which a unique crys-\ntallite would be expected, and is consistent with the ef-\nfective temperature T/Jnn = 0.051 deduced for the spin-\nspin correlator analysis, that place the array deep into\nthe SI1 phase. Thanks to the real space imaging of this\nartiﬁcial magnet, the lattice Helmholtz-Hodge decompo-\nsition can be performed for each crystallite. One of these\ncrystallites is highlighted by an orange rectangle and bet-\nter illustrated in Figure 3b. Along with the black arrows\nthat indicate the local spin directions, we use again the\nred/blue color code for each kagome triangle to represent\nthe vertex charge state. In this selected region, there is\nno spin order, although the magnetic charge has crys-\ntallized [18–21] and is embodied in a fragmented all-in /\nall-out antiferromagnetic spin ordering [see Fig. 3c]. The\narray has thus been brought, locally, into the SI2 phase.\n\nFinally, we emphasize that our observation of a spin\nfragmentation process is not limited to the case of our\nthermally active GdCo alloy spin ice system. Very sim-\nilar results have been obtained with more conventional,\nathermal, permalloy-based kagome arrays, that we de-\nmagnetized using a ﬁeld protocol prior to their imaging\nin a Magnetic Force Microscope. In these types of sam-\nples, we also observed the coexistence of Bragg peaks and\na structured diﬀuse background signal in the 2D maps of\nthe magnetic structure factor (see Supplementary Note\n2, Supplementary Table 1 and Supplementary Figure 2),\nthus proving the generality of the concept and the capa-\nbility to measure it experimentally using diﬀerent mate-\nrials and demagnetization protocols.\n\n# DISCUSSION\n\nIn conclusion,\nwe report the experimental signa-\ntures of a magnetic-moment fragmentation process in a\nthermally-active artiﬁcial magnet and provide a theoret-\nical framework to interpret this emerging phenomenon.\nWe emphasize that the long-range dipolar nature of the\ninteractions in artiﬁcial magnetic ices is at the heart of\nboth our experimental and theoretical results. Achieving\na complete tuning of the cooling procedure now becomes\nan ultimate goal as it would provide a statistical physics\nlaboratory, paving the way for engineered magnetic struc-\ntures and their use to understand, realize and control new\nstates of matter, be they artiﬁcial or not.\n\n# METHODS\n\n## Sample fabrication.\n\nOur samples were fabricated on Si substrates from full\nﬁlms grown by ultra-high vacuum sputtering (base pres-\nsure in the 10−9 mbar range). The ﬁnal stack has the fol-\nlowing composition: Si//Ta (5 nm)/Gd0.3Co0.7 (10 nm)/\nRu (2.6 nm). The 5 nm-thick Ta layer is used as a buﬀer\nfor the subsequent growth of the magnetic GdCo ﬁlm,\nwhich is ﬁnally capped with a 2.6 nm-thick Ru layer.\nThe capping material and its thickness have been opti-\nmized in order to protect the sample from oxidation and\nagainst chemical treatments during the lithography pro-\ncess, while still keeping high the magnetic contrast in\nimaging conditions.\nThe Gd0.3Co0.7 material is a fer-\nrimagnetic alloy characterized by a Curie temperature\n(TC) of about 475 K, which was adjusted by co-sputtering\nCo and Gd in DC mode to control the alloy composition.\nAdditional information on the magnetic properties of the\nGdCo alloy is provided in the Supplementary Note 1.\nThe arrays that we fabricated using e-beam lithography\nand ion beam etching are composed of 342 nanomagnets\nhaving typical dimensions of 500 × 100 × 10 nm3.\nAt\nroom temperature, each nanomagnet has a magnetiza-\ntion pointing along the long axis of the element, due to\nshape anisotropy, and can thus be considered as an Ising\npseudo-spin.\n\n## Thermal annealing protocol.\n\nExperimentally, the arrays are ﬁrst saturated using\nan external magnetic ﬁeld to set the initial spin con-\nﬁguration in a well-deﬁned state. The arrays are then\nheated up above the Curie temperature of the material\nby passing a current through a W ﬁlament underneath\nthe sample stage. The cooling procedure was performed\nas follow: when reaching the targeted temperature the\nﬁlament current was quickly switched oﬀto avoid the\npresence of an Oersted ﬁeld while cooling down the sam-\nple through TC. The typical cooling time is 30 minutes\nand is basically limited by the thermal dissipation into\nthe sample holder. After cooling down the sample back\nto room temperature, the resulting spin conﬁgurations of\nthe arrays are imaged using X-xay PhotoEmission Elec-\ntron Microscopy (PEEM) combined with X-ray Circular\nMagnetic Dichroism (XMCD). Measurements were done\nat the Nanospectroscopy beamline of the Elettra syn-\nchrotron, Trieste, Italy.\n\n## Estimation of an eﬀective temperature.\n\nAlthough in a frozen magnetic state (i.e.\nthe mag-\nnetic conﬁguration does not evolve anymore once the\nsample is at room temperature) when being imaged,\nan eﬀective temperature can be associated to the spin\nconﬁguration resulting from our thermal treatment. To\ndo so, we proceed similarly to what we did in previ-\nous works by employing a standard deviation analysis\nthrough the use of a ”spread-out” function based on\nthe spin-spin correlators [18, 27].\nThis \"spread-out\"\nfunction is deﬁned as:\nK(T/Jnn) =\np\n( P\nj(Cexp\nj\n−\nCMC\nj\n(T/Jnn))2) where Cexp\nj\nrepresent the experimental\ncorrelations, while CMC\nj\n(T/Jnn) are the average Monte\nCarlo correlations at a given temperature T/Jnn, with j\nranging from 1, the nearest-neighbor correlation, up to 7\n(the 7th next nearest-neighbors). For our set of experi-\nmental values, this function can be computed over the en-\ntire range of Monte Carlo temperatures. The minimum of\nK(T/Jnn) deﬁnes the eﬀective temperature. Additional\nworks on artiﬁcial spin ice systems where an eﬀective\ntemperature is associated to an arrested (i.e. frozen) mi-\ncrostates can be found for example in Refs.[29, 30].\n\n## Monte Carlo simulations.\n\nThe Monte Carlo simulations were performed on 12 ×\n12 × 3 kagome lattice sites with periodic boundary con-\nditions (PBC). This geometry corresponds to the PBC\ncluster having the closest number of sites to the one of\nthe ﬁnite experimental realization, and compatible with\nthe periodicity of the Long Range Order expected at the\nlowest temperatures.\n104 modiﬁed Monte Carlo steps\n(MMCS) are used for thermalization and measurements\nare computed over 104 MMCS, where one MMCS in-\nvolves local spin-ﬂips as well as global loop-ﬂips, such\nthat the analysis of the integrated correlation time calcu-\nlated on the ﬂy ensures stochastic decorrelation between\nmeasurements. We note that simulations performed for a\nnetwork of 342 spins with free boundary conditions yield\nvery similar results. Furthermore, the same ground-state\nconﬁguration is found for this particular ﬁnite system size\nas in the inﬁnite network case. Both types of simulations\nensure that all the physics at stake, be it experimental\nor theoretical, does not depend on the cluster geometry\nor on the boundary conditions.\n\n## Dipolar hamiltonian.\n\nNanomagnets interact through the magnetostatic in-\nteraction. They possess a strong anisotropic shape (as-\npect ratio of about 5) and are well approximated by Ising-\nlike variables oriented along their long axis. As shown in\nRef.[17], the point dipole approximation of the magneto-\nstatic terms is valid only beyond nearest neighbors. For\nthe closest elements, their shape and proximity prevent\nthe dipolar approximation to be valid. It appears how-\never that multipolar terms can actually be taken into ac-\ncount correctly, provided that the nearest neighbor dipo-\nlar term is enhanced by an extra coupling J1. The full\nHamiltonian describing this system then reads\n\nH = −J1\nX\n⟨i,j⟩\nSi.Sj+D\n2 ·\nX\n(i,j)\n[Si · Sj\nr3\nij\n−3 · (Si · rij) · (Sj · rij)\nr5\nij\n]\n(6)\n\nwhere D is the dipolar constant, rij the distance be-\ntween sites i and j, and Si = σi ei the spin residing on\nsite i, with σi an Ising variable and ei one of the three\npossible anisotropy directions of the kagome lattice. To\nscale the temperature, we rely on the eﬀective coupling\nJnn = J1/2+7D/4. This coupling quantiﬁes the nearest-\nneighbor eﬀective interaction between two nanomagnets,\ni.e. the absolute temperature at which the model is ex-\npected to enter the ﬁrst spin ice manifold, SI1. Following\nour previous work [17], J1 is chosen such that Jnn = 5D\nto account for the multipolar terms mentioned above.\n\n## Ab initio coding of emergence.\n\nGiven the fractionalization of the spins into oppo-\nsite magnetic poles, the total magnetic charge for each\nkagome vertex can be written as the sum of three individ-\nual charge contributions [see Figure 5a]. Using the scalar\nvalues (σi = ±1) that deﬁne the orientation of each lat-\ntice spin (Si) with respect to their local anisotropy axis\n(ei), i.e. Si = σi ei, the value of each vertex charge can\nbe expressed as the sum of these local spin scalars,\n\nQ∆= −\nX\ni∈∆\nσi\nand\nQ∇=\nX\ni∈∇\nσi ,\n(7)\n\nwhere Q∆and Q∇are the values of the vertex charges\nof a ∆-type/∇-type kagome triangle, while the −sign\nensures global charge neutrality.\nA nearest-neighbor\ncharge-charge term, Qu · Qv, where u and v are the in-\ndices of the hexagonal lattice, involves the product of two\nQ∆,∇charges, which can be expanded into a summation\nof σi.σj pairs. Furthermore, by conveniently arranging\nthe resulting pairs into their corresponding correlation\nclasses [see Figure 5b], this charge-charge term can be\nexpressed as a linear combination of the ﬁrst three pair-\nwise scalar spin correlators,\n\n(QuQv) = −1 + 8 · Cαβ + 4 · Cαγ −2 · Cαν\n(8)\n\nThis relation between the nearest-neighbor charge corre-\nlator and the spin correlators is the cornerstone of the\nhybrid spin-charge model description, which can be tai-\nlored out of the dipolar Hamiltonian,\n\nHdip = D\n2 ·\nX\n(i,j)\n[Si · Sj\nr3\nij\n−3 · (Si · rij) · (Sj · rij)\nr5\nij\n]\n(9)\n\nwhere rij stands for the relative position vector between\nthe two spins Si and Sj, and D is the dipolar coupling\nconstant. Note that the dipolar Hamiltonian involves all\nspin-spin correlations, in particular the ones needed in\neq.\n8.\nExpanding the dipolar couplings and grouping\nthem appropriately allows to rewrite the Hamiltonian as:\n\nHdip = −˜J\nX\n⟨i,j⟩\nSi · Sj −˜κ\nX\n⟨u,v⟩\nQu · Qv + D\n2 ·\nX\n(i,j)\nrij≥2rnn\n[Si · Sj\nr3\nij\n−3 · (Si · rij) · (Sj · rij)\nr5\nij\n]\n(10)\n\nwhich will be written, for the sake of clarity,\n\nHdip = −˜J\nX\n⟨i,j⟩\nSi · Sj −˜κ\nX\n⟨u,v⟩\nQu · Qv + O\n\u0010\n1/r3\u0011\nr≥2rnn\n(11)\n\nwith ˜J = 2Deﬀ(7/4 + 5\n√\n3/9), ˜κ = −5Deﬀ\n√\n3/18, Deﬀ=\nD/r3\nnn and rnn the nearest-neighbor distance. Since the\ncoupling constants ˜J and ˜κ are positive and negative, re-\nspectively, they correspond to a ferromagnetic coupling\nbetween the nearest neighboring spins and to an anti-\nferromagnetic coupling between the nearest neighboring\nvertex charges. As mentioned in the manuscript, the ﬁrst\none ensures that ice rules are fulﬁlled, while the second\none leads to charge crystallization at lower temperatures,\nas | ˜J| > |˜κ|. Note also that the charge-charge term is\nfully compatible with the spin-spin coupling and is not\nfrustrated as it is deﬁned on the hexagonal lattice. The\nremaining longer-range couplings play an important role\nas well as they ultimately lead to the magnetic order-\ning at the lowest temperatures. This magnetic ordering\ndoes not interfere with the ﬁrst two terms of the hybrid\nspin-charge model: it is compatible with the kagomé ice\nrules, the magnetic charge crystal, and the absolute con-\nvergence of the series of the longer-range couplings shows\nthat this ordering takes place at temperatures lower than\n|˜κ| (and hence than | ˜J| as well).\n\n[1] Toulouse, G. Modern Trends in the Theory of Condensed\nMatter. Lecture Notes in Physics 115 (eds Pekalski, A.\n& Przystawa, J. A.) (1980).\n\n[2] Sadoc, J.-F. & Mosseri, R. Geometrical Frustration.\n(Cambridge Univ. Press, 1999).\n\n[3] Ramirez, A. Strongly Geometrically Frustrated Magnets.\nAnnu. Rev. Matter. Sci. 24, 453-480 (1994).\n\n[4] Nisoli, C., Moessner, R. & Schiﬀer, P. Artiﬁcial spin ice:\nDesigning and imaging magnetic frustration. Rev. Mod.\nPhys. 85, 1473-1490 (2013).\n\n[5] Heyderman, L. J. & Stamps, R. L. Artiﬁcial ferroic sys-\ntems: novel functionality from structure, interactions and\ndynamics. J. Phys. Condens. Mat. 25, 363201 (2013).\n\n[6] Wang, R. F. et al. Artiﬁcial spin ice in a geometrically\nfrustrated lattice of nanoscale ferromagnetic islands. Na-\nture 439, 303-306 (2006).\n\n[7] Qi, Y., Brintlinger, T. & Cumings, J. Direct observation\nof the ice rule in an artiﬁcial kagome spin ice. Phys. Rev.\nB 77, 094418 (2008).\n\n[8] Castelnovo, C., Moessner, R. & Sondhi, S. L. Magnetic\nmonopoles in spin ice. Nature 451, 42-45 (2008).\n\n[9] Syozi, I.. Statistics of kagome lattice. Prog. Theor. Phys.\n6, 306-308 (1951).\n\n[10] Kano, K. & Naya, S. Antiferromagnetism. the kagome\nising net. Prog. Theor. Phys. 10, 158-172 (1953).\n\n[11] Moessner, R. Relief and generation of frustration in py-\nrochlore magnets by single-ion anisotropy. Phys. Rev. B\n57, R5587-R5589 (1998).\n\n[12] Bernal, J. D., Fowler, R. H. A Theory of Water and Ionic\nSolution, with Particular Reference to Hydrogen and Hy-\ndroxyl Ions. J. Chem. Phys. 1, 515-548 (1933).\n\n[13] Lieb, E. H. Residual Entropy of Square Ice. Physical Re-\nview 162, 162-172 (1967).\n\n[14] Bramwell, S.T. & Gingras, M.J.P. Spin Ice State in\nFrustrated Magnetic Pyrochlore Materials. Science 294,\n1495-1501 (2001).\n\n[15] Möller, G. & Moessner, R. Magnetic multipole analysis of\nkagome and artiﬁcial spin-ice dipolar arrays. Phys. Rev.\nB 80, 140409(R) (2009).\n\n[16] Chern, G.-W., Mellado, P. & Tchernyshyov, O. Two-\nstage ordering of spins in dipolar spin ice on kagome.\nPhys. Rev. Lett. 106, 207202 (2011).\n\n[17] Rougemaille, N. et al. Artiﬁcial kagome arrays of nano-\nmagnets: a frozen dipolar spin ice. Phys. Rev. Lett. 106,\n057209 (2011).\n\n[18] Chioar, I. A. et al. Kinetic pathways to the magnetic\ncharge crystal in artiﬁcial dipolar spin ice. Phys. Rev. B\n90, 220407(R) (2014).\n\n[19] Montaigne, F. et al. Size distribution of magnetic charge\ndomains in thermally activated but out-of-equilibrium ar-\ntiﬁcial spin ice. Sci. Rep. 4, 5702 (2014).\n\n[20] Drisko, J., Daunheimer, S. and Cumings, J. FePd3 as a\nmaterial for studying thermally active artiﬁcial spin ice\nsystems. Phys. Rev. B 91, 224406 (2015).\n\n[21] Zhang, S. et al. Crystallites of magnetic charges in arti-\nﬁcial spin ice. Nature 500, 553-557 (2013).\n\n[22] Anghinolﬁ, L. et al. Thermodynamic phase transitions in\na frustrated magnetic metamaterial. Nature Communica-\ntions 6, 8278 (2015).\n\n[23] Brooks-Bartlett, M. E. , Banks, S. T. , Jaubert, L. D. C.\n, Harman-Clarke, A. & Holdsworth, P. C. W. Magnetic-\nMoment Fragmentation and Monopole Crystallization.\nPhys. Rev. X 4, 011007 (2014).\n\n[24] Farhan, A. et al. Exploring hyper-cubic energy land-\nscapes in thermally active ﬁnite artiﬁcial spin-ice sys-\ntems. Nat. Phys. 9, 375Ð382 (2013).\n\n[25] Farhan, A. et al. Thermally induced magnetic relaxation\nin building blocks of artiﬁcial kagome spin ice. Phys. Rev.\nB 89, 214405 (2014).\n\n[26] Henley, C. L. The ‘‘Coulomb Phase’’ in Frustrated Sys-\ntems. Annu. Rev. Condens. Matter Phys. 1, 179-210\n(2010).\n\n[27] Chioar, I. A. et al. Nonuniversality of artiﬁcial frustrated\nspin systems. Phys. Rev. B 90, 064411 (2014).\n\n[28] Fennell, T., Bramwell, S. T., McMorrow, D. F., Manuel,\nP. & Wildes, A. R. Pinch points and Kasteleyn transi-\ntions in kagome ice. Nature Phys. 3, 566-572 (2007).\n\n[29] Morgan, J. P. et al. Real and eﬀective thermal equi-\nlibrium in artiﬁcial square spin ices. Phys. Rev. B 87,\n024405 (2013).\n\n[30] Kapaklis, V. et al. Thermal ﬂuctuations in artiﬁcial spin\nice. Nature NanoTech. 9, 514-519 (2014).\n\n# ACKNOWLEDGMENTS\n\nThis work was partially supported by the Region Lor-\nraine and the Agence Nationale de la Recherche through\nProject No.\nANR12-BS04-009 ’Frustrated’.\nI.A.C.\nacknowledges ﬁnancial support from the Laboratoire\nd’Excellence LANEF in Grenoble. The authors also ac-\nknowledge support from the Nanofab team at the Institut\nNEEL and warmly thank S. Le-Denmat and O. Fruchart\nfor technical help during AFM/MFM measurements.\n\n# AUTHOR CONTRIBUTIONS\n\nB.C. and N.R. conceived the projet. M.H. and D.L.\nwere in charge of the thin ﬁlms growth and optimiza-\ntion of magnetic properties. F.M. patterned the samples.\nF.M., D.L., M.H. and N.R. participated to the XMCD-\nPEEM experiments. The XMCD-PEEM measurements\nwere carried out by N.R., A.L., O.T.M, B.S.B. Com-\nplementary measurements on athermal kagome spin ices\nwere done by V.D.N. who was in charge of both sample\npreparation and imaging. I.A.C. and B.C. developed the\nMonte Carlo approach. B.C. and N.R. analyzed the data\nand wrote the manuscript.\n\n# ADDITIONAL INFORMATION\n\nSupplementary information accompanies this paper.\n\n# COMPETING FINANCIAL INTERESTS\n\nThe authors declare no competing ﬁnancial interests.\n\nFigure 1. Thermodynamics of the kagome dipolar spin ice. (a) The three possible anisotropy directions in the kagome\nlattice are denoted by the ei unit vectors, which allow the description of the Ising-like spins as σi scalar variables. (b) Three\nexamples of magnetic conﬁgurations belonging to the spin ice 2 (SI2), spin ice 1 (SI1) and paramagnetic regimes. Each spin at\nthe vertex of the kagome lattice can be seen as a magnetic dipole and fractionalized into an opposite pole pair. By conventionally\ntaking the head of the arrow to be a +1 magnetic charge and the tail as a -1 magnetic charge, a total magnetic charge can be\nattributed to each triangle, i.e. to each vertex of the kagome lattice, by summing the 3 elementary charges of the fractionalized\nspins. A total Q = +1/ −1 is depicted by a light red/blue triangle, respectively. The paramagnetic phase also features ±3\ncharges, as indicated for instance by a dark red triangle. As soon as the system enters its spin ice manifolds, ice rules are\nunanimously obeyed, which translate into the presence of only unitary charges. While these charges are disordered within the\nSI1 phase, they eventually crystallize antiferromagnetically in the SI2 phase, as depicted by the alternation of red-blue triangles.\n(c) The simulated temperature dependencies of the entropy and the speciﬁc heat of the kagome dipolar spin ice model. Magnetic\nstructure factor [S(q)] maps associated to each phase are provided and their corresponding normalized temperatures T/Jnn are\n5.815 (paramagnetic), 0.131 (SI1), 0.051 (deep SI1), 0.020 (SI2) and 0.006 (LRO), where Jnn is the eﬀective nearest-neighbour\ninteraction.\n\nFigure 2. Illustration of the spin fragmentation process on a conﬁguration belonging to the SI2 phase. Spins are\nrepresented by black arrows, while the associated magnetic charges at the kagome vertices are represented by a red/blue triangle,\ncorresponding to a +1/−1 charge state, respectively. By applying a Helmholtz-Hodge decomposition over the entire network,\neach spin of the lattice fragments into two channels, such that the magnetic conﬁguration decomposes into a divergence-full\nand a divergence-free ﬁeld. Note that, for the two ﬁelds, both the spin direction and the spin length change. To better visualize\nthe fragmentation process, fragmented spins are represented by purple circles of diameters 1/3, 2/3, and 4/3, according to the\nmoment of the fragmented part. This type of decomposition can be performed on any spin conﬁguration belonging to the SI2\nphase, for which the divergence-full channel is always the same and independent of the initial spin conﬁguration, while the\ndivergence-free channel can ﬂuctuate, ensuring the magnetic equivalent of a Kirchhoﬀlaw.\n\nFigure 3.\nExperimental evidence in real space of spin fragmentation in a thermally active kagome dipolar\nspin ice. (a) 10x11 µm2 XMCD-PEEM image of an artiﬁcial kagome array. The black and white contrasts give the local\ndirection of the magnetization within each individual nanomagnet. The white arrow indicates the direction of the incident\nX-ray beam. The orange hexagon highlights a region of the array where perfect charge ordering is observed. (b) The local\nspin conﬁguration within the orange hexagon deduced from the XMCD-PEEM image. Spins are represented by black arrows,\nwhile the associated magnetic charges at the kagome vertices are represented by a red/blue triangle, corresponding to a +1/-1\ncharge state, respectively. (c) Helmholtz-Hodge decomposition performed on the local spin conﬁguration shown in the orange\nhexagon. Fragmented spins are represented by purple circles of diameters 1/3, 2/3, and 4/3, according to the moment of the\nfragmented part.\n\nFigure 4. Experimental and theoretical spin fragmentation in reciprocal space. (a) Experimental (top) and theoretical\n(bottom) 2D maps of the magnetic structure factor corresponding to the experimental XMCD-PEEM image. The positions\nof the Bragg peaks corresponding to both the fragmented-spin phase and to the LRO are indicated by black and red circles,\nrespectively. One particular scan in the reciprocal space is indicated by a dashed black line in the two maps. The scan starts\nat the origin of the reciprocal space and passes ﬁrstly through a LRO Bragg peak, and then through a fragmentation peak. (b)\nComparison between the experimental (blue) and theoretical (orange) q-scans along the direction mentioned before. Standard\ndeviations of the theoretical ﬂuctuations (orange) are reported to quantify the likelihood of the dipolar spin ice model to\ndescribe the experimental observations. The dipolar spin ice model captures most features of spin-spin correlations and agrees\nsemi-quantitatively on the amplitude, as well as on the positions, of the correlations. Intensity is given in arbitrary units but it\nmust be noted that both experimental and theoretical curves have been scaled in a similar way, i.e. there is no free parameter\nbut the eﬀective temperature (T/Jnn = 0.051) of the Monte Carlo simulations.\n\nFigure 5. Deﬁnition of the magnetic charges at the vertices and of the spin-spin correlations. Every spin is the\nconnection point between two vertex charges and contributes with a +1 magnetic charge in one triangle and -1 in the other.\n(a) A (σ0,σ1,σ2,σ3,σ4) = (−1, +1, +1, −1, +1) conﬁguration for the kagome spin ice. (b) In the general case, the vertex charges\ncan be found by summing up the spin scalar values per triangle (σi). The constituting spins of a charge correlation pair form\nαβ, αγ and αν pairs.",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "RESULTS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Ab initio coding of emergence.",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Fragmentation of magnetism in the SI2 phase.",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Looking for signatures of spin fragmentation.",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "Experimental evidence of spin fragmentation.",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "DISCUSSION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sample fabrication.",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Thermal annealing protocol.",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Estimation of an eﬀective temperature.",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Monte Carlo simulations.",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Dipolar hamiltonian.",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Ab initio coding of emergence.",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "AUTHOR CONTRIBUTIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ADDITIONAL INFORMATION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "COMPETING FINANCIAL INTERESTS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 40.70447669999703,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 13,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7777777777777778,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Ab initio coding of emergence.",
+   "Fragmentation of magnetism in the SI2 phase.",
+   "Looking for signatures of spin fragmentation.",
+   "Experimental evidence of spin fragmentation."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 13,
+  "pred": 17,
+  "tp": 1,
+  "fp": 16,
+  "fn": 12,
+  "level_correct": 1,
+  "parent_correct": 1,
+  "teds": 0.11111111111111116,
+  "unmatched_gt": [
+   "DISCUSSION",
+   "METHODS",
+   "Sample fabrication.",
+   "Thermal annealing protocol.",
+   "Estimation of an effective temperature.",
+   "Monte Carlo simulations.",
+   "Dipolar hamiltonian.",
+   "Ab initio coding of emergence.",
+   "ACKNOWLEDGMENTS",
+   "AUTHOR CONTRIBUTIONS",
+   "ADDITIONAL INFORMATION",
+   "COMPETING FINANCIAL INTERESTS"
+  ],
+  "unmatched_pred": [
+   "Ab initio coding of emergence.",
+   "Fragmentation of magnetism in the SI2 phase.",
+   "Looking for signatures of spin fragmentation.",
+   "Experimental evidence of spin fragmentation.",
+   "DISCUSSION",
+   "METHODS",
+   "Sample fabrication.",
+   "Thermal annealing protocol.",
+   "Estimation of an eﬀective temperature.",
+   "Monte Carlo simulations.",
+   "Dipolar hamiltonian.",
+   "Ab initio coding of emergence.",
+   "ACKNOWLEDGMENTS",
+   "AUTHOR CONTRIBUTIONS",
+   "ADDITIONAL INFORMATION",
+   "COMPETING FINANCIAL INTERESTS"
+  ]
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "doc": "1510.08233",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "B. Randomized Homotopy Classes Finder"
+  ],
+  "unmatched_pred": [
+   "A Fast Randomized Method to Find Homotopy Classes",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 12,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.5384615384615384,
+  "unmatched_gt": [
+   "B. Randomized Homotopy Classes Finder"
+  ],
+  "unmatched_pred": [
+   "A Fast Randomized Method to Find Homotopy Classes"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 241,
+  "layout_marked": 17,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9682439537329127,
+  "inserted_word_share": 0.3844919786096257
+ },
+ "predictions": [
+  {
+   "text": "A Fast Randomized Method to Find Homotopy Classes",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. OUR APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Navigation Graph",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Cost deﬁnition",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. EXPERIMENTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Yen’s Algorithm",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Environments",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Metrics",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Parameters",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. RESULTS AND DISCUSSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.756148199994641,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5333333333333333,
+  "unmatched_gt": [
+   "B. Randomized Homotopy Classes Finder"
+  ],
+  "unmatched_pred": [
+   "A Fast Randomized Method to Find Homotopy Classes",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

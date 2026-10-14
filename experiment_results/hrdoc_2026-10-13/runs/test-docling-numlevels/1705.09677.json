@@ -1,0 +1,225 @@
+{
+ "doc": "1705.09677",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 23,
+  "pred": 26,
+  "tp": 23,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.7407407407407407,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Contributions",
+   "Algorithm 1: Sample from z ∗",
+   "Algorithm 2: Greedy algorithm"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 24,
+  "tp": 21,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 19,
+  "parent_correct": 17,
+  "teds": 0.72,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Contributions",
+   "Algorithm 1: Sample from z ∗",
+   "Algorithm 2: Greedy algorithm"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 46.19459789999746
+ },
+ "predictions": [
+  {
+   "text": "Elementary Symmetric Polynomials for Optimal Experimental Design",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Contributions",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 ESP-design",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Problem formulation",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3.2 Continuous relaxation",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "4 Algorithms and analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Sampling from the continuous relaxation",
+   "page": 3,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "Algorithm 1: Sample from z ∗",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.2 Greedy approach",
+   "page": 3,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "Algorithm 2: Greedy algorithm",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.3 Computational considerations",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5 Further Implications",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experimental results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Synthetic experiments: optimization comparison",
+   "page": 5,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "6.2 Real data",
+   "page": 6,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "7 Conclusion and future work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Geodesic convexity",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Proof of Lemma 3.3",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 Proof of Corollary 3.4",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B Bounding the support of the continuous relaxation",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C Greedy algorithm details",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D Obtaining the dual formulation",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E Additional synthetic experimental results",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.023107399996661115,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 26,
+  "tp": 23,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 19,
+  "teds": 0.7407407407407407,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Contributions",
+   "Algorithm 1: Sample from z ∗",
+   "Algorithm 2: Greedy algorithm"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

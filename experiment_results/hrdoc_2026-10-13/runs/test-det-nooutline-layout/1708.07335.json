@@ -1,0 +1,140 @@
+{
+ "doc": "1708.07335",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "pression Prediction"
+  ],
+  "unmatched_pred": [
+   "1 TUBITAK UZAY, Image Processing Group, Ankara, Turkey",
+   "2 Middle East Technical University, Multimedia Lab., Ankara, Turkey"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 9,
+  "tp": 7,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.7,
+  "unmatched_gt": [
+   "pression Prediction"
+  ],
+  "unmatched_pred": [
+   "1 TUBITAK UZAY, Image Processing Group, Ankara, Turkey",
+   "2 Middle East Technical University, Multimedia Lab., Ankara, Turkey"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 156,
+  "layout_marked": 11,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9461688734534404,
+  "inserted_word_share": 0.9717472745420842
+ },
+ "predictions": [
+  {
+   "text": "1 TUBITAK UZAY, Image Processing Group, Ankara, Turkey",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Middle East Technical University, Multimedia Lab., Ankara, Turkey",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Overall Architecture Used for Real-Fake Ex-",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Relaxed Spatio-Temporal Deep Feature Ag-",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Implementation Details",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Experiments",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7. Conclusion",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Acknowledgment",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.35430429999542,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 10,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7692307692307692,
+  "unmatched_gt": [
+   "pression Prediction"
+  ],
+  "unmatched_pred": [
+   "1 TUBITAK UZAY, Image Processing Group, Ankara, Turkey",
+   "2 Middle East Technical University, Multimedia Lab., Ankara, Turkey"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

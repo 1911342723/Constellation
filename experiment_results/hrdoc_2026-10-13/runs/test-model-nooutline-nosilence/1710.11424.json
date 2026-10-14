@@ -1,0 +1,259 @@
+{
+ "doc": "1710.11424",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 23,
+  "pred": 28,
+  "tp": 21,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.6896551724137931,
+  "unmatched_gt": [
+   "1 . 2.3 . MI N ECR AF T",
+   "3.1. Recurrence in Doom MyWayHome"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+",
+   "if t = 1 then",
+   "else",
+   "end if",
+   "end for",
+   "end for",
+   "Sampling"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 639,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10096,
+   "completion_tokens": 829,
+   "total_tokens": 10925
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Advantage-based Regret Minimization",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Counterfactual Regret Minimization (CFR)",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. CFR+",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3. From CFR and CFR+ to ARM",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "if t = 1 then",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "else",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "end if",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "end for",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "end for",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.4. ARM vs",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.5. Comparing ARM with Other Methods in Partially",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Observable Domains",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4. Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Learning First-person 3D Navigation",
+   "page": 5,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2. Learning with Partially Observed Objects",
+   "page": 6,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5. Discussion",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1. Experimental Details",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A1.1. Hyperparameters",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "A1.2. Environment and Task Details",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "A2. Off-policy ARM via Importance",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Sampling",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A3. Additional Experiments",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A3.2. Atari 2600 games",
+   "page": 12,
+   "level": 2,
+   "parent": 26
+  }
+ ],
+ "seconds": 21.504447200000868,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 28,
+  "tp": 21,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.6896551724137931,
+  "unmatched_gt": [
+   "1 . 2.3 . MI N ECR AF T",
+   "3.1. Recurrence in Doom MyWayHome"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+",
+   "if t = 1 then",
+   "else",
+   "end if",
+   "end for",
+   "end for",
+   "Sampling"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 25,
+  "tp": 18,
+  "fp": 7,
+  "fn": 2,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.6538461538461539,
+  "unmatched_gt": [
+   "1 . 2.3 . MI N ECR AF T",
+   "3.1. Recurrence in Doom MyWayHome"
+  ],
+  "unmatched_pred": [
+   "3.2. CFR+",
+   "if t = 1 then",
+   "else",
+   "end if",
+   "end for",
+   "end for",
+   "Sampling"
+  ],
+  "ignored_title_predictions": null
+ }
+}

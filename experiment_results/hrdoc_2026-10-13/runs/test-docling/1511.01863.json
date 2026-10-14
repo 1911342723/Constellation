@@ -1,0 +1,231 @@
+{
+ "doc": "1511.01863",
+ "system": "docling",
+ "metrics": {
+  "gt": 29,
+  "pred": 28,
+  "tp": 28,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6333333333333333,
+  "unmatched_gt": [
+   "text"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 45.92540910000025
+ },
+ "predictions": [
+  {
+   "text": "CAN PARAMETRIC STATISTICAL METHODS BE TRUSTED FOR FMRI BASED GROUP STUDIES?",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. RESULTS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. What about other common cluster thresholding approaches?",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2. How close are the statistical test values compared to the theoretical null distributions?",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3. What does the spatial auto correlation function look like?",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.4. How do the smoothness estimates and the cluster extent thresholds differ between SPM, FSL and AFNI?",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.5. Where are the false clusters located in the brain?",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.6. What is the difference between parametric and nonparametric cluster-wise inference for a typical group study?",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. DISCUSSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Should resting state data be used to test statistical assumptions?",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. Why is cluster-wise inference more problematic than voxel-wise?",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3. Why does AFNI's Monte Carlo approach, with fewer parametric assumptions, not perform better?",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4. Which parameters affect the familywise error rate for cluster-wise inference?",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5. The future of fMRI",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgment",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. REFERENCES",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. METHODS",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Resting state fMRI data",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1.1. Random group generation",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1.2. Code availability",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1.3. First level analyses",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1.4. Group analyses",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2. Task based fMRI data",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2.1. Rhyme judgment",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2.2. Mixed-gambles task",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2.3. Living-nonliving decisionwith plain ormirror-reversed text",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.2.4. Word and object processing",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.04902319999382598,
+ "metrics_v1": {
+  "gt": 29,
+  "pred": 29,
+  "tp": 28,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "text"
+  ],
+  "unmatched_pred": [
+   "CAN PARAMETRIC STATISTICAL METHODS BE TRUSTED FOR FMRI BASED GROUP STUDIES?"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 26,
+  "pred": 25,
+  "tp": 25,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.5925925925925926,
+  "unmatched_gt": [
+   "text"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

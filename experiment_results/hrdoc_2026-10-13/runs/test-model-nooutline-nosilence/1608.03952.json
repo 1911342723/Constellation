@@ -1,0 +1,194 @@
+{
+ "doc": "1608.03952",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 14,
+  "pred": 19,
+  "tp": 14,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.6,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 d2n",
+   "Acknowledgments",
+   "Appendix A",
+   "2 b2\u0013exp\u0012 1",
+   "Appendix B"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 436,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10121,
+   "completion_tokens": 728,
+   "total_tokens": 10849
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "On the optical ﬁelds propagation in realistic environments",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PHYSICAL AND MATHEMATICAL MODEL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. BEAM SPLITTER FORMALISM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Density operator",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Photon number distribution",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Wigner function",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "IV. OPTICAL-CHANNEL FORMALISM",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Density operator",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Photon number distribution",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "1 d2n",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "V. APPLICATION OF THE EVOLUTION FORMULAS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Photon number distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 b2\u0013exp\u0012 1",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.886865000000398,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 20,
+  "tp": 14,
+  "fp": 6,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "On the optical ﬁelds propagation in realistic environments",
+   "1 d2n",
+   "Acknowledgments",
+   "Appendix A",
+   "2 b2\u0013exp\u0012 1",
+   "Appendix B"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 14,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.7058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 d2n",
+   "2 b2\u0013exp\u0012 1"
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "doc": "1706.07156",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "A. Impact of time-frequency representation",
+   "B. Effect of CNN architecture and filter size",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 10,
+  "pred": 8,
+  "tp": 8,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "A. Impact of time-frequency representation",
+   "B. Effect of CNN architecture and filter size"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 195,
+  "layout_marked": 13,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8931192660550459,
+  "inserted_word_share": 0.8560443622920517
+ },
+ "predictions": [
+  {
+   "text": "Comparison of Time-Frequency Representations for",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. EXPERIMENTAL METHODOLOGY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Datasets",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Pre-processing",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Network Architecture and Evaluation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. RESULTS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Wideband vs Narrowband",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. CONCLUSION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.0967747000031522,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 7,
+  "parent_correct": 7,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [
+   "A. Impact of time-frequency representation",
+   "B. Effect of CNN architecture and filter size",
+   "RE F E R ENCES"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

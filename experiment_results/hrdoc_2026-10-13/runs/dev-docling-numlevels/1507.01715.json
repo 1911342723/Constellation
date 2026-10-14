@@ -1,0 +1,181 @@
+{
+ "doc": "1507.01715",
+ "system": "docling-numlevels",
+ "derived_from": "dev-docling",
+ "metrics": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "3.1. Kaitlin Thaney, Designing for Truth, Scale, and Sustainability [5]. Kaitlin",
+   "8.1.4. Remaining breakout discussions: Citation ecosystems. This group defined i",
+   "8.1.5. Remaining breakout discussions: Taxonomy of contributorship/guidelines fo"
+  ],
+  "unmatched_pred": [
+   "- Repositories",
+   "- Review"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 4,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "3.1. Kaitlin Thaney, Designing for Truth, Scale, and Sustainability [5]. Kaitlin",
+   "8.1.4. Remaining breakout discussions: Citation ecosystems. This group defined i",
+   "8.1.5. Remaining breakout discussions: Taxonomy of contributorship/guidelines fo",
+   "12. Attendees"
+  ],
+  "unmatched_pred": [
+   "- Repositories",
+   "- Review"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 79.37506829999984
+ },
+ "predictions": [
+  {
+   "text": "REPORT ON THE SECOND WORKSHOP ON SUSTAINABLE SOFTWARE FOR SCIENCE: PRACTICE AND EXPERIENCES (WSSSPE2)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Submissions, Peer-Review, and Peer-Grouping",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Keynotes",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Lightning Talks",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5. Defining Sustainability",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Exploring Sustainability",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1. Discussion and Actions.",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "7. Software Development Experiences",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "8. Credit & Incentives",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "9. Reproducibility & Reuse & Sharing",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "- Repositories",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "- Review",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "10. Code Testing & Code Review",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11. Conclusions",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A. Attendees",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.01668039999640314,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "3.1. Kaitlin Thaney, Designing for Truth, Scale, and Sustainability [5]. Kaitlin",
+   "8.1.4. Remaining breakout discussions: Citation ecosystems. This group defined i",
+   "8.1.5. Remaining breakout discussions: Taxonomy of contributorship/guidelines fo"
+  ],
+  "unmatched_pred": [
+   "- Repositories",
+   "- Review"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

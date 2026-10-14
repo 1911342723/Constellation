@@ -1,0 +1,100 @@
+{
+ "doc": "1703.00856",
+ "system": "outline",
+ "metrics": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "B. Melanoma Task"
+  ],
+  "unmatched_pred": [
+   "III-B Melanoma Task"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Motivation and Overview",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Image Pre-processing",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Network Training and Evaluation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III-A Seborrheic Keratosis Task",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III-B Melanoma Task",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV Conclusion",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.024281199999677483,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "B. Melanoma Task"
+  ],
+  "unmatched_pred": [
+   "III-B Melanoma Task"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "B. Melanoma Task"
+  ],
+  "unmatched_pred": [
+   "III-B Melanoma Task"
+  ],
+  "ignored_title_predictions": null
+ }
+}

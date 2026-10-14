@@ -1,0 +1,168 @@
+{
+ "doc": "1608.03952",
+ "system": "model",
+ "metrics": {
+  "gt": 14,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.7222222222222222,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments",
+   "Appendix A",
+   "Appendix B"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 436,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10137,
+   "completion_tokens": 722,
+   "total_tokens": 10859
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PHYSICAL AND MATHEMATICAL MODEL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. BEAM SPLITTER FORMALISM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Density operator",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Photon number distribution",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Wigner function",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "IV. OPTICAL-CHANNEL FORMALISM",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Density operator",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. Photon number distribution",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "C. Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "V. APPLICATION OF THE EVOLUTION FORMULAS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Photon number distribution",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Wigner function",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.134150599998975,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.7222222222222222,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgments",
+   "Appendix A",
+   "Appendix B"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

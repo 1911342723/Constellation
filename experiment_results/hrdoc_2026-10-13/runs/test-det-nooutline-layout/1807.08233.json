@@ -1,0 +1,221 @@
+{
+ "doc": "1807.08233",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 27,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 18,
+  "parent_correct": 15,
+  "teds": 0.4642857142857143,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "C. Vision Network"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 25,
+  "pred": 21,
+  "tp": 20,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 16,
+  "parent_correct": 14,
+  "teds": 0.46153846153846156,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "C. Vision Network"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 301,
+  "layout_marked": 25,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8313358667056416,
+  "inserted_word_share": 0.9874540112755088
+ },
+ "predictions": [
+  {
+   "text": "Rapid Autonomous Car Control based on Spatial",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. PLATFORM DESIGN",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Platform Overview",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Sensor Network",
+   "page": 0,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Vision Network",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VISION NETWORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Engine Network",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E. More Electro-Mechanical Engineering",
+   "page": 1,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "F. Vehicle Body",
+   "page": 2,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "III. HARDWARE SYSTEMS DESIGN",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Processor Framework",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "B. Electrical Sub-systems",
+   "page": 2,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "IV. PERCEPTION AND CONTROL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Software Architecture",
+   "page": 2,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "B. Perception and Planning",
+   "page": 3,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "C. Trajectory and Velocity Control",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. VEHICLE BEHAVIOR",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Line Detection",
+   "page": 5,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "B. Target Region using Lines",
+   "page": 5,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "A. Appendix",
+   "page": 6,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "C. Target Region Without using Lines",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.27423909999925,
+ "metrics_v1": {
+  "gt": 27,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 5,
+  "level_correct": 18,
+  "parent_correct": 15,
+  "teds": 0.4642857142857143,
+  "unmatched_gt": [
+   "1) Drive Loop:",
+   "1) Object Detection:",
+   "2) Path Planning:",
+   "1) Steering Control:",
+   "2) Throttle Control:"
+  ],
+  "unmatched_pred": [
+   "C. Vision Network"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

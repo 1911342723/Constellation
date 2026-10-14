@@ -1,0 +1,210 @@
+{
+ "doc": "1803.05041",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "METAL-POOR TYPE II CEPHEIDS WITH PERIODS LESS THAN THREE DAYS",
+    0,
+    1
+   ],
+   [
+    "ABSTRACT",
+    0,
+    2
+   ],
+   [
+    "1. INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "2. OBSERVATIONS AND DATA REDUCTION",
+    1,
+    1
+   ],
+   [
+    "3. SPECTROSCOPIC ANALYSIS",
+    1,
+    1
+   ],
+   [
+    "3.1. Oxygen",
+    1,
+    2
+   ],
+   [
+    "3.2. Sodium",
+    1,
+    2
+   ],
+   [
+    "4. DISCUSSION",
+    1,
+    1
+   ],
+   [
+    "4.1. Carbon, Nitrogen, and Oxygen",
+    3,
+    2
+   ],
+   [
+    "4.2. Light Elements",
+    3,
+    2
+   ],
+   [
+    "5. CONCLUSIONS",
+    3,
+    1
+   ],
+   [
+    "REFERENCES",
+    3,
+    1
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 7706,
+   "completion_tokens": 7631
+  },
+  "elapsed_llm_seconds": 30.069764400002896,
+  "word_preservation": {
+   "recall": 0.9908719673312515,
+   "in_order": 0.9908719673312515,
+   "inserted": 0.018090930730778387
+  },
+  "output_markdown": "Draft version March 15, 2018\nPreprint typeset using LATEX style emulateapj v. 01/23/15\n\n# METAL-POOR TYPE II CEPHEIDS WITH PERIODS LESS THAN THREE DAYS\n\nV. Kovtyukh\nAstronomical Observatory, Odessa National University, Shevchenko Park, 650014, Odessa, Ukraine and\nIsaac Newton Institute of Chile, Odessa Branch, Shevchenko Park, 650014, Odessa, Ukraine\n\nG. Wallerstein\nAstronomy Department, University of Washington, Seattle, WA 98105, USA\n\nI. Yegorova\nUniversidad Andres Bello, Fernandez Concha 700, Santiago, Chile\n\nS. Andrievsky\nAstronomical Observatory, Odessa National University, Shevchenko Park, 650014, Odessa, Ukraine\nIsaac Newton Institute of Chile, Odessa Branch, Shevchenko Park, 650014, Odessa, Ukraine and\nGEPI, Observatoire de Paris-Meudon, CNRS, Universite Paris Diderot, 92125, Meudon Cedex, France\n\nS. Korotin\nAstronomical Observatory, Odessa National University, Shevchenko Park, 650014, Odessa, Ukraine and\nCrimean Astrophysical Observatory, Nauchny 298409, Crimea, Ukraine\n\nI. Saviane\nEuropean Southern Observatory, Alonso de Cordova 3107, Santiago, Chile\n\nS. Belik\nAstronomical Observatory, Odessa National University, Shevchenko Park, 650014, Odessa, Ukraine and\nIsaac Newton Institute of Chile, Odessa branch, Shevchenko Park, 650014, Odessa, Ukraine\n\nC. E. Davis\nAstronomy Department, University of Washington, Seattle, WA 98105, USA\n\nE. M. Farrell\nAstronomy Department, University of Washington, Seattle, WA 98105, USA\n\n(Received March 15, 2018)\nDraft version March 15, 2018\n\n## ABSTRACT\n\nWe have analysed 10 high resolution spectra of Type II Cepheids with periods less than 3 days. We\nfind that they clearly separate into two groups: those with near or slightly below solar metallicities,\nand those with [Fe/H] between –1.5 and –2.0. While the former are usually called BL Her stars, we\nsuggest that the latter be called UY Eri stars. The UY Eri subclass appears to be similar to the short\nperiod variables in globular clusters of the Galactic Halo. Globular clusters with [Fe/H] > –1.0 almost\nnever have Type II Cepheids.\n\nKeywords: globular clusters: general, stars: variable: Cepheids, stars: abundances\n\n# 1. INTRODUCTION\n\nThe origin of the galactic halo has been an interesting\nquestion ever since halo stars and clusters became the\ndefining objects of population II (Baade 1944, O’Connell\n1958). Halo subdwarfs were soon recognized to be metal-\npoor (Chamberlain & Aller 1951), as were red giant\nstars branch (RGB) stars in glubular clusters of the halo\n(Helfer et al. 1959). Halo cepheids are now called Type\nII Cepheid (T2C) stars, and were first recognized by Joy\n(1937), and found to be metal-poor by Abt (1954) and\nRodgers & Bell (1963). Short period cepheids were found\nin metal-poor globular clusters by Arp (1955), and cata-\nlogued by Clement et al. (2001).1\n\nTo the surprise of some, Woolley (1966) found that the\nhalo cepheids showed thick disk kinematics and, hence,\nwere likely to be only moderately metal-poor. The short\nperiod stars received the name BL Her, a star which has\na period of 1.3 days, and is known to show a metallicity\nof –0.16 (Maas et al. 2007).\n\nIn an effort to further understand the T2C stars of the\n1\nThe\nmost\nrecent\nupdate\nis\nto\nbe\nfound\nat\nhttp://www.astro.utoronto.ca/∼cclement/cat/listngc.html\narXiv:1803.05041v1  [astro-ph.SR]  13 Mar 2018\n\n<<page 2>>\n2\nKovtyukh et al.\n\ngalactic halo, Maas et al. (2007) derived metallicities of\n19 stars, 7 of which have periods of 3 days or less. Ex-\ncept of one star, UY Eri, they showed very modest deple-\ntions of heavy elements and, hence, fit the classification\nof BL Her stars. To further expand the database for T2C\nstars in the halo, we have obtained high resolution spec-\ntra of field T2C stars, 10 of which have periods below 3\ndays. The stars were selected to be bright enough for the\navailable telescopes, and to be conveniently placed when\nobserving time was assigned.\n\nIn this paper, we report on the chemical composition\nof the 10 T2C field stars with periods from 0.9 to 3 days.\nThe upper limit marks the edge of an almost empty gap\nfrom 4 to 9 days in the distribution shown in Figure 1\nof Soszy´nski et al. (2008) and Figure 6 of Schmidt et al.\n(2011). The separation of both cepheid strip candidates\nand Type II Cepheids into metal-normal and metal-poor\nstars can be seen in Figure 8 of Schmidt et al. (2011).\n\n# 2. OBSERVATIONS AND DATA REDUCTION\n\nSeven objects were observed with the 3.5-m telescope\nat the Apache Point Observatory with the ARC Echelle\nSpectrograph (ARCES). By using a prism as a cross-\ndisperser, the APO echelle captures the entire spectrum\nfrom 3500 ˚A to 10 400 ˚A with a resolving power of 31 500.\nHowever, the red-sensitive 2048x2048 chip has decreas-\ning sensitivity for cool stars at shorter wavelengths and\nbeyond 9000 ˚A. The observations were obtained as a part\nof a program to derive the chemical composition of cer-\ntain Type II Cepheids and RR Lyrae stars. The exposure\ntimes were approximately 10–30 minutes. The estimated\nS/N ratio per pixel at the continuum level, depending\nupon the wavelength interval, is approximately 80–150.\nThe uncertainty in the determination of velocities is a\nfew tenths of a km s−1.\n\nTwo objects were observed with the cross-dispersed\nechelle spectrograph, UVES, at the Very Large Tele-\nscope.2 The red arm was used, which covers the wave-\nlength region between 4200 ˚A and 11 000 ˚A. Standard\ninstrumental settings were used to achieve wavelength\ncoverage from 4790–5760 ˚A and 5830–6810 ˚A with a res-\nolution of 0.16 ˚A. The observations were done in ser-\nvice mode. For some objects, several spectra were ob-\ntained. The exposure times were approximately 20–30\nminutes. The primary data reduction, such as bias sub-\ntraction, flat-field correction, wavelength calibration, sky\nsubtraction and spectra extraction was performed with\nthe UVES pipeline (Ballester et al. 2000).\n\nOne object, the carbon cepheid, V553 Cen, was taken\nfrom the ESO archive. The star was observed with the\nechelle spectrograph HARPS at the ESO La Silla 3.6-\nm telescope. The spectral range is 4000–6800 ˚A with a\nresolving power of 100 000. For BL Her, an additional\nspectrum was taken from the archive of the Elodie spec-\ntrograph at the Observatoire de Haute-Provence 1.93-m\ntelescope (R=40 000, λ 4000-6800 ˚A). The observed stars\nand their atmospheric parameters are given in Table 1.\n\n# 3. SPECTROSCOPIC ANALYSIS\n\n2 Based on observations collected at the European Organization\nfor Astronomical Research in the Southern Hemisphere under ESO\nprogramme 089.D-0489(A).\n\nTo determine the effective temperature, Teff, we used\nthe line depth ratio method of Kovtyukh (2007). The\nuncertainties in this method range from 30–100 K de-\npending on the S/N. To set the log g value, we required\nthat the iron abundance, as determined from lines of FeI\nand FeII, be equal.\n\nElemental abundances were determined using LTE and\nNLTE approximations combined with atmospheric mod-\nels by Castelli & Kurucz (2004), computed for the pa-\nrameters of each star. The solar abundances were com-\nputed for lines from the solar spectrum (Kurucz et al.\n1984) with log gf from the Vienna Atomic Line Database\n(VALD) (Kupka et al. 1999), and the solar model by\nCastelli & Kurucz (2004).\nThey are listed in Lemasle\net al. (2015).\n\n## 3.1. Oxygen\n\nThe NLTE model of the oxygen atom was first de-\nscribed by Mishenina et al. (2000), and then updated by\nKorotin et al. (2014). The model consists of 51 OI levels\nof singlet, triplet, and quintet systems, and the ground\nlevel of the OII ion. Fine structure splitting was taken\ninto account only for the ground level and the 3p5P level\n(the upper level of the 7772,4,5 triplet lines). A total of\n248 bound-bound transitions were included. Oxygen line\nparameters are listed in Table 2. The high excitation OI\ntriplet suffers from departure from LTE (Parsons 1964,\nAltrock 1968, Amarsi et al. 2016). Its strength depends\nsensitively on the star’s surface gravity. In stars of high\nluminosity, the triplet is greatly enhanced since radiative\neffects dominate recombination and ionization, as com-\npared to collisional excitation, which is controlled by the\nlocal temperature.\n\n## 3.2. Sodium\n\nSodium line parameters are given in Table 2. We de-\nrived the sodium abundances by line profile fitting. The\nNLTE atomic model of sodium was presented by Korotin\n& Mishenina (1999) and then updated by Dobrovolskas\net al. (2014). The updated sodium model currently con-\nsists of twenty energy levels of NaI and the ground level\nof NaII. In total, 46 radiative transitions were taken into\naccount for the calculation of the population of all levels.\nFor four stars, the Na D lines were saturated, so we used\nthe pair of lines at 5682 ˚A and 5688 ˚A. For stars with\nnearly solar metallicity, we used the weaker pair at 6154\n˚A and 6160 ˚A. We chose not to use the 8183 ˚A and 8194\n˚A lines due to blending with absorption by atmospheric\nlines, which depends on the stellar radial velocity and\nthe humidity above the observatory.\n\nThe results of the abundance analysis on our program\nstars is given in Table 3.\n\n# 4. DISCUSSION\n\nThe T2C stars have been divided into W Vir stars\nwith periods from 9 to 30 Days (though stars with peri-\nods greater than 20 days often show mild RV Tau prop-\nerties); and the BL Her stars with periods less than 3\ndays.3\nWe advocate for the separation of the 1–3 day\nstars into the BL Her group with near-solar metallic-\nity, and the distinctly metal-poor group that we will call\n3 The gap from 3 to 9 days is violated by variable 3 in the\nglobular cluster M10.\n\n<<page 3>>\nMetal-Poor Type II Cepheids\n3\n\nTable 1\nDetails of Observations and Stellar Parameters\n\nStar\nP(days)\nTelescope\nJD (2400000+)\nExp (s)\nPhase\nTeff\n(K)\nlog g\nVt\n(km s−1)\n[Fe/H]\nRemarks\n\nUY CrB\n0.929\nAPO\n53162.6736\n3600\n0.491\n6150\n1.8\n2.0\n–0.43\n\nAPO\n53456.9981\n1800\n0.245\n6700\n2.0\n2.4\n–0.32\n\nAPO\n53626.7528\n1800\n0.839\n6300\n2.5\n2.0\n–0.47\n\nNSV 10788\n1.081\nVLT\n56124.7937\n1200\n0.451\n6250\n2.3\n2.8\n–2.41\n\nV716 Oph\n1.116\nAPO\n52336.9382\n1200\n0.154\n7000\n1.8\n2.7\n–1.64\n\nAPO\n52417.7674\n1800\n0.595\n6100\n2.2\n2.6\n–1.67\n\nAPO\n52447.6805\n1800\n0.380\n6600\n2.6\n2.6\n–1.56\n\nAPO\n52448.6667\n1800\n0.284\n6700\n2.2\n2.6\n–1.72\n\nAPO\n52449.7423\n1800\n0.248\n6750\n2.0\n2.3\n–1.62\n\nBF Ser\n1.165\nAPO\n52336.8431\n2400\n0.652\n5800\n1.0\n2.3\n–2.15\n\nAPO\n52417.7090\n1800\n0.038\n7300\n2.2\n3.0\n–2.04\n\nAPO\n52804.7590\n900\n0.145\n7000\n2.0\n3.0\n–2.08\nHα double or emission\n\nAPO\n53457.8495\n1800\n0.526\n6300\n2.1\n2.2\n–2.04\nHα double or emission\n\nBL Her\n1.307\nAPO\n53163.8646\n900\n0.104\n7000\n2.2\n2.2\n–0.12\n\nOHP\n49572.3784\n900\n0.147\n6650\n2.5\n2.2\n–0.20\n\nXX Vir\n1.348\nAPO\n52417.6479\n1800\n0.070\n7500\n2.2\n2.3\n–1.62\n\nAPO\n52449.7188\n1800\n0.858\n6100\n2.5\n2.8\n–1.51\n\nAPO\n53541.6750\n1800\n0.791\n...\n...\n...\n...\n\nV1287 Sco\n1.956\nVLT\n56126.4862\n1500\n0.487\n5950\n2.2\n3.5\n–1.94\nHα emission\n\nV553 Cen\n2.061\nESO\n56748.6532\n90\n0.818\n6060\n2.2\n2.7\n0.01\nsee Wallerstein & Gonzalez (1996)\n\nUY Eri\n2.213\nAPO\n52984.7985\n1800\n0.889\n6400\n2.0\n2.0\n–1.83\nHα emiss or double\n\nAPO\n53687.7856\n1800\n0.511\n6200\n1.8\n2.6\n–1.66\n\nAPO\n54044.7828\n1800\n0.809\n6000\n1.9\n2.6\n–1.70\nHα emission\n\nAU Peg\n2.402\nAPO\n53626.7292\n900\n0.848\n6008\n2.0\n2.8\n0.33\norbit phase = 0.538\n\nAPO\n53687.6390\n900\n0.109\n5544\n1.5\n2.3\n0.21\norbit phase = 0.681\n\nRemarks:\n(a) – NSV 10788 is a star with P = 1.08 days and a metallicity of [Fe/H] = –2.4. The lightcurve shows an amplitude of 0.5 magnitudes.\nThus, classification of this star as a cepheid is uncertain.\n(b) – For BF Ser, all four spectra were taken at important phases. This star is very likely a member of the UY Eri group. It is a metal\npoor-star with a pulsation period of 1.2 days.\n(c) – XX Vir is a high latitude star of the UY Eri group with a short pulsation period of 1.3 days. For one spectrum, with emission in iron\nlines, the chemical composition was not determined.\n(d) – V1287 Sco is a variable star of UY Eri type. There is not much information in the literature about this star. Hα emission is seen in\nthe spectrum. The lines are slightly asymmetric.\n(e) – V553 Cen is a star recognized by Lloyd Evans (1983) as a rare C-rich Cephied. Its composition was investigated by Wallerstein &\nGonzalez (1998).\n(f) – AU Peg is a spectroscopic binary (Harris et al. 1984) with an orbital period of 53.3 days. The chemical composition of this star was\nstudied by Harris et al. (1984) and Maas et al. (2007). It appears to be slightly metal rich, which may be due in part to mass transfer from\nits unobserved companion.\n\nTable 2\nTable of log(gf) and χexc for the Na and O lines used.\n\nLambda\nχexc\nlog(gf)\n\nSodium\n\n5682.63\n2.09\n–0.71\n\n5688.19\n2.10\n–0.41\n\n6154.23\n2.09\n–1.56\n\n6160.75\n2.10\n–1.26\n\nOxygen\n\n6300.30\n0.00\n–9.717\n\n7771.94\n9.11\n0.369\n\n7774.17\n9.11\n0.223\n\n7775.39\n9.11\n0.001\n\n8446.25\n9.52\n–0.462\n\n8446.36\n9.52\n0.236\n\n8446.76\n9.52\n0.014\n\nthe UY Eri class.\nThe latter are to be found also in\nmetal-poor globular clusters (Clement et al. 2001). The\nrelatively metal-rich globulars with [Fe/H] > –1.0 do not\nhave cepheids with periods less than 3 days. Of 10 stars\nin Table 1, 6 fall into the metal poor UY Eri group, all\nof which show [Fe/H] < –1.5.\n\nOur database may be enhanced by including the abun-\ndances in Maas et al. (2007). Just by chance, all of their\nshort period stars, except for UY Eri, fall into the more\nmetal-rich BL Her class. Hence, we have combined the\ntwo sources to develop mean abundance ratios for the\nBL Her subgroup, and used only our data for the metal-\npoor UY Eri group. Our abundance data are summarized\nin Table 4.\n\nFor our small sample, formal probable errors are less\nindicative of the accuracy of a quantity than one might\nhope. Hence, we show the dependence of [O/Fe] and the\ndependence of [α/Fe] on [Fe/H] in Figure 1, using the\nelements Mg, Si, Ca, and Ti. The dependence of [O/Fe]\non [Fe/H] shows a dependence that is similar to what is\nseen in both giants and dwarfs, with a rise of [O/Fe] from\nnear 0.0 at [Fe/H] = 0.0 to +0.7 between [Fe/H] = –1.5\nto –2.5. For [α/Fe], the pattern is similar to many other\ninvestigations of the α-elements, rising from near 0.0 to\n+0.5 for the metal-poor UY Eri Group.\n\nThe metal-rich BL Her group show abundances of 22\nelements that differ little in their ratios relative to iron,\nwith the possible exception of sodium. For the UY Eri\ngroup, the abundances of oxygen, and the α-elements\nfrom Mg to Ti show excesses that are comparable to\nthe excesses in most metal-poor red giants and main se-\nquence stars.\n\nWe await the discovery and observation of additional\nT2C stars by Gaia and eventually the Large Synoptic\nSurvey Telescope (LSST). The Gaia spectra in the 8400–\n8800 ˚A region may be used to derive metallicities from\n\n<<page 4>>\n4\nKovtyukh et al.\n\nFigure 1.\nThe dependence of [O/Fe] and [α/Fe] on [Fe/H] for\nthe observed stars.\n\nthe strenth of the Ca II IR triplet as has been calibrated\nfor RR Lyrae stars by Wallerstein et al. (2012).\n\n## 4.1. Carbon, Nitrogen, and Oxygen\n\nThere are a few CI lines of high excitation in these\nstars. Despite our NLTE analyses, the scatter of [C/Fe]\nis too great to consider the mean values of [C/Fe] to be\ndefinitive. A significant excess in [N/Fe] for the BL Her\nstars is approximately what is expected from the en-\nhancement of nitrogen by the CNO cycle and internal\nmixing. For the metal-poor UY Eri stars, the nitrogen\nlines are too weak for analysis. For oxygen, the analy-\nsis depends upon the OI triplet at 7772,4,5 ˚A and the\n8446.63 ˚A lines. As we have shown in Figure 1, for the\nmetal-poor UY Eri stars, the mean excess in [O/Fe] is\n0.72 ± 0.09, which is typical for metal-poor stars.\n\n## 4.2. Light Elements\n\nFor sodium, we see small excesses that are approx-\nimately equal to their uncertanties for both groups of\nstars.\nIn most, if not all, globular clusters, some red\ngiants show a significant excess of sodium in second gen-\neration stars (Carretta et al. 2009). Our abundances are\nbased on the lines arising from the 2.1 eV excited level.\nWe did not use the Na D lines because they are usually\ntoo strong and are sometimes blended with circumstel-\nlar or interstellar lines. For the alpha elements, Mg, Si,\nCa, and Ti, the BL Her stars do not show a difference\nin their abundances to that of iron, as is usually seen\nin stars with near-solar metallicity. S is omitted from\nthe α-elements because its lines are too weak for analy-\nsis, except in UY Eri. For the UY Eri stars, we find a\nmean value of [α/Fe] = 0.35 ± 0.19 which is typical of\nmetal-poor stars.\n\n# 5. CONCLUSIONS\n\nWe have found that the T2C stars with periods of\n1–3 days may be divided into a nearly normal metal\ngroup, usually called BL Her stars, and a newly recog-\nnized group with [Fe/H] = –1.5 to –2.4. The BL Her\ngroup probably belong to the thick disk, while latter are\nsimilar to short period cepheids in metal-poor globular\nclusters. With a few exceptions, it appears that globu-\nlars with [Fe/H] > –1.0 do not have cepheid members of\nany metallicity.\n\nThe relationship of globular clusters and the general\nhalo of our galaxy is not clear.\nMartell et al. (2016)\nhave shown that only a very small percentage of the\ngeneral halo could have come from the evaporation of\nstars from globular clusters. Since all stars seem to form\nin groups and clusters, it is possible that the single halo\nstars are descendents of small, loose clusters no longer\nrecognizable as such.\nIn addition, the populations of\nvariable stars in the halo and globulars are not the same.\n\nWe thank Giuseppe Bono, Charli Sakari, and Joanne\nHughes for reading the manuscript and making some\ngood suggestions.\nThis research has been supported\nby the Kennilworth Fund of the New York Community\nTrust.\n\n# REFERENCES\n\nAbt, H. A. 1954, ApJS, 1, 63\n\nR. C. Altrock. PhD thesis, UNIVERSITY OF COLORADO AT\nBOULDER., 1968.\n\nA. M. Amarsi, M. Asplund, R. Collet, and J. Leenaarts.\nMNRAS, 455:3735–3751, February 2016.\n\nArp, H. C. 1955, AJ, 60, 1\n\nBaade, W. 1944, ApJ, 100, 137\n\nP. Ballester, A. Modigliani, O. Boitquin, S. Cristiani,\nR. Hanuschik, A. Kaufer, and S. Wolf. The Messenger, 101:\n31–36, September 2000.\n\nE. Carretta, A. Bragaglia, R. G. Gratton, S. Lucatello,\nG. Catanzaro, F. Leone, M. Bellazzini, R. Claudi, V. D’Orazi,\nY. Momany, S. Ortolani, E. Pancino, G. Piotto,\nA. Recio-Blanco, and E. Sabbi. A&A, 505:117–138, October\n2009.\n\nCastelli, F., & Kurucz, R. L. 2004\n\nChamberlain, J. W., & Aller, L. H. 1951, ApJ, 114, 52\n\nC. M. Clement, A. Muzzin, Q. Dufton, T. Ponnampalam,\nJ. Wang, J. Burford, A. Richardson, T. Rosebery, J. Rowe, and\nH. S. Hogg. AJ, 122:2587–2599, November 2001.\n\nV. Dobrovolskas, A. Kuˇcinskas, P. Bonifacio, S. A. Korotin,\nM. Steffen, L. Sbordone, E. Caffau, H.-G. Ludwig, F. Royer,\nand D. Prakapaviˇcius. A&A, 565:A121, May 2014.\n\nH. C. Harris, E. W. Olszewski, and G. Wallerstein. AJ, 89:\n119–125, January 1984.\n\nHelfer, H. L., Wallerstein, G., & Greenstein, J. L. 1959, ApJ, 129,\n700\n\nA. H. Joy. ApJ, 86:363, Novermber 1937.\n\nS. A. Korotin and T. V. Mishenina. Astronomy Reports, 43:\n533–539, August 1999.\n\nS. A. Korotin, S. M. Andrievsky, R. E. Luck, J. R. D. L´epine,\nW. J. Maciel, and V. V. Kovtyukh. MNRAS, 444:3301–3307,\nNovember 2014.\n\nV. V. Kovtyukh. MNRAS, 378:617–624, June 2007.\n\nF. Kupka, N. Piskunov, T. A. Ryabchikova, H. C. Stempels, and\nW. W. Weiss. A&AS, 138:119–133, July 1999.\n\nR. L. Kurucz, I. Furenlid, J. Brault, and L. Testerman. National\nSolar Observatory Atlas, Sunspot, New Mexico: National Solar\nObservatory 1984.\n\nB. Lemasle, V. Kovtyukh, G. Bono, P. Fran¸cois, I. Saviane,\nI. Yegorova, K. Genovali, L. Inno, G. Galazutdinov, and R. da\nSilva. A&A, 579:A47, July 2015.\n\nT. Lloyd Evans. The Observatory, 103:276–279, December 1983.\n\nT. Maas, S. Giridhar, and D. L. Lambert. ApJ, 666:378–392,\nSeptember 2007.\n\nS. L. Martell, M. D. Shetrone, S. Lucatello, R. P. Schiavon,\nS. M´esz´aros, C. Allende Prieto, D. A. Garc´ıa-Hern´andez, T. C.\nBeers, and D. L. Nidever. ApJ, 825:146, July 2016.\n\nT. V. Mishenina, S. A. Korotin, V. G. Klochkova, and V. E.\nPanchuk. A&A, 353:978–986, January 2000.\n\nO’Connell, D. J. K. Ricerche Astronomiche, 5:1958.\n\nS. B. Parsons. ApJ, 140:853, October 1964.\n\nRodgers, A. W., & Bell, R. A. 1963, MNRAS, 125, 487\n\nE. G. Schmidt, D. Rogalla, and L. Thacker-Lynn. AJ, 141:53,\nFebruary 2011.\n\nI. Soszy´nski, A. Udalski, M. K. Szyma´nski, M. Kubiak,\nG. Pietrzy´nski,  L. Wyrzykowski, O. Szewczyk, K. Ulaczyk, and\nR. Poleski. Acta Astron., 58:293, December 2008.\n\n<<page 5>>\nMetal-Poor Type II Cepheids\n5\n\nTable 3\nRelative to Fe Abundances in Type II Cephieds (C–Ti)\n\nP, days\n[Fe/H]\nC\nO\nNa\nMg\nAl\nSi\nS\nCa\nSc\nTi\n\nUY CrB\n0.929\n–0.40\n0.65\n0.67\n0.52\n0.31\n0.35\n0.24\n0.25\n0.20\n0.01\n0.23\n\nNSV 10788\n1.081\n–2.41\n...\n...\n...\n0.52\n...\n...\n...\n0.49\n0.27\n0.37\n\nV716 Oph\n1.116\n–1.64\n0.43\n0.72\n0.36\n0.21\n...\n0.14\n...\n0.53\n0.23\n0.49\n\nBF Ser\n1.165\n–2.08\n0.13\n0.73\n...\n0.31\n...\n...\n...\n0.75\n0.20\n0.41\n\nBL Her\n1.307\n–0.16\n0.36\n0.35\n0.63\n0.01\n0.00\n–0.01\n0.10\n0.01\n0.06\n0.15\n\nXX Vir\n1.348\n–1.55\n...\n0.83\n...\n0.19\n...\n0.05\n...\n0.46\n0.26\n0.39\n\nV1287 Sco\n1.956\n–1.94\n...\n...\n...\n0.55\n...\n...\n...\n0.52\n0.25\n0.47\n\nV553 Cen\n2.061\n0.01\n0.78\n–0.11\n0.43\n0.19\n0.12\n0.00\n0.10\n0.23\n0.28\n0.28\n\nUY Eri\n2.213\n–1.73\n–0.19\n0.61\n0.18\n0.37\n...\n0.06\n0.33\n0.60\n0.06\n0.45\n\nAU Peg\n2.402\n0.26\n0.17\n0.15\n–0.04\n–0.07\n0.18\n–0.11\n0.15\n–0.14\n–0.27\n–0.04\n\nTable 4\nMean abundances of UY Eri stars from this study, and BL Her\nstars from this study and Maas et al. (2007) for critical elements\nrelative to Fe.\n\nElement\nMeanBL\nσBL\nMeanUY\nσUY\nMean|BL−UY |\n\nO\n0.24\n0.29\n0.72\n0.27\n0.48\n\nNa\n0.37\n0.26\n0.27\n0.20\n0.10\n\nMg\n0.08\n0.16\n0.35\n0.20\n0.27\n\nSi\n0.02\n0.13\n0.13\n0.14\n0.11\n\nS\n0.14\n0.07\n0.50\n0.26\n0.36\n\nCa\n0.05\n0.16\n0.54\n0.26\n0.49\n\nTi\n0.14\n0.13\n0.41\n0.17\n0.27\n\n[Fe/H]\n–0.07\n0.24\n–1.89\n0.29\n1.82\n\nG. Wallerstein and G. Gonzalez. MNRAS, 282:1236–1246,\nOctober 1996.\n\nG. Wallerstein and G. Gonzalez. In P. A. Bradley and J. A.\nGuzik, editors, A Half Century of Stellar Pulsation\nInterpretation, volume 135 of Astronomical Society of the\nPacific Conference Series, page 36, 1998.\n\nG. Wallerstein, T. Gomez, and W. Huang. Ap&SS, 341:89–92,\nSeptember 2012.\n\nR. Woolley. The Observatory, 86:76–78, April 1966.",
+  "verbatim_heading_share": 1.0
+ },
+ "predictions": [
+  {
+   "text": "METAL-POOR TYPE II CEPHEIDS WITH PERIODS LESS THAN THREE DAYS",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. OBSERVATIONS AND DATA REDUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. SPECTROSCOPIC ANALYSIS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Oxygen",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2. Sodium",
+   "page": 1,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4. DISCUSSION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Carbon, Nitrogen, and Oxygen",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2. Light Elements",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5. CONCLUSIONS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.132665199998883,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 11,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_raw": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "METAL-POOR TYPE II CEPHEIDS WITH PERIODS LESS THAN THREE DAYS"
+  ]
+ }
+}

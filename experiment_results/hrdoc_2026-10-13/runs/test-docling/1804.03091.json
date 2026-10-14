@@ -1,0 +1,154 @@
+{
+ "doc": "1804.03091",
+ "system": "docling",
+ "metrics": {
+  "gt": 13,
+  "pred": 15,
+  "tp": 13,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.625,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Acknowledgement",
+   "Supporting Information Available"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 106.45862809999744
+ },
+ "predictions": [
+  {
+   "text": "Polarizable Molecular Simulations Reveal How Silicon-containing Functional Groups Govern the Desalination Mechanism in Nanoporous Graphene",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods and Computational Details",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Polarizable Model",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.2 Simulation Setup",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.3 Trajectory Analysis",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Results and Discussion",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Optimized Force Field Parameters",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2 Water Transfer",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.3 Ion Rejection",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4 Discussions",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Conclusions",
+   "page": 28,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgement",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Supporting Information Available",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 29,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.004537400003755465,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Polarizable Molecular Simulations Reveal How Silicon-containing Functional Group",
+   "Acknowledgement",
+   "Supporting Information Available"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.6153846153846154,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Supporting Information Available"
+  ],
+  "ignored_title_predictions": null
+ }
+}

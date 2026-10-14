@@ -1,0 +1,338 @@
+{
+ "doc": "1609.03363",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 22,
+  "pred": 22,
+  "tp": 21,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9130434782608696,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 25241,
+   "completion_tokens": 22905
+  },
+  "elapsed_llm_seconds": 99.12048739999955,
+  "content_preservation": 0.9737204354899262,
+  "inserted_word_share": 0.007272263332482765,
+  "verbatim_heading_share": 1.0,
+  "raw_headings": [
+   [
+    "CONDENSE: A Reconfigurable Knowledge Acquisition Architecture for Future 5G IoT",
+    0,
+    1
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    1
+   ],
+   [
+    "II. BACKGROUND AND PRELIMINARIES",
+    1,
+    1
+   ],
+   [
+    "A. The 3GPP MTC Architecture",
+    1,
+    2
+   ],
+   [
+    "B. Software Defined Networking (SDN) and Network Function Virtualization (NFV)",
+    2,
+    2
+   ],
+   [
+    "C. Notational preliminaries",
+    2,
+    2
+   ],
+   [
+    "III. CONDENSE ARCHITECTURE: IOT/CLOUD INTEGRATION FOR 5G",
+    3,
+    1
+   ],
+   [
+    "A. CONDENSE Architecture: Modules and Layers",
+    3,
+    2
+   ],
+   [
+    "B. CONDENSE Architecture: Implementation",
+    4,
+    2
+   ],
+   [
+    "IV. ATOMIC FUNCTION COMPUTATION LAYER",
+    4,
+    1
+   ],
+   [
+    "A. Analog-domain Atomic Function Computation (A-AFC)",
+    4,
+    2
+   ],
+   [
+    "B. Digital-domain Atomic Function Computation (D-AFC)",
+    6,
+    2
+   ],
+   [
+    "V. NETWORK FUNCTION COMPUTATION LAYER",
+    6,
+    1
+   ],
+   [
+    "A. Theoretical Aspects of NFC Layer",
+    6,
+    2
+   ],
+   [
+    "B. Implementation Aspects of NFC Layer",
+    8,
+    2
+   ],
+   [
+    "VI. APPLICATION LAYER",
+    9,
+    1
+   ],
+   [
+    "A. Data recovery through network coding",
+    9,
+    2
+   ],
+   [
+    "B. Statistical estimation and learning",
+    10,
+    2
+   ],
+   [
+    "C. Neural networks",
+    11,
+    2
+   ],
+   [
+    "VII. OTHER IMPLEMENTATION ASPECTS",
+    13,
+    1
+   ],
+   [
+    "VIII. CONCLUSIONS",
+    13,
+    1
+   ],
+   [
+    "ACKNOWLEDGMENT",
+    14,
+    1
+   ],
+   [
+    "REFERENCES",
+    14,
+    1
+   ]
+  ]
+ },
+ "predictions": [
+  {
+   "text": "CONDENSE: A Reconfigurable Knowledge Acquisition Architecture for Future 5G IoT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. BACKGROUND AND PRELIMINARIES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The 3GPP MTC Architecture",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Software Defined Networking (SDN) and Network Function Virtualization (NFV)",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Notational preliminaries",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. CONDENSE ARCHITECTURE: IOT/CLOUD INTEGRATION FOR 5G",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. CONDENSE Architecture: Modules and Layers",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "B. CONDENSE Architecture: Implementation",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "IV. ATOMIC FUNCTION COMPUTATION LAYER",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Analog-domain Atomic Function Computation (A-AFC)",
+   "page": 4,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "B. Digital-domain Atomic Function Computation (D-AFC)",
+   "page": 6,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "V. NETWORK FUNCTION COMPUTATION LAYER",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Theoretical Aspects of NFC Layer",
+   "page": 6,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B. Implementation Aspects of NFC Layer",
+   "page": 8,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "VI. APPLICATION LAYER",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Data recovery through network coding",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "B. Statistical estimation and learning",
+   "page": 10,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "C. Neural networks",
+   "page": 10,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "VII. OTHER IMPLEMENTATION ASPECTS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSIONS",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 99.3460199000001,
+ "metrics_raw": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "CONDENSE: A Reconfigurable Knowledge Acquisition Architecture for Future 5G IoT",
+   "REFERENCES"
+  ]
+ },
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 23,
+  "tp": 21,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "CONDENSE: A Reconfigurable Knowledge Acquisition Architecture for Future 5G IoT",
+   "REFERENCES"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 20,
+  "pred": 20,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 20,
+  "parent_correct": 20,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

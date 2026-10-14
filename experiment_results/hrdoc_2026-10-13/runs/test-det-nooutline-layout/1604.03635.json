@@ -1,0 +1,149 @@
+{
+ "doc": "1604.03635",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [
+   "Data Association with LSTMs",
+   "Training Data",
+   "Implementation Details"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 12,
+  "tp": 12,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "Data Association with LSTMs",
+   "Training Data",
+   "Implementation Details"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 366,
+  "layout_marked": 18,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9353442055130611,
+  "inserted_word_share": 0.9653209192819113
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Recurrent Neural Networks",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Bayesian Filtering",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Our Approach",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Preliminaries and Notation",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Multi-Target Tracking with RNNs",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Target Motion",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Initiation and Termination",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Experiments",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discussion and Future Work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.05466339999839,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.6111111111111112,
+  "unmatched_gt": [
+   "Data Association with LSTMs",
+   "Training Data",
+   "Implementation Details"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ }
+}

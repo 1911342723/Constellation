@@ -1,0 +1,225 @@
+{
+ "doc": "1612.08642",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 13,
+  "pred": 20,
+  "tp": 12,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.47619047619047616,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM"
+  ],
+  "unmatched_pred": [
+   "ht|ht−1 ∼ πht−1",
+   "xt|ht ∼ F(θht)",
+   "(a) Class one: Left hand",
+   "(b) Class two: right hand",
+   "βkδ(θ − θk)",
+   "πj ∼ DP \u0012α + κ, αβ + κδj",
+   "Subject Chin HMM-FP HMM-CV HDP-HMM",
+   "κ = C × Pcc − 1"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 176,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4062,
+   "completion_tokens": 487,
+   "total_tokens": 4549
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Bayesian Nonparametric Models for Synchronous",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Brain-Computer Interfaces",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. HMM APPROACH",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ht|ht−1 ∼ πht−1",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "xt|ht ∼ F(θht)",
+   "page": 0,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. BAYESIAN NONPARAMETRIC HMM APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(a) Class one: Left hand",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "(b) Class two: right hand",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "βkδ(θ − θk)",
+   "page": 1,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "πj ∼ DP \u0012α + κ, αβ + κδj",
+   "page": 2,
+   "level": 2,
+   "parent": 8
+  },
+  {
+   "text": "IV. DESCRIPTION OF EXPERIMENTS AND METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Problem and Data Set Description",
+   "page": 2,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Artifact Reduction",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "C. Spatial Filter",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Spectral Power Estimation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Subject Chin HMM-FP HMM-CV HDP-HMM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "κ = C × Pcc − 1",
+   "page": 4,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENT",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 22.18949799999973,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 22,
+  "tp": 12,
+  "fp": 10,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.4347826086956522,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM"
+  ],
+  "unmatched_pred": [
+   "Bayesian Nonparametric Models for Synchronous",
+   "Brain-Computer Interfaces",
+   "ht|ht−1 ∼ πht−1",
+   "xt|ht ∼ F(θht)",
+   "(a) Class one: Left hand",
+   "(b) Class two: right hand",
+   "βkδ(θ − θk)",
+   "πj ∼ DP \u0012α + κ, αβ + κδj",
+   "Subject Chin HMM-FP HMM-CV HDP-HMM",
+   "κ = C × Pcc − 1"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 18,
+  "tp": 10,
+  "fp": 8,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.42105263157894735,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM"
+  ],
+  "unmatched_pred": [
+   "ht|ht−1 ∼ πht−1",
+   "xt|ht ∼ F(θht)",
+   "(a) Class one: Left hand",
+   "(b) Class two: right hand",
+   "βkδ(θ − θk)",
+   "πj ∼ DP \u0012α + κ, αβ + κδj",
+   "Subject Chin HMM-FP HMM-CV HDP-HMM",
+   "κ = C × Pcc − 1"
+  ],
+  "ignored_title_predictions": null
+ }
+}

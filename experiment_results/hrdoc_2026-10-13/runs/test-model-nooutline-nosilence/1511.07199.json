@@ -1,0 +1,201 @@
+{
+ "doc": "1511.07199",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 16,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Abundance"
+  ],
+  "unmatched_pred": [
+   "2 Yuanpei College, Peking University, Beijing, 100871, China and",
+   "3 Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophys",
+   "Draft version September 13, 2018",
+   "ABSTRACT",
+   "4.1 for more details."
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 906,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13640,
+   "completion_tokens": 669,
+   "total_tokens": 14309
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "2 Yuanpei College, Peking University, Beijing, 100871, China and",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophysics, 60 Garden St., MS-51, Cambridge, MA, 02138;",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Draft version September 13, 2018",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. A SIMPLIFIED MODEL FOR GRAIN-MODIFIED",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "DIFFUSIVITIES",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Asymptotic Relations",
+   "page": 1,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "2.2. Representative Cases",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3. APPLICATION TO PROTOPLANETARY DISKS:",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IONIZATION CHEMISTRY",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Threshold Field Strength in PPDs",
+   "page": 4,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.2. An Empirical Criterion on Grain Size and",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "3.3. Diﬀusivities in the Outer Disk",
+   "page": 5,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.1 for more details.",
+   "page": 7,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4. MHD SIMULATIONS OF THE INNER PPD",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Simulation Setup and Parameters",
+   "page": 7,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2. Simulation Results",
+   "page": 9,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5. SUMMARY AND DISCUSSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 14.053349699999671,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "Abundance"
+  ],
+  "unmatched_pred": [
+   "2 Yuanpei College, Peking University, Beijing, 100871, China and",
+   "3 Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophys",
+   "Draft version September 13, 2018",
+   "ABSTRACT",
+   "4.1 for more details."
+  ]
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 18,
+  "tp": 14,
+  "fp": 4,
+  "fn": 1,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "Abundance"
+  ],
+  "unmatched_pred": [
+   "2 Yuanpei College, Peking University, Beijing, 100871, China and",
+   "3 Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophys",
+   "Draft version September 13, 2018",
+   "4.1 for more details."
+  ],
+  "ignored_title_predictions": null
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "doc": "1611.07317",
+ "system": "det",
+ "metrics": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 16,
+  "parent_correct": 13,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Résumé",
+   "Climate data",
+   "OF LOCAL WAVELET SPECTRA"
+  ],
+  "unmatched_pred": [
+   "Figure 8 – Percentage of variance explained"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 203,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 STUDY AREA AND DATA",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 METHODS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 HIERARCHICAL CLUSTERING ON PRINCIPAL COMPONENTS",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.2 THE SEGMENTATION METHOD OF HILBERT",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.3 WAVELET TRANSFORM",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.4 GLOBAL WAVELET SPECTRUM (GWS) OR TIME AVERAGE",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.5 SCALE-AVERAGED WAVELET POWER (SAWP)",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3.6 WAVELET COHERENCE ANALYSIS",
+   "page": 6,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "4 RESULTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Figure 8 – Percentage of variance explained",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 IDENTIFICATION OF VARIABILITY MODES",
+   "page": 9,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.2 COHERENCE BETWEEN RAINFALLS AND DISCHARGES",
+   "page": 10,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "4.3 RELATIONSHIP TO CLIMATE FORCING",
+   "page": 11,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5 5 DISCUSSIONS AND CONCLUSION",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Références",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.868851999999606,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 17,
+  "tp": 16,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 16,
+  "parent_correct": 13,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Résumé",
+   "Climate data",
+   "OF LOCAL WAVELET SPECTRA"
+  ],
+  "unmatched_pred": [
+   "Figure 8 – Percentage of variance explained"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 16,
+  "tp": 15,
+  "fp": 1,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.736842105263158,
+  "unmatched_gt": [
+   "Résumé",
+   "Climate data",
+   "OF LOCAL WAVELET SPECTRA"
+  ],
+  "unmatched_pred": [
+   "Figure 8 – Percentage of variance explained"
+  ],
+  "ignored_title_predictions": null
+ }
+}

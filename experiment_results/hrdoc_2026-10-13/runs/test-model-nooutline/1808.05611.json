@@ -1,0 +1,172 @@
+{
+ "doc": "1808.05611",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "based on Word Sense Disambiguation"
+  ],
+  "unmatched_pred": [
+   "a domain-speciﬁc graph node similarity measure",
+   "Relation to Similar Models Our model is simi-",
+   "Construction of the Training Set Despite its"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 289,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13275,
+   "completion_tokens": 535,
+   "total_tokens": 13810
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "a domain-speciﬁc graph node similarity measure",
+   "page": 0,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Learning Graph Metric Embeddings",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Relation to Similar Models Our model is simi-",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Computing Pairwise Similarities",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Selection of the Similarity Measures",
+   "page": 2,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4.2 Pruning the Dissimilar Pairs of Nodes",
+   "page": 3,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "5 Experiment 1: Intrinsic Evaluation",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experiment 2: Extrinsic Evaluation",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Computational Efﬁciency Evaluation",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Construction of the Training Set Despite its",
+   "page": 7,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "8 Discussion and Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 13.32126789999893,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 13,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.7647058823529411,
+  "unmatched_gt": [
+   "based on Word Sense Disambiguation"
+  ],
+  "unmatched_pred": [
+   "a domain-speciﬁc graph node similarity measure",
+   "Relation to Similar Models Our model is simi-",
+   "Construction of the Training Set Despite its"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 10,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "based on Word Sense Disambiguation"
+  ],
+  "unmatched_pred": [
+   "a domain-speciﬁc graph node similarity measure",
+   "Relation to Similar Models Our model is simi-",
+   "Construction of the Training Set Despite its"
+  ],
+  "ignored_title_predictions": null
+ }
+}

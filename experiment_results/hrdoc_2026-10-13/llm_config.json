@@ -1,0 +1,6 @@
+{
+  "reader_model": "deepseek-v4.1-flash",
+  "reader_temperature": 0.5,
+  "generative_baseline_temperature": 0.0,
+  "note": "Run-time LLM configuration of the Comp-HRDoc runs. The reader's model and temperature were read from the local environment file (LLM_MODEL, LLM_TEMPERATURE), last modified 2026-09-20, before the test runs started (test_started.txt); the model name is also stored in every per-document record. The generative baseline's temperature is fixed in evaluation/hrdoc/evaluate.py."
+}

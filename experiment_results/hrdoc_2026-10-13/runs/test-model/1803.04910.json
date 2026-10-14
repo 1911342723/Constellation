@@ -1,0 +1,122 @@
+{
+ "doc": "1803.04910",
+ "system": "model",
+ "metrics": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 5,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 408,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10198,
+   "completion_tokens": 510,
+   "total_tokens": 10708
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. TOPOLOGICAL ELASTIC WAVEGUIDE",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Topological band structure analysis",
+   "page": 2,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "B. Topological edge states at the domain wall",
+   "page": 3,
+   "level": 3,
+   "parent": 1
+  },
+  {
+   "text": "III. EXPERIMENTAL VALIDATION",
+   "page": 5,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Existence of the edge states",
+   "page": 5,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "B. Selective valley injection",
+   "page": 6,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "IV. CHIRAL VORTICES OF ENERGY FLUX",
+   "page": 7,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "V. CONCLUSIONS",
+   "page": 9,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.02552029999788,
+ "metrics_v1": {
+  "gt": 9,
+  "pred": 10,
+  "tp": 9,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 5,
+  "teds": 0.7272727272727273,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 9,
+  "pred": 9,
+  "tp": 9,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 1,
+  "parent_correct": 5,
+  "teds": 0.8,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

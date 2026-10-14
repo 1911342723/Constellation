@@ -79,11 +79,19 @@ def main() -> None:
             if path.is_dir()}
     runs.update({path.name[4:]: load(path) for path in sorted(args.runs.glob("gen-*")) if path.is_dir()})
     summary = {name: summarize(list(records.values())) for name, records in runs.items() if records}
+    # Sensitivity: front/back-matter titles removed from predictions and reference alike.
+    summary_generic = {name: summarize([{**r, "metrics": r["metrics_generic"]} for r in records.values()
+                                        if "metrics_generic" in r])
+                       for name, records in runs.items() if records}
 
     comparisons = {}
     pairs = [("model-nooutline", "det-nooutline"), ("model-nooutline", "model-nooutline-nosilence"),
-             ("model-nooutline", "docling"), ("model-nooutline", "outline"), ("model", "det"),
-             ("model", "model-nooutline"), ("det", "det-nooutline"), ("model-nooutline", "llm_markdown")]
+             ("model-nooutline", "docling"), ("model-nooutline", "docling-numlevels"),
+             ("model-nooutline", "outline"), ("model", "det"),
+             ("model", "model-nooutline"), ("det", "det-nooutline"),
+             ("model-nooutline-layout", "model-nooutline"), ("model-nooutline-layout", "det-nooutline-layout"),
+             ("model-nooutline-layout", "docling-numlevels"), ("det-nooutline-layout", "det-nooutline"),
+             ("model-nooutline-rep4", "llm_markdown")]
     for left, right in pairs:
         if left in runs and right in runs:
             docs = sorted(set(runs[left]) & set(runs[right]))
@@ -97,8 +105,18 @@ def main() -> None:
                        for name, records in runs.items() if records}
     else:
         summary_gen = {}
+    # Run-to-run variation of the full system (sampled router) on the generative sample.
+    repeats = {}
+    rep_names = ["model-nooutline"] + sorted(n for n in runs if n.startswith("model-nooutline-rep"))
+    if len(rep_names) > 1:
+        docs = sorted(set.intersection(*(set(runs[n]) for n in rep_names)))
+        per_run = {n: micro([runs[n][d] for d in docs]) for n in rep_names}
+        repeats = {"documents": len(docs), "runs": per_run,
+                   **{f"{k}_{agg.__name__}": agg(r[k] for r in per_run.values())
+                      for k in ("f1", "teds") for agg in (min, max)}}
     payload = {"split": args.split, "summary": summary, "comparisons": comparisons,
-               "generative_sample_summary": summary_gen}
+               "generative_sample_summary": summary_gen, "repeat_runs": repeats,
+               "summary_generic": summary_generic}
     (args.out / "summary.json").write_text(json.dumps(payload, indent=1), encoding="utf-8")
 
     lines = [f"# Comp-HRDoc results ({args.split})", "",
@@ -113,6 +131,9 @@ def main() -> None:
     for key, c in comparisons.items():
         lines.append(f"- {key} (n={c['documents']}): ΔF1 {c['f1']['delta']:+.3f} [{c['f1']['lo']:+.3f}, {c['f1']['hi']:+.3f}], "
                      f"ΔTEDS {c['teds']['delta']:+.3f} [{c['teds']['lo']:+.3f}, {c['teds']['hi']:+.3f}]")
+    if repeats:
+        lines += ["", f"## Repeat runs of the full system (n={repeats['documents']} documents)", ""]
+        lines += [f"- {n}: F1 {r['f1']:.3f}, TEDS {r['teds']:.3f}" for n, r in repeats["runs"].items()]
     (args.out / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
 

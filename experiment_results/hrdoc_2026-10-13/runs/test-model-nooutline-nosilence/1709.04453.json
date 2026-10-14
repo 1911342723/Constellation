@@ -1,0 +1,200 @@
+{
+ "doc": "1709.04453",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 15,
+  "pred": 19,
+  "tp": 13,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "3.3.1 Datasets",
+   "3.3.2 Visual Demonstration on Data"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "Algorithm 1 priority reordering",
+   "2: loop",
+   "then",
+   "return",
+   "ACKNOWLEDGEMENTS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 305,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4658,
+   "completion_tokens": 578,
+   "total_tokens": 5236
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "ABSTRACT",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 RELATED WORK",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 CORESETS CONSTRUCTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Coreset method",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2 Pre-ordering points",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Algorithm 1 priority reordering",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2: loop",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "then",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "return",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3 Comparing Coresets with Random Sampling",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "4 AVOIDING ERROR WHEN THRESHOLDING ISO-LEVELS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 SYSTEM",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Interactive De-noising",
+   "page": 4,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "5.2 Implementation",
+   "page": 5,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "6 DISCUSSION AND LIMITATIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 CONCLUSION AND FUTURE WORK",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "ACKNOWLEDGEMENTS",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 21.339887699999963,
+ "metrics_v1": {
+  "gt": 15,
+  "pred": 19,
+  "tp": 13,
+  "fp": 6,
+  "fn": 2,
+  "level_correct": 13,
+  "parent_correct": 13,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "3.3.1 Datasets",
+   "3.3.2 Visual Demonstration on Data"
+  ],
+  "unmatched_pred": [
+   "ABSTRACT",
+   "Algorithm 1 priority reordering",
+   "2: loop",
+   "then",
+   "return",
+   "ACKNOWLEDGEMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.6470588235294117,
+  "unmatched_gt": [
+   "3.3.1 Datasets",
+   "3.3.2 Visual Demonstration on Data"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 priority reordering",
+   "2: loop",
+   "then",
+   "return"
+  ],
+  "ignored_title_predictions": null
+ }
+}

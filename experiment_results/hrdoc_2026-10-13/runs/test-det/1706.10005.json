@@ -1,0 +1,184 @@
+{
+ "doc": "1706.10005",
+ "system": "det",
+ "metrics": {
+  "gt": 10,
+  "pred": 18,
+  "tp": 10,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2. If no ﬁll-in, the number of nonzero entries in matrix L is of the order of O(",
+   "3. The ij-th entry in C is nonzero, which implies that the two hard variables ci",
+   "2. Diﬀerent types of hard variables are aﬀected by diﬀerent number of atoms. As ",
+   "3. Hard variables in diﬀerent branches may also have correlation. For the molecu",
+   "1. All torsional angles except φ1 and φ2 are chosen as hard variables, r = n − 2",
+   "2. All bond angles except θ1 are chosen as hard variables, r = n − 1.",
+   "3. All bond lengths are chosen as hard variables, r = n.",
+   "4. Randomly ﬁxing one third of φi, one third of θi and one third of bi, leave φ1"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 692,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Fixman’s Theorem",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Descending Distance Ordering Method",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. If no ﬁll-in, the number of nonzero entries in matrix L is of the order of O(r). Also, the computational",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. The ij-th entry in C is nonzero, which implies that the two hard variables ci and cj are correlated.",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Diﬀerent types of hard variables are aﬀected by diﬀerent number of atoms. As shown in Eq. (A.4), φi, θi",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Hard variables in diﬀerent branches may also have correlation. For the molecule shown in Fig. 1, φ4 and",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Only Torsional Angles are Allowed to be Hard Variable",
+   "page": 6,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "3.2 Any Internal Coordinate Variable can be Constrained",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4 Numerical Validations",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. All torsional angles except φ1 and φ2 are chosen as hard variables, r = n − 2.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. All bond angles except θ1 are chosen as hard variables, r = n − 1.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. All bond lengths are chosen as hard variables, r = n.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. Randomly ﬁxing one third of φi, one third of θi and one third of bi, leave φ1, φ2, θ1 being free, r ≈ n − 3.",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Calculation of ∂q",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.585134000000835,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 18,
+  "tp": 10,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 10,
+  "parent_correct": 8,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2. If no ﬁll-in, the number of nonzero entries in matrix L is of the order of O(",
+   "3. The ij-th entry in C is nonzero, which implies that the two hard variables ci",
+   "2. Diﬀerent types of hard variables are aﬀected by diﬀerent number of atoms. As ",
+   "3. Hard variables in diﬀerent branches may also have correlation. For the molecu",
+   "1. All torsional angles except φ1 and φ2 are chosen as hard variables, r = n − 2",
+   "2. All bond angles except θ1 are chosen as hard variables, r = n − 1.",
+   "3. All bond lengths are chosen as hard variables, r = n.",
+   "4. Randomly ﬁxing one third of φi, one third of θi and one third of bi, leave φ1"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 16,
+  "tp": 8,
+  "fp": 8,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 6,
+  "teds": 0.47058823529411764,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "2. If no ﬁll-in, the number of nonzero entries in matrix L is of the order of O(",
+   "3. The ij-th entry in C is nonzero, which implies that the two hard variables ci",
+   "2. Diﬀerent types of hard variables are aﬀected by diﬀerent number of atoms. As ",
+   "3. Hard variables in diﬀerent branches may also have correlation. For the molecu",
+   "1. All torsional angles except φ1 and φ2 are chosen as hard variables, r = n − 2",
+   "2. All bond angles except θ1 are chosen as hard variables, r = n − 1.",
+   "3. All bond lengths are chosen as hard variables, r = n.",
+   "4. Randomly ﬁxing one third of φi, one third of θi and one third of bi, leave φ1"
+  ],
+  "ignored_title_predictions": null
+ }
+}

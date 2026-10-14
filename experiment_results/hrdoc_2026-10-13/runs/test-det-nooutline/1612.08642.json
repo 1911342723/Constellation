@@ -1,0 +1,138 @@
+{
+ "doc": "1612.08642",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.7142857142857143,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM",
+   "AC KNOWL EDG MEN T"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 2
+ },
+ "info": {
+  "blocks": 176,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Bayesian Nonparametric Models for Synchronous",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Brain-Computer Interfaces",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. HMM APPROACH",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. BAYESIAN NONPARAMETRIC HMM APPROACH",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. DESCRIPTION OF EXPERIMENTS AND METHODS",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Problem and Data Set Description",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "B. Artifact Reduction",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "C. Spatial Filter",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Spectral Power Estimation",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. RESULTS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSION",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 17.77360150000095,
+ "metrics_v1": {
+  "gt": 13,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM",
+   "AC KNOWL EDG MEN T"
+  ],
+  "unmatched_pred": [
+   "Bayesian Nonparametric Models for Synchronous",
+   "Brain-Computer Interfaces"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 10,
+  "tp": 10,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "A. The HDP-HMM and the Sticky HDP-HMM"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

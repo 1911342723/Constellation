@@ -1,0 +1,233 @@
+{
+ "doc": "1807.04819",
+ "system": "llm_markdown",
+ "metrics": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 7,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "II . 3GP P MO DE -4"
+  ],
+  "unmatched_pred": [
+   "II. 3GPP MODE-4"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 8,
+  "tp": 7,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.8888888888888888,
+  "unmatched_gt": [
+   "II . 3GP P MO DE -4"
+  ],
+  "unmatched_pred": [
+   "II. 3GPP MODE-4"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "raw_headings": [
+   [
+    "Enhanced C-V2X Mode-4 Subchannel Selection",
+    0,
+    1
+   ],
+   [
+    "Abstract",
+    0,
+    2
+   ],
+   [
+    "Index Terms",
+    0,
+    2
+   ],
+   [
+    "I. INTRODUCTION",
+    0,
+    2
+   ],
+   [
+    "II. 3GPP MODE-4",
+    0,
+    2
+   ],
+   [
+    "A. Stage 1: Power Sensing",
+    0,
+    3
+   ],
+   [
+    "B. Stage 2: Subchannels Categorization",
+    0,
+    3
+   ],
+   [
+    "C. Stage 3: Subchannel Selection",
+    0,
+    3
+   ],
+   [
+    "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+    0,
+    2
+   ],
+   [
+    "IV. SIMULATIONS",
+    0,
+    2
+   ],
+   [
+    "V. CONCLUSION",
+    0,
+    2
+   ],
+   [
+    "REFERENCES",
+    0,
+    2
+   ]
+  ],
+  "model": "deepseek-v4.1-flash",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 8217,
+   "completion_tokens": 6662
+  },
+  "elapsed_llm_seconds": 27.103333800005203,
+  "word_preservation": {
+   "recall": 0.9090722073647398,
+   "in_order": 0.8938490022629089,
+   "inserted": 0.0009043635541488015
+  },
+  "output_markdown": "# Enhanced C-V2X Mode-4 Subchannel Selection\n\nLuis F. Abanto-Leon†, Arie Koppelaar‡, Sonia Heemstra de Groot§\n† § Eindhoven University of Technology ‡NXP Semiconductors\n†l.f.abanto@tue.nl, ‡arie.koppelaar@nxp.com, §sheemstradegroot@tue.nl,\n\n## Abstract\n\nIn Release 14, the 3rd Generation Partnership Project (3GPP) introduced Cellular Vehicle–to–Everything (C-V2X) mode-4 as a novel disruptive technology to support sidelink vehicular communications in out–of–coverage scenarios. C-V2X mode-4 has been engineered to operate in a distributed manner, wherein vehicles autonomously monitor the received power across sidelink subchannels before selecting one for utilization. By means of such an strategy, vehicles attempt to (i) discover and (ii) reserve subchannels with low interference that may have the potential to maximize the reception likelihood of their own broadcasted safety messages. However, due to dynamicity of the vehicular environment, the subchannels optimality may fluctuate rapidly over time. As a consequence, vehicles are required to make a new selection every few hundreds of milliseconds. In consonance with 3GPP, the subchannel selection phase relies on the linear average of the perceived power intensities on each of the subchannels during a monitoring window. However, in this paper we propose a nonlinear power averaging phase, where the most up–to–date measurements are assigned higher priority via exponential weighting. We show through simulations that the overall system performance can be leveraged in both urban and freeway scenarios. Furthermore, the linear averaging can be considered as a special case of the exponentially-weighted moving average, ensuring backward compatibility with the standardized method. Finally, the 3GPP mode-4 scheduling approach is described in detail.\n\n## Index Terms\n\nsemi-persistent scheduling, vehicular communications, mode-4, sidelink, LTE-V, C-V2X\n\n## I. INTRODUCTION\n\nCellular Vehicle–to–Everything (C-V2X) communications is one of the novel paradigms introduced by the 3rd Generation Partnership Project (3GPP) [1] in Release 14. C-V2X communications has been devised to be a dependable technology with the capability of displaying robustness in highly dynamic vehicular scenarios with varying densities, while satisfying stringent latency and reliability requirements. Thus, C-V2X has the potential to become a propitious asset that can be advantageously exploited in several application areas. For instance, vehicles with communication attributes may assist in preventing accidents and reducing the number of casualties [2]. Similarly, these communications capabilities can also be harnessed to optimize road traffic flow, which is anticipated to produce a plethora of positive impacts across several dimensions.\n\nWithin C-V2X, two operation modalities are described: mode-3 and mode-4 [1]. The former one is a centralized scheme that relies on the availability of cellular infrastructure such as eNodeBs in order to distribute the available sidelink subchannels among the vehicles in coverage. eNodeBs may pursue multiple different criteria to accomplish such an objective. For instance, [3] considers a single sub-band setting where a sequential heuristic approach is proposed in order to maximize the reuse distance among vehicles broadcasting in the same subchannel, and thus leading to co-channel interference (CCI) reduction. On the other hand, [4] describes a multiple sub-band setting where maximization of the system sum-capacity is sought based on the subchannels signal–to–interference–plus–noise ratio (SINR) that vehicles report to eNodeBs. Furthermore, [5] extends the previous work including additional constraints where differentiated QoS requirements per vehicle are considered. Regardless of the optimization criteria, once an eNodeB has computed a suitable distribution of subchannels, vehicles will be notified of the resultant allocation via downlink. Thereupon, vehicles will engage in sidelink direct communications with their counterparts using the allotted resources. Contrastingly, mode-4 has been devised to operate in the absence of network coverage. In particular, such kind of situations might arise when cellular infrastructure has not been deployed in the area or when network coverage is not reliable enough to reckon on. As a consequence, vehicles will have to monitor the received power intensity on each subchannel and select a suitable one for utilization. Expressly, a vehicle will self-allocate a subchannel which may be unoccupied or experiences low interference in order to improve the likelihood of its own transmitted messages being received reliably. Although difficult to guarantee as a result of (i) the distributedness of the scheme and (ii) the unpredictability of channel fluctuations in the environment—by means of such an strategy of sensing before selecting—not only do vehicles attempt to improve the reception probability of their messages but also strive not to impinge on the conditions of other subchannels being reserved by neighboring vehicles. In this manner, every vehicle in the system continuously endeavors to maintain an equilibrium point where interference can be minimized.\n\nThe comparative advantage of mode-3 is the more efficient utilization of subchannels that can be attained as a consequence of the humongous knowledge that eNodeBs can collect from all vehicles in coverage. Therefore, conflict-free subchannel assignments with minimal interference are realizable. Nonetheless, signaling between vehicles and eNodeBs via uplink/downlink constitutes a challenging task in terms of the rigorous latency exigencies that are required. Conversely, in mode-4 there is no need of a central controller to dictate assignments and therefore latency due to data collection is nonexistent. A noticeable drawback of mode-4 is the restricted local knowledge of each vehicle, which may cause the most satisfactory subchannels not to be always selected. Furthermore, due to incoordination, several vehicles may compete over the same subset of subchannels, and therefore leading to persistent conflicts and severe packet reception ratio (PRR) degradation.\n\nIn order to diminish the occurrences of conflicts, 3GPP standardized a semi-persistent scheduling (SPS) scheme whereby vehicles can reserve subchannels on a quasi-steady basis—in the order of a few hundreds of milliseconds—until re-scheduling is required. Thus, any receiving vehicle is capable of acquiring a degree of understanding on the subchannels utilization since short-term predictability is presumed. In dense scenarios, however, most of the subchannels might be under utilization and therefore vehicles must guide their selection based on the received power intensity, i.e. potential interference. When the reservation period of a subchannel has expired, a vehicle may have to process a new selection. This procedure consists in (i) monitoring the received power on every subchannel during an observation window; (ii) performing linear power averaging over such measurements in order to synthesize a metric representative of the interference level per subchannel; and finally (iii) randomly selecting a subchannel among the best candidates. It has been proved by 3GPP through extensive simulations that such an strategy is consistent and robust enough to provide a fair basis of knowledge for vehicles to make a convenient selection while reducing the amount of concurrent conflicts. Given the necessity of further boosting reception reliability of messages, we propose a slight modification in the subchannel selection stage. Instead of relying on power linear averaging [1], in the proposed approach the most recent measurements—within the observation window—are prioritized with higher weighting factors whereas received power intensities collected earlier in time are assigned lesser values. To wit, the most up-to-date values are more relevant for subchannel selection as these are representative of the current and short-term future utilization patterns. In addition, an optional feature allows vehicles to omit re-scheduling and reselect the currently reserved subchannel with some probability [6] [7]. We show through simulations that this profile attribute perfectly dovetails with the introduced exponentially-weighted moving average and can further boost the overall performance of the whole system.\n\nThe paper is structured as follows. In Section II, the 3GPP SPS scheduling scheme for mode-4 communications is explained in detail. Section III describes the proposed exponential weighting variant for power averaging. Section IV is devoted to discussing simulation results obtained from real vehicular traces. Finally, Section V summarizes the conclusions of our work.\n\n## II. 3GPP MODE-4\n\nWe have considered a 10 MHz intelligent transportation systems (ITS) channel for exclusive support of sidelink vehicular communications. Thus, the whole channel is divided into several time-frequency resource partitions—hereinafter called subchannels. Each has dimensions of one subframe (1 ms) in time and a number of resource blocks (RBs) in frequency. A subchannel is assumed to be capable of carrying a cooperative awareness message (CAM) and consists of two main components: data and control. The former one is also known as transport block (TB) and carries important information of each vehicle, e.g. position, speed, direction, etc. [8]. The latter portion is known as sidelink control information (SCI) [1] and transports relevant parameters—such as modulation and coding scheme (MCS), the number of resource blocks per subchannel, priority of the message, etc.—that will be employed for TB decoding and scheduling. In this work we have assumed a nominal message rate of ∆CAM = 10 Hz for all the vehicles in the system, and therefore the maximum amount of time divisions is 100. When a vehicle self-allocates a subchannel in a semi-persistent manner, it will periodically broadcast on such resource during TSP S ms, upon whose termination a new reservation will be required. For instance, Fig. 1 depicts the transmission and reception instances from a single vehicle perspective. It can be noticed that subchannel s(2,3)—located at the intersection of sub-band f = 2 and subframe k = 3—is being persistently utilized every Tw ms and such reservation pattern remains unchanged during TSP S/Tw consecutive time windows. Then—at the packet generation instance in the last reserved time window t −1—the vehicle selects its next SPS subchannel. In the following, we proceed to describe the 3GPP mode-4 scheduling scheme in more detail.\n\n### A. Stage 1: Power Sensing\n\nWithin a 10 MHz ITS channel, there exist F sub-bands adjacent in frequency. Let s(f,k) denote the subchannel in sub-band f (for f = 1, 2, . . . , F) and subframe k (for k = 1, 2, . . . , 100) as depicted in Fig. 1. Thus, S = {s(1,1), s(1,2), . . . , s(F,100)} represents the complete set of |S| = 100F subchannels for allocation. Since the value of TSP S = {500, 600, . . ., 1500} is randomly drawn by each vehicle from a set of predetermined values [6], the reservation period changes on a per vehicle basis, thus contributing to decorrelating the scheduling procedure among vehicles. During any specific time window n, a vehicle vi is persistently transmitting a CAM message of size MCAM bytes on a determined subchannel. Due to half-duplex PHY assumption, vehicle vi will be able to either transmit or receive at a time. Thus, as illustrated in Fig. 1, the CAM messages in some subchannels and therefore their power intensities will not be received by the vehicle. Let ε(n,f,k)\ni\ndenote the received power perceived by vehicle vi on a RB belonging to subchannel s(f,k) at any time window n. The power is computed as shown in (1)1, where V(n,k) represents the set of all the vehicles vj broadcasting on subchannels of subframe k in time window n. On the other hand, S(n)\ni\ndenotes the subset of subchannels that vehicle vi is utilizing in the current subframe n2. Note from (1) that every subchannel belonging to a subframe—where vehicle vi has broadcasted—has had its power intensity set to ∞. The reason to this procedure is that the power could not be sensed due to half-duplex limitations and in order to preclude the selection of subchannels in unmonitored subframes, such power levels were assigned high values. The normalized RB transmit power of vehicle vj is represented by Pj = PT, which is assumed to be the same for all units. The antenna gains of the transmitter and receiver are Gt and Gr, respectively. The parameter X (n)\nij\nis a log-normal random variable with standard deviation Xσ representing the shadowing experienced by the link between vehicles vi and vj at time window n. In addition, PL(n)\nij\n= max{PL(n,free-space)\nij\n, PL(n,B1)\nij\n} depicts the path loss between vi and vj. The first term represents the power attenuation based on the free-space model whereas the second term has been computed according to WINNER + UMi (B1) [9] specifications. Pσ represents the normalized noise floor per RB. Ip is a factor that represents the influence of either co-channel interference (CCI) or in-band emissions (IBE) contributed by the any vehicles using subchannels of subframe k. Ip is defined as the element in position | p −f + 1 | of a vector I, where p = { ˜f | s( ˜f,k) ∈Sj}. The elements of vector I represent the average energy level leaked from adjacent subchannels. For instance, in a configuration with F = 3 sub-bands, I = [1 0.0047 0.0015] whereas for F = 4, I = [1 0.0047 0.0015 0.0005]. In-band emissions, path-loss and correlated shadowing have been modeled as specified in [10]. Thus, the average power ˜ε(n,f,k)\ni\nperceived by vehicle vi at time window n is computed on the basis of measurements during the previous 10 time windows {n −1, n −2, . . . , n −1000}—i.e. a total of 1000 ms—where each subchannel will be averaged over 10 power samples.\n\n### B. Stage 2: Subchannels Categorization\n\nSome subchannels will be excluded from selection based on the intensity of the (linear) average received power—obtained from the reference signals of the TB. Thus, if the average PSSCH-RSRP over the past 1000 ms exceeds a certain threshold γRSRP 3, those subchannels will be excluded as candidates for the new scheduling process. At this stage, the subchannels whose power could not be monitored, have been implicitly excluded as their power was set to ∞. If after this stage, the amount of allotable subchannels is less than 20% of the initial number |S| = 100F, the threshold γRSRP is incremented by 3 dB and this process is iteratively repeated until the number of candidate subchannels is at least 0.2|S|. By means of increasing the threshold, the optimality of the candidate subchannels for scheduling is progressively relaxed. Thus, a vehicle becomes more permissive in including subchannels with slightly higher interference level at the expense of increasing the cardinality of the candidate set.\n\n### C. Stage 3: Subchannel Selection\n\nOnce the number of candidate subchannels is at least 0.2|S|, each vehicle vi will rank the subchannels in ascending order based on the linear average Received Signal Strength Indicator (RSSI)—which is computed across all the RBs of each subchannel. Thus, the selection process consists on each vehicle vi creating a set with the best 20F subchannels and then randomly choosing one for SPS transmission. In addition, an optional feature allows the vehicle—with probability pkeep—to skip re-scheduling and maintain the current subchannel [6] [7]. In such a case a new TSP S value will also be drawn.\n\n## III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE\n\nThis procedure is applied to both Stages 2 and Stage 3, i.e. for PSSCH-RSRP and RSSI averaging. Although the linear average can provide a reliable impression of the interference degree, it has been noticed that by prioritizing the most recent measurements with higher weighting values, the performance of the system can be improved. Thus, the average received power of a RB—belonging to subchannel s(f,k)—at time window n is computed employing the exponentially-weighted measurements over the last 10 time windows, as shown in (2)\n\n˜ε(n,f,k)\ni\n=\n\"\n10\nX\nl=1\nαl\n#−1\n10\nX\nl=1\nαlε(n−l,f,k)\ni\n,\n(2)\n\nwhere α ≤1 is an exponential weighting factor. When α = 1, the procedures in Stage 2 and Stage 3 remain unaltered since the standardized linear average will be computed.\n\n3This threshold is obtained considering the priorities of the CAM messages received in the subchannels and the priority of the message to be transmitted by vi. In this work, we have assumed that the priority for all the messages is uniform and equal to 0. Thus, based on [7], γRSRP = −128 dBm.\n\n## IV. SIMULATIONS\n\nIn this section, we compare the standardized 3GPP scheduling method against the proposed variant. We evaluate two classes of vehicular scenarios—urban and freeway—and assess their performance in terms of the PRR using MATLAB. In addition, inspired by [11], the types of error causing missed or undecodable packets are classified. For the urban case, a high vehicle density region of the TAPAS Cologne database [12] was chosen, where an average number of 2000 vehicles over 60 seconds was observed. For the freeway case, a total number of 600 vehicles—distributed among 2 groups of 3 lanes per direction—with average density of 100 vehicles per kilometer was generated using Poisson point processes. In addition, the relevant parameters for the experiments are shown in Table I.\n\nTABLE I: Simulation parameters\n\nDescription\nSymbol\nValue\nUnits\nNumber of RBs per subchannel (per subframe)\n-\n30\n-\nNumber of sub-bands\nF\n3\n-\nNumber of subchannels per sub-band\n-\n100\n-\nNumber of subchannels\n-\n300\n-\nCAM message rate\n∆CAM\n10\nHz\nCAM size\nMCAM\n190\nbytes\nMCS\n-\n7\n-\nTransmit power per CAM\n-\n23\ndBm\nTransmit power per RB\nPT\n6.67\nmW\nEffective coded throughput (24 CRC bits)\nρ\n0.9402\nbps/Hz\nThroughput loss coefficient [13]\nλ\n0.6\n-\nSINR threshold\nγT\n2.9293\ndB\nDistance between Tx and Rx\nDx\n50-300\nm\nScheduling period [7]\nTSP S\n0.5-1.5\ns\nAntenna gain\nGt, Gr\n3\ndB\nShadowing standard deviation\nXσ\n7\ndB\nShadowing correlation distance\n-\n10\nm\n\nFig. 2 and Fig. 3 compare the performance of the two approaches in a urban scenario with pkeep = 0. The type of PRR shown in Fig. 2, i.e. PRRdisk, represents the mainstream metric that counts all the successfully decoded packets considering every vehicle within a disk of radius Dx from the transmitter. The second metric, namely PRRring, considers only the vehicles located in the ring between Dx and Dx −50. This latter metric was introduced by 3GPP in [10] in order to evaluate the performance of a specific target group. In addition, the performance curves for greedy and random selection have been included. In the former case, several vehicles experiencing similar subchannel conditions may unknowingly select the same resources; thus leading to an increased amount of collisions. In the latter case, the quantity of packets colliding decreases since the whole set of candidate subchannels is S. Nevertheless, subchannels with high interference may be selected and thus impinging on the PRR. The performance of both random and greedy approaches is suboptimal compared to the standardized method. On the other hand, we can observe that the proposed variant can produce PRR improvement in the near-field and far-field of each transmitting vehicle. This behavior is observed in both kinds of PRR, where the gains for α = 0.4 at Dx = 300 are 2.82% and 3.98%, respectively. It was observed that values smaller than 0.4 tended to decrease performance, to extents lower than when α = 1. Fig. 4 shows the PRRring performance when pkeep = 0.2. It can be observed that this optional feature has the potential to boost the performance when compared to the case with pkeep = 0. However, when pkeep > 0.2 the dynamism due subchannel allocation changes is insufficient and therefore the PRR suffers degradation due to stasis. Furthermore, the proposed approach dovetails suitably with parameter pkeep and their joint utilization is advantageous for enhancing the system performance. It can also be noticed that the random allocation is unaffected by pkeep whereas the greedy selection is greatly benefited to the extent that it surpasses the former approach.\n\nThe packet errors have been classified in several categories as shown in Table II and Table III. In order of hierarchy, the following mutually exclusive classes are recognized: (i) half-duplex impairment at subchannel level (HD-SC); (ii) half-duplex impairment at subframe level (HD-SF); undecodable packets due to (iii) propagation, (iv) co-channel interference and (v) in-band emissions. Basing our observations on PRRring, in urban scenarios the most detrimental cause for lost packets is CCI while IBE and propagation are responsible for most of the remaining errors. Unreceived packets due to half-duplex (HD-SC and HD-SF) amount less than 1%. On the other hand—in the freeway scenario—because the channel parameters have not been changed with respect to the urban case, we can observe a similar amount of lost packets due to propagation. However, in this case CCI is more relevant since the distribution of vehicles is more condensed; therefore the subchannel reuse distance among vehicles is shorter than in the urban scenario. As a consequence of vehicles being closely packed, the power leakage due to IBE is also more impactul and affects the PRR comparatively more severe than in the urban case.\n\nNote: Across all the simulations, the PRR is computed checking whether every pair of vehicles vi and vj is within the awareness distance Dx or not. If affirmative, the SINR γ(f,k)\nij\nexperienced by vi upon reception of a packet transmitted by vj on subchannel s(f,k) is compared against a threshold γT = 10 · log10(2ρ/λ −1) [13], which is derived from the parameters in Table I. It is assumed that a message can be correctly decoded if its SINR is larger than γT.\n\nTABLE II: Classification in percentage of missed/undecodable packets - Urban scenario with α = 1 and pkeep = 0\n\nDistance\nPRR\nHD-SF\nHD-SC\nPropagation\nCCI\nIBE\nPRR\nHD-SF\nHD-SC\nPropagation\nCCI\nIBE\n(Disk)\n(Disk)\n(Disk)\n(Disk)\n(Disk)\n(Disk)\n(Ring)\n(Ring)\n(Ring)\n(Ring)\n(Ring)\n(Ring)\n50\n98.8194\n0.1262\n0.1050\n0.0000\n0.8664\n0.0830\n98.8194\n0.1262\n0.1050\n0.0000\n0.8664\n0.0830\n100\n97.7037\n0.2167\n0.1093\n0.0031\n1.5919\n0.3753\n96.7375\n0.2952\n0.1131\n0.0058\n2.2195\n0.6289\n150\n95.4630\n0.3354\n0.1076\n0.0799\n2.9353\n1.0788\n91.9840\n0.5197\n0.1036\n0.1990\n5.0226\n2.1711\n200\n91.8708\n0.4291\n0.1025\n0.6057\n5.0871\n1.9048\n84.0963\n0.6320\n0.0916\n1.7436\n9.7441\n3.6924\n250\n86.5511\n0.5163\n0.1017\n2.3065\n7.8852\n2.6392\n72.4718\n0.7469\n0.1005\n6.8081\n15.2899\n4.5828\n300\n79.8627\n0.5623\n0.1148\n5.5492\n10.7124\n3.1986\n59.0403\n0.7051\n0.1553\n15.6443\n19.5148\n4.9402\n\nTABLE III: Classification in percentage of missed/undecodable packets - Freeway scenario with α = 1 and pkeep = 0\n\nDistance\nPRR\nHD-SF\nHD-SC\nPropagation\nCCI\nIBE\nPRR\nHD-SF\nHD-SC\nPropagation\nCCI\nIBE\n(Disk)\n(Disk)\n(Disk)\n(Disk)\n(Disk)\n(Disk)\n(Ring)\n(Ring)\n(Ring)\n(Ring)\n(Ring)\n(Ring)\n50\n97.8500\n0.0911\n0.2265\n0.0000\n1.5033\n0.3291\n97.8500\n0.0911\n0.2265\n0.0000\n1.5033\n0.3291\n100\n94.8317\n0.0940\n0.4026\n0.0032\n3.2755\n1.3930\n93.1256\n0.0957\n0.5021\n0.0050\n4.2773\n1.9943\n150\n91.2680\n0.0999\n0.4870\n0.0611\n5.2521\n2.8318\n84.4430\n0.1113\n0.6486\n0.1721\n9.0375\n5.5875\n200\n87.1069\n0.1088\n0.5463\n0.4599\n7.4548\n4.3233\n73.9374\n0.1369\n0.7341\n1.7222\n14.4259\n9.0434\n250\n82.6517\n0.1193\n0.5834\n1.5996\n9.4906\n5.5553\n62.7991\n0.1661\n0.7489\n6.6780\n18.5624\n11.0456\n300\n78.0224\n0.1350\n0.6020\n3.6732\n11.1518\n6.4157\n51.2963\n0.2256\n0.7088\n15.6445\n20.7422\n11.3826\n\n## V. CONCLUSION\n\nWe have proposed an alternative to the standardized linear power averaging procedure—for PSSCH-RSRP and RSSI resource blocks—which has shown a positive impact in terms of PRR performance. In addition, we have shown through simulations that in two different environments, namely urban and freeway, the proposed variant is capable of excelling the standardized method. It should be noted that such a gain is only due to an improved management of subchannel selection in the scheduling procedure since no other features such as congestion control were introduced. For this reason, we foresee the potential of this modification to be combined with more advanced processes and functionalities. In addition, the proposed technique can be adaptive and tune its own parameters based on the sensed subchannels congestion.\n\n## REFERENCES\n\n[1] ”3GPP TS 36.213; Technical Specification Group Radio Access Network; Evolved Universal Terrestrial Radio Access (E-UTRA); Physical layer procedures; (Release 15) V15.0.0,” December 2017.\n\n[2] ”Crash Data Analyses for Vehicle-to-Infrastructure Communications for Safety Applications,” FHWA-HRT-11-040, November 2012.\n\n[3] G. Cecchini, A. Bazzi, B. M. Masini, A. Zanella, ”Localization-Based Resource Selection Schemes for Network-Controlled LTE-V2V,” IEEE ISWCS 2017, August 2017.\n\n[4] L. F. Abanto-Leon, A. Koppelaar, and S. M. Heemstra de Groot, ”Graph-based resource allocation with conflict avoidance for V2V broadcast communications”, IEEE PIMRC 2017, October 2017.\n\n[5] L. F. Abanto-Leon, A. Koppelaar, and S. M. Heemstra de Groot, ”Subchannel Allocation for Vehicle–to–Vehicle Broadcast Communications in Mode-3,” IEEE WCNC 2018, April 2018.\n\n[6] ”3GPP TS 36.321; Technical Specification Group Radio Access Network; Evolved Universal Terrestrial Radio Access (E-UTRA); Medium Access Control (MAC) protocol specification (Release 15),” December 2017.\n\n[7] ”3GPP TS 36.331; Technical Specification Group Radio Access Network; Evolved Universal Terrestrial Radio Access (E-UTRA); Radio Resource Control (RRC); Protocol specification (Release 15),” January 2018.\n\n[8] ”ETSI TR 102 861; Intelligent Transport Systems (ITS); STDMA recommended parameters and settings for cooperative ITS; Access Layer Part,” January 2012.\n\n[9] J. Meinila, P. Kyosti, L. Hentila, T. Jamsa, E. Suikkanen, E. Kunnari, and M. Narandzic, ”D5.3: WINNER+ Final Channel Models,” Wireless World Initiative New Radio, CELTIC CP5-026, June 2010.\n\n[10] ”3GPP TR 36.885; Technical Specification Group Radio Access Network; Study on LTE-based V2X Services; (Release 14),” June 2016.\n\n[11] R. Molina-Masegosa and J. Gozalvez, ”System Level Evaluation of LTE-V2V Mode 4 Communications and Its Distributed Scheduling,” IEEE VTC Spring 2017, June 2017.\n\n[12] ”TAPASCologne Project,” available at http://kolntrace.project.citi-lab.fr/.\n\n[13] A. Bazzi, B. Masini, A. Zanella, and I. Thibault, ”On the Performance of IEEE 802.11p and LTE-V2V for the Cooperative Awareness of Connected Vehicles,” IEEE Transactions on Vehicular Technology, Vol. 66, No. 11, pp. 10419-10432, November 2017.",
+  "verbatim_heading_share": 1.0909090909090908
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Index Terms",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. 3GPP MODE-4",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Stage 1: Power Sensing",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Stage 2: Subchannels Categorization",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Stage 3: Subchannel Selection",
+   "page": 6,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATIONS",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 27.161842100002104,
+ "metrics_v1": {
+  "gt": 11,
+  "pred": 11,
+  "tp": 10,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 10,
+  "parent_correct": 7,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "II . 3GP P MO DE -4"
+  ],
+  "unmatched_pred": [
+   "II. 3GPP MODE-4"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_raw": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 3,
+  "fp": 9,
+  "fn": 8,
+  "level_correct": 0,
+  "parent_correct": 0,
+  "teds": 0.3076923076923077,
+  "unmatched_gt": [
+   "II . 3GP P MO DE -4",
+   "A. Stage 1: Power Sensing",
+   "B. Stage 2: Subchannels Categorization",
+   "C. Stage 3: Subchannel Selection",
+   "I II . EX P ON EN T I AL LY-W EI GH TE D M O V I NG AV ERA G E",
+   "I V. SI M U L AT I ON S",
+   "V. CO NCL USI ON",
+   "R E F ERE NCE S"
+  ],
+  "unmatched_pred": [
+   "Enhanced C-V2X Mode-4 Subchannel Selection",
+   "II. 3GPP MODE-4",
+   "A. Stage 1: Power Sensing",
+   "B. Stage 2: Subchannels Categorization",
+   "C. Stage 3: Subchannel Selection",
+   "III. EXPONENTIALLY-WEIGHTED MOVING AVERAGE",
+   "IV. SIMULATIONS",
+   "V. CONCLUSION",
+   "REFERENCES"
+  ]
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "doc": "1710.11453",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "(CMDP)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 15,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 12,
+  "parent_correct": 11,
+  "teds": 0.5625,
+  "unmatched_gt": [
+   "(CMDP)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 20.09321970000019
+ },
+ "predictions": [
+  {
+   "text": "Optimal Traffic Splitting Policy in LTE-based Heterogeneous Network",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. States",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "B. Decision epochs and Actions",
+   "page": 1,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "C. Transition probabilities",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Cost function",
+   "page": 2,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "III. PROBLEM FORMULATION",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Formulation as Constrained Markov Decision Process (CMDP)",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Uniformization",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Lagrangian Approach",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. NUMERICAL RESULTS AND ANALYSIS",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal policy structure",
+   "page": 3,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Parameter variation",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "V. CONCLUSION",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.018943000002764165,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 13,
+  "parent_correct": 12,
+  "teds": 0.5882352941176471,
+  "unmatched_gt": [
+   "(CMDP)"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ }
+}

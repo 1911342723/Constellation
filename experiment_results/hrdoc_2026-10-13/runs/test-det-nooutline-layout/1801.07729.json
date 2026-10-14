@@ -1,0 +1,194 @@
+{
+ "doc": "1801.07729",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 16,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 6,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification",
+   "Effect of adding layers with reduced dimensionality:",
+   "Interpretations of the Activation Manifold and Understanding Influences:"
+  ],
+  "unmatched_pred": [
+   "2 Department of Art History, College of Charleston, SC, USA",
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 18,
+  "pred": 17,
+  "tp": 14,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 7,
+  "parent_correct": 4,
+  "teds": 0.5263157894736843,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification",
+   "Effect of adding layers with reduced dimensionality:",
+   "Interpretations of the Activation Manifold and Understanding Influences:"
+  ],
+  "unmatched_pred": [
+   "2 Department of Art History, College of Charleston, SC, USA",
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 630,
+  "layout_marked": 21,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9610505450941527,
+  "inserted_word_share": 0.9640959563982657
+ },
+ "predictions": [
+  {
+   "text": "2 Department of Art History, College of Charleston, SC, USA",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Methodology",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Main Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Detailed Methodology",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Challenges with Art Style Classiﬁcation",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.3 Studied Deep Learning Models:",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.4 Increasing the interpretability of the representation",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Quantitative Comparative Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Shape of Art History",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Few Factors Explain the Characteristics of Styles:",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Smooth Temporal Evolution of Style:",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Interpretation of the Modes of Variations - Relation to W¨olfﬂin’s Pairs:",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Discovering Limitations of W¨olfﬂin’s Concepts:",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Identiﬁcation of Representative Artists:",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Conclusions and Discussion",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 12.737294099999417,
+ "metrics_v1": {
+  "gt": 20,
+  "pred": 19,
+  "tp": 16,
+  "fp": 3,
+  "fn": 4,
+  "level_correct": 9,
+  "parent_correct": 6,
+  "teds": 0.5714285714285714,
+  "unmatched_gt": [
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classification",
+   "Effect of adding layers with reduced dimensionality:",
+   "Interpretations of the Activation Manifold and Understanding Influences:"
+  ],
+  "unmatched_pred": [
+   "2 Department of Art History, College of Charleston, SC, USA",
+   "2 Detailed Methodology",
+   "2.1 Challenges with Art Style Classiﬁcation"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

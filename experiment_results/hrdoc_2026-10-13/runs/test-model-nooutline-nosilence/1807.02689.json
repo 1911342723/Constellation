@@ -1,0 +1,245 @@
+{
+ "doc": "1807.02689",
+ "system": "model-nooutline-nosilence",
+ "metrics": {
+  "gt": 28,
+  "pred": 20,
+  "tp": 15,
+  "fp": 5,
+  "fn": 13,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.31034482758620685,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "1 Function pkts acked() // process a new received Ack",
+   "... /* default loss-based TCP code block",
+   "/* setting ssthresh using default TCP",
+   "in congestion avoidance phase",
+   "18 CubicNReno"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 792,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 16341,
+   "completion_tokens": 604,
+   "total_tokens": 16945
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Cellular Controlled Delay TCP (C2TCP)",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATIONS AND DESIGN DECISIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. C2TCP’S ALGORITHM",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. The Good and The Bad Conditions",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. Main Logic",
+   "page": 1,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "1 Function pkts acked() // process a new received Ack",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "... /* default loss-based TCP code block",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "/* setting ssthresh using default TCP",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "in congestion avoidance phase",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Why It Works",
+   "page": 2,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "IV. EVALUATION",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Comparison with End-to-End Schemes",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "C. Fairness",
+   "page": 4,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "18 CubicNReno",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D. Loss Resiliency",
+   "page": 6,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "E. Impact of Target and Interval",
+   "page": 6,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "V. RELATED WORK",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. DISCUSSION",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. CONCLUSION",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 24.740870300000097,
+ "metrics_v1": {
+  "gt": 28,
+  "pred": 21,
+  "tp": 15,
+  "fp": 6,
+  "fn": 13,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.27586206896551724,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "Cellular Controlled Delay TCP (C2TCP)",
+   "1 Function pkts acked() // process a new received Ack",
+   "... /* default loss-based TCP code block",
+   "/* setting ssthresh using default TCP",
+   "in congestion avoidance phase",
+   "18 CubicNReno"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 27,
+  "pred": 19,
+  "tp": 14,
+  "fp": 5,
+  "fn": 13,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.2857142857142857,
+  "unmatched_gt": [
+   "1) Avoiding excessive packet sending:",
+   "2) Absorbing dynamics of channel:",
+   "3) Cellular link as the bottleneck:",
+   "4) Isolation of per user queues in cellular networks:",
+   "5) What if C2TCP shares a queue with other flows:",
+   "6) Letting loss-based TCP do the calculations: Another",
+   "D. Does C2TCP work in other networks?",
+   "B. Comparison with an In-Network Scheme",
+   "1) Target",
+   "2) Interval:",
+   "1) Abusing the parameters:",
+   "2) C2TCP flows with different requirements on one user:",
+   "3) Setting Target in practice:"
+  ],
+  "unmatched_pred": [
+   "1 Function pkts acked() // process a new received Ack",
+   "... /* default loss-based TCP code block",
+   "/* setting ssthresh using default TCP",
+   "in congestion avoidance phase",
+   "18 CubicNReno"
+  ],
+  "ignored_title_predictions": null
+ }
+}

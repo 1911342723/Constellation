@@ -1,0 +1,176 @@
+{
+ "doc": "1806.07317",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "I. THE Q-GAUSSIAN DISTRIBUTION FUNCTION",
+   "II. LUMINOSITY CALCULATION FOR Q-GAUSSIAN DENSITY DISTRIBUTION FUNCTIONS"
+  ],
+  "unmatched_pred": [
+   "Appendix A",
+   "Appendix B"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 17,
+  "pred": 15,
+  "tp": 15,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "I. THE Q-GAUSSIAN DISTRIBUTION FUNCTION",
+   "II. LUMINOSITY CALCULATION FOR Q-GAUSSIAN DENSITY DISTRIBUTION FUNCTIONS"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 690,
+  "layout_marked": 18,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9836213373403456,
+  "inserted_word_share": 0.8302539966548679
+ },
+ "predictions": [
+  {
+   "text": "Impact of Non-Gaussian Beam Proﬁles in the Performance of Hadron Colliders",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. MOTIVATION- IMPACT OF NON-GAUSSIAN DISTRIBUTIONS ON LUMINOSITY",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. INTRABEAM SCATTERING THEORIES, OBSERVATIONS AND SIMULATIONS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Software for IBS and Radiations Eﬀects (SIRE)",
+   "page": 4,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "B. The logarithmic Coulomb factor",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "C. Benchmarking of IBS theoretical model with SIRE",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SIMULATIONS PERFORMED WITH SIRE FOR THE LHC",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Reduced lattice",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "B. Convergence studies",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "C. Benchmarking of SIRE with the B-M IBS theoretical model",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. At the LHC injection energy (450 GeV)",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. At the LHC collision energy (6.5 TeV)",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. BUNCH PROFILE MEASUREMENTS IN THE LHC",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Comparison between experimental data, the SIRE and the B-M analytical formalism, at the LHC",
+   "page": 14,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "VI. SUMMARY AND OUTLOOK",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix B",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.733434300003864,
+ "metrics_v1": {
+  "gt": 17,
+  "pred": 17,
+  "tp": 15,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.5555555555555556,
+  "unmatched_gt": [
+   "I. THE Q-GAUSSIAN DISTRIBUTION FUNCTION",
+   "II. LUMINOSITY CALCULATION FOR Q-GAUSSIAN DENSITY DISTRIBUTION FUNCTIONS"
+  ],
+  "unmatched_pred": [
+   "Appendix A",
+   "Appendix B"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

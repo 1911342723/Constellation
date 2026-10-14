@@ -1,0 +1,193 @@
+{
+ "doc": "1603.07427",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 18,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "O. We now consider joint KKT of the penalized objective",
+   "1 λ/2(σ/|bri|) if |bri| > σp"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1019,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 The Penalized Weighted Least Squares",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 A Bayesian understanding of the PWLS",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 In connection with M-estimation",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 The adaptive PWLS",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 Implementation and Tuning",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Algorithms",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Tuning parameter selection",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "4 Extension of the PWLS to Heterogeneous Models",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Numerical Results",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1 Simulation studies",
+   "page": 13,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2 Real data applications",
+   "page": 16,
+   "level": 2,
+   "parent": 10
+  },
+  {
+   "text": "5.2.1 Coleman Data",
+   "page": 16,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "5.2.2 Salinity Data",
+   "page": 20,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "5.2.3 Real Estate Data",
+   "page": 20,
+   "level": 3,
+   "parent": 12
+  },
+  {
+   "text": "6 Discussion",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "O. We now consider joint KKT of the penalized objective",
+   "page": 23,
+   "level": 2,
+   "parent": 17
+  },
+  {
+   "text": "1 λ/2(σ/|bri|) if |bri| > σp",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 8.109201100000064,
+ "metrics_v1": {
+  "gt": 19,
+  "pred": 21,
+  "tp": 18,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 18,
+  "parent_correct": 18,
+  "teds": 0.8636363636363636,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "O. We now consider joint KKT of the penalized objective",
+   "1 λ/2(σ/|bri|) if |bri| > σp"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 15,
+  "fp": 3,
+  "fn": 1,
+  "level_correct": 15,
+  "parent_correct": 15,
+  "teds": 0.8421052631578947,
+  "unmatched_gt": [
+   "5.2.2 Salinity Data"
+  ],
+  "unmatched_pred": [
+   "5.2.2 Salinity Data",
+   "O. We now consider joint KKT of the penalized objective",
+   "1 λ/2(σ/|bri|) if |bri| > σp"
+  ],
+  "ignored_title_predictions": null
+ }
+}

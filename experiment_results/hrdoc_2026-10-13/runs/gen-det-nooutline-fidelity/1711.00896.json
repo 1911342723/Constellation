@@ -1,0 +1,113 @@
+{
+ "doc": "1711.00896",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 3,
+  "pred": 7,
+  "tp": 3,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "1 \u0012h(z)"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "metrics_generic": {
+  "gt": 2,
+  "pred": 6,
+  "tp": 2,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 2,
+  "parent_correct": 2,
+  "teds": 0.4285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "1 \u0012h(z)"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 469,
+  "content_preservation": 1.0,
+  "word_preservation": {
+   "recall": 0.9989369241672572,
+   "in_order": 0.9337349397590361,
+   "inserted": 0.002123893805309751
+  },
+  "export_markdown": "NOTES ON THE STARLIKE LOG–HARMONIC MAPPINGS OF\n\nORDER ALPHA\n\nR. KARGAR AND H. MAHZOON\n\nAbstract. Let h and g be two analytic functions in the unit disc ∆that\n\ng(0) = 1. Also let β be a complex number with Re{β} > −1/2. A function f\n\nis said to be log–harmonic mapping if it has the following representation\n\narXiv:1711.00896v4 [math.CV] 19 Jun 2019\n\nf(z) = z|z|2βh(z)g(z) (z ∈ ∆).\n\nA log–harmonic mapping f is said to be starlike log–harmonic mapping of\n\norder α, where 0 ≤ α < 1, if\n\n\u001b > α (z ∈ ∆).\n\nRe\u001a zfz − zfz\n\nf\n\nIn this paper, by use of the subordination principle, we study some geometric\n\nproperties of the starlike log–harmonic mappings of order α. Also, we estimate\n\nthe Jacobian of log–harmonic mappings.\n\n# 1. Introduction\n\nLet H(∆) be the family of all analytic functions in the open unit disc ∆:=\n\n{z : |z| < 1}. Let f and g be two members of the class H(∆) which satisfy the\n\nnormalized conditions f(0) = 0 = f ′(0) − 1 and g(0) = 0 = g′(0) − 1. We say that\n\na function f is subordinate to g, written f(z) ≺ g(z) or f ≺ g, if there exists an\n\nanalytic function ψ, known as a Schwarz function, with ψ(0) = 0 and |ψ(z)| ≤|z|\n\nsuch that f(z) = g(ψ(z)) for all z ∈ ∆. The set of all univalent (one–to–one)\n\nfunctions f in ∆is denoted by U. Furthermore, if g ∈U in ∆, then we have the\n\nfollowing equivalence relation\n\nf(z) ≺ g(z) ⇔ f(0) = g(0) and f(∆) ⊂ g(∆).\n\nAlso let B(∆) denote the set of all functions w ∈H(∆) satisfying |w(z)| < 1 in ∆.\n\nA mapping f is said to be log–harmonic in ∆, if there exists an analytic function w ∈B(∆) such that f is a solution of the nonlinear elliptic partial diﬀerential\n\nequation\n\nf = w(z)fz\n\nfz\n\n(1.1)\n\nf ,\n\nwhere w is the second complex dilatation of f and w ∈B(∆). We note that if f is\n\na non–vanishing log–harmonic mapping, then f has the following form\n\nf(z) = h(z)g(z),\n\nwhere both h and g are non–vanishing analytic functions, and that if f vanishes at z = 0 but is not identically zero, then f has the following form\n\nf(z) = z|z|2βh(z)g(z),\n\n(1.2)\n\n2010 Mathematics Subject Classiﬁcation. 30C35;30C45;35Q30.\n\nKey words and phrases. starlike log–harmonic mappings; log–harmonic mappings; subordination; Jacobian; real part.\n\n1\n\n2\n\n## R. KARGAR AND H. MAHZOON\n\nwhere Re{β} > −1/2, h and g are in H(∆), h(0) ̸= 0 and g(0) = 1 (see [3]). The\n\nclass of functions of this form has been studied extensively by many works, see for example [1]– [6] and [9]. We continue the discussion with an example.\n\nExample 1.1. If f(1) = 1 and Re{β} > −1/2, then the function\n\nfβ(z) = z|z|2β (z ∈ ∆),\n\nis a solution of the equation (1.1) in the complex plane C with w ≡ β/(1 + β). It\n\nis a simple exercise that fβ maps the unit disc ∆ onto itself. The Figure 1 shows the image of the unit disc ∆ under the function fβ in two diﬀerent cases.\n\n1.0\n\n1.0\n\n0.5\n\n0.5\n\n0.0\n\n0.0\n\n-0.5\n\n-0.5\n\n-1.0\n\n-1.0\n\n-1.0\n\n-0.5\n\n0.0\n\n0.5\n\n1.0\n\n-1.0\n\n-0.5\n\n0.0\n\n0.5\n\n1.0\n\n(a)\n\n(b)\n\nFigure 1. (a): The boundary curve of fi(∆) (b): The boundary\n\ncurve of f−1/3+4i(∆)\n\nWe denote by Jf(z) the Jacobian of log–harmonic mappings f as follows\n\nJf(z) = |fz|2 \u00001 −|w(z)|2\u0001.\n\n(1.3)\n\nSince w ∈B(∆), thus Jf(z) > 0 and all non–constant log–harmonic mappings are\n\nsense–preserving and open in the disc ∆. Let f(z) = z|z|2βh(z)g(z), where h(0) = g(0) = 1, be a log–harmonic mapping.\n\nThen we say that f is a starlike log–harmonic (SLH) mapping of order α, where\n\n0 ≤ α < 1, if\n\n∂θ arg f \u0000reiθ\u0001 = Re\u001azfz − zfz\n\n\u001b > α (z ∈ ∆).\n\n∂\n\n(1.4)\n\nf\n\nWe denote by S∗\n\nLH(α), the set of all starlike log–harmonic mappings of order α.\n\nThe following lemma will be useful.\n\nLemma 1.1. [8, p. 35] Let Ξ be a simply connected domain in the complex plane C, Ξ ̸= C and let b be a complex number with Re{b} > 0. Suppose that a function\n\nψ : C2 × ∆ → C satisﬁes the condition\n\nψ(iρ, σ; z) ̸∈ Ξ\n\nfor all real ρ, σ ≤−| b−iρ |2 /(2Re{b}) and all z ∈ ∆. If the function p(z) deﬁned\n\nby p(z) = b + b1z + b2z2 + · · · is analytic in ∆ and if\n\nψ(p(z), zp′(z); z) ∈ Ξ,\n\nthen Re{p(z)} > 0 in ∆.\n\nSTARLIKE LOG–HARMONIC FUNCTIONS\n\n3\n\nOne of the goals of this paper is to investigate some geometric properties of the starlike log–harmonic mappings of order α, another is to give an estimate for the Jacobian of log–harmonic mappings of the form (1.2).\n\n# 2. Main Results\n\nIn the ﬁrst result, by use of the subordination principle, we give a necessary and suﬃcient condition for functions of the form (1.2) belonging to the class S∗\n\nLH(α).\n\nTheorem 2.1. Let α ∈ [0, 1) and Re{β} > −1/2. Then the function f(z) =\n\nz|z|2βh(z)g(z) belongs to the class S∗\n\nLH(α) if, and only if,\n\n\u0012z h′(z)\n\n\u0013 ≺ 2(1 − α)z\n\nh(z) − z g′(z)\n\n(z ∈ ∆).\n\n(2.1)\n\n1 − z\n\ng(z)\n\nProof. Let the function f(z) = z|z|2βh(z)g(z) belongs to the class S∗\n\nLH(α) where\n\n0 ≤ α < 1. Then by a simple check we get\n\n= 1 + β + z h′(z)\n\nzfz\n\nh(z) (z ∈ ∆)\n\n(2.2)\n\nf\n\nand\n\n\u0012g′(z)\n\n\u0013 (z ∈ ∆).\n\nzfz\n\n= β + z\n\n(2.3)\n\nf\n\ng(z)\n\nThus\n\n\u0012g′(z)\n\n\u0013 (z ∈ ∆).\n\n= 1 + z h′(z)\n\nzfz − zfz\n\nh(z) − z\n\n(2.4)\n\nf\n\ng(z)\n\nThen f ∈S∗\n\nLH(α) if, and only if,\n\n(\n\n\u0013)\n\n\u001b = Re\n\n\u0012g′(z)\n\nα < Re\u001azfz − zfz\n\n1 + z h′(z)\n\nh(z) − z\n\nf\n\ng(z)\n\n= Re\u001a1 + z h′(z)\n\n\u001b.\n\nh(z) − z g′(z)\n\ng(z)\n\nTherefore\n\nRe\u001az h′(z)\n\n\u001b > α − 1 (z ∈ ∆).\n\nh(z) − z g′(z)\n\ng(z)\n\nNow by use of the subordination principle we get\n\nRe\u001az h′(z)\n\n\u001b ≺ 2(1 − α)z\n\nh(z) − z g′(z)\n\n(z ∈ ∆).\n\n1 − z\n\ng(z)\n\n□\n\nThis ends the proof.\n\nWe now have the following lemma directly.\n\nLemma 2.1. The function f(z) = z|z|2βh(z)g(z) (Re{β} > −1/2) belongs to the\n\nclass S∗\n\nLH(α) if, and only if,\n\n1 + Re\u001az h′(z)\n\n\u001b > α (0 ≤ α < 1, z ∈ ∆).\n\nh(z) − z g′(z)\n\n(2.5)\n\ng(z)\n\nFollowing, we give the representation theorem for the function h of the mappings\n\nf of the form (1.2) in the set S∗\n\nLH(α).\n\n4\n\n## R. KARGAR AND H. MAHZOON\n\nTheorem 2.2. A function f(z) = z|z|2βh(z)g(z) belongs to the class S∗\n\nLH(α) if,\n\nand only if,\n\nh(z) = g(z) exp\u0012Z z\n\n0 t(1 − ψ(t)) dt\u0013 (z ∈ ∆),\n\n2(1 − α)ψ(t)\n\n(2.6)\n\nwhere ψ is a Schwarz function, 0 ≤ α < 1 and Re{β} > −1/2.\n\nProof. If f(z) = z|z|2βh(z)g(z) belongs to the class S∗\n\nLH(α) where 0 ≤ α < 1, then\n\nby Theorem 2.1 and by deﬁnition of subordination, there exists a Schwarz function\n\nψ such that\n\n\u0013 = 2(1 − α)ψ(z)\n\n\u0012z h′(z)\n\nh(z) − z g′(z)\n\n(z ∈ ∆),\n\n1 − ψ(z)\n\ng(z)\n\nor equivalently\n\n\u001alog h(z)\n\n\u001b′ = 2(1 − α)ψ(z)\n\nz(1 − ψ(z)) (z ∈ ∆).\n\n(2.7)\n\ng(z)\n\nIntegrating the last equality (2.7), we get (2.6). On the other hand, it is an easy calculation that a function having of the form (2.6) satisﬁes the condition (2.1). □ Applying formula (2.6) for ψ(z) = z gives the following.\n\nExample 2.1. Let g(z) be an analytic function with g(0) = 1. Then the function\n\nFα,β(z) = z|z|2β |g(z)|2\n\n(1 − z)2(1−α) (z ∈ ∆, 0 ≤ α < 1),\n\n(2.8)\n\nis a starlike log–harmonic mapping of order α.\n\nRemark 2.1. Since g(0) = 1, thus if we consider the constant function g(z) = 1 in\n\n(2.8) and let β = 0, then we obtain\n\nz\n\n(1 − z)2(1−α) (0 ≤ α < 1).\n\nf(z) =\n\nMoreover, the Koebe function of order α (in particular, the Koebe function) belongs\n\nto the class S∗\n\nLH(α).\n\nExample 2.2. Let ψ(z) = z/(1 + z) and |z| < 0.65. Then it is easy to see that ψ\n\nis Schwarz function. By putting ψ(z) = z/(1 + z) in the equation (2.6), we get\n\nh(z) = g(z)e2(1−α)z (|z| < 0.65).\n\nThus the function\n\nfα,β(z) = z|z|2βe2(1−α)z|g(z)|2 (Re{β} > −1/2, |z| < 0.65),\n\nbelongs to the class STLH(α), where g is analytic with g(0) = 1. In particular, the\n\nfunction\n\nbfα,β(z) = z|z|2βe2(1−α)z (|z| < 0.65),\n\nis a starlike log–harmonic mapping of order α where Re{β} > −1/2. Also, bf0,0(z) =\n\nze2z (|z| < 0.65) is SLH mapping. It is a simple exercise that the radius of injec-\n\ntivity of the function bf0,0 is 1/2. The Figures 2(a) and 2(b) show the image of the\n\ndisc |z| < 0.65 and |z| < 1/2 under the function bf0,0, respectively.\n\nTheorem 2.3. Let α ∈ [0, 1) and Re{β} > −1/2. Let a function f(z) = z|z|2βh(z)g(z)\n\nbelongs to the class S∗\n\nLH(α) where\n\n∞\n\n∞\n\nX\n\nX\n\nanzn and g(z) = 1 +\n\nbnzn,\n\nh(z) = 1 +\n\nn=1\n\nn=1\n\nSTARLIKE LOG–HARMONIC FUNCTIONS\n\n5\n\n1.0\n\n1.5\n\n1.0\n\n0.5\n\n0.5\n\n0.0\n\n0.0\n\n-0.5\n\n-0.5\n\n-1.0\n\n-1.5\n\n-1.0\n\n-0.5 0.0\n\n0.5\n\n1.0\n\n1.5\n\n2.0\n\n0.0\n\n0.5\n\n1.0\n\n(a)\n\n(b)\n\nFigure 2. (a): The boundary curve of bf0,0(|z| < 0.65) (b): The\n\nboundary curve of bf0,0(|z| < 1/2)\n\nbe a log–harmonic mapping, and let\n\n∞\n\n∞\n\nX\n\nX\n\nzg′(z)\n\nzh′(z)\n\nhnzn and\n\ngnzn.\n\nh(z) =\n\ng(z) =\n\nn=1\n\nn=1\n\nIf\n\n∞\n\nX\n\n|hn| < 1 −|β|\n\n(2.9)\n\nn=1\n\nand\n\n∞\n\nX\n\n(|hn| + |gn|) ≤ 1 − 2|β|,\n\n(2.10)\n\nn=1\n\nthen f is sense preserving.\n\nProof. To show that f is sense preserving, we need to prove that |w(z)| < 1 where\n\nw denotes the dilatation of f. A simple calculation using (1.1) and (1.2), gives us\n\nβ + z g′(z)\n\nw(z) = fz\n\nf\n\ng(z)\n\n(z ∈ ∆).\n\n(2.11)\n\n=\n\n1 + β + z h′(z)\n\nfz\n\nf\n\nh(z)\n\nClearly w(0) = β/(1 + β) =: γ, where β ∈ C and Re{β} > −1/2. We have\n\nβ + z g′(z)\n\ng(z)\n\n|w(z)| =\n\n1 + β + z h′(z)\n\nh(z)\n\nβ + P∞\n\nn=1 gnzn\n\n1 + β + P∞\n\n=\n\nn=1 hnzn\n\n≤ |β| + P∞\n\nn=1 |gn||z|n\n\n1 −|β| − P∞\n\nn=1 |hn||z|n\n\n< |β| + P∞\n\nn=1 |gn|\n\n1 −|β| − P∞\n\nn=1 |hn| ≤ 1.\n\n□\n\nThis proves the theorem.\n\n6\n\n## R. KARGAR AND H. MAHZOON\n\nTo prove the following theorem, we will use the method of [7, Theorem 2.1].\n\nTheorem 2.4. Let α ∈ (1/2, 1). If the function f(z) = z|z|2βh(z)g(z) belongs to\n\nthe class S∗\n\nLH(α), then\n\nRe\u001ah(z)\n\n\u001b > µ(α) := 1\n\n3 − 2α (z ∈ ∆).\n\n(2.12)\n\ng(z)\n\nProof. For convenience, we put µ(α) := µ and note that µ ∈ (1/2, 1) when α ∈\n\n(1/2, 1). Deﬁne\n\n# 1 \u0012h(z)\n\ng(z) − µ\u0013 (z ∈ ∆).\n\n(2.13)\n\np(z) =\n\n1 − µ\n\nThen p(z) is analytic function in ∆and p(0) = 1. A simple check gives\n\nh(z) − z g′(z)\n\ng(z) = 1 + (1 − µ)zp′(z)\n\n1 + z h′(z)\n\nµ + (1 − µ)p(z) =: φ(p(z), zp′(z)),\n\nwhere\n\nφ(x, y) = 1 + (1 − µ)y\n\n(2.14)\n\nµ + (1 − µ)x.\n\nBy Lemma 2.1, since f(z) = z|z|2βh(z)g(z) ∈S∗\n\nLH(α), we can consider\n\n{φ(p(z), zp′(z)) : z ∈ ∆} ⊂{w ∈ C : Re{w} > α} =: Ωα.\n\nNow for all real ρ and σ ≤−1\n\n2(1 + ρ2), we get\n\nRe{φ(iρ, σ)} = Re\u001a1 + (1 − µ)σ\n\n\u001b\n\nµ + (1 − µ)iρ\n\n= 1 + µ(1 − µ)σ\n\nµ2 + (1 − µ)2ρ2\n\n≤ 1 − 1\n\n2µ(1 − µ)Q(ρ),\n\nwhere\n\n1 + ρ2\n\n(2.15)\n\nQ(ρ) :=\n\nµ2 + (1 − µ)2ρ2 .\n\nIt is easy to see that\n\n2(2µ − 1)ρ\n\nQ′(ρ) =\n\n(µ2 + (1 − µ)2ρ2)2\n\nand Q′(0) = 0 occurs at only ρ = 0 and satisﬁes Q(0) = 1/µ2. Also\n\n1\n\nρ→±∞Q(ρ) =\n\nlim\n\n(1 − µ)2 .\n\nThus we have\n\n1\n\n1\n\nµ2 ≤ Q(ρ) <\n\n(1/2 < µ < 1).\n\n(1 − µ)2\n\nHence\n\nµ2 = 3µ − 1\n\nRe{φ(iρ, σ)} ≤ 1 − 1\n\n2µ(1 − µ) 1\n\n= α\n\n2µ\n\nand this shows that Re{φ(iρ, σ)} ̸∈ Ωα. Moreover, by Lemma 1.1 we get Re{p(z)} >\n\n□\n\n0 in ∆, and concluding the proof.\n\nFinally, we give an estimate for the Jacobian of log–harmonic mappings of the form (1.2).\n\nSTARLIKE LOG–HARMONIC FUNCTIONS\n\n7\n\nTheorem 2.5. If f(z) = z|z|2βh(z)g(z) is log–harmonic mapping, then\n\n\n\n(1−|γ|2)(1−|z|2)\n\n\n\n(1−|γ||z|)2 |fz|2\n\n|z| < |γ|,\n\n\n\n(1 −|γ|2)(1 −|z|2)\n\n(1 + |γ||z|)2 |fz|2 ≤ Jf(z) ≤\n\n\n\n\n\n|fz|2\n\n|z| ≥|γ|,\n\nwhere γ = β/(1 + β), β ∈ C, Re{β} > −1/2 and z ∈ ∆.\n\nProof. Let γ = β/(1 + β), β ∈ C and Re{β} > −1/2. Consider the function\n\nϕ(z) := w(z) − γ\n\n1 − γw(z) (z ∈ ∆),\n\n(2.16)\n\nwhere w is the dilatation of f of the form (1.1). We have that ϕ is analytic (because |1+β| > |β|), ϕ(0) = 0 and |ϕ(z)| ≤ 1. Thus the function ϕ satisﬁes the assumptions\n\nof Schwarz lemma which gives |ϕ(z)| ≤|z| or\n\n|w(z) − γ| ≤|z||1 − γw(z)| (z ∈ ∆).\n\n(2.17)\n\nFrom (2.16), we get\n\nw(z) = ϕ(z) + γ\n\n1 + γϕ(z).\n\nThis shows that the dilatation w(z) is subordinate to\n\nφ(z) = z(z + γ)\n\n1 + γz .\n\nSince the linear transformation φ(z) maps |z| = r onto the disc with the center\n\n\u0012 x(1 −|z|2)\n\n\u0013 (x = Re{γ}, y = Im{γ})\n\n1 −|γ|2|z|2 , y(1 −|z|2)\n\n1 −|γ|2|z|2\n\nand the radius\n\n(1 −|γ|2)|z|\n\n1 −|γ|2|z|2 ,\n\ntherefore, by use of the above and by the subordination principle, the inequality\n\n(2.17) gives that\n\nw(z) − γ(1 −|z|2)\n\n≤ (1 −|γ|2)|z|\n\n1 −|γ|2|z|2\n\n1 −|γ|2|z|2\n\n□\n\nand concluding the proof.\n\nAcknowledgements. The authors would like to thank the anonymous referee(s) for carefully reading of the manuscript and for the useful observations.\n\n# References\n\n[1] Z. Abdulhadi, Close–to–starlike log–harmonic mappings, Internat. J. Math. Math. Sci. 19(3),\n\n563–574 (1996)\n\n[2] Z. Abdulhadi, Typically real log–harmonic mappings, Internat. J. Math. Math. Sci. 31(1), 1–9\n\n(2002)\n\n[3] Z. Abdulhadi and D. Bshouty, Univalent functions in HH, Tran. Amer. Math. Soc. 305(2),\n\n841–849 (1988)\n\n[4] Z. Abdulhadi and W. Hergartner, Spirallike logharmonic mappings, Complex Variables Theory\n\nAppl. 9(2–3), 121–130 (1987)\n\n[5] Z. Abdulhadi and W. Hergartner, One pointed univalent logharmonic mappings, J. Math.\n\nAnal. Appl. 203(2), 333–351 (1996)\n\n[6] R. M. Ali, Z. Abdulhadi and Ch. Zhen, The Bohr radius for starlike logharmonic mappings,\n\nComplex Var. Elliptic Equ. 61(1), 1–14 (2016)\n\n[7] R. Kargar, A. Ebadian and J. Sok´o l, On subordination of some analytic functions, Sib. Math.\n\nJ. 57(4), 599–604 (2016)\n\n[8] S.S. Miller and P.T. Mocanu, Diﬀerential Subordinations, Theory and Applications, Series of Monographs and Textbooks in Pure and Applied Mathematics, Vol. 225, Marcel Dekker Inc., New York / Basel 2000.\n\n8\n\nR. KARGAR AND H. MAHZOON\n\n[9] Zh. Mao, S. Ponnusamy, and X. Wang, Schwarzian derivative and Landau’s theorem for logharmonic mappings, Complex Var. Elliptic Equ. 58(8), 1093–1107 (2013)\n\nYoung Researchers and Elite Club, Ardabil Branch, Islamic Azad University, Ard-\n\nabil, Iran\n\nE-mail address: rkargar1983@gmail.com\n\nDepartment of Mathematics, Firoozkouh Branch, Islamic Azad University, Firoozk-\n\nouh, Iran\n\nE-mail address: hesammahzoon1@gmail.com\n"
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "R. KARGAR AND H. MAHZOON",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2. Main Results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "R. KARGAR AND H. MAHZOON",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "R. KARGAR AND H. MAHZOON",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1 \u0012h(z)",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 7.630345600002329,
+ "metrics_v1": {
+  "gt": 3,
+  "pred": 7,
+  "tp": 3,
+  "fp": 4,
+  "fn": 0,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.5,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "R. KARGAR AND H. MAHZOON",
+   "1 \u0012h(z)"
+  ],
+  "ignored_title_predictions": 0
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "doc": "1807.07974",
+ "system": "outline",
+ "metrics": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 22,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "2.7 Proof of Theorem 2"
+  ],
+  "unmatched_pred": [
+   "2.9 Proof of Theorem ?? and its extension to thermal operations"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Results and discussion",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1.1 A general cooling theorem",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.2 The qubit case",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.3 Robustness to imperfections",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "1.4 An experimental proposal",
+   "page": 4,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "2 Methods",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 -permutations and the thermal polytope",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Proof of properties of -permutations",
+   "page": 7,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2.1 Proof of claim 1",
+   "page": 8,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "2.2.2 Proof of claim 2",
+   "page": 11,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "2.2.3 Proof of claim 3",
+   "page": 11,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "2.3 Proof of Lemma ??: optimal unitary control",
+   "page": 11,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.4 Proof of Theorem ??",
+   "page": 13,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.5 A qudit protocol with -swaps and no ancillas",
+   "page": 14,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.6 Proof of trivial Markovian cooling for d=2",
+   "page": 15,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.7 Proof of Theorem ??",
+   "page": 15,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.8 Robustness of Theorem ?? to anharmonicity",
+   "page": 16,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.9 Proof of Theorem ?? and its extension to thermal operations",
+   "page": 16,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.9.1 Preliminaries",
+   "page": 16,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "2.9.2 Proof of an extended version of Theorem 3",
+   "page": 17,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "3 Experimental proposal",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Bounds on the achievable cooling in the Jaynes-Cummings model",
+   "page": 20,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "3.2 Jaynes-Cummings model without refreshing the thermal mode",
+   "page": 21,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": " Acknowledgments",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": " References",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.09829309999986435,
+ "metrics_v1": {
+  "gt": 25,
+  "pred": 25,
+  "tp": 24,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 24,
+  "parent_correct": 22,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [
+   "2.7 Proof of Theorem 2"
+  ],
+  "unmatched_pred": [
+   "2.9 Proof of Theorem ?? and its extension to thermal operations"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 23,
+  "tp": 22,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 22,
+  "parent_correct": 20,
+  "teds": 0.9166666666666666,
+  "unmatched_gt": [
+   "2.7 Proof of Theorem 2"
+  ],
+  "unmatched_pred": [
+   "2.9 Proof of Theorem ?? and its extension to thermal operations"
+  ],
+  "ignored_title_predictions": null
+ }
+}

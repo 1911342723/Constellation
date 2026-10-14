@@ -1,0 +1,94 @@
+{
+ "doc": "1602.07937",
+ "system": "model",
+ "metrics": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 463,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 3,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 3,
+   "prompt_tokens": 10185,
+   "completion_tokens": 333,
+   "total_tokens": 10518
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Supporting Information",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S1. Whisky manufacturing procedures",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S2. Experimental details",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S3. Measurement of physical properties",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S4. Estimation of Marangoni eﬀect",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "S5. Image analysis and post processing",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 36.434320899999875,
+ "metrics_v1": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 6,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 0,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 1.0,
+  "unmatched_gt": [],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

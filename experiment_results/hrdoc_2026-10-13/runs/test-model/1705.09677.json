@@ -1,0 +1,244 @@
+{
+ "doc": "1705.09677",
+ "system": "model",
+ "metrics": {
+  "gt": 23,
+  "pred": 28,
+  "tp": 23,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.8275862068965517,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Contributions",
+   "while |S| < k do",
+   "return S",
+   "while |S| > k do",
+   "return S"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 786,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18206,
+   "completion_tokens": 839,
+   "total_tokens": 19045
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Contributions",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "2 Preliminaries",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 ESP-design",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Problem formulation",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "3.2 Continuous relaxation",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "4 Algorithms and analysis",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Sampling from the continuous relaxation",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "while |S| < k do",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "return S",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Greedy approach",
+   "page": 3,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "while |S| > k do",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "return S",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Computational considerations",
+   "page": 4,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Further Implications",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Experimental results",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6.1 Synthetic experiments: optimization comparison",
+   "page": 5,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "6.2 Real data",
+   "page": 6,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "7 Conclusion and future work",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Geodesic convexity",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Proof of Lemma 3.3",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "A.2 Proof of Corollary 3.4",
+   "page": 10,
+   "level": 2,
+   "parent": 21
+  },
+  {
+   "text": "B Bounding the support of the continuous relaxation",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C Greedy algorithm details",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "D Obtaining the dual formulation",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "E Additional synthetic experimental results",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.440725599997677,
+ "metrics_v1": {
+  "gt": 23,
+  "pred": 28,
+  "tp": 23,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.8275862068965517,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Contributions",
+   "while |S| < k do",
+   "return S",
+   "while |S| > k do",
+   "return S"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 26,
+  "tp": 21,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.8148148148148149,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Contributions",
+   "while |S| < k do",
+   "return S",
+   "while |S| > k do",
+   "return S"
+  ],
+  "ignored_title_predictions": null
+ }
+}

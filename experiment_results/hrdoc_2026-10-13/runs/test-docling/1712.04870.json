@@ -1,0 +1,99 @@
+{
+ "doc": "1712.04870",
+ "system": "docling",
+ "metrics": {
+  "gt": 7,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "TOC"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 80.09675140000036
+ },
+ "predictions": [
+  {
+   "text": "Finite-size effects in the absorption spectra of a single-wall carbon nanotube",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Results and discussion",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Conclusions",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.002038999999058433,
+ "metrics_v1": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.625,
+  "unmatched_gt": [
+   "TOC"
+  ],
+  "unmatched_pred": [
+   "Finite-size effects in the absorption spectra of a single-wall carbon nanotube"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.8,
+  "unmatched_gt": [
+   "TOC"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

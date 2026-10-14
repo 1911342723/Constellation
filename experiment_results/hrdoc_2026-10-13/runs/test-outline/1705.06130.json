@@ -1,0 +1,178 @@
+{
+ "doc": "1705.06130",
+ "system": "outline",
+ "metrics": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 14,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5789473684210527,
+  "unmatched_gt": [
+   "B. Cliques",
+   "C. Algorithm"
+  ],
+  "unmatched_pred": [
+   "VI-B Cliques",
+   "VI-C Algorithm",
+   "B1 Wind power curve",
+   "B3 Consumption"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "I Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II Related Work",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III Generating realistic prosumer patterns",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV Notations",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V Utility Function",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI Coalition Formation",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI-A Representing the correlation structure",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "VI-B Cliques",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "VI-C Algorithm",
+   "page": 6,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "VII Results",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII Conclusion",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A Algorithms",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B Net production series",
+   "page": 9,
+   "level": 2,
+   "parent": 12
+  },
+  {
+   "text": "B1 Wind power curve",
+   "page": 9,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "B2 Solar power curve",
+   "page": 10,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "B3 Consumption",
+   "page": 10,
+   "level": 3,
+   "parent": 14
+  }
+ ],
+ "seconds": 0.06820700000025681,
+ "metrics_v1": {
+  "gt": 16,
+  "pred": 18,
+  "tp": 14,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.5789473684210527,
+  "unmatched_gt": [
+   "B. Cliques",
+   "C. Algorithm"
+  ],
+  "unmatched_pred": [
+   "VI-B Cliques",
+   "VI-C Algorithm",
+   "B1 Wind power curve",
+   "B3 Consumption"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 16,
+  "tp": 12,
+  "fp": 4,
+  "fn": 2,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.5294117647058824,
+  "unmatched_gt": [
+   "B. Cliques",
+   "C. Algorithm"
+  ],
+  "unmatched_pred": [
+   "VI-B Cliques",
+   "VI-C Algorithm",
+   "B1 Wind power curve",
+   "B3 Consumption"
+  ],
+  "ignored_title_predictions": null
+ }
+}

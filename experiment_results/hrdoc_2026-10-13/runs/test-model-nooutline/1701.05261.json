@@ -1,0 +1,108 @@
+{
+ "doc": "1701.05261",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 10,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "2.1 Factorization and π0 Cross-Section",
+   "2.2 Definition and Interpretation of ALL",
+   "3.1 PHENIX Configuration",
+   "Reference"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 137,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 3664,
+   "completion_tokens": 311,
+   "total_tokens": 3975
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Motivation",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Deﬁnition and Interpretation of ALL",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 Introduction to PHENIX Spin Runs and Conﬁguration",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Analysis Procedures",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Result and Discussion",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.990414400002919,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 6,
+  "tp": 6,
+  "fp": 0,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "2.1 Factorization and π0 Cross-Section",
+   "2.2 Definition and Interpretation of ALL",
+   "3.1 PHENIX Configuration",
+   "Reference"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 3,
+  "level_correct": 5,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "2.1 Factorization and π0 Cross-Section",
+   "2.2 Definition and Interpretation of ALL",
+   "3.1 PHENIX Configuration"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

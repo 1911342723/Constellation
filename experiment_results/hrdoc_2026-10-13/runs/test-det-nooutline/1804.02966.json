@@ -1,0 +1,127 @@
+{
+ "doc": "1804.02966",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 5,
+  "pred": 9,
+  "tp": 4,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "1. Introduction"
+  ],
+  "unmatched_pred": [
+   "4 m(t)",
+   "3.1. The case of densities converging from below",
+   "1 ) − (n − 1 + 2εn)|BRθ",
+   "1 |1−f ≤ nωn ,",
+   "3.2. The case of densities converging from above"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1059,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "2. Preliminary properties",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 m(t)",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. Existence of isoperimetric sets",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. The case of densities converging from below",
+   "page": 7,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "1 ) − (n − 1 + 2εn)|BRθ",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 |1−f ≤ nωn ,",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.2. The case of densities converging from above",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4. A counterexample",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 4.319360099998448,
+ "metrics_v1": {
+  "gt": 5,
+  "pred": 9,
+  "tp": 4,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 4,
+  "parent_correct": 4,
+  "teds": 0.4,
+  "unmatched_gt": [
+   "1. Introduction"
+  ],
+  "unmatched_pred": [
+   "4 m(t)",
+   "3.1. The case of densities converging from below",
+   "1 ) − (n − 1 + 2εn)|BRθ",
+   "1 |1−f ≤ nωn ,",
+   "3.2. The case of densities converging from above"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 4,
+  "pred": 8,
+  "tp": 3,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 3,
+  "parent_correct": 3,
+  "teds": 0.33333333333333337,
+  "unmatched_gt": [
+   "1. Introduction"
+  ],
+  "unmatched_pred": [
+   "4 m(t)",
+   "3.1. The case of densities converging from below",
+   "1 ) − (n − 1 + 2εn)|BRθ",
+   "1 |1−f ≤ nωn ,",
+   "3.2. The case of densities converging from above"
+  ],
+  "ignored_title_predictions": null
+ }
+}

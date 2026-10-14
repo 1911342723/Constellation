@@ -1,0 +1,156 @@
+{
+ "doc": "1808.02694",
+ "system": "model",
+ "metrics": {
+  "gt": 14,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 2,
+  "level_correct": 1,
+  "parent_correct": 11,
+  "teds": 0.7333333333333334,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [
+   "Appendix A"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 770,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 4,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 4,
+   "prompt_tokens": 13488,
+   "completion_tokens": 606,
+   "total_tokens": 14094
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Energy ﬂow and momentum under paraxial regime",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "II. PARAXIAL PROPAGATION",
+   "page": 2,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "III. ANALYSIS OF THE LAGRANGIAN DENSITY OF THE PARAXIAL",
+   "page": 3,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "IV. TIME HARMONIC SOLUTIONS",
+   "page": 6,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "V. EXAMPLES",
+   "page": 9,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "A. Generic traveling wave towards +z",
+   "page": 9,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "B. Paraxial plane waves",
+   "page": 9,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "C. Green’s function of the time harmonic paraxial wave equation",
+   "page": 11,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "D. Fundamental Gaussian beam",
+   "page": 14,
+   "level": 3,
+   "parent": 5
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 18,
+   "level": 2,
+   "parent": 0
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A",
+   "page": 19,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "1. The connection of energy density ﬂow and momentum with raytracing",
+   "page": 20,
+   "level": 3,
+   "parent": 12
+  }
+ ],
+ "seconds": 29.03968900000109,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 2,
+  "level_correct": 1,
+  "parent_correct": 5,
+  "teds": 0.6666666666666667,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [
+   "Energy ﬂow and momentum under paraxial regime",
+   "Appendix A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 13,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 2,
+  "level_correct": 0,
+  "parent_correct": 10,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [
+   "EQUATION",
+   "I. SUMMARY OF RESULTS FOR THE D’ALEMBERT EQUATION"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

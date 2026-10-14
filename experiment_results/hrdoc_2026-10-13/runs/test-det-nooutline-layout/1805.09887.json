@@ -1,0 +1,248 @@
+{
+ "doc": "1805.09887",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 23,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 17,
+  "teds": 0.6071428571428572,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "Lemma 11. A super-stable matching M in I corresponds to a feasible solution S to"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 23,
+  "pred": 24,
+  "tp": 20,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 19,
+  "teds": 0.64,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "Lemma 11. A super-stable matching M in I corresponds to a feasible solution S to"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 918,
+  "layout_marked": 26,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9897974799775544,
+  "inserted_word_share": 0.6680410607356715
+ },
+ "predictions": [
+  {
+   "text": "Super-stability in the",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Preliminary deﬁnitions and results",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Formal deﬁnition of SPA-S",
+   "page": 2,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.2 Ties in the preference lists",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "2.3 Cloning from spa-st to hrt does not work in general",
+   "page": 5,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "3 An algorithm for SPA-ST under super-stability",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1 Deﬁnitions relating to the algorithm",
+   "page": 7,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.2 Description of the algorithm",
+   "page": 8,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.3 Example algorithm execution",
+   "page": 10,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3.4 Correctness of Algorithm SPA-ST-super",
+   "page": 10,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i = pt2i+1).",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i = pt2i+1).",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i = pt2i+1).",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.5 Properties of super-stable matchings in spa-st",
+   "page": 18,
+   "level": 2,
+   "parent": 13
+  },
+  {
+   "text": "4 Empirical Evaluation",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Datasets",
+   "page": 19,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "4.2 Experimental Setup",
+   "page": 19,
+   "level": 2,
+   "parent": 15
+  },
+  {
+   "text": "5 Discussions and Concluding Remarks",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Appendix A An IP model for super-stability in SPA-ST",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.1 Introduction",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.2 Constraints",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.3 Variables",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.4 Objective function",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A.5 Correctness of the IP model",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Lemma 11. A super-stable matching M in I corresponds to a feasible solution S to J.",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 11.383910500000638,
+ "metrics_v1": {
+  "gt": 26,
+  "pred": 27,
+  "tp": 23,
+  "fp": 4,
+  "fn": 3,
+  "level_correct": 18,
+  "parent_correct": 17,
+  "teds": 0.6071428571428572,
+  "unmatched_gt": [
+   "Correctness testing",
+   "Experiment 1",
+   "Experiment 2"
+  ],
+  "unmatched_pred": [
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "3. lzi prefers sqi+1 to sqi; also, lzi oﬀers both pt2i and pt2i+1 (possibly pt2i",
+   "Lemma 11. A super-stable matching M in I corresponds to a feasible solution S to"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

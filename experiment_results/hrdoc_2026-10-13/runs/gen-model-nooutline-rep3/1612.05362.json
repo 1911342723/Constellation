@@ -1,0 +1,149 @@
+{
+ "doc": "1612.05362",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 13,
+  "tp": 12,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.9285714285714286,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 University of North Carolina at Chapel Hill, USA"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "info": {
+  "blocks": 237,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 1,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 1,
+   "prompt_tokens": 4676,
+   "completion_tokens": 620,
+   "total_tokens": 5296
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Medical Image Synthesis with Context-Aware",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 University of North Carolina at Chapel Hill, USA",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Proposed Generative Adversarial Networks",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "2.2 Auto-Context Model (ACM) for Reﬁnement",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3 Datasets",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experimental Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Impact of Proposed GAN model",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.2 Impact of Auto-Context Reﬁnement",
+   "page": 7,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.3 Experimental Results for Brain Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "4.4 Experimental Results for Pelvic Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 7
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.958377200000541,
+ "metrics_v1": {
+  "gt": 12,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Medical Image Synthesis with Context-Aware",
+   "1 University of North Carolina at Chapel Hill, USA"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 12,
+  "tp": 11,
+  "fp": 1,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.9230769230769231,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 University of North Carolina at Chapel Hill, USA"
+  ],
+  "ignored_title_predictions": null
+ }
+}

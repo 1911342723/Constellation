@@ -1,0 +1,136 @@
+{
+ "doc": "1807.09332",
+ "system": "docling-numlevels",
+ "derived_from": "test-docling",
+ "metrics": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 Online Approximate Learning Scheme",
+   "2: repeat"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 8,
+  "pred": 10,
+  "tp": 8,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 8,
+  "parent_correct": 8,
+  "teds": 0.8181818181818181,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "Algorithm 1 Online Approximate Learning Scheme",
+   "2: repeat"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "docling": "2.138.0",
+  "docling_seconds": 20.389651999998023
+ },
+ "predictions": [
+  {
+   "text": "Multipath Transmission Scheduling in Millimeter Wave Cloud Radio Access Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL AND ASSUMPTIONS",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "III. PROBLEM FORMULATION",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "IV. SOLVING THE OPTIMAL CONTROL POLICY",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "A. Optimal MDP Solution",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "B. Approximate Learning Scheme",
+   "page": 2,
+   "level": 2,
+   "parent": 4
+  },
+  {
+   "text": "Algorithm 1 Online Approximate Learning Scheme",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2: repeat",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. NUMERICAL RESULTS",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. CONCLUSIONS",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.008029199998418335,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 11,
+  "tp": 9,
+  "fp": 2,
+  "fn": 1,
+  "level_correct": 9,
+  "parent_correct": 9,
+  "teds": 0.75,
+  "unmatched_gt": [
+   "Abstract—"
+  ],
+  "unmatched_pred": [
+   "Algorithm 1 Online Approximate Learning Scheme",
+   "2: repeat"
+  ],
+  "ignored_title_predictions": 1
+ }
+}

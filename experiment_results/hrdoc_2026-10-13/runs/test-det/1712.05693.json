@@ -1,0 +1,225 @@
+{
+ "doc": "1712.05693",
+ "system": "det",
+ "metrics": {
+  "gt": 14,
+  "pred": 24,
+  "tp": 14,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.52,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics",
+   "M. Gilson,1 N. E. Kouvaris,1, 2 G",
+   "a) Efect of network size",
+   "c) Efect of feedback",
+   "d) Efect of spread of",
+   "time constant τ",
+   "Efect of input",
+   "cross-correlations",
+   "Flow-based communities (strong reciprocal interactions)",
+   "ACKNOWLEDGMENTS"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1188,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "A novel framework to analyze complex network dynamics",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "M. Gilson,1 N. E. Kouvaris,1, 2 G",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 1,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "II. THEORY FOR STABLE NETWORK DYNAMICS WITH LINEAR FEEDBACK",
+   "page": 2,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "A. Dynamic communicability as a measure of interactions across time",
+   "page": 4,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "B. Deﬁnition of ﬂow to quantify the propagation of ﬂuctuating inputs via the network connectivity",
+   "page": 7,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "C. Deﬁnition of diversity D and spectral properties of the ﬂow",
+   "page": 9,
+   "level": 3,
+   "parent": 3
+  },
+  {
+   "text": "III. BENCHMARK OF COMMUNICABILITY AND FLOW USING SYNTHETIC NETWORKS",
+   "page": 10,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "A. Communicability and ﬂow capture the properties of the network interactions and inputs",
+   "page": 10,
+   "level": 3,
+   "parent": 7
+  },
+  {
+   "text": "a) Efect of network size",
+   "page": 11,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "c) Efect of feedback",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "d) Efect of spread of",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "time constant τ",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "Efect of input",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "cross-correlations",
+   "page": 11,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "B. Interplay between local connectivity, long-range connectivity and inputs in ring lattices",
+   "page": 12,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "C. Community merging in hierarchical networks",
+   "page": 12,
+   "level": 3,
+   "parent": 14
+  },
+  {
+   "text": "Flow-based communities (strong reciprocal interactions)",
+   "page": 14,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "D. Multiple timescales and path selection in globally balanced excitatory-inhibitory network",
+   "page": 15,
+   "level": 3,
+   "parent": 17
+  },
+  {
+   "text": "IV. DISCUSSION",
+   "page": 16,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "ACKNOWLEDGMENTS",
+   "page": 17,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "V. ANNEX",
+   "page": 17,
+   "level": 2,
+   "parent": 11
+  },
+  {
+   "text": "A. Communicability for static graph",
+   "page": 17,
+   "level": 3,
+   "parent": 21
+  },
+  {
+   "text": "B. Exponential of graph Laplacian to describe multiscale structure",
+   "page": 17,
+   "level": 3,
+   "parent": 21
+  }
+ ],
+ "seconds": 15.545332099998632,
+ "metrics_v1": {
+  "gt": 14,
+  "pred": 24,
+  "tp": 14,
+  "fp": 10,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.52,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics",
+   "M. Gilson,1 N. E. Kouvaris,1, 2 G",
+   "a) Efect of network size",
+   "c) Efect of feedback",
+   "d) Efect of spread of",
+   "time constant τ",
+   "Efect of input",
+   "cross-correlations",
+   "Flow-based communities (strong reciprocal interactions)",
+   "ACKNOWLEDGMENTS"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 23,
+  "tp": 14,
+  "fp": 9,
+  "fn": 0,
+  "level_correct": 0,
+  "parent_correct": 6,
+  "teds": 0.5416666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "A novel framework to analyze complex network dynamics",
+   "M. Gilson,1 N. E. Kouvaris,1, 2 G",
+   "a) Efect of network size",
+   "c) Efect of feedback",
+   "d) Efect of spread of",
+   "time constant τ",
+   "Efect of input",
+   "cross-correlations",
+   "Flow-based communities (strong reciprocal interactions)"
+  ],
+  "ignored_title_predictions": null
+ }
+}

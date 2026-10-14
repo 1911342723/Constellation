@@ -1,0 +1,141 @@
+{
+ "doc": "1612.05362",
+ "system": "det-nooutline",
+ "metrics": {
+  "gt": 12,
+  "pred": 14,
+  "tp": 12,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 12,
+  "parent_correct": 12,
+  "teds": 0.8666666666666667,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 University of North Carolina at Chapel Hill, USA",
+   "2 Normandie Univ, UNIROUEN, UNIHAVRE, INSA Rouen, LITIS, 76000 Rouen, France"
+  ],
+  "ignored_title_predictions": 2
+ },
+ "metrics_generic": {
+  "gt": 11,
+  "pred": 13,
+  "tp": 11,
+  "fp": 2,
+  "fn": 0,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.8571428571428572,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "1 University of North Carolina at Chapel Hill, USA",
+   "2 Normandie Univ, UNIROUEN, UNIHAVRE, INSA Rouen, LITIS, 76000 Rouen, France"
+  ],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 237,
+  "content_preservation": 1.0,
+  "word_preservation": 0.9686742118027486,
+  "inserted_word_share": 0.7021316263749922
+ },
+ "predictions": [
+  {
+   "text": "Medical Image Synthesis with Context-Aware",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Generative Adversarial Networks",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 University of North Carolina at Chapel Hill, USA",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Normandie Univ, UNIROUEN, UNIHAVRE, INSA Rouen, LITIS, 76000 Rouen, France",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Methods",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1 Proposed Generative Adversarial Networks",
+   "page": 3,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "2.2 Auto-Context Model (ACM) for Reﬁnement",
+   "page": 5,
+   "level": 2,
+   "parent": 5
+  },
+  {
+   "text": "3 Datasets",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Experimental Results",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1 Impact of Proposed GAN model",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.2 Impact of Auto-Context Reﬁnement",
+   "page": 7,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.3 Experimental Results for Brain Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "4.4 Experimental Results for Pelvic Dataset",
+   "page": 8,
+   "level": 2,
+   "parent": 9
+  },
+  {
+   "text": "5 Conclusions",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 2.1872063999981037
+}

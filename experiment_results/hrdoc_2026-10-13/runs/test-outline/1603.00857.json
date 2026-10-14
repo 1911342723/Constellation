@@ -1,0 +1,106 @@
+{
+ "doc": "1603.00857",
+ "system": "outline",
+ "metrics": {
+  "gt": 10,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "Abstract",
+   "3 C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [
+   "3 C()D[0,1]-.4 "
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {},
+ "predictions": [
+  {
+   "text": "1 Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 Brownian Type Potentials",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3 C()D[0,1]-.4 ",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4 Stochastic Functional Equation for B-.4",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5 Bounds on the Expected Value of B-.4",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6 Existence and Finiteness of the Quenched Pressure",
+   "page": 12,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "7 Concluding Remarks",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 0.017641200000070967,
+ "metrics_v1": {
+  "gt": 10,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 4,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.6363636363636364,
+  "unmatched_gt": [
+   "Abstract",
+   "3 C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]",
+   "Acknowledgments",
+   "References"
+  ],
+  "unmatched_pred": [
+   "3 C()D[0,1]-.4 "
+  ]
+ },
+ "metrics_generic": {
+  "gt": 7,
+  "pred": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 1,
+  "level_correct": 6,
+  "parent_correct": 6,
+  "teds": 0.875,
+  "unmatched_gt": [
+   "3 C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]C (Ω) ≃ D [0, 1]"
+  ],
+  "unmatched_pred": [
+   "3 C()D[0,1]-.4 "
+  ],
+  "ignored_title_predictions": null
+ }
+}

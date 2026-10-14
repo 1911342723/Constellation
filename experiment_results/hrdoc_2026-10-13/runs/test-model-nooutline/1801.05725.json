@@ -1,0 +1,248 @@
+{
+ "doc": "1801.05725",
+ "system": "model-nooutline",
+ "metrics": {
+  "gt": 24,
+  "pred": 28,
+  "tp": 23,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.7931034482758621,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "퐷 − 푝0",
+   "푝(푦푖 | 휃푠)",
+   "Var(푒푘)푖푖 and 휔푖푗 = −훽푖푗",
+   "̂Ω푖푖 = 1",
+   "Var(푒푘)푖푖 +"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 1179,
+  "model": "deepseek-v4.1-flash",
+  "model_calls": 5,
+  "usage": {
+   "model": "deepseek-v4.1-flash",
+   "calls": 5,
+   "prompt_tokens": 18294,
+   "completion_tokens": 903,
+   "total_tokens": 19197
+  },
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Gaussian Graphical Models",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2.1. Regression-Based Interpretation",
+   "page": 4,
+   "level": 2,
+   "parent": 1
+  },
+  {
+   "text": "3. Projection Predictive Selection",
+   "page": 5,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Model Fitting",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "퐷 − 푝0",
+   "page": 5,
+   "level": 3,
+   "parent": 4
+  },
+  {
+   "text": "3.2. Neighborhood Selection",
+   "page": 5,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "푝(푦푖 | 휃푠)",
+   "page": 6,
+   "level": 3,
+   "parent": 6
+  },
+  {
+   "text": "3.3. Symmetrization",
+   "page": 7,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3.1. Partial Correlation Matrix",
+   "page": 7,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "3.3.2. Precision Matrix",
+   "page": 7,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "Var(푒푘)푖푖 and 휔푖푗 = −훽푖푗",
+   "page": 8,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "̂Ω푖푖 = 1",
+   "page": 8,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "Var(푒푘)푖푖 +",
+   "page": 8,
+   "level": 3,
+   "parent": 8
+  },
+  {
+   "text": "4. Numerical Experiments",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Low-dimensional",
+   "page": 9,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.1.1. Results: Risk Estimates",
+   "page": 11,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "4.1.2. Results: Edge Set Identiﬁcation",
+   "page": 11,
+   "level": 3,
+   "parent": 15
+  },
+  {
+   "text": "4.2. High-dimensional",
+   "page": 11,
+   "level": 2,
+   "parent": 14
+  },
+  {
+   "text": "4.2.1. Results: Speed of Estimation",
+   "page": 12,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "4.2.2. Results: Risk Estimates",
+   "page": 12,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "4.2.3. Results: Edge Set Identiﬁcation",
+   "page": 13,
+   "level": 3,
+   "parent": 18
+  },
+  {
+   "text": "5. Applications",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "5.1. Low-dimensional",
+   "page": 16,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "5.2. High-dimensional",
+   "page": 17,
+   "level": 2,
+   "parent": 22
+  },
+  {
+   "text": "6. Conclusion",
+   "page": 18,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgements",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 30.68957059999957,
+ "metrics_v1": {
+  "gt": 24,
+  "pred": 28,
+  "tp": 23,
+  "fp": 5,
+  "fn": 1,
+  "level_correct": 23,
+  "parent_correct": 23,
+  "teds": 0.7931034482758621,
+  "unmatched_gt": [
+   "Abstract"
+  ],
+  "unmatched_pred": [
+   "퐷 − 푝0",
+   "푝(푦푖 | 휃푠)",
+   "Var(푒푘)푖푖 and 휔푖푗 = −훽푖푗",
+   "̂Ω푖푖 = 1",
+   "Var(푒푘)푖푖 +"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 21,
+  "pred": 26,
+  "tp": 21,
+  "fp": 5,
+  "fn": 0,
+  "level_correct": 21,
+  "parent_correct": 21,
+  "teds": 0.8148148148148149,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "퐷 − 푝0",
+   "푝(푦푖 | 휃푠)",
+   "Var(푒푘)푖푖 and 휔푖푗 = −훽푖푗",
+   "̂Ω푖푖 = 1",
+   "Var(푒푘)푖푖 +"
+  ],
+  "ignored_title_predictions": null
+ }
+}

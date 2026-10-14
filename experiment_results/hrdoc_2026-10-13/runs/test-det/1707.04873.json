@@ -1,0 +1,160 @@
+{
+ "doc": "1707.04873",
+ "system": "det",
+ "metrics": {
+  "gt": 22,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "Automatic Architecture Designing",
+   "Network Transformation and Knowledge Transfer",
+   "Reinforcement Learning Background",
+   "CIFAR-10",
+   "SVHN",
+   "Start with Small Network",
+   "Further Explore Larger Architecture Space",
+   "Comparison Between RL and Random Search"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 279,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Related Work and Background",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Architecture Search by Net Transformation",
+   "page": 1,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Actor Networks",
+   "page": 2,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Function-preserving Transformation for DenseNet",
+   "page": 3,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "Experiments and Results",
+   "page": 4,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Image Datasets",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Training Details",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Explore Plain CNN Architecture Space",
+   "page": 4,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Explore DenseNet Architecture Space",
+   "page": 6,
+   "level": 2,
+   "parent": 6
+  },
+  {
+   "text": "Conclusion",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "Acknowledgments",
+   "page": 6,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "References",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 3.787731699998403,
+ "metrics_v1": {
+  "gt": 22,
+  "pred": 14,
+  "tp": 14,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 14,
+  "parent_correct": 14,
+  "teds": 0.6521739130434783,
+  "unmatched_gt": [
+   "Automatic Architecture Designing",
+   "Network Transformation and Knowledge Transfer",
+   "Reinforcement Learning Background",
+   "CIFAR-10",
+   "SVHN",
+   "Start with Small Network",
+   "Further Explore Larger Architecture Space",
+   "Comparison Between RL and Random Search"
+  ],
+  "unmatched_pred": []
+ },
+ "metrics_generic": {
+  "gt": 19,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 8,
+  "level_correct": 11,
+  "parent_correct": 11,
+  "teds": 0.6,
+  "unmatched_gt": [
+   "Automatic Architecture Designing",
+   "Network Transformation and Knowledge Transfer",
+   "Reinforcement Learning Background",
+   "CIFAR-10",
+   "SVHN",
+   "Start with Small Network",
+   "Further Explore Larger Architecture Space",
+   "Comparison Between RL and Random Search"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ }
+}

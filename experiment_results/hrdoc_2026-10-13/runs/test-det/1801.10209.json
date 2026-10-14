@@ -1,0 +1,384 @@
+{
+ "doc": "1801.10209",
+ "system": "det",
+ "metrics": {
+  "gt": 18,
+  "pred": 41,
+  "tp": 15,
+  "fp": 26,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.30952380952380953,
+  "unmatched_gt": [
+   "Acknowledgments",
+   "References",
+   "References"
+  ],
+  "unmatched_pred": [
+   "0 d2τ eiντ12⟨Tτciσ(τ1)c†",
+   "0 d4τ eiντ12+iν′τ34+iωτ14",
+   "0 d2τ eiντ12⟨Tτciσ(τ1)c†",
+   "0 d2τ eiντ12",
+   "0 d4τ eiωτ14",
+   "0 d4τ eiωτ12",
+   "0 d4τ eiντ12+iωτ23",
+   "0 d4τ eiντ12+iωτ23",
+   "0 d4τ eiντ12+iν′τ34+iωτ14",
+   "× ⟨Tτciσ(τ1)c†",
+   "2. Improved sampling techniques such as worm and superstate sampling. Worm sam-",
+   "2 R. Bulla, T. Costi, T",
+   "11 O. Parcollet, M. Ferrero, T. Ayral, H",
+   "19 V. I. Anisimov, A. I. Poteryaev, M. A",
+   "23 P. Sun, G",
+   "30 J. Kuneš, R. Arita, P. Wissgott, A. Toschi, H",
+   "34 T. Maier, M. Jarrell, T. Pruschke, M. H",
+   "45 T. Ribic, P. Gunacker, S. Iskakov, M",
+   "49 M. Potthoﬀ, W",
+   "52 P. Hansmann, R. Arita, A. Toschi, S. Sakai, G",
+   "55 N. Parragh, A. Toschi, K. Held, G",
+   "61 G. Kotliar, S. Y. Savrasov, K. Haule, V. S",
+   "66 B. A",
+   "68 P. Seth, I. Krivenko, M. Ferrero, O",
+   "70 M. Aichhorn, L. Pourovskii, P. Seth, V",
+   "72 G. Rohringer, A. Katanin, T. Schäfer, A"
+  ],
+  "ignored_title_predictions": 0
+ },
+ "info": {
+  "blocks": 742,
+  "content_preservation": 1.0
+ },
+ "predictions": [
+  {
+   "text": "Abstract",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "1. Introduction",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Dynamical mean ﬁeld theory (DMFT) solver",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3. CT-HYB impurity solver",
+   "page": 7,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.1. Steps",
+   "page": 8,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.2. Estimators",
+   "page": 11,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "3.3. Statistical uncertainties",
+   "page": 12,
+   "level": 2,
+   "parent": 3
+  },
+  {
+   "text": "0 d2τ eiντ12⟨Tτciσ(τ1)c†",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 d4τ eiντ12+iν′τ34+iωτ14",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 d2τ eiντ12⟨Tτciσ(τ1)c†",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 d2τ eiντ12",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 d4τ eiωτ14",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 d4τ eiωτ12",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 d4τ eiντ12+iωτ23",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 d4τ eiντ12+iωτ23",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "0 d4τ eiντ12+iν′τ34+iωτ14",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "× ⟨Tτciσ(τ1)c†",
+   "page": 13,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "3.4. Local trace",
+   "page": 14,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "3.5. Quantum numbers",
+   "page": 14,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "3.6. Bath trace",
+   "page": 15,
+   "level": 2,
+   "parent": 16
+  },
+  {
+   "text": "4. Installation and community site",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "4.1. Where to ﬁnd the project and the code",
+   "page": 15,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "4.2. Installation",
+   "page": 16,
+   "level": 2,
+   "parent": 20
+  },
+  {
+   "text": "5. Input/output",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "6. Conclusions",
+   "page": 19,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2. Improved sampling techniques such as worm and superstate sampling. Worm sam-",
+   "page": 20,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "2 R. Bulla, T. Costi, T",
+   "page": 21,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "11 O. Parcollet, M. Ferrero, T. Ayral, H",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "19 V. I. Anisimov, A. I. Poteryaev, M. A",
+   "page": 22,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "23 P. Sun, G",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "30 J. Kuneš, R. Arita, P. Wissgott, A. Toschi, H",
+   "page": 23,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "34 T. Maier, M. Jarrell, T. Pruschke, M. H",
+   "page": 24,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "45 T. Ribic, P. Gunacker, S. Iskakov, M",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "49 M. Potthoﬀ, W",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "52 P. Hansmann, R. Arita, A. Toschi, S. Sakai, G",
+   "page": 25,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "55 N. Parragh, A. Toschi, K. Held, G",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "61 G. Kotliar, S. Y. Savrasov, K. Haule, V. S",
+   "page": 26,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "66 B. A",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "68 P. Seth, I. Krivenko, M. Ferrero, O",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "70 M. Aichhorn, L. Pourovskii, P. Seth, V",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "72 G. Rohringer, A. Katanin, T. Schäfer, A",
+   "page": 27,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 5.582252699998207,
+ "metrics_v1": {
+  "gt": 18,
+  "pred": 41,
+  "tp": 15,
+  "fp": 26,
+  "fn": 3,
+  "level_correct": 15,
+  "parent_correct": 12,
+  "teds": 0.30952380952380953,
+  "unmatched_gt": [
+   "Acknowledgments",
+   "References",
+   "References"
+  ],
+  "unmatched_pred": [
+   "0 d2τ eiντ12⟨Tτciσ(τ1)c†",
+   "0 d4τ eiντ12+iν′τ34+iωτ14",
+   "0 d2τ eiντ12⟨Tτciσ(τ1)c†",
+   "0 d2τ eiντ12",
+   "0 d4τ eiωτ14",
+   "0 d4τ eiωτ12",
+   "0 d4τ eiντ12+iωτ23",
+   "0 d4τ eiντ12+iωτ23",
+   "0 d4τ eiντ12+iν′τ34+iωτ14",
+   "× ⟨Tτciσ(τ1)c†",
+   "2. Improved sampling techniques such as worm and superstate sampling. Worm sam-",
+   "2 R. Bulla, T. Costi, T",
+   "11 O. Parcollet, M. Ferrero, T. Ayral, H",
+   "19 V. I. Anisimov, A. I. Poteryaev, M. A",
+   "23 P. Sun, G",
+   "30 J. Kuneš, R. Arita, P. Wissgott, A. Toschi, H",
+   "34 T. Maier, M. Jarrell, T. Pruschke, M. H",
+   "45 T. Ribic, P. Gunacker, S. Iskakov, M",
+   "49 M. Potthoﬀ, W",
+   "52 P. Hansmann, R. Arita, A. Toschi, S. Sakai, G",
+   "55 N. Parragh, A. Toschi, K. Held, G",
+   "61 G. Kotliar, S. Y. Savrasov, K. Haule, V. S",
+   "66 B. A",
+   "68 P. Seth, I. Krivenko, M. Ferrero, O",
+   "70 M. Aichhorn, L. Pourovskii, P. Seth, V",
+   "72 G. Rohringer, A. Katanin, T. Schäfer, A"
+  ]
+ },
+ "metrics_generic": {
+  "gt": 14,
+  "pred": 40,
+  "tp": 14,
+  "fp": 26,
+  "fn": 0,
+  "level_correct": 14,
+  "parent_correct": 11,
+  "teds": 0.31707317073170727,
+  "unmatched_gt": [],
+  "unmatched_pred": [
+   "0 d2τ eiντ12⟨Tτciσ(τ1)c†",
+   "0 d4τ eiντ12+iν′τ34+iωτ14",
+   "0 d2τ eiντ12⟨Tτciσ(τ1)c†",
+   "0 d2τ eiντ12",
+   "0 d4τ eiωτ14",
+   "0 d4τ eiωτ12",
+   "0 d4τ eiντ12+iωτ23",
+   "0 d4τ eiντ12+iωτ23",
+   "0 d4τ eiντ12+iν′τ34+iωτ14",
+   "× ⟨Tτciσ(τ1)c†",
+   "2. Improved sampling techniques such as worm and superstate sampling. Worm sam-",
+   "2 R. Bulla, T. Costi, T",
+   "11 O. Parcollet, M. Ferrero, T. Ayral, H",
+   "19 V. I. Anisimov, A. I. Poteryaev, M. A",
+   "23 P. Sun, G",
+   "30 J. Kuneš, R. Arita, P. Wissgott, A. Toschi, H",
+   "34 T. Maier, M. Jarrell, T. Pruschke, M. H",
+   "45 T. Ribic, P. Gunacker, S. Iskakov, M",
+   "49 M. Potthoﬀ, W",
+   "52 P. Hansmann, R. Arita, A. Toschi, S. Sakai, G",
+   "55 N. Parragh, A. Toschi, K. Held, G",
+   "61 G. Kotliar, S. Y. Savrasov, K. Haule, V. S",
+   "66 B. A",
+   "68 P. Seth, I. Krivenko, M. Ferrero, O",
+   "70 M. Aichhorn, L. Pourovskii, P. Seth, V",
+   "72 G. Rohringer, A. Katanin, T. Schäfer, A"
+  ],
+  "ignored_title_predictions": null
+ }
+}

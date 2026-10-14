@@ -1,0 +1,259 @@
+{
+ "doc": "1704.01924",
+ "system": "det-nooutline-layout",
+ "metrics": {
+  "gt": 30,
+  "pred": 20,
+  "tp": 11,
+  "fp": 9,
+  "fn": 19,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.32258064516129037,
+  "unmatched_gt": [
+   "A. Effective Capacity (EC)",
+   "I V. SPE CI A L C A S E: I = 2",
+   "A. Scenario 1: There is only one RRH that transmits at a",
+   "non-zero power, i.e., |I ′| = 1",
+   "1) p∗1 = P peak1 :",
+   "2) p∗1 = 1α1 (cid:20)(cid:16) λ1ε(θ)α1 (cid:17)− 1ε(θ)+1 − 1(cid:21):",
+   "B. Scenario 2: Both RRHs are transmitting at a non-zero power, i.e., |I ′ | = 2",
+   "1) p∗2 = P peak2 :",
+   "2) p∗2 = 1α2 (cid:20)(cid:16) λ2ε(θ )α2 (cid:17)− 11+ε(θ) − P peak1 α1 − 1(cid:2",
+   "A. θ → 0 (No delay requirements)",
+   "B. θ → ∞ and P peaki → ∞, ∀i ∈ I (Extremely strict delay",
+   "requirement)",
+   "PROOF OF CO N VEX I TY OF P ROBL E M ( 7)",
+   "P ROO F OF LEMM A 1",
+   "P ROO F OF LEMM A 2",
+   "PROOF OF THE O R EM 2",
+   "T H E AVE R A G E P O W ER FOR THE CA S E O F I = 1",
+   "PROOF OF λ1ε(θ) < αl1",
+   "DE R I VAT I ONS O F T C2RRH1 W H EN m IS A PO SI TIVE IN TEG E R"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "APPENDIX E",
+   "APPENDIX F",
+   "APPENDIX G",
+   "APPENDIX I",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ },
+ "metrics_generic": {
+  "gt": 30,
+  "pred": 11,
+  "tp": 11,
+  "fp": 0,
+  "fn": 19,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.3870967741935484,
+  "unmatched_gt": [
+   "A. Effective Capacity (EC)",
+   "I V. SPE CI A L C A S E: I = 2",
+   "A. Scenario 1: There is only one RRH that transmits at a",
+   "non-zero power, i.e., |I ′| = 1",
+   "1) p∗1 = P peak1 :",
+   "2) p∗1 = 1α1 (cid:20)(cid:16) λ1ε(θ)α1 (cid:17)− 1ε(θ)+1 − 1(cid:21):",
+   "B. Scenario 2: Both RRHs are transmitting at a non-zero power, i.e., |I ′ | = 2",
+   "1) p∗2 = P peak2 :",
+   "2) p∗2 = 1α2 (cid:20)(cid:16) λ2ε(θ )α2 (cid:17)− 11+ε(θ) − P peak1 α1 − 1(cid:2",
+   "A. θ → 0 (No delay requirements)",
+   "B. θ → ∞ and P peaki → ∞, ∀i ∈ I (Extremely strict delay",
+   "requirement)",
+   "PROOF OF CO N VEX I TY OF P ROBL E M ( 7)",
+   "P ROO F OF LEMM A 1",
+   "P ROO F OF LEMM A 2",
+   "PROOF OF THE O R EM 2",
+   "T H E AVE R A G E P O W ER FOR THE CA S E O F I = 1",
+   "PROOF OF λ1ε(θ) < αl1",
+   "DE R I VAT I ONS O F T C2RRH1 W H EN m IS A PO SI TIVE IN TEG E R"
+  ],
+  "unmatched_pred": [],
+  "ignored_title_predictions": null
+ },
+ "info": {
+  "blocks": 2408,
+  "layout_marked": 28,
+  "content_preservation": 1.0,
+  "word_preservation": 0.8930345170101813,
+  "inserted_word_share": 0.10840461137969504
+ },
+ "predictions": [
+  {
+   "text": "Power-and Rate-Adaptation Improves the Effective",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "I. INTRODUCTION",
+   "page": 0,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "II. SYSTEM MODEL",
+   "page": 2,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "B. Problem formulation",
+   "page": 3,
+   "level": 2,
+   "parent": 2
+  },
+  {
+   "text": "III. OPTIMAL POWER ALLOCATION METHOD",
+   "page": 3,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "C. Discussion of the results",
+   "page": 8,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "V. POWER ALLOCATION IN EXTREME CASES",
+   "page": 9,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VI. EXTENSION TO THE MULTIUSER CASE",
+   "page": 10,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VII. SIMULATIONS",
+   "page": 11,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "VIII. CONCLUSIONS",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX A",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX B",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX C",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX D",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF THEOREM 1",
+   "page": 14,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX E",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX F",
+   "page": 15,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX G",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "PROOF OF LEMMA 3",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "APPENDIX I",
+   "page": 16,
+   "level": 1,
+   "parent": -1
+  },
+  {
+   "text": "REFERENCES",
+   "page": 17,
+   "level": 1,
+   "parent": -1
+  }
+ ],
+ "seconds": 10.904800300006173,
+ "metrics_v1": {
+  "gt": 30,
+  "pred": 20,
+  "tp": 11,
+  "fp": 9,
+  "fn": 19,
+  "level_correct": 10,
+  "parent_correct": 10,
+  "teds": 0.32258064516129037,
+  "unmatched_gt": [
+   "A. Effective Capacity (EC)",
+   "I V. SPE CI A L C A S E: I = 2",
+   "A. Scenario 1: There is only one RRH that transmits at a",
+   "non-zero power, i.e., |I ′| = 1",
+   "1) p∗1 = P peak1 :",
+   "2) p∗1 = 1α1 (cid:20)(cid:16) λ1ε(θ)α1 (cid:17)− 1ε(θ)+1 − 1(cid:21):",
+   "B. Scenario 2: Both RRHs are transmitting at a non-zero power, i.e., |I ′ | = 2",
+   "1) p∗2 = P peak2 :",
+   "2) p∗2 = 1α2 (cid:20)(cid:16) λ2ε(θ )α2 (cid:17)− 11+ε(θ) − P peak1 α1 − 1(cid:2",
+   "A. θ → 0 (No delay requirements)",
+   "B. θ → ∞ and P peaki → ∞, ∀i ∈ I (Extremely strict delay",
+   "requirement)",
+   "PROOF OF CO N VEX I TY OF P ROBL E M ( 7)",
+   "P ROO F OF LEMM A 1",
+   "P ROO F OF LEMM A 2",
+   "PROOF OF THE O R EM 2",
+   "T H E AVE R A G E P O W ER FOR THE CA S E O F I = 1",
+   "PROOF OF λ1ε(θ) < αl1",
+   "DE R I VAT I ONS O F T C2RRH1 W H EN m IS A PO SI TIVE IN TEG E R"
+  ],
+  "unmatched_pred": [
+   "APPENDIX A",
+   "APPENDIX B",
+   "APPENDIX C",
+   "APPENDIX D",
+   "APPENDIX E",
+   "APPENDIX F",
+   "APPENDIX G",
+   "APPENDIX I",
+   "REFERENCES"
+  ],
+  "ignored_title_predictions": 1
+ }
+}
