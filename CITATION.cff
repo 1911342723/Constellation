@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+type: software
+title: "Constellation: candidate-routed LLM control with deterministic reconstruction for document hierarchy parsing (code and results)"
+authors:
+  - family-names: "Yan"
+    given-names: "XiuJian"
+    affiliation: "Independent Researcher"
+license: Apache-2.0
+repository-code: "https://github.com/1911342723/Constellation"
+abstract: >-
+  Code, evaluation scripts and per-document results for a document hierarchy
+  parser in which deterministic providers extract ordered blocks with typed
+  evidence, an LLM only votes on candidate headings over a sparse view, a
+  constrained decoder fuses both, and closure assigns the original blocks to
+  disjoint sections. Includes the frozen Comp-HRDoc evaluation (admission,
+  development/test split, one record per document and system, bootstrap
+  report) and the scripts that regenerate every reported number. Tags
+  ijdar-frozen, ijdar-perf and ijdar-layout mark the evaluated code versions.
+keywords:
+  - document hierarchy parsing
+  - large language models
+  - PDF
+  - DOCX
+  - Comp-HRDoc
