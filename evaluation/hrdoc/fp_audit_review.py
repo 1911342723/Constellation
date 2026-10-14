@@ -54,40 +54,60 @@ def sheet(n: int, seed: int) -> None:
     chosen = sorted(random.Random(seed).sample(audit, min(n, len(audit))), key=_key)
 
     lines = [
-        "# False-positive audit: author spot-check",
+        "# 误报审计：作者抽查表",
         "",
-        f"{len(chosen)} of {len(audit)} audited items (seed {seed}).",
-        "For each item, replace `?` on the `author:` line with `agree`, or with the verdict you",
-        "would give: `genuine_heading`, `split_or_version_text` or `error`. A note may follow.",
+        f"从论文统计的 {len(audit)} 条中按固定种子 {seed} 抽取 {len(chosen)} 条。",
+        "每一条：看“系统判成标题的行”和它前后的原文，判断它到底是不是章节标题，",
+        "然后把末尾 `author: ?` 的 `?` 改成 `agree`（同意 AI），或改成你自己的判定，后面可加备注。",
         "",
-        "- `genuine_heading`: a section title of the document that the reference omits",
-        "  (incl. Abstract, Acknowledgments, References, Appendix, run-in numbered subsections).",
-        "- `split_or_version_text`: part of a referenced section title (split across lines) or",
-        "  text that differs only because the fetched arXiv version differs.",
-        "- `error`: not a section title (unnumbered bold paragraph labels and theorem/proof",
-        "  labels count as errors).",
+        "三种判定：",
+        "",
+        "- `genuine_heading`：真标题，只是参考答案没收录（含 Abstract、Acknowledgments、",
+        "  References、Appendix、行内编号小节）。",
+        "- `split_or_version_text`：属于参考答案里某个章节，但标题被拆成多行，或因 arXiv 版本不同而有出入。",
+        "- `error`：不是章节标题（图表文字、公式/算法行、列表项、页眉、参考文献条目；",
+        "  无编号的粗体段落标签、定理/证明标签也算 error）。",
+        "",
+        "原文片段的格式：`>>` 标出被判成标题的那一行；方括号里是该行的排版（字号、是否粗体、",
+        "对齐方式），例如 `[9.0pt 粗体 右对齐]`。排版只是判断线索，不是判定。",
         "",
     ]
+    meaning = {"genuine_heading": "真标题，参考答案漏收",
+               "split_or_version_text": "标题拆行或版本差异",
+               "error": "不是标题"}
+    kinds = {"title_page_or_running_header": "题目页或页眉",
+             "run_in_label_or_list_item": "行内标签或列表项",
+             "figure_or_table_text": "图表文字",
+             "reference_entry": "参考文献条目",
+             "formula_or_algorithm_line": "公式或算法行",
+             "body_text_line": "正文行"}
+    align = {"left": "左对齐", "right": "右对齐", "center": "居中", "justify": "两端对齐"}
     for number, item in enumerate(chosen, 1):
         ctx = context.get(_key(item), {})
         page = ctx.get("page")
         link = f"https://arxiv.org/pdf/{item['doc']}" + (f"#page={page + 1}" if page is not None else "")
+        verdict = f"`{item['verdict']}`（{meaning[item['verdict']]}"
+        if item.get("error_kind"):
+            verdict += f"：{kinds.get(item['error_kind'], item['error_kind'])}"
         lines += [
             f"## {number}. {item['doc']} #{item['pred_index']}",
             "",
-            f"- predicted: **{item['title']}** (level {ctx.get('level', '?')}, "
-            f"page {page + 1 if page is not None else '?'}) — {link}",
-            f"- AI verdict: `{item['verdict']}`"
-            + (f" ({item['error_kind']})" if item.get("error_kind") else ""),
-            "- nearby reference sections: "
-            + ("; ".join(ctx.get("reference_sections_nearby", [])) or "(none)"),
+            f"- 系统判成标题的行：**{item['title']}**（第 {ctx.get('level', '?')} 级，"
+            f"第 {page + 1 if page is not None else '?'} 页）",
+            f"- 原文页面：{link}",
+            f"- 参考答案附近的章节：" + ("；".join(ctx.get("reference_sections_nearby", [])) or "（无）"),
+            f"- **AI 判定：{verdict}）**",
             "",
             "```",
         ]
         for row in ctx.get("context", []):
             mark = ">>" if row.get("this") else "  "
-            style = f"{row.get('font_size', '?')}pt{' bold' if row.get('bold') else ''} {row.get('alignment', '')}"
-            lines.append(f"{mark} [{style.strip()}] {row.get('text', '')}")
+            style = " ".join(part for part in (
+                f"{row.get('font_size', '?')}pt",
+                "粗体" if row.get("bold") else "",
+                align.get(row.get("alignment", ""), row.get("alignment", "")),
+            ) if part)
+            lines.append(f"{mark} [{style}] {row.get('text', '')}")
         lines += ["```", "", "author: ?", ""]
     SHEET.write_text("\n".join(lines), encoding="utf-8")
     print(f"{len(chosen)} items -> {SHEET}")
@@ -95,8 +115,16 @@ def sheet(n: int, seed: int) -> None:
 
 def score() -> None:
     audit = {_key(i): i for i in json.loads(AUDIT.read_text(encoding="utf-8"))["items"]}
+    text = SHEET.read_text(encoding="utf-8")
+    pending = sum(1 for line in text.splitlines() if line.strip() == "author: ?")
+    if pending:
+        raise SystemExit(
+            f"{pending} item(s) in {SHEET} still read 'author: ?'.\n"
+            "Open the sheet, replace each '?' with 'agree' or with your verdict "
+            "(genuine_heading / split_or_version_text / error), save, then run score again."
+        )
     reviewed, current = [], None
-    for line in SHEET.read_text(encoding="utf-8").splitlines():
+    for line in text.splitlines():
         if match := _ITEM.match(line.strip()):
             current = (match.group(2), int(match.group(3)))
         elif current and (match := _AUTHOR.match(line.strip())):
