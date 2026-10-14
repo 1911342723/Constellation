@@ -35,7 +35,7 @@ PAIR_NAMES = {"model-nooutline - det-nooutline": "FullNoDetNo",
               "model-nooutline-layout - det-nooutline-layout": "FullLayDetLay",
               "model-nooutline-layout - docling-numlevels": "FullLayDoclingNum",
               "det-nooutline-layout - det-nooutline": "DetLayDetNo",
-              "model-nooutline-rep4 - llm_markdown": "FidGen"}
+              "model-nooutline - llm_markdown": "FidGen"}
 
 
 def f3(x: float) -> str:
@@ -141,13 +141,18 @@ def main() -> None:
     layout_commit = HR / "layout_commit.txt"
     macros["LayoutCommit"] = layout_commit.read_text().strip()[:7] if layout_commit.exists() else "pending"
 
-    # Generative sample. Constellation's column comes from one run with the shared
-    # word-level preservation measure (gen-model-nooutline-rep4); the deterministic
-    # export of the same documents is measured as well.
+    # Generative sample. Heading accuracy, tokens and time of the full system come from
+    # its main test run (test-model-nooutline) on the same documents; the spread over
+    # the four runs is reported separately. Text preservation needs the exported
+    # Markdown, which only the repeat run gen-model-nooutline-rep4 stored; the export
+    # contains every block whatever the votes, so the deterministic export of the same
+    # documents (gen-det-nooutline-fidelity) is measured as a check.
     gen = records(HR / "runs/gen-llm_markdown")
     fid = records(HR / "runs/gen-model-nooutline-rep4")
+    main_run = records(HR / "runs/test-model-nooutline")
     det_fid = records(HR / "runs/gen-det-nooutline-fidelity")
-    docs = sorted(d for d in gen if d in fid and "error" not in gen[d] and "error" not in fid[d])
+    docs = sorted(d for d in gen if d in fid and d in main_run
+                  and "error" not in gen[d] and "error" not in fid[d] and "error" not in main_run[d])
     macros["GenFailed"] = str(sum("error" in gen[d] for d in gen))
     macros["GenDocs"] = str(len(docs))
 
@@ -161,18 +166,33 @@ def main() -> None:
 
     macros["GsGenF"] = f3(micro_f1([gen[d]["metrics"] for d in docs]))
     macros["GsGenTEDS"] = f3(mean([gen[d]["metrics"]["teds"] for d in docs]))
-    macros["GsFullNoF"] = f3(micro_f1([fid[d]["metrics"] for d in docs]))
-    macros["GsFullNoTEDS"] = f3(mean([fid[d]["metrics"]["teds"] for d in docs]))
+    macros["GsFullNoF"] = f3(micro_f1([main_run[d]["metrics"] for d in docs]))
+    macros["GsFullNoTEDS"] = f3(mean([main_run[d]["metrics"]["teds"] for d in docs]))
     # Research question: how much of the generative LLM's gain over the deterministic
     # core does anchor routing keep, on the same documents?
     det_no = records(HR / "runs/test-det-nooutline")
     gs = {"gen": (micro_f1([gen[d]["metrics"] for d in docs]), mean([gen[d]["metrics"]["teds"] for d in docs])),
-          "full": (micro_f1([fid[d]["metrics"] for d in docs]), mean([fid[d]["metrics"]["teds"] for d in docs])),
+          "full": (micro_f1([main_run[d]["metrics"] for d in docs]), mean([main_run[d]["metrics"]["teds"] for d in docs])),
           "det": (micro_f1([det_no[d]["metrics"] for d in docs]), mean([det_no[d]["metrics"]["teds"] for d in docs]))}
     macros["GsDetNoF"], macros["GsDetNoTEDS"] = f3(gs["det"][0]), f3(gs["det"][1])
     for i, short in ((0, "F"), (1, "T")):
         share = (gs["full"][i] - gs["det"][i]) / (gs["gen"][i] - gs["det"][i])
         macros[f"GainShare{short}"] = f"{100 * share:.0f}\\%"
+    # Paired bootstrap of the gain share (documents resampled, same seed as the report).
+    import random
+    rng, shares = random.Random(7), {0: [], 1: []}
+    for _ in range(5000):
+        sample = [docs[rng.randrange(len(docs))] for _ in docs]
+        point = {k: (micro_f1([src[d]["metrics"] for d in sample]), mean([src[d]["metrics"]["teds"] for d in sample]))
+                 for k, src in (("gen", gen), ("full", main_run), ("det", det_no))}
+        for i in (0, 1):
+            gap = point["gen"][i] - point["det"][i]
+            if gap > 0:
+                shares[i].append((point["full"][i] - point["det"][i]) / gap)
+    for i, short in ((0, "F"), (1, "T")):
+        values = sorted(shares[i])
+        macros[f"GainShare{short}Lo"] = f"{100 * values[int(0.025 * len(values))]:.0f}\\%"
+        macros[f"GainShare{short}Hi"] = f"{100 * values[int(0.975 * len(values)) - 1]:.0f}\\%"
     def wp(record: dict, key: str = "recall") -> float:
         return record["info"]["word_preservation"][key]
 
@@ -189,6 +209,8 @@ def main() -> None:
     macros["GsFullNoPres"] = f3(mean(c_pres))
     macros["GsFullNoPresPct"] = f"{100 * mean(c_pres):.1f}\\%"
     macros["GsFullNoPresMin"] = f3(min(c_pres))
+    macros["GenPresMinPct"] = f"{100 * min(g_pres):.1f}\\%"
+    macros["GsFullNoPresMinPct"] = f"{100 * min(c_pres):.1f}\\%"
     macros["GsDetNoPres"] = f3(mean(d_pres)) if d_pres else "--"
     macros["GenBelowFull"] = str(sum(wp(gen[d]) < wp(fid[d]) for d in docs))
     truncated = sum(gen[d]["info"]["finish_reason"] == "length" for d in docs)
@@ -199,18 +221,24 @@ def main() -> None:
     macros["GsFullNoInsertPct"] = f"{100 * mean([wp(fid[d], 'inserted') for d in docs]):.1f}\\%"
     g_in = mean([gen[d]["info"]["usage"]["prompt_tokens"] for d in docs])
     g_out = mean([gen[d]["info"]["usage"]["completion_tokens"] for d in docs])
-    c_in = mean([fid[d]["info"]["usage"]["prompt_tokens"] for d in docs])
-    c_out = mean([fid[d]["info"]["usage"]["completion_tokens"] for d in docs])
+    c_in = mean([main_run[d]["info"]["usage"]["prompt_tokens"] for d in docs])
+    c_out = mean([main_run[d]["info"]["usage"]["completion_tokens"] for d in docs])
     macros["GenPTok"] = f"{g_in:,.0f}".replace(",", "{,}")
     macros["GenCTok"] = f"{g_out:,.0f}".replace(",", "{,}")
     macros["GsFullNoPTok"] = f"{c_in:,.0f}".replace(",", "{,}")
     macros["GsFullNoCTok"] = f"{c_out:,.0f}".replace(",", "{,}")
     macros["GenOutRatio"] = f"{g_out / c_out:.0f}"
     g_sec = mean([gen[d]["seconds"] for d in docs])
-    c_sec = mean([fid[d]["seconds"] for d in docs])
+    c_sec = mean([main_run[d]["seconds"] for d in docs])
     macros["GenSec"] = f"{g_sec:.0f}"
     macros["GsFullNoSec"] = f"{c_sec:.0f}"
     macros["GenTimeRatio"] = f"{g_sec / c_sec:.1f}"
+    # Wall time of the full system over its four runs on these documents.
+    rep_secs = [c_sec] + [mean([records(HR / f"runs/gen-model-nooutline-rep{k}")[d]["seconds"] for d in docs])
+                          for k in (2, 3, 4)]
+    macros["GsFullNoSecMin"], macros["GsFullNoSecMax"] = f"{min(rep_secs):.0f}", f"{max(rep_secs):.0f}"
+    macros["GenTimeRatioMin"] = f"{g_sec / max(rep_secs):.1f}"
+    macros["GenTimeRatioMax"] = f"{g_sec / min(rep_secs):.1f}"
     raw = [gen[d]["metrics_raw"] for d in docs if "metrics_raw" in gen[d]]
     macros["GenLevRaw"] = f3(sum(m["level_correct"] for m in raw) / max(sum(m["tp"] for m in raw), 1))
     macros["GenMarkerLoss"] = str(sum(1 for d in docs if len(gen[d]["info"]["raw_headings"]) > 3
@@ -268,6 +296,20 @@ def main() -> None:
             review = json.loads(review_path.read_text(encoding="utf-8"))
             macros["AuditChecked"] = str(review["reviewed"])
             macros["AuditAgreed"] = str(review["agreement"])
+
+    # Sensitivity to the title-matching rule (evaluation/hrdoc/strict_matching.py).
+    strict_path = HR / "report/strict_matching.json"
+    if strict_path.exists():
+        strict = json.loads(strict_path.read_text())
+        drops_f = [v["main"]["f1"] - v["strict"]["f1"] for v in strict.values()]
+        drops_t = [v["main"]["teds"] - v["strict"]["teds"] for v in strict.values()]
+        macros["StrictDropFMin"], macros["StrictDropFMax"] = f3(min(drops_f)), f3(max(drops_f))
+        macros["StrictDropTMin"], macros["StrictDropTMax"] = f3(min(drops_t)), f3(max(drops_t))
+        for name, label in (("docling", "Docling"), ("model-nooutline-layout", "FullLay"),
+                            ("model-nooutline", "FullNo"), ("det-nooutline", "DetNo"),
+                            ("docling-numlevels", "DoclingNum")):
+            macros[f"Strict{label}F"] = f3(strict[name]["strict"]["f1"])
+            macros[f"Strict{label}TEDS"] = f3(strict[name]["strict"]["teds"])
 
     lines = ["% Generated by evaluation/paper_macros.py -- do not edit by hand."]
     for key in sorted(macros):

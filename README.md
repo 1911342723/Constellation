@@ -75,6 +75,7 @@ the scoring conventions and every deviation from the frozen protocol.
 | `ijdar-frozen` | Code frozen before the test split was run |
 | `ijdar-perf` | Exact near-linear replacement for a quadratic figure-clustering step (identical output) |
 | `ijdar-layout` | Optional layout-detector evidence; also the evaluation scripts and results as reported |
+| `ijdar-submission-v2` | Parser as in `ijdar-layout`; final evaluation: author audit spot-check, generative comparison on the main run with gain-share intervals, strict-matching sensitivity (`report/strict_matching.json`) |
 
 The per-document records store the commit id of the development
 repository this release is assembled from; the files

@@ -11,6 +11,7 @@ reported in the manuscript.
 | `hrdoc_2026-10-13/pdf_manifest.json` | URL, size and SHA-256 of every fetched PDF |
 | `hrdoc_2026-10-13/runs/<split>-<system>/<id>.json` | One record per document and system: predictions, scores under each convention, timings, token counts |
 | `hrdoc_2026-10-13/report/` | Summary tables, paired bootstrap intervals, repeat-run spread, sensitivity (`python -m evaluation.hrdoc.report`) |
+| `hrdoc_2026-10-13/report/strict_matching.json` | Every test run re-scored under strict whole-title matching (`python -m evaluation.hrdoc.strict_matching`) |
 | `hrdoc_2026-10-13/retries.json` | Documents whose failed run was repeated once |
 | `hrdoc_2026-10-13/fp_audit.json` | Error audit of a sample of false-positive headings |
 | `hrdoc_2026-10-13/superseded/` | Runs replaced during the revision, kept for transparency |

@@ -46,7 +46,7 @@ def doc_f1(metrics: dict) -> float:
 
 # (run, legend label, colour, line style); the full system is the only saturated series.
 DIST = [("model-nooutline", "Constellation, full", BLUE, "-"),
-        ("model-nooutline-layout", "Constellation + layout evidence", BLUE, (0, (4, 1.5))),
+        ("model-nooutline-layout", "Constellation, full + layout", BLUE, (0, (4, 1.5))),
         ("det-nooutline", "Constellation, deterministic", "#8a8984", "-"),
         ("docling-numlevels", "Docling + numbering", ORANGE, "-"),
         ("outline", "Embedded bookmarks", INK, (0, (3, 2)))]
@@ -88,7 +88,8 @@ def fig_main(runs: Path, split: str, out: Path) -> None:
 
 def fig_fidelity(runs: Path, out: Path) -> None:
     gen = load(runs / "gen-llm_markdown")
-    full = load(runs / "gen-model-nooutline-rep4")  # run with the shared word-level measure
+    full = load(runs / "gen-model-nooutline-rep4")  # the run that stored exports (preservation)
+    main_run = load(runs / "test-model-nooutline")  # main run (output tokens)
     docs = sorted(d for d in gen if d in full and "error" not in gen[d] and "error" not in full[d])
     fig, axes = plt.subplots(1, 2, figsize=(7.0, 2.0), gridspec_kw={"wspace": 0.28})
     ax = axes[0]
@@ -112,7 +113,7 @@ def fig_fidelity(runs: Path, out: Path) -> None:
 
     ax = axes[1]
     out_gen = [gen[d]["info"]["usage"]["completion_tokens"] / 1000 for d in docs]
-    out_full = [full[d]["info"]["usage"]["completion_tokens"] / 1000 for d in docs]
+    out_full = [main_run[d]["info"]["usage"]["completion_tokens"] / 1000 for d in docs]
     ax.scatter(x_gen, out_full, s=12, color=BLUE, edgecolor="white", linewidth=0.6, label="Constellation", zorder=3)
     ax.scatter(x_gen, out_gen, s=12, color=ORANGE, edgecolor="white", linewidth=0.6, label="Generative LLM", zorder=2)
     ax.set_xlabel("Source length (thousand input tokens)")
@@ -151,7 +152,7 @@ def fig_example(runs: Path, split: str, doc_id: str, page: int, out: Path, toc_d
         return None
 
     doc = fitz.open(stream=data, filetype="pdf")
-    dpi = 220
+    dpi = 330
     pix = doc[page].get_pixmap(dpi=dpi)
     scale = dpi / 72
     image = plt.imread(__import__("io").BytesIO(pix.tobytes("png")))
@@ -195,7 +196,7 @@ def fig_example(runs: Path, split: str, doc_id: str, page: int, out: Path, toc_d
                Rectangle((0, 0), 1, 1, fill=False, edgecolor=MUTED, linewidth=1.0, linestyle=(0, (2, 1.5)))]
     fig.legend(handles, ["matches a reference section", "not in the reference", "missed reference section"],
                loc="upper center", ncol=3, frameon=False, fontsize=7, bbox_to_anchor=(0.5, 0.0))
-    fig.savefig(out / "fig_example.pdf", bbox_inches="tight", dpi=220)
+    fig.savefig(out / "fig_example.pdf", bbox_inches="tight", dpi=330)
     plt.close(fig)
 
 

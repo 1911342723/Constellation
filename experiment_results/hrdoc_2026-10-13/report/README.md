@@ -32,6 +32,7 @@
 - model-nooutline-layout - det-nooutline-layout (n=454): ΔF1 +0.021 [+0.016, +0.027], ΔTEDS +0.055 [+0.043, +0.067]
 - model-nooutline-layout - docling-numlevels (n=454): ΔF1 +0.012 [+0.005, +0.019], ΔTEDS +0.060 [+0.046, +0.074]
 - det-nooutline-layout - det-nooutline (n=454): ΔF1 +0.139 [+0.118, +0.162], ΔTEDS +0.165 [+0.148, +0.183]
+- model-nooutline - llm_markdown (n=100): ΔF1 -0.014 [-0.056, +0.030], ΔTEDS -0.027 [-0.072, +0.019]
 - model-nooutline-rep4 - llm_markdown (n=100): ΔF1 -0.012 [-0.052, +0.032], ΔTEDS -0.022 [-0.067, +0.023]
 
 ## Repeat runs of the full system (n=100 documents)

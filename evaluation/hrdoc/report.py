@@ -91,7 +91,7 @@ def main() -> None:
              ("model", "model-nooutline"), ("det", "det-nooutline"),
              ("model-nooutline-layout", "model-nooutline"), ("model-nooutline-layout", "det-nooutline-layout"),
              ("model-nooutline-layout", "docling-numlevels"), ("det-nooutline-layout", "det-nooutline"),
-             ("model-nooutline-rep4", "llm_markdown")]
+             ("model-nooutline", "llm_markdown"), ("model-nooutline-rep4", "llm_markdown")]
     for left, right in pairs:
         if left in runs and right in runs:
             docs = sorted(set(runs[left]) & set(runs[right]))
