@@ -30,6 +30,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+import bisect
+import math
 from typing import Iterable, Sequence
 
 __all__ = [
@@ -814,10 +816,108 @@ def _cluster_rects(
             index = parent[index]
         return index
 
-    for i in range(len(rects)):
-        for j in range(i + 1, len(rects)):
-            if _rects_overlap(rects[i], rects[j], pad_x, pad_y):
-                parent[find(j)] = find(i)
+    def union(a: int, b: int) -> None:
+        root_a, root_b = find(a), find(b)
+        if root_a != root_b:
+            parent[root_a] = root_b
+
+    def overlaps(a: int, b: int) -> bool:
+        return _rects_overlap(rects[a], rects[b], pad_x, pad_y)
+
+    if pad_x <= 0 or pad_y <= 0:
+        for i in range(len(rects)):
+            for j in range(i + 1, len(rects)):
+                if find(i) != find(j) and overlaps(i, j):
+                    union(i, j)
+    else:
+        # The components are those of the all-pairs "padded overlap" graph;
+        # only the search is organised so that vector-heavy plots (tens of
+        # thousands of marker paths on one page) stay near-linear:
+        # * a "small" rect (width <= pad_x, height <= pad_y) is filed under the
+        #   pad-sized cell of its centre.  Two small rects in one cell have
+        #   centres closer than the padding, so they always overlap: a clique.
+        # * two small rects can only overlap if their centre cells are at most
+        #   two cells apart, so neighbouring cells are tested pairwise until
+        #   the first overlap joins them.
+        # * every other pair involves a large (or non-finite) rect and is tested
+        #   exactly against all rects whose padded extent shares a grid bucket.
+        bucket = 2.0 * max(pad_x, pad_y)
+        buckets: dict[tuple[int, int], list[int]] = {}
+        centre_cells: dict[tuple[int, int], list[int]] = {}
+        large: list[int] = []
+        nonfinite: list[int] = []
+
+        def bucket_keys(index: int) -> list[tuple[int, int]]:
+            x0, y0, x1, y1 = rects[index]
+            gx0, gy0 = math.floor((x0 - pad_x / 2) / bucket), math.floor((y0 - pad_y / 2) / bucket)
+            gx1, gy1 = math.floor((x1 + pad_x / 2) / bucket), math.floor((y1 + pad_y / 2) / bucket)
+            return [(gx, gy) for gx in range(gx0, gx1 + 1) for gy in range(gy0, gy1 + 1)]
+
+        for i, (x0, y0, x1, y1) in enumerate(rects):
+            if not all(math.isfinite(value) for value in (x0, y0, x1, y1)):
+                nonfinite.append(i)
+                continue
+            for key in bucket_keys(i):
+                buckets.setdefault(key, []).append(i)
+            if x1 - x0 <= pad_x and y1 - y0 <= pad_y:
+                key = (math.floor((x0 + x1) / 2 / pad_x), math.floor((y0 + y1) / 2 / pad_y))
+                members = centre_cells.setdefault(key, [])
+                if members:
+                    union(i, members[0])
+                members.append(i)
+            else:
+                large.append(i)
+
+        # Per centre cell: its bounding box and its distinct rects sorted by x0.
+        # Identical marker paths (common in scatter plots) are tested once.
+        cell_box: dict[tuple[int, int], tuple[float, float, float, float]] = {}
+        cell_rects: dict[tuple[int, int], list[tuple[float, float, float, float]]] = {}
+        for key, members in centre_cells.items():
+            distinct = sorted({rects[i] for i in members})
+            cell_rects[key] = distinct
+            cell_box[key] = _union_rects(distinct)
+
+        def cells_touch(key_a: tuple[int, int], key_b: tuple[int, int]) -> bool:
+            if not _rects_overlap(cell_box[key_a], cell_box[key_b], pad_x, pad_y):
+                return False  # no member pair can overlap either
+            near_b = [r for r in cell_rects[key_b] if _rects_overlap(r, cell_box[key_a], pad_x, pad_y)]
+            if not near_b:
+                return False
+            starts = [r[0] for r in near_b]
+            widest = max(r[2] - r[0] for r in near_b)
+            for a in cell_rects[key_a]:
+                if not _rects_overlap(a, cell_box[key_b], pad_x, pad_y):
+                    continue
+                # b overlaps a in x only if a.x0 - pad - widest < b.x0 < a.x1 + pad.
+                lo = bisect.bisect_right(starts, a[0] - pad_x - widest)
+                hi = bisect.bisect_left(starts, a[2] + pad_x)
+                for b in near_b[lo:hi]:
+                    if _rects_overlap(a, b, pad_x, pad_y):
+                        return True
+            return False
+
+        neighbours = [(dx, dy) for dx in range(-2, 3) for dy in range(-2, 3) if (dx, dy) > (0, 0)]
+        for (cx, cy), members in centre_cells.items():
+            for dx, dy in neighbours:
+                key = (cx + dx, cy + dy)
+                other = centre_cells.get(key)
+                if not other or find(members[0]) == find(other[0]):
+                    continue
+                if cells_touch((cx, cy), key):
+                    union(members[0], other[0])
+
+        for i in large:
+            candidates: set[int] = set()
+            for key in bucket_keys(i):
+                candidates.update(buckets.get(key, ()))
+            candidates.discard(i)
+            for j in candidates:
+                if find(i) != find(j) and overlaps(i, j):
+                    union(i, j)
+        for i in nonfinite:
+            for j in range(len(rects)):
+                if j != i and find(i) != find(j) and overlaps(i, j):
+                    union(i, j)
 
     groups: dict[int, list[tuple[float, float, float, float]]] = {}
     for index, rect in enumerate(rects):
