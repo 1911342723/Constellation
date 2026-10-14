@@ -1,0 +1,1952 @@
+{
+  "mode": "model",
+  "quality_claim": "real_model",
+  "pipeline_fingerprint": "315f74b5764b86dd5e51d4f6f5c049a28b2e07f710180f85fbea28e8efeab1f4",
+  "stage_versions": {
+    "extract": "extract.v4",
+    "profile": "profile.v3",
+    "candidates": "candidates.v3",
+    "compress": "compress.v3",
+    "route_raw": "route.v2",
+    "legalize": "legalize.v5",
+    "resolve": "resolve.v3",
+    "assemble": "assemble.v2"
+  },
+  "python": "3.12.10",
+  "packages": {
+    "PyMuPDF": "1.24.14",
+    "python-docx": "1.2.0",
+    "pydantic": "2.13.4"
+  },
+  "relation_weight": 2.8,
+  "documents": [
+    {
+      "document": "attention_is_all_you_need",
+      "tier": "long_docs",
+      "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+      "run_in_gt_count": 0,
+      "gt_sha256": "a58790d67abde537e0e5e844747e6a3327655512aef4cb2e9df9be686261dfac",
+      "mode": "model",
+      "annotation_alignment": "stored plus exact-title diagnostic; not independently reviewed",
+      "gt_total": 23,
+      "gt_aligned": 23,
+      "alignment_audit": [
+        {
+          "title": "Abstract",
+          "stored_id": 28,
+          "status": "stored_exact",
+          "suggested_id": 28,
+          "matching_ids": [
+            28
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Introduction",
+          "stored_id": 32,
+          "status": "stored_exact",
+          "suggested_id": 32,
+          "matching_ids": [
+            32
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Background",
+          "stored_id": 35,
+          "status": "stored_exact",
+          "suggested_id": 35,
+          "matching_ids": [
+            35
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Model Architecture",
+          "stored_id": 37,
+          "status": "stored_exact",
+          "suggested_id": 37,
+          "matching_ids": [
+            37
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Encoder and Decoder Stacks",
+          "stored_id": 43,
+          "status": "stored_exact",
+          "suggested_id": 43,
+          "matching_ids": [
+            43
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Attention",
+          "stored_id": 46,
+          "status": "stored_exact",
+          "suggested_id": 46,
+          "matching_ids": [
+            46
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Scaled Dot-Product Attention",
+          "stored_id": 49,
+          "status": "stored_exact",
+          "suggested_id": 49,
+          "matching_ids": [
+            49,
+            55
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Multi-Head Attention",
+          "stored_id": 50,
+          "status": "stored_exact",
+          "suggested_id": 50,
+          "matching_ids": [
+            50,
+            66
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Applications of Attention in our Model",
+          "stored_id": 83,
+          "status": "stored_exact",
+          "suggested_id": 83,
+          "matching_ids": [
+            83
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Position-wise Feed-Forward Networks",
+          "stored_id": 87,
+          "status": "stored_exact",
+          "suggested_id": 87,
+          "matching_ids": [
+            87
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Embeddings and Softmax",
+          "stored_id": 92,
+          "status": "stored_exact",
+          "suggested_id": 92,
+          "matching_ids": [
+            92
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Positional Encoding",
+          "stored_id": 116,
+          "status": "stored_exact",
+          "suggested_id": 116,
+          "matching_ids": [
+            116
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Why Self-Attention",
+          "stored_id": 122,
+          "status": "stored_exact",
+          "suggested_id": 122,
+          "matching_ids": [
+            122
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Training",
+          "stored_id": 128,
+          "status": "stored_exact",
+          "suggested_id": 128,
+          "matching_ids": [
+            128
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Training Data and Batching",
+          "stored_id": 130,
+          "status": "stored_exact",
+          "suggested_id": 130,
+          "matching_ids": [
+            130
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Hardware and Schedule",
+          "stored_id": 132,
+          "status": "stored_exact",
+          "suggested_id": 132,
+          "matching_ids": [
+            132
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Optimizer",
+          "stored_id": 134,
+          "status": "stored_exact",
+          "suggested_id": 134,
+          "matching_ids": [
+            134
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Regularization",
+          "stored_id": 140,
+          "status": "stored_exact",
+          "suggested_id": 140,
+          "matching_ids": [
+            140
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Results",
+          "stored_id": 194,
+          "status": "stored_exact",
+          "suggested_id": 194,
+          "matching_ids": [
+            194
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Machine Translation",
+          "stored_id": 195,
+          "status": "stored_exact",
+          "suggested_id": 195,
+          "matching_ids": [
+            195
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Model Variations",
+          "stored_id": 197,
+          "status": "stored_exact",
+          "suggested_id": 197,
+          "matching_ids": [
+            197
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "English Constituency Parsing",
+          "stored_id": 204,
+          "status": "stored_exact",
+          "suggested_id": 204,
+          "matching_ids": [
+            204
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Conclusion",
+          "stored_id": 211,
+          "status": "stored_exact",
+          "suggested_id": 211,
+          "matching_ids": [
+            211
+          ],
+          "requires_independent_review": false
+        }
+      ],
+      "stored_id_metrics": {
+        "tp": 21,
+        "fp": 7,
+        "fn": 2,
+        "precision": 0.75,
+        "recall": 0.9130434782608695,
+        "f1": 0.8235294117647057,
+        "level_correct": 21,
+        "level_total": 21,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 0.9130434782608695,
+        "all_gt_level_precision": 0.75,
+        "all_gt_level_recall": 0.9130434782608695,
+        "all_gt_level_f1": 0.8235294117647057,
+        "hierarchy_accuracy_all_gt": 0.9130434782608695,
+        "hierarchy_f1_all_gt": 0.8235294117647057,
+        "heading_sequence_edit_distance": 27.0,
+        "parent_relation_distance": 49.0,
+        "tree_edit_distance": 49.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 28,
+              "title": "Abstract",
+              "level": 1
+            },
+            {
+              "block_id": 28,
+              "title": "Abstract",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 32,
+              "title": "Introduction",
+              "level": 1
+            },
+            {
+              "block_id": 32,
+              "title": "1 Introduction",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 35,
+              "title": "Background",
+              "level": 1
+            },
+            {
+              "block_id": 35,
+              "title": "2 Background",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 37,
+              "title": "Model Architecture",
+              "level": 1
+            },
+            {
+              "block_id": 37,
+              "title": "3 Model Architecture",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 43,
+              "title": "Encoder and Decoder Stacks",
+              "level": 2
+            },
+            {
+              "block_id": 43,
+              "title": "3.1 Encoder and Decoder Stacks",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 46,
+              "title": "Attention",
+              "level": 2
+            },
+            {
+              "block_id": 46,
+              "title": "3.2 Attention",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 83,
+              "title": "Applications of Attention in our Model",
+              "level": 3
+            },
+            {
+              "block_id": 83,
+              "title": "3.2.3 Applications of Attention in our Model",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 87,
+              "title": "Position-wise Feed-Forward Networks",
+              "level": 2
+            },
+            {
+              "block_id": 87,
+              "title": "3.3 Position-wise Feed-Forward Networks",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 92,
+              "title": "Embeddings and Softmax",
+              "level": 2
+            },
+            {
+              "block_id": 92,
+              "title": "3.4 Embeddings and Softmax",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 116,
+              "title": "Positional Encoding",
+              "level": 2
+            },
+            {
+              "block_id": 116,
+              "title": "3.5 Positional Encoding",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 122,
+              "title": "Why Self-Attention",
+              "level": 1
+            },
+            {
+              "block_id": 122,
+              "title": "4 Why Self-Attention",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 128,
+              "title": "Training",
+              "level": 1
+            },
+            {
+              "block_id": 128,
+              "title": "5 Training",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 130,
+              "title": "Training Data and Batching",
+              "level": 2
+            },
+            {
+              "block_id": 130,
+              "title": "5.1 Training Data and Batching",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 132,
+              "title": "Hardware and Schedule",
+              "level": 2
+            },
+            {
+              "block_id": 132,
+              "title": "5.2 Hardware and Schedule",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 134,
+              "title": "Optimizer",
+              "level": 2
+            },
+            {
+              "block_id": 134,
+              "title": "5.3 Optimizer",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 140,
+              "title": "Regularization",
+              "level": 2
+            },
+            {
+              "block_id": 140,
+              "title": "5.4 Regularization",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 194,
+              "title": "Results",
+              "level": 1
+            },
+            {
+              "block_id": 194,
+              "title": "6 Results",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 195,
+              "title": "Machine Translation",
+              "level": 2
+            },
+            {
+              "block_id": 195,
+              "title": "6.1 Machine Translation",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 197,
+              "title": "Model Variations",
+              "level": 2
+            },
+            {
+              "block_id": 197,
+              "title": "6.2 Model Variations",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 204,
+              "title": "English Constituency Parsing",
+              "level": 2
+            },
+            {
+              "block_id": 204,
+              "title": "6.3 English Constituency Parsing",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 211,
+              "title": "Conclusion",
+              "level": 1
+            },
+            {
+              "block_id": 211,
+              "title": "7 Conclusion",
+              "level": 1
+            }
+          ]
+        ],
+        "fp_preds": [
+          {
+            "block_id": 55,
+            "title": "3.2.1 Scaled Dot-Product Attention",
+            "level": 3
+          },
+          {
+            "block_id": 66,
+            "title": "3.2.2 Multi-Head Attention",
+            "level": 3
+          },
+          {
+            "block_id": 214,
+            "title": "References",
+            "level": 1
+          },
+          {
+            "block_id": 256,
+            "title": "Input-Input Layer5",
+            "level": 1
+          },
+          {
+            "block_id": 257,
+            "title": "Attention Visualizations",
+            "level": 1
+          },
+          {
+            "block_id": 261,
+            "title": "Input-Input Layer5",
+            "level": 1
+          },
+          {
+            "block_id": 265,
+            "title": "Input-Input Layer5",
+            "level": 1
+          }
+        ],
+        "fn_gts": [
+          {
+            "block_id": 49,
+            "title": "Scaled Dot-Product Attention",
+            "level": 3
+          },
+          {
+            "block_id": 50,
+            "title": "Multi-Head Attention",
+            "level": 3
+          }
+        ],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 28,
+              "title": "Abstract",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 28,
+              "title": "Abstract",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 59.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 32,
+              "title": "Introduction",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 32,
+              "title": "1 Introduction",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.8571428571428572,
+            "block_distance": 0,
+            "quality_weight": 0.8578928571428572,
+            "assignment_weight": 58.85789285714286
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 35,
+              "title": "Background",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 35,
+              "title": "2 Background",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.8333333333333334,
+            "block_distance": 0,
+            "quality_weight": 0.8340833333333334,
+            "assignment_weight": 58.83408333333333
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 37,
+              "title": "Model Architecture",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 37,
+              "title": "3 Model Architecture",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.9,
+            "block_distance": 0,
+            "quality_weight": 0.90075,
+            "assignment_weight": 58.90075
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 43,
+              "title": "Encoder and Decoder Stacks",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 43,
+              "title": "3.1 Encoder and Decoder Stacks",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8666666666666667,
+            "block_distance": 0,
+            "quality_weight": 0.8674166666666667,
+            "assignment_weight": 58.867416666666664
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 46,
+              "title": "Attention",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 46,
+              "title": "3.2 Attention",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.6923076923076923,
+            "block_distance": 0,
+            "quality_weight": 0.6930576923076923,
+            "assignment_weight": 58.69305769230769
+          },
+          {
+            "gt_index": 8,
+            "pred_index": 8,
+            "gt": {
+              "block_id": 83,
+              "title": "Applications of Attention in our Model",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 83,
+              "title": "3.2.3 Applications of Attention in our Model",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 0.8636363636363636,
+            "block_distance": 0,
+            "quality_weight": 0.8643863636363637,
+            "assignment_weight": 58.86438636363636
+          },
+          {
+            "gt_index": 9,
+            "pred_index": 9,
+            "gt": {
+              "block_id": 87,
+              "title": "Position-wise Feed-Forward Networks",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 87,
+              "title": "3.3 Position-wise Feed-Forward Networks",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8974358974358975,
+            "block_distance": 0,
+            "quality_weight": 0.8981858974358975,
+            "assignment_weight": 58.898185897435894
+          },
+          {
+            "gt_index": 10,
+            "pred_index": 10,
+            "gt": {
+              "block_id": 92,
+              "title": "Embeddings and Softmax",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 92,
+              "title": "3.4 Embeddings and Softmax",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8461538461538461,
+            "block_distance": 0,
+            "quality_weight": 0.8469038461538462,
+            "assignment_weight": 58.84690384615384
+          },
+          {
+            "gt_index": 11,
+            "pred_index": 11,
+            "gt": {
+              "block_id": 116,
+              "title": "Positional Encoding",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 116,
+              "title": "3.5 Positional Encoding",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8260869565217391,
+            "block_distance": 0,
+            "quality_weight": 0.8268369565217392,
+            "assignment_weight": 58.82683695652174
+          },
+          {
+            "gt_index": 12,
+            "pred_index": 12,
+            "gt": {
+              "block_id": 122,
+              "title": "Why Self-Attention",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 122,
+              "title": "4 Why Self-Attention",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.9,
+            "block_distance": 0,
+            "quality_weight": 0.90075,
+            "assignment_weight": 58.90075
+          },
+          {
+            "gt_index": 13,
+            "pred_index": 13,
+            "gt": {
+              "block_id": 128,
+              "title": "Training",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 128,
+              "title": "5 Training",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.8,
+            "block_distance": 0,
+            "quality_weight": 0.8007500000000001,
+            "assignment_weight": 58.80075
+          },
+          {
+            "gt_index": 14,
+            "pred_index": 14,
+            "gt": {
+              "block_id": 130,
+              "title": "Training Data and Batching",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 130,
+              "title": "5.1 Training Data and Batching",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8666666666666667,
+            "block_distance": 0,
+            "quality_weight": 0.8674166666666667,
+            "assignment_weight": 58.867416666666664
+          },
+          {
+            "gt_index": 15,
+            "pred_index": 15,
+            "gt": {
+              "block_id": 132,
+              "title": "Hardware and Schedule",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 132,
+              "title": "5.2 Hardware and Schedule",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.84,
+            "block_distance": 0,
+            "quality_weight": 0.84075,
+            "assignment_weight": 58.84075
+          },
+          {
+            "gt_index": 16,
+            "pred_index": 16,
+            "gt": {
+              "block_id": 134,
+              "title": "Optimizer",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 134,
+              "title": "5.3 Optimizer",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.6923076923076923,
+            "block_distance": 0,
+            "quality_weight": 0.6930576923076923,
+            "assignment_weight": 58.69305769230769
+          },
+          {
+            "gt_index": 17,
+            "pred_index": 17,
+            "gt": {
+              "block_id": 140,
+              "title": "Regularization",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 140,
+              "title": "5.4 Regularization",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.7777777777777778,
+            "block_distance": 0,
+            "quality_weight": 0.7785277777777778,
+            "assignment_weight": 58.778527777777775
+          },
+          {
+            "gt_index": 18,
+            "pred_index": 18,
+            "gt": {
+              "block_id": 194,
+              "title": "Results",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 194,
+              "title": "6 Results",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.7777777777777778,
+            "block_distance": 0,
+            "quality_weight": 0.7785277777777778,
+            "assignment_weight": 58.778527777777775
+          },
+          {
+            "gt_index": 19,
+            "pred_index": 19,
+            "gt": {
+              "block_id": 195,
+              "title": "Machine Translation",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 195,
+              "title": "6.1 Machine Translation",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8260869565217391,
+            "block_distance": 0,
+            "quality_weight": 0.8268369565217392,
+            "assignment_weight": 58.82683695652174
+          },
+          {
+            "gt_index": 20,
+            "pred_index": 20,
+            "gt": {
+              "block_id": 197,
+              "title": "Model Variations",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 197,
+              "title": "6.2 Model Variations",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8,
+            "block_distance": 0,
+            "quality_weight": 0.8007500000000001,
+            "assignment_weight": 58.80075
+          },
+          {
+            "gt_index": 21,
+            "pred_index": 21,
+            "gt": {
+              "block_id": 204,
+              "title": "English Constituency Parsing",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 204,
+              "title": "6.3 English Constituency Parsing",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.875,
+            "block_distance": 0,
+            "quality_weight": 0.87575,
+            "assignment_weight": 58.87575
+          },
+          {
+            "gt_index": 22,
+            "pred_index": 22,
+            "gt": {
+              "block_id": 211,
+              "title": "Conclusion",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 211,
+              "title": "7 Conclusion",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.8333333333333334,
+            "block_distance": 0,
+            "quality_weight": 0.8340833333333334,
+            "assignment_weight": 58.83408333333333
+          }
+        ]
+      },
+      "exact_title_snapshot_metrics": {
+        "tp": 21,
+        "fp": 7,
+        "fn": 2,
+        "precision": 0.75,
+        "recall": 0.9130434782608695,
+        "f1": 0.8235294117647057,
+        "level_correct": 21,
+        "level_total": 21,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 0.9130434782608695,
+        "all_gt_level_precision": 0.75,
+        "all_gt_level_recall": 0.9130434782608695,
+        "all_gt_level_f1": 0.8235294117647057,
+        "hierarchy_accuracy_all_gt": 0.9130434782608695,
+        "hierarchy_f1_all_gt": 0.8235294117647057,
+        "heading_sequence_edit_distance": 27.0,
+        "parent_relation_distance": 49.0,
+        "tree_edit_distance": 49.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 28,
+              "title": "Abstract",
+              "level": 1
+            },
+            {
+              "block_id": 28,
+              "title": "Abstract",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 32,
+              "title": "Introduction",
+              "level": 1
+            },
+            {
+              "block_id": 32,
+              "title": "1 Introduction",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 35,
+              "title": "Background",
+              "level": 1
+            },
+            {
+              "block_id": 35,
+              "title": "2 Background",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 37,
+              "title": "Model Architecture",
+              "level": 1
+            },
+            {
+              "block_id": 37,
+              "title": "3 Model Architecture",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 43,
+              "title": "Encoder and Decoder Stacks",
+              "level": 2
+            },
+            {
+              "block_id": 43,
+              "title": "3.1 Encoder and Decoder Stacks",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 46,
+              "title": "Attention",
+              "level": 2
+            },
+            {
+              "block_id": 46,
+              "title": "3.2 Attention",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 83,
+              "title": "Applications of Attention in our Model",
+              "level": 3
+            },
+            {
+              "block_id": 83,
+              "title": "3.2.3 Applications of Attention in our Model",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 87,
+              "title": "Position-wise Feed-Forward Networks",
+              "level": 2
+            },
+            {
+              "block_id": 87,
+              "title": "3.3 Position-wise Feed-Forward Networks",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 92,
+              "title": "Embeddings and Softmax",
+              "level": 2
+            },
+            {
+              "block_id": 92,
+              "title": "3.4 Embeddings and Softmax",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 116,
+              "title": "Positional Encoding",
+              "level": 2
+            },
+            {
+              "block_id": 116,
+              "title": "3.5 Positional Encoding",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 122,
+              "title": "Why Self-Attention",
+              "level": 1
+            },
+            {
+              "block_id": 122,
+              "title": "4 Why Self-Attention",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 128,
+              "title": "Training",
+              "level": 1
+            },
+            {
+              "block_id": 128,
+              "title": "5 Training",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 130,
+              "title": "Training Data and Batching",
+              "level": 2
+            },
+            {
+              "block_id": 130,
+              "title": "5.1 Training Data and Batching",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 132,
+              "title": "Hardware and Schedule",
+              "level": 2
+            },
+            {
+              "block_id": 132,
+              "title": "5.2 Hardware and Schedule",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 134,
+              "title": "Optimizer",
+              "level": 2
+            },
+            {
+              "block_id": 134,
+              "title": "5.3 Optimizer",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 140,
+              "title": "Regularization",
+              "level": 2
+            },
+            {
+              "block_id": 140,
+              "title": "5.4 Regularization",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 194,
+              "title": "Results",
+              "level": 1
+            },
+            {
+              "block_id": 194,
+              "title": "6 Results",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 195,
+              "title": "Machine Translation",
+              "level": 2
+            },
+            {
+              "block_id": 195,
+              "title": "6.1 Machine Translation",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 197,
+              "title": "Model Variations",
+              "level": 2
+            },
+            {
+              "block_id": 197,
+              "title": "6.2 Model Variations",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 204,
+              "title": "English Constituency Parsing",
+              "level": 2
+            },
+            {
+              "block_id": 204,
+              "title": "6.3 English Constituency Parsing",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 211,
+              "title": "Conclusion",
+              "level": 1
+            },
+            {
+              "block_id": 211,
+              "title": "7 Conclusion",
+              "level": 1
+            }
+          ]
+        ],
+        "fp_preds": [
+          {
+            "block_id": 55,
+            "title": "3.2.1 Scaled Dot-Product Attention",
+            "level": 3
+          },
+          {
+            "block_id": 66,
+            "title": "3.2.2 Multi-Head Attention",
+            "level": 3
+          },
+          {
+            "block_id": 214,
+            "title": "References",
+            "level": 1
+          },
+          {
+            "block_id": 256,
+            "title": "Input-Input Layer5",
+            "level": 1
+          },
+          {
+            "block_id": 257,
+            "title": "Attention Visualizations",
+            "level": 1
+          },
+          {
+            "block_id": 261,
+            "title": "Input-Input Layer5",
+            "level": 1
+          },
+          {
+            "block_id": 265,
+            "title": "Input-Input Layer5",
+            "level": 1
+          }
+        ],
+        "fn_gts": [
+          {
+            "block_id": 49,
+            "title": "Scaled Dot-Product Attention",
+            "level": 3
+          },
+          {
+            "block_id": 50,
+            "title": "Multi-Head Attention",
+            "level": 3
+          }
+        ],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 28,
+              "title": "Abstract",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 28,
+              "title": "Abstract",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 59.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 32,
+              "title": "Introduction",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 32,
+              "title": "1 Introduction",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.8571428571428572,
+            "block_distance": 0,
+            "quality_weight": 0.8578928571428572,
+            "assignment_weight": 58.85789285714286
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 35,
+              "title": "Background",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 35,
+              "title": "2 Background",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.8333333333333334,
+            "block_distance": 0,
+            "quality_weight": 0.8340833333333334,
+            "assignment_weight": 58.83408333333333
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 37,
+              "title": "Model Architecture",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 37,
+              "title": "3 Model Architecture",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.9,
+            "block_distance": 0,
+            "quality_weight": 0.90075,
+            "assignment_weight": 58.90075
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 43,
+              "title": "Encoder and Decoder Stacks",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 43,
+              "title": "3.1 Encoder and Decoder Stacks",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8666666666666667,
+            "block_distance": 0,
+            "quality_weight": 0.8674166666666667,
+            "assignment_weight": 58.867416666666664
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 46,
+              "title": "Attention",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 46,
+              "title": "3.2 Attention",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.6923076923076923,
+            "block_distance": 0,
+            "quality_weight": 0.6930576923076923,
+            "assignment_weight": 58.69305769230769
+          },
+          {
+            "gt_index": 8,
+            "pred_index": 8,
+            "gt": {
+              "block_id": 83,
+              "title": "Applications of Attention in our Model",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 83,
+              "title": "3.2.3 Applications of Attention in our Model",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 0.8636363636363636,
+            "block_distance": 0,
+            "quality_weight": 0.8643863636363637,
+            "assignment_weight": 58.86438636363636
+          },
+          {
+            "gt_index": 9,
+            "pred_index": 9,
+            "gt": {
+              "block_id": 87,
+              "title": "Position-wise Feed-Forward Networks",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 87,
+              "title": "3.3 Position-wise Feed-Forward Networks",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8974358974358975,
+            "block_distance": 0,
+            "quality_weight": 0.8981858974358975,
+            "assignment_weight": 58.898185897435894
+          },
+          {
+            "gt_index": 10,
+            "pred_index": 10,
+            "gt": {
+              "block_id": 92,
+              "title": "Embeddings and Softmax",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 92,
+              "title": "3.4 Embeddings and Softmax",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8461538461538461,
+            "block_distance": 0,
+            "quality_weight": 0.8469038461538462,
+            "assignment_weight": 58.84690384615384
+          },
+          {
+            "gt_index": 11,
+            "pred_index": 11,
+            "gt": {
+              "block_id": 116,
+              "title": "Positional Encoding",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 116,
+              "title": "3.5 Positional Encoding",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8260869565217391,
+            "block_distance": 0,
+            "quality_weight": 0.8268369565217392,
+            "assignment_weight": 58.82683695652174
+          },
+          {
+            "gt_index": 12,
+            "pred_index": 12,
+            "gt": {
+              "block_id": 122,
+              "title": "Why Self-Attention",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 122,
+              "title": "4 Why Self-Attention",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.9,
+            "block_distance": 0,
+            "quality_weight": 0.90075,
+            "assignment_weight": 58.90075
+          },
+          {
+            "gt_index": 13,
+            "pred_index": 13,
+            "gt": {
+              "block_id": 128,
+              "title": "Training",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 128,
+              "title": "5 Training",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.8,
+            "block_distance": 0,
+            "quality_weight": 0.8007500000000001,
+            "assignment_weight": 58.80075
+          },
+          {
+            "gt_index": 14,
+            "pred_index": 14,
+            "gt": {
+              "block_id": 130,
+              "title": "Training Data and Batching",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 130,
+              "title": "5.1 Training Data and Batching",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8666666666666667,
+            "block_distance": 0,
+            "quality_weight": 0.8674166666666667,
+            "assignment_weight": 58.867416666666664
+          },
+          {
+            "gt_index": 15,
+            "pred_index": 15,
+            "gt": {
+              "block_id": 132,
+              "title": "Hardware and Schedule",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 132,
+              "title": "5.2 Hardware and Schedule",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.84,
+            "block_distance": 0,
+            "quality_weight": 0.84075,
+            "assignment_weight": 58.84075
+          },
+          {
+            "gt_index": 16,
+            "pred_index": 16,
+            "gt": {
+              "block_id": 134,
+              "title": "Optimizer",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 134,
+              "title": "5.3 Optimizer",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.6923076923076923,
+            "block_distance": 0,
+            "quality_weight": 0.6930576923076923,
+            "assignment_weight": 58.69305769230769
+          },
+          {
+            "gt_index": 17,
+            "pred_index": 17,
+            "gt": {
+              "block_id": 140,
+              "title": "Regularization",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 140,
+              "title": "5.4 Regularization",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.7777777777777778,
+            "block_distance": 0,
+            "quality_weight": 0.7785277777777778,
+            "assignment_weight": 58.778527777777775
+          },
+          {
+            "gt_index": 18,
+            "pred_index": 18,
+            "gt": {
+              "block_id": 194,
+              "title": "Results",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 194,
+              "title": "6 Results",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.7777777777777778,
+            "block_distance": 0,
+            "quality_weight": 0.7785277777777778,
+            "assignment_weight": 58.778527777777775
+          },
+          {
+            "gt_index": 19,
+            "pred_index": 19,
+            "gt": {
+              "block_id": 195,
+              "title": "Machine Translation",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 195,
+              "title": "6.1 Machine Translation",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8260869565217391,
+            "block_distance": 0,
+            "quality_weight": 0.8268369565217392,
+            "assignment_weight": 58.82683695652174
+          },
+          {
+            "gt_index": 20,
+            "pred_index": 20,
+            "gt": {
+              "block_id": 197,
+              "title": "Model Variations",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 197,
+              "title": "6.2 Model Variations",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.8,
+            "block_distance": 0,
+            "quality_weight": 0.8007500000000001,
+            "assignment_weight": 58.80075
+          },
+          {
+            "gt_index": 21,
+            "pred_index": 21,
+            "gt": {
+              "block_id": 204,
+              "title": "English Constituency Parsing",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 204,
+              "title": "6.3 English Constituency Parsing",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 0.875,
+            "block_distance": 0,
+            "quality_weight": 0.87575,
+            "assignment_weight": 58.87575
+          },
+          {
+            "gt_index": 22,
+            "pred_index": 22,
+            "gt": {
+              "block_id": 211,
+              "title": "Conclusion",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 211,
+              "title": "7 Conclusion",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 0.8333333333333334,
+            "block_distance": 0,
+            "quality_weight": 0.8340833333333334,
+            "assignment_weight": 58.83408333333333
+          }
+        ]
+      },
+      "recall_including_unresolved_gt": 0.9130434782608695,
+      "blocks": 255,
+      "predictions": [
+        {
+          "block_id": 28,
+          "title": "Abstract",
+          "level": 1
+        },
+        {
+          "block_id": 32,
+          "title": "1 Introduction",
+          "level": 1
+        },
+        {
+          "block_id": 35,
+          "title": "2 Background",
+          "level": 1
+        },
+        {
+          "block_id": 37,
+          "title": "3 Model Architecture",
+          "level": 1
+        },
+        {
+          "block_id": 43,
+          "title": "3.1 Encoder and Decoder Stacks",
+          "level": 2
+        },
+        {
+          "block_id": 46,
+          "title": "3.2 Attention",
+          "level": 2
+        },
+        {
+          "block_id": 55,
+          "title": "3.2.1 Scaled Dot-Product Attention",
+          "level": 3
+        },
+        {
+          "block_id": 66,
+          "title": "3.2.2 Multi-Head Attention",
+          "level": 3
+        },
+        {
+          "block_id": 83,
+          "title": "3.2.3 Applications of Attention in our Model",
+          "level": 3
+        },
+        {
+          "block_id": 87,
+          "title": "3.3 Position-wise Feed-Forward Networks",
+          "level": 2
+        },
+        {
+          "block_id": 92,
+          "title": "3.4 Embeddings and Softmax",
+          "level": 2
+        },
+        {
+          "block_id": 116,
+          "title": "3.5 Positional Encoding",
+          "level": 2
+        },
+        {
+          "block_id": 122,
+          "title": "4 Why Self-Attention",
+          "level": 1
+        },
+        {
+          "block_id": 128,
+          "title": "5 Training",
+          "level": 1
+        },
+        {
+          "block_id": 130,
+          "title": "5.1 Training Data and Batching",
+          "level": 2
+        },
+        {
+          "block_id": 132,
+          "title": "5.2 Hardware and Schedule",
+          "level": 2
+        },
+        {
+          "block_id": 134,
+          "title": "5.3 Optimizer",
+          "level": 2
+        },
+        {
+          "block_id": 140,
+          "title": "5.4 Regularization",
+          "level": 2
+        },
+        {
+          "block_id": 194,
+          "title": "6 Results",
+          "level": 1
+        },
+        {
+          "block_id": 195,
+          "title": "6.1 Machine Translation",
+          "level": 2
+        },
+        {
+          "block_id": 197,
+          "title": "6.2 Model Variations",
+          "level": 2
+        },
+        {
+          "block_id": 204,
+          "title": "6.3 English Constituency Parsing",
+          "level": 2
+        },
+        {
+          "block_id": 211,
+          "title": "7 Conclusion",
+          "level": 1
+        },
+        {
+          "block_id": 214,
+          "title": "References",
+          "level": 1
+        },
+        {
+          "block_id": 256,
+          "title": "Input-Input Layer5",
+          "level": 1
+        },
+        {
+          "block_id": 257,
+          "title": "Attention Visualizations",
+          "level": 1
+        },
+        {
+          "block_id": 261,
+          "title": "Input-Input Layer5",
+          "level": 1
+        },
+        {
+          "block_id": 265,
+          "title": "Input-Input Layer5",
+          "level": 1
+        }
+      ],
+      "diagnostics": {
+        "extraction": {
+          "unrecognized_element_count": 0,
+          "reading_order_uncertain_blocks": 1,
+          "reading_order_edges": 254,
+          "ocr_pages": 0,
+          "page_count": 15,
+          "garbled_page_ratio": 0.0
+        },
+        "closure": {
+          "source_units_total": 1042,
+          "duplicated_units": 0,
+          "unattributed_units": 0,
+          "duplicated_sample": [],
+          "unattributed_sample": [],
+          "exactly_once": true
+        },
+        "tables": {
+          "table_count": 5,
+          "tables_with_model": 5,
+          "tables_coverage_exact": 5,
+          "tables_with_overlapping_cells": 0,
+          "unattributed_cells_sample": [],
+          "unattributed_cells": 0,
+          "coverage_exact_ratio": 1.0
+        },
+        "delivery": {
+          "view_bytes": {
+            "full_markdown": 292838,
+            "sections_markdown": 292149,
+            "json": 322654
+          },
+          "range_declaration": {
+            "declared_blocks": 255,
+            "total_blocks": 255,
+            "complete": true,
+            "missing_block_ids": []
+          },
+          "referenced_resources": 3
+        },
+        "normalization": {
+          "atoms_seen": 1039,
+          "transformations": {
+            "断词与拼接归一": 15,
+            "空白归一": 771,
+            "偏移对齐降级": 214,
+            "来源角色标注": 0,
+            "连字归一": 0
+          }
+        },
+        "language": "en",
+        "language_source": "derived",
+        "cjk_ratio": 0.0
+      },
+      "quality_report": {
+        "semantic_correctness_verified": false,
+        "content_coverage_scope": "extracted_blocks_only",
+        "needs_confirmation_section_ids": [
+          92,
+          140,
+          256,
+          257,
+          261,
+          265
+        ],
+        "confidence_quality": "heuristic",
+        "content_relation_count": 7
+      },
+      "serialized_json_bytes": 322654,
+      "serialization_valid": true,
+      "model_calls": 4,
+      "elapsed_seconds": 23.94264020002447,
+      "model": "deepseek-v4.1-flash",
+      "token_usage": {
+        "model": "deepseek-v4.1-flash",
+        "calls": 4,
+        "prompt_tokens": 14571,
+        "completion_tokens": 942,
+        "total_tokens": 15513
+      },
+      "provider_skip_codes": [],
+      "calibration_samples": []
+    }
+  ],
+  "errors": []
+}

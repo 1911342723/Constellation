@@ -1,0 +1,11 @@
+# Optional, and best installed in a separate environment.
+#
+# Comp-HRDoc evaluation (experiment_results/hrdoc_2026-10-13): the Docling
+# predictions were produced by evaluation/hrdoc/docling_predict.py with
+#   docling==2.138.0
+# (OCR and table structure off). The layout-evidence systems read those
+# stored predictions, so Docling is not needed to re-score them.
+#
+# Earlier candidate-recall comparison (experiment_results/docling_baseline.md)
+# records results from:
+docling==2.77.0

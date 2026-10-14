@@ -1,0 +1,990 @@
+[
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Abstract",
+    "stored_id": 28,
+    "stored_text": "Abstract",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      28
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Introduction",
+    "stored_id": 32,
+    "stored_text": "1 Introduction",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      32
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Background",
+    "stored_id": 35,
+    "stored_text": "2 Background",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      35
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Model Architecture",
+    "stored_id": 37,
+    "stored_text": "3 Model Architecture",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      37
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Encoder and Decoder Stacks",
+    "stored_id": 43,
+    "stored_text": "3.1 Encoder and Decoder Stacks",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      43
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Attention",
+    "stored_id": 46,
+    "stored_text": "3.2 Attention",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      46
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Scaled Dot-Product Attention",
+    "stored_id": 49,
+    "stored_text": "Scaled Dot-Product Attention",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      49,
+      55
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Multi-Head Attention",
+    "stored_id": 50,
+    "stored_text": "Multi-Head Attention",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      50,
+      66
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Applications of Attention in our Model",
+    "stored_id": 83,
+    "stored_text": "3.2.3 Applications of Attention in our Model",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      83
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Position-wise Feed-Forward Networks",
+    "stored_id": 87,
+    "stored_text": "3.3 Position-wise Feed-Forward Networks",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      87
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Embeddings and Softmax",
+    "stored_id": 92,
+    "stored_text": "3.4 Embeddings and Softmax",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      92
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Positional Encoding",
+    "stored_id": 116,
+    "stored_text": "3.5 Positional Encoding",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      116
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Why Self-Attention",
+    "stored_id": 122,
+    "stored_text": "4 Why Self-Attention",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      122
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Training",
+    "stored_id": 128,
+    "stored_text": "5 Training",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      128
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Training Data and Batching",
+    "stored_id": 130,
+    "stored_text": "5.1 Training Data and Batching",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      130
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Hardware and Schedule",
+    "stored_id": 132,
+    "stored_text": "5.2 Hardware and Schedule",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      132
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Optimizer",
+    "stored_id": 134,
+    "stored_text": "5.3 Optimizer",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      134
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Regularization",
+    "stored_id": 140,
+    "stored_text": "5.4 Regularization",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      140
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Results",
+    "stored_id": 185,
+    "stored_text": "6.1 Machine Translation",
+    "stored_similarity": 0.32,
+    "exact_title_ids": [
+      184
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Machine Translation",
+    "stored_id": 186,
+    "stored_text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) b",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      185
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Model Variations",
+    "stored_id": 188,
+    "stored_text": "To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translat",
+    "stored_similarity": 0.149,
+    "exact_title_ids": [
+      187
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "English Constituency Parsing",
+    "stored_id": 195,
+    "stored_text": "To evaluate if the Transformer can generalize to other tasks we performed experiments on English constituency parsing. This task presents specific challenges: the output is subject",
+    "stored_similarity": 0.056,
+    "exact_title_ids": [
+      194
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "attention_is_all_you_need",
+    "title": "Conclusion",
+    "stored_id": 202,
+    "stored_text": "In this work, we presented the Transformer, the first sequence transduction model based entirely on attention, replacing the recurrent layers most commonly used in encoder-decoder ",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      201
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "Abstract",
+    "stored_id": 5,
+    "stored_text": "Abstract",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      5
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "bert",
+    "title": "1 Introduction",
+    "stored_id": 9,
+    "stored_text": "1 Introduction",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      9
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "bert",
+    "title": "2 Related Work",
+    "stored_id": 19,
+    "stored_text": "These approaches have been generalized to coarser granularities, such as sentence embeddings (Kiros et al., 2015; Logeswaran and Lee, 2018) or paragraph embeddings (Le and Mikolov,",
+    "stored_similarity": 0.003,
+    "exact_title_ids": [
+      15
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "2.1 Unsupervised Feature-based Approaches",
+    "stored_id": 21,
+    "stored_text": "As with the feature-based approaches, the ﬁrst works in this direction only pre-trained word embedding parameters from unlabeled text (Collobert and Weston, 2008). More recently, s",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      17
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "2.2 Unsupervised Fine-tuning Approaches",
+    "stored_id": 24,
+    "stored_text": "Mask LM",
+    "stored_similarity": 0.053,
+    "exact_title_ids": [
+      20
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "2.3 Transfer Learning from Supervised Data",
+    "stored_id": 94,
+    "stored_text": "Model Architecture BERT’s model architecture is a multi-layer bidirectional Transformer encoder based on the original implementation described in Vaswani et al. (2017) and released",
+    "stored_similarity": 0.004,
+    "exact_title_ids": [
+      89
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "3 BERT",
+    "stored_id": 96,
+    "stored_text": "2http://nlp.seas.harvard.edu/2018/04/03/attention.html",
+    "stored_similarity": 0.128,
+    "exact_title_ids": [
+      91,
+      652,
+      755
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "bert",
+    "title": "3.1 Pre-training BERT",
+    "stored_id": 108,
+    "stored_text": "Task #2: Next Sentence Prediction (NSP)",
+    "stored_similarity": 0.311,
+    "exact_title_ids": [
+      103
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "3.2 Fine-tuning BERT",
+    "stored_id": 152,
+    "stored_text": "input token ([CLS]) as the aggregate representation. The only new parameters introduced during ﬁne-tuning are classiﬁcation layer weights W ∈",
+    "stored_similarity": 0.198,
+    "exact_title_ids": [
+      145
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "4 Experiments",
+    "stored_id": 155,
+    "stored_text": "System",
+    "stored_similarity": 0.235,
+    "exact_title_ids": [
+      148
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "4.1 GLUE",
+    "stored_id": 157,
+    "stored_text": "392k",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      150
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "4.2 SQuAD v1.1",
+    "stored_id": 230,
+    "stored_text": "all of the words in the paragraph: Pi = P",
+    "stored_similarity": 0.105,
+    "exact_title_ids": [
+      222
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "4.3 SQuAD v2.0",
+    "stored_id": 300,
+    "stored_text": "- 78.0",
+    "stored_similarity": 0.182,
+    "exact_title_ids": [
+      290
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "4.4 SWAG",
+    "stored_id": 324,
+    "stored_text": "88.4 86.7 92.7 88.5",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      314
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "5 Ablation Studies",
+    "stored_id": 326,
+    "stored_text": "83.9",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      316
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "5.1 Effect of Pre-training Tasks",
+    "stored_id": 345,
+    "stored_text": "#L #H #A LM (ppl) MNLI-m MRPC SST-2",
+    "stored_similarity": 0.089,
+    "exact_title_ids": [
+      335
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "5.2 Effect of Model Size",
+    "stored_id": 348,
+    "stored_text": "79.8 88.4",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      338
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "5.3 Feature-based Approach with BERT",
+    "stored_id": 351,
+    "stored_text": "82.2 90.7",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      341
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "6 Conclusion",
+    "stored_id": 413,
+    "stored_text": "Daniel Cer, Mona Diab, Eneko Agirre, Inigo Lopez-Gazpio, and Lucia Specia. 2017. Semeval-2017 task 1: Semantic textual similarity multilingual and crosslingual focused evaluation. ",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      403
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "References",
+    "stored_id": 415,
+    "stored_text": "Z. Chen, H. Zhang, X. Zhang, and L. Zhao. 2018. Quora question pairs.",
+    "stored_similarity": 0.143,
+    "exact_title_ids": [
+      405
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "A Additional Details for BERT",
+    "stored_id": 471,
+    "stored_text": "dog is apple",
+    "stored_similarity": 0.176,
+    "exact_title_ids": [
+      461
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "A.1 Illustration of the Pre-training Tasks",
+    "stored_id": 472,
+    "stored_text": "• 10% of the time: Keep the word un-",
+    "stored_similarity": 0.305,
+    "exact_title_ids": [
+      462
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "A.2 Pre-training Procedure",
+    "stored_id": 555,
+    "stored_text": "• Number of epochs: 2, 3, 4",
+    "stored_similarity": 0.205,
+    "exact_title_ids": [
+      545
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "A.3 Fine-tuning Procedure",
+    "stored_id": 559,
+    "stored_text": "Here we studies the differences in recent popular representation learning models including ELMo, OpenAI GPT and BERT. The comparisons between the model architectures are shown visu",
+    "stored_similarity": 0.003,
+    "exact_title_ids": [
+      549
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "A.4 Comparison of BERT, ELMo ,and",
+    "stored_id": 567,
+    "stored_text": "Tasks",
+    "stored_similarity": 0.133,
+    "exact_title_ids": [
+      557
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "B Detailed Experimental Setup",
+    "stored_id": 579,
+    "stored_text": "MNLI Multi-Genre Natural Language Inference is a large-scale, crowdsourced entailment classiﬁ-cation task (Williams et al., 2018). Given a pair of sentences, the goal is to predict",
+    "stored_similarity": 0.016,
+    "exact_title_ids": [
+      569
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "B.1 Detailed Descriptions for the GLUE",
+    "stored_id": 580,
+    "stored_text": "QQP Quora Question Pairs is a binary classiﬁ-cation task where the goal is to determine if two questions asked on Quora are semantically equivalent (Chen et al., 2018).",
+    "stored_similarity": 0.226,
+    "exact_title_ids": [
+      570
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "C Additional Ablation Studies",
+    "stored_id": 803,
+    "stored_text": "|  |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n|  |  |  |  |  |\n|  |  |  |  |  |\n|  |  | BER | TBASE (Mas | ked LM) |\n|  |  | BER | TBASE (Left ",
+    "stored_similarity": 0.133,
+    "exact_title_ids": [
+      792
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "C.1 Effect of Number of Training Steps",
+    "stored_id": 804,
+    "stored_text": "84",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      793
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "bert",
+    "title": "C.2 Ablation for Different Masking",
+    "stored_id": 811,
+    "stored_text": "400",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      800
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "Abstract",
+    "stored_id": 10,
+    "stored_text": "Abstract",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      10
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "1 Introduction",
+    "stored_id": 42,
+    "stored_text": "1 Introduction",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      42
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "2 Chain-of-Thought Prompting",
+    "stored_id": 86,
+    "stored_text": "2 Chain-of-Thought Prompting",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      13,
+      86,
+      150,
+      286,
+      811,
+      926
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "3 Arithmetic Reasoning",
+    "stored_id": 98,
+    "stored_text": "3 Arithmetic Reasoning",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      98,
+      999
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "3.1 Experimental Setup",
+    "stored_id": 100,
+    "stored_text": "3.1 Experimental Setup",
+    "stored_similarity": 1.0,
+    "exact_title_ids": [
+      100
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "3.2 Results",
+    "stored_id": 140,
+    "stored_text": "Figure 3: Examples of ⟨input, chain of thought, output⟩ triples for arithmetic, commonsense, and",
+    "stored_similarity": 0.169,
+    "exact_title_ids": [
+      144
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "3.3 Ablation Study",
+    "stored_id": 179,
+    "stored_text": "ping error, or one reasoning step missing), and that the other 54% of the chains of thought had major errors in semantic understanding or coherence (see Appendix D.2). To provide a",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      181
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "3.4 Robustness of Chain of Thought",
+    "stored_id": 186,
+    "stored_text": "Variable compute only. Another intuition is that chain of thought allows the model to spend more computation (i.e., intermediate tokens) on harder problems. To isolate the effect o",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      189
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "4 Commonsense Reasoning",
+    "stored_id": 232,
+    "stored_text": "new computers in the server room now”.",
+    "stored_similarity": 0.44,
+    "exact_title_ids": [
+      235,
+      1006
+    ],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "5 Symbolic Reasoning",
+    "stored_id": 278,
+    "stored_text": "8 62 540",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      284
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "6 Discussion",
+    "stored_id": 322,
+    "stored_text": "→ “no”). As the construction of these symbolic reasoning tasks is well-deﬁned, for each task we consider an in-domain test set for which examples had the same number of steps as",
+    "stored_similarity": 0.08,
+    "exact_title_ids": [
+      328
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "7 Related Work",
+    "stored_id": 327,
+    "stored_text": "thought for language models of sufﬁcient scale.",
+    "stored_similarity": 0.192,
+    "exact_title_ids": [
+      333
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "8 Conclusions",
+    "stored_id": 329,
+    "stored_text": "We have explored chain-of-thought prompting as a simple mechanism for eliciting multi-step reasoning behavior in large language models. We ﬁrst saw that chain-of-thought prompting ",
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      335
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "A Frequently Asked Questions",
+    "stored_id": 383,
+    "stored_text": "4. If you are using existing assets (e.g., code, data, models) or curating/releasing new assets...",
+    "stored_similarity": 0.232,
+    "exact_title_ids": [
+      393
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "A.1 Why does increasing model scale improve chain-of-thought prompting?",
+    "stored_id": 384,
+    "stored_text": "(a) If your work uses existing assets, did you cite the creators? [Yes] We used two models that we anonymized based on the recommendation of the NeurIPS chairs. These models will b",
+    "stored_similarity": 0.029,
+    "exact_title_ids": [
+      394
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "A.2 What is the role of prompt engineering?",
+    "stored_id": 440,
+    "stored_text": "540B Model Output",
+    "stored_similarity": 0.082,
+    "exact_title_ids": [
+      450
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "A.3 Will chain-of-thought prompting improve performance for my task of interest?",
+    "stored_id": 450,
+    "stored_text": "A.2 What is the role of prompt engineering?",
+    "stored_similarity": 0.32,
+    "exact_title_ids": [
+      460
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "A.4 Why is prompting with the equation only not enough for some arithmetic reasoning datasets?",
+    "stored_id": 454,
+    "stored_text": "• Different annotators. We ﬁrst analyze robustness to three different annotators (Section 3.4 and Figure 6). Although there is notable variance in performance (which we will discus",
+    "stored_similarity": 0.025,
+    "exact_title_ids": [],
+    "unique_exact_elsewhere": false
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "B All Experimental Results",
+    "stored_id": 466,
+    "stored_text": "Prompting with the equation only as an intermediate step does help on many datasets, especially when the datasets only require a few reasoning steps (SVAMP, ASDiv, MAWPS). For GSM8",
+    "stored_similarity": 0.01,
+    "exact_title_ids": [
+      477
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "C Extended Related Work",
+    "stored_id": 866,
+    "stored_text": "As mentioned in the main text, we analyze 50 chains of thought from LaMDA 137B that led to correct answers in the GSM8K dataset. Of these 50, only one arrived at the correct answer",
+    "stored_similarity": 0.011,
+    "exact_title_ids": [
+      850
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "C.1 Prompting",
+    "stored_id": 868,
+    "stored_text": "Table 8: Example of correct chains of thought produced by the model for the GSM8K dataset.",
+    "stored_similarity": 0.167,
+    "exact_title_ids": [
+      852
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "C.2 Natural language explanations",
+    "stored_id": 870,
+    "stored_text": "MODEL ANSWER (CORRECT): James decides to run 3 sprints 3 times a week. He runs 60 meters each sprint. So he runs 60 meters x 3 sprints x 3 times a week. That is 60 meters x 9. The ",
+    "stored_similarity": 0.006,
+    "exact_title_ids": [
+      854
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "C.3 Program synthesis and execution",
+    "stored_id": 872,
+    "stored_text": "MODEL ANSWER (CORRECT): Jean started with 30 lollipops. She ate 2 of them. So she has 28 lollipops left. She wants to package 2 lollipops in one bag. So she can package 28 / 2 = 14",
+    "stored_similarity": 0.176,
+    "exact_title_ids": [
+      856
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "C.4 Numeric and logical reasoning",
+    "stored_id": 874,
+    "stored_text": null,
+    "stored_similarity": 0.0,
+    "exact_title_ids": [
+      858
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "C.5 Intermediate language steps",
+    "stored_id": 878,
+    "stored_text": "MODEL ANSWER (CORRECT BY CHANCE): There are 36 penguins. One-third of them jump in and swim in the ocean. So that is 12 penguins. Another one-third go inside the cave to eat their ",
+    "stored_similarity": 0.148,
+    "exact_title_ids": [
+      862
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "D Appendix: Additional Analysis",
+    "stored_id": 880,
+    "stored_text": "MODEL ANSWER (CORRECT BUT UNDERSPECIFIED STATEMENTS): There are 2 houses with 3 bedrooms",
+    "stored_similarity": 0.162,
+    "exact_title_ids": [
+      864
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "D.1 Correct Chain of Thought Analysis",
+    "stored_id": 881,
+    "stored_text": "each. Each bedroom has 2 windows each. So there are 2 x 3 = 6 windows in each house. There are an additional 4 windows in each house not connected to bedrooms. So there are 4 + 4 =",
+    "stored_similarity": 0.008,
+    "exact_title_ids": [
+      865
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "D.2 Incorrect Chain of Thought Analysis",
+    "stored_id": 903,
+    "stored_text": "MODEL ANSWER (INCORRECT; SYMBOL MAPPING ERROR): Jill gets paid 20 dollars per hour to teach",
+    "stored_similarity": 0.321,
+    "exact_title_ids": [
+      896
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "D.3 Additional Robustness Analysis",
+    "stored_id": 926,
+    "stored_text": "Chain of thought prompting",
+    "stored_similarity": 0.189,
+    "exact_title_ids": [
+      922
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "E Additional Details",
+    "stored_id": 998,
+    "stored_text": "We list the details and licenses for all arithmetic and commonsense datasets used in this paper. The symbolic reasoning datasets were created synthetically, as described in Section",
+    "stored_similarity": 0.106,
+    "exact_title_ids": [
+      988
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "E.1 Reproducibility Statement",
+    "stored_id": 1002,
+    "stored_text": "• AQuA (Ling et al., 2017): https://github.com/deepmind/AQuA, license: https:// github.com/deepmind/AQuA/blob/master/LICENSE.",
+    "stored_similarity": 0.237,
+    "exact_title_ids": [
+      992
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "E.2 Computational Resources",
+    "stored_id": 1004,
+    "stored_text": "MIT license: https://github.com/openai/grade-school-math/blob/master/ LICENSE.",
+    "stored_similarity": 0.256,
+    "exact_title_ids": [
+      994
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "E.3 Dataset Details and Licenses",
+    "stored_id": 1007,
+    "stored_text": "• CSQA (Talmor et al., 2019): https://www.tau-nlp.org/commonsenseqa, https:// github.com/jonathanherzig/commonsenseqa.",
+    "stored_similarity": 0.293,
+    "exact_title_ids": [
+      997
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "F Appendix: Input/Output Examples",
+    "stored_id": 1019,
+    "stored_text": "MODEL ANSWER (INCORRECT): The last letter of “Daniel” is “l”. The last letter of “Friedman” is “m”.",
+    "stored_similarity": 0.247,
+    "exact_title_ids": [
+      1013
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "G Appendix: Full Prompts",
+    "stored_id": 1063,
+    "stored_text": "So the answer is yes. \u0017 (Ground truth is “no”, being out at home is part of baseball.)",
+    "stored_similarity": 0.2,
+    "exact_title_ids": [
+      1074
+    ],
+    "unique_exact_elsewhere": true
+  },
+  {
+    "document": "chain_of_thought",
+    "title": "H Appendix: Alternate Annotators for MWP",
+    "stored_id": 1211,
+    "stored_text": "is no.",
+    "stored_similarity": 0.162,
+    "exact_title_ids": [
+      1244
+    ],
+    "unique_exact_elsewhere": true
+  }
+]

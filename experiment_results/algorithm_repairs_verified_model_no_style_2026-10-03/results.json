@@ -1,0 +1,3981 @@
+{
+  "mode": "model",
+  "quality_claim": "real_model",
+  "pipeline_fingerprint": "315f74b5764b86dd5e51d4f6f5c049a28b2e07f710180f85fbea28e8efeab1f4",
+  "stage_versions": {
+    "extract": "extract.v4",
+    "profile": "profile.v3",
+    "candidates": "candidates.v3",
+    "compress": "compress.v3",
+    "route_raw": "route.v2",
+    "legalize": "legalize.v5",
+    "resolve": "resolve.v3",
+    "assemble": "assemble.v2"
+  },
+  "python": "3.12.10",
+  "packages": {
+    "PyMuPDF": "1.24.14",
+    "python-docx": "1.2.0",
+    "pydantic": "2.13.4"
+  },
+  "relation_weight": 2.8,
+  "documents": [
+    {
+      "document": "01_numbered_uniform_font",
+      "tier": "no_style",
+      "source_sha256": "b8fec128b48d51f2d7899b93148b6de1f0951f43bf90db5c9dcf3044fbd178d0",
+      "run_in_gt_count": 0,
+      "gt_sha256": "f81598af000421f949612c689dd4d8a94e312d1c64065b176c4a983724da1318",
+      "mode": "model",
+      "annotation_alignment": "stored plus exact-title diagnostic; not independently reviewed",
+      "gt_total": 12,
+      "gt_aligned": 12,
+      "alignment_audit": [
+        {
+          "title": "1. Introduction",
+          "stored_id": 0,
+          "status": "stored_exact",
+          "suggested_id": 0,
+          "matching_ids": [
+            0
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "2. Related Work",
+          "stored_id": 3,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 2,
+          "matching_ids": [
+            2
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "2.1 Traditional Methods",
+          "stored_id": 5,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 4,
+          "matching_ids": [
+            4
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "2.2 Deep Learning Approaches",
+          "stored_id": 8,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 6,
+          "matching_ids": [
+            6
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "3. Methodology",
+          "stored_id": 11,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 8,
+          "matching_ids": [
+            8
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "3.1 Data Preprocessing",
+          "stored_id": 13,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 10,
+          "matching_ids": [
+            10
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "3.2 Model Architecture",
+          "stored_id": 16,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 12,
+          "matching_ids": [
+            12
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "3.3 Training Procedure",
+          "stored_id": 19,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 14,
+          "matching_ids": [
+            14
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "4. Experiments",
+          "stored_id": 22,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 16,
+          "matching_ids": [
+            16
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "4.1 Dataset Description",
+          "stored_id": 24,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 18,
+          "matching_ids": [
+            18
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "4.2 Results",
+          "stored_id": 27,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 20,
+          "matching_ids": [
+            20
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "5. Conclusion",
+          "stored_id": 30,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 22,
+          "matching_ids": [
+            22
+          ],
+          "requires_independent_review": true
+        }
+      ],
+      "stored_id_metrics": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 6,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "level_correct": 6,
+        "level_total": 6,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 0.5,
+        "all_gt_level_precision": 0.5,
+        "all_gt_level_recall": 0.5,
+        "all_gt_level_f1": 0.5,
+        "hierarchy_accuracy_all_gt": 0.5,
+        "hierarchy_f1_all_gt": 0.5,
+        "heading_sequence_edit_distance": 0.0,
+        "parent_relation_distance": 0.0,
+        "tree_edit_distance": 0.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 0,
+              "title": "1. Introduction",
+              "level": 1
+            },
+            {
+              "block_id": 0,
+              "title": "1. Introduction",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 3,
+              "title": "2. Related Work",
+              "level": 1
+            },
+            {
+              "block_id": 2,
+              "title": "2. Related Work",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 5,
+              "title": "2.1 Traditional Methods",
+              "level": 2
+            },
+            {
+              "block_id": 4,
+              "title": "2.1 Traditional Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 8,
+              "title": "2.2 Deep Learning Approaches",
+              "level": 2
+            },
+            {
+              "block_id": 6,
+              "title": "2.2 Deep Learning Approaches",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 11,
+              "title": "3. Methodology",
+              "level": 1
+            },
+            {
+              "block_id": 8,
+              "title": "3. Methodology",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 13,
+              "title": "3.1 Data Preprocessing",
+              "level": 2
+            },
+            {
+              "block_id": 10,
+              "title": "3.1 Data Preprocessing",
+              "level": 2
+            }
+          ]
+        ],
+        "fp_preds": [
+          {
+            "block_id": 12,
+            "title": "3.2 Model Architecture",
+            "level": 2
+          },
+          {
+            "block_id": 14,
+            "title": "3.3 Training Procedure",
+            "level": 2
+          },
+          {
+            "block_id": 16,
+            "title": "4. Experiments",
+            "level": 1
+          },
+          {
+            "block_id": 18,
+            "title": "4.1 Dataset Description",
+            "level": 2
+          },
+          {
+            "block_id": 20,
+            "title": "4.2 Results",
+            "level": 2
+          },
+          {
+            "block_id": 22,
+            "title": "5. Conclusion",
+            "level": 1
+          }
+        ],
+        "fn_gts": [
+          {
+            "block_id": 16,
+            "title": "3.2 Model Architecture",
+            "level": 2
+          },
+          {
+            "block_id": 19,
+            "title": "3.3 Training Procedure",
+            "level": 2
+          },
+          {
+            "block_id": 22,
+            "title": "4. Experiments",
+            "level": 1
+          },
+          {
+            "block_id": 24,
+            "title": "4.1 Dataset Description",
+            "level": 2
+          },
+          {
+            "block_id": 27,
+            "title": "4.2 Results",
+            "level": 2
+          },
+          {
+            "block_id": 30,
+            "title": "5. Conclusion",
+            "level": 1
+          }
+        ],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 0,
+              "title": "1. Introduction",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 0,
+              "title": "1. Introduction",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 3,
+              "title": "2. Related Work",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 2,
+              "title": "2. Related Work",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 27.0005
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 5,
+              "title": "2.1 Traditional Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 4,
+              "title": "2.1 Traditional Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 27.0005
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 8,
+              "title": "2.2 Deep Learning Approaches",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 6,
+              "title": "2.2 Deep Learning Approaches",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 27.00025
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 11,
+              "title": "3. Methodology",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 8,
+              "title": "3. Methodology",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 27.0
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 13,
+              "title": "3.1 Data Preprocessing",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 10,
+              "title": "3.1 Data Preprocessing",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 27.0
+          }
+        ]
+      },
+      "exact_title_snapshot_metrics": {
+        "tp": 12,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "level_correct": 12,
+        "level_total": 12,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 1.0,
+        "all_gt_level_precision": 1.0,
+        "all_gt_level_recall": 1.0,
+        "all_gt_level_f1": 1.0,
+        "hierarchy_accuracy_all_gt": 1.0,
+        "hierarchy_f1_all_gt": 1.0,
+        "heading_sequence_edit_distance": 0.0,
+        "parent_relation_distance": 0.0,
+        "tree_edit_distance": 0.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 0,
+              "title": "1. Introduction",
+              "level": 1
+            },
+            {
+              "block_id": 0,
+              "title": "1. Introduction",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 2,
+              "title": "2. Related Work",
+              "level": 1
+            },
+            {
+              "block_id": 2,
+              "title": "2. Related Work",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 4,
+              "title": "2.1 Traditional Methods",
+              "level": 2
+            },
+            {
+              "block_id": 4,
+              "title": "2.1 Traditional Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 6,
+              "title": "2.2 Deep Learning Approaches",
+              "level": 2
+            },
+            {
+              "block_id": 6,
+              "title": "2.2 Deep Learning Approaches",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 8,
+              "title": "3. Methodology",
+              "level": 1
+            },
+            {
+              "block_id": 8,
+              "title": "3. Methodology",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 10,
+              "title": "3.1 Data Preprocessing",
+              "level": 2
+            },
+            {
+              "block_id": 10,
+              "title": "3.1 Data Preprocessing",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 12,
+              "title": "3.2 Model Architecture",
+              "level": 2
+            },
+            {
+              "block_id": 12,
+              "title": "3.2 Model Architecture",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 14,
+              "title": "3.3 Training Procedure",
+              "level": 2
+            },
+            {
+              "block_id": 14,
+              "title": "3.3 Training Procedure",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 16,
+              "title": "4. Experiments",
+              "level": 1
+            },
+            {
+              "block_id": 16,
+              "title": "4. Experiments",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 18,
+              "title": "4.1 Dataset Description",
+              "level": 2
+            },
+            {
+              "block_id": 18,
+              "title": "4.1 Dataset Description",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 20,
+              "title": "4.2 Results",
+              "level": 2
+            },
+            {
+              "block_id": 20,
+              "title": "4.2 Results",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 22,
+              "title": "5. Conclusion",
+              "level": 1
+            },
+            {
+              "block_id": 22,
+              "title": "5. Conclusion",
+              "level": 1
+            }
+          ]
+        ],
+        "fp_preds": [],
+        "fn_gts": [],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 0,
+              "title": "1. Introduction",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 0,
+              "title": "1. Introduction",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 2,
+              "title": "2. Related Work",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 2,
+              "title": "2. Related Work",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 4,
+              "title": "2.1 Traditional Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 4,
+              "title": "2.1 Traditional Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 6,
+              "title": "2.2 Deep Learning Approaches",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 6,
+              "title": "2.2 Deep Learning Approaches",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 8,
+              "title": "3. Methodology",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 8,
+              "title": "3. Methodology",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 10,
+              "title": "3.1 Data Preprocessing",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 10,
+              "title": "3.1 Data Preprocessing",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 6,
+            "pred_index": 6,
+            "gt": {
+              "block_id": 12,
+              "title": "3.2 Model Architecture",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 12,
+              "title": "3.2 Model Architecture",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 7,
+            "pred_index": 7,
+            "gt": {
+              "block_id": 14,
+              "title": "3.3 Training Procedure",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 14,
+              "title": "3.3 Training Procedure",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 8,
+            "pred_index": 8,
+            "gt": {
+              "block_id": 16,
+              "title": "4. Experiments",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 16,
+              "title": "4. Experiments",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 9,
+            "pred_index": 9,
+            "gt": {
+              "block_id": 18,
+              "title": "4.1 Dataset Description",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 18,
+              "title": "4.1 Dataset Description",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 10,
+            "pred_index": 10,
+            "gt": {
+              "block_id": 20,
+              "title": "4.2 Results",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 20,
+              "title": "4.2 Results",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          },
+          {
+            "gt_index": 11,
+            "pred_index": 11,
+            "gt": {
+              "block_id": 22,
+              "title": "5. Conclusion",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 22,
+              "title": "5. Conclusion",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 27.00075
+          }
+        ]
+      },
+      "recall_including_unresolved_gt": 1.0,
+      "blocks": 24,
+      "predictions": [
+        {
+          "block_id": 0,
+          "title": "1. Introduction",
+          "level": 1
+        },
+        {
+          "block_id": 2,
+          "title": "2. Related Work",
+          "level": 1
+        },
+        {
+          "block_id": 4,
+          "title": "2.1 Traditional Methods",
+          "level": 2
+        },
+        {
+          "block_id": 6,
+          "title": "2.2 Deep Learning Approaches",
+          "level": 2
+        },
+        {
+          "block_id": 8,
+          "title": "3. Methodology",
+          "level": 1
+        },
+        {
+          "block_id": 10,
+          "title": "3.1 Data Preprocessing",
+          "level": 2
+        },
+        {
+          "block_id": 12,
+          "title": "3.2 Model Architecture",
+          "level": 2
+        },
+        {
+          "block_id": 14,
+          "title": "3.3 Training Procedure",
+          "level": 2
+        },
+        {
+          "block_id": 16,
+          "title": "4. Experiments",
+          "level": 1
+        },
+        {
+          "block_id": 18,
+          "title": "4.1 Dataset Description",
+          "level": 2
+        },
+        {
+          "block_id": 20,
+          "title": "4.2 Results",
+          "level": 2
+        },
+        {
+          "block_id": 22,
+          "title": "5. Conclusion",
+          "level": 1
+        }
+      ],
+      "diagnostics": {
+        "extraction": {
+          "unrecognized_element_count": 0,
+          "reading_order_uncertain_blocks": 0,
+          "reading_order_edges": 23,
+          "ocr_pages": 0,
+          "page_count": 1,
+          "garbled_page_ratio": 0.0
+        },
+        "closure": {
+          "source_units_total": 33,
+          "duplicated_units": 0,
+          "unattributed_units": 0,
+          "duplicated_sample": [],
+          "unattributed_sample": [],
+          "exactly_once": true
+        },
+        "tables": {
+          "table_count": 0,
+          "tables_with_model": 0,
+          "tables_coverage_exact": 0,
+          "tables_with_overlapping_cells": 0,
+          "unattributed_cells_sample": [],
+          "unattributed_cells": 0
+        },
+        "delivery": {
+          "view_bytes": {
+            "full_markdown": 1621,
+            "sections_markdown": 1617,
+            "json": 13239
+          },
+          "range_declaration": {
+            "declared_blocks": 24,
+            "total_blocks": 24,
+            "complete": true,
+            "missing_block_ids": []
+          },
+          "referenced_resources": 0
+        },
+        "normalization": {
+          "atoms_seen": 33,
+          "transformations": {
+            "断词与拼接归一": 0,
+            "空白归一": 9,
+            "偏移对齐降级": 0,
+            "来源角色标注": 0,
+            "连字归一": 0
+          }
+        },
+        "language": "en",
+        "language_source": "derived",
+        "cjk_ratio": 0.0
+      },
+      "quality_report": {
+        "semantic_correctness_verified": false,
+        "content_coverage_scope": "extracted_blocks_only",
+        "needs_confirmation_section_ids": [],
+        "confidence_quality": "heuristic",
+        "content_relation_count": 0
+      },
+      "serialized_json_bytes": 13239,
+      "serialization_valid": true,
+      "model_calls": 1,
+      "elapsed_seconds": 4.1334757001604885,
+      "model": "deepseek-v4.1-flash",
+      "token_usage": {
+        "model": "deepseek-v4.1-flash",
+        "calls": 1,
+        "prompt_tokens": 3318,
+        "completion_tokens": 410,
+        "total_tokens": 3728
+      },
+      "provider_skip_codes": [],
+      "calibration_samples": []
+    },
+    {
+      "document": "02_plain_text_no_numbering",
+      "tier": "no_style",
+      "source_sha256": "10a8035d530f64e8db431719a2ec0c5de48ed49fee222931b6326a75d36fdc50",
+      "run_in_gt_count": 0,
+      "gt_sha256": "a29491d35e570d91e5b303b6774da5edd8eca263c709a1de8911007b986da3f5",
+      "mode": "model",
+      "annotation_alignment": "stored plus exact-title diagnostic; not independently reviewed",
+      "gt_total": 9,
+      "gt_aligned": 9,
+      "alignment_audit": [
+        {
+          "title": "Introduction",
+          "stored_id": 0,
+          "status": "stored_exact",
+          "suggested_id": 0,
+          "matching_ids": [
+            0
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Background",
+          "stored_id": 3,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 2,
+          "matching_ids": [
+            2
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Supervised Methods",
+          "stored_id": 5,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 4,
+          "matching_ids": [
+            4
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Unsupervised Methods",
+          "stored_id": 8,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 6,
+          "matching_ids": [
+            6
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Proposed Method",
+          "stored_id": 11,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 8,
+          "matching_ids": [
+            8
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Feature Extraction",
+          "stored_id": 13,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 10,
+          "matching_ids": [
+            10
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Classification",
+          "stored_id": 16,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 12,
+          "matching_ids": [
+            12
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Experiments",
+          "stored_id": 19,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 14,
+          "matching_ids": [
+            14
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Conclusion",
+          "stored_id": 22,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 16,
+          "matching_ids": [
+            16
+          ],
+          "requires_independent_review": true
+        }
+      ],
+      "stored_id_metrics": {
+        "tp": 6,
+        "fp": 3,
+        "fn": 3,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "level_correct": 6,
+        "level_total": 6,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 0.6666666666666666,
+        "all_gt_level_precision": 0.6666666666666666,
+        "all_gt_level_recall": 0.6666666666666666,
+        "all_gt_level_f1": 0.6666666666666666,
+        "hierarchy_accuracy_all_gt": 0.6666666666666666,
+        "hierarchy_f1_all_gt": 0.6666666666666666,
+        "heading_sequence_edit_distance": 0.0,
+        "parent_relation_distance": 0.0,
+        "tree_edit_distance": 0.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 3,
+              "title": "Background",
+              "level": 1
+            },
+            {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 5,
+              "title": "Supervised Methods",
+              "level": 2
+            },
+            {
+              "block_id": 4,
+              "title": "Supervised Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 8,
+              "title": "Unsupervised Methods",
+              "level": 2
+            },
+            {
+              "block_id": 6,
+              "title": "Unsupervised Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 11,
+              "title": "Proposed Method",
+              "level": 1
+            },
+            {
+              "block_id": 8,
+              "title": "Proposed Method",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 13,
+              "title": "Feature Extraction",
+              "level": 2
+            },
+            {
+              "block_id": 10,
+              "title": "Feature Extraction",
+              "level": 2
+            }
+          ]
+        ],
+        "fp_preds": [
+          {
+            "block_id": 12,
+            "title": "Classification",
+            "level": 2
+          },
+          {
+            "block_id": 14,
+            "title": "Experiments",
+            "level": 1
+          },
+          {
+            "block_id": 16,
+            "title": "Conclusion",
+            "level": 1
+          }
+        ],
+        "fn_gts": [
+          {
+            "block_id": 16,
+            "title": "Classification",
+            "level": 2
+          },
+          {
+            "block_id": 19,
+            "title": "Experiments",
+            "level": 1
+          },
+          {
+            "block_id": 22,
+            "title": "Conclusion",
+            "level": 1
+          }
+        ],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 3,
+              "title": "Background",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 21.0005
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 5,
+              "title": "Supervised Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 4,
+              "title": "Supervised Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 21.0005
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 8,
+              "title": "Unsupervised Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 6,
+              "title": "Unsupervised Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 21.00025
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 11,
+              "title": "Proposed Method",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 8,
+              "title": "Proposed Method",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 21.0
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 13,
+              "title": "Feature Extraction",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 10,
+              "title": "Feature Extraction",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 21.0
+          }
+        ]
+      },
+      "exact_title_snapshot_metrics": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "level_correct": 9,
+        "level_total": 9,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 1.0,
+        "all_gt_level_precision": 1.0,
+        "all_gt_level_recall": 1.0,
+        "all_gt_level_f1": 1.0,
+        "hierarchy_accuracy_all_gt": 1.0,
+        "hierarchy_f1_all_gt": 1.0,
+        "heading_sequence_edit_distance": 0.0,
+        "parent_relation_distance": 0.0,
+        "tree_edit_distance": 0.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            },
+            {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 4,
+              "title": "Supervised Methods",
+              "level": 2
+            },
+            {
+              "block_id": 4,
+              "title": "Supervised Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 6,
+              "title": "Unsupervised Methods",
+              "level": 2
+            },
+            {
+              "block_id": 6,
+              "title": "Unsupervised Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 8,
+              "title": "Proposed Method",
+              "level": 1
+            },
+            {
+              "block_id": 8,
+              "title": "Proposed Method",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 10,
+              "title": "Feature Extraction",
+              "level": 2
+            },
+            {
+              "block_id": 10,
+              "title": "Feature Extraction",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 12,
+              "title": "Classification",
+              "level": 2
+            },
+            {
+              "block_id": 12,
+              "title": "Classification",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 14,
+              "title": "Experiments",
+              "level": 1
+            },
+            {
+              "block_id": 14,
+              "title": "Experiments",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 16,
+              "title": "Conclusion",
+              "level": 1
+            },
+            {
+              "block_id": 16,
+              "title": "Conclusion",
+              "level": 1
+            }
+          ]
+        ],
+        "fp_preds": [],
+        "fn_gts": [],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 4,
+              "title": "Supervised Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 4,
+              "title": "Supervised Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 6,
+              "title": "Unsupervised Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 6,
+              "title": "Unsupervised Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 8,
+              "title": "Proposed Method",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 8,
+              "title": "Proposed Method",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 10,
+              "title": "Feature Extraction",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 10,
+              "title": "Feature Extraction",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 6,
+            "pred_index": 6,
+            "gt": {
+              "block_id": 12,
+              "title": "Classification",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 12,
+              "title": "Classification",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 7,
+            "pred_index": 7,
+            "gt": {
+              "block_id": 14,
+              "title": "Experiments",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 14,
+              "title": "Experiments",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          },
+          {
+            "gt_index": 8,
+            "pred_index": 8,
+            "gt": {
+              "block_id": 16,
+              "title": "Conclusion",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 16,
+              "title": "Conclusion",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 21.00075
+          }
+        ]
+      },
+      "recall_including_unresolved_gt": 1.0,
+      "blocks": 18,
+      "predictions": [
+        {
+          "block_id": 0,
+          "title": "Introduction",
+          "level": 1
+        },
+        {
+          "block_id": 2,
+          "title": "Background",
+          "level": 1
+        },
+        {
+          "block_id": 4,
+          "title": "Supervised Methods",
+          "level": 2
+        },
+        {
+          "block_id": 6,
+          "title": "Unsupervised Methods",
+          "level": 2
+        },
+        {
+          "block_id": 8,
+          "title": "Proposed Method",
+          "level": 1
+        },
+        {
+          "block_id": 10,
+          "title": "Feature Extraction",
+          "level": 2
+        },
+        {
+          "block_id": 12,
+          "title": "Classification",
+          "level": 2
+        },
+        {
+          "block_id": 14,
+          "title": "Experiments",
+          "level": 1
+        },
+        {
+          "block_id": 16,
+          "title": "Conclusion",
+          "level": 1
+        }
+      ],
+      "diagnostics": {
+        "extraction": {
+          "unrecognized_element_count": 0,
+          "reading_order_uncertain_blocks": 0,
+          "reading_order_edges": 17,
+          "ocr_pages": 0,
+          "page_count": 1,
+          "garbled_page_ratio": 0.0
+        },
+        "closure": {
+          "source_units_total": 25,
+          "duplicated_units": 0,
+          "unattributed_units": 0,
+          "duplicated_sample": [],
+          "unattributed_sample": [],
+          "exactly_once": true
+        },
+        "tables": {
+          "table_count": 0,
+          "tables_with_model": 0,
+          "tables_coverage_exact": 0,
+          "tables_with_overlapping_cells": 0,
+          "unattributed_cells_sample": [],
+          "unattributed_cells": 0
+        },
+        "delivery": {
+          "view_bytes": {
+            "full_markdown": 1424,
+            "sections_markdown": 1420,
+            "json": 10102
+          },
+          "range_declaration": {
+            "declared_blocks": 18,
+            "total_blocks": 18,
+            "complete": true,
+            "missing_block_ids": []
+          },
+          "referenced_resources": 0
+        },
+        "normalization": {
+          "atoms_seen": 25,
+          "transformations": {
+            "断词与拼接归一": 0,
+            "空白归一": 7,
+            "偏移对齐降级": 0,
+            "来源角色标注": 0,
+            "连字归一": 0
+          }
+        },
+        "language": "en",
+        "language_source": "derived",
+        "cjk_ratio": 0.0
+      },
+      "quality_report": {
+        "semantic_correctness_verified": false,
+        "content_coverage_scope": "extracted_blocks_only",
+        "needs_confirmation_section_ids": [],
+        "confidence_quality": "heuristic",
+        "content_relation_count": 0
+      },
+      "serialized_json_bytes": 10102,
+      "serialization_valid": true,
+      "model_calls": 1,
+      "elapsed_seconds": 2.0458016998600215,
+      "model": "deepseek-v4.1-flash",
+      "token_usage": {
+        "model": "deepseek-v4.1-flash",
+        "calls": 1,
+        "prompt_tokens": 3089,
+        "completion_tokens": 270,
+        "total_tokens": 3359
+      },
+      "provider_skip_codes": [],
+      "calibration_samples": []
+    },
+    {
+      "document": "03_deep_hierarchy_uniform",
+      "tier": "no_style",
+      "source_sha256": "fb6132adcd86654cbaf95918cacf967ee66803d2139a2b7c6307e71c2158e709",
+      "run_in_gt_count": 0,
+      "gt_sha256": "4ef3313b497b80b94da2b826809b4cf2ea5065a94fdebdd26964174976c6f0a7",
+      "mode": "model",
+      "annotation_alignment": "stored plus exact-title diagnostic; not independently reviewed",
+      "gt_total": 16,
+      "gt_aligned": 16,
+      "alignment_audit": [
+        {
+          "title": "1. System Overview",
+          "stored_id": 0,
+          "status": "stored_exact",
+          "suggested_id": 0,
+          "matching_ids": [
+            0
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "1.1 Architecture",
+          "stored_id": 2,
+          "status": "stored_exact",
+          "suggested_id": 2,
+          "matching_ids": [
+            2
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "1.1.1 Frontend",
+          "stored_id": 4,
+          "status": "stored_exact",
+          "suggested_id": 4,
+          "matching_ids": [
+            4
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "1.1.2 Backend",
+          "stored_id": 7,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 6,
+          "matching_ids": [
+            6
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "1.1.2.1 API Layer",
+          "stored_id": 9,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 8,
+          "matching_ids": [
+            8
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "1.1.2.2 Service Layer",
+          "stored_id": 11,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 10,
+          "matching_ids": [
+            10
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "1.2 Deployment",
+          "stored_id": 14,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 12,
+          "matching_ids": [
+            12
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "2. Data Pipeline",
+          "stored_id": 16,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 14,
+          "matching_ids": [
+            14
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "2.1 Ingestion",
+          "stored_id": 18,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 16,
+          "matching_ids": [
+            16
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "2.2 Transformation",
+          "stored_id": 20,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 18,
+          "matching_ids": [
+            18
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "2.2.1 Cleaning",
+          "stored_id": 22,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 20,
+          "matching_ids": [
+            20
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "2.2.2 Normalization",
+          "stored_id": 24,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 22,
+          "matching_ids": [
+            22
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "2.3 Storage",
+          "stored_id": 27,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 24,
+          "matching_ids": [
+            24
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "3. Results",
+          "stored_id": 29,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 26,
+          "matching_ids": [
+            26
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "3.1 Performance",
+          "stored_id": 31,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 28,
+          "matching_ids": [
+            28
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "3.2 Accuracy",
+          "stored_id": 33,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 30,
+          "matching_ids": [
+            30
+          ],
+          "requires_independent_review": true
+        }
+      ],
+      "stored_id_metrics": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "level_correct": 16,
+        "level_total": 16,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 1.0,
+        "all_gt_level_precision": 1.0,
+        "all_gt_level_recall": 1.0,
+        "all_gt_level_f1": 1.0,
+        "hierarchy_accuracy_all_gt": 1.0,
+        "hierarchy_f1_all_gt": 1.0,
+        "heading_sequence_edit_distance": 0.0,
+        "parent_relation_distance": 0.0,
+        "tree_edit_distance": 0.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 0,
+              "title": "1. System Overview",
+              "level": 1
+            },
+            {
+              "block_id": 0,
+              "title": "1. System Overview",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 2,
+              "title": "1.1 Architecture",
+              "level": 2
+            },
+            {
+              "block_id": 2,
+              "title": "1.1 Architecture",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 4,
+              "title": "1.1.1 Frontend",
+              "level": 3
+            },
+            {
+              "block_id": 4,
+              "title": "1.1.1 Frontend",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 7,
+              "title": "1.1.2 Backend",
+              "level": 3
+            },
+            {
+              "block_id": 6,
+              "title": "1.1.2 Backend",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 9,
+              "title": "1.1.2.1 API Layer",
+              "level": 4
+            },
+            {
+              "block_id": 8,
+              "title": "1.1.2.1 API Layer",
+              "level": 4
+            }
+          ],
+          [
+            {
+              "block_id": 11,
+              "title": "1.1.2.2 Service Layer",
+              "level": 4
+            },
+            {
+              "block_id": 10,
+              "title": "1.1.2.2 Service Layer",
+              "level": 4
+            }
+          ],
+          [
+            {
+              "block_id": 14,
+              "title": "1.2 Deployment",
+              "level": 2
+            },
+            {
+              "block_id": 12,
+              "title": "1.2 Deployment",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 16,
+              "title": "2. Data Pipeline",
+              "level": 1
+            },
+            {
+              "block_id": 14,
+              "title": "2. Data Pipeline",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 18,
+              "title": "2.1 Ingestion",
+              "level": 2
+            },
+            {
+              "block_id": 16,
+              "title": "2.1 Ingestion",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 20,
+              "title": "2.2 Transformation",
+              "level": 2
+            },
+            {
+              "block_id": 18,
+              "title": "2.2 Transformation",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 22,
+              "title": "2.2.1 Cleaning",
+              "level": 3
+            },
+            {
+              "block_id": 20,
+              "title": "2.2.1 Cleaning",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 24,
+              "title": "2.2.2 Normalization",
+              "level": 3
+            },
+            {
+              "block_id": 22,
+              "title": "2.2.2 Normalization",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 27,
+              "title": "2.3 Storage",
+              "level": 2
+            },
+            {
+              "block_id": 24,
+              "title": "2.3 Storage",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 29,
+              "title": "3. Results",
+              "level": 1
+            },
+            {
+              "block_id": 26,
+              "title": "3. Results",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 31,
+              "title": "3.1 Performance",
+              "level": 2
+            },
+            {
+              "block_id": 28,
+              "title": "3.1 Performance",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 33,
+              "title": "3.2 Accuracy",
+              "level": 2
+            },
+            {
+              "block_id": 30,
+              "title": "3.2 Accuracy",
+              "level": 2
+            }
+          ]
+        ],
+        "fp_preds": [],
+        "fn_gts": [],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 0,
+              "title": "1. System Overview",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 0,
+              "title": "1. System Overview",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 2,
+              "title": "1.1 Architecture",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 2,
+              "title": "1.1 Architecture",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 4,
+              "title": "1.1.1 Frontend",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 4,
+              "title": "1.1.1 Frontend",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 7,
+              "title": "1.1.2 Backend",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 6,
+              "title": "1.1.2 Backend",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 35.0005
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 9,
+              "title": "1.1.2.1 API Layer",
+              "level": 4
+            },
+            "pred": {
+              "block_id": 8,
+              "title": "1.1.2.1 API Layer",
+              "level": 4
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 35.0005
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 11,
+              "title": "1.1.2.2 Service Layer",
+              "level": 4
+            },
+            "pred": {
+              "block_id": 10,
+              "title": "1.1.2.2 Service Layer",
+              "level": 4
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 35.0005
+          },
+          {
+            "gt_index": 6,
+            "pred_index": 6,
+            "gt": {
+              "block_id": 14,
+              "title": "1.2 Deployment",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 12,
+              "title": "1.2 Deployment",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 35.00025
+          },
+          {
+            "gt_index": 7,
+            "pred_index": 7,
+            "gt": {
+              "block_id": 16,
+              "title": "2. Data Pipeline",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 14,
+              "title": "2. Data Pipeline",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 35.00025
+          },
+          {
+            "gt_index": 8,
+            "pred_index": 8,
+            "gt": {
+              "block_id": 18,
+              "title": "2.1 Ingestion",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 16,
+              "title": "2.1 Ingestion",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 35.00025
+          },
+          {
+            "gt_index": 9,
+            "pred_index": 9,
+            "gt": {
+              "block_id": 20,
+              "title": "2.2 Transformation",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 18,
+              "title": "2.2 Transformation",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 35.00025
+          },
+          {
+            "gt_index": 10,
+            "pred_index": 10,
+            "gt": {
+              "block_id": 22,
+              "title": "2.2.1 Cleaning",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 20,
+              "title": "2.2.1 Cleaning",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 35.00025
+          },
+          {
+            "gt_index": 11,
+            "pred_index": 11,
+            "gt": {
+              "block_id": 24,
+              "title": "2.2.2 Normalization",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 22,
+              "title": "2.2.2 Normalization",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 35.00025
+          },
+          {
+            "gt_index": 12,
+            "pred_index": 12,
+            "gt": {
+              "block_id": 27,
+              "title": "2.3 Storage",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 24,
+              "title": "2.3 Storage",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 35.0
+          },
+          {
+            "gt_index": 13,
+            "pred_index": 13,
+            "gt": {
+              "block_id": 29,
+              "title": "3. Results",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 26,
+              "title": "3. Results",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 35.0
+          },
+          {
+            "gt_index": 14,
+            "pred_index": 14,
+            "gt": {
+              "block_id": 31,
+              "title": "3.1 Performance",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 28,
+              "title": "3.1 Performance",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 35.0
+          },
+          {
+            "gt_index": 15,
+            "pred_index": 15,
+            "gt": {
+              "block_id": 33,
+              "title": "3.2 Accuracy",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 30,
+              "title": "3.2 Accuracy",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 35.0
+          }
+        ]
+      },
+      "exact_title_snapshot_metrics": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "level_correct": 16,
+        "level_total": 16,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 1.0,
+        "all_gt_level_precision": 1.0,
+        "all_gt_level_recall": 1.0,
+        "all_gt_level_f1": 1.0,
+        "hierarchy_accuracy_all_gt": 1.0,
+        "hierarchy_f1_all_gt": 1.0,
+        "heading_sequence_edit_distance": 0.0,
+        "parent_relation_distance": 0.0,
+        "tree_edit_distance": 0.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 0,
+              "title": "1. System Overview",
+              "level": 1
+            },
+            {
+              "block_id": 0,
+              "title": "1. System Overview",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 2,
+              "title": "1.1 Architecture",
+              "level": 2
+            },
+            {
+              "block_id": 2,
+              "title": "1.1 Architecture",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 4,
+              "title": "1.1.1 Frontend",
+              "level": 3
+            },
+            {
+              "block_id": 4,
+              "title": "1.1.1 Frontend",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 6,
+              "title": "1.1.2 Backend",
+              "level": 3
+            },
+            {
+              "block_id": 6,
+              "title": "1.1.2 Backend",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 8,
+              "title": "1.1.2.1 API Layer",
+              "level": 4
+            },
+            {
+              "block_id": 8,
+              "title": "1.1.2.1 API Layer",
+              "level": 4
+            }
+          ],
+          [
+            {
+              "block_id": 10,
+              "title": "1.1.2.2 Service Layer",
+              "level": 4
+            },
+            {
+              "block_id": 10,
+              "title": "1.1.2.2 Service Layer",
+              "level": 4
+            }
+          ],
+          [
+            {
+              "block_id": 12,
+              "title": "1.2 Deployment",
+              "level": 2
+            },
+            {
+              "block_id": 12,
+              "title": "1.2 Deployment",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 14,
+              "title": "2. Data Pipeline",
+              "level": 1
+            },
+            {
+              "block_id": 14,
+              "title": "2. Data Pipeline",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 16,
+              "title": "2.1 Ingestion",
+              "level": 2
+            },
+            {
+              "block_id": 16,
+              "title": "2.1 Ingestion",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 18,
+              "title": "2.2 Transformation",
+              "level": 2
+            },
+            {
+              "block_id": 18,
+              "title": "2.2 Transformation",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 20,
+              "title": "2.2.1 Cleaning",
+              "level": 3
+            },
+            {
+              "block_id": 20,
+              "title": "2.2.1 Cleaning",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 22,
+              "title": "2.2.2 Normalization",
+              "level": 3
+            },
+            {
+              "block_id": 22,
+              "title": "2.2.2 Normalization",
+              "level": 3
+            }
+          ],
+          [
+            {
+              "block_id": 24,
+              "title": "2.3 Storage",
+              "level": 2
+            },
+            {
+              "block_id": 24,
+              "title": "2.3 Storage",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 26,
+              "title": "3. Results",
+              "level": 1
+            },
+            {
+              "block_id": 26,
+              "title": "3. Results",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 28,
+              "title": "3.1 Performance",
+              "level": 2
+            },
+            {
+              "block_id": 28,
+              "title": "3.1 Performance",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 30,
+              "title": "3.2 Accuracy",
+              "level": 2
+            },
+            {
+              "block_id": 30,
+              "title": "3.2 Accuracy",
+              "level": 2
+            }
+          ]
+        ],
+        "fp_preds": [],
+        "fn_gts": [],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 0,
+              "title": "1. System Overview",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 0,
+              "title": "1. System Overview",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 2,
+              "title": "1.1 Architecture",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 2,
+              "title": "1.1 Architecture",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 4,
+              "title": "1.1.1 Frontend",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 4,
+              "title": "1.1.1 Frontend",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 6,
+              "title": "1.1.2 Backend",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 6,
+              "title": "1.1.2 Backend",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 8,
+              "title": "1.1.2.1 API Layer",
+              "level": 4
+            },
+            "pred": {
+              "block_id": 8,
+              "title": "1.1.2.1 API Layer",
+              "level": 4
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 10,
+              "title": "1.1.2.2 Service Layer",
+              "level": 4
+            },
+            "pred": {
+              "block_id": 10,
+              "title": "1.1.2.2 Service Layer",
+              "level": 4
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 6,
+            "pred_index": 6,
+            "gt": {
+              "block_id": 12,
+              "title": "1.2 Deployment",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 12,
+              "title": "1.2 Deployment",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 7,
+            "pred_index": 7,
+            "gt": {
+              "block_id": 14,
+              "title": "2. Data Pipeline",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 14,
+              "title": "2. Data Pipeline",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 8,
+            "pred_index": 8,
+            "gt": {
+              "block_id": 16,
+              "title": "2.1 Ingestion",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 16,
+              "title": "2.1 Ingestion",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 9,
+            "pred_index": 9,
+            "gt": {
+              "block_id": 18,
+              "title": "2.2 Transformation",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 18,
+              "title": "2.2 Transformation",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 10,
+            "pred_index": 10,
+            "gt": {
+              "block_id": 20,
+              "title": "2.2.1 Cleaning",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 20,
+              "title": "2.2.1 Cleaning",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 11,
+            "pred_index": 11,
+            "gt": {
+              "block_id": 22,
+              "title": "2.2.2 Normalization",
+              "level": 3
+            },
+            "pred": {
+              "block_id": 22,
+              "title": "2.2.2 Normalization",
+              "level": 3
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 12,
+            "pred_index": 12,
+            "gt": {
+              "block_id": 24,
+              "title": "2.3 Storage",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 24,
+              "title": "2.3 Storage",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 13,
+            "pred_index": 13,
+            "gt": {
+              "block_id": 26,
+              "title": "3. Results",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 26,
+              "title": "3. Results",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 14,
+            "pred_index": 14,
+            "gt": {
+              "block_id": 28,
+              "title": "3.1 Performance",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 28,
+              "title": "3.1 Performance",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          },
+          {
+            "gt_index": 15,
+            "pred_index": 15,
+            "gt": {
+              "block_id": 30,
+              "title": "3.2 Accuracy",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 30,
+              "title": "3.2 Accuracy",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 35.00075
+          }
+        ]
+      },
+      "recall_including_unresolved_gt": 1.0,
+      "blocks": 32,
+      "predictions": [
+        {
+          "block_id": 0,
+          "title": "1. System Overview",
+          "level": 1
+        },
+        {
+          "block_id": 2,
+          "title": "1.1 Architecture",
+          "level": 2
+        },
+        {
+          "block_id": 4,
+          "title": "1.1.1 Frontend",
+          "level": 3
+        },
+        {
+          "block_id": 6,
+          "title": "1.1.2 Backend",
+          "level": 3
+        },
+        {
+          "block_id": 8,
+          "title": "1.1.2.1 API Layer",
+          "level": 4
+        },
+        {
+          "block_id": 10,
+          "title": "1.1.2.2 Service Layer",
+          "level": 4
+        },
+        {
+          "block_id": 12,
+          "title": "1.2 Deployment",
+          "level": 2
+        },
+        {
+          "block_id": 14,
+          "title": "2. Data Pipeline",
+          "level": 1
+        },
+        {
+          "block_id": 16,
+          "title": "2.1 Ingestion",
+          "level": 2
+        },
+        {
+          "block_id": 18,
+          "title": "2.2 Transformation",
+          "level": 2
+        },
+        {
+          "block_id": 20,
+          "title": "2.2.1 Cleaning",
+          "level": 3
+        },
+        {
+          "block_id": 22,
+          "title": "2.2.2 Normalization",
+          "level": 3
+        },
+        {
+          "block_id": 24,
+          "title": "2.3 Storage",
+          "level": 2
+        },
+        {
+          "block_id": 26,
+          "title": "3. Results",
+          "level": 1
+        },
+        {
+          "block_id": 28,
+          "title": "3.1 Performance",
+          "level": 2
+        },
+        {
+          "block_id": 30,
+          "title": "3.2 Accuracy",
+          "level": 2
+        }
+      ],
+      "diagnostics": {
+        "extraction": {
+          "unrecognized_element_count": 0,
+          "reading_order_uncertain_blocks": 0,
+          "reading_order_edges": 31,
+          "ocr_pages": 0,
+          "page_count": 1,
+          "garbled_page_ratio": 0.0
+        },
+        "closure": {
+          "source_units_total": 34,
+          "duplicated_units": 0,
+          "unattributed_units": 0,
+          "duplicated_sample": [],
+          "unattributed_sample": [],
+          "exactly_once": true
+        },
+        "tables": {
+          "table_count": 0,
+          "tables_with_model": 0,
+          "tables_coverage_exact": 0,
+          "tables_with_overlapping_cells": 0,
+          "unattributed_cells_sample": [],
+          "unattributed_cells": 0
+        },
+        "delivery": {
+          "view_bytes": {
+            "full_markdown": 1321,
+            "sections_markdown": 1319,
+            "json": 18194
+          },
+          "range_declaration": {
+            "declared_blocks": 32,
+            "total_blocks": 32,
+            "complete": true,
+            "missing_block_ids": []
+          },
+          "referenced_resources": 0
+        },
+        "normalization": {
+          "atoms_seen": 34,
+          "transformations": {
+            "断词与拼接归一": 0,
+            "空白归一": 2,
+            "偏移对齐降级": 0,
+            "来源角色标注": 0,
+            "连字归一": 0
+          }
+        },
+        "language": "en",
+        "language_source": "derived",
+        "cjk_ratio": 0.0
+      },
+      "quality_report": {
+        "semantic_correctness_verified": false,
+        "content_coverage_scope": "extracted_blocks_only",
+        "needs_confirmation_section_ids": [],
+        "confidence_quality": "heuristic",
+        "content_relation_count": 0
+      },
+      "serialized_json_bytes": 18194,
+      "serialization_valid": true,
+      "model_calls": 1,
+      "elapsed_seconds": 2.6000138998497277,
+      "model": "deepseek-v4.1-flash",
+      "token_usage": {
+        "model": "deepseek-v4.1-flash",
+        "calls": 1,
+        "prompt_tokens": 3501,
+        "completion_tokens": 572,
+        "total_tokens": 4073
+      },
+      "provider_skip_codes": [],
+      "calibration_samples": []
+    },
+    {
+      "document": "04_mixed_language_uniform",
+      "tier": "no_style",
+      "source_sha256": "87fd8fd716759f744f693e494afe598ccc0a5a99e33d0f0b314c341bb40f6554",
+      "run_in_gt_count": 0,
+      "gt_sha256": "8fae0d2d02517f6ec6793df2d0c8a6246f3af1f4a1e99f251b97e5c957bb5809",
+      "mode": "model",
+      "annotation_alignment": "stored plus exact-title diagnostic; not independently reviewed",
+      "gt_total": 10,
+      "gt_aligned": 10,
+      "alignment_audit": [
+        {
+          "title": "Introduction",
+          "stored_id": 0,
+          "status": "stored_exact",
+          "suggested_id": 0,
+          "matching_ids": [
+            0
+          ],
+          "requires_independent_review": false
+        },
+        {
+          "title": "Background",
+          "stored_id": 3,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 2,
+          "matching_ids": [
+            2
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Rule-Based Methods",
+          "stored_id": 5,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 4,
+          "matching_ids": [
+            4
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Learning-Based Methods",
+          "stored_id": 8,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 6,
+          "matching_ids": [
+            6
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Our Approach",
+          "stored_id": 11,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 8,
+          "matching_ids": [
+            8
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Skeleton Compression",
+          "stored_id": 13,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 10,
+          "matching_ids": [
+            10
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Cursor Routing",
+          "stored_id": 16,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 12,
+          "matching_ids": [
+            12
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Deterministic Assembly",
+          "stored_id": 19,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 14,
+          "matching_ids": [
+            14
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Evaluation",
+          "stored_id": 22,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 16,
+          "matching_ids": [
+            16
+          ],
+          "requires_independent_review": true
+        },
+        {
+          "title": "Conclusion",
+          "stored_id": 25,
+          "status": "unique_exact_suggestion",
+          "suggested_id": 18,
+          "matching_ids": [
+            18
+          ],
+          "requires_independent_review": true
+        }
+      ],
+      "stored_id_metrics": {
+        "tp": 6,
+        "fp": 4,
+        "fn": 4,
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "level_correct": 6,
+        "level_total": 6,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 0.6,
+        "all_gt_level_precision": 0.6,
+        "all_gt_level_recall": 0.6,
+        "all_gt_level_f1": 0.6,
+        "hierarchy_accuracy_all_gt": 0.6,
+        "hierarchy_f1_all_gt": 0.6,
+        "heading_sequence_edit_distance": 0.0,
+        "parent_relation_distance": 0.0,
+        "tree_edit_distance": 0.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 3,
+              "title": "Background",
+              "level": 1
+            },
+            {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 5,
+              "title": "Rule-Based Methods",
+              "level": 2
+            },
+            {
+              "block_id": 4,
+              "title": "Rule-Based Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 8,
+              "title": "Learning-Based Methods",
+              "level": 2
+            },
+            {
+              "block_id": 6,
+              "title": "Learning-Based Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 11,
+              "title": "Our Approach",
+              "level": 1
+            },
+            {
+              "block_id": 8,
+              "title": "Our Approach",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 13,
+              "title": "Skeleton Compression",
+              "level": 2
+            },
+            {
+              "block_id": 10,
+              "title": "Skeleton Compression",
+              "level": 2
+            }
+          ]
+        ],
+        "fp_preds": [
+          {
+            "block_id": 12,
+            "title": "Cursor Routing",
+            "level": 2
+          },
+          {
+            "block_id": 14,
+            "title": "Deterministic Assembly",
+            "level": 2
+          },
+          {
+            "block_id": 16,
+            "title": "Evaluation",
+            "level": 1
+          },
+          {
+            "block_id": 18,
+            "title": "Conclusion",
+            "level": 1
+          }
+        ],
+        "fn_gts": [
+          {
+            "block_id": 16,
+            "title": "Cursor Routing",
+            "level": 2
+          },
+          {
+            "block_id": 19,
+            "title": "Deterministic Assembly",
+            "level": 2
+          },
+          {
+            "block_id": 22,
+            "title": "Evaluation",
+            "level": 1
+          },
+          {
+            "block_id": 25,
+            "title": "Conclusion",
+            "level": 1
+          }
+        ],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 3,
+              "title": "Background",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 23.0005
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 5,
+              "title": "Rule-Based Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 4,
+              "title": "Rule-Based Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 1,
+            "quality_weight": 1.0005,
+            "assignment_weight": 23.0005
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 8,
+              "title": "Learning-Based Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 6,
+              "title": "Learning-Based Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 2,
+            "quality_weight": 1.00025,
+            "assignment_weight": 23.00025
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 11,
+              "title": "Our Approach",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 8,
+              "title": "Our Approach",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 23.0
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 13,
+              "title": "Skeleton Compression",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 10,
+              "title": "Skeleton Compression",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 3,
+            "quality_weight": 1.0,
+            "assignment_weight": 23.0
+          }
+        ]
+      },
+      "exact_title_snapshot_metrics": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "level_correct": 10,
+        "level_total": 10,
+        "hierarchy_accuracy": 1.0,
+        "hierarchy_accuracy_tp_only": 1.0,
+        "all_gt_level_accuracy": 1.0,
+        "all_gt_level_precision": 1.0,
+        "all_gt_level_recall": 1.0,
+        "all_gt_level_f1": 1.0,
+        "hierarchy_accuracy_all_gt": 1.0,
+        "hierarchy_f1_all_gt": 1.0,
+        "heading_sequence_edit_distance": 0.0,
+        "parent_relation_distance": 0.0,
+        "tree_edit_distance": 0.0,
+        "char_recall": 0.0,
+        "block_coverage": 0.0,
+        "markdown_char_coverage": 0.0,
+        "tp_pairs": [
+          [
+            {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            },
+            {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 4,
+              "title": "Rule-Based Methods",
+              "level": 2
+            },
+            {
+              "block_id": 4,
+              "title": "Rule-Based Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 6,
+              "title": "Learning-Based Methods",
+              "level": 2
+            },
+            {
+              "block_id": 6,
+              "title": "Learning-Based Methods",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 8,
+              "title": "Our Approach",
+              "level": 1
+            },
+            {
+              "block_id": 8,
+              "title": "Our Approach",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 10,
+              "title": "Skeleton Compression",
+              "level": 2
+            },
+            {
+              "block_id": 10,
+              "title": "Skeleton Compression",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 12,
+              "title": "Cursor Routing",
+              "level": 2
+            },
+            {
+              "block_id": 12,
+              "title": "Cursor Routing",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 14,
+              "title": "Deterministic Assembly",
+              "level": 2
+            },
+            {
+              "block_id": 14,
+              "title": "Deterministic Assembly",
+              "level": 2
+            }
+          ],
+          [
+            {
+              "block_id": 16,
+              "title": "Evaluation",
+              "level": 1
+            },
+            {
+              "block_id": 16,
+              "title": "Evaluation",
+              "level": 1
+            }
+          ],
+          [
+            {
+              "block_id": 18,
+              "title": "Conclusion",
+              "level": 1
+            },
+            {
+              "block_id": 18,
+              "title": "Conclusion",
+              "level": 1
+            }
+          ]
+        ],
+        "fp_preds": [],
+        "fn_gts": [],
+        "matching_details": [
+          {
+            "gt_index": 0,
+            "pred_index": 0,
+            "gt": {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 0,
+              "title": "Introduction",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 1,
+            "pred_index": 1,
+            "gt": {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 2,
+              "title": "Background",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 2,
+            "pred_index": 2,
+            "gt": {
+              "block_id": 4,
+              "title": "Rule-Based Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 4,
+              "title": "Rule-Based Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 3,
+            "pred_index": 3,
+            "gt": {
+              "block_id": 6,
+              "title": "Learning-Based Methods",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 6,
+              "title": "Learning-Based Methods",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 4,
+            "pred_index": 4,
+            "gt": {
+              "block_id": 8,
+              "title": "Our Approach",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 8,
+              "title": "Our Approach",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 5,
+            "pred_index": 5,
+            "gt": {
+              "block_id": 10,
+              "title": "Skeleton Compression",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 10,
+              "title": "Skeleton Compression",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 6,
+            "pred_index": 6,
+            "gt": {
+              "block_id": 12,
+              "title": "Cursor Routing",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 12,
+              "title": "Cursor Routing",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 7,
+            "pred_index": 7,
+            "gt": {
+              "block_id": 14,
+              "title": "Deterministic Assembly",
+              "level": 2
+            },
+            "pred": {
+              "block_id": 14,
+              "title": "Deterministic Assembly",
+              "level": 2
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 8,
+            "pred_index": 8,
+            "gt": {
+              "block_id": 16,
+              "title": "Evaluation",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 16,
+              "title": "Evaluation",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          },
+          {
+            "gt_index": 9,
+            "pred_index": 9,
+            "gt": {
+              "block_id": 18,
+              "title": "Conclusion",
+              "level": 1
+            },
+            "pred": {
+              "block_id": 18,
+              "title": "Conclusion",
+              "level": 1
+            },
+            "level_correct": true,
+            "title_similarity": 1.0,
+            "block_distance": 0,
+            "quality_weight": 1.00075,
+            "assignment_weight": 23.00075
+          }
+        ]
+      },
+      "recall_including_unresolved_gt": 1.0,
+      "blocks": 20,
+      "predictions": [
+        {
+          "block_id": 0,
+          "title": "Introduction",
+          "level": 1
+        },
+        {
+          "block_id": 2,
+          "title": "Background",
+          "level": 1
+        },
+        {
+          "block_id": 4,
+          "title": "Rule-Based Methods",
+          "level": 2
+        },
+        {
+          "block_id": 6,
+          "title": "Learning-Based Methods",
+          "level": 2
+        },
+        {
+          "block_id": 8,
+          "title": "Our Approach",
+          "level": 1
+        },
+        {
+          "block_id": 10,
+          "title": "Skeleton Compression",
+          "level": 2
+        },
+        {
+          "block_id": 12,
+          "title": "Cursor Routing",
+          "level": 2
+        },
+        {
+          "block_id": 14,
+          "title": "Deterministic Assembly",
+          "level": 2
+        },
+        {
+          "block_id": 16,
+          "title": "Evaluation",
+          "level": 1
+        },
+        {
+          "block_id": 18,
+          "title": "Conclusion",
+          "level": 1
+        }
+      ],
+      "diagnostics": {
+        "extraction": {
+          "unrecognized_element_count": 0,
+          "reading_order_uncertain_blocks": 0,
+          "reading_order_edges": 19,
+          "ocr_pages": 0,
+          "page_count": 1,
+          "garbled_page_ratio": 0.0
+        },
+        "closure": {
+          "source_units_total": 27,
+          "duplicated_units": 0,
+          "unattributed_units": 0,
+          "duplicated_sample": [],
+          "unattributed_sample": [],
+          "exactly_once": true
+        },
+        "tables": {
+          "table_count": 0,
+          "tables_with_model": 0,
+          "tables_coverage_exact": 0,
+          "tables_with_overlapping_cells": 0,
+          "unattributed_cells_sample": [],
+          "unattributed_cells": 0
+        },
+        "delivery": {
+          "view_bytes": {
+            "full_markdown": 1240,
+            "sections_markdown": 1236,
+            "json": 10895
+          },
+          "range_declaration": {
+            "declared_blocks": 20,
+            "total_blocks": 20,
+            "complete": true,
+            "missing_block_ids": []
+          },
+          "referenced_resources": 0
+        },
+        "normalization": {
+          "atoms_seen": 27,
+          "transformations": {
+            "断词与拼接归一": 0,
+            "空白归一": 7,
+            "偏移对齐降级": 0,
+            "来源角色标注": 0,
+            "连字归一": 0
+          }
+        },
+        "language": "en",
+        "language_source": "derived",
+        "cjk_ratio": 0.0
+      },
+      "quality_report": {
+        "semantic_correctness_verified": false,
+        "content_coverage_scope": "extracted_blocks_only",
+        "needs_confirmation_section_ids": [],
+        "confidence_quality": "heuristic",
+        "content_relation_count": 0
+      },
+      "serialized_json_bytes": 10895,
+      "serialization_valid": true,
+      "model_calls": 1,
+      "elapsed_seconds": 2.7304795999079943,
+      "model": "deepseek-v4.1-flash",
+      "token_usage": {
+        "model": "deepseek-v4.1-flash",
+        "calls": 1,
+        "prompt_tokens": 3157,
+        "completion_tokens": 300,
+        "total_tokens": 3457
+      },
+      "provider_skip_codes": [],
+      "calibration_samples": []
+    }
+  ],
+  "errors": []
+}

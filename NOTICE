@@ -1,0 +1,28 @@
+Constellation
+Copyright 2026 The Constellation Authors
+
+This product includes software developed for the manuscript
+"Constellation: deterministic document structure parsing with a bounded
+LLM control layer" (under review).
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may obtain a
+copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+--------------------------------------------------------------------------
+
+The evaluation documents referenced by
+evaluation/datasets/long_docs_manifest.json are third-party publications.
+They are NOT distributed with this repository and are NOT covered by the
+Apache License. Each remains under the terms set by its publisher:
+
+  - Eleven arXiv preprints, each under the licence its authors selected
+    on arXiv.
+  - NIST CSWP 29, "The NIST Cybersecurity Framework (CSF) 2.0", a work of
+    the U.S. Government, not subject to copyright protection in the
+    United States.
+
+evaluation/fetch_dataset.py retrieves these documents from their original
+publishers at the user's request.

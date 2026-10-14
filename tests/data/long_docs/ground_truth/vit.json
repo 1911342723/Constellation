@@ -1,0 +1,162 @@
+{
+    "doc_title": "arXiv:2010.11929v2  [cs.CV]  3 Jun 2021",
+    "doc_authors": "",
+    "gt_source": "pdf_embedded_toc + abstract_entry",
+    "headings": [
+        {
+            "block_id": 10,
+            "title": "Abstract",
+            "level": 1
+        },
+        {
+            "block_id": 22,
+            "title": "1 Introduction",
+            "level": 1
+        },
+        {
+            "block_id": 29,
+            "title": "2 Related Work",
+            "level": 1
+        },
+        {
+            "block_id": 65,
+            "title": "3 Method",
+            "level": 1
+        },
+        {
+            "block_id": 67,
+            "title": "3.1 Vision Transformer (ViT)",
+            "level": 2
+        },
+        {
+            "block_id": 97,
+            "title": "3.2 Fine-tuning and Higher Resolution",
+            "level": 2
+        },
+        {
+            "block_id": 100,
+            "title": "4 Experiments",
+            "level": 1
+        },
+        {
+            "block_id": 102,
+            "title": "4.1 Setup",
+            "level": 2
+        },
+        {
+            "block_id": 134,
+            "title": "4.2 Comparison to State of the Art",
+            "level": 2
+        },
+        {
+            "block_id": 224,
+            "title": "4.3 Pre-training Data Requirements",
+            "level": 2
+        },
+        {
+            "block_id": 265,
+            "title": "4.4 Scaling Study",
+            "level": 2
+        },
+        {
+            "block_id": 268,
+            "title": "4.5 Inspecting Vision Transformer",
+            "level": 2
+        },
+        {
+            "block_id": 299,
+            "title": "4.6 Self-supervision",
+            "level": 2
+        },
+        {
+            "block_id": 372,
+            "title": "5 Conclusion",
+            "level": 1
+        },
+        {
+            "block_id": 502,
+            "title": "A Multihead Self-attention",
+            "level": 1
+        },
+        {
+            "block_id": 519,
+            "title": "B Experiment details",
+            "level": 1
+        },
+        {
+            "block_id": 520,
+            "title": "B.1 Training",
+            "level": 2
+        },
+        {
+            "block_id": 522,
+            "title": "B.1.1 Fine-tuning",
+            "level": 3
+        },
+        {
+            "block_id": 549,
+            "title": "B.1.2 Self-supervision",
+            "level": 3
+        },
+        {
+            "block_id": 553,
+            "title": "C Additional Results",
+            "level": 1
+        },
+        {
+            "block_id": 806,
+            "title": "D Additional Analyses",
+            "level": 1
+        },
+        {
+            "block_id": 807,
+            "title": "D.1 SGD vs. Adam for ResNets",
+            "level": 2
+        },
+        {
+            "block_id": 874,
+            "title": "D.2 Transformer shape",
+            "level": 2
+        },
+        {
+            "block_id": 876,
+            "title": "D.3 Head Type and class token",
+            "level": 2
+        },
+        {
+            "block_id": 923,
+            "title": "D.4 Positional Embedding",
+            "level": 2
+        },
+        {
+            "block_id": 985,
+            "title": "D.5 Empirical Computational Costs",
+            "level": 2
+        },
+        {
+            "block_id": 1016,
+            "title": "D.6 Axial Attention",
+            "level": 2
+        },
+        {
+            "block_id": 1047,
+            "title": "D.7 Attention Distance",
+            "level": 2
+        },
+        {
+            "block_id": 1049,
+            "title": "D.8 Attention Maps",
+            "level": 2
+        },
+        {
+            "block_id": 1051,
+            "title": "D.9 ObjectNet Results",
+            "level": 2
+        },
+        {
+            "block_id": 1053,
+            "title": "D.10 VTAB Breakdown",
+            "level": 2
+        }
+    ]
+}

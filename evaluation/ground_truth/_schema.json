@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Ground-truth annotation for a benchmark DOCX document. Filename must match the docx stem (e.g. ms_test.json for ms_test.docx).",
+    "type": "object",
+    "required": ["doc_title", "headings"],
+    "properties": {
+        "doc_title": {
+            "type": "string",
+            "description": "Expected document title."
+        },
+        "doc_authors": {
+            "type": "string",
+            "description": "Expected author information.",
+            "default": ""
+        },
+        "headings": {
+            "type": "array",
+            "description": "Flat list of all expected section headings, sorted by block_id ascending.",
+            "items": {
+                "type": "object",
+                "required": ["block_id", "title", "level"],
+                "properties": {
+                    "block_id": {
+                        "type": "integer",
+                        "description": "Block ID where this heading starts."
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "Heading text."
+                    },
+                    "level": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 6,
+                        "description": "Heading depth (1 = top-level)."
+                    }
+                }
+            }
+        }
+    }
+}

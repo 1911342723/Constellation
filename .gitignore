@@ -1,0 +1,47 @@
+# Environment variables (contains API keys!)
+.env
+
+# Python
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Evaluation documents are fetched, not redistributed.
+# See evaluation/datasets/long_docs_manifest.json.
+tests/data/long_docs/*.pdf
+tests/data/long_docs/*.pdf.part
+
+# Generated artifacts
+scripts/manual/output/
+tests/logs/
+tests/outputs/
+tests/output_*.md
+tests/output_*.txt
+tests/data/*_parsed.md
+tests/data/*_report*.md
+test_output_markdown/
+test_output_pdf/
+skeleton_debug.txt
+error_log.txt

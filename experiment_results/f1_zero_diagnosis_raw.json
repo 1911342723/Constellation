@@ -1,0 +1,718 @@
+{
+  "gt_audit": {
+    "attention_is_all_you_need": {
+      "headings": 22,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "arXiv:1706.03762v7  [cs.CL]  2 Aug 2023"
+    },
+    "bert": {
+      "headings": 0,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "arXiv:1810.04805v2  [cs.CL]  24 May 2019"
+    },
+    "chain_of_thought": {
+      "headings": 35,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "arXiv:2201.11903v6  [cs.CL]  10 Jan 2023"
+    },
+    "diffusion_models": {
+      "headings": 70,
+      "id_zero": 0,
+      "id_duplicates": 3,
+      "monotonic": false,
+      "doc_title": "arXiv:2209.00796v15  [cs.LG]  27 Sep 2025"
+    },
+    "gpt3": {
+      "headings": 32,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "arXiv:2005.14165v4  [cs.CL]  22 Jul 2020"
+    },
+    "llm_survey": {
+      "headings": 115,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": false,
+      "doc_title": "A Survey of Large Language Models"
+    },
+    "nist_cybersecurity": {
+      "headings": 12,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "The NIST Cybersecurity"
+    },
+    "openai_gpt4_tech_report": {
+      "headings": 26,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "arXiv:submit/4812508  [cs.CL]  27 Mar 2023"
+    },
+    "reinforcement_learning": {
+      "headings": 91,
+      "id_zero": 0,
+      "id_duplicates": 3,
+      "monotonic": false,
+      "doc_title": "arXiv:1810.06339v1  [cs.LG]  15 Oct 2018"
+    },
+    "resnet": {
+      "headings": 0,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "arXiv:1512.03385v1  [cs.CV]  10 Dec 2015"
+    },
+    "transformer_survey": {
+      "headings": 29,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "arXiv:2106.04554v2  [cs.LG]  15 Jun 2021"
+    },
+    "vit": {
+      "headings": 30,
+      "id_zero": 0,
+      "id_duplicates": 0,
+      "monotonic": true,
+      "doc_title": "arXiv:2010.11929v2  [cs.CV]  3 Jun 2021"
+    }
+  },
+  "docs": {
+    "bert": {
+      "stem": "bert",
+      "total_blocks": 863,
+      "text_blocks": 813,
+      "body_font_size": 10.9,
+      "distinct_font_sizes": [
+        3.2,
+        3.7,
+        4.6,
+        4.8,
+        5.3,
+        5.5,
+        5.6,
+        5.8,
+        6.0,
+        6.5,
+        6.7,
+        6.9,
+        7.0,
+        8.0,
+        8.7,
+        9.0,
+        9.2,
+        10.0,
+        10.9,
+        11.1,
+        12.0,
+        14.3,
+        20.0
+      ],
+      "bold_blocks": 55,
+      "potential_title_blocks": 135,
+      "candidates": 89,
+      "candidate_reasons": {
+        "block-title-heuristic": 83,
+        "bold": 41,
+        "centered": 8,
+        "explicit-style": 3,
+        "large-font": 3,
+        "slightly-large-font": 16,
+        "semantic-title": 2,
+        "numbering": 74
+      },
+      "title_probes": [
+        {
+          "expected": "1 Introduction",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 9,
+              "text": "1 Introduction",
+              "font_size": 12.0,
+              "font_ratio": 1.101,
+              "is_bold": true,
+              "is_heading_style": false,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 1
+            }
+          ]
+        },
+        {
+          "expected": "2 Related Work",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 19,
+              "text": "2 Related Work",
+              "font_size": 12.0,
+              "font_ratio": 1.101,
+              "is_bold": true,
+              "is_heading_style": false,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 2
+            }
+          ]
+        },
+        {
+          "expected": "3 BERT",
+          "found_in_blocks": 6,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 50,
+              "text": "BERT",
+              "font_size": 11.1,
+              "font_ratio": 1.018,
+              "is_bold": false,
+              "is_heading_style": false,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 3
+            },
+            {
+              "block_id": 79,
+              "text": "3 BERT",
+              "font_size": 12.0,
+              "font_ratio": 1.101,
+              "is_bold": true,
+              "is_heading_style": false,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 3
+            },
+            {
+              "block_id": 677,
+              "text": "BERT",
+              "font_size": 11.1,
+              "font_ratio": 1.018,
+              "is_bold": false,
+              "is_heading_style": false,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 15
+            }
+          ]
+        },
+        {
+          "expected": "4 Experiments",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 195,
+              "text": "4 Experiments",
+              "font_size": 12.0,
+              "font_ratio": 1.101,
+              "is_bold": true,
+              "is_heading_style": false,
+              "alignment": "right",
+              "is_potential_title": true,
+              "page": 5
+            }
+          ]
+        },
+        {
+          "expected": "5 Ablation Studies",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 364,
+              "text": "5 Ablation Studies",
+              "font_size": 12.0,
+              "font_ratio": 1.101,
+              "is_bold": true,
+              "is_heading_style": false,
+              "alignment": "right",
+              "is_potential_title": true,
+              "page": 7
+            }
+          ]
+        },
+        {
+          "expected": "6 Conclusion",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 447,
+              "text": "6 Conclusion",
+              "font_size": 12.0,
+              "font_ratio": 1.101,
+              "is_bold": true,
+              "is_heading_style": false,
+              "alignment": "right",
+              "is_potential_title": true,
+              "page": 9
+            }
+          ]
+        },
+        {
+          "expected": "References",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 449,
+              "text": "References",
+              "font_size": 12.0,
+              "font_ratio": 1.101,
+              "is_bold": true,
+              "is_heading_style": false,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 10
+            }
+          ]
+        }
+      ]
+    },
+    "resnet": {
+      "stem": "resnet",
+      "total_blocks": 872,
+      "text_blocks": 846,
+      "body_font_size": 10.0,
+      "distinct_font_sizes": [
+        3.3,
+        4.4,
+        4.6,
+        4.8,
+        4.9,
+        5.0,
+        5.4,
+        5.5,
+        6.0,
+        6.5,
+        6.6,
+        6.9,
+        7.1,
+        7.2,
+        7.3,
+        7.6,
+        7.8,
+        7.9,
+        8.0,
+        8.1,
+        8.2,
+        8.3,
+        9.0,
+        9.2,
+        9.3,
+        10.0,
+        11.0,
+        12.0,
+        14.3,
+        20.0
+      ],
+      "bold_blocks": 44,
+      "potential_title_blocks": 111,
+      "candidates": 47,
+      "candidate_reasons": {
+        "block-title-heuristic": 34,
+        "bold": 20,
+        "centered": 4,
+        "explicit-style": 16,
+        "large-font": 2,
+        "slightly-large-font": 21,
+        "semantic-title": 7,
+        "numbering": 29
+      },
+      "title_probes": [
+        {
+          "expected": "1. Introduction",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 17,
+              "text": "1. Introduction",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 1
+            }
+          ]
+        },
+        {
+          "expected": "2. Related Work",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 63,
+              "text": "2. Related Work",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "right",
+              "is_potential_title": true,
+              "page": 2
+            }
+          ]
+        },
+        {
+          "expected": "3. Deep Residual Learning",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 67,
+              "text": "3. Deep Residual Learning",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 3
+            }
+          ]
+        },
+        {
+          "expected": "4. Experiments",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 225,
+              "text": "4. Experiments",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "right",
+              "is_potential_title": true,
+              "page": 4
+            }
+          ]
+        },
+        {
+          "expected": "References",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 709,
+              "text": "References",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 9
+            }
+          ]
+        }
+      ]
+    },
+    "vit": {
+      "stem": "vit",
+      "total_blocks": 1920,
+      "text_blocks": 1607,
+      "body_font_size": 10.0,
+      "distinct_font_sizes": [
+        3.9,
+        4.3,
+        4.7,
+        4.8,
+        5.0,
+        5.4,
+        5.8,
+        6.0,
+        6.1,
+        6.3,
+        6.4,
+        6.5,
+        6.6,
+        6.8,
+        7.0,
+        7.1,
+        7.2,
+        7.3,
+        7.4,
+        7.5,
+        7.6,
+        7.8,
+        7.9,
+        8.0,
+        8.1,
+        8.9,
+        9.0,
+        9.1,
+        9.6,
+        10.0,
+        10.2,
+        12.0,
+        17.2,
+        20.0
+      ],
+      "bold_blocks": 1,
+      "potential_title_blocks": 805,
+      "candidates": 129,
+      "candidate_reasons": {
+        "block-title-heuristic": 113,
+        "explicit-style": 16,
+        "large-font": 3,
+        "centered": 36,
+        "bold": 1,
+        "semantic-title": 4,
+        "slightly-large-font": 13,
+        "numbering": 117
+      },
+      "title_probes": [
+        {
+          "expected": "1 Introduction",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 21,
+              "text": "1 INTRODUCTION",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": false,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 1
+            }
+          ]
+        },
+        {
+          "expected": "2 Related Work",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 57,
+              "text": "2 RELATED WORK",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": false,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 2
+            }
+          ]
+        },
+        {
+          "expected": "3 Method",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 123,
+              "text": "3 METHOD",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": false,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 3
+            }
+          ]
+        },
+        {
+          "expected": "4 Experiments",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 195,
+              "text": "4 EXPERIMENTS",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": false,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 4
+            }
+          ]
+        },
+        {
+          "expected": "5 Conclusion",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 538,
+              "text": "5 CONCLUSION",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": false,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 9
+            }
+          ]
+        },
+        {
+          "expected": "References",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 558,
+              "text": "REFERENCES",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": false,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 9
+            }
+          ]
+        }
+      ]
+    },
+    "attention_is_all_you_need": {
+      "stem": "attention_is_all_you_need",
+      "total_blocks": 916,
+      "text_blocks": 908,
+      "body_font_size": 10.0,
+      "distinct_font_sizes": [
+        6.0,
+        7.0,
+        7.8,
+        8.9,
+        9.0,
+        9.3,
+        9.4,
+        9.9,
+        10.0,
+        10.1,
+        12.0,
+        17.2,
+        20.0
+      ],
+      "bold_blocks": 37,
+      "potential_title_blocks": 458,
+      "candidates": 68,
+      "candidate_reasons": {
+        "block-title-heuristic": 64,
+        "centered": 12,
+        "explicit-style": 15,
+        "slightly-large-font": 13,
+        "bold": 28,
+        "large-font": 2,
+        "semantic-title": 2,
+        "numbering": 59
+      },
+      "title_probes": [
+        {
+          "expected": "1 Introduction",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 53,
+              "text": "1 Introduction",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 2
+            }
+          ]
+        },
+        {
+          "expected": "2 Background",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 75,
+              "text": "2 Background",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 2
+            }
+          ]
+        },
+        {
+          "expected": "3 Model Architecture",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 96,
+              "text": "3 Model Architecture",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 2
+            }
+          ]
+        },
+        {
+          "expected": "7 Conclusion",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 485,
+              "text": "7 Conclusion",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 10
+            }
+          ]
+        },
+        {
+          "expected": "References",
+          "found_in_blocks": 1,
+          "in_candidates": true,
+          "matches": [
+            {
+              "block_id": 501,
+              "text": "References",
+              "font_size": 12.0,
+              "font_ratio": 1.2,
+              "is_bold": true,
+              "is_heading_style": true,
+              "alignment": "left",
+              "is_potential_title": true,
+              "page": 10
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

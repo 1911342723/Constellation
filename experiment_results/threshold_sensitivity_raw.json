@@ -1,0 +1,168 @@
+{
+  "baseline": {
+    "micro_recall": 97.1,
+    "macro_recall": 97.7,
+    "budget": 11.0,
+    "candidates": 1962,
+    "hit": 474,
+    "located": 488
+  },
+  "sweeps": {
+    "base_min_score": [
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 11.0,
+        "candidates": 1962,
+        "hit": 474,
+        "located": 488,
+        "value": 0.3,
+        "is_default": false
+      },
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 11.0,
+        "candidates": 1962,
+        "hit": 474,
+        "located": 488,
+        "value": 0.35,
+        "is_default": false
+      },
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 11.0,
+        "candidates": 1962,
+        "hit": 474,
+        "located": 488,
+        "value": 0.4,
+        "is_default": true
+      },
+      {
+        "micro_recall": 97.3,
+        "macro_recall": 97.9,
+        "budget": 10.6,
+        "candidates": 1903,
+        "hit": 475,
+        "located": 488,
+        "value": 0.45,
+        "is_default": false
+      },
+      {
+        "micro_recall": 97.3,
+        "macro_recall": 97.9,
+        "budget": 10.6,
+        "candidates": 1903,
+        "hit": 475,
+        "located": 488,
+        "value": 0.5,
+        "is_default": false
+      }
+    ],
+    "weak_only_min": [
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 11.0,
+        "candidates": 1962,
+        "hit": 474,
+        "located": 488,
+        "value": 0.15,
+        "is_default": false
+      },
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 11.0,
+        "candidates": 1962,
+        "hit": 474,
+        "located": 488,
+        "value": 0.2,
+        "is_default": false
+      },
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 11.0,
+        "candidates": 1962,
+        "hit": 474,
+        "located": 488,
+        "value": 0.25,
+        "is_default": true
+      },
+      {
+        "micro_recall": 96.9,
+        "macro_recall": 97.6,
+        "budget": 10.7,
+        "candidates": 1912,
+        "hit": 473,
+        "located": 488,
+        "value": 0.3,
+        "is_default": false
+      },
+      {
+        "micro_recall": 96.3,
+        "macro_recall": 96.8,
+        "budget": 10.6,
+        "candidates": 1906,
+        "hit": 470,
+        "located": 488,
+        "value": 0.35,
+        "is_default": false
+      }
+    ],
+    "max_ratio": [
+      {
+        "micro_recall": 96.1,
+        "macro_recall": 96.3,
+        "budget": 9.1,
+        "candidates": 1626,
+        "hit": 469,
+        "located": 488,
+        "value": 0.1,
+        "is_default": false
+      },
+      {
+        "micro_recall": 96.9,
+        "macro_recall": 97.3,
+        "budget": 10.2,
+        "candidates": 1826,
+        "hit": 473,
+        "located": 488,
+        "value": 0.125,
+        "is_default": false
+      },
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 11.0,
+        "candidates": 1962,
+        "hit": 474,
+        "located": 488,
+        "value": 0.15,
+        "is_default": true
+      },
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 11.6,
+        "candidates": 2076,
+        "hit": 474,
+        "located": 488,
+        "value": 0.175,
+        "is_default": false
+      },
+      {
+        "micro_recall": 97.1,
+        "macro_recall": 97.7,
+        "budget": 12.2,
+        "candidates": 2191,
+        "hit": 474,
+        "located": 488,
+        "value": 0.2,
+        "is_default": false
+      }
+    ]
+  }
+}

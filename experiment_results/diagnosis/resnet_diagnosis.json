@@ -1,0 +1,1454 @@
+{
+  "doc": "resnet",
+  "stage0_toc": {
+    "toc_entries": 0,
+    "toc_sample": [],
+    "gt_headings": 16,
+    "gt_block_id_zero_count": 0
+  },
+  "stage1_blocks": {
+    "total_blocks": 872,
+    "text_blocks": 846,
+    "body_font_size": 10.0,
+    "font_size_min": 3.3,
+    "font_size_max": 20.0,
+    "font_size_median": 7.2,
+    "bold_blocks": 44,
+    "heading_style_blocks": 16
+  },
+  "stage2_skeleton": {
+    "windows": 4,
+    "skeleton_chars": 35850,
+    "original_chars": 65530,
+    "compression_pct": 45.3
+  },
+  "stage25_candidates": {
+    "candidate_count": 47,
+    "sample": [
+      {
+        "block_id": 0,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "centered",
+          "explicit-style",
+          "large-font"
+        ],
+        "title": "Deep Residual Learning for Image Recognition"
+      },
+      {
+        "block_id": 1,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "slightly-large-font"
+        ],
+        "title": "Kaiming He"
+      },
+      {
+        "block_id": 2,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "slightly-large-font"
+        ],
+        "title": "Xiangyu Zhang"
+      },
+      {
+        "block_id": 3,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "centered",
+          "explicit-style",
+          "slightly-large-font"
+        ],
+        "title": "Microsoft Research"
+      },
+      {
+        "block_id": 5,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "large-font"
+        ],
+        "title": "arXiv:1512.03385v1 [cs.CV] 10 Dec 2015"
+      },
+      {
+        "block_id": 7,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "semantic-title",
+          "slightly-large-font"
+        ],
+        "title": "Abstract"
+      },
+      {
+        "block_id": 17,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "1. Introduction"
+      },
+      {
+        "block_id": 21,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "slightly-large-font"
+        ],
+        "title": "Shaoqing Ren"
+      },
+      {
+        "block_id": 22,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "explicit-style",
+          "slightly-large-font"
+        ],
+        "title": "Jian Sun"
+      },
+      {
+        "block_id": 63,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "2. Related Work"
+      },
+      {
+        "block_id": 67,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "3. Deep Residual Learning"
+      },
+      {
+        "block_id": 68,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "3.1. Residual Learning"
+      },
+      {
+        "block_id": 75,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "3.2. Identity Mapping by Shortcuts"
+      },
+      {
+        "block_id": 94,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "3.3. Network Architectures"
+      },
+      {
+        "block_id": 220,
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ],
+        "title": "3.4. Implementation"
+      }
+    ]
+  },
+  "reference_chain": [
+    {
+      "ref_title": "Abstract",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 7,
+        "similarity": 1.0,
+        "block_text": "Abstract",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "semantic-title",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "1. Introduction",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 17,
+        "similarity": 1.0,
+        "block_text": "1. Introduction",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "2. Related Work",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 63,
+        "similarity": 1.0,
+        "block_text": "2. Related Work",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "3. Deep Residual Learning",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 67,
+        "similarity": 1.0,
+        "block_text": "3. Deep Residual Learning",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "3.1. Residual Learning",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 68,
+        "similarity": 1.0,
+        "block_text": "3.1. Residual Learning",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 11.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.1
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "3.2. Identity Mapping by Shortcuts",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 75,
+        "similarity": 1.0,
+        "block_text": "3.2. Identity Mapping by Shortcuts",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 11.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.1
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "3.3. Network Architectures",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 94,
+        "similarity": 1.0,
+        "block_text": "3.3. Network Architectures",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 11.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.1
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "3.4. Implementation",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 220,
+        "similarity": 1.0,
+        "block_text": "3.4. Implementation",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 11.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.1
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "4. Experiments",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 225,
+        "similarity": 1.0,
+        "block_text": "4. Experiments",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.1. ImageNet Classification",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 226,
+        "similarity": 0.929,
+        "block_text": "4.1. ImageNet Classiﬁcation",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 11.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.1
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.2. CIFAR-10 and Analysis",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 538,
+        "similarity": 1.0,
+        "block_text": "4.2. CIFAR-10 and Analysis",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 11.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.1
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "4.3. Object Detection on PASCAL and MS COCO",
+      "ref_level": 2,
+      "block_match": {
+        "block_id": 707,
+        "similarity": 1.0,
+        "block_text": "4.3. Object Detection on PASCAL and MS COCO",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 11.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": false,
+        "heading_level": null,
+        "has_heading_numbering": true,
+        "font_ratio_vs_body": 1.1
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "References",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 709,
+        "similarity": 1.0,
+        "block_text": "References",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "semantic-title",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "A. Object Detection Baselines",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 728,
+        "similarity": 1.0,
+        "block_text": "A. Object Detection Baselines",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "B. Object Detection Improvements",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 736,
+        "similarity": 1.0,
+        "block_text": "B. Object Detection Improvements",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "right",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "slightly-large-font"
+        ]
+      }
+    },
+    {
+      "ref_title": "C. ImageNet Localization",
+      "ref_level": 1,
+      "block_match": {
+        "block_id": 847,
+        "similarity": 1.0,
+        "block_text": "C. ImageNet Localization",
+        "mode": "full"
+      },
+      "found_in_blocks": true,
+      "physical_features": {
+        "font_size": 12.0,
+        "is_bold": true,
+        "alignment": "left",
+        "is_heading_style": true,
+        "heading_level": null,
+        "has_heading_numbering": false,
+        "font_ratio_vs_body": 1.2
+      },
+      "visible_in_skeleton": true,
+      "in_candidate_table": true,
+      "candidate_info": {
+        "score": 1.0,
+        "reasons": [
+          "block-title-heuristic",
+          "bold",
+          "explicit-style",
+          "numbering",
+          "slightly-large-font"
+        ]
+      }
+    }
+  ],
+  "chain_summary": {
+    "reference_headings": 16,
+    "found_in_blocks": 16,
+    "visible_in_skeleton": 16,
+    "in_candidate_table": 16,
+    "block_recall_upper_bound": 1.0,
+    "candidate_recall_upper_bound": 1.0
+  },
+  "stage3_llm": {
+    "windows_routed": 4,
+    "raw_anchor_total": 34,
+    "dropped_anchor_total": 0,
+    "final_tree_headings": [
+      {
+        "block_id": 0,
+        "level": 1,
+        "title": "Deep Residual Learning for Image Recognition"
+      },
+      {
+        "block_id": 1,
+        "level": 2,
+        "title": "Kaiming He"
+      },
+      {
+        "block_id": 2,
+        "level": 2,
+        "title": "Xiangyu Zhang"
+      },
+      {
+        "block_id": 3,
+        "level": 2,
+        "title": "Microsoft Research"
+      },
+      {
+        "block_id": 5,
+        "level": 2,
+        "title": "arXiv:1512.03385v1 [cs.CV] 10 Dec 2015"
+      },
+      {
+        "block_id": 7,
+        "level": 1,
+        "title": "Abstract"
+      },
+      {
+        "block_id": 17,
+        "level": 1,
+        "title": "1. Introduction"
+      },
+      {
+        "block_id": 21,
+        "level": 2,
+        "title": "Shaoqing Ren"
+      },
+      {
+        "block_id": 22,
+        "level": 2,
+        "title": "Jian Sun"
+      },
+      {
+        "block_id": 63,
+        "level": 1,
+        "title": "2. Related Work"
+      },
+      {
+        "block_id": 67,
+        "level": 1,
+        "title": "3. Deep Residual Learning"
+      },
+      {
+        "block_id": 68,
+        "level": 2,
+        "title": "3.1. Residual Learning"
+      },
+      {
+        "block_id": 75,
+        "level": 2,
+        "title": "3.2. Identity Mapping by Shortcuts"
+      },
+      {
+        "block_id": 94,
+        "level": 2,
+        "title": "3.3. Network Architectures"
+      },
+      {
+        "block_id": 220,
+        "level": 2,
+        "title": "3.4. Implementation"
+      },
+      {
+        "block_id": 225,
+        "level": 1,
+        "title": "4. Experiments"
+      },
+      {
+        "block_id": 226,
+        "level": 2,
+        "title": "4.1. ImageNet Classiﬁcation"
+      },
+      {
+        "block_id": 339,
+        "level": 1,
+        "title": "18 layers"
+      },
+      {
+        "block_id": 341,
+        "level": 2,
+        "title": "27.88 25.03"
+      },
+      {
+        "block_id": 342,
+        "level": 1,
+        "title": "34 layers"
+      },
+      {
+        "block_id": 538,
+        "level": 2,
+        "title": "4.2. CIFAR-10 and Analysis"
+      },
+      {
+        "block_id": 707,
+        "level": 2,
+        "title": "4.3. Object Detection on PASCAL and MS COCO"
+      },
+      {
+        "block_id": 709,
+        "level": 1,
+        "title": "References"
+      },
+      {
+        "block_id": 728,
+        "level": 1,
+        "title": "A. Object Detection Baselines"
+      },
+      {
+        "block_id": 732,
+        "level": 1,
+        "title": "MS COCO"
+      },
+      {
+        "block_id": 736,
+        "level": 1,
+        "title": "B. Object Detection Improvements"
+      },
+      {
+        "block_id": 751,
+        "level": 1,
+        "title": "51.1"
+      },
+      {
+        "block_id": 753,
+        "level": 1,
+        "title": "53.8"
+      },
+      {
+        "block_id": 755,
+        "level": 1,
+        "title": "Table 9. Object detection improvements on MS COCO using Faster R-CNN and ResNet-101."
+      },
+      {
+        "block_id": 782,
+        "level": 1,
+        "title": "baseline+++ ResNet-101 COCO+07++12 83.8 92.1 88.4 84.8 75.9 71.4 86.3 87.8 94.2 66.8 89.4 69.2 93.9 91.9 90.9 89.6 67.9 88.2 76.8 90.3 80.0"
+      },
+      {
+        "block_id": 789,
+        "level": 2,
+        "title": "COCO trainval COCO test-dev"
+      },
+      {
+        "block_id": 794,
+        "level": 2,
+        "title": "55.7"
+      },
+      {
+        "block_id": 795,
+        "level": 2,
+        "title": "34.9"
+      },
+      {
+        "block_id": 797,
+        "level": 2,
+        "title": "59.0"
+      },
+      {
+        "block_id": 798,
+        "level": 2,
+        "title": "37.4"
+      },
+      {
+        "block_id": 802,
+        "level": 2,
+        "title": "85.6 90.0 89.6 87.8 80.8 76.1 89.9 89.9 89.6 75.5 90.0 80.7 89.6 90.3 89.1 88.7 65.4 88.1 85.6 89.0 86.8"
+      },
+      {
+        "block_id": 847,
+        "level": 1,
+        "title": "C. ImageNet Localization"
+      },
+      {
+        "block_id": 852,
+        "level": 1,
+        "title": "12"
+      }
+    ],
+    "window_details": [
+      {
+        "allowed_ids": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          7,
+          17,
+          21,
+          22,
+          63,
+          67,
+          68,
+          75,
+          94,
+          220,
+          225,
+          226
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 0,
+            "level": 1,
+            "title": "Deep Residual Learning for Image Recognition"
+          },
+          {
+            "block_id": 7,
+            "level": 1,
+            "title": "Abstract"
+          },
+          {
+            "block_id": 17,
+            "level": 1,
+            "title": "1. Introduction"
+          },
+          {
+            "block_id": 63,
+            "level": 1,
+            "title": "2. Related Work"
+          },
+          {
+            "block_id": 67,
+            "level": 1,
+            "title": "3. Deep Residual Learning"
+          },
+          {
+            "block_id": 68,
+            "level": 2,
+            "title": "3.1. Residual Learning"
+          },
+          {
+            "block_id": 75,
+            "level": 2,
+            "title": "3.2. Identity Mapping by Shortcuts"
+          },
+          {
+            "block_id": 94,
+            "level": 2,
+            "title": "3.3. Network Architectures"
+          },
+          {
+            "block_id": 220,
+            "level": 2,
+            "title": "3.4. Implementation"
+          },
+          {
+            "block_id": 225,
+            "level": 1,
+            "title": "4. Experiments"
+          },
+          {
+            "block_id": 226,
+            "level": 2,
+            "title": "4.1. ImageNet Classiﬁcation"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 0,
+            "level": 1,
+            "title": "Deep Residual Learning for Image Recognition"
+          },
+          {
+            "block_id": 7,
+            "level": 1,
+            "title": "Abstract"
+          },
+          {
+            "block_id": 17,
+            "level": 1,
+            "title": "1. Introduction"
+          },
+          {
+            "block_id": 63,
+            "level": 1,
+            "title": "2. Related Work"
+          },
+          {
+            "block_id": 67,
+            "level": 1,
+            "title": "3. Deep Residual Learning"
+          },
+          {
+            "block_id": 68,
+            "level": 2,
+            "title": "3.1. Residual Learning"
+          },
+          {
+            "block_id": 75,
+            "level": 2,
+            "title": "3.2. Identity Mapping by Shortcuts"
+          },
+          {
+            "block_id": 94,
+            "level": 2,
+            "title": "3.3. Network Architectures"
+          },
+          {
+            "block_id": 220,
+            "level": 2,
+            "title": "3.4. Implementation"
+          },
+          {
+            "block_id": 225,
+            "level": 1,
+            "title": "4. Experiments"
+          },
+          {
+            "block_id": 226,
+            "level": 2,
+            "title": "4.1. ImageNet Classiﬁcation"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          17,
+          21,
+          22,
+          63,
+          67,
+          68,
+          75,
+          94,
+          220,
+          225,
+          226,
+          339,
+          341,
+          342,
+          463,
+          499,
+          529,
+          538
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 538,
+            "level": 2,
+            "title": "4.2. CIFAR-10 and Analysis"
+          },
+          {
+            "block_id": 545,
+            "level": 1,
+            "title": "output map size"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 538,
+            "level": 2,
+            "title": "4.2. CIFAR-10 and Analysis"
+          },
+          {
+            "block_id": 545,
+            "level": 1,
+            "title": "output map size"
+          }
+        ],
+        "downgraded_anchors": [
+          {
+            "block_id": 545,
+            "title": "output map size"
+          }
+        ],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          17,
+          21,
+          22,
+          63,
+          67,
+          68,
+          75,
+          94,
+          220,
+          225,
+          226,
+          339,
+          341,
+          342,
+          463,
+          499,
+          529,
+          538,
+          559,
+          586,
+          597,
+          633,
+          647,
+          655,
+          675,
+          707,
+          709,
+          728,
+          732,
+          736,
+          782,
+          791
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 538,
+            "level": 2,
+            "title": "4.2. CIFAR-10 and Analysis"
+          },
+          {
+            "block_id": 707,
+            "level": 2,
+            "title": "4.3. Object Detection on PASCAL and MS COCO"
+          },
+          {
+            "block_id": 709,
+            "level": 1,
+            "title": "References"
+          },
+          {
+            "block_id": 728,
+            "level": 1,
+            "title": "A. Object Detection Baselines"
+          },
+          {
+            "block_id": 732,
+            "level": 1,
+            "title": "MS COCO"
+          },
+          {
+            "block_id": 736,
+            "level": 1,
+            "title": "B. Object Detection Improvements"
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 538,
+            "level": 2,
+            "title": "4.2. CIFAR-10 and Analysis"
+          },
+          {
+            "block_id": 707,
+            "level": 2,
+            "title": "4.3. Object Detection on PASCAL and MS COCO"
+          },
+          {
+            "block_id": 709,
+            "level": 1,
+            "title": "References"
+          },
+          {
+            "block_id": 728,
+            "level": 1,
+            "title": "A. Object Detection Baselines"
+          },
+          {
+            "block_id": 732,
+            "level": 1,
+            "title": "MS COCO"
+          },
+          {
+            "block_id": 736,
+            "level": 1,
+            "title": "B. Object Detection Improvements"
+          }
+        ],
+        "downgraded_anchors": [],
+        "dropped_anchors": []
+      },
+      {
+        "allowed_ids": [
+          17,
+          21,
+          22,
+          63,
+          67,
+          68,
+          75,
+          94,
+          220,
+          225,
+          226,
+          339,
+          341,
+          342,
+          463,
+          499,
+          529,
+          538,
+          559,
+          586,
+          597,
+          633,
+          647,
+          655,
+          675,
+          707,
+          709,
+          728,
+          732,
+          736,
+          782,
+          791,
+          800,
+          801,
+          802,
+          804,
+          805,
+          827,
+          839,
+          847,
+          855
+        ],
+        "raw_anchors": [
+          {
+            "block_id": 751,
+            "level": 1,
+            "title": "51.1"
+          },
+          {
+            "block_id": 753,
+            "level": 1,
+            "title": "53.8"
+          },
+          {
+            "block_id": 755,
+            "level": 1,
+            "title": "Table 9. Object detection improvements on MS COCO using Faster R-CNN and ResNet-101."
+          },
+          {
+            "block_id": 769,
+            "level": 1,
+            "title": "Table 10. Detection results on the PASCAL..."
+          },
+          {
+            "block_id": 782,
+            "level": 1,
+            "title": "baseline+++ ResNet-101 COCO+07++12 83.8 92.1 88.4 84.8 75.9 71.4 86.3 87.8 94.2 66.8 89.4 69.2 93.9 91.9 90.9 89.6 67.9 88.2 76.8 90.3 80.0"
+          },
+          {
+            "block_id": 789,
+            "level": 2,
+            "title": "COCO trainval COCO test-dev"
+          },
+          {
+            "block_id": 794,
+            "level": 2,
+            "title": "55.7"
+          },
+          {
+            "block_id": 795,
+            "level": 2,
+            "title": "34.9"
+          },
+          {
+            "block_id": 797,
+            "level": 2,
+            "title": "59.0"
+          },
+          {
+            "block_id": 798,
+            "level": 2,
+            "title": "37.4"
+          },
+          {
+            "block_id": 802,
+            "level": 2,
+            "title": "85.6 90.0 89.6 87.8 80.8 76.1 89.9 89.9 89.6 75.5 90.0 80.7 89.6 90.3 89.1 88.7 65.4 88.1 85.6 89.0 86.8"
+          },
+          {
+            "block_id": 820,
+            "level": 1,
+            "title": "ImageNet Detection The ImageNet Detection..."
+          },
+          {
+            "block_id": 847,
+            "level": 1,
+            "title": "C. ImageNet Localization"
+          },
+          {
+            "block_id": 852,
+            "level": 1,
+            "title": "12"
+          },
+          {
+            "block_id": 869,
+            "level": 1,
+            "title": "Table 14. Comparisons..."
+          }
+        ],
+        "kept_anchors": [
+          {
+            "block_id": 751,
+            "level": 1,
+            "title": "51.1"
+          },
+          {
+            "block_id": 753,
+            "level": 1,
+            "title": "53.8"
+          },
+          {
+            "block_id": 755,
+            "level": 1,
+            "title": "Table 9. Object detection improvements on MS COCO using Faster R-CNN and ResNet-101."
+          },
+          {
+            "block_id": 769,
+            "level": 1,
+            "title": "Table 10. Detection results on the PASCAL..."
+          },
+          {
+            "block_id": 782,
+            "level": 1,
+            "title": "baseline+++ ResNet-101 COCO+07++12 83.8 92.1 88.4 84.8 75.9 71.4 86.3 87.8 94.2 66.8 89.4 69.2 93.9 91.9 90.9 89.6 67.9 88.2 76.8 90.3 80.0"
+          },
+          {
+            "block_id": 789,
+            "level": 2,
+            "title": "COCO trainval COCO test-dev"
+          },
+          {
+            "block_id": 794,
+            "level": 2,
+            "title": "55.7"
+          },
+          {
+            "block_id": 795,
+            "level": 2,
+            "title": "34.9"
+          },
+          {
+            "block_id": 797,
+            "level": 2,
+            "title": "59.0"
+          },
+          {
+            "block_id": 798,
+            "level": 2,
+            "title": "37.4"
+          },
+          {
+            "block_id": 802,
+            "level": 2,
+            "title": "85.6 90.0 89.6 87.8 80.8 76.1 89.9 89.9 89.6 75.5 90.0 80.7 89.6 90.3 89.1 88.7 65.4 88.1 85.6 89.0 86.8"
+          },
+          {
+            "block_id": 820,
+            "level": 1,
+            "title": "ImageNet Detection The ImageNet Detection..."
+          },
+          {
+            "block_id": 847,
+            "level": 1,
+            "title": "C. ImageNet Localization"
+          },
+          {
+            "block_id": 852,
+            "level": 1,
+            "title": "12"
+          },
+          {
+            "block_id": 869,
+            "level": 1,
+            "title": "Table 14. Comparisons..."
+          }
+        ],
+        "downgraded_anchors": [
+          {
+            "block_id": 751,
+            "title": "51.1"
+          },
+          {
+            "block_id": 753,
+            "title": "53.8"
+          },
+          {
+            "block_id": 755,
+            "title": "Table 9. Object detection improvements on MS COCO using Faster R-CNN and ResNet-101."
+          },
+          {
+            "block_id": 769,
+            "title": "Table 10. Detection results on the PASCAL..."
+          },
+          {
+            "block_id": 789,
+            "title": "COCO trainval COCO test-dev"
+          },
+          {
+            "block_id": 794,
+            "title": "55.7"
+          },
+          {
+            "block_id": 795,
+            "title": "34.9"
+          },
+          {
+            "block_id": 797,
+            "title": "59.0"
+          },
+          {
+            "block_id": 798,
+            "title": "37.4"
+          },
+          {
+            "block_id": 820,
+            "title": "ImageNet Detection The ImageNet Detection..."
+          },
+          {
+            "block_id": 852,
+            "title": "12"
+          },
+          {
+            "block_id": 869,
+            "title": "Table 14. Comparisons..."
+          }
+        ],
+        "dropped_anchors": []
+      }
+    ]
+  }
+}
